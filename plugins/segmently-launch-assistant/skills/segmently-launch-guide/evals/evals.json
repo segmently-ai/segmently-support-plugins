@@ -1,0 +1,196 @@
+{
+  "skill_name": "segmently-launch-guide",
+  "evals": [
+    {
+      "id": "interactive-loop-present",
+      "prompt": "A customer asks for help launching their funnel.",
+      "expected_behavior": "The skill follows clarify -> explain -> offer to do it -> verify.",
+      "assertions": [
+        {
+          "name": "loop-steps",
+          "corpus": "skill",
+          "mustContain": ["clarify the scenario", "plain language", "offer to do it", "verify"]
+        }
+      ]
+    },
+    {
+      "id": "delegates-cli-never-reimplements",
+      "prompt": "A customer asks to create paywall products via CLI.",
+      "expected_behavior": "Route to the owning customer CLI skill; do not reimplement command logic.",
+      "assertions": [
+        {
+          "name": "delegation",
+          "corpus": "skill",
+          "mustContain": ["delegate", "segmently-cli-guide", "segmently-cli-paywall-ab-rollout", "never reimplement"]
+        }
+      ]
+    },
+    {
+      "id": "codex-runtime-companions-are-explicit",
+      "prompt": "A Codex delivery of the launch guide must include the skills needed for CLI and browser execution.",
+      "expected_behavior": "The skill names every customer-facing companion skill it depends on and distinguishes browser/E2E support from CLI delegation.",
+      "assertions": [
+        {
+          "name": "required-companions",
+          "corpus": "skill",
+          "mustContain": [
+            "Required companion skills",
+            "segmently-cli-guide",
+            "segmently-cli-paywall-ab-rollout",
+            "segmently-cli-articles",
+            "segmently-cli-content-plan-guide",
+            "segmently-cli-custom-screen-guide",
+            "segmently-cli-figma-webembed-import",
+            "segmently-cli-image-upload",
+            "segmently-product-cli-guide",
+            "playwright-bowser",
+            "segmently-test-kit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auth-one-login-no-password",
+      "prompt": "A customer asks how authentication works.",
+      "expected_behavior": "One CLI login unlocks CLI + editor; never a password; token in keychain.",
+      "assertions": [
+        {
+          "name": "auth-rules",
+          "corpus": "skill",
+          "mustContain": ["segmently auth login", "never ask for a password", "keychain"]
+        }
+      ]
+    },
+    {
+      "id": "handoff-is-honest",
+      "prompt": "A customer asks to connect Stripe or a custom domain.",
+      "expected_behavior": "Give manual steps then run a read-only verify; never claim auto-done.",
+      "assertions": [
+        {
+          "name": "handoff-honesty",
+          "corpus": "backends",
+          "mustContain": ["handoff", "stripe connect", "domains verify", "never say \"done\""]
+        }
+      ]
+    },
+    {
+      "id": "project-status-whats-left",
+      "prompt": "A customer asks what's left to launch.",
+      "expected_behavior": "Compose CLI reads into milestones and report the next missing step.",
+      "assertions": [
+        {
+          "name": "status-reads",
+          "corpus": "status",
+          "mustContain": ["funnels list", "stripe account", "what's left", "next missing"]
+        }
+      ]
+    },
+    {
+      "id": "teach-is-composable",
+      "prompt": "A customer asks to be shown how to build their first funnel.",
+      "expected_behavior": "Narrate composable atoms: create, theme, add screens, connect, condition.",
+      "assertions": [
+        {
+          "name": "teach-atoms",
+          "corpus": "teach",
+          "mustContain": ["add screens to the canvas", "connect screens", "add a condition", "narrat"]
+        }
+      ]
+    },
+    {
+      "id": "field-level-teach-is-self-contained",
+      "prompt": "A customer asks how to change the font of a list cell.",
+      "expected_behavior": "Resolve the answer from the shipped teach reference instead of reading source code.",
+      "assertions": [
+        {
+          "name": "teach-reference-present",
+          "corpus": "skill",
+          "mustContain": ["teach-reference.json", "never read project source"]
+        },
+        {
+          "name": "font-cell-probe",
+          "corpus": "teachReference",
+          "mustContain": ["как настроить шрифт ячейки в списке", "Font size", "Options", "help-options"]
+        }
+      ]
+    },
+    {
+      "id": "do-action-runtime-is-self-contained",
+      "prompt": "A customer asks the assistant to actually change a Segmently setting, not only explain it.",
+      "expected_behavior": "The skill resolves the request through the shipped DO action registry and delegates to CLI or browser runtime, or gives an explicit unsupported reason.",
+      "assertions": [
+        {
+          "name": "do-runtime-mentioned",
+          "corpus": "skill",
+          "mustContain": ["do-action-reference.json", "editor-do-runner.mjs", "playwright-bowser", "execution", "verification", "unsupported"]
+        },
+        {
+          "name": "do-runtime-actions",
+          "corpus": "doActionReference",
+          "mustContain": ["launch.funnel.create", "editor.actionBar.primaryButton.label", "editor.paywall.attachProduct", "editor.list.options.itemTitle.fontSize", "unsupportedReason"]
+        }
+      ]
+    },
+    {
+      "id": "backends-cover-the-journey",
+      "prompt": "A customer asks about each leg of the launch.",
+      "expected_behavior": "Every leg has a backend and a verify documented.",
+      "assertions": [
+        {
+          "name": "legs-and-verify",
+          "corpus": "backends",
+          "mustContain": ["create a funnel", "connect stripe", "publish and go live", "run a sandbox test purchase"]
+        }
+      ]
+    },
+    {
+      "id": "legs-documented",
+      "prompt": "Coverage of the main launch legs across the skill.",
+      "expected_behavior": "All primary legs appear in the shipped docs/matrix.",
+      "assertions": [
+        {
+          "name": "legs-present",
+          "corpus": "all",
+          "mustContain": ["create a funnel", "apply a theme", "add a facebook pixel", "add a tiktok pixel", "go live on a custom domain", "run a sandbox test purchase"]
+        }
+      ]
+    },
+    {
+      "id": "production-is-the-default",
+      "prompt": "A customer asks which environment they are operating on.",
+      "expected_behavior": "Production is the default; never surface non-production URLs.",
+      "assertions": [
+        {
+          "name": "prod-default",
+          "corpus": "skill",
+          "mustContain": ["production is the customer default"],
+          "mustNotContain": ["dev-api.segmently", "stage-api.segmently"]
+        }
+      ]
+    },
+    {
+      "id": "no-internal-leak",
+      "prompt": "Nothing internal/admin should ship to customers.",
+      "expected_behavior": "No internal skills, internal CLI flags, or loopback markers in any shipped text.",
+      "assertions": [
+        {
+          "name": "no-internal-tokens",
+          "corpus": "all",
+          "mustNotContain": ["SEGMENTLY_CLI_INTERNAL", "segmently-cli-admin-guide", "support-flow-author", "cli-admin-guide", "deployweblocal", "worktree-local-dev", "plugin-creator", "segmently-guides-dev-to-prod", "segmently-migration", "test-login", "127.0.0.1", "data-testid", ".claude/", ".agents/", "src/modules/"]
+        }
+      ]
+    },
+    {
+      "id": "description-triggers-on-launch",
+      "prompt": "The skill should trigger on launch/funnel/publish intents.",
+      "expected_behavior": "Frontmatter description covers the launch journey.",
+      "assertions": [
+        {
+          "name": "trigger-words",
+          "corpus": "description",
+          "mustContain": ["launch", "funnel", "publish", "stripe"]
+        }
+      ]
+    }
+  ]
+}

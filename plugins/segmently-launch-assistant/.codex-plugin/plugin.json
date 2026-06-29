@@ -1,0 +1,35 @@
+{
+  "name": "segmently-launch-assistant",
+  "version": "0.1.0+codex.43236629d809",
+  "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
+  "author": {
+    "name": "Segmently"
+  },
+  "homepage": "https://segmently.ai",
+  "repository": "https://github.com/segmently/segmently-support-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "segmently",
+    "launch",
+    "cli",
+    "support",
+    "playwright"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Segmently Launch Assistant",
+    "shortDescription": "Launch funnels with CLI and browser guidance.",
+    "longDescription": "Guides customer-facing agents through Segmently funnel launch workflows, delegating CLI actions, browser walkthroughs, and verification to bundled skills.",
+    "developerName": "Segmently",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Segmently Launch Assistant to launch and verify my funnel.",
+      "Show me what is left before my Segmently funnel can go live.",
+      "Change a Segmently screen setting and verify it."
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Naive customer-surface eval corpus for the Segmently launch guide. Three independent personas ask imprecise, beginner questions across the main paid web funnel flow. Every question must be answerable from shipped text guidance plus screenshot-backed guide evidence, and DO requests must map to a CLI/E2E/handoff contract when possible.",
+  "policy": {
+    "personaCount": 3,
+    "minimumQuestionsPerPersona": 10,
+    "minimumGuidance": "text-plus-screenshot-evidence",
+    "articleHtmlRequired": false,
+    "articleLinkPreferred": true,
+    "doWhenPossible": true
+  },
+  "personas": [
+    {
+      "id": "maya-founder",
+      "name": "Maya",
+      "profile": "Solo founder selling a paid digital guide from ads. She has never used Segmently and does not know the product navigation.",
+      "virtualFlow": [
+        "Create the funnel",
+        "Pick and adjust a theme",
+        "Add an intro, question, and paywall screen",
+        "Connect screens",
+        "Change the primary button label",
+        "Style the list options",
+        "Create a paywall product",
+        "Attach the product to the paywall",
+        "Check the payment path",
+        "Publish on the default web link"
+      ],
+      "questions": [
+        {
+          "id": "maya-01",
+          "phase": "create-funnel",
+          "text": "Я вообще с нуля, куда нажать чтобы появилась первая воронка, и можешь создать черновик за меня?",
+          "expectedScenarioId": "create-funnel",
+          "guidance": { "guideKeys": ["onboarding-list-create", "onboarding-wizard-basic-info"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.funnel.create", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.funnel.create", "--projectId", "project_demo", "--funnelName", "Beginner Funnel"] }
+        },
+        {
+          "id": "maya-02",
+          "phase": "theme",
+          "text": "Что за карточки с дизайном, какую кнопку трогать чтобы не было страшно?",
+          "expectedScenarioId": "set-theme",
+          "guidance": { "guideKeys": ["onboarding-wizard-theme-select", "onboarding-wizard-theme-customize"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-03",
+          "phase": "add-screens",
+          "text": "Мне нужен вопрос и потом оплата, я не понимаю где добавлять эти экраны.",
+          "expectedScenarioId": "add-screens",
+          "guidance": { "guideKeys": ["canvas-overview", "canvas-add-screen"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-04",
+          "phase": "connect-screens",
+          "text": "Эти квадратики на поле сами не идут дальше, как их склеить между собой?",
+          "expectedScenarioId": "add-screens",
+          "guidance": { "guideKeys": ["canvas-connect-screens"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-05",
+          "phase": "button-label",
+          "text": "Кнопка снизу пишет не то, сделай чтобы было Start plan.",
+          "expectedScenarioId": "configure-actions",
+          "guidance": { "guideKeys": ["screen-editor-action-button", "screenedit-action-bar-primary-label"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.actionBar.primaryButton.label", "status": "supported", "mode": "e2e", "sampleArgs": ["--action", "editor.actionBar.primaryButton.label", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--value", "Start plan"] }
+        },
+        {
+          "id": "maya-06",
+          "phase": "list-style",
+          "text": "В вариантах буквы мелкие, сделай названия ячеек 18.",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-options", "screenedit-options-title-styles"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.list.options.itemTitle.fontSize", "status": "supported", "mode": "e2e", "sampleArgs": ["--action", "editor.list.options.itemTitle.fontSize", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--screenId", "screen_demo", "--value", "18"] }
+        },
+        {
+          "id": "maya-07",
+          "phase": "paywall-products",
+          "text": "Мне нужен товар на пейволле, где вообще создаются цены и можешь сделать тестовый план?",
+          "expectedScenarioId": "create-paywall-products",
+          "guidance": { "guideKeys": ["paywall-products-list"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.paywallProducts.create", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.paywallProducts.create", "--projectId", "project_demo", "--productName", "Pro Monthly", "--price", "19"] }
+        },
+        {
+          "id": "maya-08",
+          "phase": "attach-product",
+          "text": "Я уже сделал цену, поставь ее на экран оплаты.",
+          "expectedScenarioId": "attach-products",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-subscriptions", "screenedit-paywall-subscriptions-items"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.paywall.attachProduct", "status": "supported", "mode": "e2e", "sampleArgs": ["--action", "editor.paywall.attachProduct", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--productName", "Pro Monthly"] }
+        },
+        {
+          "id": "maya-09",
+          "phase": "test-purchase",
+          "text": "Как понять что оплата не сломалась до настоящего запуска?",
+          "expectedScenarioId": "test-purchase",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-subscriptions", "webplacement-publish-url"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-10",
+          "phase": "publish",
+          "text": "Где получить ссылку чтобы открыть это в браузере, и можешь опубликовать?",
+          "expectedScenarioId": "publish",
+          "guidance": { "guideKeys": ["webplacement-publish-url"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.publish", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.publish", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--placementName", "Default web link"] }
+        }
+      ]
+    },
+    {
+      "id": "oleg-marketer",
+      "name": "Oleg",
+      "profile": "Performance marketer running ads. He knows pixels and UTM words, but not Segmently navigation or funnel setup.",
+      "virtualFlow": [
+        "Find setup areas",
+        "Connect analytics",
+        "Add ad pixels",
+        "Configure attribution",
+        "Route ad traffic into the funnel",
+        "Connect Stripe by handoff",
+        "Create products",
+        "Publish",
+        "Verify launch state"
+      ],
+      "questions": [
+        {
+          "id": "oleg-01",
+          "phase": "analytics-location",
+          "text": "Я потерялся, где здесь вообще место для аналитики?",
+          "expectedScenarioId": "connect-analytics",
+          "guidance": { "guideKeys": ["integrations-analytics-section", "analytics-integration-list"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-02",
+          "phase": "facebook-pixel",
+          "text": "Куда вставлять фейсбук пиксель, можешь подключить id 1234567890?",
+          "expectedScenarioId": "add-fb-pixel",
+          "guidance": { "guideKeys": ["analytics-add-provider", "analytics-provider-config"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.analytics.pixel.apply", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.analytics.pixel.apply", "--projectId", "project_demo", "--pixelProvider", "facebook", "--pixelId", "1234567890"] }
+        },
+        {
+          "id": "oleg-03",
+          "phase": "tiktok-pixel",
+          "text": "У меня тикток код, это туда же или где-то в другом месте, подключи его если можно.",
+          "expectedScenarioId": "add-tiktok-pixel",
+          "guidance": { "guideKeys": ["analytics-add-provider", "analytics-provider-config"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.analytics.pixel.apply", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.analytics.pixel.apply", "--projectId", "project_demo", "--pixelProvider", "tiktok", "--pixelId", "TT-123"] }
+        },
+        {
+          "id": "oleg-04",
+          "phase": "traffic-rules",
+          "text": "Как сделать чтобы люди из рекламы попадали именно в эту воронку?",
+          "expectedScenarioId": "configure-web-placement",
+          "guidance": { "guideKeys": ["webplacement-entry-rules"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-05",
+          "phase": "attribution",
+          "text": "Мне надо чтобы email и utm дошли до оплаты, куда это пихать?",
+          "expectedScenarioId": "configure-attribution",
+          "guidance": { "guideKeys": ["webplacement-stripe-metadata"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-06",
+          "phase": "stripe-connect",
+          "text": "Stripe надо подключить, ты можешь сам нажать все за меня?",
+          "expectedScenarioId": "connect-stripe",
+          "guidance": { "guideKeys": ["integrations-stripe-connect-section", "stripe-connect-oauth-guidance"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "handoff.stripe.connect", "status": "handoff", "mode": "handoff", "sampleArgs": ["--action", "handoff.stripe.connect", "--projectId", "project_demo"] }
+        },
+        {
+          "id": "oleg-07",
+          "phase": "paywall-products",
+          "text": "Мне нужен тестовый месячный план для рекламы, сделай его если можно.",
+          "expectedScenarioId": "create-paywall-products",
+          "guidance": { "guideKeys": ["paywall-products-list"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.paywallProducts.create", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.paywallProducts.create", "--projectId", "project_demo", "--productName", "Ads Monthly", "--price", "29"] }
+        },
+        {
+          "id": "oleg-08",
+          "phase": "publish",
+          "text": "Когда все готово, что нажать чтобы появилась рабочая ссылка?",
+          "expectedScenarioId": "publish",
+          "guidance": { "guideKeys": ["webplacement-publish-url"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-09",
+          "phase": "publish-do",
+          "text": "Опубликуй это на обычной ссылке, домен потом разберу.",
+          "expectedScenarioId": "publish",
+          "guidance": { "guideKeys": ["webplacement-publish-url"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "launch.publish", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.publish", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--placementName", "Ad traffic link"] }
+        },
+        {
+          "id": "oleg-10",
+          "phase": "what-left",
+          "text": "Я не понимаю что еще осталось перед запуском, покажи самый короткий следующий шаг.",
+          "expectedScenarioId": "publish",
+          "guidance": { "guideKeys": ["webplacement-publish-url", "integrations-analytics-section"], "requiresText": true, "requiresImage": true }
+        }
+      ]
+    },
+    {
+      "id": "nina-designer",
+      "name": "Nina",
+      "profile": "Course creator focused on the visual look. She describes settings by what she sees, not by product terminology.",
+      "virtualFlow": [
+        "Choose a visual baseline",
+        "Tune screen copy and background",
+        "Adjust list option typography",
+        "Tune the action button",
+        "Change the main button color",
+        "Adjust paywall subscription rows",
+        "Publish only after the flow is readable"
+      ],
+      "questions": [
+        {
+          "id": "nina-01",
+          "phase": "theme",
+          "text": "Где поменять общие цвета и шрифты, чтобы не править каждый экран руками?",
+          "expectedScenarioId": "set-theme",
+          "guidance": { "guideKeys": ["onboarding-wizard-theme-customize"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-02",
+          "phase": "copy",
+          "text": "Заголовок на первом экране не тот, где менять большой текст?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-content", "screenedit-copy-block-title"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-03",
+          "phase": "background",
+          "text": "Фон слишком шумный, где поставить нормальный цвет или картинку?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-background", "screenedit-backdrop-type"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-04",
+          "phase": "media",
+          "text": "Фото на экране обрезается, где регулируется размер картинки?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-media", "screenedit-media-scale-mode"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-05",
+          "phase": "options",
+          "text": "Карточки вариантов выглядят неаккуратно, где настраивать эти ячейки?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-options", "screenedit-options-item-layout"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-06",
+          "phase": "options-font",
+          "text": "Сделай текст в вариантах крупнее, я не знаю как называется это место.",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-options", "screenedit-options-title-styles"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.list.options.itemTitle.fontSize", "status": "supported", "mode": "e2e", "sampleArgs": ["--action", "editor.list.options.itemTitle.fontSize", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--screenId", "screen_demo", "--value", "20"] }
+        },
+        {
+          "id": "nina-07",
+          "phase": "button",
+          "text": "Нижняя кнопка слишком скучная, где менять ее текст и вид, поставь Continue.",
+          "expectedScenarioId": "configure-actions",
+          "guidance": { "guideKeys": ["screen-editor-action-button", "screenedit-action-bar-primary-label", "screenedit-action-bar-primary-container"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.actionBar.primaryButton.label", "status": "supported", "mode": "e2e", "sampleArgs": ["--action", "editor.actionBar.primaryButton.label", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--value", "Continue"] }
+        },
+        {
+          "id": "nina-08",
+          "phase": "button-color",
+          "text": "Сделай нижнюю главную кнопку желтой, я не понимаю где там цвет.",
+          "expectedScenarioId": "configure-actions",
+          "guidance": { "guideKeys": ["screen-editor-action-button", "screenedit-action-bar-primary-container"], "requiresText": true, "requiresImage": true },
+          "expectedDo": { "actionId": "editor.actionBar.primaryButton.backgroundColor", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "editor.actionBar.primaryButton.backgroundColor", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--versionId", "version_demo", "--screenId", "screen_demo", "--value", "#ffc201"] }
+        },
+        {
+          "id": "nina-09",
+          "phase": "paywall-body",
+          "text": "На оплате нужно поправить заголовок и пункты преимуществ, где это?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-body", "screenedit-paywall-body-title", "screenedit-paywall-body-features"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-10",
+          "phase": "paywall-subscriptions",
+          "text": "Карточки тарифов на оплате выглядят плохо, где менять порядок и бейдж?",
+          "expectedScenarioId": "attach-products",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-subscriptions", "screenedit-paywall-subscriptions-product-layout", "screenedit-paywall-subscriptions-badge"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-11",
+          "phase": "first-run-teach",
+          "text": "Покажи мне весь первый урок как будто я вообще первый раз открыла сервис.",
+          "expectedScenarioId": "teach-first-run",
+          "guidance": { "guideKeys": ["onboarding-list-create", "onboarding-wizard-theme-select", "canvas-add-screen", "canvas-connect-screens"], "requiresText": true, "requiresImage": true }
+        }
+      ]
+    }
+  ]
+}

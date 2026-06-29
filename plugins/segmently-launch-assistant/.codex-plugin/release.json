@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "pluginName": "segmently-launch-assistant",
+  "marketplaceName": "segmently-local",
+  "publicMarketplaceName": "segmently-support",
+  "publicRepository": "segmently/segmently-support-plugins",
+  "baseVersion": "0.1.0",
+  "version": "0.1.0+codex.43236629d809",
+  "contentHash": "43236629d8097fbdfcd6430de63c0323a7e702f2898762e959d9ef55b3255a15",
+  "cachebuster": "43236629d809",
+  "cachebusterStrategy": "content-hash",
+  "generatedAt": "2026-06-29T14:17:30.349Z",
+  "sourceGitRevision": "57314a9de2fd3c0a636d3c29c289b88f86dab0d0",
+  "includedSkills": [
+    "segmently-launch-guide",
+    "segmently-cli-guide",
+    "segmently-cli-paywall-ab-rollout",
+    "segmently-cli-articles",
+    "segmently-cli-content-plan-guide",
+    "segmently-cli-custom-screen-guide",
+    "segmently-cli-figma-webembed-import",
+    "segmently-cli-image-upload",
+    "segmently-product-cli-guide",
+    "playwright-bowser",
+    "segmently-test-kit"
+  ]
+}

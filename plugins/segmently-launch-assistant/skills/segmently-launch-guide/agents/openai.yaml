@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently Launch Guide"
+  short_description: "Launch Segmently funnels with CLI and browser help."
+  default_prompt: "Use $segmently-launch-guide to plan, do, and verify my Segmently funnel launch."
+
+policy:
+  allow_implicit_invocation: true
