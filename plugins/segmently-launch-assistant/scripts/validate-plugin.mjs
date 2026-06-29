@@ -76,6 +76,20 @@ check('manifest', () => {
   assert(manifest.interface?.category, 'manifest.interface.category is required');
 });
 
+check('claude-plugin-manifest', () => {
+  const codexManifest = JSON.parse(readFileSync(join(pluginRoot, '.codex-plugin/plugin.json'), 'utf8'));
+  const path = join(pluginRoot, '.claude-plugin/plugin.json');
+  assert(existsSync(path), 'missing .claude-plugin/plugin.json');
+  const manifest = JSON.parse(readFileSync(path, 'utf8'));
+  assert(manifest.name === 'segmently-launch-assistant', 'Claude manifest.name must be segmently-launch-assistant');
+  assert(manifest.version === codexManifest.version, 'Claude manifest.version must match Codex plugin manifest version');
+  assert(/^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/.test(String(manifest.version ?? '')), 'Claude manifest.version must be semver');
+  assert(manifest.description, 'Claude manifest.description is required');
+  assert(manifest.author?.name, 'Claude manifest.author.name is required');
+  assert(Array.isArray(manifest.skills), 'Claude manifest.skills must be an array');
+  assert(manifest.skills.includes('./skills/') || manifest.skills.includes('./skills'), 'Claude manifest.skills must include ./skills/');
+});
+
 check('release-manifest', () => {
   const manifest = JSON.parse(readFileSync(join(pluginRoot, '.codex-plugin/plugin.json'), 'utf8'));
   const path = join(pluginRoot, '.codex-plugin/release.json');
@@ -299,6 +313,19 @@ check('marketplace when colocated', () => {
   assert(entry.policy?.authentication === 'ON_INSTALL', 'marketplace policy.authentication must be ON_INSTALL');
 });
 
+check('claude-marketplace when colocated', () => {
+  const marketplacePath = join(dirname(dirname(pluginRoot)), '.claude-plugin/marketplace.json');
+  if (!existsSync(marketplacePath)) return;
+  const marketplace = JSON.parse(readFileSync(marketplacePath, 'utf8'));
+  const codexManifest = JSON.parse(readFileSync(join(pluginRoot, '.codex-plugin/plugin.json'), 'utf8'));
+  const entry = marketplace.plugins?.find(plugin => plugin.name === 'segmently-launch-assistant');
+  assert(marketplace.name === 'segmently-support', 'Claude marketplace name must be segmently-support');
+  assert(entry, 'Claude marketplace missing segmently-launch-assistant entry');
+  assert(entry.source === './plugins/segmently-launch-assistant', 'Claude marketplace source path drifted');
+  assert(entry.version === codexManifest.version, 'Claude marketplace plugin version must match plugin manifest version');
+  assert(entry.category === 'productivity', 'Claude marketplace category must be productivity');
+});
+
 if (failures.length > 0) {
   for (const failure of failures) console.error(failure);
   console.error(`${failures.length} plugin validation check(s) failed`);
@@ -352,7 +379,11 @@ function computeContentHash(root) {
   const hash = createHash('sha256');
   for (const file of listFiles(root).sort()) {
     const rel = relative(root, file).replaceAll('\\', '/');
-    if (rel === '.codex-plugin/plugin.json' || rel === '.codex-plugin/release.json') continue;
+    if (
+      rel === '.codex-plugin/plugin.json'
+      || rel === '.codex-plugin/release.json'
+      || rel === '.claude-plugin/plugin.json'
+    ) continue;
     hash.update(rel);
     hash.update('\0');
     hash.update(readFileSync(file));

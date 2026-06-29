@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29T15:38:15.482Z",
+  "generatedAt": "2026-06-29T16:56:59.387Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -22,18 +22,63 @@
     ]
   },
   "counts": {
-    "total": 1818,
+    "total": 1823,
     "byClassification": {
-      "external-https": 32,
+      "external-https": 37,
       "prod-api": 1782,
       "localhost": 4
     },
     "byStableStatus": {
-      "ok": 1818
+      "ok": 1823
     }
   },
   "blockers": [],
   "entries": [
+    {
+      "value": "https://anthropic.com/claude-code/marketplace.schema.json",
+      "file": ".claude-plugin/marketplace.json",
+      "line": 2,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://segmently.ai",
+      "file": ".claude-plugin/marketplace.json",
+      "line": 22,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://anthropic.com/claude-code/plugin.schema.json",
+      "file": "plugins/segmently-launch-assistant/.claude-plugin/plugin.json",
+      "line": 2,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://segmently.ai",
+      "file": "plugins/segmently-launch-assistant/.claude-plugin/plugin.json",
+      "line": 9,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://github.com/segmently-ai/segmently-support-plugins",
+      "file": "plugins/segmently-launch-assistant/.claude-plugin/plugin.json",
+      "line": 10,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
     {
       "value": "https://segmently.ai",
       "file": "plugins/segmently-launch-assistant/.codex-plugin/plugin.json",
@@ -55,7 +100,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 247,
+      "line": 261,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -64,7 +109,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 268,
+      "line": 282,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

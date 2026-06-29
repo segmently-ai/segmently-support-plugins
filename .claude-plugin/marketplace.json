@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "segmently-support",
+  "description": "Segmently Support",
+  "owner": {
+    "name": "Segmently"
+  },
+  "metadata": {
+    "description": "Segmently Support",
+    "version": "0.1.0+codex.0726cad49a19"
+  },
+  "plugins": [
+    {
+      "name": "segmently-launch-assistant",
+      "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
+      "version": "0.1.0+codex.0726cad49a19",
+      "author": {
+        "name": "Segmently"
+      },
+      "source": "./plugins/segmently-launch-assistant",
+      "category": "productivity",
+      "homepage": "https://segmently.ai"
+    }
+  ]
+}
