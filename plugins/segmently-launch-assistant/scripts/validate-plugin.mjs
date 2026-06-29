@@ -383,6 +383,7 @@ function computeContentHash(root) {
       rel === '.codex-plugin/plugin.json'
       || rel === '.codex-plugin/release.json'
       || rel === '.claude-plugin/plugin.json'
+      || rel.startsWith('.in_use/')
     ) continue;
     hash.update(rel);
     hash.update('\0');
