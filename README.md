@@ -2,13 +2,11 @@
 
 Public read-only Codex marketplace for Segmently customer support plugins.
 
-This branch is a preview channel. Customer-stable installation will use `--ref stable` after the prod article/image URL gate passes.
-
 
 ## Install
 
 ```bash
-codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev
+codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
