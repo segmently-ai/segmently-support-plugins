@@ -2635,6 +2635,18 @@ function assertToolPreflight(preflight, options, failures, label) {
   }
   const checks = Array.isArray(preflight.checks) ? preflight.checks : [];
   const byId = new Map(checks.map(check => [check.id, check]));
+  for (const id of ['node-runtime-version', 'npm-version', 'npx-version']) {
+    if (!byId.has(id)) failures.push(`${label} toolPreflight missing ${id}`);
+  }
+  if (byId.get('node-runtime-version')?.argv?.join(' ') !== 'node --version') {
+    failures.push(`${label} toolPreflight missing node --version check`);
+  }
+  if (byId.get('npm-version')?.argv?.join(' ') !== 'npm --version') {
+    failures.push(`${label} toolPreflight missing npm --version check`);
+  }
+  if (byId.get('npx-version')?.argv?.join(' ') !== 'npx --version') {
+    failures.push(`${label} toolPreflight missing npx --version check`);
+  }
   for (const id of ['segmently-cli-version', 'segmently-auth-status', 'segmently-capabilities']) {
     if (!byId.has(id)) failures.push(`${label} toolPreflight missing ${id}`);
   }

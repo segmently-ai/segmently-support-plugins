@@ -2,6 +2,20 @@
 
 Run preflight before live SHOW or E2E DO browser work.
 
+## Host Runtime
+
+The plugin ships skills and scripts, not the local runtime. Verify Node.js,
+npm, and npx before installing or repairing CLI/browser tooling:
+
+```bash
+node --version
+npm --version
+npx --version
+```
+
+Use Node.js 20 LTS or newer. If any command is missing, ask the customer to
+install Node.js and reopen the terminal before retrying.
+
 ## Segmently CLI
 
 Use the public Segmently CLI from PATH:

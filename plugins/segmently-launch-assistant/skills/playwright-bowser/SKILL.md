@@ -19,10 +19,14 @@ uses generated launch-guide contracts for Segmently-specific actions.
 Before live browser work:
 
 ```bash
+node --version
+npm --version
+npx --version
 segmently auth status
 playwright-cli --help
 ```
 
+If Node/npm/npx are missing, follow the plugin README host prerequisites first.
 If Segmently auth is missing, run:
 
 ```bash

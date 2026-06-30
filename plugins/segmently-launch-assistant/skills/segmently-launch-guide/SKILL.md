@@ -188,14 +188,27 @@ before live SHOW, CLI DO, or E2E/browser DO execution. This is separate from
 `authPreflight`: auth proves the customer is logged in, while `toolPreflight`
 proves the required local tools are installed and usable.
 
+- The plugin does not install host tooling. For first setup or after an update,
+  make sure the customer machine has Node.js 20 LTS or newer with `npm` and
+  `npx` on PATH. The machine-readable preflight includes `node --version`,
+  `npm --version`, and `npx --version` because npm installs the Segmently and
+  Playwright CLIs, and npx is the browser-install fallback.
+- Plugin install/update also requires Git plus the active agent host CLI. The
+  public README verifies `git --version` and either Codex
+  (`codex --version`, `codex plugin --help`) or Claude Code
+  (`claude --version`, `claude plugin --help`). These install-time checks are
+  not required for every live SHOW/DO runner after the plugin is loaded.
 - Run `toolPreflight.checks` in order before executing a live runner. For
-  Segmently-backed actions this includes `segmently --version`,
-  `segmently auth status`, and `segmently capabilities`.
+  Segmently-backed actions this includes `node --version`, `npm --version`,
+  `npx --version`, `segmently --version`, `segmently auth status`, and
+  `segmently capabilities`.
 - For SHOW and E2E/browser DO, also check `playwright-cli --help` and browser
   availability (`playwright-cli install-browser`, with the runner-provided
   fallback when needed).
-- If a check fails, run the check's `setup.argv`, rerun the failed check, then
-  retry the same runner through `toolPreflight.retry.argv` when present.
+- If a check fails and the check has `setup.argv`, run it, rerun the failed
+  check, then retry the same runner through `toolPreflight.retry.argv` when
+  present. If the check has `setup.manual=true`, ask the customer to install or
+  approve the missing host prerequisite, then rerun the failed check.
 - Do not answer that SHOW/DO is impossible just because the CLI, auth state,
   Playwright CLI, or browser binary is missing. Treat it as preparation and run
   the setup/auth flow first, asking the customer only when interactive login or

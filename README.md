@@ -5,9 +5,35 @@ Public read-only marketplace for Segmently customer support plugins.
 
 ## Required Tools
 
-The plugin installs Segmently assistant skills only. SHOW and DO modes also need
-the customer machine to have the public Segmently CLI and browser automation
-runtime installed.
+The plugin installs Segmently assistant skills and scripts only. It does not
+install the host runtime, Git, the agent host CLI, Segmently CLI, Playwright CLI,
+or browser binaries.
+
+Install and verify these host prerequisites first:
+
+```bash
+node --version
+npm --version
+npx --version
+git --version
+```
+
+Use Node.js 20 LTS or newer. Git must be able to read this GitHub marketplace
+repository for install and update operations.
+
+For Codex users, verify the Codex CLI and plugin subcommands:
+
+```bash
+codex --version
+codex plugin --help
+```
+
+For Claude Code users, verify the Claude Code CLI and plugin subcommands:
+
+```bash
+claude --version
+claude plugin --help
+```
 
 Install and authenticate the Segmently CLI before asking the assistant to read,
 change, publish, or verify project state:
@@ -17,6 +43,7 @@ npm install -g @segmently/cli
 segmently --version
 segmently auth login
 segmently auth status
+segmently capabilities
 ```
 
 Production is the default Segmently CLI target. Do not paste raw tokens into
@@ -34,8 +61,11 @@ playwright-cli install-browser
 
 If `playwright-cli install-browser` is not available in your environment, run
 `npx playwright install chromium` and then re-check `playwright-cli --help`.
-When either `segmently` or `playwright-cli` is missing, the assistant should
-run the setup/preflight flow first instead of pretending SHOW or DO succeeded.
+If Chromium still cannot launch on Linux, run
+`npx playwright install --with-deps chromium`.
+When `node`, `npm`, `npx`, `segmently`, `playwright-cli`, or the browser
+binary is missing, the assistant should run the setup/preflight flow first
+instead of pretending SHOW or DO succeeded.
 
 ## Current Project Context
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T10:02:35.112Z",
+  "generatedAt": "2026-06-30T11:55:56.530Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -155,7 +155,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/playwright-bowser-core/SKILL.md",
-      "line": 39,
+      "line": 57,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16823,7 +16823,7 @@
     {
       "value": "https://example.com",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 1900,
+      "line": 1906,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -17012,7 +17012,7 @@
     {
       "value": "https://example.com",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 2828,
+      "line": 2840,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

@@ -2437,6 +2437,12 @@ function assertToolPreflight(preflight, options = {}) {
   assert(preflight?.requiredForExecute === true, 'toolPreflight must be required before execution');
   const checks = Array.isArray(preflight.checks) ? preflight.checks : [];
   const byId = new Map(checks.map(check => [check.id, check]));
+  for (const id of ['node-runtime-version', 'npm-version', 'npx-version']) {
+    assert(byId.has(id), `toolPreflight missing ${id}`);
+  }
+  assert(byId.get('node-runtime-version')?.argv?.join(' ') === 'node --version', 'toolPreflight missing node --version check');
+  assert(byId.get('npm-version')?.argv?.join(' ') === 'npm --version', 'toolPreflight missing npm --version check');
+  assert(byId.get('npx-version')?.argv?.join(' ') === 'npx --version', 'toolPreflight missing npx --version check');
   for (const id of ['segmently-cli-version', 'segmently-auth-status', 'segmently-capabilities']) {
     assert(byId.has(id), `toolPreflight missing ${id}`);
   }

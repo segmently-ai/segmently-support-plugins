@@ -13,6 +13,40 @@ export function buildToolPreflight(args = {}, options = {}) {
   const browserName = args.browser || options.browser || process.env.SUPPORT_FLOW_PLAYWRIGHT_BROWSER || process.env.PLAYWRIGHT_MCP_BROWSER || 'chrome';
   const checks = [];
 
+  if (options.needsHostTools !== false) {
+    checks.push({
+      id: 'node-runtime-version',
+      purpose: 'Verify Node.js is installed for the plugin runtime scripts and npm-based setup commands.',
+      argv: ['node', '--version'],
+      safeToShowOutput: true,
+      expected: 'Node.js 20 LTS or newer.',
+      setup: {
+        manual: true,
+        note: 'Install Node.js 20 LTS or newer, make sure node is on PATH, then rerun this check.',
+      },
+    });
+    checks.push({
+      id: 'npm-version',
+      purpose: 'Verify npm is available to install or update the Segmently and Playwright CLIs.',
+      argv: ['npm', '--version'],
+      safeToShowOutput: true,
+      setup: {
+        manual: true,
+        note: 'Install Node.js with npm, or repair PATH so npm is available before CLI setup.',
+      },
+    });
+    checks.push({
+      id: 'npx-version',
+      purpose: 'Verify npx is available for Playwright browser fallback installs.',
+      argv: ['npx', '--version'],
+      safeToShowOutput: true,
+      setup: {
+        manual: true,
+        note: 'Install Node.js with npx, or repair PATH so npx is available before Playwright browser setup.',
+      },
+    });
+  }
+
   if (options.needsSegmently !== false) {
     checks.push({
       id: 'segmently-cli-version',
@@ -76,7 +110,7 @@ export function buildToolPreflight(args = {}, options = {}) {
     browser: options.needsBrowser === true ? browserName : null,
     checks,
     retry: Array.isArray(options.retryArgv) ? { argv: options.retryArgv } : null,
-    agentInstruction: 'Before live SHOW/DO execution, run these checks in order. If a tool/auth/browser check fails, perform the setup command, rerun the failed check, then retry the same runner. Do not claim execution failed permanently or succeeded until the checks and the runner verification pass.',
+    agentInstruction: 'Before live SHOW/DO execution, run these checks in order. If a tool/auth/browser check fails, perform setup.argv when provided; when setup.manual is true, ask the customer to install or approve the prerequisite, then rerun the failed check and retry the same runner. Do not claim execution failed permanently or succeeded until the checks and the runner verification pass.',
   };
 }
 

@@ -12,6 +12,18 @@ private selectors.
 
 ## Preflight
 
+Check Node/npm/npx before browser setup; Playwright CLI and its fallback browser
+installer depend on them:
+
+```bash
+node --version
+npm --version
+npx --version
+```
+
+Use Node.js 20 LTS or newer. If any command is missing, ask the customer to
+install Node.js and reopen the terminal before continuing.
+
 Check the browser tool before any live browser work:
 
 ```bash
@@ -29,6 +41,12 @@ If the browser install command is unavailable, use:
 
 ```bash
 npx playwright install chromium
+```
+
+If Chromium still cannot launch on Linux, use:
+
+```bash
+npx playwright install --with-deps chromium
 ```
 
 ## Session Pattern
