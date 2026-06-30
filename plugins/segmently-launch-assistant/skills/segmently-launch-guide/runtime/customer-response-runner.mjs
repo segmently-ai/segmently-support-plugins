@@ -91,6 +91,7 @@ function main() {
     show: null,
     articleFetch: null,
     missingArticleClaimed: false,
+    routingPolicy: buildRoutingPolicy(promptResolution, args),
     completionClaim: question.expectedDo
       ? 'not-completed-until-verification'
       : isShow
@@ -174,6 +175,25 @@ function buildSessionContextContract(projectContext) {
     askToSetCurrentProject: false,
     setCurrentProjectCommand: 'node runtime/session-context.mjs set-current-project --projectId <projectId> --projectName "<Project name>"',
     readError: projectContext.readError ?? null,
+  };
+}
+
+function buildRoutingPolicy(promptResolution, args) {
+  const selectedByAgent = Boolean(args.guideKeys || args.actionId || args.scenarioId);
+  return {
+    schemaVersion: 1,
+    semanticDecisionOwner: 'agent-model',
+    selectedByAgent,
+    deterministicRunnerRole: 'validate-selected-catalog-items-execution-boundaries-and-verification',
+    rawPromptRoutingRole: selectedByAgent
+      ? 'not-used-for-meaning'
+      : 'compatibility-fallback-and-regression-surface-not-primary-routing',
+    cliExecutionOwner: 'owning-customer-skill',
+    mustPreferSelectedCatalog: true,
+    mustDelegateCliDoToOwningSkill: true,
+    lowLevelCliRunnerRole:
+      'dry-run-or-approved-smoke-executor-after-the-agent-has-selected-an-action-and-the-owning-skill-contract',
+    resolverKind: promptResolution?.resolver?.kind ?? null,
   };
 }
 
@@ -584,6 +604,14 @@ function actionContractForPrompt(expectedDo, action) {
       missingInputs: [],
       executeWith: plan.executeWith ?? null,
       execution: plan.execution ?? null,
+      routingPolicy: {
+        semanticDecisionOwner: 'agent-model',
+        rawPromptActionRouting: 'compatibility-fallback-not-primary',
+        selectedActionRequiredForPrimaryFlow:
+          'For customer-facing CLI DO, select the action semantically from do-action-reference.json first, then call this runner with --guideKeys and --actionId.',
+        delegateFirstToOwningSkill: plan.executeWith?.skill ?? action.owningSkill ?? null,
+        runnerRole: 'validate-inputs-materialize-contract-and-verification',
+      },
       toolPreflight: buildToolPreflight({}, {
         needsSegmently: true,
         needsBrowser: action.mode === 'e2e',
@@ -599,6 +627,14 @@ function actionContractForPrompt(expectedDo, action) {
       missingInputs: plan.missingInputs ?? [],
       reason: plan.reason,
       teachFallback: plan.teachFallback ?? null,
+      routingPolicy: {
+        semanticDecisionOwner: 'agent-model',
+        rawPromptActionRouting: 'compatibility-fallback-not-primary',
+        selectedActionRequiredForPrimaryFlow:
+          'Ask for the missing inputs after the agent has selected the intended action and owning skill.',
+        delegateFirstToOwningSkill: action.owningSkill ?? null,
+        runnerRole: 'validate-missing-inputs-and-safe-next-step',
+      },
       toolPreflight: buildToolPreflight({}, {
         needsSegmently: true,
         needsBrowser: action.mode === 'e2e',

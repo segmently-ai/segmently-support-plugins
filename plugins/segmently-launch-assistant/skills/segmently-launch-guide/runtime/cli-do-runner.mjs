@@ -68,6 +68,7 @@ function main() {
       mode: plan.mode,
       owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
       commandFamily: plan.execution.commandFamily,
+      routingPolicy: cliRoutingPolicy(plan),
       segmentlyEnv: prepared.segmentlyEnv,
       requiresExecute: true,
       execution: plan.execution,
@@ -97,6 +98,7 @@ function main() {
     mode: plan.mode,
     owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
     commandFamily: plan.execution.commandFamily,
+    routingPolicy: cliRoutingPolicy(plan),
     segmentlyEnv: prepared.segmentlyEnv,
     toolPreflight: prepared.toolPreflight,
     writtenFiles,
@@ -144,6 +146,22 @@ function main() {
 
   writeJson(output);
   if (!output.ok) process.exitCode = 1;
+}
+
+function cliRoutingPolicy(plan) {
+  return {
+    schemaVersion: 1,
+    semanticDecisionOwner: 'agent-model',
+    primaryExecutionOwner: plan.executeWith?.skill ?? plan.execution?.owningSkill ?? null,
+    mustDelegateCliDoToOwningSkill: true,
+    runnerRole: 'dry-run-or-approved-smoke-executor-after-owning-skill-selection',
+    lowLevelExecutionAllowedOnlyAfter: [
+      'the agent selected the action semantically from shipped catalog references',
+      'the customer approved the mutation',
+      'tool/auth preflight passed',
+      'verification readback is available',
+    ],
+  };
 }
 
 function ensureExecuteArgv(argv) {

@@ -271,6 +271,34 @@ companion skill id, then explain it in plain language. Do not paste internal
 command details. The standalone CLI orchestrator (`segmently-cli-guide`) stays
 usable on its own for customers who do not want this launch layer.
 
+The launch assistant is not the primary CLI reasoning engine. For customer
+requests that ask the agent to change data, the model must first select the
+meaning from the shipped catalog (`references/semantic-routing.md`,
+`references/guide-evidence.json`, `references/help-article-reference.json`, and
+`runtime/do-action-reference.json`) and choose the owning skill. Do not use raw
+`runtime/customer-response-runner.mjs --prompt ...` output as the primary action
+classifier for CLI DO. Raw prompt routing is only a compatibility fallback and
+regression surface for known phrasing.
+
+Primary CLI DO flow:
+
+1. Select the likely guide keys, action id, and owning skill semantically. If
+   two actions remain plausible, ask one targeted clarification instead of
+   forcing a deterministic fallback.
+2. Validate the selected set with
+   `node runtime/customer-response-runner.mjs --prompt "<request>" --guideKeys
+   "<selected-guide-keys>" --actionId <selected-action-id>` or
+   `node runtime/editor-do-runner.mjs --action <selected-action-id> ...`.
+3. Delegate the actual CLI workflow to `executeWith.skill`
+   (`segmently-cli-guide`, `segmently-cli-paywall-ab-rollout`,
+   `segmently-cli-custom-screen-guide`, `segmently-cli-image-upload`,
+   `segmently-cli-articles`, or another shipped customer skill). The owning skill
+   decides command sequencing, auth handling, readback, and edge cases.
+4. Use `runtime/cli-do-runner.mjs` as a dry-run/verification wrapper or approved
+   smoke executor after the action has been selected and the customer has
+   approved the mutation. Do not present it as a replacement for the owning
+   CLI skill's reasoning.
+
 ## Required companion skills
 
 This skill is an orchestrator. A Codex/installed delivery must include these
@@ -377,6 +405,12 @@ value", resolve the action before answering:
    Words like "подсказка", "guide", "article", or "статья" in the same prompt are
    evidence-request words, not Text Field placeholder intent unless the customer
    also says input field / поле ввода / placeholder.
+   This semantic selection is an agent/model step, not a deterministic raw prompt
+   fallback. If you have not selected an `actionId` yet, do not run
+   `customer-response-runner.mjs --prompt ...` and treat its guessed action as
+   authoritative. Use the runner only after you have selected the catalog
+   item(s), or explicitly mark the result as a compatibility fallback that still
+   needs model confirmation.
 1. Load `runtime/do-action-reference.json`.
 2. Match the request to one `actions[].id` even when project/funnel/screen inputs
    are still missing. In the customer answer, name the likely change in product
@@ -385,13 +419,15 @@ value", resolve the action before answering:
 3. Then run
    `node runtime/editor-do-runner.mjs --action <id> ...` with the known inputs.
 4. If the runner returns a CLI action, delegate the returned `execution` object to
-   `executeWith.skill`, or run
-   `node runtime/cli-do-runner.mjs --action <id> ... --execute` after explicit
-   approval. Without `--execute`, `cli-do-runner.mjs` is a dry-run planner that
-   shows the exact command, materialized JSON patch, and verification read. For
-   live-agent verification, pass `--resultPath <case-dir>/cli-do-runner-result.json`
-   or rely on `SUPPORT_FLOW_LIVE_AGENT_CASE_DIR`; completion is valid only when
-   that JSON result has `dryRun=false` and `completionClaim=verified`.
+   `executeWith.skill`. Run
+   `node runtime/cli-do-runner.mjs --action <id> ... --execute` only as an
+   approved low-level smoke executor after the owning skill/action selection is
+   clear and verification is available. Without `--execute`,
+   `cli-do-runner.mjs` is a dry-run planner that shows the exact command,
+   materialized JSON patch, and verification read. For live-agent verification,
+   pass `--resultPath <case-dir>/cli-do-runner-result.json` or rely on
+   `SUPPORT_FLOW_LIVE_AGENT_CASE_DIR`; completion is valid only when that JSON
+   result has `dryRun=false` and `completionClaim=verified`.
 5. If the runner returns an E2E action, use
    `node runtime/e2e-do-runner.mjs --action <id> ...` to get the dry-run browser
    execution package. With explicit customer approval, `--execute`, `--baseUrl`,

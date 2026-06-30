@@ -2,7 +2,7 @@
 /**
  * Eval runner for segmently-launch-guide.
  *
- * Fourteen gates, all must pass:
+ * Core gates, all must pass:
  *  1. Corpus evals (evals/evals.json) — substring mustContain / mustNotContain,
  *     same harness convention as segmently-cli-guide.
  *  2. Meta-guard — every customer scenario in references/scenarios.matrix.json
@@ -142,6 +142,89 @@ for (const required of [
   }
 }
 report('field-level-teach-uses-model-selected-catalog-first', fieldLevelResolverContractFailures);
+
+const cliModelSelectedRoutingFailures = [];
+for (const required of [
+  'The launch assistant is not the primary CLI reasoning engine',
+  'Do not use raw',
+  'primary action',
+  'classifier for CLI DO',
+  'Primary CLI DO flow',
+  'Delegate the actual CLI workflow to `executeWith.skill`',
+  'approved low-level smoke executor',
+]) {
+  if (!skillMarkdown.includes(required)) {
+    cliModelSelectedRoutingFailures.push(`SKILL.md missing model-selected CLI routing contract text: ${required}`);
+  }
+}
+const semanticRoutingReference = read('references/semantic-routing.md');
+for (const required of [
+  'Do not let `segmently-launch-guide` replace',
+  'The model should select the support intent, guide keys, action id, and',
+  'Avoid using:',
+  'as the primary CLI action selector',
+  'raw prompt path is a compatibility',
+  'delegate the work to that',
+]) {
+  if (!semanticRoutingReference.includes(required)) {
+    cliModelSelectedRoutingFailures.push(`semantic-routing.md missing model-selected CLI routing contract text: ${required}`);
+  }
+}
+try {
+  const selectedResponse = runCustomerPrompt([
+    '--prompt',
+    'set the screen background to black',
+    '--guideKeys',
+    'screenedit-backdrop-solid-color',
+    '--actionId',
+    'editor.screen.backgroundColor',
+    '--projectId',
+    'project_1',
+    '--funnelId',
+    'funnel_1',
+    '--versionId',
+    'version_1',
+    '--screenId',
+    'screen_1',
+    '--value',
+    '#000000',
+  ]);
+  if (selectedResponse.routingPolicy?.semanticDecisionOwner !== 'agent-model') {
+    cliModelSelectedRoutingFailures.push('selected response missing agent-model semanticDecisionOwner');
+  }
+  if (selectedResponse.routingPolicy?.selectedByAgent !== true) {
+    cliModelSelectedRoutingFailures.push('selected response must mark selectedByAgent=true when --guideKeys/--actionId are used');
+  }
+  if (selectedResponse.routingPolicy?.mustDelegateCliDoToOwningSkill !== true) {
+    cliModelSelectedRoutingFailures.push('selected response must require CLI delegation to owning skill');
+  }
+  if (selectedResponse.action?.routingPolicy?.delegateFirstToOwningSkill !== 'segmently-cli-guide') {
+    cliModelSelectedRoutingFailures.push('selected CLI action must delegate first to segmently-cli-guide');
+  }
+  const cliDryRun = runCliRunner([
+    '--action',
+    'editor.screen.backgroundColor',
+    '--projectId',
+    'project_1',
+    '--funnelId',
+    'funnel_1',
+    '--versionId',
+    'version_1',
+    '--screenId',
+    'screen_1',
+    '--value',
+    '#000000',
+  ]);
+  if (cliDryRun.routingPolicy?.primaryExecutionOwner !== 'segmently-cli-guide') {
+    cliModelSelectedRoutingFailures.push('cli-do-runner dry-run must expose segmently-cli-guide as primaryExecutionOwner');
+  }
+  if (cliDryRun.routingPolicy?.mustDelegateCliDoToOwningSkill !== true) {
+    cliModelSelectedRoutingFailures.push('cli-do-runner dry-run must require owning skill delegation');
+  }
+} catch (error) {
+  cliModelSelectedRoutingFailures.push(`model-selected CLI routing probe failed: ${error instanceof Error ? error.message : String(error)}`);
+}
+report('cli-routing:model-selected-owning-skill-first', cliModelSelectedRoutingFailures);
 
 const articleFetchCompletionWordingFailures = [];
 for (const required of [
