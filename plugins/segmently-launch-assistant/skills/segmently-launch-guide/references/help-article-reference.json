@@ -240,7 +240,7 @@
       "alias": "help-block-background",
       "title": "Background",
       "projectId": "arswew63RwQr6V4Ekb1Z",
-      "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/config.json",
       "settingCount": 0,
       "settings": [],
@@ -6524,21 +6524,21 @@
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Carousel",
           "alias": "help-block-carousel",
           "sectionType": "carousel",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-carousel/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         }
       ]
@@ -6556,21 +6556,21 @@
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Flexible Sections",
           "alias": "help-block-flexible-sections",
           "sectionType": "flexibleSections",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-flexible-sections/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/context-section.png"
         },
         {
           "title": "Sticky Container",
           "alias": "help-block-sticky-container",
           "sectionType": "stickyContainer",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-sticky-container/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/context-section.png"
         }
       ]
@@ -6588,63 +6588,63 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Media",
           "alias": "help-block-media",
           "sectionType": "media",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         },
         {
           "title": "Options",
           "alias": "help-options-grid-multi",
           "sectionType": "options",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-grid-multi/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
         }
       ]
@@ -6662,63 +6662,63 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Media",
           "alias": "help-block-media",
           "sectionType": "media",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         },
         {
           "title": "Options",
           "alias": "help-options-grid-single",
           "sectionType": "options",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-grid-single/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-single/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
         }
       ]
@@ -6736,35 +6736,35 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Content",
           "alias": "help-content-hero",
           "sectionType": "copyBlock",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-content-hero/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png"
         }
       ]
@@ -6782,35 +6782,35 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Content",
           "alias": "help-content-hero",
           "sectionType": "copyBlock",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-content-hero/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png"
         }
       ]
@@ -6828,49 +6828,49 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Hero image",
           "alias": "help-element-hero-image",
           "sectionType": "copyBlock:hero-image",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         }
       ]
@@ -6888,56 +6888,56 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Hero image",
           "alias": "help-element-hero-image",
           "sectionType": "copyBlock:hero-image",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         },
         {
           "title": "Options",
           "alias": "help-options-hero-list",
           "sectionType": "options",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-hero-list/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-hero-list/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
         }
       ]
@@ -6955,63 +6955,63 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Media",
           "alias": "help-block-media",
           "sectionType": "media",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         },
         {
           "title": "Options",
           "alias": "help-options-list-multi",
           "sectionType": "options",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-list-multi/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-list-multi/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
         }
       ]
@@ -7029,63 +7029,63 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Media",
           "alias": "help-block-media",
           "sectionType": "media",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         },
         {
           "title": "Options",
           "alias": "help-options-list-single",
           "sectionType": "options",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-list-single/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-list-single/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
         }
       ]
@@ -7103,49 +7103,49 @@
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Paywall Body",
           "alias": "help-block-paywall-body",
           "sectionType": "paywallBody",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-body/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/context-section.png"
         },
         {
           "title": "Paywall Footer",
           "alias": "help-block-paywall-footer",
           "sectionType": "paywallFooter",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-footer/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/context-section.png"
         },
         {
           "title": "Paywall Header",
           "alias": "help-block-paywall-header",
           "sectionType": "paywallHeader",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png"
         },
         {
           "title": "Paywall Media",
           "alias": "help-block-paywall-media",
           "sectionType": "paywallMedia",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/context-section.png"
         },
         {
           "title": "Paywall Subscriptions",
           "alias": "help-block-paywall-subscriptions",
           "sectionType": "paywallSubscriptions",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-subscriptions/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/context-section.png"
         }
       ]
@@ -7163,14 +7163,14 @@
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Stepper",
           "alias": "help-block-stepper",
           "sectionType": "stepper",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-stepper/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/context-section.png"
         }
       ]
@@ -7188,56 +7188,56 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Text Field",
           "alias": "help-block-text-field",
           "sectionType": "textField",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-text-field/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         }
       ]
@@ -7255,35 +7255,35 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Custom HTML",
           "alias": "help-block-custom-html",
           "sectionType": "embed",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-custom-html/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         }
       ]
@@ -7301,70 +7301,70 @@
           "title": "Action Bar",
           "alias": "help-block-action-bar",
           "sectionType": "actionBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
         },
         {
           "title": "Basic Config",
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
         },
         {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
         },
         {
           "title": "Media",
           "alias": "help-block-media",
           "sectionType": "media",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
         },
         {
           "title": "Roller",
           "alias": "help-block-roller",
           "sectionType": "roller",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-roller/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/context-section.png"
         },
         {
           "title": "Variable Binding",
           "alias": "help-block-variable-binding",
           "sectionType": "variableBinding",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
         },
         {
           "title": "Hero image",
           "alias": "help-element-hero-image",
           "sectionType": "copyBlock:hero-image",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png"
         },
         {
           "title": "Subtitle",
           "alias": "help-element-subtitle",
           "sectionType": "copyBlock:subtitle",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png"
         },
         {
           "title": "Title",
           "alias": "help-element-title",
           "sectionType": "copyBlock:title",
-          "publishedUrl": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+          "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         }
       ]

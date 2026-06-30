@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T07:38:58.695Z",
+  "generatedAt": "2026-06-30T10:02:35.112Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
     "stableForbiddenClassifications": [
       "dev-api",
+      "wrong-article-project",
       "local-artifact",
       "localhost",
       "non-https"
@@ -6857,7 +6858,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 243,
       "classification": "prod-api",
@@ -14669,7 +14670,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6527,
       "classification": "prod-api",
@@ -14687,7 +14688,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-carousel/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6534,
       "classification": "prod-api",
@@ -14705,7 +14706,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6541,
       "classification": "prod-api",
@@ -14741,7 +14742,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6559,
       "classification": "prod-api",
@@ -14759,7 +14760,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-flexible-sections/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6566,
       "classification": "prod-api",
@@ -14777,7 +14778,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-sticky-container/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6573,
       "classification": "prod-api",
@@ -14813,7 +14814,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6591,
       "classification": "prod-api",
@@ -14831,7 +14832,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6598,
       "classification": "prod-api",
@@ -14849,7 +14850,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6605,
       "classification": "prod-api",
@@ -14867,7 +14868,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6612,
       "classification": "prod-api",
@@ -14885,7 +14886,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6619,
       "classification": "prod-api",
@@ -14903,7 +14904,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6626,
       "classification": "prod-api",
@@ -14921,7 +14922,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6633,
       "classification": "prod-api",
@@ -14939,7 +14940,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6640,
       "classification": "prod-api",
@@ -14957,7 +14958,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-grid-multi/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6647,
       "classification": "prod-api",
@@ -14993,7 +14994,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6665,
       "classification": "prod-api",
@@ -15011,7 +15012,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6672,
       "classification": "prod-api",
@@ -15029,7 +15030,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6679,
       "classification": "prod-api",
@@ -15047,7 +15048,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6686,
       "classification": "prod-api",
@@ -15065,7 +15066,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6693,
       "classification": "prod-api",
@@ -15083,7 +15084,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6700,
       "classification": "prod-api",
@@ -15101,7 +15102,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6707,
       "classification": "prod-api",
@@ -15119,7 +15120,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6714,
       "classification": "prod-api",
@@ -15137,7 +15138,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-grid-single/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-single/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6721,
       "classification": "prod-api",
@@ -15173,7 +15174,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6739,
       "classification": "prod-api",
@@ -15191,7 +15192,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6746,
       "classification": "prod-api",
@@ -15209,7 +15210,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6753,
       "classification": "prod-api",
@@ -15227,7 +15228,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6760,
       "classification": "prod-api",
@@ -15245,7 +15246,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-content-hero/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6767,
       "classification": "prod-api",
@@ -15281,7 +15282,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6785,
       "classification": "prod-api",
@@ -15299,7 +15300,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6792,
       "classification": "prod-api",
@@ -15317,7 +15318,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6799,
       "classification": "prod-api",
@@ -15335,7 +15336,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6806,
       "classification": "prod-api",
@@ -15353,7 +15354,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-content-hero/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6813,
       "classification": "prod-api",
@@ -15389,7 +15390,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6831,
       "classification": "prod-api",
@@ -15407,7 +15408,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6838,
       "classification": "prod-api",
@@ -15425,7 +15426,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6845,
       "classification": "prod-api",
@@ -15443,7 +15444,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6852,
       "classification": "prod-api",
@@ -15461,7 +15462,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6859,
       "classification": "prod-api",
@@ -15479,7 +15480,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6866,
       "classification": "prod-api",
@@ -15497,7 +15498,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6873,
       "classification": "prod-api",
@@ -15533,7 +15534,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6891,
       "classification": "prod-api",
@@ -15551,7 +15552,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6898,
       "classification": "prod-api",
@@ -15569,7 +15570,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6905,
       "classification": "prod-api",
@@ -15587,7 +15588,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6912,
       "classification": "prod-api",
@@ -15605,7 +15606,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6919,
       "classification": "prod-api",
@@ -15623,7 +15624,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6926,
       "classification": "prod-api",
@@ -15641,7 +15642,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6933,
       "classification": "prod-api",
@@ -15659,7 +15660,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-hero-list/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-hero-list/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6940,
       "classification": "prod-api",
@@ -15695,7 +15696,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6958,
       "classification": "prod-api",
@@ -15713,7 +15714,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6965,
       "classification": "prod-api",
@@ -15731,7 +15732,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6972,
       "classification": "prod-api",
@@ -15749,7 +15750,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6979,
       "classification": "prod-api",
@@ -15767,7 +15768,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6986,
       "classification": "prod-api",
@@ -15785,7 +15786,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 6993,
       "classification": "prod-api",
@@ -15803,7 +15804,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7000,
       "classification": "prod-api",
@@ -15821,7 +15822,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7007,
       "classification": "prod-api",
@@ -15839,7 +15840,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-list-multi/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-list-multi/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7014,
       "classification": "prod-api",
@@ -15875,7 +15876,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7032,
       "classification": "prod-api",
@@ -15893,7 +15894,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7039,
       "classification": "prod-api",
@@ -15911,7 +15912,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7046,
       "classification": "prod-api",
@@ -15929,7 +15930,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7053,
       "classification": "prod-api",
@@ -15947,7 +15948,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7060,
       "classification": "prod-api",
@@ -15965,7 +15966,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7067,
       "classification": "prod-api",
@@ -15983,7 +15984,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7074,
       "classification": "prod-api",
@@ -16001,7 +16002,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7081,
       "classification": "prod-api",
@@ -16019,7 +16020,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-options-list-single/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-list-single/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7088,
       "classification": "prod-api",
@@ -16055,7 +16056,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7106,
       "classification": "prod-api",
@@ -16073,7 +16074,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7113,
       "classification": "prod-api",
@@ -16091,7 +16092,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-body/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7120,
       "classification": "prod-api",
@@ -16109,7 +16110,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-footer/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7127,
       "classification": "prod-api",
@@ -16127,7 +16128,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7134,
       "classification": "prod-api",
@@ -16145,7 +16146,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7141,
       "classification": "prod-api",
@@ -16163,7 +16164,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-subscriptions/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7148,
       "classification": "prod-api",
@@ -16199,7 +16200,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7166,
       "classification": "prod-api",
@@ -16217,7 +16218,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-stepper/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7173,
       "classification": "prod-api",
@@ -16253,7 +16254,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7191,
       "classification": "prod-api",
@@ -16271,7 +16272,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7198,
       "classification": "prod-api",
@@ -16289,7 +16290,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7205,
       "classification": "prod-api",
@@ -16307,7 +16308,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7212,
       "classification": "prod-api",
@@ -16325,7 +16326,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-text-field/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7219,
       "classification": "prod-api",
@@ -16343,7 +16344,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7226,
       "classification": "prod-api",
@@ -16361,7 +16362,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7233,
       "classification": "prod-api",
@@ -16379,7 +16380,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7240,
       "classification": "prod-api",
@@ -16415,7 +16416,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7258,
       "classification": "prod-api",
@@ -16433,7 +16434,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7265,
       "classification": "prod-api",
@@ -16451,7 +16452,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7272,
       "classification": "prod-api",
@@ -16469,7 +16470,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-custom-html/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7279,
       "classification": "prod-api",
@@ -16487,7 +16488,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7286,
       "classification": "prod-api",
@@ -16523,7 +16524,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7304,
       "classification": "prod-api",
@@ -16541,7 +16542,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7311,
       "classification": "prod-api",
@@ -16559,7 +16560,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7318,
       "classification": "prod-api",
@@ -16577,7 +16578,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7325,
       "classification": "prod-api",
@@ -16595,7 +16596,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-media/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7332,
       "classification": "prod-api",
@@ -16613,7 +16614,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-roller/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7339,
       "classification": "prod-api",
@@ -16631,7 +16632,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-variable-binding/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7346,
       "classification": "prod-api",
@@ -16649,7 +16650,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7353,
       "classification": "prod-api",
@@ -16667,7 +16668,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7360,
       "classification": "prod-api",
@@ -16685,7 +16686,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7367,
       "classification": "prod-api",
