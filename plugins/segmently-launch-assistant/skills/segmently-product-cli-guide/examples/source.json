@@ -1,0 +1,56 @@
+{
+  "audiences": [],
+  "tasks": [
+    {
+      "id": "task_1",
+      "name": "Improve daily focus",
+      "description": "Create a daily plan that reduces distraction."
+    }
+  ],
+  "studyCases": [
+    {
+      "id": "case_1",
+      "title": "Short setup lift",
+      "summary": "Users completed onboarding more often when the first screen asked one concrete goal."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review_1",
+      "text": "I want the app to understand my routine without asking too much."
+    }
+  ],
+  "ratings": [],
+  "bigNumbers": [],
+  "insights": {
+    "analyses": [
+      {
+        "id": "analysis_1",
+        "name": "Acme JTBD insights",
+        "summary": "Users want a faster setup that proves the app understands their goal.",
+        "aggregatedInsights": {
+          "coreJobs": [
+            {
+              "id": "core_job_1",
+              "category": "coreJobs",
+              "canonicalDescription": "Build a realistic daily focus plan quickly.",
+              "cumulativeWeight": 0.68,
+              "frequency": 12,
+              "questionText": "What are you trying to improve first?"
+            }
+          ],
+          "fears": [
+            {
+              "id": "fear_1",
+              "category": "fears",
+              "canonicalDescription": "A long setup will feel like another chore.",
+              "cumulativeWeight": 0.41,
+              "frequency": 7,
+              "questionText": "What could make setup feel too heavy?"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

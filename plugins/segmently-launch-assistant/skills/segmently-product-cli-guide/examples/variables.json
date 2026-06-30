@@ -1,0 +1,38 @@
+{
+  "primary_goal": {
+    "id": "primary_goal",
+    "name": "Primary goal",
+    "type": "enum",
+    "required": true,
+    "options": [
+      {
+        "id": "focus",
+        "label": "Improve focus",
+        "value": "focus"
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep better",
+        "value": "sleep"
+      }
+    ],
+    "insightSource": {
+      "analysisId": "analysis_1",
+      "category": "coreJobs",
+      "insightId": "core_job_1"
+    }
+  },
+  "setup_time_budget": {
+    "id": "setup_time_budget",
+    "name": "Setup time budget",
+    "type": "number",
+    "required": false,
+    "unit": "minutes",
+    "defaultValue": 2,
+    "insightSource": {
+      "analysisId": "analysis_1",
+      "category": "fears",
+      "insightId": "fear_1"
+    }
+  }
+}

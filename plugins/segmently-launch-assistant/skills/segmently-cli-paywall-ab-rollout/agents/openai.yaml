@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Paywall A/B Rollout"
+  short_description: "Create and verify sandbox paywall A/B rollouts through the CLI."
+  default_prompt: "Use $segmently-cli-paywall-ab-rollout to create a sandbox Stripe paywall A/B onboarding rollout and return the public URLs."
+
+policy:
+  allow_implicit_invocation: true

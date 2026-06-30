@@ -5,12 +5,12 @@
   "publicMarketplaceName": "segmently-support",
   "publicRepository": "segmently-ai/segmently-support-plugins",
   "baseVersion": "0.1.0",
-  "version": "0.1.0+codex.a27479ed9a15",
-  "contentHash": "a27479ed9a157372d86f92bf1c3a9f23a33939105c2fdfb91b7d44324316b014",
-  "cachebuster": "a27479ed9a15",
+  "version": "0.1.0+codex.78cc491eb8b9",
+  "contentHash": "78cc491eb8b92f6c4d930b597aaf6296ab99de6551080d6211db59224dc8a7d3",
+  "cachebuster": "78cc491eb8b9",
   "cachebusterStrategy": "content-hash",
-  "generatedAt": "2026-06-29T17:27:35.529Z",
-  "sourceGitRevision": "57314a9de2fd3c0a636d3c29c289b88f86dab0d0",
+  "generatedAt": "2026-06-30T07:38:58.695Z",
+  "sourceGitRevision": "df88fb450cb553db11633cc127d99cdf045dec75",
   "includedSkills": [
     "segmently-launch-guide",
     "segmently-cli-guide",
@@ -22,6 +22,8 @@
     "segmently-cli-image-upload",
     "segmently-product-cli-guide",
     "playwright-bowser",
-    "segmently-test-kit"
+    "segmently-test-kit",
+    "playwright-bowser-core",
+    "claude-design"
   ]
 }

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Guide"
+  short_description: "Safely clone, edit, publish, and verify Segmently funnels"
+  default_prompt: "Use $segmently-cli-guide to help me safely clone or audit funnels, change onboarding screens, publish or verify web placements, set up sandbox paywalls or A/B tests, and handle CLI auth or assets."
+
+policy:
+  allow_implicit_invocation: true

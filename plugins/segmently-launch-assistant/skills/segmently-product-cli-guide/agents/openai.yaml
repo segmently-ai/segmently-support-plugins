@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently Product CLI Guide"
+  short_description: "High-level Product CLI availability"
+  default_prompt: "Use $segmently-product-cli-guide for a customer-safe overview of Product Page CLI commands, scopes, project access, and verification."
+
+policy:
+  allow_implicit_invocation: true

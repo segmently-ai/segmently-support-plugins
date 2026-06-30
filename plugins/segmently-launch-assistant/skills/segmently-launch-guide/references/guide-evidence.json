@@ -12,8 +12,8 @@
   "guides": [
     {
       "guideKey": "onboarding-list-create",
-      "articleId": "onboarding-list-create",
-      "articleAlias": null,
+      "articleId": "AiTgHMaMhm6VcP1XZEcx",
+      "articleAlias": "onboarding-list-create",
       "referencePath": "onboarding-list-create/onboarding-list-create",
       "name": "Create an onboarding",
       "journeyStep": "Create the onboarding",
@@ -21,7 +21,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-list-create/index.html",
       "sourceRecipeKey": "create-onboarding-wizard",
       "localArticlePath": null,
       "sections": [
@@ -47,8 +47,8 @@
     },
     {
       "guideKey": "onboarding-wizard-basic-info",
-      "articleId": "onboarding-wizard-basic-info",
-      "articleAlias": null,
+      "articleId": "4S0duMXffZwA5guZUdsV",
+      "articleAlias": "onboarding-wizard-basic-info",
       "referencePath": "onboarding-wizard-basic-info/onboarding-wizard-basic-info",
       "name": "Onboarding wizard: basic information",
       "journeyStep": "Create the onboarding",
@@ -56,7 +56,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 4,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-basic-info/index.html",
       "sourceRecipeKey": "create-onboarding-wizard",
       "localArticlePath": null,
       "sections": [
@@ -109,8 +109,8 @@
     },
     {
       "guideKey": "onboarding-wizard-theme-select",
-      "articleId": "onboarding-wizard-theme-select",
-      "articleAlias": null,
+      "articleId": "1vj7J3auSNX6fK85KKuP",
+      "articleAlias": "onboarding-wizard-theme-select",
       "referencePath": "onboarding-wizard-theme-select/onboarding-wizard-theme-select",
       "name": "Onboarding wizard: theme selection",
       "journeyStep": "Choose & customize theme",
@@ -118,7 +118,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-select/index.html",
       "sourceRecipeKey": "choose-template-theme",
       "localArticlePath": null,
       "sections": [
@@ -144,8 +144,8 @@
     },
     {
       "guideKey": "onboarding-wizard-theme-customize",
-      "articleId": "onboarding-wizard-theme-customize",
-      "articleAlias": null,
+      "articleId": "Z6MyBxEKtC8aO06IPo00",
+      "articleAlias": "onboarding-wizard-theme-customize",
       "referencePath": "onboarding-wizard-theme-customize/onboarding-wizard-theme-customize",
       "name": "Onboarding wizard: theme customization",
       "journeyStep": "Choose & customize theme",
@@ -153,7 +153,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-customize/index.html",
       "sourceRecipeKey": "choose-template-theme",
       "localArticlePath": null,
       "sections": [
@@ -233,8 +233,8 @@
     },
     {
       "guideKey": "integrations-custom-domain-section",
-      "articleId": "integrations-custom-domain-section",
-      "articleAlias": null,
+      "articleId": "SMljKrbmQ8tmXw2pQ862",
+      "articleAlias": "integrations-custom-domain-section",
       "referencePath": "integrations-custom-domain-section/integrations-custom-domain-section",
       "name": "Custom Domain setup",
       "journeyStep": "Set up custom domain",
@@ -242,7 +242,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -268,8 +268,8 @@
     },
     {
       "guideKey": "custom-domain-domain-input",
-      "articleId": "custom-domain-domain-input",
-      "articleAlias": null,
+      "articleId": "1Pun1ZZAplZiapCcK6fl",
+      "articleAlias": "custom-domain-domain-input",
       "referencePath": "custom-domain-domain-input/custom-domain-domain-input",
       "name": "Custom Domain: domain input",
       "journeyStep": "Set up custom domain",
@@ -277,7 +277,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-domain-input/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -303,8 +303,8 @@
     },
     {
       "guideKey": "custom-domain-dns-setup",
-      "articleId": "custom-domain-dns-setup",
-      "articleAlias": null,
+      "articleId": "PjS3KFNmuDztegAiwsdT",
+      "articleAlias": "custom-domain-dns-setup",
       "referencePath": "custom-domain-dns-setup/custom-domain-dns-setup",
       "name": "Custom Domain: DNS setup",
       "journeyStep": "Set up custom domain",
@@ -312,7 +312,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-dns-setup/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -338,8 +338,8 @@
     },
     {
       "guideKey": "custom-domain-verification",
-      "articleId": "custom-domain-verification",
-      "articleAlias": null,
+      "articleId": "WOrHcg16rokF8OA5o9Na",
+      "articleAlias": "custom-domain-verification",
       "referencePath": "custom-domain-verification/custom-domain-verification",
       "name": "Custom Domain: verification",
       "journeyStep": "Set up custom domain",
@@ -347,7 +347,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-verification/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -373,8 +373,8 @@
     },
     {
       "guideKey": "integrations-stripe-connect-section",
-      "articleId": "integrations-stripe-connect-section",
-      "articleAlias": null,
+      "articleId": "hHEGCmwdDLwDH6UxfUlv",
+      "articleAlias": "integrations-stripe-connect-section",
       "referencePath": "integrations-stripe-connect-section/integrations-stripe-connect-section",
       "name": "Stripe Connect setup",
       "journeyStep": "Connect Stripe",
@@ -382,7 +382,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-stripe-connect-section/index.html",
       "sourceRecipeKey": "connect-stripe-account",
       "localArticlePath": null,
       "sections": [
@@ -408,8 +408,8 @@
     },
     {
       "guideKey": "stripe-connect-test-mode",
-      "articleId": "stripe-connect-test-mode",
-      "articleAlias": null,
+      "articleId": "7hzLtCVj5vULHgDls3yY",
+      "articleAlias": "stripe-connect-test-mode",
       "referencePath": "stripe-connect-test-mode/stripe-connect-test-mode",
       "name": "Stripe Connect: test mode",
       "journeyStep": "Connect Stripe",
@@ -417,7 +417,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-test-mode/index.html",
       "sourceRecipeKey": "connect-stripe-account",
       "localArticlePath": null,
       "sections": [
@@ -443,8 +443,8 @@
     },
     {
       "guideKey": "stripe-connect-live-mode",
-      "articleId": "stripe-connect-live-mode",
-      "articleAlias": null,
+      "articleId": "0BIVCuhQBZSO0SIC7el6",
+      "articleAlias": "stripe-connect-live-mode",
       "referencePath": "stripe-connect-live-mode/stripe-connect-live-mode",
       "name": "Stripe Connect: live mode",
       "journeyStep": "Connect Stripe",
@@ -452,7 +452,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-live-mode/index.html",
       "sourceRecipeKey": "connect-stripe-account",
       "localArticlePath": null,
       "sections": [
@@ -487,8 +487,8 @@
     },
     {
       "guideKey": "stripe-connect-oauth-guidance",
-      "articleId": "stripe-connect-oauth-guidance",
-      "articleAlias": null,
+      "articleId": "12upbBcVIuvzp1Bm6nw1",
+      "articleAlias": "stripe-connect-oauth-guidance",
       "referencePath": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance",
       "name": "Stripe Connect: OAuth guidance",
       "journeyStep": "Connect Stripe",
@@ -496,7 +496,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-oauth-guidance/index.html",
       "sourceRecipeKey": "connect-stripe-account",
       "localArticlePath": null,
       "sections": [
@@ -531,8 +531,8 @@
     },
     {
       "guideKey": "integrations-analytics-section",
-      "articleId": "integrations-analytics-section",
-      "articleAlias": null,
+      "articleId": "92EfQrboD7HTMHGa4DmF",
+      "articleAlias": "integrations-analytics-section",
       "referencePath": "integrations-analytics-section/integrations-analytics-section",
       "name": "Analytics setup",
       "journeyStep": "Configure analytics",
@@ -540,7 +540,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-analytics-section/index.html",
       "sourceRecipeKey": "add-analytics-integration",
       "localArticlePath": null,
       "sections": [
@@ -575,8 +575,8 @@
     },
     {
       "guideKey": "analytics-integration-list",
-      "articleId": "analytics-integration-list",
-      "articleAlias": null,
+      "articleId": "HcZH41tYXVcTVoCSnPdY",
+      "articleAlias": "analytics-integration-list",
       "referencePath": "analytics-integration-list/analytics-integration-list",
       "name": "Analytics integration list",
       "journeyStep": "Configure analytics",
@@ -584,7 +584,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-integration-list/index.html",
       "sourceRecipeKey": "add-analytics-integration",
       "localArticlePath": null,
       "sections": [
@@ -619,8 +619,8 @@
     },
     {
       "guideKey": "analytics-add-provider",
-      "articleId": "analytics-add-provider",
-      "articleAlias": null,
+      "articleId": "r5xJTdYkdRJey32Mwn4V",
+      "articleAlias": "analytics-add-provider",
       "referencePath": "analytics-add-provider/analytics-add-provider",
       "name": "Analytics: add provider",
       "journeyStep": "Configure analytics",
@@ -628,7 +628,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-add-provider/index.html",
       "sourceRecipeKey": "add-analytics-integration",
       "localArticlePath": null,
       "sections": [
@@ -654,8 +654,8 @@
     },
     {
       "guideKey": "analytics-provider-config",
-      "articleId": "analytics-provider-config",
-      "articleAlias": null,
+      "articleId": "9PzExaBZfwyRIWuDjmPL",
+      "articleAlias": "analytics-provider-config",
       "referencePath": "analytics-provider-config/analytics-provider-config",
       "name": "Analytics provider configuration",
       "journeyStep": "Configure analytics",
@@ -663,7 +663,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-provider-config/index.html",
       "sourceRecipeKey": "add-analytics-integration",
       "localArticlePath": null,
       "sections": [
@@ -761,8 +761,8 @@
     },
     {
       "guideKey": "paywall-products-list",
-      "articleId": "paywall-products-list",
-      "articleAlias": null,
+      "articleId": "rFRUFH84Sj1CWFiEFyzB",
+      "articleAlias": "paywall-products-list",
       "referencePath": "paywall-products-list/paywall-products-list",
       "name": "Paywall Products list",
       "journeyStep": "Create paywall products",
@@ -770,7 +770,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-list/index.html",
       "sourceRecipeKey": "create-paywall-product",
       "localArticlePath": null,
       "sections": [
@@ -796,8 +796,8 @@
     },
     {
       "guideKey": "paywall-products-mode-tabs",
-      "articleId": "paywall-products-mode-tabs",
-      "articleAlias": null,
+      "articleId": "wbyWzSOirchoA7lAcWvq",
+      "articleAlias": "paywall-products-mode-tabs",
       "referencePath": "paywall-products-mode-tabs/paywall-products-mode-tabs",
       "name": "Paywall Products mode tabs",
       "journeyStep": "Create paywall products",
@@ -805,7 +805,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-mode-tabs/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -831,8 +831,8 @@
     },
     {
       "guideKey": "paywall-product-basic-fields",
-      "articleId": "paywall-product-basic-fields",
-      "articleAlias": null,
+      "articleId": "O2ZkfsquuPi4EHeCHvis",
+      "articleAlias": "paywall-product-basic-fields",
       "referencePath": "paywall-product-basic-fields/paywall-product-basic-fields",
       "name": "Paywall Product: basic fields",
       "journeyStep": "Create paywall products",
@@ -840,7 +840,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-basic-fields/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -893,8 +893,8 @@
     },
     {
       "guideKey": "paywall-product-stripe-mapping",
-      "articleId": "paywall-product-stripe-mapping",
-      "articleAlias": null,
+      "articleId": "QScPElxnJt6NHMN7c7cG",
+      "articleAlias": "paywall-product-stripe-mapping",
       "referencePath": "paywall-product-stripe-mapping/paywall-product-stripe-mapping",
       "name": "Paywall Product: Stripe mapping",
       "journeyStep": "Create paywall products",
@@ -902,7 +902,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-stripe-mapping/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -928,8 +928,8 @@
     },
     {
       "guideKey": "paywall-product-price-setup",
-      "articleId": "paywall-product-price-setup",
-      "articleAlias": null,
+      "articleId": "n1LiSyhSVoxwvpZxjXAk",
+      "articleAlias": "paywall-product-price-setup",
       "referencePath": "paywall-product-price-setup/paywall-product-price-setup",
       "name": "Paywall Product: price setup",
       "journeyStep": "Create paywall products",
@@ -937,7 +937,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-price-setup/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -972,8 +972,8 @@
     },
     {
       "guideKey": "paywall-product-subscription-options",
-      "articleId": "paywall-product-subscription-options",
-      "articleAlias": null,
+      "articleId": "U6xCSa1EnpbrSNK4gc7W",
+      "articleAlias": "paywall-product-subscription-options",
       "referencePath": "paywall-product-subscription-options/paywall-product-subscription-options",
       "name": "Paywall Product: subscription options",
       "journeyStep": "Create paywall products",
@@ -981,7 +981,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": false,
       "screenshotSectionCount": 0,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-subscription-options/index.html",
       "sourceRecipeKey": null,
       "localArticlePath": null,
       "sections": [
@@ -1025,8 +1025,8 @@
     },
     {
       "guideKey": "canvas-overview",
-      "articleId": "canvas-overview",
-      "articleAlias": null,
+      "articleId": "JBpy9TbEAh3KTkaL17iT",
+      "articleAlias": "canvas-overview",
       "referencePath": "canvas-overview/canvas-overview",
       "name": "V2 canvas overview",
       "journeyStep": "Build the canvas",
@@ -1034,7 +1034,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-overview/index.html",
       "sourceRecipeKey": "open-v2-canvas",
       "localArticlePath": null,
       "sections": [
@@ -1078,8 +1078,8 @@
     },
     {
       "guideKey": "canvas-add-screen",
-      "articleId": "canvas-add-screen",
-      "articleAlias": null,
+      "articleId": "w4J8cYu29eOqNSy3uxrt",
+      "articleAlias": "canvas-add-screen",
       "referencePath": "canvas-add-screen/canvas-add-screen",
       "name": "V2 canvas: add screen",
       "journeyStep": "Build the canvas",
@@ -1087,7 +1087,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-add-screen/index.html",
       "sourceRecipeKey": "configure-canvas-screens",
       "localArticlePath": null,
       "sections": [
@@ -1140,8 +1140,8 @@
     },
     {
       "guideKey": "canvas-connect-screens",
-      "articleId": "canvas-connect-screens",
-      "articleAlias": null,
+      "articleId": "N2PggqL5XbRqV06yduSk",
+      "articleAlias": "canvas-connect-screens",
       "referencePath": "canvas-connect-screens/canvas-connect-screens",
       "name": "V2 canvas: connect screens",
       "journeyStep": "Build the canvas",
@@ -1149,7 +1149,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-connect-screens/index.html",
       "sourceRecipeKey": "connect-canvas-screens",
       "localArticlePath": null,
       "sections": [
@@ -1220,8 +1220,8 @@
     },
     {
       "guideKey": "screen-editor-overview",
-      "articleId": "screen-editor-overview",
-      "articleAlias": null,
+      "articleId": "EOQKwpuJz4t7F2gFFHnM",
+      "articleAlias": "screen-editor-overview",
       "referencePath": "screen-editor-overview/screen-editor-overview",
       "name": "Screen Editor overview",
       "journeyStep": "Edit screens",
@@ -1229,7 +1229,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/screen-editor-overview/index.html",
       "sourceRecipeKey": "configure-action-button",
       "localArticlePath": null,
       "sections": [
@@ -1273,8 +1273,8 @@
     },
     {
       "guideKey": "screen-editor-action-button",
-      "articleId": "screen-editor-action-button",
-      "articleAlias": null,
+      "articleId": "MCXyuetJcKaB5zUcX4AU",
+      "articleAlias": "screen-editor-action-button",
       "referencePath": "screen-editor-action-button/screen-editor-action-button",
       "name": "Screen Editor action button",
       "journeyStep": "Edit screens",
@@ -1282,7 +1282,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/screen-editor-action-button/index.html",
       "sourceRecipeKey": "configure-action-button",
       "localArticlePath": null,
       "sections": [
@@ -2053,8 +2053,8 @@
     },
     {
       "guideKey": "webplacement-entry-rules",
-      "articleId": "webplacement-entry-rules",
-      "articleAlias": null,
+      "articleId": "3IRqvitgLGxBf63EQR5w",
+      "articleAlias": "webplacement-entry-rules",
       "referencePath": "webplacement-entry-rules/webplacement-entry-rules",
       "name": "Web Placement entry rules",
       "journeyStep": "Route ad traffic",
@@ -2062,7 +2062,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-entry-rules/index.html",
       "sourceRecipeKey": "configure-web-placement-entry-rules",
       "localArticlePath": null,
       "sections": [
@@ -2124,8 +2124,8 @@
     },
     {
       "guideKey": "webplacement-stripe-metadata",
-      "articleId": "webplacement-stripe-metadata",
-      "articleAlias": null,
+      "articleId": "eO7MOLYeMLxSLuygeL3u",
+      "articleAlias": "webplacement-stripe-metadata",
       "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata",
       "name": "Web Placement Stripe metadata",
       "journeyStep": "Route ad traffic",
@@ -2133,7 +2133,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-stripe-metadata/index.html",
       "sourceRecipeKey": "configure-web-placement-stripe-metadata",
       "localArticlePath": null,
       "sections": [
@@ -2186,8 +2186,8 @@
     },
     {
       "guideKey": "webplacement-publish-url",
-      "articleId": "webplacement-publish-url",
-      "articleAlias": null,
+      "articleId": "zSP9jPAGn7fwchMlsRCj",
+      "articleAlias": "webplacement-publish-url",
       "referencePath": "webplacement-publish-url/webplacement-publish-url",
       "name": "Web Placement publish URL",
       "journeyStep": "Publish & verify",
@@ -2195,7 +2195,7 @@
       "hasAuthoredText": true,
       "hasScreenshotEvidence": true,
       "screenshotSectionCount": 1,
-      "fullArticleLink": null,
+      "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-publish-url/index.html",
       "sourceRecipeKey": "publish-web-placement",
       "localArticlePath": null,
       "sections": [

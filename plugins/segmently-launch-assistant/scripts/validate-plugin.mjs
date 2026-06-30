@@ -17,9 +17,11 @@ const requiredSkills = [
   "segmently-cli-image-upload",
   "segmently-product-cli-guide",
   "playwright-bowser",
-  "segmently-test-kit"
+  "segmently-test-kit",
+  "playwright-bowser-core",
+  "claude-design"
 ];
-const runtimeCompanionSkills = [
+const fullCompanionSkills = [
   "segmently-cli-guide",
   "segmently-cli-paywall-ab-rollout",
   "segmently-cli-articles",
@@ -29,8 +31,113 @@ const runtimeCompanionSkills = [
   "segmently-cli-image-upload",
   "segmently-product-cli-guide",
   "playwright-bowser",
-  "segmently-test-kit"
+  "segmently-test-kit",
+  "playwright-bowser-core",
+  "claude-design"
 ];
+const wrapperCompanionSkills = [];
+const fullCompanionExclusions = {
+  "segmently-cli-guide": [
+    "evals/**"
+  ],
+  "segmently-cli-paywall-ab-rollout": [
+    "evals/**"
+  ],
+  "segmently-cli-articles": [
+    "evals/**"
+  ],
+  "segmently-cli-content-plan-guide": [
+    "evals/**"
+  ],
+  "segmently-cli-custom-screen-guide": [
+    "evals/**"
+  ],
+  "segmently-cli-figma-webembed-import": [
+    "evals/**",
+    "scripts/receive-figma-mcp-capture.mjs"
+  ],
+  "segmently-cli-image-upload": [
+    "evals/**"
+  ],
+  "segmently-product-cli-guide": [
+    "evals/**"
+  ],
+  "playwright-bowser": [
+    "evals/**"
+  ],
+  "segmently-test-kit": [
+    "evals/**"
+  ],
+  "playwright-bowser-core": [
+    "evals/**"
+  ],
+  "claude-design": [
+    "evals/**",
+    "imports/**",
+    "evals/opt-results/**",
+    "references/import-registry.md",
+    "scripts/registry.mjs"
+  ]
+};
+const fullCompanionAllowedForbiddenTokens = {
+  "segmently-cli-guide": [
+    "--env "
+  ],
+  "segmently-cli-paywall-ab-rollout": [
+    "--env "
+  ],
+  "segmently-cli-articles": [
+    "--env "
+  ],
+  "segmently-cli-content-plan-guide": [
+    "--env "
+  ],
+  "segmently-cli-custom-screen-guide": [
+    "--env ",
+    "data-testid"
+  ],
+  "segmently-cli-figma-webembed-import": [
+    "--env ",
+    "data-testid"
+  ],
+  "segmently-cli-image-upload": [
+    "--env "
+  ],
+  "segmently-product-cli-guide": [
+    "--env "
+  ],
+  "playwright-bowser": [
+    "--env "
+  ],
+  "segmently-test-kit": [
+    "--env "
+  ],
+  "playwright-bowser-core": [
+    "--env "
+  ],
+  "claude-design": [
+    "--env ",
+    "data-testid"
+  ]
+};
+const hardForbiddenFullSkillRules = [
+  {
+    "id": "internal-cli-auth",
+    "pattern": "\\bSEGMENTLY_CLI_INTERNAL\\b|\\binternal auth\\b|\\btest-login\\b|\\bservice-admin\\b",
+    "flags": "i"
+  },
+  {
+    "id": "local-source-path",
+    "pattern": "(?:^|[\\s`\"'])((?:\\/Users\\/)|(?:\\/private\\/tmp\\b)|(?:src\\/modules\\/)|(?:modules\\/[A-Za-z0-9_-]+\\/)|(?:\\.agents\\/skills\\/)|(?:\\.claude\\/skills\\/)|(?:\\.codex\\/skills\\/))"
+  },
+  {
+    "id": "dev-or-local-host",
+    "pattern": "\\bdev-api\\.segmently\\.ai\\b|\\blocalhost\\b|\\b127\\.0\\.0\\.1\\b"
+  }
+].map(rule => ({
+  ...rule,
+  pattern: new RegExp(rule.pattern, rule.flags ?? ''),
+}));
 const internalOnlySkillNames = [
   "support-flow-author",
   "cli-admin-guide",
@@ -115,7 +222,7 @@ check('codex-plugin-shipment', () => {
 });
 
 check('customer-safety', () => {
-  for (const skillName of runtimeCompanionSkills) {
+  for (const skillName of wrapperCompanionSkills) {
     const root = join(pluginRoot, 'skills', skillName);
     const skillPath = join(root, 'SKILL.md');
     const runtimePath = join(root, 'CUSTOMER_RUNTIME.md');
@@ -124,14 +231,30 @@ check('customer-safety', () => {
     const skillText = readFileSync(skillPath, 'utf8');
     assert(skillText.includes('customer-runtime companion'), `${skillName} SKILL.md was not normalized for customer runtime`);
   }
+  for (const skillName of fullCompanionSkills) {
+    const root = join(pluginRoot, 'skills', skillName);
+    assert(existsSync(join(root, 'SKILL.md')), `${skillName} missing full customer SKILL.md`);
+    assertExcludedPathsMissing(root, fullCompanionExclusions[skillName] ?? [], skillName);
+  }
   for (const file of customerFacingFiles(join(pluginRoot, 'skills'))) {
     const text = readFileSync(file, 'utf8');
+    const skillName = pluginSkillNameForFile(file);
+    const allowedTokens = new Set(fullCompanionAllowedForbiddenTokens[skillName] ?? []);
     for (const skillName of internalOnlySkillNames) {
       assert(!text.includes(skillName), `${file} references internal-only skill ${skillName}`);
     }
     for (const token of forbiddenTokens) {
+      if (allowedTokens.has(token)) continue;
       assert(!text.includes(token), `${file} contains forbidden token ${JSON.stringify(token)}`);
     }
+  }
+});
+
+check('referential-closure', () => {
+  const skillsRoot = join(pluginRoot, 'skills');
+  for (const file of referentialClosureFiles(skillsRoot)) {
+    assertLocalMarkdownLinksExist(file);
+    assertInlinePackagedPathsExist(file, skillsRoot);
   }
 });
 
@@ -145,7 +268,7 @@ check('runtime-safety', () => {
     '.claude/',
     '.agents/',
   ];
-  for (const skillName of runtimeCompanionSkills) {
+  for (const skillName of wrapperCompanionSkills) {
     const root = join(pluginRoot, 'skills', skillName);
     const files = listFiles(root);
     for (const file of files) {
@@ -155,6 +278,13 @@ check('runtime-safety', () => {
       for (const marker of forbiddenRuntimeMarkers) {
         assert(!text.includes(marker), `${skillName}/${rel} contains runtime marker ${JSON.stringify(marker)}`);
       }
+    }
+  }
+  for (const skillName of fullCompanionSkills) {
+    const root = join(pluginRoot, 'skills', skillName);
+    assertExcludedPathsMissing(root, fullCompanionExclusions[skillName] ?? [], skillName);
+    for (const file of listFiles(root)) {
+      assertNoHardFullSkillLeak(file, root, skillName);
     }
   }
   const launchRuntimeRoot = join(pluginRoot, 'skills/segmently-launch-guide/runtime');
@@ -180,9 +310,13 @@ check('launch runtime', () => {
     'runtime/e2e-do-runner.mjs',
     'runtime/show-runner.mjs',
     'runtime/customer-response-runner.mjs',
+    'runtime/session-context.mjs',
+    'runtime/tool-preflight.mjs',
+    'references/session-context.md',
     'scripts/run-evals.mjs',
     'scripts/run-codex-forward-test.mjs',
     'scripts/audit-guide-coverage.mjs',
+    'scripts/audit-do-coverage.mjs',
     'scripts/run-customer-surface-acceptance.mjs',
     'evals/persona-flow-evals.json',
   ]) {
@@ -197,6 +331,12 @@ check('launch runtime', () => {
   assert(audit.guideEvidence?.missingSectionConcreteImageUrlCount >= 0, 'coverage audit missing section image count is invalid');
   assert(Array.isArray(audit.guideEvidence?.coverageRows), 'coverage audit guide coverage rows are missing');
   assert(audit.guideEvidence.coverageRows.length === audit.guideEvidence.totalGuides, 'coverage audit guide coverage rows do not cover every guide');
+  const doAudit = JSON.parse(execFileSync('node', [join(launchRoot, 'scripts/audit-do-coverage.mjs'), '--json', '--strict'], { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }));
+  assert(doAudit.ok === true, 'DO coverage audit strict mode failed');
+  assert(doAudit.actionRegistry?.totalActions >= 300, 'DO coverage audit action count is too low');
+  assert(doAudit.settings?.totalPublishedSettings >= 400, 'DO coverage audit setting inventory is too low');
+  assert(doAudit.settings?.anyDoSettingCount >= 150, 'DO coverage audit supported setting coverage regressed');
+  assert(doAudit.conditionalActions?.probes?.filter((probe) => probe.ok === true).length >= 2, 'DO coverage audit conditional media probes regressed');
   const customerSurface = execFileSync('node', [join(launchRoot, 'scripts/run-customer-surface-acceptance.mjs')], { encoding: 'utf8' });
   assert(customerSurface.includes('customer-surface acceptance passed'), 'customer-surface acceptance runner did not pass');
 });
@@ -361,6 +501,96 @@ function customerFacingFiles(root) {
     }
   }
   return out;
+}
+
+function referentialClosureFiles(root) {
+  if (!existsSync(root)) return [];
+  return listFiles(root).filter(file => {
+    const normalized = file.replaceAll('\\', '/');
+    return normalized.endsWith('/SKILL.md')
+      || normalized.endsWith('/CUSTOMER_RUNTIME.md')
+      || normalized.includes('/references/')
+      || normalized.includes('/docs/')
+      || normalized.includes('/hooks/');
+  }).filter(file => /\.(md|markdown)$/i.test(file) || file.endsWith('/SKILL.md') || file.endsWith('/CUSTOMER_RUNTIME.md'));
+}
+
+function assertLocalMarkdownLinksExist(file) {
+  const text = readFileSync(file, 'utf8');
+  const linkRe = /\[[^\]]*\]\(([^)]+)\)/g;
+  for (const match of text.matchAll(linkRe)) {
+    const href = cleanMarkdownHref(match[1]);
+    if (!href || shouldSkipLinkClosure(href)) continue;
+    const target = href.split('#')[0];
+    if (!target) continue;
+    const resolved = join(dirname(file), target);
+    assert(existsSync(resolved), file + ' links to missing packaged file ' + href);
+  }
+}
+
+function assertInlinePackagedPathsExist(file, skillsRoot) {
+  const text = readFileSync(file, 'utf8');
+  const relFromSkills = relative(skillsRoot, file).replaceAll('\\', '/');
+  const skillName = relFromSkills.split('/')[0];
+  if (!skillName) return;
+  const skillRoot = join(skillsRoot, skillName);
+  const inlineCodeTick = String.fromCharCode(96);
+  const pathRe = new RegExp(inlineCodeTick + '((?:references|runtime|scripts|hooks|agents|docs)/[^' + inlineCodeTick + '\\s]+\\.(?:md|mjs|json|yaml|yml|sh))' + inlineCodeTick, 'g');
+  for (const match of text.matchAll(pathRe)) {
+    const rel = match[1].split('#')[0];
+    if (!rel || rel.includes('<') || rel.includes('>')) continue;
+    assert(existsSync(join(skillRoot, rel)), file + ' references missing packaged path ' + rel);
+  }
+}
+
+function cleanMarkdownHref(raw) {
+  let href = String(raw ?? '').trim();
+  if (!href) return '';
+  if (href.startsWith('<') && href.endsWith('>')) href = href.slice(1, -1);
+  const titleMatch = href.match(/^(\S+)\s+["'][^"']+["']$/);
+  if (titleMatch) href = titleMatch[1];
+  return href;
+}
+
+function shouldSkipLinkClosure(href) {
+  const localFileLike = href.startsWith('.')
+    || href.includes('/')
+    || /\.(?:md|markdown|json|mjs|js|ts|sh|yaml|yml|txt|html?)($|#)/i.test(href);
+  return href.startsWith('#')
+    || /^[a-z][a-z0-9+.-]*:/i.test(href)
+    || href.startsWith('/')
+    || href.startsWith('mailto:')
+    || href.includes('<')
+    || href.includes('>')
+    || !localFileLike;
+}
+
+function pluginSkillNameForFile(file) {
+  const rel = relative(join(pluginRoot, 'skills'), file).replaceAll('\\', '/');
+  return rel.split('/')[0] ?? '';
+}
+
+function assertExcludedPathsMissing(root, patterns, skillName) {
+  for (const pattern of patterns ?? []) {
+    const normalized = String(pattern).replaceAll('\\', '/');
+    if (normalized.endsWith('/**')) {
+      const prefix = normalized.slice(0, -3);
+      assert(!existsSync(join(root, prefix)), skillName + ' must not ship excluded path ' + normalized);
+      continue;
+    }
+    assert(!existsSync(join(root, normalized)), skillName + ' must not ship excluded path ' + normalized);
+  }
+}
+
+function assertNoHardFullSkillLeak(file, root, skillName) {
+  const text = readFileSync(file, 'utf8');
+  const rel = relative(root, file).replaceAll('\\', '/');
+  const lines = text.split(/\r?\n/);
+  lines.forEach((line, index) => {
+    for (const rule of hardForbiddenFullSkillRules) {
+      assert(!rule.pattern.test(line), skillName + '/' + rel + ':' + (index + 1) + ' contains hard forbidden marker ' + rule.id);
+    }
+  });
 }
 
 function listFiles(root) {

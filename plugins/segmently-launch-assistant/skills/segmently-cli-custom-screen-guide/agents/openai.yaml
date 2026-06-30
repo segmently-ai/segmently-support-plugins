@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Custom Screens"
+  short_description: "Route WebEmbed data-source actions with CLI."
+  default_prompt: "Use $segmently-cli-custom-screen-guide to move WebEmbed content into data sources, route Button/SingleSelectionList actions through child edges, apply one screen at a time, and run healthcheck."
+
+policy:
+  allow_implicit_invocation: true

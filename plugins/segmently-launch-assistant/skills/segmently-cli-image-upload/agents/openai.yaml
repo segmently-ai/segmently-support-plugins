@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Image Upload"
+  short_description: "Upload chat or clipboard images to the Segmently CDN and return URLs."
+  default_prompt: "Use $segmently-cli-image-upload to save this image to the Segmently CDN and return the project, path, original URL, small URL, and asset JSON."
+
+policy:
+  allow_implicit_invocation: true

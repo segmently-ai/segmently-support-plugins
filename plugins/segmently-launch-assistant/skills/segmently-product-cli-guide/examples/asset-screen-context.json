@@ -1,0 +1,20 @@
+{
+  "slotKey": "hero",
+  "screenId": "screen_1",
+  "screenType": "HeroContent",
+  "aspectRatio": {
+    "label": "9:16",
+    "value": 0.5625,
+    "nearestPresetId": "portrait_9_16"
+  },
+  "targetBounds": {
+    "width": 390,
+    "height": 694
+  },
+  "safeArea": {
+    "top": 24,
+    "right": 16,
+    "bottom": 24,
+    "left": 16
+  }
+}

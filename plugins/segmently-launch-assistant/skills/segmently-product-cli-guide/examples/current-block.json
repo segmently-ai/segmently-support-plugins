@@ -1,0 +1,14 @@
+{
+  "id": "block_1",
+  "entityId": "welcome",
+  "name": "Welcome",
+  "blockType": "welcome",
+  "description": "Introduce the product value and ask for the user's goal.",
+  "order": 0,
+  "isFirstBlock": true,
+  "isLaunchBlock": true,
+  "position": {
+    "x": 0,
+    "y": 0
+  }
+}

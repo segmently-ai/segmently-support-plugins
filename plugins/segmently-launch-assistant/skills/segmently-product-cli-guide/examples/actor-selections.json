@@ -1,0 +1,12 @@
+{
+  "actorSelections": [
+    {
+      "audienceId": "audience_1",
+      "actorId": "actor_1"
+    },
+    {
+      "audienceId": "audience_1",
+      "actorId": "actor_2"
+    }
+  ]
+}

@@ -104,11 +104,17 @@ right built-in guide. Start with the answer itself, for example: "Да, это
 4. **Verify.** After any change, run the read that proves it (see the verify column
    in `references/backends.md`) and tell the customer the new state.
 
-Do not start an explain-only or teach-only answer with "done", "готово", or any
-similar wording that implies a change was completed. Use completion wording only
-after a DO runner executed and the verification read passed. When offering to
-apply a value for the customer, state that the change is not complete until it is
-saved and verified through the supported read-back check.
+Do not start an explain-only, teach-only, SHOW dry-run, CLI DO dry-run, E2E DO
+dry-run, or any `completionClaim` other than `verified` /
+`show-screenshot-captured` answer with "done", "готово", "готово с разбором",
+"подготовка завершена", "completed", or any similar wording that implies a task
+was completed. Use completion wording only after a DO runner executed and the
+verification read passed, or after a SHOW runner captured a screenshot. For
+dry-runs and missing-input states, start with "Разобрал запрос" / "I checked the
+request" and explicitly say that execution has not started and no data was
+changed. When offering to apply a value for the customer, state that the change
+is not complete until it is saved and verified through the supported read-back
+check.
 
 ## Knowing where the project is — "what's left to launch"
 
@@ -122,6 +128,31 @@ diff it against the goal:
   upsell). The same snapshot answers "what's left" for each.
 - Report progress as: done milestones, the next missing milestone, and the
   shortest next action. Do not re-do milestones that are already done.
+
+## Session project context
+
+Use the packaged `runtime/session-context.mjs` layer to remember the customer's
+current project across related questions. The state schema and commands are
+documented in `references/session-context.md`.
+
+- The context may store only a project id, project name, source, and lightweight
+  project history. Never store tokens, credentials, screenshots, or customer
+  content.
+- This is the shared project-context layer for Codex and Claude plugin runtimes.
+  Do not create a second context file or store project state inside a companion
+  skill.
+- If the customer gives a project link/id, treat it as explicit for the current
+  request. Ask whether to save it as the current project, then save it with
+  `node runtime/session-context.mjs set-current-project --projectId <id> --projectName "<name>"`.
+- If the customer does not give a project but the runner reports
+  `sessionContext.usingCurrentProject=true`, use that project and tell the
+  customer which project is being used. Do not ask for `projectId` again.
+- If SHOW/DO needs a project and the runner reports
+  `sessionContext.askToSetCurrentProject=true`, ask once for a project link/id
+  and the visible project name, then save it. Continue to ask only for remaining
+  target inputs such as funnel, version, screen, value, file, or video source.
+- If the customer says this request is for a different project, use the explicit
+  project for the request and offer to update the saved current project.
 
 ## Authentication (one authorization, no passwords)
 
@@ -150,6 +181,30 @@ diff it against the goal:
   file or chat message.
 - Production is the customer default. Do not mention non-production environments.
 
+## Runtime tool preflight (CLI + browser)
+
+Packaged runners expose a machine-readable `toolPreflight` contract. Use it
+before live SHOW, CLI DO, or E2E/browser DO execution. This is separate from
+`authPreflight`: auth proves the customer is logged in, while `toolPreflight`
+proves the required local tools are installed and usable.
+
+- Run `toolPreflight.checks` in order before executing a live runner. For
+  Segmently-backed actions this includes `segmently --version`,
+  `segmently auth status`, and `segmently capabilities`.
+- For SHOW and E2E/browser DO, also check `playwright-cli --help` and browser
+  availability (`playwright-cli install-browser`, with the runner-provided
+  fallback when needed).
+- If a check fails, run the check's `setup.argv`, rerun the failed check, then
+  retry the same runner through `toolPreflight.retry.argv` when present.
+- Do not answer that SHOW/DO is impossible just because the CLI, auth state,
+  Playwright CLI, or browser binary is missing. Treat it as preparation and run
+  the setup/auth flow first, asking the customer only when interactive login or
+  local install approval is required.
+- CLI-only DO must not require Playwright. SHOW and E2E/browser DO must require
+  the browser checks.
+- The preflight is declarative and customer-safe. Never print tokens or hidden
+  credential values while running it.
+
 ## Delegation — route CLI work, never reimplement it
 
 CLI is a single source of truth. For any headless change, route to the owning
@@ -160,15 +215,18 @@ customer skill and let it own the command shape:
 | Funnel create / theme / screens / variables / conditions / analytics / domains / web placement / publish / verify | `segmently-cli-guide` |
 | Sandbox Stripe paywall products + A/B | `segmently-cli-paywall-ab-rollout` |
 | Custom WebEmbed screens | `segmently-cli-custom-screen-guide` (+ `segmently-cli-figma-webembed-import`) |
+| Claude Design imports / `claude.ai/design` handoff | `claude-design` first, then `segmently-cli-custom-screen-guide` for Segmently apply and healthcheck |
 | Help / content-plan articles | `segmently-cli-articles` (+ `segmently-cli-content-plan-guide`) |
 | Image uploads to the CDN | `segmently-cli-image-upload` |
 | Product page / insights | `segmently-product-cli-guide` |
 
 For customer-facing prose, describe this as the authorized Segmently CLI or
 browser helper. Mention a companion skill name only when debugging an installed
-package or explaining a missing capability. Do not paste internal command
-details. The standalone CLI orchestrator (`segmently-cli-guide`) stays usable on
-its own for customers who do not want this launch layer.
+package, explaining a missing capability, or when the customer explicitly asks
+which installed helper owns the work. In that case, name the exact public
+companion skill id, then explain it in plain language. Do not paste internal
+command details. The standalone CLI orchestrator (`segmently-cli-guide`) stays
+usable on its own for customers who do not want this launch layer.
 
 ## Required companion skills
 
@@ -185,10 +243,37 @@ customer-facing companion skills so DO/TEACH can work without project source:
 - `segmently-product-cli-guide`
 - `playwright-bowser`
 - `segmently-test-kit`
+- `claude-design` when the installed plugin includes Claude Code delivery or
+  the user references Claude Design / `claude.ai/design`
 
 If a companion skill is missing, say which one is missing and fall back only to
 the modes still supported by the installed skills. Do not replace a missing
 customer skill with internal/admin tooling.
+
+## Claude Design routing
+
+If the customer mentions Claude Design, `claude.ai/design`, `/design`,
+`/design-sync`, `/design-login`, a `*.dc.html` file from Claude Design, or a
+"Send to Claude Code" handoff, route to `claude-design` first. Do not answer as
+generic WebEmbed/Figma import only.
+
+For Segmently application, explain the two-stage owner split:
+
+1. `claude-design` pulls/reviews the Claude Design project, chooses the right
+   workflow, and produces validated HTML/theme/custom-screen handoff artifacts.
+2. `segmently-cli-custom-screen-guide` applies those artifacts to the target
+   Segmently project/funnel/version/screen, runs custom-screen healthcheck, and
+   verifies before any publish step.
+
+Ask for the Claude Design project URL or exported HTML, plus Segmently target
+context: project, funnel/onboarding, version/draft, and whether to create a new
+screen or replace/update an existing one. Do not claim the import is done until
+the design pull/apply/healthcheck/verification steps actually run.
+
+Keep the first answer customer-facing. Do not mention Shadow DOM internals,
+generated Button/SingleSelectionList implementation details, or SDK callback
+fallbacks unless the customer asks for implementation details or a validation
+failure requires that level of troubleshooting.
 
 ## Doing it in the editor (e2e) — DO and TEACH
 
@@ -271,13 +356,24 @@ value", resolve the action before answering:
 6. If the runner returns `unsupported` or `handoff`, explain the exact reason and
    use `teachFallback` or the verify read. Never claim the change was completed.
 
-For field-level TEACH, use the built-in customer-safe corpus:
+For field-level TEACH, use the packaged resolver before manually reading the
+reference corpus:
 
-1. Load `references/teach-reference.json`.
-2. Match the customer's words to a screen type when named (List, Grid, Paywall,
-   Text Input, Flexible Layout, etc.), then to the closest block and field.
-3. Use `screens[].blocks[].articleAlias` to find the block payload in
-   `blocksByAlias`, then answer from the field/leaf labels and plain
+1. Run `node runtime/customer-response-runner.mjs --prompt "<customer request>"`
+   for screen-setting, article, SHOW, or DO phrasing. Treat its
+   `answer.articleReferences`, `answer.builtInArticleReferences`,
+   `answer.customerVisibleGuideAssets`, `answer.imageUrls`, `show`, and
+   `action` objects as the article identity and execution contract source of
+   truth. Do not manually choose a different article alias from
+   `teach-reference.json` alone.
+2. If the runner is unavailable or you need extra wording after the runner has
+   identified the guide, load `references/teach-reference.json` and
+   `references/guide-evidence.json` narrowly. Match the customer's words to a
+   screen type when named (List, Grid, Paywall, Text Input, Flexible Layout,
+   etc.), then to the closest block and field.
+3. Use the runner's selected `articleAlias`/`referencePath` first. If manually
+   reading the corpus, use `screens[].blocks[].articleAlias` to find the block
+   payload in `blocksByAlias`, then answer from the field/leaf labels and plain
    descriptions. Name the matched customer-visible block/section in the answer.
    For list or grid item/cell typography, this is usually the
    **Options / опции / варианты** area, not a generic "right panel" answer.
@@ -293,8 +389,9 @@ For field-level TEACH, use the built-in customer-safe corpus:
    **Show featured media**, **Image or video -> Video**, and
    **Upload the featured video**. Do not route this wording to onboarding
    creation or generic Media.
-4. Cross-check `references/guide-evidence.json` for the matched guide before
-   writing the customer answer. Start the answer with the matched guide/section
+4. Cross-check the runner's returned guide assets or
+   `references/guide-evidence.json` for the matched guide before writing the
+   customer answer. Start the answer with the matched guide/section
    and field meaning in customer language, then give the steps. If the guide has
    built-in section text, reuse that wording as the evidence base. If it has a
    concrete `imageUrl`, include the actual image URL in the customer answer; if
@@ -346,7 +443,11 @@ For field-level TEACH, use the built-in customer-safe corpus:
    public URL inventory, and a read-only `segmently-cli-articles` fetch command
    family. Delegate that fetch to `segmently-cli-articles` using the matching
    `articleAlias` (or `articleId` if no alias exists). Do not infer that the
-   article is missing from an empty `publicArticleLinks` array.
+   article is missing from an empty `publicArticleLinks` array. Article fetch is
+   a read-only lookup, not completed customer work: do not open the answer with
+   "Готово", "Done", "Completed", or similar completion wording. Start with the
+   useful result instead, such as "Нашёл встроенную статью..." / "Есть статья..."
+   plus the article URL, text summary, and concrete image URLs when present.
 6. Never read project source, grep local code, mention field keys, mention test ids,
    or expose internal file paths.
 

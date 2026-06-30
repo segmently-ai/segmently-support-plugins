@@ -19,6 +19,7 @@ import {
   prepareBrowserAuth,
   wrapDriverScriptWithBrowserAuth,
 } from './browser-auth-bridge.mjs';
+import { buildToolPreflight } from './tool-preflight.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const editorRunner = join(root, 'runtime/editor-do-runner.mjs');
@@ -68,6 +69,13 @@ async function main() {
     authEnv: prepared.segmentlyEnv ?? undefined,
     retryArgv: ['node', 'runtime/e2e-do-runner.mjs', ...ensureExecuteArgv(rawArgs)],
   });
+  prepared.toolPreflight = buildToolPreflight(args, {
+    baseUrl: args.baseUrl,
+    segmentlyEnv: prepared.segmentlyEnv,
+    needsSegmently: true,
+    needsBrowser: true,
+    retryArgv: ['node', 'runtime/e2e-do-runner.mjs', ...ensureExecuteArgv(rawArgs)],
+  });
   if (!args.execute) {
     writeJson({
       ok: true,
@@ -89,6 +97,7 @@ async function main() {
         env: prepared.segmentlyEnv,
       },
       authPreflight: prepared.authPreflight,
+      toolPreflight: prepared.toolPreflight,
       wouldOpen: [prepared.playwrightBin, ...prepared.openArgv],
       wouldRunCode: [prepared.playwrightBin, ...prepared.runCodeArgvPreview],
       driverScript: prepared.driverScript,
@@ -128,6 +137,7 @@ async function main() {
       reason: auth.reason ?? 'Browser authentication bridge failed.',
       authBridge: authSummary(auth),
       authPreflight: auth.authPreflight ?? prepared.authPreflight,
+      toolPreflight: prepared.toolPreflight,
       nextStepForAgent: 'Run authPreflight.statusProbe, run authPreflight.login if the probe is not authenticated, re-run the probe, then retry this E2E DO command. Do not ask the customer to do the whole flow manually unless the browser login requires their approval.',
       completionClaim: 'auth-preflight-required',
     });
@@ -151,6 +161,7 @@ async function main() {
     companionSkill: plan.executeWith?.companionSkill ?? plan.execution.companionSkill,
     commandFamily: plan.execution.commandFamily,
     authBridge: authSummary(auth),
+    toolPreflight: prepared.toolPreflight,
     segmentlyEnv: prepared.segmentlyEnv,
     browser: {
       open: commandSummary(prepared.playwrightBin, prepared.openArgv, openResult),
@@ -456,7 +467,7 @@ function printHelp() {
 
 Usage:
   node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...]
-  node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...] --env dev --execute --baseUrl <url>
+  node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...] --execute --baseUrl <url>
 
 Without --execute this runner is read-only and returns the playwright-cli open,
 run-code, close, driverScript, and verification read that would run. With
@@ -465,7 +476,8 @@ session unless --keepOpen is set, and then runs verification unless --skipVerify
 is set. When SUPPORT_FLOW_LIVE_AGENT_CASE_DIR or --resultPath is set, it also
 writes e2e-do-runner-result.json for live-agent verification.
 Use --env or SUPPORT_FLOW_SEGMENTLY_ENV / SUPPORT_FLOW_SEGMENTLY_AUTH_ENV to
-pin both browser auth and Segmently CLI verification to the same environment.
+pin both browser auth and Segmently CLI verification to the same environment
+only when the customer or harness explicitly provides one.
 By default it opens Chrome through playwright-cli; override with --browser or
 SUPPORT_FLOW_PLAYWRIGHT_BROWSER if the local install uses a different browser.
 `);

@@ -1,36 +1,136 @@
 ---
 name: segmently-cli-guide
-description: Customer-safe Segmently CLI companion for project, funnel, theme, screen, publish, analytics, domain, and verification tasks.
+description: Use this skill when a user wants safe Segmently CLI help for project or theme setup, cloning or auditing funnels, importing/exporting funnel localizations, migrating V2 onboarding screens including ListMultiPick to ListSinglePick, screen background changes, rollback cleanup, publishing or verifying funnels and web placements, setting up sandbox Stripe paywalls or A/B tests, checking launch, analytics, or domain readiness, or managing CLI auth, service tokens, and asset uploads.
 ---
 
 # Segmently CLI Guide
 
-This bundled skill is the customer-runtime companion shipped with Segmently Launch Assistant. It is generated at package time so installed Codex plugins do not inherit repository-oriented maintainer runbooks.
+Use this skill when a customer or customer-facing agent asks what Segmently CLI
+commands to run, what JSON structures to pass, how commands fit together, or how
+to safely automate a production workflow through the installed CLI.
 
-## Use
+This skill is intentionally shareable and limited to customer-facing production
+account guidance.
 
-- The launch guide returns a `do-cli` action owned by `segmently-cli-guide`.
-- A customer asks to inspect, export, patch, publish, or verify a Segmently funnel through the CLI.
+## Core Workflow
 
-## Owns
+1. Classify the goal:
+   - read/audit/export
+   - create/apply/update
+   - publish/probe
+   - authentication or service-token setup
+   - reusable customer automation
+2. Choose the smallest stable CLI surface. Prefer `/api/cli/v1` backed commands;
+   do not recommend direct Firestore writes or internal product endpoints.
+3. State required authentication:
+   - browser login for interactive use.
+   - service-token scopes for automation.
+   - active project subscription/entitlement for product operations.
+   - user auth for creating, listing, or revoking service tokens.
+4. For write commands, include a dry-run/preflight step whenever supported.
+5. Show the command chain first, then the minimal JSON manifest shapes.
+6. Explain what each command returns and which follow-up command verifies the
+   result.
 
-- Published `segmently` CLI authentication and project targeting.
-- Safe command construction for funnel, screen, theme, placement, publish, analytics, and readiness reads.
-- Verification reads after launch-guide actions.
+## Installed CLI And Production Auth
 
-## Runtime Rules
+- Use the globally installed `segmently` binary for customer workflows. Check it
+  with `segmently --version`; Product insights/source and generation details in
+  these guides assume `@segmently/cli` `0.1.4` or newer.
+- Production is the public default. Use `segmently --env prod auth status` to
+  confirm the stored session, and `segmently --env prod auth login` when the
+  CLI is not authenticated.
+- If a project command returns structured `402 payment_required` with
+  `reason: missing_capability`, read `requiredCapability`. This is project
+  feature access, not a missing CLI scope. Do not broaden service-token scopes
+  as the first fix; use a project with the required access or have the project
+  owner enable it.
+- Use `segmently capabilities` after login when debugging a newly published CLI
+  version against a target environment.
 
-- Prefer the published `segmently` CLI on PATH for CLI work.
-- Use the customer authenticated session; if auth is missing, ask the customer to run `segmently auth login` for the intended account.
-- Production is the default target unless the customer explicitly chooses another Segmently environment.
-- Never ask for raw tokens, refresh tokens, service credentials, or direct database access.
-- Do not require a repository checkout, build step, source-tree command, or maintainer-only helper.
-- Return the action result and then run the verification read named by the launch-guide action contract.
+For V2 funnel screen migrations, prefer clone-first screen-level operations over
+rebuilding screens from templates. Start by cloning the full funnel/version when
+the user wants production safety. Then choose the screen-level path by graph
+state:
+
+- Connected non-launch screen: inspect the source, clone it with
+  `copy-outgoing`, patch the clone, dry-run and review warnings, rewire only
+  incoming edges to the clone, and leave the original screen visible on the
+  canvas as rollback until a separate delete cleanup is requested.
+- Launch screen: incoming rewire cannot change launch status. On a cloned
+  funnel, patch the launch screen in place unless a future explicit set-launch
+  command exists.
+- Unconnected screen: on a cloned funnel, patch in place when rollback is the
+  original funnel; clone first only when the user needs a side-by-side visual
+  comparison.
+
+Never imply that rewire removes the old screen from the canvas. It only changes
+incoming edge targets. Use inspect plus delete as a separate cleanup operation.
+
+## Load References As Needed
+
+- Command/scopes lookup: read `references/commands.md`.
+- JSON manifest structures: read `references/manifests.md`.
+- Multi-command recipes: read `references/workflows.md`.
+- Product Page commands are available for approved workflows; keep public
+  guidance brief and avoid detailed Product mutation payloads.
+- For detailed HTML Article work (`content-plan articles create/get/apply/clone/add-image/publish`,
+  FlexibleLayout article sections, responsive article presentation settings, and
+  full article `FlowDocument` manifests), route to the packaged
+  `segmently-cli-articles` skill and the public Segmently CLI article commands.
+- For detailed Content Plan workflows, use `segmently-cli-content-plan-guide`
+  instead of expanding this general guide.
+
+Do not load every reference by default. For example, a Content Plan profile
+question should route to `segmently-cli-content-plan-guide`; a launch or A/B
+question usually needs this guide's `workflows.md`.
+
+## Response Shape
+
+When answering a CLI planning question, use this structure:
+
+```text
+Goal:
+Recommended flow:
+Required auth/scopes:
+Required subscription:
+Commands:
+Data structures:
+Verification:
+Notes / risks:
+```
+
+Keep command examples copyable. Use placeholder IDs like `<projectId>` and
+`<funnelId>` unless the user supplied real IDs. Never invent secrets or print
+token values.
+
+## Safety Rules
+
+- JSON output is the automation contract; table output is only for humans.
+- Do not expose or invent secrets. Service-token values are shown only once by
+  the CLI and must be stored in the customer's secret manager.
+- Service-token scopes do not grant product access by themselves. Project-scoped
+  commands also require the right subscription/entitlement on the project.
+- Stripe creation through the CLI should use sandbox/test-mode products unless a
+  separate production billing review is explicitly in scope.
+- For Content Plan writes, prefer `--dry-run` first and only apply explicit
+  pillar/template manifests. Do not suggest AI/task generation commands unless a
+  task-aware manifest exists.
+- For funnel screens, prefer Simplified V2 content in manifests; the backend adapter owns conversion to full StepNode schema.
+- For screen-level migrations, use `funnels screens list|get|inspect|clone|patch|rewire|delete`.
+  Do not use `funnels screens apply` to replace an existing full StepNode unless
+  the task is intentionally creating or rebuilding a screen from a supported
+  manifest/template shape.
+- `funnels screens rewire --incoming` leaves the old screen document in place.
+  Verify the old screen has `incomingEdges: []` before describing it as inactive,
+  and run `funnels screens delete` only as an explicit follow-up cleanup.
+- For A/B tests, preserve long-lived baseline/control metadata with tags,
+  baseline variant IDs, iteration IDs, and publication history filters.
 
 ## Verification
 
-- `segmently funnels export` for screen and content changes.
-- `segmently publish verify` or placement reads for public launch status.
-- Relevant project or analytics read commands for setup state.
+After editing this skill, run:
 
-Additional customer-runtime notes are in `CUSTOMER_RUNTIME.md`.
+```bash
+node <skill-root>/scripts/run-evals.mjs
+```

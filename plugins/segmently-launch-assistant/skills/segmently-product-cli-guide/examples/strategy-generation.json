@@ -1,0 +1,94 @@
+{
+  "strategyId": "strategy_1",
+  "name": "Acme onboarding",
+  "description": "Generated from reviewed Product inputs.",
+  "strategyType": "IOS Onboarding",
+  "toneOfVoice": "clear and encouraging",
+  "designDescription": "Clean mobile onboarding with concise copy and high contrast controls.",
+  "sourceData": {
+    "audiences": [],
+    "tasks": [
+      {
+        "id": "task_1",
+        "name": "Improve daily focus",
+        "description": "Create a daily plan that reduces distraction."
+      }
+    ],
+    "studyCases": [],
+    "reviews": [
+      {
+        "id": "review_1",
+        "text": "I want the app to understand my routine without asking too much."
+      }
+    ],
+    "ratings": [],
+    "bigNumbers": [],
+    "insights": {
+      "analyses": [
+        {
+          "id": "analysis_1",
+          "name": "Acme JTBD insights",
+          "summary": "Users want a faster setup that proves the app understands their goal.",
+          "aggregatedInsights": {
+            "coreJobs": [
+              {
+                "id": "core_job_1",
+                "category": "coreJobs",
+                "canonicalDescription": "Build a realistic daily focus plan quickly.",
+                "cumulativeWeight": 0.68,
+                "frequency": 12,
+                "questionText": "What are you trying to improve first?"
+              }
+            ],
+            "fears": [
+              {
+                "id": "fear_1",
+                "category": "fears",
+                "canonicalDescription": "A long setup will feel like another chore.",
+                "cumulativeWeight": 0.41,
+                "frequency": 7,
+                "questionText": "What could make setup feel too heavy?"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strategyVariables": {
+    "primary_goal": {
+      "id": "primary_goal",
+      "name": "Primary goal",
+      "type": "enum",
+      "required": true,
+      "options": [
+        {
+          "id": "focus",
+          "label": "Improve focus",
+          "value": "focus"
+        },
+        {
+          "id": "sleep",
+          "label": "Sleep better",
+          "value": "sleep"
+        }
+      ],
+      "insightSource": {
+        "analysisId": "analysis_1",
+        "category": "coreJobs",
+        "insightId": "core_job_1"
+      }
+    }
+  },
+  "generateScreens": true,
+  "insightsAnalysisId": "analysis_1",
+  "insightVariableGenerationId": "insight_vars_1",
+  "variableIds": [
+    "primary_goal"
+  ],
+  "useProjectVariables": true,
+  "provider": "google",
+  "model": "gemini-3-flash-preview",
+  "maxTokens": 64000,
+  "evalEnabled": false
+}

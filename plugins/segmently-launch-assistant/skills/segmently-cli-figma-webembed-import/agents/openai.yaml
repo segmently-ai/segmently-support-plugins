@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Figma WebEmbed Import"
+  short_description: "Extract Figma frames into portable WebEmbed artifacts and materialize CLI-ready data sources."
+  default_prompt: "Use $segmently-cli-figma-webembed-import to extract selected Figma frames into work items, convert them to WebEmbed HTML, materialize data sources, and hand off to the custom screen CLI guide."
+
+policy:
+  allow_implicit_invocation: true

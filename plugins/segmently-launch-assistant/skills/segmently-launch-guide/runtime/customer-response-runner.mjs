@@ -8,18 +8,24 @@
  * runtime/editor-do-runner.mjs without touching project source.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveProjectContext } from './session-context.mjs';
+import { buildToolPreflight } from './tool-preflight.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
+let resultPath = null;
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
+  resultPath = typeof args.resultPath === 'string' ? args.resultPath : null;
   if (args.help || (!args.prompt && (!args.persona || !args.question))) {
     printHelp();
     return;
   }
+  const projectContext = resolveProjectContext(args);
+  const effectiveArgs = argsForProjectContext(args, projectContext);
 
   const personaFlow = readJson('evals/persona-flow-evals.json');
   const guideEvidence = readJson('references/guide-evidence.json');
@@ -30,7 +36,7 @@ function main() {
   const helpArticlesByAlias = new Map((helpArticleReference.articles ?? []).map(article => [article.alias, article]));
 
   const promptResolution = args.prompt
-    ? resolvePromptQuestion(args.prompt, args, { guideEvidence, teachReference, scenarios, actions })
+    ? resolvePromptQuestion(args.prompt, effectiveArgs, { guideEvidence, teachReference, scenarios, actions })
     : null;
   const question = promptResolution?.question ?? findQuestion(personaFlow, args.persona, args.question);
   if (!question) {
@@ -74,6 +80,7 @@ function main() {
       builtInArticleReferences: builtInArticleReferences(guideContracts),
       guides: guideContracts,
     },
+    sessionContext: buildSessionContextContract(projectContext),
     action: null,
     show: null,
     articleFetch: null,
@@ -88,7 +95,7 @@ function main() {
   };
 
   if (question.expectedShow) {
-    response.show = showContract(question.expectedShow, guideContracts, args);
+    response.show = showContract(question.expectedShow, guideContracts, effectiveArgs);
     response.answer.browserPlan = response.show.browserPlan;
     response.answer.evidenceLevel = response.show.evidenceLevel;
     response.answer.nextStep = response.show.nextStep;
@@ -113,7 +120,7 @@ function main() {
   }
 
   if (question.expectedConditionalDo) {
-    response.action = conditionalBrowserDoContract(question.expectedConditionalDo, guideContracts, args);
+    response.action = conditionalBrowserDoContract(question.expectedConditionalDo, guideContracts, effectiveArgs);
     response.answer.nextStep = response.action.nextStep;
     response.answer.verification = response.action.verification ?? null;
     response.completionClaim = response.action.missingInputs?.length > 0
@@ -130,18 +137,108 @@ function main() {
       : 'article-fetch-needs-reference';
   }
 
+  applySessionContextAnswer(response, projectContext, args.prompt ?? question.text);
+
   writeJson(response);
 }
 
+function argsForProjectContext(args, projectContext) {
+  if (!projectContext.projectId || hasArg(args, 'projectId')) return args;
+  return {
+    ...args,
+    projectId: projectContext.projectId,
+    projectName: hasArg(args, 'projectName') ? args.projectName : projectContext.projectName,
+  };
+}
+
+function buildSessionContextContract(projectContext) {
+  return {
+    schemaVersion: 1,
+    contextFile: projectContext.contextFile,
+    currentProject: projectContext.currentProject
+      ? {
+          id: projectContext.currentProject.id,
+          name: projectContext.currentProject.name ?? projectContext.currentProject.id,
+          source: projectContext.currentProject.source ?? projectContext.projectIdSource,
+        }
+      : null,
+    projectIdSource: projectContext.projectIdSource,
+    usingCurrentProject: projectContext.usingStoredProject === true,
+    missingCurrentProject: projectContext.missingProject === true,
+    askToSetCurrentProject: false,
+    setCurrentProjectCommand: 'node runtime/session-context.mjs set-current-project --projectId <projectId> --projectName "<Project name>"',
+    readError: projectContext.readError ?? null,
+  };
+}
+
+function applySessionContextAnswer(response, projectContext, promptText) {
+  if (projectContext.usingStoredProject && projectContext.currentProject?.id) {
+    response.answer.contextNotice = localizedProjectContextNotice(projectContext.currentProject, promptText);
+  }
+  if (responseNeedsProjectId(response) && projectContext.missingProject) {
+    response.sessionContext.askToSetCurrentProject = true;
+    response.answer.contextSetup = localizedProjectContextSetup(promptText);
+  }
+}
+
+function responseNeedsProjectId(response) {
+  const missingInputs = [
+    ...(response.show?.missingInputs ?? []),
+    ...(response.action?.missingInputs ?? []),
+  ];
+  return missingInputs.includes('projectId');
+}
+
+function localizedProjectContextNotice(project, promptText) {
+  const label = project.name && project.name !== project.id
+    ? `"${project.name}" (${project.id})`
+    : project.id;
+  if (looksRussian(promptText)) {
+    return `Использую текущий проект ${label} из контекста Segmently. Если нужен другой проект, пришлите ссылку или id проекта.`;
+  }
+  return `Using current Segmently project ${label} from the local assistant context. Send another project link or id if this request is for a different project.`;
+}
+
+function localizedProjectContextSetup(promptText) {
+  if (looksRussian(promptText)) {
+    return 'Чтобы не спрашивать projectId каждый раз, пришлите один раз ссылку или id проекта и его название; я сохраню это как текущий проект для следующих вопросов.';
+  }
+  return 'To avoid asking for projectId each time, send the project link or id and project name once; I will save it as the current project for later questions.';
+}
+
+function looksRussian(text) {
+  return /[а-яё]/i.test(String(text ?? ''));
+}
+
 function resolvePromptQuestion(prompt, args, context) {
-  const action = resolveActionFromPrompt(prompt, context.actions.actions ?? []);
-  const scenarioId = scenarioIdForPrompt(prompt, action);
+  const integrationsCustomDomainGuideKeys = integrationsCustomDomainGuideKeysFromPrompt(prompt);
+  const integrationsAnalyticsGuideKeys = integrationsCustomDomainGuideKeys ? null : integrationsAnalyticsGuideKeysFromPrompt(prompt);
+  const integrationGuideKeys = integrationsCustomDomainGuideKeys ?? integrationsAnalyticsGuideKeys;
+  const variableBindingGuideKeys = integrationGuideKeys ? null : variableBindingGuideKeysFromPrompt(prompt);
+  const basicConfigObjectToggleGuideKeys = integrationGuideKeys || variableBindingGuideKeys ? null : basicConfigObjectToggleGuideKeysFromPrompt(prompt);
+  const optionsStructureGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys ? null : optionsStructureGuideKeysFromPrompt(prompt);
+  const headerNavigationGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys ? null : headerNavigationGuideKeysFromPrompt(prompt);
+  const paywallBodyBenefitsGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys ? null : paywallBodyBenefitsGuideKeysFromPrompt(prompt);
+  const paywallFooterLinksGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys ? null : paywallFooterLinksGuideKeysFromPrompt(prompt);
+  const layoutSpacingGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys ? null : layoutSpacingGuideKeysFromPrompt(prompt);
+  const actionBarRichStyleGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys ? null : actionBarRichStyleGuideKeysFromPrompt(prompt);
+  const carouselSlidesTimingGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys ? null : carouselSlidesTimingGuideKeysFromPrompt(prompt);
+  const customHtmlWebEmbedGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys ? null : customHtmlWebEmbedGuideKeysFromPrompt(prompt);
+  const mediaAssetLayoutGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys ? null : mediaAssetLayoutGuideKeysFromPrompt(prompt);
+  const copyTextValueGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys || mediaAssetLayoutGuideKeys ? null : copyTextValueGuideKeysFromPrompt(prompt);
+  const domainOperationGuideKeys = variableBindingGuideKeys ?? basicConfigObjectToggleGuideKeys ?? optionsStructureGuideKeys ?? headerNavigationGuideKeys ?? paywallBodyBenefitsGuideKeys ?? paywallFooterLinksGuideKeys ?? layoutSpacingGuideKeys ?? actionBarRichStyleGuideKeys ?? carouselSlidesTimingGuideKeys ?? customHtmlWebEmbedGuideKeys ?? mediaAssetLayoutGuideKeys ?? copyTextValueGuideKeys;
+  let action = domainOperationGuideKeys ? null : resolveActionFromPrompt(prompt, context.actions.actions ?? []);
   const explicitActionIntent = hasExplicitActionIntent(prompt);
   const articleFetchIntent = hasArticleFetchIntent(prompt) && !explicitActionIntent;
   const showIntent = hasShowIntent(prompt) && !explicitActionIntent && !articleFetchIntent;
-  const guideKeys = action && (explicitActionIntent || showIntent)
-    ? guideKeysForAction(action.id)
-    : resolveGuideKeysFromPrompt(prompt, context.guideEvidence, context.teachReference);
+  let guideKeys = domainOperationGuideKeys ?? (action && (explicitActionIntent || showIntent)
+    ? guideKeysForResolvedAction(action)
+    : integrationGuideKeys ?? resolveGuideKeysFromPrompt(prompt, context.guideEvidence, context.teachReference));
+  if (!action && explicitActionIntent) {
+    action = resolveActionForGuideKeys(guideKeys, context.actions.actions ?? []);
+    if (action) guideKeys = guideKeysForResolvedAction(action);
+  }
+  const scenarioId = scenarioIdForPrompt(prompt, action);
   const conditionalDo = !action && explicitActionIntent
     ? conditionalBrowserDoForGuideKeys(guideKeys)
     : null;
@@ -188,6 +285,44 @@ function resolvePromptQuestion(prompt, args, context) {
         requiresText: true,
         requiresImage: showIntent,
       },
+      copyTextValueBoundary: copyTextValueGuideKeys ? {
+        kind: 'copy-or-label-text-value',
+        reason: 'The prompt asks to change customer-facing copy/label text, not text style. This needs a locale-aware domain operation or browser flow before it can be executed safely.',
+      } : null,
+      domainOperationBoundary: variableBindingGuideKeys ? {
+        kind: 'variable-binding-domain-operation',
+        reason: 'Variable binding changes create or connect structured variable/option/score records and must not be executed as blind scalar patches.',
+      } : basicConfigObjectToggleGuideKeys ? {
+        kind: 'basic-config-object-toggle-domain-operation',
+        reason: 'Basic Config object toggles create or remove nested objects and must not be executed as blind scalar child-field patches.',
+      } : optionsStructureGuideKeys ? {
+        kind: 'options-structure-domain-operation',
+        reason: 'Options structure changes alter selection mode, ordering, layout, checkbox, spacing, or item geometry and must not be executed as blind scalar style patches.',
+      } : headerNavigationGuideKeys ? {
+        kind: 'header-navigation-domain-operation',
+        reason: 'Header navigation/progress changes can create or reconfigure button, progress, layout, icon, inset, and bar structures and must not be executed as blind text-style patches.',
+      } : paywallBodyBenefitsGuideKeys ? {
+        kind: 'paywall-body-benefits-domain-operation',
+        reason: 'Paywall body copy and benefit-list changes alter localized template text and repeated benefit records and must not be executed as blind style or subscription patches.',
+      } : paywallFooterLinksGuideKeys ? {
+        kind: 'paywall-footer-links-domain-operation',
+        reason: 'Paywall footer copy, legal links, restore links, and element ordering require paywall-aware localized text/URL semantics and must not be executed as blind style patches.',
+      } : layoutSpacingGuideKeys ? {
+        kind: 'layout-spacing-domain-operation',
+        reason: 'Content spacing and insets alter per-side layout objects and must not be executed as blind text-style, media, or subscription scalar patches.',
+      } : actionBarRichStyleGuideKeys ? {
+        kind: 'rich-visual-style-domain-operation',
+        reason: 'Action Bar gradients, shadows, motion effects, icons, secondary fills, and rich style objects require structured style validation and must not be executed as blind text-style patches.',
+      } : carouselSlidesTimingGuideKeys ? {
+        kind: 'carousel-slides-and-timing-domain-operation',
+        reason: 'Carousel slide type, slide copy, and duration settings require slide-aware structured updates and must not be executed as blind text-style or image patches.',
+      } : customHtmlWebEmbedGuideKeys ? {
+        kind: 'custom-html-webembed-domain-operation',
+        reason: 'Custom HTML/WebEmbed code, iframe sandboxing, and data sources require code-aware editor operations and must not be executed as blind scalar patches.',
+      } : mediaAssetLayoutGuideKeys ? {
+        kind: 'media-asset-layout-domain-operation',
+        reason: 'Image/media asset changes, hero image layout, option card images, and carousel slide images require asset-aware editor or domain operations with upload/source verification.',
+      } : null,
       expectedDo,
       expectedConditionalDo,
       expectedShow,
@@ -198,6 +333,30 @@ function resolvePromptQuestion(prompt, args, context) {
       actionId: expectedDo?.actionId ?? expectedConditionalDo?.actionId ?? null,
       guideKeys,
       scenarioId,
+      copyTextValueBoundary: Boolean(copyTextValueGuideKeys),
+      domainOperationBoundary: variableBindingGuideKeys
+        ? 'variable-binding-domain-operation'
+        : basicConfigObjectToggleGuideKeys
+          ? 'basic-config-object-toggle-domain-operation'
+          : optionsStructureGuideKeys
+            ? 'options-structure-domain-operation'
+            : headerNavigationGuideKeys
+              ? 'header-navigation-domain-operation'
+              : paywallBodyBenefitsGuideKeys
+                ? 'paywall-body-benefits-domain-operation'
+                : paywallFooterLinksGuideKeys
+                  ? 'paywall-footer-links-domain-operation'
+                  : layoutSpacingGuideKeys
+                    ? 'layout-spacing-domain-operation'
+                    : actionBarRichStyleGuideKeys
+                      ? 'rich-visual-style-domain-operation'
+                      : carouselSlidesTimingGuideKeys
+                        ? 'carousel-slides-and-timing-domain-operation'
+                        : customHtmlWebEmbedGuideKeys
+                          ? 'custom-html-webembed-domain-operation'
+                          : mediaAssetLayoutGuideKeys
+                            ? 'media-asset-layout-domain-operation'
+                            : null,
       conditionalDo: expectedConditionalDo
         ? {
             requiredInputs: expectedConditionalDo.requiredInputs,
@@ -302,6 +461,10 @@ function actionContract(expectedDo, action) {
       runnerOk: plan.ok === true,
       executeWith: plan.executeWith ?? null,
       execution: plan.execution ?? null,
+      toolPreflight: buildToolPreflight({}, {
+        needsSegmently: true,
+        needsBrowser: action.mode === 'e2e',
+      }),
       verification: plan.verification ?? null,
       nextStep: plan.nextStep ?? 'Execute the returned action, then run verification.',
     };
@@ -341,6 +504,10 @@ function actionContractForPrompt(expectedDo, action) {
       missingInputs: [],
       executeWith: plan.executeWith ?? null,
       execution: plan.execution ?? null,
+      toolPreflight: buildToolPreflight({}, {
+        needsSegmently: true,
+        needsBrowser: action.mode === 'e2e',
+      }),
       verification: plan.verification ?? null,
       nextStep: plan.nextStep ?? 'Execute the returned action, then run verification.',
     };
@@ -352,6 +519,10 @@ function actionContractForPrompt(expectedDo, action) {
       missingInputs: plan.missingInputs ?? [],
       reason: plan.reason,
       teachFallback: plan.teachFallback ?? null,
+      toolPreflight: buildToolPreflight({}, {
+        needsSegmently: true,
+        needsBrowser: action.mode === 'e2e',
+      }),
       verification: plan.verification ?? plan.verify ?? null,
       nextStep: plan.nextStep ?? 'Ask for the missing inputs, then run the action again.',
     };
@@ -403,6 +574,10 @@ function conditionalBrowserDoContract(expectedConditionalDo, guideContracts, arg
       browserSeed: 'runtime/show-runner.mjs seeds browser auth from the authorized CLI credential before opening the editor',
       agentInstruction: 'Do not stop at auth_required. Run status, run login if needed, re-check status, then retry the browser DO flow. Ask the customer only if browser login approval is required.',
     },
+    toolPreflight: buildToolPreflight(args, {
+      needsSegmently: true,
+      needsBrowser: true,
+    }),
     verification: {
       kind: 'browser-read',
       evidence: `After execution, reopen ${expectedConditionalDo.targetLabel} and confirm the video control contains the provided asset/source; capture a screenshot and do not claim completion without verification.`,
@@ -417,15 +592,21 @@ function buildAnswer(question, guideContracts, scenario) {
   const firstGuide = guideContracts[0];
   const firstSection = firstGuide?.textSections?.[0];
   const references = builtInArticleReferences(guideContracts);
-  const preferredReference = references.find(reference => reference.articleAlias) ?? references[0] ?? null;
+  const preferredReference = preferredGuideReference(references);
   const customerVisibleGuideAssets = buildCustomerVisibleGuideAssets(guideContracts);
+  const visualCoverage = customerVisibleGuideAssets.visualCoverage;
+  const evidencePhrase = visualCoverage.hasAnyImageUrl
+    ? 'text and concrete screenshot/image URLs'
+    : visualCoverage.hasAnyScreenshotEvidence
+      ? 'text and tracked screenshot evidence; no concrete screenshot image URL is currently shipped for this guide'
+      : 'text guidance; no screenshot image is currently shipped for this guide';
   return {
     goal: scenario?.title ?? question.phase ?? question.id,
     whereToStart: firstGuide
       ? `${firstGuide.journeyStep}: ${firstGuide.userNeed}`
       : 'Start from the matched Segmently area.',
     customerAnswerStarter: preferredReference
-      ? `The built-in Segmently guide/article is available: ${preferredReference.name} (${preferredReference.articleAlias ?? preferredReference.articleId}, reference ${preferredReference.referencePath}). Use its text and screenshot-backed guidance.`
+      ? `The built-in Segmently guide/article is available: ${preferredReference.name} (${preferredReference.articleAlias ?? preferredReference.articleId}, reference ${preferredReference.referencePath}). Use its ${evidencePhrase}.`
       : 'Use the matched Segmently guide text and ask one clarifying question if the exact screen is unclear.',
     instructions: guideContracts.flatMap(guide =>
       guide.textSections.slice(0, 2).map(section => ({
@@ -449,7 +630,7 @@ function buildAnswer(question, guideContracts, scenario) {
         }
       : null,
     articleReferenceSummary: references.length > 0
-      ? 'Built-in guide/article references are available; answer from the shipped text and screenshot evidence. Cite preferredCitation.referencePath or articleAlias when a locator is useful.'
+      ? articleReferenceSummaryForVisualCoverage(visualCoverage)
       : 'No built-in guide/article reference matched this prompt.',
     missingArticleClaimed: false,
     articleReferences: guideContracts.map(guide => ({
@@ -469,21 +650,23 @@ function buildAnswer(question, guideContracts, scenario) {
       referencePath: guide.referencePath,
       hasBuiltInArticleReference: Boolean(guide.articleId || guide.articleAlias || guide.localArticlePath),
       publicArticleUrlStatus: guide.fullArticleLink ? 'published' : 'built-in-reference',
-      customerSafeMessage: guide.fullArticleLink
-        ? 'A public article URL is available and should be included in the customer answer together with the relevant screenshot URLs.'
-        : 'Built-in guide/article text is available with screenshot-backed guidance; do not describe the article as missing.',
+      hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
+      hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
+      visualCoverageStatus: guideVisualCoverageStatus(guide),
+      customerSafeMessage: articleAvailabilityMessageForGuide(guide),
     })),
     imageUrls: customerVisibleGuideAssets.imageUrls,
     customerVisibleGuideAssets,
     verification: scenario?.verify ?? null,
-    nextStep: teachNextStepForGuides(guideContracts),
-    showDoOptions: teachShowDoOptionsForGuides(guideContracts),
+    nextStep: teachNextStepForGuides(guideContracts, question),
+    showDoOptions: teachShowDoOptionsForGuides(guideContracts, question),
   };
 }
 
 function buildCustomerVisibleGuideAssets(guideContracts) {
   const publicArticleLinks = uniqueStrings(guideContracts.map(guide => guide.fullArticleLink).filter(Boolean));
   const imageUrls = uniqueStrings(guideContracts.flatMap(guide => guide.imageUrls ?? []).filter(Boolean));
+  const visualCoverage = summarizeGuideVisualCoverage(guideContracts);
   const guideReferences = guideContracts
     .filter(guide => guide.articleId || guide.articleAlias || guide.referencePath)
     .map(guide => ({
@@ -495,23 +678,197 @@ function buildCustomerVisibleGuideAssets(guideContracts) {
       articleSectionUrl: guide.articleSectionUrl ?? null,
       hasPublicArticleUrl: Boolean(guide.fullArticleLink),
       imageUrls: uniqueStrings(guide.imageUrls ?? []),
+      hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
+      hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
+      visualCoverageStatus: guideVisualCoverageStatus(guide),
     }));
   return {
     mustShowInCustomerAnswer: true,
     publicArticleLinks,
     imageUrls,
+    visualCoverage,
     guideReferences,
-    instruction: 'In the customer answer, include the public article URL when present and include concrete image URLs when present. If no public article URL is present, cite the guide name plus articleAlias/referencePath and still show the image URL(s); do not merely say screenshots exist.',
+    instruction: customerVisibleGuideAssetsInstruction(visualCoverage),
   };
+}
+
+function summarizeGuideVisualCoverage(guideContracts) {
+  const guideStatuses = guideContracts.map(guide => ({
+    guideKey: guide.guideKey,
+    articleAlias: guide.articleAlias ?? null,
+    status: guideVisualCoverageStatus(guide),
+    hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
+    hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
+  }));
+  const hasAnyImageUrl = guideStatuses.some(item => item.hasConcreteImageUrl);
+  const hasAnyScreenshotEvidence = guideStatuses.some(item => item.hasScreenshotEvidence);
+  const status = hasAnyImageUrl
+    ? 'image-url-available'
+    : hasAnyScreenshotEvidence
+      ? 'screenshot-evidence-missing-image-url'
+      : 'text-only-no-screenshot-evidence';
+  return {
+    status,
+    hasAnyImageUrl,
+    hasAnyScreenshotEvidence,
+    guideStatuses,
+    missingImageReason: hasAnyImageUrl
+      ? null
+      : hasAnyScreenshotEvidence
+        ? 'Screenshot-backed evidence is tracked, but no concrete https image URL is shipped for the matched guide row.'
+        : 'The matched guide rows are currently text-only: no screenshot-backed evidence or concrete image URL is shipped.',
+  };
+}
+
+function guideVisualCoverageStatus(guide) {
+  if (guideHasConcreteImageUrl(guide)) return 'image-url-available';
+  if (guideHasScreenshotEvidence(guide)) return 'screenshot-evidence-missing-image-url';
+  return 'text-only-no-screenshot-evidence';
+}
+
+function guideHasConcreteImageUrl(guide) {
+  return (guide.imageUrls ?? []).some(Boolean)
+    || (guide.textSections ?? []).some(section => Boolean(section.imageUrl));
+}
+
+function guideHasScreenshotEvidence(guide) {
+  return guide.hasScreenshotEvidence === true
+    || guide.sectionScreenshotEvidence === true
+    || (guide.textSections ?? []).some(section => section.hasScreenshotEvidence === true);
+}
+
+function articleReferenceSummaryForVisualCoverage(visualCoverage) {
+  if (visualCoverage.hasAnyImageUrl) {
+    return 'Built-in guide/article references are available; answer from the shipped text and concrete screenshot/image evidence. Cite preferredCitation.referencePath or articleAlias when a locator is useful.';
+  }
+  if (visualCoverage.hasAnyScreenshotEvidence) {
+    return 'Built-in guide/article references are available; answer from the shipped text, but no concrete screenshot image URL is shipped for the matched guide. Cite preferredCitation.referencePath or articleAlias and do not imply visible screenshots are available.';
+  }
+  return 'Built-in guide/article references are available; answer from the shipped text. The matched guide is text-only in the shipped package, so cite the article URL/referencePath and do not imply images are available.';
+}
+
+function articleAvailabilityMessageForGuide(guide) {
+  const hasArticle = Boolean(guide.fullArticleLink);
+  const visualStatus = guideVisualCoverageStatus(guide);
+  if (hasArticle && visualStatus === 'image-url-available') {
+    return 'A public article URL is available and should be included in the customer answer together with the relevant screenshot URLs.';
+  }
+  if (hasArticle && visualStatus === 'screenshot-evidence-missing-image-url') {
+    return 'A public article URL is available, but no concrete screenshot image URL is shipped for this guide row. Cite the article/reference path and do not imply visible screenshots are available.';
+  }
+  if (hasArticle) {
+    return 'A public article URL is available, but this guide row is currently text-only with no shipped screenshot image URL. Cite the article/reference path and do not imply screenshot evidence.';
+  }
+  if (visualStatus === 'image-url-available') {
+    return 'Built-in guide/article text is available with concrete screenshot image URLs; do not describe the article as missing.';
+  }
+  if (visualStatus === 'screenshot-evidence-missing-image-url') {
+    return 'Built-in guide/article text is available and screenshot evidence is tracked, but no concrete image URL is shipped. Do not describe the article as missing or imply visible screenshots.';
+  }
+  return 'Built-in guide/article text is available, but this guide row is text-only with no shipped screenshot image URL. Do not describe the article as missing or imply screenshot evidence.';
+}
+
+function customerVisibleGuideAssetsInstruction(visualCoverage) {
+  if (visualCoverage.hasAnyImageUrl) {
+    return 'In the customer answer, include the public article URL when present and include concrete image URLs when present. If no public article URL is present, cite the guide name plus articleAlias/referencePath and still show the image URL(s); do not merely say screenshots exist.';
+  }
+  if (visualCoverage.hasAnyScreenshotEvidence) {
+    return 'In the customer answer, include the public article URL when present and cite the guide name plus articleAlias/referencePath. Do not claim visible screenshots are available until a concrete image URL is shipped.';
+  }
+  return 'In the customer answer, include the public article URL when present and cite the guide name plus articleAlias/referencePath. This matched guide is text-only in the shipped package, so do not claim screenshot-backed or image evidence.';
 }
 
 function uniqueStrings(values) {
   return [...new Set(values.map(value => String(value)).filter(Boolean))];
 }
 
-function teachNextStepForGuides(guideContracts) {
+function teachNextStepForGuides(guideContracts, question = null) {
   const guideKeys = guideContracts.map(guide => guide.guideKey);
   const requiredInputs = requiredInputsForShow(guideKeys);
+  if (isCopyTextValueGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Content/Options/label field without changing data.',
+      'Do not offer generic CLI mutation for this text value. Actual DO needs a locale-aware copy/label domain operation or browser flow that understands the screen kind, option/block identity, language/translation, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact text value and language/locale when the funnel is multilingual.`,
+    ].join(' ');
+  }
+  if (isVariableBindingDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Variable Binding section without changing data.',
+      'Do not offer generic CLI mutation for variable binding. Actual DO needs a domain operation or browser flow that understands the variable id/name, option identity, stored value, score target, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact variable/option/score target and desired value.`,
+    ].join(' ');
+  }
+  if (isBasicConfigObjectToggleGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open Basic Config without changing data.',
+      'Do not offer generic CLI mutation for this object toggle. Actual DO needs a Basic Config domain operation or browser flow that creates/removes the nested countdown or system-permission object and verifies readback.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the desired on/off state and any required child fields before enabling it.`,
+    ].join(' ');
+  }
+  if (isOptionsStructureDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Options section without changing data.',
+      'Do not offer generic CLI mutation for Options structure/items. Actual DO needs a domain operation or browser flow that understands the screen type, selection mode, item identity, layout mode, checkbox semantics, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact Options structure setting and desired value.`,
+    ].join(' ');
+  }
+  if (isHeaderNavigationDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Header section without changing data.',
+      'Do not offer generic CLI mutation for Header navigation/progress structure. Actual DO needs a domain operation or browser flow that understands the screen type, header visibility, back/skip button semantics, progress indicator kind, icon asset, layout/insets, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact Header or progress setting and desired value.`,
+    ].join(' ');
+  }
+  if (isPaywallBodyBenefitsDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Paywall Body section without changing data.',
+      'Do not offer generic CLI mutation for Paywall Body copy or benefit-list structure. Actual DO needs a Paywall Body domain operation or browser flow that understands localized template text, benefit item identity, repeated item template/style propagation, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact title/subtitle/benefit-list target, target item if any, desired text/value, and locale when the funnel is multilingual.`,
+    ].join(' ');
+  }
+  if (isPaywallFooterLinksDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Paywall Footer section without changing data.',
+      'Do not offer generic CLI mutation for Paywall Footer legal links/copy/order. Actual DO needs a Paywall Footer domain operation or browser flow that understands localized template text, legal URL validation, restore/purchase link semantics, element order, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact footer target, desired text/URL/order value, and locale when the funnel is multilingual.`,
+    ].join(' ');
+  }
+  if (isLayoutSpacingDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Content section without changing data.',
+      'Do not offer generic CLI mutation for Content spacing/insets. Actual DO needs a domain operation or browser flow that understands the screen type, target element, per-side spacing values, units/defaults, save behavior, and readback verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact title/subtitle/hero spacing target, side(s), and desired value.`,
+    ].join(' ');
+  }
+  if (isActionBarRichStyleDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Action Bar style accordion without changing data.',
+      'Do not offer generic CLI mutation for Action Bar rich styles. Actual DO needs a domain operation or browser flow that understands primary vs secondary button identity, gradient/shadow/effect/icon object shape, optional uploaded icon assets, save behavior, and readback/preview verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact Action Bar style target and desired gradient/shadow/effect/container/icon value or asset.`,
+    ].join(' ');
+  }
+  if (isCarouselSlidesTimingDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Carousel section without changing data.',
+      'Do not offer generic CLI mutation for Carousel slide content, slide type, or duration. Actual DO needs a domain operation or browser flow that understands slide identity/order, type-specific fields, timing semantics, save behavior, and readback/preview verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact Carousel slide or timing target and the desired text, type, duration, or timing value.`,
+    ].join(' ');
+  }
+  if (isCustomHtmlWebEmbedDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Custom HTML section without changing data.',
+      'Do not offer generic CLI mutation for Custom HTML/WebEmbed code, iframe isolation, or data sources. Actual DO needs a domain operation or browser flow that understands code editing, Apply to Preview behavior, data source identity/type, sandboxing, save behavior, and readback/preview verification.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact custom HTML/code/data-source target and the desired HTML/CSS/JS, iframe/sandbox setting, or data source value.`,
+    ].join(' ');
+  }
+  if (isMediaAssetLayoutDomainGuide(guideContracts, question)) {
+    return [
+      'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the matched Content, Media, Options, or Carousel image control without changing data.',
+      'Do not offer generic CLI mutation for image/media assets or image layout. Actual DO needs an asset-aware domain operation or browser flow that understands the screen type, target image slot, upload/source URL, layout semantics, save behavior, CDN/readback verification, and screenshot evidence.',
+      `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact image/media target and either a local file, uploaded asset id, or direct HTTPS URL plus any layout value.`,
+    ].join(' ');
+  }
   if (isPaywallMediaVideoGuide(guideContracts)) {
     return [
       'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Paywall Media section without changing data.',
@@ -533,7 +890,7 @@ function teachNextStepForGuides(guideContracts) {
   ].join(' ');
 }
 
-function teachShowDoOptionsForGuides(guideContracts) {
+function teachShowDoOptionsForGuides(guideContracts, question = null) {
   const guideKeys = guideContracts.map(guide => guide.guideKey);
   const requiredInputs = requiredInputsForShow(guideKeys);
   return {
@@ -544,12 +901,96 @@ function teachShowDoOptionsForGuides(guideContracts) {
       runner: 'runtime/show-runner.mjs',
       summary: 'Navigate to the matched editor section and capture/read the relevant control without changing data.',
     },
-    do: isMediaVideoGuide(guideContracts) || isPaywallMediaVideoGuide(guideContracts)
+    do: isCopyTextValueGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'value', 'target-copy-or-label-identity', 'locale-if-multilingual'],
+          summary: 'Do not use a generic setFieldValue patch for copy/label text values. Promote this only after a locale-aware CLI domain operation or browser flow has readback and installed-plugin live proof.',
+        }
+      : isMediaVideoGuide(guideContracts) || isPaywallMediaVideoGuide(guideContracts)
       ? {
           available: 'conditional',
           mutation: true,
           missingInputs: [...requiredInputs, 'videoUrl-or-local-file'],
           summary: 'Can be done through the editor/browser path after the customer provides the target screen and the video asset/source. Do not present it as completed before execution and verification.',
+        }
+      : isVariableBindingDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'variable-or-option-identity', 'desired-binding-or-score-value'],
+          summary: 'Do not use a generic setFieldValue patch for variable binding. Promote this only after a CLI domain operation or browser flow can create/connect variable records and verify readback from the editor/export.',
+        }
+      : isBasicConfigObjectToggleGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'desired-toggle-state', 'required-child-fields-if-enabling'],
+          summary: 'Do not use a generic setFieldValue patch for Basic Config object toggles. Promote this only after a domain operation or browser flow can create/remove the nested object and verify readback.',
+        }
+      : isOptionsStructureDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'options-structure-setting', 'desired-options-structure-value'],
+          summary: 'Do not use a generic setFieldValue patch for Options structure/items. Promote this only after a domain operation or browser flow can update selection, layout, checkbox, spacing, or item structure and verify readback.',
+        }
+      : isHeaderNavigationDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'header-or-progress-setting', 'desired-header-or-progress-value'],
+          summary: 'Do not use a generic setFieldValue patch for Header navigation/progress structure. Promote this only after a domain operation or browser flow can update buttons, progress kind/colors/icons, insets, or header layout and verify readback.',
+        }
+      : isPaywallBodyBenefitsDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'paywall-body-target', 'desired-copy-benefit-or-layout-value', 'locale-if-multilingual'],
+          summary: 'Do not use a generic setFieldValue patch for Paywall Body copy or benefit-list structure. Promote this only after a Paywall Body domain operation or browser flow can update localized template text, repeated benefit records/styles, and verify readback.',
+        }
+      : isPaywallFooterLinksDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'paywall-footer-target', 'desired-text-url-or-order-value', 'locale-if-multilingual'],
+          summary: 'Do not use a generic setFieldValue patch for Paywall Footer legal links/copy/order. Promote this only after a Paywall Footer domain operation or browser flow can update localized template text, validated legal URLs, restore/purchase link semantics, order, and verify readback.',
+        }
+      : isLayoutSpacingDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'layout-spacing-target', 'desired-spacing-values-or-sides'],
+          summary: 'Do not use a generic setFieldValue patch for Content spacing/insets. Promote this only after a domain operation or browser flow can update per-side title, subtitle, or hero image spacing and verify readback.',
+        }
+      : isActionBarRichStyleDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'action-bar-rich-style-target', 'desired-rich-style-value-or-asset'],
+          summary: 'Do not use a generic setFieldValue patch for Action Bar gradients, shadows, effects, icons, or secondary button shape/fill. Promote this only after a rich visual style domain operation or browser flow can validate structured style objects/assets and verify readback.',
+        }
+      : isCarouselSlidesTimingDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'carousel-slide-or-timing-target', 'desired-carousel-content-or-timing-value'],
+          summary: 'Do not use a generic setFieldValue patch for Carousel slide content, slide type, or timing. Promote this only after a Carousel domain operation or browser flow can update the correct slide, preserve type-specific fields, and verify readback.',
+        }
+      : isCustomHtmlWebEmbedDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'custom-html-or-webembed-target', 'desired-html-code-iframe-or-data-source'],
+          summary: 'Do not use a generic setFieldValue patch for Custom HTML/WebEmbed code, iframe isolation, or data sources. Promote this only after a code-aware domain operation or browser flow can apply preview, update data sources, and verify readback.',
+        }
+      : isMediaAssetLayoutDomainGuide(guideContracts, question)
+      ? {
+          available: 'requires-domain-operation',
+          mutation: true,
+          missingInputs: [...requiredInputs, 'media-or-image-target', 'image-url-local-file-or-asset-id', 'desired-layout-value-if-any'],
+          summary: 'Do not use a generic setFieldValue patch or the video upload runner for image/media assets and image layout. Promote this only after an asset-aware CLI/domain operation or browser flow can upload/select the image, update layout, and verify CDN/readback plus screenshot evidence.',
         }
       : {
           available: 'when-action-resolver-matches-supported-action',
@@ -562,17 +1003,95 @@ function teachShowDoOptionsForGuides(guideContracts) {
 
 function isMediaVideoGuide(guideContracts) {
   const keys = guideContracts.map(guide => guide.guideKey).join(' ');
-  return /screen-editor-section-media|screenedit-media-(kind|video-upload|video-repeat)/.test(keys);
+  return /screenedit-media-(video-upload|video-repeat)/.test(keys);
 }
 
 function isPaywallMediaVideoGuide(guideContracts) {
   const keys = guideContracts.map(guide => guide.guideKey).join(' ');
-  return /screen-editor-section-paywall-media|screenedit-paywall-media-(enable|kind|video|repeat)/.test(keys);
+  return /screenedit-paywall-media-(video|repeat)/.test(keys);
+}
+
+function isCopyTextValueGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'variable-binding-domain-operation') return false;
+  if (question?.copyTextValueBoundary?.kind === 'copy-or-label-text-value') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-copy-block-(title|subtitle)-text|screenedit-variable-binding-.*label/.test(keys);
+}
+
+function isVariableBindingDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'variable-binding-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screen-editor-section-variable-binding|screenedit-variable-binding-/.test(keys);
+}
+
+function isBasicConfigObjectToggleGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'basic-config-object-toggle-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-basic-config-(countdown-enabled|system-permission-enabled)/.test(keys);
+}
+
+function isOptionsStructureDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'options-structure-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-options-(selection-mode|max-selections|randomize-order|item-layout|cell-dimensions|max-cell-height|checkbox-(styles|container)|items-spacing|item-paddings|list-paddings)/.test(keys);
+}
+
+function isHeaderNavigationDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'header-navigation-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-header-(back-button|skip-button|progress-(indicator-kind|active-color|track-color|title|icon|content-alignment|full-width|respect-buttons|vertical-alignment|insets)|appearance-(height|bg-color|opacity)|insets)/.test(keys);
+}
+
+function isPaywallBodyBenefitsDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'paywall-body-benefits-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-paywall-body-(title|subtitle|features|item-state|item-padding|list-padding|bullet-(title|subtitle|image)-styles)/.test(keys)
+    && !/screenedit-paywall-body-(title|subtitle)-styles/.test(keys);
+}
+
+function isPaywallFooterLinksDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'paywall-footer-links-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-paywall-footer-(purchase-text|purchase-container|purchase-downsale|purchase-padding|autorenew-text|elements-order|autorenew-padding|restore-text|terms-text|terms-uri|privacy-text|privacy-uri|legal-links-padding)/.test(keys)
+    && !/screenedit-paywall-footer-(purchase|autorenew|restore|terms|privacy)-text-styles/.test(keys)
+    && !/screenedit-paywall-footer-background-color/.test(keys);
+}
+
+function isLayoutSpacingDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'layout-spacing-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-copy-block-(title|subtitle|hero)-padding/.test(keys);
+}
+
+function isActionBarRichStyleDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'rich-visual-style-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-action-bar-(primary|secondary)-(gradient|shadow|effects|icon)|screenedit-action-bar-secondary-container/.test(keys);
+}
+
+function isCarouselSlidesTimingDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'carousel-slides-and-timing-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-carousel-(slide-(type|title|subtitle|detail|duration-range)|duration)/.test(keys);
+}
+
+function isCustomHtmlWebEmbedDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'custom-html-webembed-domain-operation') return true;
+  const guideKeys = question?.guidance?.guideKeys ?? guideContracts.map(guide => guide.guideKey);
+  const firstGuideKey = guideKeys[0] ?? '';
+  const isCustomHtmlGuideKey = guideKey => guideKey === 'screen-editor-section-embed' || /^screenedit-embed-(iframe-isolation|html-editor|data-sources)$/.test(guideKey);
+  return isCustomHtmlGuideKey(firstGuideKey) || (guideKeys.includes('screen-editor-section-embed') && guideKeys.some(guideKey => /^screenedit-embed-/.test(guideKey)) && guideKeys.every(isCustomHtmlGuideKey));
+}
+
+function isMediaAssetLayoutDomainGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'media-asset-layout-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-(copy-block-hero-(url|scale-mode|width|height|height-percentage|corner-radius)|media-(enable|kind|image-upload|padding|gradient-(enable|height|color))|options-image-(container|styles)|carousel-slide-image)/.test(keys);
 }
 
 function conditionalBrowserDoForGuideKeys(guideKeys) {
   const keys = guideKeys.join(' ');
-  if (/screen-editor-section-paywall-media|screenedit-paywall-media-(enable|kind|video)/.test(keys)) {
+  if (/screenedit-paywall-media-(video|repeat)/.test(keys)) {
     return {
       actionId: 'browser.paywallMedia.videoUpload',
       label: 'Add or change the Paywall featured video through the editor',
@@ -580,7 +1099,7 @@ function conditionalBrowserDoForGuideKeys(guideKeys) {
       valueInput: 'videoUrl-or-local-file',
     };
   }
-  if (/screen-editor-section-media|screenedit-media-(kind|video-upload)/.test(keys)) {
+  if (/screenedit-media-(video-upload|video-repeat)/.test(keys)) {
     return {
       actionId: 'browser.media.videoUpload',
       label: 'Add or change the screen Media video through the editor',
@@ -608,6 +1127,14 @@ function builtInArticleReferences(guideContracts) {
         ? 'Include the public URL in the customer answer and cite the section URL when it points to the exact setting.'
         : 'Say the built-in guide/article is available with text and screenshot-backed guidance; cite referencePath or articleAlias when a locator is useful.',
     }));
+}
+
+function preferredGuideReference(references) {
+  return references.find(reference => reference.articleSectionUrl)
+    ?? references.find(reference => reference.articleAlias?.startsWith('help-'))
+    ?? references.find(reference => reference.articleAlias)
+    ?? references[0]
+    ?? null;
 }
 
 function showContract(expectedShow, guideContracts, args) {
@@ -642,6 +1169,10 @@ function showContract(expectedShow, guideContracts, args) {
       browserSeed: 'runtime/show-runner.mjs seeds browser auth from the authorized CLI credential before opening the editor',
       agentInstruction: 'Do not stop at auth_required. Run status, run login if needed, re-check status, then retry the same SHOW runner. Ask the customer only if browser login approval is required.',
     },
+    toolPreflight: buildToolPreflight(args, {
+      needsSegmently: true,
+      needsBrowser: true,
+    }),
     browserPlan,
     screenshotTarget: 'qa-screenshots/segmently-launch-guide/show-target.png',
     nextStep: missingInputs.length > 0
@@ -652,7 +1183,7 @@ function showContract(expectedShow, guideContracts, args) {
 
 function articleFetchContract(expectedArticleFetch, guideContracts) {
   const references = builtInArticleReferences(guideContracts);
-  const preferredReference = references.find(reference => reference.articleAlias) ?? references[0] ?? null;
+  const preferredReference = preferredGuideReference(references);
   const publicArticleLinks = guideContracts.map(guide => guide.fullArticleLink).filter(Boolean);
   const articleAlias = preferredReference?.articleAlias ?? null;
   const articleId = preferredReference && !articleAlias ? preferredReference.articleId : null;
@@ -892,6 +1423,7 @@ function printHelp() {
     'Usage:',
     '  node runtime/customer-response-runner.mjs --persona <personaId> --question <questionId>',
     '  node runtime/customer-response-runner.mjs --prompt "<customer request>" [--projectId <id> ...]',
+    '  node runtime/customer-response-runner.mjs --prompt "<customer request>" --resultPath <path>',
     '',
     'Returns a customer-facing response contract built only from shipped skill files.',
     'Prompt mode resolves free-form customer text to TEACH or DO, then returns missing inputs or execution+verification.',
@@ -899,7 +1431,12 @@ function printHelp() {
 }
 
 function writeJson(value) {
-  process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
+  const text = `${JSON.stringify(value, null, 2)}\n`;
+  if (resultPath) {
+    mkdirSync(dirname(resultPath), { recursive: true });
+    writeFileSync(resultPath, text, 'utf8');
+  }
+  process.stdout.write(text);
 }
 
 function fail(message) {
@@ -1048,22 +1585,39 @@ function resolveActionFromPrompt(prompt, actions) {
     { id: 'editor.actionBar.primaryButton.label', re: /(кноп|button).*(текст|label|пишет|continue|start|wording|назв)/ },
     { id: 'editor.list.options.itemTitle.fontSize', re: /(вариант|ячей|option|list).*(шрифт|букв|крупн|font|size|18|20)/ },
     { id: 'launch.funnel.create', re: /(созд|create|build).*(воронк|funnel|чернов)/ },
-    { id: 'launch.analytics.pixel.apply', re: /(pixel|пиксел|facebook|tiktok|meta|аналитик).*(подключ|connect|add|встав)/ },
+    { id: 'launch.analytics.pixel.apply', re: /(?=.*(pixel|пиксел|facebook|tiktok|meta))(?=.*(подключ|connect|add|добав|встав|insert|apply|set|постав))/ },
     { id: 'launch.paywallProducts.create', re: /(тариф|plan|product|товар|price|цена).*(созд|create|сдел)/ },
     { id: 'editor.paywall.attachProduct', re: /(постав|attach|connect|привяж).*(тариф|product|plan|price|paywall|оплат)/ },
     { id: 'launch.publish', re: /(опублик|publish|live|рабоч.*ссыл|ссылк.*браузер|web link)/ },
     { id: 'handoff.stripe.connect', re: /(stripe).*(подключ|connect|oauth)|(подключ|connect).*(stripe)/ },
-    { id: 'handoff.domain.dns', re: /(domain|домен|dns).*(подключ|connect|point|verify)/ },
+    { id: 'handoff.domain.dns', re: /(?=.*(custom domain|domain|домен|dns))(?=.*(подключ|connect|point|verify|провер|настро|set|setup|add|добав))/ },
   ];
   for (const rule of rules) {
     if (rule.re.test(text)) return actions.find(action => action.id === rule.id) ?? null;
   }
   let best = null;
   for (const action of actions) {
+    if (!actionAllowedByPrompt(action.id, text)) continue;
     const score = Math.max(0, ...(action.customerIntent ?? []).map(intent => phraseScore(text, normalize(intent))));
     if (score > (best?.score ?? 0)) best = { action, score };
   }
   return best?.score >= 2 ? best.action : null;
+}
+
+function resolveActionForGuideKeys(guideKeys, actions) {
+  const wanted = new Set(guideKeys ?? []);
+  if (wanted.size === 0) return null;
+  const candidates = (actions ?? [])
+    .filter(action => action.status === 'supported' && action.mode === 'cli' && wanted.has(action.teachFallback?.articleAlias))
+    .sort((a, b) => Number(b.id.startsWith('editor.setting.')) - Number(a.id.startsWith('editor.setting.')));
+  return candidates[0] ?? null;
+}
+
+function actionAllowedByPrompt(actionId, text) {
+  if (actionId === 'launch.paywallProducts.create') {
+    return /(?=.*(paywall|пейвол|оплат|подпис|тариф|plan|product|товар|price|цена))(?=.*(созд|create|сдел|make|add|добав))/.test(text);
+  }
+  return true;
 }
 
 function runnerArgsForPromptAction(action, prompt, args) {
@@ -1146,6 +1700,9 @@ function inferPromptInputs(actionId, prompt) {
   if (/^editor\.flexibleSections\./.test(actionId)) {
     inferFlexibleSectionsStyleInput(actionId, text, prompt, out);
   }
+  if (/^editor\.setting\./.test(actionId)) {
+    inferGenericScalarSettingInput(actionId, text, prompt, out);
+  }
   if (actionId === 'editor.list.options.itemTitle.fontSize') {
     const match = text.match(/\b(\d{1,3})(?:\s*(px|пикс|pt))?\b/);
     if (match) out.value = match[1];
@@ -1157,6 +1714,50 @@ function inferPromptInputs(actionId, prompt) {
     if (idMatch) out.pixelId = idMatch[0];
   }
   return out;
+}
+
+function inferGenericScalarSettingInput(actionId, text, prompt, out) {
+  const guideKey = actionId.replace(/^editor\.setting\./, '');
+  if (/#[0-9a-f]{3,8}/i.test(prompt)) {
+    out.value = prompt.match(/#[0-9a-f]{3,8}/i)[0];
+    return;
+  }
+  const urlMatch = prompt.match(/https?:\/\/\S+/i);
+  if (urlMatch && /(uri|url|link)/.test(guideKey)) {
+    out.value = urlMatch[0].replace(/[),.;]+$/, '');
+    return;
+  }
+  if (/(duration|width|height|percentage|radius|opacity|font-size|font-weight|line-height|z-index|delay)/.test(guideKey)) {
+    const match = text.match(/\b(\d{1,4})(?:\s*(px|пикс|pt|%|процент|сек|seconds?|s))?\b/);
+    if (match) out.value = match[1];
+    return;
+  }
+  if (/(animation-enabled|offline-first|system-permission-enabled|countdown-enabled|auto-focus)/.test(guideKey)) {
+    if (/выключ|disable|off|hide|убер|не\s+нужно|без/.test(text)) out.value = 'false';
+    else if (/включ|enable|on|show|покаж|ask|reuse|использ/.test(text)) out.value = 'true';
+    return;
+  }
+  if (/(scale-mode)/.test(guideKey)) {
+    if (/scale\s*to\s*fill|stretch|растян/.test(text)) out.value = 'scaleToFill';
+    else if (/aspect\s*fit|\bfit\b|впис|целиком|без\s+обрез|whole/.test(text)) out.value = 'scaleAspectFit';
+    else if (/aspect\s*fill|\bfill\b|cover|заполн|обрез/.test(text)) out.value = 'scaleAspectFill';
+    return;
+  }
+  if (/(permission-type)/.test(guideKey)) {
+    if (/notification|push|уведом/.test(text)) out.value = 'notifications';
+    else if (/camera|камер/.test(text)) out.value = 'camera';
+    else if (/photo|gallery|фото|галер/.test(text)) out.value = 'photos';
+    return;
+  }
+  if (/(countdown-unit)/.test(guideKey)) {
+    if (/minute|минут/.test(text)) out.value = 'minutes';
+    else if (/second|секунд|сек\b/.test(text)) out.value = 'seconds';
+    return;
+  }
+  if (/(keyboard-type|field-type|border-type|elements-order|kind|alignment)/.test(guideKey)) {
+    const quoted = prompt.match(/["'“”«»]([^"'“”«»]{2,40})["'“”«»]/);
+    if (quoted) out.value = quoted[1];
+  }
 }
 
 function inferActionBarTextStyleInput(actionId, text, prompt, out) {
@@ -1600,7 +2201,16 @@ function inferPaywallHeaderStyleInput(actionId, text, prompt, out) {
   }
 }
 
+function guideKeysForResolvedAction(action) {
+  const hardcoded = guideKeysForAction(action.id);
+  if (hardcoded.length > 0) return hardcoded;
+  return action.teachFallback?.articleAlias ? [action.teachFallback.articleAlias] : [];
+}
+
 function guideKeysForAction(actionId) {
+  if (/^editor\.setting\./.test(actionId)) {
+    return [actionId.replace(/^editor\.setting\./, '')];
+  }
   if (/^editor\.actionBar\.primaryButton\.textStyle\./.test(actionId)) {
     return ['screen-editor-action-button', 'screenedit-action-bar-primary-text-styles'];
   }
@@ -1852,7 +2462,35 @@ function guideKeysForAction(actionId) {
 
 function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference) {
   const text = normalize(prompt);
+  const integrationsCustomDomainGuideKeys = integrationsCustomDomainGuideKeysFromPrompt(text);
+  if (integrationsCustomDomainGuideKeys) return integrationsCustomDomainGuideKeys;
+  const integrationsAnalyticsGuideKeys = integrationsAnalyticsGuideKeysFromPrompt(text);
+  if (integrationsAnalyticsGuideKeys) return integrationsAnalyticsGuideKeys;
+  const variableBindingGuideKeys = variableBindingGuideKeysFromPrompt(text);
+  if (variableBindingGuideKeys) return variableBindingGuideKeys;
+  const basicConfigObjectToggleGuideKeys = basicConfigObjectToggleGuideKeysFromPrompt(text);
+  if (basicConfigObjectToggleGuideKeys) return basicConfigObjectToggleGuideKeys;
+  const optionsStructureGuideKeys = optionsStructureGuideKeysFromPrompt(text);
+  if (optionsStructureGuideKeys) return optionsStructureGuideKeys;
+  const headerNavigationGuideKeys = headerNavigationGuideKeysFromPrompt(text);
+  if (headerNavigationGuideKeys) return headerNavigationGuideKeys;
+  const paywallBodyBenefitsGuideKeys = paywallBodyBenefitsGuideKeysFromPrompt(text);
+  if (paywallBodyBenefitsGuideKeys) return paywallBodyBenefitsGuideKeys;
+  const paywallFooterLinksGuideKeys = paywallFooterLinksGuideKeysFromPrompt(text);
+  if (paywallFooterLinksGuideKeys) return paywallFooterLinksGuideKeys;
+  const layoutSpacingGuideKeys = layoutSpacingGuideKeysFromPrompt(text);
+  if (layoutSpacingGuideKeys) return layoutSpacingGuideKeys;
+  const actionBarRichStyleGuideKeys = actionBarRichStyleGuideKeysFromPrompt(text);
+  if (actionBarRichStyleGuideKeys) return actionBarRichStyleGuideKeys;
+  const carouselSlidesTimingGuideKeys = carouselSlidesTimingGuideKeysFromPrompt(text);
+  if (carouselSlidesTimingGuideKeys) return carouselSlidesTimingGuideKeys;
+  const customHtmlWebEmbedGuideKeys = customHtmlWebEmbedGuideKeysFromPrompt(text);
+  if (customHtmlWebEmbedGuideKeys) return customHtmlWebEmbedGuideKeys;
+  const mediaAssetLayoutGuideKeys = mediaAssetLayoutGuideKeysFromPrompt(text);
+  if (mediaAssetLayoutGuideKeys) return mediaAssetLayoutGuideKeys;
   const rules = [
+    { re: /(?=.*(текст|copy|wording|надпис))(?=.*((?<!под)заголов|headline|title))(?=.*(экран|screen|page|контент|content|copy))(?=.*(поменяй|измени|замени|напиши|поставь|set|change|write|rename|to|на\b))/, guideKeys: ['screen-editor-section-content', 'screenedit-copy-block-title-text'] },
+    { re: /(?=.*(текст|copy|wording|надпис))(?=.*(подзаголов|subtitle|supporting))(?=.*(экран|screen|page|контент|content|copy))(?=.*(поменяй|измени|замени|напиши|поставь|set|change|write|rename|to|на\b))/, guideKeys: ['screen-editor-section-content', 'screenedit-copy-block-subtitle-text'] },
     { re: /(?=.*(соедин|связ|подключ|connect|edge|edges|transition|переход))(?=.*(экран|screen|node|узел|канвас|canvas|flow|воронк|funnel))/, guideKeys: ['canvas-connect-screens'] },
     { re: /(?=.*(канвас|canvas|flow))(?=.*(соедин|связ|edge|transition|переход))/, guideKeys: ['canvas-overview', 'canvas-connect-screens'] },
     { re: /(?=.*(канвас|canvas|flow))(?=.*(добав|add|созд|create))(?=.*(экран|screen|node|узел))/, guideKeys: ['canvas-add-screen'] },
@@ -1915,6 +2553,573 @@ function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference) {
   return scored.length ? scored : ['onboarding-list-create'];
 }
 
+function integrationsCustomDomainGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasDomainTarget = /(custom domain|domain|домен|dns|cname|a\s*record|aaaa|txt record|запис.*dns|dns.*запис|registrar|регистратор)/.test(text);
+  if (!hasDomainTarget) return null;
+  if (/(analytics|аналитик|pixel|пиксел|facebook|tiktok|google|ga4|amplitude|mixpanel|posthog)/.test(text)) return null;
+  if (/(verify|verification|провер|провери|propagat|распростран|status|статус)/.test(text)) {
+    return ['custom-domain-verification', 'custom-domain-dns-setup', 'integrations-custom-domain-section'];
+  }
+  if (/(dns|cname|a\s*record|aaaa|txt record|record|запис|registrar|регистратор|point|направ|пропис|host|hostname)/.test(text)) {
+    return ['custom-domain-dns-setup', 'custom-domain-verification', 'integrations-custom-domain-section'];
+  }
+  if (/(input|field|поле|ввести|enter|встав|добав|add|domain name|назван.*домен)/.test(text)) {
+    return ['custom-domain-domain-input', 'integrations-custom-domain-section', 'custom-domain-dns-setup'];
+  }
+  return ['integrations-custom-domain-section', 'custom-domain-domain-input', 'custom-domain-dns-setup'];
+}
+
+function integrationsAnalyticsGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasAnalyticsTarget = /(analytics|аналитик|pixel|пиксел|facebook|tiktok|meta|google analytics|ga4|gtm|amplitude|mixpanel|posthog|tracking|трек(инг|ать)|events?|событ)/.test(text);
+  if (!hasAnalyticsTarget) return null;
+  if (/(custom html|webembed|web embed|iframe|html editor|html code|child section|data source|segmentlysdk)/.test(text)) return null;
+  if (/(custom domain|домен|dns|cname|registrar|регистратор)/.test(text)) return null;
+
+  const keys = [];
+  if (/(config|configure|настро|id|measurement|pixel id|token|key|ключ|скрипт|script|custom script|код|встав|insert|постав|set|apply|google analytics|ga4|gtm|amplitude|mixpanel|posthog|facebook|tiktok|meta|pixel|пиксел)/.test(text)) {
+    keys.push('analytics-provider-config');
+  }
+  if (/(add|добав|connect|подключ|new|нов|provider|integration|интеграц|facebook|tiktok|meta|google|ga4|gtm|amplitude|mixpanel|posthog)/.test(text)) {
+    keys.push('analytics-add-provider');
+  }
+  if (/(list|спис|where|где|open|откр|section|раздел|analytics|аналитик)/.test(text) || keys.length === 0) {
+    keys.push('integrations-analytics-section', 'analytics-integration-list');
+  }
+  return uniqueStrings(keys);
+}
+
+function copyTextValueGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  if (!hasCopyTextValueIntent(text)) return null;
+  if (/(подзаголов|subtitle|supporting)/.test(text) && /(экран|screen|page|контент|content|copy)/.test(text)) {
+    return ['screen-editor-section-content', 'screenedit-copy-block-subtitle-text'];
+  }
+  if (/((?<!под)заголов|headline|title)/.test(text) && /(экран|screen|page|контент|content|copy)/.test(text)) {
+    return ['screen-editor-section-content', 'screenedit-copy-block-title-text'];
+  }
+  if (/(кноп|button)/.test(text)) return null;
+  if (/(вариант|option|ячей|list)/.test(text)) return ['screen-editor-section-options'];
+  return null;
+}
+
+function variableBindingGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  if (!/(переменн|variable|binding|stored value|save.*answer|сохран.*ответ|привяз|связ.*ответ|score|балл|completion score)/.test(text)) {
+    return null;
+  }
+  const section = 'screen-editor-section-variable-binding';
+  if (/(score|балл|points|completion score|скоринг|оценк)/.test(text)) {
+    if (/(target|куда|какую|which|переменн)/.test(text)) {
+      return [section, 'screenedit-variable-binding-score-effects', 'screenedit-variable-binding-score-effect-target-variable'];
+    }
+    return [section, 'screenedit-variable-binding-score-effects', 'screenedit-variable-binding-score-effect-completion-score'];
+  }
+  if (/(добав|add|new|нов).*(option|вариант|значен|value|label|лейбл)/.test(text)) {
+    return [section, 'screenedit-variable-binding-add-new-option-label'];
+  }
+  if (/(stored value|значен|label|лейбл|option label|option value|value for this option)/.test(text)) {
+    return [section, 'screenedit-variable-binding-option-label'];
+  }
+  if (/(apply|rebuild|sync|примен|пересобр|заполн|созда.*вариант|вариант.*переменн|option.*variable|items.*variable|привяз.*вариант|связ.*вариант)/.test(text)) {
+    return [section, 'screenedit-variable-binding-apply-items-to-variable', 'screenedit-variable-binding-option-item-binding'];
+  }
+  if (/(описан|description|note|заметк)/.test(text)) {
+    return [section, 'screenedit-variable-binding-create-variable-description'];
+  }
+  if (/(type|тип|kind|boolean|number|string|text|текстов|числ)/.test(text)) {
+    return [section, 'screenedit-variable-binding-create-variable-type'];
+  }
+  if (/(созд|create|new|нов|назван|name|title|переимен|rename|измени|поменяй)/.test(text)) {
+    const keys = [section, 'screenedit-variable-binding-create-variable-name'];
+    if (/(options|вариант|спис|list|answers|ответ)/.test(text)) {
+      keys.push('screenedit-variable-binding-create-variable-options');
+    }
+    return keys;
+  }
+  if (/(options|вариант|спис|list|answers|ответ)/.test(text)) {
+    return [section, 'screenedit-variable-binding-create-variable-options'];
+  }
+  return [section, 'screenedit-variable-binding-variable-selector'];
+}
+
+function basicConfigObjectToggleGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-basic-config';
+  const wantsToggle = /(включ|выключ|добав|убер|enable|disable|turn on|turn off|show|hide|add|remove|сделай|поставь|нужен|need)/.test(text);
+  if (/(countdown|обратн.*отсчет|таймер|auto.?advance|авто.*переход)/.test(text)) {
+    const asksScalarChild = /(duration|длитель|секунд|seconds|unit|единиц|\b\d{1,4}\b)/.test(text);
+    if (wantsToggle && !asksScalarChild) {
+      return [section, 'screenedit-basic-config-countdown-enabled'];
+    }
+  }
+  if (/(system permission|permission prompt|permission request|разрешен|системн.*запрос|запрос.*разреш|ask.*permission)/.test(text)) {
+    const asksPermissionType = /(type|тип|which|како|notification|push|location|camera|tracking|contacts|photo|permission type)/.test(text);
+    if ((wantsToggle || /request|prompt|запрос/.test(text)) && !asksPermissionType) {
+      return [section, 'screenedit-basic-config-system-permission-enabled'];
+    }
+  }
+  return null;
+}
+
+function optionsStructureGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-options';
+  const hasOptionsTarget = /(вариант|option|choice|answer|ответ|ячей|cell|спис|list|items?)/.test(text);
+  if (!hasOptionsTarget) return null;
+
+  const hasCheckboxTarget = /(checkbox|чекбокс|галоч|radio|tick)/.test(text);
+  const hasStructuralTerm = /(selection|select|выбор|выбрать|pick|max|maximum|максим|лимит|случайн|random|shuffle|перемеш|колон|column|grid|сетка|layout|расклад|структур|spacing|gap|space|расстоя|интервал|padding|отступ|height|высот|cell|ячей|checkbox|чекбокс|галоч|radio|режим|mode)/.test(text);
+  if (!hasStructuralTerm) return null;
+
+  const selectedStateStyle = /(selected|unselected|выбран|невыбран|обычн|active|inactive)/.test(text)
+    && /(фон|background|рамк|border|скруг|radius|color|цвет|style|стил|#[0-9a-f]{3,8})/.test(text);
+  if (selectedStateStyle) return null;
+
+  const optionTextStyle = /((?<!под)заголов|title|подзаголов|subtitle|описан|description|текст|text|label|лейбл|ячей|cell)/.test(text)
+    && /(шрифт|font|типограф|размер шрифта|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет|color|#[0-9a-f]{3,8}|фон|background|скруг|radius)/.test(text)
+    && !/(padding|отступ|spacing|gap|расстоя|интервал|height|высот|колон|column|grid|сетка|checkbox|чекбокс|галоч|selection|max|maximum|максим|лимит|random|shuffle|перемеш)/.test(text);
+  if (optionTextStyle) return null;
+
+  if (/(max|maximum|лимит|максим|не больше|сколько|\b\d+\b).*(выбор|выбрать|selection|select|pick|вариант|option)|(\b\d+\b).*(выбор|выбрать|selection|select|pick)/.test(text)) {
+    return [section, 'screenedit-options-selection-mode', 'screenedit-options-max-selections'];
+  }
+  if (/(random|shuffle|случайн|перемеш|рандом)/.test(text)) {
+    return [section, 'screenedit-options-randomize-order'];
+  }
+  if (hasCheckboxTarget) {
+    if (/(цвет|color|style|стил|shape|форма|круг|circle|square|квадрат|padding|отступ|size|размер|рамк|border|фон|background|#[0-9a-f]{3,8})/.test(text)) {
+      return [section, 'screenedit-options-checkbox-styles'];
+    }
+    return [section, 'screenedit-options-checkbox-container'];
+  }
+  if (/(колон|column|grid|сетка|\b2\b|две|two).*(вариант|option|choice|item|ячей|cell|спис|list)|(вариант|option|choice|item|ячей|cell|спис|list).*(колон|column|grid|сетка|\b2\b|две|two)/.test(text)) {
+    return [section, 'screenedit-options-cell-dimensions'];
+  }
+  if (/(layout|расклад|структур|что.*показы|show.*(image|title|subtitle)|картин.*заголов|image.*title|title only|только.*заголов|показыв).*(вариант|option|choice|item)|(вариант|option|choice|item).*(layout|расклад|структур|что.*показы|show.*(image|title|subtitle)|картин.*заголов|image.*title|title only|только.*заголов|показыв)/.test(text)) {
+    return [section, 'screenedit-options-item-layout'];
+  }
+  if (/(расстоя|spacing|gap|space|интервал).*(вариант|option|choice|item|ячей)|(вариант|option|choice|item|ячей).*(расстоя|spacing|gap|space|интервал)/.test(text)) {
+    return [section, 'screenedit-options-items-spacing'];
+  }
+  if (/(padding|отступ).*(внутр|inside|item|вариант|option|choice|ячей|cell)|(внутр|inside|item|вариант|option|choice|ячей|cell).*(padding|отступ)/.test(text)) {
+    return [section, 'screenedit-options-item-paddings'];
+  }
+  if (/(padding|margin|отступ).*(спис|list|whole|outer|вокруг)|(спис|list|whole|outer|вокруг).*(padding|margin|отступ)/.test(text)) {
+    return [section, 'screenedit-options-list-paddings'];
+  }
+  if (/(height|высот).*(ячей|cell|вариант|option|choice|grid|сетка)|(ячей|cell|вариант|option|choice|grid|сетка).*(height|высот)/.test(text)) {
+    return [section, 'screenedit-options-max-cell-height'];
+  }
+  if (/(selection mode|режим.*выбор|single pick|multi pick|single select|multi select|множествен|один.*выбор|несколько.*выбор)/.test(text)) {
+    return [section, 'screenedit-options-selection-mode'];
+  }
+  return null;
+}
+
+function headerNavigationGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-header';
+  const hasHeaderTarget = /(header|шапк|верхн|navbar|nav bar|navigation bar|навигац)/.test(text);
+  const hasProgressTarget = /(progress|прогресс|indicator|индикатор|bar|бар|dots|dashes|линия|полоск)/.test(text);
+  const hasHeaderButtonTarget = /(кнопк.*назад|назад.*кнопк|back.*button|button.*back|кнопк.*skip|skip.*button|button.*skip|кнопк.*пропуст|пропуст.*кнопк)/.test(text)
+    || (hasHeaderTarget && /(back|назад|skip|пропуст)/.test(text));
+  if (!hasHeaderTarget && !hasProgressTarget && !hasHeaderButtonTarget) return null;
+
+  const explicitStepperTarget = /(stepper|progress steps|степпер|шаги|экран.*прогресс|progress screen)/.test(text);
+  if (explicitStepperTarget && !hasHeaderTarget) return null;
+
+  const headerButtonTextStyle = hasHeaderButtonTarget
+    && /(шрифт|font|типограф|text style|стил.*текст|размер|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет|color|фон|background|#[0-9a-f]{3,8})/.test(text)
+    && !/(включ|выключ|show|hide|enable|disable|добав|убер|remove|label|лейбл|надпис|текст кнопк|button text)/.test(text);
+  if (headerButtonTextStyle) return null;
+
+  const stepperFillStyle = hasProgressTarget
+    && !hasHeaderTarget
+    && /(fill|заполн|залив|track|трек|progress bar)/.test(text)
+    && /(цвет|color|#[0-9a-f]{3,8})/.test(text)
+    && !/(active|completed|current|актив|заверш|готов|remaining|остат|неактив)/.test(text);
+  if (stepperFillStyle) return null;
+
+  if (/(back|назад|кнопк.*назад|назад.*кнопк)/.test(text)) {
+    return [section, 'screenedit-header-back-button'];
+  }
+  if (/(skip|пропуст|кнопк.*skip|skip.*button|кнопк.*пропуст)/.test(text)) {
+    return [section, 'screenedit-header-skip-button'];
+  }
+  if (hasProgressTarget) {
+    if (/(icon|икон|symbol|значок)/.test(text)) {
+      if (/(цвет|color|размер|size|style|стил|#[0-9a-f]{3,8})/.test(text)) {
+        return [section, 'screenedit-header-progress-icon-styles'];
+      }
+      return [section, 'screenedit-header-progress-icon'];
+    }
+    if (/(full.?width|edge.?to.?edge|stretch|растян|на всю|полную ширин|ширин)/.test(text)) {
+      return [section, 'screenedit-header-progress-full-width'];
+    }
+    if (/(respect.*button|clear.*button|не.*перекрыв|обход.*кноп|рядом.*кноп)/.test(text)) {
+      return [section, 'screenedit-header-progress-respect-buttons'];
+    }
+    if (/(inset|padding|margin|отступ|space|spacing|расстоя)/.test(text)) {
+      return [section, 'screenedit-header-progress-insets'];
+    }
+    if (/(vertical|height|top|bottom|центр.*верт|вертик|высот)/.test(text)) {
+      return [section, 'screenedit-header-progress-vertical-alignment'];
+    }
+    if (/(align|alignment|left|right|center|центр|слева|справа|выравн|side|сторон)/.test(text)) {
+      return [section, 'screenedit-header-progress-content-alignment'];
+    }
+    if (/(active|completed|current|актив|заверш|готов|filled).*?(color|цвет|#[0-9a-f]{3,8})|(color|цвет).*?(active|completed|current|актив|заверш|готов|filled)/.test(text)) {
+      return [section, 'screenedit-header-progress-active-color'];
+    }
+    if (/(track|remaining|остат|неактив|фон|background).*?(color|цвет|#[0-9a-f]{3,8})|(color|цвет).*?(track|remaining|остат|неактив|фон|background)/.test(text)) {
+      return [section, 'screenedit-header-progress-track-color'];
+    }
+    if (/(title|text|label|подпис|текст)/.test(text)) {
+      if (/(шрифт|font|типограф|размер|font size|жирн|bold|weight|цвет|color|#[0-9a-f]{3,8})/.test(text)) {
+        return null;
+      }
+      return [section, 'screenedit-header-progress-title'];
+    }
+    return [section, 'screenedit-header-progress-indicator-kind'];
+  }
+  if (hasHeaderTarget) {
+    if (/(height|высот)/.test(text)) {
+      return [section, 'screenedit-header-appearance-height'];
+    }
+    if (/(opacity|transparent|прозрач|see.?through)/.test(text)) {
+      return [section, 'screenedit-header-appearance-opacity'];
+    }
+    if (/(inset|padding|margin|отступ|space|spacing|расстоя)/.test(text)) {
+      return [section, 'screenedit-header-insets'];
+    }
+    if (/(background|фон|залив|bg|color|цвет|#[0-9a-f]{3,8})/.test(text)) {
+      return [section, 'screenedit-header-appearance-bg-color'];
+    }
+  }
+  return null;
+}
+
+function paywallBodyBenefitsGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  if (!/(paywall|пейвол|оплат|тариф|subscription|подпис)/.test(text)) return null;
+
+  const section = 'screen-editor-section-paywall-body';
+  const hasBodyTarget = /(body|контент|copy|тело|headline|title|заголов|subtitle|подзаголов|benefit|feature|bullet|буллет|преимуществ|список преимуществ|чеклист|checklist)/.test(text);
+  if (!hasBodyTarget) return null;
+
+  const explicitStyleIntent = /(style|стил|шрифт|font|типограф|размер шрифта|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет|color|#[0-9a-f]{3,8}|фон|background|скруг|radius)/.test(text);
+  const structuralOrCopyIntent = /(текст|copy|wording|label|лейбл|надпис|назван|title|headline|subtitle|подзаголов|напиши|поменяй|измени|замени|rename|set|change|write|на\b|\bto\b|добав|add|remove|удал|benefit|feature|bullet|буллет|преимуществ|checklist|item|padding|отступ|spacing|gap|space|layout|image|икон|icon|картин|изображ)/.test(text);
+  if (explicitStyleIntent && !/(padding|отступ|spacing|gap|benefit|feature|bullet|буллет|преимуществ|checklist|item|добав|add|remove|удал|текст|copy|wording|label|лейбл|надпис|напиши|поменяй|измени|замени|rename|set|change|write|на\b|\bto\b)/.test(text)) {
+    return null;
+  }
+  if (!structuralOrCopyIntent) return null;
+
+  if (/(subtitle|подзаголов|supporting)/.test(text) && !explicitStyleIntent) {
+    return [section, 'screenedit-paywall-body-subtitle'];
+  }
+  if (/((?<!под)заголов|headline|title)/.test(text) && !explicitStyleIntent) {
+    return [section, 'screenedit-paywall-body-title'];
+  }
+  if (/(padding|отступ|spacing|gap|space)/.test(text)) {
+    if (/(list|спис|whole|around|вокруг|outer)/.test(text)) {
+      return [section, 'screenedit-paywall-body-list-padding'];
+    }
+    return [section, 'screenedit-paywall-body-item-padding'];
+  }
+  if (/(state|selected|unselected|выбран|обычн|active|стейт|checked|unchecked)/.test(text)) {
+    return [section, 'screenedit-paywall-body-item-state'];
+  }
+  if (/(image|икон|icon|картин|изображ)/.test(text)) {
+    return [section, 'screenedit-paywall-body-bullet-image-styles'];
+  }
+  if (/(subtitle|подзаголов|description|описан).*(bullet|feature|benefit|буллет|преимуществ)|(bullet|feature|benefit|буллет|преимуществ).*(subtitle|подзаголов|description|описан)/.test(text)) {
+    return [section, 'screenedit-paywall-body-bullet-subtitle-styles'];
+  }
+  if (/(title|headline|заголов).*(bullet|feature|benefit|буллет|преимуществ)|(bullet|feature|benefit|буллет|преимуществ).*(title|headline|заголов)/.test(text)) {
+    return [section, 'screenedit-paywall-body-bullet-title-styles'];
+  }
+  if (/(benefit|feature|bullet|буллет|преимуществ|checklist|чеклист|список преимуществ|item|пункт)/.test(text)) {
+    return [section, 'screenedit-paywall-body-features'];
+  }
+  return null;
+}
+
+function paywallFooterLinksGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  if (!/(paywall|пейвол|оплат|тариф|subscription|подпис|footer|футер|низ|нижн|restore|terms|privacy|legal|autorenew|auto.?renew|renewal|purchase|buy|subscribe|покуп|купить|подпис)/.test(text)) {
+    return null;
+  }
+
+  const section = 'screen-editor-section-paywall-footer';
+  const hasFooterTarget = /(footer|футер|низ|нижн|restore|terms|privacy|legal|autorenew|auto.?renew|renewal|purchase|buy|subscribe|покуп|купить|подпис|кнопк покупки|кнопка покупки|order|порядок|ссылк|link|url|uri|услов|политик|конфиденц)/.test(text);
+  if (!hasFooterTarget) return null;
+  if (/(header|шапк|верх)/.test(text) && /(restore|восстанов)/.test(text)) return null;
+
+  const styleOnly = /(style|стил|шрифт|font|типограф|размер шрифта|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет|color|#[0-9a-f]{3,8}|фон|background|скруг|radius)/.test(text)
+    && !/(text|текст|copy|wording|label|лейбл|надпис|url|uri|link|ссылк|https?:|order|порядок|padding|отступ|spacing|gap|space|downsale|даунсел)/.test(text);
+  if (styleOnly) return null;
+
+  if (/(terms|услов|terms of use)/.test(text)) {
+    if (/(url|uri|link|ссылк|https?:)/.test(text)) return [section, 'screenedit-paywall-footer-terms-uri'];
+    return [section, 'screenedit-paywall-footer-terms-text'];
+  }
+  if (/(privacy|политик|конфиденц)/.test(text)) {
+    if (/(url|uri|link|ссылк|https?:)/.test(text)) return [section, 'screenedit-paywall-footer-privacy-uri'];
+    return [section, 'screenedit-paywall-footer-privacy-text'];
+  }
+  if (/(restore|восстанов)/.test(text)) {
+    return [section, 'screenedit-paywall-footer-restore-text'];
+  }
+  if (/(order|порядок|reorder|перестав|before|after|до |после|button.*text|text.*button|кнопк.*текст|текст.*кнопк)/.test(text)) {
+    return [section, 'screenedit-paywall-footer-elements-order'];
+  }
+  if (/(auto.?renew|autorenew|renewal|авто.?прод|автоспис|продлен)/.test(text)) {
+    if (/(padding|отступ|spacing|gap|space)/.test(text)) return [section, 'screenedit-paywall-footer-autorenew-padding'];
+    return [section, 'screenedit-paywall-footer-autorenew-text'];
+  }
+  if (/(legal|ссылк|links|terms|privacy).*(padding|отступ|spacing|gap|space)|(padding|отступ|spacing|gap|space).*(legal|ссылк|links|terms|privacy)/.test(text)) {
+    return [section, 'screenedit-paywall-footer-legal-links-padding'];
+  }
+  if (/(purchase|buy|subscribe|покуп|купить|подпис|кноп)/.test(text)) {
+    if (/(downsale|cancel|отказ|даунсел|decline)/.test(text)) return [section, 'screenedit-paywall-footer-purchase-downsale'];
+    if (/(padding|отступ|spacing|gap|space)/.test(text)) return [section, 'screenedit-paywall-footer-purchase-padding'];
+    if (/(container|box|shape|рамк|обвод|button box|кнопк.*контейнер)/.test(text)) return [section, 'screenedit-paywall-footer-purchase-container'];
+    if (/(text|текст|copy|wording|label|лейбл|надпис|напиши|поменяй|измени|замени|rename|set|change|write|на\b|\bto\b)/.test(text)) {
+      return [section, 'screenedit-paywall-footer-purchase-text'];
+    }
+  }
+  return null;
+}
+
+function layoutSpacingGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-content';
+  const hasSpacingIntent = /(padding|margin|inset|отступ|отступы|space around|spacing|расстоя.*вокруг|мест.*вокруг|вокруг|space)/.test(text);
+  if (!hasSpacingIntent) return null;
+  if (/(header|шапк|верхн|progress|прогресс|вариант|option|choice|ячей|cell|list|спис)/.test(text)) return null;
+
+  const hasContentTarget = /(content|контент|copy|экран|screen|page|title|заголов|headline|subtitle|подзаголов|hero|image|картин|изображ|photo|picture)/.test(text);
+  if (!hasContentTarget) return null;
+  const hasTextStyleOnlyTarget = /(шрифт|font|типограф|font size|размер шрифта|жирн|bold|weight|line height|line-height|цвет|color|#[0-9a-f]{3,8}|фон|background|скруг|radius)/.test(text)
+    && !/(padding|margin|inset|отступ|space around|spacing|вокруг)/.test(text);
+  if (hasTextStyleOnlyTarget) return null;
+
+  if (/(подзаголов|subtitle|supporting)/.test(text)) {
+    return [section, 'screenedit-copy-block-subtitle-padding'];
+  }
+  if (/((?<!под)заголов|headline|title)/.test(text)) {
+    return [section, 'screenedit-copy-block-title-padding'];
+  }
+  if (/(hero|image|картин|изображ|photo|picture)/.test(text)) {
+    return [section, 'screenedit-copy-block-hero-padding'];
+  }
+  return null;
+}
+
+function actionBarRichStyleGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  if (/(paywall|пейвол|оплат|тариф|subscription|подпис|header|шапк|progress|прогресс)/.test(text)) return null;
+
+  const section = 'screen-editor-section-action-bar';
+  const hasButtonTarget = /(action bar|actionbar|cta|кноп|button|continue|next|secondary|primary|main|главн|основн|втор|skip|продолж)/.test(text);
+  if (!hasButtonTarget) return null;
+
+  const textStyleOnly = /(шрифт|font|типограф|text style|стил.*текст|размер шрифта|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет текста|text color)/.test(text)
+    && !/(gradient|градиент|shadow|тень|motion|effect|анимац|икон|icon|symbol|значок|container|shape|box|fill|фон|background|залив|рамк|border|скруг|radius|padding|отступ)/.test(text);
+  if (textStyleOnly) return null;
+
+  const primaryTarget = /(primary|main|главн|основн|continue|next|продолж)/.test(text);
+  const secondaryTarget = /(secondary|second|втор|skip|optional|дополн|альтернатив)/.test(text);
+  const prefix = secondaryTarget && !primaryTarget ? 'secondary' : 'primary';
+
+  const asksSupportedPrimaryBackground = prefix === 'primary'
+    && /(фон|background|fill|залив|цвет|color|#[0-9a-f]{3,8}|желт|yellow|черн|black|бел|white)/.test(text)
+    && !/(gradient|градиент|shadow|тень|motion|effect|анимац|икон|icon|symbol|значок|container|shape|box|рамк|border|скруг|radius|padding|отступ)/.test(text);
+  if (asksSupportedPrimaryBackground) return null;
+
+  if (/(gradient|градиент)/.test(text)) {
+    return [section, `screenedit-action-bar-${prefix}-gradient`];
+  }
+  if (/(shadow|тень)/.test(text)) {
+    return [section, `screenedit-action-bar-${prefix}-shadow`];
+  }
+  if (/(motion|effect|effects|анимац|движен|эффект)/.test(text)) {
+    return [section, `screenedit-action-bar-${prefix}-effects`];
+  }
+  if (/(икон|icon|symbol|значок)/.test(text)) {
+    return [section, `screenedit-action-bar-${prefix}-icon`];
+  }
+  if (prefix === 'secondary' && /(фон|background|fill|залив|цвет|color|#[0-9a-f]{3,8}|желт|yellow|черн|black|бел|white|container|shape|box|рамк|border|скруг|radius|padding|отступ)/.test(text)) {
+    return [section, 'screenedit-action-bar-secondary-container'];
+  }
+  if (/(container|shape|box|рамк|border|скруг|radius|padding|отступ)/.test(text)) {
+    return [section, `screenedit-action-bar-${prefix}-container`];
+  }
+  return null;
+}
+
+function carouselSlidesTimingGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-carousel';
+  const hasCarouselTarget = /(carousel|карусел|slide|слайд)/.test(text);
+  if (!hasCarouselTarget) return null;
+
+  const explicitStyleIntent = /(style|стил|шрифт|font|типограф|размер шрифта|font size|жирн|bold|weight|line height|line-height|выравн|align|цвет|color|#[0-9a-f]{3,8}|фон|background|скруг|radius)/.test(text);
+  const asksImageAsset = /(image|photo|picture|картин|изображ|фото)/.test(text)
+    && /(добав|add|upload|загруз|attach|встав|replace|замени|url|https?:|asset|source|источник|выб|select|choose)/.test(text)
+    && !/(type|тип|kind|template|шаблон)/.test(text);
+  if (asksImageAsset) return null;
+
+  if (/(duration|длител|время|timing|тайминг|seconds|секунд|timer|play time|autoplay)/.test(text)) {
+    if (/(total|overall|общ|all|whole|весь|full|полная|timer|play time|autoplay)/.test(text)) {
+      return [section, 'screenedit-carousel-duration'];
+    }
+    return [section, 'screenedit-carousel-slide-duration-range'];
+  }
+
+  if (/(type|тип|kind|template|шаблон|content type|содержим.*тип|image slide|text slide|картин.*тип|слайд.*картин)/.test(text)) {
+    return [section, 'screenedit-carousel-slide-type'];
+  }
+
+  const copyIntent = /(текст|copy|wording|label|лейбл|надпис|напиши|поменяй|измени|замени|rename|set|change|write|на\b|\bto\b)/.test(text);
+  if (!copyIntent || explicitStyleIntent) return null;
+
+  if (/(subtitle|подзаголов|supporting)/.test(text)) {
+    return [section, 'screenedit-carousel-slide-subtitle'];
+  }
+  if (/(detail|details|extra|дополнитель|описан|description)/.test(text)) {
+    return [section, 'screenedit-carousel-slide-detail'];
+  }
+  if (/((?<!под)заголов|headline|title)/.test(text)) {
+    return [section, 'screenedit-carousel-slide-title'];
+  }
+  if (/(slide|слайд)/.test(text) && /(text|текст|copy|wording|надпис)/.test(text)) {
+    return [section, 'screenedit-carousel-slide-title'];
+  }
+
+  return null;
+}
+
+function customHtmlWebEmbedGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const section = 'screen-editor-section-embed';
+  const hasCustomHtmlTarget = /(custom html|custom screen|webembed|web embed|web-embed|embed screen|iframe|html editor|html code|html.*screen|html.*экран|код.*html|кастомн.*html|кастомн.*код|веб.?эмбед|data source|data sources|child section|childsections|getchildsection|segmentlysdk|sandbox|isolation|изолир|песочн|источник.*данн|данн.*html|контент.*html)/.test(text);
+  if (!hasCustomHtmlTarget) return null;
+
+  const customDomainOnly = /(custom domain|домен|dns)/.test(text)
+    && !/(html|webembed|web embed|iframe|embed|data source|child section|segmentlysdk|код)/.test(text);
+  if (customDomainOnly) return null;
+
+  const analyticsOnly = /(analytics|аналитик|pixel|пиксел|ga4|gtm|amplitude|mixpanel|posthog|facebook|tiktok)/.test(text)
+    && !/(webembed|web embed|custom html|iframe|html editor|html code|embed screen|child section|data source|segmentlysdk)/.test(text);
+  if (analyticsOnly) return null;
+
+  if (/(data source|data sources|child section|childsections|getchildsection|источник.*данн|данн.*html|контент.*html|editable content|редакт.*контент)/.test(text)) {
+    return [section, 'screenedit-embed-data-sources'];
+  }
+  const asksIframeIsolation = /(sandbox|isolation|isolat|песочн|изолир|allow|permission|разреш)/.test(text);
+  const asksCodeEdit = /(встав|paste|добав|add|write|set|change|код|html editor|html code|css|javascript|script|snippet|виджет|widget|iframe.*(встав|add)|custom screen)/.test(text);
+  if (asksIframeIsolation && !asksCodeEdit) {
+    return [section, 'screenedit-embed-iframe-isolation'];
+  }
+  if (asksCodeEdit || /(html.*screen|html.*экран|iframe)/.test(text)) {
+    return [section, 'screenedit-embed-html-editor'];
+  }
+  if (/(iframe|frame)/.test(text) || asksIframeIsolation) {
+    return [section, 'screenedit-embed-iframe-isolation'];
+  }
+  return [section, 'screenedit-embed-html-editor'];
+}
+
+function mediaAssetLayoutGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasImageIntent = /(image|photo|picture|картин|изображ|фото|asset|media|медиа)/.test(text);
+  const hasVideoIntent = /(video|видео|ролик|clip)/.test(text);
+  const wantsImageInsteadOfVideo = hasImageIntent && hasVideoIntent && /(instead|вместо|замени|switch|переключ)/.test(text);
+  const wantsAssetOrLayout = /(добав|add|upload|загруз|attach|встав|set|постав|replace|замени|change|поменяй|select|choose|выб|url|https?:|asset|source|источник|width|ширин|height|высот|size|размер|scale|cover|fit|fill|crop|contain|обрез|впис|заполн|radius|скруг|corner|enable|show|hide|gradient|fade|градиент|затемн|картин|изображ|фото|image|photo|picture)/.test(text);
+  if (!hasImageIntent || !wantsAssetOrLayout) return null;
+
+  const asksForArticleOrScreenshotEvidence = /(стать[ьяю]|article|guide|гайд|подсказ|инструкц).*(картин|скрин|screenshot|image|photo)|(картин|скрин|screenshot|image|photo).*(стать[ьяю]|article|guide|гайд|подсказ|инструкц)/.test(text);
+  const hasImageSlotTarget = /(hero|featured image|main image|media|медиа|вариант|option|choice|answer|ответ|ячей|cell|card|карточ|item|carousel|карусел|slide|слайд|спис|list|grid|сетка|wheel|колес|picker)/.test(text);
+  if (asksForArticleOrScreenshotEvidence && !hasImageSlotTarget) return null;
+
+  const asksSpacing = /(padding|margin|inset|отступ|отступы|space around|spacing|расстоя|вокруг)/.test(text);
+  if (asksSpacing) return null;
+
+  const explicitVideoOnly = hasVideoIntent && !wantsImageInsteadOfVideo && !/(image|photo|picture|картин|изображ|фото)/.test(text);
+  if (explicitVideoOnly) return null;
+
+  if (/(carousel|карусел|slide|слайд)/.test(text)) {
+    return ['screen-editor-section-carousel', 'screenedit-carousel-slide-image'];
+  }
+
+  if (/(вариант|option|choice|answer|ответ|ячей|cell|card|карточ|item)/.test(text)
+    && !/(screen|экран|media|медиа).*(list|спис)|list|спис.*(screen|экран|media|медиа)/.test(text)) {
+    if (/(container|area|box|контейнер|област|зон|позици|position|layout|размер|size|height|width|высот|ширин)/.test(text)) {
+      return ['screen-editor-section-options', 'screenedit-options-image-container'];
+    }
+    return ['screen-editor-section-options', 'screenedit-options-image-styles'];
+  }
+
+  if (/(hero|featured image|main image|главн.*картин|верхн.*картин)/.test(text)) {
+    const section = 'screen-editor-section-content';
+    if (/(scale|cover|fit|fill|crop|contain|обрез|впис|заполн)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-scale-mode'];
+    }
+    if (/(width|ширин)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-width'];
+    }
+    if (/(height.*percent|height.*%|высот.*процент|высот.*%|процент)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-height-percentage'];
+    }
+    if (/(height|высот)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-height'];
+    }
+    if (/(radius|скруг|corner|угл)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-corner-radius'];
+    }
+    if (/(url|https?:|upload|загруз|attach|source|источник|asset|добав|add|replace|замени|постав|set|выб)/.test(text)) {
+      return [section, 'screenedit-copy-block-hero-url'];
+    }
+    return [section, 'screenedit-copy-block-hero'];
+  }
+
+  if (/(спис|list|grid|сетка|wheel|колес|picker|экран|screen|media|медиа)/.test(text)) {
+    const section = 'screen-editor-section-media';
+    if (/(enable|show|hide|включ|выключ|показ|скрыт)/.test(text)) {
+      return [section, 'screenedit-media-enable'];
+    }
+    if (/(kind|тип|image or video|фото.*видео|image.*video|вместо.*видео|instead.*video|переключ)/.test(text) || wantsImageInsteadOfVideo) {
+      return [section, 'screenedit-media-kind', 'screenedit-media-image-upload'];
+    }
+    if (/(url|https?:|upload|загруз|attach|source|источник|asset|добав|add|replace|замени|постав|set|выб)/.test(text)) {
+      return [section, 'screenedit-media-kind', 'screenedit-media-image-upload'];
+    }
+    if (/(gradient|fade|градиент|затемн)/.test(text)) {
+      if (/(height|высот|size|размер)/.test(text)) return [section, 'screenedit-media-gradient-height'];
+      if (/(color|цвет|#[0-9a-f]{3,8})/.test(text)) return [section, 'screenedit-media-gradient-color'];
+      return [section, 'screenedit-media-gradient-enable'];
+    }
+    if (/(padding|margin|отступ)/.test(text)) {
+      return [section, 'screenedit-media-padding'];
+    }
+  }
+
+  return null;
+}
+
+function hasCopyTextValueIntent(text) {
+  if (!/(текст|copy|wording|label|лейбл|надпис|назван|title|headline|subtitle|подзаголов)/.test(text)) return false;
+  if (hasTextStyleIntent(text)) return false;
+  return /(поменяй|измени|замени|напиши|поставь|переименуй|set|change|write|rename|на\b|\bto\b)/.test(text);
+}
+
+function hasTextStyleIntent(text) {
+  return /(шрифт|font|типограф|style|стил|размер|size|цвет|color|#[0-9a-f]{3,8}|жирн|bold|weight|выравн|align|фон|background|скруг|radius|padding|отступ|spacing|line height|line-height)/i.test(text);
+}
+
 function scenarioIdForPrompt(prompt, action) {
   if (action?.id === 'launch.funnel.create') return 'create-funnel';
   if (action?.id === 'launch.analytics.pixel.apply') return 'add-fb-pixel';
@@ -1935,6 +3140,7 @@ function scenarioIdForPrompt(prompt, action) {
   if (/^editor\.carousel\./.test(action?.id ?? '')) return 'change-setting';
   if (/^editor\.stickyContainer\.style\./.test(action?.id ?? '')) return 'change-setting';
   if (/^editor\.flexibleSections\./.test(action?.id ?? '')) return 'change-setting';
+  if (/^editor\.setting\./.test(action?.id ?? '')) return 'change-setting';
   if (action?.id === 'editor.screen.backgroundColor') return 'change-setting';
   if (action?.id === 'editor.list.options.itemTitle.fontSize') return 'change-setting';
   if (action?.id === 'launch.paywallProducts.create') return 'create-paywall-products';
@@ -1953,7 +3159,7 @@ function hasExplicitActionIntent(text) {
   const normalized = String(text ?? '')
     .replace(/сделай\s+(?:скриншот|снимок(?:\s+экрана)?)/gi, ' ')
     .replace(/(?:take|capture|make)\s+(?:a\s+)?screenshot/gi, ' ');
-  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|добавь|загрузи|вставь|прикрепи|можешь|attach|create|publish|set|connect|apply|upload|add|insert|do it|make|change it|change|enable|disable)/i.test(normalized);
+  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|добавь|загрузи|вставь|прикрепи|можешь|attach|create|publish|set|connect|apply|upload|add|insert|do it|make|change it|change|turn\s+on|turn\s+off|enable|disable)/i.test(normalized);
 }
 
 function hasArticleFetchIntent(text) {

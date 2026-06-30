@@ -14694,6 +14694,255 @@
       }
     },
     {
+      "id": "editor.setting.screenedit-basic-config-animation-enabled",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Play Screen Animations",
+      "customerIntent": [
+        "change play screen animations",
+        "set play screen animations",
+        "update play screen animations",
+        "change Basic Config play screen animations",
+        "set Basic Config play screen animations",
+        "поменяй базовых настроек экрана",
+        "измени базовых настроек экрана",
+        "настрой базовых настроек экрана",
+        "screenedit-basic-config-animation-enabled",
+        "turn on play screen animations",
+        "turn off play screen animations",
+        "enable play screen animations",
+        "disable play screen animations",
+        "turn on screen animations",
+        "turn off screen animations",
+        "включи анимации экрана",
+        "выключи анимации экрана"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated play screen animations after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-animation-enabled",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.animated",
+        "valueType": "boolean",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-animation-enabled.patch.json",
+        "expectedWrite": "Set Play Screen Animations to <value> on screen <screenId>."
+      }
+    },
+    {
+      "id": "editor.setting.screenedit-basic-config-offline-first",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Reuse cached media",
+      "customerIntent": [
+        "change reuse cached media",
+        "set reuse cached media",
+        "update reuse cached media",
+        "change Basic Config reuse cached media",
+        "set Basic Config reuse cached media",
+        "поменяй базовых настроек экрана",
+        "измени базовых настроек экрана",
+        "настрой базовых настроек экрана",
+        "screenedit-basic-config-offline-first",
+        "turn on reuse cached media",
+        "turn off reuse cached media",
+        "enable reuse cached media",
+        "disable reuse cached media",
+        "reuse cached media",
+        "turn on cached media",
+        "включи кеш медиа",
+        "используй кеш медиа"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated reuse cached media after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-offline-first",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.offlineFirst",
+        "valueType": "boolean",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-offline-first.patch.json",
+        "expectedWrite": "Set Reuse cached media to <value> on screen <screenId>."
+      }
+    },
+    {
+      "id": "editor.setting.screenedit-basic-config-permission-type",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Which Permission To Ask For",
+      "customerIntent": [
+        "change which permission to ask for",
+        "set which permission to ask for",
+        "update which permission to ask for",
+        "change Basic Config which permission to ask for",
+        "set Basic Config which permission to ask for",
+        "поменяй базовых настроек экрана",
+        "измени базовых настроек экрана",
+        "настрой базовых настроек экрана",
+        "screenedit-basic-config-permission-type"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated which permission to ask for after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-permission-type",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.systemPrompt.permissionType",
+        "valueType": "string",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-permission-type.patch.json",
+        "expectedWrite": "Set Which Permission To Ask For to <value> on screen <screenId>."
+      }
+    },
+    {
+      "id": "editor.setting.screenedit-basic-config-countdown-duration-value",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Auto-Advance Duration",
+      "customerIntent": [
+        "change auto-advance duration",
+        "set auto-advance duration",
+        "update auto-advance duration",
+        "change Basic Config auto-advance duration",
+        "set Basic Config auto-advance duration",
+        "поменяй базовых настроек экрана",
+        "измени базовых настроек экрана",
+        "настрой базовых настроек экрана",
+        "screenedit-basic-config-countdown-duration-value",
+        "auto advance after a delay",
+        "change auto advance delay",
+        "включи автопереход",
+        "поменяй задержку автоперехода"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated auto-advance duration after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-countdown-duration-value",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.countdown.duration",
+        "valueType": "number",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-countdown-duration-value.patch.json",
+        "expectedWrite": "Set Auto-Advance Duration to <value> on screen <screenId>."
+      }
+    },
+    {
+      "id": "editor.setting.screenedit-basic-config-countdown-unit",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Seconds Or Minutes",
+      "customerIntent": [
+        "change seconds or minutes",
+        "set seconds or minutes",
+        "update seconds or minutes",
+        "change Basic Config seconds or minutes",
+        "set Basic Config seconds or minutes",
+        "поменяй базовых настроек экрана",
+        "измени базовых настроек экрана",
+        "настрой базовых настроек экрана",
+        "screenedit-basic-config-countdown-unit",
+        "auto advance after a delay",
+        "change auto advance delay",
+        "включи автопереход",
+        "поменяй задержку автоперехода"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated seconds or minutes after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-countdown-unit",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.countdown.unit",
+        "valueType": "string",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-countdown-unit.patch.json",
+        "expectedWrite": "Set Seconds Or Minutes to <value> on screen <screenId>."
+      }
+    },
+    {
       "id": "launch.paywallProducts.create",
       "status": "supported",
       "mode": "cli",

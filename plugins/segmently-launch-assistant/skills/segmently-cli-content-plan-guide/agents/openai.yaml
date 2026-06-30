@@ -1,0 +1,7 @@
+interface:
+  display_name: "Segmently CLI Content Plan Guide"
+  short_description: "Run Content Plan workflows through Segmently CLI"
+  default_prompt: "Use $segmently-cli-content-plan-guide to plan or verify my Content Plan CLI workflow."
+
+policy:
+  allow_implicit_invocation: true

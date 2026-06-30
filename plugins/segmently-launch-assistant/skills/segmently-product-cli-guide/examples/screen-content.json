@@ -1,0 +1,17 @@
+{
+  "_template": "SimplifiedV2Content",
+  "copy": {
+    "title": "Build your plan in seconds",
+    "subtitle": "Answer a few quick questions so we can personalize your setup."
+  },
+  "options": [
+    {
+      "id": "focus",
+      "label": "Improve focus"
+    },
+    {
+      "id": "sleep",
+      "label": "Sleep better"
+    }
+  ]
+}

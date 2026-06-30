@@ -14,6 +14,7 @@
  *   - produce a packaged E2E dry-run execution package;
  *   - produce an E2E/browser delegation plan for a nested field write;
  *   - audit guide image/link coverage and screen-setting article coverage;
+ *   - audit DO coverage and remaining teach/show-only setting gaps;
  *   - produce a non-mutating SHOW browser/screenshot plan;
  *   - prove raw customer TEACH/SHOW/CLI DO/E2E DO contracts through the
  *     customer-surface acceptance runner;
@@ -27,6 +28,7 @@ import { fileURLToPath } from 'node:url';
 import { FORBIDDEN_TOKENS } from './forbidden-tokens.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const defaultContextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-forward-')), 'empty-context.json');
 const args = new Set(process.argv.slice(2));
 const companionSkills = Object.freeze([
   'segmently-cli-guide',
@@ -62,7 +64,10 @@ check('projection files exist', () => {
     'runtime/e2e-do-runner.mjs',
     'runtime/show-runner.mjs',
     'runtime/customer-response-runner.mjs',
+    'runtime/session-context.mjs',
+    'references/session-context.md',
     'scripts/audit-guide-coverage.mjs',
+    'scripts/audit-do-coverage.mjs',
     'scripts/run-customer-surface-acceptance.mjs',
     'evals/persona-flow-evals.json',
   ]) {
@@ -98,6 +103,45 @@ check('coverage audit reports image gaps and covers screen settings', () => {
   assert(
     audit.guideEvidence.coverageRows.length === audit.guideEvidence.totalGuides,
     'guide image/link coverage rows do not cover every guide',
+  );
+});
+
+check('DO coverage audit reports supported and teach-only setting inventory', () => {
+  const audit = JSON.parse(execFileSync('node', [
+    join(root, 'scripts/audit-do-coverage.mjs'),
+    '--json',
+    '--strict',
+  ], {
+    encoding: 'utf8',
+    maxBuffer: 10 * 1024 * 1024,
+  }));
+  assert(audit.ok === true, 'DO coverage audit strict mode failed');
+  assert(audit.actionRegistry?.totalActions >= 300, 'DO coverage audit action inventory is too low');
+  assert(audit.settings?.totalPublishedSettings >= 400, 'DO coverage audit setting inventory is too low');
+  assert(audit.settings?.anyDoSettingCount >= 150, 'DO coverage audit supported setting coverage regressed');
+  assert(Array.isArray(audit.settings?.teachOnlySettings), 'DO coverage audit teach-only setting inventory is missing');
+  assert(Array.isArray(audit.articleCoverage?.topGapArticles), 'DO coverage audit top gap article inventory is missing');
+  assert(audit.gapTaxonomy?.schemaVersion === 1, 'DO coverage audit gap taxonomy schemaVersion missing');
+  assert(
+    audit.gapTaxonomy?.totalTeachOnlySettings === audit.settings?.teachOnlySettingCount,
+    'DO coverage audit gap taxonomy count does not match teach-only setting inventory',
+  );
+  assert(audit.gapTaxonomy?.unclassifiedSettingCount === 0, 'DO coverage audit gap taxonomy has unclassified settings');
+  assert((audit.gapTaxonomy?.gapGroups ?? []).length >= 5, 'DO coverage audit gap taxonomy groups are missing');
+  for (const family of [
+    'options-structure-and-items',
+    'media-assets-and-image-layout',
+    'copy-and-label-text',
+    'variable-binding-and-scoring',
+  ]) {
+    assert(
+      (audit.gapTaxonomy?.gapGroups ?? []).some(group => group.family === family),
+      `DO coverage audit gap taxonomy is missing ${family}`,
+    );
+  }
+  assert(
+    (audit.conditionalActions?.probes ?? []).filter(probe => probe.ok === true).length >= 2,
+    'DO coverage audit conditional media probes regressed',
   );
 });
 
@@ -472,6 +516,7 @@ check('CLI DO runner dry-run materializes patch and verification contract', () =
   assert(operation?.value === '#ffc201', 'CLI dry-run patch value drifted');
   assert(dryRun.verification?.read === 'funnels export', 'CLI dry-run missing export verification');
   assert(dryRun.wouldVerify?.join(' ').includes('funnels export'), 'CLI dry-run missing verification argv');
+  assertToolPreflight(dryRun.toolPreflight, { browser: false });
 
   const backgroundDryRun = runCliRunner([
     '--action',
@@ -708,6 +753,7 @@ check('E2E DO runner dry-run exposes browser package and refuses CLI actions', (
   assert(dryRun.authPreflight?.statusProbe?.argv?.join(' ').includes('auth status'), 'E2E auth preflight missing safe status probe');
   assert(dryRun.authPreflight?.login?.argv?.join(' ').includes('auth login'), 'E2E auth preflight missing login command');
   assert(dryRun.authPreflight?.tokenProbe?.safeToShowOutput === false, 'E2E auth preflight must mark token probe output unsafe');
+  assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' });
   const envDryRun = runE2eRunner([
     '--action',
     'editor.list.options.itemTitle.fontSize',
@@ -789,6 +835,7 @@ check('SHOW runner dry-run exposes read-only browser screenshot package', () => 
   assert(dryRun.authPreflight?.login?.argv?.join(' ').includes('auth login'), 'SHOW auth preflight missing login command');
   assert(dryRun.authPreflight?.tokenProbe?.safeToShowOutput === false, 'SHOW auth preflight must mark token probe output unsafe');
   assert(dryRun.authPreflight?.retry?.argv?.includes('--execute'), 'SHOW auth preflight retry must execute live runner');
+  assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' });
   const devDryRun = runShowRunner([
     '--prompt',
     'покажи где поменять цвет кнопки продолжить',
@@ -1611,6 +1658,35 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+function assertToolPreflight(preflight, options = {}) {
+  assert(preflight?.requiredForExecute === true, 'toolPreflight must be required before execution');
+  const checks = Array.isArray(preflight.checks) ? preflight.checks : [];
+  const byId = new Map(checks.map(check => [check.id, check]));
+  for (const id of ['segmently-cli-version', 'segmently-auth-status', 'segmently-capabilities']) {
+    assert(byId.has(id), `toolPreflight missing ${id}`);
+  }
+  assert(byId.get('segmently-cli-version')?.argv?.join(' ').includes('--version'), 'toolPreflight missing segmently --version check');
+  assert(byId.get('segmently-cli-version')?.setup?.argv?.join(' ') === 'npm install -g @segmently/cli', 'toolPreflight missing Segmently CLI install command');
+  assert(byId.get('segmently-auth-status')?.argv?.join(' ').includes('auth status'), 'toolPreflight missing auth status check');
+  assert(byId.get('segmently-auth-status')?.setup?.argv?.join(' ').includes('auth login'), 'toolPreflight missing auth login recovery');
+  assert(byId.get('segmently-capabilities')?.argv?.join(' ').includes('capabilities'), 'toolPreflight missing Segmently capabilities check');
+  if (options.segmentlyEnv) {
+    assert(preflight.segmentlyEnv === options.segmentlyEnv, `toolPreflight env ${preflight.segmentlyEnv}, expected ${options.segmentlyEnv}`);
+  }
+  if (options.browser) {
+    assert(byId.has('playwright-cli-help'), 'toolPreflight missing playwright-cli help check');
+    assert(byId.has('playwright-browser-availability'), 'toolPreflight missing browser availability check');
+    assert(byId.get('playwright-cli-help')?.argv?.join(' ') === 'playwright-cli --help', 'toolPreflight missing playwright-cli --help check');
+    assert(byId.get('playwright-cli-help')?.setup?.argv?.join(' ') === 'npm install -g @playwright/cli@latest', 'toolPreflight missing playwright-cli install command');
+    assert(byId.get('playwright-browser-availability')?.argv?.join(' ').includes('install-browser'), 'toolPreflight missing playwright install-browser check');
+    assert(byId.get('playwright-browser-availability')?.setup?.fallbackArgv?.join(' ').includes('npx playwright install'), 'toolPreflight missing Playwright browser fallback install');
+  } else {
+    assert(!byId.has('playwright-cli-help'), 'CLI-only toolPreflight should not require playwright-cli');
+    assert(!byId.has('playwright-browser-availability'), 'CLI-only toolPreflight should not require browser availability');
+  }
+  assert(/Before live SHOW\/DO execution/.test(preflight.agentInstruction ?? ''), 'toolPreflight missing live execution agent instruction');
+}
+
 function read(rel) {
   return readFileSync(join(root, rel), 'utf8');
 }
@@ -1671,7 +1747,7 @@ function runE2eRunnerExpectingRefusal(args) {
 function runShowRunner(args, env = {}) {
   const stdout = execFileSync('node', [join(root, 'runtime/show-runner.mjs'), ...args], {
     encoding: 'utf8',
-    env: { ...process.env, ...env },
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
 }
@@ -1683,16 +1759,18 @@ function runCustomerResponse(personaId, questionId) {
     '--question', questionId,
   ], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile },
   });
   return JSON.parse(stdout);
 }
 
-function runCustomerPrompt(args) {
+function runCustomerPrompt(args, env = {}) {
   const stdout = execFileSync('node', [
     join(root, 'runtime/customer-response-runner.mjs'),
     ...args,
   ], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
 }
@@ -1709,7 +1787,7 @@ function expectedResponseMode(expectedDo) {
 }
 
 function hasExplicitActionIntent(text) {
-  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|можешь|attach|create|publish|set|connect|apply|do it|make|change|enable|disable)/i.test(String(text ?? ''));
+  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|можешь|attach|create|publish|set|connect|apply|do it|make|change|turn\s+on|turn\s+off|enable|disable)/i.test(String(text ?? ''));
 }
 
 function sampleArgsForAction(id) {
@@ -1730,6 +1808,9 @@ function sampleArgsForAction(id) {
   }
   if (/^editor\.actionBar\.(primary|secondary)Button\.textStyle\./.test(id)) {
     return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedTextStyleAction(id)];
+  }
+  if (/^editor\.setting\./.test(id)) {
+    return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedGenericScalarSettingAction(id)];
   }
   if (/^editor\.header\.(backButton|skipButton)\.textStyle\./.test(id)) {
     return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedTextStyleAction(id)];
@@ -1811,6 +1892,23 @@ function sampleValueForGeneratedTextStyleAction(id) {
   if (id.endsWith('.align')) return 'center';
   if (id.endsWith('.textAlign')) return 'center';
   return 'Inter';
+}
+
+function sampleValueForGeneratedGenericScalarSettingAction(id) {
+  if (/(animation-enabled|offline-first|system-permission-enabled|countdown-enabled|auto-focus|video-repeat|media-repeat)/.test(id)) return 'true';
+  if (/(color|background|border-color|text-color)/.test(id)) return '#111111';
+  if (/(terms-uri|privacy-uri|uri|url|link)/.test(id)) return 'https://example.com';
+  if (/scale-mode/.test(id)) return 'scaleAspectFill';
+  if (/top-alignment/.test(id)) return 'top';
+  if (/bottom-alignment/.test(id)) return 'contentBottom';
+  if (/permission-type/.test(id)) return 'notifications';
+  if (/countdown-unit/.test(id)) return 'seconds';
+  if (/field-type/.test(id)) return 'text';
+  if (/keyboard-type/.test(id)) return 'default';
+  if (/border-type/.test(id)) return 'box';
+  if (/elements-order/.test(id)) return 'purchase,terms,privacy';
+  if (/(duration|font-size|font-weight|line-height|width|height|percentage|radius|opacity|border-width|delay|z-index|flex-grow|flex-shrink)/.test(id)) return '16';
+  return 'value';
 }
 
 function sampleValueForGeneratedPaywallHeaderStyleAction(id) {

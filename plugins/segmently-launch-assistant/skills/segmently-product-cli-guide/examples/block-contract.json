@@ -1,0 +1,14 @@
+{
+  "summary": "Welcome block for first-run personalization.",
+  "screenCount": 2,
+  "contentGoals": [
+    "Show fast personalization value",
+    "Ask for primary goal"
+  ],
+  "outputAssignment": [
+    {
+      "variableId": "primary_goal",
+      "sourceScreenId": "screen_1"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "strategyId": "strategy_1",
+  "name": "Acme onboarding",
+  "description": "Personalized onboarding for Acme users.",
+  "strategyType": "IOS Onboarding",
+  "toneOfVoice": "clear and encouraging",
+  "designDescription": "Clean mobile onboarding with concise copy and high contrast controls.",
+  "sourceData": {
+    "insightIds": [
+      "analysis_1"
+    ],
+    "tasks": [
+      "task_1"
+    ],
+    "variableIds": [
+      "primary_goal"
+    ],
+    "reviews": [
+      "review_1"
+    ],
+    "studyCases": [
+      "case_1"
+    ],
+    "ratings": [],
+    "bigNumbers": []
+  },
+  "sourceDataMapping": [],
+  "strategyVariables": {},
+  "replaceExisting": false
+}

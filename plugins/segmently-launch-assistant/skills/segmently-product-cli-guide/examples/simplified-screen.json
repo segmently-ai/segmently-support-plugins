@@ -1,0 +1,22 @@
+{
+  "id": "screen_1",
+  "name": "Primary goal",
+  "screenType": "ListSinglePick",
+  "position": 0,
+  "content": {
+    "copy": {
+      "title": "What do you want to improve first?",
+      "subtitle": "We will use this to shape your first plan."
+    },
+    "options": [
+      {
+        "id": "focus",
+        "label": "Improve focus"
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep better"
+      }
+    ]
+  }
+}

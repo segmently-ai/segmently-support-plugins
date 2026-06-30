@@ -8,11 +8,13 @@
  * CLI/E2E packages and verification plans.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, mkdtempSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolveSkillRoot();
+const defaultContextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-acceptance-')), 'empty-context.json');
 const failures = [];
 
 check('teach prompt stays source-safe and screenshot-backed', () => {
@@ -120,6 +122,55 @@ check('direct video upload request returns conditional browser DO contract', () 
   assertSourceSafeCustomerAnswer(response);
 });
 
+check('direct shared Media video upload request returns conditional browser DO contract', () => {
+  const response = runResponse(['--prompt', 'сделай видео в списке']);
+  assert(response.ok === true, 'direct shared Media video DO response did not return ok=true');
+  assert(response.mode === 'do-e2e-conditional', `expected conditional browser DO mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'conditional-do', `expected conditional-do resolver, got ${response.resolver?.kind}`);
+  assert(response.action?.actionId === 'browser.media.videoUpload', 'direct shared Media video DO must use the shared Media upload action');
+  assert(response.action?.status === 'needs-inputs', `expected missing-inputs status, got ${response.action?.status}`);
+  assert(response.action?.owningSkill === 'playwright-bowser', 'shared Media conditional upload must route to playwright-bowser');
+  assert(response.action?.companionSkill === 'segmently-test-kit', 'shared Media conditional upload must include segmently-test-kit');
+  assert(response.action?.supportedBoundary === 'conditional-browser-editor-upload', 'shared Media upload must not pretend a headless CLI patch exists');
+  assert(response.action?.missingInputs?.includes('projectId'), 'shared Media upload must ask for projectId');
+  assert(response.action?.missingInputs?.includes('funnelId'), 'shared Media upload must ask for funnelId');
+  assert(response.action?.missingInputs?.includes('screenId'), 'shared Media upload must ask for screenId');
+  assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), 'shared Media upload must ask for video source');
+  assert(response.action?.authPreflight?.requiredForExecute === true, 'shared Media upload must include auth preflight');
+  assert(response.answer?.publicArticleLinks?.some(url => /help-block-media\/index\.html$/.test(url)), 'shared Media upload must keep the article URL');
+  assert(response.answer?.imageUrls?.some(url => /configure-media-section/.test(url)), 'shared Media upload must expose concrete Media image URLs');
+  assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === 'help-block-media'), 'shared Media upload visible assets missing guide alias');
+  assert(response.completionClaim === 'needs-inputs-before-execution', `unexpected completion claim ${response.completionClaim}`);
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('mixed dry-run shared Media video request stays conditional browser DO', () => {
+  const response = runResponse([
+    '--prompt',
+    'Сделай видео в списке Segmently. Я не знаю точные id, это тестовый прогон: не меняй данные, покажи статью с картинкой и какие inputs нужны чтобы сделать это через браузер.',
+  ]);
+  assert(response.ok === true, 'mixed shared Media video DO response did not return ok=true');
+  assert(response.mode === 'do-e2e-conditional', `expected conditional browser DO mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'conditional-do', `expected conditional-do resolver, got ${response.resolver?.kind}`);
+  assert(response.resolver?.scenarioId === 'change-setting', `expected change-setting scenario, got ${response.resolver?.scenarioId}`);
+  assert(response.action?.actionId === 'browser.media.videoUpload', `mixed shared Media prompt resolved wrong action ${response.action?.actionId}`);
+  assert(response.action?.owningSkill === 'playwright-bowser', 'mixed shared Media prompt must route to playwright-bowser');
+  assert(response.action?.companionSkill === 'segmently-test-kit', 'mixed shared Media prompt must include segmently-test-kit');
+  assert(response.action?.supportedBoundary === 'conditional-browser-editor-upload', 'mixed shared Media upload must not pretend a headless CLI patch exists');
+  assert(response.action?.missingInputs?.includes('projectId'), 'mixed shared Media upload must ask for projectId');
+  assert(response.action?.missingInputs?.includes('funnelId'), 'mixed shared Media upload must ask for funnelId');
+  assert(response.action?.missingInputs?.includes('screenId'), 'mixed shared Media upload must ask for screenId');
+  assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), 'mixed shared Media upload must ask for video source');
+  assert(response.action?.authPreflight?.requiredForExecute === true, 'mixed shared Media upload must include auth preflight');
+  assertToolPreflight(response.action?.toolPreflight, { browser: true });
+  assert(response.answer?.publicArticleLinks?.some(url => /help-block-media\/index\.html$/.test(url)), 'mixed shared Media upload must keep the article URL');
+  assert(response.answer?.imageUrls?.some(url => /configure-media-section/.test(url)), 'mixed shared Media upload must expose concrete Media image URLs');
+  assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === 'help-block-media'), 'mixed shared Media visible assets missing guide alias');
+  assert(!response.answer?.articleReferences?.some(reference => reference.articleAlias === 'paywall-products-list'), 'mixed shared Media prompt must not resolve Paywall Products article');
+  assert(response.completionClaim === 'needs-inputs-before-execution', `unexpected completion claim ${response.completionClaim}`);
+  assertSourceSafeCustomerAnswer(response);
+});
+
 check('button font full article prompt delegates read-only article fetch', () => {
   const response = runResponse(['--prompt', 'дай полную статью как настроить шрифты в кнопке']);
   assert(response.ok === true, 'button font full-article response did not return ok=true');
@@ -178,6 +229,7 @@ check('show prompt is non-mutating and asks only for target inputs', () => {
   assert(dryRun.authPreflight?.login?.argv?.join(' ').includes('auth login'), 'SHOW auth preflight missing login command');
   assert(dryRun.authPreflight?.tokenProbe?.safeToShowOutput === false, 'SHOW auth preflight must mark token probe output unsafe');
   assert(dryRun.authPreflight?.retry?.argv?.includes('--execute'), 'SHOW auth preflight retry must execute the live runner');
+  assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' });
   const devDryRun = runShowRunner([
     '--prompt',
     'покажи где поменять цвет кнопки продолжить',
@@ -245,6 +297,89 @@ check('show prompt is non-mutating and asks only for target inputs', () => {
   assert(dryRun.completionClaim === 'show-not-completed-until-browser-screenshot', 'packaged SHOW runner claimed completion');
 });
 
+check('session context supplies current project without hiding remaining target inputs', () => {
+  const contextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-context-')), 'context.json');
+  const saved = JSON.parse(execFileSync('node', [
+    join(root, 'runtime/session-context.mjs'),
+    'set-current-project',
+    '--projectId',
+    'project_ctx',
+    '--projectName',
+    'Context Project',
+    '--contextFile',
+    contextFile,
+  ], { encoding: 'utf8' }));
+  assert(saved.ok === true, 'session-context set-current-project failed');
+  assert(saved.context?.currentProject?.id === 'project_ctx', 'session-context did not persist project id');
+
+  const response = runResponse([
+    '--prompt',
+    'покажи где поменять цвет кнопки продолжить',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  assert(response.ok === true, 'context-backed SHOW response did not return ok=true');
+  assert(response.sessionContext?.usingCurrentProject === true, 'context-backed SHOW did not use current project');
+  assert(response.sessionContext?.currentProject?.id === 'project_ctx', 'context-backed SHOW current project id drifted');
+  assert(!response.show?.missingInputs?.includes('projectId'), 'context-backed SHOW must not ask for projectId again');
+  assert(response.show?.missingInputs?.includes('funnelId'), 'context-backed SHOW must still ask for funnelId');
+  assert(response.show?.missingInputs?.includes('screenId'), 'context-backed SHOW must still ask for screenId');
+  assert(response.show?.providedInputs?.projectId === 'project_ctx', 'context-backed SHOW must pass projectId as provided input');
+  assert(/Context Project/.test(response.answer?.contextNotice ?? ''), 'context-backed SHOW must tell the customer which project is being used');
+  assertSourceSafeCustomerAnswer(response);
+
+  const cliDoResponse = runResponse([
+    '--prompt',
+    'сделай главную кнопку желтой',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  assert(cliDoResponse.ok === true, 'context-backed CLI DO response did not return ok=true');
+  assert(cliDoResponse.mode === 'do-cli', `expected context-backed do-cli mode, got ${cliDoResponse.mode}`);
+  assert(cliDoResponse.sessionContext?.usingCurrentProject === true, 'context-backed CLI DO did not use current project');
+  assert(cliDoResponse.action?.actionId === 'editor.actionBar.primaryButton.backgroundColor', 'context-backed CLI DO resolved wrong action');
+  assert(!cliDoResponse.action?.missingInputs?.includes('projectId'), 'context-backed CLI DO must not ask for projectId again');
+  assert(cliDoResponse.action?.missingInputs?.includes('funnelId'), 'context-backed CLI DO must still ask for funnelId');
+  assert(cliDoResponse.action?.missingInputs?.includes('versionId'), 'context-backed CLI DO must still ask for versionId');
+  assert(cliDoResponse.action?.missingInputs?.includes('screenId'), 'context-backed CLI DO must still ask for screenId');
+  assert(/Context Project/.test(cliDoResponse.answer?.contextNotice ?? ''), 'context-backed CLI DO must tell the customer which project is being used');
+  assert(cliDoResponse.completionClaim === 'needs-inputs-before-execution', 'context-backed CLI DO must not claim execution before target inputs');
+  assertSourceSafeCustomerAnswer(cliDoResponse);
+
+  const e2eDoResponse = runResponse([
+    '--prompt',
+    'сделай шрифт ячейки в списке 18',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  assert(e2eDoResponse.ok === true, 'context-backed E2E DO response did not return ok=true');
+  assert(e2eDoResponse.mode === 'do-e2e', `expected context-backed do-e2e mode, got ${e2eDoResponse.mode}`);
+  assert(e2eDoResponse.sessionContext?.usingCurrentProject === true, 'context-backed E2E DO did not use current project');
+  assert(e2eDoResponse.action?.actionId === 'editor.list.options.itemTitle.fontSize', 'context-backed E2E DO resolved wrong action');
+  assert(!e2eDoResponse.action?.missingInputs?.includes('projectId'), 'context-backed E2E DO must not ask for projectId again');
+  assert(e2eDoResponse.action?.missingInputs?.includes('funnelId'), 'context-backed E2E DO must still ask for funnelId');
+  assert(e2eDoResponse.action?.missingInputs?.includes('screenId'), 'context-backed E2E DO must still ask for screenId');
+  assert(/Context Project/.test(e2eDoResponse.answer?.contextNotice ?? ''), 'context-backed E2E DO must tell the customer which project is being used');
+  assert(e2eDoResponse.completionClaim === 'needs-inputs-before-execution', 'context-backed E2E DO must not claim execution before target inputs');
+  assertSourceSafeCustomerAnswer(e2eDoResponse);
+
+  const articleFetchResponse = runResponse([
+    '--prompt',
+    'дай полную статью как настроить шрифты в кнопке',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  assert(articleFetchResponse.ok === true, 'context-backed article-fetch response did not return ok=true');
+  assert(articleFetchResponse.mode === 'article-fetch', `expected context-backed article-fetch mode, got ${articleFetchResponse.mode}`);
+  assert(articleFetchResponse.sessionContext?.usingCurrentProject === true, 'context-backed article-fetch did not use current project');
+  assert(articleFetchResponse.articleFetch?.articleAlias === 'help-block-action-bar', 'context-backed article-fetch resolved wrong article alias');
+  assert(Array.isArray(articleFetchResponse.articleFetch?.missingInputs) && articleFetchResponse.articleFetch.missingInputs.length === 0, 'context-backed article-fetch must not require target ids');
+  assert(articleFetchResponse.articleFetch?.fetchCommand?.optionalArgs?.includes('projectId when the article is project-scoped'), 'context-backed article-fetch must keep projectId optional for project-scoped articles');
+  assert(/Context Project/.test(articleFetchResponse.answer?.contextNotice ?? ''), 'context-backed article-fetch must tell the customer which project is being used');
+  assert(articleFetchResponse.completionClaim === 'article-fetch-plan-not-executed', 'context-backed article-fetch must not claim execution');
+  assertSourceSafeCustomerAnswer(articleFetchResponse);
+});
+
 check('show prompt with screenshot wording and target ids stays SHOW', () => {
   const prompt = 'Покажи где поменять цвет кнопки продолжить в Segmently для проекта project_demo, воронки funnel_demo, версии version_demo, экрана screen_demo. Ничего не меняй, только покажи и сделай скриншот.';
   const response = runResponse([
@@ -306,6 +441,7 @@ check('CLI do prompt returns executable patch contract and verification', () => 
   assert(response.action?.execution?.materialize?.content?.operations?.[0]?.path === 'content.actionBar.primary.appearance.backgroundColor', 'CLI DO patch path drifted');
   assert(response.action?.verification?.read === 'funnels export', 'CLI DO missing funnels export verification');
   assert(!containsPlaceholder(response.action?.verification?.argv), 'CLI DO verification argv contains placeholder');
+  assertToolPreflight(response.action?.toolPreflight, { browser: false });
   assert(response.completionClaim === 'not-completed-until-verification', 'CLI DO claimed completion before verification');
   assertSourceSafeCustomerAnswer(response);
 
@@ -325,6 +461,7 @@ check('CLI do prompt returns executable patch contract and verification', () => 
   ]);
   assert(dryRun.ok === true && dryRun.dryRun === true, 'packaged CLI runner dry-run failed');
   assert(dryRun.materializedFiles?.[0]?.content?.operations?.[0]?.path === 'content.actionBar.primary.appearance.backgroundColor', 'packaged CLI patch path drifted');
+  assertToolPreflight(dryRun.toolPreflight, { browser: false });
 });
 
 check('CLI screen background prompt returns generic field patch contract', () => {
@@ -632,6 +769,981 @@ check('CLI content title text-style prompt returns generated field patch contrac
   assert(dryRun.ok === true && dryRun.dryRun === true, 'packaged content title text-style CLI runner dry-run failed');
   assert(dryRun.materializedFiles?.[0]?.content?.operations?.[0]?.path === 'content.copy.title.appearance.color', 'packaged content title text-style CLI patch path drifted');
   assert(dryRun.materializedFiles?.[0]?.content?.operations?.[0]?.value === '#333333', 'packaged content title text-style CLI patch value drifted');
+});
+
+check('content title copy text prompt stays article-backed and refuses blind generic CLI mutation', () => {
+  const response = runResponse([
+    '--prompt',
+    'поменяй текст заголовка экрана на Welcome Back',
+  ]);
+  assert(response.ok === true, 'content title copy text response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach/domain-boundary mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'teach', `expected teach resolver, got ${response.resolver?.kind}`);
+  assert(response.action === null, 'copy text value prompt must not attach a generic CLI action');
+  assert(response.show === null, 'copy text value prompt must not pretend a live SHOW was already run');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-copy-block-title-text'), 'copy text prompt missing headline text guide');
+  assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-copy-block-title-styles'), 'copy text prompt incorrectly resolved style guide');
+  assert(response.answer?.preferredCitation?.articleAlias === 'help-block-content', 'copy text prompt missing Content article alias');
+  assert(response.answer?.preferredCitation?.referencePath === 'help-block-content/screenedit-copy-block-title-text', 'copy text prompt missing exact title-text reference path');
+  assert(response.answer?.publicArticleLinks?.some(url => /help-block-content\/index\.html$/.test(url)), 'copy text prompt missing published Content article URL');
+  assert(response.answer?.imageUrls?.some(url => /open-section-title-text\.png$/.test(url)), 'copy text prompt missing concrete title text screenshot URL');
+  assert(response.answer?.showDoOptions?.show?.available === true, 'copy text prompt must offer SHOW');
+  assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', 'copy text prompt must mark DO as requiring a domain operation');
+  assert(/locale-aware copy\/label domain operation|browser flow/.test(response.answer?.nextStep ?? ''), 'copy text prompt missing locale-aware domain/browser boundary');
+  assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), 'copy text prompt must explicitly forbid generic setFieldValue mutation');
+  assert(response.completionClaim === 'guidance-only', 'copy text prompt must not claim mutation or verification');
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('content subtitle copy text prompt stays article-backed and refuses blind generic CLI mutation', () => {
+  const response = runResponse([
+    '--prompt',
+    'поменяй текст подзаголовка экрана на Start now',
+  ]);
+  assert(response.ok === true, 'content subtitle copy text response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach/domain-boundary mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'teach', `expected teach resolver, got ${response.resolver?.kind}`);
+  assert(response.action === null, 'subtitle copy text value prompt must not attach a generic CLI action');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-copy-block-subtitle-text'), 'copy text prompt missing subtitle text guide');
+  assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-copy-block-subtitle-styles'), 'copy text prompt incorrectly resolved subtitle style guide');
+  assert(response.answer?.preferredCitation?.referencePath === 'help-block-content/screenedit-copy-block-subtitle-text', 'copy text prompt missing exact subtitle-text reference path');
+  assert(response.answer?.imageUrls?.some(url => /open-section-subtitle-text\.png$/.test(url)), 'copy text prompt missing concrete subtitle text screenshot URL');
+  assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', 'subtitle copy text prompt must mark DO as requiring a domain operation');
+  assert(response.completionClaim === 'guidance-only', 'subtitle copy text prompt must not claim mutation or verification');
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('options copy text prompts stay article-backed and refuse blind generic CLI mutation', () => {
+  for (const prompt of [
+    'поменяй текст варианта ответа на Да',
+    'переименуй option label на Yes',
+  ]) {
+    const response = runResponse(['--prompt', prompt]);
+    assert(response.ok === true, `options copy text response did not return ok=true for ${prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.copyTextValueBoundary === true, `options copy prompt missing resolver copyTextValueBoundary for ${prompt}`);
+    assert(response.action === null, `options copy text prompt must not attach a generic CLI action for ${prompt}`);
+    assert(response.show === null, `options copy text prompt must not pretend a live SHOW was already run for ${prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), `options copy prompt missing Options article guide for ${prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-options-title-styles'), `options copy prompt incorrectly resolved title style guide for ${prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-options', `options copy prompt missing Options article alias for ${prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === 'help-block-options/screen-editor-section-options', `options copy prompt missing stable Options reference path for ${prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-options\/index\.html$/.test(url)), `options copy prompt missing published Options article URL for ${prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-options-section/.test(url)), `options copy prompt missing concrete Options screenshot URL for ${prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `options copy prompt must offer SHOW for ${prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `options copy prompt must mark DO as requiring a domain operation for ${prompt}`);
+    assert(/locale-aware copy\/label domain operation|browser flow/.test(response.answer?.nextStep ?? ''), `options copy prompt missing locale-aware domain/browser boundary for ${prompt}`);
+    assert(/option\/block identity|target-copy-or-label-identity/.test([
+      response.answer?.nextStep ?? '',
+      ...(response.answer?.showDoOptions?.do?.missingInputs ?? []),
+    ].join(' ')), `options copy prompt missing option identity requirement for ${prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `options copy prompt must explicitly forbid generic setFieldValue mutation for ${prompt}`);
+    assert(response.completionClaim === 'guidance-only', `options copy prompt must not claim mutation or verification for ${prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+});
+
+check('variable binding prompts resolve exact article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'поменяй название переменной списка на goal',
+      expectedGuideKey: 'screenedit-variable-binding-create-variable-name',
+      expectedReferencePath: 'help-block-variable-binding/screenedit-variable-binding-create-variable-name',
+      forbiddenGuideKey: 'screenedit-paywall-subscriptions-list-padding',
+    },
+    {
+      prompt: 'как привязать варианты списка к переменной',
+      expectedGuideKey: 'screenedit-variable-binding-apply-items-to-variable',
+      expectedReferencePath: 'help-block-variable-binding/screenedit-variable-binding-apply-items-to-variable',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'измени label option variable на premium',
+      expectedGuideKey: 'screenedit-variable-binding-option-label',
+      expectedReferencePath: 'help-block-variable-binding/screenedit-variable-binding-option-label',
+      forbiddenGuideKey: 'screen-editor-section-options',
+    },
+    {
+      prompt: 'как настроить score effect для варианта',
+      expectedGuideKey: 'screenedit-variable-binding-score-effects',
+      expectedReferencePath: 'help-block-variable-binding/screenedit-variable-binding-score-effects',
+      forbiddenGuideKey: 'screenedit-options-title-styles',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `variable binding response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'variable-binding-domain-operation', `variable binding prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `variable binding prompt must not attach a generic CLI action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-variable-binding'), `variable binding prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `variable binding prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `variable binding prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-variable-binding', `variable binding prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `variable binding prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-variable-binding\/index\.html$/.test(url)), `variable binding prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-variable-binding/.test(url)), `variable binding prompt missing concrete image URL for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `variable binding prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `variable binding prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('variable-or-option-identity'), `variable binding prompt missing variable identity input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `variable binding prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Variable Binding section/.test(response.answer?.nextStep ?? ''), `variable binding prompt nextStep must point to Variable Binding for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `variable binding prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+});
+
+check('Basic Config object toggle prompts refuse blind scalar child mutation', () => {
+  const cases = [
+    {
+      prompt: 'включи countdown на экране',
+      expectedGuideKey: 'screenedit-basic-config-countdown-enabled',
+      expectedReferencePath: 'help-block-basic-config/screenedit-basic-config-countdown-enabled',
+      forbiddenGuideKey: 'screenedit-copy-block-title-text',
+    },
+    {
+      prompt: 'добавь таймер обратного отсчета на экран',
+      expectedGuideKey: 'screenedit-basic-config-countdown-enabled',
+      expectedReferencePath: 'help-block-basic-config/screenedit-basic-config-countdown-enabled',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'включи system permission prompt',
+      expectedGuideKey: 'screenedit-basic-config-system-permission-enabled',
+      expectedReferencePath: 'help-block-basic-config/screenedit-basic-config-system-permission-enabled',
+      forbiddenGuideKey: 'screenedit-basic-config-permission-type',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Basic Config object-toggle response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'basic-config-object-toggle-domain-operation', `Basic Config object-toggle prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Basic Config object-toggle prompt must not attach a scalar CLI action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-basic-config'), `Basic Config object-toggle prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Basic Config object-toggle prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Basic Config object-toggle prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-basic-config', `Basic Config object-toggle prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Basic Config object-toggle prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-basic-config\/index\.html$/.test(url)), `Basic Config object-toggle prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /basic-config|paywall-background-basic-config/.test(url)), `Basic Config object-toggle prompt missing concrete image URL for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Basic Config object-toggle prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Basic Config object-toggle prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-toggle-state'), `Basic Config object-toggle prompt missing desired-toggle-state input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Basic Config object-toggle prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Basic Config/.test(response.answer?.nextStep ?? ''), `Basic Config object-toggle prompt nextStep must point to Basic Config for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Basic Config object-toggle prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const scalarDuration = runResponse(['--prompt', 'поставь duration countdown 10']);
+  assert(scalarDuration.mode === 'do-cli', 'countdown duration scalar prompt must remain supported CLI DO');
+  assert(scalarDuration.action?.actionId === 'editor.setting.screenedit-basic-config-countdown-duration-value', 'countdown duration scalar prompt resolved wrong action');
+  assert(scalarDuration.resolver?.domainOperationBoundary === null, 'countdown duration scalar prompt must not be object-toggle boundary');
+
+  const scalarPermissionType = runResponse(['--prompt', 'set permission type notification']);
+  assert(scalarPermissionType.mode === 'do-cli', 'permission type scalar prompt must remain supported CLI DO');
+  assert(scalarPermissionType.action?.actionId === 'editor.setting.screenedit-basic-config-permission-type', 'permission type scalar prompt resolved wrong action');
+  assert(scalarPermissionType.resolver?.domainOperationBoundary === null, 'permission type scalar prompt must not be object-toggle boundary');
+});
+
+check('Options structure prompts resolve exact article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'сделай максимум 2 выбора в списке',
+      expectedGuideKey: 'screenedit-options-max-selections',
+      expectedReferencePath: 'help-block-options/screenedit-options-max-selections',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'перемешай варианты в случайном порядке',
+      expectedGuideKey: 'screenedit-options-randomize-order',
+      expectedReferencePath: 'help-block-options/screenedit-options-randomize-order',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'сделай варианты в две колонки',
+      expectedGuideKey: 'screenedit-options-cell-dimensions',
+      expectedReferencePath: 'help-block-options/screenedit-options-cell-dimensions',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'поменяй расстояние между вариантами',
+      expectedGuideKey: 'screenedit-options-items-spacing',
+      expectedReferencePath: 'help-block-options/screenedit-options-items-spacing',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'поменяй цвет чекбокса варианта',
+      expectedGuideKey: 'screenedit-options-checkbox-styles',
+      expectedReferencePath: 'help-block-options/screenedit-options-checkbox-styles',
+      forbiddenGuideKey: 'screenedit-options-title-styles',
+    },
+    {
+      prompt: 'сделай padding у вариантов 12',
+      expectedGuideKey: 'screenedit-options-item-paddings',
+      expectedReferencePath: 'help-block-options/screenedit-options-item-paddings',
+      forbiddenGuideKey: 'screenedit-paywall-subscriptions-item-padding',
+    },
+    {
+      prompt: 'сделай высоту ячейки списка 120',
+      expectedGuideKey: 'screenedit-options-max-cell-height',
+      expectedReferencePath: 'help-block-options/screenedit-options-max-cell-height',
+      forbiddenGuideKey: 'screenedit-options-title-styles',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Options structure response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'options-structure-domain-operation', `Options structure prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Options structure prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), `Options structure prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Options structure prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Options structure prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-options', `Options structure prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Options structure prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-options\/index\.html$/.test(url)), `Options structure prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-options-section/.test(url)), `Options structure prompt missing concrete Options image URL for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Options structure prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Options structure prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('options-structure-setting'), `Options structure prompt missing options-structure-setting input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-options-structure-value'), `Options structure prompt missing desired value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Options structure prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Options section/.test(response.answer?.nextStep ?? ''), `Options structure prompt nextStep must point to Options for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Options structure prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const selectedStateStyle = runResponse(['--prompt', 'сделай фон выбранного варианта #ffee00']);
+  assert(selectedStateStyle.mode === 'do-cli', 'Options selected-state style prompt must remain supported CLI DO');
+  assert(selectedStateStyle.action?.actionId === 'editor.options.selectedItem.style.backgroundColor', 'Options selected-state style prompt resolved wrong action');
+  assert(selectedStateStyle.resolver?.domainOperationBoundary === null, 'Options selected-state style prompt must not become structure boundary');
+
+  const titleStyle = runResponse(['--prompt', 'сделай цвет заголовка варианта #222222']);
+  assert(titleStyle.mode === 'do-cli', 'Options title style prompt must remain supported CLI DO');
+  assert(titleStyle.action?.actionId === 'editor.options.itemTitle.textStyle.color', 'Options title style prompt resolved wrong action');
+  assert(titleStyle.resolver?.domainOperationBoundary === null, 'Options title style prompt must not become structure boundary');
+});
+
+check('Header navigation and progress prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'включи кнопку назад в шапке',
+      expectedGuideKey: 'screenedit-header-back-button',
+      expectedReferencePath: 'help-block-header/screenedit-header-back-button',
+      forbiddenGuideKey: 'screenedit-header-back-styles',
+    },
+    {
+      prompt: 'сделай прогресс бар сверху',
+      expectedGuideKey: 'screenedit-header-progress-indicator-kind',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-indicator-kind',
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'поменяй тип progress indicator на dots',
+      expectedGuideKey: 'screenedit-header-progress-indicator-kind',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-indicator-kind',
+      forbiddenGuideKey: 'screenedit-stepper-timer-duration',
+    },
+    {
+      prompt: 'сделай progress full width',
+      expectedGuideKey: 'screenedit-header-progress-full-width',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-full-width',
+      forbiddenGuideKey: 'screenedit-stepper-timer-duration',
+    },
+    {
+      prompt: 'сделай цвет активного прогресса #22c55e',
+      expectedGuideKey: 'screenedit-header-progress-active-color',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-active-color',
+      forbiddenGuideKey: 'screenedit-stepper-fill-color',
+    },
+    {
+      prompt: 'поставь иконку прогресса в шапке',
+      expectedGuideKey: 'screenedit-header-progress-icon',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-icon',
+      forbiddenGuideKey: 'screenedit-header-back-styles',
+    },
+    {
+      prompt: 'поменяй высоту header 64',
+      expectedGuideKey: 'screenedit-header-appearance-height',
+      expectedReferencePath: 'help-block-header/screenedit-header-appearance-height',
+      forbiddenGuideKey: 'screenedit-header-back-styles',
+    },
+    {
+      prompt: 'поменяй отступы header',
+      expectedGuideKey: 'screenedit-header-insets',
+      expectedReferencePath: 'help-block-header/screenedit-header-insets',
+      forbiddenGuideKey: 'screenedit-header-back-styles',
+    },
+    {
+      prompt: 'выровняй progress indicator по центру',
+      expectedGuideKey: 'screenedit-header-progress-content-alignment',
+      expectedReferencePath: 'help-block-header/screenedit-header-progress-content-alignment',
+      forbiddenGuideKey: 'screenedit-header-progress-track-color',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Header response did not return ok=true for ${item.prompt}`);
+    assert(['teach', 'show'].includes(response.mode), `expected teach/show domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(['teach', 'show'].includes(response.resolver?.kind), `expected teach/show resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'header-navigation-domain-operation', `Header prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Header prompt must not attach a generic CLI action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-header'), `Header prompt missing Header section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Header prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Header prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-header', `Header prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Header prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-header\/index\.html$/.test(url)), `Header prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-header/.test(url)), `Header prompt missing concrete Header image URL for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Header prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Header prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('header-or-progress-setting'), `Header prompt missing header-or-progress-setting input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-header-or-progress-value'), `Header prompt missing desired value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Header prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Header section/.test(response.answer?.nextStep ?? ''), `Header prompt nextStep must point to Header for ${item.prompt}`);
+    if (response.mode === 'teach') {
+      assert(response.completionClaim === 'guidance-only', `Header teach prompt must not claim mutation or verification for ${item.prompt}`);
+    }
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const backButtonStyle = runResponse(['--prompt', 'сделай цвет кнопки назад в header #111111']);
+  assert(backButtonStyle.mode === 'do-cli', 'Header back-button text style prompt must remain supported CLI DO');
+  assert(backButtonStyle.action?.actionId === 'editor.header.backButton.textStyle.color', 'Header back-button text style prompt resolved wrong action');
+  assert(backButtonStyle.resolver?.domainOperationBoundary === null, 'Header back-button text style prompt must not become navigation boundary');
+
+  const skipButtonStyle = runResponse(['--prompt', 'сделай шрифт skip button header 14']);
+  assert(skipButtonStyle.mode === 'do-cli', 'Header skip-button text style prompt must remain supported CLI DO');
+  assert(skipButtonStyle.action?.actionId === 'editor.header.skipButton.textStyle.fontSize', 'Header skip-button text style prompt resolved wrong action');
+  assert(skipButtonStyle.resolver?.domainOperationBoundary === null, 'Header skip-button text style prompt must not become navigation boundary');
+
+  const stepperFillStyle = runResponse(['--prompt', 'сделай цвет заполнения прогресса #22c55e']);
+  assert(stepperFillStyle.mode === 'do-cli', 'Stepper fill color prompt must remain supported CLI DO');
+  assert(stepperFillStyle.action?.actionId === 'editor.stepper.style.fillColor', 'Stepper fill color prompt resolved wrong action');
+  assert(stepperFillStyle.resolver?.domainOperationBoundary === null, 'Stepper fill color prompt must not become Header boundary');
+});
+
+check('Content spacing prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'поменяй отступ заголовка экрана',
+      expectedGuideKey: 'screenedit-copy-block-title-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-title-padding',
+      forbiddenGuideKey: 'screenedit-copy-block-title-styles',
+    },
+    {
+      prompt: 'сделай padding title 20',
+      expectedGuideKey: 'screenedit-copy-block-title-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-title-padding',
+      forbiddenGuideKey: 'screenedit-paywall-subscriptions-item-padding',
+    },
+    {
+      prompt: 'увеличь space around subtitle',
+      expectedGuideKey: 'screenedit-copy-block-subtitle-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-subtitle-padding',
+      forbiddenGuideKey: 'screenedit-stepper-subtitle-padding',
+    },
+    {
+      prompt: 'сделай отступы hero image',
+      expectedGuideKey: 'screenedit-copy-block-hero-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-padding',
+      forbiddenGuideKey: 'screenedit-stepper-image-styles',
+    },
+    {
+      prompt: 'поменяй padding картинки сверху',
+      expectedGuideKey: 'screenedit-copy-block-hero-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-padding',
+      forbiddenGuideKey: 'screenedit-media-top-alignment',
+    },
+    {
+      prompt: 'поставь margin around hero image 16',
+      expectedGuideKey: 'screenedit-copy-block-hero-padding',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-padding',
+      forbiddenGuideKey: 'screenedit-media-height-percentage',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Content spacing response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'layout-spacing-domain-operation', `Content spacing prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Content spacing prompt must not attach a generic CLI action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-content'), `Content spacing prompt missing Content section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Content spacing prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Content spacing prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-content', `Content spacing prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Content spacing prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-content\/index\.html$/.test(url)), `Content spacing prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-copy-block-section/.test(url)), `Content spacing prompt missing Content section image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Content spacing prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Content spacing prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('layout-spacing-target'), `Content spacing prompt missing layout-spacing-target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-spacing-values-or-sides'), `Content spacing prompt missing desired spacing input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Content spacing prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Content section/.test(response.answer?.nextStep ?? ''), `Content spacing prompt nextStep must point to Content for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Content spacing prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const contentTitleStyle = runResponse(['--prompt', 'сделай цвет заголовка экрана #333333']);
+  assert(contentTitleStyle.mode === 'do-cli', 'Content title style prompt must remain supported CLI DO');
+  assert(contentTitleStyle.action?.actionId === 'editor.content.title.textStyle.color', 'Content title style prompt resolved wrong action');
+  assert(contentTitleStyle.resolver?.domainOperationBoundary === null, 'Content title style prompt must not become spacing boundary');
+
+  const mediaHeightStyle = runResponse(['--prompt', 'сделай высоту медиа 65 процентов']);
+  assert(mediaHeightStyle.mode === 'do-cli', 'Media height prompt must remain supported CLI DO');
+  assert(mediaHeightStyle.action?.actionId === 'editor.media.style.heightPercentage', 'Media height prompt resolved wrong action');
+  assert(mediaHeightStyle.resolver?.domainOperationBoundary === null, 'Media height prompt must not become spacing boundary');
+
+  const headerInsets = runResponse(['--prompt', 'поменяй отступы header']);
+  assert(headerInsets.resolver?.domainOperationBoundary === 'header-navigation-domain-operation', 'Header insets prompt must remain Header boundary');
+
+  const optionsPadding = runResponse(['--prompt', 'сделай padding у вариантов 12']);
+  assert(optionsPadding.resolver?.domainOperationBoundary === 'options-structure-domain-operation', 'Options padding prompt must remain Options boundary');
+});
+
+check('Media asset and image layout prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'добавь картинку в hero image',
+      expectedArticleAlias: 'help-block-content',
+      expectedArticleUrl: /help-block-content\/index\.html$/,
+      expectedGuideKey: 'screenedit-copy-block-hero-url',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-url',
+      expectedImagePattern: /configure-copy-block-section/,
+      forbiddenGuideKey: 'screenedit-stepper-image-styles',
+    },
+    {
+      prompt: 'сделай ширину hero image 300',
+      expectedArticleAlias: 'help-block-content',
+      expectedArticleUrl: /help-block-content\/index\.html$/,
+      expectedGuideKey: 'screenedit-copy-block-hero-width',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-width',
+      expectedImagePattern: /configure-copy-block-section/,
+      forbiddenGuideKey: 'screenedit-media-height-percentage',
+    },
+    {
+      prompt: 'поставь высоту hero image 50 процентов',
+      expectedArticleAlias: 'help-block-content',
+      expectedArticleUrl: /help-block-content\/index\.html$/,
+      expectedGuideKey: 'screenedit-copy-block-hero-height-percentage',
+      expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-height-percentage',
+      expectedImagePattern: /configure-copy-block-section/,
+      forbiddenGuideKey: 'screenedit-media-height-percentage',
+    },
+    {
+      prompt: 'добавь картинку к варианту списка',
+      expectedArticleAlias: 'help-block-options',
+      expectedArticleUrl: /help-block-options\/index\.html$/,
+      expectedGuideKey: 'screenedit-options-image-styles',
+      expectedReferencePath: 'help-block-options/screenedit-options-image-styles',
+      expectedImagePattern: /configure-options-section/,
+      forbiddenGuideKey: 'onboarding-list-create',
+    },
+    {
+      prompt: 'поменяй картинку в карточке option',
+      expectedArticleAlias: 'help-block-options',
+      expectedArticleUrl: /help-block-options\/index\.html$/,
+      expectedGuideKey: 'screenedit-options-image-styles',
+      expectedReferencePath: 'help-block-options/screenedit-options-image-styles',
+      expectedImagePattern: /configure-options-section/,
+      forbiddenGuideKey: 'screenedit-variable-binding-option-label',
+    },
+    {
+      prompt: 'сделай фото в списке вместо видео',
+      expectedArticleAlias: 'help-block-media',
+      expectedArticleUrl: /help-block-media\/index\.html$/,
+      expectedGuideKey: 'screenedit-media-image-upload',
+      expectedReferencePath: 'help-block-media/screenedit-media-kind',
+      expectedImagePattern: /configure-media-section/,
+      forbiddenGuideKey: 'screenedit-media-video-upload',
+    },
+    {
+      prompt: 'добавь image в carousel slide',
+      expectedArticleAlias: 'help-block-carousel',
+      expectedArticleUrl: /help-block-carousel\/index\.html$/,
+      expectedGuideKey: 'screenedit-carousel-slide-image',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-image',
+      expectedImagePattern: /configure-carousel-section/,
+      forbiddenGuideKey: 'screenedit-carousel-image-styles',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Media asset response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'media-asset-layout-domain-operation', `Media asset prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Media asset prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Media asset prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Media asset prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === item.expectedArticleAlias, `Media asset prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Media asset prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => item.expectedArticleUrl.test(url)), `Media asset prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => item.expectedImagePattern.test(url)), `Media asset prompt missing concrete image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Media asset prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Media asset prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('media-or-image-target'), `Media asset prompt missing media-or-image-target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('image-url-local-file-or-asset-id'), `Media asset prompt missing image asset input for ${item.prompt}`);
+    assert(/video upload runner/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Media asset prompt must forbid reusing the video upload runner for ${item.prompt}`);
+    assert(/image|media/i.test(response.answer?.nextStep ?? ''), `Media asset prompt nextStep must mention image/media target for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Media asset prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const mediaHeightStyle = runResponse(['--prompt', 'сделай высоту медиа 65 процентов']);
+  assert(mediaHeightStyle.mode === 'do-cli', 'Media height prompt must remain supported CLI DO after media asset boundary');
+  assert(mediaHeightStyle.action?.actionId === 'editor.media.style.heightPercentage', 'Media height prompt resolved wrong action after media asset boundary');
+  assert(mediaHeightStyle.answer?.showDoOptions?.do?.available === 'when-action-resolver-matches-supported-action', 'Media height prompt must not expose video upload conditional DO');
+
+  const mediaScaleStyle = runResponse(['--prompt', 'измени режим картинки на cover']);
+  assert(mediaScaleStyle.mode === 'do-cli', 'Media scale prompt must remain supported CLI DO');
+  assert(mediaScaleStyle.action?.actionId === 'editor.media.style.scaleMode', 'Media scale prompt resolved wrong action');
+  assert(mediaScaleStyle.answer?.showDoOptions?.do?.available === 'when-action-resolver-matches-supported-action', 'Media scale prompt must not expose video upload conditional DO');
+
+  const sharedVideo = runResponse(['--prompt', 'сделай видео в списке']);
+  assert(sharedVideo.mode === 'do-e2e-conditional', 'Shared Media video prompt must remain conditional browser DO');
+  assert(sharedVideo.action?.actionId === 'browser.media.videoUpload', 'Shared Media video prompt resolved wrong action after media asset boundary');
+  assert(sharedVideo.action?.missingInputs?.includes('videoUrl-or-local-file'), 'Shared Media video prompt must still ask for video source');
+
+  const paywallVideo = runResponse(['--prompt', 'сделай видео в пейволе']);
+  assert(paywallVideo.mode === 'do-e2e-conditional', 'Paywall Media video prompt must remain conditional browser DO');
+  assert(paywallVideo.action?.actionId === 'browser.paywallMedia.videoUpload', 'Paywall Media video prompt resolved wrong action after media asset boundary');
+});
+
+check('Carousel slide content and timing prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'поменяй заголовок слайда carousel на Welcome',
+      expectedGuideKey: 'screenedit-carousel-slide-title',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-title',
+      forbiddenGuideKey: 'screenedit-carousel-title-styles',
+      forbiddenActionId: 'editor.carousel.title.textStyle.fontSize',
+    },
+    {
+      prompt: 'измени subtitle carousel slide на Try it',
+      expectedGuideKey: 'screenedit-carousel-slide-subtitle',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-subtitle',
+      forbiddenGuideKey: 'screenedit-carousel-subtitle-styles',
+      forbiddenActionId: 'editor.carousel.subtitle.textStyle.fontSize',
+    },
+    {
+      prompt: 'поменяй detail в carousel slide',
+      expectedGuideKey: 'screenedit-carousel-slide-detail',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-detail',
+      forbiddenGuideKey: 'screenedit-carousel-detail-styles',
+      forbiddenActionId: 'editor.carousel.detail.textStyle.color',
+    },
+    {
+      prompt: 'сделай slide duration 3 seconds',
+      expectedGuideKey: 'screenedit-carousel-slide-duration-range',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-duration-range',
+      forbiddenGuideKey: 'screenedit-carousel-slide-image',
+      forbiddenActionId: null,
+    },
+    {
+      prompt: 'поменяй total duration carousel 10',
+      expectedGuideKey: 'screenedit-carousel-duration',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-duration',
+      forbiddenGuideKey: 'screenedit-carousel-slide-image',
+      forbiddenActionId: null,
+    },
+    {
+      prompt: 'сделай тип слайда carousel image',
+      expectedGuideKey: 'screenedit-carousel-slide-type',
+      expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-type',
+      forbiddenGuideKey: 'screenedit-carousel-slide-image',
+      forbiddenActionId: null,
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Carousel response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'carousel-slides-and-timing-domain-operation', `Carousel prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Carousel prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    if (item.forbiddenActionId) {
+      assert(response.resolver?.actionId !== item.forbiddenActionId, `Carousel prompt resolved forbidden action ${item.forbiddenActionId} for ${item.prompt}`);
+    }
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-carousel'), `Carousel prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Carousel prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Carousel prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-carousel', `Carousel prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Carousel prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-carousel\/index\.html$/.test(url)), `Carousel prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-carousel-section/.test(url)), `Carousel prompt missing concrete image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Carousel prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Carousel prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('carousel-slide-or-timing-target'), `Carousel prompt missing target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-carousel-content-or-timing-value'), `Carousel prompt missing desired value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Carousel prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Carousel section/.test(response.answer?.nextStep ?? ''), `Carousel prompt nextStep must point to Carousel section for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Carousel prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const titleColor = runResponse(['--prompt', 'Сделай цвет заголовка carousel #123456']);
+  assert(titleColor.mode === 'do-cli', 'Carousel title color prompt must remain supported CLI DO');
+  assert(titleColor.action?.actionId === 'editor.carousel.title.textStyle.color', 'Carousel title color prompt resolved wrong action after slide/timing boundary');
+  assert(titleColor.resolver?.domainOperationBoundary === null, 'Carousel title color prompt must not become slide/timing boundary');
+
+  const slideImage = runResponse(['--prompt', 'добавь image в carousel slide']);
+  assert(slideImage.mode === 'teach', 'Carousel slide image prompt must remain media asset boundary teach mode');
+  assert(slideImage.resolver?.domainOperationBoundary === 'media-asset-layout-domain-operation', 'Carousel slide image prompt must remain media asset boundary');
+  assert(slideImage.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-carousel-slide-image'), 'Carousel slide image prompt must keep slide image guide');
+});
+
+check('Custom HTML and WebEmbed prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'вставь iframe в web embed',
+      expectedGuideKey: 'screenedit-embed-html-editor',
+      expectedReferencePath: 'help-block-custom-html/screenedit-embed-html-editor',
+      forbiddenGuideKey: 'onboarding-wizard-basic-info',
+    },
+    {
+      prompt: 'добавь data source для custom html',
+      expectedGuideKey: 'screenedit-embed-data-sources',
+      expectedReferencePath: 'help-block-custom-html/screenedit-embed-data-sources',
+      forbiddenGuideKey: 'analytics-provider-config',
+    },
+    {
+      prompt: 'настрой sandbox iframe isolation custom html',
+      expectedGuideKey: 'screenedit-embed-iframe-isolation',
+      expectedReferencePath: 'help-block-custom-html/screenedit-embed-iframe-isolation',
+      forbiddenGuideKey: 'integrations-custom-domain-section',
+    },
+    {
+      prompt: 'как добавить custom html на экран',
+      expectedGuideKey: 'screenedit-embed-html-editor',
+      expectedReferencePath: 'help-block-custom-html/screenedit-embed-html-editor',
+      forbiddenGuideKey: 'integrations-custom-domain-section',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Custom HTML response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'custom-html-webembed-domain-operation', `Custom HTML prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Custom HTML prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-embed'), `Custom HTML prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Custom HTML prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Custom HTML prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-custom-html', `Custom HTML prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Custom HTML prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-custom-html\/index\.html$/.test(url)), `Custom HTML prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /webembed/.test(url)), `Custom HTML prompt missing concrete WebEmbed image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Custom HTML prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Custom HTML prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('custom-html-or-webembed-target'), `Custom HTML prompt missing target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-html-code-iframe-or-data-source'), `Custom HTML prompt missing desired value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Custom HTML prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Custom HTML section/.test(response.answer?.nextStep ?? ''), `Custom HTML prompt nextStep must point to Custom HTML section for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Custom HTML prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const customDomain = runResponse(['--prompt', 'как настроить custom domain dns']);
+  assert(customDomain.resolver?.domainOperationBoundary !== 'custom-html-webembed-domain-operation', 'Custom domain DNS prompt must not become Custom HTML/WebEmbed boundary');
+  assert(customDomain.answer?.showDoOptions?.do?.missingInputs?.includes('custom-html-or-webembed-target') !== true, 'Custom domain DNS prompt must not ask for Custom HTML target');
+
+  const analyticsCustomScript = runResponse(['--prompt', 'как добавить custom script analytics']);
+  assert(analyticsCustomScript.resolver?.domainOperationBoundary !== 'custom-html-webembed-domain-operation', 'Analytics custom script prompt must not become Custom HTML/WebEmbed boundary');
+  assert(analyticsCustomScript.answer?.showDoOptions?.do?.missingInputs?.includes('custom-html-or-webembed-target') !== true, 'Analytics custom script prompt must not ask for Custom HTML target');
+});
+
+check('Integrations custom-domain and analytics prompts resolve exact article-backed guidance', () => {
+  const domainCases = [
+    {
+      prompt: 'как настроить custom domain dns',
+      expectedGuideKey: 'custom-domain-dns-setup',
+      expectedReferencePath: 'custom-domain-dns-setup/custom-domain-dns-setup',
+      expectedArticleAlias: 'custom-domain-dns-setup',
+    },
+    {
+      prompt: 'что прописать в dns для домена',
+      expectedGuideKey: 'custom-domain-dns-setup',
+      expectedReferencePath: 'custom-domain-dns-setup/custom-domain-dns-setup',
+      expectedArticleAlias: 'custom-domain-dns-setup',
+    },
+    {
+      prompt: 'как проверить домен',
+      expectedGuideKey: 'custom-domain-verification',
+      expectedReferencePath: 'custom-domain-verification/custom-domain-verification',
+      expectedArticleAlias: 'custom-domain-verification',
+    },
+  ];
+  for (const item of domainCases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `custom-domain response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected custom-domain teach mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.domainOperationBoundary === null, `custom-domain prompt must not become a screen-setting domain boundary for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `custom-domain prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), `custom-domain prompt drifted into Options for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'onboarding-list-create'), `custom-domain prompt drifted into onboarding creation for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-embed'), `custom-domain prompt drifted into Custom HTML for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === item.expectedArticleAlias, `custom-domain prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `custom-domain prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${item.expectedArticleAlias}/index\\.html$`).test(url)), `custom-domain prompt missing published article URL for ${item.prompt}`);
+    assert(Array.isArray(response.answer?.imageUrls) && response.answer.imageUrls.length === 0, `custom-domain prompt must not invent image URLs for text-only guide ${item.prompt}`);
+    assert(response.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'text-only-no-screenshot-evidence', `custom-domain prompt must expose text-only visual coverage for ${item.prompt}`);
+    assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'text-only-no-screenshot-evidence'), `custom-domain prompt missing text-only guide reference status for ${item.prompt}`);
+    assert(response.answer?.articleAvailability?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'text-only-no-screenshot-evidence'), `custom-domain prompt missing text-only article availability status for ${item.prompt}`);
+    assert(/text-only|no shipped screenshot image URL|no concrete screenshot image URL/i.test(response.answer?.articleReferenceSummary ?? ''), `custom-domain prompt must state missing visual coverage honestly for ${item.prompt}`);
+    assert(!/screenshot-backed guidance/i.test(response.answer?.customerAnswerStarter ?? ''), `custom-domain prompt must not claim screenshot-backed guidance for ${item.prompt}`);
+    assert(!/text and (?:concrete )?screenshot|screenshot-backed guidance/i.test(response.answer?.articleReferenceSummary ?? ''), `custom-domain prompt must not imply screenshot-backed evidence for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `custom-domain prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const domainHandoff = runResponse(['--prompt', 'подключить кастомный домен']);
+  assert(domainHandoff.ok === true, 'custom-domain handoff response did not return ok=true');
+  assert(domainHandoff.mode === 'handoff', `expected custom-domain handoff mode, got ${domainHandoff.mode}`);
+  assert(domainHandoff.action?.actionId === 'handoff.domain.dns', `custom-domain handoff resolved wrong action ${domainHandoff.action?.actionId}`);
+  assert(domainHandoff.action?.status === 'handoff', 'custom-domain DNS setup must remain handoff because DNS changes happen at the registrar');
+  assert(domainHandoff.action?.missingInputs?.includes('projectId'), 'custom-domain handoff must ask for projectId');
+  assert(domainHandoff.action?.missingInputs?.includes('domain'), 'custom-domain handoff must ask for domain');
+  assert(domainHandoff.answer?.preferredCitation?.articleAlias === 'integrations-custom-domain-section', 'custom-domain handoff must cite integrations custom domain guide');
+  assert(domainHandoff.answer?.publicArticleLinks?.some(url => /integrations-custom-domain-section\/index\.html$/.test(url)), 'custom-domain handoff missing integrations custom domain URL');
+  assert(domainHandoff.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'text-only-no-screenshot-evidence', 'custom-domain handoff must expose text-only visual coverage');
+  assert(!/screenshot-backed guidance/i.test(domainHandoff.answer?.customerAnswerStarter ?? ''), 'custom-domain handoff must not claim screenshot-backed guidance');
+  assert(!domainHandoff.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), 'custom-domain handoff drifted into Options');
+  assert(domainHandoff.completionClaim === 'handoff-not-done', 'custom-domain handoff must not claim completion');
+  assertSourceSafeCustomerAnswer(domainHandoff);
+
+  const analyticsCases = [
+    'как добавить custom script analytics',
+    'добавить google analytics',
+    'как настроить amplitude analytics',
+  ];
+  for (const prompt of analyticsCases) {
+    const response = runResponse(['--prompt', prompt]);
+    assert(response.ok === true, `analytics response did not return ok=true for ${prompt}`);
+    assert(response.mode === 'teach', `expected analytics teach mode for ${prompt}, got ${response.mode}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'analytics-provider-config'), `analytics prompt missing provider config guide for ${prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'analytics-add-provider'), `analytics prompt missing add provider guide for ${prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-embed'), `analytics prompt drifted into Custom HTML for ${prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-carousel-image-container'), `analytics prompt drifted into Carousel for ${prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), `analytics prompt drifted into Options for ${prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'analytics-provider-config', `analytics prompt missing provider-config article alias for ${prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === 'analytics-provider-config/analytics-provider-config', `analytics prompt missing exact provider-config reference path for ${prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /analytics-provider-config\/index\.html$/.test(url)), `analytics prompt missing provider-config article URL for ${prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /open-add-dialog-add-integration-dialog|expand-analytics-analytics-section/.test(url)), `analytics prompt missing concrete analytics image evidence for ${prompt}`);
+    assert(response.completionClaim === 'guidance-only', `analytics teach prompt must not claim mutation or verification for ${prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const pixelDo = runResponse(['--prompt', 'добавь facebook pixel']);
+  assert(pixelDo.ok === true, 'facebook pixel DO response did not return ok=true');
+  assert(pixelDo.mode === 'do-cli', `expected facebook pixel do-cli mode, got ${pixelDo.mode}`);
+  assert(pixelDo.action?.actionId === 'launch.analytics.pixel.apply', `facebook pixel prompt resolved wrong action ${pixelDo.action?.actionId}`);
+  assert(pixelDo.action?.status === 'supported', 'facebook pixel prompt must use the supported CLI action');
+  assert(pixelDo.action?.owningSkill === 'segmently-cli-guide', 'facebook pixel prompt must route through segmently-cli-guide');
+  assert(pixelDo.action?.missingInputs?.includes('projectId'), 'facebook pixel prompt must ask for projectId');
+  assert(pixelDo.action?.missingInputs?.includes('pixelId'), 'facebook pixel prompt must ask for pixelId');
+  assert(!pixelDo.action?.missingInputs?.includes('pixelProvider'), 'facebook pixel prompt should infer pixelProvider');
+  assert(pixelDo.answer?.preferredCitation?.articleAlias === 'analytics-add-provider', 'facebook pixel prompt must cite analytics add provider guide');
+  assert(pixelDo.answer?.publicArticleLinks?.some(url => /analytics-add-provider\/index\.html$/.test(url)), 'facebook pixel prompt missing analytics add provider article URL');
+  assert(pixelDo.answer?.imageUrls?.some(url => /open-add-dialog-add-integration-dialog/.test(url)), 'facebook pixel prompt missing concrete analytics image evidence');
+  assert(pixelDo.completionClaim === 'needs-inputs-before-execution', 'facebook pixel prompt must not claim execution before inputs and verification');
+  assertSourceSafeCustomerAnswer(pixelDo);
+});
+
+check('Action Bar rich visual style prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'сделай градиент на главной кнопке',
+      expectedGuideKey: 'screenedit-action-bar-primary-gradient',
+      expectedReferencePath: 'help-block-action-bar/screenedit-action-bar-primary-gradient',
+      forbiddenActionId: 'editor.actionBar.primaryButton.textStyle.fontSize',
+    },
+    {
+      prompt: 'добавь иконку в кнопку continue',
+      expectedGuideKey: 'screenedit-action-bar-primary-icon',
+      expectedReferencePath: 'help-block-action-bar/screenedit-action-bar-primary-icon',
+      forbiddenActionId: 'editor.actionBar.primaryButton.label',
+    },
+    {
+      prompt: 'сделай тень под secondary button',
+      expectedGuideKey: 'screenedit-action-bar-secondary-shadow',
+      expectedReferencePath: 'help-block-action-bar/screenedit-action-bar-secondary-shadow',
+      forbiddenActionId: 'editor.actionBar.secondaryButton.textStyle.fontFamily',
+    },
+    {
+      prompt: 'поменяй фон второй кнопки на #ffee00',
+      expectedGuideKey: 'screenedit-action-bar-secondary-container',
+      expectedReferencePath: 'help-block-action-bar/screenedit-action-bar-secondary-container',
+      forbiddenActionId: 'editor.actionBar.secondaryButton.textStyle.fontFamily',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Action Bar rich style response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'rich-visual-style-domain-operation', `Action Bar rich style prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Action Bar rich style prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.resolver?.actionId !== item.forbiddenActionId, `Action Bar rich style prompt resolved forbidden action ${item.forbiddenActionId} for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-action-bar'), `Action Bar rich style prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Action Bar rich style prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-action-bar', `Action Bar rich style prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Action Bar rich style prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-action-bar\/index\.html$/.test(url)), `Action Bar rich style prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /configure-action-bar-section/.test(url)), `Action Bar rich style prompt missing concrete image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Action Bar rich style prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Action Bar rich style prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('action-bar-rich-style-target'), `Action Bar rich style prompt missing target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-rich-style-value-or-asset'), `Action Bar rich style prompt missing rich style value/asset input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Action Bar rich style prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Action Bar style/.test(response.answer?.nextStep ?? ''), `Action Bar rich style prompt nextStep must point to Action Bar style for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Action Bar rich style prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const primaryBackground = runResponse(['--prompt', 'сделай главную кнопку желтой']);
+  assert(primaryBackground.mode === 'do-cli', 'Primary button background color prompt must remain supported CLI DO');
+  assert(primaryBackground.action?.actionId === 'editor.actionBar.primaryButton.backgroundColor', 'Primary button background color prompt resolved wrong action after rich style boundary');
+  assert(primaryBackground.resolver?.domainOperationBoundary === null, 'Primary button background color prompt must not become rich visual style boundary');
+});
+
+check('Paywall Body benefits and copy prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'поменяй заголовок пейволла на Pro Plan',
+      expectedGuideKey: 'screenedit-paywall-body-title',
+      expectedReferencePath: 'help-block-paywall-body/screenedit-paywall-body-title',
+      forbiddenGuideKey: 'screenedit-paywall-subscriptions-view-kind',
+    },
+    {
+      prompt: 'измени subtitle paywall на Start today',
+      expectedGuideKey: 'screenedit-paywall-body-subtitle',
+      expectedReferencePath: 'help-block-paywall-body/screenedit-paywall-body-subtitle',
+      forbiddenGuideKey: 'screenedit-paywall-body-subtitle-styles',
+    },
+    {
+      prompt: 'добавь benefit bullet в paywall',
+      expectedGuideKey: 'screenedit-paywall-body-features',
+      expectedReferencePath: 'help-block-paywall-body/screenedit-paywall-body-features',
+      forbiddenGuideKey: 'screen-editor-section-paywall-header',
+    },
+    {
+      prompt: 'поменяй текст буллета paywall',
+      expectedGuideKey: 'screenedit-paywall-body-features',
+      expectedReferencePath: 'help-block-paywall-body/screenedit-paywall-body-features',
+      forbiddenGuideKey: 'screenedit-action-bar-primary-label',
+    },
+    {
+      prompt: 'сделай padding benefits paywall 12',
+      expectedGuideKey: 'screenedit-paywall-body-item-padding',
+      expectedReferencePath: 'help-block-paywall-body/screenedit-paywall-body-item-padding',
+      forbiddenGuideKey: 'screenedit-paywall-subscriptions-item-padding',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Paywall Body response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'paywall-body-benefits-domain-operation', `Paywall Body prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Paywall Body prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-paywall-body'), `Paywall Body prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Paywall Body prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Paywall Body prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-paywall-body', `Paywall Body prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Paywall Body prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-body\/index\.html$/.test(url)), `Paywall Body prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide|paywall-body|native-content/.test(url)), `Paywall Body prompt missing concrete image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Paywall Body prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Paywall Body prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('paywall-body-target'), `Paywall Body prompt missing paywall-body-target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-copy-benefit-or-layout-value'), `Paywall Body prompt missing desired body value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Paywall Body prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Paywall Body section/.test(response.answer?.nextStep ?? ''), `Paywall Body prompt nextStep must point to Paywall Body for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Paywall Body prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const titleColor = runResponse(['--prompt', 'сделай цвет заголовка пейволла #111111']);
+  assert(titleColor.mode === 'do-cli', 'Paywall Body title color prompt must remain supported CLI DO');
+  assert(titleColor.action?.actionId === 'editor.paywallBody.title.textStyle.color', 'Paywall Body title color prompt resolved wrong action');
+  assert(titleColor.resolver?.domainOperationBoundary === null, 'Paywall Body title color prompt must not become body copy boundary');
+});
+
+check('Paywall Footer legal links and copy prompts resolve article-backed domain-operation boundary', () => {
+  const cases = [
+    {
+      prompt: 'поменяй порядок кнопки и текста auto-renew',
+      expectedGuideKey: 'screenedit-paywall-footer-elements-order',
+      expectedReferencePath: 'help-block-paywall-footer/screenedit-paywall-footer-elements-order',
+      forbiddenGuideKey: 'screenedit-action-bar-primary-label',
+    },
+    {
+      prompt: 'поменяй terms link в footer paywall',
+      expectedGuideKey: 'screenedit-paywall-footer-terms-uri',
+      expectedReferencePath: 'help-block-paywall-footer/screenedit-paywall-footer-terms-uri',
+      forbiddenGuideKey: 'screenedit-paywall-footer-terms-text-styles',
+    },
+    {
+      prompt: 'поставь privacy url на https://example.com/privacy',
+      expectedGuideKey: 'screenedit-paywall-footer-privacy-uri',
+      expectedReferencePath: 'help-block-paywall-footer/screenedit-paywall-footer-privacy-uri',
+      forbiddenGuideKey: 'screenedit-paywall-footer-privacy-text-styles',
+    },
+    {
+      prompt: 'измени текст restore purchases',
+      expectedGuideKey: 'screenedit-paywall-footer-restore-text',
+      expectedReferencePath: 'help-block-paywall-footer/screenedit-paywall-footer-restore-text',
+      forbiddenGuideKey: 'screenedit-paywall-header-restore-background-color',
+    },
+    {
+      prompt: 'поменяй текст auto-renew disclosure',
+      expectedGuideKey: 'screenedit-paywall-footer-autorenew-text',
+      expectedReferencePath: 'help-block-paywall-footer/screenedit-paywall-footer-autorenew-text',
+      forbiddenGuideKey: 'screenedit-action-bar-primary-label',
+    },
+  ];
+  for (const item of cases) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `Paywall Footer response did not return ok=true for ${item.prompt}`);
+    assert(response.mode === 'teach', `expected teach/domain-boundary mode for ${item.prompt}, got ${response.mode}`);
+    assert(response.resolver?.kind === 'teach', `expected teach resolver for ${item.prompt}, got ${response.resolver?.kind}`);
+    assert(response.resolver?.domainOperationBoundary === 'paywall-footer-links-domain-operation', `Paywall Footer prompt missing domain boundary for ${item.prompt}`);
+    assert(response.action === null, `Paywall Footer prompt must not attach a generic CLI/E2E action for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-paywall-footer'), `Paywall Footer prompt missing section guide for ${item.prompt}`);
+    assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Paywall Footer prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
+    assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Paywall Footer prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.articleAlias === 'help-block-paywall-footer', `Paywall Footer prompt missing article alias for ${item.prompt}`);
+    assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Paywall Footer prompt missing exact reference path for ${item.prompt}`);
+    assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-footer\/index\.html$/.test(url)), `Paywall Footer prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide|paywall-footer|native-footer/.test(url)), `Paywall Footer prompt missing concrete image evidence for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.show?.available === true, `Paywall Footer prompt must offer SHOW for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Paywall Footer prompt must require domain operation for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('paywall-footer-target'), `Paywall Footer prompt missing paywall-footer-target input for ${item.prompt}`);
+    assert(response.answer?.showDoOptions?.do?.missingInputs?.includes('desired-text-url-or-order-value'), `Paywall Footer prompt missing desired footer value input for ${item.prompt}`);
+    assert(/generic setFieldValue patch/.test(response.answer?.showDoOptions?.do?.summary ?? ''), `Paywall Footer prompt must forbid generic setFieldValue mutation for ${item.prompt}`);
+    assert(/Paywall Footer section/.test(response.answer?.nextStep ?? ''), `Paywall Footer prompt nextStep must point to Paywall Footer for ${item.prompt}`);
+    assert(response.completionClaim === 'guidance-only', `Paywall Footer prompt must not claim mutation or verification for ${item.prompt}`);
+    assertSourceSafeCustomerAnswer(response);
+  }
+
+  const footerBackground = runResponse(['--prompt', 'Сделай фон футера пейволла #18181b']);
+  assert(footerBackground.mode === 'do-cli', 'Paywall Footer background prompt must remain supported CLI DO');
+  assert(footerBackground.action?.actionId === 'editor.paywallFooter.style.backgroundColor', 'Paywall Footer background prompt resolved wrong action');
+  assert(footerBackground.resolver?.domainOperationBoundary === null, 'Paywall Footer background prompt must not become footer legal/copy boundary');
+
+  const purchaseButtonFont = runResponse(['--prompt', 'Поставь размер шрифта кнопки покупки на пейволле 18']);
+  assert(purchaseButtonFont.mode === 'do-cli', 'Paywall Footer purchase button font prompt must remain supported CLI DO');
+  assert(purchaseButtonFont.action?.actionId === 'editor.paywallFooter.purchaseButton.textStyle.fontSize', 'Paywall Footer purchase button font prompt resolved wrong action');
+  assert(purchaseButtonFont.resolver?.domainOperationBoundary === null, 'Paywall Footer purchase button font prompt must not become footer legal/copy boundary');
 });
 
 check('CLI paywall body title text-style prompt returns article-backed field patch contract', () => {
@@ -1118,6 +2230,57 @@ check('CLI flexible section background prompt returns generated section patch co
   assert(dryRunOperation?.value === '#fef3c7', 'packaged flexible section CLI patch value drifted');
 });
 
+check('CLI generic scalar Basic Config prompt returns generated setting patch contract', () => {
+  const response = runResponse([
+    '--prompt',
+    'turn on Play Screen Animations',
+    '--projectId',
+    'project_demo',
+    '--funnelId',
+    'funnel_demo',
+    '--versionId',
+    'version_demo',
+    '--screenId',
+    'screen_demo',
+  ]);
+  assert(response.ok === true, 'generic Basic Config CLI DO response did not return ok=true');
+  assert(response.mode === 'do-cli', `expected do-cli mode, got ${response.mode}`);
+  assert(response.action?.actionId === 'editor.setting.screenedit-basic-config-animation-enabled', 'generic Basic Config prompt resolved to the wrong action');
+  assert(response.action?.execution?.kind === 'delegate-cli', 'generic Basic Config action missing delegate-cli execution');
+  const operation = response.action?.execution?.materialize?.content?.operations?.[0];
+  assert(operation?.op === 'setFieldValue', 'generic Basic Config patch op drifted');
+  assert(operation?.path === 'content.animated', 'generic Basic Config patch path drifted');
+  assert(operation?.value === true, 'generic Basic Config inferred value must be boolean true');
+  assert(response.action?.verification?.read === 'funnels export', 'generic Basic Config action missing funnels export verification');
+  assert(response.completionClaim === 'not-completed-until-verification', 'generic Basic Config action claimed completion before verification');
+  const guide = response.guidance?.guides?.find(item => item.guideKey === 'screenedit-basic-config-animation-enabled');
+  assert(guide, 'generic Basic Config response missing animation guide contract');
+  assert(guide.articleAlias === 'help-block-basic-config', 'generic Basic Config guide must link the built-in Basic Config article');
+  assert(guide.referencePath === 'help-block-basic-config/screenedit-basic-config-animation-enabled', 'generic Basic Config guide missing stable reference path');
+  assert(guide.fullArticleLink && /help-block-basic-config\/index\.html$/.test(guide.fullArticleLink), 'generic Basic Config guide missing public article URL');
+  assert(guide.imageUrls?.some(url => /^https:\/\//.test(url)), 'generic Basic Config guide missing concrete image URL');
+  assert(!response.missingArticleClaimed, 'generic Basic Config response incorrectly claimed the built-in guide/article is missing');
+  assertSourceSafeCustomerAnswer(response);
+
+  const dryRun = runCliRunner([
+    '--action',
+    'editor.setting.screenedit-basic-config-animation-enabled',
+    '--projectId',
+    'project_demo',
+    '--funnelId',
+    'funnel_demo',
+    '--versionId',
+    'version_demo',
+    '--screenId',
+    'screen_demo',
+    '--value',
+    'true',
+  ]);
+  assert(dryRun.ok === true && dryRun.dryRun === true, 'packaged generic Basic Config CLI runner dry-run failed');
+  assert(dryRun.materializedFiles?.[0]?.content?.operations?.[0]?.path === 'content.animated', 'packaged generic Basic Config CLI patch path drifted');
+  assert(dryRun.materializedFiles?.[0]?.content?.operations?.[0]?.value === true, 'packaged generic Basic Config CLI patch value must be boolean true');
+});
+
 check('E2E do prompt returns browser contract and verification-ready package', () => {
   const response = runResponse([
     '--prompt',
@@ -1140,6 +2303,7 @@ check('E2E do prompt returns browser contract and verification-ready package', (
   assert(response.action?.executeWith?.companionSkill === 'segmently-test-kit', 'E2E DO missing segmently-test-kit companion');
   assert(response.action?.verification?.read === 'funnels export', 'E2E DO missing funnels export verification');
   assert(!containsPlaceholder(response.action?.verification?.argv), 'E2E DO verification argv contains placeholder');
+  assertToolPreflight(response.action?.toolPreflight, { browser: true });
   assert(response.completionClaim === 'not-completed-until-verification', 'E2E DO claimed completion before verification');
   assertSourceSafeCustomerAnswer(response);
 
@@ -1166,6 +2330,7 @@ check('E2E do prompt returns browser contract and verification-ready package', (
   assert(dryRun.authPreflight?.statusProbe?.argv?.join(' ').includes('auth status'), 'E2E auth preflight missing safe status probe');
   assert(dryRun.authPreflight?.login?.argv?.join(' ').includes('auth login'), 'E2E auth preflight missing login command');
   assert(dryRun.authPreflight?.tokenProbe?.safeToShowOutput === false, 'E2E auth preflight must mark token probe output unsafe');
+  assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' });
   assert(dryRun.verifyReady === true, 'packaged E2E runner should be verification-ready');
   assert(dryRun.blockedExecuteReason === null, 'packaged E2E runner should not be blocked with baseUrl/versionId');
   assert(String(dryRun.driverScript ?? '').includes('input-style-title-styles-font-size'), 'packaged E2E runner driverScript missing font-size input');
@@ -1209,9 +2374,10 @@ function check(id, fn) {
   }
 }
 
-function runResponse(args) {
+function runResponse(args, env = {}) {
   const stdout = execFileSync('node', [join(root, 'runtime/customer-response-runner.mjs'), ...args], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
 }
@@ -1250,7 +2416,7 @@ function runE2eRunner(args, env = {}) {
 function runShowRunner(args, env = {}) {
   const stdout = execFileSync('node', [join(root, 'runtime/show-runner.mjs'), ...args], {
     encoding: 'utf8',
-    env: { ...process.env, ...env },
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
 }
@@ -1258,12 +2424,42 @@ function runShowRunner(args, env = {}) {
 function runShowRunnerExpectingExit(args, expectedStatus) {
   const result = spawnSync('node', [join(root, 'runtime/show-runner.mjs'), ...args], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile },
   });
   if (result.status !== expectedStatus) {
     throw new Error(`expected SHOW runner exit ${expectedStatus}, got ${result.status}: ${result.stderr}`);
   }
   if (!result.stdout) throw new Error('SHOW runner did not emit JSON');
   return JSON.parse(result.stdout);
+}
+
+function assertToolPreflight(preflight, options = {}) {
+  assert(preflight?.requiredForExecute === true, 'toolPreflight must be required before execution');
+  const checks = Array.isArray(preflight.checks) ? preflight.checks : [];
+  const byId = new Map(checks.map(check => [check.id, check]));
+  for (const id of ['segmently-cli-version', 'segmently-auth-status', 'segmently-capabilities']) {
+    assert(byId.has(id), `toolPreflight missing ${id}`);
+  }
+  assert(byId.get('segmently-cli-version')?.argv?.join(' ').includes('--version'), 'toolPreflight missing segmently --version check');
+  assert(byId.get('segmently-cli-version')?.setup?.argv?.join(' ') === 'npm install -g @segmently/cli', 'toolPreflight missing Segmently CLI install command');
+  assert(byId.get('segmently-auth-status')?.argv?.join(' ').includes('auth status'), 'toolPreflight missing auth status check');
+  assert(byId.get('segmently-auth-status')?.setup?.argv?.join(' ').includes('auth login'), 'toolPreflight missing auth login recovery');
+  assert(byId.get('segmently-capabilities')?.argv?.join(' ').includes('capabilities'), 'toolPreflight missing Segmently capabilities check');
+  if (options.segmentlyEnv) {
+    assert(preflight.segmentlyEnv === options.segmentlyEnv, `toolPreflight env ${preflight.segmentlyEnv}, expected ${options.segmentlyEnv}`);
+  }
+  if (options.browser) {
+    assert(byId.has('playwright-cli-help'), 'toolPreflight missing playwright-cli help check');
+    assert(byId.has('playwright-browser-availability'), 'toolPreflight missing browser availability check');
+    assert(byId.get('playwright-cli-help')?.argv?.join(' ') === 'playwright-cli --help', 'toolPreflight missing playwright-cli --help check');
+    assert(byId.get('playwright-cli-help')?.setup?.argv?.join(' ') === 'npm install -g @playwright/cli@latest', 'toolPreflight missing playwright-cli install command');
+    assert(byId.get('playwright-browser-availability')?.argv?.join(' ').includes('install-browser'), 'toolPreflight missing playwright install-browser check');
+    assert(byId.get('playwright-browser-availability')?.setup?.fallbackArgv?.join(' ').includes('npx playwright install'), 'toolPreflight missing Playwright browser fallback install');
+  } else {
+    assert(!byId.has('playwright-cli-help'), 'CLI-only toolPreflight should not require playwright-cli');
+    assert(!byId.has('playwright-browser-availability'), 'CLI-only toolPreflight should not require browser availability');
+  }
+  assert(/Before live SHOW\/DO execution/.test(preflight.agentInstruction ?? ''), 'toolPreflight missing live execution agent instruction');
 }
 
 function assertSourceSafeCustomerAnswer(response) {

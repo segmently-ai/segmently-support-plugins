@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildToolPreflight } from './tool-preflight.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const editorRunner = join(root, 'runtime/editor-do-runner.mjs');
@@ -53,6 +54,12 @@ function main() {
   }
 
   const prepared = prepareCliExecution(plan, args);
+  prepared.toolPreflight = buildToolPreflight(args, {
+    segmentlyEnv: prepared.segmentlyEnv,
+    needsSegmently: true,
+    needsBrowser: false,
+    retryArgv: ['node', 'runtime/cli-do-runner.mjs', ...ensureExecuteArgv(rawArgs)],
+  });
   if (!args.execute) {
     writeJson({
       ok: true,
@@ -64,6 +71,7 @@ function main() {
       segmentlyEnv: prepared.segmentlyEnv,
       requiresExecute: true,
       execution: plan.execution,
+      toolPreflight: prepared.toolPreflight,
       wouldRun: [prepared.segmentlyBin, ...prepared.segmentlyGlobalArgs, ...prepared.argv],
       materializedFiles: prepared.materializedFiles.map(file => ({
         placeholder: file.placeholder,
@@ -90,6 +98,7 @@ function main() {
     owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
     commandFamily: plan.execution.commandFamily,
     segmentlyEnv: prepared.segmentlyEnv,
+    toolPreflight: prepared.toolPreflight,
     writtenFiles,
     command: {
       argv: [prepared.segmentlyBin, ...prepared.segmentlyGlobalArgs, ...prepared.argv],
@@ -135,6 +144,10 @@ function main() {
 
   writeJson(output);
   if (!output.ok) process.exitCode = 1;
+}
+
+function ensureExecuteArgv(argv) {
+  return argv.includes('--execute') ? argv : [...argv, '--execute'];
 }
 
 function runEditorRunner(args) {
@@ -343,13 +356,14 @@ function printHelp() {
 
 Usage:
   node runtime/cli-do-runner.mjs --action <cliActionId> [inputs...]
-  node runtime/cli-do-runner.mjs --action <cliActionId> [inputs...] --env dev --execute
+  node runtime/cli-do-runner.mjs --action <cliActionId> [inputs...] --execute
 
 Without --execute this runner is read-only and returns the command, patch files,
 and verification read that would run. With --execute it runs the Segmently CLI
 and then runs the returned verification command unless --skipVerify is set.
 Use --env or SUPPORT_FLOW_SEGMENTLY_ENV / SUPPORT_FLOW_SEGMENTLY_AUTH_ENV to
-pin the Segmently CLI environment; otherwise the local CLI default is used.
+pin the Segmently CLI environment only when the customer or harness explicitly
+provides one; otherwise use the local CLI default.
 When SUPPORT_FLOW_LIVE_AGENT_CASE_DIR or --resultPath is set, it also writes
 cli-do-runner-result.json for live-agent verification.
 `);

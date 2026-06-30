@@ -1,33 +1,59 @@
 ---
 name: segmently-test-kit
-description: Portable helper bundle consumed by generated browser runners for Segmently auth, navigation, editor, paywall, placement, and verification flows.
+description: Customer-safe runtime helper contract used by Segmently Launch Assistant browser SHOW and E2E DO plans.
 ---
 
 # Segmently Test Kit
 
-This bundled skill is the customer-runtime companion shipped with Segmently Launch Assistant. It is generated at package time so installed Codex plugins do not inherit repository-oriented maintainer runbooks.
+Use this skill only as the runtime companion named by Segmently Launch Assistant
+SHOW and E2E DO contracts. It is not a general testing framework for the
+customer to call directly.
 
-## Use
+## When To Use
 
-- A generated E2E execution object names `segmently-test-kit` as a companion.
-- Do not invoke this skill directly for customer prose; it is a runtime helper dependency.
+- A `segmently-launch-guide` SHOW result names `segmently-test-kit` as the
+  companion for browser navigation, focus, or screenshot evidence.
+- A `segmently-launch-guide` E2E DO result names `segmently-test-kit` as the
+  companion for a generated browser driver.
+- The customer asks why browser setup, auth preflight, or verification is needed
+  before a SHOW or E2E DO action can run.
 
-## Owns
+## Runtime Contract
 
-- Reusable helper code consumed by generated E2E scripts.
-- Stable browser automation primitives used by `playwright-bowser` plans.
+Read `references/runtime-contract.md` before acting on a generated browser
+contract. The source of truth for the concrete action remains the JSON returned
+by `segmently-launch-guide` runners.
 
-## Runtime Rules
+The helper contract is intentionally narrow:
 
-- Prefer the published `segmently` CLI on PATH for CLI work.
-- Use the customer authenticated session; if auth is missing, ask the customer to run `segmently auth login` for the intended account.
-- Production is the default target unless the customer explicitly chooses another Segmently environment.
-- Never ask for raw tokens, refresh tokens, service credentials, or direct database access.
-- Do not require a repository checkout, build step, source-tree command, or maintainer-only helper.
-- Return the action result and then run the verification read named by the launch-guide action contract.
+- Use the published `segmently` CLI from PATH for auth and verification reads.
+- Use `playwright-bowser` for observable browser control.
+- Keep SHOW read-only.
+- Run E2E DO only when the launch-guide action contract, required target ids,
+  browser auth, and explicit execute approval are all present.
+- Never ask the customer for raw tokens, refresh tokens, service credentials, or
+  direct database access.
+- Never require a Segmently source checkout, project build, maintainer command,
+  hidden endpoint, or local-only helper.
+
+## Required Inputs
+
+For SHOW, the generated contract normally needs a project, funnel, screen, and a
+browser base URL or editor URL. If session project context is present, do not ask
+for the project again; state which saved project is being used and ask only for
+the missing target inputs.
+
+For E2E DO, require the action value plus every target id listed in the
+launch-guide contract. Do not infer a missing screen, funnel, or version from
+nearby prose when the runner says it is still missing.
+
+## Preflight
+
+Follow `references/browser-preflight.md` before live browser work. Missing CLI
+auth or browser tooling is a recoverable preparation step, not a final failure.
 
 ## Verification
 
-- The generated browser runner completes and the launch-guide verification read passes.
-
-Additional customer-runtime notes are in `CUSTOMER_RUNTIME.md`.
+Follow `references/verification-contract.md`. A mutation is complete only after
+the generated action executes and the named read-back verification succeeds.
+Dry-run output is a plan, not completion.

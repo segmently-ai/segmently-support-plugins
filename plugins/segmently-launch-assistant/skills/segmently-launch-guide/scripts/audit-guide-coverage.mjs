@@ -31,10 +31,10 @@ function main() {
   if (args.strict && report.strictFailures.length > 0) {
     process.exitCode = 1;
   }
-  if (args.failOnMissingImages && report.guideEvidence.missingConcreteImageUrls.length > 0) {
+  if (args.failOnMissingImages && report.urlGaps.imageIssueCount > 0) {
     process.exitCode = 1;
   }
-  if (args.failOnMissingArticleLinks && report.guideEvidence.missingArticleLinks.length > 0) {
+  if (args.failOnMissingArticleLinks && report.urlGaps.articleIssueCount > 0) {
     process.exitCode = 1;
   }
 }
@@ -53,6 +53,7 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
   const missingConcreteImageUrls = [];
   const missingSectionConcreteImageUrls = [];
   const missingArticleLinks = [];
+  const textOnlyGuides = [];
   const coverageRows = [];
   let totalSections = 0;
   let sectionsWithScreenshotEvidence = 0;
@@ -84,10 +85,17 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
       };
     });
     const guideHasConcreteImageUrl = sections.some(section => section.hasConcreteImageUrl);
+    const guideHasScreenshotEvidence = guide.hasScreenshotEvidence === true
+      || sections.some(section => section.hasScreenshotEvidence === true);
     const guideHasArticleLink = isHttps(guide.fullArticleLink);
     const guideHasStableArticleReference = nonEmpty(guide.articleId)
       || nonEmpty(guide.articleAlias)
       || nonEmpty(guide.localArticlePath);
+    const visualCoverageStatus = guideHasConcreteImageUrl
+      ? 'image-url-available'
+      : guideHasScreenshotEvidence
+        ? 'screenshot-evidence-missing-image-url'
+        : 'text-only-no-screenshot-evidence';
     coverageRows.push({
       guideKey: guide.guideKey,
       articleId: guide.articleId ?? guide.guideKey,
@@ -96,17 +104,17 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
       localArticlePath: guide.localArticlePath ?? null,
       name: guide.name,
       hasAuthoredText: guide.hasAuthoredText === true,
-      hasScreenshotEvidence: guide.hasScreenshotEvidence === true,
+      hasScreenshotEvidence: guideHasScreenshotEvidence,
       hasConcreteImageUrl: guideHasConcreteImageUrl,
+      visualCoverageStatus,
       hasStableArticleReference: guideHasStableArticleReference,
       fullArticleLink: guideHasArticleLink ? guide.fullArticleLink : null,
-      missingConcreteImageUrl:
-        guide.hasScreenshotEvidence === true && !guideHasConcreteImageUrl,
+      missingConcreteImageUrl: guideHasScreenshotEvidence && !guideHasConcreteImageUrl,
       missingArticleLink: !guideHasArticleLink,
       sections,
     });
     if (guide.hasAuthoredText) guideSummary.withAuthoredText += 1;
-    if (guide.hasScreenshotEvidence) guideSummary.withScreenshotEvidence += 1;
+    if (guideHasScreenshotEvidence) guideSummary.withScreenshotEvidence += 1;
     if (sections.some(section => section.hasScreenshotEvidence === true)) {
       guideSummary.withSectionScreenshotEvidence += 1;
     }
@@ -121,11 +129,21 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
     } else {
       missingArticleLinks.push({ guideKey: guide.guideKey, name: guide.name });
     }
-    if (guide.hasScreenshotEvidence && !guideHasConcreteImageUrl) {
+    if (guideHasScreenshotEvidence && !guideHasConcreteImageUrl) {
       missingConcreteImageUrls.push({
         guideKey: guide.guideKey,
         name: guide.name,
         screenshotSectionCount: guide.screenshotSectionCount ?? 0,
+      });
+    }
+    if (guide.hasAuthoredText === true && !guideHasScreenshotEvidence && !guideHasConcreteImageUrl) {
+      textOnlyGuides.push({
+        guideKey: guide.guideKey,
+        name: guide.name,
+        articleAlias: guide.articleAlias ?? null,
+        referencePath: guide.referencePath ?? null,
+        fullArticleLink: guideHasArticleLink ? guide.fullArticleLink : null,
+        reason: 'authored-text-without-screenshot-binding',
       });
     }
   }
@@ -144,6 +162,19 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
     ...screenSettings.fieldQuestionProbesWithoutFieldCorpus.map(item => `field question probe ${item.query}: missing field corpus ${item.articleAlias} / ${item.field}`),
     ...helpArticles.requiredMissing.map(item => `published help article ${item.alias} is missing from help-article-reference`),
   ];
+
+  const urlGaps = {
+    articleIssueCount: missingArticleLinks.length + helpArticles.missingPublishedUrl.length,
+    imageIssueCount:
+      missingConcreteImageUrls.length
+      + missingSectionConcreteImageUrls.length
+      + helpArticles.missingSettingImageUrl.length,
+    missingGuideArticleLinks: missingArticleLinks,
+    missingGuideConcreteImageUrls: missingConcreteImageUrls,
+    missingGuideSectionConcreteImageUrls: missingSectionConcreteImageUrls,
+    missingHelpArticlePublishedUrls: helpArticles.missingPublishedUrl,
+    missingHelpArticleSettingImageUrls: helpArticles.missingSettingImageUrl,
+  };
 
   return {
     ok: strictFailures.length === 0,
@@ -164,13 +195,16 @@ function buildReport(guideEvidence, teachReference, helpArticleReference) {
       missingConcreteImageUrlCount: missingConcreteImageUrls.length,
       missingSectionConcreteImageUrlCount: missingSectionConcreteImageUrls.length,
       missingArticleLinkCount: missingArticleLinks.length,
+      textOnlyGuideCount: textOnlyGuides.length,
       coverageRows,
       missingConcreteImageUrls,
       missingSectionConcreteImageUrls,
       missingArticleLinks,
+      textOnlyGuides,
     },
     helpArticles,
     screenSettings,
+    urlGaps,
     strictFailures,
   };
 }
@@ -415,6 +449,7 @@ function writeText(report, args) {
     `- missing image URL despite screenshot evidence: ${report.guideEvidence.missingConcreteImageUrlCount}`,
     `- missing section image URL despite screenshot evidence: ${report.guideEvidence.missingSectionConcreteImageUrlCount}`,
     `- missing article link: ${report.guideEvidence.missingArticleLinkCount}`,
+    `- text-only guides without screenshot evidence: ${report.guideEvidence.textOnlyGuideCount}`,
     '',
     'Published help articles:',
     `- environment: ${report.helpArticles.environment ?? 'unknown'}`,
@@ -423,6 +458,8 @@ function writeText(report, args) {
     `- with published URL: ${report.helpArticles.withPublishedUrl}`,
     `- settings: ${report.helpArticles.totalSettings}`,
     `- settings with image URL: ${report.helpArticles.settingsWithImageUrl}`,
+    `- missing published URL: ${report.helpArticles.missingPublishedUrl.length}`,
+    `- missing setting image URL: ${report.helpArticles.missingSettingImageUrl.length}`,
     `- missing required aliases: ${report.helpArticles.requiredMissing.length}`,
     `- production backfill: ${report.helpArticles.productionBackfill?.status ?? 'unknown'}`,
     '',
@@ -451,6 +488,12 @@ function writeText(report, args) {
       lines.push(`- ${item.guideKey} / ${item.sectionKey ?? '<section>'}: ${item.title ?? '<untitled>'}`);
     }
   }
+  if (report.guideEvidence.textOnlyGuides.length > 0) {
+    lines.push('', 'Text-only guide rows without screenshot evidence (first 25):');
+    for (const item of report.guideEvidence.textOnlyGuides.slice(0, 25)) {
+      lines.push(`- ${item.guideKey}: ${item.reason}`);
+    }
+  }
   if (report.helpArticles.requiredMissing.length > 0) {
     lines.push('', 'Missing required help article aliases (first 25):');
     for (const item of report.helpArticles.requiredMissing.slice(0, 25)) {
@@ -466,6 +509,7 @@ function writeText(report, args) {
         + `path=${row.localArticlePath ?? 'none'}, `
         + `image=${row.hasConcreteImageUrl ? 'yes' : 'no'}, `
         + `screenshot=${row.hasScreenshotEvidence ? 'yes' : 'no'}, `
+        + `visual=${row.visualCoverageStatus ?? 'unknown'}, `
         + `articleLink=${row.fullArticleLink ? 'yes' : 'no'}`,
       );
       for (const section of row.sections) {

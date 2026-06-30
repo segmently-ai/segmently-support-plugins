@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29T17:27:35.529Z",
+  "generatedAt": "2026-06-30T07:38:58.695Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -22,14 +22,14 @@
     ]
   },
   "counts": {
-    "total": 1823,
+    "total": 1889,
     "byClassification": {
-      "external-https": 37,
-      "prod-api": 1782,
+      "external-https": 73,
+      "prod-api": 1812,
       "localhost": 4
     },
     "byStableStatus": {
-      "ok": 1823
+      "ok": 1889
     }
   },
   "blockers": [],
@@ -100,7 +100,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 261,
+      "line": 401,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -109,8 +109,296 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 282,
+      "line": 422,
       "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.anthropic.com/v1/design/mcp`",
+      "file": "plugins/segmently-launch-assistant/skills/claude-design/references/import-custom-screens.md",
+      "line": 80,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/image.png",
+      "file": "plugins/segmently-launch-assistant/skills/claude-design/references/webembed-data-source-shape.md",
+      "line": 34,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.anthropic.com/v1/design/mcp`",
+      "file": "plugins/segmently-launch-assistant/skills/claude-design/SKILL.md",
+      "line": 34,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/playwright-bowser-core/references/playwright-cli.md",
+      "line": 21,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/playwright-bowser-core/SKILL.md",
+      "line": 39,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/commands.md",
+      "line": 128,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/commands.md",
+      "line": 136,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/source",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/commands.md",
+      "line": 137,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://segmently.ai/app-review/social-publishing",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/manifests.md",
+      "line": 61,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://segmently.ai/app-review/social-publishing",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/manifests.md",
+      "line": 140,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/source",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/workflows.md",
+      "line": 227,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/source",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/workflows.md",
+      "line": 246,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.org/terms",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-custom-screen-guide/references/screenshot-webembed-workflow.md",
+      "line": 144,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://fonts.googleapis.com/css2?family=Example:wght@400;700&display=swap",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-custom-screen-guide/references/shadow-dom-rendering.md",
+      "line": 41,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://www.figma.com/api/mcp/asset/",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/artifact-contract.md",
+      "line": 130,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/artifact-contract.md",
+      "line": 148,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/artifact-contract.md",
+      "line": 149,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/materialization.md",
+      "line": 20,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/materialization.md",
+      "line": 71,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/materialization.md",
+      "line": 72,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/references/screen-conversion-worker.md",
+      "line": 174,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://www.figma.com/design/example/file",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 93,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 118,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/preserved.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 144,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/preserved-small.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 145,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/hero.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 222,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example/preserved-small.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-figma-webembed-import/scripts/run-evals.mjs",
+      "line": 224,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example.com/background.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-guide/references/manifests.md",
+      "line": 115,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://cdn.example.com/background.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-guide/references/workflows.md",
+      "line": 122,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-paywall-ab-rollout/scripts/run-paywall-ab-rollout.mjs",
+      "line": 568,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-cli-paywall-ab-rollout/scripts/run-paywall-ab-rollout.mjs",
+      "line": 657,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-list-create/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 24,
+      "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
       "runtimeAllowed": false
@@ -119,6 +407,15 @@
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 35,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-basic-info/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 59,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -161,9 +458,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-select/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 121,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151453_select-wizard-theme-wizard-theme-selection/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 132,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-customize/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 156,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -179,9 +494,63 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 245,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-domain-input/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 280,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-dns-setup/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 315,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-verification/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 350,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-stripe-connect-section/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 385,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 396,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-test-mode/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 420,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -197,9 +566,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-live-mode/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 455,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 466,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-oauth-guidance/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 499,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -215,9 +602,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-analytics-section/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 543,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 554,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-integration-list/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 587,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -233,9 +638,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-add-provider/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 631,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 642,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-provider-config/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 666,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -251,9 +674,72 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-list/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 773,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 784,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-mode-tabs/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 808,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-basic-fields/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 843,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-stripe-mapping/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 905,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-price-setup/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 940,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-subscription-options/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 984,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-overview/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 1037,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -269,9 +755,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-add-screen/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 1090,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 1101,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-connect-screens/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 1152,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -287,9 +791,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/screen-editor-overview/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 1232,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151503_open-editor-editor-context/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 1243,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/screen-editor-action-button/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 1285,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -656,6 +1178,15 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-entry-rules/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 2065,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151505_open-entry-rules-entry-rules/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 2076,
@@ -665,9 +1196,27 @@
       "runtimeAllowed": false
     },
     {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-stripe-metadata/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 2136,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
       "value": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
       "line": 2147,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-publish-url/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/guide-evidence.json",
+      "line": 2198,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
@@ -16183,7 +16732,7 @@
     {
       "value": "http://localhost:3000",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/runtime/show-runner.mjs",
-      "line": 255,
+      "line": 265,
       "classification": "localhost",
       "stableStatus": "ok",
       "replacement": null,
@@ -16192,7 +16741,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 697,
+      "line": 742,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16201,7 +16750,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 725,
+      "line": 771,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16209,15 +16758,6 @@
     },
     {
       "value": "https://env.segmently.example/login",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 729,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
       "line": 775,
       "classification": "external-https",
@@ -16226,54 +16766,9 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://dev.segmently.ai",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 802,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 816,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://env.segmently.example",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 830,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://env.segmently.example/login",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 834,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://app.segmently.ai",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
-      "line": 1572,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://app.segmently.ai",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 167,
+      "line": 821,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16281,8 +16776,53 @@
     },
     {
       "value": "https://dev.segmently.ai",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 191,
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 849,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 863,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://env.segmently.example",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 877,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://env.segmently.example/login",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 881,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 1619,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-codex-forward-test.mjs",
+      "line": 1900,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16291,7 +16831,16 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 205,
+      "line": 218,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://dev.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
+      "line": 243,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16300,7 +16849,16 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 219,
+      "line": 257,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
+      "line": 271,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16309,7 +16867,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 237,
+      "line": 289,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16318,7 +16876,7 @@
     {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 241,
+      "line": 293,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16327,7 +16885,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 260,
+      "line": 395,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16336,7 +16894,16 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 280,
+      "line": 415,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/privacy",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
+      "line": 1696,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16345,7 +16912,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 1134,
+      "line": 2297,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16354,7 +16921,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 1160,
+      "line": 2324,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16363,7 +16930,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 1186,
+      "line": 2351,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16372,7 +16939,7 @@
     {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 1190,
+      "line": 2355,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16381,7 +16948,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 777,
+      "line": 848,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16389,24 +16956,6 @@
     },
     {
       "value": "https://env.segmently.example",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 820,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://env.segmently.example/login",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 825,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
-      "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
       "line": 892,
       "classification": "external-https",
@@ -16415,18 +16964,9 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://env.segmently.example",
-      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 930,
-      "classification": "external-https",
-      "stableStatus": "ok",
-      "replacement": null,
-      "runtimeAllowed": false
-    },
-    {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 935,
+      "line": 897,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16435,7 +16975,61 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 2090,
+      "line": 964,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://env.segmently.example",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
+      "line": 1003,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://env.segmently.example/login",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
+      "line": 1008,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
+      "line": 2469,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
+      "line": 2828,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/reference-image.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-product-cli-guide/examples/asset-reference-images.json",
+      "line": 3,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://example.com/reference-image.png",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-product-cli-guide/SKILL.md",
+      "line": 580,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

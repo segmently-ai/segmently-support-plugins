@@ -1,0 +1,10 @@
+{
+  "status": "failure",
+  "issues": [
+    {
+      "code": "generic_subject",
+      "path": "$.promptTemplate",
+      "message": "The prompt uses a generic subject that does not clearly support the screen."
+    }
+  ]
+}

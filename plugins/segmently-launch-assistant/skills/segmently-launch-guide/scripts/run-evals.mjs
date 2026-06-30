@@ -2,7 +2,7 @@
 /**
  * Eval runner for segmently-launch-guide.
  *
- * Thirteen gates, all must pass:
+ * Fourteen gates, all must pass:
  *  1. Corpus evals (evals/evals.json) — substring mustContain / mustNotContain,
  *     same harness convention as segmently-cli-guide.
  *  2. Meta-guard — every customer scenario in references/scenarios.matrix.json
@@ -30,23 +30,30 @@
  * 10. Coverage audit guard — the shipped artifacts can report exactly where
  *     text, article links, screenshot evidence, and concrete image URLs exist,
  *     and screen-editor setting questions are fully covered by article text.
- * 11. Persona flow guard — three novice personas ask imprecise end-to-end launch
+ * 11. DO coverage audit guard — the shipped artifacts can report exact,
+ *     block-level, conditional browser, and teach/show-only DO coverage for
+ *     published help settings.
+ * 12. Persona flow guard — three novice personas ask imprecise end-to-end launch
  *     questions; each question must have shipped text guidance, screenshot-backed
  *     evidence, a customer-facing response contract, and a DO/handoff contract
  *     where the question asks the agent to act.
- * 12. Raw customer prompt guard — free-form customer prompts resolve to
+ * 13. Raw customer prompt guard — free-form customer prompts resolve to
  *     TEACH/SHOW/missing-input/DO contracts without source-tree access.
- * 13. Customer-surface acceptance guard — representative raw novice prompts
+ * 14. Session-context guard — a saved current project removes only projectId
+ *     from SHOW/CLI DO/E2E DO contracts, keeps article-fetch project context
+ *     optional, and tells the customer what project is being used.
+ * 15. Customer-surface acceptance guard — representative raw novice prompts
  *     prove source-safe TEACH/SHOW/CLI DO/E2E DO answers and packaged runners.
  */
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { homedir } from 'node:os';
+import { homedir, tmpdir } from 'node:os';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FORBIDDEN_TOKENS } from './forbidden-tokens.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const defaultContextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-evals-')), 'empty-context.json');
 const requiredCodexRuntimeSkills = Object.freeze([
   'segmently-cli-guide',
   'segmently-cli-paywall-ab-rollout',
@@ -65,6 +72,13 @@ const internalOnlySkillNames = Object.freeze([
   'deployweblocal',
   'worktree-local-dev',
   'plugin-creator',
+]);
+const generatedGenericScalarBackendSupportedPaths = new Set([
+  'content.animated',
+  'content.offlineFirst',
+  'content.systemPrompt.permissionType',
+  'content.countdown.duration',
+  'content.countdown.unit',
 ]);
 const skillMarkdown = read('SKILL.md');
 const matrixRaw = read('references/scenarios.matrix.json');
@@ -110,6 +124,34 @@ for (const item of evals.evals) {
   }
   report(item.id, failed);
 }
+
+const fieldLevelResolverContractFailures = [];
+for (const required of [
+  'For field-level TEACH, use the packaged resolver before manually reading the',
+  'runtime/customer-response-runner.mjs --prompt',
+  'answer.articleReferences',
+  'answer.builtInArticleReferences',
+  'answer.customerVisibleGuideAssets',
+  'Do not manually choose a different article alias from',
+]) {
+  if (!skillMarkdown.includes(required)) {
+    fieldLevelResolverContractFailures.push(`SKILL.md missing resolver-first field-level contract text: ${required}`);
+  }
+}
+report('field-level-teach-uses-packaged-resolver-first', fieldLevelResolverContractFailures);
+
+const articleFetchCompletionWordingFailures = [];
+for (const required of [
+  'Article fetch is',
+  'a read-only lookup, not completed customer work',
+  'do not open the answer with',
+  '"Готово"',
+]) {
+  if (!skillMarkdown.includes(required)) {
+    articleFetchCompletionWordingFailures.push(`SKILL.md missing article-fetch no-completion wording: ${required}`);
+  }
+}
+report('article-fetch-no-completion-opening', articleFetchCompletionWordingFailures);
 
 // ---- Gate 2: meta-guard over the scenario matrix --------------------------
 const matrix = JSON.parse(matrixRaw);
@@ -158,6 +200,15 @@ for (const file of listProjectionFiles(root)) {
   }
 }
 report('codex-no-internal-skill-leak:customer-projection-uses-only-customer-skills', internalSkillLeakFailures);
+
+const runtimeEnvExampleFailures = [];
+for (const runtimeFile of ['runtime/cli-do-runner.mjs', 'runtime/e2e-do-runner.mjs']) {
+  const text = read(runtimeFile);
+  if (/--env\s+(dev|stage|local)\b/i.test(text) || /\benv\s+(dev|stage|local)\b/i.test(text)) {
+    runtimeEnvExampleFailures.push(`${runtimeFile}: customer/runtime help must not suggest non-production env examples`);
+  }
+}
+report('runtime-help:no-non-prod-env-examples', runtimeEnvExampleFailures);
 
 // ---- Gate 3b: Codex runtime dependencies ----------------------------------
 const dependencyFailures = [];
@@ -208,6 +259,24 @@ if (!Array.isArray(doActionReference.actions) || doActionReference.actions.lengt
   doActionFailures.push('do-action-reference has no actions');
 }
 const actionIds = new Set((doActionReference.actions ?? []).map((action) => action.id));
+const generatedGenericScalarActions = (doActionReference.actions ?? [])
+  .filter(action => String(action.id ?? '').startsWith('editor.setting.'));
+for (const action of generatedGenericScalarActions) {
+  if (action.cliPatch?.operation !== 'setFieldValue') {
+    doActionFailures.push(`${action.id}: generated generic scalar action must use setFieldValue`);
+  }
+  if (!generatedGenericScalarBackendSupportedPaths.has(action.cliPatch?.path)) {
+    doActionFailures.push(`${action.id}: generated generic scalar path is not backend-policy supported (${action.cliPatch?.path ?? 'missing'})`);
+  }
+}
+for (const id of [
+  'editor.setting.screenedit-basic-config-system-permission-enabled',
+  'editor.setting.screenedit-basic-config-countdown-enabled',
+]) {
+  if (actionIds.has(id)) {
+    doActionFailures.push(`${id}: nullable object Basic Config toggles must not ship as generic scalar actions`);
+  }
+}
 for (const id of [
   'launch.funnel.create',
   'editor.actionBar.primaryButton.label',
@@ -256,6 +325,7 @@ for (const id of [
   'editor.roller.style.labelColor',
   'editor.roller.style.containerCornerRadius',
   'editor.screen.backgroundColor',
+  'editor.setting.screenedit-basic-config-animation-enabled',
   'editor.paywall.attachProduct',
   'editor.list.options.itemTitle.fontSize',
 ]) {
@@ -519,6 +589,7 @@ try {
   if (!Array.isArray(dryRun.wouldVerify) || !dryRun.wouldVerify.join(' ').includes('funnels export')) {
     cliRunnerFailures.push('CLI dry-run did not expose verification argv');
   }
+  assertToolPreflight(dryRun.toolPreflight, { browser: false }, cliRunnerFailures, 'CLI dry-run');
 
   const screenBackgroundDryRun = runCliRunner([
     '--action',
@@ -803,6 +874,7 @@ try {
   if (dryRun.authPreflight?.tokenProbe?.safeToShowOutput !== false) {
     e2eRunnerFailures.push('E2E auth preflight must mark token probe output unsafe');
   }
+  assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' }, e2eRunnerFailures, 'E2E dry-run');
   const envDryRun = runE2eRunner([
     '--action',
     'editor.list.options.itemTitle.fontSize',
@@ -917,6 +989,7 @@ try {
     if (!dryRun.authPreflight?.retry?.argv?.includes('--execute')) {
       showRunnerFailures.push('SHOW auth preflight retry must execute the live runner');
     }
+    assertToolPreflight(dryRun.toolPreflight, { browser: true, segmentlyEnv: 'prod' }, showRunnerFailures, 'SHOW dry-run');
     const envDryRun = runShowRunner([
       '--prompt',
       'покажи где поменять цвет кнопки продолжить',
@@ -993,6 +1066,20 @@ try {
   if (!(audit.guideEvidence?.missingArticleLinkCount >= 0)) {
     coverageAuditFailures.push('guide article-link inventory is missing');
   }
+  if (!(audit.guideEvidence?.textOnlyGuideCount >= 0) || !Array.isArray(audit.guideEvidence?.textOnlyGuides)) {
+    coverageAuditFailures.push('guide text-only image coverage inventory is missing');
+  } else {
+    for (const guideKey of [
+      'integrations-custom-domain-section',
+      'custom-domain-domain-input',
+      'custom-domain-dns-setup',
+      'custom-domain-verification',
+    ]) {
+      if (!audit.guideEvidence.textOnlyGuides.some(row => row.guideKey === guideKey)) {
+        coverageAuditFailures.push(`custom-domain guide ${guideKey} must be visible in textOnlyGuides until screenshot evidence exists`);
+      }
+    }
+  }
   if (audit.policy?.missingArticleLinksAreReportedNotStrict !== true) {
     coverageAuditFailures.push('coverage audit policy must keep missing article links report-only until release mode is requested');
   }
@@ -1033,7 +1120,102 @@ try {
 }
 report('coverage-audit:guide-image-inventory-and-screen-settings-coverage', coverageAuditFailures);
 
-// ---- Gate 11: persona/customer-surface naive question evals ---------------
+// ---- Gate 11: DO coverage audit over shipped settings/action artifacts -----
+const doCoverageAuditFailures = [];
+try {
+  const doAudit = JSON.parse(execFileSync('node', [
+    join(root, 'scripts/audit-do-coverage.mjs'),
+    '--json',
+    '--strict',
+  ], {
+    encoding: 'utf8',
+    maxBuffer: 10 * 1024 * 1024,
+  }));
+  if (doAudit.ok !== true) {
+    doCoverageAuditFailures.push(...(doAudit.strictFailures ?? ['DO coverage audit returned ok=false']));
+  }
+  if (doAudit.actionRegistry?.totalActions < 300) {
+    doCoverageAuditFailures.push('DO coverage audit action inventory is too low');
+  }
+  if (doAudit.settings?.totalPublishedSettings < 400) {
+    doCoverageAuditFailures.push('DO coverage audit setting inventory is too low');
+  }
+  if (doAudit.settings?.anyDoSettingCount < 150) {
+    doCoverageAuditFailures.push('DO coverage audit supported setting coverage regressed below 150');
+  }
+  const exactOrConditionalSettingCount =
+    (doAudit.settings?.exactDoSettingCount ?? 0)
+    + (doAudit.settings?.conditionalDoSettingCount ?? 0);
+  if (exactOrConditionalSettingCount < 25) {
+    doCoverageAuditFailures.push(`DO coverage audit exact/conditional setting coverage regressed below 25 (got ${exactOrConditionalSettingCount})`);
+  }
+  if (!Array.isArray(doAudit.settings?.teachOnlySettings)) {
+    doCoverageAuditFailures.push('DO coverage audit teach-only settings inventory is missing');
+  }
+  if (!Array.isArray(doAudit.articleCoverage?.topGapArticles)) {
+    doCoverageAuditFailures.push('DO coverage audit top gap article inventory is missing');
+  }
+  const gapTaxonomy = doAudit.gapTaxonomy;
+  const gapGroups = gapTaxonomy?.gapGroups ?? [];
+  if (gapTaxonomy?.schemaVersion !== 1) {
+    doCoverageAuditFailures.push('DO coverage audit gap taxonomy schemaVersion is missing or unsupported');
+  }
+  if (!Array.isArray(gapGroups) || gapGroups.length < 5) {
+    doCoverageAuditFailures.push('DO coverage audit gap taxonomy groups are missing or too small');
+  }
+  if ((gapTaxonomy?.totalTeachOnlySettings ?? -1) !== (doAudit.settings?.teachOnlySettingCount ?? -2)) {
+    doCoverageAuditFailures.push('DO coverage audit gap taxonomy teach-only count does not match settings inventory');
+  }
+  if ((gapTaxonomy?.unclassifiedSettingCount ?? 1) !== 0) {
+    doCoverageAuditFailures.push(`DO coverage audit gap taxonomy has ${gapTaxonomy?.unclassifiedSettingCount ?? 'unknown'} unclassified settings`);
+  }
+  const gapFamilies = new Set(gapGroups.map(group => group.family));
+  for (const expectedFamily of [
+    'options-structure-and-items',
+    'media-assets-and-image-layout',
+    'copy-and-label-text',
+    'header-navigation-progress',
+    'spacing-and-insets',
+    'variable-binding-and-scoring',
+    'paywall-body-benefits',
+    'paywall-footer-links-and-legal-copy',
+    'visual-effects-icons-and-rich-styles',
+    'carousel-slides-and-timing',
+    'custom-html-and-webembed-data',
+    'basic-config-object-toggles',
+  ]) {
+    if (!gapFamilies.has(expectedFamily)) {
+      doCoverageAuditFailures.push(`DO coverage audit gap taxonomy is missing expected family ${expectedFamily}`);
+    }
+  }
+  if (gapGroups.length < 12) {
+    doCoverageAuditFailures.push(`DO coverage audit gap taxonomy must cover the full first-release domain-boundary set (got ${gapGroups.length}, expected at least 12)`);
+  }
+  for (const group of gapGroups) {
+    if (!group.family || !group.recommendedExecution || !group.requiredBackendPolicy || !group.requiredRunner || !group.releaseGateStatus) {
+      doCoverageAuditFailures.push(`DO coverage audit gap taxonomy group ${group.family ?? '<missing>'} is missing execution metadata`);
+    }
+    if (!Array.isArray(group.requiredLiveCases) || group.requiredLiveCases.length === 0) {
+      doCoverageAuditFailures.push(`DO coverage audit gap taxonomy group ${group.family ?? '<missing>'} is missing live case requirements`);
+    }
+  }
+  const passedConditionalProbes = doAudit.conditionalActions?.probes?.filter(probe => probe.ok === true).length ?? 0;
+  if (passedConditionalProbes < 2) {
+    doCoverageAuditFailures.push('DO coverage audit conditional browser upload probes regressed');
+  }
+  const auditHelp = execFileSync('node', [
+    join(root, 'scripts/audit-do-coverage.mjs'),
+    '--help',
+  ], { encoding: 'utf8' });
+  if (!auditHelp.includes('--fail-on-do-gaps')) {
+    doCoverageAuditFailures.push('DO coverage audit help is missing --fail-on-do-gaps future release mode');
+  }
+} catch (error) {
+  doCoverageAuditFailures.push(`DO coverage audit failed: ${error instanceof Error ? error.message : String(error)}`);
+}
+report('do-coverage-audit:setting-do-inventory-and-remaining-gaps', doCoverageAuditFailures);
+
+// ---- Gate 12: persona/customer-surface naive question evals ---------------
 const personaFailures = [];
 const guideEvidence = JSON.parse(guideEvidenceRaw);
 const helpArticleReference = JSON.parse(helpArticleReferenceRaw);
@@ -1277,6 +1459,29 @@ try {
       promptFailures.push(`button-font prompt hides built-in article reference with ${pattern}`);
     }
   }
+  const customDomainDns = runCustomerPrompt(['--prompt', 'как настроить custom domain dns']);
+  if (customDomainDns.ok !== true) promptFailures.push('custom-domain DNS prompt did not return ok=true');
+  if (customDomainDns.mode !== 'teach') {
+    promptFailures.push(`custom-domain DNS prompt mode ${customDomainDns.mode}, expected teach`);
+  }
+  if (customDomainDns.answer?.preferredCitation?.articleAlias !== 'custom-domain-dns-setup') {
+    promptFailures.push(`custom-domain DNS preferred article ${customDomainDns.answer?.preferredCitation?.articleAlias}, expected custom-domain-dns-setup`);
+  }
+  if (!customDomainDns.answer?.publicArticleLinks?.some(url => /custom-domain-dns-setup\/index\.html$/.test(url))) {
+    promptFailures.push('custom-domain DNS prompt missing published article URL');
+  }
+  if ((customDomainDns.answer?.imageUrls ?? []).length !== 0) {
+    promptFailures.push('custom-domain DNS prompt must not invent image URLs for text-only guide evidence');
+  }
+  if (customDomainDns.answer?.customerVisibleGuideAssets?.visualCoverage?.status !== 'text-only-no-screenshot-evidence') {
+    promptFailures.push(`custom-domain DNS visual coverage ${customDomainDns.answer?.customerVisibleGuideAssets?.visualCoverage?.status}, expected text-only-no-screenshot-evidence`);
+  }
+  if (/screenshot-backed guidance/i.test(customDomainDns.answer?.customerAnswerStarter ?? '')) {
+    promptFailures.push('custom-domain DNS prompt falsely claims screenshot-backed guidance');
+  }
+  if (!/text-only|no shipped screenshot image URL|no concrete screenshot image URL/i.test(customDomainDns.answer?.articleReferenceSummary ?? '')) {
+    promptFailures.push('custom-domain DNS prompt must explain text-only/no-image visual coverage');
+  }
   const buttonFontFullArticle = runCustomerPrompt(['--prompt', 'дай полную статью как настроить шрифты в кнопке']);
   if (buttonFontFullArticle.ok !== true) promptFailures.push('button-font full-article prompt did not return ok=true');
   if (buttonFontFullArticle.mode !== 'article-fetch') {
@@ -1425,6 +1630,133 @@ try {
   if (showReady.show?.missingInputs?.length !== 0) promptFailures.push('show-ready prompt should have no missing inputs');
   if (showReady.completionClaim !== 'show-plan-not-executed') {
     promptFailures.push('show-ready prompt must not claim screenshot completion before browser execution');
+  }
+  const contextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-context-')), 'context.json');
+  const setContext = JSON.parse(execFileSync('node', [
+    join(root, 'runtime/session-context.mjs'),
+    'set-current-project',
+    '--projectId',
+    'project_ctx',
+    '--projectName',
+    'Context Project',
+    '--contextFile',
+    contextFile,
+  ], { encoding: 'utf8' }));
+  if (setContext.ok !== true) promptFailures.push('session-context set-current-project did not return ok=true');
+  const showWithContext = runCustomerPrompt([
+    '--prompt',
+    'покажи где поменять цвет кнопки продолжить',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  if (showWithContext.sessionContext?.usingCurrentProject !== true) {
+    promptFailures.push('context-backed show prompt must use current project');
+  }
+  if (showWithContext.sessionContext?.currentProject?.id !== 'project_ctx') {
+    promptFailures.push('context-backed show prompt current project id drifted');
+  }
+  if (showWithContext.show?.missingInputs?.includes('projectId')) {
+    promptFailures.push('context-backed show prompt must not ask for projectId again');
+  }
+  if (!showWithContext.show?.missingInputs?.includes('funnelId')) {
+    promptFailures.push('context-backed show prompt must still ask for funnelId');
+  }
+  if (!showWithContext.show?.missingInputs?.includes('screenId')) {
+    promptFailures.push('context-backed show prompt must still ask for screenId');
+  }
+  if (showWithContext.show?.providedInputs?.projectId !== 'project_ctx') {
+    promptFailures.push('context-backed show prompt must pass current project as provided input');
+  }
+  if (!/Context Project/.test(showWithContext.answer?.contextNotice ?? '')) {
+    promptFailures.push('context-backed show prompt must tell the customer which project is being used');
+  }
+  const cliDoWithContext = runCustomerPrompt([
+    '--prompt',
+    'сделай главную кнопку желтой',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  if (cliDoWithContext.ok !== true) promptFailures.push('context-backed CLI DO prompt did not return ok=true');
+  if (cliDoWithContext.mode !== 'do-cli') {
+    promptFailures.push(`context-backed CLI DO prompt mode ${cliDoWithContext.mode}, expected do-cli`);
+  }
+  if (cliDoWithContext.sessionContext?.usingCurrentProject !== true) {
+    promptFailures.push('context-backed CLI DO prompt must use current project');
+  }
+  if (cliDoWithContext.action?.actionId !== 'editor.actionBar.primaryButton.backgroundColor') {
+    promptFailures.push(`context-backed CLI DO prompt resolved ${cliDoWithContext.action?.actionId}, expected primary button background`);
+  }
+  if (cliDoWithContext.action?.missingInputs?.includes('projectId')) {
+    promptFailures.push('context-backed CLI DO prompt must not ask for projectId again');
+  }
+  for (const input of ['funnelId', 'versionId', 'screenId']) {
+    if (!cliDoWithContext.action?.missingInputs?.includes(input)) {
+      promptFailures.push(`context-backed CLI DO prompt must still ask for ${input}`);
+    }
+  }
+  if (!/Context Project/.test(cliDoWithContext.answer?.contextNotice ?? '')) {
+    promptFailures.push('context-backed CLI DO prompt must tell the customer which project is being used');
+  }
+  if (cliDoWithContext.completionClaim !== 'needs-inputs-before-execution') {
+    promptFailures.push('context-backed CLI DO prompt must not claim execution before target inputs');
+  }
+  const e2eDoWithContext = runCustomerPrompt([
+    '--prompt',
+    'сделай шрифт ячейки в списке 18',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  if (e2eDoWithContext.ok !== true) promptFailures.push('context-backed E2E DO prompt did not return ok=true');
+  if (e2eDoWithContext.mode !== 'do-e2e') {
+    promptFailures.push(`context-backed E2E DO prompt mode ${e2eDoWithContext.mode}, expected do-e2e`);
+  }
+  if (e2eDoWithContext.sessionContext?.usingCurrentProject !== true) {
+    promptFailures.push('context-backed E2E DO prompt must use current project');
+  }
+  if (e2eDoWithContext.action?.actionId !== 'editor.list.options.itemTitle.fontSize') {
+    promptFailures.push(`context-backed E2E DO prompt resolved ${e2eDoWithContext.action?.actionId}, expected list item title font size`);
+  }
+  if (e2eDoWithContext.action?.missingInputs?.includes('projectId')) {
+    promptFailures.push('context-backed E2E DO prompt must not ask for projectId again');
+  }
+  for (const input of ['funnelId', 'screenId']) {
+    if (!e2eDoWithContext.action?.missingInputs?.includes(input)) {
+      promptFailures.push(`context-backed E2E DO prompt must still ask for ${input}`);
+    }
+  }
+  if (!/Context Project/.test(e2eDoWithContext.answer?.contextNotice ?? '')) {
+    promptFailures.push('context-backed E2E DO prompt must tell the customer which project is being used');
+  }
+  if (e2eDoWithContext.completionClaim !== 'needs-inputs-before-execution') {
+    promptFailures.push('context-backed E2E DO prompt must not claim execution before target inputs');
+  }
+  const articleFetchWithContext = runCustomerPrompt([
+    '--prompt',
+    'дай полную статью как настроить шрифты в кнопке',
+  ], {
+    SEGMENTLY_LAUNCH_CONTEXT_FILE: contextFile,
+  });
+  if (articleFetchWithContext.ok !== true) promptFailures.push('context-backed article-fetch prompt did not return ok=true');
+  if (articleFetchWithContext.mode !== 'article-fetch') {
+    promptFailures.push(`context-backed article-fetch prompt mode ${articleFetchWithContext.mode}, expected article-fetch`);
+  }
+  if (articleFetchWithContext.sessionContext?.usingCurrentProject !== true) {
+    promptFailures.push('context-backed article-fetch prompt must use current project');
+  }
+  if (articleFetchWithContext.articleFetch?.articleAlias !== 'help-block-action-bar') {
+    promptFailures.push(`context-backed article-fetch alias ${articleFetchWithContext.articleFetch?.articleAlias}, expected help-block-action-bar`);
+  }
+  if ((articleFetchWithContext.articleFetch?.missingInputs ?? []).length !== 0) {
+    promptFailures.push('context-backed article-fetch prompt must not require target ids');
+  }
+  if (!articleFetchWithContext.articleFetch?.fetchCommand?.optionalArgs?.includes('projectId when the article is project-scoped')) {
+    promptFailures.push('context-backed article-fetch prompt must keep projectId optional for project-scoped articles');
+  }
+  if (!/Context Project/.test(articleFetchWithContext.answer?.contextNotice ?? '')) {
+    promptFailures.push('context-backed article-fetch prompt must tell the customer which project is being used');
+  }
+  if (articleFetchWithContext.completionClaim !== 'article-fetch-plan-not-executed') {
+    promptFailures.push('context-backed article-fetch prompt must not claim execution');
   }
   const missing = runCustomerPrompt(['--prompt', 'сделай главную кнопку желтой']);
   if (missing.ok !== true) promptFailures.push('missing-input DO prompt did not return ok=true');
@@ -2063,6 +2395,53 @@ try {
   if (flexibleReference?.referencePath !== 'help-block-flexible-sections/screenedit-flexible-sections-background-color') {
     promptFailures.push('flexible section background DO prompt reference path drifted');
   }
+  const genericBasicConfigExecutable = runCustomerPrompt([
+    '--prompt',
+    'turn on Play Screen Animations',
+    '--projectId',
+    'project_demo',
+    '--funnelId',
+    'funnel_demo',
+    '--versionId',
+    'version_demo',
+    '--screenId',
+    'screen_demo',
+  ]);
+  if (genericBasicConfigExecutable.ok !== true) promptFailures.push('generic Basic Config DO prompt did not return ok=true');
+  if (genericBasicConfigExecutable.mode !== 'do-cli') {
+    promptFailures.push(`generic Basic Config DO prompt mode ${genericBasicConfigExecutable.mode}, expected do-cli`);
+  }
+  if (genericBasicConfigExecutable.action?.actionId !== 'editor.setting.screenedit-basic-config-animation-enabled') {
+    promptFailures.push(`generic Basic Config DO prompt resolved ${genericBasicConfigExecutable.action?.actionId}, expected generated scalar setting action`);
+  }
+  if (genericBasicConfigExecutable.action?.runnerOk !== true) {
+    promptFailures.push('generic Basic Config DO prompt runnerOk must be true');
+  }
+  if (genericBasicConfigExecutable.action?.execution?.kind !== 'delegate-cli') {
+    promptFailures.push('generic Basic Config DO prompt missing delegate-cli execution');
+  }
+  const genericBasicConfigOperation = genericBasicConfigExecutable.action?.execution?.materialize?.content?.operations?.[0];
+  if (genericBasicConfigOperation?.op !== 'setFieldValue') {
+    promptFailures.push('generic Basic Config DO prompt patch op drifted');
+  }
+  if (genericBasicConfigOperation?.path !== 'content.animated') {
+    promptFailures.push('generic Basic Config DO prompt patch path drifted');
+  }
+  if (genericBasicConfigOperation?.value !== true) {
+    promptFailures.push('generic Basic Config DO prompt patch value must be boolean true');
+  }
+  if (genericBasicConfigExecutable.action?.verification?.read !== 'funnels export') {
+    promptFailures.push('generic Basic Config DO prompt missing funnels export verification');
+  }
+  const genericBasicConfigReference = genericBasicConfigExecutable.guidance?.builtInArticleReferences?.find(
+    reference => reference.guideKey === 'screenedit-basic-config-animation-enabled',
+  );
+  if (genericBasicConfigReference?.articleAlias !== 'help-block-basic-config') {
+    promptFailures.push('generic Basic Config DO prompt did not attach built-in Basic Config article alias');
+  }
+  if (genericBasicConfigReference?.referencePath !== 'help-block-basic-config/screenedit-basic-config-animation-enabled') {
+    promptFailures.push('generic Basic Config DO prompt reference path drifted');
+  }
   const e2eMissing = runCustomerPrompt(['--prompt', 'сделай шрифт ячейки в списке 18']);
   if (e2eMissing.ok !== true) promptFailures.push('missing-input E2E prompt did not return ok=true');
   if (e2eMissing.mode !== 'do-e2e') promptFailures.push(`missing-input E2E prompt mode ${e2eMissing.mode}, expected do-e2e`);
@@ -2126,7 +2505,7 @@ if (failures > 0) {
   console.error(`${failures} gate(s) failed`);
   process.exit(1);
 }
-console.log(`all gates passed (${evals.evals.length} eval(s) + meta-guard + leak-guard + teach-reference + do-action-reference + codex-dispatch-contract + cli-do-runner + e2e-do-runner + show-runner + coverage-audit + persona-flow + customer-surface-prompt-with-show + customer-surface-acceptance)`);
+console.log(`all gates passed (${evals.evals.length} eval(s) + meta-guard + leak-guard + teach-reference + do-action-reference + codex-dispatch-contract + cli-do-runner + e2e-do-runner + show-runner + coverage-audit + do-coverage-audit + persona-flow + customer-surface-prompt-with-show + customer-surface-acceptance)`);
 
 // ---- helpers --------------------------------------------------------------
 function read(rel) {
@@ -2244,9 +2623,61 @@ function runE2eRunnerExpectingExit(args, expectedStatus) {
 function runShowRunner(args, env = {}) {
   const stdout = execFileSync('node', [join(root, 'runtime/show-runner.mjs'), ...args], {
     encoding: 'utf8',
-    env: { ...process.env, ...env },
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
+}
+
+function assertToolPreflight(preflight, options, failures, label) {
+  if (preflight?.requiredForExecute !== true) {
+    failures.push(`${label} missing required toolPreflight`);
+    return;
+  }
+  const checks = Array.isArray(preflight.checks) ? preflight.checks : [];
+  const byId = new Map(checks.map(check => [check.id, check]));
+  for (const id of ['segmently-cli-version', 'segmently-auth-status', 'segmently-capabilities']) {
+    if (!byId.has(id)) failures.push(`${label} toolPreflight missing ${id}`);
+  }
+  if (!byId.get('segmently-cli-version')?.argv?.join(' ').includes('--version')) {
+    failures.push(`${label} toolPreflight missing segmently --version check`);
+  }
+  if (byId.get('segmently-cli-version')?.setup?.argv?.join(' ') !== 'npm install -g @segmently/cli') {
+    failures.push(`${label} toolPreflight missing Segmently CLI install command`);
+  }
+  if (!byId.get('segmently-auth-status')?.argv?.join(' ').includes('auth status')) {
+    failures.push(`${label} toolPreflight missing auth status check`);
+  }
+  if (!byId.get('segmently-auth-status')?.setup?.argv?.join(' ').includes('auth login')) {
+    failures.push(`${label} toolPreflight missing auth login recovery`);
+  }
+  if (!byId.get('segmently-capabilities')?.argv?.join(' ').includes('capabilities')) {
+    failures.push(`${label} toolPreflight missing Segmently capabilities check`);
+  }
+  if (options.segmentlyEnv && preflight.segmentlyEnv !== options.segmentlyEnv) {
+    failures.push(`${label} toolPreflight env ${preflight.segmentlyEnv}, expected ${options.segmentlyEnv}`);
+  }
+  if (options.browser) {
+    if (!byId.has('playwright-cli-help')) failures.push(`${label} toolPreflight missing playwright-cli help check`);
+    if (!byId.has('playwright-browser-availability')) failures.push(`${label} toolPreflight missing browser availability check`);
+    if (byId.get('playwright-cli-help')?.argv?.join(' ') !== 'playwright-cli --help') {
+      failures.push(`${label} toolPreflight missing playwright-cli --help check`);
+    }
+    if (byId.get('playwright-cli-help')?.setup?.argv?.join(' ') !== 'npm install -g @playwright/cli@latest') {
+      failures.push(`${label} toolPreflight missing playwright-cli install command`);
+    }
+    if (!byId.get('playwright-browser-availability')?.argv?.join(' ').includes('install-browser')) {
+      failures.push(`${label} toolPreflight missing playwright install-browser check`);
+    }
+    if (!byId.get('playwright-browser-availability')?.setup?.fallbackArgv?.join(' ').includes('npx playwright install')) {
+      failures.push(`${label} toolPreflight missing Playwright browser fallback install`);
+    }
+  } else {
+    if (byId.has('playwright-cli-help')) failures.push(`${label} CLI-only toolPreflight should not require playwright-cli`);
+    if (byId.has('playwright-browser-availability')) failures.push(`${label} CLI-only toolPreflight should not require browser availability`);
+  }
+  if (!/Before live SHOW\/DO execution/.test(preflight.agentInstruction ?? '')) {
+    failures.push(`${label} toolPreflight missing live execution agent instruction`);
+  }
 }
 
 function runCustomerResponse(personaId, questionId) {
@@ -2256,16 +2687,18 @@ function runCustomerResponse(personaId, questionId) {
     '--question', questionId,
   ], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile },
   });
   return JSON.parse(stdout);
 }
 
-function runCustomerPrompt(args) {
+function runCustomerPrompt(args, env = {}) {
   const stdout = execFileSync('node', [
     join(root, 'runtime/customer-response-runner.mjs'),
     ...args,
   ], {
     encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_CONTEXT_FILE: defaultContextFile, ...env },
   });
   return JSON.parse(stdout);
 }
@@ -2282,7 +2715,7 @@ function expectedResponseMode(expectedDo) {
 }
 
 function hasExplicitActionIntent(text) {
-  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|можешь|attach|create|publish|set|connect|apply|do it|make|change|enable|disable)/i.test(String(text ?? ''));
+  return /(сделай|создай|подключи|поставь|опубликуй|поменяй|измени|зацикли|скругли|включи|выключи|можешь|attach|create|publish|set|connect|apply|do it|make|change|turn\s+on|turn\s+off|enable|disable)/i.test(String(text ?? ''));
 }
 
 function sampleArgsForAction(id) {
@@ -2303,6 +2736,9 @@ function sampleArgsForAction(id) {
   }
   if (/^editor\.actionBar\.(primary|secondary)Button\.textStyle\./.test(id)) {
     return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedTextStyleAction(id)];
+  }
+  if (/^editor\.setting\./.test(id)) {
+    return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedGenericScalarSettingAction(id)];
   }
   if (/^editor\.header\.(backButton|skipButton)\.textStyle\./.test(id)) {
     return ['--action', id, '--projectId', 'project_demo', '--funnelId', 'funnel_demo', '--versionId', 'version_demo', '--screenId', 'screen_demo', '--value', sampleValueForGeneratedTextStyleAction(id)];
@@ -2384,6 +2820,23 @@ function sampleValueForGeneratedTextStyleAction(id) {
   if (id.endsWith('.align')) return 'center';
   if (id.endsWith('.textAlign')) return 'center';
   return 'Inter';
+}
+
+function sampleValueForGeneratedGenericScalarSettingAction(id) {
+  if (/(animation-enabled|offline-first|system-permission-enabled|countdown-enabled|auto-focus|video-repeat|media-repeat)/.test(id)) return 'true';
+  if (/(color|background|border-color|text-color)/.test(id)) return '#111111';
+  if (/(terms-uri|privacy-uri|uri|url|link)/.test(id)) return 'https://example.com';
+  if (/scale-mode/.test(id)) return 'scaleAspectFill';
+  if (/top-alignment/.test(id)) return 'top';
+  if (/bottom-alignment/.test(id)) return 'contentBottom';
+  if (/permission-type/.test(id)) return 'notifications';
+  if (/countdown-unit/.test(id)) return 'seconds';
+  if (/field-type/.test(id)) return 'text';
+  if (/keyboard-type/.test(id)) return 'default';
+  if (/border-type/.test(id)) return 'box';
+  if (/elements-order/.test(id)) return 'purchase,terms,privacy';
+  if (/(duration|font-size|font-weight|line-height|width|height|percentage|radius|opacity|border-width|delay|z-index|flex-grow|flex-shrink)/.test(id)) return '16';
+  return 'value';
 }
 
 function sampleValueForGeneratedPaywallHeaderStyleAction(id) {

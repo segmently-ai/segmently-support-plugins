@@ -18,6 +18,7 @@ import {
   prepareBrowserAuth,
   wrapDriverScriptWithBrowserAuth,
 } from './browser-auth-bridge.mjs';
+import { buildToolPreflight } from './tool-preflight.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const responseRunner = join(root, 'runtime/customer-response-runner.mjs');
@@ -42,6 +43,12 @@ async function main() {
   const prepared = prepareShow(response, args);
   prepared.authPreflight = buildAuthPreflight(args, {
     baseUrl: args.baseUrl,
+    retryArgv: ['node', 'runtime/show-runner.mjs', ...ensureExecuteArgv(rawArgs)],
+  });
+  prepared.toolPreflight = buildToolPreflight(args, {
+    baseUrl: args.baseUrl,
+    needsSegmently: true,
+    needsBrowser: true,
     retryArgv: ['node', 'runtime/show-runner.mjs', ...ensureExecuteArgv(rawArgs)],
   });
   if (!args.execute) {
@@ -69,6 +76,7 @@ async function main() {
         firebaseApiKeySource: 'app',
       },
       authPreflight: prepared.authPreflight,
+      toolPreflight: prepared.toolPreflight,
       driverScript: prepared.driverScript,
       screenshot: {
         path: prepared.screenshotPath,
@@ -104,6 +112,7 @@ async function main() {
       reason: auth.reason ?? 'Browser authentication bridge failed.',
       authBridge: authSummary(auth),
       authPreflight: auth.authPreflight ?? prepared.authPreflight,
+      toolPreflight: prepared.toolPreflight,
       nextStepForAgent: 'Run authPreflight.statusProbe, run authPreflight.login if the probe is not authenticated, re-run the probe, then retry this SHOW command. Do not ask the customer to do the whole flow manually unless the browser login requires their approval.',
       completionClaim: 'show-auth-preflight-required',
     }, args, 2);
@@ -121,6 +130,7 @@ async function main() {
     evidenceLevel: response.show.evidenceLevel,
     browserPlan: response.show.browserPlan ?? [],
     authBridge: authSummary(auth),
+    toolPreflight: prepared.toolPreflight,
     targetUrl: prepared.targetUrl,
     browser: {
       open: null,

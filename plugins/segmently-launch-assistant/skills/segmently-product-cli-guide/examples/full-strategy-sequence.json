@@ -1,0 +1,12 @@
+[
+  {
+    "id": "block_1",
+    "entityId": "welcome",
+    "name": "Welcome",
+    "blockType": "welcome",
+    "description": "Orient the user and collect the primary goal.",
+    "taskId": "task_1",
+    "screensCount": 2,
+    "firstScreenId": "screen_1"
+  }
+]
