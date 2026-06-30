@@ -1261,7 +1261,7 @@ function showContract(expectedShow, guideContracts, args) {
     executeWith: {
       skill: 'playwright-bowser',
       companionSkill: 'segmently-test-kit',
-      purpose: 'navigate-and-capture-screenshot-without-mutation',
+      purpose: 'open-headed-browser-focus-control-and-capture-screenshot-without-mutation',
     },
     authPreflight: {
       requiredForExecute: true,
@@ -1275,10 +1275,17 @@ function showContract(expectedShow, guideContracts, args) {
       needsBrowser: true,
     }),
     browserPlan,
+    visibleBrowser: {
+      required: true,
+      mode: 'headed',
+      keepOpenByDefault: true,
+      closeOnlyWhenExplicitlyRequested: true,
+      customerPurpose: 'The customer must be able to see where to click; screenshot evidence is only the saved artifact.',
+    },
     screenshotTarget: 'qa-screenshots/segmently-launch-guide/show-target.png',
     nextStep: missingInputs.length > 0
-      ? `Ask for ${missingInputs.join(', ')}, then open the target in the browser and capture a screenshot without changing data.`
-      : 'Use playwright-bowser to open the target, navigate to the matched setting, and capture a screenshot without clicking Save or changing values.',
+      ? `Ask for ${missingInputs.join(', ')}, then open the target in a visible headed browser, focus the control, keep the browser open for the customer, and capture a screenshot artifact without changing data.`
+      : 'Use playwright-bowser to open the target in a visible headed browser, navigate to the matched setting, keep the browser open for the customer, and capture a screenshot artifact without clicking Save or changing values.',
   };
 }
 
@@ -1353,7 +1360,8 @@ function buildShowBrowserPlan(area, providedInputs, missingInputs) {
       : 'Ask which screen to show in the editor.');
   }
   plan.push(`Navigate to ${area.label}.`);
-  plan.push('Capture a screenshot in qa-screenshots/segmently-launch-guide/ and point out the exact visible control.');
+  plan.push('Open the route in a visible headed browser and keep the window open so the customer can see where to click.');
+  plan.push('Capture a screenshot in qa-screenshots/segmently-launch-guide/ as evidence, but do not treat the screenshot as a replacement for the visible SHOW walkthrough.');
   plan.push('Do not change field values, do not click Save, and do not run any DO runner in SHOW mode.');
   if (missingInputs.length > 0) {
     plan.push(`Live browser execution waits for missing inputs: ${missingInputs.join(', ')}.`);

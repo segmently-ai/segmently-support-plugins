@@ -26,7 +26,8 @@
  *     execution package with driverScript and verification, while non-E2E
  *     actions are refused by the E2E runner.
  *  9. SHOW runner guard — shipped SHOW prompts can produce a read-only
- *     browser/screenshot execution package without mutating customer data.
+ *     visible headed-browser walkthrough package plus screenshot artifact
+ *     without mutating customer data.
  * 10. Coverage audit guard — the shipped artifacts can report exactly where
  *     text, article links, screenshot evidence, and concrete image URLs exist,
  *     and screen-editor setting questions are fully covered by article text.
@@ -976,6 +977,18 @@ try {
     if (dryRun.browser !== 'chrome' || !dryRun.wouldOpen?.join(' ').includes('--browser=chrome')) {
       showRunnerFailures.push('SHOW dry-run must default to Chrome so live runs do not depend on WebKit');
     }
+    if (!dryRun.wouldOpen?.join(' ').includes('--headed')) {
+      showRunnerFailures.push('SHOW dry-run must open a headed browser so the customer can see where to click');
+    }
+    if (dryRun.visibleBrowser !== true || dryRun.headed !== true) {
+      showRunnerFailures.push('SHOW dry-run must expose visibleBrowser=true and headed=true');
+    }
+    if (dryRun.keepOpen !== true || dryRun.closePolicy !== 'keep-visible-browser-open-for-customer') {
+      showRunnerFailures.push('SHOW dry-run must keep the headed browser open for the customer by default');
+    }
+    if (dryRun.wouldClose !== null) {
+      showRunnerFailures.push('SHOW dry-run must not close the browser unless --closeAfterShow is explicit');
+    }
     if (dryRun.authPreflight?.requiredForExecute !== true) {
       showRunnerFailures.push('SHOW dry-run missing auth preflight for live execution');
     }
@@ -1022,14 +1035,14 @@ try {
     if (!String(dryRun.screenshot?.path ?? '').includes('qa-screenshots')) {
       showRunnerFailures.push('SHOW dry-run screenshot path must point at qa-screenshots by default');
     }
-    if (dryRun.completionClaim !== 'show-not-completed-until-browser-screenshot') {
-      showRunnerFailures.push('SHOW dry-run claimed completion before browser screenshot evidence');
+    if (dryRun.completionClaim !== 'show-not-completed-until-visible-browser-and-screenshot') {
+      showRunnerFailures.push('SHOW dry-run claimed completion before visible browser and screenshot evidence');
     }
   }
 } catch (error) {
   showRunnerFailures.push(`SHOW runner dry-run probe failed: ${error instanceof Error ? error.message : String(error)}`);
 }
-report('show-runner:dry-run-exposes-read-only-browser-screenshot-package', showRunnerFailures);
+report('show-runner:dry-run-exposes-visible-headed-browser-package', showRunnerFailures);
 
 // ---- Gate 10: coverage audit over shipped guide/settings artifacts ---------
 const coverageAuditFailures = [];

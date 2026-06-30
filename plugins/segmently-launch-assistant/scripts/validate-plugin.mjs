@@ -426,8 +426,13 @@ check('codex-dispatch-contract', () => {
   assert(showDryRun.dryRun === true, 'SHOW dry-run runner must not execute by default');
   assert(showDryRun.mutation === false, 'SHOW dry-run must be non-mutating');
   assert(showDryRun.liveBrowserReady === true, 'SHOW dry-run should be browser-ready');
+  assert(showDryRun.visibleBrowser === true && showDryRun.headed === true, 'SHOW dry-run must expose visible headed browser contract');
+  assert(showDryRun.wouldOpen?.join(' ').includes('--headed'), 'SHOW dry-run must open a headed browser');
+  assert(showDryRun.keepOpen === true, 'SHOW dry-run must keep browser open by default');
+  assert(showDryRun.closePolicy === 'keep-visible-browser-open-for-customer', 'SHOW dry-run close policy must keep the window visible');
+  assert(showDryRun.wouldClose === null, 'SHOW dry-run must not close browser unless explicitly requested');
   assert(showDryRun.wouldScreenshot?.join(' ').includes('screenshot'), 'SHOW dry-run missing screenshot argv');
-  assert(showDryRun.completionClaim === 'show-not-completed-until-browser-screenshot', 'SHOW dry-run claimed completion before screenshot evidence');
+  assert(showDryRun.completionClaim === 'show-not-completed-until-visible-browser-and-screenshot', 'SHOW dry-run claimed completion before visible browser and screenshot evidence');
   for (const args of [
     ['--persona', 'maya-founder', '--question', 'maya-01'],
     ['--persona', 'oleg-marketer', '--question', 'oleg-06'],

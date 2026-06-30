@@ -135,15 +135,16 @@ show the links.
 
 Do not start an explain-only, teach-only, SHOW dry-run, CLI DO dry-run, E2E DO
 dry-run, or any `completionClaim` other than `verified` /
-`show-screenshot-captured` answer with "done", "готово", "готово с разбором",
-"подготовка завершена", "completed", or any similar wording that implies a task
-was completed. Use completion wording only after a DO runner executed and the
-verification read passed, or after a SHOW runner captured a screenshot. For
-dry-runs and missing-input states, start with "Разобрал запрос" / "I checked the
-request" and explicitly say that execution has not started and no data was
-changed. When offering to apply a value for the customer, state that the change
-is not complete until it is saved and verified through the supported read-back
-check.
+`show-visible-browser-opened-and-screenshot-captured` answer with "done",
+"готово", "готово с разбором", "подготовка завершена", "completed", or any
+similar wording that implies a task was completed. Use completion wording only
+after a DO runner executed and the verification read passed, or after a SHOW
+runner opened a visible headed browser, focused the target control, kept the
+browser open for the customer, and captured a screenshot artifact. For dry-runs
+and missing-input states, start with "Разобрал запрос" / "I checked the request"
+and explicitly say that execution has not started and no data was changed. When
+offering to apply a value for the customer, state that the change is not
+complete until it is saved and verified through the supported read-back check.
 
 ## Knowing where the project is — "what's left to launch"
 
@@ -337,18 +338,24 @@ The editor backend drives the customer's own project after `segmently auth login
   composable — runnable on its own or as part of a bigger scenario.
 
 For SHOW requests, load `references/guide-evidence.json` and produce a
-non-mutating browser plan through `playwright-bowser` with `segmently-test-kit`
-when live navigation is possible. Do not run `runtime/editor-do-runner.mjs` or
+non-mutating headed-browser plan through `playwright-bowser` with
+`segmently-test-kit` when live navigation is possible. SHOW means the customer
+can see the browser window and where to click; a screenshot is only the saved
+evidence artifact. Do not run `runtime/editor-do-runner.mjs` or
 `runtime/cli-do-runner.mjs` / `runtime/e2e-do-runner.mjs` unless the customer
 explicitly asks you to change something. Use `runtime/show-runner.mjs` for
-live SHOW execution: without `--execute` it returns the browser/screenshot
-package plus `authPreflight`; with explicit SHOW approval and target context,
-`--execute` runs the auth preflight/browser auth bridge, opens the browser,
-captures screenshot evidence, writes `show-runner-result.json`, and still does
-not mutate data. If `--execute` returns an auth-preflight completion claim, run
-the returned preflight and retry; do not call the SHOW complete until a real
-authorized editor screenshot was captured. A screenshot of a login page or
-"Missing or insufficient permissions" page is a failed SHOW, not evidence.
+live SHOW execution: without `--execute` it returns the headed browser package,
+screenshot artifact plan, and `authPreflight`; with explicit SHOW approval and
+target context, `--execute` runs the auth preflight/browser auth bridge, opens
+the browser with `playwright-cli open --headed --persistent`, focuses the
+target control, keeps the browser open by default, captures screenshot evidence,
+writes `show-runner-result.json`, and still does not mutate data. Use
+`--closeAfterShow` only for automated cleanup when the customer does not need
+to see the window. If `--execute` returns an auth-preflight completion claim,
+run the returned preflight and retry; do not call the SHOW complete until a real
+authorized editor window is visibly open on the target control and the
+screenshot artifact was captured. A screenshot of a login page or "Missing or
+insufficient permissions" page is a failed SHOW, not evidence.
 
 For any customer request phrased as "do it", "make this change", or "set this
 value", resolve the action before answering:
@@ -539,7 +546,7 @@ For field-level TEACH, use the same model-selected catalog flow:
   `runtime/do-action-reference.json`, `runtime/editor-do-runner.mjs`, and
   `runtime/cli-do-runner.mjs`. For packaged E2E dry-runs/execution, use
   `runtime/e2e-do-runner.mjs`.
-- SHOW screenshot runner:
+- SHOW headed-browser runner:
   `runtime/show-runner.mjs`.
 - Customer-surface response contract runner for persona/acceptance probes:
   `runtime/customer-response-runner.mjs`. For requests like "send the full

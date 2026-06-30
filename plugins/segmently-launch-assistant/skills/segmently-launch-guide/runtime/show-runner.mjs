@@ -3,9 +3,10 @@
  * Read-only SHOW executor for installed Segmently launch skills.
  *
  * This runner resolves a customer SHOW prompt through the shipped
- * customer-response runner, then either returns a dry-run browser/screenshot
- * package or opens the browser and captures screenshot evidence. It never calls
- * DO runners, never clicks Save, and never mutates customer data.
+ * customer-response runner, then either returns a dry-run visible browser
+ * walkthrough package or opens a headed browser, focuses the target control,
+ * and captures screenshot evidence. It never calls DO runners, never clicks
+ * Save, and never mutates customer data.
  */
 import { spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -68,8 +69,14 @@ async function main() {
       wouldOpen: [prepared.playwrightBin, ...prepared.openArgv],
       wouldRunCode: [prepared.playwrightBin, ...prepared.runCodeArgvPreview],
       wouldScreenshot: [prepared.playwrightBin, ...prepared.screenshotArgv],
-      wouldClose: [prepared.playwrightBin, ...prepared.closeArgv],
+      wouldClose: prepared.closeAfterShow ? [prepared.playwrightBin, ...prepared.closeArgv] : null,
       browser: prepared.browserName,
+      visibleBrowser: true,
+      headed: true,
+      keepOpen: !prepared.closeAfterShow,
+      closePolicy: prepared.closeAfterShow
+        ? 'explicit-close-after-show'
+        : 'keep-visible-browser-open-for-customer',
       authBridge: {
         requiredForExecute: true,
         credentialSource: 'segmently auth print-token',
@@ -82,7 +89,7 @@ async function main() {
         path: prepared.screenshotPath,
         exists: false,
       },
-      completionClaim: 'show-not-completed-until-browser-screenshot',
+      completionClaim: 'show-not-completed-until-visible-browser-and-screenshot',
     }, args, 0);
   }
 
@@ -142,7 +149,13 @@ async function main() {
       path: prepared.screenshotPath,
       exists: false,
     },
-    completionClaim: 'show-not-completed-until-screenshot',
+    visibleBrowser: true,
+    headed: true,
+    keepOpen: !prepared.closeAfterShow,
+    closePolicy: prepared.closeAfterShow
+      ? 'explicit-close-after-show'
+      : 'keep-visible-browser-open-for-customer',
+    completionClaim: 'show-not-completed-until-visible-browser-and-screenshot',
   };
 
   const openResult = runTool(prepared.playwrightBin, prepared.openArgv, {
@@ -174,7 +187,7 @@ async function main() {
     output.ok = screenshotResult.status === 0 && output.screenshot.exists;
   }
 
-  if (!args.keepOpen) {
+  if (prepared.closeAfterShow) {
     const closeResult = runTool(prepared.playwrightBin, prepared.closeArgv, {
       timeoutMs: numberArg(args.timeoutMs, 30000),
       env: { PLAYWRIGHT_MCP_VIEWPORT_SIZE: prepared.viewport },
@@ -182,7 +195,9 @@ async function main() {
     output.browser.close = commandSummary(prepared.playwrightBin, prepared.closeArgv, closeResult);
   }
 
-  output.completionClaim = output.ok ? 'show-screenshot-captured' : 'show-screenshot-failed';
+  output.completionClaim = output.ok
+    ? 'show-visible-browser-opened-and-screenshot-captured'
+    : 'show-visible-browser-or-screenshot-failed';
   return finish(output, args, output.ok ? 0 : 1);
 }
 
@@ -219,7 +234,8 @@ function prepareShow(response, args) {
     guideKeys: response.show?.guideKeys ?? [],
     prompt: args.prompt,
   });
-  const openArgv = ['-s', sessionName, 'open', args.baseUrl ? `${trimSlash(args.baseUrl)}/login` : targetUrl, '--persistent', `--browser=${browserName}`];
+  const closeAfterShow = args.closeAfterShow === true || args.closeAfterShow === 'true';
+  const openArgv = ['-s', sessionName, 'open', args.baseUrl ? `${trimSlash(args.baseUrl)}/login` : targetUrl, '--persistent', '--headed', `--browser=${browserName}`];
   const runCodeArgv = ['-s', sessionName, 'run-code', driverScript];
   const runCodeArgvPreview = ['-s', sessionName, 'run-code', '<showDriverScript>'];
   const screenshotArgv = ['-s', sessionName, 'screenshot', '--filename', screenshotPath];
@@ -240,6 +256,7 @@ function prepareShow(response, args) {
     runCodeArgvPreview,
     screenshotArgv,
     closeArgv,
+    closeAfterShow,
     driverScript,
     requiredInputs: [...new Set(requiredInputs)],
     liveBrowserReady: requiredInputs.length === 0,
@@ -472,12 +489,16 @@ Usage:
   node runtime/show-runner.mjs --prompt "<show request>" [--projectId <id>] [--funnelId <id>] [--screenId <id>] [--baseUrl <url>]
   node runtime/show-runner.mjs --prompt "<show request>" --projectId <id> --funnelId <id> --screenId <id> --baseUrl <url> --execute
 
-Without --execute this runner is read-only and returns the playwright-cli open,
-run-code, screenshot, close, driverScript, and screenshot manifest path that
-would run. With --execute it captures screenshot evidence and writes
-show-runner-result.json when SUPPORT_FLOW_LIVE_AGENT_CASE_DIR or --resultPath is set.
-By default it opens Chrome through playwright-cli; override with --browser or
-SUPPORT_FLOW_PLAYWRIGHT_BROWSER if the local install uses a different browser.
+Without --execute this runner is read-only and returns the playwright-cli headed
+open, run-code, screenshot, driverScript, and screenshot manifest path that
+would run. With --execute it opens a visible headed browser, focuses the target
+control, keeps the browser open for the customer by default, captures screenshot
+evidence for the artifact, and writes show-runner-result.json when
+SUPPORT_FLOW_LIVE_AGENT_CASE_DIR or --resultPath is set. Pass --closeAfterShow
+only for automated cleanup when the customer does not need to see the window.
+By default it opens Chrome through playwright-cli --headed; override with
+--browser or SUPPORT_FLOW_PLAYWRIGHT_BROWSER if the local install uses a
+different browser.
 `);
 }
 

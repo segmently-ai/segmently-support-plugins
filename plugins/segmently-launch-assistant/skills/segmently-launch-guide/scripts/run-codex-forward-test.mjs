@@ -15,7 +15,7 @@
  *   - produce an E2E/browser delegation plan for a nested field write;
  *   - audit guide image/link coverage and screen-setting article coverage;
  *   - audit DO coverage and remaining teach/show-only setting gaps;
- *   - produce a non-mutating SHOW browser/screenshot plan;
+ *   - produce a non-mutating SHOW visible headed-browser plan plus screenshot artifact;
  *   - prove raw customer TEACH/SHOW/CLI DO/E2E DO contracts through the
  *     customer-surface acceptance runner;
  *   - identify handoff+verify paths.
@@ -808,7 +808,7 @@ check('E2E DO runner dry-run exposes browser package and refuses CLI actions', (
   assert(refused.requiredRunner === 'segmently-cli-guide', 'E2E runner refusal should point to segmently-cli-guide');
 });
 
-check('SHOW runner dry-run exposes read-only browser screenshot package', () => {
+check('SHOW runner dry-run exposes visible headed browser package', () => {
   const dryRun = runShowRunner([
     '--prompt',
     'покажи где поменять цвет кнопки продолжить',
@@ -829,6 +829,11 @@ check('SHOW runner dry-run exposes read-only browser screenshot package', () => 
   assert(dryRun.wouldOpen?.join(' ').includes('playwright-cli'), 'SHOW dry-run missing playwright-cli open argv');
   assert(dryRun.browser === 'chrome', 'SHOW dry-run should default to Chrome');
   assert(dryRun.wouldOpen?.join(' ').includes('--browser=chrome'), 'SHOW dry-run missing Chrome browser selector');
+  assert(dryRun.wouldOpen?.join(' ').includes('--headed'), 'SHOW dry-run must open a headed browser for visible customer guidance');
+  assert(dryRun.visibleBrowser === true && dryRun.headed === true, 'SHOW dry-run must expose visible headed browser contract');
+  assert(dryRun.keepOpen === true, 'SHOW dry-run must keep the browser open for the customer by default');
+  assert(dryRun.closePolicy === 'keep-visible-browser-open-for-customer', 'SHOW dry-run close policy must keep the window visible');
+  assert(dryRun.wouldClose === null, 'SHOW dry-run must not close browser unless --closeAfterShow is explicit');
   assert(String(dryRun.driverScript ?? '').includes('waitForSelector'), 'SHOW driver must wait for canvas/editor readiness before inspecting nodes');
   assert(dryRun.authPreflight?.requiredForExecute === true, 'SHOW dry-run missing auth preflight');
   assert(dryRun.authPreflight?.authEnv === 'prod', 'SHOW auth preflight must infer prod for app.segmently.ai');
@@ -887,8 +892,8 @@ check('SHOW runner dry-run exposes read-only browser screenshot package', () => 
   assert(String(dryRun.driverScript ?? '').includes("mode: 'show'"), 'SHOW dry-run driverScript missing show marker');
   assert(String(dryRun.screenshot?.path ?? '').includes('qa-screenshots'), 'SHOW dry-run screenshot path should default under qa-screenshots');
   assert(
-    dryRun.completionClaim === 'show-not-completed-until-browser-screenshot',
-    'SHOW dry-run claimed completion before browser screenshot',
+    dryRun.completionClaim === 'show-not-completed-until-visible-browser-and-screenshot',
+    'SHOW dry-run claimed completion before visible browser and screenshot',
   );
 });
 

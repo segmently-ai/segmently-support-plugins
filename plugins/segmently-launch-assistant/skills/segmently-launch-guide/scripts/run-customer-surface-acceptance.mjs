@@ -287,6 +287,11 @@ check('show prompt is non-mutating and asks only for target inputs', () => {
   assert(dryRun.liveBrowserReady === true, 'packaged SHOW runner should be browser-ready with ids/baseUrl');
   assert(dryRun.browser === 'chrome', 'packaged SHOW runner should default to Chrome');
   assert(dryRun.wouldOpen?.join(' ').includes('--browser=chrome'), 'packaged SHOW runner missing Chrome browser selector');
+  assert(dryRun.wouldOpen?.join(' ').includes('--headed'), 'packaged SHOW runner must open a headed browser for visible customer guidance');
+  assert(dryRun.visibleBrowser === true && dryRun.headed === true, 'packaged SHOW runner must expose visible headed browser contract');
+  assert(dryRun.keepOpen === true, 'packaged SHOW runner must keep the browser open for the customer by default');
+  assert(dryRun.closePolicy === 'keep-visible-browser-open-for-customer', 'packaged SHOW runner close policy must keep the window visible');
+  assert(dryRun.wouldClose === null, 'packaged SHOW runner must not close the browser unless explicitly requested');
   assert(String(dryRun.driverScript ?? '').includes('waitForSelector'), 'SHOW driver must wait for canvas/editor readiness before inspecting nodes');
   assert(dryRun.authPreflight?.requiredForExecute === true, 'packaged SHOW runner missing auth preflight');
   assert(dryRun.authPreflight?.authEnv === 'prod', 'SHOW auth preflight must infer prod for app.segmently.ai');
@@ -359,7 +364,7 @@ check('show prompt is non-mutating and asks only for target inputs', () => {
     'packaged SHOW runner did not use LIVE_SEGMENTLY_BASE_URL for browser open URL',
   );
   assert(dryRun.wouldScreenshot?.join(' ').includes('screenshot'), 'packaged SHOW runner missing screenshot argv');
-  assert(dryRun.completionClaim === 'show-not-completed-until-browser-screenshot', 'packaged SHOW runner claimed completion');
+  assert(dryRun.completionClaim === 'show-not-completed-until-visible-browser-and-screenshot', 'packaged SHOW runner claimed completion');
 });
 
 check('session context supplies current project without hiding remaining target inputs', () => {
@@ -484,6 +489,8 @@ check('show prompt with screenshot wording and target ids stays SHOW', () => {
   assert(dryRun.mutation === false, 'packaged SHOW runner screenshot wording must be non-mutating');
   assert(dryRun.liveBrowserReady === true, 'packaged SHOW runner should be browser-ready for screenshot wording');
   assert(dryRun.browser === 'chrome', 'packaged SHOW runner screenshot wording should default to Chrome');
+  assert(dryRun.wouldOpen?.join(' ').includes('--headed'), 'packaged SHOW runner screenshot wording must still open a headed browser');
+  assert(dryRun.keepOpen === true, 'packaged SHOW runner screenshot wording must keep browser open by default');
 });
 
 check('CLI do prompt returns executable patch contract and verification', () => {
