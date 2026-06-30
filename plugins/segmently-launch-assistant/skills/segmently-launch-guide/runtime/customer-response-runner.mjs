@@ -788,8 +788,47 @@ function buildAnswer(question, guideContracts, scenario) {
     imageUrls: customerVisibleGuideAssets.imageUrls,
     customerVisibleGuideAssets,
     verification: scenario?.verify ?? null,
+    stripeStatusContract: buildStripeStatusContract(guideContracts, scenario),
     nextStep: teachNextStepForGuides(guideContracts, question),
     showDoOptions: teachShowDoOptionsForGuides(guideContracts, question),
+  };
+}
+
+function buildStripeStatusContract(guideContracts, scenario) {
+  const guideKeys = guideContracts.map(guide => String(guide.guideKey ?? '')).join(',');
+  const scenarioId = String(scenario?.id ?? '');
+  const isStripeStatusRelevant =
+    /stripe-connect|paywall-product|paywall-subscriptions|stripe/.test(guideKeys) ||
+    /connect-stripe|create-paywall-products|attach-products|test-purchase/.test(scenarioId);
+  if (!isStripeStatusRelevant) return null;
+
+  return {
+    schemaVersion: 1,
+    modeSpecific: true,
+    commands: [
+      {
+        mode: 'test',
+        command: 'segmently stripe account --mode test <projectId>',
+        purpose: 'Check sandbox/test Stripe Connect status for test products and sandbox checkout.',
+      },
+      {
+        mode: 'live',
+        command: 'segmently stripe account --mode live <projectId>',
+        purpose: 'Check live Stripe Connect status before real charges.',
+      },
+    ],
+    interpretation: {
+      sandboxConnectedLiveDisconnected:
+        'Say: sandbox/test Stripe is connected, so test products and sandbox checkout can be prepared; live charges still need live Stripe Connect. Do not say Stripe is not connected.',
+      bothDisconnected:
+        'Say: neither sandbox/test nor live Stripe is connected yet; guide the customer through Stripe Connect OAuth and verify again.',
+      bothConnected:
+        'Say: both sandbox/test and live Stripe are connected; still keep products, prices, paywall screen, and publish mode matched to the same Stripe mode.',
+      liveConnectedSandboxDisconnected:
+        'Say: live Stripe is connected for real charges, but sandbox/test checkout still needs the test connection before a safe test purchase.',
+    },
+    guardrail:
+      'Never infer project-wide Stripe status from the CLI default live read alone. Always compare the test and live reads before summarizing readiness.',
   };
 }
 
@@ -1009,6 +1048,7 @@ function teachNextStepForGuides(guideContracts, question = null) {
   if (isStripeSubscriptionSetupGuide(guideContracts)) {
     return [
       'Offer SHOW: ask for the project link or projectId, then show the Stripe connection, Paywall Products, and Paywall Subscriptions areas without changing data.',
+      'Before reporting Stripe readiness, run both mode-specific reads: segmently stripe account --mode test <projectId> and segmently stripe account --mode live <projectId>. A disconnected live account does not invalidate a connected sandbox/test account.',
       'Offer DO with boundary: Stripe Connect OAuth is a customer handoff, but creating subscription products can be delegated to the Segmently CLI after the customer provides projectId plus product names, prices, billing intervals, currency, and trial settings. Attaching/checking those plans on a Paywall screen also needs funnelId/screenId and verification readback.',
       'Do not claim Stripe was connected or products were created until the OAuth handoff/CLI operation and verification reads have passed.',
     ].join(' ');
@@ -1057,7 +1097,7 @@ function teachShowDoOptionsForGuides(guideContracts, question = null) {
           available: 'partly-cli-and-handoff',
           mutation: true,
           missingInputs: ['projectId', 'product-names-prices-currency-billing-intervals-trials', 'funnelId-and-screenId-if-attaching-to-paywall'],
-          summary: 'Stripe Connect OAuth is a manual customer authorization step. Subscription products can be created through the Segmently CLI when product details are provided; attaching/checking plans on a Paywall screen then needs target funnel/screen context and readback verification.',
+          summary: 'Stripe Connect OAuth is a manual customer authorization step. Read both test and live Stripe account status before summarizing readiness. Subscription products can be created through the Segmently CLI when product details are provided; attaching/checking plans on a Paywall screen then needs target funnel/screen context and readback verification.',
         }
       : isVariableBindingDomainGuide(guideContracts, question)
       ? {

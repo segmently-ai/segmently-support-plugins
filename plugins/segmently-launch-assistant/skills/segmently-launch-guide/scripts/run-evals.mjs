@@ -1742,6 +1742,19 @@ try {
   if (stripeSubscriptions.answer?.showDoOptions?.do?.available !== 'partly-cli-and-handoff') {
     promptFailures.push(`stripe-subscriptions DO boundary ${stripeSubscriptions.answer?.showDoOptions?.do?.available}, expected partly-cli-and-handoff`);
   }
+  if (stripeSubscriptions.answer?.stripeStatusContract?.modeSpecific !== true) {
+    promptFailures.push('stripe-subscriptions prompt missing mode-specific Stripe status contract');
+  }
+  for (const mode of ['test', 'live']) {
+    if (!stripeSubscriptions.answer?.stripeStatusContract?.commands?.some(command =>
+      command.mode === mode && new RegExp(`stripe account --mode ${mode}`).test(command.command ?? ''),
+    )) {
+      promptFailures.push(`stripe-subscriptions prompt missing Stripe ${mode} account status read`);
+    }
+  }
+  if (!/Do not say Stripe is not connected/i.test(stripeSubscriptions.answer?.stripeStatusContract?.interpretation?.sandboxConnectedLiveDisconnected ?? '')) {
+    promptFailures.push('stripe-subscriptions prompt must forbid treating sandbox-connected/live-disconnected as fully disconnected');
+  }
   const selectedStripeSubscriptions = runCustomerPrompt([
     '--prompt',
     'я не понимаю где сделать ежемесячные платежи через страйп',
@@ -1768,6 +1781,9 @@ try {
   }
   if (selectedStripeSubscriptions.answer?.showDoOptions?.do?.available !== 'partly-cli-and-handoff') {
     promptFailures.push(`agent-selected stripe-subscriptions DO boundary ${selectedStripeSubscriptions.answer?.showDoOptions?.do?.available}, expected partly-cli-and-handoff`);
+  }
+  if (selectedStripeSubscriptions.answer?.stripeStatusContract?.modeSpecific !== true) {
+    promptFailures.push('agent-selected stripe-subscriptions missing mode-specific Stripe status contract');
   }
   for (const [label, prompt, actionId, alias] of [
     ['list-video-do', 'сделай видео в списке', 'browser.media.videoUpload', 'help-block-media'],

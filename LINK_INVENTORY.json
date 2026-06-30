@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T16:27:16.472Z",
+  "generatedAt": "2026-06-30T16:57:11.972Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -17138,7 +17138,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 2691,
+      "line": 2707,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -17147,7 +17147,7 @@
     {
       "value": "https://example.com",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 3062,
+      "line": 3078,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

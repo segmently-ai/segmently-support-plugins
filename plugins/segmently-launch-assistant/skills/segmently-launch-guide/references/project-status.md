@@ -13,7 +13,7 @@ then compare it to the goal. All reads are delegated to `segmently-cli-guide`.
 | Analytics connected | `analytics settings get` | a provider is configured |
 | Facebook pixel | `analytics settings get` | a Facebook pixel id is set |
 | TikTok pixel | `analytics settings get` | a TikTok pixel id is set |
-| Stripe connected | `stripe account` | the account reports connected |
+| Stripe connected | `stripe account --mode test` and `stripe account --mode live` | the requested mode reports connected; sandbox/test connected with live disconnected still means test payments can be prepared while live charges need live Stripe Connect |
 | Paywall products created | `stripe products` | at least one product exists |
 | Products attached to paywall | `funnels export` | a paywall screen lists products |
 | Sandbox purchase verified | test purchase + `publish verify` | a test purchase completed |

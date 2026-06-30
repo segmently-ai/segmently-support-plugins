@@ -15075,8 +15075,8 @@
       ],
       "verify": {
         "kind": "cli-read",
-        "command": "stripe account",
-        "evidence": "The Stripe account read shows whether the customer completed OAuth consent."
+        "command": "stripe account --mode test and stripe account --mode live",
+        "evidence": "The mode-specific Stripe account reads show sandbox/test and live OAuth status separately."
       },
       "unsupportedReason": "Stripe Connect requires customer OAuth consent in the app; the assistant can guide and verify, but cannot complete consent automatically."
     },

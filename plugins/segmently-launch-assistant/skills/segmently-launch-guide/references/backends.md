@@ -13,7 +13,7 @@ customer's own project after `segmently auth login` (no password).
 | Configure action buttons | Editor | drive the screen editor | `funnels export` |
 | Connect analytics | CLI or editor | `segmently-cli-guide` → `analytics settings apply` | `analytics settings get` |
 | Add Facebook / TikTok pixel | CLI or editor | `segmently-cli-guide` → `analytics settings apply` | `analytics settings get` |
-| Connect Stripe | Handoff + verify | manual OAuth consent in the app | `stripe account` |
+| Connect Stripe | Handoff + verify | manual OAuth consent in the app | `stripe account --mode test` and `stripe account --mode live` |
 | Create paywall products | CLI or editor | `segmently-cli-paywall-ab-rollout` (test mode) | `stripe products` |
 | Attach products to paywall | Editor | drive the paywall screen editor | `funnels export` |
 | Configure a web placement | CLI or editor | `segmently-cli-guide` → `web-placements apply` | `web-placements list` |
@@ -29,6 +29,12 @@ For Stripe Connect and custom domain, the customer must complete a step we canno
 automate (OAuth consent; DNS records). Give the exact manual steps, then run the
 verify read and report the real state. Never say "done" for a handoff you did not
 and cannot perform.
+
+Stripe status is not a single project-level boolean. Test/sandbox and live are
+separate Stripe Connect accounts. A live read returning `connected: false` does
+not mean Stripe is absent when the test read returns `connected: true`. Report the
+mode-specific state: sandbox/test connected vs live connected, and match product
+creation/checkouts to the same mode.
 
 ## Verify honesty
 A few legs have no single read that proves them outright — the sandbox test purchase

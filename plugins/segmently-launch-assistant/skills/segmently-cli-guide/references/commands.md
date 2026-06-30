@@ -100,7 +100,8 @@ by id even when an older list endpoint omits them.
 | Patch one full screen | `segmently funnels screens patch <screenId> --project <projectId> --funnel <funnelId> --version-id <versionId> --file patch.json [--dry-run]` | `funnels:write`; full StepNode replace with allow-listed operations |
 | Rewire incoming edges | `segmently funnels screens rewire --project <projectId> --funnel <funnelId> --version-id <versionId> --from <sourceId> --to <targetId> --incoming [--dry-run]` | `funnels:write`; never deletes the source screen |
 | Delete one screen | `segmently funnels screens delete <screenId> --project <projectId> --funnel <funnelId> --version-id <versionId> [--dry-run] [--force-if-unreachable]` | `funnels:write`; refuses launch or connected screens without safety guards |
-| Read Stripe sandbox account/products | `segmently stripe account/products/prices --mode test --project <projectId>` | `stripe:read` |
+| Read Stripe account status | `segmently stripe account --mode test <projectId>` and `segmently stripe account --mode live <projectId>` | `stripe:read`; test/sandbox and live are separate OAuth connections |
+| Read Stripe sandbox products/prices | `segmently stripe products/prices --mode test --project <projectId>` | `stripe:read` |
 | Ensure sandbox paywall product | `segmently stripe paywall-product ensure --file paywall-product.json --project <projectId>` | `stripe:write`; manifest must use sandbox/test intent |
 | Apply web placement | `segmently web-placements apply --file placement.json --project <projectId>` | `publish:write` |
 | Publish web placement | `segmently web-placements publish <webPlacementId> --project <projectId>` | `publish:write` |

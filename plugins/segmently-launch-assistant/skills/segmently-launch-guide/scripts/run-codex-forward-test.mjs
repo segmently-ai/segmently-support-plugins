@@ -1640,7 +1640,7 @@ check('handoff path includes verify read and refusal reason', () => {
   assert(plan.ok === false, 'handoff must not report ok=true');
   assert(plan.status === 'handoff', `expected handoff status, got ${plan.status}`);
   assert(plan.reason, 'handoff missing reason');
-  assert(plan.verify?.command === 'stripe account', 'handoff verify read drifted');
+  assert(plan.verify?.command === 'stripe account --mode test and stripe account --mode live', 'handoff verify read drifted');
 });
 
 if (failures.length > 0) {

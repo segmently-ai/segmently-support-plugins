@@ -174,6 +174,19 @@ Build the canonical URL deterministically:
   commands also require the right subscription/entitlement on the project.
 - Stripe creation through the CLI should use sandbox/test-mode products unless a
   separate production billing review is explicitly in scope.
+- Stripe account status is mode-specific. `segmently stripe account` defaults
+  to live mode, so it is not enough for project readiness. For any customer
+  request about Stripe connection, subscriptions, paywalls, products, or test
+  payments, read both:
+  ```bash
+  segmently stripe account --mode test <projectId>
+  segmently stripe account --mode live <projectId>
+  ```
+  If sandbox/test is connected and live is disconnected, report exactly that:
+  sandbox/test payments can be prepared and verified, while real live charges
+  still need live Stripe Connect. Do not summarize it as "Stripe is not
+  connected" unless both mode reads are disconnected or the user asked only
+  about the disconnected mode.
 - For Content Plan writes, prefer `--dry-run` first and only apply explicit
   pillar/template manifests. Do not suggest AI/task generation commands unless a
   task-aware manifest exists.

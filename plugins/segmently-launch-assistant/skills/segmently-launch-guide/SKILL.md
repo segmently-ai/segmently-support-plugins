@@ -669,6 +669,14 @@ CLI, do it through the editor, or need a handoff.
   ids, route templates, or internal file paths into customer-facing answers.
 - Stripe through the CLI defaults to sandbox/test mode unless a production billing
   review is explicitly in scope.
+- Stripe project status is mode-specific. Always verify both
+  `segmently stripe account --mode test <projectId>` and
+  `segmently stripe account --mode live <projectId>` before saying whether
+  Stripe is connected. If test/sandbox is connected but live is not connected,
+  say exactly that: sandbox payments can be prepared/tested, while real live
+  charges still need live Stripe Connect. Never summarize this as "Stripe is not
+  connected" unless both modes are disconnected or the customer asked only about
+  the disconnected mode.
 - Handoff legs (Stripe Connect, DNS) are never auto-completed — give the steps and
   run the verify. If the customer asks "where do I click" or "show me" for a
   handoff leg, offer a non-mutating SHOW walkthrough or screenshot-backed guidance

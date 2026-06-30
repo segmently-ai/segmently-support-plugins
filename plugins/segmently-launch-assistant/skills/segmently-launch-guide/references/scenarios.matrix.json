@@ -259,7 +259,7 @@
       "capabilityId": "capability.connect-stripe",
       "milestone": "stripeConnected",
       "backend": "handoff",
-      "verify": "stripe account",
+      "verify": "stripe account --mode test and stripe account --mode live",
       "article": null,
       "sampleQueries": {
         "ru": [
