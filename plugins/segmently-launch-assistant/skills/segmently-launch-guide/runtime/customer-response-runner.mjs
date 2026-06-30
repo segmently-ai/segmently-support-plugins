@@ -6,6 +6,10 @@
  * Codex/Claude delivery can answer persona-style beginner questions from
  * references/guide-evidence.json and route "do it" requests through
  * runtime/editor-do-runner.mjs without touching project source.
+ *
+ * The preferred customer flow is model-selected semantics plus deterministic
+ * evidence resolution: pass --guideKeys after the agent selects catalog items.
+ * Raw --prompt routing remains a compatibility fallback and regression surface.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -20,7 +24,7 @@ let resultPath = null;
 function main() {
   const args = parseArgs(process.argv.slice(2));
   resultPath = typeof args.resultPath === 'string' ? args.resultPath : null;
-  if (args.help || (!args.prompt && (!args.persona || !args.question))) {
+  if (args.help || (!args.guideKeys && !args.prompt && (!args.persona || !args.question))) {
     printHelp();
     return;
   }
@@ -35,7 +39,9 @@ function main() {
   const actions = readJson('runtime/do-action-reference.json');
   const helpArticlesByAlias = new Map((helpArticleReference.articles ?? []).map(article => [article.alias, article]));
 
-  const promptResolution = args.prompt
+  const promptResolution = args.guideKeys
+    ? resolveSelectedQuestion(args.prompt, effectiveArgs)
+    : args.prompt
     ? resolvePromptQuestion(args.prompt, effectiveArgs, { guideEvidence, teachReference, scenarios, actions })
     : null;
   const question = promptResolution?.question ?? findQuestion(personaFlow, args.persona, args.question);
@@ -365,6 +371,80 @@ function resolvePromptQuestion(prompt, args, context) {
             companionSkill: 'segmently-test-kit',
           }
         : null,
+      show: expectedShow
+        ? {
+            requiredInputs: expectedShow.requiredInputs,
+            mutation: false,
+          }
+        : null,
+      articleFetch: expectedArticleFetch
+        ? {
+            requiredInputs: expectedArticleFetch.requiredInputs,
+            mutation: false,
+          }
+        : null,
+    },
+  };
+}
+
+function resolveSelectedQuestion(prompt, args) {
+  const guideKeys = parseListArg(args.guideKeys);
+  if (guideKeys.length === 0) fail('--guideKeys was provided but no guide keys were parsed.');
+  const scenarioId = typeof args.scenarioId === 'string' && args.scenarioId.trim()
+    ? args.scenarioId.trim()
+    : null;
+  const selectedMode = typeof args.mode === 'string' ? args.mode.trim() : 'teach';
+  const actionId = typeof args.actionId === 'string' && args.actionId.trim() ? args.actionId.trim() : null;
+  const expectedShow = selectedMode === 'show'
+    ? {
+        guideKeys,
+        requiredInputs: requiredInputsForShow(guideKeys),
+        mutation: false,
+      }
+    : null;
+  const expectedArticleFetch = selectedMode === 'article-fetch'
+    ? {
+        guideKeys,
+        requiredInputs: [],
+        mutation: false,
+      }
+    : null;
+  const expectedDo = actionId
+    ? {
+        actionId,
+        status: 'selected-by-agent',
+        mode: 'selected-by-agent',
+        sampleArgs: ['--action', actionId],
+      }
+    : null;
+  return {
+    question: {
+      id: 'selected-catalog-items',
+      phase: scenarioId ?? 'agent-selected-semantics',
+      text: prompt ?? 'Agent-selected Segmently support catalog items',
+      expectedScenarioId: scenarioId,
+      guidance: {
+        guideKeys,
+        requiresText: true,
+        requiresImage: selectedMode === 'show',
+      },
+      copyTextValueBoundary: null,
+      domainOperationBoundary: null,
+      expectedDo,
+      expectedConditionalDo: null,
+      expectedShow,
+      expectedArticleFetch,
+    },
+    resolver: {
+      kind: 'agent-selected-semantics',
+      actionId,
+      guideKeys,
+      scenarioId,
+      selectionSource: 'model-over-catalog',
+      deterministicRole: 'evidence-and-execution-contract-only',
+      copyTextValueBoundary: false,
+      domainOperationBoundary: null,
+      conditionalDo: null,
       show: expectedShow
         ? {
             requiredInputs: expectedShow.requiredInputs,
@@ -876,6 +956,13 @@ function teachNextStepForGuides(guideContracts, question = null) {
       `Missing target inputs before live SHOW/DO: ${requiredInputs.join(', ')}.`,
     ].join(' ');
   }
+  if (isStripeSubscriptionSetupGuide(guideContracts)) {
+    return [
+      'Offer SHOW: ask for the project link or projectId, then show the Stripe connection, Paywall Products, and Paywall Subscriptions areas without changing data.',
+      'Offer DO with boundary: Stripe Connect OAuth is a customer handoff, but creating subscription products can be delegated to the Segmently CLI after the customer provides projectId plus product names, prices, billing intervals, currency, and trial settings. Attaching/checking those plans on a Paywall screen also needs funnelId/screenId and verification readback.',
+      'Do not claim Stripe was connected or products were created until the OAuth handoff/CLI operation and verification reads have passed.',
+    ].join(' ');
+  }
   if (isMediaVideoGuide(guideContracts)) {
     return [
       'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Media section without changing data.',
@@ -914,6 +1001,13 @@ function teachShowDoOptionsForGuides(guideContracts, question = null) {
           mutation: true,
           missingInputs: [...requiredInputs, 'videoUrl-or-local-file'],
           summary: 'Can be done through the editor/browser path after the customer provides the target screen and the video asset/source. Do not present it as completed before execution and verification.',
+        }
+      : isStripeSubscriptionSetupGuide(guideContracts)
+      ? {
+          available: 'partly-cli-and-handoff',
+          mutation: true,
+          missingInputs: ['projectId', 'product-names-prices-currency-billing-intervals-trials', 'funnelId-and-screenId-if-attaching-to-paywall'],
+          summary: 'Stripe Connect OAuth is a manual customer authorization step. Subscription products can be created through the Segmently CLI when product details are provided; attaching/checking plans on a Paywall screen then needs target funnel/screen context and readback verification.',
         }
       : isVariableBindingDomainGuide(guideContracts, question)
       ? {
@@ -1009,6 +1103,13 @@ function isMediaVideoGuide(guideContracts) {
 function isPaywallMediaVideoGuide(guideContracts) {
   const keys = guideContracts.map(guide => guide.guideKey).join(' ');
   return /screenedit-paywall-media-(video|repeat)/.test(keys);
+}
+
+function isStripeSubscriptionSetupGuide(guideContracts) {
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /integrations-stripe-connect-section/.test(keys)
+    && /paywall-product-subscription-options/.test(keys)
+    && /screenedit-paywall-subscriptions-items/.test(keys);
 }
 
 function isCopyTextValueGuide(guideContracts, question = null) {
@@ -1418,15 +1519,25 @@ function parseArgs(argv) {
   return out;
 }
 
+function parseListArg(value) {
+  if (Array.isArray(value)) return value.flatMap(parseListArg);
+  return String(value ?? '')
+    .split(/[\s,]+/)
+    .map(item => item.trim())
+    .filter(Boolean);
+}
+
 function printHelp() {
   console.log([
     'Usage:',
     '  node runtime/customer-response-runner.mjs --persona <personaId> --question <questionId>',
     '  node runtime/customer-response-runner.mjs --prompt "<customer request>" [--projectId <id> ...]',
+    '  node runtime/customer-response-runner.mjs --prompt "<customer request>" --guideKeys <key,key> [--scenarioId <id>] [--mode teach|show|article-fetch]',
     '  node runtime/customer-response-runner.mjs --prompt "<customer request>" --resultPath <path>',
     '',
     'Returns a customer-facing response contract built only from shipped skill files.',
-    'Prompt mode resolves free-form customer text to TEACH or DO, then returns missing inputs or execution+verification.',
+    'Preferred mode: the agent selects guideKeys semantically from the shipped catalog, then this runner resolves article URLs, image URLs, SHOW/DO/handoff boundaries, and verification facts.',
+    'Raw prompt mode is a compatibility fallback/regression surface and must not be treated as the only semantic authority for unknown customer wording.',
   ].join('\n'));
 }
 
@@ -1586,7 +1697,7 @@ function resolveActionFromPrompt(prompt, actions) {
     { id: 'editor.list.options.itemTitle.fontSize', re: /(вариант|ячей|option|list).*(шрифт|букв|крупн|font|size|18|20)/ },
     { id: 'launch.funnel.create', re: /(созд|create|build).*(воронк|funnel|чернов)/ },
     { id: 'launch.analytics.pixel.apply', re: /(?=.*(pixel|пиксел|facebook|tiktok|meta))(?=.*(подключ|connect|add|добав|встав|insert|apply|set|постав))/ },
-    { id: 'launch.paywallProducts.create', re: /(тариф|plan|product|товар|price|цена).*(созд|create|сдел)/ },
+    { id: 'launch.paywallProducts.create', re: /(тариф|plan|product|товар|price|цена|подпис|subscription).*(созд|create|сдел|добав|add)|(созд|create|сдел|добав|add).*(тариф|plan|product|товар|price|цена|подпис|subscription)/ },
     { id: 'editor.paywall.attachProduct', re: /(постав|attach|connect|привяж).*(тариф|product|plan|price|paywall|оплат)/ },
     { id: 'launch.publish', re: /(опублик|publish|live|рабоч.*ссыл|ссылк.*браузер|web link)/ },
     { id: 'handoff.stripe.connect', re: /(stripe).*(подключ|connect|oauth)|(подключ|connect).*(stripe)/ },
@@ -2462,6 +2573,8 @@ function guideKeysForAction(actionId) {
 
 function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference) {
   const text = normalize(prompt);
+  const stripeSubscriptionSetupGuideKeys = stripeSubscriptionSetupGuideKeysFromPrompt(text);
+  if (stripeSubscriptionSetupGuideKeys) return stripeSubscriptionSetupGuideKeys;
   const integrationsCustomDomainGuideKeys = integrationsCustomDomainGuideKeysFromPrompt(text);
   if (integrationsCustomDomainGuideKeys) return integrationsCustomDomainGuideKeys;
   const integrationsAnalyticsGuideKeys = integrationsAnalyticsGuideKeysFromPrompt(text);
@@ -2716,6 +2829,22 @@ function optionsStructureGuideKeysFromPrompt(prompt) {
     return [section, 'screenedit-options-selection-mode'];
   }
   return null;
+}
+
+function stripeSubscriptionSetupGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasStripeTarget = /\bstripe\b|страйп/.test(text);
+  const hasSubscriptionTarget = /(подпис|subscription|recurr|billing interval|interval|trial|триал|тариф|plan|price|цена|paywall|пейвол|оплат)/.test(text);
+  if (!hasStripeTarget || !hasSubscriptionTarget) return null;
+
+  return [
+    'integrations-stripe-connect-section',
+    'stripe-connect-oauth-guidance',
+    'paywall-products-list',
+    'paywall-product-subscription-options',
+    'screen-editor-section-paywall-subscriptions',
+    'screenedit-paywall-subscriptions-items',
+  ];
 }
 
 function headerNavigationGuideKeysFromPrompt(prompt) {

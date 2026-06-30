@@ -84,6 +84,35 @@ right built-in guide. Start with the answer itself, for example: "Да, это
 
 ## The interactive loop (always follow this order)
 
+Before writing any customer-facing answer for a launch, integration, product,
+paywall, screen-setting, SHOW, DO, or article request, use the model to classify
+the customer's meaning over the shipped catalog. Load
+`references/semantic-routing.md` for the contract, then select the smallest
+useful set of scenario ids, guide keys, and action ids from the shipped
+references.
+
+After the model selects the catalog items, run deterministic evidence
+resolution from this skill directory:
+
+```bash
+node runtime/customer-response-runner.mjs --prompt "<customer request>" --guideKeys "<guideKey1>,<guideKey2>" --scenarioId "<scenario-id>"
+```
+
+Use the returned contract as the source of truth for `guidance.guides`,
+`answer.publicArticleLinks`, `answer.imageUrls`,
+`answer.customerVisibleGuideAssets`, `show`, `action`, and `completionClaim`.
+The runner validates materials and execution boundaries; it does not own
+semantic understanding in `--guideKeys` mode. Raw
+`node runtime/customer-response-runner.mjs --prompt "<customer request>"` is only
+a compatibility fallback/regression surface for known phrasing, not the primary
+meaning step for unknown customer wording.
+
+When `answer.customerVisibleGuideAssets.mustShowInCustomerAnswer=true`, the
+customer answer must include a compact visible materials block with article
+URL(s), concrete image URL(s) when present, and the customer-safe guide alias or
+reference path. Do not replace those links with prose like "there is a guide";
+show the links.
+
 1. **Clarify the scenario.** Map the customer's words to a launch scenario / leg
    (see `references/scenarios.md`). If the request is ambiguous, ask ONE targeted
    clarification question, then proceed.
@@ -324,12 +353,13 @@ authorized editor screenshot was captured. A screenshot of a login page or
 For any customer request phrased as "do it", "make this change", or "set this
 value", resolve the action before answering:
 
-0. For free-form wording, first run the packaged prompt resolver:
-   `node runtime/customer-response-runner.mjs --prompt "<customer request>" ...`.
-   Treat `resolver.actionId`, `guidance.builtInArticleReferences`, and
-   `action.execution` as the authoritative dispatch contract unless the runner
-   itself returns `ok=false`. Do not override that action by grepping
-   `do-action-reference.json` for a "nearer" label. If the customer mentions
+0. For free-form wording, select the likely action semantically from
+   `runtime/do-action-reference.json` and the related guide keys from
+   `references/guide-evidence.json`. Then validate the selected action/guide
+   set through `runtime/customer-response-runner.mjs --guideKeys ... --actionId
+   <id>` or through `runtime/editor-do-runner.mjs --action <id> ...`.
+   Deterministic runners validate execution, inputs, evidence, and verification;
+   they are not the only meaning layer. If the customer mentions
    Paywall + title/headline/заголовок, prefer the dedicated
    `editor.paywallBody.title.textStyle.*` action over generic
    `editor.content.title.textStyle.*`; if they mention Paywall +
@@ -369,22 +399,25 @@ value", resolve the action before answering:
 6. If the runner returns `unsupported` or `handoff`, explain the exact reason and
    use `teachFallback` or the verify read. Never claim the change was completed.
 
-For field-level TEACH, use the packaged resolver before manually reading the
-reference corpus:
+For field-level TEACH, use the same model-selected catalog flow:
 
-1. Run `node runtime/customer-response-runner.mjs --prompt "<customer request>"`
-   for screen-setting, article, SHOW, or DO phrasing. Treat its
+1. Read `references/semantic-routing.md`, then select likely guide keys from
+   `references/guide-evidence.json`, `references/help-article-reference.json`,
+   and, for screen/block fields, `references/teach-reference.json`. The model
+   owns this meaning step. Do not rely on regex/fallback scoring as the primary
+   interpretation of imprecise customer wording.
+2. Run `node runtime/customer-response-runner.mjs --prompt "<customer request>"
+   --guideKeys "<selected-guide-keys>"` and treat its
    `answer.articleReferences`, `answer.builtInArticleReferences`,
    `answer.customerVisibleGuideAssets`, `answer.imageUrls`, `show`, and
    `action` objects as the article identity and execution contract source of
-   truth. Do not manually choose a different article alias from
-   `teach-reference.json` alone.
-2. If the runner is unavailable or you need extra wording after the runner has
-   identified the guide, load `references/teach-reference.json` and
+   truth.
+3. If the runner is unavailable or you need extra wording after the selected
+   guide has been validated, load `references/teach-reference.json` and
    `references/guide-evidence.json` narrowly. Match the customer's words to a
    screen type when named (List, Grid, Paywall, Text Input, Flexible Layout,
    etc.), then to the closest block and field.
-3. Use the runner's selected `articleAlias`/`referencePath` first. If manually
+4. Use the runner's selected `articleAlias`/`referencePath` first. If manually
    reading the corpus, use `screens[].blocks[].articleAlias` to find the block
    payload in `blocksByAlias`, then answer from the field/leaf labels and plain
    descriptions. Name the matched customer-visible block/section in the answer.
@@ -402,7 +435,7 @@ reference corpus:
    **Show featured media**, **Image or video -> Video**, and
    **Upload the featured video**. Do not route this wording to onboarding
    creation or generic Media.
-4. Cross-check the runner's returned guide assets or
+5. Cross-check the runner's returned guide assets or
    `references/guide-evidence.json` for the matched guide before writing the
    customer answer. Start the answer with the matched guide/section
    and field meaning in customer language, then give the steps. If the guide has
@@ -449,8 +482,20 @@ reference corpus:
      purchase button or Flexible Layout button. That Action Bar guide covers
      font family, font weight, font size, line height, text color, and alignment
      for the main button label.
-5. If the customer wants the full article, first run
-   `node runtime/customer-response-runner.mjs --prompt "<customer request>"`.
+   - For "как настроить Stripe подписки" / "how to set up Stripe
+     subscriptions", use the resolver's Stripe subscriptions guide set. The
+     answer must include the public article URLs for Stripe Connect, Paywall
+     Products, subscription options, and Paywall Subscriptions when returned,
+     plus concrete screenshot image URLs for the rows that have them. Explain
+     the split clearly: Stripe Connect OAuth is a customer handoff; creating
+     subscription products can be delegated to the Segmently CLI when the
+     customer provides product names, prices, currency, billing intervals, and
+     trials; attaching/checking plans on a Paywall screen needs the
+     funnel/screen target and verification.
+6. If the customer wants the full article, first select the target guide/article
+   semantically, then run
+   `node runtime/customer-response-runner.mjs --prompt "<customer request>"
+   --guideKeys "<selected-guide-keys>" --mode article-fetch`.
    For this intent the runner returns `mode: "article-fetch"` and an
    `articleFetch` object with the matched `articleAlias`, `referencePath`,
    public URL inventory, and a read-only `segmently-cli-articles` fetch command

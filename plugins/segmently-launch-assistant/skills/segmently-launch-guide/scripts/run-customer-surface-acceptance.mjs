@@ -102,6 +102,71 @@ check('paywall video teach prompt resolves Paywall Media article and exposes vis
   assertSourceSafeCustomerAnswer(response);
 });
 
+check('Stripe subscription setup teach prompt resolves article and image links', () => {
+  const response = runResponse(['--prompt', 'как настроить stripe подписки?']);
+  assert(response.ok === true, 'Stripe subscription setup TEACH response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach mode, got ${response.mode}`);
+  assert(response.action === null, 'Stripe subscription setup TEACH response must not attach a fake DO action');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'integrations-stripe-connect-section'), 'missing Stripe Connect setup guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'paywall-products-list'), 'missing Paywall Products guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'paywall-product-subscription-options'), 'missing subscription options guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-paywall-subscriptions-items'), 'missing Paywall Subscriptions plans guide');
+  assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-options-title-styles'), 'Stripe subscription setup incorrectly resolved Options guide');
+  for (const alias of [
+    'integrations-stripe-connect-section',
+    'stripe-connect-oauth-guidance',
+    'paywall-products-list',
+    'paywall-product-subscription-options',
+    'help-block-paywall-subscriptions',
+  ]) {
+    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)), `Stripe subscription setup missing published article URL for ${alias}`);
+  }
+  assert(response.answer?.imageUrls?.some(url => /expand-stripe-stripe-section/.test(url)), 'Stripe subscription setup missing Stripe Connect screenshot URL');
+  assert(response.answer?.imageUrls?.some(url => /open-products-products-list/.test(url)), 'Stripe subscription setup missing Paywall Products screenshot URL');
+  assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide/.test(url)), 'Stripe subscription setup missing Paywall Subscriptions screenshot URL');
+  assert(response.answer?.customerVisibleGuideAssets?.mustShowInCustomerAnswer === true, 'Stripe subscription setup must require visible guide assets in customer answer');
+  assert(response.answer?.showDoOptions?.show?.available === true, 'Stripe subscription setup missing SHOW option');
+  assert(response.answer?.showDoOptions?.do?.available === 'partly-cli-and-handoff', 'Stripe subscription setup must expose CLI + handoff DO boundary');
+  assert(/Stripe Connect OAuth/.test(response.answer?.showDoOptions?.do?.summary ?? ''), 'Stripe subscription setup DO boundary must mention OAuth handoff');
+  assert(/Segmently CLI/.test(response.answer?.showDoOptions?.do?.summary ?? ''), 'Stripe subscription setup DO boundary must mention CLI product creation');
+  assert(response.missingArticleClaimed === false, 'Stripe subscription setup must not claim the built-in articles are missing');
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('agent-selected semantic guide keys resolve Stripe subscription materials', () => {
+  const guideKeys = [
+    'integrations-stripe-connect-section',
+    'stripe-connect-oauth-guidance',
+    'paywall-products-list',
+    'paywall-product-subscription-options',
+    'screen-editor-section-paywall-subscriptions',
+    'screenedit-paywall-subscriptions-items',
+  ].join(',');
+  const response = runResponse([
+    '--prompt',
+    'я не понимаю где сделать ежемесячные платежи через страйп',
+    '--guideKeys',
+    guideKeys,
+    '--scenarioId',
+    'create-paywall-products',
+  ]);
+  assert(response.ok === true, 'agent-selected Stripe subscription response did not return ok=true');
+  assert(response.resolver?.kind === 'agent-selected-semantics', `expected agent-selected-semantics resolver, got ${response.resolver?.kind}`);
+  assert(response.resolver?.selectionSource === 'model-over-catalog', 'agent-selected resolver must record model-over-catalog source');
+  assert(response.resolver?.deterministicRole === 'evidence-and-execution-contract-only', 'runner must record deterministic validation role');
+  assert(response.scenarioId === 'create-paywall-products', `expected create-paywall-products scenario, got ${response.scenarioId}`);
+  assert(response.answer?.publicArticleLinks?.some(url => /integrations-stripe-connect-section\/index\.html$/.test(url)), 'agent-selected Stripe response missing Stripe Connect article URL');
+  assert(response.answer?.publicArticleLinks?.some(url => /paywall-product-subscription-options\/index\.html$/.test(url)), 'agent-selected Stripe response missing subscription options article URL');
+  assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-subscriptions\/index\.html$/.test(url)), 'agent-selected Stripe response missing Paywall Subscriptions article URL');
+  assert(response.answer?.imageUrls?.some(url => /expand-stripe-stripe-section/.test(url)), 'agent-selected Stripe response missing Stripe screenshot URL');
+  assert(response.answer?.imageUrls?.some(url => /open-products-products-list/.test(url)), 'agent-selected Stripe response missing Products screenshot URL');
+  assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide/.test(url)), 'agent-selected Stripe response missing Paywall Subscriptions screenshot URL');
+  assert(response.answer?.customerVisibleGuideAssets?.mustShowInCustomerAnswer === true, 'agent-selected Stripe response must require visible materials');
+  assert(response.answer?.showDoOptions?.do?.available === 'partly-cli-and-handoff', 'agent-selected Stripe response must expose CLI + handoff boundary');
+  assert(response.missingArticleClaimed === false, 'agent-selected Stripe response must not claim articles are missing');
+  assertSourceSafeCustomerAnswer(response);
+});
+
 check('direct video upload request returns conditional browser DO contract', () => {
   const response = runResponse(['--prompt', 'сделай видео в пейволе']);
   assert(response.ok === true, 'direct paywall video DO response did not return ok=true');

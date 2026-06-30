@@ -304,6 +304,7 @@ check('launch runtime', () => {
     'references/teach-reference.json',
     'references/guide-evidence.json',
     'references/help-article-reference.json',
+    'references/semantic-routing.md',
     'runtime/do-action-reference.json',
     'runtime/editor-do-runner.mjs',
     'runtime/cli-do-runner.mjs',

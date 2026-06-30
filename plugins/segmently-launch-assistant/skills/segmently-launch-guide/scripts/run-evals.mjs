@@ -127,18 +127,20 @@ for (const item of evals.evals) {
 
 const fieldLevelResolverContractFailures = [];
 for (const required of [
-  'For field-level TEACH, use the packaged resolver before manually reading the',
-  'runtime/customer-response-runner.mjs --prompt',
+  'For field-level TEACH, use the same model-selected catalog flow',
+  'references/semantic-routing.md',
+  '--guideKeys "<selected-guide-keys>"',
+  'owns this meaning step',
   'answer.articleReferences',
   'answer.builtInArticleReferences',
   'answer.customerVisibleGuideAssets',
-  'Do not manually choose a different article alias from',
+  'Do not rely on regex/fallback scoring as the primary',
 ]) {
   if (!skillMarkdown.includes(required)) {
-    fieldLevelResolverContractFailures.push(`SKILL.md missing resolver-first field-level contract text: ${required}`);
+    fieldLevelResolverContractFailures.push(`SKILL.md missing model-selected field-level contract text: ${required}`);
   }
 }
-report('field-level-teach-uses-packaged-resolver-first', fieldLevelResolverContractFailures);
+report('field-level-teach-uses-model-selected-catalog-first', fieldLevelResolverContractFailures);
 
 const articleFetchCompletionWordingFailures = [];
 for (const required of [
@@ -1546,6 +1548,77 @@ try {
     if (response.answer?.showDoOptions?.do?.available !== 'conditional') {
       promptFailures.push(`${label} prompt must offer conditional DO boundary for video upload`);
     }
+  }
+  const stripeSubscriptions = runCustomerPrompt(['--prompt', 'как настроить stripe подписки?']);
+  if (stripeSubscriptions.ok !== true) promptFailures.push('stripe-subscriptions prompt did not return ok=true');
+  if (stripeSubscriptions.mode !== 'teach') {
+    promptFailures.push(`stripe-subscriptions prompt mode ${stripeSubscriptions.mode}, expected teach`);
+  }
+  for (const guideKey of [
+    'integrations-stripe-connect-section',
+    'paywall-products-list',
+    'paywall-product-subscription-options',
+    'screenedit-paywall-subscriptions-items',
+  ]) {
+    if (!stripeSubscriptions.guidance?.guides?.some(guide => guide.guideKey === guideKey)) {
+      promptFailures.push(`stripe-subscriptions prompt missing guide ${guideKey}`);
+    }
+  }
+  if (stripeSubscriptions.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-options-title-styles')) {
+    promptFailures.push('stripe-subscriptions prompt incorrectly resolved Options title guide');
+  }
+  for (const alias of [
+    'integrations-stripe-connect-section',
+    'stripe-connect-oauth-guidance',
+    'paywall-products-list',
+    'paywall-product-subscription-options',
+    'help-block-paywall-subscriptions',
+  ]) {
+    if (!stripeSubscriptions.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url))) {
+      promptFailures.push(`stripe-subscriptions prompt missing published article URL for ${alias}`);
+    }
+  }
+  for (const pattern of [
+    /expand-stripe-stripe-section/,
+    /open-products-products-list/,
+    /paywall-screen-configuration-guide/,
+  ]) {
+    if (!stripeSubscriptions.answer?.imageUrls?.some(url => pattern.test(String(url)))) {
+      promptFailures.push(`stripe-subscriptions prompt missing image URL matching ${pattern}`);
+    }
+  }
+  if (stripeSubscriptions.answer?.customerVisibleGuideAssets?.mustShowInCustomerAnswer !== true) {
+    promptFailures.push('stripe-subscriptions prompt must require visible guide assets');
+  }
+  if (stripeSubscriptions.answer?.showDoOptions?.do?.available !== 'partly-cli-and-handoff') {
+    promptFailures.push(`stripe-subscriptions DO boundary ${stripeSubscriptions.answer?.showDoOptions?.do?.available}, expected partly-cli-and-handoff`);
+  }
+  const selectedStripeSubscriptions = runCustomerPrompt([
+    '--prompt',
+    'я не понимаю где сделать ежемесячные платежи через страйп',
+    '--guideKeys',
+    'integrations-stripe-connect-section,stripe-connect-oauth-guidance,paywall-products-list,paywall-product-subscription-options,screen-editor-section-paywall-subscriptions,screenedit-paywall-subscriptions-items',
+    '--scenarioId',
+    'create-paywall-products',
+  ]);
+  if (selectedStripeSubscriptions.ok !== true) promptFailures.push('agent-selected stripe-subscriptions prompt did not return ok=true');
+  if (selectedStripeSubscriptions.resolver?.kind !== 'agent-selected-semantics') {
+    promptFailures.push(`agent-selected stripe-subscriptions resolver ${selectedStripeSubscriptions.resolver?.kind}, expected agent-selected-semantics`);
+  }
+  if (selectedStripeSubscriptions.resolver?.selectionSource !== 'model-over-catalog') {
+    promptFailures.push('agent-selected stripe-subscriptions missing model-over-catalog marker');
+  }
+  if (selectedStripeSubscriptions.resolver?.deterministicRole !== 'evidence-and-execution-contract-only') {
+    promptFailures.push('agent-selected stripe-subscriptions missing deterministic validation role marker');
+  }
+  if (!selectedStripeSubscriptions.answer?.publicArticleLinks?.some(url => /paywall-product-subscription-options\/index\.html$/.test(url))) {
+    promptFailures.push('agent-selected stripe-subscriptions missing subscription options article URL');
+  }
+  if (!selectedStripeSubscriptions.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide/.test(String(url)))) {
+    promptFailures.push('agent-selected stripe-subscriptions missing Paywall Subscriptions screenshot URL');
+  }
+  if (selectedStripeSubscriptions.answer?.showDoOptions?.do?.available !== 'partly-cli-and-handoff') {
+    promptFailures.push(`agent-selected stripe-subscriptions DO boundary ${selectedStripeSubscriptions.answer?.showDoOptions?.do?.available}, expected partly-cli-and-handoff`);
   }
   for (const [label, prompt, actionId, alias] of [
     ['list-video-do', 'сделай видео в списке', 'browser.media.videoUpload', 'help-block-media'],

@@ -57,6 +57,7 @@ check('projection files exist', () => {
     'references/teach-reference.json',
     'references/guide-evidence.json',
     'references/help-article-reference.json',
+    'references/semantic-routing.md',
     'runtime/do-action-reference.json',
     'runtime/browser-auth-bridge.mjs',
     'runtime/editor-do-runner.mjs',
