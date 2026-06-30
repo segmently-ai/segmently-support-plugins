@@ -39,7 +39,7 @@
     },
     {
       "alias": "facebook-pixel-capi-setup",
-      "title": "Set up the Facebook (Meta) Pixel and Conversions API",
+      "title": "Set up the Facebook (Meta) Pixel and Conversion API",
       "projectId": "arswew63RwQr6V4Ekb1Z",
       "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-pixel-capi-setup/index.html",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-pixel-capi-setup/config.json",
@@ -7398,6 +7398,16 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         }
       ]
+    },
+    {
+      "alias": "integrations-custom-domain-section",
+      "title": "Custom Domain setup",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
     },
     {
       "alias": "launch-paid-funnel-overview",

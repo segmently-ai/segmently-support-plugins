@@ -482,7 +482,7 @@
       "milestone": "domainVerified",
       "backend": "handoff",
       "verify": "domains verify",
-      "article": null,
+      "article": "integrations-custom-domain-section",
       "sampleQueries": {
         "ru": [
           "подключи домен",

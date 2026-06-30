@@ -32,6 +32,10 @@ Use this skill when the task involves:
 - checking variable reads/writes, child action edges, and callback fallback
   edges;
 - migrating custom paywalls to `ProductCatalog`;
+- validating FlexibleLayout flows where one CustomEmbed owns a ProductCatalog,
+  writes the selected product snapshot to a variable, and a sibling CustomEmbed
+  renders the selected label/price while purchase remains in the catalog-owning
+  CustomEmbed;
 - verifying shadow-DOM (paywall, `--iframe false`) render correctness — fonts loaded
   from `document.head` and full-page scroll/sticky behavior, which healthcheck does not
   cover;
@@ -202,6 +206,7 @@ Load the one row that matches the task; skip the rest.
 | When the task involves… | Read | It covers |
 |---|---|---|
 | converting a paywall to real checkout | `references/paywall.md` **+** `references/shadow-dom-rendering.md` | `ProductCatalog` / `getProducts` / `purchaseProduct`, apply with `--iframe false`; plus the shadow-DOM render rules |
+| FlexibleLayout with sibling WebEmbedded sections sharing selected product labels and purchasing the chosen product | `references/flexible-layout-customembed-product-variable-paywall.md` | CustomEmbed-owned ProductCatalog, aggregate `selected_product` variable, sibling label section, `purchaseProduct(selectedProductId)`, and wire-layer purchase verification |
 | a shadow-DOM (`--iframe false`) screen whose fonts don't load or that won't scroll | `references/shadow-dom-rendering.md` | load fonts from `document.head`; drop `min-height:100vh` / `overflow:hidden` viewport-pinning; post-publish render check |
 | local or temporary image paths that need CDN upload + rewrite | `references/image-migration.md` | `scan-images` dry-run → upload → safe rewrite |
 | screenshot references that must become WebEmbed screens | `references/screenshot-webembed-workflow.md` | screenshot source analysis, editable HTML/data-source recreation, interaction map, CLI apply/publish, and browser smoke |

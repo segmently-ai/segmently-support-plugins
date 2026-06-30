@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T16:57:11.972Z",
+  "generatedAt": "2026-06-30T20:00:29.570Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -23,14 +23,14 @@
     ]
   },
   "counts": {
-    "total": 1904,
+    "total": 1906,
     "byClassification": {
       "external-https": 74,
-      "prod-api": 1826,
+      "prod-api": 1828,
       "localhost": 4
     },
     "byStableStatus": {
-      "ok": 1904
+      "ok": 1906
     }
   },
   "blockers": [],
@@ -16758,7 +16758,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7406,
       "classification": "prod-api",
@@ -16767,7 +16767,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/config.json",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/config.json",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7407,
       "classification": "prod-api",
@@ -16776,7 +16776,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7416,
       "classification": "prod-api",
@@ -16785,7 +16785,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/config.json",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/config.json",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7417,
       "classification": "prod-api",
@@ -16794,7 +16794,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7426,
       "classification": "prod-api",
@@ -16803,7 +16803,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/config.json",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/config.json",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7427,
       "classification": "prod-api",
@@ -16812,7 +16812,7 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/index.html",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/index.html",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7436,
       "classification": "prod-api",
@@ -16821,9 +16821,27 @@
       "runtimeAllowed": false
     },
     {
-      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/config.json",
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/config.json",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
       "line": 7437,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/index.html",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
+      "line": 7446,
+      "classification": "prod-api",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/config.json",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/references/help-article-reference.json",
+      "line": 7447,
       "classification": "prod-api",
       "stableStatus": "ok",
       "replacement": null,
