@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-custom-screen-guide
-description: Segmently CLI guide for reading, updating, applying, and validating V2 WebEmbed custom screens. Use when migrating hardcoded WebEmbed HTML to data sources, routing Button and SingleSelectionList child data-source actions through graph edges, reproducing screenshot references as WebEmbed custom screens, checking variables inside custom screens, updating callback fallback edges, verifying shadow-DOM render correctness, migrating images, converting legacy custom-screen APIs, or converting paywalls to ProductCatalog-driven custom screens through the Segmently CLI.
+description: Segmently CLI guide for reading, updating, applying, and validating V2 WebEmbed custom screens. Use when migrating hardcoded WebEmbed HTML to data sources, routing Button and SingleSelectionList child data-source actions through graph edges, reproducing screenshot references as WebEmbed custom screens, checking variables inside custom screens, updating callback fallback edges, verifying shadow-DOM render correctness, migrating images, converting legacy custom-screen APIs, or converting paywalls to ProductCatalog-driven custom screens through the Segmently CLI. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-custom-screen-guide or names this skill for a custom WebEmbed DO flow.
 ---
 
 # Segmently CLI Custom Screen Guide

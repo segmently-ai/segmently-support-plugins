@@ -256,3 +256,33 @@ segmently domains verify --project <projectId> --allow-pending
 
 Use `domains verify` without `--allow-pending` when the custom domain must be
 fully active.
+
+## After Publish: Return And Verify The Real Public URL
+
+Goal: after a successful publish, give the customer the real URL they should
+share, including any active custom domain.
+
+```bash
+segmently domains status --project <projectId>
+segmently web-placements list --project <projectId>
+segmently publish verify --project <projectId> --url <publishedUrl> --public-base-url https://<canonical-domain>
+```
+
+Decision rule:
+
+- If `domains status` returns `hasDomain: true`, `status: "active"`, and
+  `domain`, use `https://<domain>` as the canonical base.
+- Otherwise use `appUrl` from `segmently env current`.
+- Append the placement `publishedUrl` / `webUrl` path exactly once.
+- Report both the domain source and path source in the answer.
+
+Then hand the composed URL to `playwright-bowser` for visual proof when the
+customer asks to see it or when a publish acceptance check needs browser
+evidence:
+
+```bash
+playwright-cli -s=published-funnel open https://<canonical-domain><publishedUrl> --headed --persistent
+```
+
+Use a screenshot or read-only smoke navigation as evidence. For checkout flows,
+ask explicit approval before entering test card details.

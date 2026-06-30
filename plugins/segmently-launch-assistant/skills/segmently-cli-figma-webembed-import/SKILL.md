@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-figma-webembed-import
-description: Segmently CLI-oriented Figma to WebEmbed import guide. Use when extracting Figma frames into portable per-screen work items, converting them to standalone WebEmbed HTML, materializing CLI-ready data sources, and handing the result to segmently-cli-custom-screen-guide for apply and healthcheck.
+description: Segmently CLI-oriented Figma to WebEmbed import guide. Use when extracting Figma frames into portable per-screen work items, converting them to standalone WebEmbed HTML, materializing CLI-ready data sources, and handing the result to segmently-cli-custom-screen-guide for apply and healthcheck. Also trigger when Segmently Launch Assistant or segmently-cli-custom-screen-guide names segmently-cli-figma-webembed-import for a Figma-to-WebEmbed preparation step.
 ---
 
 # Segmently CLI Figma WebEmbed Import

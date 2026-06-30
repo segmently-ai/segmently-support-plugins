@@ -18,6 +18,36 @@
   },
   "articles": [
     {
+      "alias": "collect-email-before-paywall",
+      "title": "Collect the customer email before the paywall (required for subscriptions)",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/collect-email-before-paywall/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/collect-email-before-paywall/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "facebook-events-catalog",
+      "title": "Every event Segmently sends to Facebook (Pixel + Conversions API)",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-events-catalog/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-events-catalog/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "facebook-pixel-capi-setup",
+      "title": "Set up the Facebook (Meta) Pixel and Conversions API",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-pixel-capi-setup/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-pixel-capi-setup/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
       "alias": "help-block-action-bar",
       "title": "Action Bar — all settings",
       "projectId": "arswew63RwQr6V4Ekb1Z",
@@ -7368,6 +7398,46 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png"
         }
       ]
+    },
+    {
+      "alias": "launch-paid-funnel-overview",
+      "title": "Launch a paid funnel you can run ads against: the complete order of steps",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-paid-funnel-overview/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "paywall-payment-methods",
+      "title": "Payment methods on your paywall: embedded vs redirect, cards & wallets",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-payment-methods/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "tiktok-events-catalog",
+      "title": "Every event Segmently sends to TikTok (Pixel + Events API)",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-events-catalog/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "tiktok-pixel-events-api-setup",
+      "title": "Set up the TikTok Pixel and Events API",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
     }
   ]
 }

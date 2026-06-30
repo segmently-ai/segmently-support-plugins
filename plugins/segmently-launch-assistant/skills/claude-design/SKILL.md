@@ -1,18 +1,14 @@
 ---
 name: claude-design
 description: >-
-  Trigger whenever a query references Anthropic's Claude Design in the context of the Segmently
-  product — i.e. it mentions "claude design" or "claude.ai/design", a Claude Design
-  canvas/deck/project (even just a bare project id), the /design, /design-sync, or /design-login
-  commands, or a design "handoff to Claude Code". Use it to: bring a Claude Design into Segmently
-  as a native onboarding theme (colors, fonts, visual style); land Claude Design onboarding screens
-  — exported standalone HTML or a Claude Code handoff — into a Segmently funnel as custom screens;
-  push Segmently's design system, theme tokens, or components up to a Claude Design project; capture
-  Segmently's design system into Claude Design and extract a reference-app screenshot back into Theme
-  V2 tokens; or log in and pull/review a Claude Design project. Fire even mid-task when no workflow is
-  named. Do NOT
-  use for Figma sources (use the figma skills) or for local HTML mockups
-  plus UX review (use the designer skill).
+  Trigger whenever a Segmently task mentions Claude Design, claude.ai/design,
+  /design, /design-sync, /design-login, a Claude Design project/canvas, or a
+  design handoff to Claude Code. Use it to bring Claude Design themes or
+  standalone HTML screens into Segmently, push/capture Segmently design-system
+  material, log in, pull, or review a Claude Design project. Also trigger when
+  Segmently Launch Assistant names claude-design as the owning companion for a
+  Claude Design import/handoff. Do NOT use for Figma sources or local HTML
+  mockups plus UX review.
 allowed-tools: Read, Write, Edit, Bash, Glob, Grep, Skill, DesignSync
 ---
 
@@ -57,6 +53,15 @@ asks for implementation detail or a validation failure requires troubleshooting.
 
 Also fire on: "claude design" / "claude.ai/design", a bare `claude.ai/design/p/<id>` link, the
 `/design` `/design-sync` `/design-login` commands, or "handoff to Claude Code".
+
+### Launch Assistant Companion Trigger
+
+Also fire when Segmently Launch Assistant names `claude-design` as the owning
+companion for a Segmently design import or handoff. In that case, this skill
+owns Claude Design intake, login, pull/review, workflow selection, and handoff
+artifacts. Segmently apply/healthcheck still belongs to
+`segmently-cli-custom-screen-guide` unless the task is only design review or
+artifact preparation.
 
 > ⚠️ Skill auto-triggering is **probabilistic** and under-fires on these instruction-shaped hand-off
 > prompts (measured ~1–2/5). For **deterministic** triggering, install the optional `UserPromptSubmit`

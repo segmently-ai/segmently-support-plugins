@@ -133,6 +133,21 @@ a full funnel manifest when the task is scoped to existing V2 StepNode screens.
 | CDN image upload | `segmently assets upload-image ./hero.png --project <projectId>` | `assets:write`; requires CLI asset upload access |
 | CDN image upload as V2 asset reference | `segmently assets upload-image ./hero.png --project <projectId> --folder content-plan/references --asset` | `assets:write`; returns `{ original, small }` only |
 
+### Canonical Published URL
+
+`publish web`, `web-placements publish`, and `web-placements list` can return a
+path (`webUrl` / `publishedUrl`) rather than a fully qualified URL. Build the
+customer-facing URL from authoritative reads:
+
+```bash
+segmently domains status --project <projectId>
+segmently web-placements list --project <projectId>
+segmently publish verify --project <projectId> --url <publishedUrl> --public-base-url https://<canonical-domain>
+```
+
+Use the active custom domain from `domains status` when `hasDomain=true` and
+`status=active`; otherwise use `appUrl` from `segmently env current`. Never infer the canonical host by probing `api.segmently.ai` or `app.segmently.ai`.
+
 ## Product Page
 
 Product Page commands are available for approved workflows. Detailed Product

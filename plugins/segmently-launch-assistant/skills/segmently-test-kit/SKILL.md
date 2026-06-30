@@ -1,6 +1,6 @@
 ---
 name: segmently-test-kit
-description: Customer-safe runtime helper contract used by Segmently Launch Assistant browser SHOW and E2E DO plans.
+description: Customer-safe runtime helper contract used by Segmently Launch Assistant browser SHOW and E2E DO plans. Also trigger when Segmently Launch Assistant returns executeWith.companionSkill=segmently-test-kit, a SHOW focus/screenshot plan, or an E2E browser verification contract.
 ---
 
 # Segmently Test Kit

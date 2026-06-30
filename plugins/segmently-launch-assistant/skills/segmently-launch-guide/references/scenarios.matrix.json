@@ -152,7 +152,7 @@
       "milestone": "facebookPixel",
       "backend": "cli+e2e",
       "verify": "analytics settings get",
-      "article": null,
+      "article": "facebook-pixel-capi-setup",
       "sampleQueries": {
         "ru": [
           "добавь FB пиксель",
@@ -173,6 +173,33 @@
       ]
     },
     {
+      "id": "facebook-events-list",
+      "title": "See which events go to Facebook",
+      "audience": "customer",
+      "capabilityId": "capability.connect-analytics",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "facebook-events-catalog",
+      "sampleQueries": {
+        "ru": [
+          "какие события уходят в фейсбук",
+          "список событий facebook пикселя и conversions api",
+          "какие события покупки доходят до meta"
+        ],
+        "en": [
+          "what events does Segmently send to Facebook",
+          "list the Facebook pixel and conversions API events",
+          "which purchase events reach Meta"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
+      ]
+    },
+    {
       "id": "add-tiktok-pixel",
       "title": "Add a TikTok pixel",
       "audience": "customer",
@@ -180,7 +207,7 @@
       "milestone": "tiktokPixel",
       "backend": "cli+e2e",
       "verify": "analytics settings get",
-      "article": null,
+      "article": "tiktok-pixel-events-api-setup",
       "sampleQueries": {
         "ru": [
           "добавь TikTok пиксель",
@@ -196,6 +223,33 @@
         "backend",
         "no-leak",
         "verify"
+      ]
+    },
+    {
+      "id": "tiktok-events-list",
+      "title": "See which events go to TikTok",
+      "audience": "customer",
+      "capabilityId": "capability.connect-analytics",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "tiktok-events-catalog",
+      "sampleQueries": {
+        "ru": [
+          "какие события уходят в тикток",
+          "список событий tiktok пикселя и events api",
+          "какие события покупки доходят до tiktok"
+        ],
+        "en": [
+          "what events does Segmently send to TikTok",
+          "list the TikTok pixel and events API events",
+          "which purchase events reach TikTok"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
       ]
     },
     {
@@ -278,6 +332,60 @@
         "backend",
         "no-leak",
         "verify"
+      ]
+    },
+    {
+      "id": "paywall-payment-methods",
+      "title": "Understand paywall payment methods",
+      "audience": "customer",
+      "capabilityId": "capability.attach-products-to-paywall",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "paywall-payment-methods",
+      "sampleQueries": {
+        "ru": [
+          "какие способы оплаты поддерживает пейвол",
+          "включи apple pay и google pay",
+          "оплата внутри воронки или редирект на stripe"
+        ],
+        "en": [
+          "what payment methods does the paywall support",
+          "turn on Apple Pay and Google Pay",
+          "embedded checkout versus redirect to Stripe"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
+      ]
+    },
+    {
+      "id": "collect-email-before-paywall",
+      "title": "Collect email before the paywall",
+      "audience": "customer",
+      "capabilityId": "capability.configure-attribution-metadata",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "collect-email-before-paywall",
+      "sampleQueries": {
+        "ru": [
+          "собери имейл до пейвола",
+          "требуй имейл перед оплатой",
+          "укажи переменную имейла для оплаты stripe"
+        ],
+        "en": [
+          "collect the email before the paywall",
+          "require an email before payment",
+          "set the email variable for Stripe checkout"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
       ]
     },
     {
@@ -448,6 +556,33 @@
         "backend",
         "no-leak",
         "verify"
+      ]
+    },
+    {
+      "id": "launch-paid-funnel-overview",
+      "title": "The complete order of steps to launch a paid funnel",
+      "audience": "customer",
+      "capabilityId": "capability.first-contact-orientation",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "launch-paid-funnel-overview",
+      "sampleQueries": {
+        "ru": [
+          "полный порядок шагов для запуска платной воронки",
+          "чеклист запуска с оплатой и рекламой",
+          "как запустить воронку под рекламу"
+        ],
+        "en": [
+          "what is the full order of steps to launch a paid funnel",
+          "checklist to go live with payments and ads",
+          "how do I launch a funnel I can run ads against"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
       ]
     },
     {

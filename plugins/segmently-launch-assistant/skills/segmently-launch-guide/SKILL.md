@@ -1,6 +1,6 @@
 ---
 name: segmently-launch-guide
-description: Use this skill when a customer wants to launch a Segmently web funnel end to end — create a funnel, apply a theme, connect analytics or a Facebook/TikTok pixel, connect Stripe and create paywall products, run a sandbox test purchase, set up a custom domain, publish and go live — or asks "what's left to launch", "how do I change a setting", or "show me how to build my first funnel". It clarifies the goal, explains it in plain language, and offers to do it for them via the CLI or the editor, or hands off the steps it cannot automate.
+description: "Use this orchestration skill when a customer wants to launch or publish a Segmently web funnel, connect Stripe/Facebook/TikTok/analytics, create paywall products, ask what's left, change a setting, get article/screenshot guidance, or SHOW/DO a supported editor task. It selects evidence and offers TEACH, SHOW, CLI DO, E2E DO, or handoff. It is not the CLI/browser execution owner; for DO delegate to executeWith.skill/owningSkill companion such as segmently-cli-guide, segmently-cli-paywall-ab-rollout, segmently-cli-custom-screen-guide, segmently-cli-image-upload, segmently-cli-articles, playwright-bowser, segmently-test-kit, or claude-design."
 ---
 
 # Segmently Launch Guide
@@ -132,6 +132,12 @@ show the links.
      **verify**. Never claim a handoff step is done automatically.
 4. **Verify.** After any change, run the read that proves it (see the verify column
    in `references/backends.md`) and tell the customer the new state.
+   After publish, also return the canonical public URL using the two-read
+   workflow from `references/backends.md`: active custom domain from
+   `segmently domains status` plus the placement `publishedUrl` / `webUrl` path.
+   Do not guess the host. Use `segmently publish verify --public-base-url
+   https://<canonical-domain>` and offer to open the composed URL with
+   `playwright-bowser` in a visible headed browser for the customer.
 
 Do not start an explain-only, teach-only, SHOW dry-run, CLI DO dry-run, E2E DO
 dry-run, or any `completionClaim` other than `verified` /

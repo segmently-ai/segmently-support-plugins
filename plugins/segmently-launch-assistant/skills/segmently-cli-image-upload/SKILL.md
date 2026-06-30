@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-image-upload
-description: Upload images shared during Codex work to the Segmently CDN and return reusable URLs. Use when the user asks to save, upload, host, or get a URL for a screenshot/image from the chat, macOS clipboard, or a local image file.
+description: Upload images shared during Codex work to the Segmently CDN and return reusable URLs. Use when the user asks to save, upload, host, or get a URL for a screenshot/image from the chat, macOS clipboard, or a local image file. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-image-upload or asks for an image/video/media URL preparation step before a DO flow.
 ---
 
 # Segmently CLI Image Upload

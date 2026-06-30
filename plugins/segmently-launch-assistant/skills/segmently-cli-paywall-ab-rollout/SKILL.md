@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-paywall-ab-rollout
-description: Segmently CLI scenario wrapper for creating and verifying sandbox Stripe paywall A/B onboarding rollouts. Use when a task needs to create or demonstrate two paywall onboarding variants, publish them, publish an A/B test, probe runtime routing, and return public URLs through the Segmently CLI.
+description: Segmently CLI scenario wrapper for creating and verifying sandbox Stripe paywall A/B onboarding rollouts. Use when a task needs to create or demonstrate two paywall onboarding variants, publish them, publish an A/B test, probe runtime routing, and return public URLs through the Segmently CLI. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-paywall-ab-rollout, especially for sandbox paywall products, paid onboarding offers, and A/B rollout DO flows.
 ---
 
 # Segmently CLI Paywall A/B Rollout

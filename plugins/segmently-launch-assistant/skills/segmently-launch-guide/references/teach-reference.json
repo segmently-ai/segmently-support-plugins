@@ -8,6 +8,9 @@
     "Use articleAlias to name the matching help article. Fetch the full article through segmently-cli-articles only when the customer wants more detail."
   ],
   "articleAliases": [
+    "collect-email-before-paywall",
+    "facebook-events-catalog",
+    "facebook-pixel-capi-setup",
     "help-block-action-bar",
     "help-block-background",
     "help-block-basic-config",
@@ -49,7 +52,11 @@
     "help-screen-progresssteps",
     "help-screen-textinput",
     "help-screen-webembed",
-    "help-screen-wheelpicker"
+    "help-screen-wheelpicker",
+    "launch-paid-funnel-overview",
+    "paywall-payment-methods",
+    "tiktok-events-catalog",
+    "tiktok-pixel-events-api-setup"
   ],
   "fieldQuestionProbes": [
     {

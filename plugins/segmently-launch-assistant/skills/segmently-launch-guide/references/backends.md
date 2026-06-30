@@ -39,6 +39,28 @@ report it as partial and tell the customer what actually proves the leg (complet
 sandbox checkout end to end; confirm the mapping in the placement's configuration).
 Never claim "done" from a read that only confirms an adjacent state.
 
+## Canonical public URL after publish
+
+Publishing is a two-read URL workflow. `publish web` or `web-placements list`
+may return only a path (`webUrl` / `publishedUrl`). The customer-facing URL is:
+
+```text
+https://<canonical-domain><publishedUrl>
+```
+
+Determine `<canonical-domain>` from `segmently domains status --project
+<projectId>` first. If the project has an active custom domain, use it. If not,
+use `appUrl` from `segmently env current`. Verify with:
+
+```bash
+segmently publish verify --project <projectId> --url <publishedUrl> --public-base-url https://<canonical-domain>
+```
+
+Do not guess from `api.segmently.ai`, `app.segmently.ai`, or curl probing. For
+SHOW/acceptance, delegate the composed URL to `playwright-bowser` and open it in
+a visible headed browser before taking a screenshot or running a read-only smoke
+path.
+
 ## Stripe mode
 Default to sandbox/test mode for paywall products and test purchases unless the
 customer explicitly asks for a production billing setup.

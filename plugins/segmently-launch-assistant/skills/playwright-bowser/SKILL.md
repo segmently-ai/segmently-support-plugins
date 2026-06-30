@@ -1,6 +1,6 @@
 ---
 name: "playwright-bowser"
-description: "Customer-safe Segmently browser companion for SHOW walkthroughs, screenshots, and generated E2E action contracts."
+description: "Customer-safe Segmently browser companion for SHOW walkthroughs, screenshots, and generated E2E action contracts. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=playwright-bowser, mode=show, mode=e2e, or a browserPlan/driverScript/openCommand contract."
 ---
 
 # Playwright Bowser
@@ -46,6 +46,21 @@ If browser tooling is missing, follow `playwright-bowser-core` setup.
 6. Return the current URL, screenshot path, and concise next step.
 
 Use the packaged `show-runner.mjs` contract when Launch Assistant provides one.
+
+## Published URL Visual Check
+
+When `segmently-cli-guide` or `segmently-launch-guide` returns a canonical
+published funnel URL, open that exact URL. Do not substitute `api.segmently.ai`
+or guess a default host.
+
+```bash
+playwright-cli -s=published-funnel open https://<canonical-domain><publishedUrl> --headed --persistent
+```
+
+Use the visible browser as the customer walkthrough surface, then capture a
+screenshot or run a read-only smoke path. For paid funnels, do not enter test
+card details or complete checkout unless the customer explicitly approves a test
+purchase.
 
 ## Browser-Backed DO Flow
 

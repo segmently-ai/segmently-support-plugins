@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-guide
-description: Use this skill when a user wants safe Segmently CLI help for project or theme setup, cloning or auditing funnels, importing/exporting funnel localizations, migrating V2 onboarding screens including ListMultiPick to ListSinglePick, screen background changes, rollback cleanup, publishing or verifying funnels and web placements, setting up sandbox Stripe paywalls or A/B tests, checking launch, analytics, or domain readiness, or managing CLI auth, service tokens, and asset uploads.
+description: Use this skill when a user wants safe Segmently CLI help for project or theme setup, cloning or auditing funnels, importing/exporting funnel localizations, migrating V2 onboarding screens including ListMultiPick to ListSinglePick, screen background changes, rollback cleanup, publishing or verifying funnels and web placements, setting up sandbox Stripe paywalls or A/B tests, checking launch, analytics, or domain readiness, or managing CLI auth, service tokens, and asset uploads. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-guide, execution.kind=delegate-cli, or commandFamily such as funnels screens patch/export/publish/analytics/domains; this skill owns command shape, auth handling, sequencing, and readback verification.
 ---
 
 # Segmently CLI Guide
@@ -31,6 +31,8 @@ account guidance.
 5. Show the command chain first, then the minimal JSON manifest shapes.
 6. Explain what each command returns and which follow-up command verifies the
    result.
+7. After publishing, return the canonical public URL by combining the active
+   project domain with the published placement path. Do not guess the host.
 
 ## Installed CLI And Production Auth
 
@@ -103,6 +105,65 @@ Notes / risks:
 Keep command examples copyable. Use placeholder IDs like `<projectId>` and
 `<funnelId>` unless the user supplied real IDs. Never invent secrets or print
 token values.
+
+## Published Funnel URL Workflow
+
+After `publish web`, `web-placements publish`, or `web-placements list`, do not
+guess the final public URL from curl probes or from `app.segmently.ai`. The CLI
+may return only a path such as `webUrl` or `publishedUrl`:
+`/apple-pay-test-onboarding`.
+
+Build the canonical URL deterministically:
+
+1. Read the domain:
+
+   ```bash
+   segmently domains status --project <projectId>
+   ```
+
+   If it returns `hasDomain: true`, `status: "active"`, and a `domain`, that
+   custom domain is the canonical host. Otherwise read the default public app
+   host from:
+
+   ```bash
+   segmently env current
+   ```
+
+   and use its `appUrl`.
+
+2. Read the path from `publishedUrl` / `webUrl`:
+
+   ```bash
+   segmently web-placements list --project <projectId>
+   ```
+
+   or from the publish command output.
+
+3. Compose:
+
+   ```text
+   https://<canonical-domain><publishedUrl>
+   ```
+
+4. Verify with the same canonical base:
+
+   ```bash
+   segmently publish verify --project <projectId> --url <publishedUrl> --public-base-url https://<canonical-domain>
+   ```
+
+   Do not rely on `publish verify --url <path>` without `--public-base-url`; a
+   path-only verify can default to an API host and produce a misleading failure.
+
+5. For visual proof or customer walkthrough, hand the canonical URL to
+   `playwright-bowser` and open it in a visible browser:
+
+   ```bash
+   playwright-cli -s=published-funnel open https://<canonical-domain><publishedUrl> --headed --persistent
+   ```
+
+   Then capture a screenshot or run a non-mutating smoke path. For paid funnels,
+   only run a checkout/test card flow after the customer explicitly approves the
+   test purchase.
 
 ## Safety Rules
 

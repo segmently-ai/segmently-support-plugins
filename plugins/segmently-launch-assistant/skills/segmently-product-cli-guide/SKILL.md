@@ -1,6 +1,6 @@
 ---
 name: segmently-product-cli-guide
-description: "Customer-safe high-level guide for Segmently Product Page CLI availability: product mode, tasks, variables, audiences, generated insights, onboarding strategies, blocks, screens, strategy screen asset slots, B2B/B2C concepts, required scopes, project access, and safe verification. Does not expose detailed mutation payloads."
+description: "Customer-safe high-level guide for Segmently Product Page CLI availability: product mode, tasks, variables, audiences, generated insights, onboarding strategies, blocks, screens, strategy screen asset slots, B2B/B2C concepts, required scopes, project access, and safe verification. Does not expose detailed mutation payloads. Also trigger when Segmently Launch Assistant names executeWith.skill/owningSkill=segmently-product-cli-guide or routes a product-page/insights task to this companion."
 ---
 
 # Segmently Product CLI Guide

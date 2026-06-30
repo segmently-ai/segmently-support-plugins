@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-articles
-description: "Use this Segmently skill for detailed CLI work with Content Plan HTML articles: create/get/apply/clone/add-image/publish Flexible Layout article drafts, edit full FlowDocument manifests, configure article sections and responsive presentation settings, and return CDN article URLs."
+description: "Use this Segmently skill for detailed CLI work with Content Plan HTML articles: create/get/apply/clone/add-image/publish Flexible Layout article drafts, edit full FlowDocument manifests, configure article sections and responsive presentation settings, and return CDN article URLs. Also trigger when Segmently Launch Assistant returns articleFetch.owningSkill, executeWith.skill, or owningSkill=segmently-cli-articles for full article lookup, article URL/body fetch, or support article maintenance."
 ---
 
 # Segmently CLI Articles

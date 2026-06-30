@@ -1,6 +1,6 @@
 ---
 name: segmently-cli-content-plan-guide
-description: "Use this customer-safe skill for Segmently CLI Content Plan operations: full project bootstrap, author/platform setup, strategy/calendar/post preparation, publish-ready demo posts, creator profile export/apply, pillars, post templates, post generation, post asset/brief repair, design profile transfer, visual reference variants, text budgets, dry-run safety, scopes, subscriptions, and UI verification."
+description: "Use this customer-safe skill for Segmently CLI Content Plan operations: full project bootstrap, author/platform setup, strategy/calendar/post preparation, publish-ready demo posts, creator profile export/apply, pillars, post templates, post generation, post asset/brief repair, design profile transfer, visual reference variants, text budgets, dry-run safety, scopes, subscriptions, and UI verification. Also trigger when Segmently Launch Assistant or segmently-cli-articles names segmently-cli-content-plan-guide for article/content-plan command scope, manifest, or workflow lookup."
 ---
 
 # Segmently CLI Content Plan Guide
