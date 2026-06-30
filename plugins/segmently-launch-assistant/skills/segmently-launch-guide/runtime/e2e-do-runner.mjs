@@ -20,6 +20,7 @@ import {
   wrapDriverScriptWithBrowserAuth,
 } from './browser-auth-bridge.mjs';
 import { buildToolPreflight } from './tool-preflight.mjs';
+import { resolveProjectContext } from './session-context.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const editorRunner = join(root, 'runtime/editor-do-runner.mjs');
@@ -37,13 +38,19 @@ async function main() {
     return;
   }
 
-  const plan = runEditorRunner(filterLocalArgs(runnerArgs));
+  const projectContext = resolveProjectContext(args);
+  const effectiveArgs = argsForProjectContext(args, projectContext);
+  const effectiveRunnerArgs = argsForProjectContextArgv(filterLocalArgs(runnerArgs), effectiveArgs, projectContext);
+
+  const plan = runEditorRunner(effectiveRunnerArgs);
   if (plan.ok !== true) {
     writeJson({
       ok: false,
       actionId: plan.actionId ?? args.action,
       reason: plan.reason ?? plan.error ?? 'editor-do-runner did not return an executable plan',
       missingInputs: plan.missingInputs ?? [],
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       runnerPlan: plan,
     });
     process.exitCode = 2;
@@ -57,20 +64,22 @@ async function main() {
       mode: plan.mode,
       reason: 'This action is not executable through the E2E browser runner.',
       requiredRunner: plan.mode === 'cli' ? 'segmently-cli-guide' : plan.mode,
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       runnerPlan: plan,
     });
     process.exitCode = 2;
     return;
   }
 
-  const prepared = prepareE2eExecution(plan, args);
+  const prepared = prepareE2eExecution(plan, effectiveArgs);
   prepared.authPreflight = buildAuthPreflight(args, {
-    baseUrl: args.baseUrl,
+    baseUrl: effectiveArgs.baseUrl,
     authEnv: prepared.segmentlyEnv ?? undefined,
     retryArgv: ['node', 'runtime/e2e-do-runner.mjs', ...ensureExecuteArgv(rawArgs)],
   });
   prepared.toolPreflight = buildToolPreflight(args, {
-    baseUrl: args.baseUrl,
+    baseUrl: effectiveArgs.baseUrl,
     segmentlyEnv: prepared.segmentlyEnv,
     needsSegmently: true,
     needsBrowser: true,
@@ -85,6 +94,8 @@ async function main() {
       owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
       companionSkill: plan.executeWith?.companionSkill ?? plan.execution.companionSkill,
       commandFamily: plan.execution.commandFamily,
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       requiresExecute: true,
       execution: plan.execution,
       browserPlan: plan.browserPlan ?? [],
@@ -118,14 +129,16 @@ async function main() {
       mode: plan.mode,
       reason: prepared.blockedExecuteReason,
       requiredInputs: prepared.requiredExecutionInputs,
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(prepared.requiredExecutionInputs),
       completionClaim: 'not-executed',
     });
     process.exitCode = 2;
     return;
   }
 
-  const auth = await prepareBrowserAuth(args, {
-    baseUrl: args.baseUrl,
+  const auth = await prepareBrowserAuth(effectiveArgs, {
+    baseUrl: effectiveArgs.baseUrl,
     retryArgv: ['node', 'runtime/e2e-do-runner.mjs', ...ensureExecuteArgv(rawArgs)],
   });
   if (auth.ok !== true) {
@@ -135,6 +148,8 @@ async function main() {
       actionId: plan.actionId,
       mode: plan.mode,
       reason: auth.reason ?? 'Browser authentication bridge failed.',
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy([]),
       authBridge: authSummary(auth),
       authPreflight: auth.authPreflight ?? prepared.authPreflight,
       toolPreflight: prepared.toolPreflight,
@@ -160,6 +175,8 @@ async function main() {
     owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
     companionSkill: plan.executeWith?.companionSkill ?? plan.execution.companionSkill,
     commandFamily: plan.execution.commandFamily,
+    sessionContext: buildSessionContextContract(projectContext),
+    interactionPolicy: buildInteractionPolicy([]),
     authBridge: authSummary(auth),
     toolPreflight: prepared.toolPreflight,
     segmentlyEnv: prepared.segmentlyEnv,
@@ -225,6 +242,54 @@ async function main() {
 
   writeJson(output);
   if (!output.ok) process.exitCode = 1;
+}
+
+function argsForProjectContext(args, projectContext) {
+  if (!projectContext.projectId || hasArg(args, 'projectId')) return args;
+  return {
+    ...args,
+    projectId: projectContext.projectId,
+    projectName: hasArg(args, 'projectName') ? args.projectName : projectContext.projectName,
+  };
+}
+
+function argsForProjectContextArgv(argv, args, projectContext) {
+  if (!projectContext.projectId || argv.includes('--projectId')) return argv;
+  return [...argv, '--projectId', projectContext.projectId];
+}
+
+function buildSessionContextContract(projectContext) {
+  return {
+    schemaVersion: 1,
+    contextFile: projectContext.contextFile,
+    currentProject: projectContext.currentProject
+      ? {
+          id: projectContext.currentProject.id,
+          name: projectContext.currentProject.name ?? projectContext.currentProject.id,
+          source: projectContext.currentProject.source ?? projectContext.projectIdSource,
+        }
+      : null,
+    projectIdSource: projectContext.projectIdSource,
+    usingCurrentProject: projectContext.usingStoredProject === true,
+    missingCurrentProject: projectContext.missingProject === true,
+    askToSetCurrentProject: projectContext.missingProject === true && !hasArg(outputArgs, 'projectId'),
+    setCurrentProjectCommand: 'node runtime/session-context.mjs set-current-project --projectId <projectId> --projectName "<Project name>"',
+    readError: projectContext.readError ?? null,
+  };
+}
+
+function buildInteractionPolicy(missingInputs = []) {
+  return {
+    schemaVersion: 1,
+    multiStepActionTool: 'todo-list',
+    multiStepActionToolAliases: ['TodoWrite', 'update_plan', 'task-list'],
+    askUserQuestionTool: 'ask-user-question',
+    askUserQuestionToolAliases: ['AskUserQuestion', 'request_user_input'],
+    shouldUseTodoList: true,
+    shouldAskUserQuestion: missingInputs.length > 0,
+    missingInputs,
+    fallbackWhenToolUnavailable: 'ask one concise targeted question in prose and continue only after the answer is available',
+  };
 }
 
 function runEditorRunner(args) {
@@ -340,6 +405,7 @@ function redactSecrets(text) {
 function filterLocalArgs(argv) {
   const local = new Set([
     'execute',
+    'contextFile',
     'env',
     'help',
     'keepOpen',

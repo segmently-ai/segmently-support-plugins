@@ -184,6 +184,30 @@ documented in `references/session-context.md`.
 - If the customer says this request is for a different project, use the explicit
   project for the request and offer to update the saved current project.
 
+## Host interaction tools
+
+Use host-provided interaction tools when they exist; do not replace them with
+loose prose for workflows that need state.
+
+- For any multi-step DO flow, use the host todo/task-list tool before executing
+  steps. In Codex this may be `update_plan`; in Claude Code this may be
+  `TodoWrite`; other hosts may expose a `todo-list` or `task-list` tool. Track
+  at least: gather missing inputs, tool/auth preflight, dry-run/plan, execute,
+  verify, and report.
+- When required customer input is missing and cannot be inferred from the saved
+  project context or the current message, use the host ask-user-question tool
+  when available. In Codex this may be `request_user_input`; in Claude Code this
+  may be `AskUserQuestion`; other hosts may expose `ask-user-question`.
+- Ask one concise targeted question for the first blocking input. Prefer an
+  editor URL over raw ids when either is acceptable. Do not ask for `projectId`
+  again when `sessionContext.usingCurrentProject=true`; tell the customer which
+  saved project is being used and ask only for remaining inputs such as funnel,
+  version, screen, value, file, video source, or approval.
+- If the host does not expose an ask-user-question tool, ask the same single
+  targeted question in prose and wait for the answer. If it does not expose a
+  todo/task-list tool, keep the checklist internally and still report progress
+  step by step.
+
 ## Authentication (one authorization, no passwords)
 
 - The customer authorizes once with the CLI: `segmently auth login`. This single

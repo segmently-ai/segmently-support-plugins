@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T14:54:47.544Z",
+  "generatedAt": "2026-06-30T15:25:06.475Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -23,14 +23,14 @@
     ]
   },
   "counts": {
-    "total": 1889,
+    "total": 1890,
     "byClassification": {
-      "external-https": 73,
+      "external-https": 74,
       "prod-api": 1812,
       "localhost": 4
     },
     "byStableStatus": {
-      "ok": 1889
+      "ok": 1890
     }
   },
   "blockers": [],
@@ -16886,7 +16886,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 465,
+      "line": 470,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16895,7 +16895,16 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 485,
+      "line": 509,
+      "classification": "external-https",
+      "stableStatus": "ok",
+      "replacement": null,
+      "runtimeAllowed": false
+    },
+    {
+      "value": "https://app.segmently.ai",
+      "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
+      "line": 529,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16904,7 +16913,7 @@
     {
       "value": "https://example.com/privacy",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 1768,
+      "line": 1812,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16913,7 +16922,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 2369,
+      "line": 2413,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16922,7 +16931,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 2396,
+      "line": 2440,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16931,7 +16940,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 2423,
+      "line": 2467,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16940,7 +16949,7 @@
     {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-customer-surface-acceptance.mjs",
-      "line": 2427,
+      "line": 2471,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16949,7 +16958,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 934,
+      "line": 987,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16958,7 +16967,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 978,
+      "line": 1031,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16967,7 +16976,7 @@
     {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 983,
+      "line": 1036,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16976,7 +16985,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 1050,
+      "line": 1103,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16985,7 +16994,7 @@
     {
       "value": "https://env.segmently.example",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 1101,
+      "line": 1154,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -16994,7 +17003,7 @@
     {
       "value": "https://env.segmently.example/login",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 1106,
+      "line": 1159,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -17003,7 +17012,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 2638,
+      "line": 2691,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -17012,7 +17021,7 @@
     {
       "value": "https://example.com",
       "file": "plugins/segmently-launch-assistant/skills/segmently-launch-guide/scripts/run-evals.mjs",
-      "line": 3009,
+      "line": 3062,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

@@ -13,6 +13,7 @@ import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildToolPreflight } from './tool-preflight.mjs';
+import { resolveProjectContext } from './session-context.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const editorRunner = join(root, 'runtime/editor-do-runner.mjs');
@@ -27,13 +28,19 @@ function main() {
     return;
   }
 
-  const plan = runEditorRunner(filterLocalArgs(rawArgs));
+  const projectContext = resolveProjectContext(args);
+  const effectiveArgs = argsForProjectContext(args, projectContext);
+  const runnerArgs = argsForProjectContextArgv(filterLocalArgs(rawArgs), effectiveArgs, projectContext);
+
+  const plan = runEditorRunner(runnerArgs);
   if (plan.ok !== true) {
     writeJson({
       ok: false,
       actionId: plan.actionId ?? args.action,
       reason: plan.reason ?? plan.error ?? 'editor-do-runner did not return an executable plan',
       missingInputs: plan.missingInputs ?? [],
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       runnerPlan: plan,
     });
     process.exitCode = 2;
@@ -47,13 +54,15 @@ function main() {
       mode: plan.mode,
       reason: 'This action is not executable through the Segmently CLI runner.',
       requiredRunner: plan.mode === 'e2e' ? 'playwright-bowser' : plan.mode,
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       runnerPlan: plan,
     });
     process.exitCode = 2;
     return;
   }
 
-  const prepared = prepareCliExecution(plan, args);
+  const prepared = prepareCliExecution(plan, effectiveArgs);
   prepared.toolPreflight = buildToolPreflight(args, {
     segmentlyEnv: prepared.segmentlyEnv,
     needsSegmently: true,
@@ -69,6 +78,8 @@ function main() {
       owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
       commandFamily: plan.execution.commandFamily,
       routingPolicy: cliRoutingPolicy(plan),
+      sessionContext: buildSessionContextContract(projectContext),
+      interactionPolicy: buildInteractionPolicy(plan.missingInputs ?? []),
       segmentlyEnv: prepared.segmentlyEnv,
       requiresExecute: true,
       execution: plan.execution,
@@ -99,6 +110,8 @@ function main() {
     owningSkill: plan.executeWith?.skill ?? plan.execution.owningSkill,
     commandFamily: plan.execution.commandFamily,
     routingPolicy: cliRoutingPolicy(plan),
+    sessionContext: buildSessionContextContract(projectContext),
+    interactionPolicy: buildInteractionPolicy([]),
     segmentlyEnv: prepared.segmentlyEnv,
     toolPreflight: prepared.toolPreflight,
     writtenFiles,
@@ -161,6 +174,54 @@ function cliRoutingPolicy(plan) {
       'tool/auth preflight passed',
       'verification readback is available',
     ],
+  };
+}
+
+function argsForProjectContext(args, projectContext) {
+  if (!projectContext.projectId || hasArg(args, 'projectId')) return args;
+  return {
+    ...args,
+    projectId: projectContext.projectId,
+    projectName: hasArg(args, 'projectName') ? args.projectName : projectContext.projectName,
+  };
+}
+
+function argsForProjectContextArgv(argv, args, projectContext) {
+  if (!projectContext.projectId || argv.includes('--projectId')) return argv;
+  return [...argv, '--projectId', projectContext.projectId];
+}
+
+function buildSessionContextContract(projectContext) {
+  return {
+    schemaVersion: 1,
+    contextFile: projectContext.contextFile,
+    currentProject: projectContext.currentProject
+      ? {
+          id: projectContext.currentProject.id,
+          name: projectContext.currentProject.name ?? projectContext.currentProject.id,
+          source: projectContext.currentProject.source ?? projectContext.projectIdSource,
+        }
+      : null,
+    projectIdSource: projectContext.projectIdSource,
+    usingCurrentProject: projectContext.usingStoredProject === true,
+    missingCurrentProject: projectContext.missingProject === true,
+    askToSetCurrentProject: projectContext.missingProject === true && !hasArg(outputArgs, 'projectId'),
+    setCurrentProjectCommand: 'node runtime/session-context.mjs set-current-project --projectId <projectId> --projectName "<Project name>"',
+    readError: projectContext.readError ?? null,
+  };
+}
+
+function buildInteractionPolicy(missingInputs = []) {
+  return {
+    schemaVersion: 1,
+    multiStepActionTool: 'todo-list',
+    multiStepActionToolAliases: ['TodoWrite', 'update_plan', 'task-list'],
+    askUserQuestionTool: 'ask-user-question',
+    askUserQuestionToolAliases: ['AskUserQuestion', 'request_user_input'],
+    shouldUseTodoList: true,
+    shouldAskUserQuestion: missingInputs.length > 0,
+    missingInputs,
+    fallbackWhenToolUnavailable: 'ask one concise targeted question in prose and continue only after the answer is available',
   };
 }
 
@@ -295,6 +356,7 @@ function redactSecrets(text) {
 
 function filterLocalArgs(argv) {
   const local = new Set([
+    'contextFile',
     'execute',
     'env',
     'help',
@@ -343,6 +405,10 @@ function parseArgs(argv) {
     }
   }
   return out;
+}
+
+function hasArg(args, key) {
+  return args[key] !== undefined && args[key] !== true && String(args[key]).trim() !== '';
 }
 
 function numberArg(value, fallback) {

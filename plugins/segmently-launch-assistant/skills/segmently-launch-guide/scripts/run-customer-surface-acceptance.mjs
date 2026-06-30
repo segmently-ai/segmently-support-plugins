@@ -433,6 +433,50 @@ check('session context supplies current project without hiding remaining target 
   assert(e2eDoResponse.completionClaim === 'needs-inputs-before-execution', 'context-backed E2E DO must not claim execution before target inputs');
   assertSourceSafeCustomerAnswer(e2eDoResponse);
 
+  const directCliDo = runCliRunner([
+    '--contextFile',
+    contextFile,
+    '--action',
+    'editor.screen.backgroundColor',
+    '--funnelId',
+    'funnel_ctx',
+    '--versionId',
+    'version_ctx',
+    '--screenId',
+    'screen_ctx',
+    '--value',
+    '#000000',
+  ]);
+  assert(directCliDo.ok === true && directCliDo.dryRun === true, 'direct CLI DO runner with saved current project failed');
+  assert(directCliDo.sessionContext?.usingCurrentProject === true, 'direct CLI DO runner did not use saved current project');
+  assert(directCliDo.sessionContext?.currentProject?.id === 'project_ctx', 'direct CLI DO runner current project id drifted');
+  assert(directCliDo.wouldRun?.includes('project_ctx'), 'direct CLI DO runner did not pass saved projectId to wouldRun');
+  assert(directCliDo.wouldVerify?.includes('project_ctx'), 'direct CLI DO runner did not pass saved projectId to wouldVerify');
+  assert(directCliDo.interactionPolicy?.multiStepActionTool === 'todo-list', 'direct CLI DO runner missing todo-list interaction policy');
+  assert(directCliDo.interactionPolicy?.askUserQuestionTool === 'ask-user-question', 'direct CLI DO runner missing ask-user-question interaction policy');
+
+  const directE2eDo = runE2eRunner([
+    '--contextFile',
+    contextFile,
+    '--action',
+    'editor.list.options.itemTitle.fontSize',
+    '--funnelId',
+    'funnel_ctx',
+    '--screenId',
+    'screen_ctx',
+    '--value',
+    '18',
+    '--baseUrl',
+    'https://app.segmently.ai',
+  ]);
+  assert(directE2eDo.ok === true && directE2eDo.dryRun === true, 'direct E2E DO runner with saved current project failed');
+  assert(directE2eDo.sessionContext?.usingCurrentProject === true, 'direct E2E DO runner did not use saved current project');
+  assert(directE2eDo.sessionContext?.currentProject?.id === 'project_ctx', 'direct E2E DO runner current project id drifted');
+  assert(String(directE2eDo.driverScript ?? '').includes('"projectId":"project_ctx"'), 'direct E2E DO runner did not pass saved projectId into driverScript');
+  assert(directE2eDo.wouldVerify?.includes('project_ctx'), 'direct E2E DO runner did not pass saved projectId to wouldVerify');
+  assert(directE2eDo.interactionPolicy?.multiStepActionTool === 'todo-list', 'direct E2E DO runner missing todo-list interaction policy');
+  assert(directE2eDo.interactionPolicy?.askUserQuestionTool === 'ask-user-question', 'direct E2E DO runner missing ask-user-question interaction policy');
+
   const articleFetchResponse = runResponse([
     '--prompt',
     'дай полную статью как настроить шрифты в кнопке',

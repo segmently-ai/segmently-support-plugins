@@ -92,6 +92,7 @@ function main() {
     articleFetch: null,
     missingArticleClaimed: false,
     routingPolicy: buildRoutingPolicy(promptResolution, args),
+    interactionPolicy: buildInteractionPolicy(),
     completionClaim: question.expectedDo
       ? 'not-completed-until-verification'
       : isShow
@@ -194,6 +195,19 @@ function buildRoutingPolicy(promptResolution, args) {
     lowLevelCliRunnerRole:
       'dry-run-or-approved-smoke-executor-after-the-agent-has-selected-an-action-and-the-owning-skill-contract',
     resolverKind: promptResolution?.resolver?.kind ?? null,
+  };
+}
+
+function buildInteractionPolicy() {
+  return {
+    schemaVersion: 1,
+    multiStepActionTool: 'todo-list',
+    multiStepActionToolAliases: ['TodoWrite', 'update_plan', 'task-list'],
+    askUserQuestionTool: 'ask-user-question',
+    askUserQuestionToolAliases: ['AskUserQuestion', 'request_user_input'],
+    useTodoListWhen: 'the customer asks for a DO flow that needs multiple tool steps, checks, auth, browser work, or verification',
+    useAskUserQuestionWhen: 'required target/value/asset/approval input is missing and cannot be inferred from session context or the customer message',
+    fallbackWhenToolUnavailable: 'ask one concise targeted question in prose and continue only after the answer is available',
   };
 }
 

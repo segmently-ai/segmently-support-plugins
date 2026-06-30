@@ -226,6 +226,59 @@ try {
 }
 report('cli-routing:model-selected-owning-skill-first', cliModelSelectedRoutingFailures);
 
+const interactionToolContractFailures = [];
+for (const required of [
+  '## Host interaction tools',
+  'multi-step DO flow',
+  'todo/task-list tool',
+  'update_plan',
+  'TodoWrite',
+  'ask-user-question tool',
+  'request_user_input',
+  'AskUserQuestion',
+  'ask for `projectId`',
+  'sessionContext.usingCurrentProject=true',
+]) {
+  if (!skillMarkdown.includes(required)) {
+    interactionToolContractFailures.push(`SKILL.md missing interaction tool contract text: ${required}`);
+  }
+}
+try {
+  const response = runCustomerPrompt([
+    '--prompt',
+    'сделай главную кнопку желтой',
+  ]);
+  if (response.interactionPolicy?.multiStepActionTool !== 'todo-list') {
+    interactionToolContractFailures.push('customer-response-runner missing todo-list interaction policy');
+  }
+  if (response.interactionPolicy?.askUserQuestionTool !== 'ask-user-question') {
+    interactionToolContractFailures.push('customer-response-runner missing ask-user-question interaction policy');
+  }
+  const cliDryRun = runCliRunner([
+    '--action',
+    'editor.screen.backgroundColor',
+    '--projectId',
+    'project_1',
+    '--funnelId',
+    'funnel_1',
+    '--versionId',
+    'version_1',
+    '--screenId',
+    'screen_1',
+    '--value',
+    '#000000',
+  ]);
+  if (cliDryRun.interactionPolicy?.multiStepActionTool !== 'todo-list') {
+    interactionToolContractFailures.push('cli-do-runner missing todo-list interaction policy');
+  }
+  if (cliDryRun.interactionPolicy?.askUserQuestionTool !== 'ask-user-question') {
+    interactionToolContractFailures.push('cli-do-runner missing ask-user-question interaction policy');
+  }
+} catch (error) {
+  interactionToolContractFailures.push(`interaction tool policy probe failed: ${error instanceof Error ? error.message : String(error)}`);
+}
+report('interaction-tools:todo-list-and-ask-user-question', interactionToolContractFailures);
+
 const articleFetchCompletionWordingFailures = [];
 for (const required of [
   'Article fetch is',
