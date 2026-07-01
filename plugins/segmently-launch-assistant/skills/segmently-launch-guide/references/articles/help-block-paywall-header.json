@@ -1,0 +1,3951 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-block-paywall-header",
+  "articleId": null,
+  "title": "Paywall Header — all settings",
+  "sections": [
+    {
+      "id": "g-close-head",
+      "title": "Close (X) button",
+      "summary": "Close (X) button",
+      "kind": "section",
+      "articleSectionId": "g-close-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#g-close-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-restore-head",
+      "title": "Restore-purchases link",
+      "summary": "Restore-purchases link",
+      "kind": "section",
+      "articleSectionId": "g-restore-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#g-restore-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Paywall Header — every setting",
+      "summary": "The paywall's top bar — an optional close (X) button (its icon color, which side it sits on, and whether it appears at once or after a short delay) and an optional restore-purchases link with its own wording and typography. This guide documents every setting of the Paywall Header block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-paywall-header/section",
+      "title": "Paywall Header section",
+      "summary": "The Paywall Header is the top strip of a paywall screen. Use it for the close (X) button and an optional 'Restore Purchases' label, and to style their color, position, and timing. Keep it minimal — a clear way to close plus restore is enough for an ad-ready paywall, since anything extra up here pulls attention away from the offer below. It only appears on paywall screens.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-paywall-header/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-paywall-header"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screen-editor-section-paywall-header/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-paywall-header/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-paywall-header"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-paywall-header-close-alignment/field",
+      "title": "Place the close button left or right",
+      "summary": "Puts the X on the start side (left in most languages, right in right-to-left ones) or the end side of the header; the sides flip automatically by language. Default to the start/top-left to match common mobile paywall convention. Move it to the end only when your hero layout needs that corner kept clear.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-alignment/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-alignment"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-button/field",
+      "title": "Show a close (X) button",
+      "summary": "Adds the X in the header that lets people dismiss the paywall and keep browsing. For paid-ad traffic keep it on (optionally with a short reveal delay) — an inescapable paywall hurts trust and can break app-store and ad-network rules. Turn it off only when you deliberately want a hard gate users can't skip.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-button/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-button"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-delay/field",
+      "title": "How long to delay the X",
+      "summary": "How long the close button stays hidden (1-30 seconds) when you've set it to appear after a timer; it has no effect otherwise. A short 2-3 seconds nudges users to read the offer first without feeling trapped. Longer delays raise frustration and drop-off, so reserve 10s or more only for a deliberate hard gate.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-delay/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-delay"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-icon-color/field",
+      "title": "Color the close (X) icon",
+      "summary": "Sets the color of the X dismiss icon (default white; applies only when the close button is shown). Choose a color that contrasts with whatever sits behind the header — dark over a light hero image, white over a dark one — so users can always find and tap it. Low contrast here can leave people feeling trapped on the paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-icon-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-icon-color"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-visibility/field",
+      "title": "When the close button appears",
+      "summary": "Controls when the X becomes tappable: right away, or after a short timer that lets users take in the offer first (set the length in the delay field below). For ad traffic, showing it immediately or after a 2-3 second delay converts well without feeling like a trap. Avoid long delays that frustrate users or break ad-network rules.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-visibility/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-visibility"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-color/field",
+      "title": "Restore link background fill",
+      "summary": "Adds a colored background block behind the restore link text. Most restore links sit on the plain header with no fill, so the default is none — leave it unset for the usual text-only look. Set a color only if you want a chip or pill behind the link, then shape it with the opacity and corner-radius fields below.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-opacity/field",
+      "title": "Restore background transparency",
+      "summary": "Controls how see-through the restore link's background fill is, from 0 (invisible) to 1 (solid). It only has an effect once you've set a background color above. Use a partial value for a faint chip behind the text so it stays readable over a busy hero image; otherwise leave it alone.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-opacity/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-opacity"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-radius/field",
+      "title": "Restore background rounding",
+      "summary": "Rounds the corners of the restore link's background block, from 0 (sharp rectangle) up to 50 (full pill). It only shows once you've given the link a background color and opacity. Use a higher value for a pill-shaped chip; the default of 0 is fine, and you can ignore it entirely if there's no background fill.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-radius/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-radius"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-button/field",
+      "title": "Show a restore-purchases link",
+      "summary": "Adds a small 'Restore Purchases' control in the header so returning buyers can recover an existing subscription instead of paying twice. Keep it on: a working restore option is effectively required on app-store paywalls and it reassures buyers, which protects conversions. There's also a Restore link available in the footer legal links, so use whichever placement fits your layout.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-button/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-button"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-family/field",
+      "title": "Pick the restore link typeface",
+      "summary": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-family/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-family"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-size/field",
+      "title": "Size the restore link text",
+      "summary": "Sets how large the restore link reads, in points (0-50). Keep it small and secondary — around 12-14pt — so it stays legible but doesn't compete with your headline or purchase button. Restore is a recovery option, not a primary action, so resist sizing it up.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-size/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-size"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-weight/field",
+      "title": "Set the restore link boldness",
+      "summary": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-weight/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-weight"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-line-height/field",
+      "title": "Restore link line spacing",
+      "summary": "Sets the vertical space between lines of the restore text. The link is almost always one short line, so this usually has no visible effect — leave it at the default. Only raise it slightly if your custom restore text wraps to multiple lines and the lines look crowded.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-line-height/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-line-height"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-strikethrough-color/field",
+      "title": "Restore link strikethrough color",
+      "summary": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-strikethrough-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-strikethrough-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text-align/field",
+      "title": "Align the restore link text",
+      "summary": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text-align/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-align"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text-color/field",
+      "title": "Color the restore link text",
+      "summary": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text/field",
+      "title": "Edit the restore link wording",
+      "summary": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Paywall Header in the editor",
+      "summary": "Paywall Header in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Paywall Header section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton",
+      "title": "Show a close (X) button",
+      "summary": "Adds the X in the header that lets people dismiss the paywall and keep browsing. For paid-ad traffic keep it on (optionally with a short reveal delay) — an inescapable paywall hurts trust and can break app-store and ad-network rules. Turn it off only when you deliberately want a hard gate users can't skip.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton",
+      "guideKeys": [
+        "screenedit-paywall-header-close-button"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "title": "Color the close (X) icon",
+      "summary": "Sets the color of the X dismiss icon (default white; applies only when the close button is shown). Choose a color that contrasts with whatever sits behind the header — dark over a light hero image, white over a dark one — so users can always find and tap it. Low contrast here can leave people feeling trapped on the paywall.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-close-icon-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "title": "Color the close (X) icon",
+      "summary": "Color the close (X) icon",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-img",
+      "title": "Show a close (X) button",
+      "summary": "Show a close (X) button",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "title": "Place the close button left or right",
+      "summary": "Puts the X on the start side (left in most languages, right in right-to-left ones) or the end side of the header; the sides flip automatically by language. Default to the start/top-left to match common mobile paywall convention. Move it to the end only when your hero layout needs that corner kept clear.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closealignment",
+      "guideKeys": [
+        "screenedit-paywall-header-close-alignment"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "title": "Place the close button left or right",
+      "summary": "Place the close button left or right",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "title": "How long to delay the X",
+      "summary": "How long the close button stays hidden (1-30 seconds) when you've set it to appear after a timer; it has no effect otherwise. A short 2-3 seconds nudges users to read the offer first without feeling trapped. Longer delays raise frustration and drop-off, so reserve 10s or more only for a deliberate hard gate.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "guideKeys": [
+        "screenedit-paywall-header-close-delay"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "close",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "title": "How long to delay the X",
+      "summary": "How long to delay the X",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "title": "When the close button appears",
+      "summary": "Controls when the X becomes tappable: right away, or after a short timer that lets users take in the offer first (set the length in the delay field below). For ad traffic, showing it immediately or after a 2-3 second delay converts well without feeling like a trap. Avoid long delays that frustrate users or break ad-network rules.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "guideKeys": [
+        "screenedit-paywall-header-close-visibility"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "close",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "title": "When the close button appears",
+      "summary": "When the close button appears",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel",
+      "title": "Show a restore-purchases link",
+      "summary": "Adds a small 'Restore Purchases' control in the header so returning buyers can recover an existing subscription instead of paying twice. Keep it on: a working restore option is effectively required on app-store paywalls and it reassures buyers, which protects conversions. There's also a Restore link available in the footer legal links, so use whichever placement fits your layout.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-button"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "stripe-payments",
+        "setting",
+        "paywallHeader",
+        "restore"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "title": "Align the restore link text",
+      "summary": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-align"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "title": "Align the restore link text",
+      "summary": "Align the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "title": "Restore link background fill",
+      "summary": "Adds a colored background block behind the restore link text. Most restore links sit on the plain header with no fill, so the default is none — leave it unset for the usual text-only look. Set a color only if you want a chip or pill behind the link, then shape it with the opacity and corner-radius fields below.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "title": "Restore link background fill",
+      "summary": "Restore link background fill",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "title": "Restore background transparency",
+      "summary": "Controls how see-through the restore link's background fill is, from 0 (invisible) to 1 (solid). It only has an effect once you've set a background color above. Use a partial value for a faint chip behind the text so it stays readable over a busy hero image; otherwise leave it alone.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-opacity"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "title": "Restore background transparency",
+      "summary": "Restore background transparency",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "title": "Restore background rounding",
+      "summary": "Rounds the corners of the restore link's background block, from 0 (sharp rectangle) up to 50 (full pill). It only shows once you've given the link a background color and opacity. Use a higher value for a pill-shaped chip; the default of 0 is fine, and you can ignore it entirely if there's no background fill.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-radius"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "title": "Restore background rounding",
+      "summary": "Restore background rounding",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "title": "Color the restore link text",
+      "summary": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "title": "Color the restore link text",
+      "summary": "Color the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "title": "Pick the restore link typeface",
+      "summary": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-family"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "restore"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "title": "Pick the restore link typeface",
+      "summary": "Pick the restore link typeface",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "title": "Size the restore link text",
+      "summary": "Sets how large the restore link reads, in points (0-50). Keep it small and secondary — around 12-14pt — so it stays legible but doesn't compete with your headline or purchase button. Restore is a recovery option, not a primary action, so resist sizing it up.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-size"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "purchase",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "title": "Size the restore link text",
+      "summary": "Size the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "title": "Set the restore link boldness",
+      "summary": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-weight"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "purchase",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "title": "Set the restore link boldness",
+      "summary": "Set the restore link boldness",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "title": "Restore link line spacing",
+      "summary": "Sets the vertical space between lines of the restore text. The link is almost always one short line, so this usually has no visible effect — leave it at the default. Only raise it slightly if your custom restore text wraps to multiple lines and the lines look crowded.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-line-height"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "title": "Restore link line spacing",
+      "summary": "Restore link line spacing",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "title": "Restore link strikethrough color",
+      "summary": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-strikethrough-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "title": "Restore link strikethrough color",
+      "summary": "Restore link strikethrough color",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-img",
+      "title": "Show a restore-purchases link",
+      "summary": "Show a restore-purchases link",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "title": "Edit the restore link wording",
+      "summary": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "title": "Edit the restore link wording",
+      "summary": "Edit the restore link wording",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "g-close-head",
+      "title": "Close (X) button",
+      "summary": "Close (X) button",
+      "kind": "section",
+      "articleSectionId": "g-close-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#g-close-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-restore-head",
+      "title": "Restore-purchases link",
+      "summary": "Restore-purchases link",
+      "kind": "section",
+      "articleSectionId": "g-restore-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#g-restore-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Paywall Header — every setting",
+      "summary": "The paywall's top bar — an optional close (X) button (its icon color, which side it sits on, and whether it appears at once or after a short delay) and an optional restore-purchases link with its own wording and typography. This guide documents every setting of the Paywall Header block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-paywall-header/section",
+      "title": "Paywall Header section",
+      "summary": "The Paywall Header is the top strip of a paywall screen. Use it for the close (X) button and an optional 'Restore Purchases' label, and to style their color, position, and timing. Keep it minimal — a clear way to close plus restore is enough for an ad-ready paywall, since anything extra up here pulls attention away from the offer below. It only appears on paywall screens.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-paywall-header/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-paywall-header"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screen-editor-section-paywall-header/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-paywall-header/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-paywall-header"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-paywall-header-close-alignment/field",
+      "title": "Place the close button left or right",
+      "summary": "Puts the X on the start side (left in most languages, right in right-to-left ones) or the end side of the header; the sides flip automatically by language. Default to the start/top-left to match common mobile paywall convention. Move it to the end only when your hero layout needs that corner kept clear.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-alignment/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-alignment"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-button/field",
+      "title": "Show a close (X) button",
+      "summary": "Adds the X in the header that lets people dismiss the paywall and keep browsing. For paid-ad traffic keep it on (optionally with a short reveal delay) — an inescapable paywall hurts trust and can break app-store and ad-network rules. Turn it off only when you deliberately want a hard gate users can't skip.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-button/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-button"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-delay/field",
+      "title": "How long to delay the X",
+      "summary": "How long the close button stays hidden (1-30 seconds) when you've set it to appear after a timer; it has no effect otherwise. A short 2-3 seconds nudges users to read the offer first without feeling trapped. Longer delays raise frustration and drop-off, so reserve 10s or more only for a deliberate hard gate.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-delay/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-delay"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-icon-color/field",
+      "title": "Color the close (X) icon",
+      "summary": "Sets the color of the X dismiss icon (default white; applies only when the close button is shown). Choose a color that contrasts with whatever sits behind the header — dark over a light hero image, white over a dark one — so users can always find and tap it. Low contrast here can leave people feeling trapped on the paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-icon-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-icon-color"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-close-visibility/field",
+      "title": "When the close button appears",
+      "summary": "Controls when the X becomes tappable: right away, or after a short timer that lets users take in the offer first (set the length in the delay field below). For ad traffic, showing it immediately or after a 2-3 second delay converts well without feeling like a trap. Avoid long delays that frustrate users or break ad-network rules.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-close-visibility/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-close-visibility"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-color/field",
+      "title": "Restore link background fill",
+      "summary": "Adds a colored background block behind the restore link text. Most restore links sit on the plain header with no fill, so the default is none — leave it unset for the usual text-only look. Set a color only if you want a chip or pill behind the link, then shape it with the opacity and corner-radius fields below.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-opacity/field",
+      "title": "Restore background transparency",
+      "summary": "Controls how see-through the restore link's background fill is, from 0 (invisible) to 1 (solid). It only has an effect once you've set a background color above. Use a partial value for a faint chip behind the text so it stays readable over a busy hero image; otherwise leave it alone.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-opacity/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-opacity"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-background-radius/field",
+      "title": "Restore background rounding",
+      "summary": "Rounds the corners of the restore link's background block, from 0 (sharp rectangle) up to 50 (full pill). It only shows once you've given the link a background color and opacity. Use a higher value for a pill-shaped chip; the default of 0 is fine, and you can ignore it entirely if there's no background fill.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-background-radius/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-radius"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-button/field",
+      "title": "Show a restore-purchases link",
+      "summary": "Adds a small 'Restore Purchases' control in the header so returning buyers can recover an existing subscription instead of paying twice. Keep it on: a working restore option is effectively required on app-store paywalls and it reassures buyers, which protects conversions. There's also a Restore link available in the footer legal links, so use whichever placement fits your layout.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-button/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-button"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-family/field",
+      "title": "Pick the restore link typeface",
+      "summary": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-family/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-family"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-size/field",
+      "title": "Size the restore link text",
+      "summary": "Sets how large the restore link reads, in points (0-50). Keep it small and secondary — around 12-14pt — so it stays legible but doesn't compete with your headline or purchase button. Restore is a recovery option, not a primary action, so resist sizing it up.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-size/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-size"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-font-weight/field",
+      "title": "Set the restore link boldness",
+      "summary": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-font-weight/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-weight"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-line-height/field",
+      "title": "Restore link line spacing",
+      "summary": "Sets the vertical space between lines of the restore text. The link is almost always one short line, so this usually has no visible effect — leave it at the default. Only raise it slightly if your custom restore text wraps to multiple lines and the lines look crowded.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-line-height/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-line-height"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-strikethrough-color/field",
+      "title": "Restore link strikethrough color",
+      "summary": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-strikethrough-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-strikethrough-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text-align/field",
+      "title": "Align the restore link text",
+      "summary": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text-align/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-align"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text-color/field",
+      "title": "Color the restore link text",
+      "summary": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text-color/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-color"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-paywall-header-restore-text/field",
+      "title": "Edit the restore link wording",
+      "summary": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-paywall-header-restore-text/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Paywall Header in the editor",
+      "summary": "Paywall Header in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Paywall Header section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton",
+      "title": "Show a close (X) button",
+      "summary": "Adds the X in the header that lets people dismiss the paywall and keep browsing. For paid-ad traffic keep it on (optionally with a short reveal delay) — an inescapable paywall hurts trust and can break app-store and ad-network rules. Turn it off only when you deliberately want a hard gate users can't skip.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton",
+      "guideKeys": [
+        "screenedit-paywall-header-close-button"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "title": "Color the close (X) icon",
+      "summary": "Sets the color of the X dismiss icon (default white; applies only when the close button is shown). Choose a color that contrasts with whatever sits behind the header — dark over a light hero image, white over a dark one — so users can always find and tap it. Low contrast here can leave people feeling trapped on the paywall.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-close-icon-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "title": "Color the close (X) icon",
+      "summary": "Color the close (X) icon",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-img",
+      "title": "Show a close (X) button",
+      "summary": "Show a close (X) button",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "title": "Place the close button left or right",
+      "summary": "Puts the X on the start side (left in most languages, right in right-to-left ones) or the end side of the header; the sides flip automatically by language. Default to the start/top-left to match common mobile paywall convention. Move it to the end only when your hero layout needs that corner kept clear.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closealignment",
+      "guideKeys": [
+        "screenedit-paywall-header-close-alignment"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "close"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "title": "Place the close button left or right",
+      "summary": "Place the close button left or right",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "title": "How long to delay the X",
+      "summary": "How long the close button stays hidden (1-30 seconds) when you've set it to appear after a timer; it has no effect otherwise. A short 2-3 seconds nudges users to read the offer first without feeling trapped. Longer delays raise frustration and drop-off, so reserve 10s or more only for a deliberate hard gate.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "guideKeys": [
+        "screenedit-paywall-header-close-delay"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "close",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "title": "How long to delay the X",
+      "summary": "How long to delay the X",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "title": "When the close button appears",
+      "summary": "Controls when the X becomes tappable: right away, or after a short timer that lets users take in the offer first (set the length in the delay field below). For ad traffic, showing it immediately or after a 2-3 second delay converts well without feeling like a trap. Avoid long delays that frustrate users or break ad-network rules.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "guideKeys": [
+        "screenedit-paywall-header-close-visibility"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "close",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "title": "When the close button appears",
+      "summary": "When the close button appears",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel",
+      "title": "Show a restore-purchases link",
+      "summary": "Adds a small 'Restore Purchases' control in the header so returning buyers can recover an existing subscription instead of paying twice. Keep it on: a working restore option is effectively required on app-store paywalls and it reassures buyers, which protects conversions. There's also a Restore link available in the footer legal links, so use whichever placement fits your layout.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-button"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "stripe-payments",
+        "setting",
+        "paywallHeader",
+        "restore"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "title": "Align the restore link text",
+      "summary": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-align"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "title": "Align the restore link text",
+      "summary": "Align the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "title": "Restore link background fill",
+      "summary": "Adds a colored background block behind the restore link text. Most restore links sit on the plain header with no fill, so the default is none — leave it unset for the usual text-only look. Set a color only if you want a chip or pill behind the link, then shape it with the opacity and corner-radius fields below.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "title": "Restore link background fill",
+      "summary": "Restore link background fill",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "title": "Restore background transparency",
+      "summary": "Controls how see-through the restore link's background fill is, from 0 (invisible) to 1 (solid). It only has an effect once you've set a background color above. Use a partial value for a faint chip behind the text so it stays readable over a busy hero image; otherwise leave it alone.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-opacity"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "title": "Restore background transparency",
+      "summary": "Restore background transparency",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "title": "Restore background rounding",
+      "summary": "Rounds the corners of the restore link's background block, from 0 (sharp rectangle) up to 50 (full pill). It only shows once you've given the link a background color and opacity. Use a higher value for a pill-shaped chip; the default of 0 is fine, and you can ignore it entirely if there's no background fill.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-background-radius"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "title": "Restore background rounding",
+      "summary": "Restore background rounding",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "title": "Color the restore link text",
+      "summary": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "title": "Color the restore link text",
+      "summary": "Color the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "title": "Pick the restore link typeface",
+      "summary": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-family"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "paywallHeader",
+        "restore"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "title": "Pick the restore link typeface",
+      "summary": "Pick the restore link typeface",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "title": "Size the restore link text",
+      "summary": "Sets how large the restore link reads, in points (0-50). Keep it small and secondary — around 12-14pt — so it stays legible but doesn't compete with your headline or purchase button. Restore is a recovery option, not a primary action, so resist sizing it up.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-size"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "purchase",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "title": "Size the restore link text",
+      "summary": "Size the restore link text",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "title": "Set the restore link boldness",
+      "summary": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-font-weight"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "purchase",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "title": "Set the restore link boldness",
+      "summary": "Set the restore link boldness",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "title": "Restore link line spacing",
+      "summary": "Sets the vertical space between lines of the restore text. The link is almost always one short line, so this usually has no visible effect — leave it at the default. Only raise it slightly if your custom restore text wraps to multiple lines and the lines look crowded.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-line-height"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "title": "Restore link line spacing",
+      "summary": "Restore link line spacing",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "title": "Restore link strikethrough color",
+      "summary": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-strikethrough-color"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "title": "Restore link strikethrough color",
+      "summary": "Restore link strikethrough color",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-img",
+      "title": "Show a restore-purchases link",
+      "summary": "Show a restore-purchases link",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "title": "Edit the restore link wording",
+      "summary": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "guideKeys": [
+        "screenedit-paywall-header-restore-text"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "paywallHeader",
+        "restore",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png"
+      ]
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "title": "Edit the restore link wording",
+      "summary": "Edit the restore link wording",
+      "kind": "section",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [
+    {
+      "guideKey": "screenedit-paywall-header-close-button",
+      "title": "Show a close (X) button",
+      "sectionType": "paywallHeader",
+      "group": "close",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Find “Show a close (X) button”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-close-icon-color",
+      "title": "Color the close (X) icon",
+      "sectionType": "paywallHeader",
+      "group": "close",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png",
+      "articleSectionId": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the close-button style settings (the Tune gear on the Close Button row).",
+        "Find “Color the close (X) icon”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-close-alignment",
+      "title": "Place the close button left or right",
+      "sectionType": "paywallHeader",
+      "group": "close",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closealignment",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the close-button style settings (the Tune gear on the Close Button row).",
+        "Find “Place the close button left or right”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-close-visibility",
+      "title": "When the close button appears",
+      "sectionType": "paywallHeader",
+      "group": "close",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the close-button style settings (the Tune gear on the Close Button row).",
+        "Find “When the close button appears”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-close-delay",
+      "title": "How long to delay the X",
+      "sectionType": "paywallHeader",
+      "group": "close",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png",
+      "articleSectionId": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the close-button style settings (the Tune gear on the Close Button row).",
+        "Find “How long to delay the X”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-button",
+      "title": "Show a restore-purchases link",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Find “Show a restore-purchases link”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-text",
+      "title": "Edit the restore link wording",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Edit the restore link wording”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-background-color",
+      "title": "Restore link background fill",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Restore link background fill”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-font-family",
+      "title": "Pick the restore link typeface",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Pick the restore link typeface”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-line-height",
+      "title": "Restore link line spacing",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Restore link line spacing”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-font-size",
+      "title": "Size the restore link text",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Size the restore link text”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-font-weight",
+      "title": "Set the restore link boldness",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Set the restore link boldness”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-text-color",
+      "title": "Color the restore link text",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Color the restore link text”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-text-align",
+      "title": "Align the restore link text",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Align the restore link text”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-strikethrough-color",
+      "title": "Restore link strikethrough color",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Restore link strikethrough color”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-background-opacity",
+      "title": "Restore background transparency",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Restore background transparency”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-paywall-header-restore-background-radius",
+      "title": "Restore background rounding",
+      "sectionType": "paywallHeader",
+      "group": "restore",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png",
+      "articleSectionId": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html#set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a Paywall screen and expand the Header section (the Close Button and Restore Button enable rows).",
+        "Open the restore-link style settings (the Tune gear on the Restore Button row).",
+        "Find “Restore background rounding”."
+      ]
+    }
+  ],
+  "media": [
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png",
+    "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+  ],
+  "nodes": [
+    {
+      "id": "intro",
+      "order": 0,
+      "kind": "Text",
+      "label": "Intro",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Paywall Header — every setting"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 28,
+            "fontWeight": 800,
+            "lineHeight": 34,
+            "color": "#101828"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "The paywall's top bar — an optional close (X) button (its icon color, which side it sits on, and whether it appears at once or after a short delay) and an optional restore-purchases link with its own wording and typography. This guide documents every setting of the Paywall Header block, grouped by area. Each setting matches a real control in the screen editor."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 400,
+            "lineHeight": 26,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context",
+      "order": 1,
+      "kind": "Media",
+      "label": "Paywall Header in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png",
+                "name": "The screen editor with the Paywall Header section highlighted."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context-cap",
+      "order": 2,
+      "kind": "Text",
+      "label": "Context caption",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "Open the Paywall Header section in the screen editor to configure its settings."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "g-close-head",
+      "order": 3,
+      "kind": "Text",
+      "label": "Group: Close (X) button",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Close (X) button"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton",
+      "order": 4,
+      "kind": "Text",
+      "label": "Close (X) button · Show a close (X) button",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Show a close (X) button"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Adds the X in the header that lets people dismiss the paywall and keep browsing. For paid-ad traffic keep it on (optionally with a short reveal delay) — an inescapable paywall hurts trust and can break app-store and ad-network rules. Turn it off only when you deliberately want a hard gate users can't skip."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-img",
+      "order": 5,
+      "kind": "Media",
+      "label": "Show a close (X) button",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 96,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png",
+                "name": "Where to find “Show a close (X) button” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor",
+      "order": 6,
+      "kind": "Text",
+      "label": "Close (X) button · Color the close (X) icon",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Color the close (X) icon"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Sets the color of the X dismiss icon (default white; applies only when the close button is shown). Choose a color that contrasts with whatever sits behind the header — dark over a light hero image, white over a dark one — so users can always find and tap it. Low contrast here can leave people feeling trapped on the paywall."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-closebutton-appearance-iconcolor-img",
+      "order": 7,
+      "kind": "Media",
+      "label": "Color the close (X) icon",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png",
+                "name": "Where to find “Color the close (X) icon” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment",
+      "order": 8,
+      "kind": "Text",
+      "label": "Close (X) button · Place the close button left or right",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Place the close button left or right"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Puts the X on the start side (left in most languages, right in right-to-left ones) or the end side of the header; the sides flip automatically by language. Default to the start/top-left to match common mobile paywall convention. Move it to the end only when your hero layout needs that corner kept clear."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closealignment-img",
+      "order": 9,
+      "kind": "Media",
+      "label": "Place the close button left or right",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png",
+                "name": "Where to find “Place the close button left or right” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility",
+      "order": 10,
+      "kind": "Text",
+      "label": "Close (X) button · When the close button appears",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "When the close button appears"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Controls when the X becomes tappable: right away, or after a short timer that lets users take in the offer first (set the length in the delay field below). For ad traffic, showing it immediately or after a 2-3 second delay converts well without feeling like a trap. Avoid long delays that frustrate users or break ad-network rules."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closevisibility-img",
+      "order": 11,
+      "kind": "Media",
+      "label": "When the close button appears",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png",
+                "name": "Where to find “When the close button appears” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds",
+      "order": 12,
+      "kind": "Text",
+      "label": "Close (X) button · How long to delay the X",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "How long to delay the X"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "How long the close button stays hidden (1-30 seconds) when you've set it to appear after a timer; it has no effect otherwise. A short 2-3 seconds nudges users to read the offer first without feeling trapped. Longer delays raise frustration and drop-off, so reserve 10s or more only for a deliberate hard gate."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-headerappearance-closedelayseconds-img",
+      "order": 13,
+      "kind": "Media",
+      "label": "How long to delay the X",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 154,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png",
+                "name": "Where to find “How long to delay the X” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "g-restore-head",
+      "order": 14,
+      "kind": "Text",
+      "label": "Group: Restore-purchases link",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore-purchases link"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel",
+      "order": 15,
+      "kind": "Text",
+      "label": "Restore-purchases link · Show a restore-purchases link",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Show a restore-purchases link"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Adds a small 'Restore Purchases' control in the header so returning buyers can recover an existing subscription instead of paying twice. Keep it on: a working restore option is effectively required on app-store paywalls and it reassures buyers, which protects conversions. There's also a Restore link available in the footer legal links, so use whichever placement fits your layout."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-img",
+      "order": 16,
+      "kind": "Media",
+      "label": "Show a restore-purchases link",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 207,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png",
+                "name": "Where to find “Show a restore-purchases link” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale",
+      "order": 17,
+      "kind": "Text",
+      "label": "Restore-purchases link · Edit the restore link wording",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Edit the restore link wording"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-translations-locale-img",
+      "order": 18,
+      "kind": "Media",
+      "label": "Edit the restore link wording",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 159,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png",
+                "name": "Where to find “Edit the restore link wording” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor",
+      "order": 19,
+      "kind": "Text",
+      "label": "Restore-purchases link · Restore link background fill",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore link background fill"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Adds a colored background block behind the restore link text. Most restore links sit on the plain header with no fill, so the default is none — leave it unset for the usual text-only look. Set a color only if you want a chip or pill behind the link, then shape it with the opacity and corner-radius fields below."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcolor-img",
+      "order": 20,
+      "kind": "Media",
+      "label": "Restore link background fill",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png",
+                "name": "Where to find “Restore link background fill” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily",
+      "order": 21,
+      "kind": "Text",
+      "label": "Restore-purchases link · Pick the restore link typeface",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Pick the restore link typeface"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontfamily-img",
+      "order": 22,
+      "kind": "Media",
+      "label": "Pick the restore link typeface",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png",
+                "name": "Where to find “Pick the restore link typeface” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight",
+      "order": 23,
+      "kind": "Text",
+      "label": "Restore-purchases link · Restore link line spacing",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore link line spacing"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Sets the vertical space between lines of the restore text. The link is almost always one short line, so this usually has no visible effect — leave it at the default. Only raise it slightly if your custom restore text wraps to multiple lines and the lines look crowded."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-lineheight-img",
+      "order": 24,
+      "kind": "Media",
+      "label": "Restore link line spacing",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png",
+                "name": "Where to find “Restore link line spacing” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize",
+      "order": 25,
+      "kind": "Text",
+      "label": "Restore-purchases link · Size the restore link text",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Size the restore link text"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Sets how large the restore link reads, in points (0-50). Keep it small and secondary — around 12-14pt — so it stays legible but doesn't compete with your headline or purchase button. Restore is a recovery option, not a primary action, so resist sizing it up."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontsize-img",
+      "order": 26,
+      "kind": "Media",
+      "label": "Size the restore link text",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png",
+                "name": "Where to find “Size the restore link text” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight",
+      "order": 27,
+      "kind": "Text",
+      "label": "Restore-purchases link · Set the restore link boldness",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Set the restore link boldness"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-fontweight-img",
+      "order": 28,
+      "kind": "Media",
+      "label": "Set the restore link boldness",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png",
+                "name": "Where to find “Set the restore link boldness” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color",
+      "order": 29,
+      "kind": "Text",
+      "label": "Restore-purchases link · Color the restore link text",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Color the restore link text"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-color-img",
+      "order": 30,
+      "kind": "Media",
+      "label": "Color the restore link text",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png",
+                "name": "Where to find “Color the restore link text” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align",
+      "order": 31,
+      "kind": "Text",
+      "label": "Restore-purchases link · Align the restore link text",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Align the restore link text"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-align-img",
+      "order": 32,
+      "kind": "Media",
+      "label": "Align the restore link text",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png",
+                "name": "Where to find “Align the restore link text” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor",
+      "order": 33,
+      "kind": "Text",
+      "label": "Restore-purchases link · Restore link strikethrough color",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore link strikethrough color"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-textdecorationcolor-img",
+      "order": 34,
+      "kind": "Media",
+      "label": "Restore link strikethrough color",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png",
+                "name": "Where to find “Restore link strikethrough color” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity",
+      "order": 35,
+      "kind": "Text",
+      "label": "Restore-purchases link · Restore background transparency",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore background transparency"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Controls how see-through the restore link's background fill is, from 0 (invisible) to 1 (solid). It only has an effect once you've set a background color above. Use a partial value for a faint chip behind the text so it stays readable over a busy hero image; otherwise leave it alone."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcoloropacity-img",
+      "order": 36,
+      "kind": "Media",
+      "label": "Restore background transparency",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png",
+                "name": "Where to find “Restore background transparency” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius",
+      "order": 37,
+      "kind": "Text",
+      "label": "Restore-purchases link · Restore background rounding",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Restore background rounding"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Rounds the corners of the restore link's background block, from 0 (sharp rectangle) up to 50 (full pill). It only shows once you've given the link a background color and opacity. Use a higher value for a pill-shaped chip; the default of 0 is fine, and you can ignore it entirely if there's no background fill."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-paywallheader-content-paywall-restorelabel-appearance-backgroundcornerradius-img",
+      "order": 38,
+      "kind": "Media",
+      "label": "Restore background rounding",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 128,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png",
+                "name": "Where to find “Restore background rounding” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/help-screen-paywall.assembly.json",
+      "scripts/help-articles/help-screen-paywall.doc.json",
+      "scripts/help-articles/paywall-header-block.doc.json",
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "d92af0d04c6c8b4f"
+  }
+}

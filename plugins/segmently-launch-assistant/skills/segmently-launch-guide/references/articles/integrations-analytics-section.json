@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "integrations-analytics-section",
+  "articleId": "92EfQrboD7HTMHGa4DmF",
+  "title": "Analytics setup",
+  "sections": [
+    {
+      "id": "integrations-analytics-section/consent-management",
+      "title": "Enable GDPR consent management (optional)",
+      "summary": "Toggle consent management to show a consent banner in regulated regions. You set the default consent state, banner text, and privacy policy URL, and consent decisions gate which events are collected.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/consent-management",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-analytics-section/provider-choice",
+      "title": "Choose the provider, then verify",
+      "summary": "Pick the analytics platform that matches your reporting workflow, then publish a test funnel and confirm events arrive in that provider dashboard within seconds.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/provider-choice",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-analytics-section/track-before",
+      "title": "Track the funnel before scaling",
+      "summary": "Set up and verify analytics before publishing to traffic. Events are measured from the first visitor, so a destination added later cannot capture earlier sessions.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/track-before",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "integrations-analytics-section/consent-management",
+      "title": "Enable GDPR consent management (optional)",
+      "summary": "Toggle consent management to show a consent banner in regulated regions. You set the default consent state, banner text, and privacy policy URL, and consent decisions gate which events are collected.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/consent-management",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-analytics-section/provider-choice",
+      "title": "Choose the provider, then verify",
+      "summary": "Pick the analytics platform that matches your reporting workflow, then publish a test funnel and confirm events arrive in that provider dashboard within seconds.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/provider-choice",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-analytics-section/track-before",
+      "title": "Track the funnel before scaling",
+      "summary": "Set up and verify analytics before publishing to traffic. Events are measured from the first visitor, so a destination added later cannot capture earlier sessions.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-analytics-section/track-before",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-analytics-section"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-analytics-section/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "52adf14e4e945278"
+  }
+}

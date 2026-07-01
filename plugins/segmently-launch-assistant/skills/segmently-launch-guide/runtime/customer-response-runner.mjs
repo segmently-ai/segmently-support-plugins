@@ -26,7 +26,7 @@ let resultPath = null;
 function main() {
   const args = parseArgs(process.argv.slice(2));
   resultPath = typeof args.resultPath === 'string' ? args.resultPath : null;
-  if (args.help || (!args.guideKeys && !args.prompt && (!args.persona || !args.question))) {
+  if (args.help || (!args.guideKeys && !args.articleAliases && !args.prompt && (!args.persona || !args.question))) {
     printHelp();
     return;
   }
@@ -36,15 +36,23 @@ function main() {
   const personaFlow = readJson('evals/persona-flow-evals.json');
   const guideEvidence = readJson('references/guide-evidence.json');
   const helpArticleReference = readJson('references/help-article-reference.json');
+  const articleRegistry = readJson('references/article-registry.json');
+  const articleDirectory = readJson('references/article-directory.json');
+  const articleSearchIndex = readJson('references/article-search-index.json');
+  const articleSearchSynonyms = readJson('references/article-search-synonyms.json');
+  const guideRegistry = readJson('references/guide-registry.json');
+  const supportKnowledgeGraph = readSupportKnowledgeGraphSummary();
   const teachReference = readJson('references/teach-reference.json');
   const scenarios = readJson('references/scenarios.matrix.json');
   const actions = readJson('runtime/do-action-reference.json');
   const helpArticlesByAlias = new Map((helpArticleReference.articles ?? []).map(article => [article.alias, article]));
+  const articleRegistryByAlias = new Map((articleRegistry.articles ?? []).map(article => [article.articleAlias, article]));
+  const articleCatalog = { articleRegistry, articleDirectory, articleSearchIndex, articleSearchSynonyms, guideRegistry, supportKnowledgeGraph };
 
-  const promptResolution = args.guideKeys
-    ? resolveSelectedQuestion(args.prompt, effectiveArgs)
+  const promptResolution = args.guideKeys || args.articleAliases
+    ? resolveSelectedQuestion(args.prompt, effectiveArgs, articleCatalog)
     : args.prompt
-    ? resolvePromptQuestion(args.prompt, effectiveArgs, { guideEvidence, teachReference, scenarios, actions })
+    ? resolvePromptQuestion(args.prompt, effectiveArgs, { guideEvidence, teachReference, scenarios, actions, ...articleCatalog })
     : null;
   const question = promptResolution?.question ?? findQuestion(personaFlow, args.persona, args.question);
   if (!question) {
@@ -59,6 +67,7 @@ function main() {
     if (!guide) fail(`Question ${question.id} references missing guide ${guideKey}.`);
     return guideContract(guide, helpArticlesByAlias);
   });
+  const selectedArticles = buildSelectedArticleContracts(question, guideContracts, articleRegistryByAlias);
 
   const scenario = question.expectedScenarioId ? scenarioById.get(question.expectedScenarioId) : null;
   const isShow = Boolean(question.expectedShow);
@@ -80,7 +89,8 @@ function main() {
           : isArticleFetch
             ? 'article-fetch'
             : 'teach',
-    answer: buildAnswer(question, guideContracts, scenario),
+    selectedArticles,
+    answer: buildAnswer(question, guideContracts, scenario, selectedArticles),
     guidance: {
       minimum: 'text-plus-screenshot-evidence',
       articleHtmlRequired: false,
@@ -139,7 +149,7 @@ function main() {
   }
 
   if (question.expectedArticleFetch) {
-    response.articleFetch = articleFetchContract(question.expectedArticleFetch, guideContracts);
+    response.articleFetch = articleFetchContract(question.expectedArticleFetch, guideContracts, selectedArticles);
     response.answer.articleFetch = response.articleFetch;
     response.answer.nextStep = response.articleFetch.nextStep;
     response.completionClaim = response.articleFetch.status === 'ready'
@@ -182,10 +192,23 @@ function buildSessionContextContract(projectContext) {
 }
 
 function buildRoutingPolicy(promptResolution, args) {
-  const selectedByAgent = Boolean(args.guideKeys || args.actionId || args.scenarioId);
+  const selectedByAgent = Boolean(args.guideKeys || args.articleAliases || args.actionId || args.scenarioId);
   return {
     schemaVersion: 1,
     semanticDecisionOwner: 'agent-model',
+    articleFirstSearch: true,
+    articleRegistry: {
+      directorySource: 'references/article-directory.json',
+      searchIndexSource: 'references/article-search-index.json',
+      registrySource: 'references/article-registry.json',
+      guideRegistrySource: 'references/guide-registry.json',
+      synonymSource: 'references/article-search-synonyms.json',
+      knowledgeGraphSource: 'references/support-knowledge-graph/',
+      role: 'directory-first-search-then-load-selected-registry-and-contentRef',
+      subarticles: 'Article directory exposes searchable subarticles; full sections/settings/media are loaded only through selected article contentRef.',
+      graphRole:
+        'Static generated graph links articles, subarticles, settings, guides, scenarios, actions, atoms, media, and synonym groups for evidence tracing. It is not an external database dependency.',
+    },
     selectedByAgent,
     deterministicRunnerRole: 'validate-selected-catalog-items-execution-boundaries-and-verification',
     rawPromptRoutingRole: selectedByAgent
@@ -194,7 +217,7 @@ function buildRoutingPolicy(promptResolution, args) {
     rawPromptDebugOnly: !selectedByAgent,
     rawPromptCustomerUseAllowed: selectedByAgent,
     selectedArticleContentPolicy:
-      'After guide/article selection, study the returned shipped sections and article references. If the customer answer needs details beyond shipped sections, execute article-fetch/read-only before answering instead of guessing.',
+      'After guide/article selection, study the returned selectedArticles loaded from contentRef. If the customer answer needs details beyond shipped content, execute article-fetch/read-only before answering instead of guessing.',
     cliExecutionOwner: 'owning-customer-skill',
     mustPreferSelectedCatalog: true,
     mustDelegateCliDoToOwningSkill: true,
@@ -257,6 +280,7 @@ function looksRussian(text) {
 }
 
 function resolvePromptQuestion(prompt, args, context) {
+  const articleAliases = articleAliasesFromPrompt(prompt, context);
   const integrationsCustomDomainGuideKeys = integrationsCustomDomainGuideKeysFromPrompt(prompt);
   const integrationsAnalyticsGuideKeys = integrationsCustomDomainGuideKeys ? null : integrationsAnalyticsGuideKeysFromPrompt(prompt);
   const integrationGuideKeys = integrationsCustomDomainGuideKeys ?? integrationsAnalyticsGuideKeys;
@@ -279,9 +303,15 @@ function resolvePromptQuestion(prompt, args, context) {
   const explicitActionIntent = hasExplicitActionIntent(prompt);
   const articleFetchIntent = hasArticleFetchIntent(prompt) && !explicitActionIntent;
   const showIntent = hasShowIntent(prompt) && !explicitActionIntent && !articleFetchIntent;
-  let guideKeys = domainOperationGuideKeys ?? (action && (explicitActionIntent || showIntent)
+  const articleSearchFound = articleAliases.length > 0;
+  const directArticleOnly = hasEventCatalogArticleIntent(prompt) && articleAliases.some(alias => /events-catalog$/.test(alias));
+  const actionGuideKeys = action && (explicitActionIntent || showIntent)
     ? guideKeysForResolvedAction(action)
-    : integrationGuideKeys ?? resolveGuideKeysFromPrompt(prompt, context.guideEvidence, context.teachReference));
+    : null;
+  const fallbackGuideKeys = resolveGuideKeysFromPrompt(prompt, context.guideEvidence, context.teachReference, {
+    allowGenericFallback: !articleSearchFound || showIntent || explicitActionIntent,
+  });
+  let guideKeys = domainOperationGuideKeys ?? actionGuideKeys ?? (directArticleOnly ? [] : integrationGuideKeys ?? fallbackGuideKeys ?? []);
   if (!action && explicitActionIntent) {
     action = resolveActionForGuideKeys(guideKeys, context.actions.actions ?? []);
     if (action) guideKeys = guideKeysForResolvedAction(action);
@@ -322,6 +352,12 @@ function resolvePromptQuestion(prompt, args, context) {
         mutation: false,
       }
     : null;
+  const guideArticleAliases = articleAliasesForGuideKeys(guideKeys, context) ?? [];
+  const guideOnlyArticleAliases = guideOnlyArticleAliasesForGuideKeys(guideKeys, context);
+  const hasGuideArticleEvidence = guideArticleAliases.length > 0 || guideOnlyArticleAliases.length > 0;
+  const guidanceArticleAliases = guideKeys.length > 0 && hasGuideArticleEvidence
+    ? guideArticleAliases
+    : articleAliases;
   return {
     question: {
       id: 'prompt',
@@ -330,6 +366,7 @@ function resolvePromptQuestion(prompt, args, context) {
       expectedScenarioId: scenarioId,
       guidance: {
         guideKeys,
+        articleAliases: guidanceArticleAliases,
         requiresText: true,
         requiresImage: showIntent,
       },
@@ -386,6 +423,7 @@ function resolvePromptQuestion(prompt, args, context) {
       kind: expectedDo ? 'action' : expectedConditionalDo ? 'conditional-do' : expectedShow ? 'show' : expectedArticleFetch ? 'article-fetch' : 'teach',
       actionId: expectedDo?.actionId ?? expectedConditionalDo?.actionId ?? null,
       guideKeys,
+      articleAliases: guidanceArticleAliases,
       scenarioId,
       copyTextValueBoundary: Boolean(copyTextValueGuideKeys),
       domainOperationBoundary: variableBindingGuideKeys
@@ -439,9 +477,11 @@ function resolvePromptQuestion(prompt, args, context) {
   };
 }
 
-function resolveSelectedQuestion(prompt, args) {
+function resolveSelectedQuestion(prompt, args, context = {}) {
   const guideKeys = parseListArg(args.guideKeys);
-  if (guideKeys.length === 0) fail('--guideKeys was provided but no guide keys were parsed.');
+  const articleAliases = parseListArg(args.articleAliases);
+  if (guideKeys.length === 0 && articleAliases.length === 0) fail('--guideKeys/--articleAliases was provided but no catalog items were parsed.');
+  validateSelectedArticleAliases(articleAliases, context);
   const scenarioId = typeof args.scenarioId === 'string' && args.scenarioId.trim()
     ? args.scenarioId.trim()
     : null;
@@ -477,6 +517,7 @@ function resolveSelectedQuestion(prompt, args) {
       expectedScenarioId: scenarioId,
       guidance: {
         guideKeys,
+        articleAliases,
         requiresText: true,
         requiresImage: selectedMode === 'show',
       },
@@ -491,6 +532,7 @@ function resolveSelectedQuestion(prompt, args) {
       kind: 'agent-selected-semantics',
       actionId,
       guideKeys,
+      articleAliases,
       scenarioId,
       selectionSource: 'model-over-catalog',
       deterministicRole: 'evidence-and-execution-contract-only',
@@ -567,6 +609,222 @@ function guideContract(guide, helpArticlesByAlias = new Map()) {
     sectionScreenshotEvidence: textSections.some(section => section.hasScreenshotEvidence),
     hasImageUrl: imageUrls.length > 0,
   };
+}
+
+function buildSelectedArticleContracts(question, guideContracts, articleRegistryByAlias) {
+  const selectedAliases = uniqueStrings([
+    ...(question.guidance?.articleAliases ?? []),
+    ...guideContracts.map(guide => guide.articleAlias).filter(Boolean),
+  ]);
+  return selectedAliases
+    .map(alias => {
+      const article = articleRegistryByAlias.get(alias);
+      if (!article) return null;
+      const content = readArticleContentRef(article.contentRef);
+      const contentSubarticles = content?.subarticles ?? [];
+      const sectionSnippets = (contentSubarticles.length > 0 ? contentSubarticles : article.subarticles ?? [])
+        .filter(section => String(section.title ?? '').trim() || String(section.summary ?? '').trim())
+        .slice(0, 8)
+        .map(section => ({
+          id: section.id,
+          kind: section.kind,
+          title: section.title,
+          summary: section.summary,
+          articleSectionUrl: section.articleSectionUrl ?? null,
+          guideKeys: section.guideKeys ?? [],
+          tags: section.tags ?? [],
+          imageUrls: section.imageUrls ?? [],
+        }));
+      return {
+        articleAlias: article.articleAlias,
+        articleId: article.articleId ?? null,
+        title: article.title,
+        description: article.description,
+        summary: article.summary,
+        publishedUrl: article.publishedUrl,
+        configUrl: article.configUrl,
+        contentRef: article.contentRef ?? null,
+        tags: article.tags ?? [],
+        keywords: (article.keywords ?? []).slice(0, 80),
+        relations: article.relations ?? {},
+        sectionCount: (content?.sections ?? []).length,
+        subarticleCount: (content?.subarticles ?? article.subarticles ?? []).length,
+        sections: sectionSnippets,
+        subarticles: sectionSnippets,
+        media: content?.media ?? [],
+        settingsAnchors: (content?.settingsAnchors ?? article.settingsAnchors ?? []).slice(0, 20),
+        provenance: article.provenance ?? null,
+      };
+    })
+    .filter(Boolean);
+}
+
+function readArticleContentRef(contentRef) {
+  if (!contentRef || typeof contentRef !== 'string') return null;
+  const path = join(root, contentRef);
+  if (!existsSync(path)) return null;
+  try {
+    return JSON.parse(readFileSync(path, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function articleAliasesFromPrompt(prompt, context) {
+  const directoryArticles = context.articleDirectory?.articles ?? [];
+  const registryArticles = context.articleRegistry?.articles ?? [];
+  const articles = directoryArticles.length > 0 ? directoryArticles : registryArticles;
+  if (!Array.isArray(articles) || articles.length === 0) return [];
+  const text = normalize(prompt);
+  const direct = directArticleAliasesFromPromptText(text, articles);
+  if (direct.length > 0) return direct;
+  const candidateAliases = candidateAliasesFromSearchIndex(text, context.articleSearchIndex);
+  const candidateSet = candidateAliases.length > 0 ? new Set(candidateAliases) : null;
+  const scored = articles
+    .filter(article => !candidateSet || candidateSet.has(article.articleAlias))
+    .map(article => {
+      const alias = String(article.articleAlias ?? '');
+      const title = normalize(article.title ?? '');
+      const tags = (article.tags ?? []).map(tag => normalize(tag));
+      const exactAlias = alias && text.includes(normalize(alias));
+      const compactAlias = alias && text.includes(normalize(alias).replace(/-/g, ' '));
+      const exactTitle = title && phraseScore(text, title) >= Math.min(6, title.split(/\s+/).length);
+      let score = exactAlias ? 100 : compactAlias ? 90 : exactTitle ? 75 : 0;
+      if (candidateSet?.has(alias)) score += 20;
+      score += Math.min(30, tags.filter(tag => tag && text.includes(tag.replace(/-/g, ' '))).length * 10);
+      score += Math.min(40, articleRegistryTokenScore(text, article));
+      return { article, score };
+    })
+    .filter(item => item.score >= 18)
+    .sort((a, b) => b.score - a.score);
+  const best = scored[0]?.score ?? 0;
+  return uniqueStrings(scored.filter(item => item.score >= Math.max(18, best - 18)).slice(0, 4).map(item => item.article.articleAlias));
+}
+
+function candidateAliasesFromSearchIndex(text, searchIndex) {
+  if (!searchIndex) return [];
+  const scores = new Map();
+  const add = (aliases, score) => {
+    for (const alias of aliases ?? []) scores.set(alias, (scores.get(alias) ?? 0) + score);
+  };
+  const tokens = uniqueStrings(text.split(/\s+/).map(token => token.trim()).filter(token => token.length >= 3));
+  for (const token of tokens) {
+    add(searchIndex.tokens?.[token], 2);
+    add(searchIndex.tags?.[token], 8);
+    add(searchIndex.keywords?.[token], 5);
+    add(searchIndex.synonyms?.[token], 12);
+    add(searchIndex.subarticles?.[token], 6);
+    add(searchIndex.settingsAnchors?.[token], 7);
+    add(searchIndex.supportedSurfaces?.[token], 6);
+    add(searchIndex.supportFlowFlows?.[token], 7);
+    add(searchIndex.scenarioIds?.[token], 8);
+    add(searchIndex.guideKeys?.[token], 8);
+    add(searchIndex.actionIds?.[token], 6);
+    add(searchIndex.atoms?.[token], 5);
+    add(searchIndex.workflowIds?.[token], 7);
+    add(searchIndex.workflowStepIds?.[token], 7);
+    add(searchIndex.negativeKeywords?.[token], -8);
+  }
+  for (const [key, aliases] of Object.entries(searchIndex.aliases ?? {})) {
+    if (key && text.includes(normalize(key))) add(aliases, 100);
+  }
+  for (const [phrase, aliases] of Object.entries(searchIndex.synonyms ?? {})) {
+    if (phrase && text.includes(normalize(phrase))) add(aliases, 32);
+  }
+  for (const [tag, aliases] of Object.entries(searchIndex.tags ?? {})) {
+    if (tag && text.includes(normalize(tag).replace(/-/g, ' '))) add(aliases, 20);
+  }
+  for (const [anchor, aliases] of Object.entries(searchIndex.settingsAnchors ?? {})) {
+    if (anchor && text.includes(normalize(anchor))) add(aliases, 18);
+  }
+  for (const [surface, aliases] of Object.entries(searchIndex.supportedSurfaces ?? {})) {
+    if (surface && text.includes(normalize(surface).replace(/-/g, ' '))) add(aliases, 16);
+  }
+  for (const [scenarioId, aliases] of Object.entries(searchIndex.scenarioIds ?? {})) {
+    if (scenarioId && text.includes(normalize(scenarioId).replace(/-/g, ' '))) add(aliases, 18);
+  }
+  for (const [phrase, aliases] of Object.entries(searchIndex.negativeKeywords ?? {})) {
+    if (phrase && text.includes(normalize(phrase))) add(aliases, -20);
+  }
+  return [...scores.entries()]
+    .filter(([, score]) => score >= 4)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12)
+    .map(([alias]) => alias);
+}
+
+function directArticleAliasesFromPromptText(text, articles) {
+  const aliases = new Set(articles.map(article => article.articleAlias));
+  const out = [];
+  if (aliases.has('facebook-events-catalog') && /facebook|meta|фейсбук|мета/.test(text) && /event|events|событ|ивент|catalog|каталог|список|list/.test(text)) {
+    out.push('facebook-events-catalog');
+  }
+  if (aliases.has('tiktok-events-catalog') && /tiktok|тик.?ток/.test(text) && /event|events|событ|ивент|catalog|каталог|список|list/.test(text)) {
+    out.push('tiktok-events-catalog');
+  }
+  return out;
+}
+
+function hasEventCatalogArticleIntent(prompt) {
+  const text = normalize(prompt);
+  return /(which|what|какие|список|list|catalog|каталог|перечень)/.test(text) &&
+    /(event|events|событ|ивент)/.test(text) &&
+    /(facebook|meta|tiktok|pixel|пиксел|мета|тик.?ток)/.test(text);
+}
+
+function articleRegistryTokenScore(text, article) {
+  const haystack = normalize([
+    article.articleAlias,
+    article.title,
+    article.description,
+    ...(article.tags ?? []),
+    ...(article.keywords ?? []),
+    ...(article.subarticles ?? article.sections ?? []).flatMap(section => [section.title, section.summary, ...(section.tags ?? [])]),
+  ].join(' '));
+  const tokens = uniqueStrings(text.split(/\s+/).filter(token => token.length >= 4));
+  let score = 0;
+  for (const token of tokens) {
+    if (haystack.includes(token)) score += 2;
+  }
+  return score;
+}
+
+function guideKeysForArticleAliases(articleAliases, context) {
+  const aliases = new Set(articleAliases ?? []);
+  if (aliases.size === 0) return null;
+  const guideKeys = uniqueStrings((context.articleRegistry?.articles ?? [])
+    .filter(article => aliases.has(article.articleAlias))
+    .flatMap(article => article.relations?.guideKeys ?? []));
+  return guideKeys.length > 0 ? guideKeys : [];
+}
+
+function articleAliasesForGuideKeys(guideKeys, context) {
+  const keys = new Set(guideKeys ?? []);
+  if (keys.size === 0) return null;
+  const aliases = uniqueStrings((context.articleRegistry?.articles ?? [])
+    .filter(article => (article.relations?.guideKeys ?? []).some(guideKey => keys.has(guideKey)))
+    .map(article => article.articleAlias));
+  return aliases.length > 0 ? aliases : null;
+}
+
+function guideOnlyArticleAliasesForGuideKeys(guideKeys, context) {
+  const keys = new Set(guideKeys ?? []);
+  if (keys.size === 0) return [];
+  const registryAliases = new Set((context.articleRegistry?.articles ?? []).map(article => article.articleAlias));
+  return uniqueStrings((context.guideRegistry?.guides ?? [])
+    .filter(guide => keys.has(guide.guideKey))
+    .map(guide => guide.articleAlias)
+    .filter(alias => alias && !registryAliases.has(alias)));
+}
+
+function validateSelectedArticleAliases(articleAliases, context) {
+  if (!articleAliases.length) return;
+  const known = new Set([
+    ...(context.articleRegistry?.articles ?? []).map(article => article.articleAlias),
+    ...(context.articleDirectory?.articles ?? []).map(article => article.articleAlias),
+  ]);
+  const unknown = articleAliases.filter(alias => !known.has(alias));
+  if (unknown.length) fail(`Unknown article alias(es): ${unknown.join(', ')}`);
 }
 
 function modeForExpectedDo(expectedDo) {
@@ -736,10 +994,11 @@ function conditionalBrowserDoContract(expectedConditionalDo, guideContracts, arg
   };
 }
 
-function buildAnswer(question, guideContracts, scenario) {
+function buildAnswer(question, guideContracts, scenario, selectedArticles = []) {
   const firstGuide = guideContracts[0];
   const firstSection = firstGuide?.textSections?.[0];
   const references = builtInArticleReferences(guideContracts);
+  const articleReferences = selectedArticleReferences(selectedArticles);
   const preferredReference = preferredGuideReference(references);
   const customerVisibleGuideAssets = buildCustomerVisibleGuideAssets(guideContracts);
   const visualCoverage = customerVisibleGuideAssets.visualCoverage;
@@ -756,8 +1015,20 @@ function buildAnswer(question, guideContracts, scenario) {
       : 'Start from the matched Segmently area.',
     customerAnswerStarter: preferredReference
       ? `The built-in Segmently guide/article is available: ${preferredReference.name} (${preferredReference.articleAlias ?? preferredReference.articleId}, reference ${preferredReference.referencePath}). Use its ${evidencePhrase}.`
+      : selectedArticles[0]
+        ? `The built-in Segmently article is available: ${selectedArticles[0].title} (${selectedArticles[0].articleAlias}). Use its shipped sections and config/settings as the answer source.`
       : 'Use the matched Segmently guide text and ask one clarifying question if the exact screen is unclear.',
     instructions: [
+      ...selectedArticles.flatMap(article =>
+        article.sections.slice(0, 4).map(section => ({
+          title: section.title || article.title,
+          text: section.summary || article.description,
+          visualEvidence: (section.imageUrls ?? []).length > 0,
+          imageUrl: section.imageUrls?.[0] ?? null,
+          articleAlias: article.articleAlias,
+          articleSectionUrl: section.articleSectionUrl ?? null,
+        })),
+      ),
       ...overviewInstructions,
       ...guideContracts.flatMap(guide =>
         guide.textSections.slice(0, 2).map(section => ({
@@ -769,7 +1040,10 @@ function buildAnswer(question, guideContracts, scenario) {
       ),
     ],
     primaryInstruction: firstSection?.description ?? firstGuide?.userNeed ?? question.text,
-    publicArticleLinks: customerVisibleGuideAssets.publicArticleLinks,
+    publicArticleLinks: uniqueStrings([
+      ...selectedArticles.map(article => article.publishedUrl).filter(Boolean),
+      ...customerVisibleGuideAssets.publicArticleLinks,
+    ]),
     builtInArticleReferences: references,
     preferredCitation: preferredReference
       ? {
@@ -780,21 +1054,36 @@ function buildAnswer(question, guideContracts, scenario) {
           publicArticleUrl: preferredReference.publicArticleUrl,
           status: preferredReference.status,
         }
+      : selectedArticles[0]
+        ? {
+            name: selectedArticles[0].title,
+            articleAlias: selectedArticles[0].articleAlias,
+            articleId: selectedArticles[0].articleId,
+            referencePath: selectedArticles[0].articleAlias,
+            publicArticleUrl: selectedArticles[0].publishedUrl,
+            status: 'public-url-available',
+          }
       : null,
     articleReferenceSummary: references.length > 0
       ? articleReferenceSummaryForVisualCoverage(visualCoverage)
+      : selectedArticles.length > 0
+        ? 'Article registry references are available; answer from the selected article sections, subarticles, settings, and config URL before using guide evidence as supplemental proof.'
       : 'No built-in guide/article reference matched this prompt.',
     missingArticleClaimed: false,
-    articleReferences: guideContracts.map(guide => ({
-      guideKey: guide.guideKey,
-      articleId: guide.articleId,
-      articleAlias: guide.articleAlias,
-      referencePath: guide.referencePath,
-      fullArticleLink: guide.fullArticleLink,
-      publishedHelpArticleUrl: guide.publishedHelpArticleUrl,
-      articleSectionUrl: guide.articleSectionUrl,
-      localArticlePath: guide.localArticlePath,
-    })),
+    selectedArticles,
+    articleReferences: [
+      ...articleReferences,
+      ...guideContracts.map(guide => ({
+        guideKey: guide.guideKey,
+        articleId: guide.articleId,
+        articleAlias: guide.articleAlias,
+        referencePath: guide.referencePath,
+        fullArticleLink: guide.fullArticleLink,
+        publishedHelpArticleUrl: guide.publishedHelpArticleUrl,
+        articleSectionUrl: guide.articleSectionUrl,
+        localArticlePath: guide.localArticlePath,
+      })),
+    ],
     articleAvailability: guideContracts.map(guide => ({
       guideKey: guide.guideKey,
       articleId: guide.articleId,
@@ -807,7 +1096,11 @@ function buildAnswer(question, guideContracts, scenario) {
       visualCoverageStatus: guideVisualCoverageStatus(guide),
       customerSafeMessage: articleAvailabilityMessageForGuide(guide),
     })),
-    imageUrls: customerVisibleGuideAssets.imageUrls,
+    imageUrls: uniqueStrings([
+      ...selectedArticles.flatMap(article => article.media ?? []),
+      ...selectedArticles.flatMap(article => article.sections.flatMap(section => section.imageUrls ?? [])),
+      ...customerVisibleGuideAssets.imageUrls,
+    ]),
     customerVisibleGuideAssets,
     verification: scenario?.verify ?? null,
     stripeStatusContract: buildStripeStatusContract(guideContracts, scenario),
@@ -1391,6 +1684,20 @@ function builtInArticleReferences(guideContracts) {
     }));
 }
 
+function selectedArticleReferences(selectedArticles) {
+  return selectedArticles.map(article => ({
+    guideKey: null,
+    articleId: article.articleId ?? null,
+    articleAlias: article.articleAlias,
+    referencePath: article.articleAlias,
+    fullArticleLink: article.publishedUrl,
+    publishedHelpArticleUrl: article.publishedUrl,
+    configUrl: article.configUrl,
+    localArticlePath: null,
+    relationSummary: article.relations ?? {},
+  }));
+}
+
 function preferredGuideReference(references) {
   return references.find(reference => reference.articleSectionUrl)
     ?? references.find(reference => reference.articleAlias?.startsWith('help-'))
@@ -1450,14 +1757,29 @@ function showContract(expectedShow, guideContracts, args) {
   };
 }
 
-function articleFetchContract(expectedArticleFetch, guideContracts) {
-  const references = builtInArticleReferences(guideContracts);
+function articleFetchContract(expectedArticleFetch, guideContracts, selectedArticles = []) {
+  const references = [
+    ...selectedArticleReferences(selectedArticles).map(reference => ({
+      guideKey: reference.guideKey,
+      name: selectedArticles.find(article => article.articleAlias === reference.articleAlias)?.title ?? reference.articleAlias,
+      articleId: reference.articleId,
+      articleAlias: reference.articleAlias,
+      referencePath: reference.referencePath,
+      publicArticleUrl: reference.fullArticleLink,
+      articleSectionUrl: null,
+      localArticlePath: null,
+      status: 'public-url-available',
+      customerSafeInstruction: 'Use the selected article registry entry, public URL, config URL, sections, subarticles, and settings as answer material.',
+    })),
+    ...builtInArticleReferences(guideContracts),
+  ];
   const preferredReference = preferredGuideReference(references);
   const publicArticleLinks = guideContracts.map(guide => guide.fullArticleLink).filter(Boolean);
   const articleAlias = preferredReference?.articleAlias ?? null;
   const articleId = preferredReference && !articleAlias ? preferredReference.articleId : null;
   const articleLookup = articleAlias ?? articleId ?? null;
   const missingInputs = articleLookup ? [] : ['articleAlias'];
+  const preferredArticle = selectedArticles.find(article => article.articleAlias === articleAlias) ?? null;
   const preferredGuide = guideContracts.find(guide => guide.articleAlias === articleAlias)
     ?? guideContracts.find(guide => guide.articleId === articleId)
     ?? guideContracts[0]
@@ -1473,8 +1795,12 @@ function articleFetchContract(expectedArticleFetch, guideContracts) {
     articleAlias: preferredReference?.articleAlias ?? null,
     articleId: preferredReference?.articleId ?? null,
     referencePath: preferredReference?.referencePath ?? null,
-    publicArticleLinks,
+    publicArticleLinks: uniqueStrings([
+      ...selectedArticles.map(article => article.publishedUrl).filter(Boolean),
+      ...publicArticleLinks,
+    ]),
     preferredReference,
+    selectedArticle: preferredArticle,
     missingInputs,
     fetchCommand: articleLookup
       ? {
@@ -1490,8 +1816,8 @@ function articleFetchContract(expectedArticleFetch, guideContracts) {
                 match: { field: 'alias', equals: articleAlias, prefer: 'most-recent-updatedAt' },
               }
             : null,
-          publicUrl: preferredGuide?.fullArticleLink ?? null,
-          configUrl: preferredGuide?.helpArticleConfigUrl ?? null,
+          publicUrl: preferredArticle?.publishedUrl ?? preferredGuide?.fullArticleLink ?? null,
+          configUrl: preferredArticle?.configUrl ?? preferredGuide?.helpArticleConfigUrl ?? null,
           optionalArgs: ['projectId when the article is project-scoped'],
           readOnly: true,
         }
@@ -1644,6 +1970,27 @@ function readJson(rel) {
   const path = join(root, rel);
   if (!existsSync(path)) fail(`Missing shipped file ${rel}.`);
   return JSON.parse(readFileSync(path, 'utf8'));
+}
+
+function readOptionalJson(rel) {
+  const path = join(root, rel);
+  if (!existsSync(path)) return null;
+  return JSON.parse(readFileSync(path, 'utf8'));
+}
+
+function readSupportKnowledgeGraphSummary() {
+  const schema = readOptionalJson('references/support-knowledge-graph/schema.json');
+  const adjacency = readOptionalJson('references/support-knowledge-graph/adjacency.json');
+  const searchIndex = readOptionalJson('references/support-knowledge-graph/search-index.json');
+  if (!schema && !adjacency && !searchIndex) return null;
+  return {
+    schemaSource: 'references/support-knowledge-graph/schema.json',
+    adjacencySource: 'references/support-knowledge-graph/adjacency.json',
+    searchIndexSource: 'references/support-knowledge-graph/search-index.json',
+    schema,
+    adjacency,
+    searchIndex,
+  };
 }
 
 function runEditorDoRunner(args) {
@@ -2740,7 +3087,7 @@ function guideKeysForAction(actionId) {
   return map[actionId] ?? [];
 }
 
-function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference) {
+function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference, options = {}) {
   const text = normalize(prompt);
   const stripeSubscriptionSetupGuideKeys = stripeSubscriptionSetupGuideKeysFromPrompt(text);
   if (stripeSubscriptionSetupGuideKeys) return stripeSubscriptionSetupGuideKeys;
@@ -2817,6 +3164,9 @@ function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference) {
   const probe = (teachReference.fieldQuestionProbes ?? []).find(item => phraseScore(text, normalize(item.query)) >= 2);
   if (probe?.expected?.articleAlias === 'help-options-list-single') {
     return ['screen-editor-section-options', 'screenedit-options-title-styles'];
+  }
+  if (options.allowGenericFallback === false) {
+    return null;
   }
   const scored = (guideEvidence.guides ?? [])
     .map(guide => ({

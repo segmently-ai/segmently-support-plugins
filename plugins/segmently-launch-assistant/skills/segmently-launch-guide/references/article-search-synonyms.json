@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Reviewed customer-language synonym overlay for article retrieval. This file improves candidate search only; article content and registry relations remain the answer source of truth.",
+  "groups": [
+    {
+      "id": "selected-product",
+      "phrases": [
+        "selected product",
+        "current product",
+        "selected plan",
+        "current plan",
+        "выбранный продукт",
+        "текущий продукт",
+        "выбранный тариф",
+        "текущий тариф",
+        "выбранная подписка"
+      ],
+      "tags": [
+        "selected-product",
+        "product-catalog",
+        "flexible-layout"
+      ],
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ]
+    },
+    {
+      "id": "purchase-label",
+      "phrases": [
+        "purchase label",
+        "purchase button label",
+        "buy button text",
+        "текст кнопки купить",
+        "лейбл покупки",
+        "кнопка покупает",
+        "кнопка покупки",
+        "кнопка купить"
+      ],
+      "tags": [
+        "purchase",
+        "labels-copy",
+        "product-catalog"
+      ],
+      "articleAliases": [
+        "help-block-flexible-sections",
+        "help-block-paywall-subscriptions"
+      ]
+    },
+    {
+      "id": "product-description-label",
+      "phrases": [
+        "description label",
+        "product description label",
+        "description from selected product",
+        "описание продукта",
+        "лейбл описания",
+        "description из выбранного тарифа",
+        "текст из выбранного продукта"
+      ],
+      "tags": [
+        "labels-copy",
+        "selected-product",
+        "product-catalog"
+      ],
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ]
+    },
+    {
+      "id": "flexible-layout",
+      "phrases": [
+        "flexible layout",
+        "flexible sections",
+        "flexible paywall",
+        "флексибл экран",
+        "флексибл layout",
+        "гибкий layout",
+        "гибкий экран"
+      ],
+      "tags": [
+        "flexible-layout"
+      ],
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ]
+    },
+    {
+      "id": "webembed-paywall",
+      "phrases": [
+        "webembed paywall",
+        "web embed paywall",
+        "custom html paywall",
+        "iframe paywall",
+        "вебэмбед пейвол",
+        "webembed оплата",
+        "custom html оплата"
+      ],
+      "tags": [
+        "webembed",
+        "paywall"
+      ],
+      "articleAliases": [
+        "help-block-custom-html",
+        "help-block-paywall-subscriptions"
+      ]
+    },
+    {
+      "id": "facebook-events-catalog",
+      "phrases": [
+        "facebook events catalog",
+        "events sent to facebook",
+        "which events",
+        "event list",
+        "список событий",
+        "какие события",
+        "какие ивенты",
+        "каталог событий facebook"
+      ],
+      "tags": [
+        "facebook-events",
+        "analytics-events"
+      ],
+      "articleAliases": [
+        "facebook-events-catalog"
+      ]
+    },
+    {
+      "id": "facebook-pixel-setup",
+      "phrases": [
+        "add facebook pixel",
+        "facebook pixel setup",
+        "meta pixel setup",
+        "pixel id",
+        "добавь facebook pixel",
+        "подключить facebook pixel",
+        "настроить meta pixel",
+        "поставить пиксель"
+      ],
+      "tags": [
+        "facebook-events",
+        "analytics-events"
+      ],
+      "articleAliases": [
+        "analytics-add-provider",
+        "analytics-provider-config",
+        "facebook-pixel-capi-setup"
+      ]
+    },
+    {
+      "id": "analytics-provider-setup",
+      "phrases": [
+        "add analytics provider",
+        "connect analytics provider",
+        "add google analytics",
+        "google analytics setup",
+        "ga4 setup",
+        "google tag manager setup",
+        "analytics provider config",
+        "custom script analytics",
+        "добавить google analytics",
+        "добавь google analytics",
+        "подключить google analytics",
+        "настроить ga4",
+        "добавить analytics",
+        "добавить аналитику"
+      ],
+      "tags": [
+        "analytics-events"
+      ],
+      "articleAliases": [
+        "analytics-add-provider",
+        "analytics-provider-config",
+        "integrations-analytics-section"
+      ]
+    },
+    {
+      "id": "stripe-subscriptions",
+      "phrases": [
+        "stripe subscriptions",
+        "stripe subscription setup",
+        "subscription products",
+        "paywall products",
+        "как настроить stripe подписки",
+        "stripe подписки",
+        "подписки stripe",
+        "тарифы подписки",
+        "subscription options"
+      ],
+      "tags": [
+        "stripe-payments",
+        "paywall"
+      ],
+      "articleAliases": [
+        "integrations-stripe-connect-section",
+        "stripe-connect-oauth-guidance",
+        "paywall-products-list",
+        "paywall-product-subscription-options",
+        "help-block-paywall-subscriptions"
+      ]
+    },
+    {
+      "id": "custom-domain",
+      "phrases": [
+        "custom domain",
+        "custom domain dns",
+        "dns setup",
+        "cname record",
+        "домен",
+        "кастомный домен",
+        "dns записи",
+        "настроить dns"
+      ],
+      "tags": [
+        "custom-domain"
+      ],
+      "articleAliases": [
+        "integrations-custom-domain-section",
+        "custom-domain-domain-input",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
+      ]
+    },
+    {
+      "id": "custom-html-webembed",
+      "phrases": [
+        "custom html",
+        "webembed",
+        "web embed",
+        "iframe",
+        "html editor",
+        "html code",
+        "кастомный html",
+        "вставить iframe",
+        "код iframe"
+      ],
+      "tags": [
+        "webembed"
+      ],
+      "articleAliases": [
+        "help-block-custom-html"
+      ]
+    }
+  ]
+}

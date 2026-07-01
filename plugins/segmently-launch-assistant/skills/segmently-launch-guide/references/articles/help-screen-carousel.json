@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-screen-carousel",
+  "articleId": null,
+  "title": "Carousel screen",
+  "sections": [
+    {
+      "id": "block-backdrop-head",
+      "title": "Background<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Background<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-backdrop-summary",
+      "title": "Background summary",
+      "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-backdrop-thumb",
+      "title": "Background in the editor",
+      "summary": "Background in the editor",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
+      ]
+    },
+    {
+      "id": "block-carousel-head",
+      "title": "Carousel<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Carousel<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-carousel-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-carousel-summary",
+      "title": "Carousel summary",
+      "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles.",
+      "kind": "section",
+      "articleSectionId": "block-carousel-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-carousel-thumb",
+      "title": "Carousel in the editor",
+      "summary": "Carousel in the editor",
+      "kind": "section",
+      "articleSectionId": "block-carousel-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png"
+      ]
+    },
+    {
+      "id": "block-headerbar-head",
+      "title": "Header<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Header<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-headerbar-summary",
+      "title": "Header summary",
+      "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-headerbar-thumb",
+      "title": "Header in the editor",
+      "summary": "Header in the editor",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
+      ]
+    },
+    {
+      "id": "intro",
+      "title": "Carousel screen",
+      "summary": "The Carousel screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "link-help-block-background",
+      "title": "Background",
+      "summary": "Related article: Background",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "backdrop"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
+      ]
+    },
+    {
+      "id": "link-help-block-carousel",
+      "title": "Carousel",
+      "summary": "Related article: Carousel",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "carousel"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png"
+      ]
+    },
+    {
+      "id": "link-help-block-header",
+      "title": "Header",
+      "summary": "Related article: Header",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "headerBar"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "block-backdrop-head",
+      "title": "Background<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Background<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-backdrop-summary",
+      "title": "Background summary",
+      "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-backdrop-thumb",
+      "title": "Background in the editor",
+      "summary": "Background in the editor",
+      "kind": "section",
+      "articleSectionId": "block-backdrop-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
+      ]
+    },
+    {
+      "id": "block-carousel-head",
+      "title": "Carousel<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Carousel<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-carousel-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-carousel-summary",
+      "title": "Carousel summary",
+      "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles.",
+      "kind": "section",
+      "articleSectionId": "block-carousel-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-carousel-thumb",
+      "title": "Carousel in the editor",
+      "summary": "Carousel in the editor",
+      "kind": "section",
+      "articleSectionId": "block-carousel-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png"
+      ]
+    },
+    {
+      "id": "block-headerbar-head",
+      "title": "Header<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Header<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-headerbar-summary",
+      "title": "Header summary",
+      "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-summary",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-headerbar-thumb",
+      "title": "Header in the editor",
+      "summary": "Header in the editor",
+      "kind": "section",
+      "articleSectionId": "block-headerbar-thumb",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
+      ]
+    },
+    {
+      "id": "intro",
+      "title": "Carousel screen",
+      "summary": "The Carousel screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "link-help-block-background",
+      "title": "Background",
+      "summary": "Related article: Background",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "backdrop"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png"
+      ]
+    },
+    {
+      "id": "link-help-block-carousel",
+      "title": "Carousel",
+      "summary": "Related article: Carousel",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "carousel"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png"
+      ]
+    },
+    {
+      "id": "link-help-block-header",
+      "title": "Header",
+      "summary": "Related article: Header",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "headerBar"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
+  ],
+  "nodes": [
+    {
+      "id": "intro",
+      "order": 0,
+      "kind": "Text",
+      "label": "Intro",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Carousel screen"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 28,
+            "fontWeight": 800,
+            "lineHeight": 34,
+            "color": "#101828"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "The Carousel screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 400,
+            "lineHeight": 26,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-headerbar-head",
+      "order": 1,
+      "kind": "Text",
+      "label": "Section: Header",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Header<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 22,
+            "fontWeight": 750,
+            "lineHeight": 28,
+            "color": "#101828"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "block-headerbar-summary",
+      "order": 2,
+      "kind": "Text",
+      "label": "Header summary",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 4
+        }
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-headerbar-thumb",
+      "order": 3,
+      "kind": "Media",
+      "label": "Header in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
+                "name": "The Header section in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "block-carousel-head",
+      "order": 4,
+      "kind": "Text",
+      "label": "Section: Carousel",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Carousel<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 22,
+            "fontWeight": 750,
+            "lineHeight": 28,
+            "color": "#101828"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-carousel/index.html"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "block-carousel-summary",
+      "order": 5,
+      "kind": "Text",
+      "label": "Carousel summary",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 4
+        }
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-carousel-thumb",
+      "order": 6,
+      "kind": "Media",
+      "label": "Carousel in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png",
+                "name": "The Carousel section in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "block-backdrop-head",
+      "order": 7,
+      "kind": "Text",
+      "label": "Section: Background",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Background<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 22,
+            "fontWeight": 750,
+            "lineHeight": 28,
+            "color": "#101828"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "block-backdrop-summary",
+      "order": 8,
+      "kind": "Text",
+      "label": "Background summary",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 4
+        }
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "What fills the whole screen behind your content: a solid color, a photo, or a looping video."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-backdrop-thumb",
+      "order": 9,
+      "kind": "Media",
+      "label": "Background in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+                "name": "The Background section in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/help-screen-carousel.assembly.json",
+      "scripts/help-articles/help-screen-carousel.doc.json"
+    ],
+    "generatedHash": "975a8fd50b5c16a1"
+  }
+}

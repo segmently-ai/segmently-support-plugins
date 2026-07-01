@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Curated searchable summaries for article-first routing. Every published article must have a customer-intent summary that adds meaning beyond the title before article-registry, search-index, runner, or plugin evals are trusted.",
+  "articles": [
+    {
+      "articleAlias": "collect-email-before-paywall",
+      "summary": "Explains why a paid subscription funnel must collect the visitor email before the paywall and how that email supports Stripe subscriptions, customer identity, receipts, attribution, and later billing support. Use this for questions about email capture before checkout, subscription readiness, and metadata needed before showing a paywall.",
+      "keywords": ["email before paywall", "collect customer email", "subscription customer identity", "stripe receipts", "paywall attribution"],
+      "tags": ["paywall", "subscriptions", "email-capture", "stripe-payments"]
+    },
+    {
+      "articleAlias": "facebook-events-catalog",
+      "summary": "Lists the Facebook Pixel and Conversions API events that Segmently can send from a funnel, including page visits, onboarding interactions, product catalog selection, checkout, and purchase-related signals. Use this when customers ask what Facebook or Meta events are emitted, which parameters are included, or how the event catalog relates to attribution and optimization.",
+      "keywords": ["facebook events catalog", "meta pixel events", "conversions api events", "purchase events", "product catalog events"],
+      "tags": ["facebook-events", "analytics-events", "meta-pixel", "events-catalog"]
+    },
+    {
+      "articleAlias": "facebook-pixel-capi-setup",
+      "summary": "Shows how to connect Facebook or Meta analytics to Segmently by adding the Pixel ID and Conversions API token, then verifying that funnel events can be sent to Meta. Use this for setup questions about Facebook Pixel, Meta Pixel, CAPI, access tokens, provider configuration, and event tracking readiness.",
+      "keywords": ["facebook pixel setup", "meta pixel setup", "conversions api token", "pixel id", "analytics provider"],
+      "tags": ["facebook-events", "analytics-events", "meta-pixel", "provider-setup"]
+    },
+    {
+      "articleAlias": "help-block-action-bar",
+      "summary": "Documents the Action Bar section that controls the screen's primary and secondary call-to-action buttons. It covers button labels, text styles, fill and border styling, gradients, shadows, effects, icons, spacing, and which screens use the shared bottom button bar, including WebEmbed and ordinary onboarding screens.",
+      "keywords": ["action bar", "primary button", "secondary button", "cta label", "button style", "button icon"],
+      "tags": ["action-bar", "buttons", "labels-copy", "webembed"]
+    },
+    {
+      "articleAlias": "help-block-background",
+      "summary": "Explains the Background section used across screen types to set the full-screen backdrop behind content. It covers solid color, photo, video, browser chrome color, visual contrast, and where background controls appear on regular screens, WebEmbed, Paywall, and Flexible Layout screens.",
+      "keywords": ["background", "solid color", "background photo", "background video", "browser chrome color"],
+      "tags": ["background", "media", "webembed", "paywall", "flexible-layout"]
+    },
+    {
+      "articleAlias": "help-block-basic-config",
+      "summary": "Documents screen-level Basic Config controls that change runtime behavior rather than visible content. It covers entrance animation, offline or cached media, device permission prompts, auto-advance countdown timing, and the screen types where these settings are available.",
+      "keywords": ["basic config", "screen animation", "offline media", "device permission", "auto advance countdown"],
+      "tags": ["basic-config", "runtime-behavior", "countdown", "permissions"]
+    },
+    {
+      "articleAlias": "help-block-carousel",
+      "summary": "Documents the Carousel screen section for timed slide-based storytelling. It covers slide template, slide title, subtitle, detail text, slide images, per-slide timing, total duration, image and text layout regions, container styling, and text/image appearance controls.",
+      "keywords": ["carousel", "slide title", "slide image", "slide duration", "auto advancing slides"],
+      "tags": ["carousel", "slides", "media", "labels-copy", "timing"]
+    },
+    {
+      "articleAlias": "help-block-content",
+      "summary": "Documents the shared Content section for screen title, subtitle, and hero image elements. It covers copy values, text styles, hero image source and sizing, spacing around content, layout choices, and how Content appears across hero, list, grid, text input, wheel picker, and hero list screens.",
+      "keywords": ["content section", "title text", "subtitle text", "hero image", "screen headline", "content spacing"],
+      "tags": ["content", "title", "subtitle", "hero-image", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-custom-html",
+      "summary": "Documents the Custom HTML or WebEmbed section for embedding custom iframe or HTML experiences inside a Segmently screen. It covers the code editor, Apply to Preview, iframe isolation and sandbox settings, external data sources, and boundaries between WebEmbed paywalls, analytics scripts, and custom domain setup.",
+      "keywords": ["custom html", "webembed", "iframe", "apply to preview", "data sources", "sandbox"],
+      "tags": ["webembed", "custom-html", "iframe", "data-sources"]
+    },
+    {
+      "articleAlias": "help-block-flexible-sections",
+      "summary": "Documents Flexible Layout sections and their layout, content, and management settings. It covers adding, deleting, reordering, naming, scrolling, sizing, alignment, background, borders, z-index, and the linked Product Catalog paywall pattern where Text and Purchase Button sections read the selected product description and purchase label.",
+      "keywords": ["flexible layout", "flexible sections", "linked product catalog", "selected product", "purchase label", "description label"],
+      "tags": ["flexible-layout", "product-catalog", "paywall", "purchase", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-header",
+      "summary": "Documents the Header section at the top of onboarding screens. It covers Back and Skip buttons, progress indicators, header layout and height, button labels, button text and icon styling, progress colors, insets, background, and screen types where the header appears.",
+      "keywords": ["header", "back button", "skip button", "progress indicator", "header height", "progress colors"],
+      "tags": ["header", "navigation", "progress", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-media",
+      "summary": "Documents the shared Media section for image and video content on list, grid, wheel picker, and other supported screens. It covers media kind, uploaded images, video source, sizing, fit, alignment, corner radius, repeat behavior, and when paywall-specific media uses a separate guide.",
+      "keywords": ["media section", "image source", "video source", "media sizing", "image fit", "corner radius"],
+      "tags": ["media", "image", "video", "layout"]
+    },
+    {
+      "articleAlias": "help-block-options",
+      "summary": "Documents the Options section for list, grid, and hero-list choice screens. It covers answer items, labels, stored values, selection mode, max selections, random order, list or grid layout, checkbox style, item spacing, padding, images, selected state, and option text/container appearance.",
+      "keywords": ["options", "answer choices", "selection mode", "checkbox", "option item", "stored value"],
+      "tags": ["options", "choices", "selection", "variable-binding", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-paywall-body",
+      "summary": "Documents the Paywall Body section that carries the main selling copy below the paywall header. It covers headline and subtitle text, benefit bullet items, benefit icons or images, benefit list layout, text styles, spacing, and how body copy supports conversion before purchase.",
+      "keywords": ["paywall body", "paywall headline", "benefit bullets", "benefit list", "paywall copy"],
+      "tags": ["paywall", "paywall-body", "benefits", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-paywall-footer",
+      "summary": "Documents the Paywall Footer section that sits near the purchase area. It covers purchase button copy, auto-renewal disclosure, restore purchases, terms and privacy links, legal URLs, footer element order, legal-link styling, and compliance copy around checkout.",
+      "keywords": ["paywall footer", "purchase button", "restore purchases", "terms link", "privacy link", "auto renewal"],
+      "tags": ["paywall", "paywall-footer", "purchase", "legal-links", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-paywall-header",
+      "summary": "Documents the Paywall Header section at the top of a paywall screen. It covers close and restore controls, badges or introductory labels, header text and layout, restore styling, delayed close behavior, and how the header frames the paid offer before the body and subscription choices.",
+      "keywords": ["paywall header", "restore button", "close button", "paywall badge", "close delay"],
+      "tags": ["paywall", "paywall-header", "restore", "navigation"]
+    },
+    {
+      "articleAlias": "help-block-paywall-media",
+      "summary": "Documents the Paywall Media section for visual proof or product imagery on a paywall. It covers image or video media, upload/source choices, sizing, fit, placement, and how paywall media differs from generic screen media when building subscription or paid access screens.",
+      "keywords": ["paywall media", "paywall image", "paywall video", "paid screen media", "media fit"],
+      "tags": ["paywall", "media", "image", "video"]
+    },
+    {
+      "articleAlias": "help-block-paywall-subscriptions",
+      "summary": "Documents the Paywall Subscriptions section where products, offers, prices, and subscription choices are shown on a paywall. It covers linked Stripe products, product catalog items, selection state, item labels, pricing text, subscription options, layout, styling, and ordinary paywall purchase behavior.",
+      "keywords": ["paywall subscriptions", "subscription products", "stripe products", "product catalog", "pricing labels", "selected product"],
+      "tags": ["paywall", "subscriptions", "stripe-payments", "product-catalog", "purchase"]
+    },
+    {
+      "articleAlias": "help-block-roller",
+      "summary": "Documents the Roller section used by Wheel Picker screens. It covers wheel labels, item appearance, selected value styling, roller container layout, thickness, spacing, and how roller choices connect to variables and screen progression.",
+      "keywords": ["roller", "wheel picker", "wheel labels", "selected value", "roller style"],
+      "tags": ["roller", "wheel-picker", "selection", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-stepper",
+      "summary": "Documents the Stepper section for Progress Steps screens. It covers auto-advancing step segments, total duration, segment timing, progress fill and track styling, media/text layout, step titles, subtitles, images, and visual timing for onboarding progress sequences.",
+      "keywords": ["stepper", "progress steps", "step duration", "progress bar", "segment timing"],
+      "tags": ["stepper", "progress", "timing", "media", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-block-sticky-container",
+      "summary": "Documents the Sticky Container section for Flexible Layout screens. It covers pinned or sticky content, section positioning, layout behavior while other flexible sections scroll, and how sticky controls can support persistent calls to action or navigation in a flexible screen.",
+      "keywords": ["sticky container", "sticky section", "flexible layout sticky", "pinned content", "persistent cta"],
+      "tags": ["flexible-layout", "sticky-container", "layout", "purchase"]
+    },
+    {
+      "articleAlias": "help-block-text-field",
+      "summary": "Documents the Text Field section for Text Input screens. It covers placeholder text, input styling, borders, keyboard/input behavior, validation-oriented appearance, and how entered text can be captured through variables or used before later funnel steps.",
+      "keywords": ["text field", "text input", "placeholder", "input border", "entered text"],
+      "tags": ["text-field", "text-input", "forms", "variable-binding"]
+    },
+    {
+      "articleAlias": "help-block-variable-binding",
+      "summary": "Documents Variable Binding settings that connect a screen's user choice or text input to a saved variable. It covers variable name, value mapping, option stored values, score effects, binding options, and how later screens, conditions, analytics, or checkout metadata can use captured answers.",
+      "keywords": ["variable binding", "stored value", "answer variable", "score effect", "option value", "captured answer"],
+      "tags": ["variable-binding", "variables", "options", "text-input", "analytics-events"]
+    },
+    {
+      "articleAlias": "help-content-hero",
+      "summary": "Explains the Content section for Hero Content screens, focusing on the main headline, supporting subtitle, and optional hero image that introduce the funnel. Use it for questions about editing hero screen copy, lead visuals, and first-screen presentation.",
+      "keywords": ["hero content", "hero screen title", "hero subtitle", "hero image", "first screen copy"],
+      "tags": ["content", "hero-content", "title", "subtitle", "hero-image"]
+    },
+    {
+      "articleAlias": "help-content-hero-basic",
+      "summary": "Explains the Content section variant used by Wheel Picker and Hero List screens. It covers the title, subtitle, and hero image elements that frame a wheel or hero-list choice experience before the visitor interacts with the main selection control.",
+      "keywords": ["wheel picker content", "hero list content", "title subtitle hero image", "choice screen copy"],
+      "tags": ["content", "wheel-picker", "hero-list", "hero-image"]
+    },
+    {
+      "articleAlias": "help-content-text",
+      "summary": "Explains the Content section variant for list, grid, and text-input screens. It covers title and subtitle copy used to ask the question or prompt the visitor, plus supporting content layout that sits above options, grid items, or a text field.",
+      "keywords": ["list screen content", "grid screen content", "text input content", "question title", "subtitle prompt"],
+      "tags": ["content", "list-screen", "grid-screen", "text-input", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-element-hero-image",
+      "summary": "Element-level guide for the hero image inside Content sections. It covers image source, dimensions, fit, rounding, spacing, and how the lead visual works with title and subtitle copy across hero, list, grid, wheel picker, and hero list screens.",
+      "keywords": ["hero image element", "image source", "image dimensions", "image fit", "content image"],
+      "tags": ["hero-image", "media", "content", "layout"]
+    },
+    {
+      "articleAlias": "help-element-subtitle",
+      "summary": "Element-level guide for subtitle text inside Content sections. It covers editing the supporting line under the title, typography, color, alignment, spacing, and how subtitles clarify a question, offer, or instruction without becoming the primary headline.",
+      "keywords": ["subtitle element", "subtitle text", "supporting copy", "subtitle style", "subtitle spacing"],
+      "tags": ["subtitle", "content", "labels-copy", "text-style"]
+    },
+    {
+      "articleAlias": "help-element-title",
+      "summary": "Element-level guide for title text inside Content sections. It covers editing the main headline or question, typography, color, alignment, spacing, and how title copy acts as the first line a visitor reads on content-driven screens.",
+      "keywords": ["title element", "headline text", "screen title", "question title", "title style"],
+      "tags": ["title", "content", "labels-copy", "text-style"]
+    },
+    {
+      "articleAlias": "help-options-grid-multi",
+      "summary": "Explains the Options section for Grid Multi Pick screens, where visitors can select more than one choice from a grid. It covers grid item labels, images, selected state, multi-select behavior, stored values, checkbox or selection affordances, and grid layout.",
+      "keywords": ["grid multi pick", "multi select grid", "grid options", "selected options", "checkbox grid"],
+      "tags": ["options", "grid", "multi-select", "choices"]
+    },
+    {
+      "articleAlias": "help-options-grid-single",
+      "summary": "Explains the Options section for Grid Single Pick screens, where visitors choose one item from a grid. It covers item labels, images, selected state, stored values, grid spacing, and single-selection behavior used for product, preference, or segmentation choices.",
+      "keywords": ["grid single pick", "single select grid", "grid options", "selected item", "choice grid"],
+      "tags": ["options", "grid", "single-select", "choices"]
+    },
+    {
+      "articleAlias": "help-options-hero-list",
+      "summary": "Explains the Options section for Hero List screens, combining prominent list choices with hero-style presentation. It covers item labels, descriptions or images where available, selected state, stored values, and layout choices for a visually rich selection screen.",
+      "keywords": ["hero list options", "hero list choices", "option labels", "selected item", "stored values"],
+      "tags": ["options", "hero-list", "choices", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-options-list-multi",
+      "summary": "Explains the Options section for List Multi Pick screens, where visitors can select multiple answers from a vertical list. It covers list item labels, selected state, checkbox behavior, maximum selections, random order, stored values, and list spacing.",
+      "keywords": ["list multi pick", "multi select list", "checkbox list", "max selections", "list options"],
+      "tags": ["options", "list", "multi-select", "choices"]
+    },
+    {
+      "articleAlias": "help-options-list-single",
+      "summary": "Explains the Options section for List Single Pick screens, where visitors choose one answer from a vertical list. It covers item labels, selected state, stored values, list item layout, spacing, and single-selection behavior for segmentation or preference questions.",
+      "keywords": ["list single pick", "single select list", "list options", "selected answer", "stored value"],
+      "tags": ["options", "list", "single-select", "choices"]
+    },
+    {
+      "articleAlias": "help-screen-carousel",
+      "summary": "Screen overview for Carousel screens, showing the sections that make up a timed slide deck and linking to the full Carousel and Header or Background guides. Use it to understand which editor sections control carousel slides, timing, images, and surrounding screen chrome.",
+      "keywords": ["carousel screen", "carousel sections", "slide deck screen", "carousel editor"],
+      "tags": ["screen-overview", "carousel", "slides"]
+    },
+    {
+      "articleAlias": "help-screen-flexiblelayout",
+      "summary": "Screen overview for Flexible Layout screens, showing the flexible sections, background, sticky container, and linked Product Catalog patterns available on this screen type. Use it for questions about building custom layouts, WebEmbedded-like compositions, flexible paywalls, and product-linked labels or purchase buttons.",
+      "keywords": ["flexible layout screen", "flexible paywall", "linked product catalog", "sticky container", "custom layout"],
+      "tags": ["screen-overview", "flexible-layout", "product-catalog", "paywall", "webembed"]
+    },
+    {
+      "articleAlias": "help-screen-gridmultipick-elements",
+      "summary": "Screen overview for Grid Multi Pick screens, showing the sections used to ask a question and let visitors select multiple grid items. It links to Content, Options, Media, Variable Binding, Action Bar, Header, Background, and Basic Config guides.",
+      "keywords": ["grid multi pick screen", "multi select grid screen", "grid choices", "screen sections"],
+      "tags": ["screen-overview", "grid", "multi-select", "options"]
+    },
+    {
+      "articleAlias": "help-screen-gridsinglepick-elements",
+      "summary": "Screen overview for Grid Single Pick screens, showing the sections used to ask a question and let visitors choose one grid item. It links to Content, Options, Media, Variable Binding, Action Bar, Header, Background, and Basic Config guides.",
+      "keywords": ["grid single pick screen", "single select grid screen", "grid choices", "screen sections"],
+      "tags": ["screen-overview", "grid", "single-select", "options"]
+    },
+    {
+      "articleAlias": "help-screen-herocontent",
+      "summary": "Screen overview for Hero Content screens, showing the sections used to create a simple branded intro or value-proposition screen. It links to Header, Content, Action Bar, Background, and Basic Config settings that shape the first impression of a funnel.",
+      "keywords": ["hero content screen", "intro screen", "value proposition screen", "hero screen sections"],
+      "tags": ["screen-overview", "hero-content", "content", "action-bar"]
+    },
+    {
+      "articleAlias": "help-screen-herocontent-detailed",
+      "summary": "Detailed Hero Content screen guide that explains how the intro screen is assembled from title, subtitle, hero image, action buttons, header, background, and behavior settings. Use it when the customer needs a fuller explanation of all Hero Content screen parts.",
+      "keywords": ["hero content detailed", "hero screen setup", "intro screen sections", "title subtitle hero image"],
+      "tags": ["screen-overview", "hero-content", "content", "hero-image"]
+    },
+    {
+      "articleAlias": "help-screen-herocontent-elements",
+      "summary": "Element-oriented Hero Content screen overview, mapping the visible title, subtitle, hero image, action bar, header, background, and basic behavior controls to their full guides. Use it for questions that name a visible element on a hero screen.",
+      "keywords": ["hero content elements", "hero title", "hero subtitle", "hero image", "hero action button"],
+      "tags": ["screen-overview", "hero-content", "elements", "labels-copy"]
+    },
+    {
+      "articleAlias": "help-screen-herolist-elements",
+      "summary": "Screen overview for Hero List screens, showing the content and options structure for a visually rich list selection experience. It links to Header, Content, Options, Variable Binding, Action Bar, Background, and Basic Config guides.",
+      "keywords": ["hero list screen", "hero list options", "visual list choices", "screen sections"],
+      "tags": ["screen-overview", "hero-list", "options", "content"]
+    },
+    {
+      "articleAlias": "help-screen-listmultipick-elements",
+      "summary": "Screen overview for List Multi Pick screens, showing the sections used to ask a question and let visitors select multiple list answers. It links to Content, Options, Media, Variable Binding, Action Bar, Header, Background, and Basic Config guides.",
+      "keywords": ["list multi pick screen", "multi select list screen", "checkbox choices", "screen sections"],
+      "tags": ["screen-overview", "list", "multi-select", "options"]
+    },
+    {
+      "articleAlias": "help-screen-listsinglepick-elements",
+      "summary": "Screen overview for List Single Pick screens, showing the sections used to ask a question and let visitors choose one list answer. It links to Content, Options, Media, Variable Binding, Action Bar, Header, Background, and Basic Config guides.",
+      "keywords": ["list single pick screen", "single select list screen", "list choices", "screen sections"],
+      "tags": ["screen-overview", "list", "single-select", "options"]
+    },
+    {
+      "articleAlias": "help-screen-paywall",
+      "summary": "Screen overview for Paywall screens, showing how paywall header, media, body, subscription products, footer, background, and basic behavior work together. Use it to explain ordinary paywalls, Stripe-linked products, subscription choices, purchase copy, restore/legal controls, and where each paywall setting lives.",
+      "keywords": ["paywall screen", "ordinary paywall", "subscription products", "stripe products", "purchase button", "paywall sections"],
+      "tags": ["screen-overview", "paywall", "subscriptions", "stripe-payments", "purchase"]
+    },
+    {
+      "articleAlias": "help-screen-progresssteps",
+      "summary": "Screen overview for Progress Steps screens, showing the Header and Stepper sections used to present an auto-advancing progress sequence. Use it for questions about progress bars, timed steps, segment labels, step images, and screen-level navigation controls.",
+      "keywords": ["progress steps screen", "stepper screen", "timed progress", "progress bar", "screen sections"],
+      "tags": ["screen-overview", "progress-steps", "stepper", "timing"]
+    },
+    {
+      "articleAlias": "help-screen-textinput-elements",
+      "summary": "Screen overview for Text Input screens, showing the sections used to ask for freeform text and continue the funnel. It links to Header, Content, Text Field, Variable Binding, Action Bar, Background, and Basic Config guides.",
+      "keywords": ["text input screen", "text field screen", "freeform input", "input variable", "screen sections"],
+      "tags": ["screen-overview", "text-input", "text-field", "variable-binding"]
+    },
+    {
+      "articleAlias": "help-screen-webembed",
+      "summary": "Screen overview for Web Embed screens, showing how Custom HTML, Action Bar, Header, Background, and Basic Config sections combine to host an embedded external or custom experience. Use it for WebEmbed setup, iframe/code questions, and distinguishing WebEmbed screens from Flexible Layout compositions.",
+      "keywords": ["web embed screen", "webembed screen", "custom html screen", "iframe screen", "embed sections"],
+      "tags": ["screen-overview", "webembed", "custom-html", "iframe"]
+    },
+    {
+      "articleAlias": "help-screen-wheelpicker-elements",
+      "summary": "Screen overview for Wheel Picker screens, showing the sections used for a scrollable wheel selection experience. It links to Header, Content, Media, Roller, Variable Binding, Action Bar, Background, and Basic Config guides.",
+      "keywords": ["wheel picker screen", "roller screen", "wheel selection", "screen sections", "variable binding"],
+      "tags": ["screen-overview", "wheel-picker", "roller", "selection"]
+    },
+    {
+      "articleAlias": "integrations-custom-domain-section",
+      "summary": "Explains the Custom Domain setup flow for replacing a generic Segmently link with a branded domain. It covers the order of entering the domain, adding DNS records at the customer's domain provider, verifying the domain in Segmently, and publishing only after the domain is ready.",
+      "keywords": ["custom domain setup", "dns records", "domain verification", "branded funnel link", "cname"],
+      "tags": ["custom-domain", "dns", "domain-verification", "publish-readiness"]
+    },
+    {
+      "articleAlias": "integrations-analytics-section",
+      "summary": "Explains the Analytics setup section in Integrations and why tracking should be configured before sending traffic. It covers choosing the correct analytics destination, verifying that visits, screen events, checkout transitions, and purchase signals arrive, and optionally enabling GDPR consent controls before publishing a funnel.",
+      "keywords": ["analytics setup", "integrations analytics section", "track funnel before launch", "event tracking before traffic", "gdpr consent analytics"],
+      "tags": ["analytics-events", "provider-setup", "publish-readiness", "consent-management"]
+    },
+    {
+      "articleAlias": "analytics-integration-list",
+      "summary": "Explains how to review the Analytics integrations list before launch. It covers checking which destinations are enabled, removing stale tracking IDs, understanding that enabled integrations inject into published web funnels, and enabling Segmently first-party analytics for internal reports and canvas insights.",
+      "keywords": ["analytics integration list", "active analytics destinations", "remove stale analytics", "segmently analytics reports", "enabled tracking destinations"],
+      "tags": ["analytics-events", "provider-setup", "publish-readiness", "integrations"]
+    },
+    {
+      "articleAlias": "analytics-add-provider",
+      "summary": "Explains how to add a new analytics destination from the Integrations Analytics area. It covers opening the provider picker, selecting tools such as Google Analytics 4, Google Tag Manager, Meta Pixel, TikTok Pixel, Amplitude, Mixpanel, PostHog, custom scripts, or server-side destinations, then publishing and verifying events.",
+      "keywords": ["add analytics provider", "add google analytics", "add meta pixel", "add tiktok pixel", "custom script analytics", "analytics destination picker"],
+      "tags": ["analytics-events", "provider-setup", "facebook-events", "tiktok-events", "custom-script"]
+    },
+    {
+      "articleAlias": "analytics-provider-config",
+      "summary": "Explains provider-specific analytics configuration fields and validation. It covers integration names, GA4 Measurement IDs, GTM Container IDs, Amplitude, Mixpanel, PostHog, Meta Pixel, TikTok Pixel, custom HEAD or BODY scripts, server-side Conversions API style destinations, and how to verify events after saving.",
+      "keywords": ["analytics provider config", "ga4 measurement id", "gtm container id", "facebook pixel id", "tiktok pixel id", "custom analytics script", "server side conversions api"],
+      "tags": ["analytics-events", "provider-setup", "facebook-events", "tiktok-events", "custom-script"]
+    },
+    {
+      "articleAlias": "launch-paid-funnel-overview",
+      "summary": "Gives the recommended end-to-end order for launching a paid funnel that can receive ad traffic. It covers setup dependencies such as Stripe, paywall products, analytics, onboarding screens, web placement or URL routing, publish verification, and how to avoid skipping payment or tracking prerequisites.",
+      "keywords": ["paid funnel launch", "launch checklist", "stripe setup", "paywall products", "analytics setup", "publish verification"],
+      "tags": ["launch-overview", "paywall", "stripe-payments", "analytics-events", "publish"]
+    },
+    {
+      "articleAlias": "paywall-payment-methods",
+      "summary": "Explains payment method behavior on Segmently paywalls, including embedded checkout versus redirect-style checkout, card payments, Apple Pay or wallet availability, Stripe configuration dependencies, and how payment method choices relate to the paywall purchase experience.",
+      "keywords": ["payment methods", "embedded checkout", "redirect checkout", "cards and wallets", "apple pay", "stripe paywall"],
+      "tags": ["paywall", "payment-methods", "stripe-payments", "checkout"]
+    },
+    {
+      "articleAlias": "tiktok-events-catalog",
+      "summary": "Lists the TikTok Pixel and Events API events that Segmently can send from a funnel, including visitor activity, onboarding interactions, product catalog selection, checkout, and purchase-related signals. Use this when customers ask what TikTok events are emitted or how TikTok tracking maps to funnel behavior.",
+      "keywords": ["tiktok events catalog", "tiktok pixel events", "events api", "purchase events", "product catalog events"],
+      "tags": ["tiktok-events", "analytics-events", "events-catalog"]
+    },
+    {
+      "articleAlias": "tiktok-pixel-events-api-setup",
+      "summary": "Shows how to connect TikTok analytics to Segmently by configuring the TikTok Pixel and Events API credentials, then verifying that funnel events can be sent. Use this for setup questions about TikTok Pixel, Events API tokens, provider configuration, and analytics readiness.",
+      "keywords": ["tiktok pixel setup", "tiktok events api setup", "events api token", "analytics provider", "pixel id"],
+      "tags": ["tiktok-events", "analytics-events", "provider-setup"]
+    }
+  ]
+}

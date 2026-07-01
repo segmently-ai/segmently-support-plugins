@@ -102,6 +102,34 @@
           "expectedScenarioId": "publish",
           "guidance": { "guideKeys": ["webplacement-publish-url"], "requiresText": true, "requiresImage": true },
           "expectedDo": { "actionId": "launch.publish", "status": "supported", "mode": "cli", "sampleArgs": ["--action", "launch.publish", "--projectId", "project_demo", "--funnelId", "funnel_demo", "--placementName", "Default web link"] }
+        },
+        {
+          "id": "maya-11",
+          "phase": "launch-order",
+          "text": "Я боюсь пропустить шаги перед рекламой, дай полный порядок что делать от оплаты до публикации.",
+          "expectedScenarioId": "launch-paid-funnel-overview",
+          "guidance": { "guideKeys": ["integrations-analytics-section", "paywall-products-list", "webplacement-publish-url"], "articleAliases": ["launch-paid-funnel-overview", "integrations-analytics-section"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-12",
+          "phase": "paywall-shapes",
+          "text": "Я запуталась: оплату можно сделать обычным пейволом, вебэмбед экраном или flexible layout?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-subscriptions", "screen-editor-section-embed", "screenedit-flexible-sections-linked-product-labels"], "articleAliases": ["help-block-paywall-subscriptions", "help-block-custom-html", "help-block-flexible-sections"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-13",
+          "phase": "flexible-selected-product",
+          "text": "В flexible layout хочу чтобы текст и кнопка покупки менялись от выбранного тарифа, как это связать?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screenedit-flexible-sections-linked-product-labels", "screenedit-flexible-sections-selected-product-purchase"], "articleAliases": ["help-block-flexible-sections"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "maya-14",
+          "phase": "payment-methods",
+          "text": "На пейволе какие способы оплаты увидит клиент: карточка, Apple Pay, встроенный чекаут или редирект?",
+          "expectedScenarioId": "paywall-payment-methods",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-subscriptions", "screen-editor-section-paywall-footer"], "articleAliases": ["paywall-payment-methods", "help-block-paywall-subscriptions", "help-screen-paywall"], "requiresText": true, "requiresImage": true }
         }
       ]
     },
@@ -195,6 +223,34 @@
           "text": "Я не понимаю что еще осталось перед запуском, покажи самый короткий следующий шаг.",
           "expectedScenarioId": "publish",
           "guidance": { "guideKeys": ["webplacement-publish-url", "integrations-analytics-section"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-11",
+          "phase": "ga4",
+          "text": "Куда вставить GA4 Measurement ID и как потом проверить что события пошли?",
+          "expectedScenarioId": "connect-analytics",
+          "guidance": { "guideKeys": ["analytics-add-provider", "analytics-provider-config"], "articleAliases": ["analytics-add-provider", "analytics-provider-config"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-12",
+          "phase": "facebook-events",
+          "text": "Перед запуском рекламы хочу понять какие события Segmently отправляет в Facebook и Meta.",
+          "expectedScenarioId": "facebook-events-list",
+          "guidance": { "guideKeys": ["integrations-analytics-section", "analytics-provider-config"], "articleAliases": ["facebook-events-catalog", "analytics-provider-config"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-13",
+          "phase": "tiktok-events",
+          "text": "А для TikTok какие события будут уходить из воронки и оплаты?",
+          "expectedScenarioId": "tiktok-events-list",
+          "guidance": { "guideKeys": ["integrations-analytics-section", "analytics-provider-config"], "articleAliases": ["tiktok-events-catalog", "analytics-provider-config"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "oleg-14",
+          "phase": "custom-script-analytics",
+          "text": "Если у меня свой аналитический скрипт, это WebEmbed или его надо добавлять как analytics custom script?",
+          "expectedScenarioId": "connect-analytics",
+          "guidance": { "guideKeys": ["analytics-add-provider", "analytics-provider-config"], "articleAliases": ["analytics-add-provider", "analytics-provider-config", "help-block-custom-html"], "requiresText": true, "requiresImage": true }
         }
       ]
     },
@@ -291,6 +347,34 @@
           "text": "Покажи мне весь первый урок как будто я вообще первый раз открыла сервис.",
           "expectedScenarioId": "teach-first-run",
           "guidance": { "guideKeys": ["onboarding-list-create", "onboarding-wizard-theme-select", "canvas-add-screen", "canvas-connect-screens"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-12",
+          "phase": "webembed",
+          "text": "Мне дали готовый HTML виджет, где его вставлять и чем WebEmbed отличается от обычного экрана?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-embed", "screen-editor-section-action-bar"], "articleAliases": ["help-block-custom-html"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-13",
+          "phase": "flexible-paywall-design",
+          "text": "Хочу дизайнерский paywall на flexible layout: тарифы, описание выбранного продукта и кнопка покупки в одном экране.",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-flexible-sections", "screenedit-flexible-sections-linked-product-labels", "screenedit-flexible-sections-selected-product-purchase"], "articleAliases": ["help-block-flexible-sections"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-14",
+          "phase": "ordinary-paywall-layout",
+          "text": "Если делать обычный paywall, где отдельно настраиваются заголовок, преимущества, тарифы и нижние legal ссылки?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screen-editor-section-paywall-body", "screen-editor-section-paywall-subscriptions", "screen-editor-section-paywall-footer"], "articleAliases": ["help-screen-paywall", "help-block-paywall-body", "help-block-paywall-subscriptions", "help-block-paywall-footer"], "requiresText": true, "requiresImage": true }
+        },
+        {
+          "id": "nina-15",
+          "phase": "selected-product-proof",
+          "text": "Как проверить визуально, что после выбора другого тарифа меняются description label и purchase label?",
+          "expectedScenarioId": "change-setting",
+          "guidance": { "guideKeys": ["screenedit-flexible-sections-selected-product-purchase"], "articleAliases": ["help-block-flexible-sections"], "requiresText": true, "requiresImage": true }
         }
       ]
     }

@@ -208,6 +208,113 @@
       ]
     },
     {
+      "id": "article-first-registry-shipped",
+      "prompt": "The assistant must search compact article directory/index before guide keys, then load selected article registry/content refs, and must expose typed SupportFlow relations.",
+      "expected_behavior": "The shipped package contains article-directory.json, article-search-index.json, compact article-registry.json, per-article content refs, and guide-registry.json for scalable article-first routing.",
+      "assertions": [
+        {
+          "name": "skill-article-first",
+          "corpus": "skill",
+          "mustContain": [
+            "references/article-directory.json",
+            "references/article-search-index.json",
+            "references/article-search-synonyms.json",
+            "references/article-registry.json",
+            "references/articles/<articleAlias>.json",
+            "references/support-knowledge-graph/",
+            "references/guide-registry.json",
+            "contentRef",
+            "subarticles",
+            "Do not search guides as a peer corpus",
+            "guideOnlyEvidence",
+            "--articleAliases"
+          ]
+        },
+        {
+          "name": "semantic-routing-article-first",
+          "corpus": "semanticRouting",
+          "mustContain": [
+            "references/article-directory.json",
+            "references/article-search-index.json",
+            "references/article-search-synonyms.json",
+            "references/article-registry.json",
+            "references/articles/<articleAlias>.json",
+            "references/support-knowledge-graph/",
+            "references/guide-registry.json",
+            "contentRef",
+            "subarticles",
+            "Do not search guides as a peer corpus",
+            "guideOnlyEvidence",
+            "selectedArticles[]"
+          ]
+        },
+        {
+          "name": "registry-key-articles",
+          "corpus": "articleRegistry",
+          "mustContain": [
+            "facebook-events-catalog",
+            "facebook-events-list",
+            "help-block-flexible-sections",
+            "screenedit-flexible-sections-linked-product-labels",
+            "selected-product",
+            "bySupportFlowFlow",
+            "byGuideKey"
+          ]
+        },
+        {
+          "name": "directory-key-articles",
+          "corpus": "articleDirectory",
+          "mustContain": [
+            "facebook-events-catalog",
+            "help-block-flexible-sections",
+            "qualityScore"
+          ]
+        },
+        {
+          "name": "guide-registry-links-to-articles",
+          "corpus": "guideRegistry",
+          "mustContain": [
+            "screenedit-flexible-sections-linked-product-labels",
+            "help-block-flexible-sections",
+            "byArticleAlias"
+          ]
+        },
+        {
+          "name": "synonyms-boost-article-search",
+          "corpus": "articleSearchSynonyms",
+          "mustContain": [
+            "selected-product",
+            "purchase-label",
+            "product-description-label",
+            "facebook-events-catalog",
+            "help-block-flexible-sections"
+          ]
+        },
+        {
+          "name": "knowledge-graph-links-articles-guides-and-flows",
+          "corpus": "supportKnowledgeGraphEdges",
+          "mustContain": [
+            "ARTICLE_SUPPORTED_BY_GUIDE",
+            "GUIDE_REFERENCES_ARTICLE",
+            "SYNONYM_POINTS_TO_ARTICLE",
+            "ARTICLE_RELATES_TO_SCENARIO",
+            "help-block-flexible-sections",
+            "screenedit-flexible-sections-linked-product-labels",
+            "facebook-events-catalog"
+          ]
+        },
+        {
+          "name": "knowledge-graph-no-external-runtime",
+          "corpus": "supportKnowledgeGraphSchema",
+          "mustContain": [
+            "No graph database",
+            "vector database",
+            "not a hand-edited source of truth"
+          ]
+        }
+      ]
+    },
+    {
       "id": "backends-cover-the-journey",
       "prompt": "A customer asks about each leg of the launch.",
       "expected_behavior": "Every leg has a backend and a verify documented.",

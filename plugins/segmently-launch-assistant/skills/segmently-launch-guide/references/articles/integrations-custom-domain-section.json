@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "integrations-custom-domain-section",
+  "articleId": "SMljKrbmQ8tmXw2pQ862",
+  "title": "Custom Domain setup",
+  "sections": [
+    {
+      "id": "integrations-custom-domain-section/section-1",
+      "title": "Why a custom domain matters",
+      "summary": "A custom domain (for example funnel.example.com) swaps the generic Segmently link for your own brand. A branded link looks more trustworthy in ads and emails, so more people click and fewer drop off before reaching your funnel. It's optional — publishing still works fine on the default Segmently domain if you skip it.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-1",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-2",
+      "title": "Recommended order of steps",
+      "summary": "Work through it in this order: (1) enter your domain, (2) add the DNS records Segmently shows you at your domain provider, (3) click Verify and wait for the 'Verified' status, then (4) select that verified domain when you publish a Web Placement. Verification has to succeed before the domain can serve your live funnel, so don't publish against it until the status is green.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-2",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "integrations-custom-domain-section/section-1",
+      "title": "Why a custom domain matters",
+      "summary": "A custom domain (for example funnel.example.com) swaps the generic Segmently link for your own brand. A branded link looks more trustworthy in ads and emails, so more people click and fewer drop off before reaching your funnel. It's optional — publishing still works fine on the default Segmently domain if you skip it.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-1",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-2",
+      "title": "Recommended order of steps",
+      "summary": "Work through it in this order: (1) enter your domain, (2) add the DNS records Segmently shows you at your domain provider, (3) click Verify and wait for the 'Verified' status, then (4) select that verified domain when you publish a Web Placement. Verification has to succeed before the domain can serve your live funnel, so don't publish against it until the status is green.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-2",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-custom-domain-section/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "cb496108be2ff32e"
+  }
+}

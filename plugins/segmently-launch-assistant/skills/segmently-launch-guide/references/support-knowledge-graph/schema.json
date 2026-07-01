@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "purpose": "Generated SupportFlow knowledge graph projection for article-first retrieval. This is runtime-safe static JSON/JSONL, not a hand-edited source of truth and not a graph database dependency.",
+  "nodeTypes": [
+    "Article",
+    "Subarticle",
+    "Guide",
+    "Setting",
+    "Action",
+    "Scenario",
+    "Workflow",
+    "WorkflowStep",
+    "Atom",
+    "Media",
+    "SourceConfig",
+    "Tag",
+    "Keyword",
+    "SynonymGroup"
+  ],
+  "edgeTypes": [
+    "ARTICLE_HAS_SUBARTICLE",
+    "ARTICLE_COVERS_SETTING",
+    "ARTICLE_SUPPORTED_BY_GUIDE",
+    "GUIDE_REFERENCES_ARTICLE",
+    "GUIDE_HAS_SCREENSHOT",
+    "ARTICLE_RELATES_TO_SCENARIO",
+    "ARTICLE_RELATES_TO_ACTION",
+    "SCENARIO_HAS_WORKFLOW",
+    "WORKFLOW_HAS_STEP",
+    "STEP_REQUIRES_ACTION",
+    "STEP_USES_ATOM",
+    "ACTION_HAS_TEACH_FALLBACK",
+    "NODE_GROUNDED_IN_SOURCE",
+    "SYNONYM_POINTS_TO_ARTICLE",
+    "NEGATIVE_FOR_ARTICLE"
+  ],
+  "sourceOfTruth": [
+    "Article configs and generated article references",
+    "SupportFlow guide/scenario/action catalogs",
+    "Reviewed article search synonym overlay"
+  ],
+  "runtimePolicy": [
+    "No graph database, vector database, Python stack, local embedding model, or Obsidian runtime is required by the customer plugin.",
+    "The graph improves retrieval and evidence tracing; final answers must still be grounded in selected article content and guide/action evidence.",
+    "Generated graph files must not be hand-edited."
+  ]
+}

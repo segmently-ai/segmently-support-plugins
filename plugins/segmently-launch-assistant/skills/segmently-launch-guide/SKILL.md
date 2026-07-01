@@ -17,8 +17,39 @@ no secrets.
 
 ## Built-in article and guide identity
 
-The packaged guide corpus is the first source for customer answers:
+The packaged article corpus is the first source for customer answers:
 
+- `references/article-directory.json` is the first-pass article search surface.
+  It is intentionally compact: article aliases, titles, summaries, tags,
+  keywords, subarticles, and typed relations.
+- `references/article-search-index.json` is the deterministic inverted index
+  used to shortlist article candidates before loading full article material.
+- `references/article-search-synonyms.json` is a small reviewed overlay of
+  customer-language synonyms and aliases. It improves candidate selection for
+  phrases such as selected product, purchase label, Flexible Layout paywall,
+  WebEmbed paywall, and Facebook events catalog; it does not replace article
+  content as the answer source.
+- `references/article-summary-overrides.json` is the reviewed searchable summary
+  source. Every published article must have a customer-intent summary here when
+  the article body/config does not already provide a complete searchable
+  description. Title-only summaries are invalid for customer-facing routing.
+- `references/article-registry.json` is the compact article routing contract. It
+  connects each `articleAlias` to title, description, public URL, config URL,
+  reviewed/generator metadata, subarticles, settings anchors, semantic tags,
+  typed SupportFlow relations (`supportFlowFlows`, `scenarioIds`, `guideKeys`,
+  `actionIds`, `atoms`), and `contentRef`.
+- `references/articles/<articleAlias>.json` stores heavy article material:
+  normalized sections, subarticle content, settings anchors, media, and
+  FlexibleLayout nodes. Load it only for selected articles.
+- `references/support-knowledge-graph/` is a generated static graph projection:
+  articles, subarticles, settings, guides, scenarios, workflows, actions, atoms,
+  media, and synonym groups with typed edges and provenance. It is useful for
+  evidence tracing and "which articles are connected to this flow" questions.
+  It is not a graph database, vector database, local embedding runtime, or
+  Obsidian dependency; do not require the customer to install anything for it.
+- `references/guide-registry.json` stores guide identity, guide-to-article
+  references, screenshots, SHOW support, and DO action relations. Guides are
+  evidence/execution helpers and should link back to articles.
 - `references/teach-reference.json` stores the screen/block article corpus by
   customer-safe `articleAlias`, with field and leaf explanations.
 - `references/guide-evidence.json` stores every authored guide row with
@@ -31,11 +62,37 @@ The packaged guide corpus is the first source for customer answers:
   URL in the customer answer. Do not reduce a published article to only its
   alias.
 
+Search `article-directory.json`, `article-search-index.json`, and article-first
+static graph article/synonym/setting paths before guide keys. Match article
+aliases, descriptions, tags, synonyms, subarticles, direct settings, supported
+surfaces, and typed relations. After selecting an article, load only its compact
+`article-registry.json` entry and then its `contentRef` if the answer needs
+sections, settings, media, or FlexibleLayout nodes. Guide keys are a secondary
+evidence/execution layer: use them for exact editor controls, screenshots,
+SHOW/DO contracts, and verification boundaries after the relevant article has
+been selected.
+
+Do not search guides as a peer corpus in the first customer-facing retrieval
+pass. A guide is a quick UI hint and evidence row, not the explanation source of
+truth. Use guide search only when no article candidate is found, when the user
+explicitly asks where to click / SHOW this in the UI, or when an already
+selected article/domain operation needs its related screenshot/action evidence.
+If a guide has useful customer text but no linked article, treat it as
+`guideOnlyEvidence`: it can help navigation, but it is a corpus gap, not an
+authoritative article answer.
+
+Articles can contain subarticles, similar to module submodules. A subarticle is
+a section, setting anchor, guide section, or linked child article under the
+parent `articleAlias`. If the user matches a subarticle, keep the parent
+article identity and answer from that subarticle's title, summary, section URL,
+settings, and media.
+
 Selected article content is answer material, not just a citation. After matching
 an article or guide, read and use the shipped section text returned by the
-runner (`answer.instructions[]`, `guidance.guides[].textSections`,
-`articleReferences`, section anchors, and image URLs). If those shipped sections
-are too thin for the customer's question, switch to the read-only
+runner (`selectedArticles[]`, `answer.instructions[]`,
+`guidance.guides[].textSections`, `articleReferences`, section anchors, config
+URLs, settings anchors, and image URLs). If those shipped sections are too thin
+for the customer's question, switch to the read-only
 `article-fetch` path through `segmently-cli-articles`, resolve the selected
 `articleAlias` to an article id, fetch the article/config, study its sections,
 and use that content in the answer. Do not fill gaps from general Segmently
@@ -110,8 +167,14 @@ resolution from this skill directory:
 node runtime/customer-response-runner.mjs --prompt "<customer request>" --guideKeys "<guideKey1>,<guideKey2>" --scenarioId "<scenario-id>"
 ```
 
+When the best match is an article or subarticle, pass it explicitly:
+
+```bash
+node runtime/customer-response-runner.mjs --prompt "<customer request>" --articleAliases "<articleAlias1>,<articleAlias2>"
+```
+
 Use the returned contract as the source of truth for `guidance.guides`,
-`answer.publicArticleLinks`, `answer.imageUrls`,
+`selectedArticles`, `answer.publicArticleLinks`, `answer.imageUrls`,
 `answer.customerVisibleGuideAssets`, `show`, `action`, and `completionClaim`.
 The runner validates materials and execution boundaries; it does not own
 semantic understanding in `--guideKeys` mode. Raw

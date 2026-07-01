@@ -21,6 +21,33 @@ customer may use incomplete, mixed, misspelled, or non-product vocabulary.
 
 Choose one or more catalog items from the shipped files:
 
+- `references/article-directory.json` and `references/article-search-index.json`
+  are the first-pass article search surfaces. Search article aliases, titles,
+  descriptions, tags, subarticles, settings, and SupportFlow typed relations
+  before guide keys.
+- `references/article-search-synonyms.json` is the reviewed customer-language
+  synonym overlay for phrases that are common in support conversations but may
+  not appear verbatim in article aliases, for example selected product,
+  purchase label, Flexible Layout paywall, WebEmbed paywall, or Facebook events
+  catalog.
+- `references/article-summary-overrides.json` is the reviewed searchable summary
+  source for articles whose config/body text is too thin. A selected article
+  should have a meaningful customer-intent summary; title-only descriptions are
+  corpus defects, not acceptable routing evidence.
+- `references/article-registry.json` is the compact selected-article routing
+  contract with public URLs, subarticles, settings anchors, typed relations, and
+  `contentRef`.
+- `references/articles/<articleAlias>.json` stores heavy selected-article
+  material: sections, settings anchors, media, and FlexibleLayout nodes. Load it
+  only after selecting candidate articles.
+- `references/support-knowledge-graph/` is a generated static graph projection
+  with typed edges between articles, subarticles, settings, guides, scenarios,
+  workflows, actions, atoms, media, and synonym groups. Use it to trace evidence
+  and answer relation questions such as "which articles are connected to this
+  flow." It is not a graph/vector database or local runtime dependency.
+- `references/guide-registry.json` links guides back to articles and carries
+  screenshot/SHOW/DO evidence. Use it after article selection, not as a
+  replacement for article content.
 - `references/scenarios.md` for broad launch scenarios and customer phrasing.
 - `references/guide-evidence.json` for guide keys, article aliases, article
   URLs, section text, screenshot coverage, and concrete image URLs.
@@ -29,9 +56,26 @@ Choose one or more catalog items from the shipped files:
 - `references/backends.md` and `runtime/do-action-reference.json` for whether a
   selected intent can be TEACH, SHOW, CLI DO, E2E/browser DO, or HANDOFF.
 
+Article registry entries can have subarticles. A subarticle is a section,
+setting, guide section, or assembly link under the parent article. If a
+subarticle is the best semantic match, keep the parent `articleAlias` as the
+identity and use the subarticle title/summary/section URL as the answer detail.
+
+Do not search guides as a peer corpus during the first customer-facing
+retrieval pass. Guides are short UI hints and evidence rows. First search
+articles, subarticles, settings, article synonyms, and article typed relations.
+Then attach related guides through the selected article, subarticle, setting,
+scenario, or action. Search guides only as a fallback when no article candidate
+exists, or when the customer explicitly asks for a UI location, SHOW walkthrough,
+or executable DO path. A guide with no linked article is `guideOnlyEvidence` and
+should create a quality gap, not an authoritative answer.
+
 After selecting likely articles/guides, study the selected article material
 before writing the answer:
 
+- First read `selectedArticles[]` from the runner. Its sections, subarticles,
+  settings anchors, public URL, config URL, media URLs, tags, and relations are
+  loaded from selected article `contentRef` and are answer material.
 - First read the returned shipped guide sections (`answer.instructions[]`,
   `guidance.guides[].textSections`, `articleReferences`, image URLs, and section
   anchors). These sections are answer material, not just citations.
@@ -74,6 +118,7 @@ After selecting catalog items, ask the runner to resolve facts:
 ```bash
 node runtime/customer-response-runner.mjs \
   --prompt "<customer request>" \
+  --articleAliases "<articleAlias1>,<articleAlias2>" \
   --guideKeys "<guideKey1>,<guideKey2>" \
   --scenarioId "<scenario-id>"
 ```
@@ -81,6 +126,9 @@ node runtime/customer-response-runner.mjs \
 Use `--mode show` when the customer asks to be shown where something is, and
 `--mode article-fetch` when they ask for the full article. Use `--actionId` only
 after the model has selected a real action from `runtime/do-action-reference.json`.
+If the semantic match is an article with no guide rows, pass only
+`--articleAliases`; the runner will still return `selectedArticles[]`,
+article URLs, config URLs, subarticles, and article-fetch metadata.
 
 Do not use:
 
@@ -95,8 +143,10 @@ DO, `--actionId`.
 
 Treat the returned contract as authoritative for:
 
+- `selectedArticles[]`
 - `answer.publicArticleLinks`
 - `answer.imageUrls`
+- `answer.articleReferences`
 - `answer.customerVisibleGuideAssets`
 - `answer.showDoOptions`
 - `action`

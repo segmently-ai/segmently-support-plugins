@@ -900,9 +900,11 @@ check('SHOW runner dry-run exposes visible headed browser package', () => {
 check('persona questions have text, screenshot evidence, response contracts, and DO contracts', () => {
   const guideEvidence = json('references/guide-evidence.json');
   const helpArticleReference = json('references/help-article-reference.json');
+  const articleRegistry = json('references/article-registry.json');
   const personaFlow = json('evals/persona-flow-evals.json');
   const actionReference = json('runtime/do-action-reference.json');
   const guidesByKey = new Map((guideEvidence.guides ?? []).map(guide => [guide.guideKey, guide]));
+  const articleByAlias = new Map((articleRegistry.articles ?? []).map(article => [article.articleAlias, article]));
   const actionsById = new Map((actionReference.actions ?? []).map(action => [action.id, action]));
   const shippedImageUrls = (guideEvidence.guides ?? [])
     .flatMap(guide => guide.sections ?? [])
@@ -932,6 +934,15 @@ check('persona questions have text, screenshot evidence, response contracts, and
         assert(guide.hasScreenshotEvidence, `${persona.id}/${question.id} guide ${guideKey} has no screenshot evidence`);
         assert(hasSectionImageEvidence(guide), `${persona.id}/${question.id} guide ${guideKey} has no section-level image evidence`);
       }
+      const articleAliases = question.guidance?.articleAliases ?? [];
+      for (const articleAlias of articleAliases) {
+        const article = articleByAlias.get(articleAlias);
+        assert(article, `${persona.id}/${question.id} article ${articleAlias} missing from article-registry`);
+        assert(article.quality?.summaryStatus === 'curated', `${persona.id}/${question.id} article ${articleAlias} summary is not curated`);
+        assert((article.quality?.warnings ?? []).length === 0, `${persona.id}/${question.id} article ${articleAlias} has quality warnings`);
+        assert(String(article.publishedUrl ?? '').startsWith('https://'), `${persona.id}/${question.id} article ${articleAlias} missing published URL`);
+        assert(String(article.contentRef ?? '').startsWith('references/articles/'), `${persona.id}/${question.id} article ${articleAlias} missing contentRef`);
+      }
       if (question.expectedDo) {
         assert(hasExplicitActionIntent(question.text), `${persona.id}/${question.id} expectedDo lacks explicit action intent`);
         const action = actionsById.get(question.expectedDo.actionId);
@@ -952,6 +963,10 @@ check('persona questions have text, screenshot evidence, response contracts, and
       const response = runCustomerResponse(persona.id, question.id);
       assert(response.ok === true, `${persona.id}/${question.id} customer response did not return ok=true`);
       assert(response.answer?.instructions?.length > 0, `${persona.id}/${question.id} customer response missing instructions`);
+      const selectedAliases = new Set((response.selectedArticles ?? []).map(article => article.articleAlias));
+      for (const articleAlias of articleAliases) {
+        assert(selectedAliases.has(articleAlias), `${persona.id}/${question.id} customer response missing selected article ${articleAlias}`);
+      }
       assert(
         response.answer.instructions.some(item => item.visualEvidence === true),
         `${persona.id}/${question.id} customer response missing visual evidence marker`,

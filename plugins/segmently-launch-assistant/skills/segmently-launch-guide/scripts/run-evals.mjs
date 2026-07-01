@@ -86,6 +86,16 @@ const matrixRaw = read('references/scenarios.matrix.json');
 const teachReferenceRaw = read('references/teach-reference.json');
 const guideEvidenceRaw = read('references/guide-evidence.json');
 const helpArticleReferenceRaw = read('references/help-article-reference.json');
+const articleRegistryRaw = read('references/article-registry.json');
+const articleDirectoryRaw = read('references/article-directory.json');
+const articleSearchIndexRaw = read('references/article-search-index.json');
+const articleSearchSynonymsRaw = read('references/article-search-synonyms.json');
+const guideRegistryRaw = read('references/guide-registry.json');
+const supportKnowledgeGraphSchemaRaw = read('references/support-knowledge-graph/schema.json');
+const supportKnowledgeGraphAdjacencyRaw = read('references/support-knowledge-graph/adjacency.json');
+const supportKnowledgeGraphSearchIndexRaw = read('references/support-knowledge-graph/search-index.json');
+const supportKnowledgeGraphNodesRaw = read('references/support-knowledge-graph/nodes.jsonl');
+const supportKnowledgeGraphEdgesRaw = read('references/support-knowledge-graph/edges.jsonl');
 const doActionReferenceRaw = read('runtime/do-action-reference.json');
 const personaFlowRaw = read('evals/persona-flow-evals.json');
 
@@ -100,11 +110,22 @@ const corpus = {
   teachReference: teachReferenceRaw,
   guideEvidence: guideEvidenceRaw,
   helpArticleReference: helpArticleReferenceRaw,
+  articleRegistry: articleRegistryRaw,
+  articleDirectory: articleDirectoryRaw,
+  articleSearchIndex: articleSearchIndexRaw,
+  articleSearchSynonyms: articleSearchSynonymsRaw,
+  guideRegistry: guideRegistryRaw,
+  supportKnowledgeGraphSchema: supportKnowledgeGraphSchemaRaw,
+  supportKnowledgeGraphAdjacency: supportKnowledgeGraphAdjacencyRaw,
+  supportKnowledgeGraphSearchIndex: supportKnowledgeGraphSearchIndexRaw,
+  supportKnowledgeGraphNodes: supportKnowledgeGraphNodesRaw,
+  supportKnowledgeGraphEdges: supportKnowledgeGraphEdgesRaw,
   doActionReference: doActionReferenceRaw,
   personaFlow: personaFlowRaw,
   matrix: matrixRaw,
 };
 corpus.all = Object.values(corpus).join('\n');
+const semanticRoutingReference = corpus.semanticRouting;
 
 let failures = 0;
 
@@ -144,6 +165,145 @@ for (const required of [
 }
 report('field-level-teach-uses-model-selected-catalog-first', fieldLevelResolverContractFailures);
 
+const articleRegistryFailures = [];
+const articleRegistry = JSON.parse(articleRegistryRaw);
+const articleDirectory = JSON.parse(articleDirectoryRaw);
+const articleSearchIndex = JSON.parse(articleSearchIndexRaw);
+const articleSearchSynonyms = JSON.parse(articleSearchSynonymsRaw);
+const guideRegistry = JSON.parse(guideRegistryRaw);
+const supportKnowledgeGraphSchema = JSON.parse(supportKnowledgeGraphSchemaRaw);
+const supportKnowledgeGraphAdjacency = JSON.parse(supportKnowledgeGraphAdjacencyRaw);
+const supportKnowledgeGraphSearchIndex = JSON.parse(supportKnowledgeGraphSearchIndexRaw);
+const supportKnowledgeGraphNodes = parseJsonl(supportKnowledgeGraphNodesRaw);
+const supportKnowledgeGraphEdges = parseJsonl(supportKnowledgeGraphEdgesRaw);
+for (const required of [
+  'references/article-directory.json',
+  'references/article-search-index.json',
+  'references/article-search-synonyms.json',
+  'references/article-registry.json',
+  'references/articles/<articleAlias>.json',
+  'references/guide-registry.json',
+  'references/support-knowledge-graph',
+  'first-pass article search',
+  'contentRef',
+  'subarticles',
+  '--articleAliases',
+]) {
+  if (!skillMarkdown.includes(required) && !semanticRoutingReference.includes(required)) {
+    articleRegistryFailures.push(`article-first instructions missing ${required}`);
+  }
+}
+const articleByAlias = new Map((articleRegistry.articles ?? []).map(article => [article.articleAlias, article]));
+for (const alias of ['facebook-events-catalog', 'help-block-flexible-sections', 'help-block-paywall-subscriptions', 'help-block-custom-html']) {
+  if (!articleByAlias.has(alias)) articleRegistryFailures.push(`article-registry missing ${alias}`);
+}
+const facebookArticle = articleByAlias.get('facebook-events-catalog');
+if (!facebookArticle?.relations?.scenarioIds?.includes('facebook-events-list')) {
+  articleRegistryFailures.push('facebook-events-catalog missing facebook-events-list scenario relation');
+}
+if (!facebookArticle?.tags?.includes('facebook-events') || !facebookArticle?.tags?.includes('analytics-events')) {
+  articleRegistryFailures.push('facebook-events-catalog missing event tags');
+}
+const flexibleArticle = articleByAlias.get('help-block-flexible-sections');
+if (!flexibleArticle?.relations?.guideKeys?.includes('screenedit-flexible-sections-linked-product-labels')) {
+  articleRegistryFailures.push('help-block-flexible-sections missing linked-product guide relation');
+}
+if (!flexibleArticle?.subarticles?.some(section => /selected product|linked product|purchase/i.test(`${section.title} ${section.summary}`))) {
+  articleRegistryFailures.push('help-block-flexible-sections missing selected-product subarticle material');
+}
+if (!articleRegistry.indexes?.bySupportFlowFlow?.['capability.connect-analytics']?.includes('facebook-events-catalog')) {
+  articleRegistryFailures.push('bySupportFlowFlow missing facebook-events-catalog for capability.connect-analytics');
+}
+if (!articleRegistry.indexes?.byGuideKey?.['screenedit-flexible-sections-linked-product-labels']?.includes('help-block-flexible-sections')) {
+  articleRegistryFailures.push('byGuideKey missing linked product guide -> flexible article relation');
+}
+if (!articleDirectory.articles?.some(article => article.articleAlias === 'help-block-flexible-sections')) {
+  articleRegistryFailures.push('article-directory missing help-block-flexible-sections');
+}
+if (!articleSearchIndex.tags?.['flexible-layout']?.includes('help-block-flexible-sections')) {
+  articleRegistryFailures.push('article-search-index missing flexible-layout -> help-block-flexible-sections');
+}
+if (!articleSearchIndex.synonyms?.['selected product']?.includes('help-block-flexible-sections')) {
+  articleRegistryFailures.push('article-search-index missing selected product -> help-block-flexible-sections synonym');
+}
+if (!articleSearchIndex.guideKeys?.['screenedit-flexible-sections-linked-product-labels']?.includes('help-block-flexible-sections')) {
+  articleRegistryFailures.push('article-search-index missing linked product guide key -> help-block-flexible-sections');
+}
+if (!articleSearchIndex.scenarioIds?.['facebook-events-list']?.includes('facebook-events-catalog')) {
+  articleRegistryFailures.push('article-search-index missing facebook-events-list -> facebook-events-catalog');
+}
+if (!articleSearchSynonyms.groups?.some(group => group.id === 'selected-product' && group.articleAliases?.includes('help-block-flexible-sections'))) {
+  articleRegistryFailures.push('article-search-synonyms missing selected-product -> help-block-flexible-sections');
+}
+if (!guideRegistry.indexes?.byArticleAlias?.['help-block-flexible-sections']?.includes('screenedit-flexible-sections-linked-product-labels')) {
+  articleRegistryFailures.push('guide-registry missing flexible article -> linked product guide');
+}
+if (flexibleArticle && !flexibleArticle.contentRef?.startsWith('references/articles/')) {
+  articleRegistryFailures.push('help-block-flexible-sections missing per-article contentRef');
+}
+if (flexibleArticle && Object.prototype.hasOwnProperty.call(flexibleArticle, 'sections')) {
+  articleRegistryFailures.push('compact article-registry must not embed heavy sections');
+}
+const graphNodeIds = new Set(supportKnowledgeGraphNodes.map(node => node.id));
+const graphEdgeIds = new Set(supportKnowledgeGraphEdges.map(edge => edge.id));
+for (const nodeId of [
+  'Article:help-block-flexible-sections',
+  'Guide:screenedit-flexible-sections-linked-product-labels',
+  'SynonymGroup:selected-product',
+  'Scenario:facebook-events-list',
+  'Workflow:capability.connect-analytics',
+]) {
+  if (!graphNodeIds.has(nodeId)) articleRegistryFailures.push(`knowledge graph missing node ${nodeId}`);
+}
+for (const edgeId of [
+  'ARTICLE_SUPPORTED_BY_GUIDE:Article:help-block-flexible-sections->Guide:screenedit-flexible-sections-linked-product-labels',
+  'GUIDE_REFERENCES_ARTICLE:Guide:screenedit-flexible-sections-linked-product-labels->Article:help-block-flexible-sections',
+  'SYNONYM_POINTS_TO_ARTICLE:SynonymGroup:selected-product->Article:help-block-flexible-sections',
+  'ARTICLE_RELATES_TO_SCENARIO:Article:facebook-events-catalog->Scenario:facebook-events-list',
+]) {
+  if (!graphEdgeIds.has(edgeId)) articleRegistryFailures.push(`knowledge graph missing edge ${edgeId}`);
+}
+if (!supportKnowledgeGraphSchema.runtimePolicy?.some(line => /No graph database/.test(line))) {
+  articleRegistryFailures.push('knowledge graph schema must state that no graph/vector database is required');
+}
+if (!supportKnowledgeGraphAdjacency.outgoing?.['Article:help-block-flexible-sections']?.ARTICLE_SUPPORTED_BY_GUIDE?.includes('Guide:screenedit-flexible-sections-linked-product-labels')) {
+  articleRegistryFailures.push('knowledge graph adjacency missing flexible article -> guide edge');
+}
+if (!supportKnowledgeGraphSearchIndex.synonyms?.['selected product']?.includes('SynonymGroup:selected-product')) {
+  articleRegistryFailures.push('knowledge graph search index missing selected product synonym group');
+}
+report('article-first-registry-contract', articleRegistryFailures);
+
+const articleSearchCandidateFailures = [];
+for (const item of [
+  {
+    query: 'когда пользователь выбирает продукт, текст кнопки купить и описание должны обновляться во flexible layout',
+    expected: 'help-block-flexible-sections',
+  },
+  {
+    query: 'which events does Segmently send to Facebook events catalog',
+    expected: 'facebook-events-catalog',
+  },
+  {
+    query: 'webembed paywall with product purchase label',
+    expectedAny: ['help-block-custom-html', 'help-block-paywall-subscriptions', 'help-block-flexible-sections'],
+  },
+]) {
+  try {
+    const result = runArticleRegistryToolSearch(item.query);
+    const aliases = (result.candidates ?? []).map(candidate => candidate.articleAlias);
+    if (item.expected && aliases[0] !== item.expected) {
+      articleSearchCandidateFailures.push(`query "${item.query}" expected top ${item.expected}, got ${aliases.slice(0, 5).join(', ') || 'none'}`);
+    }
+    if (item.expectedAny && !item.expectedAny.some(alias => aliases.includes(alias))) {
+      articleSearchCandidateFailures.push(`query "${item.query}" expected one of ${item.expectedAny.join(', ')}, got ${aliases.slice(0, 5).join(', ') || 'none'}`);
+    }
+  } catch (error) {
+    articleSearchCandidateFailures.push(`article-registry-tool search failed for "${item.query}": ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+report('article-search-candidate-evals', articleSearchCandidateFailures);
+
 const cliModelSelectedRoutingFailures = [];
 for (const required of [
   'The launch assistant is not the primary CLI reasoning engine',
@@ -158,7 +318,6 @@ for (const required of [
     cliModelSelectedRoutingFailures.push(`SKILL.md missing model-selected CLI routing contract text: ${required}`);
   }
 }
-const semanticRoutingReference = read('references/semantic-routing.md');
 for (const required of [
   'Do not let `segmently-launch-guide` replace',
   'The model should select the support intent, guide keys, action id, and',
@@ -1469,6 +1628,26 @@ for (const persona of personaFlow.personas ?? []) {
         personaFailures.push(`${prefix}: guide ${guideKey} has no section-level image evidence`);
       }
     }
+    const articleAliases = question.guidance?.articleAliases ?? [];
+    for (const articleAlias of articleAliases) {
+      const article = articleByAlias.get(articleAlias);
+      if (!article) {
+        personaFailures.push(`${prefix}: article ${articleAlias} missing from article-registry`);
+        continue;
+      }
+      if (article.quality?.summaryStatus !== 'curated') {
+        personaFailures.push(`${prefix}: article ${articleAlias} must have a curated summary`);
+      }
+      if (article.quality?.warnings?.length) {
+        personaFailures.push(`${prefix}: article ${articleAlias} has quality warnings: ${article.quality.warnings.join(', ')}`);
+      }
+      if (!String(article.publishedUrl ?? '').startsWith('https://')) {
+        personaFailures.push(`${prefix}: article ${articleAlias} missing https publishedUrl`);
+      }
+      if (!String(article.contentRef ?? '').startsWith('references/articles/')) {
+        personaFailures.push(`${prefix}: article ${articleAlias} missing article contentRef`);
+      }
+    }
     if (question.expectedDo) {
       if (!hasExplicitActionIntent(question.text)) {
         personaFailures.push(`${prefix}: expectedDo requires an explicit customer action intent in the question text`);
@@ -1509,6 +1688,12 @@ for (const persona of personaFlow.personas ?? []) {
       const response = runCustomerResponse(persona.id, question.id);
       if (response.ok !== true) personaFailures.push(`${prefix}: customer response runner did not return ok=true`);
       if (!response.answer?.instructions?.length) personaFailures.push(`${prefix}: customer response missing instructions`);
+      const selectedAliases = new Set((response.selectedArticles ?? []).map(article => article.articleAlias));
+      for (const articleAlias of articleAliases) {
+        if (!selectedAliases.has(articleAlias)) {
+          personaFailures.push(`${prefix}: customer response missing selected article ${articleAlias}`);
+        }
+      }
       if (!response.answer?.instructions?.some(item => item.visualEvidence === true)) {
         personaFailures.push(`${prefix}: customer response missing visual evidence marker`);
       }
@@ -2744,11 +2929,29 @@ if (failures > 0) {
   console.error(`${failures} gate(s) failed`);
   process.exit(1);
 }
-console.log(`all gates passed (${evals.evals.length} eval(s) + meta-guard + leak-guard + teach-reference + do-action-reference + codex-dispatch-contract + cli-do-runner + e2e-do-runner + show-runner + coverage-audit + do-coverage-audit + persona-flow + customer-surface-prompt-with-show + customer-surface-acceptance)`);
+console.log(`all gates passed (${evals.evals.length} eval(s) + meta-guard + leak-guard + teach-reference + do-action-reference + article-first registry/search/graph + codex-dispatch-contract + cli-do-runner + e2e-do-runner + show-runner + coverage-audit + do-coverage-audit + persona-flow + customer-surface-prompt-with-show + customer-surface-acceptance)`);
 
 // ---- helpers --------------------------------------------------------------
 function read(rel) {
   return readFileSync(join(root, rel), 'utf8');
+}
+function parseJsonl(raw) {
+  return raw
+    .split(/\n+/)
+    .map(line => line.trim())
+    .filter(Boolean)
+    .map(line => JSON.parse(line));
+}
+function runArticleRegistryToolSearch(query) {
+  const stdout = execFileSync('node', [
+    join(root, 'scripts/article-registry-tool.mjs'),
+    'search',
+    '--query',
+    query,
+    '--limit',
+    '5',
+  ], { encoding: 'utf8' });
+  return JSON.parse(stdout);
 }
 function report(id, failedMessages) {
   if (failedMessages.length) {

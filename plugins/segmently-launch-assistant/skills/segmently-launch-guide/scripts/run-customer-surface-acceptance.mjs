@@ -59,6 +59,42 @@ check('button font teach prompt resolves Action Bar article reference', () => {
   assertSourceSafeCustomerAnswer(response);
 });
 
+check('article-first raw prompt resolves Facebook events catalog before guide keys', () => {
+  const response = runResponse(['--prompt', 'Какие события Segmently отправляет в Facebook?']);
+  assert(response.ok === true, 'Facebook events article-first response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach mode, got ${response.mode}`);
+  assert(response.selectedArticles?.some(article => article.articleAlias === 'facebook-events-catalog'), 'Facebook events prompt must select facebook-events-catalog from article registry');
+  assert(response.guidance?.guides?.length === 0, 'Facebook events catalog prompt should not fall back to generic analytics guide keys');
+  assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'facebook-events-catalog'), 'Facebook events prompt missing article registry reference');
+  assert(response.answer?.publicArticleLinks?.some(url => /facebook-events-catalog\/index\.html$/.test(url)), 'Facebook events prompt missing public article URL');
+  assert(response.answer?.preferredCitation?.articleAlias === 'facebook-events-catalog', 'Facebook events preferred citation must use the article alias');
+  assert(response.selectedArticles?.[0]?.relations?.scenarioIds?.includes('facebook-events-list'), 'Facebook events article must be typed to the facebook-events-list scenario');
+  assert(response.selectedArticles?.[0]?.tags?.includes('facebook-events'), 'Facebook events article must carry facebook-events tag');
+  assert(response.routingPolicy?.articleFirstSearch === true, 'routing policy must expose article-first search');
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('direct article alias returns article-fetch contract without guide keys', () => {
+  const response = runResponse([
+    '--prompt',
+    'Пришли полную статью про события Facebook',
+    '--articleAliases',
+    'facebook-events-catalog',
+    '--mode',
+    'article-fetch',
+  ]);
+  assert(response.ok === true, 'direct article alias article-fetch response did not return ok=true');
+  assert(response.mode === 'article-fetch', `expected article-fetch mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'agent-selected-semantics', 'direct article alias must use selected catalog resolver');
+  assert(response.selectedArticles?.some(article => article.articleAlias === 'facebook-events-catalog'), 'direct article alias missing selected article contract');
+  assert(response.articleFetch?.articleAlias === 'facebook-events-catalog', 'article-fetch contract must keep selected article alias');
+  assert(response.articleFetch?.fetchCommand?.configUrl?.endsWith('/facebook-events-catalog/config.json'), 'article-fetch contract missing config URL');
+  assert(response.articleFetch?.fetchCommand?.publicUrl?.endsWith('/facebook-events-catalog/index.html'), 'article-fetch contract missing public article URL');
+  assert(response.articleFetch?.selectedArticle?.relations?.scenarioIds?.includes('facebook-events-list'), 'article-fetch selected article missing typed scenario relation');
+  assert(response.guidance?.guides?.length === 0, 'direct article alias article-fetch must not require guide keys');
+  assertSourceSafeCustomerAnswer(response);
+});
+
 check('list video teach prompt resolves Media article and offers SHOW/DO boundary', () => {
   const response = runResponse(['--prompt', 'как добавить видео к списку']);
   assert(response.ok === true, 'list video TEACH response did not return ok=true');
@@ -181,6 +217,12 @@ check('Flexible Layout linked product labels resolve article and CLI delegation 
   assert(!response.guidance?.guides?.some(guide => guide.articleAlias === 'help-block-paywall-footer'), 'Flexible Layout linked labels incorrectly resolved Paywall Footer');
   assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'help-block-flexible-sections'), 'missing help-block-flexible-sections article reference');
   assert(response.answer?.publicArticleLinks?.some(url => /help-block-flexible-sections\/index\.html$/.test(url)), 'missing Flexible Sections article URL');
+  const selectedArticle = response.selectedArticles?.find(article => article.articleAlias === 'help-block-flexible-sections');
+  assert(selectedArticle, 'Flexible Layout linked labels missing selected article registry contract');
+  assert(selectedArticle.tags?.includes('flexible-layout'), 'Flexible Layout article missing flexible-layout tag');
+  assert(selectedArticle.tags?.includes('product-catalog'), 'Flexible Layout article missing product-catalog tag');
+  assert(selectedArticle.subarticles?.some(section => /selected product|linked product|purchase/i.test(`${section.title} ${section.summary}`)), 'Flexible Layout article missing linked-product subarticle material');
+  assert(selectedArticle.relations?.guideKeys?.includes('screenedit-flexible-sections-linked-product-labels'), 'Flexible Layout article missing guide relation');
   const instructionText = response.answer?.instructions?.map(item => `${item.title} ${item.text}`).join('\n') ?? '';
   assert(/Product Catalog selection/.test(instructionText), 'instructions must mention Product Catalog selection');
   assert(/description label/.test(instructionText), 'instructions must mention description label');
@@ -219,6 +261,7 @@ check('selected product text update prompt explains ordinary WebEmbed and Flexib
   for (const alias of ['help-block-paywall-subscriptions', 'help-block-custom-html', 'help-block-flexible-sections']) {
     assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === alias), `missing ${alias} article reference`);
     assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)), `missing ${alias} article URL`);
+    assert(response.selectedArticles?.some(article => article.articleAlias === alias), `missing ${alias} selected article registry contract`);
   }
   const instructionText = response.answer?.instructions?.map(item => `${item.title} ${item.text}`).join('\n') ?? '';
   for (const needle of [

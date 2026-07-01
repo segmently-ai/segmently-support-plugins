@@ -1,0 +1,962 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-block-custom-html",
+  "articleId": null,
+  "title": "Custom HTML — all settings",
+  "sections": [
+    {
+      "id": "g-all-head",
+      "title": "All settings",
+      "summary": "All settings",
+      "kind": "section",
+      "articleSectionId": "g-all-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#g-all-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Custom HTML — every setting",
+      "summary": "The Custom HTML settings for this screen. This guide documents every setting of the Custom HTML block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-embed/section",
+      "title": "Custom HTML section",
+      "summary": "The Custom HTML section lets you render your own HTML, CSS, and JavaScript inside a screen when none of the built-in sections fit the design you need. The content runs in an isolated frame and connects to the funnel so it can read data and trigger navigation. Reach for it only for fully custom screens like a Figma export or a bespoke widget — for standard text, buttons, lists, or paywalls use the native sections, which stay responsive and tracked, and always preview custom screens on a phone.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-embed/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-embed"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "screen-editor-section-embed/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: WebEmbed.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-embed/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-embed"
+      ],
+      "tags": [
+        "guide-section",
+        "webembed"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-embed-data-sources/field",
+      "title": "Editable content for your HTML",
+      "summary": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-data-sources/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-data-sources"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150132_webembed-data-source-menu/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-embed-html-editor/field",
+      "title": "Your custom screen code",
+      "summary": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-html-editor/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-html-editor"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-embed-iframe-isolation/field",
+      "title": "Keep custom code sandboxed",
+      "summary": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-iframe-isolation/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-iframe-isolation"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Custom HTML in the editor",
+      "summary": "Custom HTML in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Custom HTML section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-embed-childsections",
+      "title": "Editable content for your HTML",
+      "summary": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+      "kind": "section",
+      "articleSectionId": "set-embed-childsections",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-childsections",
+      "guideKeys": [
+        "screenedit-embed-data-sources"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png"
+      ]
+    },
+    {
+      "id": "set-embed-childsections-img",
+      "title": "Editable content for your HTML",
+      "summary": "Editable content for your HTML",
+      "kind": "section",
+      "articleSectionId": "set-embed-childsections-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-childsections-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png"
+      ]
+    },
+    {
+      "id": "set-embed-html",
+      "title": "Your custom screen code",
+      "summary": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+      "kind": "section",
+      "articleSectionId": "set-embed-html",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-html",
+      "guideKeys": [
+        "screenedit-embed-html-editor"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png"
+      ]
+    },
+    {
+      "id": "set-embed-html-img",
+      "title": "Your custom screen code",
+      "summary": "Your custom screen code",
+      "kind": "section",
+      "articleSectionId": "set-embed-html-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-html-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png"
+      ]
+    },
+    {
+      "id": "set-embed-isiframe",
+      "title": "Keep custom code sandboxed",
+      "summary": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+      "kind": "section",
+      "articleSectionId": "set-embed-isiframe",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-isiframe",
+      "guideKeys": [
+        "screenedit-embed-iframe-isolation"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png"
+      ]
+    },
+    {
+      "id": "set-embed-isiframe-img",
+      "title": "Keep custom code sandboxed",
+      "summary": "Keep custom code sandboxed",
+      "kind": "section",
+      "articleSectionId": "set-embed-isiframe-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-isiframe-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "g-all-head",
+      "title": "All settings",
+      "summary": "All settings",
+      "kind": "section",
+      "articleSectionId": "g-all-head",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#g-all-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Custom HTML — every setting",
+      "summary": "The Custom HTML settings for this screen. This guide documents every setting of the Custom HTML block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-embed/section",
+      "title": "Custom HTML section",
+      "summary": "The Custom HTML section lets you render your own HTML, CSS, and JavaScript inside a screen when none of the built-in sections fit the design you need. The content runs in an isolated frame and connects to the funnel so it can read data and trigger navigation. Reach for it only for fully custom screens like a Figma export or a bespoke widget — for standard text, buttons, lists, or paywalls use the native sections, which stay responsive and tracked, and always preview custom screens on a phone.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-embed/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-embed"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "screen-editor-section-embed/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: WebEmbed.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-embed/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-embed"
+      ],
+      "tags": [
+        "guide-section",
+        "webembed"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-embed-data-sources/field",
+      "title": "Editable content for your HTML",
+      "summary": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-data-sources/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-data-sources"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150132_webembed-data-source-menu/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-embed-html-editor/field",
+      "title": "Your custom screen code",
+      "summary": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-html-editor/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-html-editor"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "screenedit-embed-iframe-isolation/field",
+      "title": "Keep custom code sandboxed",
+      "summary": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-embed-iframe-isolation/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-embed-iframe-isolation"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Custom HTML in the editor",
+      "summary": "Custom HTML in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Custom HTML section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-embed-childsections",
+      "title": "Editable content for your HTML",
+      "summary": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+      "kind": "section",
+      "articleSectionId": "set-embed-childsections",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-childsections",
+      "guideKeys": [
+        "screenedit-embed-data-sources"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "labels-copy",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png"
+      ]
+    },
+    {
+      "id": "set-embed-childsections-img",
+      "title": "Editable content for your HTML",
+      "summary": "Editable content for your HTML",
+      "kind": "section",
+      "articleSectionId": "set-embed-childsections-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-childsections-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png"
+      ]
+    },
+    {
+      "id": "set-embed-html",
+      "title": "Your custom screen code",
+      "summary": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+      "kind": "section",
+      "articleSectionId": "set-embed-html",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-html",
+      "guideKeys": [
+        "screenedit-embed-html-editor"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png"
+      ]
+    },
+    {
+      "id": "set-embed-html-img",
+      "title": "Your custom screen code",
+      "summary": "Your custom screen code",
+      "kind": "section",
+      "articleSectionId": "set-embed-html-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-html-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png"
+      ]
+    },
+    {
+      "id": "set-embed-isiframe",
+      "title": "Keep custom code sandboxed",
+      "summary": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+      "kind": "section",
+      "articleSectionId": "set-embed-isiframe",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-isiframe",
+      "guideKeys": [
+        "screenedit-embed-iframe-isolation"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "embed",
+        "all",
+        "webembed"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png"
+      ]
+    },
+    {
+      "id": "set-embed-isiframe-img",
+      "title": "Keep custom code sandboxed",
+      "summary": "Keep custom code sandboxed",
+      "kind": "section",
+      "articleSectionId": "set-embed-isiframe-img",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-isiframe-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [
+    {
+      "guideKey": "screenedit-embed-iframe-isolation",
+      "title": "Keep custom code sandboxed",
+      "sectionType": "embed",
+      "group": "all",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png",
+      "articleSectionId": "set-embed-isiframe",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-isiframe",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a WebEmbed screen and find the Embed section.",
+        "Find “Keep custom code sandboxed”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-embed-html-editor",
+      "title": "Your custom screen code",
+      "sectionType": "embed",
+      "group": "all",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png",
+      "articleSectionId": "set-embed-html",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-html",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a WebEmbed screen and find the Embed section.",
+        "Find “Your custom screen code”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-embed-data-sources",
+      "title": "Editable content for your HTML",
+      "sectionType": "embed",
+      "group": "all",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png",
+      "articleSectionId": "set-embed-childsections",
+      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html#set-embed-childsections",
+      "route": [
+        "Open the screen in the editor.",
+        "Open a WebEmbed screen and find the Embed section.",
+        "Find “Editable content for your HTML”."
+      ]
+    }
+  ],
+  "media": [
+    "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png",
+    "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png",
+    "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150132_webembed-data-source-menu/origin.png"
+  ],
+  "nodes": [
+    {
+      "id": "intro",
+      "order": 0,
+      "kind": "Text",
+      "label": "Intro",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Custom HTML — every setting"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 28,
+            "fontWeight": 800,
+            "lineHeight": 34,
+            "color": "#101828"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "The Custom HTML settings for this screen. This guide documents every setting of the Custom HTML block, grouped by area. Each setting matches a real control in the screen editor."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 400,
+            "lineHeight": 26,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context",
+      "order": 1,
+      "kind": "Media",
+      "label": "Custom HTML in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png",
+                "name": "The screen editor with the Custom HTML section highlighted."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context-cap",
+      "order": 2,
+      "kind": "Text",
+      "label": "Context caption",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "Open the Custom HTML section in the screen editor to configure its settings."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "g-all-head",
+      "order": 3,
+      "kind": "Text",
+      "label": "Group: All settings",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "All settings"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-isiframe",
+      "order": 4,
+      "kind": "Text",
+      "label": "All settings · Keep custom code sandboxed",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Keep custom code sandboxed"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-isiframe-img",
+      "order": 5,
+      "kind": "Media",
+      "label": "Keep custom code sandboxed",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 72,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png",
+                "name": "Where to find “Keep custom code sandboxed” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-html",
+      "order": 6,
+      "kind": "Text",
+      "label": "All settings · Your custom screen code",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Your custom screen code"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-html-img",
+      "order": 7,
+      "kind": "Media",
+      "label": "Your custom screen code",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 334,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png",
+                "name": "Where to find “Your custom screen code” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-childsections",
+      "order": 8,
+      "kind": "Text",
+      "label": "All settings · Editable content for your HTML",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Editable content for your HTML"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-embed-childsections-img",
+      "order": 9,
+      "kind": "Media",
+      "label": "Editable content for your HTML",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 92,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png",
+                "name": "Where to find “Editable content for your HTML” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/embed-block.doc.json",
+      "scripts/help-articles/help-screen-webembed.assembly.json",
+      "scripts/help-articles/help-screen-webembed.doc.json",
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "d3ac689b83421e8f"
+  }
+}
