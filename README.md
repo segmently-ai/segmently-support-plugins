@@ -71,14 +71,20 @@ instead of pretending SHOW or DO succeeded.
 
 Copy this whole prompt into a fresh Codex thread. It is intentionally written as
 a single task so Codex can prepare the host tools, install the marketplace
-plugin, authenticate Segmently, and verify the installed runtime before you ask
-it to operate on a funnel.
+plugin, authenticate Segmently, and write local project guidance. Plugin-backed
+runtime verification is a separate post-restart prompt because Codex usually
+loads newly installed plugins only after a new session starts.
 
 ```text
-Install or update the Segmently Launch Assistant plugin for Codex on this machine.
+Install or update the Segmently Launch Assistant plugin for Codex for this target project folder.
 
 Use the public marketplace repository segmently-ai/segmently-support-plugins with ref stable
 and install plugin segmently-launch-assistant@segmently-support.
+
+Target project folder:
+- If I already gave an absolute project path, use that folder.
+- Otherwise ask me for the absolute project folder before making file changes.
+- Run project-local file edits only inside that folder. Do not write AGENTS.md, CLAUDE.md, or other guidance files globally or in an unrelated checkout.
 
 Run these steps end to end and report the exact command results:
 1. Preflight host tools: node --version, npm --version, npx --version, git --version, codex --version, codex plugin --help.
@@ -87,23 +93,50 @@ Run these steps end to end and report the exact command results:
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
 6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
-7. Install the operating rule for all future Segmently answers: do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge. Do not invent Segmently commands, fields, routes, product behavior, docs, or troubleshooting steps. Use only the installed Segmently Launch Assistant plugin skills, their shipped references, their runtime runners, the public Segmently CLI, selected article content, and verified Segmently output. Raw prompt routing in customer-response-runner is debug/regression-only; for customer answers, first select guideKeys/actionId semantically from the shipped catalog, then use the runner only to validate evidence and execution boundaries. After selecting articles/guides, study the returned shipped sections and article references before answering; if those sections are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material. If the installed skills and fetched article content do not cover the question, say that verified coverage is missing and ask for the missing project/article/context or hand off to the relevant Segmently skill instead of guessing.
-8. If the current directory is the target project repository, persist usage guidance for future agents: read existing AGENTS.md and CLAUDE.md if present; preserve all existing instructions; add or update a "Segmently Launch Assistant" section. For Codex, prefer AGENTS.md and also update CLAUDE.md if it already exists. If a file does not exist, ask before creating it. The section should say: use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks; never answer Segmently questions from general model knowledge; never invent Segmently commands, APIs, fields, routes, or product behavior; do not use raw prompt routing as the customer-facing semantic decision; select guideKeys/actionId from installed shipped catalogs first; study selected article/guide sections and run read-only article-fetch when the selected snippets are insufficient; answer through installed Segmently skills/references/runners, selected article content, and verified CLI output only; run host/Segmently CLI/Playwright preflight before SHOW or DO; use segmently auth login instead of asking for tokens; delegate CLI work to the returned owning skill such as segmently-cli-guide or segmently-cli-custom-screen-guide; do not claim a mutation is complete until execution and verification both pass.
-9. Start a clean verification from the installed plugin files if Codex exposes their path: run the installed segmently-launch-guide customer-response runner with model-selected guideKeys for a simple prompt such as "show me what is left before launch" or at minimum verify the plugin is listed by Codex.
-10. Do not claim setup is complete until Segmently CLI auth/capabilities, Playwright CLI help/browser setup, Codex plugin install, the no-invention operating rule, and any requested AGENTS.md/CLAUDE.md update are all verified. If a step needs my approval or browser login, ask for that single approval and then continue.
+7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: AGENTS.md. Secondary file: CLAUDE.md only if it already exists or I explicitly asked to prepare Claude Code guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If AGENTS.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global AGENTS.md/CLAUDE.md files and do not remove unrelated project instructions. Write this exact section:
+
+## Segmently Launch Assistant
+
+- These rules apply after starting a new Codex session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks.
+- Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
+- Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
+- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
+- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
+- Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
+- Run host, Segmently CLI, and Playwright preflight before SHOW or DO work.
+- Use segmently auth login instead of asking for tokens.
+- Delegate CLI-specific work to the returned owning skill, such as segmently-cli-guide or segmently-cli-custom-screen-guide.
+- Do not claim a mutation is complete until execution and verification both pass.
+- If plugin skills are not visible in the current session, stop and ask me to restart/open a new session in this project folder. Do not answer Segmently product questions from plugin cache files or general model knowledge.
+
+8. Do not try to verify Segmently product answers through the plugin in this same session, and do not inspect plugin cache files as a substitute for using the loaded plugin. Newly installed plugins usually require a new Codex session before skills are available.
+9. Finish by telling me setup is installed and local project guidance is written, then ask me to close this Codex session, open a new Codex session in the same target project folder, and run this post-restart verification prompt:
+
+Post-restart verification prompt:
+"Verify the Segmently Launch Assistant plugin in this project. First read the local AGENTS.md Segmently Launch Assistant section. Use only installed Segmently Launch Assistant plugin skills, shipped references, selected article content, Segmently CLI output, and Playwright CLI output for Segmently answers. Confirm the plugin skills are visible in this new session, run Segmently CLI auth/capabilities checks, run Playwright CLI help/browser readiness checks, then answer this simple plugin-backed prompt: 'Show me what is left before launch.' If plugin skills are not visible, say the session/plugin load failed and do not answer from general model knowledge or by reading plugin cache files directly."
+
+10. Do not claim runtime verification is complete in the install session. The correct install-session completion state is: host prerequisites checked or installed, Segmently CLI auth/capabilities checked, Playwright CLI/browser support checked, Codex plugin installed or updated, and local target-project AGENTS.md/CLAUDE.md guidance updated. If a step needs my approval or browser login, ask for that single approval and then continue.
 ```
 
 ## One Prompt Install For Claude Code
 
 Copy this whole prompt into a fresh Claude Code thread. It performs the same
-host-tool, Segmently CLI, Playwright, marketplace, plugin, and verification
-flow for Claude Code.
+host-tool, Segmently CLI, Playwright, marketplace, plugin, and local project
+guidance flow for Claude Code. Plugin-backed runtime verification is a separate
+post-restart prompt because Claude Code usually loads newly installed plugins
+only after a new session starts.
 
 ```text
-Install or update the Segmently Launch Assistant plugin for Claude Code on this machine.
+Install or update the Segmently Launch Assistant plugin for Claude Code for this target project folder.
 
 Use the public marketplace repository segmently-ai/segmently-support-plugins@stable
 and install plugin segmently-launch-assistant@segmently-support with --scope user.
+
+Target project folder:
+- If I already gave an absolute project path, use that folder.
+- Otherwise ask me for the absolute project folder before making file changes.
+- Run project-local file edits only inside that folder. Do not write CLAUDE.md, AGENTS.md, or other guidance files globally or in an unrelated checkout.
 
 Run these steps end to end and report the exact command results:
 1. Preflight host tools: node --version, npm --version, npx --version, git --version, claude --version, claude plugin --help.
@@ -112,10 +145,30 @@ Run these steps end to end and report the exact command results:
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
 6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
-7. Install the operating rule for all future Segmently answers: do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge. Do not invent Segmently commands, fields, routes, product behavior, docs, or troubleshooting steps. Use only the installed Segmently Launch Assistant plugin skills, their shipped references, their runtime runners, the public Segmently CLI, selected article content, and verified Segmently output. Raw prompt routing in customer-response-runner is debug/regression-only; for customer answers, first select guideKeys/actionId semantically from the shipped catalog, then use the runner only to validate evidence and execution boundaries. After selecting articles/guides, study the returned shipped sections and article references before answering; if those sections are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material. If the installed skills and fetched article content do not cover the question, say that verified coverage is missing and ask for the missing project/article/context or hand off to the relevant Segmently skill instead of guessing.
-8. If the current directory is the target project repository, persist usage guidance for future agents: read existing CLAUDE.md and AGENTS.md if present; preserve all existing instructions; add or update a "Segmently Launch Assistant" section. For Claude Code, prefer CLAUDE.md and also update AGENTS.md if it already exists. If a file does not exist, ask before creating it. The section should say: use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks; never answer Segmently questions from general model knowledge; never invent Segmently commands, APIs, fields, routes, or product behavior; do not use raw prompt routing as the customer-facing semantic decision; select guideKeys/actionId from installed shipped catalogs first; study selected article/guide sections and run read-only article-fetch when the selected snippets are insufficient; answer through installed Segmently skills/references/runners, selected article content, and verified CLI output only; run host/Segmently CLI/Playwright preflight before SHOW or DO; use segmently auth login instead of asking for tokens; delegate CLI work to the returned owning skill such as segmently-cli-guide or segmently-cli-custom-screen-guide; do not claim a mutation is complete until execution and verification both pass.
-9. Start a clean verification from the installed plugin files if Claude Code exposes their path: run the installed segmently-launch-guide customer-response runner with model-selected guideKeys for a simple prompt such as "show me what is left before launch" or at minimum verify the plugin is listed by Claude Code.
-10. Do not claim setup is complete until Segmently CLI auth/capabilities, Playwright CLI help/browser setup, Claude Code plugin install, the no-invention operating rule, and any requested AGENTS.md/CLAUDE.md update are all verified. If a step needs my approval or browser login, ask for that single approval and then continue.
+7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: CLAUDE.md. Secondary file: AGENTS.md only if it already exists or I explicitly asked to prepare Codex guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If CLAUDE.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global CLAUDE.md/AGENTS.md files and do not remove unrelated project instructions. Write this exact section:
+
+## Segmently Launch Assistant
+
+- These rules apply after starting a new Claude Code session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks.
+- Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
+- Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
+- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
+- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
+- Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
+- Run host, Segmently CLI, and Playwright preflight before SHOW or DO work.
+- Use segmently auth login instead of asking for tokens.
+- Delegate CLI-specific work to the returned owning skill, such as segmently-cli-guide or segmently-cli-custom-screen-guide.
+- Do not claim a mutation is complete until execution and verification both pass.
+- If plugin skills are not visible in the current session, stop and ask me to restart/open a new session in this project folder. Do not answer Segmently product questions from plugin cache files or general model knowledge.
+
+8. Do not try to verify Segmently product answers through the plugin in this same session, and do not inspect plugin cache files as a substitute for using the loaded plugin. Newly installed plugins usually require a new Claude Code session before skills are available.
+9. Finish by telling me setup is installed and local project guidance is written, then ask me to close this Claude Code session, open a new Claude Code session in the same target project folder, and run this post-restart verification prompt:
+
+Post-restart verification prompt:
+"Verify the Segmently Launch Assistant plugin in this project. First read the local CLAUDE.md Segmently Launch Assistant section. Use only installed Segmently Launch Assistant plugin skills, shipped references, selected article content, Segmently CLI output, and Playwright CLI output for Segmently answers. Confirm the plugin skills are visible in this new session, run Segmently CLI auth/capabilities checks, run Playwright CLI help/browser readiness checks, then answer this simple plugin-backed prompt: 'Show me what is left before launch.' If plugin skills are not visible, say the session/plugin load failed and do not answer from general model knowledge or by reading plugin cache files directly."
+
+10. Do not claim runtime verification is complete in the install session. The correct install-session completion state is: host prerequisites checked or installed, Segmently CLI auth/capabilities checked, Playwright CLI/browser support checked, Claude Code plugin installed or updated, and local target-project CLAUDE.md/AGENTS.md guidance updated. If a step needs my approval or browser login, ask for that single approval and then continue.
 ```
 
 ## Current Project Context
