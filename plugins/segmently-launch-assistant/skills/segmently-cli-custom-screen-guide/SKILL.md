@@ -1,14 +1,16 @@
 ---
 name: segmently-cli-custom-screen-guide
-description: Segmently CLI guide for reading, updating, applying, and validating V2 WebEmbed custom screens. Use when migrating hardcoded WebEmbed HTML to data sources, routing Button and SingleSelectionList child data-source actions through graph edges, reproducing screenshot references as WebEmbed custom screens, checking variables inside custom screens, updating callback fallback edges, verifying shadow-DOM render correctness, migrating images, converting legacy custom-screen APIs, or converting paywalls to ProductCatalog-driven custom screens through the Segmently CLI. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-custom-screen-guide or names this skill for a custom WebEmbed DO flow.
+description: Segmently CLI guide for reading, updating, applying, and validating V2 WebEmbed custom screens and FlexibleLayout paywall ProductCatalog linking. Use when migrating hardcoded WebEmbed HTML to data sources, routing Button and SingleSelectionList child data-source actions through graph edges, reproducing screenshot references as WebEmbed custom screens, checking variables inside custom screens, updating callback fallback edges, verifying shadow-DOM render correctness, migrating images, converting legacy custom-screen APIs, converting paywalls to ProductCatalog-driven custom screens through the Segmently CLI, or validating native FlexibleLayout Text/PurchaseButton labels linked to selected ProductCatalog products. Also trigger when Segmently Launch Assistant returns executeWith.skill/owningSkill=segmently-cli-custom-screen-guide or names this skill for a custom WebEmbed DO flow.
 ---
 
 # Segmently CLI Custom Screen Guide
 
-Use this skill for CLI-first work on Segmently V2 WebEmbed custom screens. The
-skill is about artifact-safe updates, not visual redesign. It works with
-existing funnels, Figma-generated WebEmbed artifacts, and screen-by-screen
-custom HTML migrations.
+Use this skill for CLI-first work on Segmently V2 WebEmbed custom screens and
+paywall flows that mix WebEmbed or native FlexibleLayout ProductCatalog
+sections. The skill is about artifact-safe updates and published verification,
+not visual redesign. It works with existing funnels, Figma-generated WebEmbed
+artifacts, screen-by-screen custom HTML migrations, and native FlexibleLayout
+paywall label-linking checks.
 
 ## Scope
 
@@ -32,6 +34,9 @@ Use this skill when the task involves:
 - checking variable reads/writes, child action edges, and callback fallback
   edges;
 - migrating custom paywalls to `ProductCatalog`;
+- validating native FlexibleLayout paywalls where a Text section and a
+  PurchaseButton are linked to the selected `ProductCatalog` product without a
+  WebEmbed variable bridge;
 - validating FlexibleLayout flows where one CustomEmbed owns a ProductCatalog,
   writes the selected product snapshot to a variable, and a sibling CustomEmbed
   renders the selected label/price while purchase remains in the catalog-owning
@@ -206,6 +211,7 @@ Load the one row that matches the task; skip the rest.
 | When the task involves… | Read | It covers |
 |---|---|---|
 | converting a paywall to real checkout | `references/paywall.md` **+** `references/shadow-dom-rendering.md` | `ProductCatalog` / `getProducts` / `purchaseProduct`, apply with `--iframe false`; plus the shadow-DOM render rules |
+| native FlexibleLayout ProductCatalog labels without WebEmbed variables | `references/flexible-layout-linked-product-labels-paywall.md` | `parentSectionId` linking from Text/PurchaseButton to ProductCatalog, `descriptionLabel`/`purchaseLabel` fallback, selected-product variable resolution, publish and selected-product purchase verification |
 | FlexibleLayout with sibling WebEmbedded sections sharing selected product labels and purchasing the chosen product | `references/flexible-layout-customembed-product-variable-paywall.md` | CustomEmbed-owned ProductCatalog, aggregate `selected_product` variable, sibling label section, `purchaseProduct(selectedProductId)`, and wire-layer purchase verification |
 | a shadow-DOM (`--iframe false`) screen whose fonts don't load or that won't scroll | `references/shadow-dom-rendering.md` | load fonts from `document.head`; drop `min-height:100vh` / `overflow:hidden` viewport-pinning; post-publish render check |
 | local or temporary image paths that need CDN upload + rewrite | `references/image-migration.md` | `scan-images` dry-run → upload → safe rewrite |

@@ -132,6 +132,82 @@
       ]
     },
     {
+      "id": "flexible-layout-linked-product-labels-covered",
+      "prompt": "A customer asks whether Flexible Layout Text description and Purchase Button purchase labels can follow the selected Product Catalog product and whether it can be configured through CLI.",
+      "expected_behavior": "The launch guide explains the native linked ProductCatalog pattern, cites the Flexible Sections article, and delegates CLI setup to segmently-cli-custom-screen-guide.",
+      "assertions": [
+        {
+          "name": "skill-instruction",
+          "corpus": "skill",
+          "mustContain": [
+            "Flexible Layout paywalls",
+            "description",
+            "Purchase Button",
+            "Product Catalog",
+            "Linked to section",
+            "selected product",
+            "help-block-flexible-sections",
+            "segmently-cli-custom-screen-guide",
+            "selected-product checkout/payment intent proof"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selected-product-paywall-copy-shapes-covered",
+      "prompt": "A customer asks how to make text update when the user selects a product, without clearly saying whether the paywall is ordinary, WebEmbed, or Flexible Layout.",
+      "expected_behavior": "The launch guide explains all three supported paywall shapes, uses the shipped articles, and delegates WebEmbed/Flexible CLI setup to segmently-cli-custom-screen-guide.",
+      "assertions": [
+        {
+          "name": "skill-three-paywall-shapes",
+          "corpus": "skill",
+          "mustContain": [
+            "selected-product paywall copy questions",
+            "Ordinary Paywall Subscriptions",
+            "WebEmbed/CustomEmbed paywall",
+            "Native Flexible Layout",
+            "selected_product",
+            "descriptionLabel",
+            "purchaseLabel",
+            "help-block-paywall-subscriptions",
+            "help-block-custom-html",
+            "help-block-flexible-sections",
+            "segmently-cli-custom-screen-guide",
+            "checkout/payment intent proof"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semantic-routing-and-article-content-guard",
+      "prompt": "A customer asks a Segmently question whose article exists but may need details beyond the short shipped guide snippet.",
+      "expected_behavior": "The launch guide uses model-selected guideKeys/actionId instead of raw deterministic prompt routing, studies selected article sections before answering, and uses article-fetch read-only when shipped sections are insufficient.",
+      "assertions": [
+        {
+          "name": "skill-routing-and-article-content",
+          "corpus": "skill",
+          "mustContain": [
+            "debug-only compatibility fallback/regression surface",
+            "result as the final semantic decision",
+            "Selected article content is answer material",
+            "article-fetch",
+            "study the returned selected article/guide content"
+          ]
+        },
+        {
+          "name": "semantic-routing-contract",
+          "corpus": "semanticRouting",
+          "mustContain": [
+            "Raw prompt routing is debug-only",
+            "After selecting likely articles/guides, study the selected article material",
+            "run `article-fetch` / `segmently-cli-articles` read-only",
+            "Do not fill article gaps from general Segmently assumptions",
+            "routingPolicy.rawPromptDebugOnly=true"
+          ]
+        }
+      ]
+    },
+    {
       "id": "backends-cover-the-journey",
       "prompt": "A customer asks about each leg of the launch.",
       "expected_behavior": "Every leg has a backend and a verify documented.",

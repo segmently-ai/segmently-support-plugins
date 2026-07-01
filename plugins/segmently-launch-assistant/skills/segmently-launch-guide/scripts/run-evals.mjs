@@ -94,6 +94,7 @@ const corpus = {
   description: extractDescription(skillMarkdown),
   scenarios: read('references/scenarios.md'),
   backends: read('references/backends.md'),
+  semanticRouting: read('references/semantic-routing.md'),
   status: read('references/project-status.md'),
   teach: read('references/teach.md'),
   teachReference: teachReferenceRaw,
@@ -161,9 +162,9 @@ const semanticRoutingReference = read('references/semantic-routing.md');
 for (const required of [
   'Do not let `segmently-launch-guide` replace',
   'The model should select the support intent, guide keys, action id, and',
-  'Avoid using:',
-  'as the primary CLI action selector',
-  'raw prompt path is a compatibility',
+  'Do not use:',
+  'as the live customer routing path',
+  'raw prompt path is a debug-only',
   'delegate the work to that',
 ]) {
   if (!semanticRoutingReference.includes(required)) {

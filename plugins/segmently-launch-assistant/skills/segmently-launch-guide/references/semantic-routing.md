@@ -4,7 +4,9 @@ Use this reference when the customer asks a free-form support question and the
 right scenario is not obvious from one exact command.
 
 The model owns the meaning step. Deterministic scripts own only evidence,
-execution boundaries, and verification.
+execution boundaries, and verification. Raw prompt routing is debug-only:
+use it for regression checks and compatibility probes, not for live customer
+meaning selection.
 
 This includes CLI DO. Do not let `segmently-launch-guide` replace
 `segmently-cli-guide` or another profile skill as the reasoning layer for a
@@ -26,6 +28,21 @@ Choose one or more catalog items from the shipped files:
   section anchors, and setting-level screenshots.
 - `references/backends.md` and `runtime/do-action-reference.json` for whether a
   selected intent can be TEACH, SHOW, CLI DO, E2E/browser DO, or HANDOFF.
+
+After selecting likely articles/guides, study the selected article material
+before writing the answer:
+
+- First read the returned shipped guide sections (`answer.instructions[]`,
+  `guidance.guides[].textSections`, `articleReferences`, image URLs, and section
+  anchors). These sections are answer material, not just citations.
+- If those shipped sections do not contain enough detail for the customer's
+  question, run `article-fetch` / `segmently-cli-articles` read-only for the
+  selected `articleAlias` or `articleId` and use the fetched article sections as
+  additional answer material.
+- Do not fill article gaps from general Segmently assumptions. If the shipped
+  sections plus read-only article fetch still do not cover the question, say
+  what coverage is missing and ask for the missing context or hand off to the
+  relevant Segmently skill.
 
 Prefer a small composite set over a single over-generic guide when the customer
 intent naturally spans setup phases. Example: "set up Stripe subscriptions"
@@ -65,15 +82,16 @@ Use `--mode show` when the customer asks to be shown where something is, and
 `--mode article-fetch` when they ask for the full article. Use `--actionId` only
 after the model has selected a real action from `runtime/do-action-reference.json`.
 
-Avoid using:
+Do not use:
 
 ```bash
 node runtime/customer-response-runner.mjs --prompt "<customer request>"
 ```
 
-as the primary CLI action selector. That raw prompt path is a compatibility
-fallback and regression surface for known phrasing. Primary customer routing is
-model-selected catalog routing with `--guideKeys` and, for DO, `--actionId`.
+as the live customer routing path. That raw prompt path is a debug-only
+compatibility fallback and regression surface for known phrasing. Primary
+customer routing is model-selected catalog routing with `--guideKeys` and, for
+DO, `--actionId`.
 
 Treat the returned contract as authoritative for:
 
@@ -88,6 +106,10 @@ Treat the returned contract as authoritative for:
 
 The runner validates that selected guide keys exist and returns only shipped
 customer-safe materials. It does not decide customer meaning in this mode.
+If the runner returns `routingPolicy.rawPromptDebugOnly=true`, do not present the
+raw prompt result as the final semantic decision. Re-run with model-selected
+`--guideKeys` / `--actionId`, or ask one clarifying question if the catalog match
+is still unclear.
 When it returns a CLI `action.executeWith.skill`, delegate the work to that
 owning skill. `runtime/cli-do-runner.mjs` is a dry-run/verification wrapper or
 approved low-level smoke executor, not a replacement for the owning CLI skill's

@@ -31,6 +31,18 @@ The packaged guide corpus is the first source for customer answers:
   URL in the customer answer. Do not reduce a published article to only its
   alias.
 
+Selected article content is answer material, not just a citation. After matching
+an article or guide, read and use the shipped section text returned by the
+runner (`answer.instructions[]`, `guidance.guides[].textSections`,
+`articleReferences`, section anchors, and image URLs). If those shipped sections
+are too thin for the customer's question, switch to the read-only
+`article-fetch` path through `segmently-cli-articles`, resolve the selected
+`articleAlias` to an article id, fetch the article/config, study its sections,
+and use that content in the answer. Do not fill gaps from general Segmently
+assumptions. If neither shipped sections nor fetched article content cover the
+question, say what verified coverage is missing and ask for the missing context
+or hand off to the relevant Segmently skill.
+
 Never infer that an article is missing from an empty public-link field such as
 `fullArticleLink: null` or `publicArticleLinks: []`. The public web URL is not
 the article identity. If a row has `articleId`, `articleAlias`, `referencePath`,
@@ -104,14 +116,25 @@ Use the returned contract as the source of truth for `guidance.guides`,
 The runner validates materials and execution boundaries; it does not own
 semantic understanding in `--guideKeys` mode. Raw
 `node runtime/customer-response-runner.mjs --prompt "<customer request>"` is only
-a compatibility fallback/regression surface for known phrasing, not the primary
-meaning step for unknown customer wording.
+a debug-only compatibility fallback/regression surface for known phrasing, not
+the primary meaning step for customer wording. Do not use a raw prompt runner
+result as the final semantic decision when answering a customer. If a raw prompt
+probe returns `routingPolicy.rawPromptDebugOnly=true`, select the guide/action
+semantically from the shipped catalog and rerun with `--guideKeys` /
+`--actionId`, or ask one targeted clarification question.
 
 When `answer.customerVisibleGuideAssets.mustShowInCustomerAnswer=true`, the
 customer answer must include a compact visible materials block with article
 URL(s), concrete image URL(s) when present, and the customer-safe guide alias or
 reference path. Do not replace those links with prose like "there is a guide";
 show the links.
+
+Before composing the answer, study the returned selected article/guide content.
+Use the returned section descriptions directly when they answer the question.
+If the answer needs more than the returned sections contain, run the
+`article-fetch` contract and read the full selected article/config before
+answering. Do not answer from memory or general product assumptions while a
+selected article has unread content that could contain the answer.
 
 1. **Clarify the scenario.** Map the customer's words to a launch scenario / leg
    (see `references/scenarios.md`). If the request is ambiguous, ask ONE targeted
@@ -565,6 +588,40 @@ For field-level TEACH, use the same model-selected catalog flow:
      customer provides product names, prices, currency, billing intervals, and
      trials; attaching/checking plans on a Paywall screen needs the
      funnel/screen target and verification.
+   - For selected-product paywall copy questions such as "when the user selects
+     a product, update the text from that product", do not answer with only
+     standard Paywall Subscriptions or only custom WebEmbed. Explain the three
+     supported shapes:
+     1. Ordinary Paywall Subscriptions: plan rows are linked to products and
+        their plan-card labels, price, and billing period follow each row's
+        linked product.
+     2. WebEmbed/CustomEmbed paywall: the embed that owns the Product Catalog
+        should own selection and purchase, then share one aggregate
+        `selected_product` variable with sibling embedded sections for labels.
+     3. Native Flexible Layout: Product Catalog owns selection; Text and
+        Purchase Button sections link to it through "Linked to section"; empty
+        Text title falls back to the selected product `descriptionLabel`; empty
+        Purchase Button label falls back to `purchaseLabel`; the linked Purchase
+        Button buys the selected product. Use article aliases
+        `help-block-paywall-subscriptions`, `help-block-custom-html`, and
+        `help-block-flexible-sections` when the resolver returns them.
+     For WebEmbed/CustomEmbed or Flexible Layout CLI setup, delegate to
+     `segmently-cli-custom-screen-guide`. Verification must include label
+     switching after changing the selected product and selected-product
+     checkout/payment intent proof.
+   - For Flexible Layout paywalls where the customer asks whether Text
+     `description` and Purchase Button `purchase` labels can follow the selected
+     Product Catalog product, use the Flexible Sections article
+     `help-block-flexible-sections`. Explain the native pattern: Product
+     Catalog owns selection; Text and Purchase Button sections are linked to it
+     through "Linked to section"; empty Text title falls back to the selected
+     product description label; empty Purchase Button label falls back to the
+     selected product purchase label; the linked Purchase Button buys the
+     selected product. If the customer asks whether this can be configured via
+     CLI, answer yes but delegate the work to `segmently-cli-custom-screen-guide`
+     for export/apply/publish/verify instead of using a generic launch-guide
+     scalar patch. Verification must include default selected labels, changed
+     selected labels, and selected-product checkout/payment intent proof.
 6. If the customer wants the full article, first select the target guide/article
    semantically, then run
    `node runtime/customer-response-runner.mjs --prompt "<customer request>"

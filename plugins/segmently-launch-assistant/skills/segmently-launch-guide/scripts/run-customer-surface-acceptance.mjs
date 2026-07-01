@@ -167,6 +167,82 @@ check('agent-selected semantic guide keys resolve Stripe subscription materials'
   assertSourceSafeCustomerAnswer(response);
 });
 
+check('Flexible Layout linked product labels resolve article and CLI delegation boundary', () => {
+  const response = runResponse([
+    '--prompt',
+    'как в flexible layout сделать чтобы текст description и кнопка purchase брались из выбранного продукта product catalog, и можно ли это настроить через cli?',
+  ]);
+  assert(response.ok === true, 'Flexible Layout linked product label response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach mode, got ${response.mode}`);
+  assert(response.resolver?.kind === 'teach', `expected teach resolver, got ${response.resolver?.kind}`);
+  assert(response.resolver?.domainOperationBoundary === 'flexible-linked-product-label-domain-operation', 'Flexible Layout linked labels must use the dedicated domain boundary');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-linked-product-labels'), 'missing linked product labels guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-selected-product-purchase'), 'missing selected product purchase guide');
+  assert(!response.guidance?.guides?.some(guide => guide.articleAlias === 'help-block-paywall-footer'), 'Flexible Layout linked labels incorrectly resolved Paywall Footer');
+  assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'help-block-flexible-sections'), 'missing help-block-flexible-sections article reference');
+  assert(response.answer?.publicArticleLinks?.some(url => /help-block-flexible-sections\/index\.html$/.test(url)), 'missing Flexible Sections article URL');
+  const instructionText = response.answer?.instructions?.map(item => `${item.title} ${item.text}`).join('\n') ?? '';
+  assert(/Product Catalog selection/.test(instructionText), 'instructions must mention Product Catalog selection');
+  assert(/description label/.test(instructionText), 'instructions must mention description label');
+  assert(/purchase label/.test(instructionText), 'instructions must mention purchase label');
+  assert(/purchases the selected product|buys the currently selected product/.test(instructionText), 'instructions must prove selected-product purchase');
+  for (const needle of [
+    'link-text-to-catalog',
+    'link-purchase-to-catalog',
+    'default-product-labels',
+    'selected-product-labels',
+    'selected-product-payment-intent',
+  ]) {
+    assert(response.answer?.imageUrls?.some(url => url.includes(needle)), `missing Flexible Layout image URL ${needle}`);
+  }
+  assert(response.answer?.showDoOptions?.do?.available === 'cli-delegated', 'Flexible Layout linked labels must expose CLI delegated setup');
+  assert(response.answer?.showDoOptions?.do?.owningSkill === 'segmently-cli-custom-screen-guide', 'Flexible Layout linked labels must delegate CLI to segmently-cli-custom-screen-guide');
+  assert(/descriptionLabel/.test(response.answer?.showDoOptions?.do?.summary ?? ''), 'CLI summary must mention descriptionLabel');
+  assert(/purchaseLabel/.test(response.answer?.showDoOptions?.do?.summary ?? ''), 'CLI summary must mention purchaseLabel');
+  assert(response.missingArticleClaimed === false, 'Flexible Layout linked labels must not claim the article is missing');
+  assertSourceSafeCustomerAnswer(response);
+});
+
+check('selected product text update prompt explains ordinary WebEmbed and Flexible Layout paywall paths', () => {
+  const response = runResponse([
+    '--prompt',
+    'но хочу чтобы когда пользователь выбирает продукт чтобы тексты обновлялись согласно продукту, как это сделать?',
+  ]);
+  assert(response.ok === true, 'selected-product text update response did not return ok=true');
+  assert(response.mode === 'teach', `expected teach mode, got ${response.mode}`);
+  assert(response.resolver?.domainOperationBoundary === 'product-selection-paywall-label-domain-operation', 'selected-product text update must use product-selection paywall boundary');
+  assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'onboarding-list-create'), 'selected-product text update incorrectly resolved onboarding creation guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-paywall-subscriptions-items'), 'missing ordinary Paywall Subscriptions guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-embed-data-sources'), 'missing WebEmbed data sources guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-linked-product-labels'), 'missing Flexible Layout linked labels guide');
+  assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-selected-product-purchase'), 'missing Flexible Layout selected-product purchase guide');
+  for (const alias of ['help-block-paywall-subscriptions', 'help-block-custom-html', 'help-block-flexible-sections']) {
+    assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === alias), `missing ${alias} article reference`);
+    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)), `missing ${alias} article URL`);
+  }
+  const instructionText = response.answer?.instructions?.map(item => `${item.title} ${item.text}`).join('\n') ?? '';
+  for (const needle of [
+    'Ordinary Paywall Subscriptions',
+    'WebEmbed/CustomEmbed paywall',
+    'native Flexible Layout',
+    'Product Catalog',
+    'selected_product variable',
+    'Linked to section',
+    'descriptionLabel',
+    'purchaseLabel',
+    'checkout/payment intent',
+  ]) {
+    assert(instructionText.includes(needle), `selected-product text update instructions missing ${needle}`);
+  }
+  assert(response.answer?.showDoOptions?.do?.available === 'shape-dependent-cli-or-editor', 'selected-product text update must expose shape-dependent DO boundary');
+  assert(response.answer?.showDoOptions?.do?.owningSkill === 'segmently-cli-custom-screen-guide', 'selected-product text update must delegate WebEmbed/Flexible CLI work');
+  assert(/Ordinary Paywall Subscriptions/.test(response.answer?.nextStep ?? ''), 'next step must mention ordinary Paywall Subscriptions');
+  assert(/WebEmbed\/CustomEmbed/.test(response.answer?.nextStep ?? ''), 'next step must mention WebEmbed/CustomEmbed');
+  assert(/native Flexible Layout/.test(response.answer?.nextStep ?? ''), 'next step must mention native Flexible Layout');
+  assert(response.missingArticleClaimed === false, 'selected-product text update must not claim articles are missing');
+  assertSourceSafeCustomerAnswer(response);
+});
+
 check('direct video upload request returns conditional browser DO contract', () => {
   const response = runResponse(['--prompt', 'сделай видео в пейволе']);
   assert(response.ok === true, 'direct paywall video DO response did not return ok=true');

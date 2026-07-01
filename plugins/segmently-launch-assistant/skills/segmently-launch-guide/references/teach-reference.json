@@ -4220,7 +4220,7 @@
     },
     "help-block-flexible-sections": {
       "title": "Flexible Sections",
-      "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link a button to a section (e.g. a Purchase Button to a Product Catalog). Each section type’s own content and styling lives in its dedicated block article.",
+      "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link product-aware sections (for example Text or Purchase Button) to a Product Catalog so labels and purchases follow the selected product. Each section type’s own content and styling lives in its dedicated block article.",
       "articleAlias": "help-block-flexible-sections",
       "fields": [
         {

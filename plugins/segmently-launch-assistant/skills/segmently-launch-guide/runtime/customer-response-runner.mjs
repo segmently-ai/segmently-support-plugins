@@ -9,7 +9,9 @@
  *
  * The preferred customer flow is model-selected semantics plus deterministic
  * evidence resolution: pass --guideKeys after the agent selects catalog items.
- * Raw --prompt routing remains a compatibility fallback and regression surface.
+ * Raw --prompt routing remains a debug-only compatibility fallback and
+ * regression surface; installed agents must not use it as the customer-facing
+ * meaning layer.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -188,7 +190,11 @@ function buildRoutingPolicy(promptResolution, args) {
     deterministicRunnerRole: 'validate-selected-catalog-items-execution-boundaries-and-verification',
     rawPromptRoutingRole: selectedByAgent
       ? 'not-used-for-meaning'
-      : 'compatibility-fallback-and-regression-surface-not-primary-routing',
+      : 'debug-only-compatibility-fallback-and-regression-surface-not-primary-routing',
+    rawPromptDebugOnly: !selectedByAgent,
+    rawPromptCustomerUseAllowed: selectedByAgent,
+    selectedArticleContentPolicy:
+      'After guide/article selection, study the returned shipped sections and article references. If the customer answer needs details beyond shipped sections, execute article-fetch/read-only before answering instead of guessing.',
     cliExecutionOwner: 'owning-customer-skill',
     mustPreferSelectedCatalog: true,
     mustDelegateCliDoToOwningSkill: true,
@@ -258,15 +264,17 @@ function resolvePromptQuestion(prompt, args, context) {
   const basicConfigObjectToggleGuideKeys = integrationGuideKeys || variableBindingGuideKeys ? null : basicConfigObjectToggleGuideKeysFromPrompt(prompt);
   const optionsStructureGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys ? null : optionsStructureGuideKeysFromPrompt(prompt);
   const headerNavigationGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys ? null : headerNavigationGuideKeysFromPrompt(prompt);
-  const paywallBodyBenefitsGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys ? null : paywallBodyBenefitsGuideKeysFromPrompt(prompt);
-  const paywallFooterLinksGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys ? null : paywallFooterLinksGuideKeysFromPrompt(prompt);
-  const layoutSpacingGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys ? null : layoutSpacingGuideKeysFromPrompt(prompt);
-  const actionBarRichStyleGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys ? null : actionBarRichStyleGuideKeysFromPrompt(prompt);
-  const carouselSlidesTimingGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys ? null : carouselSlidesTimingGuideKeysFromPrompt(prompt);
-  const customHtmlWebEmbedGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys ? null : customHtmlWebEmbedGuideKeysFromPrompt(prompt);
-  const mediaAssetLayoutGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys ? null : mediaAssetLayoutGuideKeysFromPrompt(prompt);
-  const copyTextValueGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys || mediaAssetLayoutGuideKeys ? null : copyTextValueGuideKeysFromPrompt(prompt);
-  const domainOperationGuideKeys = variableBindingGuideKeys ?? basicConfigObjectToggleGuideKeys ?? optionsStructureGuideKeys ?? headerNavigationGuideKeys ?? paywallBodyBenefitsGuideKeys ?? paywallFooterLinksGuideKeys ?? layoutSpacingGuideKeys ?? actionBarRichStyleGuideKeys ?? carouselSlidesTimingGuideKeys ?? customHtmlWebEmbedGuideKeys ?? mediaAssetLayoutGuideKeys ?? copyTextValueGuideKeys;
+  const flexibleLinkedProductGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys ? null : flexibleLinkedProductGuideKeysFromPrompt(prompt);
+  const productSelectionPaywallGuideKeys = integrationGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys ? null : productSelectionPaywallGuideKeysFromPrompt(prompt);
+  const paywallBodyBenefitsGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys ? null : paywallBodyBenefitsGuideKeysFromPrompt(prompt);
+  const paywallFooterLinksGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys ? null : paywallFooterLinksGuideKeysFromPrompt(prompt);
+  const layoutSpacingGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys ? null : layoutSpacingGuideKeysFromPrompt(prompt);
+  const actionBarRichStyleGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys ? null : actionBarRichStyleGuideKeysFromPrompt(prompt);
+  const carouselSlidesTimingGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys ? null : carouselSlidesTimingGuideKeysFromPrompt(prompt);
+  const customHtmlWebEmbedGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys ? null : customHtmlWebEmbedGuideKeysFromPrompt(prompt);
+  const mediaAssetLayoutGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys ? null : mediaAssetLayoutGuideKeysFromPrompt(prompt);
+  const copyTextValueGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys || mediaAssetLayoutGuideKeys ? null : copyTextValueGuideKeysFromPrompt(prompt);
+  const domainOperationGuideKeys = variableBindingGuideKeys ?? basicConfigObjectToggleGuideKeys ?? optionsStructureGuideKeys ?? headerNavigationGuideKeys ?? flexibleLinkedProductGuideKeys ?? productSelectionPaywallGuideKeys ?? paywallBodyBenefitsGuideKeys ?? paywallFooterLinksGuideKeys ?? layoutSpacingGuideKeys ?? actionBarRichStyleGuideKeys ?? carouselSlidesTimingGuideKeys ?? customHtmlWebEmbedGuideKeys ?? mediaAssetLayoutGuideKeys ?? copyTextValueGuideKeys;
   let action = domainOperationGuideKeys ? null : resolveActionFromPrompt(prompt, context.actions.actions ?? []);
   const explicitActionIntent = hasExplicitActionIntent(prompt);
   const articleFetchIntent = hasArticleFetchIntent(prompt) && !explicitActionIntent;
@@ -329,7 +337,10 @@ function resolvePromptQuestion(prompt, args, context) {
         kind: 'copy-or-label-text-value',
         reason: 'The prompt asks to change customer-facing copy/label text, not text style. This needs a locale-aware domain operation or browser flow before it can be executed safely.',
       } : null,
-      domainOperationBoundary: variableBindingGuideKeys ? {
+      domainOperationBoundary: productSelectionPaywallGuideKeys ? {
+        kind: 'product-selection-paywall-label-domain-operation',
+        reason: 'Selected-product paywall copy can be implemented as ordinary Paywall Subscriptions, WebEmbed/CustomEmbed product variables, or native Flexible Layout linked Product Catalog sections; select the right workflow before delegating CLI/browser work.',
+      } : variableBindingGuideKeys ? {
         kind: 'variable-binding-domain-operation',
         reason: 'Variable binding changes create or connect structured variable/option/score records and must not be executed as blind scalar patches.',
       } : basicConfigObjectToggleGuideKeys ? {
@@ -341,6 +352,9 @@ function resolvePromptQuestion(prompt, args, context) {
       } : headerNavigationGuideKeys ? {
         kind: 'header-navigation-domain-operation',
         reason: 'Header navigation/progress changes can create or reconfigure button, progress, layout, icon, inset, and bar structures and must not be executed as blind text-style patches.',
+      } : flexibleLinkedProductGuideKeys ? {
+        kind: 'flexible-linked-product-label-domain-operation',
+        reason: 'Flexible Layout linked product labels require Product Catalog, Text, and Purchase Button section linking plus product label data and checkout verification; delegate CLI work to segmently-cli-custom-screen-guide instead of a generic scalar patch.',
       } : paywallBodyBenefitsGuideKeys ? {
         kind: 'paywall-body-benefits-domain-operation',
         reason: 'Paywall body copy and benefit-list changes alter localized template text and repeated benefit records and must not be executed as blind style or subscription patches.',
@@ -376,27 +390,31 @@ function resolvePromptQuestion(prompt, args, context) {
       copyTextValueBoundary: Boolean(copyTextValueGuideKeys),
       domainOperationBoundary: variableBindingGuideKeys
         ? 'variable-binding-domain-operation'
-        : basicConfigObjectToggleGuideKeys
+        : productSelectionPaywallGuideKeys
+          ? 'product-selection-paywall-label-domain-operation'
+          : basicConfigObjectToggleGuideKeys
           ? 'basic-config-object-toggle-domain-operation'
           : optionsStructureGuideKeys
             ? 'options-structure-domain-operation'
             : headerNavigationGuideKeys
               ? 'header-navigation-domain-operation'
-              : paywallBodyBenefitsGuideKeys
-                ? 'paywall-body-benefits-domain-operation'
-                : paywallFooterLinksGuideKeys
-                  ? 'paywall-footer-links-domain-operation'
-                  : layoutSpacingGuideKeys
-                    ? 'layout-spacing-domain-operation'
-                    : actionBarRichStyleGuideKeys
-                      ? 'rich-visual-style-domain-operation'
-                      : carouselSlidesTimingGuideKeys
-                        ? 'carousel-slides-and-timing-domain-operation'
-                        : customHtmlWebEmbedGuideKeys
-                          ? 'custom-html-webembed-domain-operation'
-                          : mediaAssetLayoutGuideKeys
-                            ? 'media-asset-layout-domain-operation'
-                            : null,
+              : flexibleLinkedProductGuideKeys
+                ? 'flexible-linked-product-label-domain-operation'
+                : paywallBodyBenefitsGuideKeys
+                  ? 'paywall-body-benefits-domain-operation'
+                  : paywallFooterLinksGuideKeys
+                    ? 'paywall-footer-links-domain-operation'
+                    : layoutSpacingGuideKeys
+                      ? 'layout-spacing-domain-operation'
+                      : actionBarRichStyleGuideKeys
+                        ? 'rich-visual-style-domain-operation'
+                        : carouselSlidesTimingGuideKeys
+                          ? 'carousel-slides-and-timing-domain-operation'
+                          : customHtmlWebEmbedGuideKeys
+                            ? 'custom-html-webembed-domain-operation'
+                            : mediaAssetLayoutGuideKeys
+                              ? 'media-asset-layout-domain-operation'
+                              : null,
       conditionalDo: expectedConditionalDo
         ? {
             requiredInputs: expectedConditionalDo.requiredInputs,
@@ -620,7 +638,7 @@ function actionContractForPrompt(expectedDo, action) {
       execution: plan.execution ?? null,
       routingPolicy: {
         semanticDecisionOwner: 'agent-model',
-        rawPromptActionRouting: 'compatibility-fallback-not-primary',
+        rawPromptActionRouting: 'debug-only-compatibility-fallback-not-primary',
         selectedActionRequiredForPrimaryFlow:
           'For customer-facing CLI DO, select the action semantically from do-action-reference.json first, then call this runner with --guideKeys and --actionId.',
         delegateFirstToOwningSkill: plan.executeWith?.skill ?? action.owningSkill ?? null,
@@ -643,7 +661,7 @@ function actionContractForPrompt(expectedDo, action) {
       teachFallback: plan.teachFallback ?? null,
       routingPolicy: {
         semanticDecisionOwner: 'agent-model',
-        rawPromptActionRouting: 'compatibility-fallback-not-primary',
+        rawPromptActionRouting: 'debug-only-compatibility-fallback-not-primary',
         selectedActionRequiredForPrimaryFlow:
           'Ask for the missing inputs after the agent has selected the intended action and owning skill.',
         delegateFirstToOwningSkill: action.owningSkill ?? null,
@@ -725,6 +743,7 @@ function buildAnswer(question, guideContracts, scenario) {
   const preferredReference = preferredGuideReference(references);
   const customerVisibleGuideAssets = buildCustomerVisibleGuideAssets(guideContracts);
   const visualCoverage = customerVisibleGuideAssets.visualCoverage;
+  const overviewInstructions = productSelectionPaywallOverviewInstructions(question, guideContracts);
   const evidencePhrase = visualCoverage.hasAnyImageUrl
     ? 'text and concrete screenshot/image URLs'
     : visualCoverage.hasAnyScreenshotEvidence
@@ -738,14 +757,17 @@ function buildAnswer(question, guideContracts, scenario) {
     customerAnswerStarter: preferredReference
       ? `The built-in Segmently guide/article is available: ${preferredReference.name} (${preferredReference.articleAlias ?? preferredReference.articleId}, reference ${preferredReference.referencePath}). Use its ${evidencePhrase}.`
       : 'Use the matched Segmently guide text and ask one clarifying question if the exact screen is unclear.',
-    instructions: guideContracts.flatMap(guide =>
-      guide.textSections.slice(0, 2).map(section => ({
-        title: section.title,
-        text: section.description,
-        visualEvidence: section.hasScreenshotEvidence || guide.hasScreenshotEvidence,
-        imageUrl: section.imageUrl ?? null,
-      })),
-    ),
+    instructions: [
+      ...overviewInstructions,
+      ...guideContracts.flatMap(guide =>
+        guide.textSections.slice(0, 2).map(section => ({
+          title: section.title,
+          text: section.description,
+          visualEvidence: section.hasScreenshotEvidence || guide.hasScreenshotEvidence,
+          imageUrl: section.imageUrl ?? null,
+        })),
+      ),
+    ],
     primaryInstruction: firstSection?.description ?? firstGuide?.userNeed ?? question.text,
     publicArticleLinks: customerVisibleGuideAssets.publicArticleLinks,
     builtInArticleReferences: references,
@@ -954,6 +976,15 @@ function uniqueStrings(values) {
 function teachNextStepForGuides(guideContracts, question = null) {
   const guideKeys = guideContracts.map(guide => guide.guideKey);
   const requiredInputs = requiredInputsForShow(guideKeys);
+  if (isProductSelectionPaywallLabelGuide(guideContracts, question)) {
+    return [
+      'Explain the three supported paywall shapes before asking for a target screen: Ordinary Paywall Subscriptions, WebEmbed/CustomEmbed paywall, and native Flexible Layout linked Product Catalog sections.',
+      'For ordinary Paywall Subscriptions, product rows own their own plan labels, price, and billing period; use this when the text only needs to update inside the plan cards.',
+      'For WebEmbed/CustomEmbed paywalls, delegate to segmently-cli-custom-screen-guide so the ProductCatalog-owning embed can publish one selected_product variable and sibling embeds can read it before purchase.',
+      'For native Flexible Layout, use Product Catalog plus linked Text and Purchase Button sections; descriptionLabel and purchaseLabel fall back from the selected product, and the linked button buys the selected product.',
+      `Missing target inputs before live SHOW/CLI handoff: ${requiredInputs.join(', ')}; for CLI execution also ask which paywall shape is in use and for the screen/version plus product labels.`,
+    ].join(' ');
+  }
   if (isCopyTextValueGuide(guideContracts, question)) {
     return [
       'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Content/Options/label field without changing data.',
@@ -987,6 +1018,15 @@ function teachNextStepForGuides(guideContracts, question = null) {
       'Offer SHOW: ask for the editor screen link, or projectId/funnelId/screenId, then open the Header section without changing data.',
       'Do not offer generic CLI mutation for Header navigation/progress structure. Actual DO needs a domain operation or browser flow that understands the screen type, header visibility, back/skip button semantics, progress indicator kind, icon asset, layout/insets, save behavior, and readback verification.',
       `Missing target inputs before live SHOW: ${requiredInputs.join(', ')}. For future DO, also ask for the exact Header or progress setting and desired value.`,
+    ].join(' ');
+  }
+  if (isFlexibleLinkedProductLabelGuide(guideContracts, question)) {
+    return [
+      'Answer yes: configure the paywall as a native Flexible Layout screen with a Product Catalog, a Text section, and a Purchase Button section linked to that catalog.',
+      'For the editor path, add Product Catalog products, fill each product description label and purchase label, clear the linked Text title and Purchase Button label when product labels should drive them, then use each section’s Linked to section dropdown to select the Product Catalog.',
+      'For CLI setup, delegate to segmently-cli-custom-screen-guide. It owns the export/apply/publish/verify workflow for native FlexibleLayout linked ProductCatalog labels; do not execute this as a generic scalar patch from launch-guide.',
+      'Verification must prove default labels, changed-selection labels, and checkout/payment intent for the selected product.',
+      `Missing target inputs before live SHOW/CLI handoff: ${requiredInputs.join(', ')}; for CLI execution also ask for versionId, ProductCatalog/Text/PurchaseButton section identity, product label values, and publish target.`,
     ].join(' ');
   }
   if (isPaywallBodyBenefitsDomainGuide(guideContracts, question)) {
@@ -1085,6 +1125,14 @@ function teachShowDoOptionsForGuides(guideContracts, question = null) {
           missingInputs: [...requiredInputs, 'value', 'target-copy-or-label-identity', 'locale-if-multilingual'],
           summary: 'Do not use a generic setFieldValue patch for copy/label text values. Promote this only after a locale-aware CLI domain operation or browser flow has readback and installed-plugin live proof.',
         }
+      : isProductSelectionPaywallLabelGuide(guideContracts, question)
+      ? {
+          available: 'shape-dependent-cli-or-editor',
+          mutation: true,
+          owningSkill: 'segmently-cli-custom-screen-guide',
+          missingInputs: [...requiredInputs, 'paywall-shape-ordinary-webembed-or-flexible-layout', 'versionId-if-cli', 'product-labels-and-purchase-products'],
+          summary: 'First identify the paywall shape. Ordinary Paywall Subscriptions can be checked/attached in the editor; WebEmbed/CustomEmbed selected-product copy and native Flexible Layout linked ProductCatalog labels should be delegated to segmently-cli-custom-screen-guide, then verified with label switching and selected-product checkout/payment intent proof.',
+        }
       : isMediaVideoGuide(guideContracts) || isPaywallMediaVideoGuide(guideContracts)
       ? {
           available: 'conditional',
@@ -1126,6 +1174,14 @@ function teachShowDoOptionsForGuides(guideContracts, question = null) {
           mutation: true,
           missingInputs: [...requiredInputs, 'header-or-progress-setting', 'desired-header-or-progress-value'],
           summary: 'Do not use a generic setFieldValue patch for Header navigation/progress structure. Promote this only after a domain operation or browser flow can update buttons, progress kind/colors/icons, insets, or header layout and verify readback.',
+        }
+      : isFlexibleLinkedProductLabelGuide(guideContracts, question)
+      ? {
+          available: 'cli-delegated',
+          mutation: true,
+          owningSkill: 'segmently-cli-custom-screen-guide',
+          missingInputs: [...requiredInputs, 'versionId', 'product-catalog-section', 'text-section', 'purchase-button-section', 'product-description-and-purchase-labels'],
+          summary: 'Yes, this can be configured through the Segmently CLI by delegating to segmently-cli-custom-screen-guide: export the funnel, link the Text and Purchase Button sections to the Product Catalog, set product descriptionLabel and purchaseLabel values, publish, then verify label switching and selected-product purchase.',
         }
       : isPaywallBodyBenefitsDomainGuide(guideContracts, question)
       ? {
@@ -1202,6 +1258,15 @@ function isStripeSubscriptionSetupGuide(guideContracts) {
     && /screenedit-paywall-subscriptions-items/.test(keys);
 }
 
+function isProductSelectionPaywallLabelGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'product-selection-paywall-label-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-paywall-subscriptions-items/.test(keys)
+    && /screenedit-embed-data-sources/.test(keys)
+    && /screenedit-flexible-sections-linked-product-labels/.test(keys)
+    && /screenedit-flexible-sections-selected-product-purchase/.test(keys);
+}
+
 function isCopyTextValueGuide(guideContracts, question = null) {
   if (question?.domainOperationBoundary?.kind === 'variable-binding-domain-operation') return false;
   if (question?.copyTextValueBoundary?.kind === 'copy-or-label-text-value') return true;
@@ -1231,6 +1296,12 @@ function isHeaderNavigationDomainGuide(guideContracts, question = null) {
   if (question?.domainOperationBoundary?.kind === 'header-navigation-domain-operation') return true;
   const keys = guideContracts.map(guide => guide.guideKey).join(' ');
   return /screenedit-header-(back-button|skip-button|progress-(indicator-kind|active-color|track-color|title|icon|content-alignment|full-width|respect-buttons|vertical-alignment|insets)|appearance-(height|bg-color|opacity)|insets)/.test(keys);
+}
+
+function isFlexibleLinkedProductLabelGuide(guideContracts, question = null) {
+  if (question?.domainOperationBoundary?.kind === 'flexible-linked-product-label-domain-operation') return true;
+  const keys = guideContracts.map(guide => guide.guideKey).join(' ');
+  return /screenedit-flexible-sections-(linked-product-labels|selected-product-purchase)/.test(keys);
 }
 
 function isPaywallBodyBenefitsDomainGuide(guideContracts, question = null) {
@@ -1635,7 +1706,7 @@ function printHelp() {
     '',
     'Returns a customer-facing response contract built only from shipped skill files.',
     'Preferred mode: the agent selects guideKeys semantically from the shipped catalog, then this runner resolves article URLs, image URLs, SHOW/DO/handoff boundaries, and verification facts.',
-    'Raw prompt mode is a compatibility fallback/regression surface and must not be treated as the only semantic authority for unknown customer wording.',
+    'Raw prompt mode is debug-only compatibility/regression support and must not be used as the customer-facing semantic authority for unknown customer wording.',
   ].join('\n'));
 }
 
@@ -3026,6 +3097,58 @@ function headerNavigationGuideKeysFromPrompt(prompt) {
     }
   }
   return null;
+}
+
+function flexibleLinkedProductGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasFlexibleTarget = /(flexible\s*layout|flexiblelayout|flexible sections|гибк|флекс|флексибл)/.test(text);
+  const hasCatalogTarget = /(product catalog|productcatalog|каталог.*продукт|продукт.*каталог|selected product|выбран.*продукт|продукт.*выбран)/.test(text);
+  const hasLinkedLabelTarget = /(description label|descriptionlabel|\bdescription\b|описан|purchase label|purchaselabel|\bpurchase\b|лейбл|label|linked to section|linked section|привяз|link.*section|кнопк.*покуп|purchase button|buy button|кнопк.*buy)/.test(text);
+  const hasSelectedProductBehavior = /(selected|выбран|смен|change|update|обнов|fallback|покуп.*выбран|buy.*selected|purchase.*selected|checkout)/.test(text);
+  if (!hasFlexibleTarget || !hasCatalogTarget || !hasLinkedLabelTarget) return null;
+  if (!hasSelectedProductBehavior && !/(description label|descriptionlabel|purchase label|purchaselabel)/.test(text)) return null;
+
+  return [
+    'screenedit-flexible-sections-linked-product-labels',
+    'screenedit-flexible-sections-selected-product-purchase',
+  ];
+}
+
+function productSelectionPaywallGuideKeysFromPrompt(prompt) {
+  const text = normalize(prompt);
+  const hasProductTarget = /(product|продукт|plan|план|тариф|offer|оффер)/.test(text);
+  const hasSelectionBehavior = /(select|selected|selection|choose|chosen|change|switch|update|выбира|выбран|выбор|смен|переключ|обнов)/.test(text);
+  const hasCopyOrPurchaseTarget = /(text|copy|label|description|purchase|button|cta|price|period|billing|текст|лейбл|описан|кнопк|куп|покуп|цена|период|оплат)/.test(text);
+  const hasPaywallContext = /(paywall|пейвол|оплат|checkout|stripe|subscription|подпис|product catalog|productcatalog|каталог|webembed|web embed|customembed|custom embed|flexible|layout|флекс|флексибл|гибк)/.test(text);
+  if (!hasProductTarget || !hasSelectionBehavior || !hasCopyOrPurchaseTarget) return null;
+  if (!hasPaywallContext && !/(текст|copy|label|description|purchase|price|цена).*(продукт|product)|(продукт|product).*(текст|copy|label|description|purchase|price|цена)/.test(text)) return null;
+
+  return [
+    'screen-editor-section-paywall-subscriptions',
+    'screenedit-paywall-subscriptions-items',
+    'screen-editor-section-embed',
+    'screenedit-embed-data-sources',
+    'screenedit-flexible-sections-linked-product-labels',
+    'screenedit-flexible-sections-selected-product-purchase',
+  ];
+}
+
+function productSelectionPaywallOverviewInstructions(question, guideContracts) {
+  if (!isProductSelectionPaywallLabelGuide(guideContracts, question)) return [];
+  return [
+    {
+      title: 'Choose the paywall shape first',
+      text: 'Segmently supports three relevant paywall shapes for selected-product text. Ordinary Paywall Subscriptions updates the plan-card labels, price, and billing period from each linked product. A WebEmbed/CustomEmbed paywall should keep the Product Catalog-owning embed responsible for selection and purchase, then share one selected_product variable with sibling embedded sections. A native Flexible Layout paywall can link Text and Purchase Button sections to the Product Catalog so description and purchase labels follow the selected product without a WebEmbed bridge.',
+      visualEvidence: false,
+      imageUrl: null,
+    },
+    {
+      title: 'Use the native Flexible Layout pattern when possible',
+      text: 'For Flexible Layout, add Product Catalog, Text, and Purchase Button sections. Link Text and Purchase Button to the Product Catalog through Linked to section. Leave the Text title or Purchase Button label empty when the selected product descriptionLabel or purchaseLabel should drive it. Verify default labels, changed-selection labels, and that checkout/payment intent uses the selected product.',
+      visualEvidence: true,
+      imageUrl: null,
+    },
+  ];
 }
 
 function paywallBodyBenefitsGuideKeysFromPrompt(prompt) {
