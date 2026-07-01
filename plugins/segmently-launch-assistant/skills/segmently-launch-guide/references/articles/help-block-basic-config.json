@@ -1325,7 +1325,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
                 "name": "The screen editor with the Basic Config section highlighted."
               }
             },
@@ -1415,7 +1415,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-animation.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-animation.png",
                 "name": "Where the Animation sits inside the open Basic Config section."
               }
             },
@@ -1545,7 +1545,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-offline.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-offline.png",
                 "name": "Where the Offline media sits inside the open Basic Config section."
               }
             },
@@ -1675,7 +1675,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-permission.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-permission.png",
                 "name": "Where the Device permission prompt sits inside the open Basic Config section."
               }
             },
@@ -1818,7 +1818,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-permission-type.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-permission-type.png",
                 "name": "Where to find “Which Permission To Ask For” in the editor."
               }
             },
@@ -1884,7 +1884,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-countdown.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-countdown.png",
                 "name": "Where the Auto-advance countdown sits inside the open Basic Config section."
               }
             },
@@ -2027,7 +2027,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-duration.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-duration.png",
                 "name": "Where to find “Auto-Advance Duration” in the editor."
               }
             },
@@ -2106,7 +2106,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-unit.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-unit.png",
                 "name": "Where to find “Seconds Or Minutes” in the editor."
               }
             },

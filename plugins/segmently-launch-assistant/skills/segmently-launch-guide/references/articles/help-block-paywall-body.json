@@ -3114,7 +3114,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/context-section.png",
                 "name": "The screen editor with the Paywall Body section highlighted."
               }
             },
@@ -3244,7 +3244,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-title.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-title.png",
                 "name": "Where to find “Paywall headline” in the editor."
               }
             },
@@ -3323,7 +3323,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/title-styles-grid.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/title-styles-grid.png",
                 "name": "Where to find “Style the paywall headline” in the editor."
               }
             },
@@ -3802,7 +3802,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-subtitle.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-subtitle.png",
                 "name": "Where to find “Supporting subtitle” in the editor."
               }
             },
@@ -3881,7 +3881,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/subtitle-styles-grid.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/subtitle-styles-grid.png",
                 "name": "Where to find “Style the paywall subtitle” in the editor."
               }
             },
@@ -4387,7 +4387,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-features.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/open-section-features.png",
                 "name": "Where to find “Benefit checklist” in the editor."
               }
             },
@@ -4466,7 +4466,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-item-state.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-item-state.png",
                 "name": "Where to find “Style the feature bullets” in the editor."
               }
             },
@@ -4705,7 +4705,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-item-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-item-padding.png",
                 "name": "Where to find “Space inside each bullet” in the editor."
               }
             },
@@ -4784,7 +4784,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-list-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-list-padding.png",
                 "name": "Where to find “Space around the bullet list” in the editor."
               }
             },
@@ -4863,7 +4863,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-title.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-title.png",
                 "name": "Where to find “Style the bullet titles” in the editor."
               }
             },
@@ -5342,7 +5342,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-subtitle.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-subtitle.png",
                 "name": "Where to find “Style the bullet subtitles” in the editor."
               }
             },
@@ -5821,7 +5821,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-image.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/bullet-styles-bullet-image.png",
                 "name": "Where to find “Style the bullet icons” in the editor."
               }
             },

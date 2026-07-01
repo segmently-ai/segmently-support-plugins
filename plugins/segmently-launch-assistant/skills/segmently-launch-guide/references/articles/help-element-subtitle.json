@@ -861,7 +861,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
                 "name": "Where to find “The line under your title” in the editor."
               }
             },
@@ -940,7 +940,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
                 "name": "Where to find “Write the subtitle text” in the editor."
               }
             },
@@ -1019,7 +1019,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-styles.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-styles.png",
                 "name": "Where to find “Subtitle look and emphasis” in the editor."
               }
             },
@@ -1498,7 +1498,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-padding.png",
                 "name": "Where to find “Space around the subtitle” in the editor."
               }
             },

@@ -2303,7 +2303,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
                 "name": "The screen editor with the Options section highlighted."
               }
             },
@@ -2433,7 +2433,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
                 "name": "Where to find “Shuffle item order” in the editor."
               }
             },
@@ -2539,7 +2539,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
                 "name": "Where to find “What each choice shows” in the editor."
               }
             },
@@ -2618,7 +2618,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
                 "name": "Where to find “Vertical alignment of items” in the editor."
               }
             },
@@ -2697,7 +2697,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
                 "name": "Where to find “Even grid cell heights” in the editor."
               }
             },
@@ -2803,7 +2803,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
                 "name": "Where to find “Unselected item look” in the editor."
               }
             },
@@ -3082,7 +3082,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
                 "name": "Where to find “Selected item look” in the editor."
               }
             },
@@ -3388,7 +3388,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
                 "name": "Where to find “Padding inside each item” in the editor."
               }
             },
@@ -3467,7 +3467,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
                 "name": "Where to find “Margin around the whole list” in the editor."
               }
             },
@@ -3546,7 +3546,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
                 "name": "Where to find “Gap between choices” in the editor."
               }
             },
@@ -3652,7 +3652,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
                 "name": "Where to find “Item title text style” in the editor."
               }
             },
@@ -4091,7 +4091,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
                 "name": "Where to find “Item image look” in the editor."
               }
             },

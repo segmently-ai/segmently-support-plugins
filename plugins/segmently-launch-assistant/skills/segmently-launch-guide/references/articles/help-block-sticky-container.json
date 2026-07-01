@@ -1645,7 +1645,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/context-section.png",
                 "name": "The screen editor with the Sticky Container section highlighted."
               }
             },
@@ -1775,7 +1775,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-enable.png",
                 "name": "Where to find “Pin the CTA to the bottom” in the editor."
               }
             },
@@ -1854,7 +1854,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-button-type.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-button-type.png",
                 "name": "Where to find “What the button does” in the editor."
               }
             },
@@ -1960,7 +1960,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-show-background.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-show-background.png",
                 "name": "Where to find “Show a bar behind the button” in the editor."
               }
             },
@@ -2039,7 +2039,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-bg-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-bg-color.png",
                 "name": "Where to find “Color of the bar” in the editor."
               }
             },
@@ -2118,7 +2118,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-opacity.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-opacity.png",
                 "name": "Where to find “How see-through the bar is” in the editor."
               }
             },
@@ -2197,7 +2197,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-corner-radius.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-corner-radius.png",
                 "name": "Where to find “Roundness of the bar corners” in the editor."
               }
             },
@@ -2276,7 +2276,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-width.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-width.png",
                 "name": "Where to find “Outline thickness” in the editor."
               }
             },
@@ -2355,7 +2355,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-color.png",
                 "name": "Where to find “Outline color” in the editor."
               }
             },
@@ -2461,7 +2461,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-offset.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-offset.png",
                 "name": "Where to find “Spacing from screen edges” in the editor."
               }
             },
@@ -2540,7 +2540,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-padding.png",
                 "name": "Where to find “Space around the button” in the editor."
               }
             },

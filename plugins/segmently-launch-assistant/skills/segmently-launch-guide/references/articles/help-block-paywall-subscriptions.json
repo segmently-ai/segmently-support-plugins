@@ -4050,7 +4050,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/context-section.png",
                 "name": "The screen editor with the Paywall Subscriptions section highlighted."
               }
             },
@@ -4180,7 +4180,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-view-kind.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-view-kind.png",
                 "name": "Where to find “Plan card arrangement” in the editor."
               }
             },
@@ -4259,7 +4259,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-product-layout.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-product-layout.png",
                 "name": "Where to find “Checkbox placement on plans” in the editor."
               }
             },
@@ -4338,7 +4338,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-items.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-items.png",
                 "name": "Where to find “Subscription plans” in the editor."
               }
             },
@@ -4444,7 +4444,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-unselected-state.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-unselected-state.png",
                 "name": "Where to find “Unselected plan style” in the editor."
               }
             },
@@ -4683,7 +4683,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-selected-state.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-selected-state.png",
                 "name": "Where to find “Selected plan style” in the editor."
               }
             },
@@ -4922,7 +4922,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-item-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-item-padding.png",
                 "name": "Where to find “Space inside each plan card” in the editor."
               }
             },
@@ -5001,7 +5001,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-list-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-list-padding.png",
                 "name": "Where to find “Space around the plan list” in the editor."
               }
             },
@@ -5107,7 +5107,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-column-layout.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-column-layout.png",
                 "name": "Where to find “Plan name vs. price width” in the editor."
               }
             },
@@ -5186,7 +5186,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-start-label.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-start-label.png",
                 "name": "Where to find “Style the plan name (top-left)” in the editor."
               }
             },
@@ -5665,7 +5665,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-start-label.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-start-label.png",
                 "name": "Where to find “Style the plan note (bottom-left)” in the editor."
               }
             },
@@ -6144,7 +6144,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-end-label.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-end-label.png",
                 "name": "Where to find “Style the price (top-right)” in the editor."
               }
             },
@@ -6623,7 +6623,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-end-label.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-end-label.png",
                 "name": "Where to find “Style the billing period (bottom-right)” in the editor."
               }
             },
@@ -7102,7 +7102,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-badge.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-badge.png",
                 "name": "Where to find “Plan badge” in the editor."
               }
             },
@@ -7581,7 +7581,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-checkbox.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-checkbox.png",
                 "name": "Where to find “Style the plan checkbox” in the editor."
               }
             },

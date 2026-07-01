@@ -486,7 +486,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-flexible-sections/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html"
             },
             "labels": {
               "sep": {
@@ -559,7 +559,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/context-section.png",
                 "name": "The Flexible Sections section in the screen editor."
               }
             },
@@ -600,7 +600,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
             },
             "labels": {
               "sep": {
@@ -673,7 +673,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
                 "name": "The Background section in the screen editor."
               }
             },
@@ -714,7 +714,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-sticky-container/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html"
             },
             "labels": {
               "sep": {
@@ -787,7 +787,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/context-section.png",
                 "name": "The Sticky Container section in the screen editor."
               }
             },

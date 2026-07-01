@@ -2724,7 +2724,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
             },
             "labels": {
               "sep": {
@@ -2797,7 +2797,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
                 "name": "The Header section in the screen editor."
               }
             },
@@ -2961,7 +2961,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png",
                 "name": "The screen editor with the Content section highlighted."
               }
             },
@@ -3048,7 +3048,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png",
                 "name": "Where the Title (headline) sits inside the open Content section."
               }
             },
@@ -3148,7 +3148,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title-enable.png",
                 "name": "Where to find “Your main headline” in the editor."
               }
             },
@@ -3224,7 +3224,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title-text.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title-text.png",
                 "name": "Where to find “Write the headline text” in the editor."
               }
             },
@@ -3300,7 +3300,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/title-styles-styles.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/title-styles-styles.png",
                 "name": "Where to find “Title look and emphasis” in the editor."
               }
             },
@@ -3746,7 +3746,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/title-styles-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/title-styles-padding.png",
                 "name": "Where to find “Space around the title” in the editor."
               }
             },
@@ -3809,7 +3809,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png",
                 "name": "Where the Subtitle sits inside the open Content section."
               }
             },
@@ -3909,7 +3909,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
                 "name": "Where to find “The line under your title” in the editor."
               }
             },
@@ -3985,7 +3985,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
                 "name": "Where to find “Write the subtitle text” in the editor."
               }
             },
@@ -4061,7 +4061,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-styles.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-styles.png",
                 "name": "Where to find “Subtitle look and emphasis” in the editor."
               }
             },
@@ -4507,7 +4507,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-padding.png",
                 "name": "Where to find “Space around the subtitle” in the editor."
               }
             },
@@ -4570,7 +4570,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png",
                 "name": "Where the Hero image sits inside the open Content section."
               }
             },
@@ -4670,7 +4670,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-enable.png",
                 "name": "Where to find “The featured image up top” in the editor."
               }
             },
@@ -4746,7 +4746,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-url.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-url.png",
                 "name": "Where to find “The hero image itself” in the editor."
               }
             },
@@ -4822,7 +4822,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-scale-mode.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-scale-mode.png",
                 "name": "Where to find “How the image fills its box” in the editor."
               }
             },
@@ -4898,7 +4898,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-width.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-width.png",
                 "name": "Where to find “Fixed image width” in the editor."
               }
             },
@@ -4974,7 +4974,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height.png",
                 "name": "Where to find “Fixed image height” in the editor."
               }
             },
@@ -5050,7 +5050,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height-pct.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height-pct.png",
                 "name": "Where to find “Size the image by screen” in the editor."
               }
             },
@@ -5126,7 +5126,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-corner-radius.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-corner-radius.png",
                 "name": "Where to find “How rounded the image is” in the editor."
               }
             },
@@ -5202,7 +5202,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-padding.png",
                 "name": "Where to find “Space around the image” in the editor."
               }
             },
@@ -5302,7 +5302,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-image-layout.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-image-layout.png",
                 "name": "Where to find “Where the image sits” in the editor."
               }
             },
@@ -5343,7 +5343,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html"
             },
             "labels": {
               "sep": {
@@ -5416,7 +5416,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
                 "name": "The Action Bar section in the screen editor."
               }
             },
@@ -5457,7 +5457,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
             },
             "labels": {
               "sep": {
@@ -5530,7 +5530,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
                 "name": "The Background section in the screen editor."
               }
             },
@@ -5571,7 +5571,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
             },
             "labels": {
               "sep": {
@@ -5644,7 +5644,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
                 "name": "The Basic Config section in the screen editor."
               }
             },

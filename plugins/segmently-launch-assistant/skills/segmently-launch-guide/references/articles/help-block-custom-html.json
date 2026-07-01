@@ -643,7 +643,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/context-section.png",
                 "name": "The screen editor with the Custom HTML section highlighted."
               }
             },
@@ -773,7 +773,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-iframe.png",
                 "name": "Where to find “Keep custom code sandboxed” in the editor."
               }
             },
@@ -852,7 +852,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-html.png",
                 "name": "Where to find “Your custom screen code” in the editor."
               }
             },
@@ -931,7 +931,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-embed-section/0.2.0/configure-embed-section-2026-06-24T12-57-59-726Z-b7a815cb/open-section-data-sources.png",
                 "name": "Where to find “Editable content for your HTML” in the editor."
               }
             },

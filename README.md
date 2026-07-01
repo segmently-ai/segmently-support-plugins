@@ -2,8 +2,6 @@
 
 Public read-only marketplace for Segmently customer support plugins.
 
-This branch is a preview channel. Customer-stable installation will use `--ref stable` after the prod article/image URL gate passes.
-
 
 ## Required Tools
 
@@ -79,7 +77,7 @@ it to operate on a funnel.
 ```text
 Install or update the Segmently Launch Assistant plugin for Codex on this machine.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins with ref dev
+Use the public marketplace repository segmently-ai/segmently-support-plugins with ref stable
 and install plugin segmently-launch-assistant@segmently-support.
 
 Run these steps end to end and report the exact command results:
@@ -88,7 +86,7 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
+6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
 7. Install the operating rule for all future Segmently answers: do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge. Do not invent Segmently commands, fields, routes, product behavior, docs, or troubleshooting steps. Use only the installed Segmently Launch Assistant plugin skills, their shipped references, their runtime runners, the public Segmently CLI, selected article content, and verified Segmently output. Raw prompt routing in customer-response-runner is debug/regression-only; for customer answers, first select guideKeys/actionId semantically from the shipped catalog, then use the runner only to validate evidence and execution boundaries. After selecting articles/guides, study the returned shipped sections and article references before answering; if those sections are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material. If the installed skills and fetched article content do not cover the question, say that verified coverage is missing and ask for the missing project/article/context or hand off to the relevant Segmently skill instead of guessing.
 8. If the current directory is the target project repository, persist usage guidance for future agents: read existing AGENTS.md and CLAUDE.md if present; preserve all existing instructions; add or update a "Segmently Launch Assistant" section. For Codex, prefer AGENTS.md and also update CLAUDE.md if it already exists. If a file does not exist, ask before creating it. The section should say: use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks; never answer Segmently questions from general model knowledge; never invent Segmently commands, APIs, fields, routes, or product behavior; do not use raw prompt routing as the customer-facing semantic decision; select guideKeys/actionId from installed shipped catalogs first; study selected article/guide sections and run read-only article-fetch when the selected snippets are insufficient; answer through installed Segmently skills/references/runners, selected article content, and verified CLI output only; run host/Segmently CLI/Playwright preflight before SHOW or DO; use segmently auth login instead of asking for tokens; delegate CLI work to the returned owning skill such as segmently-cli-guide or segmently-cli-custom-screen-guide; do not claim a mutation is complete until execution and verification both pass.
 9. Start a clean verification from the installed plugin files if Codex exposes their path: run the installed segmently-launch-guide customer-response runner with model-selected guideKeys for a simple prompt such as "show me what is left before launch" or at minimum verify the plugin is listed by Codex.
@@ -104,7 +102,7 @@ flow for Claude Code.
 ```text
 Install or update the Segmently Launch Assistant plugin for Claude Code on this machine.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins@dev
+Use the public marketplace repository segmently-ai/segmently-support-plugins@stable
 and install plugin segmently-launch-assistant@segmently-support with --scope user.
 
 Run these steps end to end and report the exact command results:
@@ -113,7 +111,7 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
+6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
 7. Install the operating rule for all future Segmently answers: do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge. Do not invent Segmently commands, fields, routes, product behavior, docs, or troubleshooting steps. Use only the installed Segmently Launch Assistant plugin skills, their shipped references, their runtime runners, the public Segmently CLI, selected article content, and verified Segmently output. Raw prompt routing in customer-response-runner is debug/regression-only; for customer answers, first select guideKeys/actionId semantically from the shipped catalog, then use the runner only to validate evidence and execution boundaries. After selecting articles/guides, study the returned shipped sections and article references before answering; if those sections are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material. If the installed skills and fetched article content do not cover the question, say that verified coverage is missing and ask for the missing project/article/context or hand off to the relevant Segmently skill instead of guessing.
 8. If the current directory is the target project repository, persist usage guidance for future agents: read existing CLAUDE.md and AGENTS.md if present; preserve all existing instructions; add or update a "Segmently Launch Assistant" section. For Claude Code, prefer CLAUDE.md and also update AGENTS.md if it already exists. If a file does not exist, ask before creating it. The section should say: use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks; never answer Segmently questions from general model knowledge; never invent Segmently commands, APIs, fields, routes, or product behavior; do not use raw prompt routing as the customer-facing semantic decision; select guideKeys/actionId from installed shipped catalogs first; study selected article/guide sections and run read-only article-fetch when the selected snippets are insufficient; answer through installed Segmently skills/references/runners, selected article content, and verified CLI output only; run host/Segmently CLI/Playwright preflight before SHOW or DO; use segmently auth login instead of asking for tokens; delegate CLI work to the returned owning skill such as segmently-cli-guide or segmently-cli-custom-screen-guide; do not claim a mutation is complete until execution and verification both pass.
 9. Start a clean verification from the installed plugin files if Claude Code exposes their path: run the installed segmently-launch-guide customer-response runner with model-selected guideKeys for a simple prompt such as "show me what is left before launch" or at minimum verify the plugin is listed by Claude Code.
@@ -142,7 +140,7 @@ content, or service credentials.
 ## Codex Install
 
 ```bash
-codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev
+codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
@@ -165,7 +163,7 @@ codex plugin add segmently-launch-assistant@segmently-support
 ## Claude Code Install
 
 ```bash
-claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user
+claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
 claude plugin install segmently-launch-assistant@segmently-support --scope user
 ```
 

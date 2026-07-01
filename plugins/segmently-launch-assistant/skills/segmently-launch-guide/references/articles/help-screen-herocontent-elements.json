@@ -924,7 +924,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
             },
             "labels": {
               "sep": {
@@ -997,7 +997,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
                 "name": "The Header section in the screen editor."
               }
             },
@@ -1092,7 +1092,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-title/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html"
             },
             "labels": {
               "sep": {
@@ -1151,7 +1151,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-title.png",
                 "name": "The Title highlighted in the Content section."
               }
             },
@@ -1192,7 +1192,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-subtitle/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html"
             },
             "labels": {
               "sep": {
@@ -1251,7 +1251,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle.png",
                 "name": "The Subtitle highlighted in the Content section."
               }
             },
@@ -1292,7 +1292,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-element-hero-image/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html"
             },
             "labels": {
               "sep": {
@@ -1351,7 +1351,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero.png",
                 "name": "The Hero image highlighted in the Content section."
               }
             },
@@ -1392,7 +1392,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-action-bar/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html"
             },
             "labels": {
               "sep": {
@@ -1465,7 +1465,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
                 "name": "The Action Bar section in the screen editor."
               }
             },
@@ -1506,7 +1506,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
             },
             "labels": {
               "sep": {
@@ -1579,7 +1579,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
                 "name": "The Background section in the screen editor."
               }
             },
@@ -1620,7 +1620,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
             },
             "labels": {
               "sep": {
@@ -1693,7 +1693,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
                 "name": "The Basic Config section in the screen editor."
               }
             },

@@ -347,7 +347,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-header/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
             },
             "labels": {
               "sep": {
@@ -420,7 +420,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
                 "name": "The Header section in the screen editor."
               }
             },
@@ -461,7 +461,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-stepper/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html"
             },
             "labels": {
               "sep": {
@@ -534,7 +534,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/context-section.png",
                 "name": "The Stepper section in the screen editor."
               }
             },

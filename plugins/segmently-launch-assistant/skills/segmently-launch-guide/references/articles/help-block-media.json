@@ -2036,7 +2036,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png",
                 "name": "The screen editor with the Media section highlighted."
               }
             },
@@ -2126,7 +2126,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-source.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-source.png",
                 "name": "Where the Image or video source sits inside the open Media section."
               }
             },
@@ -2229,7 +2229,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-enable.png",
                 "name": "Where to find “Show an image or video” in the editor."
               }
             },
@@ -2308,7 +2308,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-kind.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-kind.png",
                 "name": "Where to find “Image or video” in the editor."
               }
             },
@@ -2387,7 +2387,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-image.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-image.png",
                 "name": "Where to find “The image for this screen” in the editor."
               }
             },
@@ -2466,7 +2466,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-video.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-video.png",
                 "name": "Where to find “The video for this screen” in the editor."
               }
             },
@@ -2545,7 +2545,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-repeat.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-repeat.png",
                 "name": "Where to find “Replay the video on a loop” in the editor."
               }
             },
@@ -2651,7 +2651,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-gradient-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-gradient-enable.png",
                 "name": "Where to find “Fade over the media” in the editor."
               }
             },
@@ -2730,7 +2730,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-height.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-height.png",
                 "name": "Where to find “How far the fade extends” in the editor."
               }
             },
@@ -2809,7 +2809,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-color.png",
                 "name": "Where to find “Color of the fade” in the editor."
               }
             },
@@ -2875,7 +2875,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-appearance.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-appearance.png",
                 "name": "Where the Size, placement & rounding sits inside the open Media section."
               }
             },
@@ -2978,7 +2978,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-top-alignment.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-top-alignment.png",
                 "name": "Where to find “Where the media starts on top” in the editor."
               }
             },
@@ -3057,7 +3057,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-scale-mode.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-scale-mode.png",
                 "name": "Where to find “How media fills its box” in the editor."
               }
             },
@@ -3136,7 +3136,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-height.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-height.png",
                 "name": "Where to find “How tall the media is” in the editor."
               }
             },
@@ -3215,7 +3215,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-corner-radius.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-corner-radius.png",
                 "name": "Where to find “How rounded the media is” in the editor."
               }
             },
@@ -3294,7 +3294,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-padding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-padding.png",
                 "name": "Where to find “Space around the media” in the editor."
               }
             },

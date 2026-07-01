@@ -1981,7 +1981,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png",
                 "name": "The screen editor with the Variable Binding section highlighted."
               }
             },
@@ -2071,7 +2071,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-storage.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-storage.png",
                 "name": "Where the Where the answer is saved sits inside the open Variable Binding section."
               }
             },
@@ -2174,7 +2174,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-bound-variable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-bound-variable.png",
                 "name": "Where to find “Choose where the answer is saved” in the editor."
               }
             },
@@ -2253,7 +2253,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-name.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-name.png",
                 "name": "Where to find “Name the new variable” in the editor."
               }
             },
@@ -2332,7 +2332,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-type.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-type.png",
                 "name": "Where to find “What kind of value it stores” in the editor."
               }
             },
@@ -2411,7 +2411,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-description.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-description.png",
                 "name": "Where to find “Internal note (optional)” in the editor."
               }
             },
@@ -2490,7 +2490,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-options.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-options.png",
                 "name": "Where to find “List the stored answers” in the editor."
               }
             },
@@ -2556,7 +2556,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-mapping.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-mapping.png",
                 "name": "Where the Value mapping sits inside the open Variable Binding section."
               }
             },
@@ -2659,7 +2659,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-label.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-label.png",
                 "name": "Where to find “The stored value for this option” in the editor."
               }
             },
@@ -2738,7 +2738,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-binding.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-binding.png",
                 "name": "Where to find “Link a choice to this value” in the editor."
               }
             },
@@ -2817,7 +2817,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-new-option.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-new-option.png",
                 "name": "Where to find “Add an option value” in the editor."
               }
             },
@@ -2896,7 +2896,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-apply-items.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-apply-items.png",
                 "name": "Where to find “Rebuild options from the items” in the editor."
               }
             },
@@ -2962,7 +2962,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-scoring.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-scoring.png",
                 "name": "Where the Answer scoring (advanced) sits inside the open Variable Binding section."
               }
             },
@@ -3065,7 +3065,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-score-effects.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-score-effects.png",
                 "name": "Where to find “Add points based on answers” in the editor."
               }
             },
@@ -3144,7 +3144,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-target.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-target.png",
                 "name": "Where to find “Which score this adds to” in the editor."
               }
             },
@@ -3223,7 +3223,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-amount.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-amount.png",
                 "name": "Where to find “Points this answer adds” in the editor."
               }
             },

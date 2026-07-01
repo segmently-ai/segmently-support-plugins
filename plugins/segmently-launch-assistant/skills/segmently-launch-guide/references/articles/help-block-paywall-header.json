@@ -2499,7 +2499,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png",
                 "name": "The screen editor with the Paywall Header section highlighted."
               }
             },
@@ -2629,7 +2629,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-close-enable.png",
                 "name": "Where to find “Show a close (X) button” in the editor."
               }
             },
@@ -2708,7 +2708,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-icon-color.png",
                 "name": "Where to find “Color the close (X) icon” in the editor."
               }
             },
@@ -2787,7 +2787,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-alignment.png",
                 "name": "Where to find “Place the close button left or right” in the editor."
               }
             },
@@ -2866,7 +2866,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-visibility.png",
                 "name": "Where to find “When the close button appears” in the editor."
               }
             },
@@ -2945,7 +2945,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/close-styles-delay.png",
                 "name": "Where to find “How long to delay the X” in the editor."
               }
             },
@@ -3051,7 +3051,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/open-section-restore-enable.png",
                 "name": "Where to find “Show a restore-purchases link” in the editor."
               }
             },
@@ -3130,7 +3130,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text.png",
                 "name": "Where to find “Edit the restore link wording” in the editor."
               }
             },
@@ -3209,7 +3209,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-color.png",
                 "name": "Where to find “Restore link background fill” in the editor."
               }
             },
@@ -3288,7 +3288,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-family.png",
                 "name": "Where to find “Pick the restore link typeface” in the editor."
               }
             },
@@ -3367,7 +3367,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-line-height.png",
                 "name": "Where to find “Restore link line spacing” in the editor."
               }
             },
@@ -3446,7 +3446,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-size.png",
                 "name": "Where to find “Size the restore link text” in the editor."
               }
             },
@@ -3525,7 +3525,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-font-weight.png",
                 "name": "Where to find “Set the restore link boldness” in the editor."
               }
             },
@@ -3604,7 +3604,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-text-color.png",
                 "name": "Where to find “Color the restore link text” in the editor."
               }
             },
@@ -3683,7 +3683,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-align.png",
                 "name": "Where to find “Align the restore link text” in the editor."
               }
             },
@@ -3762,7 +3762,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-strikethrough.png",
                 "name": "Where to find “Restore link strikethrough color” in the editor."
               }
             },
@@ -3841,7 +3841,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-opacity.png",
                 "name": "Where to find “Restore background transparency” in the editor."
               }
             },
@@ -3920,7 +3920,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/restore-styles-bg-radius.png",
                 "name": "Where to find “Restore background rounding” in the editor."
               }
             },

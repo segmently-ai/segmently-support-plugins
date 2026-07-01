@@ -1000,7 +1000,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-header/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html"
             },
             "labels": {
               "sep": {
@@ -1073,7 +1073,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-header-section/0.2.0/configure-paywall-header-section-2026-06-24T20-14-10-280Z-bcb4c7f2/context-section.png",
                 "name": "The Paywall Header section in the screen editor."
               }
             },
@@ -1114,7 +1114,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-media/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html"
             },
             "labels": {
               "sep": {
@@ -1187,7 +1187,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/context-section.png",
                 "name": "The Paywall Media section in the screen editor."
               }
             },
@@ -1228,7 +1228,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-body/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html"
             },
             "labels": {
               "sep": {
@@ -1301,7 +1301,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-body-section/0.2.0/configure-paywall-body-section-2026-06-24T20-52-51-596Z-c4ccfd4f/context-section.png",
                 "name": "The Paywall Body section in the screen editor."
               }
             },
@@ -1342,7 +1342,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-subscriptions/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html"
             },
             "labels": {
               "sep": {
@@ -1415,7 +1415,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/context-section.png",
                 "name": "The Paywall Subscriptions section in the screen editor."
               }
             },
@@ -1456,7 +1456,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-paywall-footer/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html"
             },
             "labels": {
               "sep": {
@@ -1529,7 +1529,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/context-section.png",
                 "name": "The Paywall Footer section in the screen editor."
               }
             },
@@ -1570,7 +1570,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-background/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
             },
             "labels": {
               "sep": {
@@ -1643,7 +1643,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
                 "name": "The Background section in the screen editor."
               }
             },
@@ -1684,7 +1684,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://dev-api.segmently.ai/assets/articles/FINo7LxKWBPXHochQK0n/help-block-basic-config/index.html"
+              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
             },
             "labels": {
               "sep": {
@@ -1757,7 +1757,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://dev-api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
                 "name": "The Basic Config section in the screen editor."
               }
             },
