@@ -2,8 +2,6 @@
 
 Public read-only marketplace for Segmently customer support plugins.
 
-This branch is a preview channel. Customer-stable installation will use `--ref stable` after the prod article/image URL gate passes.
-
 
 ## Required Tools
 
@@ -80,7 +78,7 @@ loads newly installed plugins only after a new session starts.
 ```text
 Install or update the Segmently Launch Assistant plugin for Codex for this target project folder.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins with ref dev
+Use the public marketplace repository segmently-ai/segmently-support-plugins with ref stable
 and install plugin segmently-launch-assistant@segmently-support.
 
 Target project folder:
@@ -94,7 +92,7 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
+6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
 7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: AGENTS.md. Secondary file: CLAUDE.md only if it already exists or I explicitly asked to prepare Claude Code guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If AGENTS.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global AGENTS.md/CLAUDE.md files and do not remove unrelated project instructions. Write this exact section:
 
 ## Segmently Launch Assistant
@@ -132,7 +130,7 @@ only after a new session starts.
 ```text
 Install or update the Segmently Launch Assistant plugin for Claude Code for this target project folder.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins@dev
+Use the public marketplace repository segmently-ai/segmently-support-plugins@stable
 and install plugin segmently-launch-assistant@segmently-support with --scope user.
 
 Target project folder:
@@ -146,7 +144,7 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
+6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
 7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: CLAUDE.md. Secondary file: AGENTS.md only if it already exists or I explicitly asked to prepare Codex guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If CLAUDE.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global CLAUDE.md/AGENTS.md files and do not remove unrelated project instructions. Write this exact section:
 
 ## Segmently Launch Assistant
@@ -195,7 +193,7 @@ content, or service credentials.
 ## Codex Install
 
 ```bash
-codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev
+codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
@@ -218,7 +216,7 @@ codex plugin add segmently-launch-assistant@segmently-support
 ## Claude Code Install
 
 ```bash
-claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user
+claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
 claude plugin install segmently-launch-assistant@segmently-support --scope user
 ```
 
