@@ -314,7 +314,8 @@ function resolvePromptQuestion(prompt, args, context) {
   const articleFetchIntent = hasArticleFetchIntent(prompt) && !explicitActionIntent;
   const showIntent = hasShowIntent(prompt) && !explicitActionIntent && !articleFetchIntent;
   const articleSearchFound = articleAliases.length > 0;
-  const directArticleOnly = hasEventCatalogArticleIntent(prompt) && articleAliases.some(alias => /events-catalog$/.test(alias));
+  const directArticleOnly = (hasEventCatalogArticleIntent(prompt) && articleAliases.some(alias => /events-catalog$/.test(alias)))
+    || (hasWebFunnelFacebookCapiIntent(prompt) && articleAliases.includes('facebook-capi-web-destination'));
   const actionGuideKeys = action && (explicitActionIntent || showIntent)
     ? guideKeysForResolvedAction(action)
     : null;
@@ -686,6 +687,9 @@ function articleAliasesFromPrompt(prompt, context) {
   const articles = directoryArticles.length > 0 ? directoryArticles : registryArticles;
   if (!Array.isArray(articles) || articles.length === 0) return [];
   const text = normalize(prompt);
+  if (hasWebFunnelFacebookCapiIntent(prompt) && articles.some(a => a.articleAlias === 'facebook-capi-web-destination')) {
+    return ['facebook-capi-web-destination'];
+  }
   const direct = directArticleAliasesFromPromptText(text, articles);
   if (direct.length > 0) return direct;
   const candidateAliases = candidateAliasesFromSearchIndex(text, context.articleSearchIndex);
@@ -780,6 +784,21 @@ function hasEventCatalogArticleIntent(prompt) {
   return /(which|what|какие|список|list|catalog|каталог|перечень)/.test(text) &&
     /(event|events|событ|ивент)/.test(text) &&
     /(facebook|meta|tiktok|pixel|пиксел|мета|тик.?ток)/.test(text);
+}
+
+/** True for "forward/enable Facebook (CAPI) events FROM a web funnel" — the per-funnel
+ *  Destinations "+ Facebook CAPI" wiring documented in facebook-capi-web-destination. Kept
+ *  high precision so it does NOT steal the credentials setup (add a Facebook pixel /
+ *  Conversion API → facebook-pixel-capi-setup) or the events catalog (which/what events →
+ *  facebook-events-catalog): requires a Facebook/CAPI target AND a funnel context AND a
+ *  forward/enable signal, and never fires on a "which events" catalog question. */
+function hasWebFunnelFacebookCapiIntent(prompt) {
+  const text = normalize(prompt);
+  if (hasEventCatalogArticleIntent(prompt)) return false;
+  const meta = /(facebook|meta|фейсбук|фб|capi|conversions?\s?api|конверс)/.test(text);
+  const funnel = /(funnel|воронк|web.?placement|веб.?воронк)/.test(text);
+  const forwarding = /(capi|conversions?\s?api|forward|pass|send|отправ|передач|включ|enable|turn\s?on|attribution|атрибуц|fbp|fbc|событи|events?)/.test(text);
+  return meta && funnel && forwarding;
 }
 
 function articleRegistryTokenScore(text, article) {
@@ -3218,6 +3237,9 @@ function integrationsAnalyticsGuideKeysFromPrompt(prompt) {
   if (!hasAnalyticsTarget) return null;
   if (/(custom html|webembed|web embed|iframe|html editor|html code|child section|data source|segmentlysdk)/.test(text)) return null;
   if (/(custom domain|домен|dns|cname|registrar|регистратор)/.test(text)) return null;
+  // Forwarding Facebook (CAPI) events FROM a web funnel is the per-funnel Destinations flow
+  // (facebook-capi-web-destination), not a project Analytics-provider setup — yield to it.
+  if (hasWebFunnelFacebookCapiIntent(prompt)) return null;
 
   const keys = [];
   if (/(config|configure|настро|id|measurement|pixel id|token|key|ключ|скрипт|script|custom script|код|встав|insert|постав|set|apply|google analytics|ga4|gtm|amplitude|mixpanel|posthog|facebook|tiktok|meta|pixel|пиксел)/.test(text)) {
