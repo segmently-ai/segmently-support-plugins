@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-subtitle-padding",
+  "evidence": {
+    "guideKey": "screenedit-stepper-subtitle-padding",
+    "articleId": "screenedit-stepper-subtitle-padding",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-subtitle-padding",
+    "name": "Screen field: Space around the subtitle",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the subtitle\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-subtitle-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-subtitle-padding#screenedit-stepper-subtitle-padding/field",
+        "title": "Space around the subtitle",
+        "description": "Sets the empty space, in pixels, on each side of the step subtitle: top, right, bottom, left. The default is usually 0; add top padding to set the subtitle off from the title above and bottom padding to separate it from the description below. Adjust it only when the subtitle feels cramped against neighboring text, so the supporting line stays easy to scan and reinforces your pitch.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the subtitle",
+      "summary": "Sets the empty space, in pixels, on each side of the step subtitle: top, right, bottom, left. The default is usually 0; add top padding to set the subtitle off from the title above and bottom padding to separate it from the description below. Adjust it only when the subtitle feels cramped against neighboring text, so the supporting line stays easy to scan and reinforces your pitch.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-subtitle-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-font-weight",
+  "evidence": {
+    "guideKey": "screenedit-text-field-font-weight",
+    "articleId": "screenedit-text-field-font-weight",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-font-weight",
+    "name": "Screen field: Weight of the field text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Weight of the field text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-font-weight/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-font-weight#screenedit-text-field-font-weight/field",
+        "title": "Weight of the field text",
+        "description": "Sets how heavy the field text looks, from light (300) to bold (700), with regular (400) as the default. Regular is right for almost every input field. Keeping it regular makes the text read like an editable answer rather than a heading, so the field stays obvious and easy to use.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-font-weight.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Weight of the field text",
+      "summary": "Sets how heavy the field text looks, from light (300) to bold (700), with regular (400) as the default. Regular is right for almost every input field. Keeping it regular makes the text read like an editable answer rather than a heading, so the field stays obvious and easy to use.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-font-weight.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-font-weight/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

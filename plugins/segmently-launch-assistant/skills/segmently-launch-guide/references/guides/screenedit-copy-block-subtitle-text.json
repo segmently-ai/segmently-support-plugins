@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-subtitle-text",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-subtitle-text",
+    "articleId": "screenedit-copy-block-subtitle-text",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-subtitle-text",
+    "name": "Screen field: Write the subtitle text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Write the subtitle text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": "configure-copy-block-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-subtitle-text/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-subtitle-text#screenedit-copy-block-subtitle-text/field",
+        "title": "Write the subtitle text",
+        "description": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Write the subtitle text",
+      "summary": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-subtitle-text/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

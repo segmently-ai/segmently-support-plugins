@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-title-styles",
+  "evidence": {
+    "guideKey": "screenedit-options-title-styles",
+    "articleId": "screenedit-options-title-styles",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-title-styles",
+    "name": "Screen field: Item title text style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Item title text style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": "configure-options-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-title-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-title-styles#screenedit-options-title-styles/field",
+        "title": "Item title text style",
+        "description": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Item title text style",
+      "summary": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-title-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

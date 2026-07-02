@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-checkbox",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-checkbox",
+    "articleId": "screenedit-paywall-subscriptions-checkbox",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-checkbox",
+    "name": "Screen field: Style the plan checkbox",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Style the plan checkbox\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-checkbox/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-checkbox#screenedit-paywall-subscriptions-checkbox/field",
+        "title": "Style the plan checkbox",
+        "description": "Sets the colors of the per-plan checkbox: its unselected (empty) color and its selected (checked) color. It only appears when checkbox placement is set to Left or Right, and is hidden when placement is 'No checkbox'. Use a clear, on-brand selected color so the chosen plan is unmistakable; it defaults to your theme accent.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Style the plan checkbox",
+      "summary": "Sets the colors of the per-plan checkbox: its unselected (empty) color and its selected (checked) color. It only appears when checkbox placement is set to Left or Right, and is hidden when placement is 'No checkbox'. Use a clear, on-brand selected color so the chosen plan is unmistakable; it defaults to your theme accent.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-checkbox/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

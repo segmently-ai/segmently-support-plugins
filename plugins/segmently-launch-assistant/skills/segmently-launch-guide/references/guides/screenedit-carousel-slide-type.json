@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-slide-type",
+  "evidence": {
+    "guideKey": "screenedit-carousel-slide-type",
+    "articleId": "screenedit-carousel-slide-type",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-slide-type",
+    "name": "Screen field: Slide content template",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Slide content template\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-slide-type/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-slide-type#screenedit-carousel-slide-type/field",
+        "title": "Slide content template",
+        "description": "Sets which layers each slide shows: Image Only is just the picture, Image + Title adds one headline, Image + Title + Subtitle adds a supporting line, and Image + Title + 2 Subtitles shows all four text layers. Choosing a richer template reveals its matching text and style fields below. Default to Image + Title for clean, fast-reading slides and add subtitles only when each slide genuinely needs more copy.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Slide content template",
+      "summary": "Sets which layers each slide shows: Image Only is just the picture, Image + Title adds one headline, Image + Title + Subtitle adds a supporting line, and Image + Title + 2 Subtitles shows all four text layers. Choosing a richer template reveals its matching text and style fields below. Default to Image + Title for clean, fast-reading slides and add subtitles only when each slide genuinely needs more copy.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-slide-type/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

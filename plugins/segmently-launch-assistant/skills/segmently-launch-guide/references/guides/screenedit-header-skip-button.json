@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-skip-button",
+  "evidence": {
+    "guideKey": "screenedit-header-skip-button",
+    "articleId": "screenedit-header-skip-button",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-skip-button",
+    "name": "Screen field: Skip Button Label",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Skip Button Label\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": "configure-header-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-skip-button/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-skip-button#screenedit-header-skip-button/field",
+        "title": "Skip Button Label",
+        "description": "Sets the text and styling of the Skip control that lets visitors bypass this step. Defaults to 'SKIP' and supports other languages. Use it only where skipping is fine, and clear it to hide it on your paywall and key question screens, where an easy out lowers both sales and the answers you collect.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/open-section-skip.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Skip Button Label",
+      "summary": "Sets the text and styling of the Skip control that lets visitors bypass this step. Defaults to 'SKIP' and supports other languages. Use it only where skipping is fine, and clear it to hide it on your paywall and key question screens, where an easy out lowers both sales and the answers you collect.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/open-section-skip.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-skip-button/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

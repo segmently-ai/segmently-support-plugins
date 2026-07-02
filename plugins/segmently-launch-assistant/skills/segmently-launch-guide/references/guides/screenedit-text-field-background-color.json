@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-background-color",
+  "evidence": {
+    "guideKey": "screenedit-text-field-background-color",
+    "articleId": "screenedit-text-field-background-color",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-background-color",
+    "name": "Screen field: Fill behind the input",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Fill behind the input\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-background-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-background-color#screenedit-text-field-background-color/field",
+        "title": "Fill behind the input",
+        "description": "Sets the fill color inside the input box. Most funnels leave it clear so the screen background shows through, or use a subtle light fill to make the tappable field stand out. Just make sure it contrasts with the typed-text color so answers stay easy to read and people don't abandon the question.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-background-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Fill behind the input",
+      "summary": "Sets the fill color inside the input box. Most funnels leave it clear so the screen background shows through, or use a subtle light fill to make the tappable field stand out. Just make sure it contrasts with the typed-text color so answers stay easy to read and people don't abandon the question.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-background-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-background-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

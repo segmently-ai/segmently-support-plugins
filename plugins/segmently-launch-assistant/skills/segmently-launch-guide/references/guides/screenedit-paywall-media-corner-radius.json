@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-corner-radius",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-corner-radius",
+    "articleId": "screenedit-paywall-media-corner-radius",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-corner-radius",
+    "name": "Screen field: Round the media corners",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Round the media corners\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": "configure-paywall-media-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-corner-radius/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-corner-radius#screenedit-paywall-media-corner-radius/field",
+        "title": "Round the media corners",
+        "description": "Sets how rounded the corners of the image or video are. Zero gives sharp edges, which often look best for a full-width hero, while higher values give a soft, card-like look that matches rounded buttons and plan cards. Match it to the rest of your theme's rounding; the default is usually fine.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Round the media corners",
+      "summary": "Sets how rounded the corners of the image or video are. Zero gives sharp edges, which often look best for a full-width hero, while higher values give a soft, card-like look that matches rounded buttons and plan cards. Match it to the rest of your theme's rounding; the default is usually fine.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-corner-radius/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

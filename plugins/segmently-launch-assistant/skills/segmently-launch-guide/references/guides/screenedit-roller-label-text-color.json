@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-label-text-color",
+  "evidence": {
+    "guideKey": "screenedit-roller-label-text-color",
+    "articleId": "screenedit-roller-label-text-color",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-label-text-color",
+    "name": "Screen field: Color of the selection label",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of the selection label\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-label-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-label-text-color#screenedit-roller-label-text-color/field",
+        "title": "Color of the selection label",
+        "description": "Color of the label text that shows the user's current choice above the wheels (default black, #000000). Pick a color with strong contrast against the container background so the chosen value stays easy to read, ideally your theme's main text color for consistency. This affects only the label, not the wheel options themselves.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of the selection label",
+      "summary": "Color of the label text that shows the user's current choice above the wheels (default black, #000000). Pick a color with strong contrast against the container background so the chosen value stays easy to read, ideally your theme's main text color for consistency. This affects only the label, not the wheel options themselves.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-label-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

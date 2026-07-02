@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-product-layout",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-product-layout",
+    "articleId": "screenedit-paywall-subscriptions-product-layout",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-product-layout",
+    "name": "Screen field: Checkbox placement on plans",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Checkbox placement on plans\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-product-layout/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-product-layout#screenedit-paywall-subscriptions-product-layout/field",
+        "title": "Checkbox placement on plans",
+        "description": "Choose where the selection checkbox sits on each plan card: left, right, or hidden. Left or right makes selecting a plan obvious; Hidden removes the checkbox and lets the highlighted card itself signal the choice for a cleaner look, but only if your selected style is clearly distinct. Left is a safe default. This also works together with the checkbox styling field below.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Checkbox placement on plans",
+      "summary": "Choose where the selection checkbox sits on each plan card: left, right, or hidden. Left or right makes selecting a plan obvious; Hidden removes the checkbox and lets the highlighted card itself signal the choice for a cleaner look, but only if your selected style is clearly distinct. Left is a safe default. This also works together with the checkbox styling field below.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-product-layout/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

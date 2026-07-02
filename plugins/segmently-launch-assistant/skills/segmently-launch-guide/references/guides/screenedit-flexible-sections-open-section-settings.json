@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-open-section-settings",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-open-section-settings",
+    "articleId": "screenedit-flexible-sections-open-section-settings",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-open-section-settings",
+    "name": "Screen field: Open one section's settings",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Open one section's settings\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-open-section-settings/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-open-section-settings#screenedit-flexible-sections-open-section-settings/field",
+        "title": "Open one section's settings",
+        "description": "Click the gear inside a section card to open that section's own settings. The first panel controls the section container — height, flex, scrollability, background, borders, alignment, padding, and margin — and the panel below controls the section's content, such as text, media, products, or button styling. This is the main place to tune how one block looks and behaves.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Open one section's settings",
+      "summary": "Click the gear inside a section card to open that section's own settings. The first panel controls the section container — height, flex, scrollability, background, borders, alignment, padding, and margin — and the panel below controls the section's content, such as text, media, products, or button styling. This is the main place to tune how one block looks and behaves.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-open-section-settings/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

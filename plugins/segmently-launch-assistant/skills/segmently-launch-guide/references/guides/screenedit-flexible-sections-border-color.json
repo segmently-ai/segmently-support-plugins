@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-border-color",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-border-color",
+    "articleId": "screenedit-flexible-sections-border-color",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-border-color",
+    "name": "Screen field: Outline color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Outline color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-border-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-border-color#screenedit-flexible-sections-border-color/field",
+        "title": "Outline color",
+        "description": "Sets the color of the section's outline. The default is black, and it only shows when the border thickness is above 0, so set a width first. Match it to one of your theme's accent colors for a clean, on-brand frame around the section.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Outline color",
+      "summary": "Sets the color of the section's outline. The default is black, and it only shows when the border thickness is above 0, so set a width first. Match it to one of your theme's accent colors for a clean, on-brand frame around the section.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-border-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-label-font-size",
+  "evidence": {
+    "guideKey": "screenedit-roller-label-font-size",
+    "articleId": "screenedit-roller-label-font-size",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-label-font-size",
+    "name": "Screen field: Size of the selection label",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Size of the selection label\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-label-font-size/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-label-font-size#screenedit-roller-label-font-size/field",
+        "title": "Size of the selection label",
+        "description": "Text size of the label that shows the user's current choice above the wheels (0-50, default 18). 16-22 keeps the chosen value clearly readable; very small or 0 effectively hides it. Increase it when you want the selection to stand out as a confirmation of what the user picked.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-size.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Size of the selection label",
+      "summary": "Text size of the label that shows the user's current choice above the wheels (0-50, default 18). 16-22 keeps the chosen value clearly readable; very small or 0 effectively hides it. Increase it when you want the selection to stand out as a confirmation of what the user picked.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-size.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-label-font-size/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

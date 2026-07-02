@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-body-title-styles",
+  "evidence": {
+    "guideKey": "screenedit-paywall-body-title-styles",
+    "articleId": "screenedit-paywall-body-title-styles",
+    "articleAlias": "help-block-paywall-body",
+    "referencePath": "help-block-paywall-body/screenedit-paywall-body-title-styles",
+    "name": "Screen field: Style the paywall headline",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Style the paywall headline\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-body-title-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-body/screenedit-paywall-body-title-styles#screenedit-paywall-body-title-styles/field",
+        "title": "Style the paywall headline",
+        "description": "Styles the headline: font, size, weight, color, alignment, and the spacing around it. Keep it large and high-contrast so the main benefit is the first thing the eye lands on. Most users can leave the theme defaults; change them only if the title is hard to read against your background.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151151_native-content-title-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Style the paywall headline",
+      "summary": "Styles the headline: font, size, weight, color, alignment, and the spacing around it. Keep it large and high-contrast so the main benefit is the first thing the eye lands on. Most users can leave the theme defaults; change them only if the title is hard to read against your background.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151151_native-content-title-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-body",
+          "subarticleId": "screenedit-paywall-body-title-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

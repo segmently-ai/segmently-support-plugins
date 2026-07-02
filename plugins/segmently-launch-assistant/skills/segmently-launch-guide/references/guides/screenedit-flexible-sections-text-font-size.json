@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-text-font-size",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-text-font-size",
+    "articleId": "screenedit-flexible-sections-text-font-size",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-font-size",
+    "name": "Screen field: Text size",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Text size\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-text-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-text-font-size/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-font-size#screenedit-flexible-sections-text-font-size/field",
+        "title": "Text size",
+        "description": "Sets the font size in points, where bigger means more prominent. As a guide, about 24 to 40 works for a headline and 14 to 18 for body copy, keeping a clear hierarchy. This overrides your theme's default size for this text, so change it only when this section needs to stand apart from the rest.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Text size",
+      "summary": "Sets the font size in points, where bigger means more prominent. As a guide, about 24 to 40 works for a headline and 14 to 18 for body copy, keeping a clear hierarchy. This overrides your theme's default size for this text, so change it only when this section needs to stand apart from the rest.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-text-font-size/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

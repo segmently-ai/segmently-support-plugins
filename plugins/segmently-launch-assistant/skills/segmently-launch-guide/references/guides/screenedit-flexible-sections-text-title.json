@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-text-title",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-text-title",
+    "articleId": "screenedit-flexible-sections-text-title",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-title",
+    "name": "Screen field: The words in this section",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"The words in this section\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-text-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-text-title/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-title#screenedit-flexible-sections-text-title/field",
+        "title": "The words in this section",
+        "description": "Sets the headline or body text shown here. You can drop in dynamic values by typing @ to pick a flow variable, so the screen can echo the visitor's earlier answer, show a label, or run a live countdown, which makes the funnel feel personal and converts better. If your funnel runs in more than one language, this text can be translated per language.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "The words in this section",
+      "summary": "Sets the headline or body text shown here. You can drop in dynamic values by typing @ to pick a flow variable, so the screen can echo the visitor's earlier answer, show a label, or run a live countdown, which makes the funnel feel personal and converts better. If your funnel runs in more than one language, this text can be translated per language.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-text-title/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

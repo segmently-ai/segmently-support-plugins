@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-reorder-sections",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-reorder-sections",
+    "articleId": "screenedit-flexible-sections-reorder-sections",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-reorder-sections",
+    "name": "Screen field: Reorder sections",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Reorder sections\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-reorder-sections/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-reorder-sections#screenedit-flexible-sections-reorder-sections/field",
+        "title": "Reorder sections",
+        "description": "Drag the handle beside a section name to change the vertical reading order on the screen. The order here is the order visitors see in the preview and published flow, so keep the persuasion sequence clear: context first, offer/details next, then the CTA. After reordering, recheck fixed-height and flex settings because a section that worked in one position may need different spacing in another.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Reorder sections",
+      "summary": "Drag the handle beside a section name to change the vertical reading order on the screen. The order here is the order visitors see in the preview and published flow, so keep the persuasion sequence clear: context first, offer/details next, then the CTA. After reordering, recheck fixed-height and flex settings because a section that worked in one position may need different spacing in another.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-reorder-sections/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

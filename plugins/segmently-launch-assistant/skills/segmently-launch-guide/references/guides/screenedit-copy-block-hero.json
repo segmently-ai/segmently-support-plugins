@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero",
+    "articleId": "screenedit-copy-block-hero",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero",
+    "name": "Screen field: The featured image up top",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"The featured image up top\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero#screenedit-copy-block-hero/field",
+        "title": "The featured image up top",
+        "description": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "The featured image up top",
+      "summary": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

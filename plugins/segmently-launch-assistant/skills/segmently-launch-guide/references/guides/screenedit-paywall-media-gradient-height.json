@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-gradient-height",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-gradient-height",
+    "articleId": "screenedit-paywall-media-gradient-height",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-gradient-height",
+    "name": "Screen field: Gradient coverage",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gradient coverage\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-gradient-height/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-gradient-height#screenedit-paywall-media-gradient-height/field",
+        "title": "Gradient coverage",
+        "description": "How far up the media the dark fade reaches, as a percentage. A low value shades only the bottom edge (enough for text sitting near the bottom); a high value darkens most of the image. Set it just high enough to cover where your overlaid text sits, leaving the rest of the image visible. This only appears when the gradient overlay is turned on.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gradient coverage",
+      "summary": "How far up the media the dark fade reaches, as a percentage. A low value shades only the bottom edge (enough for text sitting near the bottom); a high value darkens most of the image. Set it just high enough to cover where your overlaid text sits, leaving the rest of the image visible. This only appears when the gradient overlay is turned on.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-gradient-height/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

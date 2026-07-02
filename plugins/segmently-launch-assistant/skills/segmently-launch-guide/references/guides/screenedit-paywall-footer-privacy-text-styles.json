@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-footer-privacy-text-styles",
+  "evidence": {
+    "guideKey": "screenedit-paywall-footer-privacy-text-styles",
+    "articleId": "screenedit-paywall-footer-privacy-text-styles",
+    "articleAlias": "help-block-paywall-footer",
+    "referencePath": "help-block-paywall-footer/screenedit-paywall-footer-privacy-text-styles",
+    "name": "Screen field: Privacy link styling",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Privacy link styling\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-footer-privacy-text-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-footer/screenedit-paywall-footer-privacy-text-styles#screenedit-paywall-footer-privacy-text-styles/field",
+        "title": "Privacy link styling",
+        "description": "Sets the font, size, weight, color, and alignment of the Privacy Policy link. Match it to the Restore and Terms links so the legal row looks unified. Small and muted is fine, but it must stay readable — required legal links hidden in unreadable text can get your paywall rejected.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151153_native-footer-purchase-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Privacy link styling",
+      "summary": "Sets the font, size, weight, color, and alignment of the Privacy Policy link. Match it to the Restore and Terms links so the legal row looks unified. Small and muted is fine, but it must stay readable — required legal links hidden in unreadable text can get your paywall rejected.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151153_native-footer-purchase-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-footer",
+          "subarticleId": "screenedit-paywall-footer-privacy-text-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

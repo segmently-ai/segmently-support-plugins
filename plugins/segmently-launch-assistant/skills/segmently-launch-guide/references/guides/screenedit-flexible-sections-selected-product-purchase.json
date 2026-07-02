@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-selected-product-purchase",
+  "evidence": {
+    "articleAlias": "help-block-flexible-sections",
+    "journeyStep": "Edit screens",
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "guideKey": "screenedit-flexible-sections-selected-product-purchase",
+    "articleId": "screenedit-flexible-sections-selected-product-purchase",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-selected-product-purchase",
+    "name": "Screen field: Selected product drives labels and purchase",
+    "userNeed": "Prove that selected product labels update and the linked purchase button buys the selected product.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 3,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-selected-product-purchase/default-labels",
+        "sectionKey": "default-labels",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-selected-product-purchase#default-labels",
+        "title": "Selected product drives labels and purchase",
+        "description": "When the visitor changes the selected plan, linked labels update from that selected product. If you leave the Text title empty, it falls back to the product’s description label. If you leave the Purchase Button label empty, it falls back to the product’s purchase label. When the button is linked to the catalog, tapping it purchases the selected product, not a fixed default product.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_default-product-labels/origin.png"
+      },
+      {
+        "id": "screenedit-flexible-sections-selected-product-purchase/selected-labels",
+        "sectionKey": "selected-labels",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-selected-product-purchase#selected-labels",
+        "title": "Updated selected product labels",
+        "description": "After selecting a different Product Catalog item, the linked Text label and Purchase Button label update to that product’s description and purchase labels.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_selected-product-labels/origin.png"
+      },
+      {
+        "id": "screenedit-flexible-sections-selected-product-purchase/payment-intent",
+        "sectionKey": "payment-intent",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-selected-product-purchase#payment-intent",
+        "title": "Verify checkout uses the selected product",
+        "description": "For paid-trial, no-trial, and one-time products, verify a payment_intent with non-empty amount and currency. For free-trial subscriptions, verify setup_intent. This proves the linked purchase button buys the currently selected product.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_selected-product-payment-intent/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "default-labels",
+      "title": "Selected product drives labels and purchase",
+      "summary": "When the visitor changes the selected plan, linked labels update from that selected product. If you leave the Text title empty, it falls back to the product’s description label. If you leave the Purchase Button label empty, it falls back to the product’s purchase label. When the button is linked to the catalog, tapping it purchases the selected product, not a fixed default product.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_default-product-labels/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "fl-selected-product"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "selected-labels",
+      "title": "Updated selected product labels",
+      "summary": "After selecting a different Product Catalog item, the linked Text label and Purchase Button label update to that product’s description and purchase labels.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_selected-product-labels/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-selected-product-purchase/selected-labels"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "payment-intent",
+      "title": "Verify checkout uses the selected product",
+      "summary": "For paid-trial, no-trial, and one-time products, verify a payment_intent with non-empty amount and currency. For free-trial subscriptions, verify setup_intent. This proves the linked purchase button buys the currently selected product.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_selected-product-payment-intent/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-selected-product-purchase/payment-intent"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

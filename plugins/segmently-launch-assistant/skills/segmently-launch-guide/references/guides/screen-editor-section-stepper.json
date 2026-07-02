@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-stepper",
+  "evidence": {
+    "guideKey": "screen-editor-section-stepper",
+    "articleId": "screen-editor-section-stepper",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screen-editor-section-stepper",
+    "name": "Screen Editor: Stepper",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Stepper section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": "configure-stepper-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-stepper/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-stepper/screen-editor-section-stepper#screen-editor-section-stepper/section",
+        "title": "Stepper section",
+        "description": "The Stepper section builds an auto-advancing progress sequence — timed steps with a moving bar and a title, subtitle, description, and optional image for each step. Use it on 'analyzing' or 'building your plan' screens to hold attention while results are prepared, since that sense of progress lifts how many visitors reach the paywall. It only appears on progress-steps screens; add one from the canvas, then set the total duration and per-step copy here.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-stepper/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-stepper/screen-editor-section-stepper#screen-editor-section-stepper/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: ProgressSteps.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Stepper section",
+      "summary": "The Stepper section builds an auto-advancing progress sequence — timed steps with a moving bar and a title, subtitle, description, and optional image for each step. Use it on 'analyzing' or 'building your plan' screens to hold attention while results are prepared, since that sense of progress lifts how many visitors reach the paywall. It only appears on progress-steps screens; add one from the canvas, then set the total duration and per-step copy here.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screen-editor-section-stepper/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: ProgressSteps.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screen-editor-section-stepper/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

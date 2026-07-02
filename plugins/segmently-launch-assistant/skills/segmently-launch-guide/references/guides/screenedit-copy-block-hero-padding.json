@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero-padding",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero-padding",
+    "articleId": "screenedit-copy-block-hero-padding",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero-padding",
+    "name": "Screen field: Space around the image",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the image\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero-padding#screenedit-copy-block-hero-padding/field",
+        "title": "Space around the image",
+        "description": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the image",
+      "summary": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

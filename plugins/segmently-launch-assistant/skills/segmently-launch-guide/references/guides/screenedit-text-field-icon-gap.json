@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-icon-gap",
+  "evidence": {
+    "guideKey": "screenedit-text-field-icon-gap",
+    "articleId": "screenedit-text-field-icon-gap",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-icon-gap",
+    "name": "Screen field: Gap between icon and text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gap between icon and text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-icon-gap/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-icon-gap#screenedit-text-field-icon-gap/field",
+        "title": "Gap between icon and text",
+        "description": "Sets the horizontal space between the field's icon and the text the visitor types (default 8 pixels). The default works for most fields — nudge it up a little if the icon and text feel cramped, or down for a tighter look. The goal is an icon and placeholder that sit comfortably balanced.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gap between icon and text",
+      "summary": "Sets the horizontal space between the field's icon and the text the visitor types (default 8 pixels). The default works for most fields — nudge it up a little if the icon and text feel cramped, or down for a tighter look. The goal is an icon and placeholder that sit comfortably balanced.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-icon-gap/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

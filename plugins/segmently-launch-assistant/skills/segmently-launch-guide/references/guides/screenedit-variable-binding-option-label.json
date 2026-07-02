@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-variable-binding-option-label",
+  "evidence": {
+    "guideKey": "screenedit-variable-binding-option-label",
+    "articleId": "screenedit-variable-binding-option-label",
+    "articleAlias": "help-block-variable-binding",
+    "referencePath": "help-block-variable-binding/screenedit-variable-binding-option-label",
+    "name": "Screen field: The stored value for this option",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"The stored value for this option\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-variable-binding-option-label/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-variable-binding/screenedit-variable-binding-option-label#screenedit-variable-binding-option-label/field",
+        "title": "The stored value for this option",
+        "description": "This is the value saved to the variable and used in conditions and analytics, not the text visitors see (that lives on the list or grid item). Keep it stable and lowercase with underscores, like lose_weight. You can rename it, but that changes every place it's referenced, so avoid renaming after the funnel is published and collecting data.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "The stored value for this option",
+      "summary": "This is the value saved to the variable and used in conditions and analytics, not the text visitors see (that lives on the list or grid item). Keep it stable and lowercase with underscores, like lose_weight. You can rename it, but that changes every place it's referenced, so avoid renaming after the funnel is published and collecting data.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screenedit-variable-binding-option-label/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-sticky-container-offset-from-edges",
+  "evidence": {
+    "guideKey": "screenedit-sticky-container-offset-from-edges",
+    "articleId": "screenedit-sticky-container-offset-from-edges",
+    "articleAlias": "help-block-sticky-container",
+    "referencePath": "help-block-sticky-container/screenedit-sticky-container-offset-from-edges",
+    "name": "Screen field: Spacing from screen edges",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Spacing from screen edges\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-sticky-container-offset-from-edges/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-sticky-container/screenedit-sticky-container-offset-from-edges#screenedit-sticky-container-offset-from-edges/field",
+        "title": "Spacing from screen edges",
+        "description": "Sets the gap, in pixels, between the bar and the top, right, bottom and left edges of the screen. Add a little bottom and side spacing so the bar floats just above the edge instead of touching it. This keeps the CTA clear of the phone's home indicator and gesture area, so the button stays comfortably tappable on mobile, where most paid traffic lands.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Spacing from screen edges",
+      "summary": "Sets the gap, in pixels, between the bar and the top, right, bottom and left edges of the screen. Add a little bottom and side spacing so the bar floats just above the edge instead of touching it. This keeps the CTA clear of the phone's home indicator and gesture area, so the button stays comfortably tappable on mobile, where most paid traffic lands.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-sticky-container",
+          "subarticleId": "screenedit-sticky-container-offset-from-edges/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

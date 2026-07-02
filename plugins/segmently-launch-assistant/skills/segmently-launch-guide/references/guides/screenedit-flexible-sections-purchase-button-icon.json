@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-icon",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-icon",
+    "articleId": "screenedit-flexible-sections-purchase-button-icon",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-icon",
+    "name": "Screen field: Purchase button icon",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button icon\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-icon/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-icon#screenedit-flexible-sections-purchase-button-icon/field",
+        "title": "Purchase button icon",
+        "description": "Optionally shows a small image next to the button label, to the left or right of the text. Upload an icon, then set its size and the spacing around it. A lock or arrow icon can reinforce the action, but a clean text-only button works just as well.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button icon",
+      "summary": "Optionally shows a small image next to the button label, to the left or right of the text. Upload an icon, then set its size and the spacing around it. A lock or arrow icon can reinforce the action, but a clean text-only button works just as well.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-icon/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

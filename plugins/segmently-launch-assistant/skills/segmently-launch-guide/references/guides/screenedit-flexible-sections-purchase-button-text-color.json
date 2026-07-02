@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-text-color",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-text-color",
+    "articleId": "screenedit-flexible-sections-purchase-button-text-color",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-color",
+    "name": "Screen field: Purchase button text color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button text color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-purchase-button",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-color#screenedit-flexible-sections-purchase-button-text-color/field",
+        "title": "Purchase button text color",
+        "description": "Sets the color of the words on your purchase button. Make sure it contrasts strongly with the button background so the label stays easy to read — for example, dark text on the default yellow-gold button. Weak contrast means users miss the action, which directly costs you conversions.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button text color",
+      "summary": "Sets the color of the words on your purchase button. Make sure it contrasts strongly with the button background so the label stays easy to read — for example, dark text on the default yellow-gold button. Weak contrast means users miss the action, which directly costs you conversions.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

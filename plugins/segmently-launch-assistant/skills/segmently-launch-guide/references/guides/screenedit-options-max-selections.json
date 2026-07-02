@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-max-selections",
+  "evidence": {
+    "guideKey": "screenedit-options-max-selections",
+    "articleId": "screenedit-options-max-selections",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-max-selections",
+    "name": "Screen field: Cap on multi-select picks",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Cap on multi-select picks\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": "configure-options-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-max-selections/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-max-selections#screenedit-options-max-selections/field",
+        "title": "Cap on multi-select picks",
+        "description": "Limits how many items a visitor can choose on a multi-select screen. Set a small cap (e.g. 3) to keep answers focused and the next step manageable; leave it unlimited to let them pick freely. This control only appears on multi-select screens and is ignored everywhere else.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Cap on multi-select picks",
+      "summary": "Limits how many items a visitor can choose on a multi-select screen. Set a small cap (e.g. 3) to keep answers focused and the next step manageable; leave it unlimited to let them pick freely. This control only appears on multi-select screens and is ignored everywhere else.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-max-selections/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

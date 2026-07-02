@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-media-enable",
+  "evidence": {
+    "guideKey": "screenedit-media-enable",
+    "articleId": "screenedit-media-enable",
+    "articleAlias": "help-block-media",
+    "referencePath": "help-block-media/screenedit-media-enable",
+    "name": "Screen field: Show an image or video",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Show an image or video\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-media-enable/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-media/screenedit-media-enable#screenedit-media-enable/field",
+        "title": "Show an image or video",
+        "description": "Turns the image or video block on or off for this screen; off means no visual is shown. Turn it on to add a supporting visual, since on a paid landing page a relevant image or video builds trust and lifts conversion. When enabled, it starts with sensible styling from your design theme that you can fine-tune in the fields below.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Show an image or video",
+      "summary": "Turns the image or video block on or off for this screen; off means no visual is shown. Turn it on to add a supporting visual, since on a paid landing page a relevant image or video builds trust and lifts conversion. When enabled, it starts with sensible styling from your design theme that you can fine-tune in the fields below.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screenedit-media-enable/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

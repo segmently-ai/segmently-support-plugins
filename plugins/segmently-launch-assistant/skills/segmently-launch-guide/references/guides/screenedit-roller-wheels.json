@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-wheels",
+  "evidence": {
+    "guideKey": "screenedit-roller-wheels",
+    "articleId": "screenedit-roller-wheels",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-wheels",
+    "name": "Screen field: Add and set up wheels",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Add and set up wheels\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-wheels/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-wheels#screenedit-roller-wheels/field",
+        "title": "Add and set up wheels",
+        "description": "The spinning wheels users scroll to make their choice. Each wheel is either a List of text options or a Range of numbers; use Add Wheel to add more (up to 5 with the String data type, only 1 with Integer), then expand a wheel to set its type, options, and starting value. Each wheel's selection is saved as a variable you can reuse later for personalized copy or to route users down different paths.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Add and set up wheels",
+      "summary": "The spinning wheels users scroll to make their choice. Each wheel is either a List of text options or a Range of numbers; use Add Wheel to add more (up to 5 with the String data type, only 1 with Integer), then expand a wheel to set its type, options, and starting value. Each wheel's selection is saved as a variable you can reuse later for personalized copy or to route users down different paths.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-wheels/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

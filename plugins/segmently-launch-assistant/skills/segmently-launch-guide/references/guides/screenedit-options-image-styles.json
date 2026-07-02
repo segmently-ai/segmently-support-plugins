@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-image-styles",
+  "evidence": {
+    "guideKey": "screenedit-options-image-styles",
+    "articleId": "screenedit-options-image-styles",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-image-styles",
+    "name": "Screen field: Item image look",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Item image look\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-image-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-image-styles#screenedit-options-image-styles/field",
+        "title": "Item image look",
+        "description": "Size and look of each item's image — width, height, corner radius, padding, and how it fits its box (fit shows the whole image with possible empty space; fill crops to cover the box). Keep a consistent size and small radius so cards look uniform; choose fill for photos and fit for logos or icons you don't want cropped. Only appears when the layout includes an image.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Item image look",
+      "summary": "Size and look of each item's image — width, height, corner radius, padding, and how it fits its box (fit shows the whole image with possible empty space; fill crops to cover the box). Keep a consistent size and small radius so cards look uniform; choose fill for photos and fit for logos or icons you don't want cropped. Only appears when the layout includes an image.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-image-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

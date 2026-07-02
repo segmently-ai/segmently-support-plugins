@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-error-text-color",
+  "evidence": {
+    "guideKey": "screenedit-text-field-error-text-color",
+    "articleId": "screenedit-text-field-error-text-color",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-error-text-color",
+    "name": "Screen field: Color of the error message",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of the error message\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-error-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-error-text-color#screenedit-text-field-error-text-color/field",
+        "title": "Color of the error message",
+        "description": "Sets the color of the error text shown when an answer fails validation (default red, #FF3B30). Keep it red or another high-contrast warning color so people instantly see that their input was rejected and needs fixing. A clear error keeps them from giving up before they can continue.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of the error message",
+      "summary": "Sets the color of the error text shown when an answer fails validation (default red, #FF3B30). Keep it red or another high-contrast warning color so people instantly see that their input was rejected and needs fixing. A clear error keeps them from giving up before they can continue.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-error-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-basic-config",
+  "evidence": {
+    "guideKey": "screen-editor-section-basic-config",
+    "articleId": "screen-editor-section-basic-config",
+    "articleAlias": "help-block-basic-config",
+    "referencePath": "help-block-basic-config/screen-editor-section-basic-config",
+    "name": "Screen Editor: Basic Config",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Basic Config section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+    "sourceRecipeKey": "configure-basic-config-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-basic-config/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-basic-config/screen-editor-section-basic-config#screen-editor-section-basic-config/section",
+        "title": "Basic Config section",
+        "description": "Behavior settings for this screen that do not change its visible copy: the entry animation, preferring cached assets, requesting a system permission, and an optional auto-advance countdown. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      },
+      {
+        "id": "screen-editor-section-basic-config/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-basic-config/screen-editor-section-basic-config#screen-editor-section-basic-config/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: HeroContent, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList, WebEmbed, Paywall.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Basic Config section",
+      "summary": "Behavior settings for this screen that do not change its visible copy: the entry animation, preferring cached assets, requesting a system permission, and an optional auto-advance countdown. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screen-editor-section-basic-config/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList, WebEmbed, Paywall.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screen-editor-section-basic-config/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

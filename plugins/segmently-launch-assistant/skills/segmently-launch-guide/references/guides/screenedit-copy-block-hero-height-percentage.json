@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero-height-percentage",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero-height-percentage",
+    "articleId": "screenedit-copy-block-hero-height-percentage",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero-height-percentage",
+    "name": "Screen field: Size the image by screen",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Size the image by screen\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero-height-percentage/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero-height-percentage#screenedit-copy-block-hero-height-percentage/field",
+        "title": "Size the image by screen",
+        "description": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Size the image by screen",
+      "summary": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero-height-percentage/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

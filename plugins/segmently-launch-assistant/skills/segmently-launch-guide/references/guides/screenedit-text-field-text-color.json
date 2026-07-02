@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-text-color",
+  "evidence": {
+    "guideKey": "screenedit-text-field-text-color",
+    "articleId": "screenedit-text-field-text-color",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-text-color",
+    "name": "Screen field: Color of typed answers",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of typed answers\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-text-color#screenedit-text-field-text-color/field",
+        "title": "Color of typed answers",
+        "description": "Sets the color of the text a visitor types into this field; the gray placeholder hint has its own separate color. Pick a color with strong contrast against the field background (use a light color on dark themes) so answers stay legible. Easy-to-read fields are easier to fill in, which protects completion on your data-collection screens.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-text-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of typed answers",
+      "summary": "Sets the color of the text a visitor types into this field; the gray placeholder hint has its own separate color. Pick a color with strong contrast against the field background (use a light color on dark themes) so answers stay legible. Easy-to-read fields are easier to fill in, which protects completion on your data-collection screens.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-text-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

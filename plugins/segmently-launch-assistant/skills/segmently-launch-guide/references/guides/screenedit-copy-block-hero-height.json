@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero-height",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero-height",
+    "articleId": "screenedit-copy-block-hero-height",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero-height",
+    "name": "Screen field: Fixed image height",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Fixed image height\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero-height/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero-height#screenedit-copy-block-hero-height/field",
+        "title": "Fixed image height",
+        "description": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Fixed image height",
+      "summary": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero-height/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

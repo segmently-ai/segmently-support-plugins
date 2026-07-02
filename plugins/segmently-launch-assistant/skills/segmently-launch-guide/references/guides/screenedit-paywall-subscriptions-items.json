@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-items",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-items",
+    "articleId": "screenedit-paywall-subscriptions-items",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-items",
+    "name": "Screen field: Subscription plans",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Subscription plans\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-items/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-items#screenedit-paywall-subscriptions-items/field",
+        "title": "Subscription plans",
+        "description": "The list of plans the user can buy. Each plan must be linked to a real product in your connected Stripe account, or checkout will fail when you publish. Per plan you set its four corner labels (top-left = plan name, bottom-left = description, top-right = price, bottom-right = billing period) and an optional badge. Mark your best-value plan as selected by default, since the pre-selected plan converts most often. Use 'Add Plan' to add rows.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Subscription plans",
+      "summary": "The list of plans the user can buy. Each plan must be linked to a real product in your connected Stripe account, or checkout will fail when you publish. Per plan you set its four corner labels (top-left = plan name, bottom-left = description, top-right = price, bottom-right = billing period) and an optional badge. Mark your best-value plan as selected by default, since the pre-selected plan converts most often. Use 'Add Plan' to add rows.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-items/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-secondary-label",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-secondary-label",
+    "articleId": "screenedit-action-bar-secondary-label",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-label",
+    "name": "Screen field: Secondary button label",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Secondary button label\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-secondary-label/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-label#screenedit-action-bar-secondary-label/field",
+        "title": "Secondary button label",
+        "description": "Text for the optional second button — use it for a side path like Skip, Maybe later, or Restore purchase, never your main goal. On funnel steps an easy escape route can cost conversions, so leave it empty unless you genuinely need the alternative; on a paywall a low-key secondary is fine.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/open-section-secondary-label.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Secondary button label",
+      "summary": "Text for the optional second button — use it for a side path like Skip, Maybe later, or Restore purchase, never your main goal. On funnel steps an easy escape route can cost conversions, so leave it empty unless you genuinely need the alternative; on a paywall a low-key secondary is fine.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/open-section-secondary-label.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-secondary-label/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

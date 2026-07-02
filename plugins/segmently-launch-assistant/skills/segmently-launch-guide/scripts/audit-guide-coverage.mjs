@@ -12,12 +12,13 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { hydrateAllGuideEvidence } from '../runtime/guide-content.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
-  const guideEvidence = readJson('references/guide-evidence.json');
+  const guideEvidence = hydrateAllGuideEvidence(root, readJson('references/guide-evidence.json'));
   const teachReference = readJson('references/teach-reference.json');
   const helpArticleReference = readJson('references/help-article-reference.json');
   const report = buildReport(guideEvidence, teachReference, helpArticleReference);

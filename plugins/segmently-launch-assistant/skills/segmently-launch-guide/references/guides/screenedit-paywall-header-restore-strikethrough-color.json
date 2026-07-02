@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-strikethrough-color",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-strikethrough-color",
+    "articleId": "screenedit-paywall-header-restore-strikethrough-color",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-strikethrough-color",
+    "name": "Screen field: Restore link strikethrough color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Restore link strikethrough color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-strikethrough-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-strikethrough-color#screenedit-paywall-header-restore-strikethrough-color/field",
+        "title": "Restore link strikethrough color",
+        "description": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Restore link strikethrough color",
+      "summary": "Colors a line struck through the restore text, but only if you have deliberately added a crossed-out segment to that text. A standard 'Restore Purchases' link has no strikethrough, so leave this alone — it does nothing unless your custom text actually contains a struck-through part.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-strikethrough-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

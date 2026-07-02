@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-border-color",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-border-color",
+    "articleId": "screenedit-flexible-sections-purchase-button-border-color",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-border-color",
+    "name": "Screen field: Purchase button border color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button border color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-purchase-button",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-border-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-border-color#screenedit-flexible-sections-purchase-button-border-color/field",
+        "title": "Purchase button border color",
+        "description": "Sets the color of the outline around the purchase button. It only shows up when the border thickness is above 0, so set a thickness first. Use it to give an outlined-style call-to-action a clean, contrasting edge.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button border color",
+      "summary": "Sets the color of the outline around the purchase button. It only shows up when the border thickness is above 0, so set a thickness first. Use it to give an outlined-style call-to-action a clean, contrasting edge.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-border-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

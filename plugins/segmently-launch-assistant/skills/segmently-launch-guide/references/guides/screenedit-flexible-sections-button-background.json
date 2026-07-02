@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-background",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-background",
+    "articleId": "screenedit-flexible-sections-button-background",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-background",
+    "name": "Screen field: Set button color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Set button color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-background/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-background#screenedit-flexible-sections-button-background/field",
+        "title": "Set button color",
+        "description": "Hex color for button background. Default yellow-gold (#ffc201). Primary visual element for call-to-action buttons.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Set button color",
+      "summary": "Hex color for button background. Default yellow-gold (#ffc201). Primary visual element for call-to-action buttons.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-background/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

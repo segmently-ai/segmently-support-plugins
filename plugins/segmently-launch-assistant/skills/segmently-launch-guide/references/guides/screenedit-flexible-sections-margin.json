@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-margin",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-margin",
+    "articleId": "screenedit-flexible-sections-margin",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-margin",
+    "name": "Screen field: Space between sections",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space between sections\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-margin/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-margin#screenedit-flexible-sections-margin/field",
+        "title": "Space between sections",
+        "description": "Margin is the gap outside a section, between it and the sections next to it. Set Top, Bottom, Left, and Right independently, using positive values to push sections apart. A negative top margin pulls a section up so it overlaps the one above — for example, a headline resting on a hero image; pair that with stacking order to control what sits in front.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space between sections",
+      "summary": "Margin is the gap outside a section, between it and the sections next to it. Set Top, Bottom, Left, and Right independently, using positive values to push sections apart. A negative top margin pulls a section up so it overlaps the one above — for example, a headline resting on a hero image; pair that with stacking order to control what sits in front.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-margin/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-embed-html-editor",
+  "evidence": {
+    "guideKey": "screenedit-embed-html-editor",
+    "articleId": "screenedit-embed-html-editor",
+    "articleAlias": "help-block-custom-html",
+    "referencePath": "help-block-custom-html/screenedit-embed-html-editor",
+    "name": "Screen field: Your custom screen code",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Your custom screen code\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-embed-html-editor/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-custom-html/screenedit-embed-html-editor#screenedit-embed-html-editor/field",
+        "title": "Your custom screen code",
+        "description": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Your custom screen code",
+      "summary": "Write the HTML, CSS, and JavaScript that renders inside this custom screen here. Edits stay local until you click Apply to Preview, then they appear in the preview. Critically, your code must call segmentlySDK.navigateNext to advance the funnel and segmentlySDK.getChildSection to read any data sources you've added — without navigateNext, visitors get stuck and never reach your paywall.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-custom-html",
+          "subarticleId": "screenedit-embed-html-editor/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

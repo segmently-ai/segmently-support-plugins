@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-list-padding",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-list-padding",
+    "articleId": "screenedit-paywall-subscriptions-list-padding",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-list-padding",
+    "name": "Screen field: Space around the plan list",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the plan list\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-list-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-list-padding#screenedit-paywall-subscriptions-list-padding/field",
+        "title": "Space around the plan list",
+        "description": "Sets the space around the whole block of plans, between the list and the screen edges and the content above and below it. (Card padding spaces the inside of one plan; this spaces the entire group.) Add space if the plans feel jammed against the body copy or the purchase button; the theme default is a safe start.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the plan list",
+      "summary": "Sets the space around the whole block of plans, between the list and the screen edges and the content above and below it. (Card padding spaces the inside of one plan; this spaces the entire group.) Add space if the plans feel jammed against the body copy or the purchase button; the theme default is a safe start.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-list-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

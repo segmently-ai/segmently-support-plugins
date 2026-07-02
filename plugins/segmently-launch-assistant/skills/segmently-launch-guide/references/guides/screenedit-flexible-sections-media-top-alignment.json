@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-media-top-alignment",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-media-top-alignment",
+    "articleId": "screenedit-flexible-sections-media-top-alignment",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-top-alignment",
+    "name": "Screen field: Where the image starts on screen",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Where the image starts on screen\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-media-top-alignment/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-top-alignment#screenedit-flexible-sections-media-top-alignment/field",
+        "title": "Where the image starts on screen",
+        "description": "Sets the top edge of your image or video. Screen Top runs it all the way up behind the status bar and header for a full-bleed, edge-to-edge hero. Header Bottom starts it just below the header bar so a back button or progress bar stays clearly visible. Pick Screen Top for an immersive opener, Header Bottom when the header needs to read cleanly.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Where the image starts on screen",
+      "summary": "Sets the top edge of your image or video. Screen Top runs it all the way up behind the status bar and header for a full-bleed, edge-to-edge hero. Header Bottom starts it just below the header bar so a back button or progress bar stays clearly visible. Pick Screen Top for an immersive opener, Header Bottom when the header needs to read cleanly.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-media-top-alignment/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

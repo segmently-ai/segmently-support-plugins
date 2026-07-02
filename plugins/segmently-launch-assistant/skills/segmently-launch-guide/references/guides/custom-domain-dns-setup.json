@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "custom-domain-dns-setup",
+  "evidence": {
+    "guideKey": "custom-domain-dns-setup",
+    "articleId": "PjS3KFNmuDztegAiwsdT",
+    "articleAlias": "custom-domain-dns-setup",
+    "referencePath": "custom-domain-dns-setup/custom-domain-dns-setup",
+    "name": "Custom Domain: DNS setup",
+    "journeyStep": "Set up custom domain",
+    "userNeed": "Apply the provided DNS records exactly (DNS-only, no proxy) and wait for propagation before verifying.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-dns-setup/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "custom-domain-dns-setup/section-1",
+        "sectionKey": null,
+        "referencePath": "custom-domain-dns-setup/custom-domain-dns-setup#custom-domain-dns-setup/section-1",
+        "title": "Add the DNS records at your provider",
+        "description": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "custom-domain-dns-setup/section-2",
+        "sectionKey": null,
+        "referencePath": "custom-domain-dns-setup/custom-domain-dns-setup#custom-domain-dns-setup/section-2",
+        "title": "If verification keeps failing",
+        "description": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "custom-domain-dns-setup/section-1",
+      "title": "Add the DNS records at your provider",
+      "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "custom-domain-dns-setup/section-2",
+      "title": "If verification keeps failing",
+      "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

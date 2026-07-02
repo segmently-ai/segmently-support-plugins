@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-image-styles",
+  "evidence": {
+    "guideKey": "screenedit-stepper-image-styles",
+    "articleId": "screenedit-stepper-image-styles",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-image-styles",
+    "name": "Screen field: Style the step image",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Style the step image\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-image-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-image-styles#screenedit-stepper-image-styles/field",
+        "title": "Style the step image",
+        "description": "Controls how each step's image looks: how it scales (fill = cover the box and crop overflow, fit = show the whole image with possible gaps, crop, or tile to repeat), corner rounding, width and height, and tile repeat. Use fit for logos or illustrations you don't want cropped, and fill for photos that should fully cover the box. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Style the step image",
+      "summary": "Controls how each step's image looks: how it scales (fill = cover the box and crop overflow, fit = show the whole image with possible gaps, crop, or tile to repeat), corner rounding, width and height, and tile repeat. Use fit for logos or illustrations you don't want cropped, and fill for photos that should fully cover the box. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-image-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

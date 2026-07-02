@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "canvas-add-screen",
+  "evidence": {
+    "guideKey": "canvas-add-screen",
+    "articleId": "w4J8cYu29eOqNSy3uxrt",
+    "articleAlias": "canvas-add-screen",
+    "referencePath": "canvas-add-screen/canvas-add-screen",
+    "name": "V2 canvas: add screen",
+    "journeyStep": "Build the canvas",
+    "userNeed": "Add the screen type the flow needs (question/content/embed/paywall) from the template panel, then edit its sections.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-add-screen/index.html",
+    "sourceRecipeKey": "configure-canvas-screens",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "canvas-add-screen/template-panel",
+        "sectionKey": "template-panel",
+        "referencePath": "canvas-add-screen/canvas-add-screen#canvas-add-screen/template-panel",
+        "title": "Open the Screen Templates panel",
+        "description": "The right sidebar lists draggable screen templates with previews and is always visible. It is the primary way to add new screens to the canvas.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png"
+      },
+      {
+        "id": "canvas-add-screen/search",
+        "sectionKey": "search",
+        "referencePath": "canvas-add-screen/canvas-add-screen#canvas-add-screen/search",
+        "title": "Search for a screen type",
+        "description": "Type to filter templates by name or description; the list updates as you type. Clear the field to see all templates.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "canvas-add-screen/drag",
+        "sectionKey": "drag",
+        "referencePath": "canvas-add-screen/canvas-add-screen#canvas-add-screen/drag",
+        "title": "Drag a template onto the canvas",
+        "description": "Click and hold a template, then drop it on the canvas to add the screen. Double-click the new node to open the Screen Editor and configure it.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "canvas-add-screen/types",
+        "sectionKey": "types",
+        "referencePath": "canvas-add-screen/canvas-add-screen#canvas-add-screen/types",
+        "title": "Choose screen types intentionally",
+        "description": "Question screens collect answers into variables for routing, content screens explain value, embed screens host custom HTML, and paywall screens sell products. Pick by what each step should accomplish.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "canvas-add-screen/unique-naming",
+        "sectionKey": "unique-naming",
+        "referencePath": "canvas-add-screen/canvas-add-screen#canvas-add-screen/unique-naming",
+        "title": "Screen names stay unique automatically",
+        "description": "When you add a screen whose type already exists, the system appends a number (for example Hero Content 2). This keeps analytics and navigation unambiguous.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "template-panel",
+      "title": "Open the Screen Templates panel",
+      "summary": "The right sidebar lists draggable screen templates with previews and is always visible. It is the primary way to add new screens to the canvas.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png",
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "search",
+      "title": "Search for a screen type",
+      "summary": "Type to filter templates by name or description; the list updates as you type. Clear the field to see all templates.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "drag",
+      "title": "Drag a template onto the canvas",
+      "summary": "Click and hold a template, then drop it on the canvas to add the screen. Double-click the new node to open the Screen Editor and configure it.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "types",
+      "title": "Choose screen types intentionally",
+      "summary": "Question screens collect answers into variables for routing, content screens explain value, embed screens host custom HTML, and paywall screens sell products. Pick by what each step should accomplish.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "unique-naming",
+      "title": "Screen names stay unique automatically",
+      "summary": "When you add a screen whose type already exists, the system appends a number (for example Hero Content 2). This keeps analytics and navigation unambiguous.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

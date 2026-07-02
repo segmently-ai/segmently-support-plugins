@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-media-image-upload",
+  "evidence": {
+    "guideKey": "screenedit-media-image-upload",
+    "articleId": "screenedit-media-image-upload",
+    "articleAlias": "help-block-media",
+    "referencePath": "help-block-media/screenedit-media-image-upload",
+    "name": "Screen field: The image for this screen",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"The image for this screen\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-media-image-upload/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-media/screenedit-media-image-upload#screenedit-media-image-upload/field",
+        "title": "The image for this screen",
+        "description": "Add this screen's image by uploading a file from your computer or pasting a direct image URL, then confirm it in the preview. Use a high-quality JPG or PNG that's on-message for the screen — uploads are optimized automatically for fast loading on every device. To replace it later, upload or paste a new source here.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "The image for this screen",
+      "summary": "Add this screen's image by uploading a file from your computer or pasting a direct image URL, then confirm it in the preview. Use a high-quality JPG or PNG that's on-message for the screen — uploads are optimized automatically for fast loading on every device. To replace it later, upload or paste a new source here.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screenedit-media-image-upload/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

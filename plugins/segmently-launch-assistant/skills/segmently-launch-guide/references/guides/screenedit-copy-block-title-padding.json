@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-title-padding",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-title-padding",
+    "articleId": "screenedit-copy-block-title-padding",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-title-padding",
+    "name": "Screen field: Space around the title",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the title\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-title-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-title-padding#screenedit-copy-block-title-padding/field",
+        "title": "Space around the title",
+        "description": "Adds empty space on each side of the title (top, right, bottom, left) so it isn't cramped against the screen edges or the text below. Leave it at the theme default unless the title feels too tight or too far from the next element. Increase a side to give it room, or decrease to pull elements closer together.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the title",
+      "summary": "Adds empty space on each side of the title (top, right, bottom, left) so it isn't cramped against the screen edges or the text below. Leave it at the theme default unless the title feels too tight or too far from the next element. Increase a side to give it room, or decrease to pull elements closer together.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-title-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

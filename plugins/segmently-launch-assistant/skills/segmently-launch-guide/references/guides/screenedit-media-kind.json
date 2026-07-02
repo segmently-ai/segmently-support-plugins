@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-media-kind",
+  "evidence": {
+    "guideKey": "screenedit-media-kind",
+    "articleId": "screenedit-media-kind",
+    "articleAlias": "help-block-media",
+    "referencePath": "help-block-media/screenedit-media-kind",
+    "name": "Screen field: Image or video",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Image or video\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-media-kind/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-media/screenedit-media-kind#screenedit-media-kind/field",
+        "title": "Image or video",
+        "description": "Pick whether this screen shows an image or a video. Use an image for a fast, lightweight visual that loads instantly; use a video for short product demos or motion that holds attention (it can loop). Switching type clears the current media, so choose before you upload. Keep videos short and light so the page stays fast, since slow loads cost conversions on paid traffic.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Image or video",
+      "summary": "Pick whether this screen shows an image or a video. Use an image for a fast, lightweight visual that loads instantly; use a video for short product demos or motion that holds attention (it can loop). Switching type clears the current media, so choose before you upload. Keep videos short and light so the page stays fast, since slow loads cost conversions on paid traffic.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screenedit-media-kind/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

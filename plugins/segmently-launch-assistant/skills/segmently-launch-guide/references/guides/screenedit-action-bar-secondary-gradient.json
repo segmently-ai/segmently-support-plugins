@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-secondary-gradient",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-secondary-gradient",
+    "articleId": "screenedit-action-bar-secondary-gradient",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-gradient",
+    "name": "Screen field: Gradient on the secondary button",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gradient on the secondary button\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-secondary-gradient/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-gradient#screenedit-action-bar-secondary-gradient/field",
+        "title": "Gradient on the secondary button",
+        "description": "An optional color gradient over the secondary button's solid fill (start/end colors, angle, stops, optional shimmer). Usually leave this off — a gradient draws attention, which you want on your main call-to-action, not the side path. Turn it on only if a flat secondary clashes with your theme.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-gradient.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gradient on the secondary button",
+      "summary": "An optional color gradient over the secondary button's solid fill (start/end colors, angle, stops, optional shimmer). Usually leave this off — a gradient draws attention, which you want on your main call-to-action, not the side path. Turn it on only if a flat secondary clashes with your theme.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-gradient.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-secondary-gradient/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

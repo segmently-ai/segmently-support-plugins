@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-variable-binding-variable-selector",
+  "evidence": {
+    "guideKey": "screenedit-variable-binding-variable-selector",
+    "articleId": "screenedit-variable-binding-variable-selector",
+    "articleAlias": "help-block-variable-binding",
+    "referencePath": "help-block-variable-binding/screenedit-variable-binding-variable-selector",
+    "name": "Screen field: Choose where the answer is saved",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Choose where the answer is saved\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-variable-binding-variable-selector/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-variable-binding/screenedit-variable-binding-variable-selector#screenedit-variable-binding-variable-selector/field",
+        "title": "Choose where the answer is saved",
+        "description": "Pick which variable stores this screen's answer, or create a new one on the spot. Reuse an existing variable when this screen asks about the same thing as another screen (so all answers feed one value), and create a new one for a brand-new question. This is the key step: nothing downstream (branching, analytics, paywall personalization) works until a variable is chosen here.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Choose where the answer is saved",
+      "summary": "Pick which variable stores this screen's answer, or create a new one on the spot. Reuse an existing variable when this screen asks about the same thing as another screen (so all answers feed one value), and create a new one for a brand-new question. This is the key step: nothing downstream (branching, analytics, paywall personalization) works until a variable is chosen here.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screenedit-variable-binding-variable-selector/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

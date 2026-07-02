@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-vertical-alignment",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-vertical-alignment",
+    "articleId": "screenedit-header-progress-vertical-alignment",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-vertical-alignment",
+    "name": "Screen field: Progress Height In Header",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Progress Height In Header\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-vertical-alignment/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-vertical-alignment#screenedit-header-progress-vertical-alignment/field",
+        "title": "Progress Height In Header",
+        "description": "Sets where the progress bar sits up and down within the header: at the top, centered, or at the bottom. Centered is the usual balanced choice; use bottom to sit it just above your content, or top to hug the status bar. Adjust only if the default placement looks off for your header height.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Progress Height In Header",
+      "summary": "Sets where the progress bar sits up and down within the header: at the top, centered, or at the bottom. Centered is the usual balanced choice; use bottom to sit it just above your content, or top to hug the status bar. Adjust only if the default placement looks off for your header height.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-vertical-alignment/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

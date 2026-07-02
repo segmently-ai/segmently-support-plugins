@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-error-background",
+  "evidence": {
+    "guideKey": "screenedit-text-field-error-background",
+    "articleId": "screenedit-text-field-error-background",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-error-background",
+    "name": "Screen field: Fill behind the error text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Fill behind the error text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-error-background/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-error-background#screenedit-text-field-error-background/field",
+        "title": "Fill behind the error text",
+        "description": "Sets a fill color behind the validation error message that appears when an answer is rejected. Usually leave it transparent so only the red text shows; add a subtle tint only if you want the error to read like a banner. Whatever you choose, keep enough contrast with the error text so the message stays readable and users can quickly fix and continue.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Fill behind the error text",
+      "summary": "Sets a fill color behind the validation error message that appears when an answer is rejected. Usually leave it transparent so only the red text shows; add a subtle tint only if you want the error to read like a banner. Whatever you choose, keep enough contrast with the error text so the message stays readable and users can quickly fix and continue.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-error-background/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

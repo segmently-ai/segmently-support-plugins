@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-media-corner-radius",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-media-corner-radius",
+    "articleId": "screenedit-flexible-sections-media-corner-radius",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-corner-radius",
+    "name": "Screen field: Round the image corners",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Round the image corners\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-media-corner-radius/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-corner-radius#screenedit-flexible-sections-media-corner-radius/field",
+        "title": "Round the image corners",
+        "description": "Rounds the corners of the image or video. The default 0 is square; try 8 to 16 for a soft, modern look or a higher value for a strongly rounded card. Match it to the rounding on nearby buttons and sections so the whole screen feels cohesive.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Round the image corners",
+      "summary": "Rounds the corners of the image or video. The default 0 is square; try 8 to 16 for a soft, modern look or a higher value for a strongly rounded card. Match it to the rounding on nearby buttons and sections so the whole screen feels cohesive.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-media-corner-radius/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

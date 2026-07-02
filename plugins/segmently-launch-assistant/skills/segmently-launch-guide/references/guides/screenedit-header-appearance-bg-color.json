@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-appearance-bg-color",
+  "evidence": {
+    "guideKey": "screenedit-header-appearance-bg-color",
+    "articleId": "screenedit-header-appearance-bg-color",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-appearance-bg-color",
+    "name": "Screen field: Header Bar Background",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Header Bar Background\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": "configure-header-styles",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-appearance-bg-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-appearance-bg-color#screenedit-header-appearance-bg-color/field",
+        "title": "Header Bar Background",
+        "description": "Fills the header bar with a color, or clear it to transparent so the screen background shows through for a floating header. Use a solid color to set the header apart from busy content. If you go transparent over a photo or video, check that the Back, Skip, and progress colors still stand out clearly.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-appearance-bg-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Header Bar Background",
+      "summary": "Fills the header bar with a color, or clear it to transparent so the screen background shows through for a floating header. Use a solid color to set the header apart from busy content. If you go transparent over a photo or video, check that the Back, Skip, and progress colors still stand out clearly.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-appearance-bg-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-appearance-bg-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

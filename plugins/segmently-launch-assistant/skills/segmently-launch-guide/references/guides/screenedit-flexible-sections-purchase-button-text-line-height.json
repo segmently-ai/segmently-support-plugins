@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-text-line-height",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-text-line-height",
+    "articleId": "screenedit-flexible-sections-purchase-button-text-line-height",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-line-height",
+    "name": "Screen field: Purchase button line spacing",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button line spacing\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-purchase-button",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-text-line-height/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-line-height#screenedit-flexible-sections-purchase-button-text-line-height/field",
+        "title": "Purchase button line spacing",
+        "description": "Controls the vertical gap between lines when the button label runs onto two or more lines. Most call-to-action labels fit on one line, so you can leave this on the default. Adjust it only if a longer label looks cramped or too loose when it wraps.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button line spacing",
+      "summary": "Controls the vertical gap between lines when the button label runs onto two or more lines. Most call-to-action labels fit on one line, so you can leave this on the default. Adjust it only if a longer label looks cramped or too loose when it wraps.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-text-line-height/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

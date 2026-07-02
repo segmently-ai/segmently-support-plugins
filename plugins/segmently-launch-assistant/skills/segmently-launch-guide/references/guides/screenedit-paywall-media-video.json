@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-video",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-video",
+    "articleId": "screenedit-paywall-media-video",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-video",
+    "name": "Screen field: Upload the featured video",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Upload the featured video\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-video/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-video#screenedit-paywall-media-video/field",
+        "title": "Upload the featured video",
+        "description": "Upload (or clear) the hero video shown at the top of the paywall. Keep it short and lightweight (a few seconds, compressed) so it loads fast on mobile data, and remember it auto-plays muted, so the visual must work without sound. If your funnel runs in multiple languages you can upload a different video per language; it appears only when media type is Video, and nothing shows until you upload one.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Upload the featured video",
+      "summary": "Upload (or clear) the hero video shown at the top of the paywall. Keep it short and lightweight (a few seconds, compressed) so it loads fast on mobile data, and remember it auto-plays muted, so the visual must work without sound. If your funnel runs in multiple languages you can upload a different video per language; it appears only when media type is Video, and nothing shows until you upload one.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-video/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

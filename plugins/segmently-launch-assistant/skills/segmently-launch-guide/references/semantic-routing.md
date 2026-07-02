@@ -69,10 +69,14 @@ Choose one or more catalog items from the shipped files:
   flow." It is not a graph/vector database or local runtime dependency.
 - `references/guide-registry.json` links guides back to articles and carries
   screenshot/SHOW/DO evidence. Use it after article selection, not as a
-  replacement for article content.
+  replacement for article content. It is a compact directory: per-guide
+  `sections` load through each row's `contentRef`
+  (`references/guides/<guideKey>.json`).
 - `references/scenarios.md` for broad launch scenarios and customer phrasing.
 - `references/guide-evidence.json` for guide keys, article aliases, article
-  URLs, section text, screenshot coverage, and concrete image URLs.
+  URLs, screenshot coverage flags, and `contentRef` pointers; section text and
+  concrete image URLs load lazily from `references/guides/<guideKey>.json` for
+  the selected guides only (hydration helper: `runtime/guide-content.mjs`).
 - `references/help-article-reference.json` for Screen Editor article URLs,
   section anchors, and setting-level screenshots.
 - `references/backends.md` and `runtime/do-action-reference.json` for whether a

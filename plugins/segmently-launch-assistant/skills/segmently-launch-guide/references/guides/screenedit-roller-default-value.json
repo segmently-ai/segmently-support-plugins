@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-default-value",
+  "evidence": {
+    "guideKey": "screenedit-roller-default-value",
+    "articleId": "screenedit-roller-default-value",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-default-value",
+    "name": "Screen field: Pre-selected starting value",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Pre-selected starting value\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-default-value/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-default-value#screenedit-roller-default-value/field",
+        "title": "Pre-selected starting value",
+        "description": "The value already showing when the screen loads. For List wheels, pick one of your options; for Range wheels, pick any number within the from/to span. Pre-selecting the most common answer reduces friction and prevents accidental empty or extreme submissions — leave it empty only if you truly want nothing chosen up front.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Pre-selected starting value",
+      "summary": "The value already showing when the screen loads. For List wheels, pick one of your options; for Range wheels, pick any number within the from/to span. Pre-selecting the most common answer reduces friction and prevents accidental empty or extreme submissions — leave it empty only if you truly want nothing chosen up front.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-default-value/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

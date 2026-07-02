@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-paywall-subscriptions",
+  "evidence": {
+    "guideKey": "screen-editor-section-paywall-subscriptions",
+    "articleId": "screen-editor-section-paywall-subscriptions",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screen-editor-section-paywall-subscriptions",
+    "name": "Screen Editor: Paywall Subscriptions",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Paywall Subscriptions section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-paywall-subscriptions/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-paywall-subscriptions/screen-editor-section-paywall-subscriptions#screen-editor-section-paywall-subscriptions/section",
+        "title": "Paywall Subscriptions section",
+        "description": "The Paywall Subscriptions section is where you list the plans a visitor can buy. Each plan row is tied to a real product in your connected Stripe account, so the price and billing period shown here must match an actual Stripe product or checkout will fail. Add one row per plan, pre-select the option you most want sold (usually the annual or best-value plan) to boost conversion, and set this up after connecting Stripe and creating your products.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      },
+      {
+        "id": "screen-editor-section-paywall-subscriptions/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-paywall-subscriptions/screen-editor-section-paywall-subscriptions#screen-editor-section-paywall-subscriptions/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: Paywall.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Paywall Subscriptions section",
+      "summary": "The Paywall Subscriptions section is where you list the plans a visitor can buy. Each plan row is tied to a real product in your connected Stripe account, so the price and billing period shown here must match an actual Stripe product or checkout will fail. Add one row per plan, pre-select the option you most want sold (usually the annual or best-value plan) to boost conversion, and set this up after connecting Stripe and creating your products.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screen-editor-section-paywall-subscriptions/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Paywall.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screen-editor-section-paywall-subscriptions/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

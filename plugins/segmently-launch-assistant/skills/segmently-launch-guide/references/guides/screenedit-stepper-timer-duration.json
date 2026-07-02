@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-timer-duration",
+  "evidence": {
+    "guideKey": "screenedit-stepper-timer-duration",
+    "articleId": "screenedit-stepper-timer-duration",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-timer-duration",
+    "name": "Screen field: How long the progress runs",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How long the progress runs\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": "configure-stepper-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-timer-duration/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-timer-duration#screenedit-stepper-timer-duration/field",
+        "title": "How long the progress runs",
+        "description": "Total time, in seconds (1-120), for the progress sequence to advance through all its steps before the screen continues. Aim for about 4-8 seconds: long enough to feel like real work is happening for the user, short enough to avoid drop-off. Use the play/pause preview to test the pacing against your step text.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/open-section-duration.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How long the progress runs",
+      "summary": "Total time, in seconds (1-120), for the progress sequence to advance through all its steps before the screen continues. Aim for about 4-8 seconds: long enough to feel like real work is happening for the user, short enough to avoid drop-off. Use the play/pause preview to test the pacing against your step text.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/open-section-duration.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-timer-duration/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

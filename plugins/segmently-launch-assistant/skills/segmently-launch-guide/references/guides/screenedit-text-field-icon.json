@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-icon",
+  "evidence": {
+    "guideKey": "screenedit-text-field-icon",
+    "articleId": "screenedit-text-field-icon",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-icon",
+    "name": "Screen field: Optional icon in the field",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Optional icon in the field\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-icon/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-icon#screenedit-text-field-icon/field",
+        "title": "Optional icon in the field",
+        "description": "Adds a small image — like a mail or person glyph — to the left of the input to hint at what the field is for. It's optional, and you can upload a different image for each language. It only appears with a Border Style that leaves room for an icon, and its size and rounding come from the icon's image style settings.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-icon.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Optional icon in the field",
+      "summary": "Adds a small image — like a mail or person glyph — to the left of the input to hint at what the field is for. It's optional, and you can upload a different image for each language. It only appears with a Border Style that leaves room for an icon, and its size and rounding come from the icon's image style settings.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-icon.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-icon/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

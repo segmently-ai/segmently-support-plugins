@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-track-color",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-track-color",
+    "articleId": "screenedit-header-progress-track-color",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-track-color",
+    "name": "Screen field: Remaining Progress Color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Remaining Progress Color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": "configure-header-styles",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-track-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-track-color#screenedit-header-progress-track-color/field",
+        "title": "Remaining Progress Color",
+        "description": "Colors the empty, not-yet-completed part of the progress bar. Defaults to white for the Line style and light gray for Dashes. Keep it muted next to the filled color so the completed portion clearly reads as progress rather than blending in.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-progress-track-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Remaining Progress Color",
+      "summary": "Colors the empty, not-yet-completed part of the progress bar. Defaults to white for the Line style and light gray for Dashes. Keep it muted next to the filled color so the completed portion clearly reads as progress rather than blending in.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-progress-track-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-track-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

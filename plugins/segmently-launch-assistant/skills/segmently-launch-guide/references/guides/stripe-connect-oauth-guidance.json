@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "stripe-connect-oauth-guidance",
+  "evidence": {
+    "guideKey": "stripe-connect-oauth-guidance",
+    "articleId": "12upbBcVIuvzp1Bm6nw1",
+    "articleAlias": "stripe-connect-oauth-guidance",
+    "referencePath": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance",
+    "name": "Stripe Connect: OAuth guidance",
+    "journeyStep": "Connect Stripe",
+    "userNeed": "Authorize the correct Stripe mode so product/price lookup and checkout creation succeed for the published funnel.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-oauth-guidance/index.html",
+    "sourceRecipeKey": "connect-stripe-account",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "stripe-connect-oauth-guidance/oauth-why-two",
+        "sectionKey": "oauth-why-two",
+        "referencePath": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-why-two",
+        "title": "Why test and live need separate connections",
+        "description": "Stripe Connect Standard accounts require separate OAuth connections for test and live because each mode has its own account ID and API keys. This is a Stripe limitation; connecting test first is the recommended safe pattern.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      },
+      {
+        "id": "stripe-connect-oauth-guidance/oauth-permissions",
+        "sectionKey": "oauth-permissions",
+        "referencePath": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
+        "title": "Know what you are granting",
+        "description": "OAuth authorizes Segmently to read your products and prices and to create new ones inline in the product dialog. You are not granting direct charge access; all charges run through your connected Stripe account.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "stripe-connect-oauth-guidance/oauth-troubleshooting",
+        "sectionKey": "oauth-troubleshooting",
+        "referencePath": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-troubleshooting",
+        "title": "If products do not appear",
+        "description": "If your Stripe products or prices are missing in the picker, verify you selected the matching mode and that the products exist in that Stripe account, since test and live are separate catalogs. Refresh the page or reconnect OAuth if needed.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "oauth-why-two",
+      "title": "Why test and live need separate connections",
+      "summary": "Stripe Connect Standard accounts require separate OAuth connections for test and live because each mode has its own account ID and API keys. This is a Stripe limitation; connecting test first is the recommended safe pattern.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "oauth-permissions",
+      "title": "Know what you are granting",
+      "summary": "OAuth authorizes Segmently to read your products and prices and to create new ones inline in the product dialog. You are not granting direct charge access; all charges run through your connected Stripe account.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "oauth-troubleshooting",
+      "title": "If products do not appear",
+      "summary": "If your Stripe products or prices are missing in the picker, verify you selected the matching mode and that the products exist in that Stripe account, since test and live are separate catalogs. Refresh the page or reconnect OAuth if needed.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

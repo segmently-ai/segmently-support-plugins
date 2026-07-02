@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "stripe-connect-live-mode",
+  "evidence": {
+    "guideKey": "stripe-connect-live-mode",
+    "articleId": "0BIVCuhQBZSO0SIC7el6",
+    "articleAlias": "stripe-connect-live-mode",
+    "referencePath": "stripe-connect-live-mode/stripe-connect-live-mode",
+    "name": "Stripe Connect: live mode",
+    "journeyStep": "Connect Stripe",
+    "userNeed": "Connect live mode to the production Stripe account only when real products, prices, and payouts are ready.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-live-mode/index.html",
+    "sourceRecipeKey": "connect-stripe-account",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "stripe-connect-live-mode/connect-live",
+        "sectionKey": "connect-live",
+        "referencePath": "stripe-connect-live-mode/stripe-connect-live-mode#stripe-connect-live-mode/connect-live",
+        "title": "Connect your live Stripe account",
+        "description": "Use Connect Live Account to authorize your production account. Live mode processes real payments and maps to your production products and prices, so connect it only after test validation is complete.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      },
+      {
+        "id": "stripe-connect-live-mode/live-account-status",
+        "sectionKey": "live-account-status",
+        "referencePath": "stripe-connect-live-mode/stripe-connect-live-mode#stripe-connect-live-mode/live-account-status",
+        "title": "Verify live account readiness",
+        "description": "Confirm that both charges and payouts are enabled before deploying a paywall to production. Finish any remaining business verification (identity, bank account) in the Stripe Dashboard if onboarding is incomplete.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "stripe-connect-live-mode/live-mode-decision",
+        "sectionKey": "live-mode-decision",
+        "referencePath": "stripe-connect-live-mode/stripe-connect-live-mode#stripe-connect-live-mode/live-mode-decision",
+        "title": "Keep test and live separate",
+        "description": "Test and live modes are independent and cannot be mixed in one published funnel. Every product in a single publish must use the same mode, so review the product mode before publishing to production.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "connect-live",
+      "title": "Connect your live Stripe account",
+      "summary": "Use Connect Live Account to authorize your production account. Live mode processes real payments and maps to your production products and prices, so connect it only after test validation is complete.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "live-account-status",
+      "title": "Verify live account readiness",
+      "summary": "Confirm that both charges and payouts are enabled before deploying a paywall to production. Finish any remaining business verification (identity, bank account) in the Stripe Dashboard if onboarding is incomplete.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "live-mode-decision",
+      "title": "Keep test and live separate",
+      "summary": "Test and live modes are independent and cannot be mixed in one published funnel. Every product in a single publish must use the same mode, so review the product mode before publishing to production.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

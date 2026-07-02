@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-secondary-container",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-secondary-container",
+    "articleId": "screenedit-action-bar-secondary-container",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-container",
+    "name": "Screen field: Secondary button shape and fill",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Secondary button shape and fill\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-secondary-container/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-secondary-container#screenedit-action-bar-secondary-container/field",
+        "title": "Secondary button shape and fill",
+        "description": "Sets the secondary button's look — background, border, corner radius, height, padding, and a full-width toggle. Give it lower visual weight than the main button (an outline or transparent fill works well) so it doesn't compete with your call-to-action. The Visibility toggle hides it; never hide both the primary and secondary buttons.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-container.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Secondary button shape and fill",
+      "summary": "Sets the secondary button's look — background, border, corner radius, height, padding, and a full-width toggle. Give it lower visual weight than the main button (an outline or transparent fill works well) so it doesn't compete with your call-to-action. The Visibility toggle hides it; never hide both the primary and secondary buttons.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-container.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-secondary-container/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-duration",
+  "evidence": {
+    "guideKey": "screenedit-carousel-duration",
+    "articleId": "screenedit-carousel-duration",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-duration",
+    "name": "Screen field: Total play time",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Total play time\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-duration/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-duration#screenedit-carousel-duration/field",
+        "title": "Total play time",
+        "description": "The total time in seconds for the whole carousel to play through once before it stops or the visitor moves on (0.1–120s). This total is split across slides by each slide's timing slider, so changing it speeds up or slows every slide proportionally. Start around 3–5 seconds per slide (about 12–20s for four slides) — long enough to read each line, short enough to keep momentum and avoid stalling the visitor.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Total play time",
+      "summary": "The total time in seconds for the whole carousel to play through once before it stops or the visitor moves on (0.1–120s). This total is split across slides by each slide's timing slider, so changing it speeds up or slows every slide proportionally. Start around 3–5 seconds per slide (about 12–20s for four slides) — long enough to read each line, short enough to keep momentum and avoid stalling the visitor.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-duration/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

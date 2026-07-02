@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-vertical-alignment",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-vertical-alignment",
+    "articleId": "screenedit-flexible-sections-vertical-alignment",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-vertical-alignment",
+    "name": "Screen field: Top, center, or bottom",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Top, center, or bottom\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-vertical-alignment/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-vertical-alignment#screenedit-flexible-sections-vertical-alignment/field",
+        "title": "Top, center, or bottom",
+        "description": "Pins the content to the Top, Center, or Bottom of the section. It only changes anything when the section is taller than its content, for example with a Fixed or Percent height or a section stretched to fill space. Use Center to vertically center a headline in a tall hero, or Bottom to push a caption to the base of an image.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Top, center, or bottom",
+      "summary": "Pins the content to the Top, Center, or Bottom of the section. It only changes anything when the section is taller than its content, for example with a Fixed or Percent height or a section stretched to fill space. Use Center to vertically center a headline in a tall hero, or Bottom to push a caption to the base of an image.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-vertical-alignment/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

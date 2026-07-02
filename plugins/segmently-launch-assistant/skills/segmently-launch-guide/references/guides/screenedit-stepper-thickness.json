@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-thickness",
+  "evidence": {
+    "guideKey": "screenedit-stepper-thickness",
+    "articleId": "screenedit-stepper-thickness",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-thickness",
+    "name": "Screen field: How thick the progress bar is",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How thick the progress bar is\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": "configure-stepper-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-thickness/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-thickness#screenedit-stepper-thickness/field",
+        "title": "How thick the progress bar is",
+        "description": "Height of the filled bar in pixels (0-50, default 4px). 4-8px reads as a clean, modern bar; go thicker only for a bold, attention-grabbing indicator. Set it equal to or greater than the track thickness so the fill sits flush over the track instead of looking sunken.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-thickness.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How thick the progress bar is",
+      "summary": "Height of the filled bar in pixels (0-50, default 4px). 4-8px reads as a clean, modern bar; go thicker only for a bold, attention-grabbing indicator. Set it equal to or greater than the track thickness so the fill sits flush over the track instead of looking sunken.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-thickness.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-thickness/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

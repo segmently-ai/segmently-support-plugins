@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-height-mode",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-height-mode",
+    "articleId": "screenedit-flexible-sections-height-mode",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-height-mode",
+    "name": "Screen field: How tall this section is",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How tall this section is\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-height-mode/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-height-mode#screenedit-flexible-sections-height-mode/field",
+        "title": "How tall this section is",
+        "description": "Decides how the section's height is calculated. Auto (the safe default) makes it exactly as tall as its content, which is right for most text and buttons. Fixed lets you type an exact pixel height, and Percent sets it to a share of the screen, handy for a hero image that should always fill, say, the top 40 percent. Your pick also decides which value box below applies.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155408_shared-size-flex-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How tall this section is",
+      "summary": "Decides how the section's height is calculated. Auto (the safe default) makes it exactly as tall as its content, which is right for most text and buttons. Fixed lets you type an exact pixel height, and Percent sets it to a share of the screen, handy for a hero image that should always fill, say, the top 40 percent. Your pick also decides which value box below applies.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155408_shared-size-flex-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-height-mode/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

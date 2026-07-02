@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-primary-text-styles",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-primary-text-styles",
+    "articleId": "screenedit-action-bar-primary-text-styles",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-primary-text-styles",
+    "name": "Screen field: Main button text style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Main button text style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-primary-text-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-primary-text-styles#screenedit-action-bar-primary-text-styles/field",
+        "title": "Main button text style",
+        "description": "Typography for the main button label — font, weight, size, color, and alignment. Leave it on the theme defaults for a consistent look; bump the weight or size, or switch color, only when the label is hard to read against the button fill. Applies to the label in every language.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-text-styles.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Main button text style",
+      "summary": "Typography for the main button label — font, weight, size, color, and alignment. Leave it on the theme defaults for a consistent look; bump the weight or size, or switch color, only when the label is hard to read against the button fill. Applies to the label in every language.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-text-styles.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-primary-text-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

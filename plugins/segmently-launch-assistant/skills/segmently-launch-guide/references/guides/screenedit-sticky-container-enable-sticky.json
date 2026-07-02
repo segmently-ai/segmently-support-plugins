@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-sticky-container-enable-sticky",
+  "evidence": {
+    "guideKey": "screenedit-sticky-container-enable-sticky",
+    "articleId": "screenedit-sticky-container-enable-sticky",
+    "articleAlias": "help-block-sticky-container",
+    "referencePath": "help-block-sticky-container/screenedit-sticky-container-enable-sticky",
+    "name": "Screen field: Pin the CTA to the bottom",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Pin the CTA to the bottom\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-sticky-container-enable-sticky/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-sticky-container/screenedit-sticky-container-enable-sticky#screenedit-sticky-container-enable-sticky/field",
+        "title": "Pin the CTA to the bottom",
+        "description": "Turns the sticky bar on or off. When on, your main button stays pinned to the bottom and tappable while the visitor scrolls, and the rest of the bar's settings below appear. Turn it on for long or paywall screens so the action never scrolls out of reach (this protects clicks from paid traffic); leave it off on short screens where the button is always in view.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Pin the CTA to the bottom",
+      "summary": "Turns the sticky bar on or off. When on, your main button stays pinned to the bottom and tappable while the visitor scrolls, and the rest of the bar's settings below appear. Turn it on for long or paywall screens so the action never scrolls out of reach (this protects clicks from paid traffic); leave it off on short screens where the button is always in view.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-sticky-container",
+          "subarticleId": "screenedit-sticky-container-enable-sticky/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

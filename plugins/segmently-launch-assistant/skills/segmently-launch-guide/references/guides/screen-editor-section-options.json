@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-options",
+  "evidence": {
+    "guideKey": "screen-editor-section-options",
+    "articleId": "screen-editor-section-options",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screen-editor-section-options",
+    "name": "Screen Editor: Options",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Options section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": "configure-options-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-options/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-options/screen-editor-section-options#screen-editor-section-options/section",
+        "title": "Options section",
+        "description": "The Options section defines the answer choices, product cards, or tappable rows a visitor picks from on a selection screen. This is the core interaction that captures what the visitor wants, so pair it with Variable Binding to save each choice and use it to personalize copy and send the visitor toward the right paywall. If a screen has no Options section, it isn't a selection screen; add a list or grid screen from the canvas.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-options/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-options/screen-editor-section-options#screen-editor-section-options/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, HeroList.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Options section",
+      "summary": "The Options section defines the answer choices, product cards, or tappable rows a visitor picks from on a selection screen. This is the core interaction that captures what the visitor wants, so pair it with Variable Binding to save each choice and use it to personalize copy and send the visitor toward the right paywall. If a screen has no Options section, it isn't a selection screen; add a list or grid screen from the canvas.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screen-editor-section-options/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, HeroList.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screen-editor-section-options/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

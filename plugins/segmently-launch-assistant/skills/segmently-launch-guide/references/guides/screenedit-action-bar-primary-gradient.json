@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-primary-gradient",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-primary-gradient",
+    "articleId": "screenedit-action-bar-primary-gradient",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-primary-gradient",
+    "name": "Screen field: Gradient on the main button",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gradient on the main button\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-primary-gradient/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-primary-gradient#screenedit-action-bar-primary-gradient/field",
+        "title": "Gradient on the main button",
+        "description": "An optional color gradient layered over the button's solid fill — set start and end colors, the angle, extra color stops, and an optional moving shimmer. Leave it off for a clean flat look; turn it on to make the call-to-action pop against a busy background. Keep enough contrast that the label stays easy to read.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-gradient.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gradient on the main button",
+      "summary": "An optional color gradient layered over the button's solid fill — set start and end colors, the angle, extra color stops, and an optional moving shimmer. Leave it off for a clean flat look; turn it on to make the call-to-action pop against a busy background. Keep enough contrast that the label stays easy to read.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-gradient.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-primary-gradient/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

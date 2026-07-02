@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-font-weight",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-font-weight",
+    "articleId": "screenedit-paywall-header-restore-font-weight",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-font-weight",
+    "name": "Screen field: Set the restore link boldness",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Set the restore link boldness\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-font-weight/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-font-weight#screenedit-paywall-header-restore-font-weight/field",
+        "title": "Set the restore link boldness",
+        "description": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Set the restore link boldness",
+      "summary": "Controls how heavy the restore link text looks (for example Normal or Semibold). Use a normal weight so restore stays a quiet secondary link and doesn't pull attention from your purchase button. Bump it to semibold only if it's genuinely hard to read against the background.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-font-weight/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

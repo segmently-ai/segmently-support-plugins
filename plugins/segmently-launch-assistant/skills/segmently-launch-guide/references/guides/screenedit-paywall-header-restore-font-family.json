@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-font-family",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-font-family",
+    "articleId": "screenedit-paywall-header-restore-font-family",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-font-family",
+    "name": "Screen field: Pick the restore link typeface",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Pick the restore link typeface\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-font-family/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-font-family#screenedit-paywall-header-restore-font-family/field",
+        "title": "Pick the restore link typeface",
+        "description": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Pick the restore link typeface",
+      "summary": "Chooses the font for the restore link (SF Pro, SF Pro Rounded, SF Mono, or New York; default SF Pro). Match it to the font used elsewhere on the paywall so the screen looks consistent and trustworthy. There's rarely a reason to give the restore link its own typeface, so SF Pro is a safe choice.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-font-family/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

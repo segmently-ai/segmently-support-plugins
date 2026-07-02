@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-insets",
+  "evidence": {
+    "guideKey": "screenedit-header-insets",
+    "articleId": "screenedit-header-insets",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-insets",
+    "name": "Screen field: Spacing inside the header",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Spacing inside the header\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-insets/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-insets#screenedit-header-insets/field",
+        "title": "Spacing inside the header",
+        "description": "Sets the inner spacing on each side (top, right, bottom, left) that pushes the Back button, Skip button, and progress bar away from the header edges. Raise the top value to keep these controls clear of the phone's status bar or notch, and adjust left/right so buttons aren't jammed against the screen edge. Start from the defaults and nudge only where something looks cramped, since a clean header keeps the first impression of your ad landing page tidy.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Spacing inside the header",
+      "summary": "Sets the inner spacing on each side (top, right, bottom, left) that pushes the Back button, Skip button, and progress bar away from the header edges. Raise the top value to keep these controls clear of the phone's status bar or notch, and adjust left/right so buttons aren't jammed against the screen edge. Start from the defaults and nudge only where something looks cramped, since a clean header keeps the first impression of your ad landing page tidy.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-insets/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-image-padding",
+  "evidence": {
+    "guideKey": "screenedit-stepper-image-padding",
+    "articleId": "screenedit-stepper-image-padding",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-image-padding",
+    "name": "Screen field: Space around the image",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the image\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-image-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-image-padding#screenedit-stepper-image-padding/field",
+        "title": "Space around the image",
+        "description": "Sets the empty space, in pixels, on each side of the step image: top, right, bottom, left. The default is usually 0; add padding so the image does not touch the title or screen edges and sits balanced in its container. A well-framed visual carries the emotional pull on an ad landing page, so adjust this when the image looks cramped or off-center. This control appears only for the Image First or Chart First layouts.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the image",
+      "summary": "Sets the empty space, in pixels, on each side of the step image: top, right, bottom, left. The default is usually 0; add padding so the image does not touch the title or screen edges and sits balanced in its container. A well-framed visual carries the emotional pull on an ad landing page, so adjust this when the image looks cramped or off-center. This control appears only for the Image First or Chart First layouts.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-image-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

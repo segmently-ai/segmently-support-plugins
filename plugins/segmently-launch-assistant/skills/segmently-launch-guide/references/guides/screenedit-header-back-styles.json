@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-back-styles",
+  "evidence": {
+    "guideKey": "screenedit-header-back-styles",
+    "articleId": "screenedit-header-back-styles",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-back-styles",
+    "name": "Screen field: Back button text style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Back button text style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-back-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-back-styles#screenedit-header-back-styles/field",
+        "title": "Back button text style",
+        "description": "Overrides how the Back control's label looks — font, size, weight, color, alignment, line height, an optional highlight behind the text, and a strikethrough color. By default it inherits your project theme, which keeps every screen consistent. Touch this only when the Back label needs to match a specific header treatment, and keep it subtle so it never competes with your main action.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Back button text style",
+      "summary": "Overrides how the Back control's label looks — font, size, weight, color, alignment, line height, an optional highlight behind the text, and a strikethrough color. By default it inherits your project theme, which keeps every screen consistent. Touch this only when the Back label needs to match a specific header treatment, and keep it subtle so it never competes with your main action.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-back-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

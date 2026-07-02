@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-label-font-weight",
+  "evidence": {
+    "guideKey": "screenedit-roller-label-font-weight",
+    "articleId": "screenedit-roller-label-font-weight",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-label-font-weight",
+    "name": "Screen field: Thickness of the label text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Thickness of the label text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-label-font-weight/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-label-font-weight#screenedit-roller-label-font-weight/field",
+        "title": "Thickness of the label text",
+        "description": "How heavy the selection label looks, from 300 (Light) to 900 (Black); default 400 (Regular). Use 600-700 (Semibold/Bold) to make the chosen value read as a clear confirmation, or keep it at 400 if it should sit quietly above the wheels. Match it to the weight of your other body text for a consistent look.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-weight.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Thickness of the label text",
+      "summary": "How heavy the selection label looks, from 300 (Light) to 900 (Black); default 400 (Regular). Use 600-700 (Semibold/Bold) to make the chosen value read as a clear confirmation, or keep it at 400 if it should sit quietly above the wheels. Match it to the weight of your other body text for a consistent look.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-weight.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-label-font-weight/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

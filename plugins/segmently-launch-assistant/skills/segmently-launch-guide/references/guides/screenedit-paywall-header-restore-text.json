@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-text",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-text",
+    "articleId": "screenedit-paywall-header-restore-text",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text",
+    "name": "Screen field: Edit the restore link wording",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Edit the restore link wording\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-text/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text#screenedit-paywall-header-restore-text/field",
+        "title": "Edit the restore link wording",
+        "description": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Edit the restore link wording",
+      "summary": "The text shown on the header restore link, editable for each language you support (default 'Restore Purchases'). Keep it close to the standard 'Restore Purchases' wording so returning buyers instantly recognize it. Add other-language versions only if your funnel actually ships in multiple languages.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-text/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

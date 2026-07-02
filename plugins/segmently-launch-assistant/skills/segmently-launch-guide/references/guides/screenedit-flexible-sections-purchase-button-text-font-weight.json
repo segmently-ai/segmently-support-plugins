@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-text-font-weight",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-text-font-weight",
+    "articleId": "screenedit-flexible-sections-purchase-button-text-font-weight",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-font-weight",
+    "name": "Screen field: Purchase button text weight",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button text weight\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-purchase-button",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-text-font-weight/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-font-weight#screenedit-flexible-sections-purchase-button-text-font-weight/field",
+        "title": "Purchase button text weight",
+        "description": "Controls how thick or bold the button label appears, on a scale from 400 (regular) to 700 (bold) and heavier. As your primary call-to-action it should look bold and confident — a weight of 600 to 700 helps it visually dominate any secondary buttons on the screen.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button text weight",
+      "summary": "Controls how thick or bold the button label appears, on a scale from 400 (regular) to 700 (bold) and heavier. As your primary call-to-action it should look bold and confident — a weight of 600 to 700 helps it visually dominate any secondary buttons on the screen.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-text-font-weight/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

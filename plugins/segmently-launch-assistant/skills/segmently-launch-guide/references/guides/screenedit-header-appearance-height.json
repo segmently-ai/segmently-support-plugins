@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-appearance-height",
+  "evidence": {
+    "guideKey": "screenedit-header-appearance-height",
+    "articleId": "screenedit-header-appearance-height",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-appearance-height",
+    "name": "Screen field: Header Bar Height",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Header Bar Height\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": "configure-header-styles",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-appearance-height/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-appearance-height#screenedit-header-appearance-height/field",
+        "title": "Header Bar Height",
+        "description": "Sets how tall the header bar is, from 20 to 200 pixels, with a default of 44, which is the space its buttons and progress bar share. Keep it near the default for a standard bar and raise it only if you add a tall icon or larger text. Going too small cramps the Back and Skip buttons and makes them hard to tap.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-appearance-height.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Header Bar Height",
+      "summary": "Sets how tall the header bar is, from 20 to 200 pixels, with a default of 44, which is the space its buttons and progress bar share. Keep it near the default for a standard bar and raise it only if you add a tall icon or larger text. Going too small cramps the Back and Skip buttons and makes them hard to tap.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/dev/configure-header-styles/0.1.0/configure-header-styles-2026-06-04T11-11-04-261Z-4c911a6d/open-headerStyles-appearance-height.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-appearance-height/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

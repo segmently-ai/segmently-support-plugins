@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-keyboard-type",
+  "evidence": {
+    "guideKey": "screenedit-text-field-keyboard-type",
+    "articleId": "screenedit-text-field-keyboard-type",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-keyboard-type",
+    "name": "Screen field: Override mobile keyboard input type",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Override mobile keyboard input type\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-keyboard-type/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-keyboard-type#screenedit-text-field-keyboard-type/field",
+        "title": "Override mobile keyboard input type",
+        "description": "Forces a specific keyboard on mobile devices (Email, Numeric, Decimal, Phone, URL, etc.). Leave as Auto (from field type) to let the system derive keyboard type from Field Type setting.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-keyboard-type.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Override mobile keyboard input type",
+      "summary": "Forces a specific keyboard on mobile devices (Email, Numeric, Decimal, Phone, URL, etc.). Leave as Auto (from field type) to let the system derive keyboard type from Field Type setting.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-keyboard-type.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-keyboard-type/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

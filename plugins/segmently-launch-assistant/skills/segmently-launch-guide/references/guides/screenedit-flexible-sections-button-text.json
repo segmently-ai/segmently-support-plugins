@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-text",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-text",
+    "articleId": "screenedit-flexible-sections-button-text",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text",
+    "name": "Screen field: Wording on the button",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Wording on the button\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-text/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text#screenedit-flexible-sections-button-text/field",
+        "title": "Wording on the button",
+        "description": "The text shown on the button (placeholder 'Button Text'). Use a short, action-led phrase like 'Continue', 'Get Started', or 'Next' so people know exactly what tapping does. If your funnel runs in more than one language, this wording is saved per language, so set it for each one you support.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Wording on the button",
+      "summary": "The text shown on the button (placeholder 'Button Text'). Use a short, action-led phrase like 'Continue', 'Get Started', or 'Next' so people know exactly what tapping does. If your funnel runs in more than one language, this wording is saved per language, so set it for each one you support.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-text/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

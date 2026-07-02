@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-embed-iframe-isolation",
+  "evidence": {
+    "guideKey": "screenedit-embed-iframe-isolation",
+    "articleId": "screenedit-embed-iframe-isolation",
+    "articleAlias": "help-block-custom-html",
+    "referencePath": "help-block-custom-html/screenedit-embed-iframe-isolation",
+    "name": "Screen field: Keep custom code sandboxed",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Keep custom code sandboxed\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html",
+    "sourceRecipeKey": "configure-embed-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-embed-iframe-isolation/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-custom-html/screenedit-embed-iframe-isolation#screenedit-embed-iframe-isolation/field",
+        "title": "Keep custom code sandboxed",
+        "description": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Keep custom code sandboxed",
+      "summary": "Decides whether your custom HTML runs in a protected sandbox (On, the default) or directly in the page (Off). Leave it On — the sandbox stops your CSS and JavaScript from leaking out and breaking the rest of the screen. Only switch it Off if your code truly needs to reach the surrounding page, and expect to debug styling clashes if you do.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-custom-html",
+          "subarticleId": "screenedit-embed-iframe-isolation/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

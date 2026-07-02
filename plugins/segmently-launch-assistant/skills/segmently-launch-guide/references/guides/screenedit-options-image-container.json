@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-image-container",
+  "evidence": {
+    "guideKey": "screenedit-options-image-container",
+    "articleId": "screenedit-options-image-container",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-image-container",
+    "name": "Screen field: Image area in each card",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Image area in each card\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-image-container/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-image-container#screenedit-options-image-container/field",
+        "title": "Image area in each card",
+        "description": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Image area in each card",
+      "summary": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-image-container/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

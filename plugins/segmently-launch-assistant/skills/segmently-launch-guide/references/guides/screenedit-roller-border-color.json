@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-border-color",
+  "evidence": {
+    "guideKey": "screenedit-roller-border-color",
+    "articleId": "screenedit-roller-border-color",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-border-color",
+    "name": "Screen field: Color of the picker outline",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of the picker outline\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-border-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-border-color#screenedit-roller-border-color/field",
+        "title": "Color of the picker outline",
+        "description": "Color of the outline around the picker container (default light gray, #E0E0E0). Use a light neutral for a subtle card edge, or your accent color to make the picker stand out on the screen. It only shows when the border thickness above is greater than 0.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of the picker outline",
+      "summary": "Color of the outline around the picker container (default light gray, #E0E0E0). Use a light neutral for a subtle card edge, or your accent color to make the picker stand out on the screen. It only shows when the border thickness above is greater than 0.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-border-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

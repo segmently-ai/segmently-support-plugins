@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-separator",
+  "evidence": {
+    "guideKey": "screenedit-roller-separator",
+    "articleId": "screenedit-roller-separator",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-separator",
+    "name": "Screen field: Joiner between wheel values",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Joiner between wheel values\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-separator/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-separator#screenedit-roller-separator/field",
+        "title": "Joiner between wheel values",
+        "description": "The character or characters used to join selections from multiple wheels into one combined value — for example '/' turns two wheels into 'Large/Red', or a space joins them with a gap. This only matters when you have more than one wheel; leave it as-is for a single-wheel picker. Choose a separator that reads naturally in the answer you'll store and reuse later in the funnel.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Joiner between wheel values",
+      "summary": "The character or characters used to join selections from multiple wheels into one combined value — for example '/' turns two wheels into 'Large/Red', or a space joins them with a gap. This only matters when you have more than one wheel; leave it as-is for a single-wheel picker. Choose a separator that reads naturally in the answer you'll store and reuse later in the funnel.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-separator/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

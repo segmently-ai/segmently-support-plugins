@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-image",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-image",
+    "articleId": "screenedit-paywall-media-image",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-image",
+    "name": "Screen field: Upload the featured image",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Upload the featured image\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-image/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-image#screenedit-paywall-media-image/field",
+        "title": "Upload the featured image",
+        "description": "Upload (or clear) the hero image shown at the top of the paywall. Use a high-resolution image with its subject centered, since the edges may be cropped depending on your fit setting. If your funnel runs in multiple languages you can upload a different image per language; it appears only when media type is Image, and nothing shows until you upload one.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Upload the featured image",
+      "summary": "Upload (or clear) the hero image shown at the top of the paywall. Use a high-resolution image with its subject centered, since the edges may be cropped depending on your fit setting. If your funnel runs in multiple languages you can upload a different image per language; it appears only when media type is Image, and nothing shows until you upload one.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-image/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

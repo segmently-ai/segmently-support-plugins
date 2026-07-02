@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-full-width",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-full-width",
+    "articleId": "screenedit-header-progress-full-width",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-full-width",
+    "name": "Screen field: Stretch Progress Edge-To-Edge",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Stretch Progress Edge-To-Edge\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-full-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-full-width#screenedit-header-progress-full-width/field",
+        "title": "Stretch Progress Edge-To-Edge",
+        "description": "When on, the progress bar stretches all the way across the header; when off, it takes only the width its content needs. Use full width for a bold, obvious progress bar across the top of the screen. Turn it off when you want the bar compact and grouped with a label or icon.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Stretch Progress Edge-To-Edge",
+      "summary": "When on, the progress bar stretches all the way across the header; when off, it takes only the width its content needs. Use full width for a bold, obvious progress bar across the top of the screen. Turn it off when you want the bar compact and grouped with a label or icon.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-full-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

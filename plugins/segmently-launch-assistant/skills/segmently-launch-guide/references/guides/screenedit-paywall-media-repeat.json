@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-repeat",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-repeat",
+    "articleId": "screenedit-paywall-media-repeat",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-repeat",
+    "name": "Screen field: Loop the video",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Loop the video\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-repeat/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-repeat#screenedit-paywall-media-repeat/field",
+        "title": "Loop the video",
+        "description": "When on, the featured video repeats continuously; when off, it plays once and stops on the last frame. Loop short, ambient clips (a few seconds) so the paywall stays lively and eye-catching; turn it off for a video with a clear ending you don't want replayed. This only appears when the media type is Video.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Loop the video",
+      "summary": "When on, the featured video repeats continuously; when off, it plays once and stops on the last frame. Loop short, ambient clips (a few seconds) so the paywall stays lively and eye-catching; turn it off for a video with a clear ending you don't want replayed. This only appears when the media type is Video.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-repeat/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

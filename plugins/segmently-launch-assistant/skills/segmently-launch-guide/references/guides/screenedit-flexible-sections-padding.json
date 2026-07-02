@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-padding",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-padding",
+    "articleId": "screenedit-flexible-sections-padding",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-padding",
+    "name": "Screen field: Breathing room inside the section",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Breathing room inside the section\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-padding#screenedit-flexible-sections-padding/field",
+        "title": "Breathing room inside the section",
+        "description": "Padding is the space inside a section, between its edges and the content sitting in it. Set Top, Bottom, Left, and Right independently, starting from 0. Add some so text and buttons don't crowd the section border or a background image; 16-24 px all around is a comfortable, readable starting point.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Breathing room inside the section",
+      "summary": "Padding is the space inside a section, between its edges and the content sitting in it. Set Top, Bottom, Left, and Right independently, starting from 0. Add some so text and buttons don't crowd the section border or a background image; 16-24 px all around is a comfortable, readable starting point.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155433_shared-spacing-alignment-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

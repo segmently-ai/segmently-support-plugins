@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-flexible-sections",
+  "evidence": {
+    "guideKey": "screen-editor-section-flexible-sections",
+    "articleId": "screen-editor-section-flexible-sections",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screen-editor-section-flexible-sections",
+    "name": "Screen Editor: Flexible Sections",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Flexible Sections section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-flexible-sections/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-flexible-sections/screen-editor-section-flexible-sections#screen-editor-section-flexible-sections/section",
+        "title": "Flexible Sections section",
+        "description": "Builds a FlexibleLayout screen from stacked sections you arrange yourself, giving full control over the vertical order, sizing, and spacing of pieces (media, text, buttons). Use it when the standard screen types do not give you the layout you need.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png"
+      },
+      {
+        "id": "screen-editor-section-flexible-sections/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-flexible-sections/screen-editor-section-flexible-sections#screen-editor-section-flexible-sections/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: FlexibleLayout.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Flexible Sections section",
+      "summary": "Builds a FlexibleLayout screen from stacked sections you arrange yourself, giving full control over the vertical order, sizing, and spacing of pieces (media, text, buttons). Use it when the standard screen types do not give you the layout you need.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screen-editor-section-flexible-sections/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: FlexibleLayout.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screen-editor-section-flexible-sections/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

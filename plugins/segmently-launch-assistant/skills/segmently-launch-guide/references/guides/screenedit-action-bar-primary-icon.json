@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-action-bar-primary-icon",
+  "evidence": {
+    "guideKey": "screenedit-action-bar-primary-icon",
+    "articleId": "screenedit-action-bar-primary-icon",
+    "articleAlias": "help-block-action-bar",
+    "referencePath": "help-block-action-bar/screenedit-action-bar-primary-icon",
+    "name": "Screen field: Icon on the main button",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Icon on the main button\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+    "sourceRecipeKey": "configure-action-bar-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-action-bar-primary-icon/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-action-bar/screenedit-action-bar-primary-icon#screenedit-action-bar-primary-icon/field",
+        "title": "Icon on the main button",
+        "description": "An optional icon next to the label — choose start or end placement, size, corner radius, and spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). A small leading arrow or lock icon can reinforce the action; keep it in the same color family as the label. Leave it empty for a clean text-only button.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-icon.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Icon on the main button",
+      "summary": "An optional icon next to the label — choose start or end placement, size, corner radius, and spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). A small leading arrow or lock icon can reinforce the action; keep it in the same color family as the label. Leave it empty for a clean text-only button.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-icon.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-action-bar",
+          "subarticleId": "screenedit-action-bar-primary-icon/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

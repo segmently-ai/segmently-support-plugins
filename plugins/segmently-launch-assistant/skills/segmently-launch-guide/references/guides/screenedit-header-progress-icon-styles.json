@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-icon-styles",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-icon-styles",
+    "articleId": "screenedit-header-progress-icon-styles",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-icon-styles",
+    "name": "Screen field: Header icon settings",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Header icon settings\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-icon-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-icon-styles#screenedit-header-progress-icon-styles/field",
+        "title": "Header icon settings",
+        "description": "Controls the optional header icon shown next to the progress bar — its image (upload or URL), placement relative to the label, scale mode, width, height, corner rounding, and padding. Off by default. Turn it on only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar or the Back and Skip buttons.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Header icon settings",
+      "summary": "Controls the optional header icon shown next to the progress bar — its image (upload or URL), placement relative to the label, scale mode, width, height, corner rounding, and padding. Off by default. Turn it on only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar or the Back and Skip buttons.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-icon-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

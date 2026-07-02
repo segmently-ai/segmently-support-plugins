@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-variable-binding-create-variable-description",
+  "evidence": {
+    "guideKey": "screenedit-variable-binding-create-variable-description",
+    "articleId": "screenedit-variable-binding-create-variable-description",
+    "articleAlias": "help-block-variable-binding",
+    "referencePath": "help-block-variable-binding/screenedit-variable-binding-create-variable-description",
+    "name": "Screen field: Internal note (optional)",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Internal note (optional)\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-variable-binding-create-variable-description/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-variable-binding/screenedit-variable-binding-create-variable-description#screenedit-variable-binding-create-variable-description/field",
+        "title": "Internal note (optional)",
+        "description": "An optional internal note explaining what this variable is for. It only shows as a tooltip in the editor when you hover the variable later — visitors never see it and it has no effect on the funnel. A one-line note like \"visitor's primary fitness goal\" is worth adding so you and teammates remember the variable's purpose when reusing it across screens.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Internal note (optional)",
+      "summary": "An optional internal note explaining what this variable is for. It only shows as a tooltip in the editor when you hover the variable later — visitors never see it and it has no effect on the funnel. A one-line note like \"visitor's primary fitness goal\" is worth adding so you and teammates remember the variable's purpose when reusing it across screens.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screenedit-variable-binding-create-variable-description/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-variable-binding",
+  "evidence": {
+    "guideKey": "screen-editor-section-variable-binding",
+    "articleId": "screen-editor-section-variable-binding",
+    "articleAlias": "help-block-variable-binding",
+    "referencePath": "help-block-variable-binding/screen-editor-section-variable-binding",
+    "name": "Screen Editor: Variable Binding",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Variable Binding section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
+    "sourceRecipeKey": "configure-variable-binding",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-variable-binding/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-variable-binding/screen-editor-section-variable-binding#screen-editor-section-variable-binding/section",
+        "title": "Variable Binding section",
+        "description": "Variable Binding saves what the visitor chooses or types on this screen as a named value you can reuse later. That saved value is what lets you personalize the funnel: send visitors down different paths based on their answer, segment them in analytics, and pass their details to your paywall and Stripe checkout. Without a binding the answer isn't stored and can't influence anything later, so it appears on every screen that collects an answer.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-variable-binding/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-variable-binding/screen-editor-section-variable-binding#screen-editor-section-variable-binding/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Variable Binding section",
+      "summary": "Variable Binding saves what the visitor chooses or types on this screen as a named value you can reuse later. That saved value is what lets you personalize the funnel: send visitors down different paths based on their answer, segment them in analytics, and pass their details to your paywall and Stripe checkout. Without a binding the answer isn't stored and can't influence anything later, so it appears on every screen that collects an answer.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screen-editor-section-variable-binding/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screen-editor-section-variable-binding/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

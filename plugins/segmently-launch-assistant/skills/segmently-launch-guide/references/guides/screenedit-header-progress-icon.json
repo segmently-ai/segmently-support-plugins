@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-icon",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-icon",
+    "articleId": "screenedit-header-progress-icon",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-icon",
+    "name": "Screen field: Optional Header Icon",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Optional Header Icon\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-icon/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-icon#screenedit-header-progress-icon/field",
+        "title": "Optional Header Icon",
+        "description": "Adds an optional small icon, often a logo or step glyph, next to the progress bar, with controls for the image, its size, and its spacing. Most funnels leave this off. Use it only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Optional Header Icon",
+      "summary": "Adds an optional small icon, often a logo or step glyph, next to the progress bar, with controls for the image, its size, and its spacing. Most funnels leave this off. Use it only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-icon/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

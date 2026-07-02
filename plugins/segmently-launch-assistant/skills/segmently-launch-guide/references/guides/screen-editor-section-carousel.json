@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-carousel",
+  "evidence": {
+    "guideKey": "screen-editor-section-carousel",
+    "articleId": "screen-editor-section-carousel",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screen-editor-section-carousel",
+    "name": "Screen Editor: Carousel",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Carousel section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-carousel/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-carousel/screen-editor-section-carousel#screen-editor-section-carousel/section",
+        "title": "Carousel section",
+        "description": "Configures a Carousel screen — a set of slides (image plus optional text) that auto-advance on a timer to tell a quick visual story. Use it for a punchy intro, and keep slides few and fast so visitors reach the next step.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "screen-editor-section-carousel/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-carousel/screen-editor-section-carousel#screen-editor-section-carousel/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: Carousel.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Carousel section",
+      "summary": "Configures a Carousel screen — a set of slides (image plus optional text) that auto-advance on a timer to tell a quick visual story. Use it for a punchy intro, and keep slides few and fast so visitors reach the next step.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screen-editor-section-carousel/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Carousel.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screen-editor-section-carousel/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

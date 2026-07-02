@@ -19,8 +19,18 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { resolveProjectContext } from './session-context.mjs';
 import { buildToolPreflight } from './tool-preflight.mjs';
+import { hydrateAllGuideEvidence, hydrateGuideEvidenceRow } from './guide-content.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
+// The guide catalogs are compact directories; heavy sections hydrate lazily
+// from references/guides/<guideKey>.json — only for guides actually used.
+let hydratedGuideEvidenceCache = null;
+function hydratedGuideEvidence(guideEvidence) {
+  if (!hydratedGuideEvidenceCache) {
+    hydratedGuideEvidenceCache = hydrateAllGuideEvidence(root, guideEvidence);
+  }
+  return hydratedGuideEvidenceCache;
+}
 let resultPath = null;
 
 function main() {
@@ -65,7 +75,7 @@ function main() {
   const guideContracts = (question.guidance?.guideKeys ?? []).map(guideKey => {
     const guide = guidesByKey.get(guideKey);
     if (!guide) fail(`Question ${question.id} references missing guide ${guideKey}.`);
-    return guideContract(guide, helpArticlesByAlias);
+    return guideContract(hydrateGuideEvidenceRow(root, guide), helpArticlesByAlias);
   });
   const selectedArticles = buildSelectedArticleContracts(question, guideContracts, articleRegistryByAlias);
 
@@ -3168,7 +3178,7 @@ function resolveGuideKeysFromPrompt(prompt, guideEvidence, teachReference, optio
   if (options.allowGenericFallback === false) {
     return null;
   }
-  const scored = (guideEvidence.guides ?? [])
+  const scored = (hydratedGuideEvidence(guideEvidence).guides ?? [])
     .map(guide => ({
       guideKey: guide.guideKey,
       score: phraseScore(text, normalize([

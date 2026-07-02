@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-text-align",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-text-align",
+    "articleId": "screenedit-paywall-header-restore-text-align",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text-align",
+    "name": "Screen field: Align the restore link text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Align the restore link text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-text-align/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text-align#screenedit-paywall-header-restore-text-align/field",
+        "title": "Align the restore link text",
+        "description": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Align the restore link text",
+      "summary": "Sets where the restore link sits in its row — start (left in most languages), center, or end (right) — flipping automatically for right-to-left languages. Usually align it to the side opposite the close button, or center it, so the header reads cleanly. The default works for most layouts.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-text-align/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

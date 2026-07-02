@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-basic-config-system-permission-enabled",
+  "evidence": {
+    "guideKey": "screenedit-basic-config-system-permission-enabled",
+    "articleId": "screenedit-basic-config-system-permission-enabled",
+    "articleAlias": "help-block-basic-config",
+    "referencePath": "help-block-basic-config/screenedit-basic-config-system-permission-enabled",
+    "name": "Screen field: Ask For A Device Permission",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Ask For A Device Permission\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+    "sourceRecipeKey": "configure-basic-config-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-basic-config-system-permission-enabled/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-basic-config/screenedit-basic-config-system-permission-enabled#screenedit-basic-config-system-permission-enabled/field",
+        "title": "Ask For A Device Permission",
+        "description": "When on, this screen pops the phone's own permission request, notifications, location, or ad tracking, chosen in the field below, as it appears. This fires in the native app SDK, not on a plain web page. Put it on a screen that first explains why you need it so far more people tap Allow.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Ask For A Device Permission",
+      "summary": "When on, this screen pops the phone's own permission request, notifications, location, or ad tracking, chosen in the field below, as it appears. This fires in the native app SDK, not on a plain web page. Put it on a screen that first explains why you need it so far more people tap Allow.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screenedit-basic-config-system-permission-enabled/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

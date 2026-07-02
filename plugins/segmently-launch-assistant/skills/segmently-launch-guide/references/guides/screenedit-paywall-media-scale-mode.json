@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-media-scale-mode",
+  "evidence": {
+    "guideKey": "screenedit-paywall-media-scale-mode",
+    "articleId": "screenedit-paywall-media-scale-mode",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screenedit-paywall-media-scale-mode",
+    "name": "Screen field: How the media fills its area",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How the media fills its area\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": "configure-paywall-media-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-media-scale-mode/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-media/screenedit-paywall-media-scale-mode#screenedit-paywall-media-scale-mode/field",
+        "title": "How the media fills its area",
+        "description": "Decides how your image or video sits in its space. 'Fit' shows the whole asset but may leave blank bars around it; 'Fill' crops the edges so the area is covered with no gaps. Fill usually looks best for a clean edge-to-edge hero, just keep anything important away from the edges; choose Fit only when the entire image must stay visible.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How the media fills its area",
+      "summary": "Decides how your image or video sits in its space. 'Fit' shows the whole asset but may leave blank bars around it; 'Fill' crops the edges so the area is covered with no gaps. Fill usually looks best for a clean edge-to-edge hero, just keep anything important away from the edges; choose Fit only when the entire image must stay visible.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screenedit-paywall-media-scale-mode/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

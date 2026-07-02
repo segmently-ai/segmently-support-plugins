@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-basic-config-animation-enabled",
+  "evidence": {
+    "guideKey": "screenedit-basic-config-animation-enabled",
+    "articleId": "screenedit-basic-config-animation-enabled",
+    "articleAlias": "help-block-basic-config",
+    "referencePath": "help-block-basic-config/screenedit-basic-config-animation-enabled",
+    "name": "Screen field: Play Screen Animations",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Play Screen Animations\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+    "sourceRecipeKey": "configure-basic-config-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-basic-config-animation-enabled/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-basic-config/screenedit-basic-config-animation-enabled#screenedit-basic-config-animation-enabled/field",
+        "title": "Play Screen Animations",
+        "description": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Play Screen Animations",
+      "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screenedit-basic-config-animation-enabled/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

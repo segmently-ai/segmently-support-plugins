@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-embed-data-sources",
+  "evidence": {
+    "guideKey": "screenedit-embed-data-sources",
+    "articleId": "screenedit-embed-data-sources",
+    "articleAlias": "help-block-custom-html",
+    "referencePath": "help-block-custom-html/screenedit-embed-data-sources",
+    "name": "Screen field: Editable content for your HTML",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Editable content for your HTML\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-custom-html/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-embed-data-sources/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-custom-html/screenedit-embed-data-sources#screenedit-embed-data-sources/field",
+        "title": "Editable content for your HTML",
+        "description": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150132_webembed-data-source-menu/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Editable content for your HTML",
+      "summary": "Adds reusable pieces of content (text, images, and more) that your custom HTML can read by name, so copy and visuals live in the editor instead of being hard-coded. In code you fetch one by its name, which lets you or a non-developer update content later without touching the HTML. The Image URL Scanner can auto-create media sources from external image links it finds, so those images get hosted and tracked by Segmently.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150132_webembed-data-source-menu/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-custom-html",
+          "subarticleId": "screenedit-embed-data-sources/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

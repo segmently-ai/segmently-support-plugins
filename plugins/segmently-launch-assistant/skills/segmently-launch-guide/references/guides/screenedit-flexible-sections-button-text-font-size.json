@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-text-font-size",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-text-font-size",
+    "articleId": "screenedit-flexible-sections-button-text-font-size",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-font-size",
+    "name": "Screen field: Size of the button label",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Size of the button label\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-text-font-size/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-font-size#screenedit-flexible-sections-button-text-font-size/field",
+        "title": "Size of the button label",
+        "description": "Sets how large the text on the button appears. Most buttons read well at 16-18; go larger to make a primary action more prominent, but watch that the label doesn't wrap or overflow on small phone screens. Keep it consistent across your buttons so the screen looks intentional.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Size of the button label",
+      "summary": "Sets how large the text on the button appears. Most buttons read well at 16-18; go larger to make a primary action more prominent, but watch that the label doesn't wrap or overflow on small phone screens. Keep it consistent across your buttons so the screen looks intentional.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-text-font-size/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

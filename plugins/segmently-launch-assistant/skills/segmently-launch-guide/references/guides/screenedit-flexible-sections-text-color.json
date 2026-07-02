@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-text-color",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-text-color",
+    "articleId": "screenedit-flexible-sections-text-color",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-color",
+    "name": "Screen field: Text color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Text color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-text-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-text-color#screenedit-flexible-sections-text-color/field",
+        "title": "Text color",
+        "description": "Sets the color of this text. The default is black. Always check it against the section background: dark text on light backgrounds, and light or white text over dark or image backgrounds. Low-contrast text is hard to read and a common reason visitors bounce, so keep your message legible.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Text color",
+      "summary": "Sets the color of this text. The default is black. Always check it against the section background: dark text on light backgrounds, and light or white text over dark or image backgrounds. Low-contrast text is hard to read and a common reason visitors bounce, so keep your message legible.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154724_flexible-text-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

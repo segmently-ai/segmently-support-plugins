@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "paywall-product-stripe-mapping",
+  "evidence": {
+    "guideKey": "paywall-product-stripe-mapping",
+    "articleId": "QScPElxnJt6NHMN7c7cG",
+    "articleAlias": "paywall-product-stripe-mapping",
+    "referencePath": "paywall-product-stripe-mapping/paywall-product-stripe-mapping",
+    "name": "Paywall Product: Stripe mapping",
+    "journeyStep": "Create paywall products",
+    "userNeed": "Map the product to the right Stripe product/price (same account mode) so checkout charges the intended amount.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-stripe-mapping/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "paywall-product-stripe-mapping/stripe-product-select",
+        "sectionKey": "stripe-product-select",
+        "referencePath": "paywall-product-stripe-mapping/paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-product-select",
+        "title": "Select or create the Stripe product",
+        "description": "Link this paywall product to a real product in your Stripe account, or click to create one inline without leaving this dialog. It has to live in the same Stripe mode (Test or Live) you selected above — if it's in the other mode it won't show up in the list.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "paywall-product-stripe-mapping/stripe-price-select",
+        "sectionKey": "stripe-price-select",
+        "referencePath": "paywall-product-stripe-mapping/paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-price-select",
+        "title": "Select or create the Stripe price",
+        "description": "Pick the exact price customers will be charged — this is what actually drives checkout, so if you leave the price empty the paywall will fail when a visitor tries to pay. The list filters to recurring prices for subscriptions and one-time prices for single purchases; if none fits, create a new price inline.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "stripe-product-select",
+      "title": "Select or create the Stripe product",
+      "summary": "Link this paywall product to a real product in your Stripe account, or click to create one inline without leaving this dialog. It has to live in the same Stripe mode (Test or Live) you selected above — if it's in the other mode it won't show up in the list.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "stripe-price-select",
+      "title": "Select or create the Stripe price",
+      "summary": "Pick the exact price customers will be charged — this is what actually drives checkout, so if you leave the price empty the paywall will fail when a visitor tries to pay. The list filters to recurring prices for subscriptions and one-time prices for single purchases; if none fits, create a new price inline.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

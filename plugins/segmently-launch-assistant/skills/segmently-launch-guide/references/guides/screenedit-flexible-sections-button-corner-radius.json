@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-corner-radius",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-corner-radius",
+    "articleId": "screenedit-flexible-sections-button-corner-radius",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-corner-radius",
+    "name": "Screen field: Round button corners",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Round button corners\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-corner-radius/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-corner-radius#screenedit-flexible-sections-button-corner-radius/field",
+        "title": "Round button corners",
+        "description": "Uniform corner radius (0-50 pixels) for all button corners. Default 12 creates slightly rounded button. Higher values create pill-shaped buttons.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Round button corners",
+      "summary": "Uniform corner radius (0-50 pixels) for all button corners. Default 12 creates slightly rounded button. Higher values create pill-shaped buttons.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-corner-radius/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

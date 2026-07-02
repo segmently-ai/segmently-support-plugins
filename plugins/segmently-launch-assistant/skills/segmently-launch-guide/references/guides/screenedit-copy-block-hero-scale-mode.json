@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero-scale-mode",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero-scale-mode",
+    "articleId": "screenedit-copy-block-hero-scale-mode",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero-scale-mode",
+    "name": "Screen field: How the image fills its box",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How the image fills its box\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero-scale-mode/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero-scale-mode#screenedit-copy-block-hero-scale-mode/field",
+        "title": "How the image fills its box",
+        "description": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How the image fills its box",
+      "summary": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero-scale-mode/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

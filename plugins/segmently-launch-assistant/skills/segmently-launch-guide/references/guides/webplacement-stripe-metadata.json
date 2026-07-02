@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "webplacement-stripe-metadata",
+  "evidence": {
+    "guideKey": "webplacement-stripe-metadata",
+    "articleId": "eO7MOLYeMLxSLuygeL3u",
+    "articleAlias": "webplacement-stripe-metadata",
+    "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata",
+    "name": "Web Placement Stripe metadata",
+    "journeyStep": "Route ad traffic",
+    "userNeed": "Carry stable funnel values (email/UTM) into Stripe checkout/webhooks via metadata mapping.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-stripe-metadata/index.html",
+    "sourceRecipeKey": "configure-web-placement-stripe-metadata",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "webplacement-stripe-metadata/add-param",
+        "sectionKey": "add-param",
+        "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata#webplacement-stripe-metadata/add-param",
+        "title": "Why attach metadata, and how to add one",
+        "description": "Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
+      },
+      {
+        "id": "webplacement-stripe-metadata/select-source",
+        "sectionKey": "select-source",
+        "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata#webplacement-stripe-metadata/select-source",
+        "title": "Choose which parameter to send",
+        "description": "Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "webplacement-stripe-metadata/preview",
+        "sectionKey": "preview",
+        "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata#webplacement-stripe-metadata/preview",
+        "title": "Review the metadata preview",
+        "description": "The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "webplacement-stripe-metadata/remove",
+        "sectionKey": "remove",
+        "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata#webplacement-stripe-metadata/remove",
+        "title": "Remove a parameter",
+        "description": "Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "webplacement-stripe-metadata/counter",
+        "sectionKey": "counter",
+        "referencePath": "webplacement-stripe-metadata/webplacement-stripe-metadata#webplacement-stripe-metadata/counter",
+        "title": "Watch the keys limit",
+        "description": "A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "add-param",
+      "title": "Why attach metadata, and how to add one",
+      "summary": "Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png",
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "select-source",
+      "title": "Choose which parameter to send",
+      "summary": "Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "preview",
+      "title": "Review the metadata preview",
+      "summary": "The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "remove",
+      "title": "Remove a parameter",
+      "summary": "Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "counter",
+      "title": "Watch the keys limit",
+      "summary": "A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

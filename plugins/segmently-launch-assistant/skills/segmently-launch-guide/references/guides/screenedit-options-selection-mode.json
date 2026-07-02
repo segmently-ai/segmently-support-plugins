@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-selection-mode",
+  "evidence": {
+    "guideKey": "screenedit-options-selection-mode",
+    "articleId": "screenedit-options-selection-mode",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-selection-mode",
+    "name": "Screen field: How visitors choose",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How visitors choose\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": "configure-options-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-selection-mode/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-selection-mode#screenedit-options-selection-mode/field",
+        "title": "How visitors choose",
+        "description": "Sets how people interact: browse only (no selection, like an intro list), pick one, or pick several. This also decides what's saved to the bound variable — pick-one stores a single value you can branch on, pick-several stores a set. Default to pick-one for most onboarding questions.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How visitors choose",
+      "summary": "Sets how people interact: browse only (no selection, like an intro list), pick one, or pick several. This also decides what's saved to the bound variable — pick-one stores a single value you can branch on, pick-several stores a set. Default to pick-one for most onboarding questions.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-selection-mode/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

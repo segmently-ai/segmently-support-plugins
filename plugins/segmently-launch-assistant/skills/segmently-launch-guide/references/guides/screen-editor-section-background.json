@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-background",
+  "evidence": {
+    "guideKey": "screen-editor-section-background",
+    "articleId": "screen-editor-section-background",
+    "articleAlias": "help-block-background",
+    "referencePath": "help-block-background/screen-editor-section-background",
+    "name": "Screen Editor: Background",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Background section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+    "sourceRecipeKey": "configure-backdrop-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-background/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-background/screen-editor-section-background#screen-editor-section-background/section",
+        "title": "Background section",
+        "description": "Sets the full-screen backdrop behind everything on this screen — a solid color, a photo, or a looping video. It is the first thing a visitor sees, so match it to the theme and keep enough contrast for the header and buttons to stay readable.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      },
+      {
+        "id": "screen-editor-section-background/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-background/screen-editor-section-background#screen-editor-section-background/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Background section",
+      "summary": "Sets the full-screen backdrop behind everything on this screen — a solid color, a photo, or a looping video. It is the first thing a visitor sees, so match it to the theme and keep enough contrast for the header and buttons to stay readable.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-background",
+          "subarticleId": "screen-editor-section-background/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-background",
+          "subarticleId": "screen-editor-section-background/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

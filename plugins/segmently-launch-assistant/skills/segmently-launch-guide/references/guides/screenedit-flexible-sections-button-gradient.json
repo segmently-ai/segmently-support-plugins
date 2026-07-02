@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-gradient",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-gradient",
+    "articleId": "screenedit-flexible-sections-button-gradient",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-gradient",
+    "name": "Screen field: Gradient color fill",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gradient color fill\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-gradient/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-gradient#screenedit-flexible-sections-button-gradient/field",
+        "title": "Gradient color fill",
+        "description": "Optional. Layers a color gradient over the button's solid background for a richer, more premium look. Pick Simple (two colors), Medium (two colors plus a tilt angle), or Advanced (several color stops, with optional shimmer). Leave it off if a flat color is enough; turn it on to make a primary button catch the eye.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gradient color fill",
+      "summary": "Optional. Layers a color gradient over the button's solid background for a richer, more premium look. Pick Simple (two colors), Medium (two colors plus a tilt angle), or Advanced (several color stops, with optional shimmer). Leave it off if a flat color is enough; turn it on to make a primary button catch the eye.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-gradient/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

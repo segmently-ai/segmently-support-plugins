@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-border-width",
+  "evidence": {
+    "guideKey": "screenedit-text-field-border-width",
+    "articleId": "screenedit-text-field-border-width",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-border-width",
+    "name": "Screen field: Thickness of the outline",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Thickness of the outline\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-border-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-border-width#screenedit-text-field-border-width/field",
+        "title": "Thickness of the outline",
+        "description": "Controls how thick the field's outline is, from 0 to 50 pixels (default 1). Keep it at 1-2 pixels for a clean, modern look and only go thicker for a deliberately bold style. A visible but restrained outline helps people spot the field at a glance and answer faster.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-border-width.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Thickness of the outline",
+      "summary": "Controls how thick the field's outline is, from 0 to 50 pixels (default 1). Keep it at 1-2 pixels for a clean, modern look and only go thicker for a deliberately bold style. A visible but restrained outline helps people spot the field at a glance and answer faster.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-border-width.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-border-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

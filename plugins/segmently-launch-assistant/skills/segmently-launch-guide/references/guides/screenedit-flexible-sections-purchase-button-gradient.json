@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-gradient",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-gradient",
+    "articleId": "screenedit-flexible-sections-purchase-button-gradient",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-gradient",
+    "name": "Screen field: Purchase button gradient",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button gradient\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-gradient/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-gradient#screenedit-flexible-sections-purchase-button-gradient/field",
+        "title": "Purchase button gradient",
+        "description": "Optionally lays a color gradient over the button's solid background for a richer call-to-action. Pick Simple (two colors), Medium (two colors plus an angle), or Advanced (multiple color stops, with an optional shimmer). Use it to make your main CTA pop; leave it off if a flat color already stands out.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button gradient",
+      "summary": "Optionally lays a color gradient over the button's solid background for a richer call-to-action. Pick Simple (two colors), Medium (two colors plus an angle), or Advanced (multiple color stops, with an optional shimmer). Use it to make your main CTA pop; leave it off if a flat color already stands out.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-gradient/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-respect-buttons",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-respect-buttons",
+    "articleId": "screenedit-header-progress-respect-buttons",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-respect-buttons",
+    "name": "Screen field: Keep Progress Clear Of Buttons",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Keep Progress Clear Of Buttons\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-respect-buttons/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-respect-buttons#screenedit-header-progress-respect-buttons/field",
+        "title": "Keep Progress Clear Of Buttons",
+        "description": "When on, which is the default, the progress bar shrinks so it never overlaps the Back or Skip buttons; when off, it can collide with them in a tight header. Leave it on. Turn it off only if you've removed those buttons and want the bar to use the full width.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Keep Progress Clear Of Buttons",
+      "summary": "When on, which is the default, the progress bar shrinks so it never overlaps the Back or Skip buttons; when off, it can collide with them in a tight header. Leave it on. Turn it off only if you've removed those buttons and want the bar to use the full width.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-respect-buttons/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

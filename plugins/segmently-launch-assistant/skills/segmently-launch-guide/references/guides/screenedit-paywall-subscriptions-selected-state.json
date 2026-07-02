@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-selected-state",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-selected-state",
+    "articleId": "screenedit-paywall-subscriptions-selected-state",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-selected-state",
+    "name": "Screen field: Selected plan style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Selected plan style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-selected-state/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-selected-state#screenedit-paywall-subscriptions-selected-state/field",
+        "title": "Selected plan style",
+        "description": "How a plan card looks once it's the chosen one: background color, border, and spacing. Make it clearly stand out from the unselected cards, for example a brand-colored border or filled background, so the user is never unsure which plan they're about to buy. Crisp selected styling removes hesitation right before checkout.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Selected plan style",
+      "summary": "How a plan card looks once it's the chosen one: background color, border, and spacing. Make it clearly stand out from the unselected cards, for example a brand-colored border or filled background, so the user is never unsure which plan they're about to buy. Crisp selected styling removes hesitation right before checkout.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-selected-state/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-media-gradient-color",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-media-gradient-color",
+    "articleId": "screenedit-flexible-sections-media-gradient-color",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-gradient-color",
+    "name": "Screen field: Dark fade for readable text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Dark fade for readable text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-media-gradient-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-gradient-color#screenedit-flexible-sections-media-gradient-color/field",
+        "title": "Dark fade for readable text",
+        "description": "Adds a dark fade over the bottom of the image or video so text placed on top stays readable. It's strongest at the bottom and clears toward the top. The default is black, which is the usual choice (or a dark brand color). Use it whenever you let content overlap the media so your headline and button don't get lost in a busy image.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Dark fade for readable text",
+      "summary": "Adds a dark fade over the bottom of the image or video so text placed on top stays readable. It's strongest at the bottom and clears toward the top. The default is black, which is the usual choice (or a dark brand color). Use it whenever you let content overlap the media so your headline and button don't get lost in a busy image.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-media-gradient-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

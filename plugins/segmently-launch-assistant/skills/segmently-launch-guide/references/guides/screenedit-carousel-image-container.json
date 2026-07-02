@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-image-container",
+  "evidence": {
+    "guideKey": "screenedit-carousel-image-container",
+    "articleId": "screenedit-carousel-image-container",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-image-container",
+    "name": "Screen field: Image box height and position",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Image box height and position\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-image-container/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-image-container#screenedit-carousel-image-container/field",
+        "title": "Image box height and position",
+        "description": "Controls the box that holds each slide's image, separate from the image's own styling. Set how tall the box is (Auto fits the image, Fixed is an exact pixel height, Percent is a share of the slide), where the image sits inside it, and the padding around it. Leave it on Auto unless you want every slide's image to occupy the same vertical space so slides don't jump in size as visitors swipe.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Image box height and position",
+      "summary": "Controls the box that holds each slide's image, separate from the image's own styling. Set how tall the box is (Auto fits the image, Fixed is an exact pixel height, Percent is a share of the slide), where the image sits inside it, and the padding around it. Leave it on Auto unless you want every slide's image to occupy the same vertical space so slides don't jump in size as visitors swipe.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-image-container/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

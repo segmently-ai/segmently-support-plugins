@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-roller",
+  "evidence": {
+    "guideKey": "screen-editor-section-roller",
+    "articleId": "screen-editor-section-roller",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screen-editor-section-roller",
+    "name": "Screen Editor: Roller",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Roller section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-roller/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-roller/screen-editor-section-roller#screen-editor-section-roller/section",
+        "title": "Roller section",
+        "description": "The Roller section configures a spinning wheel picker that captures a visitor's choice — a date, age, size, or similar value — and saves it in a variable you can reuse for personalization or routing. Reach for it when an input has many ordered options that would be too many to show as buttons. It only appears on wheel-picker screens; add one from the canvas, then set the data type, wheels, and label styling here.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-roller/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-roller/screen-editor-section-roller#screen-editor-section-roller/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: WheelPicker.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Roller section",
+      "summary": "The Roller section configures a spinning wheel picker that captures a visitor's choice — a date, age, size, or similar value — and saves it in a variable you can reuse for personalization or routing. Reach for it when an input has many ordered options that would be too many to show as buttons. It only appears on wheel-picker screens; add one from the canvas, then set the data type, wheels, and label styling here.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screen-editor-section-roller/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: WheelPicker.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screen-editor-section-roller/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

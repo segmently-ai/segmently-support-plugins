@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "paywall-product-price-setup",
+  "evidence": {
+    "guideKey": "paywall-product-price-setup",
+    "articleId": "n1LiSyhSVoxwvpZxjXAk",
+    "articleAlias": "paywall-product-price-setup",
+    "referencePath": "paywall-product-price-setup/paywall-product-price-setup",
+    "name": "Paywall Product: price setup",
+    "journeyStep": "Create paywall products",
+    "userNeed": "Set amount, currency, and recurrence to the exact values customers should see at checkout.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-price-setup/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "paywall-product-price-setup/price-amount-currency",
+        "sectionKey": "price-amount-currency",
+        "referencePath": "paywall-product-price-setup/paywall-product-price-setup#paywall-product-price-setup/price-amount-currency",
+        "title": "Set the amount and primary currency",
+        "description": "Enter the base price and currency (USD, EUR, GBP, RUB) customers are charged at checkout. Type it in whole currency units — enter 9.99 for nine dollars ninety-nine, not 999. This value is sent to Stripe and shown to customers, so double-check it before you publish.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "paywall-product-price-setup/price-type-interval",
+        "sectionKey": "price-type-interval",
+        "referencePath": "paywall-product-price-setup/paywall-product-price-setup#paywall-product-price-setup/price-type-interval",
+        "title": "Set the price type and recurrence",
+        "description": "Choose one-time (charged once) or recurring (billed on a schedule). For recurring, set the interval (day, week, month, year) and the count: count 1 bills every period, count 3 bills every third period — so interval 'month' + count 3 equals quarterly billing.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "paywall-product-price-setup/additional-currencies",
+        "sectionKey": "additional-currencies",
+        "referencePath": "paywall-product-price-setup/paywall-product-price-setup#paywall-product-price-setup/additional-currencies",
+        "title": "Add optional multi-currency pricing",
+        "description": "Optionally add up to five extra currencies with their own amounts so international visitors see prices in their local money, which lifts conversion. At checkout Segmently shows the local price when one is defined for the visitor's currency; otherwise it falls back to your primary currency above.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "price-amount-currency",
+      "title": "Set the amount and primary currency",
+      "summary": "Enter the base price and currency (USD, EUR, GBP, RUB) customers are charged at checkout. Type it in whole currency units — enter 9.99 for nine dollars ninety-nine, not 999. This value is sent to Stripe and shown to customers, so double-check it before you publish.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "price-type-interval",
+      "title": "Set the price type and recurrence",
+      "summary": "Choose one-time (charged once) or recurring (billed on a schedule). For recurring, set the interval (day, week, month, year) and the count: count 1 bills every period, count 3 bills every third period — so interval 'month' + count 3 equals quarterly billing.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "additional-currencies",
+      "title": "Add optional multi-currency pricing",
+      "summary": "Optionally add up to five extra currencies with their own amounts so international visitors see prices in their local money, which lifts conversion. At checkout Segmently shows the local price when one is defined for the visitor's currency; otherwise it falls back to your primary currency above.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

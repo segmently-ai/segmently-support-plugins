@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-screen-scrollable",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-screen-scrollable",
+    "articleId": "screenedit-flexible-sections-screen-scrollable",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-screen-scrollable",
+    "name": "Screen field: Let the whole screen scroll",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Let the whole screen scroll\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-screen-scrollable/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-screen-scrollable#screenedit-flexible-sections-screen-scrollable/field",
+        "title": "Let the whole screen scroll",
+        "description": "When Scrollable screen is on, sections stack vertically and the visitor can scroll through them. Use this for long paywalls, product catalogs, benefit lists, or any screen with more content than fits on a phone. When it is off, the screen uses flexGrow and flexShrink to distribute sections inside one viewport, which is better for fixed hero layouts where the CTA should stay visible without scrolling.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Let the whole screen scroll",
+      "summary": "When Scrollable screen is on, sections stack vertically and the visitor can scroll through them. Use this for long paywalls, product catalogs, benefit lists, or any screen with more content than fits on a phone. When it is off, the screen uses flexGrow and flexShrink to distribute sections inside one viewport, which is better for fixed hero layouts where the CTA should stay visible without scrolling.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-screen-scrollable/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

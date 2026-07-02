@@ -7,13 +7,13 @@
   },
   "metadata": {
     "description": "Segmently Support",
-    "version": "0.1.0+codex.563c44c46045"
+    "version": "0.1.0+codex.890072e58e39"
   },
   "plugins": [
     {
       "name": "segmently-launch-assistant",
       "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
-      "version": "0.1.0+codex.563c44c46045",
+      "version": "0.1.0+codex.890072e58e39",
       "author": {
         "name": "Segmently"
       },

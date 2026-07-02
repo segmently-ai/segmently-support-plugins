@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-hero-width",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-hero-width",
+    "articleId": "screenedit-copy-block-hero-width",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-hero-width",
+    "name": "Screen field: Fixed image width",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Fixed image width\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-hero-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-hero-width#screenedit-copy-block-hero-width/field",
+        "title": "Fixed image width",
+        "description": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Fixed image width",
+      "summary": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-hero-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

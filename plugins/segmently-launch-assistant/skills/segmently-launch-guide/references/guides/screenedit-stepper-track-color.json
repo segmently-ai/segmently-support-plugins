@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-track-color",
+  "evidence": {
+    "guideKey": "screenedit-stepper-track-color",
+    "articleId": "screenedit-stepper-track-color",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-track-color",
+    "name": "Screen field: Color of the empty track",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of the empty track\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": "configure-stepper-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-track-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-track-color#screenedit-stepper-track-color/field",
+        "title": "Color of the empty track",
+        "description": "Color of the unfilled part of the progress bar — the portion not yet completed. Defaults to light gray (#E0E0E0), which works for most screens. Keep it clearly lighter than the fill color so the user can read their progress at a glance, or match your page background for a subtler look.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-track-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of the empty track",
+      "summary": "Color of the unfilled part of the progress bar — the portion not yet completed. Defaults to light gray (#E0E0E0), which works for most screens. Keep it clearly lighter than the fill color so the user can read their progress at a glance, or match your page background for a subtler look.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-track-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-track-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-paywall-media",
+  "evidence": {
+    "guideKey": "screen-editor-section-paywall-media",
+    "articleId": "screen-editor-section-paywall-media",
+    "articleAlias": "help-block-paywall-media",
+    "referencePath": "help-block-paywall-media/screen-editor-section-paywall-media",
+    "name": "Screen Editor: Paywall Media",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Paywall Media section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+    "sourceRecipeKey": "configure-paywall-media-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-paywall-media/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-paywall-media/screen-editor-section-paywall-media#screen-editor-section-paywall-media/section",
+        "title": "Paywall Media section",
+        "description": "The Paywall Media section is the featured image or video at the top of the paywall that visually sells the offer — a product shot, before/after, or short demo. Choose Image or Video and upload your asset, then check the preview so it reinforces the promise without pushing the plan cards and purchase button out of view on a phone. A relevant, high-quality visual builds trust, while an irrelevant one just wastes screen space.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png"
+      },
+      {
+        "id": "screen-editor-section-paywall-media/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-paywall-media/screen-editor-section-paywall-media#screen-editor-section-paywall-media/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: Paywall.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Paywall Media section",
+      "summary": "The Paywall Media section is the featured image or video at the top of the paywall that visually sells the offer — a product shot, before/after, or short demo. Choose Image or Video and upload your asset, then check the preview so it reinforces the promise without pushing the plan cards and purchase button out of view on a phone. A relevant, high-quality visual builds trust, while an irrelevant one just wastes screen space.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151150_native-media-scale-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screen-editor-section-paywall-media/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Paywall.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-media",
+          "subarticleId": "screen-editor-section-paywall-media/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -45,7 +45,11 @@ The packaged article corpus is the first source for customer answers:
 - `references/guide-registry.json`, `references/teach-reference.json`,
   `references/guide-evidence.json`, `references/help-article-reference.json` —
   guide identity, screen/block teach corpus, screenshot evidence, and published
-  Screen Editor article URLs.
+  Screen Editor article URLs. The two guide catalogs are compact directories:
+  heavy per-guide `sections` load only for selected guides via `contentRef`
+  from `references/guides/<guideKey>.json` (same pattern as article content).
+  Guides are evidence/answer material — they are never a navigation source and
+  never a routing peer of articles.
 
 Search order: articles first (directory, search index, synonyms, subarticles,
 settings, typed relations), guides second. Do not search guides as a peer corpus

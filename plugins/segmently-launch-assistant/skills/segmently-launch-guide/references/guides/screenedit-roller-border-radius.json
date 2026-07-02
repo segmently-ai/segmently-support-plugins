@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-border-radius",
+  "evidence": {
+    "guideKey": "screenedit-roller-border-radius",
+    "articleId": "screenedit-roller-border-radius",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-border-radius",
+    "name": "Screen field: Roundness of the corners",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Roundness of the corners\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-border-radius/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-border-radius#screenedit-roller-border-radius/field",
+        "title": "Roundness of the corners",
+        "description": "How rounded the four corners of the picker container are, in pixels (0-50, default 12). 0 gives sharp square corners; higher values look softer and more modern. Match it to the corner roundness of your buttons and other cards so the whole funnel feels consistent.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-radius.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Roundness of the corners",
+      "summary": "How rounded the four corners of the picker container are, in pixels (0-50, default 12). 0 gives sharp square corners; higher values look softer and more modern. Match it to the corner roundness of your buttons and other cards so the whole funnel feels consistent.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-radius.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-border-radius/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

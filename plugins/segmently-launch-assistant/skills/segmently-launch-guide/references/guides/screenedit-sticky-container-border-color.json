@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-sticky-container-border-color",
+  "evidence": {
+    "guideKey": "screenedit-sticky-container-border-color",
+    "articleId": "screenedit-sticky-container-border-color",
+    "articleAlias": "help-block-sticky-container",
+    "referencePath": "help-block-sticky-container/screenedit-sticky-container-border-color",
+    "name": "Screen field: Outline color",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Outline color\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-sticky-container-border-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-sticky-container/screenedit-sticky-container-border-color#screenedit-sticky-container-border-color/field",
+        "title": "Outline color",
+        "description": "Sets the color of the bar's outline (defaults to black; appears only when the outline thickness is above 0 and the bar is shown). Pick a color that frames the bar without competing with the button — a subtle, theme-matched tone usually works best, keeping attention on the CTA itself.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Outline color",
+      "summary": "Sets the color of the bar's outline (defaults to black; appears only when the outline thickness is above 0 and the bar is shown). Pick a color that frames the bar without competing with the button — a subtle, theme-matched tone usually works best, keeping attention on the CTA itself.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-sticky-container",
+          "subarticleId": "screenedit-sticky-container-border-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

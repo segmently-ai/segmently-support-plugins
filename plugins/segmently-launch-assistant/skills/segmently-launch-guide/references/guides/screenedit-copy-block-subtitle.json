@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-copy-block-subtitle",
+  "evidence": {
+    "guideKey": "screenedit-copy-block-subtitle",
+    "articleId": "screenedit-copy-block-subtitle",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screenedit-copy-block-subtitle",
+    "name": "Screen field: The line under your title",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"The line under your title\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": "configure-copy-block-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-copy-block-subtitle/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-content/screenedit-copy-block-subtitle#screenedit-copy-block-subtitle/field",
+        "title": "The line under your title",
+        "description": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "The line under your title",
+      "summary": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screenedit-copy-block-subtitle/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-purchase-button-text-font-size",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-purchase-button-text-font-size",
+    "articleId": "screenedit-flexible-sections-purchase-button-text-font-size",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-font-size",
+    "name": "Screen field: Purchase button text size",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Purchase button text size\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-purchase-button",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-purchase-button-text-font-size/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-purchase-button-text-font-size#screenedit-flexible-sections-purchase-button-text-font-size/field",
+        "title": "Purchase button text size",
+        "description": "Sets how big the label on your purchase button looks, measured in points. Since this is your main paywall call-to-action, keep it large and unmistakable — around 17 to 20 pt works well on most screens. Avoid going so big that the text wraps or spills outside the button on smaller phones.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Purchase button text size",
+      "summary": "Sets how big the label on your purchase button looks, measured in points. Since this is your main paywall call-to-action, keep it large and unmistakable — around 17 to 20 pt works well on most screens. Avoid going so big that the text wraps or spills outside the button on smaller phones.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-purchase-button-text-font-size/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

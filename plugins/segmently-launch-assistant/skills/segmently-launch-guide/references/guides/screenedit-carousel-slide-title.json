@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-slide-title",
+  "evidence": {
+    "guideKey": "screenedit-carousel-slide-title",
+    "articleId": "screenedit-carousel-slide-title",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-slide-title",
+    "name": "Screen field: Slide headline",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Slide headline\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-slide-title/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-slide-title#screenedit-carousel-slide-title/field",
+        "title": "Slide headline",
+        "description": "The main headline on this slide, shown only when the slide template includes a title. Keep it short and benefit-led so it lands in the few seconds the slide is on screen. You can drop in the visitor's earlier answers with @variable, plus countdown timers and styled label chips; if your funnel runs in several languages, you edit this text per language.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Slide headline",
+      "summary": "The main headline on this slide, shown only when the slide template includes a title. Keep it short and benefit-led so it lands in the few seconds the slide is on screen. You can drop in the visitor's earlier answers with @variable, plus countdown timers and styled label chips; if your funnel runs in several languages, you edit this text per language.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-slide-title/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

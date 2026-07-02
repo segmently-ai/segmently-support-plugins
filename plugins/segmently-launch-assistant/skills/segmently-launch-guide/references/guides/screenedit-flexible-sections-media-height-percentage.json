@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-media-height-percentage",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-media-height-percentage",
+    "articleId": "screenedit-flexible-sections-media-height-percentage",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-height-percentage",
+    "name": "Screen field: How much height the image takes",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How much height the image takes\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-media-height-percentage/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-media-height-percentage#screenedit-flexible-sections-media-height-percentage/field",
+        "title": "How much height the image takes",
+        "description": "Sets how much of the section's height the image or video fills, as a percentage. The default 50 splits the space evenly and leaves the lower half for your headline and button. Raise it (around 70) for a bold, image-led screen, or lower it when you need more room for copy and a clear call to action.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How much height the image takes",
+      "summary": "Sets how much of the section's height the image or video fills, as a percentage. The default 50 splits the space evenly and leaves the lower half for your headline and button. Raise it (around 70) for a bold, image-led screen, or lower it when you need more room for copy and a clear call to action.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154715_flexible-media-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-media-height-percentage/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

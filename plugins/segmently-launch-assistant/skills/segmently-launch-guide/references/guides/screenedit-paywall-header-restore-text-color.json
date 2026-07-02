@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-header-restore-text-color",
+  "evidence": {
+    "guideKey": "screenedit-paywall-header-restore-text-color",
+    "articleId": "screenedit-paywall-header-restore-text-color",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text-color",
+    "name": "Screen field: Color the restore link text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color the restore link text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-header-restore-text-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-header/screenedit-paywall-header-restore-text-color#screenedit-paywall-header-restore-text-color/field",
+        "title": "Color the restore link text",
+        "description": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color the restore link text",
+      "summary": "Sets the restore link's text color (default a muted gray). Check it against your header background first — that gray default disappears on a dark hero, so use a lighter tint there. Keep it readable but understated so restore reads as a secondary link, with enough contrast to stay accessible.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screenedit-paywall-header-restore-text-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-container-background-color",
+  "evidence": {
+    "guideKey": "screenedit-roller-container-background-color",
+    "articleId": "screenedit-roller-container-background-color",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-container-background-color",
+    "name": "Screen field: Background behind the wheels",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Background behind the wheels\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": "configure-roller-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-container-background-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-container-background-color#screenedit-roller-container-background-color/field",
+        "title": "Background behind the wheels",
+        "description": "Fill color behind the spinning wheels (default white, #ffffff). Choose a color that contrasts enough with the screen background so the picker reads as its own distinct card and the wheel values stay legible. A subtle off-white or light tint often separates the picker from the page better than pure white.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-bg-color.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Background behind the wheels",
+      "summary": "Fill color behind the spinning wheels (default white, #ffffff). Choose a color that contrasts enough with the screen background so the picker reads as its own distinct card and the wheel values stay legible. A subtle off-white or light tint often separates the picker from the page better than pure white.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-bg-color.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-container-background-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

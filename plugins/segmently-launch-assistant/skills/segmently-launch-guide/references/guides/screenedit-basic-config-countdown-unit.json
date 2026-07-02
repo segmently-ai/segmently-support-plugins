@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-basic-config-countdown-unit",
+  "evidence": {
+    "guideKey": "screenedit-basic-config-countdown-unit",
+    "articleId": "screenedit-basic-config-countdown-unit",
+    "articleAlias": "help-block-basic-config",
+    "referencePath": "help-block-basic-config/screenedit-basic-config-countdown-unit",
+    "name": "Screen field: Seconds Or Minutes",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Seconds Or Minutes\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-basic-config-countdown-unit/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-basic-config/screenedit-basic-config-countdown-unit#screenedit-basic-config-countdown-unit/field",
+        "title": "Seconds Or Minutes",
+        "description": "Sets whether the auto-advance duration above counts in seconds or minutes. Only shows when auto-advance is on. Seconds is the right choice for nearly every onboarding screen; minutes is rarely useful and risks visitors leaving before the screen ever advances.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Seconds Or Minutes",
+      "summary": "Sets whether the auto-advance duration above counts in seconds or minutes. Only shows when auto-advance is on. Seconds is the right choice for nearly every onboarding screen; minutes is rarely useful and risks visitors leaving before the screen ever advances.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screenedit-basic-config-countdown-unit/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

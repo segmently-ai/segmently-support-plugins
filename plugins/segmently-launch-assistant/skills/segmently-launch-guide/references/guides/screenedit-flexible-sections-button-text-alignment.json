@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-text-alignment",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-text-alignment",
+    "articleId": "screenedit-flexible-sections-button-text-alignment",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-alignment",
+    "name": "Screen field: Align button text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Align button text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-text-alignment/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-alignment#screenedit-flexible-sections-button-text-alignment/field",
+        "title": "Align button text",
+        "description": "Text alignment within button: start (left in LTR), center, or end (right in LTR). Center alignment is typical for buttons.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Align button text",
+      "summary": "Text alignment within button: start (left in LTR), center, or end (right in LTR). Center alignment is typical for buttons.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-text-alignment/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

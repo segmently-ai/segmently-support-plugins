@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-text-font-family",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-text-font-family",
+    "articleId": "screenedit-flexible-sections-button-text-font-family",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-font-family",
+    "name": "Screen field: Font for the button text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Font for the button text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-text-font-family/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-text-font-family#screenedit-flexible-sections-button-text-font-family/field",
+        "title": "Font for the button text",
+        "description": "Picks the typeface used for the button label. Leave it on your theme default so the button matches the rest of your funnel — mixing fonts on one screen looks unpolished and can hurt trust. Only override it when your brand requires a specific font.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Font for the button text",
+      "summary": "Picks the typeface used for the button label. Leave it on your theme default so the button matches the rest of your funnel — mixing fonts on one screen looks unpolished and can hurt trust. Only override it when your brand requires a specific font.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-text-font-family/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

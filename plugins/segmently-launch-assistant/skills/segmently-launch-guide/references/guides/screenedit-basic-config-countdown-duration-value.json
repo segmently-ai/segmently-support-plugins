@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-basic-config-countdown-duration-value",
+  "evidence": {
+    "guideKey": "screenedit-basic-config-countdown-duration-value",
+    "articleId": "screenedit-basic-config-countdown-duration-value",
+    "articleAlias": "help-block-basic-config",
+    "referencePath": "help-block-basic-config/screenedit-basic-config-countdown-duration-value",
+    "name": "Screen field: Auto-Advance Duration",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Auto-Advance Duration\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-basic-config-countdown-duration-value/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-basic-config/screenedit-basic-config-countdown-duration-value#screenedit-basic-config-countdown-duration-value/field",
+        "title": "Auto-Advance Duration",
+        "description": "The number of seconds or minutes (unit chosen below) before the screen moves on by itself, from 1 to 300. Only used when auto-advance is on. Keep it short, about 2 to 4 seconds for a splash or 'analyzing...' screen, so visitors aren't left waiting and bouncing.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Auto-Advance Duration",
+      "summary": "The number of seconds or minutes (unit chosen below) before the screen moves on by itself, from 1 to 300. Only used when auto-advance is on. Keep it short, about 2 to 4 seconds for a splash or 'analyzing...' screen, so visitors aren't left waiting and bouncing.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-basic-config",
+          "subarticleId": "screenedit-basic-config-countdown-duration-value/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

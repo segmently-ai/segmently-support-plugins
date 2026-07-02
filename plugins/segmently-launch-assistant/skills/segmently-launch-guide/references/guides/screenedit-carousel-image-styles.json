@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-image-styles",
+  "evidence": {
+    "guideKey": "screenedit-carousel-image-styles",
+    "articleId": "screenedit-carousel-image-styles",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-image-styles",
+    "name": "Screen field: Image size and fit",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Image size and fit\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-image-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-image-styles#screenedit-carousel-image-styles/field",
+        "title": "Image size and fit",
+        "description": "Open this to control the slide image's width, height, corner radius, and how it fills its box: Fit shows the whole image (may leave bands), Fill covers the box (edges may crop), Crop trims to the exact box, and Tile repeats it. You also set the padding around the image. Fill is the usual choice for full-bleed slides and Fit keeps the whole graphic visible; settings apply to the image on every slide.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Image size and fit",
+      "summary": "Open this to control the slide image's width, height, corner radius, and how it fills its box: Fit shows the whole image (may leave bands), Fill covers the box (edges may crop), Crop trims to the exact box, and Tile repeats it. You also set the padding around the image. Fill is the usual choice for full-bleed slides and Fit keeps the whole graphic visible; settings apply to the image on every slide.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-image-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

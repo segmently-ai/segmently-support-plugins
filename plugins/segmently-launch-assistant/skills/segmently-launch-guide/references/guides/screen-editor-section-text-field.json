@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-text-field",
+  "evidence": {
+    "guideKey": "screen-editor-section-text-field",
+    "articleId": "screen-editor-section-text-field",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screen-editor-section-text-field",
+    "name": "Screen Editor: Text Field",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Text Field section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": "configure-text-field-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-text-field/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-text-field/screen-editor-section-text-field#screen-editor-section-text-field/section",
+        "title": "Text Field section",
+        "description": "The Text Field section turns a screen into a question that collects a free-text answer such as a name, email, or goal. Set the placeholder hint, validation, and styling here; the answer is saved in a variable you can later use to branch the flow or personalize copy. Use it whenever the visitor should type an answer rather than pick from options — that captured input is what makes the screen gather usable data.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-text-field/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-text-field/screen-editor-section-text-field#screen-editor-section-text-field/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: TextInput.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Text Field section",
+      "summary": "The Text Field section turns a screen into a question that collects a free-text answer such as a name, email, or goal. Set the placeholder hint, validation, and styling here; the answer is saved in a variable you can later use to branch the flow or personalize copy. Use it whenever the visitor should type an answer rather than pick from options — that captured input is what makes the screen gather usable data.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screen-editor-section-text-field/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: TextInput.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screen-editor-section-text-field/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

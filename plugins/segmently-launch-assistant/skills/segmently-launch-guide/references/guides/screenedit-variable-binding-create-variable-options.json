@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-variable-binding-create-variable-options",
+  "evidence": {
+    "guideKey": "screenedit-variable-binding-create-variable-options",
+    "articleId": "screenedit-variable-binding-create-variable-options",
+    "articleAlias": "help-block-variable-binding",
+    "referencePath": "help-block-variable-binding/screenedit-variable-binding-create-variable-options",
+    "name": "Screen field: List the stored answers",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"List the stored answers\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-variable-binding-create-variable-options/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-variable-binding/screenedit-variable-binding-create-variable-options#screenedit-variable-binding-create-variable-options/field",
+        "title": "List the stored answers",
+        "description": "For Choice and Multiple-choice variables, list the values this variable can store, such as lose_weight, build_muscle, or stay_fit; add, rename, or remove them here. These stored values are separate from the labels visitors see — you connect each one to a visible item in the Value Mapping table below. Keep one option per real answer so your routing and analytics stay clean.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "List the stored answers",
+      "summary": "For Choice and Multiple-choice variables, list the values this variable can store, such as lose_weight, build_muscle, or stay_fit; add, rename, or remove them here. These stored values are separate from the labels visitors see — you connect each one to a visible item in the Value Mapping table below. Keep one option per real answer so your routing and analytics stay clean.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-variable-binding",
+          "subarticleId": "screenedit-variable-binding-create-variable-options/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

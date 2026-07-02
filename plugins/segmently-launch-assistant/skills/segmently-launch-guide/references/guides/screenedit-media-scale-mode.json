@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-media-scale-mode",
+  "evidence": {
+    "guideKey": "screenedit-media-scale-mode",
+    "articleId": "screenedit-media-scale-mode",
+    "articleAlias": "help-block-media",
+    "referencePath": "help-block-media/screenedit-media-scale-mode",
+    "name": "Screen field: How media fills its box",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"How media fills its box\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
+    "sourceRecipeKey": "configure-media-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-media-scale-mode/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-media/screenedit-media-scale-mode#screenedit-media-scale-mode/field",
+        "title": "How media fills its box",
+        "description": "Controls how the media fills its box. Aspect Fit shows the whole thing without cropping (you may see empty bars), Aspect Fill covers the box completely but may crop edges, and Scale to Fill stretches it, which distorts photos, so avoid that. The positional options (Top, Bottom, Center, and so on) crop to fill while keeping that part in view. Aspect Fill is the usual pick for an edge-to-edge banner; use Aspect Fit when nothing should be cropped.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-scale-mode.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "How media fills its box",
+      "summary": "Controls how the media fills its box. Aspect Fit shows the whole thing without cropping (you may see empty bars), Aspect Fill covers the box completely but may crop edges, and Scale to Fill stretches it, which distorts photos, so avoid that. The positional options (Top, Bottom, Center, and so on) crop to fill while keeping that part in view. Aspect Fill is the usual pick for an edge-to-edge banner; use Aspect Fit when nothing should be cropped.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-scale-mode.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screenedit-media-scale-mode/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-screen-settings",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-screen-settings",
+    "articleId": "screenedit-flexible-sections-screen-settings",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-screen-settings",
+    "name": "Screen field: Open screen-level layout settings",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Open screen-level layout settings\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-screen-settings/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-screen-settings#screenedit-flexible-sections-screen-settings/field",
+        "title": "Open screen-level layout settings",
+        "description": "The gear beside the Sections title opens settings for the whole FlexibleLayout screen, not for one individual section. Use it to control whether the full screen scrolls and how much padding the whole stack has from the screen edges. Open this before editing individual section padding when the entire screen feels too close to the phone edge or when you need a fixed, non-scrolling composition.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Open screen-level layout settings",
+      "summary": "The gear beside the Sections title opens settings for the whole FlexibleLayout screen, not for one individual section. Use it to control whether the full screen scrolls and how much padding the whole stack has from the screen edges. Open this before editing individual section padding when the entire screen feels too close to the phone edge or when you need a fixed, non-scrolling composition.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154720_flexible-shared-layout-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-screen-settings/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

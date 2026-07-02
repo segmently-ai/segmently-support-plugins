@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-subscriptions-unselected-state",
+  "evidence": {
+    "guideKey": "screenedit-paywall-subscriptions-unselected-state",
+    "articleId": "screenedit-paywall-subscriptions-unselected-state",
+    "articleAlias": "help-block-paywall-subscriptions",
+    "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-unselected-state",
+    "name": "Screen field: Unselected plan style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Unselected plan style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+    "sourceRecipeKey": "configure-paywall-subscriptions-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-subscriptions-unselected-state/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-subscriptions/screenedit-paywall-subscriptions-unselected-state#screenedit-paywall-subscriptions-unselected-state/field",
+        "title": "Unselected plan style",
+        "description": "How a plan card looks before the user taps it: background color, border, and spacing. Keep this neutral and understated so the chosen plan can clearly stand out against it. The contrast between this and the Selected style is what tells users which plan they've picked, so never make the two look the same.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Unselected plan style",
+      "summary": "How a plan card looks before the user taps it: background color, border, and spacing. Keep this neutral and understated so the chosen plan can clearly stand out against it. The contrast between this and the Selected style is what tells users which plan they've picked, so never make the two look the same.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151152_native-subscription-view-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-subscriptions",
+          "subarticleId": "screenedit-paywall-subscriptions-unselected-state/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

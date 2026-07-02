@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-paywall-header",
+  "evidence": {
+    "guideKey": "screen-editor-section-paywall-header",
+    "articleId": "screen-editor-section-paywall-header",
+    "articleAlias": "help-block-paywall-header",
+    "referencePath": "help-block-paywall-header/screen-editor-section-paywall-header",
+    "name": "Screen Editor: Paywall Header",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Paywall Header section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+    "sourceRecipeKey": "configure-paywall-header-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-paywall-header/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-paywall-header/screen-editor-section-paywall-header#screen-editor-section-paywall-header/section",
+        "title": "Paywall Header section",
+        "description": "The Paywall Header is the top strip of a paywall screen. Use it for the close (X) button and an optional 'Restore Purchases' label, and to style their color, position, and timing. Keep it minimal — a clear way to close plus restore is enough for an ad-ready paywall, since anything extra up here pulls attention away from the offer below. It only appears on paywall screens.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png"
+      },
+      {
+        "id": "screen-editor-section-paywall-header/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-paywall-header/screen-editor-section-paywall-header#screen-editor-section-paywall-header/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: Paywall.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Paywall Header section",
+      "summary": "The Paywall Header is the top strip of a paywall screen. Use it for the close (X) button and an optional 'Restore Purchases' label, and to style their color, position, and timing. Keep it minimal — a clear way to close plus restore is enough for an ad-ready paywall, since anything extra up here pulls attention away from the offer below. It only appears on paywall screens.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151149_native-header-close-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screen-editor-section-paywall-header/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: Paywall.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-header",
+          "subarticleId": "screen-editor-section-paywall-header/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

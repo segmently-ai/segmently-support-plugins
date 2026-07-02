@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-paywall-footer-legal-links-padding",
+  "evidence": {
+    "guideKey": "screenedit-paywall-footer-legal-links-padding",
+    "articleId": "screenedit-paywall-footer-legal-links-padding",
+    "articleAlias": "help-block-paywall-footer",
+    "referencePath": "help-block-paywall-footer/screenedit-paywall-footer-legal-links-padding",
+    "name": "Screen field: Legal links row spacing",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Legal links row spacing\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-paywall-footer-legal-links-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-paywall-footer/screenedit-paywall-footer-legal-links-padding#screenedit-paywall-footer-legal-links-padding/field",
+        "title": "Legal links row spacing",
+        "description": "Adds padding around the whole row of legal links — Restore, Terms, and Privacy together — on each side: top, bottom, left, and right (left/right flip for right-to-left languages). The defaults are fine; this is optional fine-tuning. Add a little top and bottom spacing so the links sit clearly below the disclosure without crowding.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151153_native-footer-purchase-settings/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Legal links row spacing",
+      "summary": "Adds padding around the whole row of legal links — Restore, Terms, and Privacy together — on each side: top, bottom, left, and right (left/right flip for right-to-left languages). The defaults are fine; this is optional fine-tuning. Add a little top and bottom spacing so the links sit clearly below the disclosure without crowding.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608151153_native-footer-purchase-settings/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-paywall-footer",
+          "subarticleId": "screenedit-paywall-footer-legal-links-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

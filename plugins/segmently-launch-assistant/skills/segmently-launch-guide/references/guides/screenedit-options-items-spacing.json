@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-options-items-spacing",
+  "evidence": {
+    "guideKey": "screenedit-options-items-spacing",
+    "articleId": "screenedit-options-items-spacing",
+    "articleAlias": "help-block-options",
+    "referencePath": "help-block-options/screenedit-options-items-spacing",
+    "name": "Screen field: Gap between choices",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Gap between choices\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-options/index.html",
+    "sourceRecipeKey": "configure-options-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-options-items-spacing/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-options/screenedit-options-items-spacing#screenedit-options-items-spacing/field",
+        "title": "Gap between choices",
+        "description": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Gap between choices",
+      "summary": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-options",
+          "subarticleId": "screenedit-options-items-spacing/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

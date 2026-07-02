@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-roller-options",
+  "evidence": {
+    "guideKey": "screenedit-roller-options",
+    "articleId": "screenedit-roller-options",
+    "articleAlias": "help-block-roller",
+    "referencePath": "help-block-roller/screenedit-roller-options",
+    "name": "Screen field: Edit the wheel's choices",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Edit the wheel's choices\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-roller-options/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-roller/screenedit-roller-options#screenedit-roller-options/field",
+        "title": "Edit the wheel's choices",
+        "description": "The text choices shown on a List-mode wheel. Add, edit, drag to reorder, or delete options (1-20 allowed). The order here is the order users scroll through, so place the most common choices near the top where the starting value lands. Each option is per-language, so translate them if your funnel runs in more than one language.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Edit the wheel's choices",
+      "summary": "The text choices shown on a List-mode wheel. Add, edit, drag to reorder, or delete options (1-20 allowed). The order here is the order users scroll through, so place the most common choices near the top where the starting value lands. Each option is per-language, so translate them if your funnel runs in more than one language.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-roller",
+          "subarticleId": "screenedit-roller-options/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

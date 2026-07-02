@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-error-font-size",
+  "evidence": {
+    "guideKey": "screenedit-text-field-error-font-size",
+    "articleId": "screenedit-text-field-error-font-size",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-error-font-size",
+    "name": "Screen field: Size of the error text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Size of the error text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-error-font-size/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-error-font-size#screenedit-text-field-error-font-size/field",
+        "title": "Size of the error text",
+        "description": "Sets the point size of the validation error message. Keep it a touch smaller than the field text (about 12-13pt) so it reads as a secondary note, but not so small it's hard to read on a phone. A legible error helps users spot and fix a rejected answer instead of abandoning the screen.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Size of the error text",
+      "summary": "Sets the point size of the validation error message. Keep it a touch smaller than the field text (about 12-13pt) so it reads as a secondary note, but not so small it's hard to read on a phone. A legible error helps users spot and fix a rejected answer instead of abandoning the screen.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-error-font-size/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

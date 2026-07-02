@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-sticky-container-border-width",
+  "evidence": {
+    "guideKey": "screenedit-sticky-container-border-width",
+    "articleId": "screenedit-sticky-container-border-width",
+    "articleAlias": "help-block-sticky-container",
+    "referencePath": "help-block-sticky-container/screenedit-sticky-container-border-width",
+    "name": "Screen field: Outline thickness",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Outline thickness\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-sticky-container-border-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-sticky-container/screenedit-sticky-container-border-width#screenedit-sticky-container-border-width/field",
+        "title": "Outline thickness",
+        "description": "Sets how thick the outline around the bar is, in pixels (default 0, meaning no outline; only applies when the bar is shown). Add an outline when the bar's color is close to the screen background and you want a crisp edge that separates the CTA from content behind it. Once it is above 0, the border color setting appears so you can style the outline.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Outline thickness",
+      "summary": "Sets how thick the outline around the bar is, in pixels (default 0, meaning no outline; only applies when the bar is shown). Add an outline when the bar's color is close to the screen background and you want a crisp edge that separates the CTA from content behind it. Once it is above 0, the border color setting appears so you can style the outline.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154721_flexible-sticky-container-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-sticky-container",
+          "subarticleId": "screenedit-sticky-container-border-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

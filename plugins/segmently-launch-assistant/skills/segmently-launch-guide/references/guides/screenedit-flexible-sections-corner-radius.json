@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-corner-radius",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-corner-radius",
+    "articleId": "screenedit-flexible-sections-corner-radius",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-corner-radius",
+    "name": "Screen field: Round the section corners",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Round the section corners\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-corner-radius/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-corner-radius#screenedit-flexible-sections-corner-radius/field",
+        "title": "Round the section corners",
+        "description": "Rounds all four corners of the section. The default 0 keeps them sharp and square; higher values (try 8 to 16) give a soft card look that pairs well with a solid background or border to make the section stand out as its own block. The range is 0 to 50 pixels.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Round the section corners",
+      "summary": "Rounds all four corners of the section. The default 0 keeps them sharp and square; higher values (try 8 to 16) give a soft card look that pairs well with a solid background or border to make the section stand out as its own block. The range is 0 to 50 pixels.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-corner-radius/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-border-width",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-border-width",
+    "articleId": "screenedit-flexible-sections-border-width",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-border-width",
+    "name": "Screen field: Outline thickness",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Outline thickness\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-border-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-border-width#screenedit-flexible-sections-border-width/field",
+        "title": "Outline thickness",
+        "description": "Draws an outline around the section. The default 0 means no border; 1 to 2 pixels gives a subtle frame that makes a section read as a self-contained card or highlights an offer. Set this above 0 first, then pick the border color below.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Outline thickness",
+      "summary": "Draws an outline around the section. The default 0 means no border; 1 to 2 pixels gives a subtle frame that makes a section read as a self-contained card or highlights an offer. Set this above 0 first, then pick the border color below.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155431_shared-appearance-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-border-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

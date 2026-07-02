@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-description-padding",
+  "evidence": {
+    "guideKey": "screenedit-stepper-description-padding",
+    "articleId": "screenedit-stepper-description-padding",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-description-padding",
+    "name": "Screen field: Space around the description",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Space around the description\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-description-padding/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-description-padding#screenedit-stepper-description-padding/field",
+        "title": "Space around the description",
+        "description": "Sets the empty space, in pixels, on each side of the step description: top, right, bottom, left. The default is usually 0; add top padding to separate the description from the subtitle above, or side padding to keep multi-line text off the screen edges. Comfortable spacing makes longer copy easy to read, which keeps visitors absorbing your value and tapping through.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Space around the description",
+      "summary": "Sets the empty space, in pixels, on each side of the step description: top, right, bottom, left. The default is usually 0; add top padding to separate the description from the subtitle above, or side padding to keep multi-line text off the screen edges. Comfortable spacing makes longer copy easy to read, which keeps visitors absorbing your value and tapping through.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-description-padding/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

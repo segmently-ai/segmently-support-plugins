@@ -26,6 +26,7 @@ import { tmpdir } from 'node:os';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FORBIDDEN_TOKENS } from './forbidden-tokens.mjs';
+import { hydrateAllGuideEvidence } from '../runtime/guide-content.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const defaultContextFile = join(mkdtempSync(join(tmpdir(), 'segmently-launch-guide-forward-')), 'empty-context.json');
@@ -56,9 +57,11 @@ check('projection files exist', () => {
     'references/scenarios.matrix.json',
     'references/teach-reference.json',
     'references/guide-evidence.json',
+    'references/guides',
     'references/help-article-reference.json',
     'references/semantic-routing.md',
     'runtime/do-action-reference.json',
+    'runtime/guide-content.mjs',
     'runtime/browser-auth-bridge.mjs',
     'runtime/editor-do-runner.mjs',
     'runtime/cli-do-runner.mjs',
@@ -898,7 +901,7 @@ check('SHOW runner dry-run exposes visible headed browser package', () => {
 });
 
 check('persona questions have text, screenshot evidence, response contracts, and DO contracts', () => {
-  const guideEvidence = json('references/guide-evidence.json');
+  const guideEvidence = hydrateAllGuideEvidence(root, json('references/guide-evidence.json'));
   const helpArticleReference = json('references/help-article-reference.json');
   const articleRegistry = json('references/article-registry.json');
   const personaFlow = json('evals/persona-flow-evals.json');

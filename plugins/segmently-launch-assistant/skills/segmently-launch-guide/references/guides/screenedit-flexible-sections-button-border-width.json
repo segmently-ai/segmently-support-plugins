@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-button-border-width",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-button-border-width",
+    "articleId": "screenedit-flexible-sections-button-border-width",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-border-width",
+    "name": "Screen field: Set button border thickness",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Set button border thickness\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-button-content",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-button-border-width/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-button-border-width#screenedit-flexible-sections-button-border-width/field",
+        "title": "Set button border thickness",
+        "description": "Button border stroke width in pixels (0-50). Default 0 (no border). Used with border color for outlined button style.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Set button border thickness",
+      "summary": "Button border stroke width in pixels (0-50). Default 0 (no border). Used with border color for outlined button style.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608154707_flexible-button-purchase-settings-explained/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-button-border-width/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

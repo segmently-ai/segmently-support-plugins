@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-content",
+  "evidence": {
+    "guideKey": "screen-editor-section-content",
+    "articleId": "screen-editor-section-content",
+    "articleAlias": "help-block-content",
+    "referencePath": "help-block-content/screen-editor-section-content",
+    "name": "Screen Editor: Content",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Content section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-content/index.html",
+    "sourceRecipeKey": "configure-copy-block-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-content/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-content/screen-editor-section-content#screen-editor-section-content/section",
+        "title": "Content section",
+        "description": "The Content section holds the words on the screen: your headline, supporting text, or the question you ask the visitor. This is the copy that does the persuading, so write it like ad copy with one clear value proposition or one focused question per screen, and edit it before you touch colors or layout. It's available on most screens with editable text; media-only and pure paywall screens use their own copy areas instead.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-content/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-content/screen-editor-section-content#screen-editor-section-content/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: HeroContent, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Content section",
+      "summary": "The Content section holds the words on the screen: your headline, supporting text, or the question you ask the visitor. This is the copy that does the persuading, so write it like ad copy with one clear value proposition or one focused question per screen, and edit it before you touch colors or layout. It's available on most screens with editable text; media-only and pure paywall screens use their own copy areas instead.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screen-editor-section-content/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, TextInput, WheelPicker, HeroList.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-content",
+          "subarticleId": "screen-editor-section-content/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

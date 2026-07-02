@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-scrollable",
+  "evidence": {
+    "guideKey": "screenedit-flexible-sections-scrollable",
+    "articleId": "screenedit-flexible-sections-scrollable",
+    "articleAlias": "help-block-flexible-sections",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-scrollable",
+    "name": "Screen field: Let this section scroll on its own",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Let this section scroll on its own\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-scrollable/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-scrollable#screenedit-flexible-sections-scrollable/field",
+        "title": "Let this section scroll on its own",
+        "description": "Turn on to let a section scroll independently when its content is taller than the height you set (works only with a Fixed or Percent height, not Auto). Use it for a long list of terms or bullets you want capped inside a fixed window while the rest of the screen stays put. Leave off (the default) for normal sections that just sit in the layout.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155408_shared-size-flex-table-locator/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Let this section scroll on its own",
+      "summary": "Turn on to let a section scroll independently when its content is taller than the height you set (works only with a Fixed or Percent height, not Auto). Use it for a long list of terms or bullets you want capped inside a fixed window while the rest of the screen stays put. Leave off (the default) for normal sections that just sit in the layout.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608155408_shared-size-flex-table-locator/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-scrollable/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

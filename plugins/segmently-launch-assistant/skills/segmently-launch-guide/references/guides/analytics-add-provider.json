@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "analytics-add-provider",
+  "evidence": {
+    "guideKey": "analytics-add-provider",
+    "articleId": "r5xJTdYkdRJey32Mwn4V",
+    "articleAlias": "analytics-add-provider",
+    "referencePath": "analytics-add-provider/analytics-add-provider",
+    "name": "Analytics: add provider",
+    "journeyStep": "Configure analytics",
+    "userNeed": "Add the analytics provider/endpoint the project reports through.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/analytics-add-provider/index.html",
+    "sourceRecipeKey": "add-analytics-integration",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "analytics-add-provider/add-destination",
+        "sectionKey": "add-destination",
+        "referencePath": "analytics-add-provider/analytics-add-provider#analytics-add-provider/add-destination",
+        "title": "Add a destination",
+        "description": "Use Add to open the provider picker, then choose from 15+ client and server platforms (Amplitude, GA4, GTM, Mixpanel, PostHog, Facebook Pixel, TikTok Pixel, custom scripts, and server-side variants).",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png"
+      },
+      {
+        "id": "analytics-add-provider/verify",
+        "sectionKey": "verify",
+        "referencePath": "analytics-add-provider/analytics-add-provider#analytics-add-provider/verify",
+        "title": "Publish and verify",
+        "description": "After saving, publish a test Web Placement and watch the provider dashboard for incoming events (page views, screen changes, actions, checkout steps). If nothing arrives within 30 seconds, recheck the ID or token.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "add-destination",
+      "title": "Add a destination",
+      "summary": "Use Add to open the provider picker, then choose from 15+ client and server platforms (Amplitude, GA4, GTM, Mixpanel, PostHog, Facebook Pixel, TikTok Pixel, custom scripts, and server-side variants).",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "analytics-add-provider",
+          "subarticleId": "analytics-add-provider/add-destination"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "verify",
+      "title": "Publish and verify",
+      "summary": "After saving, publish a test Web Placement and watch the provider dashboard for incoming events (page views, screen changes, actions, checkout steps). If nothing arrives within 30 seconds, recheck the ID or token.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "analytics-add-provider",
+          "subarticleId": "analytics-add-provider/verify"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

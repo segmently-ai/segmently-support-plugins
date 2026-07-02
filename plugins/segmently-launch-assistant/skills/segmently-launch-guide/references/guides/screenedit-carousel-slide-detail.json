@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-carousel-slide-detail",
+  "evidence": {
+    "guideKey": "screenedit-carousel-slide-detail",
+    "articleId": "screenedit-carousel-slide-detail",
+    "articleAlias": "help-block-carousel",
+    "referencePath": "help-block-carousel/screenedit-carousel-slide-detail",
+    "name": "Screen field: Slide extra line",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Slide extra line\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-carousel-slide-detail/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-carousel/screenedit-carousel-slide-detail#screenedit-carousel-slide-detail/field",
+        "title": "Slide extra line",
+        "description": "A third text line below the supporting line, available only with the Image + Title + 2 Subtitles template. Use it sparingly for one last small detail like a disclaimer or extra proof, since four text layers over an image quickly overcrowd a slide and slow reading. Supports @variable personalization, countdown timers, and styled chips, and is edited per language.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Slide extra line",
+      "summary": "A third text line below the supporting line, available only with the Image + Title + 2 Subtitles template. Use it sparingly for one last small detail like a disclaimer or extra proof, since four text layers over an image quickly overcrowd a slide and slow reading. Supports @variable personalization, countdown timers, and styled chips, and is edited per language.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-carousel",
+          "subarticleId": "screenedit-carousel-slide-detail/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

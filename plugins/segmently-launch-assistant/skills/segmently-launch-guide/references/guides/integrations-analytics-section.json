@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "integrations-analytics-section",
+  "evidence": {
+    "guideKey": "integrations-analytics-section",
+    "articleId": "92EfQrboD7HTMHGa4DmF",
+    "articleAlias": "integrations-analytics-section",
+    "referencePath": "integrations-analytics-section/integrations-analytics-section",
+    "name": "Analytics setup",
+    "journeyStep": "Configure analytics",
+    "userNeed": "Configure analytics before traffic so visits, screen events, and checkout transitions are measured from the first run.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/integrations-analytics-section/index.html",
+    "sourceRecipeKey": "add-analytics-integration",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "integrations-analytics-section/track-before",
+        "sectionKey": "track-before",
+        "referencePath": "integrations-analytics-section/integrations-analytics-section#integrations-analytics-section/track-before",
+        "title": "Track the funnel before scaling",
+        "description": "Set up and verify analytics before publishing to traffic. Events are measured from the first visitor, so a destination added later cannot capture earlier sessions.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png"
+      },
+      {
+        "id": "integrations-analytics-section/provider-choice",
+        "sectionKey": "provider-choice",
+        "referencePath": "integrations-analytics-section/integrations-analytics-section#integrations-analytics-section/provider-choice",
+        "title": "Choose the provider, then verify",
+        "description": "Pick the analytics platform that matches your reporting workflow, then publish a test funnel and confirm events arrive in that provider dashboard within seconds.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "integrations-analytics-section/consent-management",
+        "sectionKey": "consent-management",
+        "referencePath": "integrations-analytics-section/integrations-analytics-section#integrations-analytics-section/consent-management",
+        "title": "Enable GDPR consent management (optional)",
+        "description": "Toggle consent management to show a consent banner in regulated regions. You set the default consent state, banner text, and privacy policy URL, and consent decisions gate which events are collected.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "track-before",
+      "title": "Track the funnel before scaling",
+      "summary": "Set up and verify analytics before publishing to traffic. Events are measured from the first visitor, so a destination added later cannot capture earlier sessions.",
+      "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "integrations-analytics-section",
+          "subarticleId": "integrations-analytics-section/track-before"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "provider-choice",
+      "title": "Choose the provider, then verify",
+      "summary": "Pick the analytics platform that matches your reporting workflow, then publish a test funnel and confirm events arrive in that provider dashboard within seconds.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "integrations-analytics-section",
+          "subarticleId": "integrations-analytics-section/provider-choice"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "consent-management",
+      "title": "Enable GDPR consent management (optional)",
+      "summary": "Toggle consent management to show a consent banner in regulated regions. You set the default consent state, banner text, and privacy policy URL, and consent decisions gate which events are collected.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "integrations-analytics-section",
+          "subarticleId": "integrations-analytics-section/consent-management"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

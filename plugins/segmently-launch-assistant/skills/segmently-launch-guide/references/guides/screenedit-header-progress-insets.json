@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-header-progress-insets",
+  "evidence": {
+    "guideKey": "screenedit-header-progress-insets",
+    "articleId": "screenedit-header-progress-insets",
+    "articleAlias": "help-block-header",
+    "referencePath": "help-block-header/screenedit-header-progress-insets",
+    "name": "Screen field: Spacing around the progress bar",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Spacing around the progress bar\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-header-progress-insets/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-header/screenedit-header-progress-insets#screenedit-header-progress-insets/field",
+        "title": "Spacing around the progress bar",
+        "description": "Sets the spacing on each side of the progress indicator alone, separate from the header's overall padding. Use it to fine-tune the gap around the bar, for example to nudge it down from the buttons, without moving the buttons themselves. Most funnels keep the default; adjust only when the bar sits too tight or too loose against the header.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Spacing around the progress bar",
+      "summary": "Sets the spacing on each side of the progress indicator alone, separate from the header's overall padding. Use it to fine-tune the gap around the bar, for example to nudge it down from the buttons, without moving the buttons themselves. Most funnels keep the default; adjust only when the bar sits too tight or too loose against the header.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-header",
+          "subarticleId": "screenedit-header-progress-insets/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

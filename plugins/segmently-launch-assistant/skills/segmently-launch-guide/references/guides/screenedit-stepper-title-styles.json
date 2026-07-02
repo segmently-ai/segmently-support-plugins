@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-stepper-title-styles",
+  "evidence": {
+    "guideKey": "screenedit-stepper-title-styles",
+    "articleId": "screenedit-stepper-title-styles",
+    "articleAlias": "help-block-stepper",
+    "referencePath": "help-block-stepper/screenedit-stepper-title-styles",
+    "name": "Screen field: Configure segment title text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Configure segment title text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+    "sourceRecipeKey": "configure-stepper-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-stepper-title-styles/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-stepper/screenedit-stepper-title-styles#screenedit-stepper-title-styles/field",
+        "title": "Configure segment title text",
+        "description": "Text styling for segment titles including font size, weight, family, color, line height, and letter spacing. Title text is editable per segment with template variable support (@variable, @link, @countdown).",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-title-styles.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Configure segment title text",
+      "summary": "Text styling for segment titles including font size, weight, family, color, line height, and letter spacing. Title text is editable per segment with template variable support (@variable, @link, @countdown).",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-title-styles.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-stepper",
+          "subarticleId": "screenedit-stepper-title-styles/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

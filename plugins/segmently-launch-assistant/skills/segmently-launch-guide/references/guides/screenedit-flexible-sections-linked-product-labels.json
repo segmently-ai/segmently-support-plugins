@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-flexible-sections-linked-product-labels",
+  "evidence": {
+    "articleAlias": "help-block-flexible-sections",
+    "journeyStep": "Edit screens",
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+    "sourceRecipeKey": "configure-flexible-sections-section",
+    "localArticlePath": null,
+    "guideKey": "screenedit-flexible-sections-linked-product-labels",
+    "articleId": "screenedit-flexible-sections-linked-product-labels",
+    "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-linked-product-labels",
+    "name": "Screen field: Link product-aware sections",
+    "userNeed": "Link Text and Purchase Button sections to a Product Catalog so copy and checkout follow the selected product.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 2,
+    "sections": [
+      {
+        "id": "screenedit-flexible-sections-linked-product-labels/text-link",
+        "sectionKey": "text-link",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-linked-product-labels#text-link",
+        "title": "Link product-aware sections",
+        "description": "Some Flexible Layout sections can read the visitor’s current Product Catalog selection. For a paywall, add a Product Catalog section, then link a Text section and a Purchase Button section to that catalog through each section’s “Linked to section” dropdown. The linked Text section can show the selected product description label, and the linked Purchase Button can show the selected product purchase label.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-07-01T09-44-33-853Z-4b13603e/link-text-to-catalog/origin.png"
+      },
+      {
+        "id": "screenedit-flexible-sections-linked-product-labels/purchase-link",
+        "sectionKey": "purchase-link",
+        "referencePath": "help-block-flexible-sections/screenedit-flexible-sections-linked-product-labels#purchase-link",
+        "title": "Link the Purchase Button to the same catalog",
+        "description": "Use the Purchase Button’s “Linked to section” dropdown to select the same Product Catalog section. This keeps the CTA tied to the visitor’s selected plan instead of a fixed product.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-07-01T09-44-33-853Z-4b13603e/link-purchase-to-catalog/origin.png"
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "text-link",
+      "title": "Link product-aware sections",
+      "summary": "Some Flexible Layout sections can read the visitor’s current Product Catalog selection. For a paywall, add a Product Catalog section, then link a Text section and a Purchase Button section to that catalog through each section’s “Linked to section” dropdown. The linked Text section can show the selected product description label, and the linked Purchase Button can show the selected product purchase label.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-07-01T09-44-33-853Z-4b13603e/link-text-to-catalog/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "fl-link"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "purchase-link",
+      "title": "Link the Purchase Button to the same catalog",
+      "summary": "Use the Purchase Button’s “Linked to section” dropdown to select the same Product Catalog section. This keeps the CTA tied to the visitor’s selected plan instead of a fixed product.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-07-01T09-44-33-853Z-4b13603e/link-purchase-to-catalog/origin.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-flexible-sections",
+          "subarticleId": "screenedit-flexible-sections-linked-product-labels/purchase-link"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

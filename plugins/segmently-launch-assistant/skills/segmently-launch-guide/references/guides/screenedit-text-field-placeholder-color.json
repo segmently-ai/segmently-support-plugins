@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-text-field-placeholder-color",
+  "evidence": {
+    "guideKey": "screenedit-text-field-placeholder-color",
+    "articleId": "screenedit-text-field-placeholder-color",
+    "articleAlias": "help-block-text-field",
+    "referencePath": "help-block-text-field/screenedit-text-field-placeholder-color",
+    "name": "Screen field: Color of the hint text",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Color of the hint text\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-text-field-placeholder-color/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-text-field/screenedit-text-field-placeholder-color#screenedit-text-field-placeholder-color/field",
+        "title": "Color of the hint text",
+        "description": "Sets the color of the faint hint shown while the field is empty, separate from the color of what the visitor types (default is a light gray, #999999). Keep it dimmer than the typed-text color so people can tell the hint from a real answer, but not so faint it disappears against your background.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Color of the hint text",
+      "summary": "Sets the color of the faint hint shown while the field is empty, separate from the color of what the visitor types (default is a light gray, #999999). Keep it dimmer than the typed-text color so people can tell the hint from a real answer, but not so faint it disappears against your background.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-text-field",
+          "subarticleId": "screenedit-text-field-placeholder-color/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

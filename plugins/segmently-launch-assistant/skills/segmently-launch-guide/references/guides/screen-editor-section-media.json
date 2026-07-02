@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-media",
+  "evidence": {
+    "guideKey": "screen-editor-section-media",
+    "articleId": "screen-editor-section-media",
+    "articleAlias": "help-block-media",
+    "referencePath": "help-block-media/screen-editor-section-media",
+    "name": "Screen Editor: Media",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Media section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": true,
+    "screenshotSectionCount": 1,
+    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html",
+    "sourceRecipeKey": "configure-media-section",
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-media/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-media/screen-editor-section-media#screen-editor-section-media/section",
+        "title": "Media section",
+        "description": "The Media section adds an image or video that supports the screen's message: a product shot, a before/after, or a short explainer clip. On a paid landing page strong visuals build trust and lift conversion, but keep them relevant so they reinforce the headline instead of distracting from the choice or button the visitor needs to act on. It shows on choice screens and the wheel picker; headline screens set their image inside the Content section instead.",
+        "hasScreenshotEvidence": true,
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png"
+      },
+      {
+        "id": "screen-editor-section-media/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-media/screen-editor-section-media#screen-editor-section-media/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, WheelPicker.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Media section",
+      "summary": "The Media section adds an image or video that supports the screen's message: a product shot, a before/after, or a short explainer clip. On a paid landing page strong visuals build trust and lift conversion, but keep them relevant so they reinforce the headline instead of distracting from the choice or button the visitor needs to act on. It shows on choice screens and the wheel picker; headline screens set their image inside the Content section instead.",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/context-section.png",
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screen-editor-section-media/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, WheelPicker.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-media",
+          "subarticleId": "screen-editor-section-media/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}
