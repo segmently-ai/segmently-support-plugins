@@ -2,6 +2,28 @@
   "skill_name": "segmently-launch-guide",
   "evals": [
     {
+      "id": "routing-quick-index-fast-path",
+      "prompt": "A customer asks a common launch question; the agent should route via the quick-index before loading large indexes.",
+      "expected_behavior": "SKILL.md instructs checking routing-quick-index.json first; the shipped quick-index carries scenario, action, action-family, and articles entries pointing at real next files.",
+      "assertions": [
+        {
+          "name": "skill-quick-index-step",
+          "corpus": "skill",
+          "mustContain": ["references/routing-quick-index.json", "Quick-index fast path", "never the only route"]
+        },
+        {
+          "name": "quick-index-shape",
+          "corpus": "routingQuickIndex",
+          "mustContain": ["\"kind\": \"scenario\"", "\"kind\": \"action\"", "\"kind\": \"action-family\"", "\"kind\": \"articles\"", "references/scenarios.matrix.json", "runtime/do-action-reference.json", "references/article-directory.json"]
+        },
+        {
+          "name": "semantic-routing-step0",
+          "corpus": "semanticRouting",
+          "mustContain": ["Quick-Index Fast Path", "routing-quick-index.json", "accelerator, never the only route"]
+        }
+      ]
+    },
+    {
       "id": "interactive-loop-present",
       "prompt": "A customer asks for help launching their funnel.",
       "expected_behavior": "The skill follows clarify -> explain -> offer to do it -> verify.",
@@ -138,7 +160,7 @@
       "assertions": [
         {
           "name": "skill-instruction",
-          "corpus": "skill",
+          "corpus": "regressionExamples",
           "mustContain": [
             "Flexible Layout paywalls",
             "description",
@@ -160,7 +182,7 @@
       "assertions": [
         {
           "name": "skill-three-paywall-shapes",
-          "corpus": "skill",
+          "corpus": "regressionExamples",
           "mustContain": [
             "selected-product paywall copy questions",
             "Ordinary Paywall Subscriptions",

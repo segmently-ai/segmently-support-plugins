@@ -1,0 +1,1767 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "note": "GENERATED index of segmently-test-kit public helpers/selectors. Use it to resolve browser SHOW/DO helper names by category without scanning prose. The segmently-test-kit companion skill owns the implementations.",
+  "helpers": [
+    {
+      "name": "// Direct-URL helpers (standalone topic route)\n  openTopicByUrl",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "AB_TEST",
+      "sourceModule": "selectors/ab-test",
+      "category": "selectors"
+    },
+    {
+      "name": "AD_CREATIVE",
+      "sourceModule": "selectors/ad-creative",
+      "category": "selectors"
+    },
+    {
+      "name": "AD_CREATIVE_ADMIN",
+      "sourceModule": "selectors/ad-creative",
+      "category": "selectors"
+    },
+    {
+      "name": "addBlockToCanvas",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "addCondition",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "addEmbedChildSection",
+      "sourceModule": "canvas/embed-child-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "addEntryScreenRule",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addFlexibleSection",
+      "sourceModule": "canvas/flexible-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "addRedirectParam",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addServerData",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addStripeMetaParam",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addUrlParameter",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addVariableBinding",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addVariableInput",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "addWebhook",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "applyThemeForSingleType",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "applyThemeToCanvasByTypes",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "ARTICLE",
+      "sourceModule": "selectors/article",
+      "category": "selectors"
+    },
+    {
+      "name": "assertNoUnresolvedVariables",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "assertSectionFlex",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "assertSectionHeightPx",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "AUTH",
+      "sourceModule": "selectors/auth",
+      "category": "selectors"
+    },
+    {
+      "name": "awaitWebhookPaymentEvent",
+      "sourceModule": "payments/webhook-observability",
+      "category": "payments"
+    },
+    {
+      "name": "bindVariableToSection",
+      "sourceModule": "canvas/flexible-variables",
+      "category": "canvas"
+    },
+    {
+      "name": "BULK_DIALOG",
+      "sourceModule": "selectors/bulk-dialog",
+      "category": "selectors"
+    },
+    {
+      "name": "bulkConvertAll",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "bulkDeleteAll",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "bulkUpdateUiFromTheme",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "cancelApplyDialog",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "cancelTask",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "CANVAS",
+      "sourceModule": "selectors/canvas",
+      "category": "selectors"
+    },
+    {
+      "name": "changeDestParamSource",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "clearOnboardingFolderMemory",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "clearOnboardingSearch",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "clearWebPlacementSearch",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "CLI_AUTH",
+      "sourceModule": "selectors/cli-auth",
+      "category": "selectors"
+    },
+    {
+      "name": "CliAuthRequiredError",
+      "sourceModule": "auth/login-via-cli-token",
+      "category": "auth"
+    },
+    {
+      "name": "clickABTestRow",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "clickApplyForType",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "clickApplyToCanvas",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "clickBulkDelete",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "clickBulkDialogPrimaryAction",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "clickContinue",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "clickConvertToV2",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "clickCreateABTest",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "clickCreateFolder",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "clickCreateOnboarding",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "clickCreateWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "clickOnboardingRow",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "clickPaywallClose",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "clickPickerScreenByType",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "clickPublishAll",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "clickSidebarItem",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "cloneAdminThemeV2",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "cloneOnboarding",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "cloneTemplateAsSubtype",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "cloneThemeV2TemplateSubtype",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "closeBulkDialog",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "closeCanvas",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "closeCanvasThemeEditorV2",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "closeMoveToFolderDialog",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "closeScreenEditor",
+      "sourceModule": "canvas/screen-editor",
+      "category": "canvas"
+    },
+    {
+      "name": "closeScreenPicker",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "closeSectionSettings",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "closeStripeModal",
+      "sourceModule": "webshell/stripe-payment",
+      "category": "webshell"
+    },
+    {
+      "name": "collapseIntegrationSection",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "configurePaywallSubscriptions",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "configurePerCellDialog",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "configureSubscriptionItem",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "confirmApplyDialog",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "confirmBulkConvert",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "connectScreens",
+      "sourceModule": "canvas/connect-screens",
+      "category": "canvas"
+    },
+    {
+      "name": "CONTENT_PLAN",
+      "sourceModule": "selectors/content-plan",
+      "category": "selectors"
+    },
+    {
+      "name": "ContentPlanUiUnreachableError",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "continueApplyDialog",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "copyABTestUrl",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "copyWebPlacementUrl",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "createABTestFolder",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "createAdminThemeV2",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "createAndPublishWebPlacement",
+      "sourceModule": "webplacement/deploy",
+      "category": "webplacement"
+    },
+    {
+      "name": "createStrategy",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "createTopicFixture",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "createV2Onboarding",
+      "sourceModule": "onboarding/create-v2-onboarding",
+      "category": "onboarding"
+    },
+    {
+      "name": "createVariable",
+      "sourceModule": "canvas/variables",
+      "category": "canvas"
+    },
+    {
+      "name": "DEFAULT_PAYWALL_ITEMS",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "deleteABTest",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "deleteAdminThemeV2",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "deleteAllTopicPostsViaUi",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "deleteChildSection",
+      "sourceModule": "canvas/embed-child-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "deleteConditionRow",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "deleteEdge",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "deleteFixturesForRun",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "deleteFlexibleSection",
+      "sourceModule": "canvas/flexible-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "deleteOnboardingItem",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "deleteWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "disableAuthorPlatforms",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "disableRememberPaymentMethod",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "disableSaveUserProgress",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "duplicateFromSelector",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "duplicateFromTable",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "editABTest",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "editOnboarding",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "EDITOR",
+      "sourceModule": "selectors/editor",
+      "category": "selectors"
+    },
+    {
+      "name": "editTextSectionTitle",
+      "sourceModule": "canvas/flexible-content",
+      "category": "canvas"
+    },
+    {
+      "name": "editThemeColorAndNext",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "editWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "enableAuthorPlatforms",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "enableFooterSecondaryButton",
+      "sourceModule": "canvas/flexible-content",
+      "category": "canvas"
+    },
+    {
+      "name": "enableRememberPaymentMethod",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "ensureOnboardingFolder",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "ensurePaywallProduct",
+      "sourceModule": "stripe/create-paywall-product",
+      "category": "stripe"
+    },
+    {
+      "name": "enterProjectShell",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "expandAccordionByTestId",
+      "sourceModule": "guides/guide-anchors",
+      "category": "guides"
+    },
+    {
+      "name": "expandChildSection",
+      "sourceModule": "canvas/embed-child-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "expandEditorSectionByTestId",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "expandIntegrationSection",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "expandSection",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "expandSidebarSection",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "expandSizeAndFlexAccordion",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "expectGuideAnchorVisible",
+      "sourceModule": "guides/guide-anchors",
+      "category": "guides"
+    },
+    {
+      "name": "expectGuideNotFoundPopover",
+      "sourceModule": "guides/guide-anchors",
+      "category": "guides"
+    },
+    {
+      "name": "exportBlock",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "exportStrategy",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "fillABTestDialog",
+      "sourceModule": "webplacement-list/ab-test-dialog-helpers",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "fillBasicFields",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "fillPhoneInput",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "fillRedirectUrl",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "fillStripeAndPay",
+      "sourceModule": "webshell/stripe-payment",
+      "category": "webshell"
+    },
+    {
+      "name": "fillVariantMetadata",
+      "sourceModule": "webplacement-list/ab-test-dialog-helpers",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "filterByStatus",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "FONT_CONFIG",
+      "sourceModule": "selectors/font-config",
+      "category": "selectors"
+    },
+    {
+      "name": "generateAndWaitForCompletion",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "getABTestRowCount",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "getABTestRowIds",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "getApplyConfirmRows",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "getApplyScopeLabel",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "getApplySourceLabel",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "getApplySummaryToast",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "getBlockNodeIds",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "getBlockNodeInfos",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "getBulkDialogItemCount",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "getCanvasLocale",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "getCanvasLocales",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "getCanvasNodeCount",
+      "sourceModule": "canvas/react-flow-state",
+      "category": "canvas"
+    },
+    {
+      "name": "getCanvasNodes",
+      "sourceModule": "canvas/react-flow-state",
+      "category": "canvas"
+    },
+    {
+      "name": "getChildSectionCount",
+      "sourceModule": "canvas/embed-child-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "getCurrentScreenSnapshot",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "getDeployedBaseUrl",
+      "sourceModule": "project-config",
+      "category": "root"
+    },
+    {
+      "name": "getDeployedDomain",
+      "sourceModule": "project-config",
+      "category": "root"
+    },
+    {
+      "name": "getDeployedSectionCount",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "getDeployedSectionIds",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "getDisabledApplyGroups",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "getEntryScreenRuleCount",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "getExpandedSectionIds",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "getFieldValue",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "getFirestoreAdmin",
+      "sourceModule": "firestore/admin-client",
+      "category": "firestore"
+    },
+    {
+      "name": "getFlexContainerMetrics",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "getFlexContainerMode",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "getFlexibleScrollable",
+      "sourceModule": "canvas/flexible-scrollable",
+      "category": "canvas"
+    },
+    {
+      "name": "getFlexibleSectionCount",
+      "sourceModule": "canvas/flexible-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "getFlexibleSectionIds",
+      "sourceModule": "canvas/flexible-sections",
+      "category": "canvas"
+    },
+    {
+      "name": "getOnboardingRowCount",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "getOnboardingRowIds",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "getPlatformUserId",
+      "sourceModule": "webshell/analytics-identity",
+      "category": "webshell"
+    },
+    {
+      "name": "getReactFlowState",
+      "sourceModule": "canvas/react-flow-state",
+      "category": "canvas"
+    },
+    {
+      "name": "getScreenPickerGroups",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "getScreenPickerScale",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "getScreenPickerTileCount",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "getScreenType",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "getSectionComputedStyles",
+      "sourceModule": "webshell/css-verification",
+      "category": "webshell"
+    },
+    {
+      "name": "getSectionRowCount",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "getSubtypeCloneError",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "getSubtypedTileCount",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "getTaskPanelItems",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "getThemeCardColorSwatches",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2CardCount",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2CardIds",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2CloneError",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2Color",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2ScreenCount",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2ScreenIds",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getThemeV2SubtypedTileCount",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "getUnviewedBadgeCount",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "getVisibleSectionIds",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "getWebPlacementRowCount",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "getWebPlacementRowIds",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "highlightMention",
+      "sourceModule": "canvas/content-editable-helpers",
+      "category": "canvas"
+    },
+    {
+      "name": "highlightText",
+      "sourceModule": "canvas/content-editable-helpers",
+      "category": "canvas"
+    },
+    {
+      "name": "importFromJson",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "insertCountdown",
+      "sourceModule": "canvas/content-editable-helpers",
+      "category": "canvas"
+    },
+    {
+      "name": "insertLink",
+      "sourceModule": "canvas/content-editable-helpers",
+      "category": "canvas"
+    },
+    {
+      "name": "insertVariable",
+      "sourceModule": "canvas/content-editable-helpers",
+      "category": "canvas"
+    },
+    {
+      "name": "INTEGRATIONS",
+      "sourceModule": "selectors/integrations",
+      "category": "selectors"
+    },
+    {
+      "name": "interceptPaymentIntentMetadata",
+      "sourceModule": "webshell/stripe-payment",
+      "category": "webshell"
+    },
+    {
+      "name": "interceptPaymentIntents",
+      "sourceModule": "webshell/stripe-payment",
+      "category": "webshell"
+    },
+    {
+      "name": "isIntegrationsPageVisible",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "isLocaleSelectorVisible",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "isScreenPickerSearchFocused",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "isSectionContentVisible",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "isSectionExpanded",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
+      "name": "isUpdateUiFromThemeDisabled",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "loadAuthorPlatforms",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "login",
+      "sourceModule": "auth/login",
+      "category": "auth"
+    },
+    {
+      "name": "loginAndNavigateToStrategiesList",
+      "sourceModule": "auth/login",
+      "category": "auth"
+    },
+    {
+      "name": "loginAndNavigateToStrategyCanvas",
+      "sourceModule": "auth/login",
+      "category": "auth"
+    },
+    {
+      "name": "loginAndNavigateToV2Canvas",
+      "sourceModule": "auth/login",
+      "category": "auth"
+    },
+    {
+      "name": "loginViaCliToken",
+      "sourceModule": "auth/login-via-cli-token",
+      "category": "auth"
+    },
+    {
+      "name": "moveABTestToFolder",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "moveToFolder",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "navigateIntoABTestFolder",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "navigateIntoFolder",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "navigateToABTestRoot",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "navigateToAdminSettings",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToAdminThemesV1",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToAdminThemesV2",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToBreadcrumbRoot",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "navigateToIntegrations",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToOnboardingRoot",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "navigateToOnboardings",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToOnboardingsV2",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToPaywallProducts",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToSetting",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "navigateToSocialProofs",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToTaskResult",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "navigateToThemesV2",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "navigateToWebABTests",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "navigateToWebPlacements",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
+      "name": "ONBOARDING_LIST",
+      "sourceModule": "selectors/onboarding-list",
+      "category": "selectors"
+    },
+    {
+      "name": "openABTestActionsMenu",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "openAdminThemeV2Editor",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
+      "name": "openBlockInNewTab",
+      "sourceModule": "strategy/strategy-canvas-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "openBulkUpdateUiFromTheme",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "openCanvasThemeEditorV2",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "openCloneSubtypeDialog",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "openContextMenu",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "openCreateDialog",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "openDeployWebSelector",
+      "sourceModule": "webplacement/deploy",
+      "category": "webplacement"
+    },
+    {
+      "name": "openDerivativeCellDialog",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openEdgeConditionEditor",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "openEditAndApplyTheme",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "openEditDialog",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "openFunnel",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "openInNewTab",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "openMasterCellDialog",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openMoveToFolderDialog",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "openPostsGridForTopic",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openPostsGridForTopicByUrl",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openProductInsights",
+      "sourceModule": "strategy/product-insights",
+      "category": "strategy"
+    },
+    {
+      "name": "openRevealPanelByTestId",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "openScreenEditor",
+      "sourceModule": "canvas/screen-editor",
+      "category": "canvas"
+    },
+    {
+      "name": "openScreenPickerByButton",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "openScreenPickerByHotkey",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "openSectionSettings",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "openTopicOverview",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openTopicOverviewByUrl",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "openWebPlacementActionsMenu",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "openWebPlacementCloud",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "openWebPlacementLocal",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "optOutApplyScreen",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "panToEdgeHandles",
+      "sourceModule": "canvas/react-flow-state",
+      "category": "canvas"
+    },
+    {
+      "name": "panToFlowPosition",
+      "sourceModule": "canvas/react-flow-state",
+      "category": "canvas"
+    },
+    {
+      "name": "PAYWALL_PRODUCTS",
+      "sourceModule": "selectors/paywall-products",
+      "category": "selectors"
+    },
+    {
+      "name": "pickScreenAndClose",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "placeScreenBatch",
+      "sourceModule": "canvas/screen-placement-v2",
+      "category": "canvas"
+    },
+    {
+      "name": "PLATFORM_USER_ID_STORAGE_KEY",
+      "sourceModule": "webshell/analytics-identity",
+      "category": "webshell"
+    },
+    {
+      "name": "PRODUCT_INSIGHTS",
+      "sourceModule": "selectors/product-insights",
+      "category": "selectors"
+    },
+    {
+      "name": "PROJECT_THEME",
+      "sourceModule": "selectors/project-theme",
+      "category": "selectors"
+    },
+    {
+      "name": "publishABTest",
+      "sourceModule": "webplacement-list/ab-test-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "publishWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "readCliCredentialFromEnv",
+      "sourceModule": "auth/login-via-cli-token",
+      "category": "auth"
+    },
+    {
+      "name": "readPostsForTopic",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "redoCanvasAction",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "renameScreen",
+      "sourceModule": "canvas/screen-editor",
+      "category": "canvas"
+    },
+    {
+      "name": "republishWebPlacement",
+      "sourceModule": "webplacement/deploy",
+      "category": "webplacement"
+    },
+    {
+      "name": "requirePlatformUserId",
+      "sourceModule": "webshell/analytics-identity",
+      "category": "webshell"
+    },
+    {
+      "name": "resolveDefaultAuthor",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "restoreScreenStateFromCanvas",
+      "sourceModule": "canvas/screen-placement-v2",
+      "category": "canvas"
+    },
+    {
+      "name": "saveABTestDialog",
+      "sourceModule": "webplacement-list/ab-test-dialog-helpers",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "saveAndPublish",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "saveCanvasThemeEditorV2",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "saveConditions",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "saveOnly",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "SCREEN_PICKER",
+      "sourceModule": "selectors/screen-picker",
+      "category": "selectors"
+    },
+    {
+      "name": "searchOnboarding",
+      "sourceModule": "onboarding-list/list-operations",
+      "category": "onboarding-list"
+    },
+    {
+      "name": "searchScreenPicker",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "searchWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "seedFirebaseAuthState",
+      "sourceModule": "auth/login-via-cli-token",
+      "category": "auth"
+    },
+    {
+      "name": "seedPost",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "seedProjectDefaultModel",
+      "sourceModule": "content-plan/topic-fixtures",
+      "category": "content-plan"
+    },
+    {
+      "name": "selectAllInBulkDialog",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "selectCanvasScreens",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "selectListItem",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "selectPlacementForVariant",
+      "sourceModule": "webplacement-list/ab-test-dialog-helpers",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "selectThemeApplyTypes",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "selectThemeV2Screen",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "setApplyGroups",
+      "sourceModule": "themes/theme-apply",
+      "category": "themes"
+    },
+    {
+      "name": "setAutocomplete",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "setBulkDialogBatchSize",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "setCheckbox",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "setCloseAfterAdd",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "setContainerPadding",
+      "sourceModule": "canvas/flexible-scrollable",
+      "category": "canvas"
+    },
+    {
+      "name": "setEdgeCondition",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "setField",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "setFlexibleScrollable",
+      "sourceModule": "canvas/flexible-scrollable",
+      "category": "canvas"
+    },
+    {
+      "name": "setFooterPrimaryButtonText",
+      "sourceModule": "canvas/flexible-content",
+      "category": "canvas"
+    },
+    {
+      "name": "setMonacoContent",
+      "sourceModule": "canvas/monaco-editor",
+      "category": "canvas"
+    },
+    {
+      "name": "setScreenPickerScale",
+      "sourceModule": "canvas/screen-picker",
+      "category": "canvas"
+    },
+    {
+      "name": "setSectionFlexGrow",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "setSectionFlexShrink",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "setSectionHeightKind",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "setSectionHeightValue",
+      "sourceModule": "canvas/flexible-layout-settings",
+      "category": "canvas"
+    },
+    {
+      "name": "setSelect",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "setStripeEmail",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "setTextField",
+      "sourceModule": "editor/field-setters",
+      "category": "editor"
+    },
+    {
+      "name": "setThemeV2Color",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "SIDEBAR",
+      "sourceModule": "selectors/sidebar",
+      "category": "selectors"
+    },
+    {
+      "name": "SOCIAL_PROOFS",
+      "sourceModule": "selectors/social-proofs",
+      "category": "selectors"
+    },
+    {
+      "name": "STRATEGY_CANVAS",
+      "sourceModule": "selectors/strategy-canvas",
+      "category": "selectors"
+    },
+    {
+      "name": "STRATEGY_LIST",
+      "sourceModule": "selectors/strategy-list",
+      "category": "selectors"
+    },
+    {
+      "name": "STRATEGY_THEME",
+      "sourceModule": "selectors/strategy-theme",
+      "category": "selectors"
+    },
+    {
+      "name": "submitPerCellDialog",
+      "sourceModule": "navigation/content-plan",
+      "category": "navigation"
+    },
+    {
+      "name": "switchCanvasLocale",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "switchTaskOwnerFilter",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "switchTaskStatusFilter",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "TASKS_PANEL",
+      "sourceModule": "selectors/tasks-panel",
+      "category": "selectors"
+    },
+    {
+      "name": "THEME_V2",
+      "sourceModule": "selectors/theme-v2",
+      "category": "selectors"
+    },
+    {
+      "name": "toggleConditionLogic",
+      "sourceModule": "conditions/condition-editor",
+      "category": "conditions"
+    },
+    {
+      "name": "toggleEmbedIframeMode",
+      "sourceModule": "canvas/embed-mode",
+      "category": "canvas"
+    },
+    {
+      "name": "toggleSectionGear",
+      "sourceModule": "canvas/flexible-content",
+      "category": "canvas"
+    },
+    {
+      "name": "toggleThemeEditor",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "TOOLBAR",
+      "sourceModule": "selectors/toolbar",
+      "category": "selectors"
+    },
+    {
+      "name": "undoCanvasAction",
+      "sourceModule": "canvas/canvas-toolbar",
+      "category": "canvas"
+    },
+    {
+      "name": "UPSELL_PAYWALL_ITEMS",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "verifyCarouselVisible",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "verifyConfigWebShellVersion",
+      "sourceModule": "webshell/version-check",
+      "category": "webshell"
+    },
+    {
+      "name": "verifyNoFallbackBanner",
+      "sourceModule": "webshell/version-check",
+      "category": "webshell"
+    },
+    {
+      "name": "verifyPaywallResolvedLabels",
+      "sourceModule": "webshell/paywall-helpers",
+      "category": "webshell"
+    },
+    {
+      "name": "verifySectionBadges",
+      "sourceModule": "webplacement/wp-dialog-helpers",
+      "category": "webplacement"
+    },
+    {
+      "name": "verifySettingsPanelVisible",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "verifyWebShellScriptVersion",
+      "sourceModule": "webshell/version-check",
+      "category": "webshell"
+    },
+    {
+      "name": "waitForBulkDialogComplete",
+      "sourceModule": "bulk-dialog/bulk-dialog-helpers",
+      "category": "bulk-dialog"
+    },
+    {
+      "name": "waitForTaskCompletion",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "waitForTaskEvent",
+      "sourceModule": "tasks/task-firestore-events",
+      "category": "tasks"
+    },
+    {
+      "name": "waitForTaskStatus",
+      "sourceModule": "tasks/task-helpers",
+      "category": "tasks"
+    },
+    {
+      "name": "waitForTaskStatusEvent",
+      "sourceModule": "tasks/task-firestore-events",
+      "category": "tasks"
+    },
+    {
+      "name": "waitForTaskStatusViaFirestore",
+      "sourceModule": "tasks/task-firestore-poll",
+      "category": "tasks"
+    },
+    {
+      "name": "walkFullFunnel",
+      "sourceModule": "webshell/funnel-navigation",
+      "category": "webshell"
+    },
+    {
+      "name": "WEBSHELL",
+      "sourceModule": "selectors/webshell",
+      "category": "selectors"
+    },
+    {
+      "name": "WIZARD_V2",
+      "sourceModule": "selectors/wizard",
+      "category": "selectors"
+    },
+    {
+      "name": "WP",
+      "sourceModule": "selectors/wp-dialog",
+      "category": "selectors"
+    },
+    {
+      "name": "WP_LIST",
+      "sourceModule": "selectors/wp-list",
+      "category": "selectors"
+    }
+  ]
+}

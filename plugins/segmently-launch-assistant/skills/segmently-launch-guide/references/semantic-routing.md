@@ -14,6 +14,28 @@ mutation. The model should select the support intent, guide keys, action id, and
 owning skill; the deterministic runner should only validate that selected route
 and return safe execution/verification metadata.
 
+## Step 0 — Quick-Index Fast Path
+
+Before loading any large index, check `references/routing-quick-index.json`.
+It is a small generated file mapping common customer intents (ru+en) to a
+routing decision:
+
+- `scenario` hit → open `references/scenarios.matrix.json` and follow that
+  scenario contract (backend, verify, article, evals).
+- `action` hit → open `runtime/do-action-reference.json` and resolve the
+  `actionId` there.
+- `action-family` hit → open `runtime/do-action-reference.json` and pick the
+  exact leaf action inside the family (for example
+  `editor.content.title.textStyle.*`).
+- `articles` hit → open `references/article-directory.json` for the listed
+  aliases and continue with the normal article answer path.
+
+A quick-index hit replaces only the *search* step; the deterministic
+resolution step (`customer-response-runner.mjs` with model-selected
+`--articleAliases` / `--guideKeys` / `--actionId`) stays mandatory. On any miss
+or doubt, fall back to the full semantic step below — the quick-index is an
+accelerator, never the only route.
+
 ## Agent Semantic Step
 
 Read the customer's wording as a support intent, not as a regex problem. The
@@ -55,6 +77,12 @@ Choose one or more catalog items from the shipped files:
   section anchors, and setting-level screenshots.
 - `references/backends.md` and `runtime/do-action-reference.json` for whether a
   selected intent can be TEACH, SHOW, CLI DO, E2E/browser DO, or HANDOFF.
+- `references/capability-bindings.json` for the executable surface behind a
+  selected action: owning CLI command families, safety level, related
+  scenarios, test-kit helper names, and validated replay scenario refs. Use
+  `references/test-kit-helper-index.json` to resolve browser helper names and
+  `references/e2e-scenario-refs.json` for proven navigation step sequences
+  when planning SHOW or browser DO work.
 
 Article registry entries can have subarticles. A subarticle is a section,
 setting, guide section, or assembly link under the parent article. If a

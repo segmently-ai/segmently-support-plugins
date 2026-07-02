@@ -98,6 +98,9 @@
     "help-element-title": [
       "help-element-title"
     ],
+    "help-fonts-typography": [
+      "help-fonts-typography"
+    ],
     "help-options-grid-multi": [
       "help-options-grid-multi"
     ],
@@ -312,6 +315,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-content-text",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -352,6 +356,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -447,6 +452,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -503,6 +509,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -534,6 +541,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "help-fonts-typography",
       "integrations-analytics-section"
     ],
     "area": [
@@ -591,6 +599,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -717,6 +726,7 @@
       "help-block-paywall-header",
       "help-block-text-field",
       "help-block-variable-binding",
+      "help-fonts-typography",
       "help-screen-flexiblelayout",
       "help-screen-webembed",
       "integrations-custom-domain-section"
@@ -802,6 +812,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -1067,6 +1078,7 @@
       "help-content-text",
       "help-element-hero-image",
       "help-element-subtitle",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -1162,7 +1174,8 @@
     ],
     "platforms": [
       "analytics-add-provider",
-      "help-block-paywall-footer"
+      "help-block-paywall-footer",
+      "help-fonts-typography"
     ],
     "ga4": [
       "analytics-add-provider",
@@ -1206,6 +1219,7 @@
       "help-block-paywall-media",
       "help-block-paywall-subscriptions",
       "help-block-variable-binding",
+      "help-fonts-typography",
       "help-screen-paywall",
       "integrations-custom-domain-section"
     ],
@@ -1225,6 +1239,7 @@
       "help-block-background",
       "help-block-basic-config",
       "help-block-paywall-footer",
+      "help-fonts-typography",
       "help-screen-webembed",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview"
@@ -1587,6 +1602,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -1731,7 +1747,8 @@
       "help-block-paywall-body",
       "help-block-roller",
       "help-block-sticky-container",
-      "help-block-text-field"
+      "help-block-text-field",
+      "help-fonts-typography"
     ],
     "published": [
       "analytics-integration-list",
@@ -1766,6 +1783,7 @@
       "facebook-pixel-capi-setup",
       "help-block-carousel",
       "help-block-custom-html",
+      "help-fonts-typography",
       "integrations-custom-domain-section",
       "paywall-payment-methods",
       "tiktok-events-catalog",
@@ -1931,6 +1949,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -2115,6 +2134,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -2260,6 +2280,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-herocontent",
       "help-screen-herocontent-detailed",
       "help-screen-textinput-elements",
@@ -2725,6 +2746,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -2801,6 +2823,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -3113,7 +3136,8 @@
     "built in": [
       "analytics-provider-config",
       "help-block-custom-html",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "help-fonts-typography"
     ],
     "option": [
       "analytics-provider-config",
@@ -3147,6 +3171,7 @@
       "help-block-text-field",
       "help-content-hero",
       "help-content-hero-basic",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -3197,7 +3222,8 @@
     ],
     "renders": [
       "analytics-provider-config",
-      "help-block-custom-html"
+      "help-block-custom-html",
+      "help-fonts-typography"
     ],
     "load": [
       "analytics-provider-config",
@@ -3375,6 +3401,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -3783,6 +3810,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -3868,6 +3896,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -4445,6 +4474,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -4894,6 +4924,7 @@
     ],
     "customers": [
       "facebook-events-catalog",
+      "help-fonts-typography",
       "tiktok-events-catalog"
     ],
     "ask": [
@@ -4901,6 +4932,7 @@
       "help-block-basic-config",
       "help-block-content",
       "help-content-text",
+      "help-fonts-typography",
       "help-screen-gridmultipick-elements",
       "help-screen-gridsinglepick-elements",
       "help-screen-listmultipick-elements",
@@ -5128,6 +5160,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -5368,6 +5401,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -6675,6 +6709,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -7007,6 +7042,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -8102,6 +8138,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "empty": [
@@ -8309,6 +8346,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -8367,6 +8405,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -8522,6 +8561,7 @@
       "help-block-paywall-header",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -8547,6 +8587,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -8619,6 +8660,7 @@
       "help-block-paywall-subscriptions",
       "help-block-stepper",
       "help-block-sticky-container",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -9658,6 +9700,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-screen-herocontent-detailed"
@@ -10484,6 +10527,7 @@
       "help-block-header",
       "help-block-paywall-header",
       "help-block-paywall-subscriptions",
+      "help-fonts-typography",
       "help-screen-paywall"
     ],
     "set actionbar primary icon prop enable icon": [
@@ -10507,6 +10551,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "file": [
@@ -11054,6 +11099,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -11485,7 +11531,8 @@
       "help-block-background",
       "help-block-flexible-sections",
       "help-block-roller",
-      "help-block-text-field"
+      "help-block-text-field",
+      "help-fonts-typography"
     ],
     "flexible": [
       "help-block-background",
@@ -12091,6 +12138,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-single",
       "help-options-list-single",
       "help-screen-herocontent-detailed"
@@ -12179,6 +12227,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "permission": [
@@ -13345,7 +13394,8 @@
       "help-block-carousel",
       "help-block-custom-html",
       "help-element-subtitle",
-      "help-element-title"
+      "help-element-title",
+      "help-fonts-typography"
     ],
     "once": [
       "help-block-carousel",
@@ -13838,6 +13888,7 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-subtitle",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "anchored": [
@@ -15178,6 +15229,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "thumbnail": [
@@ -15229,6 +15281,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "aligned": [
@@ -16135,6 +16188,7 @@
       "help-block-custom-html",
       "help-block-flexible-sections",
       "help-block-paywall-footer",
+      "help-fonts-typography",
       "integrations-custom-domain-section"
     ],
     "being": [
@@ -16295,7 +16349,8 @@
       "integrations-analytics-section"
     ],
     "deleting": [
-      "help-block-flexible-sections"
+      "help-block-flexible-sections",
+      "help-fonts-typography"
     ],
     "reordering": [
       "help-block-flexible-sections"
@@ -16582,6 +16637,7 @@
     "everywhere": [
       "help-block-flexible-sections",
       "help-block-options",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-list-multi",
@@ -17127,6 +17183,7 @@
       "help-block-flexible-sections",
       "help-block-options",
       "help-block-sticky-container",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single"
     ],
@@ -17151,6 +17208,7 @@
       "help-block-paywall-media",
       "help-block-stepper",
       "help-block-text-field",
+      "help-fonts-typography",
       "integrations-custom-domain-section"
     ],
     "requires": [
@@ -18790,7 +18848,8 @@
       "help-block-roller"
     ],
     "branding": [
-      "help-block-header"
+      "help-block-header",
+      "help-fonts-typography"
     ],
     "glyph": [
       "help-block-header",
@@ -24898,7 +24957,8 @@
       "paywall-payment-methods"
     ],
     "mappings": [
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "help-fonts-typography"
     ],
     "present": [
       "help-block-variable-binding",
@@ -25307,6 +25367,72 @@
     "change setting": [
       "help-element-title"
     ],
+    "help fonts typography": [
+      "help-fonts-typography"
+    ],
+    "panel:": [
+      "help-fonts-typography"
+    ],
+    "platform": [
+      "help-fonts-typography",
+      "integrations-analytics-section"
+    ],
+    "column": [
+      "help-fonts-typography",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single"
+    ],
+    "identically": [
+      "help-fonts-typography"
+    ],
+    "ttf": [
+      "help-fonts-typography"
+    ],
+    "otf": [
+      "help-fonts-typography"
+    ],
+    "woff": [
+      "help-fonts-typography"
+    ],
+    "woff2": [
+      "help-fonts-typography"
+    ],
+    "confirming": [
+      "help-fonts-typography"
+    ],
+    "web embedding": [
+      "help-fonts-typography"
+    ],
+    "license": [
+      "help-fonts-typography"
+    ],
+    "eight": [
+      "help-fonts-typography"
+    ],
+    "slots": [
+      "help-fonts-typography"
+    ],
+    "web font": [
+      "help-fonts-typography"
+    ],
+    "grouping": [
+      "help-fonts-typography"
+    ],
+    "reverts": [
+      "help-fonts-typography"
+    ],
+    "affected": [
+      "help-fonts-typography"
+    ],
+    "web fonts": [
+      "help-fonts-typography"
+    ],
+    "custom font": [
+      "help-fonts-typography"
+    ],
     "help options grid multi": [
       "help-options-grid-multi"
     ],
@@ -25356,13 +25482,6 @@
       "help-options-list-single"
     ],
     "switchable": [
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single"
-    ],
-    "column": [
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -26479,9 +26598,6 @@
     "provider choice": [
       "integrations-analytics-section"
     ],
-    "platform": [
-      "integrations-analytics-section"
-    ],
     "workflow": [
       "integrations-analytics-section"
     ],
@@ -26758,7 +26874,8 @@
       "integrations-custom-domain-section"
     ],
     "integrations": [
-      "analytics-integration-list"
+      "analytics-integration-list",
+      "help-fonts-typography"
     ],
     "labels-copy": [
       "analytics-provider-config",
@@ -27579,6 +27696,21 @@
     "flow:capability.configure-screens": [
       "help-element-title"
     ],
+    "fonts": [
+      "help-fonts-typography"
+    ],
+    "typography": [
+      "help-fonts-typography"
+    ],
+    "web-fonts": [
+      "help-fonts-typography"
+    ],
+    "custom-font": [
+      "help-fonts-typography"
+    ],
+    "branding": [
+      "help-fonts-typography"
+    ],
     "grid": [
       "help-options-grid-multi",
       "help-options-grid-single",
@@ -27781,6 +27913,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-content-text",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -27819,6 +27952,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -27875,6 +28009,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -27934,6 +28069,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -27989,6 +28125,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -28019,6 +28156,7 @@
     "integrations": [
       "analytics-add-provider",
       "analytics-integration-list",
+      "help-fonts-typography",
       "integrations-analytics-section"
     ],
     "area": [
@@ -28125,6 +28263,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -28215,6 +28354,7 @@
       "analytics-provider-config",
       "help-block-custom-html",
       "help-block-text-field",
+      "help-fonts-typography",
       "help-screen-flexiblelayout",
       "help-screen-webembed",
       "integrations-custom-domain-section"
@@ -28251,6 +28391,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -28332,6 +28473,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -28523,6 +28665,7 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-subtitle",
+      "help-fonts-typography",
       "help-options-list-multi",
       "help-screen-carousel",
       "help-screen-flexiblelayout",
@@ -28582,7 +28725,8 @@
       "analytics-provider-config"
     ],
     "platforms": [
-      "analytics-add-provider"
+      "analytics-add-provider",
+      "help-fonts-typography"
     ],
     "ga4": [
       "analytics-add-provider",
@@ -28621,6 +28765,7 @@
       "help-block-paywall-body",
       "help-block-paywall-header",
       "help-block-paywall-media",
+      "help-fonts-typography",
       "help-screen-paywall",
       "integrations-custom-domain-section"
     ],
@@ -28636,6 +28781,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "help-block-background",
+      "help-fonts-typography",
       "help-screen-webembed",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview"
@@ -28905,6 +29051,7 @@
       "help-block-variable-binding",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-carousel",
       "help-screen-paywall",
       "integrations-analytics-section",
@@ -29003,7 +29150,8 @@
     ],
     "into": [
       "analytics-integration-list",
-      "help-block-background"
+      "help-block-background",
+      "help-fonts-typography"
     ],
     "published": [
       "analytics-integration-list"
@@ -29023,6 +29171,7 @@
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-custom-html",
+      "help-fonts-typography",
       "integrations-custom-domain-section",
       "paywall-payment-methods",
       "tiktok-events-catalog",
@@ -29135,6 +29284,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -29247,6 +29397,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -29366,6 +29517,7 @@
       "help-block-text-field",
       "help-content-hero",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent",
       "help-screen-textinput-elements",
       "integrations-analytics-section",
@@ -29685,6 +29837,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-flexiblelayout",
       "help-screen-herocontent-detailed",
       "help-screen-herocontent-elements",
@@ -29727,6 +29880,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-list-multi",
       "help-screen-carousel",
       "help-screen-flexiblelayout",
@@ -29788,6 +29942,7 @@
       "help-block-paywall-header",
       "help-block-text-field",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -29965,7 +30120,8 @@
     ],
     "built in": [
       "analytics-provider-config",
-      "help-block-custom-html"
+      "help-block-custom-html",
+      "help-fonts-typography"
     ],
     "option": [
       "analytics-provider-config",
@@ -29982,6 +30138,7 @@
       "help-block-paywall-header",
       "help-content-hero",
       "help-content-hero-basic",
+      "help-fonts-typography",
       "help-screen-flexiblelayout",
       "help-screen-herocontent-detailed",
       "integrations-custom-domain-section"
@@ -30077,7 +30234,8 @@
       "help-block-stepper"
     ],
     "renders": [
-      "analytics-provider-config"
+      "analytics-provider-config",
+      "help-fonts-typography"
     ],
     "load": [
       "analytics-provider-config"
@@ -30170,6 +30328,7 @@
       "help-block-variable-binding",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed",
       "integrations-custom-domain-section",
       "tiktok-events-catalog"
@@ -30214,6 +30373,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-flexiblelayout",
@@ -30546,6 +30706,7 @@
     ],
     "customers": [
       "facebook-events-catalog",
+      "help-fonts-typography",
       "tiktok-events-catalog"
     ],
     "ask": [
@@ -30553,6 +30714,7 @@
       "help-block-basic-config",
       "help-block-content",
       "help-content-text",
+      "help-fonts-typography",
       "help-screen-gridmultipick-elements",
       "help-screen-gridsinglepick-elements",
       "help-screen-listmultipick-elements",
@@ -30684,6 +30846,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -30700,6 +30863,7 @@
       "help-block-roller",
       "help-block-text-field",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-list-multi",
       "help-screen-carousel",
@@ -30821,6 +30985,7 @@
       "help-block-text-field",
       "help-block-variable-binding",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-herocontent-detailed"
     ],
     "documents": [
@@ -31042,6 +31207,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -31914,6 +32080,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -32196,6 +32363,7 @@
     "make": [
       "help-block-action-bar",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-screen-carousel"
     ],
     "sure": [
@@ -32208,7 +32376,8 @@
     "same": [
       "help-block-action-bar",
       "help-element-subtitle",
-      "help-element-title"
+      "help-element-title",
+      "help-fonts-typography"
     ],
     "connected": [
       "help-block-action-bar",
@@ -32290,7 +32459,8 @@
     "across": [
       "help-block-background",
       "help-block-content",
-      "help-element-hero-image"
+      "help-element-hero-image",
+      "help-fonts-typography"
     ],
     "types": [
       "help-block-background",
@@ -32463,7 +32633,8 @@
       "help-content-text"
     ],
     "regular": [
-      "help-block-background"
+      "help-block-background",
+      "help-fonts-typography"
     ],
     "flexible": [
       "help-block-background",
@@ -32829,6 +33000,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -32970,6 +33142,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-single",
       "help-options-list-single"
     ],
@@ -33049,7 +33222,8 @@
       "help-screen-wheelpicker-elements"
     ],
     "device": [
-      "help-block-basic-config"
+      "help-block-basic-config",
+      "help-fonts-typography"
     ],
     "permission": [
       "help-block-basic-config"
@@ -33322,7 +33496,8 @@
     ],
     "defaults": [
       "help-block-basic-config",
-      "help-block-header"
+      "help-block-header",
+      "help-fonts-typography"
     ],
     "timed": [
       "help-block-basic-config",
@@ -33731,7 +33906,8 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-subtitle",
-      "help-element-title"
+      "help-element-title",
+      "help-fonts-typography"
     ],
     "weight": [
       "help-block-carousel",
@@ -34194,11 +34370,13 @@
     "apply": [
       "help-block-custom-html",
       "help-element-subtitle",
-      "help-element-title"
+      "help-element-title",
+      "help-fonts-typography"
     ],
     "preview": [
       "help-block-custom-html",
-      "help-block-paywall-media"
+      "help-block-paywall-media",
+      "help-fonts-typography"
     ],
     "isolation": [
       "help-block-custom-html"
@@ -34401,6 +34579,7 @@
     ],
     "live": [
       "help-block-custom-html",
+      "help-fonts-typography",
       "integrations-custom-domain-section"
     ],
     "instead": [
@@ -34425,6 +34604,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -34447,7 +34627,8 @@
       "integrations-analytics-section"
     ],
     "deleting": [
-      "help-block-flexible-sections"
+      "help-block-flexible-sections",
+      "help-fonts-typography"
     ],
     "reordering": [
       "help-block-flexible-sections"
@@ -35625,6 +35806,7 @@
       "help-content-text",
       "help-element-hero-image",
       "help-element-subtitle",
+      "help-fonts-typography",
       "help-options-hero-list",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
@@ -35657,6 +35839,7 @@
       "help-block-paywall-header",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-paywall"
     ],
     "feature benefit": [
@@ -36008,7 +36191,8 @@
     ],
     "badge": [
       "help-block-paywall-header",
-      "help-block-paywall-subscriptions"
+      "help-block-paywall-subscriptions",
+      "help-fonts-typography"
     ],
     "paywall header": [
       "help-block-paywall-header"
@@ -36059,7 +36243,8 @@
     ],
     "typeface": [
       "help-block-paywall-header",
-      "help-element-subtitle"
+      "help-element-subtitle",
+      "help-fonts-typography"
     ],
     "screenedit paywall header restore line height": [
       "help-block-paywall-header"
@@ -36122,7 +36307,8 @@
     ],
     "upload": [
       "help-block-paywall-media",
-      "help-element-hero-image"
+      "help-element-hero-image",
+      "help-fonts-typography"
     ],
     "differs": [
       "help-block-paywall-media"
@@ -37507,7 +37693,8 @@
       "help-element-subtitle"
     ],
     "family": [
-      "help-element-subtitle"
+      "help-element-subtitle",
+      "help-fonts-typography"
     ],
     "set copyblock content copy subtitle appearance text styles prop font size": [
       "help-element-subtitle"
@@ -37605,6 +37792,105 @@
     "set copyblock content copy title appearance text styles prop background radius": [
       "help-element-title"
     ],
+    "help fonts typography": [
+      "help-fonts-typography"
+    ],
+    "fonts": [
+      "help-fonts-typography"
+    ],
+    "mappings": [
+      "help-fonts-typography"
+    ],
+    "panel:": [
+      "help-fonts-typography"
+    ],
+    "per": [
+      "help-fonts-typography",
+      "help-options-grid-multi",
+      "help-options-grid-single"
+    ],
+    "platform": [
+      "help-fonts-typography",
+      "integrations-analytics-section"
+    ],
+    "column": [
+      "help-fonts-typography",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single"
+    ],
+    "everywhere": [
+      "help-fonts-typography"
+    ],
+    "identically": [
+      "help-fonts-typography"
+    ],
+    "brand": [
+      "help-fonts-typography",
+      "integrations-custom-domain-section"
+    ],
+    "ttf": [
+      "help-fonts-typography"
+    ],
+    "otf": [
+      "help-fonts-typography"
+    ],
+    "woff": [
+      "help-fonts-typography"
+    ],
+    "woff2": [
+      "help-fonts-typography"
+    ],
+    "mb": [
+      "help-fonts-typography"
+    ],
+    "confirming": [
+      "help-fonts-typography"
+    ],
+    "web embedding": [
+      "help-fonts-typography"
+    ],
+    "license": [
+      "help-fonts-typography"
+    ],
+    "eight": [
+      "help-fonts-typography"
+    ],
+    "slots": [
+      "help-fonts-typography"
+    ],
+    "web font": [
+      "help-fonts-typography"
+    ],
+    "group": [
+      "help-fonts-typography"
+    ],
+    "bold": [
+      "help-fonts-typography"
+    ],
+    "grouping": [
+      "help-fonts-typography"
+    ],
+    "reverts": [
+      "help-fonts-typography"
+    ],
+    "affected": [
+      "help-fonts-typography"
+    ],
+    "devices": [
+      "help-fonts-typography"
+    ],
+    "web fonts": [
+      "help-fonts-typography"
+    ],
+    "custom font": [
+      "help-fonts-typography"
+    ],
+    "branding": [
+      "help-fonts-typography"
+    ],
     "help options grid multi": [
       "help-options-grid-multi"
     ],
@@ -37640,10 +37926,6 @@
       "help-options-grid-single"
     ],
     "laid": [
-      "help-options-grid-multi",
-      "help-options-grid-single"
-    ],
-    "per": [
       "help-options-grid-multi",
       "help-options-grid-single"
     ],
@@ -37697,13 +37979,6 @@
       "help-options-list-single"
     ],
     "switchable": [
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single"
-    ],
-    "column": [
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -38712,9 +38987,6 @@
     "provider choice": [
       "integrations-analytics-section"
     ],
-    "platform": [
-      "integrations-analytics-section"
-    ],
     "workflow": [
       "integrations-analytics-section"
     ],
@@ -38786,9 +39058,6 @@
       "integrations-custom-domain-section"
     ],
     "swaps": [
-      "integrations-custom-domain-section"
-    ],
-    "brand": [
       "integrations-custom-domain-section"
     ],
     "trustworthy": [
@@ -38962,6 +39231,123 @@
     ]
   },
   "synonyms": {
+    "change funnel font": [
+      "help-fonts-typography"
+    ],
+    "change": [
+      "help-fonts-typography"
+    ],
+    "funnel": [
+      "help-fonts-typography",
+      "launch-paid-funnel-overview"
+    ],
+    "font": [
+      "help-fonts-typography"
+    ],
+    "change the font": [
+      "help-fonts-typography"
+    ],
+    "the": [
+      "help-fonts-typography",
+      "launch-paid-funnel-overview"
+    ],
+    "set funnel font": [
+      "help-fonts-typography"
+    ],
+    "set": [
+      "help-fonts-typography"
+    ],
+    "funnel typography": [
+      "help-fonts-typography"
+    ],
+    "typography": [
+      "help-fonts-typography"
+    ],
+    "upload custom font": [
+      "help-fonts-typography"
+    ],
+    "upload": [
+      "help-fonts-typography"
+    ],
+    "custom": [
+      "analytics-add-provider",
+      "analytics-provider-config",
+      "help-block-custom-html",
+      "help-block-paywall-subscriptions",
+      "help-fonts-typography",
+      "integrations-analytics-section",
+      "integrations-custom-domain-section"
+    ],
+    "upload my own font": [
+      "help-fonts-typography"
+    ],
+    "own": [
+      "help-fonts-typography"
+    ],
+    "brand font": [
+      "help-fonts-typography"
+    ],
+    "brand": [
+      "help-fonts-typography"
+    ],
+    "web font": [
+      "help-fonts-typography"
+    ],
+    "web": [
+      "help-block-custom-html",
+      "help-block-paywall-subscriptions",
+      "help-fonts-typography"
+    ],
+    "custom typeface": [
+      "help-fonts-typography"
+    ],
+    "typeface": [
+      "help-fonts-typography"
+    ],
+    "same font on every device": [
+      "help-fonts-typography"
+    ],
+    "same": [
+      "help-fonts-typography"
+    ],
+    "every": [
+      "help-fonts-typography"
+    ],
+    "device": [
+      "help-fonts-typography"
+    ],
+    "изменить шрифт": [
+      "help-fonts-typography"
+    ],
+    "изменить": [
+      "help-fonts-typography"
+    ],
+    "шрифт": [
+      "help-fonts-typography"
+    ],
+    "загрузить свой шрифт": [
+      "help-fonts-typography"
+    ],
+    "загрузить": [
+      "help-fonts-typography"
+    ],
+    "свой": [
+      "help-fonts-typography"
+    ],
+    "шрифт воронки": [
+      "help-fonts-typography"
+    ],
+    "воронки": [
+      "help-fonts-typography"
+    ],
+    "кастомный шрифт": [
+      "help-fonts-typography"
+    ],
+    "кастомный": [
+      "help-block-custom-html",
+      "help-fonts-typography",
+      "integrations-custom-domain-section"
+    ],
     "selected product": [
       "help-block-flexible-sections"
     ],
@@ -39160,6 +39546,7 @@
       "help-block-flexible-sections"
     ],
     "paywall": [
+      "collect-email-before-paywall",
       "help-block-custom-html",
       "help-block-flexible-sections",
       "help-block-paywall-subscriptions"
@@ -39197,10 +39584,6 @@
       "help-block-custom-html",
       "help-block-paywall-subscriptions"
     ],
-    "web": [
-      "help-block-custom-html",
-      "help-block-paywall-subscriptions"
-    ],
     "embed": [
       "help-block-custom-html",
       "help-block-paywall-subscriptions"
@@ -39208,14 +39591,6 @@
     "custom html paywall": [
       "help-block-custom-html",
       "help-block-paywall-subscriptions"
-    ],
-    "custom": [
-      "analytics-add-provider",
-      "analytics-provider-config",
-      "help-block-custom-html",
-      "help-block-paywall-subscriptions",
-      "integrations-analytics-section",
-      "integrations-custom-domain-section"
     ],
     "html": [
       "help-block-custom-html",
@@ -39247,7 +39622,8 @@
     ],
     "оплата": [
       "help-block-custom-html",
-      "help-block-paywall-subscriptions"
+      "help-block-paywall-subscriptions",
+      "paywall-payment-methods"
     ],
     "custom html оплата": [
       "help-block-custom-html",
@@ -39263,7 +39639,9 @@
       "facebook-pixel-capi-setup"
     ],
     "events": [
-      "facebook-events-catalog"
+      "facebook-events-catalog",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
     ],
     "catalog": [
       "facebook-events-catalog"
@@ -39278,7 +39656,8 @@
       "facebook-events-catalog"
     ],
     "which": [
-      "facebook-events-catalog"
+      "facebook-events-catalog",
+      "paywall-payment-methods"
     ],
     "event list": [
       "facebook-events-catalog"
@@ -39302,10 +39681,13 @@
       "facebook-events-catalog"
     ],
     "какие": [
-      "facebook-events-catalog"
+      "facebook-events-catalog",
+      "paywall-payment-methods"
     ],
     "события": [
-      "facebook-events-catalog"
+      "facebook-events-catalog",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
     ],
     "какие ивенты": [
       "facebook-events-catalog"
@@ -39327,7 +39709,9 @@
     "pixel": [
       "analytics-add-provider",
       "analytics-provider-config",
-      "facebook-pixel-capi-setup"
+      "facebook-pixel-capi-setup",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
     ],
     "setup": [
       "analytics-add-provider",
@@ -39411,7 +39795,9 @@
     "пиксель": [
       "analytics-add-provider",
       "analytics-provider-config",
-      "facebook-pixel-capi-setup"
+      "facebook-pixel-capi-setup",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
     ],
     "analytics provider setup": [
       "analytics-add-provider",
@@ -39451,7 +39837,8 @@
     "google": [
       "analytics-add-provider",
       "analytics-provider-config",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "paywall-payment-methods"
     ],
     "google analytics setup": [
       "analytics-add-provider",
@@ -39624,10 +40011,6 @@
     "кастомный домен": [
       "integrations-custom-domain-section"
     ],
-    "кастомный": [
-      "help-block-custom-html",
-      "integrations-custom-domain-section"
-    ],
     "dns записи": [
       "integrations-custom-domain-section"
     ],
@@ -39672,6 +40055,251 @@
     ],
     "код": [
       "help-block-custom-html"
+    ],
+    "launch publish funnel": [
+      "launch-paid-funnel-overview"
+    ],
+    "launch": [
+      "launch-paid-funnel-overview"
+    ],
+    "publish": [
+      "launch-paid-funnel-overview"
+    ],
+    "publish my funnel": [
+      "launch-paid-funnel-overview"
+    ],
+    "launch my funnel": [
+      "launch-paid-funnel-overview"
+    ],
+    "go live": [
+      "launch-paid-funnel-overview"
+    ],
+    "live": [
+      "launch-paid-funnel-overview"
+    ],
+    "publish the funnel": [
+      "launch-paid-funnel-overview"
+    ],
+    "launch checklist": [
+      "launch-paid-funnel-overview"
+    ],
+    "checklist": [
+      "launch-paid-funnel-overview"
+    ],
+    "what's left to launch": [
+      "launch-paid-funnel-overview"
+    ],
+    "what": [
+      "launch-paid-funnel-overview"
+    ],
+    "left": [
+      "launch-paid-funnel-overview"
+    ],
+    "first paid funnel": [
+      "launch-paid-funnel-overview"
+    ],
+    "first": [
+      "launch-paid-funnel-overview"
+    ],
+    "paid": [
+      "launch-paid-funnel-overview"
+    ],
+    "запустить воронку": [
+      "launch-paid-funnel-overview"
+    ],
+    "запустить": [
+      "launch-paid-funnel-overview"
+    ],
+    "воронку": [
+      "launch-paid-funnel-overview"
+    ],
+    "опубликовать воронку": [
+      "launch-paid-funnel-overview"
+    ],
+    "опубликовать": [
+      "launch-paid-funnel-overview"
+    ],
+    "что осталось до запуска": [
+      "launch-paid-funnel-overview"
+    ],
+    "что": [
+      "launch-paid-funnel-overview"
+    ],
+    "осталось": [
+      "launch-paid-funnel-overview"
+    ],
+    "запуска": [
+      "launch-paid-funnel-overview"
+    ],
+    "чеклист запуска": [
+      "launch-paid-funnel-overview"
+    ],
+    "чеклист": [
+      "launch-paid-funnel-overview"
+    ],
+    "первая платная воронка": [
+      "launch-paid-funnel-overview"
+    ],
+    "первая": [
+      "launch-paid-funnel-overview"
+    ],
+    "платная": [
+      "launch-paid-funnel-overview"
+    ],
+    "воронка": [
+      "launch-paid-funnel-overview"
+    ],
+    "email before paywall": [
+      "collect-email-before-paywall"
+    ],
+    "email": [
+      "collect-email-before-paywall"
+    ],
+    "before": [
+      "collect-email-before-paywall"
+    ],
+    "collect email": [
+      "collect-email-before-paywall"
+    ],
+    "collect": [
+      "collect-email-before-paywall"
+    ],
+    "email before checkout": [
+      "collect-email-before-paywall"
+    ],
+    "checkout": [
+      "collect-email-before-paywall"
+    ],
+    "capture email": [
+      "collect-email-before-paywall"
+    ],
+    "capture": [
+      "collect-email-before-paywall"
+    ],
+    "собрать email": [
+      "collect-email-before-paywall"
+    ],
+    "собрать": [
+      "collect-email-before-paywall"
+    ],
+    "email перед пейволом": [
+      "collect-email-before-paywall"
+    ],
+    "перед": [
+      "collect-email-before-paywall"
+    ],
+    "пейволом": [
+      "collect-email-before-paywall"
+    ],
+    "почта перед оплатой": [
+      "collect-email-before-paywall"
+    ],
+    "почта": [
+      "collect-email-before-paywall"
+    ],
+    "оплатой": [
+      "collect-email-before-paywall"
+    ],
+    "сбор почты": [
+      "collect-email-before-paywall"
+    ],
+    "сбор": [
+      "collect-email-before-paywall"
+    ],
+    "почты": [
+      "collect-email-before-paywall"
+    ],
+    "payment methods": [
+      "paywall-payment-methods"
+    ],
+    "payment": [
+      "paywall-payment-methods"
+    ],
+    "methods": [
+      "paywall-payment-methods"
+    ],
+    "apple pay": [
+      "paywall-payment-methods"
+    ],
+    "apple": [
+      "paywall-payment-methods"
+    ],
+    "pay": [
+      "paywall-payment-methods"
+    ],
+    "google pay": [
+      "paywall-payment-methods"
+    ],
+    "which payment methods": [
+      "paywall-payment-methods"
+    ],
+    "способы оплаты": [
+      "paywall-payment-methods"
+    ],
+    "способы": [
+      "paywall-payment-methods"
+    ],
+    "оплаты": [
+      "paywall-payment-methods"
+    ],
+    "методы оплаты": [
+      "paywall-payment-methods"
+    ],
+    "методы": [
+      "paywall-payment-methods"
+    ],
+    "оплата картой": [
+      "paywall-payment-methods"
+    ],
+    "картой": [
+      "paywall-payment-methods"
+    ],
+    "какие способы оплаты": [
+      "paywall-payment-methods"
+    ],
+    "tiktok events": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "tiktok": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "tiktok pixel": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "tiktok events api": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "api": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "тикток пиксель": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "тикток": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "события тикток": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "тикток события": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "tiktok атрибуция": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "атрибуция": [
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
     ]
   },
   "negativeKeywords": {

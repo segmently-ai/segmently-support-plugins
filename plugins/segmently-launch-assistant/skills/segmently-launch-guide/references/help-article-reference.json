@@ -5382,6 +5382,16 @@
       "assemblyLinks": []
     },
     {
+      "alias": "help-fonts-typography",
+      "title": "Fonts — set your funnel typography",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-fonts-typography/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-fonts-typography/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
       "alias": "help-options-grid-multi",
       "title": "Options — Grid Multi Pick",
       "projectId": "arswew63RwQr6V4Ekb1Z",

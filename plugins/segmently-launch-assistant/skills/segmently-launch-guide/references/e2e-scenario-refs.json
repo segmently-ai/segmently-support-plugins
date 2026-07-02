@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "note": "GENERATED customer-safe replay scenario references from validated SupportFlow runs. Reuse these proven entry points and step sequences when planning SHOW walkthroughs or browser DO work instead of inventing navigation from prose. Placeholders like {{baseUrl}} come from the customer target context.",
+  "scenarios": [
+    {
+      "recipeKey": "create-onboarding-wizard",
+      "runId": "support-flow-create-onboarding-scale-01",
+      "validatedAt": "2026-05-26T20:11:40.600Z",
+      "title": "Create a V2 onboarding",
+      "scenario": "onboarding",
+      "goal": "Reach the Create Onboarding wizard and explain the first decisions the customer must make.",
+      "destination": "Project workspace -> Onboardings -> Create Onboarding -> Basic Info",
+      "entryPoints": [
+        {
+          "id": "direct-onboardings-url",
+          "title": "Direct link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboardings-v2",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens without an auth prompt."
+            },
+            {
+              "id": "open-onboardings",
+              "instruction": "Open the Onboardings page for the project.",
+              "expectedResult": "The Onboardings list and Create Onboarding action are visible."
+            },
+            {
+              "id": "open-wizard",
+              "instruction": "Click Create Onboarding.",
+              "expectedResult": "The V2 creation wizard opens on Basic Info."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "open-onboardings",
+              "instruction": "Click Onboardings in the project sidebar.",
+              "expectedResult": "The Onboardings list opens."
+            },
+            {
+              "id": "open-wizard",
+              "instruction": "Click Create Onboarding.",
+              "expectedResult": "The creation wizard opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "choose-template-theme",
+      "runId": "support-flow-choose-template-theme-full-01",
+      "validatedAt": "2026-05-27T11:29:51.796Z",
+      "title": "Choose a template or visual theme",
+      "scenario": "onboarding",
+      "goal": "Show where a visual theme/template baseline is selected or reviewed.",
+      "destination": "Project workspace -> Admin -> Themes V2",
+      "entryPoints": [
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "open-admin",
+              "instruction": "Open the Admin section in the project sidebar.",
+              "expectedResult": "Admin navigation items are visible."
+            },
+            {
+              "id": "open-themes",
+              "instruction": "Open Themes V2.",
+              "expectedResult": "The V2 theme/template grid opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "open-v2-canvas",
+      "runId": "support-flow-open-v2-canvas-full-01",
+      "validatedAt": "2026-05-27T11:29:29.031Z",
+      "title": "Open the V2 canvas",
+      "scenario": "onboarding",
+      "goal": "Orient the customer on the canvas before explaining screen-level settings.",
+      "destination": "Project workspace -> Onboardings -> V2 canvas",
+      "entryPoints": [
+        {
+          "id": "direct-v2-canvas",
+          "title": "Direct canvas link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{onboardingId}}",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens without an auth prompt."
+            },
+            {
+              "id": "open-canvas",
+              "instruction": "Open the V2 onboarding canvas.",
+              "expectedResult": "The canvas, template panel, and existing screens are visible."
+            }
+          ]
+        },
+        {
+          "id": "from-onboardings-list",
+          "title": "From Onboardings",
+          "route": null,
+          "steps": [
+            {
+              "id": "open-onboardings",
+              "instruction": "Open Onboardings from the sidebar.",
+              "expectedResult": "The Onboardings list opens."
+            },
+            {
+              "id": "open-onboarding",
+              "instruction": "Open the target onboarding.",
+              "expectedResult": "The V2 canvas opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "configure-canvas-screens",
+      "runId": "support-flow-configure-canvas-screens-full-01",
+      "validatedAt": "2026-05-27T11:30:14.213Z",
+      "title": "Add screens on the canvas",
+      "scenario": "onboarding",
+      "goal": "Show how required screens are added from templates and organized on the canvas.",
+      "destination": "V2 canvas -> template panel -> screen sequence",
+      "entryPoints": [
+        {
+          "id": "direct-v2-canvas",
+          "title": "Direct canvas link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{onboardingId}}",
+          "steps": [
+            {
+              "id": "open-canvas",
+              "instruction": "Open the target V2 canvas.",
+              "expectedResult": "The template panel and screen canvas are visible."
+            },
+            {
+              "id": "add-screen",
+              "instruction": "Search for a screen template and add it to the canvas.",
+              "expectedResult": "The new screen appears in the canvas sequence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "connect-canvas-screens",
+      "runId": "support-flow-connect-canvas-screens-full-01",
+      "validatedAt": "2026-05-27T11:30:37.594Z",
+      "title": "Connect screens on the canvas",
+      "scenario": "onboarding",
+      "goal": "Show the customer how screen-to-screen continuation is represented on the canvas.",
+      "destination": "V2 canvas -> connected screen edges",
+      "entryPoints": [
+        {
+          "id": "direct-v2-canvas",
+          "title": "Direct canvas link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{onboardingId}}",
+          "steps": [
+            {
+              "id": "open-canvas",
+              "instruction": "Open the target V2 canvas.",
+              "expectedResult": "The canvas and screen nodes are visible."
+            },
+            {
+              "id": "connect-screens",
+              "instruction": "Connect the source screen action to the next screen.",
+              "expectedResult": "An edge/transition appears between the screens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "connect-stripe-account",
+      "runId": "support-flow-connect-stripe-scale-01",
+      "validatedAt": "2026-05-26T20:11:59.440Z",
+      "title": "Connect Stripe to a project",
+      "scenario": "stripe-connect",
+      "goal": "Reach the Stripe integration controls and explain test/live connection choices.",
+      "destination": "Project workspace -> Integrations -> Stripe",
+      "entryPoints": [
+        {
+          "id": "direct-integrations-url",
+          "title": "Direct link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/integrations",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens without an auth prompt."
+            },
+            {
+              "id": "open-integrations",
+              "instruction": "Open the direct Integrations route.",
+              "expectedResult": "The Integrations page is visible."
+            },
+            {
+              "id": "expand-stripe",
+              "instruction": "Expand the Stripe section.",
+              "expectedResult": "Stripe connection status and connect actions are visible."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "expand-web-section",
+              "instruction": "Expand the Web section in the sidebar.",
+              "expectedResult": "Web menu items are visible."
+            },
+            {
+              "id": "open-integrations",
+              "instruction": "Click Integrations.",
+              "expectedResult": "The Integrations page opens."
+            },
+            {
+              "id": "expand-stripe",
+              "instruction": "Expand Stripe.",
+              "expectedResult": "Stripe connection controls are visible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "create-paywall-product",
+      "runId": "support-flow-create-paywall-product-scale-01",
+      "validatedAt": "2026-05-26T20:12:49.084Z",
+      "title": "Create a paywall product",
+      "scenario": "paywall-products",
+      "goal": "Reach the Paywall Products dialog and explain how Stripe Product and Stripe Price are linked.",
+      "destination": "Project workspace -> Web -> Paywall Products -> Add Product",
+      "entryPoints": [
+        {
+          "id": "direct-products-url",
+          "title": "Direct link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/stripe/products",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens without an auth prompt."
+            },
+            {
+              "id": "open-products",
+              "instruction": "Open Paywall Products.",
+              "expectedResult": "The product list and mode tabs are visible."
+            },
+            {
+              "id": "open-dialog",
+              "instruction": "Click Add Product and choose Stripe if a provider menu appears.",
+              "expectedResult": "The Create Paywall Product dialog opens."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "expand-web-section",
+              "instruction": "Expand the Web section in the sidebar.",
+              "expectedResult": "Web menu items are visible."
+            },
+            {
+              "id": "open-products",
+              "instruction": "Click Paywall Products.",
+              "expectedResult": "The Paywall Products page opens."
+            },
+            {
+              "id": "open-dialog",
+              "instruction": "Click Add Product.",
+              "expectedResult": "The product dialog opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "configure-paywall-screen-products",
+      "runId": "support-flow-paywall-screen-products-full-02",
+      "validatedAt": "2026-05-27T11:39:26.797Z",
+      "title": "Add products to a paywall screen",
+      "scenario": "paywall-editor",
+      "goal": "Reach the subscription products section inside a V2 paywall screen editor.",
+      "destination": "V2 onboarding canvas -> paywall screen editor -> Subscriptions",
+      "entryPoints": [
+        {
+          "id": "direct-v2-canvas",
+          "title": "Direct editor link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{onboardingId}}",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the customer project.",
+              "expectedResult": "The app shell opens without an auth prompt."
+            },
+            {
+              "id": "open-canvas",
+              "instruction": "Open the V2 onboarding canvas.",
+              "expectedResult": "The React Flow canvas is visible."
+            },
+            {
+              "id": "open-paywall-screen",
+              "instruction": "Open the editor for the paywall screen.",
+              "expectedResult": "The paywall screen editor is visible."
+            },
+            {
+              "id": "open-subscriptions",
+              "instruction": "Open the Paywall Subscriptions section.",
+              "expectedResult": "Subscription product controls are visible."
+            }
+          ]
+        },
+        {
+          "id": "from-onboardings-list",
+          "title": "From Onboardings",
+          "route": null,
+          "steps": [
+            {
+              "id": "open-onboardings",
+              "instruction": "Click Onboardings in the project sidebar.",
+              "expectedResult": "The Onboardings list opens."
+            },
+            {
+              "id": "open-onboarding",
+              "instruction": "Open the onboarding that contains the paywall screen.",
+              "expectedResult": "The V2 canvas opens."
+            },
+            {
+              "id": "open-paywall-screen",
+              "instruction": "Open the paywall screen editor.",
+              "expectedResult": "Paywall screen settings are visible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "configure-web-placement-entry-rules",
+      "runId": "support-flow-web-placement-entry-rules-full-03",
+      "validatedAt": "2026-05-27T11:43:55.258Z",
+      "title": "Route visitors to the right entry screen",
+      "scenario": "web-placement",
+      "goal": "Reach Entry Screen Rules and explain how source values choose the first screen.",
+      "destination": "Project workspace -> Web Placements -> Create/Edit placement -> Entry Screen Rules",
+      "entryPoints": [
+        {
+          "id": "direct-web-placements-url",
+          "title": "Direct link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/web-placements",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens."
+            },
+            {
+              "id": "open-web-placements",
+              "instruction": "Open Web Placements.",
+              "expectedResult": "The Web Placements list opens."
+            },
+            {
+              "id": "open-dialog",
+              "instruction": "Create or edit a V2 placement.",
+              "expectedResult": "The Web Placement dialog opens."
+            },
+            {
+              "id": "open-entry-rules",
+              "instruction": "Open Entry Screen Rules.",
+              "expectedResult": "Entry rule controls are visible."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "expand-web-section",
+              "instruction": "Expand the Web section in the sidebar.",
+              "expectedResult": "Web menu items are visible."
+            },
+            {
+              "id": "open-web-placements",
+              "instruction": "Click Web Placements.",
+              "expectedResult": "The Web Placements list opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "configure-web-placement-stripe-metadata",
+      "runId": "support-flow-web-placement-stripe-metadata-scale-01",
+      "validatedAt": "2026-05-26T23:06:10.841Z",
+      "title": "Send web placement values to Stripe",
+      "scenario": "web-placement",
+      "goal": "Reach Web Placement Stripe metadata and email-prefill settings.",
+      "destination": "Project workspace -> Web Placements -> Create/Edit placement -> Stripe Metadata",
+      "entryPoints": [
+        {
+          "id": "direct-web-placements-url",
+          "title": "Direct link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/web-placements",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the project.",
+              "expectedResult": "The project workspace opens."
+            },
+            {
+              "id": "open-web-placements",
+              "instruction": "Open Web Placements.",
+              "expectedResult": "The Web Placements list opens."
+            },
+            {
+              "id": "open-dialog",
+              "instruction": "Create or edit a placement.",
+              "expectedResult": "The Web Placement dialog opens."
+            },
+            {
+              "id": "open-stripe-metadata",
+              "instruction": "Open Stripe Metadata and Stripe Email sections.",
+              "expectedResult": "Stripe destination mapping controls are visible."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "expand-web-section",
+              "instruction": "Expand the Web section in the sidebar.",
+              "expectedResult": "Web menu items are visible."
+            },
+            {
+              "id": "open-web-placements",
+              "instruction": "Click Web Placements.",
+              "expectedResult": "The Web Placements list opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "publish-web-placement",
+      "runId": "support-flow-publish-web-placement-full-01",
+      "validatedAt": "2026-05-27T11:31:38.565Z",
+      "title": "Publish and copy a web placement URL",
+      "scenario": "web-placement",
+      "goal": "Show the publish action and where the customer copies the final URL.",
+      "destination": "Project workspace -> Web Placements -> Publish / Copy URL",
+      "entryPoints": [
+        {
+          "id": "direct-web-placements-url",
+          "title": "Direct Web Placements link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/web-placements",
+          "steps": [
+            {
+              "id": "open-web-placements",
+              "instruction": "Open Web Placements.",
+              "expectedResult": "The Web Placements list opens."
+            },
+            {
+              "id": "publish-placement",
+              "instruction": "Publish or republish the target placement.",
+              "expectedResult": "The placement has a published URL."
+            },
+            {
+              "id": "copy-url",
+              "instruction": "Copy the published URL for ad traffic or QA.",
+              "expectedResult": "The URL is ready to paste into an ad destination or test browser."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "verify-published-funnel",
+      "runId": "support-flow-verify-published-funnel-full-01",
+      "validatedAt": "2026-05-27T11:33:26.569Z",
+      "title": "Verify a published funnel",
+      "scenario": "web-placement",
+      "goal": "Show the customer how to verify that the published URL opens a real funnel path.",
+      "destination": "Web Placements -> Open published URL -> V2 web-shell runtime",
+      "entryPoints": [
+        {
+          "id": "from-web-placements",
+          "title": "From Web Placements",
+          "route": null,
+          "steps": [
+            {
+              "id": "open-web-placements",
+              "instruction": "Open Web Placements.",
+              "expectedResult": "The placement row and URL actions are visible."
+            },
+            {
+              "id": "open-runtime",
+              "instruction": "Open the published URL.",
+              "expectedResult": "The V2 funnel runtime loads."
+            },
+            {
+              "id": "verify-path",
+              "instruction": "Click through the expected first screen, paywall path, checkout handoff, and analytics verification depth for the launch.",
+              "expectedResult": "The launch path is verified at the requested depth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "add-analytics-integration",
+      "runId": "support-flow-analytics-real-01",
+      "validatedAt": "2026-05-26T18:47:47.371Z",
+      "title": "Add an analytics integration",
+      "scenario": "analytics",
+      "goal": "Reach the Analytics integration controls for a project and start the provider selection flow.",
+      "destination": "Project workspace -> Integrations -> Analytics -> Add Analytics Integration",
+      "entryPoints": [
+        {
+          "id": "direct-integrations-url",
+          "title": "Direct Integrations URL",
+          "route": "{{baseUrl}}/project/{{projectId}}/integrations",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with a support account that can access the project.",
+              "expectedResult": "The app shell opens without an auth prompt."
+            },
+            {
+              "id": "open-integrations",
+              "instruction": "Open the direct Integrations route for the project.",
+              "expectedResult": "The Integrations page is visible."
+            },
+            {
+              "id": "expand-analytics",
+              "instruction": "Expand the Analytics section.",
+              "expectedResult": "The Analytics content panel is visible."
+            },
+            {
+              "id": "click-add",
+              "instruction": "Click Add in the Analytics section.",
+              "expectedResult": "The Add Analytics Integration dialog opens."
+            }
+          ]
+        },
+        {
+          "id": "from-project-sidebar",
+          "title": "From the project sidebar",
+          "route": null,
+          "steps": [
+            {
+              "id": "expand-web-section",
+              "instruction": "Expand the Web section in the sidebar.",
+              "expectedResult": "Web menu items are visible."
+            },
+            {
+              "id": "open-integrations",
+              "instruction": "Click Integrations in the sidebar.",
+              "expectedResult": "The Integrations page opens."
+            },
+            {
+              "id": "expand-analytics",
+              "instruction": "Expand Analytics.",
+              "expectedResult": "Analytics integrations and the Add action are visible."
+            },
+            {
+              "id": "click-add",
+              "instruction": "Click Add and choose the provider to connect.",
+              "expectedResult": "The provider-selection dialog opens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeKey": "configure-variable-binding",
+      "runId": "configure-variable-binding-2026-06-02T22-18-00-691Z-6ed17887",
+      "validatedAt": "2026-06-02T22:18:53.487Z",
+      "title": "Configure a screen Variable Binding section",
+      "scenario": "editor",
+      "goal": "Reach the Variable Binding section for a screen in a V2 onboarding.",
+      "destination": "V2 onboarding canvas -> screen editor -> Variable Binding",
+      "entryPoints": [
+        {
+          "id": "direct-v2-canvas",
+          "title": "Direct editor link from support",
+          "route": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{onboardingId}}",
+          "steps": [
+            {
+              "id": "login",
+              "instruction": "Log in with an account that can access the customer project.",
+              "expectedResult": "The app shell opens without an auth prompt."
+            },
+            {
+              "id": "open-screen-editor",
+              "instruction": "Open the screen editor for a screen with a Variable Binding section.",
+              "expectedResult": "The V2 screen editor is visible."
+            },
+            {
+              "id": "reveal-variable-binding",
+              "instruction": "Find the Variable Binding section.",
+              "expectedResult": "The Variable Binding section is visible."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

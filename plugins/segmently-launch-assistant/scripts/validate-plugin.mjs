@@ -342,6 +342,40 @@ check('launch runtime', () => {
   assert(customerSurface.includes('customer-surface acceptance passed'), 'customer-surface acceptance runner did not pass');
 });
 
+check('customer-public-graph-boundary', () => {
+  const launchRoot = join(pluginRoot, 'skills/segmently-launch-guide');
+  const graphRoot = join(launchRoot, 'references/support-knowledge-graph');
+  assert(!existsSync(join(launchRoot, 'references/support-module-relations-overrides.json')), 'customer plugin must not ship support-module-relations-overrides.json');
+  const schema = JSON.parse(readFileSync(join(graphRoot, 'schema.json'), 'utf8'));
+  const graphIndex = JSON.parse(readFileSync(join(graphRoot, 'search-index.json'), 'utf8'));
+  assert(!(schema.nodeTypes ?? []).includes('Module'), 'customer plugin graph must not expose Module node type');
+  assert(!(schema.nodeTypes ?? []).includes('Submodule'), 'customer plugin graph must not expose Submodule node type');
+  assert(!(schema.edgeTypes ?? []).some(type => String(type).startsWith('MODULE_') || String(type).startsWith('SUBMODULE_')), 'customer plugin graph must not expose module relation edge types');
+  assert(!Object.prototype.hasOwnProperty.call(graphIndex, 'moduleNames'), 'customer plugin graph must not expose moduleNames index');
+  assert(!Object.prototype.hasOwnProperty.call(graphIndex, 'submoduleIds'), 'customer plugin graph must not expose submoduleIds index');
+  const leakMarkers = [
+    'Module:',
+    'Submodule:',
+    'MODULE_RELATED_',
+    'SUBMODULE_RELATED_',
+    'modules/registry.json',
+    'support-module-relations-overrides',
+  ];
+  for (const file of listFiles(launchRoot)) {
+    const rel = relative(launchRoot, file).replaceAll('\\', '/');
+    if (!(
+      rel.startsWith('references/support-knowledge-graph/')
+      || rel === 'scripts/article-registry-tool.mjs'
+      || rel === 'scripts/run-evals.mjs'
+      || rel === 'SKILL.md'
+    )) continue;
+    const text = readFileSync(file, 'utf8');
+    for (const marker of leakMarkers) {
+      assert(!text.includes(marker), `segmently-launch-guide/${rel} leaks internal support impact marker ${JSON.stringify(marker)}`);
+    }
+  }
+});
+
 check('codex-dispatch-contract', () => {
   const launchRoot = join(pluginRoot, 'skills/segmently-launch-guide');
   const runner = join(launchRoot, 'runtime/editor-do-runner.mjs');

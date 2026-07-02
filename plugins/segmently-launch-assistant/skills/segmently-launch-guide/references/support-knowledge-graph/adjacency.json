@@ -2,659 +2,2196 @@
   "schemaVersion": 1,
   "generated": true,
   "outgoing": {
+    "Action:editor.actionBar.primaryButton.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.label": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
+      "ACTION_EXECUTED_BY_HELPER": [
+        "TestKitHelper:navigateToSetting",
+        "TestKitHelper:openScreenEditor",
+        "TestKitHelper:setCheckbox",
+        "TestKitHelper:setField",
+        "TestKitHelper:setSelect",
+        "TestKitHelper:setTextField"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.primaryButton.textStyle.textAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.actionBar.secondaryButton.textStyle.textAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.detail.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.image.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.image.style.height": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.image.style.scaleMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.image.style.width": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.imageContainer.style.heightMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.imageContainer.style.heightValue": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.imageContainer.style.verticalAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.subtitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.textContainer.style.heightMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.textContainer.style.heightValue": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.textContainer.style.verticalAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.carousel.title.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.subtitle.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.content.title.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Action:editor.flexibleSections.screen.screenScrollable": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.flexGrow": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.flexShrink": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.heightMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.heightValue": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.horizontalAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.sectionScrollable": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.verticalAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
     "Action:editor.flexibleSections.section.layout.zIndex": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-flexible-sections"
       ]
     },
+    "Action:editor.header.backButton.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.backButton.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.header.skipButton.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Action:editor.list.options.itemTitle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
+      "ACTION_EXECUTED_BY_HELPER": [
+        "TestKitHelper:navigateToSetting",
+        "TestKitHelper:openScreenEditor",
+        "TestKitHelper:setCheckbox",
+        "TestKitHelper:setField",
+        "TestKitHelper:setSelect",
+        "TestKitHelper:setTextField"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-options-list-single"
       ]
     },
     "Action:editor.media.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-media"
       ]
     },
     "Action:editor.media.style.heightPercentage": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-media"
       ]
     },
     "Action:editor.media.style.repeat": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-media"
       ]
     },
     "Action:editor.media.style.scaleMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-media"
       ]
     },
     "Action:editor.media.style.topAlignment": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-media"
       ]
     },
+    "Action:editor.options.itemSubtitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemSubtitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.itemTitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.selectedItem.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.selectedItem.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.selectedItem.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.selectedItem.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.unselectedItem.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.unselectedItem.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.unselectedItem.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.options.unselectedItem.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywall.attachProduct": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
+      "ACTION_EXECUTED_BY_HELPER": [
+        "TestKitHelper:navigateToSetting",
+        "TestKitHelper:openScreenEditor",
+        "TestKitHelper:setCheckbox",
+        "TestKitHelper:setField",
+        "TestKitHelper:setSelect",
+        "TestKitHelper:setTextField"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.subtitle.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallBody.title.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.autoRenew.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.privacyLink.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.purchaseButton.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.restoreLink.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.paywallFooter.termsLink.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Action:editor.paywallHeader.closeButton.style.alignment": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.closeButton.style.delaySeconds": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.closeButton.style.iconColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.closeButton.style.visibility": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallHeader.restoreLink.style.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-header"
       ]
     },
     "Action:editor.paywallMedia.style.bottomAlignment": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallMedia.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallMedia.style.heightPercentage": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallMedia.style.repeat": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallMedia.style.scaleMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallMedia.style.topAlignment": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-media"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.billingPeriod.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.checkbox.style.checkedColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.checkbox.style.uncheckedColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.itemPadding.bottom": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.itemPadding.end": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.itemPadding.start": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.itemPadding.top": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.layout.productLayout": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.layout.startColumnWidthPercentage": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.layout.viewKind": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.listPadding.bottom": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.listPadding.end": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.listPadding.start": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.listPadding.top": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planName.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.planNote.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.price.textStyle.textDecorationColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.selectedItem.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.selectedItem.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.selectedItem.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.selectedItem.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.unselectedItem.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.unselectedItem.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.unselectedItem.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.paywallSubscriptions.unselectedItem.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-paywall-subscriptions"
       ]
     },
     "Action:editor.roller.style.containerBackgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.containerBorderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.containerBorderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.containerCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.labelAlign": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.labelColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.labelFontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
     "Action:editor.roller.style.labelFontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-roller"
       ]
     },
+    "Action:editor.screen.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.setting.screenedit-basic-config-animation-enabled": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.setting.screenedit-basic-config-countdown-duration-value": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.setting.screenedit-basic-config-countdown-unit": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.setting.screenedit-basic-config-offline-first": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.setting.screenedit-basic-config-permission-type": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.description.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.image.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.image.style.height": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.image.style.scaleMode": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.image.style.width": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Action:editor.stepper.style.containerHeightPercentage": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
     "Action:editor.stepper.style.fillColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
     "Action:editor.stepper.style.thickness": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
     "Action:editor.stepper.style.timerDuration": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
     "Action:editor.stepper.style.trackColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
     "Action:editor.stepper.style.trackThickness": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-stepper"
       ]
     },
+    "Action:editor.stepper.subtitle.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.subtitle.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.backgroundColorOpacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.backgroundCornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.color": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Action:editor.stepper.title.textStyle.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Action:editor.stickyContainer.style.backgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.stickyContainer.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.stickyContainer.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.stickyContainer.style.cornerRadius": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.stickyContainer.style.opacity": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.stickyContainer.style.showBackground": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-sticky-container"
       ]
     },
     "Action:editor.textField.style.align": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.borderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.borderType": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.borderWidth": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.fieldBackgroundColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.fontFamily": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.fontSize": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.fontWeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.lineHeight": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.placeholderColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
       ]
     },
     "Action:editor.textField.style.typedTextColor": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.screen.apply"
+      ],
       "ACTION_HAS_TEACH_FALLBACK": [
         "Article:help-block-text-field"
+      ]
+    },
+    "Action:handoff.domain.dns": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:domain.status.read"
+      ]
+    },
+    "Action:handoff.stripe.connect": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:stripe.catalog.read"
+      ]
+    },
+    "Action:launch.analytics.pixel.apply": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:analytics.settings.apply"
+      ]
+    },
+    "Action:launch.funnel.create": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:funnel.v2.create"
+      ]
+    },
+    "Action:launch.paywallProducts.create": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:stripe.paywall-product.ensure"
+      ]
+    },
+    "Action:launch.publish": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "CliCapability:webPlacement.publish"
       ]
     },
     "Article:help-block-action-bar": {
@@ -4808,6 +6345,170 @@
         "SourceConfig:references/articles/tiktok-pixel-events-api-setup.json"
       ]
     },
+    "CliCapability:analytics.settings.apply": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:add-analytics-integration"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:add-fb-pixel",
+        "Scenario:add-tiktok-pixel",
+        "Scenario:connect-analytics"
+      ]
+    },
+    "CliCapability:funnel.v2.apply": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:configure-canvas-screens"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:add-screens"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:loginAndNavigateToV2Canvas",
+        "TestKitHelper:placeScreenBatch"
+      ]
+    },
+    "CliCapability:funnel.v2.create": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:create-onboarding-wizard"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:create-funnel"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:loginAndNavigateToV2Canvas"
+      ]
+    },
+    "CliCapability:funnel.v2.edge.connect": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:connect-canvas-screens"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:configure-actions"
+      ]
+    },
+    "CliCapability:funnel.v2.screen.apply": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:open-v2-canvas"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:add-screens",
+        "Scenario:change-setting",
+        "Scenario:configure-actions"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:navigateToSetting",
+        "TestKitHelper:openScreenEditor",
+        "TestKitHelper:setCheckbox",
+        "TestKitHelper:setField",
+        "TestKitHelper:setSelect",
+        "TestKitHelper:setTextField"
+      ]
+    },
+    "CliCapability:funnel.v2.variable.bind": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:configure-variable-binding"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:bindVariableToSection",
+        "TestKitHelper:createVariable"
+      ]
+    },
+    "CliCapability:projectTheme.manage": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:choose-template-theme"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:set-theme"
+      ]
+    },
+    "CliCapability:publish.runtime.verify": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:verify-published-funnel"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:publish",
+        "Scenario:test-purchase"
+      ]
+    },
+    "CliCapability:stripe.catalog.read": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:connect-stripe-account"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:connect-stripe"
+      ]
+    },
+    "CliCapability:stripe.paywall-product.ensure": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:configure-paywall-screen-products",
+        "E2eScenario:create-paywall-product"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:attach-products",
+        "Scenario:create-paywall-products",
+        "Scenario:paywall-payment-methods"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:ensurePaywallProduct"
+      ]
+    },
+    "CliCapability:webPlacement.configure": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:configure-web-placement-entry-rules",
+        "E2eScenario:configure-web-placement-stripe-metadata"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:collect-email-before-paywall",
+        "Scenario:configure-attribution",
+        "Scenario:configure-web-placement"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:addEntryScreenRule",
+        "TestKitHelper:expandSection",
+        "TestKitHelper:fillBasicFields",
+        "TestKitHelper:openCreateDialog",
+        "TestKitHelper:saveAndPublish",
+        "TestKitHelper:saveOnly",
+        "TestKitHelper:setStripeEmail"
+      ]
+    },
+    "CliCapability:webPlacement.publish": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "E2eScenario:publish-web-placement",
+        "E2eScenario:verify-published-funnel"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:publish"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:copyWebPlacementUrl",
+        "TestKitHelper:createAndPublishWebPlacement",
+        "TestKitHelper:publishWebPlacement"
+      ]
+    },
+    "CliCapability:analytics.settings.read": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:facebook-events-list",
+        "Scenario:tiktok-events-list"
+      ]
+    },
+    "CliCapability:domain.readiness.verify": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:add-custom-domain"
+      ]
+    },
+    "CliCapability:domain.status.read": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "Scenario:add-custom-domain"
+      ]
+    },
+    "CliCapability:webABTest.publish": {
+      "CAPABILITY_USES_HELPER": [
+        "TestKitHelper:fillABTestDialog",
+        "TestKitHelper:publishABTest",
+        "TestKitHelper:saveABTestDialog"
+      ]
+    },
     "Guide:analytics-add-provider": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png"
@@ -7624,6 +9325,11 @@
         "Article:tiktok-pixel-events-api-setup"
       ]
     },
+    "Article:help-fonts-typography": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-fonts-typography.json"
+      ]
+    },
     "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_default-product-labels/origin.png": {
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/help-block-flexible-sections.json"
@@ -9657,17 +11363,25 @@
         "Atom:paywallSubscriptions"
       ]
     },
-    "WorkflowStep:capability.configure-actions/configure-actions/help-block-action-bar": {
-      "STEP_USES_ATOM": [
-        "Atom:actionBar"
+    "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods": {
+      "STEP_REQUIRES_ACTION": [
+        "Action:launch.paywallProducts.create"
       ]
     },
-    "WorkflowStep:capability.configure-screens/change-setting/help-element-title": {
-      "STEP_USES_ATOM": [
-        "Atom:copyBlock"
+    "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup": {
+      "STEP_REQUIRES_ACTION": [
+        "Action:launch.analytics.pixel.apply"
+      ]
+    },
+    "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup": {
+      "STEP_REQUIRES_ACTION": [
+        "Action:launch.analytics.pixel.apply"
       ]
     },
     "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall": {
+      "STEP_REQUIRES_ACTION": [
+        "Action:launch.paywallProducts.create"
+      ],
       "STEP_USES_ATOM": [
         "Atom:backdrop",
         "Atom:basicConfig",
@@ -9678,11 +11392,31 @@
         "Atom:paywallSubscriptions"
       ]
     },
+    "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section": {
+      "STEP_REQUIRES_ACTION": [
+        "Action:handoff.domain.dns"
+      ]
+    },
+    "WorkflowStep:capability.configure-actions/configure-actions/help-block-action-bar": {
+      "STEP_USES_ATOM": [
+        "Atom:actionBar"
+      ]
+    },
+    "WorkflowStep:capability.configure-screens/change-setting/help-element-title": {
+      "STEP_USES_ATOM": [
+        "Atom:copyBlock"
+      ]
+    },
     "SynonymGroup:analytics-provider-setup": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "Article:analytics-add-provider",
         "Article:analytics-provider-config",
         "Article:integrations-analytics-section"
+      ]
+    },
+    "SynonymGroup:change-funnel-font": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:help-fonts-typography"
       ]
     },
     "SynonymGroup:custom-domain": {
@@ -9693,6 +11427,11 @@
     "SynonymGroup:custom-html-webembed": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "Article:help-block-custom-html"
+      ]
+    },
+    "SynonymGroup:email-before-paywall": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:collect-email-before-paywall"
       ]
     },
     "SynonymGroup:facebook-events-catalog": {
@@ -9710,6 +11449,16 @@
     "SynonymGroup:flexible-layout": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "Article:help-block-flexible-sections"
+      ]
+    },
+    "SynonymGroup:launch-publish-funnel": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:launch-paid-funnel-overview"
+      ]
+    },
+    "SynonymGroup:payment-methods": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:paywall-payment-methods"
       ]
     },
     "SynonymGroup:product-description-label": {
@@ -9731,6 +11480,12 @@
     "SynonymGroup:stripe-subscriptions": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "Article:help-block-paywall-subscriptions"
+      ]
+    },
+    "SynonymGroup:tiktok-events": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:tiktok-events-catalog",
+        "Article:tiktok-pixel-events-api-setup"
       ]
     },
     "SynonymGroup:webembed-paywall": {
@@ -9785,6 +11540,449 @@
     }
   },
   "incoming": {
+    "CliCapability:funnel.v2.screen.apply": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:editor.actionBar.primaryButton.backgroundColor",
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.actionBar.primaryButton.textStyle.color",
+        "Action:editor.actionBar.primaryButton.textStyle.fontFamily",
+        "Action:editor.actionBar.primaryButton.textStyle.fontSize",
+        "Action:editor.actionBar.primaryButton.textStyle.fontWeight",
+        "Action:editor.actionBar.primaryButton.textStyle.lineHeight",
+        "Action:editor.actionBar.primaryButton.textStyle.textAlign",
+        "Action:editor.actionBar.secondaryButton.textStyle.color",
+        "Action:editor.actionBar.secondaryButton.textStyle.fontFamily",
+        "Action:editor.actionBar.secondaryButton.textStyle.fontSize",
+        "Action:editor.actionBar.secondaryButton.textStyle.fontWeight",
+        "Action:editor.actionBar.secondaryButton.textStyle.lineHeight",
+        "Action:editor.actionBar.secondaryButton.textStyle.textAlign",
+        "Action:editor.carousel.detail.textStyle.align",
+        "Action:editor.carousel.detail.textStyle.backgroundColor",
+        "Action:editor.carousel.detail.textStyle.backgroundColorOpacity",
+        "Action:editor.carousel.detail.textStyle.backgroundCornerRadius",
+        "Action:editor.carousel.detail.textStyle.color",
+        "Action:editor.carousel.detail.textStyle.fontSize",
+        "Action:editor.carousel.detail.textStyle.fontWeight",
+        "Action:editor.carousel.detail.textStyle.lineHeight",
+        "Action:editor.carousel.image.style.cornerRadius",
+        "Action:editor.carousel.image.style.height",
+        "Action:editor.carousel.image.style.scaleMode",
+        "Action:editor.carousel.image.style.width",
+        "Action:editor.carousel.imageContainer.style.heightMode",
+        "Action:editor.carousel.imageContainer.style.heightValue",
+        "Action:editor.carousel.imageContainer.style.verticalAlign",
+        "Action:editor.carousel.subtitle.textStyle.align",
+        "Action:editor.carousel.subtitle.textStyle.backgroundColor",
+        "Action:editor.carousel.subtitle.textStyle.backgroundColorOpacity",
+        "Action:editor.carousel.subtitle.textStyle.backgroundCornerRadius",
+        "Action:editor.carousel.subtitle.textStyle.color",
+        "Action:editor.carousel.subtitle.textStyle.fontSize",
+        "Action:editor.carousel.subtitle.textStyle.fontWeight",
+        "Action:editor.carousel.subtitle.textStyle.lineHeight",
+        "Action:editor.carousel.textContainer.style.heightMode",
+        "Action:editor.carousel.textContainer.style.heightValue",
+        "Action:editor.carousel.textContainer.style.verticalAlign",
+        "Action:editor.carousel.title.textStyle.align",
+        "Action:editor.carousel.title.textStyle.backgroundColor",
+        "Action:editor.carousel.title.textStyle.backgroundColorOpacity",
+        "Action:editor.carousel.title.textStyle.backgroundCornerRadius",
+        "Action:editor.carousel.title.textStyle.color",
+        "Action:editor.carousel.title.textStyle.fontSize",
+        "Action:editor.carousel.title.textStyle.fontWeight",
+        "Action:editor.carousel.title.textStyle.lineHeight",
+        "Action:editor.content.subtitle.textStyle.align",
+        "Action:editor.content.subtitle.textStyle.backgroundColor",
+        "Action:editor.content.subtitle.textStyle.backgroundColorOpacity",
+        "Action:editor.content.subtitle.textStyle.backgroundCornerRadius",
+        "Action:editor.content.subtitle.textStyle.color",
+        "Action:editor.content.subtitle.textStyle.fontFamily",
+        "Action:editor.content.subtitle.textStyle.fontSize",
+        "Action:editor.content.subtitle.textStyle.fontWeight",
+        "Action:editor.content.subtitle.textStyle.lineHeight",
+        "Action:editor.content.subtitle.textStyle.textDecorationColor",
+        "Action:editor.content.title.textStyle.align",
+        "Action:editor.content.title.textStyle.backgroundColor",
+        "Action:editor.content.title.textStyle.backgroundColorOpacity",
+        "Action:editor.content.title.textStyle.backgroundCornerRadius",
+        "Action:editor.content.title.textStyle.color",
+        "Action:editor.content.title.textStyle.fontFamily",
+        "Action:editor.content.title.textStyle.fontSize",
+        "Action:editor.content.title.textStyle.fontWeight",
+        "Action:editor.content.title.textStyle.lineHeight",
+        "Action:editor.content.title.textStyle.textDecorationColor",
+        "Action:editor.flexibleSections.screen.screenScrollable",
+        "Action:editor.flexibleSections.section.layout.backgroundColor",
+        "Action:editor.flexibleSections.section.layout.borderColor",
+        "Action:editor.flexibleSections.section.layout.borderWidth",
+        "Action:editor.flexibleSections.section.layout.cornerRadius",
+        "Action:editor.flexibleSections.section.layout.flexGrow",
+        "Action:editor.flexibleSections.section.layout.flexShrink",
+        "Action:editor.flexibleSections.section.layout.heightMode",
+        "Action:editor.flexibleSections.section.layout.heightValue",
+        "Action:editor.flexibleSections.section.layout.horizontalAlign",
+        "Action:editor.flexibleSections.section.layout.sectionScrollable",
+        "Action:editor.flexibleSections.section.layout.verticalAlign",
+        "Action:editor.flexibleSections.section.layout.zIndex",
+        "Action:editor.header.backButton.textStyle.align",
+        "Action:editor.header.backButton.textStyle.backgroundColor",
+        "Action:editor.header.backButton.textStyle.backgroundColorOpacity",
+        "Action:editor.header.backButton.textStyle.backgroundCornerRadius",
+        "Action:editor.header.backButton.textStyle.color",
+        "Action:editor.header.backButton.textStyle.fontFamily",
+        "Action:editor.header.backButton.textStyle.fontSize",
+        "Action:editor.header.backButton.textStyle.fontWeight",
+        "Action:editor.header.backButton.textStyle.lineHeight",
+        "Action:editor.header.backButton.textStyle.textDecorationColor",
+        "Action:editor.header.skipButton.textStyle.align",
+        "Action:editor.header.skipButton.textStyle.backgroundColor",
+        "Action:editor.header.skipButton.textStyle.backgroundColorOpacity",
+        "Action:editor.header.skipButton.textStyle.backgroundCornerRadius",
+        "Action:editor.header.skipButton.textStyle.color",
+        "Action:editor.header.skipButton.textStyle.fontFamily",
+        "Action:editor.header.skipButton.textStyle.fontSize",
+        "Action:editor.header.skipButton.textStyle.fontWeight",
+        "Action:editor.header.skipButton.textStyle.lineHeight",
+        "Action:editor.header.skipButton.textStyle.textDecorationColor",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.media.style.cornerRadius",
+        "Action:editor.media.style.heightPercentage",
+        "Action:editor.media.style.repeat",
+        "Action:editor.media.style.scaleMode",
+        "Action:editor.media.style.topAlignment",
+        "Action:editor.options.itemSubtitle.textStyle.align",
+        "Action:editor.options.itemSubtitle.textStyle.backgroundColor",
+        "Action:editor.options.itemSubtitle.textStyle.backgroundColorOpacity",
+        "Action:editor.options.itemSubtitle.textStyle.backgroundCornerRadius",
+        "Action:editor.options.itemSubtitle.textStyle.color",
+        "Action:editor.options.itemSubtitle.textStyle.fontSize",
+        "Action:editor.options.itemSubtitle.textStyle.fontWeight",
+        "Action:editor.options.itemSubtitle.textStyle.lineHeight",
+        "Action:editor.options.itemTitle.textStyle.align",
+        "Action:editor.options.itemTitle.textStyle.backgroundColor",
+        "Action:editor.options.itemTitle.textStyle.backgroundColorOpacity",
+        "Action:editor.options.itemTitle.textStyle.backgroundCornerRadius",
+        "Action:editor.options.itemTitle.textStyle.color",
+        "Action:editor.options.itemTitle.textStyle.fontSize",
+        "Action:editor.options.itemTitle.textStyle.fontWeight",
+        "Action:editor.options.itemTitle.textStyle.lineHeight",
+        "Action:editor.options.selectedItem.style.backgroundColor",
+        "Action:editor.options.selectedItem.style.borderColor",
+        "Action:editor.options.selectedItem.style.borderWidth",
+        "Action:editor.options.selectedItem.style.cornerRadius",
+        "Action:editor.options.unselectedItem.style.backgroundColor",
+        "Action:editor.options.unselectedItem.style.borderColor",
+        "Action:editor.options.unselectedItem.style.borderWidth",
+        "Action:editor.options.unselectedItem.style.cornerRadius",
+        "Action:editor.paywall.attachProduct",
+        "Action:editor.paywallBody.subtitle.textStyle.align",
+        "Action:editor.paywallBody.subtitle.textStyle.backgroundColor",
+        "Action:editor.paywallBody.subtitle.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallBody.subtitle.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallBody.subtitle.textStyle.color",
+        "Action:editor.paywallBody.subtitle.textStyle.fontFamily",
+        "Action:editor.paywallBody.subtitle.textStyle.fontSize",
+        "Action:editor.paywallBody.subtitle.textStyle.fontWeight",
+        "Action:editor.paywallBody.subtitle.textStyle.lineHeight",
+        "Action:editor.paywallBody.subtitle.textStyle.textDecorationColor",
+        "Action:editor.paywallBody.title.textStyle.align",
+        "Action:editor.paywallBody.title.textStyle.backgroundColor",
+        "Action:editor.paywallBody.title.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallBody.title.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallBody.title.textStyle.color",
+        "Action:editor.paywallBody.title.textStyle.fontFamily",
+        "Action:editor.paywallBody.title.textStyle.fontSize",
+        "Action:editor.paywallBody.title.textStyle.fontWeight",
+        "Action:editor.paywallBody.title.textStyle.lineHeight",
+        "Action:editor.paywallBody.title.textStyle.textDecorationColor",
+        "Action:editor.paywallFooter.autoRenew.textStyle.align",
+        "Action:editor.paywallFooter.autoRenew.textStyle.backgroundColor",
+        "Action:editor.paywallFooter.autoRenew.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallFooter.autoRenew.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallFooter.autoRenew.textStyle.color",
+        "Action:editor.paywallFooter.autoRenew.textStyle.fontFamily",
+        "Action:editor.paywallFooter.autoRenew.textStyle.fontSize",
+        "Action:editor.paywallFooter.autoRenew.textStyle.fontWeight",
+        "Action:editor.paywallFooter.autoRenew.textStyle.lineHeight",
+        "Action:editor.paywallFooter.autoRenew.textStyle.textDecorationColor",
+        "Action:editor.paywallFooter.privacyLink.textStyle.align",
+        "Action:editor.paywallFooter.privacyLink.textStyle.backgroundColor",
+        "Action:editor.paywallFooter.privacyLink.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallFooter.privacyLink.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallFooter.privacyLink.textStyle.color",
+        "Action:editor.paywallFooter.privacyLink.textStyle.fontFamily",
+        "Action:editor.paywallFooter.privacyLink.textStyle.fontSize",
+        "Action:editor.paywallFooter.privacyLink.textStyle.fontWeight",
+        "Action:editor.paywallFooter.privacyLink.textStyle.lineHeight",
+        "Action:editor.paywallFooter.privacyLink.textStyle.textDecorationColor",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.align",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundColor",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.color",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.fontFamily",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.fontSize",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.fontWeight",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.lineHeight",
+        "Action:editor.paywallFooter.purchaseButton.textStyle.textDecorationColor",
+        "Action:editor.paywallFooter.restoreLink.textStyle.align",
+        "Action:editor.paywallFooter.restoreLink.textStyle.backgroundColor",
+        "Action:editor.paywallFooter.restoreLink.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallFooter.restoreLink.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallFooter.restoreLink.textStyle.color",
+        "Action:editor.paywallFooter.restoreLink.textStyle.fontFamily",
+        "Action:editor.paywallFooter.restoreLink.textStyle.fontSize",
+        "Action:editor.paywallFooter.restoreLink.textStyle.fontWeight",
+        "Action:editor.paywallFooter.restoreLink.textStyle.lineHeight",
+        "Action:editor.paywallFooter.restoreLink.textStyle.textDecorationColor",
+        "Action:editor.paywallFooter.style.backgroundColor",
+        "Action:editor.paywallFooter.termsLink.textStyle.align",
+        "Action:editor.paywallFooter.termsLink.textStyle.backgroundColor",
+        "Action:editor.paywallFooter.termsLink.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallFooter.termsLink.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallFooter.termsLink.textStyle.color",
+        "Action:editor.paywallFooter.termsLink.textStyle.fontFamily",
+        "Action:editor.paywallFooter.termsLink.textStyle.fontSize",
+        "Action:editor.paywallFooter.termsLink.textStyle.fontWeight",
+        "Action:editor.paywallFooter.termsLink.textStyle.lineHeight",
+        "Action:editor.paywallFooter.termsLink.textStyle.textDecorationColor",
+        "Action:editor.paywallHeader.closeButton.style.alignment",
+        "Action:editor.paywallHeader.closeButton.style.delaySeconds",
+        "Action:editor.paywallHeader.closeButton.style.iconColor",
+        "Action:editor.paywallHeader.closeButton.style.visibility",
+        "Action:editor.paywallHeader.restoreLink.style.align",
+        "Action:editor.paywallHeader.restoreLink.style.backgroundColor",
+        "Action:editor.paywallHeader.restoreLink.style.backgroundColorOpacity",
+        "Action:editor.paywallHeader.restoreLink.style.backgroundCornerRadius",
+        "Action:editor.paywallHeader.restoreLink.style.color",
+        "Action:editor.paywallHeader.restoreLink.style.fontFamily",
+        "Action:editor.paywallHeader.restoreLink.style.fontSize",
+        "Action:editor.paywallHeader.restoreLink.style.fontWeight",
+        "Action:editor.paywallHeader.restoreLink.style.lineHeight",
+        "Action:editor.paywallHeader.restoreLink.style.textDecorationColor",
+        "Action:editor.paywallMedia.style.bottomAlignment",
+        "Action:editor.paywallMedia.style.cornerRadius",
+        "Action:editor.paywallMedia.style.heightPercentage",
+        "Action:editor.paywallMedia.style.repeat",
+        "Action:editor.paywallMedia.style.scaleMode",
+        "Action:editor.paywallMedia.style.topAlignment",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.align",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundColor",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.color",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontFamily",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontSize",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.fontWeight",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.lineHeight",
+        "Action:editor.paywallSubscriptions.billingPeriod.textStyle.textDecorationColor",
+        "Action:editor.paywallSubscriptions.checkbox.style.checkedColor",
+        "Action:editor.paywallSubscriptions.checkbox.style.uncheckedColor",
+        "Action:editor.paywallSubscriptions.itemPadding.bottom",
+        "Action:editor.paywallSubscriptions.itemPadding.end",
+        "Action:editor.paywallSubscriptions.itemPadding.start",
+        "Action:editor.paywallSubscriptions.itemPadding.top",
+        "Action:editor.paywallSubscriptions.layout.productLayout",
+        "Action:editor.paywallSubscriptions.layout.startColumnWidthPercentage",
+        "Action:editor.paywallSubscriptions.layout.viewKind",
+        "Action:editor.paywallSubscriptions.listPadding.bottom",
+        "Action:editor.paywallSubscriptions.listPadding.end",
+        "Action:editor.paywallSubscriptions.listPadding.start",
+        "Action:editor.paywallSubscriptions.listPadding.top",
+        "Action:editor.paywallSubscriptions.planName.textStyle.align",
+        "Action:editor.paywallSubscriptions.planName.textStyle.backgroundColor",
+        "Action:editor.paywallSubscriptions.planName.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallSubscriptions.planName.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallSubscriptions.planName.textStyle.color",
+        "Action:editor.paywallSubscriptions.planName.textStyle.fontFamily",
+        "Action:editor.paywallSubscriptions.planName.textStyle.fontSize",
+        "Action:editor.paywallSubscriptions.planName.textStyle.fontWeight",
+        "Action:editor.paywallSubscriptions.planName.textStyle.lineHeight",
+        "Action:editor.paywallSubscriptions.planName.textStyle.textDecorationColor",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.align",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundColor",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.color",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.fontFamily",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.fontSize",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.fontWeight",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.lineHeight",
+        "Action:editor.paywallSubscriptions.planNote.textStyle.textDecorationColor",
+        "Action:editor.paywallSubscriptions.price.textStyle.align",
+        "Action:editor.paywallSubscriptions.price.textStyle.backgroundColor",
+        "Action:editor.paywallSubscriptions.price.textStyle.backgroundColorOpacity",
+        "Action:editor.paywallSubscriptions.price.textStyle.backgroundCornerRadius",
+        "Action:editor.paywallSubscriptions.price.textStyle.color",
+        "Action:editor.paywallSubscriptions.price.textStyle.fontFamily",
+        "Action:editor.paywallSubscriptions.price.textStyle.fontSize",
+        "Action:editor.paywallSubscriptions.price.textStyle.fontWeight",
+        "Action:editor.paywallSubscriptions.price.textStyle.lineHeight",
+        "Action:editor.paywallSubscriptions.price.textStyle.textDecorationColor",
+        "Action:editor.paywallSubscriptions.selectedItem.style.backgroundColor",
+        "Action:editor.paywallSubscriptions.selectedItem.style.borderColor",
+        "Action:editor.paywallSubscriptions.selectedItem.style.borderWidth",
+        "Action:editor.paywallSubscriptions.selectedItem.style.cornerRadius",
+        "Action:editor.paywallSubscriptions.unselectedItem.style.backgroundColor",
+        "Action:editor.paywallSubscriptions.unselectedItem.style.borderColor",
+        "Action:editor.paywallSubscriptions.unselectedItem.style.borderWidth",
+        "Action:editor.paywallSubscriptions.unselectedItem.style.cornerRadius",
+        "Action:editor.roller.style.containerBackgroundColor",
+        "Action:editor.roller.style.containerBorderColor",
+        "Action:editor.roller.style.containerBorderWidth",
+        "Action:editor.roller.style.containerCornerRadius",
+        "Action:editor.roller.style.labelAlign",
+        "Action:editor.roller.style.labelColor",
+        "Action:editor.roller.style.labelFontSize",
+        "Action:editor.roller.style.labelFontWeight",
+        "Action:editor.screen.backgroundColor",
+        "Action:editor.setting.screenedit-basic-config-animation-enabled",
+        "Action:editor.setting.screenedit-basic-config-countdown-duration-value",
+        "Action:editor.setting.screenedit-basic-config-countdown-unit",
+        "Action:editor.setting.screenedit-basic-config-offline-first",
+        "Action:editor.setting.screenedit-basic-config-permission-type",
+        "Action:editor.stepper.description.textStyle.align",
+        "Action:editor.stepper.description.textStyle.backgroundColor",
+        "Action:editor.stepper.description.textStyle.backgroundColorOpacity",
+        "Action:editor.stepper.description.textStyle.backgroundCornerRadius",
+        "Action:editor.stepper.description.textStyle.color",
+        "Action:editor.stepper.description.textStyle.fontSize",
+        "Action:editor.stepper.description.textStyle.fontWeight",
+        "Action:editor.stepper.description.textStyle.lineHeight",
+        "Action:editor.stepper.image.style.cornerRadius",
+        "Action:editor.stepper.image.style.height",
+        "Action:editor.stepper.image.style.scaleMode",
+        "Action:editor.stepper.image.style.width",
+        "Action:editor.stepper.style.containerHeightPercentage",
+        "Action:editor.stepper.style.fillColor",
+        "Action:editor.stepper.style.thickness",
+        "Action:editor.stepper.style.timerDuration",
+        "Action:editor.stepper.style.trackColor",
+        "Action:editor.stepper.style.trackThickness",
+        "Action:editor.stepper.subtitle.textStyle.align",
+        "Action:editor.stepper.subtitle.textStyle.backgroundColor",
+        "Action:editor.stepper.subtitle.textStyle.backgroundColorOpacity",
+        "Action:editor.stepper.subtitle.textStyle.backgroundCornerRadius",
+        "Action:editor.stepper.subtitle.textStyle.color",
+        "Action:editor.stepper.subtitle.textStyle.fontSize",
+        "Action:editor.stepper.subtitle.textStyle.fontWeight",
+        "Action:editor.stepper.subtitle.textStyle.lineHeight",
+        "Action:editor.stepper.title.textStyle.align",
+        "Action:editor.stepper.title.textStyle.backgroundColor",
+        "Action:editor.stepper.title.textStyle.backgroundColorOpacity",
+        "Action:editor.stepper.title.textStyle.backgroundCornerRadius",
+        "Action:editor.stepper.title.textStyle.color",
+        "Action:editor.stepper.title.textStyle.fontSize",
+        "Action:editor.stepper.title.textStyle.fontWeight",
+        "Action:editor.stepper.title.textStyle.lineHeight",
+        "Action:editor.stickyContainer.style.backgroundColor",
+        "Action:editor.stickyContainer.style.borderColor",
+        "Action:editor.stickyContainer.style.borderWidth",
+        "Action:editor.stickyContainer.style.cornerRadius",
+        "Action:editor.stickyContainer.style.opacity",
+        "Action:editor.stickyContainer.style.showBackground",
+        "Action:editor.textField.style.align",
+        "Action:editor.textField.style.borderColor",
+        "Action:editor.textField.style.borderType",
+        "Action:editor.textField.style.borderWidth",
+        "Action:editor.textField.style.fieldBackgroundColor",
+        "Action:editor.textField.style.fontFamily",
+        "Action:editor.textField.style.fontSize",
+        "Action:editor.textField.style.fontWeight",
+        "Action:editor.textField.style.lineHeight",
+        "Action:editor.textField.style.placeholderColor",
+        "Action:editor.textField.style.typedTextColor"
+      ]
+    },
+    "CliCapability:domain.status.read": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:handoff.domain.dns"
+      ]
+    },
+    "CliCapability:stripe.catalog.read": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:handoff.stripe.connect"
+      ]
+    },
+    "CliCapability:analytics.settings.apply": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:launch.analytics.pixel.apply"
+      ]
+    },
+    "CliCapability:funnel.v2.create": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:launch.funnel.create"
+      ]
+    },
+    "CliCapability:stripe.paywall-product.ensure": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:launch.paywallProducts.create"
+      ]
+    },
+    "CliCapability:webPlacement.publish": {
+      "ACTION_BACKED_BY_CLI_CAPABILITY": [
+        "Action:launch.publish"
+      ]
+    },
+    "TestKitHelper:navigateToSetting": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "TestKitHelper:openScreenEditor": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "TestKitHelper:setCheckbox": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "TestKitHelper:setField": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "TestKitHelper:setSelect": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "TestKitHelper:setTextField": {
+      "ACTION_EXECUTED_BY_HELPER": [
+        "Action:editor.actionBar.primaryButton.label",
+        "Action:editor.list.options.itemTitle.fontSize",
+        "Action:editor.paywall.attachProduct"
+      ],
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
     "Article:help-block-flexible-sections": {
       "ACTION_HAS_TEACH_FALLBACK": [
         "Action:editor.flexibleSections.screen.screenScrollable",
@@ -25983,41 +28181,67 @@
     "Scenario:collect-email-before-paywall": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:collect-email-before-paywall"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:webPlacement.configure"
       ]
     },
     "Scenario:facebook-events-list": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:facebook-events-catalog"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:analytics.settings.read"
       ]
     },
     "Scenario:add-fb-pixel": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:facebook-pixel-capi-setup"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:analytics.settings.apply"
       ]
     },
     "Scenario:configure-actions": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:help-block-action-bar"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:funnel.v2.edge.connect",
+        "CliCapability:funnel.v2.screen.apply"
       ]
     },
     "Scenario:attach-products": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:help-block-paywall-subscriptions"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:stripe.paywall-product.ensure"
       ]
     },
     "Scenario:change-setting": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:help-element-title"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:funnel.v2.screen.apply"
       ]
     },
     "Scenario:create-paywall-products": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:help-screen-paywall"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:stripe.paywall-product.ensure"
       ]
     },
     "Scenario:add-custom-domain": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:integrations-custom-domain-section"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:domain.readiness.verify",
+        "CliCapability:domain.status.read"
       ]
     },
     "Scenario:launch-paid-funnel-overview": {
@@ -26028,16 +28252,25 @@
     "Scenario:paywall-payment-methods": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:paywall-payment-methods"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:stripe.paywall-product.ensure"
       ]
     },
     "Scenario:tiktok-events-list": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:tiktok-events-catalog"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:analytics.settings.read"
       ]
     },
     "Scenario:add-tiktok-pixel": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:tiktok-pixel-events-api-setup"
+      ],
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:analytics.settings.apply"
       ]
     },
     "Guide:analytics-add-provider": {
@@ -27895,6 +30128,215 @@
         "Article:integrations-custom-domain-section"
       ]
     },
+    "E2eScenario:add-analytics-integration": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:analytics.settings.apply"
+      ]
+    },
+    "E2eScenario:configure-canvas-screens": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:funnel.v2.apply"
+      ]
+    },
+    "E2eScenario:create-onboarding-wizard": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:funnel.v2.create"
+      ]
+    },
+    "E2eScenario:connect-canvas-screens": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:funnel.v2.edge.connect"
+      ]
+    },
+    "E2eScenario:open-v2-canvas": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "E2eScenario:configure-variable-binding": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:funnel.v2.variable.bind"
+      ]
+    },
+    "E2eScenario:choose-template-theme": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:projectTheme.manage"
+      ]
+    },
+    "E2eScenario:verify-published-funnel": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:publish.runtime.verify",
+        "CliCapability:webPlacement.publish"
+      ]
+    },
+    "E2eScenario:connect-stripe-account": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:stripe.catalog.read"
+      ]
+    },
+    "E2eScenario:configure-paywall-screen-products": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:stripe.paywall-product.ensure"
+      ]
+    },
+    "E2eScenario:create-paywall-product": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:stripe.paywall-product.ensure"
+      ]
+    },
+    "E2eScenario:configure-web-placement-entry-rules": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "E2eScenario:configure-web-placement-stripe-metadata": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "E2eScenario:publish-web-placement": {
+      "CAPABILITY_PROVEN_BY_SCENARIO": [
+        "CliCapability:webPlacement.publish"
+      ]
+    },
+    "Scenario:connect-analytics": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:analytics.settings.apply"
+      ]
+    },
+    "Scenario:add-screens": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:funnel.v2.apply",
+        "CliCapability:funnel.v2.screen.apply"
+      ]
+    },
+    "Scenario:create-funnel": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:funnel.v2.create"
+      ]
+    },
+    "Scenario:set-theme": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:projectTheme.manage"
+      ]
+    },
+    "Scenario:publish": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:publish.runtime.verify",
+        "CliCapability:webPlacement.publish"
+      ]
+    },
+    "Scenario:test-purchase": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:publish.runtime.verify"
+      ]
+    },
+    "Scenario:connect-stripe": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:stripe.catalog.read"
+      ]
+    },
+    "Scenario:configure-attribution": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "Scenario:configure-web-placement": {
+      "CAPABILITY_SUPPORTS_SCENARIO": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:loginAndNavigateToV2Canvas": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.apply",
+        "CliCapability:funnel.v2.create"
+      ]
+    },
+    "TestKitHelper:placeScreenBatch": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.apply"
+      ]
+    },
+    "TestKitHelper:bindVariableToSection": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.variable.bind"
+      ]
+    },
+    "TestKitHelper:createVariable": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:funnel.v2.variable.bind"
+      ]
+    },
+    "TestKitHelper:ensurePaywallProduct": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:stripe.paywall-product.ensure"
+      ]
+    },
+    "TestKitHelper:fillABTestDialog": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webABTest.publish"
+      ]
+    },
+    "TestKitHelper:publishABTest": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webABTest.publish"
+      ]
+    },
+    "TestKitHelper:saveABTestDialog": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webABTest.publish"
+      ]
+    },
+    "TestKitHelper:addEntryScreenRule": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:expandSection": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:fillBasicFields": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:openCreateDialog": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:saveAndPublish": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:saveOnly": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:setStripeEmail": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.configure"
+      ]
+    },
+    "TestKitHelper:copyWebPlacementUrl": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.publish"
+      ]
+    },
+    "TestKitHelper:createAndPublishWebPlacement": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.publish"
+      ]
+    },
+    "TestKitHelper:publishWebPlacement": {
+      "CAPABILITY_USES_HELPER": [
+        "CliCapability:webPlacement.publish"
+      ]
+    },
     "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png": {
       "GUIDE_HAS_SCREENSHOT": [
         "Guide:analytics-add-provider",
@@ -28967,12 +31409,18 @@
       "NEGATIVE_FOR_ARTICLE": [
         "Keyword:negative:facebook events catalog",
         "Keyword:negative:tiktok events catalog"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:tiktok-events"
       ]
     },
     "Article:tiktok-pixel-events-api-setup": {
       "NEGATIVE_FOR_ARTICLE": [
         "Keyword:negative:facebook events catalog",
         "Keyword:negative:tiktok events catalog"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:tiktok-events"
       ]
     },
     "Article:help-screen-flexiblelayout": {
@@ -29550,6 +31998,11 @@
         "Media:https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/title-styles-styles.png"
       ]
     },
+    "SourceConfig:references/articles/help-fonts-typography.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:help-fonts-typography"
+      ]
+    },
     "SourceConfig:references/articles/help-options-grid-multi.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:help-options-grid-multi",
@@ -29898,6 +32351,23 @@
         "Scenario:launch-paid-funnel-overview"
       ]
     },
+    "Action:launch.paywallProducts.create": {
+      "STEP_REQUIRES_ACTION": [
+        "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods",
+        "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall"
+      ]
+    },
+    "Action:launch.analytics.pixel.apply": {
+      "STEP_REQUIRES_ACTION": [
+        "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
+        "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup"
+      ]
+    },
+    "Action:handoff.domain.dns": {
+      "STEP_REQUIRES_ACTION": [
+        "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section"
+      ]
+    },
     "Atom:paywallSubscriptions": {
       "STEP_USES_ATOM": [
         "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions",
@@ -29942,6 +32412,26 @@
     "Atom:paywallMedia": {
       "STEP_USES_ATOM": [
         "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall"
+      ]
+    },
+    "Article:help-fonts-typography": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:change-funnel-font"
+      ]
+    },
+    "Article:collect-email-before-paywall": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:email-before-paywall"
+      ]
+    },
+    "Article:launch-paid-funnel-overview": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:launch-publish-funnel"
+      ]
+    },
+    "Article:paywall-payment-methods": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:payment-methods"
       ]
     },
     "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions": {

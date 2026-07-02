@@ -1,0 +1,1651 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "note": "GENERATED routing fast path. Check this file FIRST for common customer intents; on a hit open only the file in \"next\" (scenario -> scenarios matrix, action/action-family -> do-action-reference, articles -> article directory). On a miss fall back to references/semantic-routing.md full routing. Do not edit by hand - regenerate via the source packager.",
+  "usage": [
+    "Match the customer request against intentPhrases (normalized, ru+en).",
+    "scenario hit: open references/scenarios.matrix.json and follow the scenario contract.",
+    "action hit: open runtime/do-action-reference.json and resolve the actionId.",
+    "action-family hit: open runtime/do-action-reference.json and pick the exact leaf action within the family.",
+    "articles hit: open references/article-directory.json for the listed aliases.",
+    "No hit: follow references/semantic-routing.md (full path). The quick-index is an accelerator, never the only route."
+  ],
+  "entries": [
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "создай воронку",
+        "новая воронка",
+        "сделай онбординг",
+        "create a funnel",
+        "start a new onboarding",
+        "make my first funnel"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "create-funnel",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "поставь тему",
+        "примени тему",
+        "выбери оформление",
+        "apply a theme",
+        "set a theme",
+        "choose a template"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "set-theme",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "добавь экраны",
+        "добавь экран на канвас",
+        "построй последовательность экранов",
+        "add screens",
+        "add a screen to the canvas",
+        "build the screen sequence"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "add-screens",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "настрой кнопку продолжить",
+        "поменяй текст кнопки",
+        "настрой действие экрана",
+        "configure the continue button",
+        "change the button text",
+        "set the screen action"
+      ],
+      "mode": "e2e",
+      "scenarioId": "configure-actions",
+      "articleAliases": [
+        "help-block-action-bar"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "подключи аналитику",
+        "настрой трекинг",
+        "добавь google analytics",
+        "set up analytics",
+        "connect analytics",
+        "add google analytics"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "connect-analytics",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "добавь FB пиксель",
+        "подключи фейсбук пиксель",
+        "meta pixel",
+        "add a Facebook pixel",
+        "connect Meta pixel",
+        "set up FB tracking"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "add-fb-pixel",
+      "articleAliases": [
+        "facebook-pixel-capi-setup"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "какие события уходят в фейсбук",
+        "список событий facebook пикселя и conversions api",
+        "какие события покупки доходят до meta",
+        "what events does Segmently send to Facebook",
+        "list the Facebook pixel and conversions API events",
+        "which purchase events reach Meta"
+      ],
+      "mode": "teach",
+      "scenarioId": "facebook-events-list",
+      "articleAliases": [
+        "facebook-events-catalog"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "добавь TikTok пиксель",
+        "подключи тикток пиксель",
+        "add a TikTok pixel",
+        "connect TikTok tracking"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "add-tiktok-pixel",
+      "articleAliases": [
+        "tiktok-pixel-events-api-setup"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "какие события уходят в тикток",
+        "список событий tiktok пикселя и events api",
+        "какие события покупки доходят до tiktok",
+        "what events does Segmently send to TikTok",
+        "list the TikTok pixel and events API events",
+        "which purchase events reach TikTok"
+      ],
+      "mode": "teach",
+      "scenarioId": "tiktok-events-list",
+      "articleAliases": [
+        "tiktok-events-catalog"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "подключи Stripe",
+        "подключи платежи",
+        "настрой страйп",
+        "connect Stripe",
+        "connect payments",
+        "set up Stripe"
+      ],
+      "mode": "handoff",
+      "scenarioId": "connect-stripe",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "создай тарифы пейволла",
+        "создай продукты для пейвола",
+        "сделай подписку",
+        "create paywall plans",
+        "create paywall products",
+        "make a subscription product"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "create-paywall-products",
+      "articleAliases": [
+        "help-screen-paywall"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "добавь продукты на пейвол",
+        "привяжи тарифы к экрану пейвола",
+        "add products to the paywall screen",
+        "attach plans to the paywall"
+      ],
+      "mode": "e2e",
+      "scenarioId": "attach-products",
+      "articleAliases": [
+        "help-block-paywall-subscriptions"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "какие способы оплаты поддерживает пейвол",
+        "включи apple pay и google pay",
+        "оплата внутри воронки или редирект на stripe",
+        "what payment methods does the paywall support",
+        "turn on Apple Pay and Google Pay",
+        "embedded checkout versus redirect to Stripe"
+      ],
+      "mode": "teach",
+      "scenarioId": "paywall-payment-methods",
+      "articleAliases": [
+        "paywall-payment-methods"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "собери имейл до пейвола",
+        "требуй имейл перед оплатой",
+        "укажи переменную имейла для оплаты stripe",
+        "collect the email before the paywall",
+        "require an email before payment",
+        "set the email variable for Stripe checkout"
+      ],
+      "mode": "teach",
+      "scenarioId": "collect-email-before-paywall",
+      "articleAliases": [
+        "collect-email-before-paywall"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "проверь покупку",
+        "сделай тестовую покупку",
+        "проверь оплату в песочнице",
+        "test a sandbox purchase",
+        "run a test payment",
+        "verify checkout works"
+      ],
+      "mode": "e2e",
+      "scenarioId": "test-purchase",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "настрой веб-плейсмент",
+        "настрой размещение",
+        "настрой вход в воронку",
+        "set up a web placement",
+        "configure the placement",
+        "set the entry rules"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "configure-web-placement",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "настрой utm метки",
+        "передавай данные в stripe metadata",
+        "сохрани атрибуцию",
+        "set up UTM mapping",
+        "pass values to Stripe metadata",
+        "keep attribution data"
+      ],
+      "mode": "e2e",
+      "scenarioId": "configure-attribution",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "подключи домен",
+        "запусти на своём домене",
+        "настрой кастомный домен",
+        "go live on my domain",
+        "connect a custom domain",
+        "set up my own domain"
+      ],
+      "mode": "handoff",
+      "scenarioId": "add-custom-domain",
+      "articleAliases": [
+        "integrations-custom-domain-section"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "опубликуй",
+        "запусти воронку",
+        "выложи в прод",
+        "publish",
+        "go live",
+        "launch the funnel"
+      ],
+      "mode": "cli+e2e",
+      "scenarioId": "publish",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "поменяй цвет заголовка",
+        "измени отступы",
+        "поменяй настройку экрана",
+        "change the title colour",
+        "change the spacing",
+        "change a screen setting"
+      ],
+      "mode": "e2e",
+      "scenarioId": "change-setting",
+      "articleAliases": [
+        "help-element-title"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "полный порядок шагов для запуска платной воронки",
+        "чеклист запуска с оплатой и рекламой",
+        "как запустить воронку под рекламу",
+        "what is the full order of steps to launch a paid funnel",
+        "checklist to go live with payments and ads",
+        "how do I launch a funnel I can run ads against"
+      ],
+      "mode": "teach",
+      "scenarioId": "launch-paid-funnel-overview",
+      "articleAliases": [
+        "launch-paid-funnel-overview"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
+        "покажи как сделать воронку",
+        "научи пользоваться",
+        "как добавить экран и соединить",
+        "как сделать условие",
+        "show me how to start",
+        "teach me the basics",
+        "how do I add a screen and connect",
+        "how do I add a condition"
+      ],
+      "mode": "teach",
+      "scenarioId": "teach-first-run",
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "action",
+      "intentPhrases": [
+        "create a funnel",
+        "build my first funnel",
+        "создай воронку"
+      ],
+      "mode": "cli",
+      "actionId": "launch.funnel.create",
+      "owningSkill": "segmently-cli-guide",
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action",
+      "intentPhrases": [
+        "add a facebook pixel",
+        "add a tiktok pixel",
+        "подключи пиксель"
+      ],
+      "mode": "cli",
+      "actionId": "launch.analytics.pixel.apply",
+      "owningSkill": "segmently-cli-guide",
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action",
+      "intentPhrases": [
+        "create paywall product",
+        "make a test plan",
+        "создай тариф",
+        "сделай тестовый план"
+      ],
+      "mode": "cli",
+      "actionId": "launch.paywallProducts.create",
+      "owningSkill": "segmently-cli-paywall-ab-rollout",
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action",
+      "intentPhrases": [
+        "publish my funnel",
+        "make a live link",
+        "опубликуй воронку",
+        "дай рабочую ссылку"
+      ],
+      "mode": "cli",
+      "actionId": "launch.publish",
+      "owningSkill": "segmently-cli-guide",
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change button label",
+        "rename primary button",
+        "change button color",
+        "set primary button background"
+      ],
+      "mode": "e2e",
+      "actionFamily": "editor.actionBar.primaryButton",
+      "memberActionCount": 2,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change main button font family",
+        "set main button font family",
+        "change main button line height",
+        "set main button line height",
+        "change main button font size",
+        "set main button font size",
+        "change main button font weight",
+        "set main button font weight",
+        "change main button text color",
+        "set main button text color"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.actionBar.primaryButton.textStyle",
+      "memberActionCount": 6,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change secondary button font family",
+        "set secondary button font family",
+        "change secondary button line height",
+        "set secondary button line height",
+        "change secondary button font size",
+        "set secondary button font size",
+        "change secondary button font weight",
+        "set secondary button font weight",
+        "change secondary button text color",
+        "set secondary button text color"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.actionBar.secondaryButton.textStyle",
+      "memberActionCount": 6,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel extra line font size",
+        "set carousel slide detail font size",
+        "change carousel extra line font weight",
+        "set carousel slide detail font weight",
+        "change carousel extra line text color",
+        "set carousel slide detail text color",
+        "change carousel extra line text align",
+        "set carousel slide detail text align",
+        "change carousel extra line line height",
+        "set carousel slide detail line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.detail.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel image image width",
+        "set slide image image width",
+        "change carousel image image height",
+        "set slide image image height",
+        "change carousel image scale mode",
+        "set slide image scale mode",
+        "change carousel image corner radius",
+        "set slide image corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.image.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel image region vertical align",
+        "set carousel image region vertical align",
+        "change carousel image region height mode",
+        "set carousel image region height mode",
+        "change carousel image region height value",
+        "set carousel image region height value"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.imageContainer.style",
+      "memberActionCount": 3,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel supporting line font size",
+        "set carousel slide subtitle font size",
+        "change carousel supporting line font weight",
+        "set carousel slide subtitle font weight",
+        "change carousel supporting line text color",
+        "set carousel slide subtitle text color",
+        "change carousel supporting line text align",
+        "set carousel slide subtitle text align",
+        "change carousel supporting line line height",
+        "set carousel slide subtitle line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.subtitle.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel text region vertical align",
+        "set carousel text region vertical align",
+        "change carousel text region height mode",
+        "set carousel text region height mode",
+        "change carousel text region height value",
+        "set carousel text region height value"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.textContainer.style",
+      "memberActionCount": 3,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change carousel headline font size",
+        "set carousel slide title font size",
+        "change carousel headline font weight",
+        "set carousel slide title font weight",
+        "change carousel headline text color",
+        "set carousel slide title text color",
+        "change carousel headline text align",
+        "set carousel slide title text align",
+        "change carousel headline line height",
+        "set carousel slide title line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.carousel.title.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change screen subtitle text background color",
+        "set content subtitle text background color",
+        "change screen subtitle font family",
+        "set content subtitle font family",
+        "change screen subtitle line height",
+        "set content subtitle line height",
+        "change screen subtitle font size",
+        "set content subtitle font size",
+        "change screen subtitle font weight",
+        "set content subtitle font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.content.subtitle.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change screen title text background color",
+        "set content title text background color",
+        "change screen title font family",
+        "set content title font family",
+        "change screen title line height",
+        "set content title line height",
+        "change screen title font size",
+        "set content title font size",
+        "change screen title font weight",
+        "set content title font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.content.title.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change flexible section let the whole screen scroll",
+        "set flexible layout section let the whole screen scroll"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.flexibleSections.screen",
+      "memberActionCount": 1,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change flexible section how tall this section is",
+        "set flexible layout section how tall this section is",
+        "change flexible section the height number",
+        "set flexible layout section the height number",
+        "change flexible section stretch to fill empty space",
+        "set flexible layout section stretch to fill empty space",
+        "change flexible section let it shrink on small screens",
+        "set flexible layout section let it shrink on small screens",
+        "change flexible section let this section scroll on its own",
+        "set flexible layout section let this section scroll on its own"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.flexibleSections.section.layout",
+      "memberActionCount": 12,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change header back button text background color",
+        "set header back button text background color",
+        "change header back button font family",
+        "set header back button font family",
+        "change header back button line height",
+        "set header back button line height",
+        "change header back button font size",
+        "set header back button font size",
+        "change header back button font weight",
+        "set header back button font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.header.backButton.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change header skip button text background color",
+        "set header skip button text background color",
+        "change header skip button font family",
+        "set header skip button font family",
+        "change header skip button line height",
+        "set header skip button line height",
+        "change header skip button font size",
+        "set header skip button font size",
+        "change header skip button font weight",
+        "set header skip button font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.header.skipButton.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change list cell font",
+        "list item title font size"
+      ],
+      "mode": "e2e",
+      "actionFamily": "editor.list.options.itemTitle",
+      "memberActionCount": 1,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change media replay the video on a loop",
+        "set image replay the video on a loop",
+        "change media where the media starts on top",
+        "set image where the media starts on top",
+        "change media how media fills its box",
+        "set image how media fills its box",
+        "change media how tall the media is",
+        "set image how tall the media is",
+        "change media how rounded the media is",
+        "set image how rounded the media is"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.media.style",
+      "memberActionCount": 5,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change option subtitle font size",
+        "set list item subtitle font size",
+        "change option subtitle font weight",
+        "set list item subtitle font weight",
+        "change option subtitle text color",
+        "set list item subtitle text color",
+        "change option subtitle text align",
+        "set list item subtitle text align",
+        "change option subtitle line height",
+        "set list item subtitle line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.options.itemSubtitle.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change option title font size",
+        "set list item title font size",
+        "change option title font weight",
+        "set list item title font weight",
+        "change option title text color",
+        "set list item title text color",
+        "change option title text align",
+        "set list item title text align",
+        "change option title line height",
+        "set list item title line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.options.itemTitle.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change selected option background color",
+        "set selected option background color",
+        "change selected option border width",
+        "set selected option border width",
+        "change selected option border color",
+        "set selected option border color",
+        "change selected option corner radius",
+        "set selected option corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.options.selectedItem.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change unselected option background color",
+        "set unselected option background color",
+        "change unselected option border width",
+        "set unselected option border width",
+        "change unselected option border color",
+        "set unselected option border color",
+        "change unselected option corner radius",
+        "set unselected option corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.options.unselectedItem.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "attach product to paywall",
+        "connect product to paywall"
+      ],
+      "mode": "e2e",
+      "actionFamily": "editor.paywall",
+      "memberActionCount": 1,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subtitle text background color",
+        "set paywall subtitle text background color",
+        "change paywall subtitle font family",
+        "set paywall subtitle font family",
+        "change paywall subtitle line height",
+        "set paywall subtitle line height",
+        "change paywall subtitle font size",
+        "set paywall subtitle font size",
+        "change paywall subtitle font weight",
+        "set paywall subtitle font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallBody.subtitle.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall headline text background color",
+        "set paywall title text background color",
+        "change paywall headline font family",
+        "set paywall title font family",
+        "change paywall headline line height",
+        "set paywall title line height",
+        "change paywall headline font size",
+        "set paywall title font size",
+        "change paywall headline font weight",
+        "set paywall title font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallBody.title.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer auto-renew note text background color",
+        "set paywall footer auto-renew note text background color",
+        "change paywall footer auto-renew note font family",
+        "set paywall footer auto-renew note font family",
+        "change paywall footer auto-renew note line height",
+        "set paywall footer auto-renew note line height",
+        "change paywall footer auto-renew note font size",
+        "set paywall footer auto-renew note font size",
+        "change paywall footer auto-renew note font weight",
+        "set paywall footer auto-renew note font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.autoRenew.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer privacy link text background color",
+        "set paywall footer privacy link text background color",
+        "change paywall footer privacy link font family",
+        "set paywall footer privacy link font family",
+        "change paywall footer privacy link line height",
+        "set paywall footer privacy link line height",
+        "change paywall footer privacy link font size",
+        "set paywall footer privacy link font size",
+        "change paywall footer privacy link font weight",
+        "set paywall footer privacy link font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.privacyLink.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer purchase button label text background color",
+        "set paywall footer purchase button label text background color",
+        "change paywall footer purchase button label font family",
+        "set paywall footer purchase button label font family",
+        "change paywall footer purchase button label line height",
+        "set paywall footer purchase button label line height",
+        "change paywall footer purchase button label font size",
+        "set paywall footer purchase button label font size",
+        "change paywall footer purchase button label font weight",
+        "set paywall footer purchase button label font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.purchaseButton.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer restore link text background color",
+        "set paywall footer restore link text background color",
+        "change paywall footer restore link font family",
+        "set paywall footer restore link font family",
+        "change paywall footer restore link line height",
+        "set paywall footer restore link line height",
+        "change paywall footer restore link font size",
+        "set paywall footer restore link font size",
+        "change paywall footer restore link font weight",
+        "set paywall footer restore link font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.restoreLink.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer background color",
+        "set paywall bottom area background color"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.style",
+      "memberActionCount": 1,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall footer terms link text background color",
+        "set paywall footer terms link text background color",
+        "change paywall footer terms link font family",
+        "set paywall footer terms link font family",
+        "change paywall footer terms link line height",
+        "set paywall footer terms link line height",
+        "change paywall footer terms link font size",
+        "set paywall footer terms link font size",
+        "change paywall footer terms link font weight",
+        "set paywall footer terms link font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallFooter.termsLink.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall header close button icon color",
+        "set paywall header close button icon color",
+        "change paywall header close button side/alignment",
+        "set paywall header close button side/alignment",
+        "change paywall header close button visibility timing",
+        "set paywall header close button visibility timing",
+        "change paywall header close button delay in seconds",
+        "set paywall header close button delay in seconds"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallHeader.closeButton.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall header restore link background color",
+        "set paywall header restore link background color",
+        "change paywall header restore link typeface",
+        "set paywall header restore link typeface",
+        "change paywall header restore link line height",
+        "set paywall header restore link line height",
+        "change paywall header restore link font size",
+        "set paywall header restore link font size",
+        "change paywall header restore link font weight",
+        "set paywall header restore link font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallHeader.restoreLink.style",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall media fill mode",
+        "set paywall image fill mode",
+        "change paywall media height",
+        "set paywall image height",
+        "change paywall media corner radius",
+        "set paywall image corner radius",
+        "change paywall media top anchor",
+        "set paywall image top anchor",
+        "change paywall media content placement",
+        "set paywall image content placement"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallMedia.style",
+      "memberActionCount": 6,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription billing period label text background color",
+        "set paywall plan billing period label text background color",
+        "change paywall subscription billing period label font family",
+        "set paywall plan billing period label font family",
+        "change paywall subscription billing period label line height",
+        "set paywall plan billing period label line height",
+        "change paywall subscription billing period label font size",
+        "set paywall plan billing period label font size",
+        "change paywall subscription billing period label font weight",
+        "set paywall plan billing period label font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.billingPeriod.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription checkbox checked color",
+        "set paywall plan checkbox checked color",
+        "change paywall subscription checkbox unchecked color",
+        "set paywall plan checkbox unchecked color"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.checkbox.style",
+      "memberActionCount": 2,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription plan card inner padding top padding",
+        "set paywall plan plan card inner padding top padding",
+        "change paywall subscription plan card inner padding bottom padding",
+        "set paywall plan plan card inner padding bottom padding",
+        "change paywall subscription plan card inner padding left padding",
+        "set paywall plan plan card inner padding left padding",
+        "change paywall subscription plan card inner padding right padding",
+        "set paywall plan plan card inner padding right padding"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.itemPadding",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription plan arrangement",
+        "set paywall plan plan arrangement",
+        "change paywall subscription checkbox placement",
+        "set paywall plan checkbox placement",
+        "change paywall subscription plan name vs price width",
+        "set paywall plan plan name vs price width"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.layout",
+      "memberActionCount": 3,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription plan list padding top padding",
+        "set paywall plan plan list padding top padding",
+        "change paywall subscription plan list padding bottom padding",
+        "set paywall plan plan list padding bottom padding",
+        "change paywall subscription plan list padding left padding",
+        "set paywall plan plan list padding left padding",
+        "change paywall subscription plan list padding right padding",
+        "set paywall plan plan list padding right padding"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.listPadding",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription plan name text background color",
+        "set paywall plan plan name text background color",
+        "change paywall subscription plan name font family",
+        "set paywall plan plan name font family",
+        "change paywall subscription plan name line height",
+        "set paywall plan plan name line height",
+        "change paywall subscription plan name font size",
+        "set paywall plan plan name font size",
+        "change paywall subscription plan name font weight",
+        "set paywall plan plan name font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.planName.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription plan note text background color",
+        "set paywall plan plan note text background color",
+        "change paywall subscription plan note font family",
+        "set paywall plan plan note font family",
+        "change paywall subscription plan note line height",
+        "set paywall plan plan note line height",
+        "change paywall subscription plan note font size",
+        "set paywall plan plan note font size",
+        "change paywall subscription plan note font weight",
+        "set paywall plan plan note font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.planNote.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change paywall subscription price label text background color",
+        "set paywall plan price label text background color",
+        "change paywall subscription price label font family",
+        "set paywall plan price label font family",
+        "change paywall subscription price label line height",
+        "set paywall plan price label line height",
+        "change paywall subscription price label font size",
+        "set paywall plan price label font size",
+        "change paywall subscription price label font weight",
+        "set paywall plan price label font weight"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.price.textStyle",
+      "memberActionCount": 10,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change selected plan card background color",
+        "set paywall selected plan card background color",
+        "change selected plan card border width",
+        "set paywall selected plan card border width",
+        "change selected plan card border color",
+        "set paywall selected plan card border color",
+        "change selected plan card corner radius",
+        "set paywall selected plan card corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.selectedItem.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change unselected plan card background color",
+        "set paywall unselected plan card background color",
+        "change unselected plan card border width",
+        "set paywall unselected plan card border width",
+        "change unselected plan card border color",
+        "set paywall unselected plan card border color",
+        "change unselected plan card corner radius",
+        "set paywall unselected plan card corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.paywallSubscriptions.unselectedItem.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change wheel picker size of the selection label",
+        "set roller size of the selection label",
+        "change wheel picker thickness of the label text",
+        "set roller thickness of the label text",
+        "change wheel picker color of the selection label",
+        "set roller color of the selection label",
+        "change wheel picker where the label sits",
+        "set roller where the label sits",
+        "change wheel picker background behind the wheels",
+        "set roller background behind the wheels"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.roller.style",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change screen background color",
+        "set screen background"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.screen",
+      "memberActionCount": 1,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change play screen animations",
+        "set play screen animations",
+        "change reuse cached media",
+        "set reuse cached media",
+        "change which permission to ask for",
+        "set which permission to ask for",
+        "change auto-advance duration",
+        "set auto-advance duration",
+        "change seconds or minutes",
+        "set seconds or minutes"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.setting",
+      "memberActionCount": 5,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change step description font size",
+        "set step description font size",
+        "change step description font weight",
+        "set step description font weight",
+        "change step description text color",
+        "set step description text color",
+        "change step description text align",
+        "set step description text align",
+        "change step description line height",
+        "set step description line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stepper.description.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change step image image width",
+        "set progress step image image width",
+        "change step image image height",
+        "set progress step image image height",
+        "change step image scale mode",
+        "set progress step image scale mode",
+        "change step image corner radius",
+        "set progress step image corner radius"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stepper.image.style",
+      "memberActionCount": 4,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change progress stepper how long the progress runs",
+        "set stepper how long the progress runs",
+        "change progress stepper color of the empty track",
+        "set stepper color of the empty track",
+        "change progress stepper color of the completed portion",
+        "set stepper color of the completed portion",
+        "change progress stepper how thick the progress bar is",
+        "set stepper how thick the progress bar is",
+        "change progress stepper how thick the empty track is",
+        "set stepper how thick the empty track is"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stepper.style",
+      "memberActionCount": 6,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change step subtitle font size",
+        "set step subtitle font size",
+        "change step subtitle font weight",
+        "set step subtitle font weight",
+        "change step subtitle text color",
+        "set step subtitle text color",
+        "change step subtitle text align",
+        "set step subtitle text align",
+        "change step subtitle line height",
+        "set step subtitle line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stepper.subtitle.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change step title font size",
+        "set step title font size",
+        "change step title font weight",
+        "set step title font weight",
+        "change step title text color",
+        "set step title text color",
+        "change step title text align",
+        "set step title text align",
+        "change step title line height",
+        "set step title line height"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stepper.title.textStyle",
+      "memberActionCount": 8,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change sticky container show a bar behind the button",
+        "set sticky bar show a bar behind the button",
+        "change sticky container color of the bar",
+        "set sticky bar color of the bar",
+        "change sticky container how see-through the bar is",
+        "set sticky bar how see-through the bar is",
+        "change sticky container roundness of the bar corners",
+        "set sticky bar roundness of the bar corners",
+        "change sticky container outline thickness",
+        "set sticky bar outline thickness"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.stickyContainer.style",
+      "memberActionCount": 6,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action-family",
+      "intentPhrases": [
+        "change text field color of typed answers",
+        "set input field color of typed answers",
+        "change text field fill behind the input",
+        "set input field fill behind the input",
+        "change text field color of the field outline",
+        "set input field color of the field outline",
+        "change text field thickness of the outline",
+        "set input field thickness of the outline",
+        "change text field pick the field outline style",
+        "set input field pick the field outline style"
+      ],
+      "mode": "cli",
+      "actionFamily": "editor.textField.style",
+      "memberActionCount": 11,
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "change-funnel-font",
+        "change funnel font",
+        "change the font",
+        "set funnel font",
+        "funnel typography",
+        "upload custom font",
+        "upload my own font",
+        "brand font",
+        "web font",
+        "custom typeface",
+        "same font on every device",
+        "изменить шрифт"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-fonts-typography"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "selected-product",
+        "selected product",
+        "current product",
+        "selected plan",
+        "current plan",
+        "выбранный продукт",
+        "текущий продукт",
+        "выбранный тариф",
+        "текущий тариф",
+        "выбранная подписка"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "purchase-label",
+        "purchase label",
+        "purchase button label",
+        "buy button text",
+        "текст кнопки купить",
+        "лейбл покупки",
+        "кнопка покупает",
+        "кнопка покупки",
+        "кнопка купить"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-flexible-sections",
+        "help-block-paywall-subscriptions"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "product-description-label",
+        "description label",
+        "product description label",
+        "description from selected product",
+        "описание продукта",
+        "лейбл описания",
+        "description из выбранного тарифа",
+        "текст из выбранного продукта"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "flexible-layout",
+        "flexible layout",
+        "flexible sections",
+        "flexible paywall",
+        "флексибл экран",
+        "флексибл layout",
+        "гибкий layout",
+        "гибкий экран"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-flexible-sections"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "webembed-paywall",
+        "webembed paywall",
+        "web embed paywall",
+        "custom html paywall",
+        "iframe paywall",
+        "вебэмбед пейвол",
+        "webembed оплата",
+        "custom html оплата"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-custom-html",
+        "help-block-paywall-subscriptions"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "facebook-events-catalog",
+        "facebook events catalog",
+        "events sent to facebook",
+        "which events",
+        "event list",
+        "список событий",
+        "какие события",
+        "какие ивенты",
+        "каталог событий facebook"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "facebook-events-catalog"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "facebook-pixel-setup",
+        "add facebook pixel",
+        "facebook pixel setup",
+        "meta pixel setup",
+        "pixel id",
+        "добавь facebook pixel",
+        "подключить facebook pixel",
+        "настроить meta pixel",
+        "поставить пиксель"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "analytics-add-provider",
+        "analytics-provider-config",
+        "facebook-pixel-capi-setup"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "analytics-provider-setup",
+        "add analytics provider",
+        "connect analytics provider",
+        "add google analytics",
+        "google analytics setup",
+        "ga4 setup",
+        "google tag manager setup",
+        "analytics provider config",
+        "custom script analytics",
+        "добавить google analytics",
+        "добавь google analytics",
+        "подключить google analytics"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "analytics-add-provider",
+        "analytics-provider-config",
+        "integrations-analytics-section"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "stripe-subscriptions",
+        "stripe subscriptions",
+        "stripe subscription setup",
+        "subscription products",
+        "paywall products",
+        "как настроить stripe подписки",
+        "stripe подписки",
+        "подписки stripe",
+        "тарифы подписки",
+        "subscription options"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-paywall-subscriptions"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "custom-domain",
+        "custom domain",
+        "custom domain dns",
+        "dns setup",
+        "cname record",
+        "домен",
+        "кастомный домен",
+        "dns записи",
+        "настроить dns"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "integrations-custom-domain-section"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "custom-html-webembed",
+        "custom html",
+        "webembed",
+        "web embed",
+        "iframe",
+        "html editor",
+        "html code",
+        "кастомный html",
+        "вставить iframe",
+        "код iframe"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-custom-html"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "launch-publish-funnel",
+        "publish my funnel",
+        "launch my funnel",
+        "go live",
+        "publish the funnel",
+        "launch checklist",
+        "what's left to launch",
+        "first paid funnel",
+        "запустить воронку",
+        "опубликовать воронку",
+        "что осталось до запуска",
+        "чеклист запуска"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "launch-paid-funnel-overview"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "email-before-paywall",
+        "collect email",
+        "email before checkout",
+        "email before paywall",
+        "capture email",
+        "собрать email",
+        "email перед пейволом",
+        "почта перед оплатой",
+        "сбор почты"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "collect-email-before-paywall"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "payment-methods",
+        "apple pay",
+        "google pay",
+        "payment methods",
+        "which payment methods",
+        "способы оплаты",
+        "методы оплаты",
+        "оплата картой",
+        "какие способы оплаты"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "paywall-payment-methods"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "tiktok-events",
+        "tiktok pixel",
+        "tiktok events",
+        "tiktok events api",
+        "тикток пиксель",
+        "события тикток",
+        "тикток события",
+        "tiktok атрибуция"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "tiktok-events-catalog",
+        "tiktok-pixel-events-api-setup"
+      ],
+      "next": "references/article-directory.json"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generated": true,
-  "purpose": "Generated SupportFlow knowledge graph projection for article-first retrieval. This is runtime-safe static JSON/JSONL, not a hand-edited source of truth and not a graph database dependency.",
+  "purpose": "Generated customer-safe SupportFlow knowledge graph projection for article-first retrieval. This static graph intentionally excludes internal repository module and submodule metadata.",
   "nodeTypes": [
     "Article",
     "Subarticle",
@@ -16,7 +16,10 @@
     "SourceConfig",
     "Tag",
     "Keyword",
-    "SynonymGroup"
+    "SynonymGroup",
+    "CliCapability",
+    "TestKitHelper",
+    "E2eScenario"
   ],
   "edgeTypes": [
     "ARTICLE_HAS_SUBARTICLE",
@@ -33,7 +36,12 @@
     "ACTION_HAS_TEACH_FALLBACK",
     "NODE_GROUNDED_IN_SOURCE",
     "SYNONYM_POINTS_TO_ARTICLE",
-    "NEGATIVE_FOR_ARTICLE"
+    "NEGATIVE_FOR_ARTICLE",
+    "ACTION_BACKED_BY_CLI_CAPABILITY",
+    "ACTION_EXECUTED_BY_HELPER",
+    "CAPABILITY_USES_HELPER",
+    "CAPABILITY_PROVEN_BY_SCENARIO",
+    "CAPABILITY_SUPPORTS_SCENARIO"
   ],
   "sourceOfTruth": [
     "Article configs and generated article references",
@@ -42,7 +50,8 @@
   ],
   "runtimePolicy": [
     "No graph database, vector database, Python stack, local embedding model, or Obsidian runtime is required by the customer plugin.",
-    "The graph improves retrieval and evidence tracing; final answers must still be grounded in selected article content and guide/action evidence.",
+    "The graph improves article-first retrieval and evidence tracing; final answers must still be grounded in selected article content and guide/action evidence.",
+    "Internal repository module-impact relations are maintainer-only and are not shipped in the customer plugin.",
     "Generated graph files must not be hand-edited."
   ]
 }

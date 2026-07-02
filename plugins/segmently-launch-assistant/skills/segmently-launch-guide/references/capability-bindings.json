@@ -1,0 +1,655 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "note": "GENERATED customer-safe projection of the capability surface bindings: CLI capability <-> scenarios <-> DO actions <-> test-kit helpers <-> validated replay scenarios. Use it to pick the executable surface (CLI command family, action id, browser helper, proven scenario) for a selected support intent. Safety fields are binding: publish-write and draft-write capabilities still require explicit customer confirmation before execution.",
+  "bindings": [
+    {
+      "capabilityAtomId": "funnel.v2.create",
+      "title": "Create a V2 web funnel",
+      "supportFlowAtomIds": [
+        "onboarding.createWizard.basicInfo",
+        "product.projectTheme"
+      ],
+      "scenarioIds": [
+        "create-funnel"
+      ],
+      "cliCommands": [
+        "funnels create"
+      ],
+      "actionIds": [
+        "launch.funnel.create"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "loginAndNavigateToV2Canvas"
+      ],
+      "e2eScenarioRefs": [
+        "create-onboarding-wizard"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "projectTheme.manage",
+      "title": "Inspect and set project themes",
+      "supportFlowAtomIds": [
+        "product.projectTheme"
+      ],
+      "scenarioIds": [
+        "set-theme"
+      ],
+      "cliCommands": [
+        "themes list",
+        "themes global",
+        "themes import",
+        "themes set-active"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [
+        "choose-template-theme"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.apply",
+      "title": "Apply a full funnel manifest (funnel + graph + placement)",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "webPlacement.dialog",
+        "product.projectTheme"
+      ],
+      "scenarioIds": [
+        "add-screens"
+      ],
+      "cliCommands": [
+        "funnels apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "loginAndNavigateToV2Canvas",
+        "placeScreenBatch"
+      ],
+      "e2eScenarioRefs": [
+        "configure-canvas-screens"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.clone",
+      "title": "Clone a funnel version",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "screenEditor.base",
+        "product.projectTheme"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "funnels clone"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.graph.validate",
+      "title": "Validate a graph manifest (dry-run)",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "v2.conditionEditor"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "funnels graph dry-run"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.screen.apply",
+      "title": "Apply screen content changes (Simplified V2 patches)",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "screenEditor.base"
+      ],
+      "scenarioIds": [
+        "add-screens",
+        "change-setting",
+        "configure-actions"
+      ],
+      "cliCommands": [
+        "funnels screens patch",
+        "funnels graph apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [
+        "editor."
+      ],
+      "testKitHelpers": [
+        "openScreenEditor",
+        "setField",
+        "setTextField",
+        "setSelect",
+        "setCheckbox",
+        "navigateToSetting"
+      ],
+      "e2eScenarioRefs": [
+        "open-v2-canvas"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.variable.bind",
+      "title": "Create variables and bind screen outputs",
+      "supportFlowAtomIds": [
+        "screenEditor.base"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "funnels variables apply",
+        "funnels graph apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "createVariable",
+        "bindVariableToSection"
+      ],
+      "e2eScenarioRefs": [
+        "configure-variable-binding"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.edge.connect",
+      "title": "Connect screens through action keys",
+      "supportFlowAtomIds": [
+        "v2.canvas"
+      ],
+      "scenarioIds": [
+        "configure-actions"
+      ],
+      "cliCommands": [
+        "funnels edges apply",
+        "funnels graph apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [
+        "connect-canvas-screens"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.condition.set",
+      "title": "Attach route-guard conditions to transitions",
+      "supportFlowAtomIds": [
+        "v2.conditionEditor"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "funnels conditions apply",
+        "funnels graph apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.diff",
+      "title": "Compare two funnel versions",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "screenEditor.base",
+        "screenEditor.paywallSubscriptions"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "funnels diff"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "webPlacement.configure",
+      "title": "Create or update a web placement config",
+      "supportFlowAtomIds": [
+        "webPlacement.dialog",
+        "webPlacement.stripeMetadata",
+        "webPlacement.entryRules"
+      ],
+      "scenarioIds": [
+        "configure-web-placement",
+        "configure-attribution",
+        "collect-email-before-paywall"
+      ],
+      "cliCommands": [
+        "web-placements apply",
+        "web-placements create"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "openCreateDialog",
+        "fillBasicFields",
+        "expandSection",
+        "setStripeEmail",
+        "addEntryScreenRule",
+        "saveOnly",
+        "saveAndPublish"
+      ],
+      "e2eScenarioRefs": [
+        "configure-web-placement-entry-rules",
+        "configure-web-placement-stripe-metadata"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "webPlacement.publish",
+      "title": "Publish a web placement",
+      "supportFlowAtomIds": [
+        "webPlacements.list"
+      ],
+      "scenarioIds": [
+        "publish"
+      ],
+      "cliCommands": [
+        "publish web",
+        "web-placements publish"
+      ],
+      "actionIds": [
+        "launch.publish"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "publishWebPlacement",
+        "createAndPublishWebPlacement",
+        "copyWebPlacementUrl"
+      ],
+      "e2eScenarioRefs": [
+        "publish-web-placement",
+        "verify-published-funnel"
+      ],
+      "safety": {
+        "cliSafety": "publish-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "webABTest.publish",
+      "title": "Create and publish an A/B web placement",
+      "supportFlowAtomIds": [
+        "webPlacements.list"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "ab-tests apply",
+        "ab-tests publish",
+        "ab-tests publications"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "fillABTestDialog",
+        "saveABTestDialog",
+        "publishABTest"
+      ],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "publish-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "webABTest.rollout.apply",
+      "title": "Apply a complete A/B rollout manifest",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "screenEditor.paywallSubscriptions",
+        "webPlacement.dialog",
+        "webPlacements.list"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "ab-tests rollout apply"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "publish-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "stripe.catalog.read",
+      "title": "Read Stripe account, products, prices",
+      "supportFlowAtomIds": [
+        "integrations.stripeConnect",
+        "paywallProducts.list"
+      ],
+      "scenarioIds": [
+        "connect-stripe"
+      ],
+      "cliCommands": [
+        "stripe account",
+        "stripe products",
+        "stripe prices"
+      ],
+      "actionIds": [
+        "handoff.stripe.connect"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [
+        "connect-stripe-account"
+      ],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "stripe.paywall-product.ensure",
+      "title": "Create or reuse a sandbox paywall product",
+      "supportFlowAtomIds": [
+        "integrations.stripeConnect",
+        "paywallProducts.list",
+        "paywall.screen"
+      ],
+      "scenarioIds": [
+        "create-paywall-products",
+        "attach-products",
+        "paywall-payment-methods"
+      ],
+      "cliCommands": [
+        "stripe paywall-product ensure"
+      ],
+      "actionIds": [
+        "launch.paywallProducts.create"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [
+        "ensurePaywallProduct"
+      ],
+      "e2eScenarioRefs": [
+        "create-paywall-product",
+        "configure-paywall-screen-products"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "cliScenario.sandbox-paywall-ab-rollout",
+      "title": "Sandbox paywall A/B rollout scenario",
+      "supportFlowAtomIds": [
+        "product.projectTheme",
+        "paywall.screen",
+        "webPlacement.dialog",
+        "webPlacements.list"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "ab-tests rollout apply",
+        "stripe paywall-product ensure"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "publish-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "analytics.settings.apply",
+      "title": "Apply analytics provider settings",
+      "supportFlowAtomIds": [
+        "integrations.analytics"
+      ],
+      "scenarioIds": [
+        "connect-analytics",
+        "add-fb-pixel",
+        "add-tiktok-pixel"
+      ],
+      "cliCommands": [
+        "analytics settings apply"
+      ],
+      "actionIds": [
+        "launch.analytics.pixel.apply"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [
+        "add-analytics-integration"
+      ],
+      "safety": {
+        "cliSafety": "draft-write",
+        "requiresExplicitConfirmation": true
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "analytics.settings.read",
+      "title": "Read analytics provider settings (redacted)",
+      "supportFlowAtomIds": [
+        "integrations.analytics"
+      ],
+      "scenarioIds": [
+        "facebook-events-list",
+        "tiktok-events-list"
+      ],
+      "cliCommands": [
+        "analytics settings read"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "analytics.readiness.probe",
+      "title": "Probe analytics configured-readiness",
+      "supportFlowAtomIds": [
+        "integrations.analytics"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "analytics readiness"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "publish.runtime.verify",
+      "title": "Verify a published funnel runtime URL",
+      "supportFlowAtomIds": [
+        "webPlacements.list"
+      ],
+      "scenarioIds": [
+        "publish",
+        "test-purchase"
+      ],
+      "cliCommands": [
+        "publish verify"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [
+        "verify-published-funnel"
+      ],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "domain.status.read",
+      "title": "Read custom-domain status",
+      "supportFlowAtomIds": [
+        "integrations.customDomain"
+      ],
+      "scenarioIds": [
+        "add-custom-domain"
+      ],
+      "cliCommands": [
+        "domains status"
+      ],
+      "actionIds": [
+        "handoff.domain.dns"
+      ],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "domain.readiness.verify",
+      "title": "Verify custom-domain readiness before launch",
+      "supportFlowAtomIds": [
+        "integrations.customDomain"
+      ],
+      "scenarioIds": [
+        "add-custom-domain"
+      ],
+      "cliCommands": [
+        "domains verify"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "funnel.v2.screen-type.discover",
+      "title": "Discover supported screen types and fields",
+      "supportFlowAtomIds": [
+        "v2.canvas",
+        "screenEditor.base"
+      ],
+      "scenarioIds": [],
+      "cliCommands": [
+        "screen-types list",
+        "screen-types show"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    },
+    {
+      "capabilityAtomId": "contentPlan.strategy.audit",
+      "title": "Audit Content Plan strategy readiness",
+      "supportFlowAtomIds": [],
+      "scenarioIds": [],
+      "cliCommands": [
+        "content-plan strategies list",
+        "content-plan strategies export",
+        "content-plan strategies audit"
+      ],
+      "actionIds": [],
+      "actionIdPrefixes": [],
+      "testKitHelpers": [],
+      "e2eScenarioRefs": [],
+      "safety": {
+        "cliSafety": "read-only",
+        "requiresExplicitConfirmation": false
+      },
+      "maturity": "verified"
+    }
+  ]
+}

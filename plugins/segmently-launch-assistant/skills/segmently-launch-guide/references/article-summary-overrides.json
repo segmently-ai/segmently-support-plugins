@@ -3,6 +3,12 @@
   "purpose": "Curated searchable summaries for article-first routing. Every published article must have a customer-intent summary that adds meaning beyond the title before article-registry, search-index, runner, or plugin evals are trusted.",
   "articles": [
     {
+      "articleAlias": "help-fonts-typography",
+      "summary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "keywords": ["change funnel font", "upload custom font", "brand font", "web font", "font mappings", "typeface", "custom typography", "same font on every device"],
+      "tags": ["fonts", "typography", "web-fonts", "custom-font", "branding", "integrations"]
+    },
+    {
       "articleAlias": "collect-email-before-paywall",
       "summary": "Explains why a paid subscription funnel must collect the visitor email before the paywall and how that email supports Stripe subscriptions, customer identity, receipts, attribution, and later billing support. Use this for questions about email capture before checkout, subscription readiness, and metadata needed before showing a paywall.",
       "keywords": ["email before paywall", "collect customer email", "subscription customer identity", "stripe receipts", "paywall attribution"],

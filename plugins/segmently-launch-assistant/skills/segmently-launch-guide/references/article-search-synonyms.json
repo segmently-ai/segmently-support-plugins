@@ -3,6 +3,34 @@
   "purpose": "Reviewed customer-language synonym overlay for article retrieval. This file improves candidate search only; article content and registry relations remain the answer source of truth.",
   "groups": [
     {
+      "id": "change-funnel-font",
+      "phrases": [
+        "change funnel font",
+        "change the font",
+        "set funnel font",
+        "funnel typography",
+        "upload custom font",
+        "upload my own font",
+        "brand font",
+        "web font",
+        "custom typeface",
+        "same font on every device",
+        "изменить шрифт",
+        "загрузить свой шрифт",
+        "шрифт воронки",
+        "кастомный шрифт"
+      ],
+      "tags": [
+        "fonts",
+        "typography",
+        "web-fonts",
+        "custom-font"
+      ],
+      "articleAliases": [
+        "help-fonts-typography"
+      ]
+    },
+    {
       "id": "selected-product",
       "phrases": [
         "selected product",
@@ -238,6 +266,94 @@
       ],
       "articleAliases": [
         "help-block-custom-html"
+      ]
+    },
+    {
+      "id": "launch-publish-funnel",
+      "phrases": [
+        "publish my funnel",
+        "launch my funnel",
+        "go live",
+        "publish the funnel",
+        "launch checklist",
+        "what's left to launch",
+        "first paid funnel",
+        "запустить воронку",
+        "опубликовать воронку",
+        "что осталось до запуска",
+        "чеклист запуска",
+        "первая платная воронка"
+      ],
+      "tags": [
+        "launch",
+        "publish",
+        "web-funnel"
+      ],
+      "articleAliases": [
+        "launch-paid-funnel-overview"
+      ]
+    },
+    {
+      "id": "email-before-paywall",
+      "phrases": [
+        "collect email",
+        "email before checkout",
+        "email before paywall",
+        "capture email",
+        "собрать email",
+        "email перед пейволом",
+        "почта перед оплатой",
+        "сбор почты"
+      ],
+      "tags": [
+        "email",
+        "paywall",
+        "subscriptions"
+      ],
+      "articleAliases": [
+        "collect-email-before-paywall"
+      ]
+    },
+    {
+      "id": "payment-methods",
+      "phrases": [
+        "apple pay",
+        "google pay",
+        "payment methods",
+        "which payment methods",
+        "способы оплаты",
+        "методы оплаты",
+        "оплата картой",
+        "какие способы оплаты"
+      ],
+      "tags": [
+        "payments",
+        "paywall",
+        "stripe"
+      ],
+      "articleAliases": [
+        "paywall-payment-methods"
+      ]
+    },
+    {
+      "id": "tiktok-events",
+      "phrases": [
+        "tiktok pixel",
+        "tiktok events",
+        "tiktok events api",
+        "тикток пиксель",
+        "события тикток",
+        "тикток события",
+        "tiktok атрибуция"
+      ],
+      "tags": [
+        "tiktok",
+        "analytics",
+        "events"
+      ],
+      "articleAliases": [
+        "tiktok-events-catalog",
+        "tiktok-pixel-events-api-setup"
       ]
     }
   ]
