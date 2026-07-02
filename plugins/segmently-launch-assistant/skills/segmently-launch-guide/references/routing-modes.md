@@ -108,6 +108,11 @@ something. Use `runtime/show-runner.mjs` for live SHOW execution:
 
 - Without `--execute` it returns the headed browser package, screenshot
   artifact plan, and `authPreflight`.
+- When the destination has a registered navigation route
+  (`node runtime/route-runner.mjs --list`), pass it as `--routeId <routeId>`:
+  the atom-assembled route navigation runs first and the result reports
+  `routeNavigation.applied`. Unknown routes or missing route inputs fall back
+  to the default navigation with an honest reason.
 - With explicit SHOW approval and target context, `--execute` runs the auth
   preflight/browser auth bridge, opens the browser with
   `playwright-cli open --headed --persistent`, focuses the target control,
@@ -142,7 +147,9 @@ something. Use `runtime/show-runner.mjs` for live SHOW execution:
    result has `dryRun=false` and `completionClaim=verified`.
 4. If the runner returns an E2E action, use
    `node runtime/e2e-do-runner.mjs --action <id> ...` to get the dry-run
-   browser execution package. With explicit customer approval, `--execute`,
+   browser execution package. Add `--routeId <routeId>` when a registered
+   navigation route covers the destination — the route navigation runs before
+   the action's own driver script; unknown routes leave the plan unchanged. With explicit customer approval, `--execute`,
    `--baseUrl`, and a verification-ready target such as `--versionId`, the
    runner opens the browser through `playwright-bowser`, runs the returned
    `driverScript`, and then runs the returned `verification` read. Without
