@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generated": true,
-  "note": "GENERATED customer-safe replay scenario references from validated SupportFlow runs. Reuse these proven entry points and step sequences when planning SHOW walkthroughs or browser DO work instead of inventing navigation from prose. Placeholders like {{baseUrl}} come from the customer target context.",
+  "note": "GENERATED customer-safe replay scenario references from validated SupportFlow runs. Reuse these proven entry points and step sequences when planning SHOW walkthroughs or browser DO work instead of inventing navigation from prose. When a scenario lists routeIds, resolve navigation through runtime/route-runner.mjs with that route instead of improvising from the prose steps. Placeholders like {{baseUrl}} come from the customer target context.",
   "scenarios": [
     {
       "recipeKey": "create-onboarding-wizard",
@@ -51,6 +51,10 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "onboarding-create-wizard",
+        "onboarding-list"
       ]
     },
     {
@@ -79,6 +83,9 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "themes-v2-admin"
       ]
     },
     {
@@ -124,6 +131,9 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "v2-canvas"
       ]
     },
     {
@@ -290,6 +300,9 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "paywall-products"
       ]
     },
     {
@@ -405,6 +418,10 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "wp-create-dialog",
+        "wp-list"
       ]
     },
     {
@@ -526,6 +543,9 @@
             }
           ]
         }
+      ],
+      "routeIds": [
+        "published-web-funnel"
       ]
     },
     {

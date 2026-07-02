@@ -20,6 +20,12 @@ import {
   wrapDriverScriptWithBrowserAuth,
 } from './browser-auth-bridge.mjs';
 import { buildToolPreflight } from './tool-preflight.mjs';
+import {
+  missingRouteInputs,
+  resolveNavigationRoute,
+  routeParams,
+  wrapDriverScriptWithRouteNavigation,
+} from './route-runner.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const responseRunner = join(root, 'runtime/customer-response-runner.mjs');
@@ -84,6 +90,7 @@ async function main() {
       },
       authPreflight: prepared.authPreflight,
       toolPreflight: prepared.toolPreflight,
+      routeNavigation: prepared.routeNavigation,
       driverScript: prepared.driverScript,
       screenshot: {
         path: prepared.screenshotPath,
@@ -138,6 +145,7 @@ async function main() {
     browserPlan: response.show.browserPlan ?? [],
     authBridge: authSummary(auth),
     toolPreflight: prepared.toolPreflight,
+    routeNavigation: prepared.routeNavigation,
     targetUrl: prepared.targetUrl,
     browser: {
       open: null,
@@ -226,14 +234,54 @@ function prepareShow(response, args) {
   mkdirSync(outputDir, { recursive: true });
   const screenshotPath = resolve(args.screenshot || join(outputDir, `show-${Date.now()}.png`));
   const targetUrl = targetUrlFor(args);
-  const driverScript = showDriverScript({
-    projectId: args.projectId,
-    funnelId: args.funnelId,
-    screenId: args.screenId,
-    baseUrl: args.baseUrl,
-    guideKeys: response.show?.guideKeys ?? [],
-    prompt: args.prompt,
-  });
+  // Optional proven navigation prefix from the navigation atom registry.
+  // Falls back to the default target-URL navigation when the route is
+  // unknown or its inputs are missing — never blocks the SHOW.
+  const requestedRouteId = hasArg(args, 'routeId') ? String(args.routeId) : null;
+  let routeNavigation = {
+    requested: requestedRouteId,
+    applied: false,
+    ...(requestedRouteId ? { reason: `route ${requestedRouteId} is not registered in runtime/navigation-atoms.json` } : {}),
+  };
+  const resolvedRoute = requestedRouteId ? resolveNavigationRoute(requestedRouteId) : null;
+  let driverScript = null;
+  if (resolvedRoute) {
+    const routeMissing = missingRouteInputs(resolvedRoute.route, args);
+    if (routeMissing.length === 0) {
+      const focusScript = showDriverScript({
+        projectId: args.projectId,
+        funnelId: args.funnelId,
+        screenId: args.screenId,
+        baseUrl: args.baseUrl,
+        guideKeys: response.show?.guideKeys ?? [],
+        prompt: args.prompt,
+        skipNavigation: true,
+      });
+      driverScript = wrapDriverScriptWithRouteNavigation(focusScript, resolvedRoute.route, routeParams(args), resolvedRoute.primitives);
+      routeNavigation = {
+        requested: requestedRouteId,
+        applied: true,
+        routeId: resolvedRoute.route.routeId,
+        customerSafeLabel: resolvedRoute.route.customerSafeLabel,
+      };
+    } else {
+      routeNavigation = {
+        requested: requestedRouteId,
+        applied: false,
+        reason: `route ${requestedRouteId} needs ${routeMissing.join(', ')}`,
+      };
+    }
+  }
+  if (!driverScript) {
+    driverScript = showDriverScript({
+      projectId: args.projectId,
+      funnelId: args.funnelId,
+      screenId: args.screenId,
+      baseUrl: args.baseUrl,
+      guideKeys: response.show?.guideKeys ?? [],
+      prompt: args.prompt,
+    });
+  }
   const closeAfterShow = args.closeAfterShow === true || args.closeAfterShow === 'true';
   const openArgv = ['-s', sessionName, 'open', args.baseUrl ? `${trimSlash(args.baseUrl)}/login` : targetUrl, '--persistent', '--headed', `--browser=${browserName}`];
   const runCodeArgv = ['-s', sessionName, 'run-code', driverScript];
@@ -258,6 +306,7 @@ function prepareShow(response, args) {
     closeArgv,
     closeAfterShow,
     driverScript,
+    routeNavigation,
     requiredInputs: [...new Set(requiredInputs)],
     liveBrowserReady: requiredInputs.length === 0,
   };
@@ -285,12 +334,15 @@ function showDriverScript(input) {
     : input.projectId
       ? \`\${baseUrl.replace(/\\/+$/, '')}/project/\${input.projectId}\`
       : \`\${baseUrl.replace(/\\/+$/, '')}/login\`;
-  await page.goto(targetUrl);
-  await page.waitForLoadState('domcontentloaded').catch(() => {});
-  await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
-  await page.waitForSelector('[data-testid="screen-editor-dialog"], [data-testid="rf__wrapper"], .react-flow', { timeout: 30000 }).catch(() => {});
-  await page.waitForTimeout(500);
+  if (!input.skipNavigation) {
+    await page.goto(targetUrl);
+    await page.waitForLoadState('domcontentloaded').catch(() => {});
+    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+    await page.waitForSelector('[data-testid="screen-editor-dialog"], [data-testid="rf__wrapper"], .react-flow', { timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(500);
+  }
   const notes = [];
+  if (input.skipNavigation) notes.push('navigation handled by a registered route prefix');
   const bodyText = await page.locator('body').innerText({ timeout: 3000 }).catch(() => '');
   if (/missing or insufficient permissions|permission denied|not authorized|access denied|sign in|log in|login/i.test(bodyText)) {
     throw new Error('The target app route did not load an authorized editor view. Run the Segmently auth preflight and retry; if auth succeeds, verify this account has access to the project.');
@@ -486,8 +538,12 @@ function printHelp() {
   process.stdout.write(`Segmently launch SHOW runner
 
 Usage:
-  node runtime/show-runner.mjs --prompt "<show request>" [--projectId <id>] [--funnelId <id>] [--screenId <id>] [--baseUrl <url>]
+  node runtime/show-runner.mjs --prompt "<show request>" [--projectId <id>] [--funnelId <id>] [--screenId <id>] [--baseUrl <url>] [--routeId <navigationRouteId>]
   node runtime/show-runner.mjs --prompt "<show request>" --projectId <id> --funnelId <id> --screenId <id> --baseUrl <url> --execute
+
+Pass --routeId to navigate through a registered navigation atom route
+(runtime/navigation-atoms.json, see route-runner.mjs --list) instead of the
+default deep-link; unknown routes fall back to the default navigation.
 
 Without --execute this runner is read-only and returns the playwright-cli headed
 open, run-code, screenshot, driverScript, and screenshot manifest path that

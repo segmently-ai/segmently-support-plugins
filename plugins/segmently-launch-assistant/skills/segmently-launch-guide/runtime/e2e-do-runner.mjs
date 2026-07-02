@@ -21,6 +21,12 @@ import {
 } from './browser-auth-bridge.mjs';
 import { buildToolPreflight } from './tool-preflight.mjs';
 import { resolveProjectContext } from './session-context.mjs';
+import {
+  missingRouteInputs,
+  resolveNavigationRoute,
+  routeParams,
+  wrapDriverScriptWithRouteNavigation,
+} from './route-runner.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const editorRunner = join(root, 'runtime/editor-do-runner.mjs');
@@ -73,6 +79,7 @@ async function main() {
   }
 
   const prepared = prepareE2eExecution(plan, effectiveArgs);
+  const routeNavigation = applyRouteNavigationPrefix(prepared, effectiveArgs);
   prepared.authPreflight = buildAuthPreflight(args, {
     baseUrl: effectiveArgs.baseUrl,
     authEnv: prepared.segmentlyEnv ?? undefined,
@@ -109,6 +116,7 @@ async function main() {
       },
       authPreflight: prepared.authPreflight,
       toolPreflight: prepared.toolPreflight,
+      routeNavigation,
       wouldOpen: [prepared.playwrightBin, ...prepared.openArgv],
       wouldRunCode: [prepared.playwrightBin, ...prepared.runCodeArgvPreview],
       driverScript: prepared.driverScript,
@@ -179,6 +187,7 @@ async function main() {
     interactionPolicy: buildInteractionPolicy([]),
     authBridge: authSummary(auth),
     toolPreflight: prepared.toolPreflight,
+    routeNavigation,
     segmentlyEnv: prepared.segmentlyEnv,
     browser: {
       open: commandSummary(prepared.playwrightBin, prepared.openArgv, openResult),
@@ -242,6 +251,41 @@ async function main() {
 
   writeJson(output);
   if (!output.ok) process.exitCode = 1;
+}
+
+/**
+ * Optional proven navigation prefix (--routeId) from the navigation atom
+ * registry. When it applies, the route navigation runs before the action's
+ * own driver script; when the route is unknown or inputs are missing, the
+ * plan is left untouched (fallback unchanged).
+ */
+function applyRouteNavigationPrefix(prepared, args) {
+  const requestedRouteId = hasArg(args, 'routeId') ? String(args.routeId) : null;
+  if (!requestedRouteId) return { requested: null, applied: false };
+  const resolved = resolveNavigationRoute(requestedRouteId);
+  if (!resolved) {
+    return {
+      requested: requestedRouteId,
+      applied: false,
+      reason: `route ${requestedRouteId} is not registered in runtime/navigation-atoms.json`,
+    };
+  }
+  const routeMissing = missingRouteInputs(resolved.route, args);
+  if (routeMissing.length) {
+    return {
+      requested: requestedRouteId,
+      applied: false,
+      reason: `route ${requestedRouteId} needs ${routeMissing.join(', ')}`,
+    };
+  }
+  prepared.driverScript = wrapDriverScriptWithRouteNavigation(prepared.driverScript, resolved.route, routeParams(args), resolved.primitives);
+  prepared.runCodeArgv = ['-s', prepared.sessionName, 'run-code', prepared.driverScript];
+  return {
+    requested: requestedRouteId,
+    applied: true,
+    routeId: resolved.route.routeId,
+    customerSafeLabel: resolved.route.customerSafeLabel,
+  };
 }
 
 function argsForProjectContext(args, projectContext) {
@@ -409,6 +453,7 @@ function filterLocalArgs(argv) {
     'env',
     'help',
     'keepOpen',
+    'routeId',
     'playwright',
     'playwrightBin',
     'browser',
@@ -532,8 +577,12 @@ function printHelp() {
   process.stdout.write(`Segmently launch E2E DO runner
 
 Usage:
-  node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...]
+  node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...] [--routeId <navigationRouteId>]
   node runtime/e2e-do-runner.mjs --action <e2eActionId> [inputs...] --execute --baseUrl <url>
+
+Pass --routeId to run a registered navigation atom route
+(runtime/navigation-atoms.json, see route-runner.mjs --list) before the
+action's own driver script; unknown routes leave the plan unchanged.
 
 Without --execute this runner is read-only and returns the playwright-cli open,
 run-code, close, driverScript, and verification read that would run. With

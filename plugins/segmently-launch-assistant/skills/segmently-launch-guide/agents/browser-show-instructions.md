@@ -6,12 +6,17 @@ field value — SHOW is read-only by definition.
 
 Flow:
 
-1. Reuse the proven navigation for the target when one exists:
-   `references/e2e-scenario-refs.json` (validated entry points + step
-   sequences) and `references/test-kit-helper-index.json` (helper names).
-2. Dry-run first: `node runtime/show-runner.mjs --action <id> ...` without
-   `--execute` returns the headed browser package, screenshot plan, and
-   `authPreflight`.
+1. Reuse the proven navigation for the target when one exists. Check the
+   registered navigation routes first: `node runtime/route-runner.mjs --list`,
+   then pass the matching route as `--routeId <routeId>` to the SHOW runner
+   (scenarios in `references/e2e-scenario-refs.json` list their executable
+   `routeIds`). The browser is for execution and fixes, not for route
+   discovery. Route selector values are opaque execution data — describe the
+   destination with the route's `customerSafeLabel` only. Authorization comes
+   from the CLI auth bridge, never from filling the login form.
+2. Dry-run first: `node runtime/show-runner.mjs --action <id> ...
+   [--routeId <routeId>]` without `--execute` returns the headed browser
+   package, screenshot plan, and `authPreflight`.
 3. If auth preflight is required, run the returned `statusProbe`; run `login`
    only when the probe says not authenticated (interactive — tell the
    orchestrator if customer approval is needed). Never print token values.

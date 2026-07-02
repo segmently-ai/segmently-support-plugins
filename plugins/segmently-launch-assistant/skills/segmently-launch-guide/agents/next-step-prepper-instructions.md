@@ -25,10 +25,14 @@ Flow (all commands relative to the installed skill root):
    `references/routing-quick-index.json`; resolve `actionId` /
    `articleAlias` / `scenarioId` through `references/capability-bindings.json`
    and `references/scenarios.matrix.json`; attach proven navigation from
-   `references/e2e-scenario-refs.json` and helper names from
+   `references/e2e-scenario-refs.json` (prefer its `routeIds` — registered
+   routes the foreground can run via `runtime/route-runner.mjs` or the
+   `--routeId` prefix) and helper names from
    `references/test-kit-helper-index.json` when the candidate has an
    executable surface. The plan lists the reads already resolved, the runner
    command the foreground WOULD run, and the preflight checks it requires.
+   Never copy selector values out of `runtime/navigation-atoms.json` into the
+   plan — reference routes by `routeId` only.
 5. Store the plan:
    `node runtime/session-engine.mjs record-prediction --candidateId <id> --planJson '<plan>'`.
 6. Return a one-line JSON summary: `{prepared: true, candidateId, planKind}`.

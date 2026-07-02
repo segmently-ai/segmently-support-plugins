@@ -2698,6 +2698,74 @@ check('session engine and prefetch rules ship in the orchestrator skill', () => 
   assert(readFileSync(join(root, 'references/session-engine.md'), 'utf8').includes('kill-switch'), 'session-engine reference missing the kill-switch contract');
 });
 
+check('navigation atom registry ships opaque CLI-auth routes bound to proven scenarios', () => {
+  const atoms = JSON.parse(readFileSync(join(root, 'runtime/navigation-atoms.json'), 'utf8'));
+  assert(atoms.generated === true && Array.isArray(atoms.routes) && atoms.routes.length >= 15, 'navigation-atoms.json must ship generated routes');
+  assert(String(atoms.note).includes('CLI auth bridge'), 'atoms note must pin CLI-bridge authorization (never the login form)');
+  for (const route of atoms.routes) {
+    assert(route.customerSafeLabel && !/data-testid|sidebar-item-|sidebar-section-/.test(route.customerSafeLabel), `route ${route.routeId} customerSafeLabel leaks selector data`);
+    for (const step of route.steps) {
+      assert(!/password/i.test(`${step.testId ?? ''}${step.selector ?? ''}`), `route ${route.routeId} must not touch login credentials`);
+    }
+  }
+  const refs = JSON.parse(readFileSync(join(root, 'references/e2e-scenario-refs.json'), 'utf8'));
+  const bound = refs.scenarios.filter(scenario => Array.isArray(scenario.routeIds) && scenario.routeIds.length > 0);
+  assert(bound.length >= 4, 'e2e-scenario-refs must bind proven scenarios to executable routeIds');
+  const routeIds = new Set(atoms.routes.map(route => route.routeId));
+  for (const scenario of bound) {
+    for (const routeId of scenario.routeIds) {
+      assert(routeIds.has(routeId), `scenario ${scenario.recipeKey} references unregistered route ${routeId}`);
+    }
+  }
+  const listed = runRouteRunner(['--list']);
+  assert(listed.ok === true && listed.routes.length === atoms.routes.length, 'route-runner --list must enumerate every registered route');
+  assert(listed.routes.every(route => !route.steps), 'route-runner --list must stay a customer-safe summary without step selectors');
+});
+
+check('route runner dry-run assembles deterministic read-only navigation', () => {
+  const dryRun = runRouteRunner(['--route', 'wp-list', '--projectId', 'project_demo', '--baseUrl', 'https://acceptance.segmently.example']);
+  assert(dryRun.ok === true && dryRun.dryRun === true && dryRun.mutation === false, 'route dry-run must be read-only');
+  assert(dryRun.routeId === 'wp-list' && dryRun.missingInputs.length === 0, 'route dry-run must resolve all wp-list inputs');
+  assert(dryRun.resolvedUrl === 'https://acceptance.segmently.example/project/project_demo/web-placements', 'route dry-run must resolve the destination URL');
+  assert(String(dryRun.driverScript).includes('getByTestId') && String(dryRun.driverScript).includes('MuiCollapse'), 'route driver must use baked testid steps with expand-if-collapsed');
+  assert(dryRun.completionClaim === 'route-not-executed', 'route dry-run must not claim execution');
+  assert(dryRun.authPreflight?.login?.argv?.join(' ').includes('auth login'), 'auth-required route must surface the CLI auth preflight');
+  const again = runRouteRunner(['--route', 'wp-list', '--projectId', 'project_demo', '--baseUrl', 'https://acceptance.segmently.example']);
+  assert(again.driverScript === dryRun.driverScript, 'route assembly must be deterministic');
+  const missing = runRouteRunnerExpectingExit(['--route', 'v2-canvas', '--baseUrl', 'https://acceptance.segmently.example', '--execute'], 2);
+  assert(missing.ok === false && missing.missingInputs.includes('projectId') && missing.missingInputs.includes('funnelId'), 'route execute without inputs must fail honestly');
+});
+
+check('show and e2e-do runners take routeId prefixes with honest fallback', () => {
+  const showArgs = [
+    '--prompt', 'покажи где поменять цвет кнопки продолжить',
+    '--projectId', 'project_demo',
+    '--funnelId', 'funnel_demo',
+    '--screenId', 'screen_demo',
+    '--baseUrl', 'https://acceptance.segmently.example',
+  ];
+  const routed = runShowRunner([...showArgs, '--routeId', 'wp-list']);
+  assert(routed.routeNavigation?.applied === true && routed.routeNavigation.routeId === 'wp-list', 'show runner must apply a resolvable routeId prefix');
+  assert(String(routed.driverScript).includes('navigation handled by a registered route prefix'), 'routed show driver must hand navigation to the route prefix');
+  const unknown = runShowRunner([...showArgs, '--routeId', 'not-a-route']);
+  assert(unknown.routeNavigation?.applied === false && String(unknown.routeNavigation.reason).includes('not-a-route'), 'unknown routeId must fall back with an honest reason');
+  const e2eRouted = runE2eRunner([
+    '--action', 'editor.list.options.itemTitle.fontSize',
+    '--projectId', 'project_demo',
+    '--funnelId', 'funnel_demo',
+    '--versionId', 'version_demo',
+    '--screenId', 'screen_demo',
+    '--value', '18',
+    '--baseUrl', 'https://acceptance.segmently.example',
+    '--routeId', 'v2-canvas',
+  ]);
+  assert(e2eRouted.routeNavigation?.applied === true && e2eRouted.routeNavigation.routeId === 'v2-canvas', 'e2e-do runner must apply the routeId prefix');
+  assert(String(e2eRouted.driverScript).includes("mode: 'route'"), 'e2e-do routed driver must run the route navigation before the action driver');
+  const skillText = readFileSync(join(root, 'SKILL.md'), 'utf8');
+  assert(skillText.includes('the browser is for execution and fixes, not for route'), 'SKILL.md missing the route-discovery boundary');
+  assert(skillText.includes('runtime/route-runner.mjs'), 'SKILL.md missing the route runner pointer');
+});
+
 if (failures.length > 0) {
   for (const failure of failures) console.error(failure);
   console.error(`${failures.length} customer-surface acceptance check(s) failed`);
@@ -2791,6 +2859,25 @@ function runE2eRunner(args, env = {}) {
     env: { ...process.env, ...env },
   });
   return JSON.parse(stdout);
+}
+
+function runRouteRunner(args, env = {}) {
+  const stdout = execFileSync('node', [join(root, 'runtime/route-runner.mjs'), ...args], {
+    encoding: 'utf8',
+    env: { ...process.env, ...env },
+  });
+  return JSON.parse(stdout);
+}
+
+function runRouteRunnerExpectingExit(args, expectedStatus) {
+  const result = spawnSync('node', [join(root, 'runtime/route-runner.mjs'), ...args], {
+    encoding: 'utf8',
+  });
+  if (result.status !== expectedStatus) {
+    throw new Error(`expected route runner exit ${expectedStatus}, got ${result.status}: ${result.stderr}`);
+  }
+  if (!result.stdout) throw new Error('route runner did not emit JSON');
+  return JSON.parse(result.stdout);
 }
 
 function runShowRunner(args, env = {}) {

@@ -313,6 +313,8 @@ check('launch runtime', () => {
     'runtime/customer-response-runner.mjs',
     'runtime/session-context.mjs',
     'runtime/session-engine.mjs',
+    'runtime/route-runner.mjs',
+    'runtime/navigation-atoms.json',
     'runtime/tool-preflight.mjs',
     'references/session-context.md',
     'references/session-engine.md',

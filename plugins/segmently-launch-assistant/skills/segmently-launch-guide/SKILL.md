@@ -337,6 +337,18 @@ CLI/E2E DO runner sequences — `runtime/editor-do-runner.mjs`,
 `runtime/show-runner.mjs`, `--execute` semantics, result paths, and
 `unsupported`/`handoff` handling — are in `references/routing-modes.md`.
 
+Navigation is assembled, not discovered. Registered navigation routes ship in
+`runtime/navigation-atoms.json` and execute deterministically through
+`runtime/route-runner.mjs` (`--list` to enumerate, `--route <routeId>` for a
+dry-run package, `--execute` for a live headed walk); the SHOW and E2E DO
+runners accept the same routes as a `--routeId` navigation prefix. When a
+destination has a registered route, resolve navigation through the route
+runner first — the browser is for execution and fixes, not for route
+discovery. Route authorization always comes from the CLI auth bridge
+(`segmently auth login`), never from filling the login form, and resolved
+selector values inside atoms are opaque execution data: describe destinations
+to the customer with the route's `customerSafeLabel` only.
+
 For field-level TEACH, use the same model-selected catalog flow:
 
 1. Read `references/semantic-routing.md`, then select likely guide keys from
@@ -380,9 +392,12 @@ ids, or expose internal file paths.
   `runtime/e2e-do-runner.mjs`, `runtime/show-runner.mjs`.
 - Executable surface bindings (CLI capability <-> action <-> helper <->
   proven scenario): `references/capability-bindings.json`. For browser
-  SHOW/DO planning, resolve helper names via
-  `references/test-kit-helper-index.json` and reuse the proven step sequences
-  in `references/e2e-scenario-refs.json` instead of inventing navigation.
+  SHOW/DO planning, resolve navigation through `runtime/route-runner.mjs`
+  and the registered routes in `runtime/navigation-atoms.json` first
+  (scenarios in `references/e2e-scenario-refs.json` list their executable
+  `routeIds`), and reuse those proven step sequences instead of inventing
+  navigation. `references/test-kit-helper-index.json` stays a maintainer/debug
+  reference for helper names.
 - Customer-surface response contract runner:
   `runtime/customer-response-runner.mjs`.
 - Session cache, proactivity, and predictive prefetch (optional engine):

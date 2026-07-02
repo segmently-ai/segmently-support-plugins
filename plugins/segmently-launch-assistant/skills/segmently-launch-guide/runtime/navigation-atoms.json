@@ -1,0 +1,761 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "note": "GENERATED navigation atom registry baked from the curated route catalog and the segmently-test-kit selector registries. Execute routes through runtime/route-runner.mjs (or the --routeId prefix on show/e2e-do runners). Authorization always comes from the CLI auth bridge (segmently auth print-token), never from filling the login form. Selector values here are opaque execution data: never quote them in customer-facing prose; use each route customerSafeLabel instead.",
+  "primitives": {
+    "projectCardPrefix": "project-card-"
+  },
+  "routes": [
+    {
+      "routeId": "project-shell",
+      "entity": "Sidebar",
+      "title": "Project workspace shell",
+      "customerSafeLabel": "your project workspace",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboardings-v2",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        }
+      ]
+    },
+    {
+      "routeId": "onboarding-list",
+      "entity": "Onboarding List",
+      "title": "Onboardings list",
+      "customerSafeLabel": "the Onboardings list",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboardings-v2",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "create-onboarding-wizard",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "wait-selector",
+          "selector": "[aria-label=\"onboardings table\"]"
+        }
+      ]
+    },
+    {
+      "routeId": "onboarding-create-wizard",
+      "entity": "V2 Creation Wizard",
+      "title": "Create Onboarding wizard (Basic Info)",
+      "customerSafeLabel": "the Create Onboarding wizard",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboardings-v2",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "create-onboarding-wizard",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "wait-selector",
+          "selector": "[aria-label=\"onboardings table\"]"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "create-onboarding-btn"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "wizard-v2-dialog"
+        }
+      ]
+    },
+    {
+      "routeId": "v2-canvas",
+      "entity": "V2 Canvas",
+      "title": "V2 funnel canvas",
+      "customerSafeLabel": "the funnel canvas",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{funnelId}}",
+      "requires": {
+        "auth": true,
+        "projectId": true,
+        "funnelId": true
+      },
+      "provesWith": "open-v2-canvas",
+      "steps": [
+        {
+          "kind": "goto",
+          "pathTemplate": "/project/{{projectId}}/onboarding-v2/{{funnelId}}"
+        },
+        {
+          "kind": "wait-selector",
+          "selector": ".react-flow"
+        }
+      ]
+    },
+    {
+      "routeId": "v2-screen-editor",
+      "entity": "V2 Screen Editor",
+      "title": "Screen editor for a canvas node",
+      "customerSafeLabel": "the screen editor",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboarding-v2/{{funnelId}}?screenId={{screenId}}",
+      "requires": {
+        "auth": true,
+        "projectId": true,
+        "funnelId": true,
+        "screenId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "pathTemplate": "/project/{{projectId}}/onboarding-v2/{{funnelId}}"
+        },
+        {
+          "kind": "wait-selector",
+          "selector": ".react-flow"
+        },
+        {
+          "kind": "dblclick-node",
+          "nodeIdParam": "screenId"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "editor-modal-v2-container"
+        }
+      ]
+    },
+    {
+      "routeId": "wp-list",
+      "entity": "Web Placements",
+      "title": "Web Placements list",
+      "customerSafeLabel": "the Web Placements page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/web-placements",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "configure-web-placement-entry-rules",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-web-placements"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "webpl-table"
+        }
+      ]
+    },
+    {
+      "routeId": "wp-create-dialog",
+      "entity": "Web Placements",
+      "title": "Create Web Placement dialog",
+      "customerSafeLabel": "the new placement dialog",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/web-placements",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "configure-web-placement-entry-rules",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-web-placements"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "webpl-table"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "webpl-create-btn"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "wp-name-input"
+        }
+      ]
+    },
+    {
+      "routeId": "web-ab-tests",
+      "entity": "A/B Tests",
+      "title": "Web A/B tests list",
+      "customerSafeLabel": "the A/B Tests page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/web-ab-tests",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-web-ab-tests"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "webabt-table"
+        }
+      ]
+    },
+    {
+      "routeId": "paywall-products",
+      "entity": "Paywall / Stripe",
+      "title": "Paywall products list",
+      "customerSafeLabel": "the Products page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/paywall-products",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "create-paywall-product",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-paywall-products"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "pp-add-btn"
+        }
+      ]
+    },
+    {
+      "routeId": "integrations",
+      "entity": "Integrations",
+      "title": "Integrations page",
+      "customerSafeLabel": "the Integrations page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-integrations"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-page"
+        }
+      ]
+    },
+    {
+      "routeId": "integrations-stripe",
+      "entity": "Integrations",
+      "title": "Integrations — Stripe section",
+      "customerSafeLabel": "the Stripe integration section",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-integrations"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-page"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "integrations-section-stripe"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-content-stripe"
+        }
+      ]
+    },
+    {
+      "routeId": "integrations-domain",
+      "entity": "Integrations",
+      "title": "Integrations — custom domain section",
+      "customerSafeLabel": "the custom domain section",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-integrations"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-page"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "integrations-section-domain"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-content-domain"
+        }
+      ]
+    },
+    {
+      "routeId": "integrations-fonts",
+      "entity": "Integrations",
+      "title": "Integrations — fonts section",
+      "customerSafeLabel": "the fonts section",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-integrations"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-page"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "integrations-section-fonts"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-content-fonts"
+        }
+      ]
+    },
+    {
+      "routeId": "integrations-analytics",
+      "entity": "Integrations",
+      "title": "Integrations — analytics section",
+      "customerSafeLabel": "the analytics section",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-integrations"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-page"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "integrations-section-analytics"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-content-analytics"
+        }
+      ]
+    },
+    {
+      "routeId": "themes-v2-admin",
+      "entity": "Themes V2",
+      "title": "Admin Themes V2 library",
+      "customerSafeLabel": "the Themes library",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/themes-v2",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "provesWith": "choose-template-theme",
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-admin-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-themes-v2"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "v2-themes-grid"
+        }
+      ]
+    },
+    {
+      "routeId": "admin-settings",
+      "entity": "Admin Settings",
+      "title": "Admin settings page",
+      "customerSafeLabel": "the project settings page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/settings",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-admin-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-settings"
+        }
+      ]
+    },
+    {
+      "routeId": "reports",
+      "entity": "Reports",
+      "title": "Funnel reports",
+      "customerSafeLabel": "the Reports page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/reports",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-reports"
+        }
+      ]
+    },
+    {
+      "routeId": "content-plan-articles",
+      "entity": "Articles",
+      "title": "Content plan articles",
+      "customerSafeLabel": "the Articles page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/content-plan-articles",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-content-plan-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-content-plan-articles"
+        }
+      ]
+    },
+    {
+      "routeId": "users-permissions",
+      "entity": "Team",
+      "title": "Users & permissions",
+      "customerSafeLabel": "the Users & Permissions page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/users-permissions",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-team-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-users-permissions"
+        }
+      ]
+    },
+    {
+      "routeId": "project-billing",
+      "entity": "Team",
+      "title": "Project billing",
+      "customerSafeLabel": "the project billing page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/project-billing",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-team-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-project-billing"
+        }
+      ]
+    },
+    {
+      "routeId": "strategies-list",
+      "entity": "Strategy Canvas",
+      "title": "Strategies list tab",
+      "customerSafeLabel": "the Strategies tab",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}?tab=strategies",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "pathTemplate": "/project/{{projectId}}?tab=strategies"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "strategies-list-table"
+        }
+      ]
+    },
+    {
+      "routeId": "strategy-canvas",
+      "entity": "Strategy Canvas",
+      "title": "Strategy canvas",
+      "customerSafeLabel": "the strategy canvas",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/strategy/{{strategyId}}",
+      "requires": {
+        "auth": true,
+        "projectId": true,
+        "strategyId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "pathTemplate": "/project/{{projectId}}/strategy/{{strategyId}}"
+        },
+        {
+          "kind": "wait-selector",
+          "selector": ".react-flow"
+        }
+      ]
+    },
+    {
+      "routeId": "published-web-funnel",
+      "entity": "Web Funnel (deployed)",
+      "title": "Published web funnel",
+      "customerSafeLabel": "your published funnel",
+      "routeTemplate": "{{baseUrl}}/{{alias}}",
+      "requires": {
+        "auth": false,
+        "alias": true
+      },
+      "provesWith": "verify-published-funnel",
+      "steps": [
+        {
+          "kind": "goto",
+          "pathTemplate": "/{{alias}}"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "funnel-engine-v2"
+        }
+      ]
+    }
+  ]
+}
