@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-07-02T11:06:28.390Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
-  "channel": "dev",
+  "channel": "stable",
   "policy": {
     "stableForbiddenClassifications": [
       "dev-api",
