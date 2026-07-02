@@ -25,7 +25,7 @@ const GOALS = ['first-value', 'monetized', 'ads-ready', 'full'];
 
 // Milestones from references/project-status.md. checkIds bind preflight
 // evidence; milestones with no checkIds are not observable by the preflight
-// yet (see modules/support-flow/plans/launch-preflight-gaps.md) and are
+// yet (tracked in the maintainer gap register in the Segmently repo) and are
 // reported as not-checked-automatically with their manual read.
 const MILESTONES = [
   { id: 'funnelCreated', label: 'Funnel created', checkIds: ['funnel.version.v2'], read: 'segmently funnels list', goals: ['first-value'], next: { actionId: 'launch.funnel.create', description: 'Create the first funnel.' } },
