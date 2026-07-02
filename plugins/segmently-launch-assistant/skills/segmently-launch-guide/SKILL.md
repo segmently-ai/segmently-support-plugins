@@ -74,6 +74,11 @@ even when its public URL field is empty. Never describe it as missing — see
    (scenarios matrix / do-action-reference / article directory). On a miss,
    continue with full routing — the quick-index is an accelerator,
    never the only route.
+   When `engine.predictive=on`, first check `session-engine.mjs get` for a
+   fresh `predictedNext` entry matching the routed intent: on a match, reuse
+   its `preparedPlan` (skip the index reads it already resolved); on a
+   mismatch or staleness, discard silently and route normally. A prepared
+   plan never skips confirmation or preflight gates — only reads.
 1. **Model-selected meaning.** Load `references/semantic-routing.md` and select
    the smallest useful set of scenario ids, article aliases, guide keys, and
    action ids from the shipped references. The model owns this meaning step.
@@ -161,6 +166,31 @@ and lightweight history — never tokens, credentials, screenshots, or content.
 - If the request is for a different project, use the explicit project and offer
   to update the saved one.
 
+## Session engine — cached state, proactivity, prediction (optional)
+
+`runtime/session-engine.mjs` adds an opt-in per-project session cache beside
+the durable context: last verified launch-state snapshot, recent routed
+intents, and deterministically predicted next steps (full contract:
+`references/session-engine.md`). Toggles live in the context
+(`engine.session` default on, `engine.predictive` default off;
+`SEGMENTLY_LAUNCH_ENGINE=off` is the kill-switch); every command no-ops
+cleanly when off.
+
+When `engine.session=on`:
+
+- After routing a customer request, record the routed intent:
+  `node runtime/session-engine.mjs record-intent --kind action|article|scenario --id <id> --mode <mode>`.
+- On session start with a saved project, run
+  `node runtime/session-engine.mjs get`. If it returns a FRESH `stateSnapshot`
+  with remaining milestones, offer to continue once ("Last time X was left —
+  continue?") — never auto-execute, at most one suggestion per session, and do
+  not repeat a declined offer.
+- A stale snapshot (`stateFresh=false`) proves nothing: re-verify with
+  `runtime/launch-progress-runner.mjs` before any claim about project state.
+
+The cache is a disposable latency layer: deleting it changes nothing except
+speed, and it must never hold tokens, credentials, or customer content.
+
 ## Subagent delegation (when the host supports it)
 
 When the host exposes subagents (Claude Code plugin agents; Codex
@@ -173,12 +203,24 @@ conversation:
   return structured pass/fail results (no token values).
 - `segmently-browser-show` — own the non-mutating headed SHOW session end to
   end and return the SHOW result contract.
+- `segmently-next-step-prepper` — background-only speculative preparation of
+  the most likely next step (only when `engine.predictive=on`; see below).
 
 In Claude Code, these plugin agents are available by name. In Codex (or any
 other multi-agent host), spawn a subagent with the matching role instructions
 from this skill's `agents/` directory (`corpus-search-instructions.md`,
-`tool-preflight-instructions.md`, `browser-show-instructions.md`) as its
-task prompt.
+`tool-preflight-instructions.md`, `browser-show-instructions.md`,
+`next-step-prepper-instructions.md`) as its task prompt.
+
+Predictive prefetch (`engine.predictive=on` only): after finishing a customer
+answer, spawn `segmently-next-step-prepper` in the background with the
+just-routed intent. It runs `session-engine.mjs predict --save`, pre-assembles
+the read-only plan for the top candidate (quick-index, capability bindings,
+proven e2e steps), and stores it via `record-prediction`. It is restricted to
+Read plus the packaged read-only scripts — no browser, no CLI mutations, no
+nested subagents — and must never block or alter the visible answer. When the
+host cannot run background subagents, skip prefetch entirely; predictive mode
+is a latency optimization, never a dependency.
 
 Subagents inherit the same boundaries as this skill: read-only, customer-safe,
 no mutation authority — CLI/E2E DO execution stays in the main flow with
@@ -343,6 +385,8 @@ ids, or expose internal file paths.
   in `references/e2e-scenario-refs.json` instead of inventing navigation.
 - Customer-surface response contract runner:
   `runtime/customer-response-runner.mjs`.
+- Session cache, proactivity, and predictive prefetch (optional engine):
+  `references/session-engine.md`, `runtime/session-engine.mjs`.
 - The governance matrix `references/scenarios.matrix.json` is for maintainers —
   do not blanket-load it when answering.
 

@@ -122,6 +122,7 @@ function defaultContext(contextFile) {
     updatedAt: null,
     currentProject: null,
     projects: [],
+    engine: defaultEngine(),
   };
 }
 
@@ -135,6 +136,7 @@ function normalizeContext(value, contextFile) {
     projects: Array.isArray(value?.projects)
       ? value.projects.map(normalizeProject).filter(Boolean)
       : [],
+    engine: normalizeEngine(value?.engine),
     readError: normalizeValue(value?.readError) ?? null,
   };
 }
@@ -145,7 +147,58 @@ function publicContext(context) {
     updatedAt: context.updatedAt ?? null,
     currentProject: context.currentProject ?? null,
     projects: context.projects ?? [],
+    engine: normalizeEngine(context.engine),
   };
+}
+
+function defaultEngine() {
+  return { session: 'on', predictive: 'off' };
+}
+
+function normalizeEngine(value) {
+  const engine = defaultEngine();
+  if (value && typeof value === 'object') {
+    if (value.session === 'off') engine.session = 'off';
+    if (value.predictive === 'on') engine.predictive = 'on';
+  }
+  return engine;
+}
+
+/**
+ * Effective engine toggles: stored context.json value overridden by the
+ * SEGMENTLY_LAUNCH_ENGINE env var ("off", "session=off", "predictive=on",
+ * comma-separated). The env override never persists to disk.
+ */
+export function readEngineSettings(args = {}) {
+  const context = readSessionContext(args);
+  const engine = normalizeEngine(context.engine);
+  const raw = normalizeValue(process.env.SEGMENTLY_LAUNCH_ENGINE);
+  if (raw) {
+    for (const part of raw.split(',').map(item => item.trim().toLowerCase()).filter(Boolean)) {
+      if (part === 'off') {
+        engine.session = 'off';
+        engine.predictive = 'off';
+      } else if (part === 'on') {
+        engine.session = 'on';
+      } else {
+        const [key, state] = part.split('=').map(item => item?.trim());
+        if ((key === 'session' || key === 'predictive') && (state === 'on' || state === 'off')) {
+          engine[key] = state;
+        }
+      }
+    }
+  }
+  if (engine.session === 'off') engine.predictive = 'off';
+  return { engine, storedEngine: normalizeEngine(context.engine), envOverride: raw ?? null };
+}
+
+export function setEngineSettings({ session, predictive, contextFile } = {}) {
+  const context = readSessionContext({ contextFile });
+  const engine = normalizeEngine(context.engine);
+  if (session === 'on' || session === 'off') engine.session = session;
+  if (predictive === 'on' || predictive === 'off') engine.predictive = predictive;
+  if (engine.session === 'off') engine.predictive = 'off';
+  return writeSessionContext({ ...context, engine }, { contextFile });
 }
 
 function normalizeProject(value) {
@@ -232,6 +285,19 @@ function main() {
       emit({ ok: true, ...publicProjectResolution(resolveProjectContext(args)) });
       return;
     }
+    if (command === 'get-engine') {
+      emit({ ok: true, contextFile: resolveContextFile(args), ...readEngineSettings(args) });
+      return;
+    }
+    if (command === 'set-engine') {
+      const context = setEngineSettings({
+        session: normalizeValue(args.session),
+        predictive: normalizeValue(args.predictive),
+        contextFile: args.contextFile,
+      });
+      emit({ ok: true, contextFile: resolveContextFile(args), engine: context.engine });
+      return;
+    }
     if (command === 'help' || args.help) {
       printHelp();
       return;
@@ -267,8 +333,11 @@ function printHelp() {
     '  node runtime/session-context.mjs set-current-project --projectId <id> [--projectName <name>] [--contextFile <path>]',
     '  node runtime/session-context.mjs clear-current-project [--contextFile <path>]',
     '  node runtime/session-context.mjs resolve-project [--projectId <id>] [--projectName <name>] [--contextFile <path>]',
+    '  node runtime/session-context.mjs get-engine [--contextFile <path>]',
+    '  node runtime/session-context.mjs set-engine [--session on|off] [--predictive on|off] [--contextFile <path>]',
     '',
-    'Stores only non-secret customer routing context: current project id/name.',
+    'Stores only non-secret customer routing context: current project id/name',
+    'and the session-engine toggles (session cache + predictive prefetch).',
   ].join('\n'));
 }
 

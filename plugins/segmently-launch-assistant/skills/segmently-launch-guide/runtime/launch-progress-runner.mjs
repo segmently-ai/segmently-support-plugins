@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { buildToolPreflight } from './tool-preflight.mjs';
 import { buildAuthPreflight } from './browser-auth-bridge.mjs';
 import { resolveProjectContext } from './session-context.mjs';
+import { recordStateSnapshot } from './session-engine.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 let outputArgs = {};
@@ -165,6 +166,16 @@ function main() {
   const unverifiedSteps = milestones.filter(m => m.inGoal && m.status === 'not-checked-automatically');
   const nextMilestone = remainingSteps[0] ?? null;
 
+  // Optional session engine: cache the verified snapshot for the proactive
+  // "continue where you left off" flow. Recording never breaks the read.
+  const sessionEngine = recordStateSnapshot({
+    projectId: projectContext.projectId,
+    goal,
+    preflightStatus: preflight.status ?? null,
+    checkedAt: preflight.checkedAt ?? null,
+    milestones: milestones.map(m => ({ id: m.id, status: m.status, inGoal: m.inGoal })),
+  }, args);
+
   writeJson({
     ok: true,
     mode: 'launch-progress',
@@ -192,6 +203,7 @@ function main() {
       'This is a read-only status check. Do not open the answer with completion wording.',
     ],
     sessionContext,
+    sessionEngine,
     toolPreflight,
     authPreflight,
     completionClaim: 'launch-progress-read-only',

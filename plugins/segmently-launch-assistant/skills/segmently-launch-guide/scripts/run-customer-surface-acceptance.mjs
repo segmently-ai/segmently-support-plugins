@@ -2615,6 +2615,89 @@ check('launch progress runner returns honest read-only contract without target i
   assert(helpText.includes('launch preflight'), 'runner help must name the wrapped preflight read');
 });
 
+check('session engine no-ops cleanly when toggled off', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'segmently-session-engine-off-'));
+  const scope = ['--contextFile', join(dir, 'context.json'), '--cacheFile', join(dir, 'cache.json')];
+  runSessionContext(['set-current-project', '--projectId', 'project_acceptance', ...scope]);
+  const killed = runSessionEngine(['get', ...scope], { SEGMENTLY_LAUNCH_ENGINE: 'off' });
+  assert(killed.ok === true && killed.noop === true, 'env kill-switch must return ok+noop');
+  runSessionEngine(['set-engine', '--session', 'off', ...scope]);
+  const stored = runSessionEngine(['write-state', '--stateJson', '{"goal":"ads-ready","checkedAt":"2026-01-01T00:00:00.000Z","milestones":[]}', ...scope]);
+  assert(stored.noop === true, 'write-state must no-op when engine.session=off');
+  const engine = runSessionContext(['get-engine', ...scope]);
+  assert(engine.engine?.session === 'off' && engine.engine?.predictive === 'off', 'session=off must force predictive=off');
+});
+
+check('session engine stale snapshot demands re-verify and drops high-confidence predictions', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'segmently-session-engine-ttl-'));
+  const scope = ['--contextFile', join(dir, 'context.json'), '--cacheFile', join(dir, 'cache.json')];
+  runSessionContext(['set-current-project', '--projectId', 'project_acceptance', ...scope]);
+  runSessionEngine(['set-engine', '--predictive', 'on', ...scope]);
+  const staleState = '{"goal":"ads-ready","preflightStatus":"blocked","checkedAt":"2026-01-01T00:00:00.000Z","milestones":[{"id":"webPlacementConfigured","status":"failed","inGoal":true}]}';
+  runSessionEngine(['write-state', '--stateJson', staleState, ...scope]);
+  const prediction = runSessionEngine(['predict', ...scope]);
+  assert(prediction.ok === true && prediction.stateFresh === false, 'old checkedAt must be reported stale');
+  assert(String(prediction.stateStaleRule).includes('launch-progress-runner'), 'stale rule must demand the progress re-verify');
+  assert(prediction.predictions.every(item => item.confidence !== 'high'), 'stale snapshot must not produce high-confidence candidates');
+  const view = runSessionEngine(['get', ...scope]);
+  assert(view.stateFresh === false && view.stateStaleRule, 'get must expose the same staleness contract');
+});
+
+check('session engine cache stores only whitelisted non-secret fields', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'segmently-session-engine-safety-'));
+  const cacheFile = join(dir, 'cache.json');
+  const scope = ['--contextFile', join(dir, 'context.json'), '--cacheFile', cacheFile];
+  runSessionContext(['set-current-project', '--projectId', 'project_acceptance', ...scope]);
+  const smuggled = '{"goal":"ads-ready","checkedAt":"2026-07-02T00:00:00.000Z","token":"secret-value-should-drop","milestones":[{"id":"published","status":"failed","inGoal":true,"apiKey":"another-secret"}]}';
+  const result = runSessionEngine(['write-state', '--stateJson', smuggled, ...scope]);
+  assert(result.recorded === true, 'write-state with extraneous fields must still record whitelisted data');
+  const raw = readFileSync(cacheFile, 'utf8');
+  assert(!raw.includes('secret-value-should-drop') && !raw.includes('another-secret'), 'cache must drop non-whitelisted fields');
+  assert(!raw.includes('"token"') && !raw.includes('"apiKey"'), 'cache must not persist unknown keys');
+});
+
+check('predictive prefetch prepares plans deterministically and never claims execution', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'segmently-session-engine-predict-'));
+  const scope = ['--contextFile', join(dir, 'context.json'), '--cacheFile', join(dir, 'cache.json')];
+  runSessionContext(['set-current-project', '--projectId', 'project_acceptance', ...scope]);
+  const offPredict = runSessionEngine(['predict', ...scope]);
+  assert(offPredict.noop === true, 'predict must no-op while engine.predictive=off');
+  runSessionEngine(['set-engine', '--predictive', 'on', ...scope]);
+  const freshState = JSON.stringify({
+    goal: 'ads-ready',
+    preflightStatus: 'blocked',
+    checkedAt: new Date().toISOString(),
+    milestones: [{ id: 'webPlacementConfigured', status: 'failed', inGoal: true }],
+  });
+  runSessionEngine(['write-state', '--stateJson', freshState, ...scope]);
+  runSessionEngine(['record-intent', '--kind', 'article', '--id', 'facebook-pixel-capi-setup', '--mode', 'teach', ...scope]);
+  const first = runSessionEngine(['predict', '--save', ...scope]);
+  assert(first.ok === true && first.predictions.length > 0, 'predict must return candidates from a fresh snapshot');
+  assert(first.predictions[0].confidence === 'high' && first.predictions[0].scenarioId === 'configure-web-placement', 'first candidate must be the first remaining milestone scenario');
+  assert(String(first.speculationPolicy).includes('confirmation + preflight'), 'predict must state the lossless speculation policy');
+  const second = runSessionEngine(['predict', ...scope]);
+  assert(
+    JSON.stringify(first.predictions.map(({ predictedAt, ...rest }) => rest))
+      === JSON.stringify(second.predictions.map(({ predictedAt, ...rest }) => rest)),
+    'prediction must be deterministic for identical session state',
+  );
+  const candidateId = first.predictions[0].candidateId;
+  runSessionEngine(['record-prediction', '--candidateId', candidateId, '--planJson', '{"mode":"teach","reads":["references/scenarios.matrix.json"]}', ...scope]);
+  const view = runSessionEngine(['get', ...scope]);
+  const prepared = view.predictedNext.find(item => item.candidateId === candidateId);
+  assert(prepared?.preparedPlan?.mode === 'teach' && prepared.preparedAt, 'record-prediction must attach the prepared plan');
+});
+
+check('session engine and prefetch rules ship in the orchestrator skill', () => {
+  const skillText = readFileSync(join(root, 'SKILL.md'), 'utf8');
+  assert(skillText.includes('never auto-execute, at most one suggestion per session'), 'SKILL.md missing the proactivity boundary');
+  assert(skillText.includes('re-verify with'), 'SKILL.md missing the stale-snapshot re-verify rule');
+  assert(skillText.includes('segmently-next-step-prepper'), 'SKILL.md missing the prepper subagent role');
+  assert(skillText.includes('discard silently and route normally'), 'SKILL.md missing the prediction-miss discard rule');
+  assert(skillText.includes('never block or alter the visible answer'), 'SKILL.md missing the background non-blocking rule');
+  assert(readFileSync(join(root, 'references/session-engine.md'), 'utf8').includes('kill-switch'), 'session-engine reference missing the kill-switch contract');
+});
+
 if (failures.length > 0) {
   for (const failure of failures) console.error(failure);
   console.error(`${failures.length} customer-surface acceptance check(s) failed`);
@@ -2642,6 +2725,32 @@ function runLaunchProgressRunner(args, env = {}) {
     return JSON.parse(stdout);
   } catch {
     throw new Error(`launch-progress-runner did not return JSON: ${stdout.slice(0, 400)}`);
+  }
+}
+
+function runSessionEngine(args, env = {}) {
+  const spawned = spawnSync('node', [join(root, 'runtime/session-engine.mjs'), ...args], {
+    encoding: 'utf8',
+    env: { ...process.env, SEGMENTLY_LAUNCH_ENGINE: '', ...env },
+  });
+  const stdout = spawned.stdout ?? '';
+  try {
+    return JSON.parse(stdout);
+  } catch {
+    throw new Error(`session-engine did not return JSON for ${args[0]}: ${stdout.slice(0, 400)}`);
+  }
+}
+
+function runSessionContext(args, env = {}) {
+  const spawned = spawnSync('node', [join(root, 'runtime/session-context.mjs'), ...args], {
+    encoding: 'utf8',
+    env: { ...process.env, ...env },
+  });
+  const stdout = spawned.stdout ?? '';
+  try {
+    return JSON.parse(stdout);
+  } catch {
+    throw new Error(`session-context did not return JSON for ${args[0]}: ${stdout.slice(0, 400)}`);
   }
 }
 
