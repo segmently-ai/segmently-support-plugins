@@ -200,6 +200,34 @@
       ]
     },
     {
+      "id": "forward-fb-events-web-funnel",
+      "title": "Send Facebook (CAPI) events from a web funnel",
+      "audience": "customer",
+      "capabilityId": "capability.connect-analytics",
+      "milestone": null,
+      "backend": "teach",
+      "verify": null,
+      "article": "facebook-capi-web-destination",
+      "sampleQueries": {
+        "ru": [
+          "как передавать фб события с воронки",
+          "включить facebook capi на воронке",
+          "отправлять события в фейсбук с веб воронки"
+        ],
+        "en": [
+          "how do I pass Facebook events from my funnel",
+          "send Facebook CAPI events from my web funnel",
+          "enable Facebook CAPI on my funnel",
+          "forward Meta conversions from my funnel"
+        ]
+      },
+      "evals": [
+        "routing",
+        "teach",
+        "no-leak"
+      ]
+    },
+    {
       "id": "add-tiktok-pixel",
       "title": "Add a TikTok pixel",
       "audience": "customer",

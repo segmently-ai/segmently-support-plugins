@@ -27,6 +27,12 @@
       "tags": ["facebook-events", "analytics-events", "meta-pixel", "provider-setup"]
     },
     {
+      "articleAlias": "facebook-capi-web-destination",
+      "summary": "Shows how to turn on Facebook Conversions API (CAPI) event forwarding for a web funnel: open the Edit Web Funnel dialog, and in the Destinations section click the one-click + Facebook CAPI button, which adds the visitor IP, user agent, and Facebook _fbp and _fbc cookies to both Server Data and Stripe Metadata, then publish. Use this when a customer asks how to pass or send Facebook events from their funnel, enable Facebook CAPI attribution, forward fbp/fbc, or improve Meta ad match quality on purchases. Connecting the Pixel ID and access token is a separate prerequisite covered by the Facebook Pixel and Conversion API setup guide.",
+      "keywords": ["pass facebook events from funnel", "send facebook events", "facebook capi web funnel", "facebook capi destination", "fbp fbc attribution", "server data stripe metadata", "meta capi funnel", "enable facebook conversions api"],
+      "tags": ["facebook-events", "analytics-events", "meta-pixel", "web-placement", "attribution"]
+    },
+    {
       "articleAlias": "help-block-action-bar",
       "summary": "Documents the Action Bar section that controls the screen's primary and secondary call-to-action buttons. It covers button labels, text styles, fill and border styling, gradients, shadows, effects, icons, spacing, and which screens use the shared bottom button bar, including WebEmbed and ordinary onboarding screens.",
       "keywords": ["action bar", "primary button", "secondary button", "cta label", "button style", "button icon"],

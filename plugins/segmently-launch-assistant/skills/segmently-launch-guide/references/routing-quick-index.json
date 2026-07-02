@@ -121,6 +121,24 @@
     {
       "kind": "scenario",
       "intentPhrases": [
+        "как передавать фб события с воронки",
+        "включить facebook capi на воронке",
+        "отправлять события в фейсбук с веб воронки",
+        "how do I pass Facebook events from my funnel",
+        "send Facebook CAPI events from my web funnel",
+        "enable Facebook CAPI on my funnel",
+        "forward Meta conversions from my funnel"
+      ],
+      "mode": "teach",
+      "scenarioId": "forward-fb-events-web-funnel",
+      "articleAliases": [
+        "facebook-capi-web-destination"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
         "добавь TikTok пиксель",
         "подключи тикток пиксель",
         "add a TikTok pixel",
@@ -1503,6 +1521,26 @@
         "analytics-add-provider",
         "analytics-provider-config",
         "facebook-pixel-capi-setup"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "facebook-capi-web-destination",
+        "pass facebook events from my funnel",
+        "send facebook events from web funnel",
+        "enable facebook capi on my funnel",
+        "forward facebook events",
+        "facebook capi attribution",
+        "fbp fbc stripe metadata",
+        "передавать фб события с воронки",
+        "включить facebook capi на воронке",
+        "отправлять события в фейсбук с воронки"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "facebook-capi-web-destination"
       ],
       "next": "references/article-directory.json"
     },

@@ -7432,6 +7432,7 @@
       "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
       "Scenario:configure-attribution",
       "Scenario:connect-stripe",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:payment-methods",
       "SynonymGroup:stripe-subscriptions"
     ],
@@ -7875,6 +7876,7 @@
     ],
     "funnel": [
       "Action:launch.funnel.create",
+      "Article:facebook-capi-web-destination",
       "Article:help-fonts-typography",
       "Article:launch-paid-funnel-overview",
       "CliCapability:funnel.v2.apply",
@@ -7890,11 +7892,14 @@
       "CliCapability:publish.runtime.verify",
       "E2eScenario:verify-published-funnel",
       "Scenario:create-funnel",
+      "Scenario:forward-fb-events-web-funnel",
       "Scenario:launch-paid-funnel-overview",
       "Scenario:launch-progress",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
       "SynonymGroup:change-funnel-font",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:launch-publish-funnel",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
       "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
     ],
@@ -8005,6 +8010,7 @@
       "Article:analytics-add-provider",
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-carousel",
@@ -8061,6 +8067,7 @@
       "Subarticle:integrations-analytics-section#integrations-analytics-section/provider-choice",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
       "SynonymGroup:analytics-provider-setup",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:facebook-pixel-setup"
     ],
@@ -8503,6 +8510,7 @@
     "facebook events": [
       "Article:analytics-add-provider",
       "Article:analytics-provider-config",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -8548,6 +8556,7 @@
       "Subarticle:help-block-sticky-container#screenedit-sticky-container-button-content/field",
       "Subarticle:help-options-grid-multi#set-options-imagecontainer-prop-height-mode",
       "Subarticle:help-options-grid-single#set-options-imagecontainer-prop-height-mode",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:facebook-pixel-setup"
     ],
@@ -10969,6 +10978,7 @@
     ],
     "flow:capability": [
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -10989,6 +10999,194 @@
     ],
     "email capture": [
       "Article:collect-email-before-paywall"
+    ],
+    "article:facebook capi web destination": [
+      "Article:facebook-capi-web-destination",
+      "Keyword:negative:tiktok events catalog",
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "send": [
+      "Article:facebook-capi-web-destination",
+      "E2eScenario:configure-web-placement-stripe-metadata",
+      "Scenario:forward-fb-events-web-funnel",
+      "SynonymGroup:facebook-capi-web-destination",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "facebook": [
+      "Article:analytics-provider-config",
+      "Article:facebook-capi-web-destination",
+      "Article:facebook-events-catalog",
+      "Article:facebook-pixel-capi-setup",
+      "Keyword:negative:facebook events catalog",
+      "Scenario:add-fb-pixel",
+      "Scenario:facebook-events-list",
+      "Scenario:forward-fb-events-web-funnel",
+      "Subarticle:analytics-provider-config#analytics-provider-config/facebook",
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:facebook-events-catalog",
+      "SynonymGroup:facebook-pixel-setup",
+      "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
+      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "capi": [
+      "Article:facebook-capi-web-destination",
+      "Scenario:forward-fb-events-web-funnel",
+      "SynonymGroup:facebook-capi-web-destination",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "events": [
+      "Article:facebook-capi-web-destination",
+      "Article:tiktok-events-catalog",
+      "Article:tiktok-pixel-events-api-setup",
+      "Keyword:negative:facebook events catalog",
+      "Keyword:negative:tiktok events catalog",
+      "Scenario:facebook-events-list",
+      "Scenario:forward-fb-events-web-funnel",
+      "Scenario:tiktok-events-list",
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:facebook-events-catalog",
+      "SynonymGroup:tiktok-events",
+      "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
+      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
+      "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
+    ],
+    "from": [
+      "Article:facebook-capi-web-destination",
+      "Guide:screenedit-sticky-container-offset-from-edges",
+      "Guide:screenedit-variable-binding-apply-items-to-variable",
+      "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png",
+      "Scenario:forward-fb-events-web-funnel",
+      "Setting:screenedit-sticky-container-offset-from-edges",
+      "Setting:screenedit-variable-binding-apply-items-to-variable",
+      "Subarticle:help-block-sticky-container#screenedit-sticky-container-offset-from-edges/field",
+      "Subarticle:help-block-sticky-container#set-stickycontainer-offsetfromedges",
+      "Subarticle:help-block-sticky-container#set-stickycontainer-offsetfromedges-img",
+      "Subarticle:help-block-variable-binding#screenedit-variable-binding-apply-items-to-variable/field",
+      "Subarticle:help-block-variable-binding#set-variablebinding-applyitemstovariable",
+      "Subarticle:help-block-variable-binding#set-variablebinding-applyitemstovariable-img",
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:product-description-label",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "your": [
+      "Article:facebook-capi-web-destination",
+      "Article:help-fonts-typography",
+      "Article:paywall-payment-methods",
+      "Guide:screenedit-copy-block-subtitle",
+      "Guide:screenedit-copy-block-title",
+      "Guide:screenedit-embed-data-sources",
+      "Guide:screenedit-embed-html-editor",
+      "Guide:screenedit-paywall-footer-privacy-uri",
+      "Guide:screenedit-paywall-footer-terms-uri",
+      "Setting:screenedit-copy-block-subtitle",
+      "Setting:screenedit-copy-block-title",
+      "Setting:screenedit-embed-data-sources",
+      "Setting:screenedit-embed-html-editor",
+      "Setting:screenedit-paywall-footer-privacy-uri",
+      "Setting:screenedit-paywall-footer-terms-uri",
+      "Subarticle:help-block-content#screenedit-copy-block-subtitle/field",
+      "Subarticle:help-block-content#screenedit-copy-block-title/field",
+      "Subarticle:help-block-content#set-copyblock-content-copy-subtitle",
+      "Subarticle:help-block-content#set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-block-content#set-copyblock-content-copy-title",
+      "Subarticle:help-block-content#set-copyblock-content-copy-title-img",
+      "Subarticle:help-block-custom-html#screenedit-embed-data-sources/field",
+      "Subarticle:help-block-custom-html#screenedit-embed-html-editor/field",
+      "Subarticle:help-block-custom-html#set-embed-childsections",
+      "Subarticle:help-block-custom-html#set-embed-childsections-img",
+      "Subarticle:help-block-custom-html#set-embed-html",
+      "Subarticle:help-block-custom-html#set-embed-html-img",
+      "Subarticle:help-block-paywall-footer#screenedit-paywall-footer-privacy-uri/field",
+      "Subarticle:help-block-paywall-footer#screenedit-paywall-footer-terms-uri/field",
+      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
+      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
+      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
+      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
+      "Subarticle:help-content-hero#set-copyblock-content-copy-subtitle",
+      "Subarticle:help-content-hero#set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-content-hero#set-copyblock-content-copy-title",
+      "Subarticle:help-content-hero#set-copyblock-content-copy-title-img",
+      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-subtitle",
+      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-title",
+      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-title-img",
+      "Subarticle:help-content-text#set-copyblock-content-copy-subtitle",
+      "Subarticle:help-content-text#set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-content-text#set-copyblock-content-copy-title",
+      "Subarticle:help-content-text#set-copyblock-content-copy-title-img",
+      "Subarticle:help-element-subtitle#set-copyblock-content-copy-subtitle",
+      "Subarticle:help-element-subtitle#set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-element-title#set-copyblock-content-copy-title",
+      "Subarticle:help-element-title#set-copyblock-content-copy-title-img",
+      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle",
+      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-img",
+      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title",
+      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-img",
+      "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "web": [
+      "Article:facebook-capi-web-destination",
+      "Article:help-screen-webembed",
+      "CliCapability:funnel.v2.create",
+      "CliCapability:webABTest.publish",
+      "CliCapability:webPlacement.configure",
+      "CliCapability:webPlacement.publish",
+      "E2eScenario:configure-web-placement-stripe-metadata",
+      "E2eScenario:publish-web-placement",
+      "Guide:webplacement-entry-rules",
+      "Guide:webplacement-publish-url",
+      "Guide:webplacement-stripe-metadata",
+      "Scenario:configure-web-placement",
+      "Scenario:forward-fb-events-web-funnel",
+      "Subarticle:help-screen-webembed#intro",
+      "SynonymGroup:change-funnel-font",
+      "SynonymGroup:custom-html-webembed",
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:webembed-paywall",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "facebook capi web destination": [
+      "Article:facebook-capi-web-destination",
+      "SourceConfig:references/articles/facebook-capi-web-destination.json",
+      "SynonymGroup:facebook-capi-web-destination",
+      "Workflow:capability.connect-analytics",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
+    ],
+    "connect analytics": [
+      "Article:facebook-capi-web-destination",
+      "Article:facebook-events-catalog",
+      "Article:facebook-pixel-capi-setup",
+      "Article:tiktok-events-catalog",
+      "Article:tiktok-pixel-events-api-setup",
+      "Scenario:add-fb-pixel",
+      "Scenario:add-tiktok-pixel",
+      "Scenario:connect-analytics",
+      "Scenario:facebook-events-list",
+      "Scenario:forward-fb-events-web-funnel",
+      "Scenario:tiktok-events-list",
+      "Workflow:capability.connect-analytics",
+      "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
+      "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
+      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
+      "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
+    ],
+    "meta pixel": [
+      "Article:facebook-capi-web-destination",
+      "Article:facebook-events-catalog",
+      "Article:facebook-pixel-capi-setup"
+    ],
+    "web placement": [
+      "Article:facebook-capi-web-destination",
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "attribution": [
+      "Article:facebook-capi-web-destination",
+      "Scenario:configure-attribution",
+      "SynonymGroup:facebook-capi-web-destination"
     ],
     "article:facebook events catalog": [
       "Article:facebook-events-catalog",
@@ -11686,19 +11884,6 @@
       "Article:tiktok-events-catalog",
       "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
       "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
-    ],
-    "facebook": [
-      "Article:analytics-provider-config",
-      "Article:facebook-events-catalog",
-      "Article:facebook-pixel-capi-setup",
-      "Keyword:negative:facebook events catalog",
-      "Scenario:add-fb-pixel",
-      "Scenario:facebook-events-list",
-      "Subarticle:analytics-provider-config#analytics-provider-config/facebook",
-      "SynonymGroup:facebook-events-catalog",
-      "SynonymGroup:facebook-pixel-setup",
-      "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
-      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog"
     ],
     "conversions": [
       "Article:facebook-events-catalog",
@@ -12436,26 +12621,6 @@
       "SynonymGroup:product-description-label",
       "SynonymGroup:purchase-label",
       "SynonymGroup:selected-product"
-    ],
-    "connect analytics": [
-      "Article:facebook-events-catalog",
-      "Article:facebook-pixel-capi-setup",
-      "Article:tiktok-events-catalog",
-      "Article:tiktok-pixel-events-api-setup",
-      "Scenario:add-fb-pixel",
-      "Scenario:add-tiktok-pixel",
-      "Scenario:connect-analytics",
-      "Scenario:facebook-events-list",
-      "Scenario:tiktok-events-list",
-      "Workflow:capability.connect-analytics",
-      "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
-      "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
-      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
-      "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
-    ],
-    "meta pixel": [
-      "Article:facebook-events-catalog",
-      "Article:facebook-pixel-capi-setup"
     ],
     "events catalog": [
       "Article:facebook-events-catalog",
@@ -20731,61 +20896,6 @@
       "Article:help-fonts-typography",
       "SynonymGroup:change-funnel-font"
     ],
-    "your": [
-      "Article:help-fonts-typography",
-      "Article:paywall-payment-methods",
-      "Guide:screenedit-copy-block-subtitle",
-      "Guide:screenedit-copy-block-title",
-      "Guide:screenedit-embed-data-sources",
-      "Guide:screenedit-embed-html-editor",
-      "Guide:screenedit-paywall-footer-privacy-uri",
-      "Guide:screenedit-paywall-footer-terms-uri",
-      "Setting:screenedit-copy-block-subtitle",
-      "Setting:screenedit-copy-block-title",
-      "Setting:screenedit-embed-data-sources",
-      "Setting:screenedit-embed-html-editor",
-      "Setting:screenedit-paywall-footer-privacy-uri",
-      "Setting:screenedit-paywall-footer-terms-uri",
-      "Subarticle:help-block-content#screenedit-copy-block-subtitle/field",
-      "Subarticle:help-block-content#screenedit-copy-block-title/field",
-      "Subarticle:help-block-content#set-copyblock-content-copy-subtitle",
-      "Subarticle:help-block-content#set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-block-content#set-copyblock-content-copy-title",
-      "Subarticle:help-block-content#set-copyblock-content-copy-title-img",
-      "Subarticle:help-block-custom-html#screenedit-embed-data-sources/field",
-      "Subarticle:help-block-custom-html#screenedit-embed-html-editor/field",
-      "Subarticle:help-block-custom-html#set-embed-childsections",
-      "Subarticle:help-block-custom-html#set-embed-childsections-img",
-      "Subarticle:help-block-custom-html#set-embed-html",
-      "Subarticle:help-block-custom-html#set-embed-html-img",
-      "Subarticle:help-block-paywall-footer#screenedit-paywall-footer-privacy-uri/field",
-      "Subarticle:help-block-paywall-footer#screenedit-paywall-footer-terms-uri/field",
-      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
-      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
-      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
-      "Subarticle:help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
-      "Subarticle:help-content-hero#set-copyblock-content-copy-subtitle",
-      "Subarticle:help-content-hero#set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-content-hero#set-copyblock-content-copy-title",
-      "Subarticle:help-content-hero#set-copyblock-content-copy-title-img",
-      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-subtitle",
-      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-title",
-      "Subarticle:help-content-hero-basic#set-copyblock-content-copy-title-img",
-      "Subarticle:help-content-text#set-copyblock-content-copy-subtitle",
-      "Subarticle:help-content-text#set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-content-text#set-copyblock-content-copy-title",
-      "Subarticle:help-content-text#set-copyblock-content-copy-title-img",
-      "Subarticle:help-element-subtitle#set-copyblock-content-copy-subtitle",
-      "Subarticle:help-element-subtitle#set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-element-title#set-copyblock-content-copy-title",
-      "Subarticle:help-element-title#set-copyblock-content-copy-title-img",
-      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle",
-      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-img",
-      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title",
-      "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-img",
-      "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods"
-    ],
     "typography": [
       "Article:help-fonts-typography",
       "SynonymGroup:change-funnel-font"
@@ -21421,23 +21531,6 @@
     "article:help screen webembed": [
       "Article:help-screen-webembed"
     ],
-    "web": [
-      "Article:help-screen-webembed",
-      "CliCapability:funnel.v2.create",
-      "CliCapability:webABTest.publish",
-      "CliCapability:webPlacement.configure",
-      "CliCapability:webPlacement.publish",
-      "E2eScenario:configure-web-placement-stripe-metadata",
-      "E2eScenario:publish-web-placement",
-      "Guide:webplacement-entry-rules",
-      "Guide:webplacement-publish-url",
-      "Guide:webplacement-stripe-metadata",
-      "Scenario:configure-web-placement",
-      "Subarticle:help-screen-webembed#intro",
-      "SynonymGroup:change-funnel-font",
-      "SynonymGroup:custom-html-webembed",
-      "SynonymGroup:webembed-paywall"
-    ],
     "help screen webembed": [
       "Article:help-screen-webembed",
       "Media:https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
@@ -21694,19 +21787,6 @@
       "Subarticle:analytics-provider-config#analytics-provider-config/tiktok",
       "SynonymGroup:tiktok-events",
       "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
-      "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
-    ],
-    "events": [
-      "Article:tiktok-events-catalog",
-      "Article:tiktok-pixel-events-api-setup",
-      "Keyword:negative:facebook events catalog",
-      "Keyword:negative:tiktok events catalog",
-      "Scenario:facebook-events-list",
-      "Scenario:tiktok-events-list",
-      "SynonymGroup:facebook-events-catalog",
-      "SynonymGroup:tiktok-events",
-      "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
-      "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
       "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
     ],
     "tiktok events catalog": [
@@ -22864,9 +22944,6 @@
     ],
     "e2escenario:configure web placement stripe metadata": [
       "CliCapability:webPlacement.configure",
-      "E2eScenario:configure-web-placement-stripe-metadata"
-    ],
-    "send": [
       "E2eScenario:configure-web-placement-stripe-metadata"
     ],
     "values": [
@@ -30998,20 +31075,6 @@
       "Article:help-block-sticky-container",
       "Guide:screenedit-sticky-container-offset-from-edges"
     ],
-    "from": [
-      "Guide:screenedit-sticky-container-offset-from-edges",
-      "Guide:screenedit-variable-binding-apply-items-to-variable",
-      "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png",
-      "Setting:screenedit-sticky-container-offset-from-edges",
-      "Setting:screenedit-variable-binding-apply-items-to-variable",
-      "Subarticle:help-block-sticky-container#screenedit-sticky-container-offset-from-edges/field",
-      "Subarticle:help-block-sticky-container#set-stickycontainer-offsetfromedges",
-      "Subarticle:help-block-sticky-container#set-stickycontainer-offsetfromedges-img",
-      "Subarticle:help-block-variable-binding#screenedit-variable-binding-apply-items-to-variable/field",
-      "Subarticle:help-block-variable-binding#set-variablebinding-applyitemstovariable",
-      "Subarticle:help-block-variable-binding#set-variablebinding-applyitemstovariable-img",
-      "SynonymGroup:product-description-label"
-    ],
     "screenedit sticky container offset from edges": [
       "Article:help-block-sticky-container",
       "Guide:screenedit-sticky-container-offset-from-edges",
@@ -31793,7 +31856,8 @@
     "metadata": [
       "Guide:webplacement-stripe-metadata",
       "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png",
-      "Scenario:configure-attribution"
+      "Scenario:configure-attribution",
+      "SynonymGroup:facebook-capi-web-destination"
     ],
     "webplacement stripe metadata": [
       "Guide:webplacement-stripe-metadata"
@@ -38112,9 +38176,6 @@
       "CliCapability:webPlacement.configure",
       "Scenario:configure-attribution"
     ],
-    "attribution": [
-      "Scenario:configure-attribution"
-    ],
     "configure attribution": [
       "Scenario:configure-attribution"
     ],
@@ -38163,6 +38224,15 @@
       "Scenario:facebook-events-list",
       "Workflow:capability.connect-analytics",
       "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog"
+    ],
+    "scenario:forward fb events web funnel": [
+      "Article:facebook-capi-web-destination",
+      "Scenario:forward-fb-events-web-funnel"
+    ],
+    "forward fb events web funnel": [
+      "Scenario:forward-fb-events-web-funnel",
+      "Workflow:capability.connect-analytics",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
     ],
     "scenario:launch paid funnel overview": [
       "Article:launch-paid-funnel-overview",
@@ -39493,6 +39563,7 @@
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -39889,6 +39960,7 @@
       "SourceConfig:references/articles/analytics-integration-list.json",
       "SourceConfig:references/articles/analytics-provider-config.json",
       "SourceConfig:references/articles/collect-email-before-paywall.json",
+      "SourceConfig:references/articles/facebook-capi-web-destination.json",
       "SourceConfig:references/articles/facebook-events-catalog.json",
       "SourceConfig:references/articles/facebook-pixel-capi-setup.json",
       "SourceConfig:references/articles/help-block-action-bar.json",
@@ -39950,6 +40022,7 @@
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -40346,6 +40419,7 @@
       "SourceConfig:references/articles/analytics-integration-list.json",
       "SourceConfig:references/articles/analytics-provider-config.json",
       "SourceConfig:references/articles/collect-email-before-paywall.json",
+      "SourceConfig:references/articles/facebook-capi-web-destination.json",
       "SourceConfig:references/articles/facebook-events-catalog.json",
       "SourceConfig:references/articles/facebook-pixel-capi-setup.json",
       "SourceConfig:references/articles/help-block-action-bar.json",
@@ -40407,6 +40481,7 @@
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -40803,6 +40878,7 @@
       "SourceConfig:references/articles/analytics-integration-list.json",
       "SourceConfig:references/articles/analytics-provider-config.json",
       "SourceConfig:references/articles/collect-email-before-paywall.json",
+      "SourceConfig:references/articles/facebook-capi-web-destination.json",
       "SourceConfig:references/articles/facebook-events-catalog.json",
       "SourceConfig:references/articles/facebook-pixel-capi-setup.json",
       "SourceConfig:references/articles/help-block-action-bar.json",
@@ -40864,6 +40940,7 @@
       "SourceConfig:references/articles/analytics-integration-list.json",
       "SourceConfig:references/articles/analytics-provider-config.json",
       "SourceConfig:references/articles/collect-email-before-paywall.json",
+      "SourceConfig:references/articles/facebook-capi-web-destination.json",
       "SourceConfig:references/articles/facebook-events-catalog.json",
       "SourceConfig:references/articles/facebook-pixel-capi-setup.json",
       "SourceConfig:references/articles/help-block-action-bar.json",
@@ -40980,7 +41057,8 @@
       "Subarticle:help-block-action-bar#set-actionbar-secondary-icon-prop-enable-icon",
       "Subarticle:help-block-action-bar#set-actionbar-secondary-shadow-prop-enable-shadow",
       "Subarticle:help-block-header#set-headerbar-progressindicator-icon-styles-prop-enable-icon",
-      "Subarticle:integrations-analytics-section#integrations-analytics-section/consent-management"
+      "Subarticle:integrations-analytics-section#integrations-analytics-section/consent-management",
+      "SynonymGroup:facebook-capi-web-destination"
     ],
     "reporting": [
       "Subarticle:analytics-integration-list#analytics-integration-list/segmently-first-party"
@@ -51756,7 +51834,8 @@
       "SynonymGroup:change-funnel-font"
     ],
     "воронки": [
-      "SynonymGroup:change-funnel-font"
+      "SynonymGroup:change-funnel-font",
+      "SynonymGroup:facebook-capi-web-destination"
     ],
     "кастомный": [
       "SynonymGroup:change-funnel-font",
@@ -51820,6 +51899,41 @@
     "почты": [
       "SynonymGroup:email-before-paywall"
     ],
+    "synonymgroup:facebook capi web destination": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "pass": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "forward": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "fbp": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "fbc": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "передавать": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "события": [
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:facebook-events-catalog",
+      "SynonymGroup:tiktok-events"
+    ],
+    "включить": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "воронке": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "отправлять": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "фейсбук": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
     "synonymgroup:facebook events catalog": [
       "SynonymGroup:facebook-events-catalog"
     ],
@@ -51835,10 +51949,6 @@
     "какие": [
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:payment-methods"
-    ],
-    "события": [
-      "SynonymGroup:facebook-events-catalog",
-      "SynonymGroup:tiktok-events"
     ],
     "ивенты": [
       "SynonymGroup:facebook-events-catalog"
@@ -52249,6 +52359,7 @@
       "Scenario:configure-actions",
       "Scenario:create-paywall-products",
       "Scenario:facebook-events-list",
+      "Scenario:forward-fb-events-web-funnel",
       "Scenario:launch-paid-funnel-overview",
       "Scenario:launch-progress",
       "Scenario:paywall-payment-methods",
@@ -52292,6 +52403,7 @@
       "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
       "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
       "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
       "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog",
       "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall",
       "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section",
@@ -52313,14 +52425,15 @@
     "facebook:": [
       "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog"
     ],
+    "funnel:": [
+      "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
+    ],
     "tiktok:": [
       "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
     ],
     "products:": [
       "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall"
-    ],
-    "funnel:": [
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "left:": [
       "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
@@ -52919,6 +53032,7 @@
     ],
     "article relates to scenario": [
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -53676,6 +53790,7 @@
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
       "Article:collect-email-before-paywall",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -54079,6 +54194,7 @@
       "Scenario:configure-actions",
       "Scenario:create-paywall-products",
       "Scenario:facebook-events-list",
+      "Scenario:forward-fb-events-web-funnel",
       "Scenario:launch-paid-funnel-overview",
       "Scenario:launch-progress",
       "Scenario:paywall-payment-methods",
@@ -54104,6 +54220,7 @@
       "SynonymGroup:custom-domain",
       "SynonymGroup:custom-html-webembed",
       "SynonymGroup:email-before-paywall",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:facebook-pixel-setup",
       "SynonymGroup:flexible-layout",
@@ -54133,6 +54250,7 @@
       "Article:analytics-add-provider",
       "Article:analytics-integration-list",
       "Article:analytics-provider-config",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-carousel",
@@ -54189,6 +54307,7 @@
       "Subarticle:integrations-analytics-section#integrations-analytics-section/provider-choice",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
       "SynonymGroup:analytics-provider-setup",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:facebook-pixel-setup"
     ],
@@ -54631,6 +54750,7 @@
     "facebook-events": [
       "Article:analytics-add-provider",
       "Article:analytics-provider-config",
+      "Article:facebook-capi-web-destination",
       "Article:facebook-events-catalog",
       "Article:facebook-pixel-capi-setup",
       "Article:help-block-action-bar",
@@ -54676,6 +54796,7 @@
       "Subarticle:help-block-sticky-container#screenedit-sticky-container-button-content/field",
       "Subarticle:help-options-grid-multi#set-options-imagecontainer-prop-height-mode",
       "Subarticle:help-options-grid-single#set-options-imagecontainer-prop-height-mode",
+      "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:facebook-events-catalog",
       "SynonymGroup:facebook-pixel-setup"
     ],
@@ -56202,6 +56323,26 @@
     "email-capture": [
       "Article:collect-email-before-paywall"
     ],
+    "flow:capability.connect-analytics": [
+      "Article:facebook-capi-web-destination",
+      "Article:facebook-events-catalog",
+      "Article:facebook-pixel-capi-setup",
+      "Article:tiktok-events-catalog",
+      "Article:tiktok-pixel-events-api-setup"
+    ],
+    "meta-pixel": [
+      "Article:facebook-capi-web-destination",
+      "Article:facebook-events-catalog",
+      "Article:facebook-pixel-capi-setup"
+    ],
+    "web-placement": [
+      "Article:facebook-capi-web-destination",
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "attribution": [
+      "Article:facebook-capi-web-destination",
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
     "product-catalog": [
       "Article:facebook-events-catalog",
       "Article:help-block-content",
@@ -56267,16 +56408,6 @@
       "SynonymGroup:product-description-label",
       "SynonymGroup:purchase-label",
       "SynonymGroup:selected-product"
-    ],
-    "flow:capability.connect-analytics": [
-      "Article:facebook-events-catalog",
-      "Article:facebook-pixel-capi-setup",
-      "Article:tiktok-events-catalog",
-      "Article:tiktok-pixel-events-api-setup"
-    ],
-    "meta-pixel": [
-      "Article:facebook-events-catalog",
-      "Article:facebook-pixel-capi-setup"
     ],
     "events-catalog": [
       "Article:facebook-events-catalog",
@@ -63262,6 +63393,36 @@
     "сбор почты": [
       "SynonymGroup:email-before-paywall"
     ],
+    "facebook-capi-web-destination": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "pass facebook events from my funnel": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "send facebook events from web funnel": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "enable facebook capi on my funnel": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "forward facebook events": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "facebook capi attribution": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "fbp fbc stripe metadata": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "передавать фб события с воронки": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "включить facebook capi на воронке": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
+    "отправлять события в фейсбук с воронки": [
+      "SynonymGroup:facebook-capi-web-destination"
+    ],
     "facebook-events-catalog": [
       "SynonymGroup:facebook-events-catalog"
     ],
@@ -63578,6 +63739,9 @@
     ],
     "collect-email-before-paywall": [
       "Article:collect-email-before-paywall"
+    ],
+    "facebook-capi-web-destination": [
+      "Article:facebook-capi-web-destination"
     ],
     "facebook-events-catalog": [
       "Article:facebook-events-catalog"
@@ -66047,6 +66211,9 @@
     ],
     "facebook-events-list": [
       "Scenario:facebook-events-list"
+    ],
+    "forward-fb-events-web-funnel": [
+      "Scenario:forward-fb-events-web-funnel"
     ],
     "launch-paid-funnel-overview": [
       "Scenario:launch-paid-funnel-overview"

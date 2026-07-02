@@ -28,6 +28,16 @@
       "assemblyLinks": []
     },
     {
+      "alias": "facebook-capi-web-destination",
+      "title": "Send Facebook (CAPI) events from your web funnel",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-capi-web-destination/index.html",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-capi-web-destination/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
       "alias": "facebook-events-catalog",
       "title": "Every event Segmently sends to Facebook (Pixel + Conversions API)",
       "projectId": "arswew63RwQr6V4Ekb1Z",

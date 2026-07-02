@@ -14,6 +14,9 @@
     "collect-email-before-paywall": [
       "collect-email-before-paywall"
     ],
+    "facebook-capi-web-destination": [
+      "facebook-capi-web-destination"
+    ],
     "facebook-events-catalog": [
       "facebook-events-catalog"
     ],
@@ -331,6 +334,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -397,6 +401,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -426,6 +431,7 @@
     "from": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-basic-config",
@@ -481,6 +487,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -669,12 +676,14 @@
     "meta": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup"
     ],
     "pixel": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-carousel",
@@ -688,6 +697,7 @@
     "tiktok": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -743,11 +753,13 @@
     "destinations": [
       "analytics-add-provider",
       "analytics-integration-list",
-      "analytics-provider-config"
+      "analytics-provider-config",
+      "facebook-capi-web-destination"
     ],
     "then": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
       "help-block-content",
@@ -784,6 +796,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -851,6 +864,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -872,6 +886,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-carousel",
@@ -916,6 +931,7 @@
     "facebook events": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -972,6 +988,7 @@
     "catalog": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -992,6 +1009,7 @@
     "facebook": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
@@ -1051,6 +1069,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -1097,6 +1116,7 @@
     ],
     "open": [
       "analytics-add-provider",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-basic-config",
       "help-block-carousel",
@@ -1170,7 +1190,8 @@
     ],
     "server": [
       "analytics-add-provider",
-      "analytics-provider-config"
+      "analytics-provider-config",
+      "facebook-capi-web-destination"
     ],
     "platforms": [
       "analytics-add-provider",
@@ -1199,6 +1220,7 @@
     ],
     "publish": [
       "analytics-add-provider",
+      "facebook-capi-web-destination",
       "help-block-paywall-footer",
       "help-block-paywall-subscriptions",
       "integrations-analytics-section",
@@ -1236,6 +1258,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-background",
       "help-block-basic-config",
       "help-block-paywall-footer",
@@ -1280,6 +1303,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
       "help-block-background",
@@ -1491,6 +1515,7 @@
     "token": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "tiktok-pixel-events-api-setup"
     ],
@@ -1576,6 +1601,7 @@
     "which": [
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-basic-config",
@@ -1847,6 +1873,7 @@
     "turn": [
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-basic-config",
       "help-block-content",
@@ -1921,6 +1948,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -2060,6 +2088,7 @@
     ],
     "shows": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
       "help-block-basic-config",
@@ -2258,6 +2287,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -2296,6 +2326,7 @@
     "enable": [
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-header",
       "integrations-analytics-section"
@@ -2457,6 +2488,7 @@
     ],
     "conversions": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -2466,6 +2498,7 @@
     ],
     "api": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
@@ -2685,6 +2718,7 @@
     ],
     "data": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-custom-html",
       "help-block-paywall-footer",
       "help-block-paywall-media",
@@ -2720,6 +2754,7 @@
     ],
     "your": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-background",
       "help-block-basic-config",
@@ -3374,6 +3409,7 @@
     ],
     "when": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-background",
@@ -3514,6 +3550,7 @@
     ],
     "button": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-content",
       "help-block-flexible-sections",
@@ -3550,6 +3587,7 @@
     "metadata": [
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-variable-binding"
     ],
     "extra": [
@@ -3567,6 +3605,7 @@
     ],
     "setup": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-background",
       "help-block-custom-html",
@@ -3689,6 +3728,7 @@
     ],
     "event": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "integrations-analytics-section",
@@ -3982,6 +4022,7 @@
     ],
     "edit": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-carousel",
       "help-block-content",
       "help-block-options",
@@ -4114,6 +4155,7 @@
     "visitor": [
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-background",
       "help-block-carousel",
       "help-block-content",
@@ -4367,6 +4409,7 @@
     ],
     "send": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-options",
       "help-block-paywall-footer",
@@ -4408,6 +4451,7 @@
     "attribution": [
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-basic-config"
     ],
@@ -4587,6 +4631,7 @@
     ],
     "pass": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-variable-binding"
     ],
     "hashed": [
@@ -4626,6 +4671,7 @@
     ],
     "customer": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-screen-herocontent-detailed",
       "integrations-custom-domain-section"
     ],
@@ -4691,6 +4737,7 @@
     ],
     "stripe": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-background",
       "help-block-flexible-sections",
       "help-block-paywall-body",
@@ -4792,6 +4839,7 @@
     ],
     "flow:capability": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -4821,6 +4869,346 @@
       "paywall-payment-methods",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
+    ],
+    "facebook capi web destination": [
+      "facebook-capi-web-destination"
+    ],
+    "capi": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup"
+    ],
+    "forwarding": [
+      "facebook-capi-web-destination"
+    ],
+    "funnel:": [
+      "facebook-capi-web-destination",
+      "help-block-variable-binding"
+    ],
+    "dialog": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-footer"
+    ],
+    "section": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-background",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-carousel",
+      "help-screen-flexiblelayout",
+      "help-screen-gridmultipick-elements",
+      "help-screen-gridsinglepick-elements",
+      "help-screen-herocontent",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-herolist-elements",
+      "help-screen-listmultipick-elements",
+      "help-screen-listsinglepick-elements",
+      "help-screen-paywall",
+      "help-screen-progresssteps",
+      "help-screen-textinput-elements",
+      "help-screen-webembed",
+      "help-screen-wheelpicker-elements",
+      "integrations-analytics-section"
+    ],
+    "click": [
+      "facebook-capi-web-destination",
+      "help-block-carousel",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
+    ],
+    "one click": [
+      "facebook-capi-web-destination"
+    ],
+    "adds": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-element-hero-image",
+      "help-element-subtitle",
+      "help-element-title",
+      "help-screen-herocontent-detailed"
+    ],
+    "user": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-text-field",
+      "help-block-variable-binding"
+    ],
+    "agent": [
+      "facebook-capi-web-destination"
+    ],
+    " fbp": [
+      "facebook-capi-web-destination"
+    ],
+    " fbc": [
+      "facebook-capi-web-destination"
+    ],
+    "cookies": [
+      "facebook-capi-web-destination"
+    ],
+    "both": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-header",
+      "help-block-paywall-footer",
+      "help-block-text-field"
+    ],
+    "asks": [
+      "facebook-capi-web-destination",
+      "help-block-variable-binding"
+    ],
+    "their": [
+      "facebook-capi-web-destination",
+      "help-block-basic-config",
+      "help-block-content",
+      "help-block-flexible-sections",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-paywall",
+      "help-screen-wheelpicker-elements"
+    ],
+    "forward": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-paywall-footer",
+      "help-block-stepper"
+    ],
+    "fbp": [
+      "facebook-capi-web-destination"
+    ],
+    "fbc": [
+      "facebook-capi-web-destination"
+    ],
+    "improve": [
+      "facebook-capi-web-destination",
+      "help-block-options",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single"
+    ],
+    "match": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-background",
+      "help-block-content",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-element-hero-image",
+      "help-screen-herocontent-detailed"
+    ],
+    "quality": [
+      "facebook-capi-web-destination"
+    ],
+    "purchases": [
+      "facebook-capi-web-destination",
+      "help-block-flexible-sections",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-screen-flexiblelayout"
+    ],
+    "connecting": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-body",
+      "help-block-paywall-subscriptions"
+    ],
+    "access": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup",
+      "help-block-flexible-sections",
+      "help-block-paywall-media"
+    ],
+    "separate": [
+      "facebook-capi-web-destination",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-footer",
+      "help-block-stepper",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-element-subtitle",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-herocontent-detailed"
+    ],
+    "prerequisite": [
+      "facebook-capi-web-destination"
+    ],
+    "covered": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-background",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding"
+    ],
+    "conversion": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup",
+      "help-block-action-bar",
+      "help-block-media",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-subscriptions",
+      "help-block-sticky-container"
+    ],
+    "guide": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-element-hero-image",
+      "help-element-subtitle",
+      "help-element-title",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-carousel",
+      "help-screen-flexiblelayout",
+      "help-screen-gridmultipick-elements",
+      "help-screen-gridsinglepick-elements",
+      "help-screen-herocontent",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-herolist-elements",
+      "help-screen-listmultipick-elements",
+      "help-screen-listsinglepick-elements",
+      "help-screen-paywall",
+      "help-screen-progresssteps",
+      "help-screen-textinput-elements",
+      "help-screen-webembed",
+      "help-screen-wheelpicker-elements"
+    ],
+    "connect analytics": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "meta pixel": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup"
+    ],
+    "web placement": [
+      "facebook-capi-web-destination"
     ],
     "facebook events catalog": [
       "facebook-events-catalog"
@@ -5021,16 +5409,6 @@
       "paywall-payment-methods",
       "tiktok-events-catalog"
     ],
-    "connect analytics": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup",
-      "tiktok-events-catalog",
-      "tiktok-pixel-events-api-setup"
-    ],
-    "meta pixel": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup"
-    ],
     "events catalog": [
       "facebook-events-catalog",
       "tiktok-events-catalog"
@@ -5040,15 +5418,6 @@
     ],
     "facebook pixel capi setup": [
       "facebook-pixel-capi-setup"
-    ],
-    "conversion": [
-      "facebook-pixel-capi-setup",
-      "help-block-action-bar",
-      "help-block-media",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-subscriptions",
-      "help-block-sticky-container"
     ],
     "connect": [
       "facebook-pixel-capi-setup",
@@ -5073,14 +5442,6 @@
       "facebook-pixel-capi-setup",
       "help-block-flexible-sections",
       "tiktok-pixel-events-api-setup"
-    ],
-    "capi": [
-      "facebook-pixel-capi-setup"
-    ],
-    "access": [
-      "facebook-pixel-capi-setup",
-      "help-block-flexible-sections",
-      "help-block-paywall-media"
     ],
     "tokens": [
       "facebook-pixel-capi-setup",
@@ -5192,52 +5553,6 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title"
-    ],
-    "section": [
-      "help-block-action-bar",
-      "help-block-background",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-carousel",
-      "help-screen-flexiblelayout",
-      "help-screen-gridmultipick-elements",
-      "help-screen-gridsinglepick-elements",
-      "help-screen-herocontent",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-herolist-elements",
-      "help-screen-listmultipick-elements",
-      "help-screen-listsinglepick-elements",
-      "help-screen-paywall",
-      "help-screen-progresssteps",
-      "help-screen-textinput-elements",
-      "help-screen-webembed",
-      "help-screen-wheelpicker-elements",
-      "integrations-analytics-section"
     ],
     "controls": [
       "help-block-action-bar",
@@ -6344,53 +6659,6 @@
       "integrations-analytics-section",
       "integrations-custom-domain-section"
     ],
-    "guide": [
-      "help-block-action-bar",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-element-hero-image",
-      "help-element-subtitle",
-      "help-element-title",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-carousel",
-      "help-screen-flexiblelayout",
-      "help-screen-gridmultipick-elements",
-      "help-screen-gridsinglepick-elements",
-      "help-screen-herocontent",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-herolist-elements",
-      "help-screen-listmultipick-elements",
-      "help-screen-listsinglepick-elements",
-      "help-screen-paywall",
-      "help-screen-progresssteps",
-      "help-screen-textinput-elements",
-      "help-screen-webembed",
-      "help-screen-wheelpicker-elements"
-    ],
     "block": [
       "help-block-action-bar",
       "help-block-basic-config",
@@ -6587,11 +6855,6 @@
       "help-options-grid-single",
       "help-options-list-single"
     ],
-    "forward": [
-      "help-block-action-bar",
-      "help-block-paywall-footer",
-      "help-block-stepper"
-    ],
     "its": [
       "help-block-action-bar",
       "help-block-background",
@@ -6637,28 +6900,6 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements"
-    ],
-    "match": [
-      "help-block-action-bar",
-      "help-block-background",
-      "help-block-content",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-element-hero-image",
-      "help-screen-herocontent-detailed"
     ],
     "happens": [
       "help-block-action-bar",
@@ -6829,28 +7070,6 @@
       "help-screen-herocontent-detailed"
     ],
     "where it appears": [
-      "help-block-action-bar",
-      "help-block-background",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding"
-    ],
-    "covered": [
       "help-block-action-bar",
       "help-block-background",
       "help-block-basic-config",
@@ -7475,12 +7694,6 @@
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
       "launch-paid-funnel-overview"
-    ],
-    "both": [
-      "help-block-action-bar",
-      "help-block-header",
-      "help-block-paywall-footer",
-      "help-block-text-field"
     ],
     "animation": [
       "help-block-action-bar",
@@ -8863,27 +9076,6 @@
       "help-block-action-bar",
       "help-block-header",
       "help-block-paywall-header"
-    ],
-    "adds": [
-      "help-block-action-bar",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-element-hero-image",
-      "help-element-subtitle",
-      "help-element-title",
-      "help-screen-herocontent-detailed"
     ],
     "movement": [
       "help-block-action-bar"
@@ -12528,28 +12720,6 @@
     "requesting": [
       "help-block-basic-config"
     ],
-    "their": [
-      "help-block-basic-config",
-      "help-block-content",
-      "help-block-flexible-sections",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-paywall",
-      "help-screen-wheelpicker-elements"
-    ],
     "timed": [
       "help-block-basic-config",
       "help-block-carousel",
@@ -13459,27 +13629,6 @@
     "stalling": [
       "help-block-carousel"
     ],
-    "separate": [
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-footer",
-      "help-block-stepper",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-element-subtitle",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-herocontent-detailed"
-    ],
     "tall": [
       "help-block-carousel",
       "help-block-flexible-sections",
@@ -13708,13 +13857,6 @@
     ],
     "drag and drop": [
       "help-block-carousel"
-    ],
-    "click": [
-      "help-block-carousel",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-variable-binding",
-      "integrations-custom-domain-section"
     ],
     "serves": [
       "help-block-carousel"
@@ -16749,12 +16891,6 @@
       "help-block-stepper",
       "help-options-grid-multi",
       "help-options-list-multi"
-    ],
-    "purchases": [
-      "help-block-flexible-sections",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-screen-flexiblelayout"
     ],
     "g management head": [
       "help-block-flexible-sections"
@@ -20579,14 +20715,6 @@
       "help-options-list-multi",
       "help-options-list-single"
     ],
-    "improve": [
-      "help-block-options",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single"
-    ],
     "neutral": [
       "help-block-options",
       "help-block-paywall-subscriptions",
@@ -21270,10 +21398,6 @@
     "guarantees": [
       "help-block-paywall-body"
     ],
-    "connecting": [
-      "help-block-paywall-body",
-      "help-block-paywall-subscriptions"
-    ],
     "plans": [
       "help-block-paywall-body",
       "help-block-paywall-media",
@@ -21336,15 +21460,6 @@
     ],
     "reference": [
       "help-block-paywall-body",
-      "help-block-variable-binding"
-    ],
-    "user": [
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-text-field",
       "help-block-variable-binding"
     ],
     "headline:": [
@@ -21835,9 +21950,6 @@
       "help-block-paywall-footer"
     ],
     "closing": [
-      "help-block-paywall-footer"
-    ],
-    "dialog": [
       "help-block-paywall-footer"
     ],
     "catching": [
@@ -24913,9 +25025,6 @@
     "named": [
       "help-block-variable-binding"
     ],
-    "funnel:": [
-      "help-block-variable-binding"
-    ],
     "influence": [
       "help-block-variable-binding"
     ],
@@ -25090,9 +25199,6 @@
       "help-block-variable-binding"
     ],
     "lead qualification": [
-      "help-block-variable-binding"
-    ],
-    "asks": [
       "help-block-variable-binding"
     ],
     "feed": [
@@ -26783,6 +26889,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-carousel",
@@ -26827,6 +26934,7 @@
     "facebook-events": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -26990,6 +27098,24 @@
     "email-capture": [
       "collect-email-before-paywall"
     ],
+    "flow:capability.connect-analytics": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "meta-pixel": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup"
+    ],
+    "web-placement": [
+      "facebook-capi-web-destination"
+    ],
+    "attribution": [
+      "facebook-capi-web-destination"
+    ],
     "product-catalog": [
       "facebook-events-catalog",
       "help-block-content",
@@ -27007,16 +27133,6 @@
       "help-screen-paywall",
       "paywall-payment-methods",
       "tiktok-events-catalog"
-    ],
-    "flow:capability.connect-analytics": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup",
-      "tiktok-events-catalog",
-      "tiktok-pixel-events-api-setup"
-    ],
-    "meta-pixel": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup"
     ],
     "events-catalog": [
       "facebook-events-catalog",
@@ -27941,6 +28057,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-carousel",
@@ -27993,6 +28110,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -28067,11 +28185,13 @@
     "destination": [
       "analytics-add-provider",
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "integrations-analytics-section"
     ],
     "from": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-options",
@@ -28109,6 +28229,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -28332,12 +28453,14 @@
     "meta": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup"
     ],
     "pixel": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
@@ -28380,6 +28503,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-background",
@@ -28434,11 +28558,13 @@
     "destinations": [
       "analytics-add-provider",
       "analytics-integration-list",
-      "analytics-provider-config"
+      "analytics-provider-config",
+      "facebook-capi-web-destination"
     ],
     "then": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-paywall-media",
       "help-element-hero-image",
@@ -28457,6 +28583,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -28524,6 +28651,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "integrations-analytics-section",
@@ -28538,6 +28666,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-carousel",
@@ -28563,6 +28692,7 @@
     "facebook events": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -28663,6 +28793,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -28692,6 +28823,7 @@
     ],
     "open": [
       "analytics-add-provider",
+      "facebook-capi-web-destination",
       "help-block-carousel",
       "help-block-flexible-sections",
       "help-content-hero",
@@ -28734,7 +28866,8 @@
     ],
     "server": [
       "analytics-add-provider",
-      "analytics-provider-config"
+      "analytics-provider-config",
+      "facebook-capi-web-destination"
     ],
     "platforms": [
       "analytics-add-provider",
@@ -28751,6 +28884,7 @@
     "facebook": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup"
     ],
@@ -28765,6 +28899,7 @@
     ],
     "publish": [
       "analytics-add-provider",
+      "facebook-capi-web-destination",
       "integrations-analytics-section",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview"
@@ -28792,6 +28927,7 @@
     "web": [
       "analytics-add-provider",
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "help-block-background",
       "help-fonts-typography",
       "help-screen-webembed",
@@ -28824,6 +28960,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-background",
       "help-block-basic-config",
@@ -28988,12 +29125,14 @@
     "id": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "tiktok-pixel-events-api-setup"
     ],
     "token": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "tiktok-pixel-events-api-setup"
     ],
@@ -29054,6 +29193,7 @@
     ],
     "which": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-basic-config",
@@ -29232,6 +29372,7 @@
     "turn": [
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-sticky-container",
       "help-content-hero",
       "help-content-hero-basic",
@@ -29269,6 +29410,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -29353,6 +29495,7 @@
     ],
     "shows": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
       "help-block-carousel",
@@ -29437,6 +29580,7 @@
     ],
     "is": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-background",
       "help-block-basic-config",
@@ -29524,6 +29668,7 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-custom-html",
@@ -29544,6 +29689,7 @@
     ],
     "enable": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "integrations-analytics-section"
     ],
     "reporting": [
@@ -29586,6 +29732,7 @@
     ],
     "by": [
       "analytics-integration-list",
+      "facebook-capi-web-destination",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
       "help-block-basic-config",
@@ -29666,11 +29813,13 @@
     ],
     "conversions": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup"
     ],
     "api": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
@@ -29828,6 +29977,7 @@
     ],
     "on": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-background",
       "help-block-carousel",
@@ -29860,6 +30010,7 @@
     ],
     "data": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-custom-html",
       "help-block-roller"
     ],
@@ -29879,6 +30030,7 @@
     ],
     "your": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-background",
       "help-block-content",
@@ -30193,6 +30345,7 @@
     ],
     "in": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-action-bar",
       "help-block-basic-config",
       "help-block-carousel",
@@ -30318,6 +30471,7 @@
     ],
     "when": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "help-block-action-bar",
       "help-block-background",
@@ -30418,6 +30572,7 @@
     ],
     "ad": [
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "help-block-content",
       "help-element-title",
       "launch-paid-funnel-overview"
@@ -30435,6 +30590,7 @@
     ],
     "customer": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-screen-herocontent-detailed",
       "integrations-custom-domain-section"
     ],
@@ -30477,6 +30633,7 @@
     ],
     "visitor": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-background",
       "help-block-content",
       "help-block-header",
@@ -30512,6 +30669,7 @@
     ],
     "stripe": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-paywall-body",
       "help-block-paywall-subscriptions",
       "help-screen-paywall",
@@ -30526,6 +30684,7 @@
     ],
     "attribution": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog"
     ],
     "later": [
@@ -30568,6 +30727,7 @@
     ],
     "metadata": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "help-block-variable-binding"
     ],
     "showing": [
@@ -30592,6 +30752,7 @@
     ],
     "flow:capability": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -30609,6 +30770,7 @@
     ],
     "capability": [
       "collect-email-before-paywall",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -30621,14 +30783,282 @@
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
     ],
-    "facebook events catalog": [
-      "facebook-events-catalog"
+    "facebook capi web destination": [
+      "facebook-capi-web-destination"
+    ],
+    "send": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "help-block-variable-binding",
+      "tiktok-events-catalog"
+    ],
+    "capi": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup"
     ],
     "event": [
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "integrations-analytics-section",
       "tiktok-events-catalog"
+    ],
+    "forwarding": [
+      "facebook-capi-web-destination"
+    ],
+    "funnel:": [
+      "facebook-capi-web-destination",
+      "help-block-variable-binding"
+    ],
+    "edit": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-body",
+      "help-block-paywall-header",
+      "help-block-roller"
+    ],
+    "dialog": [
+      "facebook-capi-web-destination"
+    ],
+    "section": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-background",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-text-field",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-carousel",
+      "help-screen-flexiblelayout",
+      "help-screen-herocontent",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-progresssteps",
+      "help-screen-webembed",
+      "integrations-analytics-section"
+    ],
+    "click": [
+      "facebook-capi-web-destination",
+      "integrations-custom-domain-section"
+    ],
+    "one click": [
+      "facebook-capi-web-destination"
+    ],
+    "button": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-flexible-sections",
+      "help-block-header",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-sticky-container",
+      "help-options-grid-multi",
+      "help-options-list-multi",
+      "help-screen-flexiblelayout",
+      "help-screen-gridmultipick-elements",
+      "help-screen-gridsinglepick-elements",
+      "help-screen-herocontent",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-herolist-elements",
+      "help-screen-listmultipick-elements",
+      "help-screen-listsinglepick-elements",
+      "help-screen-paywall",
+      "help-screen-textinput-elements",
+      "help-screen-webembed",
+      "help-screen-wheelpicker-elements"
+    ],
+    "adds": [
+      "facebook-capi-web-destination",
+      "help-block-custom-html",
+      "help-block-media",
+      "help-block-variable-binding"
+    ],
+    "ip": [
+      "facebook-capi-web-destination"
+    ],
+    "user": [
+      "facebook-capi-web-destination",
+      "help-block-variable-binding"
+    ],
+    "agent": [
+      "facebook-capi-web-destination"
+    ],
+    " fbp": [
+      "facebook-capi-web-destination"
+    ],
+    " fbc": [
+      "facebook-capi-web-destination"
+    ],
+    "cookies": [
+      "facebook-capi-web-destination"
+    ],
+    "both": [
+      "facebook-capi-web-destination"
+    ],
+    "asks": [
+      "facebook-capi-web-destination"
+    ],
+    "pass": [
+      "facebook-capi-web-destination"
+    ],
+    "their": [
+      "facebook-capi-web-destination",
+      "help-block-basic-config",
+      "help-block-flexible-sections",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-roller",
+      "help-screen-herocontent-elements",
+      "help-screen-paywall"
+    ],
+    "forward": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar"
+    ],
+    "fbp": [
+      "facebook-capi-web-destination"
+    ],
+    "fbc": [
+      "facebook-capi-web-destination"
+    ],
+    "improve": [
+      "facebook-capi-web-destination"
+    ],
+    "match": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-background",
+      "help-element-hero-image"
+    ],
+    "quality": [
+      "facebook-capi-web-destination"
+    ],
+    "purchases": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-screen-flexiblelayout"
+    ],
+    "connecting": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-body"
+    ],
+    "access": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup",
+      "help-block-paywall-media"
+    ],
+    "separate": [
+      "facebook-capi-web-destination",
+      "help-block-media"
+    ],
+    "prerequisite": [
+      "facebook-capi-web-destination"
+    ],
+    "covered": [
+      "facebook-capi-web-destination",
+      "help-block-background",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-custom-html"
+    ],
+    "conversion": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup",
+      "help-block-media",
+      "help-block-paywall-body",
+      "help-block-paywall-footer"
+    ],
+    "setup": [
+      "facebook-capi-web-destination",
+      "facebook-pixel-capi-setup",
+      "help-block-custom-html",
+      "help-screen-herocontent-detailed",
+      "help-screen-webembed",
+      "integrations-analytics-section",
+      "integrations-custom-domain-section",
+      "launch-paid-funnel-overview",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "guide": [
+      "facebook-capi-web-destination",
+      "help-block-action-bar",
+      "help-block-basic-config",
+      "help-block-carousel",
+      "help-block-content",
+      "help-block-custom-html",
+      "help-block-header",
+      "help-block-media",
+      "help-block-options",
+      "help-block-paywall-body",
+      "help-block-paywall-footer",
+      "help-block-paywall-header",
+      "help-block-paywall-media",
+      "help-block-paywall-subscriptions",
+      "help-block-roller",
+      "help-block-stepper",
+      "help-block-sticky-container",
+      "help-block-variable-binding",
+      "help-content-hero",
+      "help-content-hero-basic",
+      "help-content-text",
+      "help-element-hero-image",
+      "help-element-subtitle",
+      "help-element-title",
+      "help-options-grid-multi",
+      "help-options-grid-single",
+      "help-options-hero-list",
+      "help-options-list-multi",
+      "help-options-list-single",
+      "help-screen-carousel",
+      "help-screen-herocontent",
+      "help-screen-herocontent-detailed",
+      "help-screen-herocontent-elements",
+      "help-screen-progresssteps",
+      "help-screen-webembed"
+    ],
+    "meta pixel": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup"
+    ],
+    "web placement": [
+      "facebook-capi-web-destination"
+    ],
+    "connect analytics": [
+      "facebook-capi-web-destination",
+      "facebook-events-catalog",
+      "facebook-pixel-capi-setup",
+      "tiktok-events-catalog",
+      "tiktok-pixel-events-api-setup"
+    ],
+    "forward fb events web funnel": [
+      "facebook-capi-web-destination"
+    ],
+    "facebook events catalog": [
+      "facebook-events-catalog"
     ],
     "sends": [
       "facebook-events-catalog",
@@ -30640,11 +31070,6 @@
       "help-block-roller",
       "help-block-sticky-container",
       "help-screen-flexiblelayout",
-      "tiktok-events-catalog"
-    ],
-    "send": [
-      "facebook-events-catalog",
-      "help-block-variable-binding",
       "tiktok-events-catalog"
     ],
     "including": [
@@ -30796,10 +31221,6 @@
     "relates": [
       "facebook-events-catalog"
     ],
-    "meta pixel": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup"
-    ],
     "events catalog": [
       "facebook-events-catalog",
       "tiktok-events-catalog"
@@ -30821,12 +31242,6 @@
       "help-screen-paywall",
       "paywall-payment-methods",
       "tiktok-events-catalog"
-    ],
-    "connect analytics": [
-      "facebook-events-catalog",
-      "facebook-pixel-capi-setup",
-      "tiktok-events-catalog",
-      "tiktok-pixel-events-api-setup"
     ],
     "facebook events list": [
       "facebook-events-catalog"
@@ -30884,12 +31299,6 @@
       "integrations-analytics-section",
       "tiktok-pixel-events-api-setup"
     ],
-    "conversion": [
-      "facebook-pixel-capi-setup",
-      "help-block-media",
-      "help-block-paywall-body",
-      "help-block-paywall-footer"
-    ],
     "connect": [
       "facebook-pixel-capi-setup",
       "help-block-roller",
@@ -30911,23 +31320,6 @@
     "sent": [
       "facebook-pixel-capi-setup",
       "tiktok-pixel-events-api-setup"
-    ],
-    "setup": [
-      "facebook-pixel-capi-setup",
-      "help-block-custom-html",
-      "help-screen-herocontent-detailed",
-      "help-screen-webembed",
-      "integrations-analytics-section",
-      "integrations-custom-domain-section",
-      "launch-paid-funnel-overview",
-      "tiktok-pixel-events-api-setup"
-    ],
-    "capi": [
-      "facebook-pixel-capi-setup"
-    ],
-    "access": [
-      "facebook-pixel-capi-setup",
-      "help-block-paywall-media"
     ],
     "tokens": [
       "facebook-pixel-capi-setup",
@@ -31026,44 +31418,6 @@
       "help-element-subtitle",
       "help-element-title"
     ],
-    "section": [
-      "help-block-action-bar",
-      "help-block-background",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-text-field",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-carousel",
-      "help-screen-flexiblelayout",
-      "help-screen-herocontent",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-progresssteps",
-      "help-screen-webembed",
-      "integrations-analytics-section"
-    ],
     "controls": [
       "help-block-action-bar",
       "help-block-background",
@@ -31153,29 +31507,6 @@
       "help-screen-listmultipick-elements",
       "help-screen-listsinglepick-elements",
       "help-screen-progresssteps",
-      "help-screen-textinput-elements",
-      "help-screen-webembed",
-      "help-screen-wheelpicker-elements"
-    ],
-    "button": [
-      "help-block-action-bar",
-      "help-block-flexible-sections",
-      "help-block-header",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-sticky-container",
-      "help-options-grid-multi",
-      "help-options-list-multi",
-      "help-screen-flexiblelayout",
-      "help-screen-gridmultipick-elements",
-      "help-screen-gridsinglepick-elements",
-      "help-screen-herocontent",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-herolist-elements",
-      "help-screen-listmultipick-elements",
-      "help-screen-listsinglepick-elements",
-      "help-screen-paywall",
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements"
@@ -32032,42 +32363,6 @@
       "integrations-analytics-section",
       "integrations-custom-domain-section"
     ],
-    "guide": [
-      "help-block-action-bar",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-content",
-      "help-block-custom-html",
-      "help-block-header",
-      "help-block-media",
-      "help-block-options",
-      "help-block-paywall-body",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-paywall-media",
-      "help-block-paywall-subscriptions",
-      "help-block-roller",
-      "help-block-stepper",
-      "help-block-sticky-container",
-      "help-block-variable-binding",
-      "help-content-hero",
-      "help-content-hero-basic",
-      "help-content-text",
-      "help-element-hero-image",
-      "help-element-subtitle",
-      "help-element-title",
-      "help-options-grid-multi",
-      "help-options-grid-single",
-      "help-options-hero-list",
-      "help-options-list-multi",
-      "help-options-list-single",
-      "help-screen-carousel",
-      "help-screen-herocontent",
-      "help-screen-herocontent-detailed",
-      "help-screen-herocontent-elements",
-      "help-screen-progresssteps",
-      "help-screen-webembed"
-    ],
     "of": [
       "help-block-action-bar",
       "help-block-background",
@@ -32312,9 +32607,6 @@
       "help-screen-listmultipick-elements",
       "help-screen-listsinglepick-elements"
     ],
-    "forward": [
-      "help-block-action-bar"
-    ],
     "its": [
       "help-block-action-bar",
       "help-block-basic-config",
@@ -32351,11 +32643,6 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements"
-    ],
-    "match": [
-      "help-block-action-bar",
-      "help-block-background",
-      "help-element-hero-image"
     ],
     "happens": [
       "help-block-action-bar",
@@ -32891,12 +33178,6 @@
       "help-element-subtitle",
       "help-element-title",
       "help-screen-paywall"
-    ],
-    "covered": [
-      "help-block-background",
-      "help-block-basic-config",
-      "help-block-carousel",
-      "help-block-custom-html"
     ],
     "types:": [
       "help-block-background",
@@ -33500,15 +33781,6 @@
       "help-block-flexible-sections",
       "help-block-paywall-header",
       "launch-paid-funnel-overview"
-    ],
-    "their": [
-      "help-block-basic-config",
-      "help-block-flexible-sections",
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-block-roller",
-      "help-screen-herocontent-elements",
-      "help-screen-paywall"
     ],
     "defaults": [
       "help-block-basic-config",
@@ -34555,11 +34827,6 @@
     "always": [
       "help-block-custom-html"
     ],
-    "adds": [
-      "help-block-custom-html",
-      "help-block-media",
-      "help-block-variable-binding"
-    ],
     "reusable": [
       "help-block-custom-html",
       "help-element-subtitle",
@@ -35201,9 +35468,6 @@
       "help-block-media"
     ],
     "uses": [
-      "help-block-media"
-    ],
-    "separate": [
       "help-block-media"
     ],
     "screen editor section media": [
@@ -35926,11 +36190,6 @@
       "help-block-paywall-body",
       "help-block-paywall-subscriptions"
     ],
-    "edit": [
-      "help-block-paywall-body",
-      "help-block-paywall-header",
-      "help-block-roller"
-    ],
     "any": [
       "help-block-paywall-body",
       "help-element-title",
@@ -35948,9 +36207,6 @@
       "help-screen-wheelpicker-elements"
     ],
     "ideally": [
-      "help-block-paywall-body"
-    ],
-    "connecting": [
       "help-block-paywall-body"
     ],
     "promise": [
@@ -35982,11 +36238,6 @@
       "help-block-paywall-footer",
       "help-block-paywall-header",
       "help-screen-paywall"
-    ],
-    "purchases": [
-      "help-block-paywall-footer",
-      "help-block-paywall-header",
-      "help-screen-flexiblelayout"
     ],
     "terms": [
       "help-block-paywall-footer"
@@ -37230,9 +37481,6 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements"
     ],
-    "user": [
-      "help-block-variable-binding"
-    ],
     "saved": [
       "help-block-variable-binding",
       "help-options-hero-list"
@@ -37356,9 +37604,6 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-subtitle"
-    ],
-    "funnel:": [
-      "help-block-variable-binding"
     ],
     "help content hero": [
       "help-content-hero"
@@ -39089,9 +39334,6 @@
     "people": [
       "integrations-custom-domain-section"
     ],
-    "click": [
-      "integrations-custom-domain-section"
-    ],
     "fewer": [
       "integrations-custom-domain-section"
     ],
@@ -39260,6 +39502,7 @@
       "help-fonts-typography"
     ],
     "funnel": [
+      "facebook-capi-web-destination",
       "help-fonts-typography",
       "launch-paid-funnel-overview"
     ],
@@ -39316,6 +39559,7 @@
       "help-fonts-typography"
     ],
     "web": [
+      "facebook-capi-web-destination",
       "help-block-custom-html",
       "help-block-paywall-subscriptions",
       "help-fonts-typography"
@@ -39360,6 +39604,7 @@
       "help-fonts-typography"
     ],
     "воронки": [
+      "facebook-capi-web-destination",
       "help-fonts-typography"
     ],
     "кастомный шрифт": [
@@ -39520,6 +39765,7 @@
       "help-block-flexible-sections"
     ],
     "from": [
+      "facebook-capi-web-destination",
       "help-block-flexible-sections"
     ],
     "описание продукта": [
@@ -39657,10 +39903,12 @@
     "facebook": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup"
     ],
     "events": [
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -39707,6 +39955,7 @@
       "paywall-payment-methods"
     ],
     "события": [
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -39820,6 +40069,85 @@
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
+    ],
+    "facebook capi web destination": [
+      "facebook-capi-web-destination"
+    ],
+    "capi": [
+      "facebook-capi-web-destination"
+    ],
+    "destination": [
+      "facebook-capi-web-destination"
+    ],
+    "pass facebook events from my funnel": [
+      "facebook-capi-web-destination"
+    ],
+    "pass": [
+      "facebook-capi-web-destination"
+    ],
+    "send facebook events from web funnel": [
+      "facebook-capi-web-destination"
+    ],
+    "send": [
+      "facebook-capi-web-destination"
+    ],
+    "enable facebook capi on my funnel": [
+      "facebook-capi-web-destination"
+    ],
+    "enable": [
+      "facebook-capi-web-destination"
+    ],
+    "forward facebook events": [
+      "facebook-capi-web-destination"
+    ],
+    "forward": [
+      "facebook-capi-web-destination"
+    ],
+    "facebook capi attribution": [
+      "facebook-capi-web-destination"
+    ],
+    "attribution": [
+      "facebook-capi-web-destination"
+    ],
+    "fbp fbc stripe metadata": [
+      "facebook-capi-web-destination"
+    ],
+    "fbp": [
+      "facebook-capi-web-destination"
+    ],
+    "fbc": [
+      "facebook-capi-web-destination"
+    ],
+    "stripe": [
+      "facebook-capi-web-destination",
+      "help-block-paywall-subscriptions"
+    ],
+    "metadata": [
+      "facebook-capi-web-destination"
+    ],
+    "передавать фб события с воронки": [
+      "facebook-capi-web-destination"
+    ],
+    "передавать": [
+      "facebook-capi-web-destination"
+    ],
+    "включить facebook capi на воронке": [
+      "facebook-capi-web-destination"
+    ],
+    "включить": [
+      "facebook-capi-web-destination"
+    ],
+    "воронке": [
+      "facebook-capi-web-destination"
+    ],
+    "отправлять события в фейсбук с воронки": [
+      "facebook-capi-web-destination"
+    ],
+    "отправлять": [
+      "facebook-capi-web-destination"
+    ],
+    "фейсбук": [
+      "facebook-capi-web-destination"
     ],
     "analytics provider setup": [
       "analytics-add-provider",
@@ -39953,9 +40281,6 @@
       "integrations-analytics-section"
     ],
     "stripe subscriptions": [
-      "help-block-paywall-subscriptions"
-    ],
-    "stripe": [
       "help-block-paywall-subscriptions"
     ],
     "subscriptions": [
@@ -40328,6 +40653,7 @@
     "tiktok events catalog": [
       "analytics-add-provider",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -69591,6 +69917,7 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "help-block-action-bar",
@@ -69666,6 +69993,7 @@
       "collect-email-before-paywall"
     ],
     "capability.connect-analytics": [
+      "facebook-capi-web-destination",
       "facebook-events-catalog",
       "facebook-pixel-capi-setup",
       "tiktok-events-catalog",
@@ -69697,6 +70025,9 @@
   "scenarioIds": {
     "collect-email-before-paywall": [
       "collect-email-before-paywall"
+    ],
+    "forward-fb-events-web-funnel": [
+      "facebook-capi-web-destination"
     ],
     "facebook-events-list": [
       "facebook-events-catalog"

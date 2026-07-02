@@ -6297,6 +6297,14 @@
         "SourceConfig:references/articles/collect-email-before-paywall.json"
       ]
     },
+    "Article:facebook-capi-web-destination": {
+      "ARTICLE_RELATES_TO_SCENARIO": [
+        "Scenario:forward-fb-events-web-funnel"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/facebook-capi-web-destination.json"
+      ]
+    },
     "Article:facebook-events-catalog": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Scenario:facebook-events-list"
@@ -9309,6 +9317,7 @@
       "NEGATIVE_FOR_ARTICLE": [
         "Article:analytics-add-provider",
         "Article:analytics-provider-config",
+        "Article:facebook-capi-web-destination",
         "Article:facebook-events-catalog",
         "Article:facebook-pixel-capi-setup",
         "Article:help-block-action-bar",
@@ -11281,6 +11290,11 @@
         "Workflow:capability.connect-analytics"
       ]
     },
+    "Scenario:forward-fb-events-web-funnel": {
+      "SCENARIO_HAS_WORKFLOW": [
+        "Workflow:capability.connect-analytics"
+      ]
+    },
     "Scenario:launch-paid-funnel-overview": {
       "SCENARIO_HAS_WORKFLOW": [
         "Workflow:capability.first-contact-orientation"
@@ -11440,6 +11454,11 @@
         "Article:collect-email-before-paywall"
       ]
     },
+    "SynonymGroup:facebook-capi-web-destination": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:facebook-capi-web-destination"
+      ]
+    },
     "SynonymGroup:facebook-events-catalog": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "Article:facebook-events-catalog"
@@ -11526,6 +11545,7 @@
         "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
         "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
         "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog",
+        "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
         "WorkflowStep:capability.connect-analytics/tiktok-events-list/tiktok-events-catalog"
       ]
     },
@@ -28197,6 +28217,11 @@
         "CliCapability:webPlacement.configure"
       ]
     },
+    "Scenario:forward-fb-events-web-funnel": {
+      "ARTICLE_RELATES_TO_SCENARIO": [
+        "Article:facebook-capi-web-destination"
+      ]
+    },
     "Scenario:facebook-events-list": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:facebook-events-catalog"
@@ -31445,6 +31470,14 @@
         "Keyword:negative:stripe dashboard setup only"
       ]
     },
+    "Article:facebook-capi-web-destination": {
+      "NEGATIVE_FOR_ARTICLE": [
+        "Keyword:negative:tiktok events catalog"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:facebook-capi-web-destination"
+      ]
+    },
     "Article:facebook-events-catalog": {
       "NEGATIVE_FOR_ARTICLE": [
         "Keyword:negative:tiktok events catalog"
@@ -31492,6 +31525,11 @@
     "SourceConfig:references/articles/collect-email-before-paywall.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:collect-email-before-paywall"
+      ]
+    },
+    "SourceConfig:references/articles/facebook-capi-web-destination.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:facebook-capi-web-destination"
       ]
     },
     "SourceConfig:references/articles/facebook-events-catalog.json": {
@@ -32333,6 +32371,7 @@
         "Scenario:add-fb-pixel",
         "Scenario:add-tiktok-pixel",
         "Scenario:facebook-events-list",
+        "Scenario:forward-fb-events-web-funnel",
         "Scenario:tiktok-events-list"
       ]
     },
@@ -32491,6 +32530,11 @@
       ]
     },
     "WorkflowStep:capability.connect-analytics/facebook-events-list/facebook-events-catalog": {
+      "WORKFLOW_HAS_STEP": [
+        "Workflow:capability.connect-analytics"
+      ]
+    },
+    "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination": {
       "WORKFLOW_HAS_STEP": [
         "Workflow:capability.connect-analytics"
       ]
