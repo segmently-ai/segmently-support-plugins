@@ -5,3 +5,8 @@ interface:
 
 policy:
   allow_implicit_invocation: true
+
+# Subagent role instructions for hosts with multi-agent support live in
+# this directory as *-instructions.md (corpus-search, tool-preflight,
+# browser-show). The orchestrator SKILL.md explains when to spawn them.
+# Only interface/policy/dependencies keys are valid in this manifest.

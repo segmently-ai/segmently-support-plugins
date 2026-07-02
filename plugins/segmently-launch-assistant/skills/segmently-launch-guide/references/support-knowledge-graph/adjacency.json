@@ -6315,7 +6315,8 @@
     },
     "Article:launch-paid-funnel-overview": {
       "ARTICLE_RELATES_TO_SCENARIO": [
-        "Scenario:launch-paid-funnel-overview"
+        "Scenario:launch-paid-funnel-overview",
+        "Scenario:launch-progress"
       ],
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/launch-paid-funnel-overview.json"
@@ -11285,6 +11286,11 @@
         "Workflow:capability.first-contact-orientation"
       ]
     },
+    "Scenario:launch-progress": {
+      "SCENARIO_HAS_WORKFLOW": [
+        "Workflow:capability.production-readiness-preflight"
+      ]
+    },
     "Scenario:paywall-payment-methods": {
       "SCENARIO_HAS_WORKFLOW": [
         "Workflow:capability.attach-products-to-paywall"
@@ -11536,6 +11542,11 @@
     "Workflow:capability.first-contact-orientation": {
       "WORKFLOW_HAS_STEP": [
         "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
+      ]
+    },
+    "Workflow:capability.production-readiness-preflight": {
+      "WORKFLOW_HAS_STEP": [
+        "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
       ]
     }
   },
@@ -28249,6 +28260,11 @@
         "Article:launch-paid-funnel-overview"
       ]
     },
+    "Scenario:launch-progress": {
+      "ARTICLE_RELATES_TO_SCENARIO": [
+        "Article:launch-paid-funnel-overview"
+      ]
+    },
     "Scenario:paywall-payment-methods": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Article:paywall-payment-methods"
@@ -32351,6 +32367,11 @@
         "Scenario:launch-paid-funnel-overview"
       ]
     },
+    "Workflow:capability.production-readiness-preflight": {
+      "SCENARIO_HAS_WORKFLOW": [
+        "Scenario:launch-progress"
+      ]
+    },
     "Action:launch.paywallProducts.create": {
       "STEP_REQUIRES_ACTION": [
         "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods",
@@ -32492,6 +32513,11 @@
     "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview": {
       "WORKFLOW_HAS_STEP": [
         "Workflow:capability.first-contact-orientation"
+      ]
+    },
+    "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview": {
+      "WORKFLOW_HAS_STEP": [
+        "Workflow:capability.production-readiness-preflight"
       ]
     }
   }

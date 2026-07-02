@@ -8,7 +8,7 @@
  * CLI/E2E packages and verification plans.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
-import { existsSync, mkdtempSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -2592,6 +2592,29 @@ check('E2E do prompt returns browser contract and verification-ready package', (
   );
 });
 
+check('launch progress prompt routes to the launch-progress scenario contract', () => {
+  const matrix = JSON.parse(readFileSync(join(root, 'references/scenarios.matrix.json'), 'utf8'));
+  const scenario = matrix.scenarios.find(item => item.id === 'launch-progress');
+  assert(scenario, 'scenarios.matrix.json missing launch-progress scenario');
+  assert(scenario.backend === 'cli', `launch-progress backend must be cli, got ${scenario.backend}`);
+  assert(scenario.verify === 'launch preflight', `launch-progress verify must be launch preflight, got ${scenario.verify}`);
+  assert(scenario.sampleQueries.ru.includes('что осталось до запуска'), 'launch-progress missing RU status phrasing');
+  assert(scenario.article === 'launch-paid-funnel-overview', 'launch-progress must cite the launch overview article');
+});
+
+check('launch progress runner returns honest read-only contract without target inputs', () => {
+  const result = runLaunchProgressRunner(['--contextFile', defaultContextFile]);
+  assert(result.ok === false, 'runner without inputs must not return ok=true');
+  assert(result.mode === 'launch-progress', `expected launch-progress mode, got ${result.mode}`);
+  assert(Array.isArray(result.missingInputs) && result.missingInputs.includes('funnel'), 'runner must report missing funnel input');
+  assert(result.discoveryReads?.some(read => read.includes('funnels list')), 'runner must offer funnels list discovery read');
+  assert(result.completionClaim === 'launch-progress-not-executed', 'runner must not claim execution');
+  assert(result.sessionContext?.schemaVersion === 1, 'runner missing session context contract');
+  const helpText = String(execFileSync('node', [join(root, 'runtime/launch-progress-runner.mjs'), '--help'], { encoding: 'utf8' }));
+  assert(helpText.includes('not checked automatically'), 'runner help must state the not-checked-automatically honesty rule');
+  assert(helpText.includes('launch preflight'), 'runner help must name the wrapped preflight read');
+});
+
 if (failures.length > 0) {
   for (const failure of failures) console.error(failure);
   console.error(`${failures.length} customer-surface acceptance check(s) failed`);
@@ -2606,6 +2629,19 @@ function check(id, fn) {
     console.log(`ok - customer-surface:${id}`);
   } catch (error) {
     failures.push(`not ok - customer-surface:${id}\n  ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+
+function runLaunchProgressRunner(args, env = {}) {
+  const spawned = spawnSync('node', [join(root, 'runtime/launch-progress-runner.mjs'), ...args], {
+    encoding: 'utf8',
+    env: { ...process.env, ...env },
+  });
+  const stdout = spawned.stdout ?? '';
+  try {
+    return JSON.parse(stdout);
+  } catch {
+    throw new Error(`launch-progress-runner did not return JSON: ${stdout.slice(0, 400)}`);
   }
 }
 

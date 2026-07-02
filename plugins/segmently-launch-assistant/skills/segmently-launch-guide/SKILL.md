@@ -121,11 +121,26 @@ in `references/regression-examples.md`.
 
 ## Knowing where the project is — "what's left to launch"
 
-Compose the customer-safe CLI **reads** into a milestone snapshot, then diff it
-against the goal. `references/project-status.md` lists each milestone, the read
-that observes it, and the launch goal it belongs to. Report progress as: done
-milestones, the next missing milestone, and the shortest next action. Do not
-re-do milestones that are already done.
+For "what's left to launch", "launch status", "что осталось до запуска",
+"готова ли воронка к запуску", or a first paid funnel launch request, run the
+packaged read-only progress runner first:
+
+```bash
+node runtime/launch-progress-runner.mjs --funnel <funnelId> --version-id <versionId> --goal ads-ready
+```
+
+It wraps the `segmently launch preflight` checklist and maps the checks onto
+the launch milestones from `references/project-status.md`. Report exactly what
+it returns: done milestones, remaining steps, and its single `nextAction`
+(resolve `actionId` through `runtime/do-action-reference.json`, or open the
+returned `articleAlias`). Milestones in `notCheckedAutomatically` were NOT
+verified — never claim them done; offer their manual read instead. If the
+funnel/version is unknown, use the returned `discoveryReads`
+(`segmently funnels list`) and ask one targeted question.
+
+For manual composition, `references/project-status.md` lists each milestone,
+the read that observes it, and the launch goal it belongs to. Do not re-do
+milestones that are already done.
 
 ## Session project context
 
@@ -145,6 +160,31 @@ and lightweight history — never tokens, credentials, screenshots, or content.
   remaining target inputs.
 - If the request is for a different project, use the explicit project and offer
   to update the saved one.
+
+## Subagent delegation (when the host supports it)
+
+When the host exposes subagents (Claude Code plugin agents; Codex
+`multi_agent`), delegate heavy side work instead of loading it into the main
+conversation:
+
+- `segmently-corpus-search` — resolve a customer intent against the large
+  shipped indexes/knowledge graph; it returns only selected ids + evidence.
+- `segmently-tool-preflight` — run tool/auth/launch-progress preflights and
+  return structured pass/fail results (no token values).
+- `segmently-browser-show` — own the non-mutating headed SHOW session end to
+  end and return the SHOW result contract.
+
+In Claude Code, these plugin agents are available by name. In Codex (or any
+other multi-agent host), spawn a subagent with the matching role instructions
+from this skill's `agents/` directory (`corpus-search-instructions.md`,
+`tool-preflight-instructions.md`, `browser-show-instructions.md`) as its
+task prompt.
+
+Subagents inherit the same boundaries as this skill: read-only, customer-safe,
+no mutation authority — CLI/E2E DO execution stays in the main flow with
+explicit customer approval. When the host has no subagents, do the same work
+inline following the same references; behavior and contracts must be
+identical either way.
 
 ## Host interaction tools
 

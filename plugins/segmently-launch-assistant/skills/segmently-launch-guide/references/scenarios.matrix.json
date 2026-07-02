@@ -559,6 +559,38 @@
       ]
     },
     {
+      "id": "launch-progress",
+      "title": "First paid funnel launch — what is left",
+      "audience": "customer",
+      "capabilityId": "capability.production-readiness-preflight",
+      "milestone": null,
+      "backend": "cli",
+      "verify": "launch preflight",
+      "article": "launch-paid-funnel-overview",
+      "sampleQueries": {
+        "ru": [
+          "что осталось до запуска",
+          "статус запуска",
+          "готова ли воронка к запуску",
+          "проверь прогресс запуска",
+          "запусти мою первую платную воронку со stripe и facebook событиями"
+        ],
+        "en": [
+          "what is left to launch",
+          "launch status",
+          "am I ready to launch",
+          "check my launch progress",
+          "publish my first paid funnel with stripe and facebook events"
+        ]
+      },
+      "evals": [
+        "routing",
+        "backend",
+        "no-leak",
+        "verify"
+      ]
+    },
+    {
       "id": "launch-paid-funnel-overview",
       "title": "The complete order of steps to launch a paid funnel",
       "audience": "customer",

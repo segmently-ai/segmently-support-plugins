@@ -72111,12 +72111,19 @@
         "stripe-payments",
         "analytics-events",
         "flow:capability",
+        "production-readiness-preflight",
         "first-contact-orientation",
-        "The",
-        "capability"
+        "launch-progress",
+        "First",
+        "what",
+        "is",
+        "left",
+        "capability",
+        "The"
       ],
       "negativeKeywords": [],
       "tags": [
+        "flow:capability.production-readiness-preflight",
         "flow:capability.first-contact-orientation",
         "launch-overview",
         "paywall",
@@ -72127,9 +72134,11 @@
       "contentRef": "references/articles/launch-paid-funnel-overview.json",
       "relations": {
         "supportFlowFlows": [
+          "capability.production-readiness-preflight",
           "capability.first-contact-orientation"
         ],
         "scenarioIds": [
+          "launch-progress",
           "launch-paid-funnel-overview"
         ],
         "guideKeys": [],
@@ -72138,7 +72147,7 @@
       },
       "provenance": {
         "sourceFiles": [],
-        "generatedHash": "6b16dce438425c2a",
+        "generatedHash": "89542d4b686a59ee",
         "reachability": "release-gate-required",
         "contentCompleteness": "partial"
       },
@@ -73607,6 +73616,9 @@
       "domain-verification": [
         "integrations-custom-domain-section"
       ],
+      "flow:capability.production-readiness-preflight": [
+        "launch-paid-funnel-overview"
+      ],
       "flow:capability.first-contact-orientation": [
         "launch-paid-funnel-overview"
       ],
@@ -73649,6 +73661,9 @@
       "capability.custom-domain-readiness": [
         "integrations-custom-domain-section"
       ],
+      "capability.production-readiness-preflight": [
+        "launch-paid-funnel-overview"
+      ],
       "capability.first-contact-orientation": [
         "launch-paid-funnel-overview"
       ]
@@ -73677,6 +73692,9 @@
       ],
       "add-custom-domain": [
         "integrations-custom-domain-section"
+      ],
+      "launch-progress": [
+        "launch-paid-funnel-overview"
       ],
       "launch-paid-funnel-overview": [
         "launch-paid-funnel-overview"

@@ -4986,6 +4986,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "launch-paid-funnel-overview",
       "tiktok-events-catalog"
     ],
     "emitted": [
@@ -7472,7 +7473,8 @@
       "help-screen-listsinglepick-elements",
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "launch-paid-funnel-overview"
     ],
     "both": [
       "help-block-action-bar",
@@ -9561,7 +9563,8 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
-      "help-screen-herocontent-detailed"
+      "help-screen-herocontent-detailed",
+      "launch-paid-funnel-overview"
     ],
     "set actionbar primary container prop corner radius": [
       "help-block-action-bar"
@@ -26705,10 +26708,16 @@
     "prerequisites": [
       "launch-paid-funnel-overview"
     ],
+    "production readiness preflight": [
+      "launch-paid-funnel-overview"
+    ],
     "first contact orientation": [
       "launch-paid-funnel-overview"
     ],
     "launch overview": [
+      "launch-paid-funnel-overview"
+    ],
+    "launch progress": [
       "launch-paid-funnel-overview"
     ],
     "paywall payment methods": [
@@ -27833,6 +27842,9 @@
     ],
     "domain-verification": [
       "integrations-custom-domain-section"
+    ],
+    "flow:capability.production-readiness-preflight": [
+      "launch-paid-funnel-overview"
     ],
     "flow:capability.first-contact-orientation": [
       "launch-paid-funnel-overview"
@@ -29462,7 +29474,8 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
-      "integrations-custom-domain-section"
+      "integrations-custom-domain-section",
+      "launch-paid-funnel-overview"
     ],
     "each": [
       "analytics-integration-list",
@@ -30766,6 +30779,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "launch-paid-funnel-overview",
       "tiktok-events-catalog"
     ],
     "emitted": [
@@ -32792,7 +32806,8 @@
       "help-screen-listsinglepick-elements",
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "launch-paid-funnel-overview"
     ],
     "thing": [
       "help-block-background",
@@ -33483,7 +33498,8 @@
     "left": [
       "help-block-basic-config",
       "help-block-flexible-sections",
-      "help-block-paywall-header"
+      "help-block-paywall-header",
+      "launch-paid-funnel-overview"
     ],
     "their": [
       "help-block-basic-config",
@@ -39160,7 +39176,13 @@
     "launch overview": [
       "launch-paid-funnel-overview"
     ],
+    "production readiness preflight": [
+      "launch-paid-funnel-overview"
+    ],
     "first contact orientation": [
+      "launch-paid-funnel-overview"
+    ],
+    "launch progress": [
       "launch-paid-funnel-overview"
     ],
     "paywall payment methods": [
@@ -69665,6 +69687,9 @@
     "capability.custom-domain-readiness": [
       "integrations-custom-domain-section"
     ],
+    "capability.production-readiness-preflight": [
+      "launch-paid-funnel-overview"
+    ],
     "capability.first-contact-orientation": [
       "launch-paid-funnel-overview"
     ]
@@ -69693,6 +69718,9 @@
     ],
     "add-custom-domain": [
       "integrations-custom-domain-section"
+    ],
+    "launch-progress": [
+      "launch-paid-funnel-overview"
     ],
     "launch-paid-funnel-overview": [
       "launch-paid-funnel-overview"

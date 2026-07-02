@@ -323,6 +323,27 @@
     {
       "kind": "scenario",
       "intentPhrases": [
+        "что осталось до запуска",
+        "статус запуска",
+        "готова ли воронка к запуску",
+        "проверь прогресс запуска",
+        "запусти мою первую платную воронку со stripe и facebook событиями",
+        "what is left to launch",
+        "launch status",
+        "am I ready to launch",
+        "check my launch progress",
+        "publish my first paid funnel with stripe and facebook events"
+      ],
+      "mode": "cli",
+      "scenarioId": "launch-progress",
+      "articleAliases": [
+        "launch-paid-funnel-overview"
+      ],
+      "next": "references/scenarios.matrix.json"
+    },
+    {
+      "kind": "scenario",
+      "intentPhrases": [
         "полный порядок шагов для запуска платной воронки",
         "чеклист запуска с оплатой и рекламой",
         "как запустить воронку под рекламу",

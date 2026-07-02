@@ -33215,6 +33215,7 @@
       "title": "Launch a paid funnel you can run ads against: the complete order of steps",
       "oneLineSummary": "Gives the recommended end-to-end order for launching a paid funnel that can receive ad traffic. It covers setup dependencies such as Stripe, paywall products, analytics, onboarding screens, web placement or URL routing, publish verification, and how to avoid skipping payment or tracking prerequisites.",
       "tags": [
+        "flow:capability.production-readiness-preflight",
         "flow:capability.first-contact-orientation",
         "launch-overview",
         "paywall",
@@ -33280,13 +33281,20 @@
         "stripe-payments",
         "analytics-events",
         "flow:capability",
+        "production-readiness-preflight",
         "first-contact-orientation",
-        "The",
-        "capability"
+        "launch-progress",
+        "First",
+        "what",
+        "is",
+        "left",
+        "capability",
+        "The"
       ],
       "subarticles": [],
       "relations": {
         "supportFlowFlows": [
+          "capability.production-readiness-preflight",
           "capability.first-contact-orientation"
         ],
         "guideKeys": [],
