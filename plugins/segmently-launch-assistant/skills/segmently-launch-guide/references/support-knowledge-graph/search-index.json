@@ -7899,6 +7899,7 @@
       "SynonymGroup:change-funnel-font",
       "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:launch-publish-funnel",
+      "SynonymGroup:sync-strategy-onboarding",
       "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
       "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
@@ -12782,6 +12783,7 @@
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
+      "SynonymGroup:sync-strategy-onboarding",
       "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
       "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup"
     ],
@@ -21994,7 +21996,8 @@
       "CliCapability:contentPlan.strategy.audit"
     ],
     "strategy": [
-      "CliCapability:contentPlan.strategy.audit"
+      "CliCapability:contentPlan.strategy.audit",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "audit": [
       "CliCapability:contentPlan.strategy.audit"
@@ -22625,7 +22628,8 @@
       "Subarticle:help-options-grid-single#set-options-checkboxcontainer-prop-show-checkbox"
     ],
     "changes": [
-      "CliCapability:funnel.v2.screen.apply"
+      "CliCapability:funnel.v2.screen.apply",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "simplified": [
       "CliCapability:funnel.v2.screen.apply"
@@ -22983,7 +22987,8 @@
       "Guide:onboarding-wizard-theme-customize",
       "Guide:onboarding-wizard-theme-select",
       "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png",
-      "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164732_open-wizard-wizard-field-name/origin.png"
+      "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164732_open-wizard-wizard-field-name/origin.png",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "create onboarding wizard": [
       "E2eScenario:create-onboarding-wizard"
@@ -26263,7 +26268,8 @@
       "Subarticle:help-block-custom-html#set-embed-isiframe-img",
       "Subarticle:help-block-header#screenedit-header-progress-respect-buttons/field",
       "Subarticle:help-block-header#set-headerbar-progressindicator-respectbutton",
-      "Subarticle:help-block-header#set-headerbar-progressindicator-respectbutton-img"
+      "Subarticle:help-block-header#set-headerbar-progressindicator-respectbutton-img",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "sandboxed": [
       "Guide:screenedit-embed-iframe-isolation",
@@ -51835,7 +51841,8 @@
     ],
     "воронки": [
       "SynonymGroup:change-funnel-font",
-      "SynonymGroup:facebook-capi-web-destination"
+      "SynonymGroup:facebook-capi-web-destination",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "кастомный": [
       "SynonymGroup:change-funnel-font",
@@ -51991,7 +51998,8 @@
       "SynonymGroup:launch-publish-funnel"
     ],
     "воронку": [
-      "SynonymGroup:launch-publish-funnel"
+      "SynonymGroup:launch-publish-funnel",
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "опубликовать": [
       "SynonymGroup:launch-publish-funnel"
@@ -52140,6 +52148,81 @@
     ],
     "тарифы": [
       "SynonymGroup:stripe-subscriptions"
+    ],
+    "synonymgroup:sync strategy onboarding": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "sync strategy onboarding": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "sync": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "push": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "edits": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "don": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "overwrite": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "lift": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "pull": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "into": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "compile": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "resolve": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "conflict": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "take": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "out": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "синхронизировать": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "стратегию": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "обновить": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "перезаписать": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "правки": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "перенести": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "онбординг": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "strategy onboarding sync": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "canvas editor": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "conflict resolution": [
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "synonymgroup:tiktok events": [
       "SynonymGroup:tiktok-events"
@@ -63208,6 +63291,15 @@
       "SynonymGroup:product-description-label",
       "SynonymGroup:selected-product"
     ],
+    "strategy-onboarding-sync": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "canvas-editor": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "conflict-resolution": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
     "tiktok": [
       "SynonymGroup:tiktok-events"
     ],
@@ -63677,6 +63769,57 @@
     ],
     "subscription options": [
       "SynonymGroup:stripe-subscriptions"
+    ],
+    "sync-strategy-onboarding": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "sync strategy to funnel": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "sync my funnel": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "push strategy changes": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "push strategy to onboarding": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "keep my funnel edits": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "don't overwrite my funnel edits": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "lift funnel to strategy": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "pull funnel into strategy": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "compile strategy to funnel": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "resolve sync conflict": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "keep funnel or take strategy": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "strategy and funnel out of sync": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "синхронизировать стратегию": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "обновить воронку": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "не перезаписать правки воронки": [
+      "SynonymGroup:sync-strategy-onboarding"
+    ],
+    "перенести стратегию в онбординг": [
+      "SynonymGroup:sync-strategy-onboarding"
     ],
     "tiktok-events": [
       "SynonymGroup:tiktok-events"

@@ -361,6 +361,12 @@
       "summary": "Shows how to connect TikTok analytics to Segmently by configuring the TikTok Pixel and Events API credentials, then verifying that funnel events can be sent. Use this for setup questions about TikTok Pixel, Events API tokens, provider configuration, and analytics readiness.",
       "keywords": ["tiktok pixel setup", "tiktok events api setup", "events api token", "analytics provider", "pixel id"],
       "tags": ["tiktok-events", "analytics-events", "provider-setup"]
+    },
+    {
+      "articleAlias": "help-strategy-onboarding-sync",
+      "summary": "Explains how to keep a strategy and its compiled onboarding funnel in sync from the canvas editor's Actions menu. Covers Compile (turn a strategy into a new funnel, with a theme and a preview before the real run), Push (send strategy changes into the linked funnel with a three-way merge where screens edited on both sides are preserved, so hand-made funnel edits are kept by default), the per-screen Keep funnel / Take strategy conflict switch, the create/replace/preserve/delete actions and the “no baseline — will overwrite” warning, variable resolutions (preserve, overwrite, fork to keep both, drop), AI image alternates, Pull (bring one funnel block back into the strategy), and Lift (rebuild a strategy from a funnel version) with placing loose screens into existing or new blocks. Also notes the nothing-to-sync and error states and the equivalent CLI verbs. Use this when customers ask how to push strategy changes to their funnel without losing edits, how to pull or lift funnel changes back into a strategy, how sync conflicts are resolved, or why a sync preserved a screen instead of overwriting it.",
+      "keywords": ["strategy", "onboarding", "funnel", "sync", "compile", "push", "pull", "lift", "conflict", "three-way merge", "resolutions", "variables", "loose screens", "keep funnel", "take strategy"],
+      "tags": ["strategy-onboarding-sync", "canvas-editor", "conflict-resolution"]
     }
   ]
 }

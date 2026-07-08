@@ -32,8 +32,32 @@ Just author preview files with the marker — explicit `register_assets` is **no
 
 ## Assemble the bundle (local dir)
 
-Build a local directory (e.g. an `exports/claude-design-bundle/` folder) of static preview
-HTML, one card per concept. Sources:
+**Preferred: generate the bundle with the CLI** — `segmently design snapshot` renders a
+ready-to-push flat bundle (real SSR screen HTML + token cards, each file starting with its
+`@dsCard` marker) straight from a saved theme or live funnel screens:
+
+```bash
+segmently design snapshot [projectId] --out <dir>                                  # active project theme
+segmently design snapshot [projectId] --project-theme-id <id> --out <dir>          # specific project theme
+segmently design snapshot [projectId] --funnel <funnelId> --out <dir>              # onboarding theme snapshot
+segmently design snapshot [projectId] --funnel <fid> --version-id <vid> --all-screens --out <dir>  # live screens
+```
+
+The bundle contains `screen-<kind>[__<subtype>].html` (group `Screens`, full standalone
+script-free HTML with inlined runtime CSS — renders pixel-faithfully in the design pane; each
+card carries the `--tv-*` round-trip token contract in `:root` + an identity `<meta>`),
+`colors.html` / `type.html` / `spacing.html` / `screens.html` / `how-to-edit.html` cards, plus
+`settings.json` (theme + per-screen tokens + `tokenIndex`) and `manifest.json` (source
+coordinates for reconcile). Push the HTML cards INCLUDING `how-to-edit.html` (it is the editing
+contract for the design side); the JSON files are useful provenance. Changes made in Claude Design
+come back via `design extract` / `design apply` — see Workflow 5
+[capture-design-system.md](capture-design-system.md) Step C. Requires the account to expose the
+`segmently design snapshot`, `segmently design extract`, and `segmently design apply` commands.
+If those commands are unavailable, stop and ask Segmently support to confirm the round-trip feature
+is enabled before continuing.
+
+Fallback — hand-build a local directory (e.g. `exports/claude-design-bundle/`) of static
+preview HTML, one card per concept. Sources:
 
 - **Tokens** → from your active Theme V2 (`colors`, `fonts`, `optionsListSettings`, `layoutSettings`
   spacing/radius). Render simple swatch/type/spacing preview cards. The token shape is documented in

@@ -1,6 +1,6 @@
 {
   "name": "segmently-launch-assistant",
-  "version": "0.1.0+codex.e79bd9297b06",
+  "version": "0.1.0+codex.21604ae16626",
   "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
   "author": {
     "name": "Segmently"

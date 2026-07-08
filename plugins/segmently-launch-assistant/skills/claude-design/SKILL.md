@@ -77,7 +77,7 @@ artifact preparation.
 | Turn Claude Design **onboarding screen HTML** into Segmently **custom screens** | Claude Design → Segmently | [references/import-custom-screens.md](references/import-custom-screens.md) |
 | Land Claude Design HTML as a **CustomEmbed section** inside an existing **FlexibleLayout** screen (e.g. a plan-picker inside a paywall) | Claude Design → Segmently | [references/import-section-embed.md](references/import-section-embed.md) |
 | Turn Claude Design output into a Segmently **native Theme V2** | Claude Design → Segmently | [references/import-native-theme.md](references/import-native-theme.md) |
-| **Capture** your design system into Claude Design, then **extract** a reference-app screenshot back as Theme V2 tokens (round-trip) | Segmently ↔ Claude Design | [references/capture-design-system.md](references/capture-design-system.md) |
+| **Round-trip a Theme V2** — snapshot it into editable Claude Design cards, edit there, read the changes back and apply them to the theme (the deterministic `--tv-*` token contract; also covers filling a theme from a reference screenshot) | Segmently ↔ Claude Design | [references/capture-design-system.md](references/capture-design-system.md) |
 
 If the design source is **Figma**, stop and route to the figma skills (theme, native StepNode
 screens, or WebEmbed via `segmently-cli-figma-webembed-import`). If the task

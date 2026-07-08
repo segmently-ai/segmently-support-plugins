@@ -378,6 +378,35 @@
         "tiktok-events-catalog",
         "tiktok-pixel-events-api-setup"
       ]
+    },
+    {
+      "id": "sync-strategy-onboarding",
+      "phrases": [
+        "sync strategy to funnel",
+        "sync my funnel",
+        "push strategy changes",
+        "push strategy to onboarding",
+        "keep my funnel edits",
+        "don't overwrite my funnel edits",
+        "lift funnel to strategy",
+        "pull funnel into strategy",
+        "compile strategy to funnel",
+        "resolve sync conflict",
+        "keep funnel or take strategy",
+        "strategy and funnel out of sync",
+        "синхронизировать стратегию",
+        "обновить воронку",
+        "не перезаписать правки воронки",
+        "перенести стратегию в онбординг"
+      ],
+      "tags": [
+        "strategy-onboarding-sync",
+        "canvas-editor",
+        "conflict-resolution"
+      ],
+      "articleAliases": [
+        "help-strategy-onboarding-sync"
+      ]
     }
   ]
 }

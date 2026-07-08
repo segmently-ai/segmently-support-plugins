@@ -188,11 +188,12 @@ in normal customer prose, cite the human guide name and `articleAlias` instead.
 ## Claude Design routing
 
 If the customer mentions Claude Design, `claude.ai/design`, `/design`,
-`/design-sync`, `/design-login`, a `*.dc.html` file from Claude Design, or a
-"Send to Claude Code" handoff, route to `claude-design` first. Do not answer as
-generic WebEmbed/Figma import only.
+`/design-sync`, `/design-login`, a `*.dc.html` file from Claude Design, a
+"Send to Claude Code" handoff, or sending a Segmently Theme V2/project design
+into Claude Design, route to `claude-design` first. Do not answer as generic
+WebEmbed/Figma import only.
 
-For Segmently application, explain the two-stage owner split:
+For Claude Design imports into Segmently, explain the two-stage owner split:
 
 1. `claude-design` pulls/reviews the Claude Design project, chooses the right
    workflow, and produces validated HTML/theme/custom-screen handoff artifacts.
@@ -204,6 +205,13 @@ Ask for the Claude Design project URL or exported HTML, plus Segmently target
 context: project, funnel/onboarding, version/draft, and whether to create a new
 screen or replace/update an existing one. Do not claim the import is done until
 the design pull/apply/healthcheck/verification steps actually run.
+
+For Segmently to Claude Design push or Theme V2 round-trip requests, ask for
+the Segmently source first: project id/link plus the project theme, onboarding
+theme, global theme, or funnel version/screens to snapshot. Also ask for the
+Claude Design destination project, or whether to create one. If the customer
+wants changes applied back to Segmently, `claude-design` owns the
+snapshot/push/pull/extract/apply workflow and must dry-run before any apply.
 
 Keep the first answer customer-facing. Do not mention Shadow DOM internals,
 generated Button/SingleSelectionList implementation details, or SDK callback

@@ -264,7 +264,7 @@ customer skill and let it own the command shape:
 | Funnel create / theme / screens / variables / conditions / analytics / domains / web placement / publish / verify | `segmently-cli-guide` |
 | Sandbox Stripe paywall products + A/B | `segmently-cli-paywall-ab-rollout` |
 | Custom WebEmbed screens | `segmently-cli-custom-screen-guide` (+ `segmently-cli-figma-webembed-import`) |
-| Claude Design imports / `claude.ai/design` handoff | `claude-design` first, then `segmently-cli-custom-screen-guide` for Segmently apply and healthcheck |
+| Claude Design imports, `claude.ai/design` handoff, or sending a Segmently Theme V2/project design to Claude Design | `claude-design` first; it selects import, push, or round-trip workflow, then delegates Segmently apply/healthcheck only when that workflow needs it |
 | Help / content-plan articles | `segmently-cli-articles` (+ `segmently-cli-content-plan-guide`) |
 | Image uploads to the CDN | `segmently-cli-image-upload` |
 | Product page / insights | `segmently-product-cli-guide` |
