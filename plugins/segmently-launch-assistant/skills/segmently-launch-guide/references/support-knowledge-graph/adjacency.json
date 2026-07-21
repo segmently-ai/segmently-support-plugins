@@ -5656,6 +5656,88 @@
         "SourceConfig:references/articles/analytics-provider-config.json"
       ]
     },
+    "Article:canvas-add-screen": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:canvas-add-screen#canvas-add-screen/drag",
+        "Subarticle:canvas-add-screen#canvas-add-screen/search",
+        "Subarticle:canvas-add-screen#canvas-add-screen/template-panel",
+        "Subarticle:canvas-add-screen#canvas-add-screen/types",
+        "Subarticle:canvas-add-screen#canvas-add-screen/unique-naming"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:canvas-add-screen"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-add-screen.json"
+      ]
+    },
+    "Article:canvas-connect-screens": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/connection-handles",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/create-default-edge",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/delete-connection",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/edit-conditions",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/flexible-layout-handles",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/timer-auto-advance",
+        "Subarticle:canvas-connect-screens#canvas-connect-screens/validation"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:canvas-connect-screens"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-connect-screens.json"
+      ]
+    },
+    "Article:canvas-overview": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:canvas-overview#canvas-overview/canvas-controls",
+        "Subarticle:canvas-overview#canvas-overview/canvas-display",
+        "Subarticle:canvas-overview#canvas-overview/launch-screen",
+        "Subarticle:canvas-overview#canvas-overview/navigate"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:canvas-overview"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-overview.json"
+      ]
+    },
+    "Article:custom-domain-dns-setup": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-1",
+        "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:custom-domain-dns-setup"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/custom-domain-dns-setup.json"
+      ]
+    },
+    "Article:custom-domain-domain-input": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1",
+        "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:custom-domain-domain-input"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/custom-domain-domain-input.json"
+      ]
+    },
+    "Article:custom-domain-verification": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
+        "Subarticle:custom-domain-verification#custom-domain-verification/section-2"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:custom-domain-verification"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/custom-domain-verification.json"
+      ]
+    },
     "Article:help-block-background": {
       "ARTICLE_HAS_SUBARTICLE": [
         "Subarticle:help-block-background#screen-editor-section-background/section",
@@ -6289,6 +6371,268 @@
         "SourceConfig:references/articles/integrations-custom-domain-section.json"
       ]
     },
+    "Article:integrations-stripe-connect-section": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/oauth-prerequisites",
+        "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/overview"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:integrations-stripe-connect-section"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/integrations-stripe-connect-section.json"
+      ]
+    },
+    "Article:onboarding-list-create": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:onboarding-list-create#onboarding-list-create/create-button",
+        "Subarticle:onboarding-list-create#onboarding-list-create/naming"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:onboarding-list-create"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-list-create.json"
+      ]
+    },
+    "Article:onboarding-wizard-basic-info": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/default-language",
+        "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/folder",
+        "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/locales",
+        "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/name",
+        "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/platform"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:onboarding-wizard-basic-info"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-basic-info.json"
+      ]
+    },
+    "Article:onboarding-wizard-theme-customize": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/action-bar",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/backdrop",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/colors",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/create",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/fonts",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/header",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/live-preview",
+        "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/options-list"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:onboarding-wizard-theme-customize"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-theme-customize.json"
+      ]
+    },
+    "Article:onboarding-wizard-theme-select": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:onboarding-wizard-theme-select#onboarding-wizard-theme-select/reusability",
+        "Subarticle:onboarding-wizard-theme-select#onboarding-wizard-theme-select/theme-grid"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:onboarding-wizard-theme-select"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-theme-select.json"
+      ]
+    },
+    "Article:paywall-product-basic-fields": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/checkout-mode",
+        "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/description",
+        "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/product-name",
+        "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/product-type",
+        "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/stripe-mode"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-product-basic-fields"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-basic-fields.json"
+      ]
+    },
+    "Article:paywall-product-price-setup": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-product-price-setup#paywall-product-price-setup/additional-currencies",
+        "Subarticle:paywall-product-price-setup#paywall-product-price-setup/price-amount-currency",
+        "Subarticle:paywall-product-price-setup#paywall-product-price-setup/price-type-interval"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-product-price-setup"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-price-setup.json"
+      ]
+    },
+    "Article:paywall-product-stripe-mapping": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-price-select",
+        "Subarticle:paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-product-select"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-product-stripe-mapping"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-stripe-mapping.json"
+      ]
+    },
+    "Article:paywall-product-subscription-options": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/billing-interval",
+        "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/free-trial-days",
+        "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/paid-trial",
+        "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/trial-fee-price"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-product-subscription-options"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-subscription-options.json"
+      ]
+    },
+    "Article:paywall-products-list": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-products-list#paywall-products-list/modes-separate",
+        "Subarticle:paywall-products-list#paywall-products-list/products-list"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-products-list"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-products-list.json"
+      ]
+    },
+    "Article:paywall-products-mode-tabs": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:paywall-products-mode-tabs#paywall-products-mode-tabs/mode-tabs",
+        "Subarticle:paywall-products-mode-tabs#paywall-products-mode-tabs/publish-dependency"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:paywall-products-mode-tabs"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-products-mode-tabs.json"
+      ]
+    },
+    "Article:screen-editor-action-button": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/layout",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-label",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-styles",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-visibility",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-optional",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-styles",
+        "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-visibility"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:screen-editor-action-button"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/screen-editor-action-button.json"
+      ]
+    },
+    "Article:screen-editor-overview": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:screen-editor-overview#screen-editor-overview/right-panel-nav",
+        "Subarticle:screen-editor-overview#screen-editor-overview/section-ordering",
+        "Subarticle:screen-editor-overview#screen-editor-overview/shared-vs-unique",
+        "Subarticle:screen-editor-overview#screen-editor-overview/variable-binding"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:screen-editor-overview"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/screen-editor-overview.json"
+      ]
+    },
+    "Article:stripe-connect-live-mode": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/connect-live",
+        "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/live-account-status",
+        "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/live-mode-decision"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:stripe-connect-live-mode"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/stripe-connect-live-mode.json"
+      ]
+    },
+    "Article:stripe-connect-oauth-guidance": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
+        "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-troubleshooting",
+        "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-why-two"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:stripe-connect-oauth-guidance"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/stripe-connect-oauth-guidance.json"
+      ]
+    },
+    "Article:stripe-connect-test-mode": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:stripe-connect-test-mode#stripe-connect-test-mode/connect-test",
+        "Subarticle:stripe-connect-test-mode#stripe-connect-test-mode/test-account-status"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:stripe-connect-test-mode"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/stripe-connect-test-mode.json"
+      ]
+    },
+    "Article:webplacement-entry-rules": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/add-rule",
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/delete",
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/match-value",
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/select-param",
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/target-screen",
+        "Subarticle:webplacement-entry-rules#webplacement-entry-rules/toggle"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:webplacement-entry-rules"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-entry-rules.json"
+      ]
+    },
+    "Article:webplacement-publish-url": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:webplacement-publish-url#webplacement-publish-url/cloud-url",
+        "Subarticle:webplacement-publish-url#webplacement-publish-url/copy",
+        "Subarticle:webplacement-publish-url#webplacement-publish-url/local-dev",
+        "Subarticle:webplacement-publish-url#webplacement-publish-url/open-browser",
+        "Subarticle:webplacement-publish-url#webplacement-publish-url/smoke-test"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:webplacement-publish-url"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-publish-url.json"
+      ]
+    },
+    "Article:webplacement-stripe-metadata": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/add-param",
+        "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/counter",
+        "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/preview",
+        "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/remove",
+        "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/select-source"
+      ],
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Guide:webplacement-stripe-metadata"
+      ],
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-stripe-metadata.json"
+      ]
+    },
     "Article:collect-email-before-paywall": {
       "ARTICLE_RELATES_TO_SCENARIO": [
         "Scenario:collect-email-before-paywall"
@@ -6545,16 +6889,25 @@
     "Guide:canvas-add-screen": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:canvas-add-screen"
       ]
     },
     "Guide:canvas-connect-screens": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:canvas-connect-screens"
       ]
     },
     "Guide:canvas-overview": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151500_open-canvas-canvas-overview/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:canvas-overview"
       ]
     },
     "Guide:integrations-analytics-section": {
@@ -6568,11 +6921,17 @@
     "Guide:integrations-stripe-connect-section": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:integrations-stripe-connect-section"
       ]
     },
     "Guide:onboarding-list-create": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:onboarding-list-create"
       ]
     },
     "Guide:onboarding-wizard-basic-info": {
@@ -6581,31 +6940,49 @@
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164733_open-wizard-wizard-field-platform/origin.png",
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164734_open-wizard-wizard-field-default-language/origin.png",
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164735_open-wizard-wizard-field-locales/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:onboarding-wizard-basic-info"
       ]
     },
     "Guide:onboarding-wizard-theme-customize": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151454_customize-wizard-theme-wizard-theme-customize/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
       ]
     },
     "Guide:onboarding-wizard-theme-select": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151453_select-wizard-theme-wizard-theme-selection/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:onboarding-wizard-theme-select"
       ]
     },
     "Guide:paywall-products-list": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-products-list"
       ]
     },
     "Guide:screen-editor-action-button": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151504_edit-button-text-button-text-field/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:screen-editor-action-button"
       ]
     },
     "Guide:screen-editor-overview": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151503_open-editor-editor-context/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:screen-editor-overview"
       ]
     },
     "Guide:screen-editor-section-action-bar": {
@@ -8782,36 +9159,94 @@
     "Guide:stripe-connect-live-mode": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:stripe-connect-live-mode"
       ]
     },
     "Guide:stripe-connect-oauth-guidance": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:stripe-connect-oauth-guidance"
       ]
     },
     "Guide:stripe-connect-test-mode": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:stripe-connect-test-mode"
       ]
     },
     "Guide:webplacement-entry-rules": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151505_open-entry-rules-entry-rules/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:webplacement-entry-rules"
       ]
     },
     "Guide:webplacement-publish-url": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151507_open-web-placements-publish-url-controls/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:webplacement-publish-url"
       ]
     },
     "Guide:webplacement-stripe-metadata": {
       "GUIDE_HAS_SCREENSHOT": [
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
+      ],
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
+    "Guide:custom-domain-dns-setup": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:custom-domain-dns-setup"
+      ]
+    },
+    "Guide:custom-domain-domain-input": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:custom-domain-domain-input"
+      ]
+    },
+    "Guide:custom-domain-verification": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:custom-domain-verification"
       ]
     },
     "Guide:integrations-custom-domain-section": {
       "GUIDE_REFERENCES_ARTICLE": [
         "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Guide:paywall-product-basic-fields": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Guide:paywall-product-price-setup": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-product-price-setup"
+      ]
+    },
+    "Guide:paywall-product-stripe-mapping": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-product-stripe-mapping"
+      ]
+    },
+    "Guide:paywall-product-subscription-options": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Guide:paywall-products-mode-tabs": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Article:paywall-products-mode-tabs"
       ]
     },
     "Guide:screen-editor-section-carousel": {
@@ -9299,6 +9734,7 @@
     },
     "Keyword:negative:ordinary paywall only": {
       "NEGATIVE_FOR_ARTICLE": [
+        "Article:canvas-connect-screens",
         "Article:help-block-background",
         "Article:help-block-flexible-sections",
         "Article:help-block-sticky-container",
@@ -9307,6 +9743,7 @@
     },
     "Keyword:negative:stripe dashboard setup only": {
       "NEGATIVE_FOR_ARTICLE": [
+        "Article:canvas-connect-screens",
         "Article:help-block-background",
         "Article:help-block-flexible-sections",
         "Article:help-block-sticky-container",
@@ -9331,6 +9768,8 @@
         "Article:help-block-sticky-container",
         "Article:help-options-grid-multi",
         "Article:help-options-grid-single",
+        "Article:onboarding-wizard-theme-customize",
+        "Article:paywall-product-price-setup",
         "Article:tiktok-events-catalog",
         "Article:tiktok-pixel-events-api-setup"
       ]
@@ -9338,6 +9777,66 @@
     "Article:help-fonts-typography": {
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/help-fonts-typography.json"
+      ]
+    },
+    "Article:help-strategy-onboarding-sync": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095132_sync-02-actions-menu/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095136_sync-14-compile-plan-step/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095140_sync-10-push-plan-diff-table/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095144_sync-11-push-plan-resolutions/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095147_sync-15-lift-loose-suggested/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095149_sync-block-actions-menu/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/help-strategy-onboarding-sync.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/custom-domain-dns-setup.json",
+        "SourceConfig:references/articles/custom-domain-domain-input.json",
+        "SourceConfig:references/articles/custom-domain-verification.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-basic-fields.json",
+        "SourceConfig:references/articles/paywall-product-stripe-mapping.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-price-setup.json",
+        "SourceConfig:references/articles/paywall-product-stripe-mapping.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-stripe-mapping.json",
+        "SourceConfig:references/articles/paywall-product-subscription-options.json"
       ]
     },
     "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/support-flow/flexible-layout-linked-product-labels/20260701092735_default-product-labels/origin.png": {
@@ -9355,6 +9854,24 @@
         "SourceConfig:references/articles/help-block-flexible-sections.json"
       ]
     },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151453_select-wizard-theme-wizard-theme-selection/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-theme-select.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151454_customize-wizard-theme-wizard-theme-customize/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-theme-customize.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/integrations-stripe-connect-section.json",
+        "SourceConfig:references/articles/stripe-connect-live-mode.json",
+        "SourceConfig:references/articles/stripe-connect-oauth-guidance.json",
+        "SourceConfig:references/articles/stripe-connect-test-mode.json"
+      ]
+    },
     "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151456_expand-analytics-analytics-section/origin.png": {
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/analytics-integration-list.json",
@@ -9365,6 +9882,78 @@
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/analytics-add-provider.json",
         "SourceConfig:references/articles/analytics-provider-config.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/paywall-product-stripe-mapping.json",
+        "SourceConfig:references/articles/paywall-products-list.json",
+        "SourceConfig:references/articles/paywall-products-mode-tabs.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151500_open-canvas-canvas-overview/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-overview.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-add-screen.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/canvas-connect-screens.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151503_open-editor-editor-context/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/screen-editor-overview.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151504_edit-button-text-button-text-field/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/screen-editor-action-button.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151505_open-entry-rules-entry-rules/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-entry-rules.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-stripe-metadata.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151507_open-web-placements-publish-url-controls/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/webplacement-publish-url.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-list-create.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164732_open-wizard-wizard-field-name/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-basic-info.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164733_open-wizard-wizard-field-platform/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-basic-info.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164734_open-wizard-wizard-field-default-language/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-basic-info.json"
+      ]
+    },
+    "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164735_open-wizard-wizard-field-locales/origin.png": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "SourceConfig:references/articles/onboarding-wizard-basic-info.json"
       ]
     },
     "Media:https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150130_webembed-iframe-toggle-data-sources/origin.png": {
@@ -11441,6 +12030,9 @@
     },
     "SynonymGroup:custom-domain": {
       "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:custom-domain-dns-setup",
+        "Article:custom-domain-domain-input",
+        "Article:custom-domain-verification",
         "Article:integrations-custom-domain-section"
       ]
     },
@@ -11504,7 +12096,16 @@
     },
     "SynonymGroup:stripe-subscriptions": {
       "SYNONYM_POINTS_TO_ARTICLE": [
-        "Article:help-block-paywall-subscriptions"
+        "Article:help-block-paywall-subscriptions",
+        "Article:integrations-stripe-connect-section",
+        "Article:paywall-product-subscription-options",
+        "Article:paywall-products-list",
+        "Article:stripe-connect-oauth-guidance"
+      ]
+    },
+    "SynonymGroup:sync-strategy-onboarding": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "Article:help-strategy-onboarding-sync"
       ]
     },
     "SynonymGroup:tiktok-events": {
@@ -14074,6 +14675,116 @@
     "Subarticle:analytics-provider-config#analytics-provider-config/tiktok": {
       "ARTICLE_HAS_SUBARTICLE": [
         "Article:analytics-provider-config"
+      ]
+    },
+    "Subarticle:canvas-add-screen#canvas-add-screen/drag": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Subarticle:canvas-add-screen#canvas-add-screen/search": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Subarticle:canvas-add-screen#canvas-add-screen/template-panel": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Subarticle:canvas-add-screen#canvas-add-screen/types": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Subarticle:canvas-add-screen#canvas-add-screen/unique-naming": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/connection-handles": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/create-default-edge": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/delete-connection": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/edit-conditions": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/flexible-layout-handles": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/timer-auto-advance": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-connect-screens#canvas-connect-screens/validation": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Subarticle:canvas-overview#canvas-overview/canvas-controls": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-overview"
+      ]
+    },
+    "Subarticle:canvas-overview#canvas-overview/canvas-display": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-overview"
+      ]
+    },
+    "Subarticle:canvas-overview#canvas-overview/launch-screen": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-overview"
+      ]
+    },
+    "Subarticle:canvas-overview#canvas-overview/navigate": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:canvas-overview"
+      ]
+    },
+    "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-1": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-dns-setup"
+      ]
+    },
+    "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-dns-setup"
+      ]
+    },
+    "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-domain-input"
+      ]
+    },
+    "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-domain-input"
+      ]
+    },
+    "Subarticle:custom-domain-verification#custom-domain-verification/section-1": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-verification"
+      ]
+    },
+    "Subarticle:custom-domain-verification#custom-domain-verification/section-2": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:custom-domain-verification"
       ]
     },
     "Subarticle:help-block-action-bar#g-primary-el": {
@@ -27371,6 +28082,366 @@
         "Article:integrations-custom-domain-section"
       ]
     },
+    "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/oauth-prerequisites": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-stripe-connect-section"
+      ]
+    },
+    "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/overview": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-stripe-connect-section"
+      ]
+    },
+    "Subarticle:onboarding-list-create#onboarding-list-create/create-button": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-list-create"
+      ]
+    },
+    "Subarticle:onboarding-list-create#onboarding-list-create/naming": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-list-create"
+      ]
+    },
+    "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/default-language": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/folder": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/locales": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/name": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/platform": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/action-bar": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/backdrop": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/colors": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/create": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/fonts": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/header": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/live-preview": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/options-list": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-select#onboarding-wizard-theme-select/reusability": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-select"
+      ]
+    },
+    "Subarticle:onboarding-wizard-theme-select#onboarding-wizard-theme-select/theme-grid": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:onboarding-wizard-theme-select"
+      ]
+    },
+    "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/checkout-mode": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/description": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/product-name": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/product-type": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Subarticle:paywall-product-basic-fields#paywall-product-basic-fields/stripe-mode": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Subarticle:paywall-product-price-setup#paywall-product-price-setup/additional-currencies": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-price-setup"
+      ]
+    },
+    "Subarticle:paywall-product-price-setup#paywall-product-price-setup/price-amount-currency": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-price-setup"
+      ]
+    },
+    "Subarticle:paywall-product-price-setup#paywall-product-price-setup/price-type-interval": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-price-setup"
+      ]
+    },
+    "Subarticle:paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-price-select": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-stripe-mapping"
+      ]
+    },
+    "Subarticle:paywall-product-stripe-mapping#paywall-product-stripe-mapping/stripe-product-select": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-stripe-mapping"
+      ]
+    },
+    "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/billing-interval": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/free-trial-days": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/paid-trial": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Subarticle:paywall-product-subscription-options#paywall-product-subscription-options/trial-fee-price": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Subarticle:paywall-products-list#paywall-products-list/modes-separate": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-products-list"
+      ]
+    },
+    "Subarticle:paywall-products-list#paywall-products-list/products-list": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-products-list"
+      ]
+    },
+    "Subarticle:paywall-products-mode-tabs#paywall-products-mode-tabs/mode-tabs": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-products-mode-tabs"
+      ]
+    },
+    "Subarticle:paywall-products-mode-tabs#paywall-products-mode-tabs/publish-dependency": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:paywall-products-mode-tabs"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/layout": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-label": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-styles": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/primary-visibility": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-optional": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-styles": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-action-button#screen-editor-action-button/secondary-visibility": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Subarticle:screen-editor-overview#screen-editor-overview/right-panel-nav": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-overview"
+      ]
+    },
+    "Subarticle:screen-editor-overview#screen-editor-overview/section-ordering": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-overview"
+      ]
+    },
+    "Subarticle:screen-editor-overview#screen-editor-overview/shared-vs-unique": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-overview"
+      ]
+    },
+    "Subarticle:screen-editor-overview#screen-editor-overview/variable-binding": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:screen-editor-overview"
+      ]
+    },
+    "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/connect-live": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-live-mode"
+      ]
+    },
+    "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/live-account-status": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-live-mode"
+      ]
+    },
+    "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/live-mode-decision": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-live-mode"
+      ]
+    },
+    "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-oauth-guidance"
+      ]
+    },
+    "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-troubleshooting": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-oauth-guidance"
+      ]
+    },
+    "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-why-two": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-oauth-guidance"
+      ]
+    },
+    "Subarticle:stripe-connect-test-mode#stripe-connect-test-mode/connect-test": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-test-mode"
+      ]
+    },
+    "Subarticle:stripe-connect-test-mode#stripe-connect-test-mode/test-account-status": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:stripe-connect-test-mode"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/add-rule": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/delete": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/match-value": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/select-param": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/target-screen": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-entry-rules#webplacement-entry-rules/toggle": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Subarticle:webplacement-publish-url#webplacement-publish-url/cloud-url": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Subarticle:webplacement-publish-url#webplacement-publish-url/copy": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Subarticle:webplacement-publish-url#webplacement-publish-url/local-dev": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Subarticle:webplacement-publish-url#webplacement-publish-url/open-browser": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Subarticle:webplacement-publish-url#webplacement-publish-url/smoke-test": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/add-param": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
+    "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/counter": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
+    "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/preview": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
+    "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/remove": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
+    "Subarticle:webplacement-stripe-metadata#webplacement-stripe-metadata/select-source": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
     "Action:editor.flexibleSections.screen.screenScrollable": {
       "ARTICLE_RELATES_TO_ACTION": [
         "Article:help-block-flexible-sections"
@@ -28327,6 +29398,36 @@
     "Guide:analytics-provider-config": {
       "ARTICLE_SUPPORTED_BY_GUIDE": [
         "Article:analytics-provider-config"
+      ]
+    },
+    "Guide:canvas-add-screen": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:canvas-add-screen"
+      ]
+    },
+    "Guide:canvas-connect-screens": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:canvas-connect-screens"
+      ]
+    },
+    "Guide:canvas-overview": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:canvas-overview"
+      ]
+    },
+    "Guide:custom-domain-dns-setup": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:custom-domain-dns-setup"
+      ]
+    },
+    "Guide:custom-domain-domain-input": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:custom-domain-domain-input"
+      ]
+    },
+    "Guide:custom-domain-verification": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:custom-domain-verification"
       ]
     },
     "Guide:screen-editor-section-action-bar": {
@@ -30169,6 +31270,101 @@
         "Article:integrations-custom-domain-section"
       ]
     },
+    "Guide:integrations-stripe-connect-section": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:integrations-stripe-connect-section"
+      ]
+    },
+    "Guide:onboarding-list-create": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:onboarding-list-create"
+      ]
+    },
+    "Guide:onboarding-wizard-basic-info": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:onboarding-wizard-basic-info"
+      ]
+    },
+    "Guide:onboarding-wizard-theme-customize": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:onboarding-wizard-theme-customize"
+      ]
+    },
+    "Guide:onboarding-wizard-theme-select": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:onboarding-wizard-theme-select"
+      ]
+    },
+    "Guide:paywall-product-basic-fields": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-product-basic-fields"
+      ]
+    },
+    "Guide:paywall-product-price-setup": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-product-price-setup"
+      ]
+    },
+    "Guide:paywall-product-stripe-mapping": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-product-stripe-mapping"
+      ]
+    },
+    "Guide:paywall-product-subscription-options": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-product-subscription-options"
+      ]
+    },
+    "Guide:paywall-products-list": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-products-list"
+      ]
+    },
+    "Guide:paywall-products-mode-tabs": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:paywall-products-mode-tabs"
+      ]
+    },
+    "Guide:screen-editor-action-button": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:screen-editor-action-button"
+      ]
+    },
+    "Guide:screen-editor-overview": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:screen-editor-overview"
+      ]
+    },
+    "Guide:stripe-connect-live-mode": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:stripe-connect-live-mode"
+      ]
+    },
+    "Guide:stripe-connect-oauth-guidance": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:stripe-connect-oauth-guidance"
+      ]
+    },
+    "Guide:stripe-connect-test-mode": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:stripe-connect-test-mode"
+      ]
+    },
+    "Guide:webplacement-entry-rules": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:webplacement-entry-rules"
+      ]
+    },
+    "Guide:webplacement-publish-url": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:webplacement-publish-url"
+      ]
+    },
+    "Guide:webplacement-stripe-metadata": {
+      "ARTICLE_SUPPORTED_BY_GUIDE": [
+        "Article:webplacement-stripe-metadata"
+      ]
+    },
     "E2eScenario:add-analytics-integration": {
       "CAPABILITY_PROVEN_BY_SCENARIO": [
         "CliCapability:analytics.settings.apply"
@@ -31211,6 +32407,49 @@
         "SynonymGroup:facebook-pixel-setup"
       ]
     },
+    "Article:canvas-add-screen": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:canvas-add-screen"
+      ]
+    },
+    "Article:canvas-connect-screens": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:canvas-connect-screens"
+      ],
+      "NEGATIVE_FOR_ARTICLE": [
+        "Keyword:negative:ordinary paywall only",
+        "Keyword:negative:stripe dashboard setup only"
+      ]
+    },
+    "Article:canvas-overview": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:canvas-overview"
+      ]
+    },
+    "Article:custom-domain-dns-setup": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:custom-domain-dns-setup"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:custom-domain"
+      ]
+    },
+    "Article:custom-domain-domain-input": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:custom-domain-domain-input"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:custom-domain"
+      ]
+    },
+    "Article:custom-domain-verification": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:custom-domain-verification"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:custom-domain"
+      ]
+    },
     "Article:integrations-analytics-section": {
       "GUIDE_REFERENCES_ARTICLE": [
         "Guide:integrations-analytics-section"
@@ -31225,6 +32464,86 @@
       ],
       "SYNONYM_POINTS_TO_ARTICLE": [
         "SynonymGroup:custom-domain"
+      ]
+    },
+    "Article:integrations-stripe-connect-section": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:integrations-stripe-connect-section"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:stripe-subscriptions"
+      ]
+    },
+    "Article:onboarding-list-create": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:onboarding-list-create"
+      ]
+    },
+    "Article:onboarding-wizard-basic-info": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:onboarding-wizard-basic-info"
+      ]
+    },
+    "Article:onboarding-wizard-theme-customize": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:onboarding-wizard-theme-customize"
+      ],
+      "NEGATIVE_FOR_ARTICLE": [
+        "Keyword:negative:tiktok events catalog"
+      ]
+    },
+    "Article:onboarding-wizard-theme-select": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:onboarding-wizard-theme-select"
+      ]
+    },
+    "Article:paywall-product-basic-fields": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-product-basic-fields"
+      ]
+    },
+    "Article:paywall-product-price-setup": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-product-price-setup"
+      ],
+      "NEGATIVE_FOR_ARTICLE": [
+        "Keyword:negative:tiktok events catalog"
+      ]
+    },
+    "Article:paywall-product-stripe-mapping": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-product-stripe-mapping"
+      ]
+    },
+    "Article:paywall-product-subscription-options": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-product-subscription-options"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:stripe-subscriptions"
+      ]
+    },
+    "Article:paywall-products-list": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-products-list"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:stripe-subscriptions"
+      ]
+    },
+    "Article:paywall-products-mode-tabs": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:paywall-products-mode-tabs"
+      ]
+    },
+    "Article:screen-editor-action-button": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:screen-editor-action-button"
+      ]
+    },
+    "Article:screen-editor-overview": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:screen-editor-overview"
       ]
     },
     "Article:help-block-action-bar": {
@@ -31446,6 +32765,39 @@
         "Guide:screenedit-variable-binding-variable-selector"
       ]
     },
+    "Article:stripe-connect-live-mode": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:stripe-connect-live-mode"
+      ]
+    },
+    "Article:stripe-connect-oauth-guidance": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:stripe-connect-oauth-guidance"
+      ],
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:stripe-subscriptions"
+      ]
+    },
+    "Article:stripe-connect-test-mode": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:stripe-connect-test-mode"
+      ]
+    },
+    "Article:webplacement-entry-rules": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:webplacement-entry-rules"
+      ]
+    },
+    "Article:webplacement-publish-url": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:webplacement-publish-url"
+      ]
+    },
+    "Article:webplacement-stripe-metadata": {
+      "GUIDE_REFERENCES_ARTICLE": [
+        "Guide:webplacement-stripe-metadata"
+      ]
+    },
     "Article:tiktok-events-catalog": {
       "NEGATIVE_FOR_ARTICLE": [
         "Keyword:negative:facebook events catalog",
@@ -31522,9 +32874,45 @@
         "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151457_open-add-dialog-add-integration-dialog/origin.png"
       ]
     },
+    "SourceConfig:references/articles/canvas-add-screen.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:canvas-add-screen",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/canvas-connect-screens.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:canvas-connect-screens",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/canvas-overview.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:canvas-overview",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151500_open-canvas-canvas-overview/origin.png"
+      ]
+    },
     "SourceConfig:references/articles/collect-email-before-paywall.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:collect-email-before-paywall"
+      ]
+    },
+    "SourceConfig:references/articles/custom-domain-dns-setup.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:custom-domain-dns-setup",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/custom-domain-domain-input.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:custom-domain-domain-input",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/custom-domain-verification.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:custom-domain-verification",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"
       ]
     },
     "SourceConfig:references/articles/facebook-capi-web-destination.json": {
@@ -32330,6 +33718,17 @@
         "Media:https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/context-section.png"
       ]
     },
+    "SourceConfig:references/articles/help-strategy-onboarding-sync.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:help-strategy-onboarding-sync",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095132_sync-02-actions-menu/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095136_sync-14-compile-plan-step/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095140_sync-10-push-plan-diff-table/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095144_sync-11-push-plan-resolutions/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095147_sync-15-lift-loose-suggested/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095149_sync-block-actions-menu/origin.png"
+      ]
+    },
     "SourceConfig:references/articles/integrations-analytics-section.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:integrations-analytics-section",
@@ -32341,14 +33740,116 @@
         "Article:integrations-custom-domain-section"
       ]
     },
+    "SourceConfig:references/articles/integrations-stripe-connect-section.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:integrations-stripe-connect-section",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ]
+    },
     "SourceConfig:references/articles/launch-paid-funnel-overview.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:launch-paid-funnel-overview"
       ]
     },
+    "SourceConfig:references/articles/onboarding-list-create.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:onboarding-list-create",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/onboarding-wizard-basic-info.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:onboarding-wizard-basic-info",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164732_open-wizard-wizard-field-name/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164733_open-wizard-wizard-field-platform/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164734_open-wizard-wizard-field-default-language/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164735_open-wizard-wizard-field-locales/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/onboarding-wizard-theme-customize.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:onboarding-wizard-theme-customize",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151454_customize-wizard-theme-wizard-theme-customize/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/onboarding-wizard-theme-select.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:onboarding-wizard-theme-select",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151453_select-wizard-theme-wizard-theme-selection/origin.png"
+      ]
+    },
     "SourceConfig:references/articles/paywall-payment-methods.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:paywall-payment-methods"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-product-basic-fields.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-product-basic-fields",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-product-price-setup.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-product-price-setup",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-product-stripe-mapping.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-product-stripe-mapping",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-product-subscription-options.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-product-subscription-options",
+        "Media:https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-products-list.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-products-list",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/paywall-products-mode-tabs.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:paywall-products-mode-tabs",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/screen-editor-action-button.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:screen-editor-action-button",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151504_edit-button-text-button-text-field/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/screen-editor-overview.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:screen-editor-overview",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151503_open-editor-editor-context/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/stripe-connect-live-mode.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:stripe-connect-live-mode",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/stripe-connect-oauth-guidance.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:stripe-connect-oauth-guidance",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/stripe-connect-test-mode.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:stripe-connect-test-mode",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
       ]
     },
     "SourceConfig:references/articles/tiktok-events-catalog.json": {
@@ -32359,6 +33860,24 @@
     "SourceConfig:references/articles/tiktok-pixel-events-api-setup.json": {
       "NODE_GROUNDED_IN_SOURCE": [
         "Article:tiktok-pixel-events-api-setup"
+      ]
+    },
+    "SourceConfig:references/articles/webplacement-entry-rules.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:webplacement-entry-rules",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151505_open-entry-rules-entry-rules/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/webplacement-publish-url.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:webplacement-publish-url",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151507_open-web-placements-publish-url-controls/origin.png"
+      ]
+    },
+    "SourceConfig:references/articles/webplacement-stripe-metadata.json": {
+      "NODE_GROUNDED_IN_SOURCE": [
+        "Article:webplacement-stripe-metadata",
+        "Media:https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
       ]
     },
     "Workflow:capability.custom-domain-readiness": {
@@ -32492,6 +34011,11 @@
     "Article:paywall-payment-methods": {
       "SYNONYM_POINTS_TO_ARTICLE": [
         "SynonymGroup:payment-methods"
+      ]
+    },
+    "Article:help-strategy-onboarding-sync": {
+      "SYNONYM_POINTS_TO_ARTICLE": [
+        "SynonymGroup:sync-strategy-onboarding"
       ]
     },
     "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions": {

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "paywall-product-stripe-mapping",
+  "articleId": "QScPElxnJt6NHMN7c7cG",
+  "title": "Paywall Product: Stripe mapping",
+  "sections": [
+    {
+      "id": "paywall-product-stripe-mapping/stripe-price-select",
+      "title": "Select or create the Stripe price",
+      "summary": "Pick the exact price customers will be charged — this is what actually drives checkout, so if you leave the price empty the paywall will fail when a visitor tries to pay. The list filters to recurring prices for subscriptions and one-time prices for single purchases; if none fits, create a new price inline.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-product-stripe-mapping/stripe-price-select",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-product-stripe-mapping"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "paywall-product-stripe-mapping/stripe-product-select",
+      "title": "Select or create the Stripe product",
+      "summary": "Link this paywall product to a real product in your Stripe account, or click to create one inline without leaving this dialog. It has to live in the same Stripe mode (Test or Live) you selected above — if it's in the other mode it won't show up in the list.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-product-stripe-mapping/stripe-product-select",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-product-stripe-mapping"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "paywall-product-stripe-mapping/stripe-price-select",
+      "title": "Select or create the Stripe price",
+      "summary": "Pick the exact price customers will be charged — this is what actually drives checkout, so if you leave the price empty the paywall will fail when a visitor tries to pay. The list filters to recurring prices for subscriptions and one-time prices for single purchases; if none fits, create a new price inline.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-product-stripe-mapping/stripe-price-select",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-product-stripe-mapping"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "paywall-product-stripe-mapping/stripe-product-select",
+      "title": "Select or create the Stripe product",
+      "summary": "Link this paywall product to a real product in your Stripe account, or click to create one inline without leaving this dialog. It has to live in the same Stripe mode (Test or Live) you selected above — if it's in the other mode it won't show up in the list.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-product-stripe-mapping/stripe-product-select",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-product-stripe-mapping"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-stripe-mapping/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "b321a523a6ca5476"
+  }
+}

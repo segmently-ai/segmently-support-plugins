@@ -38,44 +38,37 @@ const fullCompanionSkills = [
 const wrapperCompanionSkills = [];
 const fullCompanionExclusions = {
   "segmently-cli-guide": [
-    "evals/**"
+    "evals/**",
+    "scripts/run-evals.mjs"
   ],
-  "segmently-cli-paywall-ab-rollout": [
-    "evals/**"
-  ],
-  "segmently-cli-articles": [
-    "evals/**"
-  ],
+  "segmently-cli-paywall-ab-rollout": [],
+  "segmently-cli-articles": [],
   "segmently-cli-content-plan-guide": [
-    "evals/**"
+    "evals/**",
+    "scripts/run-evals.mjs"
   ],
   "segmently-cli-custom-screen-guide": [
-    "evals/**"
+    "evals/**",
+    "scripts/run-evals.mjs"
   ],
   "segmently-cli-figma-webembed-import": [
     "evals/**",
+    "scripts/run-evals.mjs",
     "scripts/receive-figma-mcp-capture.mjs"
   ],
-  "segmently-cli-image-upload": [
-    "evals/**"
-  ],
+  "segmently-cli-image-upload": [],
   "segmently-product-cli-guide": [
-    "evals/**"
-  ],
-  "playwright-bowser": [
-    "evals/**"
-  ],
-  "segmently-test-kit": [
-    "evals/**"
-  ],
-  "playwright-bowser-core": [
-    "evals/**"
-  ],
-  "claude-design": [
     "evals/**",
+    "scripts/run-evals.mjs"
+  ],
+  "playwright-bowser": [],
+  "segmently-test-kit": [],
+  "playwright-bowser-core": [],
+  "claude-design": [
     "imports/**",
-    "evals/opt-results/**",
+    "evals/**",
     "references/import-registry.md",
+    "references/import-screens-to-theme.md",
     "scripts/registry.mjs"
   ]
 };

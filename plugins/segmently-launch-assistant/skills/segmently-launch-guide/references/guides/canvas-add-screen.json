@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-add-screen/index.html",
+    "fullArticleLink": "https://help.segmently.ai/canvas-add-screen",
     "sourceRecipeKey": "configure-canvas-screens",
     "localArticlePath": null,
     "sections": [
@@ -70,7 +70,12 @@
       "title": "Open the Screen Templates panel",
       "summary": "The right sidebar lists draggable screen templates with previews and is always visible. It is the primary way to add new screens to the canvas.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151501_show-template-panel-template-panel/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "subarticleId": "canvas-add-screen/template-panel"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -78,7 +83,12 @@
       "title": "Search for a screen type",
       "summary": "Type to filter templates by name or description; the list updates as you type. Clear the field to see all templates.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "subarticleId": "canvas-add-screen/search"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -86,7 +96,12 @@
       "title": "Drag a template onto the canvas",
       "summary": "Click and hold a template, then drop it on the canvas to add the screen. Double-click the new node to open the Screen Editor and configure it.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "subarticleId": "canvas-add-screen/drag"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -94,7 +109,12 @@
       "title": "Choose screen types intentionally",
       "summary": "Question screens collect answers into variables for routing, content screens explain value, embed screens host custom HTML, and paywall screens sell products. Pick by what each step should accomplish.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "subarticleId": "canvas-add-screen/types"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -102,7 +122,12 @@
       "title": "Screen names stay unique automatically",
       "summary": "When you add a screen whose type already exists, the system appends a number (for example Hero Content 2). This keeps analytics and navigation unambiguous.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "subarticleId": "canvas-add-screen/unique-naming"
+        }
+      ],
       "actionIds": []
     }
   ]

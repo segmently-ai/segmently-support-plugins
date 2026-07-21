@@ -638,7 +638,7 @@
       "scenarioIds": [],
       "cliCommands": [
         "content-plan strategies list",
-        "content-plan strategies export",
+        "content-plan strategies get",
         "content-plan strategies audit"
       ],
       "actionIds": [],

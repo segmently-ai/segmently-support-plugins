@@ -21,7 +21,8 @@ An article JSON includes:
 - `defaultLanguage`
 - `representationProfile`: `standard`, `phone`, `tablet`, or `laptop`
 - `flowDocument`
-- optional `publishedUrl`, `configUrl`, `webShellVersion`, and `publishedAt`
+- optional `publishedUrl`, `assetUrl`, `configUrl`, `gatewayUrl`,
+  `customDomainUrl`, `webShellVersion`, and `publishedAt`
 
 Preserve fields you are not intentionally changing. When changing title,
 alias, locale, or profile, prefer CLI flags on `apply` when available and keep
@@ -149,7 +150,8 @@ After editing:
 1. Apply the JSON to a draft article.
 2. Re-export the article and confirm the intended fields persisted.
 3. Publish only when the user wants a public URL.
-4. Check the returned `publishedUrl` and `configUrl` with a read request.
+4. Check the returned customer-facing `publishedUrl` plus technical `assetUrl`
+   and `configUrl` with a read request.
 5. If editor manageability matters, open the article editor and confirm key
    text/list/media values are editable before claiming the article is easy to
    maintain.

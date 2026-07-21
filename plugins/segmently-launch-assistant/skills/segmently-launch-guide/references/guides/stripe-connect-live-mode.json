@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-live-mode/index.html",
+    "fullArticleLink": "https://help.segmently.ai/stripe-connect-live-mode",
     "sourceRecipeKey": "connect-stripe-account",
     "localArticlePath": null,
     "sections": [
@@ -52,7 +52,12 @@
       "title": "Connect your live Stripe account",
       "summary": "Use Connect Live Account to authorize your production account. Live mode processes real payments and maps to your production products and prices, so connect it only after test validation is complete.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-live-mode",
+          "subarticleId": "stripe-connect-live-mode/connect-live"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -60,7 +65,12 @@
       "title": "Verify live account readiness",
       "summary": "Confirm that both charges and payouts are enabled before deploying a paywall to production. Finish any remaining business verification (identity, bank account) in the Stripe Dashboard if onboarding is incomplete.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-live-mode",
+          "subarticleId": "stripe-connect-live-mode/live-account-status"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -68,7 +78,12 @@
       "title": "Keep test and live separate",
       "summary": "Test and live modes are independent and cannot be mixed in one published funnel. Every product in a single publish must use the same mode, so review the product mode before publishing to production.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-live-mode",
+          "subarticleId": "stripe-connect-live-mode/live-mode-decision"
+        }
+      ],
       "actionIds": []
     }
   ]

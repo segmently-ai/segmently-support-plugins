@@ -29,7 +29,7 @@ Use this file only when planning product or CLI work.
 
 ## Topics And Social Planning
 
-- Implemented: `content-plan authors get|apply|set-default|onboard`,
+- Implemented: `content-plan authors get|apply|set-current|onboard`,
   `content-plan platforms list|get|apply`, `content-plan platforms voice
   get|apply`, `content-plan strategies get|apply|preflight|create`,
   `content-plan strategies draft create|patch|approve|regenerate`,
@@ -38,8 +38,12 @@ Use this file only when planning product or CLI work.
   `content-plan posts create|schedule-batch`, and
   `content-plan bootstrap validate|plan|apply|verify` cover the deterministic
   empty-project and reviewer-demo bootstrap path.
+- Implemented in CLI 1.0.0: `content-plan doctor` reports the shared eight-step
+  readiness chain and exact next commands; bootstrap validates by default and
+  resumes from a manifest-hash checkpoint; task launches expose non-zero waited
+  failures or `taskState: "pending"` plus `followUp` when not waited.
 - Implemented: `content-plan topics drafts list` and
-  `content-plan topics apply <generationId>` cover the generated-topic review
+  `content-plan topics accept <generationId>` cover the generated-topic review
   flow. Remaining gap: bulk upsert a list of arbitrary topic manifests with
   create/update/delete operations and a single dry-run diff.
 - Implemented: `content-plan topics generate` launches backlog topic generation
@@ -49,22 +53,25 @@ Use this file only when planning product or CLI work.
 - Implemented: `content-plan topics resources import-url <topicId>` stores an
   HTTPS URL as a link resource with optional title/content/reliability fields.
   Remaining gap: fetch and summarize remote page content into the resource.
-- JSON Schema manifests for topic patches, `postBreakdown[]`, research phase
-  patches, and `posts generate --file` requests.
+- Implemented in CLI 1.0.0: client-side JSON Schema validation for bootstrap,
+  topic apply, aspect apply, research phase patch, `posts generate --file`, and
+  design-profile apply. These are the current JSON Schema manifests. Remaining
+  schema gap: add the same client-side validator when new manifest-backed
+  Content Plan surfaces are introduced.
 
 ## Post And Asset Editing
 
 - Implemented helpers that used to be gaps:
-  `content-plan posts apply <generationId>`, `content-plan posts refine
+  `content-plan posts accept <generationId>`, `content-plan posts refine
   <postId>`, `content-plan posts assets brief get <postId>`,
   `content-plan posts assets preview <postId>`,
   `content-plan posts assets slots regenerate-prompt <postId> <slotKey>`,
   `content-plan posts assets slots batch-generate`, and
   `content-plan posts assets slots experiments reject|delete`.
-- Implemented: `content-plan posts drafts apply-one <draftPostId>` and
+- Implemented: `content-plan posts drafts accept <draftPostId>` and
   `content-plan posts drafts reject <draftPostId>` apply or reject one reviewed
   generated draft into canonical Content Plan storage from the CLI.
-  Generation-level `content-plan posts apply <generationId>` also exists.
+  Generation-level `content-plan posts accept <generationId>` also exists.
 - `content-plan posts regenerate-text` / `content-plan posts regenerate-post
   <postId>`: implement true full writer rerun for an existing post when only
   the post ID is known. The current `posts assets regenerate-text` command
@@ -75,5 +82,5 @@ Use this file only when planning product or CLI work.
   slot `promptTemplate` through project-scoped AI keys using the post brief and
   current slot as context. A deeper future version can call the exact
   storyboarding/card-visual pipeline stage for one carousel slide.
-- JSON Schema manifests for post asset planning, brief regeneration, slot
+- Remaining schema candidates: post asset planning, brief regeneration, slot
   prompt patches, slot generation requests, and batch slot generation.

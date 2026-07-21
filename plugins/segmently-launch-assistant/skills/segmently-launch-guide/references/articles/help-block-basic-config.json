@@ -11,7 +11,7 @@
       "summary": "Animation in the section",
       "kind": "section",
       "articleSectionId": "g-animation-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -27,7 +27,7 @@
       "summary": "Inside the Basic Config section, this is the Animation.",
       "kind": "section",
       "articleSectionId": "g-animation-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -41,7 +41,7 @@
       "summary": "Animation",
       "kind": "section",
       "articleSectionId": "g-animation-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Auto-advance countdown in the section",
       "kind": "section",
       "articleSectionId": "g-countdown-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -71,7 +71,7 @@
       "summary": "Inside the Basic Config section, this is the Auto-advance countdown.",
       "kind": "section",
       "articleSectionId": "g-countdown-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -85,7 +85,7 @@
       "summary": "Auto-advance countdown",
       "kind": "section",
       "articleSectionId": "g-countdown-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Offline media in the section",
       "kind": "section",
       "articleSectionId": "g-offline-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -115,7 +115,7 @@
       "summary": "Inside the Basic Config section, this is the Offline media.",
       "kind": "section",
       "articleSectionId": "g-offline-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -129,7 +129,7 @@
       "summary": "Offline media",
       "kind": "section",
       "articleSectionId": "g-offline-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -143,7 +143,7 @@
       "summary": "Device permission prompt in the section",
       "kind": "section",
       "articleSectionId": "g-permission-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -159,7 +159,7 @@
       "summary": "Inside the Basic Config section, this is the Device permission prompt.",
       "kind": "section",
       "articleSectionId": "g-permission-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -173,7 +173,7 @@
       "summary": "Device permission prompt",
       "kind": "section",
       "articleSectionId": "g-permission-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -187,7 +187,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance. This guide documents every setting of the Basic Config block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -356,7 +356,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -372,7 +372,7 @@
       "summary": "Open the Basic Config section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -386,7 +386,7 @@
       "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-animated",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-animated",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-animated",
       "guideKeys": [
         "screenedit-basic-config-animation-enabled"
       ],
@@ -407,7 +407,7 @@
       "summary": "When on, the screen moves to the next step on its own after the countdown you set below, with a visible timer. Off by default. Great for splash or 'analyzing...' screens, but never use it where visitors must tap or answer, like questions or your paywall, or you'll skip them past the response or sale.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown",
       "guideKeys": [
         "screenedit-basic-config-countdown-enabled"
       ],
@@ -429,7 +429,7 @@
       "summary": "The number of seconds or minutes (unit chosen below) before the screen moves on by itself, from 1 to 300. Only used when auto-advance is on. Keep it short, about 2 to 4 seconds for a splash or 'analyzing...' screen, so visitors aren't left waiting and bouncing.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration",
       "guideKeys": [
         "screenedit-basic-config-countdown-duration-value"
       ],
@@ -450,7 +450,7 @@
       "summary": "Auto-Advance Duration",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -466,7 +466,7 @@
       "summary": "Sets whether the auto-advance duration above counts in seconds or minutes. Only shows when auto-advance is on. Seconds is the right choice for nearly every onboarding screen; minutes is rarely useful and risks visitors leaving before the screen ever advances.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-unit",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-unit",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit",
       "guideKeys": [
         "screenedit-basic-config-countdown-unit"
       ],
@@ -487,7 +487,7 @@
       "summary": "Seconds Or Minutes",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-unit-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-unit-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -503,7 +503,7 @@
       "summary": "When on, the screen reuses media it has already cached instead of re-downloading it, which can speed up loading for visitors on slow or flaky connections. Leave it off by default for standard web ad funnels, since there's nothing to reuse until assets are cached. Turn it on only if you ship pre-bundled assets or expect a lot of poor-connectivity traffic.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-offlinefirst",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-offlinefirst",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-offlinefirst",
       "guideKeys": [
         "screenedit-basic-config-offline-first"
       ],
@@ -524,7 +524,7 @@
       "summary": "When on, this screen pops the phone's own permission request, notifications, location, or ad tracking, chosen in the field below, as it appears. This fires in the native app SDK, not on a plain web page. Put it on a screen that first explains why you need it so far more people tap Allow.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt",
       "guideKeys": [
         "screenedit-basic-config-system-permission-enabled"
       ],
@@ -545,7 +545,7 @@
       "summary": "Picks which device permission this screen requests: push notifications, ad tracking (needed for accurate ad attribution on iPhones), or location. Only shows when the permission request is turned on. Choose what your funnel truly needs, ad tracking if you rely on ad-network attribution, notifications for re-engaging users later.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt-permissiontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype",
       "guideKeys": [
         "screenedit-basic-config-permission-type"
       ],
@@ -566,7 +566,7 @@
       "summary": "Which Permission To Ask For",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt-permissiontype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -584,7 +584,7 @@
       "summary": "Animation in the section",
       "kind": "section",
       "articleSectionId": "g-animation-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -600,7 +600,7 @@
       "summary": "Inside the Basic Config section, this is the Animation.",
       "kind": "section",
       "articleSectionId": "g-animation-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -614,7 +614,7 @@
       "summary": "Animation",
       "kind": "section",
       "articleSectionId": "g-animation-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-animation-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -628,7 +628,7 @@
       "summary": "Auto-advance countdown in the section",
       "kind": "section",
       "articleSectionId": "g-countdown-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -644,7 +644,7 @@
       "summary": "Inside the Basic Config section, this is the Auto-advance countdown.",
       "kind": "section",
       "articleSectionId": "g-countdown-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -658,7 +658,7 @@
       "summary": "Auto-advance countdown",
       "kind": "section",
       "articleSectionId": "g-countdown-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-countdown-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-countdown-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -672,7 +672,7 @@
       "summary": "Offline media in the section",
       "kind": "section",
       "articleSectionId": "g-offline-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -688,7 +688,7 @@
       "summary": "Inside the Basic Config section, this is the Offline media.",
       "kind": "section",
       "articleSectionId": "g-offline-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -702,7 +702,7 @@
       "summary": "Offline media",
       "kind": "section",
       "articleSectionId": "g-offline-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-offline-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-offline-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -716,7 +716,7 @@
       "summary": "Device permission prompt in the section",
       "kind": "section",
       "articleSectionId": "g-permission-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -732,7 +732,7 @@
       "summary": "Inside the Basic Config section, this is the Device permission prompt.",
       "kind": "section",
       "articleSectionId": "g-permission-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -746,7 +746,7 @@
       "summary": "Device permission prompt",
       "kind": "section",
       "articleSectionId": "g-permission-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#g-permission-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#g-permission-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -760,7 +760,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance. This guide documents every setting of the Basic Config block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -929,7 +929,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -945,7 +945,7 @@
       "summary": "Open the Basic Config section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -959,7 +959,7 @@
       "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-animated",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-animated",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-animated",
       "guideKeys": [
         "screenedit-basic-config-animation-enabled"
       ],
@@ -980,7 +980,7 @@
       "summary": "When on, the screen moves to the next step on its own after the countdown you set below, with a visible timer. Off by default. Great for splash or 'analyzing...' screens, but never use it where visitors must tap or answer, like questions or your paywall, or you'll skip them past the response or sale.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown",
       "guideKeys": [
         "screenedit-basic-config-countdown-enabled"
       ],
@@ -1002,7 +1002,7 @@
       "summary": "The number of seconds or minutes (unit chosen below) before the screen moves on by itself, from 1 to 300. Only used when auto-advance is on. Keep it short, about 2 to 4 seconds for a splash or 'analyzing...' screen, so visitors aren't left waiting and bouncing.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration",
       "guideKeys": [
         "screenedit-basic-config-countdown-duration-value"
       ],
@@ -1023,7 +1023,7 @@
       "summary": "Auto-Advance Duration",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1039,7 +1039,7 @@
       "summary": "Sets whether the auto-advance duration above counts in seconds or minutes. Only shows when auto-advance is on. Seconds is the right choice for nearly every onboarding screen; minutes is rarely useful and risks visitors leaving before the screen ever advances.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-unit",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-unit",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit",
       "guideKeys": [
         "screenedit-basic-config-countdown-unit"
       ],
@@ -1060,7 +1060,7 @@
       "summary": "Seconds Or Minutes",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-countdown-unit-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-unit-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1076,7 +1076,7 @@
       "summary": "When on, the screen reuses media it has already cached instead of re-downloading it, which can speed up loading for visitors on slow or flaky connections. Leave it off by default for standard web ad funnels, since there's nothing to reuse until assets are cached. Turn it on only if you ship pre-bundled assets or expect a lot of poor-connectivity traffic.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-offlinefirst",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-offlinefirst",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-offlinefirst",
       "guideKeys": [
         "screenedit-basic-config-offline-first"
       ],
@@ -1097,7 +1097,7 @@
       "summary": "When on, this screen pops the phone's own permission request, notifications, location, or ad tracking, chosen in the field below, as it appears. This fires in the native app SDK, not on a plain web page. Put it on a screen that first explains why you need it so far more people tap Allow.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt",
       "guideKeys": [
         "screenedit-basic-config-system-permission-enabled"
       ],
@@ -1118,7 +1118,7 @@
       "summary": "Picks which device permission this screen requests: push notifications, ad tracking (needed for accurate ad attribution on iPhones), or location. Only shows when the permission request is turned on. Choose what your funnel truly needs, ad tracking if you rely on ad-network attribution, notifications for re-engaging users later.",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt-permissiontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype",
       "guideKeys": [
         "screenedit-basic-config-permission-type"
       ],
@@ -1139,7 +1139,7 @@
       "summary": "Which Permission To Ask For",
       "kind": "section",
       "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt-permissiontype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1158,7 +1158,7 @@
       "group": "animation",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-animation.png",
       "articleSectionId": "set-basicconfig-content-animated",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-animated",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-animated",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1172,7 +1172,7 @@
       "group": "offline",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-offline.png",
       "articleSectionId": "set-basicconfig-content-offlinefirst",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-offlinefirst",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-offlinefirst",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1186,7 +1186,7 @@
       "group": "permission",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-permission.png",
       "articleSectionId": "set-basicconfig-content-systemprompt",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1200,7 +1200,7 @@
       "group": "permission",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-permission-type.png",
       "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-systemprompt-permissiontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1215,7 +1215,7 @@
       "group": "countdown",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-countdown.png",
       "articleSectionId": "set-basicconfig-content-countdown",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1229,7 +1229,7 @@
       "group": "countdown",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-duration.png",
       "articleSectionId": "set-basicconfig-content-countdown-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -1244,7 +1244,7 @@
       "group": "countdown",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-unit.png",
       "articleSectionId": "set-basicconfig-content-countdown-unit",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html#set-basicconfig-content-countdown-unit",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit",
       "route": [
         "Open the screen in the editor.",
         "Expand the Basic Config section.",
@@ -2154,6 +2154,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "1336b03fcea029bf"
+    "generatedHash": "1846b1a7e65d8f14"
   }
 }

@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-customize/index.html",
+    "fullArticleLink": "https://help.segmently.ai/onboarding-wizard-theme-customize",
     "sourceRecipeKey": "choose-template-theme",
     "localArticlePath": null,
     "sections": [
@@ -97,7 +97,12 @@
       "title": "Set the color scheme",
       "summary": "Three color pickers define the whole theme. Button Background fills the color behind your buttons, Titles & Subtitles sets the color of heading text (subtitles automatically reuse it at half opacity for a softer, secondary look), and Button Title sets the text color inside buttons. These colors carry into every screen you create, so set them once here.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151454_customize-wizard-theme-wizard-theme-customize/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/colors"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -105,7 +110,12 @@
       "title": "Choose fonts and text styling",
       "summary": "Main Font Family is the base font used for all text. You can give Titles and Subtitles their own family, weight, size, color, and alignment if you want them to stand out. Your font choices flow into option cards, product cards, and every screen, so this is what sets the overall voice and feel of the funnel.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/fonts"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -113,7 +123,12 @@
       "title": "Style the option and product cards",
       "summary": "These controls style the tappable cards visitors choose from. Checkbox Kind sets circle or square selection markers, List Border Radius rounds the card corners (0 = sharp, 32 = very rounded; around 12 looks modern), and Item Title and Item Subtitle set the text inside each card. They apply to list, grid, and paywall product screens — anywhere a visitor makes a choice.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/options-list"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -121,7 +136,12 @@
       "title": "Set the background",
       "summary": "Choose a solid color, a photo, or a video clip to sit behind every screen. Whatever you pick must keep headings, body text, and buttons easy to read — low contrast here hurts conversion on every single screen, so favor a calm background over a busy one.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/backdrop"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -129,7 +149,12 @@
       "title": "Configure the header bar",
       "summary": "The header bar sits at the top of every screen. Toggle the back button, the skip button, and the progress indicator on or off. Leaving the progress indicator on reassures visitors how far along they are, which helps them finish; colors and fonts here inherit from your theme automatically.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/header"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -137,7 +162,12 @@
       "title": "Configure the action buttons",
       "summary": "These are the buttons at the bottom of each screen — a primary one (usually 'Continue') and an optional secondary one. Set whether each is shown, its label style, and its look. Their colors pull from your Titles & Subtitles and Button Title theme colors, so they stay consistent across all screens without per-screen tweaks.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/action-bar"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -145,7 +175,12 @@
       "title": "Review the live preview",
       "summary": "The carousel on the left shows sample screens using your current settings, updating in real time as you change them. Use it to confirm text is readable and spacing looks right before you commit — fixing the theme now is far faster than editing every screen one by one afterward.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/live-preview"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -153,7 +188,12 @@
       "title": "Create the onboarding",
       "summary": "Click Create to apply this theme and generate the draft. Everything you set here is just a starting point — you can still override the colors, fonts, and layout on any individual screen later in the Screen Editor.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "subarticleId": "onboarding-wizard-theme-customize/create"
+        }
+      ],
       "actionIds": []
     }
   ]

@@ -11,7 +11,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Stepper<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-stepper-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "An auto-advancing progress bar that steps through segments — the progress layout, total playback time, the bar’s colours / thickness / padding, the media-area split, and each step’s title / subtitle / description / image styles.",
       "kind": "section",
       "articleSectionId": "block-stepper-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -84,7 +84,7 @@
       "summary": "Stepper in the editor",
       "kind": "section",
       "articleSectionId": "block-stepper-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -100,7 +100,7 @@
       "summary": "The Progress Steps screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -114,7 +114,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -130,7 +130,7 @@
       "summary": "Related article: Stepper",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -148,7 +148,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -162,7 +162,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -176,7 +176,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -192,7 +192,7 @@
       "summary": "Stepper<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-stepper-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -206,7 +206,7 @@
       "summary": "An auto-advancing progress bar that steps through segments — the progress layout, total playback time, the bar’s colours / thickness / padding, the media-area split, and each step’s title / subtitle / description / image styles.",
       "kind": "section",
       "articleSectionId": "block-stepper-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -221,7 +221,7 @@
       "summary": "Stepper in the editor",
       "kind": "section",
       "articleSectionId": "block-stepper-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#block-stepper-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#block-stepper-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -237,7 +237,7 @@
       "summary": "The Progress Steps screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-progresssteps/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-progresssteps#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -251,7 +251,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -267,7 +267,7 @@
       "summary": "Related article: Stepper",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -347,7 +347,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
+              "details": "https://help.segmently.ai/help-block-header"
             },
             "labels": {
               "sep": {
@@ -461,7 +461,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html"
+              "details": "https://help.segmently.ai/help-block-stepper"
             },
             "labels": {
               "sep": {
@@ -556,6 +556,6 @@
       "scripts/help-articles/help-screen-progresssteps.assembly.json",
       "scripts/help-articles/help-screen-progresssteps.doc.json"
     ],
-    "generatedHash": "4ed60fd87fea42f1"
+    "generatedHash": "e621199c3c54013a"
   }
 }

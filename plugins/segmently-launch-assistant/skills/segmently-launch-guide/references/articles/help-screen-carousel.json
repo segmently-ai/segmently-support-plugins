@@ -11,7 +11,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Carousel<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-carousel-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles.",
       "kind": "section",
       "articleSectionId": "block-carousel-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -84,7 +84,7 @@
       "summary": "Carousel in the editor",
       "kind": "section",
       "articleSectionId": "block-carousel-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -100,7 +100,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -114,7 +114,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -128,7 +128,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -144,7 +144,7 @@
       "summary": "The Carousel screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -158,7 +158,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -174,7 +174,7 @@
       "summary": "Related article: Carousel",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -190,7 +190,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -208,7 +208,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -222,7 +222,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -236,7 +236,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -252,7 +252,7 @@
       "summary": "Carousel<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-carousel-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -266,7 +266,7 @@
       "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles.",
       "kind": "section",
       "articleSectionId": "block-carousel-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -281,7 +281,7 @@
       "summary": "Carousel in the editor",
       "kind": "section",
       "articleSectionId": "block-carousel-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-carousel-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-carousel-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -297,7 +297,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -311,7 +311,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -325,7 +325,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -341,7 +341,7 @@
       "summary": "The Carousel screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-carousel/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -355,7 +355,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -371,7 +371,7 @@
       "summary": "Related article: Carousel",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -387,7 +387,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -468,7 +468,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
+              "details": "https://help.segmently.ai/help-block-header"
             },
             "labels": {
               "sep": {
@@ -582,7 +582,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html"
+              "details": "https://help.segmently.ai/help-block-carousel"
             },
             "labels": {
               "sep": {
@@ -696,7 +696,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
+              "details": "https://help.segmently.ai/help-block-background"
             },
             "labels": {
               "sep": {
@@ -791,6 +791,6 @@
       "scripts/help-articles/help-screen-carousel.assembly.json",
       "scripts/help-articles/help-screen-carousel.doc.json"
     ],
-    "generatedHash": "975a8fd50b5c16a1"
+    "generatedHash": "f9009a541e210bfc"
   }
 }

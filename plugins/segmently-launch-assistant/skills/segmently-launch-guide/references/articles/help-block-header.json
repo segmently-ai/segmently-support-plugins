@@ -11,7 +11,7 @@
       "summary": "Header bar appearance & spacing in the section",
       "kind": "section",
       "articleSectionId": "g-appearance-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -27,7 +27,7 @@
       "summary": "Inside the Header section, this is the Header bar appearance & spacing.",
       "kind": "section",
       "articleSectionId": "g-appearance-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -41,7 +41,7 @@
       "summary": "Header bar appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Back button in the section",
       "kind": "section",
       "articleSectionId": "g-back-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -71,7 +71,7 @@
       "summary": "Inside the Header section, this is the Back button.",
       "kind": "section",
       "articleSectionId": "g-back-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -85,7 +85,7 @@
       "summary": "Back button",
       "kind": "section",
       "articleSectionId": "g-back-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Progress indicator in the section",
       "kind": "section",
       "articleSectionId": "g-progress-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -115,7 +115,7 @@
       "summary": "Inside the Header section, this is the Progress indicator.",
       "kind": "section",
       "articleSectionId": "g-progress-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -129,7 +129,7 @@
       "summary": "Progress indicator",
       "kind": "section",
       "articleSectionId": "g-progress-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -143,7 +143,7 @@
       "summary": "Skip button in the section",
       "kind": "section",
       "articleSectionId": "g-skip-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -159,7 +159,7 @@
       "summary": "Inside the Header section, this is the Skip button.",
       "kind": "section",
       "articleSectionId": "g-skip-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -173,7 +173,7 @@
       "summary": "Skip button",
       "kind": "section",
       "articleSectionId": "g-skip-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -187,7 +187,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is. This guide documents every setting of the Header block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -563,7 +563,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -579,7 +579,7 @@
       "summary": "Open the Header section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -593,7 +593,7 @@
       "summary": "Fills the header bar with a color, or clear it to transparent so the screen background shows through for a floating header. Use a solid color to set the header apart from busy content. If you go transparent over a photo or video, check that the Back, Skip, and progress colors still stand out clearly.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-header-appearance-bg-color"
       ],
@@ -614,7 +614,7 @@
       "summary": "Header Bar Background",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -630,7 +630,7 @@
       "summary": "Sets how tall the header bar is, from 20 to 200 pixels, with a default of 44, which is the space its buttons and progress bar share. Keep it near the default for a standard bar and raise it only if you add a tall icon or larger text. Going too small cramps the Back and Skip buttons and makes them hard to tap.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-height",
       "guideKeys": [
         "screenedit-header-appearance-height"
       ],
@@ -652,7 +652,7 @@
       "summary": "Header Bar Height",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -668,7 +668,7 @@
       "summary": "Fades the whole header bar from fully solid to fully see-through, defaulting to solid. Lower it for a soft, partly transparent header that blends into a photo or video background. Keep it high enough that the Back, Skip, and progress controls stay easy to see.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-opacity",
       "guideKeys": [
         "screenedit-header-appearance-opacity"
       ],
@@ -689,7 +689,7 @@
       "summary": "Header See-Through Level",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-opacity-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-opacity-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-opacity-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -705,7 +705,7 @@
       "summary": "Sets the text and styling of the Back control that returns visitors to the previous step. Defaults to a left arrow and supports other languages. Keep it small so it doesn't compete with your main action, and clear it to hide the button on the first screen, where there's nowhere to go back to.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back",
       "guideKeys": [
         "screenedit-header-back-button"
       ],
@@ -727,7 +727,7 @@
       "summary": "Overrides how the Back control's label looks — font, size, weight, color, alignment, line height, an optional highlight behind the text, and a strikethrough color. By default it inherits your project theme, which keeps every screen consistent. Touch this only when the Back label needs to match a specific header treatment, and keep it subtle so it never competes with your main action.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles",
       "guideKeys": [
         "screenedit-header-back-styles"
       ],
@@ -749,7 +749,7 @@
       "summary": "Back button text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -766,7 +766,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -781,7 +781,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -796,7 +796,7 @@
       "summary": "The typeface of the back button.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -811,7 +811,7 @@
       "summary": "Text size of the back button in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -826,7 +826,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -841,7 +841,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -856,7 +856,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -872,7 +872,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -887,7 +887,7 @@
       "summary": "An optional fill drawn behind the back button text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -902,7 +902,7 @@
       "summary": "The color of the back button text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -917,7 +917,7 @@
       "summary": "Sets the inner spacing on each side (top, right, bottom, left) that pushes the Back button, Skip button, and progress bar away from the header edges. Raise the top value to keep these controls clear of the phone's status bar or notch, and adjust left/right so buttons aren't jammed against the screen edge. Start from the defaults and nudge only where something looks cramped, since a clean header keeps the first impression of your ad landing page tidy.",
       "kind": "section",
       "articleSectionId": "set-headerbar-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-insets",
       "guideKeys": [
         "screenedit-header-insets"
       ],
@@ -938,7 +938,7 @@
       "summary": "Spacing inside the header",
       "kind": "section",
       "articleSectionId": "set-headerbar-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -954,7 +954,7 @@
       "summary": "Colors the filled, completed part of the progress bar. Defaults to gold for the Line style and teal for Dashes. Use your brand accent and make sure it clearly stands out against the unfilled track color so visitors can see at a glance how far they've come.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-activecolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-activecolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-activecolor",
       "guideKeys": [
         "screenedit-header-progress-active-color"
       ],
@@ -975,7 +975,7 @@
       "summary": "Completed Progress Color",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-activecolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-activecolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-activecolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -991,7 +991,7 @@
       "summary": "Sets where the icon and label sit across the header, on the left (Start), centered, or on the right (End). Mostly a cosmetic touch: centered usually looks balanced, while left or right lets you line the label up with your Back or Skip button. Adjust only if the default looks off.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-contentalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-contentalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-contentalignment",
       "guideKeys": [
         "screenedit-header-progress-content-alignment"
       ],
@@ -1013,7 +1013,7 @@
       "summary": "Progress Content Side",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-contentalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-contentalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-contentalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1029,7 +1029,7 @@
       "summary": "Adds an optional small icon, often a logo or step glyph, next to the progress bar, with controls for the image, its size, and its spacing. Most funnels leave this off. Use it only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon",
       "guideKeys": [
         "screenedit-header-progress-icon"
       ],
@@ -1050,7 +1050,7 @@
       "summary": "Optional Header Icon",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1066,7 +1066,7 @@
       "summary": "Controls the optional header icon shown next to the progress bar — its image (upload or URL), placement relative to the label, scale mode, width, height, corner rounding, and padding. Off by default. Turn it on only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar or the Back and Skip buttons.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles",
       "guideKeys": [
         "screenedit-header-progress-icon-styles"
       ],
@@ -1088,7 +1088,7 @@
       "summary": "Header icon settings",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1104,7 +1104,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1118,7 +1118,7 @@
       "summary": "Off by default. Turn on to show a small image (for example a logo) in the header next to the progress indicator; off for no image.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1132,7 +1132,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1146,7 +1146,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown in the header. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1160,7 +1160,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the surrounding header content.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1174,7 +1174,7 @@
       "summary": "Where the icon sits relative to the progress title: Start (before it) or End (after it); the Fixed Start/End variants pin it to the header’s left/right edge; Top and Bottom stack it above or below.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1188,7 +1188,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1202,7 +1202,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1216,7 +1216,7 @@
       "summary": "Chooses how progress through the funnel looks: a single continuous bar (Line) or segmented dots (Dashes), each with its own color controls below. A visible 'how far along' cue reassures visitors only a few steps remain, which lifts completion. Pick whichever fits your brand and keep it the same across screens.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-kind",
       "guideKeys": [
         "screenedit-header-progress-indicator-kind"
       ],
@@ -1237,7 +1237,7 @@
       "summary": "Progress Bar Style",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1253,7 +1253,7 @@
       "summary": "When on, which is the default, the progress bar shrinks so it never overlaps the Back or Skip buttons; when off, it can collide with them in a tight header. Leave it on. Turn it off only if you've removed those buttons and want the bar to use the full width.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-respectbutton",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-respectbutton",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-respectbutton",
       "guideKeys": [
         "screenedit-header-progress-respect-buttons"
       ],
@@ -1274,7 +1274,7 @@
       "summary": "Keep Progress Clear Of Buttons",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-respectbutton-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-respectbutton-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-respectbutton-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1290,7 +1290,7 @@
       "summary": "Optional text shown with the progress bar, such as a 'Step 5 of 10' counter or a short line of reassurance. Supports other languages and styling; leave it empty for a clean bar-only look. Note this text is fixed per screen and won't count up on its own, so use it as a label unless you drive it from a variable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title",
       "guideKeys": [
         "screenedit-header-progress-title"
       ],
@@ -1312,7 +1312,7 @@
       "summary": "Progress Bar Text",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1329,7 +1329,7 @@
       "summary": "Overrides how the progress label (for example 'Step 5 of 10') looks — font, size, weight, color, alignment, line height, an optional highlight, and a strikethrough color. By default it inherits your theme. Use it to make the reassurance text legible against your header background, and keep it small so it supports rather than overshadows the progress bar.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles",
       "guideKeys": [
         "screenedit-header-progress-title-styles"
       ],
@@ -1351,7 +1351,7 @@
       "summary": "Progress text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1368,7 +1368,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1383,7 +1383,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1398,7 +1398,7 @@
       "summary": "The typeface of the progress title.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1413,7 +1413,7 @@
       "summary": "Text size of the progress title in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1428,7 +1428,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1443,7 +1443,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1458,7 +1458,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1474,7 +1474,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1489,7 +1489,7 @@
       "summary": "An optional fill drawn behind the progress title text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1504,7 +1504,7 @@
       "summary": "The color of the progress title text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1519,7 +1519,7 @@
       "summary": "Colors the empty, not-yet-completed part of the progress bar. Defaults to white for the Line style and light gray for Dashes. Keep it muted next to the filled color so the completed portion clearly reads as progress rather than blending in.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-trackcolor",
       "guideKeys": [
         "screenedit-header-progress-track-color"
       ],
@@ -1540,7 +1540,7 @@
       "summary": "Remaining Progress Color",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-trackcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-trackcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-trackcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1556,7 +1556,7 @@
       "summary": "When on, the progress bar stretches all the way across the header; when off, it takes only the width its content needs. Use full width for a bold, obvious progress bar across the top of the screen. Turn it off when you want the bar compact and grouped with a label or icon.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-fullwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-fullwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-fullwidth",
       "guideKeys": [
         "screenedit-header-progress-full-width"
       ],
@@ -1578,7 +1578,7 @@
       "summary": "Stretch Progress Edge-To-Edge",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-fullwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-fullwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-fullwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1594,7 +1594,7 @@
       "summary": "Sets the spacing on each side of the progress indicator alone, separate from the header's overall padding. Use it to fine-tune the gap around the bar, for example to nudge it down from the buttons, without moving the buttons themselves. Most funnels keep the default; adjust only when the bar sits too tight or too loose against the header.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-insets",
       "guideKeys": [
         "screenedit-header-progress-insets"
       ],
@@ -1615,7 +1615,7 @@
       "summary": "Spacing around the progress bar",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1631,7 +1631,7 @@
       "summary": "Sets where the progress bar sits up and down within the header: at the top, centered, or at the bottom. Centered is the usual balanced choice; use bottom to sit it just above your content, or top to hug the status bar. Adjust only if the default placement looks off for your header height.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-verticalalignment",
       "guideKeys": [
         "screenedit-header-progress-vertical-alignment"
       ],
@@ -1652,7 +1652,7 @@
       "summary": "Progress Height In Header",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-verticalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-verticalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-verticalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1668,7 +1668,7 @@
       "summary": "Sets the text and styling of the Skip control that lets visitors bypass this step. Defaults to 'SKIP' and supports other languages. Use it only where skipping is fine, and clear it to hide it on your paywall and key question screens, where an easy out lowers both sales and the answers you collect.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip",
       "guideKeys": [
         "screenedit-header-skip-button"
       ],
@@ -1691,7 +1691,7 @@
       "summary": "Overrides how the Skip control's label looks — font, size, weight, color, alignment, line height, an optional highlight, and a strikethrough color. By default it inherits your theme. Keep Skip visually quiet (smaller, lower-contrast) so it doesn't pull attention away from continuing; restyle it only to fit a specific header look.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles",
       "guideKeys": [
         "screenedit-header-skip-styles"
       ],
@@ -1713,7 +1713,7 @@
       "summary": "Skip button text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1730,7 +1730,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1745,7 +1745,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1760,7 +1760,7 @@
       "summary": "The typeface of the skip button.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1775,7 +1775,7 @@
       "summary": "Text size of the skip button in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1790,7 +1790,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1805,7 +1805,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1820,7 +1820,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1836,7 +1836,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1851,7 +1851,7 @@
       "summary": "An optional fill drawn behind the skip button text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1866,7 +1866,7 @@
       "summary": "The color of the skip button text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1883,7 +1883,7 @@
       "summary": "Header bar appearance & spacing in the section",
       "kind": "section",
       "articleSectionId": "g-appearance-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1899,7 +1899,7 @@
       "summary": "Inside the Header section, this is the Header bar appearance & spacing.",
       "kind": "section",
       "articleSectionId": "g-appearance-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1913,7 +1913,7 @@
       "summary": "Header bar appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1927,7 +1927,7 @@
       "summary": "Back button in the section",
       "kind": "section",
       "articleSectionId": "g-back-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1943,7 +1943,7 @@
       "summary": "Inside the Header section, this is the Back button.",
       "kind": "section",
       "articleSectionId": "g-back-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1957,7 +1957,7 @@
       "summary": "Back button",
       "kind": "section",
       "articleSectionId": "g-back-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-back-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-back-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1971,7 +1971,7 @@
       "summary": "Progress indicator in the section",
       "kind": "section",
       "articleSectionId": "g-progress-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1987,7 +1987,7 @@
       "summary": "Inside the Header section, this is the Progress indicator.",
       "kind": "section",
       "articleSectionId": "g-progress-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2001,7 +2001,7 @@
       "summary": "Progress indicator",
       "kind": "section",
       "articleSectionId": "g-progress-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-progress-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-progress-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2015,7 +2015,7 @@
       "summary": "Skip button in the section",
       "kind": "section",
       "articleSectionId": "g-skip-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2031,7 +2031,7 @@
       "summary": "Inside the Header section, this is the Skip button.",
       "kind": "section",
       "articleSectionId": "g-skip-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2045,7 +2045,7 @@
       "summary": "Skip button",
       "kind": "section",
       "articleSectionId": "g-skip-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#g-skip-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#g-skip-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2059,7 +2059,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is. This guide documents every setting of the Header block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2435,7 +2435,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2451,7 +2451,7 @@
       "summary": "Open the Header section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2465,7 +2465,7 @@
       "summary": "Fills the header bar with a color, or clear it to transparent so the screen background shows through for a floating header. Use a solid color to set the header apart from busy content. If you go transparent over a photo or video, check that the Back, Skip, and progress colors still stand out clearly.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-header-appearance-bg-color"
       ],
@@ -2486,7 +2486,7 @@
       "summary": "Header Bar Background",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2502,7 +2502,7 @@
       "summary": "Sets how tall the header bar is, from 20 to 200 pixels, with a default of 44, which is the space its buttons and progress bar share. Keep it near the default for a standard bar and raise it only if you add a tall icon or larger text. Going too small cramps the Back and Skip buttons and makes them hard to tap.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-height",
       "guideKeys": [
         "screenedit-header-appearance-height"
       ],
@@ -2524,7 +2524,7 @@
       "summary": "Header Bar Height",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2540,7 +2540,7 @@
       "summary": "Fades the whole header bar from fully solid to fully see-through, defaulting to solid. Lower it for a soft, partly transparent header that blends into a photo or video background. Keep it high enough that the Back, Skip, and progress controls stay easy to see.",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-opacity",
       "guideKeys": [
         "screenedit-header-appearance-opacity"
       ],
@@ -2561,7 +2561,7 @@
       "summary": "Header See-Through Level",
       "kind": "section",
       "articleSectionId": "set-headerbar-appearance-opacity-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-opacity-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-opacity-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2577,7 +2577,7 @@
       "summary": "Sets the text and styling of the Back control that returns visitors to the previous step. Defaults to a left arrow and supports other languages. Keep it small so it doesn't compete with your main action, and clear it to hide the button on the first screen, where there's nowhere to go back to.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back",
       "guideKeys": [
         "screenedit-header-back-button"
       ],
@@ -2599,7 +2599,7 @@
       "summary": "Overrides how the Back control's label looks — font, size, weight, color, alignment, line height, an optional highlight behind the text, and a strikethrough color. By default it inherits your project theme, which keeps every screen consistent. Touch this only when the Back label needs to match a specific header treatment, and keep it subtle so it never competes with your main action.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles",
       "guideKeys": [
         "screenedit-header-back-styles"
       ],
@@ -2621,7 +2621,7 @@
       "summary": "Back button text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2638,7 +2638,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2653,7 +2653,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2668,7 +2668,7 @@
       "summary": "The typeface of the back button.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2683,7 +2683,7 @@
       "summary": "Text size of the back button in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2698,7 +2698,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2713,7 +2713,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2728,7 +2728,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2744,7 +2744,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2759,7 +2759,7 @@
       "summary": "An optional fill drawn behind the back button text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2774,7 +2774,7 @@
       "summary": "The color of the back button text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-back-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2789,7 +2789,7 @@
       "summary": "Sets the inner spacing on each side (top, right, bottom, left) that pushes the Back button, Skip button, and progress bar away from the header edges. Raise the top value to keep these controls clear of the phone's status bar or notch, and adjust left/right so buttons aren't jammed against the screen edge. Start from the defaults and nudge only where something looks cramped, since a clean header keeps the first impression of your ad landing page tidy.",
       "kind": "section",
       "articleSectionId": "set-headerbar-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-insets",
       "guideKeys": [
         "screenedit-header-insets"
       ],
@@ -2810,7 +2810,7 @@
       "summary": "Spacing inside the header",
       "kind": "section",
       "articleSectionId": "set-headerbar-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2826,7 +2826,7 @@
       "summary": "Colors the filled, completed part of the progress bar. Defaults to gold for the Line style and teal for Dashes. Use your brand accent and make sure it clearly stands out against the unfilled track color so visitors can see at a glance how far they've come.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-activecolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-activecolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-activecolor",
       "guideKeys": [
         "screenedit-header-progress-active-color"
       ],
@@ -2847,7 +2847,7 @@
       "summary": "Completed Progress Color",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-activecolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-activecolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-activecolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2863,7 +2863,7 @@
       "summary": "Sets where the icon and label sit across the header, on the left (Start), centered, or on the right (End). Mostly a cosmetic touch: centered usually looks balanced, while left or right lets you line the label up with your Back or Skip button. Adjust only if the default looks off.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-contentalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-contentalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-contentalignment",
       "guideKeys": [
         "screenedit-header-progress-content-alignment"
       ],
@@ -2885,7 +2885,7 @@
       "summary": "Progress Content Side",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-contentalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-contentalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-contentalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2901,7 +2901,7 @@
       "summary": "Adds an optional small icon, often a logo or step glyph, next to the progress bar, with controls for the image, its size, and its spacing. Most funnels leave this off. Use it only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon",
       "guideKeys": [
         "screenedit-header-progress-icon"
       ],
@@ -2922,7 +2922,7 @@
       "summary": "Optional Header Icon",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2938,7 +2938,7 @@
       "summary": "Controls the optional header icon shown next to the progress bar — its image (upload or URL), placement relative to the label, scale mode, width, height, corner rounding, and padding. Off by default. Turn it on only to reinforce branding in the header, and keep the icon small so it doesn't crowd the progress bar or the Back and Skip buttons.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles",
       "guideKeys": [
         "screenedit-header-progress-icon-styles"
       ],
@@ -2960,7 +2960,7 @@
       "summary": "Header icon settings",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2976,7 +2976,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2990,7 +2990,7 @@
       "summary": "Off by default. Turn on to show a small image (for example a logo) in the header next to the progress indicator; off for no image.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3004,7 +3004,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3018,7 +3018,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown in the header. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3032,7 +3032,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the surrounding header content.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3046,7 +3046,7 @@
       "summary": "Where the icon sits relative to the progress title: Start (before it) or End (after it); the Fixed Start/End variants pin it to the header’s left/right edge; Top and Bottom stack it above or below.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3060,7 +3060,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3074,7 +3074,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3088,7 +3088,7 @@
       "summary": "Chooses how progress through the funnel looks: a single continuous bar (Line) or segmented dots (Dashes), each with its own color controls below. A visible 'how far along' cue reassures visitors only a few steps remain, which lifts completion. Pick whichever fits your brand and keep it the same across screens.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-kind",
       "guideKeys": [
         "screenedit-header-progress-indicator-kind"
       ],
@@ -3109,7 +3109,7 @@
       "summary": "Progress Bar Style",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3125,7 +3125,7 @@
       "summary": "When on, which is the default, the progress bar shrinks so it never overlaps the Back or Skip buttons; when off, it can collide with them in a tight header. Leave it on. Turn it off only if you've removed those buttons and want the bar to use the full width.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-respectbutton",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-respectbutton",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-respectbutton",
       "guideKeys": [
         "screenedit-header-progress-respect-buttons"
       ],
@@ -3146,7 +3146,7 @@
       "summary": "Keep Progress Clear Of Buttons",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-respectbutton-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-respectbutton-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-respectbutton-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3162,7 +3162,7 @@
       "summary": "Optional text shown with the progress bar, such as a 'Step 5 of 10' counter or a short line of reassurance. Supports other languages and styling; leave it empty for a clean bar-only look. Note this text is fixed per screen and won't count up on its own, so use it as a label unless you drive it from a variable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title",
       "guideKeys": [
         "screenedit-header-progress-title"
       ],
@@ -3184,7 +3184,7 @@
       "summary": "Progress Bar Text",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3201,7 +3201,7 @@
       "summary": "Overrides how the progress label (for example 'Step 5 of 10') looks — font, size, weight, color, alignment, line height, an optional highlight, and a strikethrough color. By default it inherits your theme. Use it to make the reassurance text legible against your header background, and keep it small so it supports rather than overshadows the progress bar.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles",
       "guideKeys": [
         "screenedit-header-progress-title-styles"
       ],
@@ -3223,7 +3223,7 @@
       "summary": "Progress text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3240,7 +3240,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3255,7 +3255,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3270,7 +3270,7 @@
       "summary": "The typeface of the progress title.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3285,7 +3285,7 @@
       "summary": "Text size of the progress title in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3300,7 +3300,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3315,7 +3315,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3330,7 +3330,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3346,7 +3346,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3361,7 +3361,7 @@
       "summary": "An optional fill drawn behind the progress title text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3376,7 +3376,7 @@
       "summary": "The color of the progress title text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3391,7 +3391,7 @@
       "summary": "Colors the empty, not-yet-completed part of the progress bar. Defaults to white for the Line style and light gray for Dashes. Keep it muted next to the filled color so the completed portion clearly reads as progress rather than blending in.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-trackcolor",
       "guideKeys": [
         "screenedit-header-progress-track-color"
       ],
@@ -3412,7 +3412,7 @@
       "summary": "Remaining Progress Color",
       "kind": "section",
       "articleSectionId": "set-headerbar-progressindicator-trackcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-trackcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-trackcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3428,7 +3428,7 @@
       "summary": "When on, the progress bar stretches all the way across the header; when off, it takes only the width its content needs. Use full width for a bold, obvious progress bar across the top of the screen. Turn it off when you want the bar compact and grouped with a label or icon.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-fullwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-fullwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-fullwidth",
       "guideKeys": [
         "screenedit-header-progress-full-width"
       ],
@@ -3450,7 +3450,7 @@
       "summary": "Stretch Progress Edge-To-Edge",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-fullwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-fullwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-fullwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3466,7 +3466,7 @@
       "summary": "Sets the spacing on each side of the progress indicator alone, separate from the header's overall padding. Use it to fine-tune the gap around the bar, for example to nudge it down from the buttons, without moving the buttons themselves. Most funnels keep the default; adjust only when the bar sits too tight or too loose against the header.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-insets",
       "guideKeys": [
         "screenedit-header-progress-insets"
       ],
@@ -3487,7 +3487,7 @@
       "summary": "Spacing around the progress bar",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3503,7 +3503,7 @@
       "summary": "Sets where the progress bar sits up and down within the header: at the top, centered, or at the bottom. Centered is the usual balanced choice; use bottom to sit it just above your content, or top to hug the status bar. Adjust only if the default placement looks off for your header height.",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-verticalalignment",
       "guideKeys": [
         "screenedit-header-progress-vertical-alignment"
       ],
@@ -3524,7 +3524,7 @@
       "summary": "Progress Height In Header",
       "kind": "section",
       "articleSectionId": "set-headerbar-progresslayout-verticalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-verticalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-verticalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3540,7 +3540,7 @@
       "summary": "Sets the text and styling of the Skip control that lets visitors bypass this step. Defaults to 'SKIP' and supports other languages. Use it only where skipping is fine, and clear it to hide it on your paywall and key question screens, where an easy out lowers both sales and the answers you collect.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip",
       "guideKeys": [
         "screenedit-header-skip-button"
       ],
@@ -3563,7 +3563,7 @@
       "summary": "Overrides how the Skip control's label looks — font, size, weight, color, alignment, line height, an optional highlight, and a strikethrough color. By default it inherits your theme. Keep Skip visually quiet (smaller, lower-contrast) so it doesn't pull attention away from continuing; restyle it only to fit a specific header look.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles",
       "guideKeys": [
         "screenedit-header-skip-styles"
       ],
@@ -3585,7 +3585,7 @@
       "summary": "Skip button text style",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3602,7 +3602,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3617,7 +3617,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3632,7 +3632,7 @@
       "summary": "The typeface of the skip button.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3647,7 +3647,7 @@
       "summary": "Text size of the skip button in pixels.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3662,7 +3662,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3677,7 +3677,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3692,7 +3692,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3708,7 +3708,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3723,7 +3723,7 @@
       "summary": "An optional fill drawn behind the skip button text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3738,7 +3738,7 @@
       "summary": "The color of the skip button text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3756,7 +3756,7 @@
       "group": "back",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/open-section-back.png",
       "articleSectionId": "set-headerbar-back",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3770,7 +3770,7 @@
       "group": "back",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/back-styles-grid.png",
       "articleSectionId": "set-headerbar-back-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-back-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-back-appearance-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3785,7 +3785,7 @@
       "group": "skip",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/open-section-skip.png",
       "articleSectionId": "set-headerbar-skip",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3799,7 +3799,7 @@
       "group": "skip",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/skip-styles-grid.png",
       "articleSectionId": "set-headerbar-skip-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-skip-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-skip-appearance-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3814,7 +3814,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-kind.png",
       "articleSectionId": "set-headerbar-progressindicator-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-kind",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3829,7 +3829,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-active-color.png",
       "articleSectionId": "set-headerbar-progressindicator-activecolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-activecolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-activecolor",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3844,7 +3844,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-track-color.png",
       "articleSectionId": "set-headerbar-progressindicator-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-trackcolor",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3859,7 +3859,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-title.png",
       "articleSectionId": "set-headerbar-progressindicator-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3874,7 +3874,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-icon.png",
       "articleSectionId": "set-headerbar-progressindicator-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3889,7 +3889,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-content-alignment.png",
       "articleSectionId": "set-headerbar-progressindicator-contentalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-contentalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-contentalignment",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3904,7 +3904,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-full-width.png",
       "articleSectionId": "set-headerbar-progresslayout-fullwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-fullwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-fullwidth",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3919,7 +3919,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-respect-buttons.png",
       "articleSectionId": "set-headerbar-progressindicator-respectbutton",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-respectbutton",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-respectbutton",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3934,7 +3934,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-vertical-align.png",
       "articleSectionId": "set-headerbar-progresslayout-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-verticalalignment",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3949,7 +3949,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/progress-panel-progress-insets.png",
       "articleSectionId": "set-headerbar-progresslayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progresslayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progresslayout-insets",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3964,7 +3964,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/title-styles-grid.png",
       "articleSectionId": "set-headerbar-progressindicator-title-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-title-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-title-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3979,7 +3979,7 @@
       "group": "progress",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/icon-styles-grid.png",
       "articleSectionId": "set-headerbar-progressindicator-icon-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-progressindicator-icon-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-progressindicator-icon-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -3994,7 +3994,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/appearance-panel-height.png",
       "articleSectionId": "set-headerbar-appearance-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-height",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -4009,7 +4009,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/appearance-panel-background.png",
       "articleSectionId": "set-headerbar-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -4024,7 +4024,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/appearance-panel-opacity.png",
       "articleSectionId": "set-headerbar-appearance-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-appearance-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-appearance-opacity",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -4039,7 +4039,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/appearance-panel-header-insets.png",
       "articleSectionId": "set-headerbar-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html#set-headerbar-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header#set-headerbar-insets",
       "route": [
         "Open the screen in the editor.",
         "Expand the Header section.",
@@ -7595,6 +7595,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "5d35f7fa2a0e163a"
+    "generatedHash": "143275b933782a25"
   }
 }

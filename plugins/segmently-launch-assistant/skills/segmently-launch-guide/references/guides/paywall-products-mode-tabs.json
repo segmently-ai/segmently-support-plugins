@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": false,
     "screenshotSectionCount": 0,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-mode-tabs/index.html",
+    "fullArticleLink": "https://help.segmently.ai/paywall-products-mode-tabs",
     "sourceRecipeKey": null,
     "localArticlePath": null,
     "sections": [
@@ -43,7 +43,12 @@
       "title": "Switch between Test and Live catalogs",
       "summary": "The Test and Live tabs hold two completely separate product catalogs, each with its own count badge. Start in Test while you're still validating — it can't charge real cards. Always glance at which tab is selected before you create or edit a product, so it lands in the right catalog.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-products-mode-tabs",
+          "subarticleId": "paywall-products-mode-tabs/mode-tabs"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -51,7 +56,12 @@
       "title": "Keep the mode consistent everywhere",
       "summary": "A product only works at checkout if the paywall screen, your Stripe connection, and this tab are all in the same mode. A real launch needs a Live product with a Live Stripe connection; a safe rehearsal needs a Test product with a Test connection. Mixing modes is the most common reason a paywall fails to charge.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-products-mode-tabs",
+          "subarticleId": "paywall-products-mode-tabs/publish-dependency"
+        }
+      ],
       "actionIds": []
     }
   ]

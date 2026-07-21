@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "segmently-launch-assistant",
-  "version": "0.1.0+codex.21604ae16626",
+  "version": "0.1.0+codex.ed2a315b734e",
   "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
   "author": {
     "name": "Segmently"

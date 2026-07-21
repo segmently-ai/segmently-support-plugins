@@ -363,10 +363,181 @@
       "tags": ["tiktok-events", "analytics-events", "provider-setup"]
     },
     {
+      "articleAlias": "canvas-add-screen",
+      "summary": "Shows how to add a V2 screen from the Screen Templates panel, search for the right question, content, embed, or paywall template, drag it onto the canvas, and open the new node for section editing. Use this when a customer needs another step in an onboarding flow.",
+      "keywords": ["add screen to canvas", "screen templates panel", "drag screen template", "new onboarding step", "choose screen type"],
+      "tags": ["canvas", "screen-templates", "onboarding", "screen-editor"]
+    },
+    {
+      "articleAlias": "canvas-connect-screens",
+      "summary": "Explains how to connect V2 onboarding screens so every action reaches the intended next step. It covers default paths, conditional branches, checking incoming and outgoing connections, and validating that the launch route does not leave visitors at a dead end.",
+      "keywords": ["connect screens", "canvas edges", "default path", "conditional branch", "onboarding navigation"],
+      "tags": ["canvas", "connections", "conditions", "onboarding-navigation"]
+    },
+    {
+      "articleAlias": "canvas-overview",
+      "summary": "Explains how to read a V2 onboarding canvas before publication: identify the launch screen, follow the visitor route, inspect branches, and confirm paywall screens point to valid products. Use this for a high-level canvas health and launch-readiness review.",
+      "keywords": ["canvas overview", "launch screen", "review onboarding route", "canvas health", "paywall product connection"],
+      "tags": ["canvas", "onboarding", "launch-readiness", "paywall"]
+    },
+    {
+      "articleAlias": "integrations-stripe-connect-section",
+      "summary": "Explains where Stripe Connect lives in Integrations and why the correct Stripe account mode must be connected before Segmently can map paywall products to Stripe products and prices. Use this when product lookup or checkout setup is blocked by a missing connection.",
+      "keywords": ["stripe connect setup", "connect stripe account", "stripe integration", "paywall product prerequisite", "stripe account mode"],
+      "tags": ["stripe-connect", "integrations", "paywall", "checkout"]
+    },
+    {
+      "articleAlias": "onboarding-wizard-theme-select",
+      "summary": "Shows how to choose a theme in the onboarding creation wizard and check that it supports every planned screen type, not only the first screen. Use this when customers want a consistent visual baseline before they start editing individual screens.",
+      "keywords": ["select onboarding theme", "onboarding wizard theme", "choose funnel theme", "screen type theme coverage", "visual baseline"],
+      "tags": ["onboarding-wizard", "themes", "onboarding", "design"]
+    },
+    {
+      "articleAlias": "paywall-products-list",
+      "summary": "Explains the Paywall Products list where products are created and reviewed before being attached to a paywall screen. It covers matching products to the connected Stripe Test or Live mode and checking that the intended product is available for checkout.",
+      "keywords": ["paywall products list", "create paywall product", "attach product to paywall", "stripe mode product", "checkout product"],
+      "tags": ["paywall", "products", "stripe-payments", "checkout"]
+    },
+    {
+      "articleAlias": "screen-editor-action-button",
+      "summary": "Explains how to configure a screen's action button label and behavior so visitors understand the next step and the button follows the canvas transition. It also covers keeping required inputs blocking until the screen has a valid answer.",
+      "keywords": ["screen action button", "button label", "next screen action", "required input blocking", "continue button behavior"],
+      "tags": ["screen-editor", "action-button", "navigation", "validation"]
+    },
+    {
+      "articleAlias": "screen-editor-overview",
+      "summary": "Introduces the Screen Editor as the place to configure one screen's copy, layout, media, variables, actions, background, and behavior. It distinguishes shared sections from screen-specific sections and helps customers find the correct control before making changes.",
+      "keywords": ["screen editor overview", "edit screen settings", "screen sections", "screen copy layout media", "find screen control"],
+      "tags": ["screen-editor", "screen-settings", "layout", "variables"]
+    },
+    {
+      "articleAlias": "stripe-connect-live-mode",
+      "summary": "Explains when and how to connect Stripe Live mode to the production Stripe account after real products, prices, payout details, and business readiness are confirmed. Use this before publishing a funnel that will charge actual customers.",
+      "keywords": ["stripe live mode", "connect production stripe", "real payments", "live products prices", "production checkout"],
+      "tags": ["stripe-connect", "live-mode", "production", "checkout"]
+    },
+    {
+      "articleAlias": "stripe-connect-oauth-guidance",
+      "summary": "Explains the Stripe OAuth handoff and why the customer must authorize the correct Test or Live account mode. It covers selecting the intended Stripe account so product and price lookup, checkout creation, and later verification use the same environment.",
+      "keywords": ["stripe oauth", "authorize stripe account", "stripe account mode", "stripe connection handoff", "checkout authorization"],
+      "tags": ["stripe-connect", "oauth", "authorization", "checkout"]
+    },
+    {
+      "articleAlias": "stripe-connect-test-mode",
+      "summary": "Explains how to connect Stripe Test mode first so a paywall and checkout can be exercised without charging real customers. Use it to validate product mappings, prices, subscriptions, and purchase behavior before moving the funnel to Live mode.",
+      "keywords": ["stripe test mode", "test checkout", "sandbox payments", "test paywall", "validate stripe products"],
+      "tags": ["stripe-connect", "test-mode", "paywall", "checkout-testing"]
+    },
+    {
+      "articleAlias": "webplacement-entry-rules",
+      "summary": "Explains Web Placement entry rules that choose the first screen from a source or routing value. It covers defining specific routes, keeping a valid default entry path, and verifying every visitor can enter the published onboarding even when no source rule matches.",
+      "keywords": ["web placement entry rules", "route visitor to screen", "default entry screen", "source routing", "published funnel entry"],
+      "tags": ["web-placement", "routing", "entry-screen", "publish"]
+    },
+    {
+      "articleAlias": "webplacement-publish-url",
+      "summary": "Explains how to publish a Web Placement, copy its public URL, and smoke-test the entire funnel in a clean session before sending traffic. It includes checking navigation, checkout, analytics, and the final custom-domain or Segmently serving URL.",
+      "keywords": ["web placement publish url", "copy funnel url", "smoke test published funnel", "public onboarding link", "publish verification"],
+      "tags": ["web-placement", "publish", "public-url", "launch-verification"]
+    },
+    {
+      "articleAlias": "webplacement-stripe-metadata",
+      "summary": "Explains how Web Placement metadata mappings pass stable funnel values such as customer email and UTM attribution into Stripe checkout and webhooks. Use this when downstream billing records need reliable context from the published visitor session.",
+      "keywords": ["stripe metadata mapping", "web placement metadata", "pass email to stripe", "utm checkout metadata", "stripe webhook context"],
+      "tags": ["web-placement", "stripe-payments", "metadata", "attribution"]
+    },
+    {
+      "articleAlias": "onboarding-list-create",
+      "summary": "Shows how to start one new V2 onboarding draft from the onboarding list, choose the creation flow, and avoid duplicate drafts for the same campaign. Use this when a customer is ready to create the funnel container before adding screens.",
+      "keywords": ["create onboarding", "new onboarding draft", "onboarding list", "start funnel", "avoid duplicate draft"],
+      "tags": ["onboarding", "create-funnel", "onboarding-list", "draft"]
+    },
+    {
+      "articleAlias": "onboarding-wizard-basic-info",
+      "summary": "Explains the onboarding wizard's basic information step where the customer sets the funnel name, target platform, and language. It clarifies that the platform choice affects the publication surface and runtime behavior, so these fields should be correct before design begins.",
+      "keywords": ["onboarding basic information", "funnel name platform language", "onboarding wizard", "target platform", "funnel language"],
+      "tags": ["onboarding-wizard", "onboarding", "platform", "localization"]
+    },
+    {
+      "articleAlias": "onboarding-wizard-theme-customize",
+      "summary": "Explains how to customize high-level theme settings during onboarding creation while leaving screen-specific copy and layout for the Screen Editor. Use this to establish shared colors, typography, and styling without prematurely editing individual screens.",
+      "keywords": ["customize onboarding theme", "onboarding wizard styling", "shared funnel colors", "theme typography", "screen specific editing"],
+      "tags": ["onboarding-wizard", "themes", "design", "screen-editor"]
+    },
+    {
+      "articleAlias": "custom-domain-dns-setup",
+      "summary": "Explains how to add the exact DNS records Segmently provides for a custom domain, keep the records DNS-only without a proxy, and wait for propagation before verification. Use this when the branded funnel hostname is entered but its DNS is not ready.",
+      "keywords": ["custom domain dns setup", "add dns records", "dns only no proxy", "domain propagation", "branded funnel hostname"],
+      "tags": ["custom-domain", "dns", "domain-verification", "publish-readiness"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"]
+    },
+    {
+      "articleAlias": "custom-domain-domain-input",
+      "summary": "Explains how to enter the exact public hostname for a Segmently custom domain without a protocol, port, or path, and confirm that the customer can edit its DNS. Use this when validating the domain value before records are generated.",
+      "keywords": ["custom domain input", "enter public hostname", "domain without protocol", "branded domain", "dns ownership"],
+      "tags": ["custom-domain", "hostname", "dns", "domain-setup"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"]
+    },
+    {
+      "articleAlias": "custom-domain-verification",
+      "summary": "Explains how to verify a Segmently custom domain after DNS records propagate, retry verification safely, and confirm the branded hostname is ready before publication. Use this when DNS was added but the domain still shows a pending or failed state.",
+      "keywords": ["verify custom domain", "domain verification pending", "retry dns verification", "custom domain ready", "branded url verification"],
+      "tags": ["custom-domain", "domain-verification", "dns", "publish-readiness"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"]
+    },
+    {
+      "articleAlias": "paywall-product-basic-fields",
+      "summary": "Explains the basic Paywall Product fields for the offer name, product type, and checkout behavior. Use this when a product is being created and must display correctly on the paywall and produce the intended Stripe checkout flow.",
+      "keywords": ["paywall product basic fields", "product name type", "checkout behavior", "create paywall offer", "stripe product setup"],
+      "tags": ["paywall", "products", "checkout", "stripe-payments"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png"]
+    },
+    {
+      "articleAlias": "paywall-product-price-setup",
+      "summary": "Explains how to set a Paywall Product amount, currency, and recurrence so the displayed offer matches what Stripe will charge. Use this to prevent pricing mismatches between the paywall copy, Segmently product record, and checkout session.",
+      "keywords": ["paywall product price", "set amount currency", "subscription recurrence", "stripe price setup", "checkout price mismatch"],
+      "tags": ["paywall", "pricing", "stripe-payments", "subscriptions"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png"]
+    },
+    {
+      "articleAlias": "paywall-product-stripe-mapping",
+      "summary": "Explains how to map a Segmently Paywall Product to the intended Stripe product and price in the same Test or Live account mode. Use this when checkout must charge the exact catalog item and amount selected during product setup.",
+      "keywords": ["map paywall product to stripe", "stripe product price mapping", "same stripe mode", "checkout catalog item", "paywall stripe mapping"],
+      "tags": ["paywall", "stripe-payments", "product-mapping", "checkout"],
+      "mediaUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202538_1-stripe-product/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202547_2-stripe-price/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png"
+      ]
+    },
+    {
+      "articleAlias": "paywall-product-subscription-options",
+      "summary": "Explains Paywall Product subscription settings such as billing interval and trial so they match the mapped Stripe price and the offer shown on the paywall. Use this when recurring billing behavior or trial copy is inconsistent.",
+      "keywords": ["paywall subscription options", "billing interval", "subscription trial", "stripe recurring price", "paywall trial copy"],
+      "tags": ["paywall", "subscriptions", "trials", "stripe-payments"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630202549_3-product-mapped/origin.png"]
+    },
+    {
+      "articleAlias": "paywall-products-mode-tabs",
+      "summary": "Explains the Test and Live tabs in Paywall Products and why the selected tab must match both the connected Stripe mode and the funnel being published. Use this to diagnose missing products or checkout mode mismatches.",
+      "keywords": ["paywall products test live tabs", "stripe mode mismatch", "test live products", "missing paywall product", "checkout environment"],
+      "tags": ["paywall", "test-mode", "live-mode", "stripe-payments"],
+      "mediaUrls": ["https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"]
+    },
+    {
       "articleAlias": "help-strategy-onboarding-sync",
-      "summary": "Explains how to keep a strategy and its compiled onboarding funnel in sync from the canvas editor's Actions menu. Covers Compile (turn a strategy into a new funnel, with a theme and a preview before the real run), Push (send strategy changes into the linked funnel with a three-way merge where screens edited on both sides are preserved, so hand-made funnel edits are kept by default), the per-screen Keep funnel / Take strategy conflict switch, the create/replace/preserve/delete actions and the “no baseline — will overwrite” warning, variable resolutions (preserve, overwrite, fork to keep both, drop), AI image alternates, Pull (bring one funnel block back into the strategy), and Lift (rebuild a strategy from a funnel version) with placing loose screens into existing or new blocks. Also notes the nothing-to-sync and error states and the equivalent CLI verbs. Use this when customers ask how to push strategy changes to their funnel without losing edits, how to pull or lift funnel changes back into a strategy, how sync conflicts are resolved, or why a sync preserved a screen instead of overwriting it.",
-      "keywords": ["strategy", "onboarding", "funnel", "sync", "compile", "push", "pull", "lift", "conflict", "three-way merge", "resolutions", "variables", "loose screens", "keep funnel", "take strategy"],
-      "tags": ["strategy-onboarding-sync", "canvas-editor", "conflict-resolution"]
+      "summary": "Explains how a strategy and its linked onboarding funnel stay synchronized through Compile, Push, block-level Pull, and Lift. It covers preview-first plans, three-way screen conflicts, variable resolutions, preserving funnel edits, and placing loose screens back into strategy blocks.",
+      "keywords": ["sync strategy and onboarding", "push strategy changes", "pull block from onboarding", "compile strategy to funnel", "lift funnel to strategy", "keep funnel edits", "resolve sync conflict"],
+      "tags": ["strategy", "onboarding", "sync", "compile", "push", "pull", "lift", "conflict-resolution"],
+      "mediaUrls": [
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095132_sync-02-actions-menu/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095149_sync-block-actions-menu/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095136_sync-14-compile-plan-step/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095140_sync-10-push-plan-diff-table/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095144_sync-11-push-plan-resolutions/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/dLESTv4wpj84OzYKluZe/20260721095147_sync-15-lift-loose-suggested/origin.png"
+      ]
     }
   ]
 }

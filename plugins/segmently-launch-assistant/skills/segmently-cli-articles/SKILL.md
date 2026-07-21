@@ -1,13 +1,14 @@
 ---
 name: segmently-cli-articles
-description: "Use this Segmently skill for detailed CLI work with Content Plan HTML articles: create/get/apply/clone/add-image/publish Flexible Layout article drafts, edit full FlowDocument manifests, configure article sections and responsive presentation settings, and return CDN article URLs. Also trigger when Segmently Launch Assistant returns articleFetch.owningSkill, executeWith.skill, or owningSkill=segmently-cli-articles for full article lookup, article URL/body fetch, or support article maintenance."
+description: "Use this Segmently skill for detailed CLI work with Content Plan HTML articles: create/get/apply/clone/add-image/publish Flexible Layout article drafts, edit full FlowDocument manifests, configure article sections and responsive presentation settings, and return custom-domain article URLs plus asset verification URLs. Also trigger when Segmently Launch Assistant returns articleFetch.owningSkill, executeWith.skill, or owningSkill=segmently-cli-articles for full article lookup, article URL/body fetch, or support article maintenance."
 ---
 
 # Segmently CLI Articles
 
 Use this skill when the user asks to create, edit, clone, configure, publish, or
 inspect Segmently HTML articles. Articles are single-screen V2 `FlexibleLayout`
-documents stored under a project and published as CDN HTML/config assets.
+documents stored under a project and published as static article assets served
+through the project's configured article custom domain.
 
 For general CLI usage, auth, scopes, and environment selection, use
 `segmently-cli-guide`. This skill is self-contained for customer/runtime use and
@@ -42,7 +43,7 @@ Commands:
 | `clone <articleId> [projectId] --title --alias` | Copy an article and all FlexibleLayout settings into a new draft. |
 | `add-image <articleId> [projectId] --url ...` | Add a Media section from an existing public/CDN URL. |
 | `add-image <articleId> [projectId] --file ...` | Upload a local image, then add a Media section. |
-| `publish <articleId> [projectId]` | Publish the draft to CDN HTML/config storage. |
+| `publish <articleId> [projectId]` | Publish the draft to article storage and return the custom-domain public URL plus asset verification URLs. |
 
 Reusable local manifest block commands:
 
@@ -83,7 +84,9 @@ segmently --project <projectId> content-plan articles create \
 segmently --project <projectId> content-plan articles publish <articleId>
 ```
 
-Return the `url` from the publish response to the user. Verify with `curl -I`
+Return the `url` / `publishedUrl` from the publish response to the user; it is
+the customer-facing custom-domain URL when the project has an article domain.
+Use `assetUrl` and `configUrl` for technical verification. Verify with `curl -I`
 when a public URL is requested.
 
 ### Edit Full Article UI Through JSON
@@ -209,6 +212,9 @@ An article is a project document with:
 - `representationProfile`: `standard`, `phone`, `tablet`, or `laptop`
 - `flowDocument`: full V2 `FlowDocument`
 - optional `publishedUrl`, `configUrl`, `webShellVersion`, `publishedAt`
+- new publishes may also include `assetUrl`, `gatewayUrl`, and
+  `customDomainUrl`; treat `publishedUrl` as the customer-facing public URL and
+  `assetUrl` as the direct `assets/articles` HTML storage URL.
 
 The `flowDocument` must be a single-screen article:
 
@@ -287,6 +293,7 @@ After changes:
 segmently --project <projectId> content-plan articles get <articleId> --output verify.json
 segmently --project <projectId> content-plan articles publish <articleId>
 curl -I <publishedUrl>
+curl -I <assetUrl>
 curl -I <configUrl>
 ```
 

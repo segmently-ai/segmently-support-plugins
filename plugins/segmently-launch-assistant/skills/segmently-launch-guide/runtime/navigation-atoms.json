@@ -30,6 +30,37 @@
       ]
     },
     {
+      "routeId": "product-variables",
+      "entity": "Product Variables",
+      "title": "Product variable privacy settings",
+      "customerSafeLabel": "the Product variables section",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}?tab=product",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-product"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "product-variable-set-editor"
+        }
+      ]
+    },
+    {
       "routeId": "onboarding-list",
       "entity": "Onboarding List",
       "title": "Onboardings list",

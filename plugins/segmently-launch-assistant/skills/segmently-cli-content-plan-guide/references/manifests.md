@@ -2,6 +2,23 @@
 
 Use this file for JSON structures and fields.
 
+## CLI 1.0.0 Validation Boundary
+
+The CLI validates these six manifest-backed surfaces before making any network
+request:
+
+1. `content-plan bootstrap apply --file`;
+2. `content-plan topics apply --file`;
+3. `content-plan topics aspects apply --file`;
+4. `content-plan research phase patch --file`;
+5. `content-plan posts generate --file`;
+6. `content-plan designs apply --file`.
+
+Validation errors identify the JSON path and distinguish unknown fields from
+type mismatches. Fix the manifest instead of bypassing validation. For bootstrap
+only, `--skip-validation` bypasses the manifest validator but never the platform
+catalog preflight.
+
 ## Full Bootstrap Manifest
 
 Use this shape with `content-plan bootstrap validate|plan|apply|verify` when a
@@ -100,6 +117,13 @@ Validation rules:
 - Publications and schedules can inherit `strategyId` from top-level
   `strategy.strategyId`.
 
+`bootstrap apply` writes a sibling checkpoint named
+`<manifest>.bootstrap-state.json`. It contains the manifest hash and completed
+operation keys; it is runtime state, not an input manifest. Preserve it for
+resume, use `--state-file <path>` to relocate it, and use `--restart` only to
+intentionally ignore it. A checkpoint created for different manifest content
+must not be reused.
+
 ## Atomic Calendar Prep Manifests
 
 Use these shapes with atomic commands when not using the full bootstrap
@@ -160,6 +184,75 @@ orchestrator.
   ]
 }
 ```
+
+## Strategy Draft Inputs
+
+`strategy-planning.json` for `strategies preflight`, `strategies create`, or
+`strategies draft create`:
+
+```json
+{
+  "name": "Activation strategy",
+  "dateStart": "2026-07-01",
+  "dateEnd": "2026-07-31",
+  "targetPlatforms": ["linkedin", "x"],
+  "postsPerWeekPerPlatform": {
+    "linkedin": 2,
+    "x": 3
+  },
+  "primaryGoal": "leads",
+  "contentMixPreset": "80_20",
+  "sourceData": {},
+  "sourceDataIds": {
+    "audienceIds": [],
+    "taskIds": []
+  }
+}
+```
+
+`strategy-draft-patch.json`:
+
+```json
+{
+  "patch": {
+    "primaryGoal": "Updated reviewed goal"
+  }
+}
+```
+
+Use the same planning file for preflight and draft creation. Dry-run every draft
+create/patch/approve/regenerate operation before launching a real task.
+
+## Pillar Source Reanalysis Input
+
+`pillar-reanalysis.json`:
+
+```json
+{
+  "currentPillar": {
+    "id": "pillar_activation",
+    "name": "Activation psychology",
+    "summary": "How onboarding creates or loses user momentum.",
+    "sourcePostIds": ["post_existing"]
+  },
+  "newSourcePosts": [
+    {
+      "postId": "post_new",
+      "platformId": "linkedin"
+    }
+  ],
+  "updatePolicy": {
+    "mode": "conservative",
+    "newlyAddedPostCount": 1,
+    "maxNewTheses": 3
+  }
+}
+```
+
+`currentPillar` and at least one `newSourcePosts[].postId` are required. The
+command adds the explicit `--author`, optional `--user-id`, and optional model to
+the request. Reanalysis returns a task/proposal; it does not make the proposal a
+reviewed canonical pillar automatically.
 
 ## Creator Profile Manifest
 
@@ -291,3 +384,72 @@ Rules:
 - `visualReferences[].textBudgets[]` are per controllable text field, not per
   whole image. Decorative pseudo-text should not get a budget unless the
   generator is expected to replace it.
+
+## Full Design-System Package Manifest
+
+Use this shape with `content-plan design-systems apply` when one package owns a
+shared visual foundation plus multiple platform profile formats:
+
+```json
+{
+  "schemaVersion": "segmently.cli.content-plan-design-system-package.v1",
+  "source": {
+    "env": "prod",
+    "projectId": "<sourceProjectId>",
+    "authorId": "<sourceAuthorId>",
+    "basePath": "authors",
+    "platformId": "linkedin",
+    "packageId": "<sourcePackageId>"
+  },
+  "package": {
+    "packageId": "activation_system_v1",
+    "name": "Activation system",
+    "description": "Shared visual foundation with format-specific profiles.",
+    "setCurrent": false,
+    "targetProfileKeys": [
+      "carousel_portrait",
+      "single_image_square"
+    ],
+    "visualFoundation": {
+      "designDescription": "Evidence-led editorial system with high-contrast hierarchy.",
+      "palette": {
+        "background": "#0B1020",
+        "text": "#F8FAFC",
+        "accent": "#7C3AED"
+      }
+    }
+  },
+  "profiles": {
+    "carousel_portrait": {
+      "designSystem": {
+        "_schema": "segmently-design-system/v1"
+      },
+      "visualReferences": []
+    },
+    "single_image_square": {
+      "designSystem": {
+        "_schema": "segmently-design-system/v1"
+      },
+      "visualReferences": []
+    }
+  },
+  "assetManifest": {
+    "items": []
+  },
+  "contentHash": "<optionalHash>"
+}
+```
+
+Rules:
+
+- Export with `design-systems export` before editing an existing package.
+- Keep `package.setCurrent: false` for transfer/new-variant workflows. Activate
+  separately with `design-systems set-current` after apply/readback.
+- Pass target `--project`, `--author`, `--package-id`, and platform explicitly;
+  source ids are provenance only.
+- Use `--references upload` for cross-project copies. Use `keep` only for URLs
+  intentionally valid in the target context.
+- Dry-run may return an exact `--confirm-target` value for a non-prod-to-prod
+  import; do not invent that confirmation.
+- Use `design-systems inspect` after apply to verify resolved format/profile
+  context without launching AI generation.

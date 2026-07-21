@@ -11,7 +11,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Flexible Sections<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -70,7 +70,7 @@
       "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link product-aware sections (for example Text or Purchase Button) to a Product Catalog so labels and purchases follow the selected product. Each section type’s own content and styling lives in its dedicated block article.",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -88,7 +88,7 @@
       "summary": "Flexible Sections in the editor",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -105,7 +105,7 @@
       "summary": "Sticky Container<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -119,7 +119,7 @@
       "summary": "A floating bar pinned to the bottom of a Flexible Layout screen so the main button stays visible and tappable while content scrolls — its background bar (colour, opacity, corner radius, outline), the spacing from the edges and around the button, and whether it holds a standard or purchase button.",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -135,7 +135,7 @@
       "summary": "Sticky Container in the editor",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -151,7 +151,7 @@
       "summary": "The Flexible Layout screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -166,7 +166,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -182,7 +182,7 @@
       "summary": "Related article: Flexible Sections",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -199,7 +199,7 @@
       "summary": "Related article: Sticky Container",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -217,7 +217,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -231,7 +231,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -245,7 +245,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -261,7 +261,7 @@
       "summary": "Flexible Sections<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -276,7 +276,7 @@
       "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link product-aware sections (for example Text or Purchase Button) to a Product Catalog so labels and purchases follow the selected product. Each section type’s own content and styling lives in its dedicated block article.",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -294,7 +294,7 @@
       "summary": "Flexible Sections in the editor",
       "kind": "section",
       "articleSectionId": "block-flexiblesections-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-flexiblesections-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-flexiblesections-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -311,7 +311,7 @@
       "summary": "Sticky Container<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -325,7 +325,7 @@
       "summary": "A floating bar pinned to the bottom of a Flexible Layout screen so the main button stays visible and tappable while content scrolls — its background bar (colour, opacity, corner radius, outline), the spacing from the edges and around the button, and whether it holds a standard or purchase button.",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -341,7 +341,7 @@
       "summary": "Sticky Container in the editor",
       "kind": "section",
       "articleSectionId": "block-stickycontainer-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#block-stickycontainer-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#block-stickycontainer-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -357,7 +357,7 @@
       "summary": "The Flexible Layout screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-flexiblelayout/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-flexiblelayout#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -372,7 +372,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -388,7 +388,7 @@
       "summary": "Related article: Flexible Sections",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -405,7 +405,7 @@
       "summary": "Related article: Sticky Container",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -486,7 +486,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html"
+              "details": "https://help.segmently.ai/help-block-flexible-sections"
             },
             "labels": {
               "sep": {
@@ -600,7 +600,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
+              "details": "https://help.segmently.ai/help-block-background"
             },
             "labels": {
               "sep": {
@@ -714,7 +714,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html"
+              "details": "https://help.segmently.ai/help-block-sticky-container"
             },
             "labels": {
               "sep": {
@@ -809,6 +809,6 @@
       "scripts/help-articles/help-screen-flexiblelayout.assembly.json",
       "scripts/help-articles/help-screen-flexiblelayout.doc.json"
     ],
-    "generatedHash": "bb77dc61ee78a02e"
+    "generatedHash": "9476f354c3ed82b4"
   }
 }

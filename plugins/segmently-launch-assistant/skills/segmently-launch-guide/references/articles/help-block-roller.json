@@ -11,7 +11,7 @@
       "summary": "Picker container styles",
       "kind": "section",
       "articleSectionId": "g-container-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-container-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-container-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Selection label styles",
       "kind": "section",
       "articleSectionId": "g-label-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-label-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-label-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "Wheels & values",
       "kind": "section",
       "articleSectionId": "g-wheels-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-wheels-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-wheels-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -54,7 +54,7 @@
       "summary": "A spinning wheel picker — the data type, the wheels and their values (text lists or number ranges), the selected-value label styling, and the picker container’s background, borders, corner radius and padding. This guide documents every setting of the Roller block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -383,7 +383,7 @@
       "summary": "Roller in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -399,7 +399,7 @@
       "summary": "Open the Roller section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -413,7 +413,7 @@
       "summary": "Fill color behind the spinning wheels (default white, #ffffff). Choose a color that contrasts enough with the screen background so the picker reads as its own distinct card and the wheel values stay legible. A subtle off-white or light tint often separates the picker from the page better than pure white.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-roller-container-background-color"
       ],
@@ -436,7 +436,7 @@
       "summary": "Background behind the wheels",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -452,7 +452,7 @@
       "summary": "Color of the outline around the picker container (default light gray, #E0E0E0). Use a light neutral for a subtle card edge, or your accent color to make the picker stand out on the screen. It only shows when the border thickness above is greater than 0.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-color",
       "guideKeys": [
         "screenedit-roller-border-color"
       ],
@@ -475,7 +475,7 @@
       "summary": "Color of the picker outline",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -491,7 +491,7 @@
       "summary": "How rounded the four corners of the picker container are, in pixels (0-50, default 12). 0 gives sharp square corners; higher values look softer and more modern. Match it to the corner roundness of your buttons and other cards so the whole funnel feels consistent.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-radius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-radius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-radius-uniform",
       "guideKeys": [
         "screenedit-roller-border-radius"
       ],
@@ -513,7 +513,7 @@
       "summary": "Roundness of the corners",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-radius-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-radius-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-radius-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -529,7 +529,7 @@
       "summary": "Width in pixels of the outline around the picker container (0-50, default 1). Set it to 0 for no border and rely on the background color alone, or use 1-2px for a clean, defined edge. The border color setting below only takes effect when this is greater than 0.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-width",
       "guideKeys": [
         "screenedit-roller-border-width"
       ],
@@ -551,7 +551,7 @@
       "summary": "Thickness of the picker outline",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -567,7 +567,7 @@
       "summary": "Sets the empty space, in pixels, inside the picker container on each side: top, right, bottom, left, between the border and the spinning wheels. The default is usually a small value; increase it to give the wheels breathing room, or keep it tight for a compact picker. A clean, uncluttered picker feels effortless to use, which helps visitors commit their answer and continue through the funnel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-insets",
       "guideKeys": [
         "screenedit-roller-container-padding"
       ],
@@ -589,7 +589,7 @@
       "summary": "Space inside the picker",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -605,7 +605,7 @@
       "summary": "Chooses what the picker collects: String for text choices, which allows up to 5 side-by-side wheels (such as month / day / year), or Integer for a single numeric range (such as age or quantity). Set this first — it limits Integer to one wheel, unlocks up to five wheels for String, and changes how each wheel's options are set up below.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-datatype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-datatype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-datatype",
       "guideKeys": [
         "screenedit-roller-data-type"
       ],
@@ -627,7 +627,7 @@
       "summary": "Text choices or numbers",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-datatype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-datatype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-datatype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -644,7 +644,7 @@
       "summary": "Horizontal position of the selection label within its container: left, center, or right (default center). Center usually lines up with the centered wheels and is the safe choice; switch to left or right only to align the label with other text or a specific layout. This is purely visual and does not change the value the user selected.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-align",
       "guideKeys": [
         "screenedit-roller-label-text-align"
       ],
@@ -666,7 +666,7 @@
       "summary": "Where the label sits",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -683,7 +683,7 @@
       "summary": "Color of the label text that shows the user's current choice above the wheels (default black, #000000). Pick a color with strong contrast against the container background so the chosen value stays easy to read, ideally your theme's main text color for consistency. This affects only the label, not the wheel options themselves.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-color",
       "guideKeys": [
         "screenedit-roller-label-text-color"
       ],
@@ -705,7 +705,7 @@
       "summary": "Color of the selection label",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -722,7 +722,7 @@
       "summary": "Text size of the label that shows the user's current choice above the wheels (0-50, default 18). 16-22 keeps the chosen value clearly readable; very small or 0 effectively hides it. Increase it when you want the selection to stand out as a confirmation of what the user picked.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontsize",
       "guideKeys": [
         "screenedit-roller-label-font-size"
       ],
@@ -744,7 +744,7 @@
       "summary": "Size of the selection label",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -761,7 +761,7 @@
       "summary": "How heavy the selection label looks, from 300 (Light) to 900 (Black); default 400 (Regular). Use 600-700 (Semibold/Bold) to make the chosen value read as a clear confirmation, or keep it at 400 if it should sit quietly above the wheels. Match it to the weight of your other body text for a consistent look.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontweight",
       "guideKeys": [
         "screenedit-roller-label-font-weight"
       ],
@@ -783,7 +783,7 @@
       "summary": "Thickness of the label text",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -800,7 +800,7 @@
       "summary": "The character or characters used to join selections from multiple wheels into one combined value — for example '/' turns two wheels into 'Large/Red', or a space joins them with a gap. This only matters when you have more than one wheel; leave it as-is for a single-wheel picker. Choose a separator that reads naturally in the answer you'll store and reuse later in the funnel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-separator",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-separator",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-separator",
       "guideKeys": [
         "screenedit-roller-separator"
       ],
@@ -821,7 +821,7 @@
       "summary": "Joiner between wheel values",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-separator-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-separator-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-separator-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -837,7 +837,7 @@
       "summary": "The spinning wheels users scroll to make their choice. Each wheel is either a List of text options or a Range of numbers; use Add Wheel to add more (up to 5 with the String data type, only 1 with Integer), then expand a wheel to set its type, options, and starting value. Each wheel's selection is saved as a variable you can reuse later for personalized copy or to route users down different paths.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels",
       "guideKeys": [
         "screenedit-roller-wheels"
       ],
@@ -859,7 +859,7 @@
       "summary": "Add and set up wheels",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -875,7 +875,7 @@
       "summary": "The value already showing when the screen loads. For List wheels, pick one of your options; for Range wheels, pick any number within the from/to span. Pre-selecting the most common answer reduces friction and prevents accidental empty or extreme submissions — leave it empty only if you truly want nothing chosen up front.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-defaultvalue-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-defaultvalue-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-defaultvalue-locale",
       "guideKeys": [
         "screenedit-roller-default-value"
       ],
@@ -896,7 +896,7 @@
       "summary": "Pre-selected starting value",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-defaultvalue-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-defaultvalue-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-defaultvalue-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -912,7 +912,7 @@
       "summary": "Sets how this wheel's values are built: List means you type each option yourself (sizes, labels, months), while Range means you set a from/to span and the wheel fills in every number between, such as 1 to 10. Use List for arbitrary text choices and Range for evenly-spaced numbers. Note that switching between them clears the options you've already entered for this wheel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-kind",
       "guideKeys": [
         "screenedit-roller-wheel-kind"
       ],
@@ -934,7 +934,7 @@
       "summary": "List of options or number range",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -950,7 +950,7 @@
       "summary": "The smallest number a Range-mode wheel starts at. Together with the 'to' value it sets the span users can scroll — for example from 1 to 10 lets them pick any number from 1 through 10. Keep this lower than 'to', and set it to the smallest realistic answer for your question, such as a minimum age or quantity.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-from",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-from",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-from",
       "guideKeys": [
         "screenedit-roller-range-from"
       ],
@@ -971,7 +971,7 @@
       "summary": "Lowest number on the wheel",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-from-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-from-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-from-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -987,7 +987,7 @@
       "summary": "The text choices shown on a List-mode wheel. Add, edit, drag to reorder, or delete options (1-20 allowed). The order here is the order users scroll through, so place the most common choices near the top where the starting value lands. Each option is per-language, so translate them if your funnel runs in more than one language.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-localizedoptions-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
       "guideKeys": [
         "screenedit-roller-options"
       ],
@@ -1009,7 +1009,7 @@
       "summary": "Edit the wheel's choices",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1025,7 +1025,7 @@
       "summary": "The largest number a Range-mode wheel ends at. Together with the 'from' value it sets the span users can scroll — for example from 1 to 10 lets them pick any number from 1 through 10. Keep this higher than 'from', and set it to the largest realistic answer for your question so users aren't offered absurd values.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-to",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-to",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-to",
       "guideKeys": [
         "screenedit-roller-range-to"
       ],
@@ -1046,7 +1046,7 @@
       "summary": "Highest number on the wheel",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-to-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-to-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-to-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1064,7 +1064,7 @@
       "summary": "Picker container styles",
       "kind": "section",
       "articleSectionId": "g-container-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-container-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-container-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1078,7 +1078,7 @@
       "summary": "Selection label styles",
       "kind": "section",
       "articleSectionId": "g-label-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-label-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-label-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1093,7 +1093,7 @@
       "summary": "Wheels & values",
       "kind": "section",
       "articleSectionId": "g-wheels-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#g-wheels-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#g-wheels-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1107,7 +1107,7 @@
       "summary": "A spinning wheel picker — the data type, the wheels and their values (text lists or number ranges), the selected-value label styling, and the picker container’s background, borders, corner radius and padding. This guide documents every setting of the Roller block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1436,7 +1436,7 @@
       "summary": "Roller in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1452,7 +1452,7 @@
       "summary": "Open the Roller section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1466,7 +1466,7 @@
       "summary": "Fill color behind the spinning wheels (default white, #ffffff). Choose a color that contrasts enough with the screen background so the picker reads as its own distinct card and the wheel values stay legible. A subtle off-white or light tint often separates the picker from the page better than pure white.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-roller-container-background-color"
       ],
@@ -1489,7 +1489,7 @@
       "summary": "Background behind the wheels",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1505,7 +1505,7 @@
       "summary": "Color of the outline around the picker container (default light gray, #E0E0E0). Use a light neutral for a subtle card edge, or your accent color to make the picker stand out on the screen. It only shows when the border thickness above is greater than 0.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-color",
       "guideKeys": [
         "screenedit-roller-border-color"
       ],
@@ -1528,7 +1528,7 @@
       "summary": "Color of the picker outline",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1544,7 +1544,7 @@
       "summary": "How rounded the four corners of the picker container are, in pixels (0-50, default 12). 0 gives sharp square corners; higher values look softer and more modern. Match it to the corner roundness of your buttons and other cards so the whole funnel feels consistent.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-radius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-radius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-radius-uniform",
       "guideKeys": [
         "screenedit-roller-border-radius"
       ],
@@ -1566,7 +1566,7 @@
       "summary": "Roundness of the corners",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-radius-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-radius-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-radius-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1582,7 +1582,7 @@
       "summary": "Width in pixels of the outline around the picker container (0-50, default 1). Set it to 0 for no border and rely on the background color alone, or use 1-2px for a clean, defined edge. The border color setting below only takes effect when this is greater than 0.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-width",
       "guideKeys": [
         "screenedit-roller-border-width"
       ],
@@ -1604,7 +1604,7 @@
       "summary": "Thickness of the picker outline",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-borders-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1620,7 +1620,7 @@
       "summary": "Sets the empty space, in pixels, inside the picker container on each side: top, right, bottom, left, between the border and the spinning wheels. The default is usually a small value; increase it to give the wheels breathing room, or keep it tight for a compact picker. A clean, uncluttered picker feels effortless to use, which helps visitors commit their answer and continue through the funnel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-insets",
       "guideKeys": [
         "screenedit-roller-container-padding"
       ],
@@ -1642,7 +1642,7 @@
       "summary": "Space inside the picker",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-appearance-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1658,7 +1658,7 @@
       "summary": "Chooses what the picker collects: String for text choices, which allows up to 5 side-by-side wheels (such as month / day / year), or Integer for a single numeric range (such as age or quantity). Set this first — it limits Integer to one wheel, unlocks up to five wheels for String, and changes how each wheel's options are set up below.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-datatype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-datatype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-datatype",
       "guideKeys": [
         "screenedit-roller-data-type"
       ],
@@ -1680,7 +1680,7 @@
       "summary": "Text choices or numbers",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-datatype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-datatype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-datatype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1697,7 +1697,7 @@
       "summary": "Horizontal position of the selection label within its container: left, center, or right (default center). Center usually lines up with the centered wheels and is the safe choice; switch to left or right only to align the label with other text or a specific layout. This is purely visual and does not change the value the user selected.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-align",
       "guideKeys": [
         "screenedit-roller-label-text-align"
       ],
@@ -1719,7 +1719,7 @@
       "summary": "Where the label sits",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1736,7 +1736,7 @@
       "summary": "Color of the label text that shows the user's current choice above the wheels (default black, #000000). Pick a color with strong contrast against the container background so the chosen value stays easy to read, ideally your theme's main text color for consistency. This affects only the label, not the wheel options themselves.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-color",
       "guideKeys": [
         "screenedit-roller-label-text-color"
       ],
@@ -1758,7 +1758,7 @@
       "summary": "Color of the selection label",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1775,7 +1775,7 @@
       "summary": "Text size of the label that shows the user's current choice above the wheels (0-50, default 18). 16-22 keeps the chosen value clearly readable; very small or 0 effectively hides it. Increase it when you want the selection to stand out as a confirmation of what the user picked.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontsize",
       "guideKeys": [
         "screenedit-roller-label-font-size"
       ],
@@ -1797,7 +1797,7 @@
       "summary": "Size of the selection label",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1814,7 +1814,7 @@
       "summary": "How heavy the selection label looks, from 300 (Light) to 900 (Black); default 400 (Regular). Use 600-700 (Semibold/Bold) to make the chosen value read as a clear confirmation, or keep it at 400 if it should sit quietly above the wheels. Match it to the weight of your other body text for a consistent look.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontweight",
       "guideKeys": [
         "screenedit-roller-label-font-weight"
       ],
@@ -1836,7 +1836,7 @@
       "summary": "Thickness of the label text",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1853,7 +1853,7 @@
       "summary": "The character or characters used to join selections from multiple wheels into one combined value — for example '/' turns two wheels into 'Large/Red', or a space joins them with a gap. This only matters when you have more than one wheel; leave it as-is for a single-wheel picker. Choose a separator that reads naturally in the answer you'll store and reuse later in the funnel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-separator",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-separator",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-separator",
       "guideKeys": [
         "screenedit-roller-separator"
       ],
@@ -1874,7 +1874,7 @@
       "summary": "Joiner between wheel values",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-separator-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-separator-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-separator-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1890,7 +1890,7 @@
       "summary": "The spinning wheels users scroll to make their choice. Each wheel is either a List of text options or a Range of numbers; use Add Wheel to add more (up to 5 with the String data type, only 1 with Integer), then expand a wheel to set its type, options, and starting value. Each wheel's selection is saved as a variable you can reuse later for personalized copy or to route users down different paths.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels",
       "guideKeys": [
         "screenedit-roller-wheels"
       ],
@@ -1912,7 +1912,7 @@
       "summary": "Add and set up wheels",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1928,7 +1928,7 @@
       "summary": "The value already showing when the screen loads. For List wheels, pick one of your options; for Range wheels, pick any number within the from/to span. Pre-selecting the most common answer reduces friction and prevents accidental empty or extreme submissions — leave it empty only if you truly want nothing chosen up front.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-defaultvalue-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-defaultvalue-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-defaultvalue-locale",
       "guideKeys": [
         "screenedit-roller-default-value"
       ],
@@ -1949,7 +1949,7 @@
       "summary": "Pre-selected starting value",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-defaultvalue-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-defaultvalue-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-defaultvalue-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1965,7 +1965,7 @@
       "summary": "Sets how this wheel's values are built: List means you type each option yourself (sizes, labels, months), while Range means you set a from/to span and the wheel fills in every number between, such as 1 to 10. Use List for arbitrary text choices and Range for evenly-spaced numbers. Note that switching between them clears the options you've already entered for this wheel.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-kind",
       "guideKeys": [
         "screenedit-roller-wheel-kind"
       ],
@@ -1987,7 +1987,7 @@
       "summary": "List of options or number range",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2003,7 +2003,7 @@
       "summary": "The smallest number a Range-mode wheel starts at. Together with the 'to' value it sets the span users can scroll — for example from 1 to 10 lets them pick any number from 1 through 10. Keep this lower than 'to', and set it to the smallest realistic answer for your question, such as a minimum age or quantity.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-from",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-from",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-from",
       "guideKeys": [
         "screenedit-roller-range-from"
       ],
@@ -2024,7 +2024,7 @@
       "summary": "Lowest number on the wheel",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-from-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-from-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-from-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2040,7 +2040,7 @@
       "summary": "The text choices shown on a List-mode wheel. Add, edit, drag to reorder, or delete options (1-20 allowed). The order here is the order users scroll through, so place the most common choices near the top where the starting value lands. Each option is per-language, so translate them if your funnel runs in more than one language.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-localizedoptions-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
       "guideKeys": [
         "screenedit-roller-options"
       ],
@@ -2062,7 +2062,7 @@
       "summary": "Edit the wheel's choices",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-localizedoptions-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2078,7 +2078,7 @@
       "summary": "The largest number a Range-mode wheel ends at. Together with the 'from' value it sets the span users can scroll — for example from 1 to 10 lets them pick any number from 1 through 10. Keep this higher than 'from', and set it to the largest realistic answer for your question so users aren't offered absurd values.",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-to",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-to",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-to",
       "guideKeys": [
         "screenedit-roller-range-to"
       ],
@@ -2099,7 +2099,7 @@
       "summary": "Highest number on the wheel",
       "kind": "section",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-to-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-to-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-to-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2118,7 +2118,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-data-type.png",
       "articleSectionId": "set-roller-content-roller-datatype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-datatype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-datatype",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2132,7 +2132,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-separator.png",
       "articleSectionId": "set-roller-content-roller-separator",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-separator",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-separator",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2146,7 +2146,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheels.png",
       "articleSectionId": "set-roller-content-roller-wheels",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2160,7 +2160,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheel-kind.png",
       "articleSectionId": "set-roller-content-roller-wheels-n-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-kind",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2174,7 +2174,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheel-options.png",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-localizedoptions-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-localizedoptions-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2188,7 +2188,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheel-from.png",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-from",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-from",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-from",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2202,7 +2202,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheel-to.png",
       "articleSectionId": "set-roller-content-roller-wheels-n-options-to",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-options-to",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-options-to",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2216,7 +2216,7 @@
       "group": "wheels",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/open-section-wheel-default.png",
       "articleSectionId": "set-roller-content-roller-wheels-n-defaultvalue-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-wheels-n-defaultvalue-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-wheels-n-defaultvalue-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2230,7 +2230,7 @@
       "group": "label",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-size.png",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontsize",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2245,7 +2245,7 @@
       "group": "label",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-font-weight.png",
       "articleSectionId": "set-roller-content-roller-labelappearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-fontweight",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2260,7 +2260,7 @@
       "group": "label",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-color.png",
       "articleSectionId": "set-roller-content-roller-labelappearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2275,7 +2275,7 @@
       "group": "label",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-label-align.png",
       "articleSectionId": "set-roller-content-roller-labelappearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-labelappearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-labelappearance-align",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2290,7 +2290,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-bg-color.png",
       "articleSectionId": "set-roller-content-roller-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2305,7 +2305,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-width.png",
       "articleSectionId": "set-roller-content-roller-appearance-borders-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-width",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2320,7 +2320,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-color.png",
       "articleSectionId": "set-roller-content-roller-appearance-borders-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2335,7 +2335,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-border-radius.png",
       "articleSectionId": "set-roller-content-roller-appearance-borders-radius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-borders-radius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-borders-radius-uniform",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -2350,7 +2350,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-roller-section/0.2.0/configure-roller-section-2026-06-24T19-15-42-171Z-c26bba20/gear-container-padding.png",
       "articleSectionId": "set-roller-content-roller-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-roller/index.html#set-roller-content-roller-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-roller#set-roller-content-roller-appearance-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Wheel Picker screen and find the Roller section (set the data type, separator, and wheels at the top).",
@@ -3915,6 +3915,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "880dbace694d6b28"
+    "generatedHash": "3b760a27211e9f9b"
   }
 }

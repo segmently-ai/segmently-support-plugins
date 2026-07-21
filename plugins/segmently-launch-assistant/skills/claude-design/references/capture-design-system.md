@@ -70,6 +70,13 @@ Plus the shared cards `colors.html` / `type.html` / `spacing.html` / `screens.ht
 - `--tv-screen-<kind>-<path>` — that **one StepKind's** template screen only. E.g.
   `--tv-screen-herocontent-canvas-backgroundColor`.
 
+**Per-screen token depth is an option (Wave 2):** by default the cards carry one screen-scope var
+per screen (the solid canvas color — byte-compatible with older bundles). Add
+`--screen-tokens full` to any snapshot form to also bake the kind-aware per-screen registry into
+the cards (`copy-title-*`, `actionBar-primary-*`, `options-item*` etc. — gated per StepKind), which
+gives Claude Design a much richer per-screen editing vocabulary. `design extract`/`design apply`
+accept both depths transparently (names resolve through the same server-side allowlist).
+
 ### Step 2 — Push the bundle to Claude Design
 
 Delegate the upload to the native `/design-sync` skill + `DesignSync` tool. Ordering is

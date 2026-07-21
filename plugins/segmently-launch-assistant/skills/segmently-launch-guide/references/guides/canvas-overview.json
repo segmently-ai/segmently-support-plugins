@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-overview/index.html",
+    "fullArticleLink": "https://help.segmently.ai/canvas-overview",
     "sourceRecipeKey": "open-v2-canvas",
     "localArticlePath": null,
     "sections": [
@@ -61,7 +61,12 @@
       "title": "Read the flow structure",
       "summary": "The canvas shows every screen as a node and every transition as an edge. Drag to arrange, click to select, and double-click a node to open the Screen Editor; the flow runs left to right.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151500_open-canvas-canvas-overview/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-overview",
+          "subarticleId": "canvas-overview/canvas-display"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -69,7 +74,12 @@
       "title": "Identify the launch screen",
       "summary": "The first screen carries a First screen label on its left. The launch screen is where every visitor enters; only one can be the launch screen and it cannot have incoming connections.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-overview",
+          "subarticleId": "canvas-overview/launch-screen"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -77,7 +87,12 @@
       "title": "Use the toolbar controls",
       "summary": "The top bar has undo, redo, and close; the side panel has search, a locale selector when multiple languages exist, and a funnel-insights toggle. Shortcuts: Ctrl+Z undo, Ctrl+Shift+Z redo, Ctrl+F search.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-overview",
+          "subarticleId": "canvas-overview/canvas-controls"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -85,7 +100,12 @@
       "title": "Navigate the canvas",
       "summary": "Scroll to zoom, hold space and drag to pan, and use the minimap in the corner for the full layout. Click to select a screen; Ctrl+click to multi-select.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-overview",
+          "subarticleId": "canvas-overview/navigate"
+        }
+      ],
       "actionIds": []
     }
   ]

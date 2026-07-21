@@ -11,7 +11,7 @@
       "summary": "Legal links (restore / terms / privacy)",
       "kind": "section",
       "articleSectionId": "g-legal-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-legal-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-legal-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Purchase button",
       "kind": "section",
       "articleSectionId": "g-purchase-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-purchase-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-purchase-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "Auto-renew note & footer layout",
       "kind": "section",
       "articleSectionId": "g-renew-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-renew-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-renew-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -54,7 +54,7 @@
       "summary": "The bottom of the paywall — the purchase (subscribe) button and its label and box styling, the auto-renew disclosure note, the footer background and element order, and the restore / terms-of-use / privacy-policy legal links with their URLs and styling. This guide documents every setting of the Paywall Footer block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -460,7 +460,7 @@
       "summary": "Paywall Footer in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -477,7 +477,7 @@
       "summary": "Open the Paywall Footer section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -492,7 +492,7 @@
       "summary": "Sets the text displayed below the purchase button to explain subscription renewal terms (default: Auto-renews monthly. Cancel anytime.). Supports template variables like duration, price, and custom links.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel",
       "guideKeys": [
         "screenedit-paywall-footer-autorenew-text"
       ],
@@ -517,7 +517,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the auto-renew disclosure text. Keep it small and quiet relative to your main button — but it must stay clearly readable. App Store and ad-network rules require the renewal terms be legible, so avoid tiny sizes or low-contrast colors that effectively hide the disclosure.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-autorenew-text-styles"
       ],
@@ -541,7 +541,7 @@
       "summary": "Auto-renew disclosure styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -557,7 +557,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -572,7 +572,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -587,7 +587,7 @@
       "summary": "The typeface of the auto-renew note.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -601,7 +601,7 @@
       "summary": "Text size of the auto-renew note in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -616,7 +616,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -631,7 +631,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -646,7 +646,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -662,7 +662,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -677,7 +677,7 @@
       "summary": "An optional fill drawn behind the auto-renew note text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -692,7 +692,7 @@
       "summary": "The color of the auto-renew note text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -707,7 +707,7 @@
       "summary": "Configure auto-renew disclosure text",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -724,7 +724,7 @@
       "summary": "Sets the fill color of the whole footer block, which holds the purchase button, the auto-renew note, and the legal links (default a dark tone). Pick a color that makes your button pop and keeps the renewal note and legal links readable. If you switch to a light footer, darken those text colors so everything stays legible.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
       "guideKeys": [
         "screenedit-paywall-footer-background-color"
       ],
@@ -748,7 +748,7 @@
       "summary": "Color the footer background",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -764,7 +764,7 @@
       "summary": "Sets whether the purchase button sits above the auto-renew disclosure or below it. Button-first is the common, conversion-friendly default. Put the disclosure first when you want the renewal terms visible right above the button so users read them before tapping — often the safer choice for compliance.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-elementsorder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-elementsorder",
       "guideKeys": [
         "screenedit-paywall-footer-elements-order"
       ],
@@ -788,7 +788,7 @@
       "summary": "Order the button and renewal note",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -804,7 +804,7 @@
       "summary": "Sets the text for the privacy policy link (default: Privacy Policy). This link appears in the legal links section and navigates to your privacy document when tapped.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-text"
       ],
@@ -828,7 +828,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the Privacy Policy link. Match it to the Restore and Terms links so the legal row looks unified. Small and muted is fine, but it must stay readable — required legal links hidden in unreadable text can get your paywall rejected.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-text-styles"
       ],
@@ -852,7 +852,7 @@
       "summary": "Privacy link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -868,7 +868,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -883,7 +883,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -898,7 +898,7 @@
       "summary": "The typeface of the privacy link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -912,7 +912,7 @@
       "summary": "Text size of the privacy link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -927,7 +927,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -942,7 +942,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -957,7 +957,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -973,7 +973,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -988,7 +988,7 @@
       "summary": "An optional fill drawn behind the privacy link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1003,7 +1003,7 @@
       "summary": "The color of the privacy link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1018,7 +1018,7 @@
       "summary": "Configure privacy policy link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1034,7 +1034,7 @@
       "summary": "The full https:// web address your Privacy Policy link opens when tapped. Fill this in for any paid funnel — a live Privacy Policy is required by app stores and ad platforms once you collect payment or data. Leaving it empty disables the link and leaves the paywall non-compliant, so don't publish an ad-ready paywall with this blank.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-uri"
       ],
@@ -1057,7 +1057,7 @@
       "summary": "Link your Privacy Policy page",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1073,7 +1073,7 @@
       "summary": "Sets the text for the restore purchases link (default: Restore Purchases). This link appears in the legal links section below the auto-renew label and allows users to restore prior subscriptions on iOS.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore",
       "guideKeys": [
         "screenedit-paywall-footer-restore-text"
       ],
@@ -1097,7 +1097,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the footer 'Restore Purchases' link. Style it to match the Terms and Privacy links beside it so the legal row reads as one consistent group — small and muted, but still legible. Don't make it look like your main button.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-restore-text-styles"
       ],
@@ -1120,7 +1120,7 @@
       "summary": "Restore link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1136,7 +1136,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1151,7 +1151,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1166,7 +1166,7 @@
       "summary": "The typeface of the restore link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1180,7 +1180,7 @@
       "summary": "Text size of the restore link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1195,7 +1195,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1210,7 +1210,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1225,7 +1225,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1241,7 +1241,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1256,7 +1256,7 @@
       "summary": "An optional fill drawn behind the restore link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1271,7 +1271,7 @@
       "summary": "The color of the restore link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1286,7 +1286,7 @@
       "summary": "Configure restore purchases link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1302,7 +1302,7 @@
       "summary": "Sets the text for the terms of use link (default: Terms of Use). This link appears in the legal links section and navigates to your terms document when tapped.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse",
       "guideKeys": [
         "screenedit-paywall-footer-terms-text"
       ],
@@ -1326,7 +1326,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the Terms of Use link. Keep it consistent with the Restore and Privacy links beside it — small and muted is fine, but it must stay readable. Burying required legal links in unreadable micro-text invites store rejection and ad-network flags.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-terms-text-styles"
       ],
@@ -1350,7 +1350,7 @@
       "summary": "Terms link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1366,7 +1366,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1381,7 +1381,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1396,7 +1396,7 @@
       "summary": "The typeface of the terms link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1410,7 +1410,7 @@
       "summary": "Text size of the terms link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1425,7 +1425,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1440,7 +1440,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1455,7 +1455,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1471,7 +1471,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1486,7 +1486,7 @@
       "summary": "An optional fill drawn behind the terms link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1501,7 +1501,7 @@
       "summary": "The color of the terms link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1516,7 +1516,7 @@
       "summary": "Configure terms of use link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1532,7 +1532,7 @@
       "summary": "The full https:// web address your Terms of Use link opens when tapped. Fill this in for any paid funnel — a live Terms link is effectively required by app stores and ad networks. Leaving it empty disables the link and leaves your paywall non-compliant, so never ship an ad-ready paywall with this blank.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
       "guideKeys": [
         "screenedit-paywall-footer-terms-uri"
       ],
@@ -1555,7 +1555,7 @@
       "summary": "Link your Terms of Use page",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1571,7 +1571,7 @@
       "summary": "Sets the visible label on the purchase subscribe button (default: Subscribe Now). The text supports template variables like pricing, duration, and custom countdown labels for dynamic personalization.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-text"
       ],
@@ -1594,7 +1594,7 @@
       "summary": "Controls the look of the purchase button itself — fill color, border, corner radius, size, full-width toggle, padding, gradient, shadow, animation, and icon (the label text is styled separately). For ad funnels, a full-width button with a high-contrast accent fill and rounded corners is the proven setup. Make this the boldest element on the screen so the path to purchase is unmistakable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-container"
       ],
@@ -1617,7 +1617,7 @@
       "summary": "Style the purchase button box",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1634,7 +1634,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1649,7 +1649,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1664,7 +1664,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1679,7 +1679,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1694,7 +1694,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1710,7 +1710,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1725,7 +1725,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1741,7 +1741,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1756,7 +1756,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1771,7 +1771,7 @@
       "summary": "Controls the look of the text inside the purchase button — font, size, weight, color, alignment, and spacing — not the button box itself, which you style under 'Style purchase button box and appearance'. This is your main call-to-action, so make the label large, bold, and high-contrast against the button fill. Weak or hard-to-read button text directly costs you taps and sales.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-text-styles"
       ],
@@ -1794,7 +1794,7 @@
       "summary": "Style the purchase button label",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1812,7 +1812,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1828,7 +1828,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1844,7 +1844,7 @@
       "summary": "The typeface of the purchase button label.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1860,7 +1860,7 @@
       "summary": "Text size of the purchase button label in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1876,7 +1876,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1892,7 +1892,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1908,7 +1908,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1925,7 +1925,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1941,7 +1941,7 @@
       "summary": "An optional fill drawn behind the purchase button label text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1957,7 +1957,7 @@
       "summary": "The color of the purchase button label text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1973,7 +1973,7 @@
       "summary": "Configure purchase button text",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1993,7 +1993,7 @@
       "summary": "Legal links (restore / terms / privacy)",
       "kind": "section",
       "articleSectionId": "g-legal-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-legal-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-legal-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2007,7 +2007,7 @@
       "summary": "Purchase button",
       "kind": "section",
       "articleSectionId": "g-purchase-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-purchase-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-purchase-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2022,7 +2022,7 @@
       "summary": "Auto-renew note & footer layout",
       "kind": "section",
       "articleSectionId": "g-renew-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#g-renew-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#g-renew-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2036,7 +2036,7 @@
       "summary": "The bottom of the paywall — the purchase (subscribe) button and its label and box styling, the auto-renew disclosure note, the footer background and element order, and the restore / terms-of-use / privacy-policy legal links with their URLs and styling. This guide documents every setting of the Paywall Footer block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2442,7 +2442,7 @@
       "summary": "Paywall Footer in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2459,7 +2459,7 @@
       "summary": "Open the Paywall Footer section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2474,7 +2474,7 @@
       "summary": "Sets the text displayed below the purchase button to explain subscription renewal terms (default: Auto-renews monthly. Cancel anytime.). Supports template variables like duration, price, and custom links.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel",
       "guideKeys": [
         "screenedit-paywall-footer-autorenew-text"
       ],
@@ -2499,7 +2499,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the auto-renew disclosure text. Keep it small and quiet relative to your main button — but it must stay clearly readable. App Store and ad-network rules require the renewal terms be legible, so avoid tiny sizes or low-contrast colors that effectively hide the disclosure.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-autorenew-text-styles"
       ],
@@ -2523,7 +2523,7 @@
       "summary": "Auto-renew disclosure styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2539,7 +2539,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2554,7 +2554,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2569,7 +2569,7 @@
       "summary": "The typeface of the auto-renew note.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2583,7 +2583,7 @@
       "summary": "Text size of the auto-renew note in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2598,7 +2598,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2613,7 +2613,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2628,7 +2628,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2644,7 +2644,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2659,7 +2659,7 @@
       "summary": "An optional fill drawn behind the auto-renew note text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2674,7 +2674,7 @@
       "summary": "The color of the auto-renew note text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2689,7 +2689,7 @@
       "summary": "Configure auto-renew disclosure text",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2706,7 +2706,7 @@
       "summary": "Sets the fill color of the whole footer block, which holds the purchase button, the auto-renew note, and the legal links (default a dark tone). Pick a color that makes your button pop and keeps the renewal note and legal links readable. If you switch to a light footer, darken those text colors so everything stays legible.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
       "guideKeys": [
         "screenedit-paywall-footer-background-color"
       ],
@@ -2730,7 +2730,7 @@
       "summary": "Color the footer background",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2746,7 +2746,7 @@
       "summary": "Sets whether the purchase button sits above the auto-renew disclosure or below it. Button-first is the common, conversion-friendly default. Put the disclosure first when you want the renewal terms visible right above the button so users read them before tapping — often the safer choice for compliance.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-elementsorder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-elementsorder",
       "guideKeys": [
         "screenedit-paywall-footer-elements-order"
       ],
@@ -2770,7 +2770,7 @@
       "summary": "Order the button and renewal note",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-elementsorder-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2786,7 +2786,7 @@
       "summary": "Sets the text for the privacy policy link (default: Privacy Policy). This link appears in the legal links section and navigates to your privacy document when tapped.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-text"
       ],
@@ -2810,7 +2810,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the Privacy Policy link. Match it to the Restore and Terms links so the legal row looks unified. Small and muted is fine, but it must stay readable — required legal links hidden in unreadable text can get your paywall rejected.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-text-styles"
       ],
@@ -2834,7 +2834,7 @@
       "summary": "Privacy link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2850,7 +2850,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2865,7 +2865,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2880,7 +2880,7 @@
       "summary": "The typeface of the privacy link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2894,7 +2894,7 @@
       "summary": "Text size of the privacy link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2909,7 +2909,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2924,7 +2924,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2939,7 +2939,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2955,7 +2955,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2970,7 +2970,7 @@
       "summary": "An optional fill drawn behind the privacy link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2985,7 +2985,7 @@
       "summary": "The color of the privacy link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3000,7 +3000,7 @@
       "summary": "Configure privacy policy link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3016,7 +3016,7 @@
       "summary": "The full https:// web address your Privacy Policy link opens when tapped. Fill this in for any paid funnel — a live Privacy Policy is required by app stores and ad platforms once you collect payment or data. Leaving it empty disables the link and leaves the paywall non-compliant, so don't publish an ad-ready paywall with this blank.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
       "guideKeys": [
         "screenedit-paywall-footer-privacy-uri"
       ],
@@ -3039,7 +3039,7 @@
       "summary": "Link your Privacy Policy page",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3055,7 +3055,7 @@
       "summary": "Sets the text for the restore purchases link (default: Restore Purchases). This link appears in the legal links section below the auto-renew label and allows users to restore prior subscriptions on iOS.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore",
       "guideKeys": [
         "screenedit-paywall-footer-restore-text"
       ],
@@ -3079,7 +3079,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the footer 'Restore Purchases' link. Style it to match the Terms and Privacy links beside it so the legal row reads as one consistent group — small and muted, but still legible. Don't make it look like your main button.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-restore-text-styles"
       ],
@@ -3102,7 +3102,7 @@
       "summary": "Restore link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3118,7 +3118,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3133,7 +3133,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3148,7 +3148,7 @@
       "summary": "The typeface of the restore link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3162,7 +3162,7 @@
       "summary": "Text size of the restore link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3177,7 +3177,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3192,7 +3192,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3207,7 +3207,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3223,7 +3223,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3238,7 +3238,7 @@
       "summary": "An optional fill drawn behind the restore link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3253,7 +3253,7 @@
       "summary": "The color of the restore link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3268,7 +3268,7 @@
       "summary": "Configure restore purchases link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3284,7 +3284,7 @@
       "summary": "Sets the text for the terms of use link (default: Terms of Use). This link appears in the legal links section and navigates to your terms document when tapped.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse",
       "guideKeys": [
         "screenedit-paywall-footer-terms-text"
       ],
@@ -3308,7 +3308,7 @@
       "summary": "Sets the font, size, weight, color, and alignment of the Terms of Use link. Keep it consistent with the Restore and Privacy links beside it — small and muted is fine, but it must stay readable. Burying required legal links in unreadable micro-text invites store rejection and ad-network flags.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-terms-text-styles"
       ],
@@ -3332,7 +3332,7 @@
       "summary": "Terms link styling",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3348,7 +3348,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3363,7 +3363,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3378,7 +3378,7 @@
       "summary": "The typeface of the terms link.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3392,7 +3392,7 @@
       "summary": "Text size of the terms link in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3407,7 +3407,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3422,7 +3422,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3437,7 +3437,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3453,7 +3453,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3468,7 +3468,7 @@
       "summary": "An optional fill drawn behind the terms link text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3483,7 +3483,7 @@
       "summary": "The color of the terms link text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3498,7 +3498,7 @@
       "summary": "Configure terms of use link",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3514,7 +3514,7 @@
       "summary": "The full https:// web address your Terms of Use link opens when tapped. Fill this in for any paid funnel — a live Terms link is effectively required by app stores and ad networks. Leaving it empty disables the link and leaves your paywall non-compliant, so never ship an ad-ready paywall with this blank.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
       "guideKeys": [
         "screenedit-paywall-footer-terms-uri"
       ],
@@ -3537,7 +3537,7 @@
       "summary": "Link your Terms of Use page",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3553,7 +3553,7 @@
       "summary": "Sets the visible label on the purchase subscribe button (default: Subscribe Now). The text supports template variables like pricing, duration, and custom countdown labels for dynamic personalization.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-text"
       ],
@@ -3576,7 +3576,7 @@
       "summary": "Controls the look of the purchase button itself — fill color, border, corner radius, size, full-width toggle, padding, gradient, shadow, animation, and icon (the label text is styled separately). For ad funnels, a full-width button with a high-contrast accent fill and rounded corners is the proven setup. Make this the boldest element on the screen so the path to purchase is unmistakable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-container"
       ],
@@ -3599,7 +3599,7 @@
       "summary": "Style the purchase button box",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3616,7 +3616,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3631,7 +3631,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3646,7 +3646,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3661,7 +3661,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3676,7 +3676,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3692,7 +3692,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3707,7 +3707,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3723,7 +3723,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3738,7 +3738,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3753,7 +3753,7 @@
       "summary": "Controls the look of the text inside the purchase button — font, size, weight, color, alignment, and spacing — not the button box itself, which you style under 'Style purchase button box and appearance'. This is your main call-to-action, so make the label large, bold, and high-contrast against the button fill. Weak or hard-to-read button text directly costs you taps and sales.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
       "guideKeys": [
         "screenedit-paywall-footer-purchase-text-styles"
       ],
@@ -3776,7 +3776,7 @@
       "summary": "Style the purchase button label",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3794,7 +3794,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3810,7 +3810,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3826,7 +3826,7 @@
       "summary": "The typeface of the purchase button label.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3842,7 +3842,7 @@
       "summary": "Text size of the purchase button label in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3858,7 +3858,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3874,7 +3874,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3890,7 +3890,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3907,7 +3907,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3923,7 +3923,7 @@
       "summary": "An optional fill drawn behind the purchase button label text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3939,7 +3939,7 @@
       "summary": "The color of the purchase button label text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3955,7 +3955,7 @@
       "summary": "Configure purchase button text",
       "kind": "section",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3976,7 +3976,7 @@
       "group": "purchase",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-purchase.png",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -3990,7 +3990,7 @@
       "group": "purchase",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/purchase-styles-label.png",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-content-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4005,7 +4005,7 @@
       "group": "purchase",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/purchase-styles-box.png",
       "articleSectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-purchaseaction-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-purchaseaction-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4020,7 +4020,7 @@
       "group": "renew",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-autorenew.png",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4034,7 +4034,7 @@
       "group": "renew",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/autorenew-styles-grid.png",
       "articleSectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-autorenewlabel-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-autorenewlabel-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4049,7 +4049,7 @@
       "group": "renew",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/autorenew-styles-order.png",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-elementsorder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-elementsorder",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4064,7 +4064,7 @@
       "group": "renew",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/footer-container-bg.png",
       "articleSectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4079,7 +4079,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-restore.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4093,7 +4093,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/restore-styles-grid.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-restore-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-restore-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4108,7 +4108,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-terms.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4122,7 +4122,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-terms-uri.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4136,7 +4136,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/terms-styles-grid.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4151,7 +4151,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-privacy.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4165,7 +4165,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/open-section-privacy-uri.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -4179,7 +4179,7 @@
       "group": "legal",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-footer-section/0.2.0/configure-paywall-footer-section-2026-06-24T21-17-14-614Z-93482561/privacy-styles-grid.png",
       "articleSectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer#set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Footer section (purchase button, auto-renew note, legal links).",
@@ -7944,6 +7944,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "7ae507bbd7f296dc"
+    "generatedHash": "290bde8866996fcb"
   }
 }

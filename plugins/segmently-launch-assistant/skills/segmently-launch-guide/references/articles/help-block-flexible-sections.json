@@ -11,7 +11,7 @@
       "summary": "Each section type has its own guide",
       "kind": "section",
       "articleSectionId": "fl-blocks-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-blocks-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-blocks-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "A section’s own content and styling — Text, Media, Buttons, Options, Product Catalog and the rest — are documented once in their own articles and reused everywhere they appear, so nothing is duplicated. Links to each of those guides will be added here. The rest of this article covers only what is specific to a Flexible Layout screen: managing sections, their per-section layout, the whole-screen layout, and the sticky bar.",
       "kind": "section",
       "articleSectionId": "fl-blocks-note",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-blocks-note",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-blocks-note",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -42,7 +42,7 @@
       "summary": "How a Flexible Layout screen works",
       "kind": "section",
       "articleSectionId": "fl-how-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-how-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-how-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -57,7 +57,7 @@
       "summary": "A Flexible Layout screen is one you build yourself: you add sections — text, media, a product catalog, buttons, lists and more — then stack, size and align them however you like. The settings below cover what is unique to assembling the screen; each section type’s own content and styling lives in its own guide (see the note at the end).",
       "kind": "section",
       "articleSectionId": "fl-how-intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-how-intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-how-intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -74,7 +74,7 @@
       "summary": "Some Flexible Layout sections can read the visitor’s current Product Catalog selection. For a paywall, add a Product Catalog section, then link a Text section and a Purchase Button section to that catalog through each section’s “Linked to section” dropdown. The linked Text section can show the selected product description label, and the linked Purchase Button can show the selected product purchase label.",
       "kind": "section",
       "articleSectionId": "fl-link",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -93,7 +93,7 @@
       "summary": "Linking a Purchase Button to a Product Catalog",
       "kind": "section",
       "articleSectionId": "fl-link-purchase-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link-purchase-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link-purchase-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -111,7 +111,7 @@
       "summary": "Linking a Text section to a Product Catalog",
       "kind": "section",
       "articleSectionId": "fl-link-text-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link-text-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link-text-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -129,7 +129,7 @@
       "summary": "Default selected product labels",
       "kind": "section",
       "articleSectionId": "fl-linked-default-labels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-linked-default-labels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-linked-default-labels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -146,7 +146,7 @@
       "summary": "Updated selected product labels",
       "kind": "section",
       "articleSectionId": "fl-linked-selected-labels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-linked-selected-labels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-linked-selected-labels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -163,7 +163,7 @@
       "summary": "When the visitor changes the selected plan, linked labels update from that selected product. If you leave the Text title empty, it falls back to the product’s description label. If you leave the Purchase Button label empty, it falls back to the product’s purchase label. When the button is linked to the catalog, tapping it purchases the selected product, not a fixed default product.",
       "kind": "section",
       "articleSectionId": "fl-selected-product",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-selected-product",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-selected-product",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -180,7 +180,7 @@
       "summary": "Per-section layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -194,7 +194,7 @@
       "summary": "Building & arranging sections",
       "kind": "section",
       "articleSectionId": "g-management-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-management-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-management-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -208,7 +208,7 @@
       "summary": "Whole-screen layout",
       "kind": "section",
       "articleSectionId": "g-screen-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-screen-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-screen-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -222,7 +222,7 @@
       "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link product-aware sections (for example Text or Purchase Button) to a Product Catalog so labels and purchases follow the selected product. Each section type’s own content and styling lives in its dedicated block article. This guide documents every setting of the Flexible Sections block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1638,7 +1638,7 @@
       "summary": "Flexible Sections in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1655,7 +1655,7 @@
       "summary": "Open the Flexible Sections section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1670,7 +1670,7 @@
       "summary": "Container padding adds space between the phone edges and all sections on the screen. It is different from Section padding: container padding moves the entire stack inward, while section padding adds space inside one selected section. Use container padding first when every block feels too close to the screen edge, then use per-section padding only where a specific block needs more breathing room.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-insets",
       "guideKeys": [
         "screenedit-flexible-sections-container-padding"
       ],
@@ -1692,7 +1692,7 @@
       "summary": "Space around the whole section stack",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1708,7 +1708,7 @@
       "summary": "When Scrollable screen is on, sections stack vertically and the visitor can scroll through them. Use this for long paywalls, product catalogs, benefit lists, or any screen with more content than fits on a phone. When it is off, the screen uses flexGrow and flexShrink to distribute sections inside one viewport, which is better for fixed hero layouts where the CTA should stay visible without scrolling.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-scrollable",
       "guideKeys": [
         "screenedit-flexible-sections-screen-scrollable"
       ],
@@ -1731,7 +1731,7 @@
       "summary": "Let the whole screen scroll",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-scrollable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-scrollable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-scrollable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1747,7 +1747,7 @@
       "summary": "Pins the content to the Top, Center, or Bottom of the section. It only changes anything when the section is taller than its content, for example with a Fixed or Percent height or a section stretched to fill space. Use Center to vertically center a headline in a tall hero, or Bottom to push a caption to the base of an image.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-alignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-alignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-alignment",
       "guideKeys": [
         "screenedit-flexible-sections-vertical-alignment"
       ],
@@ -1769,7 +1769,7 @@
       "summary": "Top, center, or bottom",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-alignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-alignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-alignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1785,7 +1785,7 @@
       "summary": "Sets the color behind this section's content, used when the background type is Solid. The default is white. Enter a hex code or pick a swatch, and keep it in line with your theme so the screen feels on-brand, with enough contrast against the text on top to stay readable.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-color",
       "guideKeys": [
         "screenedit-flexible-sections-background-color"
       ],
@@ -1808,7 +1808,7 @@
       "summary": "Background fill color",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1824,7 +1824,7 @@
       "summary": "Sets what fills the area behind this section's content. Solid (the default) uses one color you pick below; Media places an image behind the content for a richer, ad-style look. If you go with Media and put text on top, keep the text readable with a darker image or an overlay so your value proposition doesn't get lost.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-kind",
       "guideKeys": [
         "screenedit-flexible-sections-background-type"
       ],
@@ -1847,7 +1847,7 @@
       "summary": "Solid color or image behind",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1863,7 +1863,7 @@
       "summary": "Sets the color of the section's outline. The default is black, and it only shows when the border thickness is above 0, so set a width first. Match it to one of your theme's accent colors for a clean, on-brand frame around the section.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-color",
       "guideKeys": [
         "screenedit-flexible-sections-border-color"
       ],
@@ -1885,7 +1885,7 @@
       "summary": "Outline color",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1901,7 +1901,7 @@
       "summary": "Draws an outline around the section. The default 0 means no border; 1 to 2 pixels gives a subtle frame that makes a section read as a self-contained card or highlights an offer. Set this above 0 first, then pick the border color below.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-width",
       "guideKeys": [
         "screenedit-flexible-sections-border-width"
       ],
@@ -1924,7 +1924,7 @@
       "summary": "Outline thickness",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1940,7 +1940,7 @@
       "summary": "Rounds all four corners of the section. The default 0 keeps them sharp and square; higher values (try 8 to 16) give a soft card look that pairs well with a solid background or border to make the section stand out as its own block. The range is 0 to 50 pixels.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-cornerradius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-cornerradius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-cornerradius-uniform",
       "guideKeys": [
         "screenedit-flexible-sections-corner-radius"
       ],
@@ -1963,7 +1963,7 @@
       "summary": "Round the section corners",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-cornerradius-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-cornerradius-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-cornerradius-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1979,7 +1979,7 @@
       "summary": "Controls how much leftover vertical space a section soaks up so the screen has no awkward gap. 0 keeps a section at its natural size (the default for text and buttons); 1 or more lets it stretch, and a section set to 2 takes twice the extra space as one set to 1. Raise this on your image or hero section to push the button down to a comfortable spot. Only applies when the section isn't set to scroll.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexgrow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexgrow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexgrow",
       "guideKeys": [
         "screenedit-flexible-sections-flex-grow"
       ],
@@ -2002,7 +2002,7 @@
       "summary": "Stretch to fill empty space",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexgrow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexgrow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexgrow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2018,7 +2018,7 @@
       "summary": "Controls which section gives up height first when everything can't fit on a small phone. Higher numbers shrink sooner; 0 means never shrink this one. The default of 1 lets sections shrink evenly. Set 0 on must-stay pieces like the button or logo, and raise it on a less important section like a tall image, so the key content survives intact on the smallest screens.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexshrink",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexshrink",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexshrink",
       "guideKeys": [
         "screenedit-flexible-sections-flex-shrink"
       ],
@@ -2040,7 +2040,7 @@
       "summary": "Let it shrink on small screens",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexshrink-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexshrink-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexshrink-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2056,7 +2056,7 @@
       "summary": "Decides how the section's height is calculated. Auto (the safe default) makes it exactly as tall as its content, which is right for most text and buttons. Fixed lets you type an exact pixel height, and Percent sets it to a share of the screen, handy for a hero image that should always fill, say, the top 40 percent. Your pick also decides which value box below applies.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightkind",
       "guideKeys": [
         "screenedit-flexible-sections-height-mode"
       ],
@@ -2081,7 +2081,7 @@
       "summary": "How tall this section is",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightkind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightkind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightkind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2097,7 +2097,7 @@
       "summary": "This is the number that pairs with your height mode. With Fixed mode, type pixels (0 to 1000, for example 320 for a tall hero); with Percent mode, type a share of the screen (0 to 100, for example 40). The box is ignored in Auto mode. For a scrollable section, this also sets the visible window the content scrolls inside.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightvalue",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightvalue",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightvalue",
       "guideKeys": [
         "screenedit-flexible-sections-height-value"
       ],
@@ -2119,7 +2119,7 @@
       "summary": "The height number",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightvalue-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightvalue-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightvalue-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2135,7 +2135,7 @@
       "summary": "Positions the content along the section's width: Left, Center, or Right. Center is the usual choice for headlines and buttons, while Left reads more naturally for longer body copy. (Left and right follow text direction, so they flip on right-to-left languages.)",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-horizontalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-horizontalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-horizontalalignment",
       "guideKeys": [
         "screenedit-flexible-sections-horizontal-alignment"
       ],
@@ -2158,7 +2158,7 @@
       "summary": "Left, center, or right",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-horizontalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-horizontalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-horizontalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2174,7 +2174,7 @@
       "summary": "Margin is the gap outside a section, between it and the sections next to it. Set Top, Bottom, Left, and Right independently, using positive values to push sections apart. A negative top margin pulls a section up so it overlaps the one above — for example, a headline resting on a hero image; pair that with stacking order to control what sits in front.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-margin",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-margin",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-margin",
       "guideKeys": [
         "screenedit-flexible-sections-margin"
       ],
@@ -2196,7 +2196,7 @@
       "summary": "Space between sections",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-margin-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-margin-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-margin-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2212,7 +2212,7 @@
       "summary": "Padding is the space inside a section, between its edges and the content sitting in it. Set Top, Bottom, Left, and Right independently, starting from 0. Add some so text and buttons don't crowd the section border or a background image; 16-24 px all around is a comfortable, readable starting point.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-padding",
       "guideKeys": [
         "screenedit-flexible-sections-padding"
       ],
@@ -2235,7 +2235,7 @@
       "summary": "Breathing room inside the section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-padding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-padding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-padding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2251,7 +2251,7 @@
       "summary": "Turn on to let a section scroll independently when its content is taller than the height you set (works only with a Fixed or Percent height, not Auto). Use it for a long list of terms or bullets you want capped inside a fixed window while the rest of the screen stays put. Leave off (the default) for normal sections that just sit in the layout.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-scrollable",
       "guideKeys": [
         "screenedit-flexible-sections-scrollable"
       ],
@@ -2273,7 +2273,7 @@
       "summary": "Let this section scroll on its own",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-scrollable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-scrollable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-scrollable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2289,7 +2289,7 @@
       "summary": "When two sections overlap, this decides which one shows on top. A higher number wins; the default 0 is fine as long as nothing overlaps. You only need it when you've deliberately layered sections, like a headline placed over a background image, so give the part you want visible the higher number.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-zindex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-zindex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-zindex",
       "guideKeys": [
         "screenedit-flexible-sections-z-index"
       ],
@@ -2311,7 +2311,7 @@
       "summary": "Which section sits in front",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-zindex-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-zindex-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-zindex-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2327,7 +2327,7 @@
       "summary": "Use + Add to choose what kind of block to place on this FlexibleLayout screen: text, media, product catalog, button, purchase button, list, custom embed, text field, spacer, header, footer, or paywall header. Add sections in the same order a visitor should read them, then drag to reorder if the screen flow changes. Start with the biggest structure first — for example header, hero text/media, products, and CTA — then tune layout settings inside each section.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-addsection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-addsection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-addsection",
       "guideKeys": [
         "screenedit-flexible-sections-add-section"
       ],
@@ -2354,7 +2354,7 @@
       "summary": "Add a new section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-addsection-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-addsection-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-addsection-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2370,7 +2370,7 @@
       "summary": "Use the trash icon to remove a section from the screen. Deleting also removes that section's content and can affect buttons linked to it, so confirm only after checking the preview and any parent-section links. If you are unsure, rename the section first or move it lower in the order while you verify the layout instead of deleting it immediately.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-deletesection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-deletesection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-deletesection",
       "guideKeys": [
         "screenedit-flexible-sections-delete-section"
       ],
@@ -2392,7 +2392,7 @@
       "summary": "Delete a section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-deletesection-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-deletesection-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-deletesection-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2408,7 +2408,7 @@
       "summary": "Click the gear inside a section card to open that section's own settings. The first panel controls the section container — height, flex, scrollability, background, borders, alignment, padding, and margin — and the panel below controls the section's content, such as text, media, products, or button styling. This is the main place to tune how one block looks and behaves.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-opensectionsettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-opensectionsettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-opensectionsettings",
       "guideKeys": [
         "screenedit-flexible-sections-open-section-settings"
       ],
@@ -2433,7 +2433,7 @@
       "summary": "Open one section's settings",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-opensectionsettings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-opensectionsettings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-opensectionsettings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2449,7 +2449,7 @@
       "summary": "Drag the handle beside a section name to change the vertical reading order on the screen. The order here is the order visitors see in the preview and published flow, so keep the persuasion sequence clear: context first, offer/details next, then the CTA. After reordering, recheck fixed-height and flex settings because a section that worked in one position may need different spacing in another.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-reordersections",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-reordersections",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-reordersections",
       "guideKeys": [
         "screenedit-flexible-sections-reorder-sections"
       ],
@@ -2471,7 +2471,7 @@
       "summary": "Reorder sections",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-reordersections-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-reordersections-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-reordersections-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2487,7 +2487,7 @@
       "summary": "The gear beside the Sections title opens settings for the whole FlexibleLayout screen, not for one individual section. Use it to control whether the full screen scrolls and how much padding the whole stack has from the screen edges. Open this before editing individual section padding when the entire screen feels too close to the phone edge or when you need a fixed, non-scrolling composition.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-screensettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-screensettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-screensettings",
       "guideKeys": [
         "screenedit-flexible-sections-screen-settings"
       ],
@@ -2509,7 +2509,7 @@
       "summary": "Open screen-level layout settings",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-screensettings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-screensettings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-screensettings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2525,7 +2525,7 @@
       "summary": "Click the pencil beside a section name to give it a clear internal label, such as Hero headline, Annual plan list, or Bottom CTA. This name helps editors understand the structure and is not shown to visitors. Rename repeated sections immediately so it is obvious which block you are opening, especially when several Text or Button sections exist on the same screen.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-sectionname",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-sectionname",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-sectionname",
       "guideKeys": [
         "screenedit-flexible-sections-section-name"
       ],
@@ -2548,7 +2548,7 @@
       "summary": "Rename a section for editing",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-sectionname-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-sectionname-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-sectionname-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2566,7 +2566,7 @@
       "summary": "Each section type has its own guide",
       "kind": "section",
       "articleSectionId": "fl-blocks-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-blocks-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-blocks-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2580,7 +2580,7 @@
       "summary": "A section’s own content and styling — Text, Media, Buttons, Options, Product Catalog and the rest — are documented once in their own articles and reused everywhere they appear, so nothing is duplicated. Links to each of those guides will be added here. The rest of this article covers only what is specific to a Flexible Layout screen: managing sections, their per-section layout, the whole-screen layout, and the sticky bar.",
       "kind": "section",
       "articleSectionId": "fl-blocks-note",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-blocks-note",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-blocks-note",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2597,7 +2597,7 @@
       "summary": "How a Flexible Layout screen works",
       "kind": "section",
       "articleSectionId": "fl-how-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-how-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-how-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2612,7 +2612,7 @@
       "summary": "A Flexible Layout screen is one you build yourself: you add sections — text, media, a product catalog, buttons, lists and more — then stack, size and align them however you like. The settings below cover what is unique to assembling the screen; each section type’s own content and styling lives in its own guide (see the note at the end).",
       "kind": "section",
       "articleSectionId": "fl-how-intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-how-intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-how-intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2629,7 +2629,7 @@
       "summary": "Some Flexible Layout sections can read the visitor’s current Product Catalog selection. For a paywall, add a Product Catalog section, then link a Text section and a Purchase Button section to that catalog through each section’s “Linked to section” dropdown. The linked Text section can show the selected product description label, and the linked Purchase Button can show the selected product purchase label.",
       "kind": "section",
       "articleSectionId": "fl-link",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2648,7 +2648,7 @@
       "summary": "Linking a Purchase Button to a Product Catalog",
       "kind": "section",
       "articleSectionId": "fl-link-purchase-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link-purchase-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link-purchase-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2666,7 +2666,7 @@
       "summary": "Linking a Text section to a Product Catalog",
       "kind": "section",
       "articleSectionId": "fl-link-text-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-link-text-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-link-text-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2684,7 +2684,7 @@
       "summary": "Default selected product labels",
       "kind": "section",
       "articleSectionId": "fl-linked-default-labels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-linked-default-labels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-linked-default-labels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2701,7 +2701,7 @@
       "summary": "Updated selected product labels",
       "kind": "section",
       "articleSectionId": "fl-linked-selected-labels-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-linked-selected-labels-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-linked-selected-labels-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2718,7 +2718,7 @@
       "summary": "When the visitor changes the selected plan, linked labels update from that selected product. If you leave the Text title empty, it falls back to the product’s description label. If you leave the Purchase Button label empty, it falls back to the product’s purchase label. When the button is linked to the catalog, tapping it purchases the selected product, not a fixed default product.",
       "kind": "section",
       "articleSectionId": "fl-selected-product",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#fl-selected-product",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#fl-selected-product",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2735,7 +2735,7 @@
       "summary": "Per-section layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2749,7 +2749,7 @@
       "summary": "Building & arranging sections",
       "kind": "section",
       "articleSectionId": "g-management-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-management-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-management-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2763,7 +2763,7 @@
       "summary": "Whole-screen layout",
       "kind": "section",
       "articleSectionId": "g-screen-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#g-screen-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#g-screen-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2777,7 +2777,7 @@
       "summary": "The build-your-own screen — you stack sections (text, media, product catalog, buttons, lists…) and arrange them: add / reorder / rename / delete, set each section’s size, fill, alignment, border, padding and margin, control whole-screen scroll and padding, and link product-aware sections (for example Text or Purchase Button) to a Product Catalog so labels and purchases follow the selected product. Each section type’s own content and styling lives in its dedicated block article. This guide documents every setting of the Flexible Sections block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4193,7 +4193,7 @@
       "summary": "Flexible Sections in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4210,7 +4210,7 @@
       "summary": "Open the Flexible Sections section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4225,7 +4225,7 @@
       "summary": "Container padding adds space between the phone edges and all sections on the screen. It is different from Section padding: container padding moves the entire stack inward, while section padding adds space inside one selected section. Use container padding first when every block feels too close to the screen edge, then use per-section padding only where a specific block needs more breathing room.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-insets",
       "guideKeys": [
         "screenedit-flexible-sections-container-padding"
       ],
@@ -4247,7 +4247,7 @@
       "summary": "Space around the whole section stack",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4263,7 +4263,7 @@
       "summary": "When Scrollable screen is on, sections stack vertically and the visitor can scroll through them. Use this for long paywalls, product catalogs, benefit lists, or any screen with more content than fits on a phone. When it is off, the screen uses flexGrow and flexShrink to distribute sections inside one viewport, which is better for fixed hero layouts where the CTA should stay visible without scrolling.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-scrollable",
       "guideKeys": [
         "screenedit-flexible-sections-screen-scrollable"
       ],
@@ -4286,7 +4286,7 @@
       "summary": "Let the whole screen scroll",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-scrollable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-scrollable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-scrollable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4302,7 +4302,7 @@
       "summary": "Pins the content to the Top, Center, or Bottom of the section. It only changes anything when the section is taller than its content, for example with a Fixed or Percent height or a section stretched to fill space. Use Center to vertically center a headline in a tall hero, or Bottom to push a caption to the base of an image.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-alignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-alignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-alignment",
       "guideKeys": [
         "screenedit-flexible-sections-vertical-alignment"
       ],
@@ -4324,7 +4324,7 @@
       "summary": "Top, center, or bottom",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-alignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-alignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-alignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4340,7 +4340,7 @@
       "summary": "Sets the color behind this section's content, used when the background type is Solid. The default is white. Enter a hex code or pick a swatch, and keep it in line with your theme so the screen feels on-brand, with enough contrast against the text on top to stay readable.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-color",
       "guideKeys": [
         "screenedit-flexible-sections-background-color"
       ],
@@ -4363,7 +4363,7 @@
       "summary": "Background fill color",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4379,7 +4379,7 @@
       "summary": "Sets what fills the area behind this section's content. Solid (the default) uses one color you pick below; Media places an image behind the content for a richer, ad-style look. If you go with Media and put text on top, keep the text readable with a darker image or an overlay so your value proposition doesn't get lost.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-kind",
       "guideKeys": [
         "screenedit-flexible-sections-background-type"
       ],
@@ -4402,7 +4402,7 @@
       "summary": "Solid color or image behind",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-background-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4418,7 +4418,7 @@
       "summary": "Sets the color of the section's outline. The default is black, and it only shows when the border thickness is above 0, so set a width first. Match it to one of your theme's accent colors for a clean, on-brand frame around the section.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-color",
       "guideKeys": [
         "screenedit-flexible-sections-border-color"
       ],
@@ -4440,7 +4440,7 @@
       "summary": "Outline color",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4456,7 +4456,7 @@
       "summary": "Draws an outline around the section. The default 0 means no border; 1 to 2 pixels gives a subtle frame that makes a section read as a self-contained card or highlights an offer. Set this above 0 first, then pick the border color below.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-width",
       "guideKeys": [
         "screenedit-flexible-sections-border-width"
       ],
@@ -4479,7 +4479,7 @@
       "summary": "Outline thickness",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-border-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4495,7 +4495,7 @@
       "summary": "Rounds all four corners of the section. The default 0 keeps them sharp and square; higher values (try 8 to 16) give a soft card look that pairs well with a solid background or border to make the section stand out as its own block. The range is 0 to 50 pixels.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-cornerradius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-cornerradius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-cornerradius-uniform",
       "guideKeys": [
         "screenedit-flexible-sections-corner-radius"
       ],
@@ -4518,7 +4518,7 @@
       "summary": "Round the section corners",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-cornerradius-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-cornerradius-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-cornerradius-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4534,7 +4534,7 @@
       "summary": "Controls how much leftover vertical space a section soaks up so the screen has no awkward gap. 0 keeps a section at its natural size (the default for text and buttons); 1 or more lets it stretch, and a section set to 2 takes twice the extra space as one set to 1. Raise this on your image or hero section to push the button down to a comfortable spot. Only applies when the section isn't set to scroll.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexgrow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexgrow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexgrow",
       "guideKeys": [
         "screenedit-flexible-sections-flex-grow"
       ],
@@ -4557,7 +4557,7 @@
       "summary": "Stretch to fill empty space",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexgrow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexgrow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexgrow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4573,7 +4573,7 @@
       "summary": "Controls which section gives up height first when everything can't fit on a small phone. Higher numbers shrink sooner; 0 means never shrink this one. The default of 1 lets sections shrink evenly. Set 0 on must-stay pieces like the button or logo, and raise it on a less important section like a tall image, so the key content survives intact on the smallest screens.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexshrink",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexshrink",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexshrink",
       "guideKeys": [
         "screenedit-flexible-sections-flex-shrink"
       ],
@@ -4595,7 +4595,7 @@
       "summary": "Let it shrink on small screens",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-flexshrink-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexshrink-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexshrink-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4611,7 +4611,7 @@
       "summary": "Decides how the section's height is calculated. Auto (the safe default) makes it exactly as tall as its content, which is right for most text and buttons. Fixed lets you type an exact pixel height, and Percent sets it to a share of the screen, handy for a hero image that should always fill, say, the top 40 percent. Your pick also decides which value box below applies.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightkind",
       "guideKeys": [
         "screenedit-flexible-sections-height-mode"
       ],
@@ -4636,7 +4636,7 @@
       "summary": "How tall this section is",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightkind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightkind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightkind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4652,7 +4652,7 @@
       "summary": "This is the number that pairs with your height mode. With Fixed mode, type pixels (0 to 1000, for example 320 for a tall hero); with Percent mode, type a share of the screen (0 to 100, for example 40). The box is ignored in Auto mode. For a scrollable section, this also sets the visible window the content scrolls inside.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightvalue",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightvalue",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightvalue",
       "guideKeys": [
         "screenedit-flexible-sections-height-value"
       ],
@@ -4674,7 +4674,7 @@
       "summary": "The height number",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-heightvalue-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightvalue-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightvalue-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4690,7 +4690,7 @@
       "summary": "Positions the content along the section's width: Left, Center, or Right. Center is the usual choice for headlines and buttons, while Left reads more naturally for longer body copy. (Left and right follow text direction, so they flip on right-to-left languages.)",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-horizontalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-horizontalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-horizontalalignment",
       "guideKeys": [
         "screenedit-flexible-sections-horizontal-alignment"
       ],
@@ -4713,7 +4713,7 @@
       "summary": "Left, center, or right",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-horizontalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-horizontalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-horizontalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4729,7 +4729,7 @@
       "summary": "Margin is the gap outside a section, between it and the sections next to it. Set Top, Bottom, Left, and Right independently, using positive values to push sections apart. A negative top margin pulls a section up so it overlaps the one above — for example, a headline resting on a hero image; pair that with stacking order to control what sits in front.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-margin",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-margin",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-margin",
       "guideKeys": [
         "screenedit-flexible-sections-margin"
       ],
@@ -4751,7 +4751,7 @@
       "summary": "Space between sections",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-margin-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-margin-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-margin-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4767,7 +4767,7 @@
       "summary": "Padding is the space inside a section, between its edges and the content sitting in it. Set Top, Bottom, Left, and Right independently, starting from 0. Add some so text and buttons don't crowd the section border or a background image; 16-24 px all around is a comfortable, readable starting point.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-padding",
       "guideKeys": [
         "screenedit-flexible-sections-padding"
       ],
@@ -4790,7 +4790,7 @@
       "summary": "Breathing room inside the section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-padding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-padding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-padding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4806,7 +4806,7 @@
       "summary": "Turn on to let a section scroll independently when its content is taller than the height you set (works only with a Fixed or Percent height, not Auto). Use it for a long list of terms or bullets you want capped inside a fixed window while the rest of the screen stays put. Leave off (the default) for normal sections that just sit in the layout.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-scrollable",
       "guideKeys": [
         "screenedit-flexible-sections-scrollable"
       ],
@@ -4828,7 +4828,7 @@
       "summary": "Let this section scroll on its own",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-scrollable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-scrollable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-scrollable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4844,7 +4844,7 @@
       "summary": "When two sections overlap, this decides which one shows on top. A higher number wins; the default 0 is fine as long as nothing overlaps. You only need it when you've deliberately layered sections, like a headline placed over a background image, so give the part you want visible the higher number.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-zindex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-zindex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-zindex",
       "guideKeys": [
         "screenedit-flexible-sections-z-index"
       ],
@@ -4866,7 +4866,7 @@
       "summary": "Which section sits in front",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-layout-zindex-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-zindex-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-zindex-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4882,7 +4882,7 @@
       "summary": "Use + Add to choose what kind of block to place on this FlexibleLayout screen: text, media, product catalog, button, purchase button, list, custom embed, text field, spacer, header, footer, or paywall header. Add sections in the same order a visitor should read them, then drag to reorder if the screen flow changes. Start with the biggest structure first — for example header, hero text/media, products, and CTA — then tune layout settings inside each section.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-addsection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-addsection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-addsection",
       "guideKeys": [
         "screenedit-flexible-sections-add-section"
       ],
@@ -4909,7 +4909,7 @@
       "summary": "Add a new section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-addsection-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-addsection-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-addsection-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4925,7 +4925,7 @@
       "summary": "Use the trash icon to remove a section from the screen. Deleting also removes that section's content and can affect buttons linked to it, so confirm only after checking the preview and any parent-section links. If you are unsure, rename the section first or move it lower in the order while you verify the layout instead of deleting it immediately.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-deletesection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-deletesection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-deletesection",
       "guideKeys": [
         "screenedit-flexible-sections-delete-section"
       ],
@@ -4947,7 +4947,7 @@
       "summary": "Delete a section",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-deletesection-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-deletesection-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-deletesection-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4963,7 +4963,7 @@
       "summary": "Click the gear inside a section card to open that section's own settings. The first panel controls the section container — height, flex, scrollability, background, borders, alignment, padding, and margin — and the panel below controls the section's content, such as text, media, products, or button styling. This is the main place to tune how one block looks and behaves.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-opensectionsettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-opensectionsettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-opensectionsettings",
       "guideKeys": [
         "screenedit-flexible-sections-open-section-settings"
       ],
@@ -4988,7 +4988,7 @@
       "summary": "Open one section's settings",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-opensectionsettings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-opensectionsettings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-opensectionsettings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -5004,7 +5004,7 @@
       "summary": "Drag the handle beside a section name to change the vertical reading order on the screen. The order here is the order visitors see in the preview and published flow, so keep the persuasion sequence clear: context first, offer/details next, then the CTA. After reordering, recheck fixed-height and flex settings because a section that worked in one position may need different spacing in another.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-reordersections",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-reordersections",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-reordersections",
       "guideKeys": [
         "screenedit-flexible-sections-reorder-sections"
       ],
@@ -5026,7 +5026,7 @@
       "summary": "Reorder sections",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-reordersections-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-reordersections-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-reordersections-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -5042,7 +5042,7 @@
       "summary": "The gear beside the Sections title opens settings for the whole FlexibleLayout screen, not for one individual section. Use it to control whether the full screen scrolls and how much padding the whole stack has from the screen edges. Open this before editing individual section padding when the entire screen feels too close to the phone edge or when you need a fixed, non-scrolling composition.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-screensettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-screensettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-screensettings",
       "guideKeys": [
         "screenedit-flexible-sections-screen-settings"
       ],
@@ -5064,7 +5064,7 @@
       "summary": "Open screen-level layout settings",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-screensettings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-screensettings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-screensettings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -5080,7 +5080,7 @@
       "summary": "Click the pencil beside a section name to give it a clear internal label, such as Hero headline, Annual plan list, or Bottom CTA. This name helps editors understand the structure and is not shown to visitors. Rename repeated sections immediately so it is obvious which block you are opening, especially when several Text or Button sections exist on the same screen.",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-sectionname",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-sectionname",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-sectionname",
       "guideKeys": [
         "screenedit-flexible-sections-section-name"
       ],
@@ -5103,7 +5103,7 @@
       "summary": "Rename a section for editing",
       "kind": "section",
       "articleSectionId": "set-flexiblesections-management-sectionname-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-sectionname-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-sectionname-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -5122,7 +5122,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/add-menu-add-section.png",
       "articleSectionId": "set-flexiblesections-management-addsection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-addsection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-addsection",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5137,7 +5137,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/open-section-screen-settings.png",
       "articleSectionId": "set-flexiblesections-management-screensettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-screensettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-screensettings",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5151,7 +5151,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/open-section-reorder.png",
       "articleSectionId": "set-flexiblesections-management-reordersections",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-reordersections",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-reordersections",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5165,7 +5165,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/open-section-section-name.png",
       "articleSectionId": "set-flexiblesections-management-sectionname",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-sectionname",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-sectionname",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5179,7 +5179,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/open-section-delete.png",
       "articleSectionId": "set-flexiblesections-management-deletesection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-deletesection",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-deletesection",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5193,7 +5193,7 @@
       "group": "management",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/open-section-open-settings.png",
       "articleSectionId": "set-flexiblesections-management-opensectionsettings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-management-opensectionsettings",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-management-opensectionsettings",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5207,7 +5207,7 @@
       "group": "screen",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/screen-settings-scrollable.png",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-scrollable",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5222,7 +5222,7 @@
       "group": "screen",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/screen-settings-container-padding.png",
       "articleSectionId": "set-flexiblesections-content-flexiblelayout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-content-flexiblelayout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-content-flexiblelayout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5237,7 +5237,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-height-mode.png",
       "articleSectionId": "set-flexiblesections-layout-heightkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightkind",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5252,7 +5252,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-height-value.png",
       "articleSectionId": "set-flexiblesections-layout-heightvalue",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-heightvalue",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-heightvalue",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5267,7 +5267,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-flex-grow.png",
       "articleSectionId": "set-flexiblesections-layout-flexgrow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexgrow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexgrow",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5282,7 +5282,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-flex-shrink.png",
       "articleSectionId": "set-flexiblesections-layout-flexshrink",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-flexshrink",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-flexshrink",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5297,7 +5297,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-scrollable.png",
       "articleSectionId": "set-flexiblesections-layout-scrollable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-scrollable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-scrollable",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5312,7 +5312,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-z-index.png",
       "articleSectionId": "set-flexiblesections-layout-zindex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-zindex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-zindex",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5327,7 +5327,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-background-type.png",
       "articleSectionId": "set-flexiblesections-layout-background-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-kind",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5342,7 +5342,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-background-color.png",
       "articleSectionId": "set-flexiblesections-layout-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-background-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5357,7 +5357,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-corner-radius.png",
       "articleSectionId": "set-flexiblesections-layout-cornerradius-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-cornerradius-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-cornerradius-uniform",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5372,7 +5372,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-border-width.png",
       "articleSectionId": "set-flexiblesections-layout-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-width",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5387,7 +5387,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-border-color.png",
       "articleSectionId": "set-flexiblesections-layout-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-border-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5402,7 +5402,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-vertical-alignment.png",
       "articleSectionId": "set-flexiblesections-layout-alignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-alignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-alignment",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5417,7 +5417,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-horizontal-alignment.png",
       "articleSectionId": "set-flexiblesections-layout-horizontalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-horizontalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-horizontalalignment",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5432,7 +5432,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-padding.png",
       "articleSectionId": "set-flexiblesections-layout-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-padding",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -5447,7 +5447,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-flexible-sections-section/0.2.0/configure-flexible-sections-section-2026-06-25T11-45-54-259Z-f59098f0/section-layout-margin.png",
       "articleSectionId": "set-flexiblesections-layout-margin",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-flexible-sections/index.html#set-flexiblesections-layout-margin",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-flexible-sections#set-flexiblesections-layout-margin",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and find the Flexible Sections panel (the + Add button and the section list).",
@@ -7847,6 +7847,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "7f6da18bad917bef"
+    "generatedHash": "cb8269eb4cdbde1e"
   }
 }

@@ -11,7 +11,7 @@
       "summary": "Plan card appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-cards-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-cards-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-cards-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -26,7 +26,7 @@
       "summary": "Plans & arrangement",
       "kind": "section",
       "articleSectionId": "g-catalog-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-catalog-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-catalog-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "Per-plan labels, badge & checkbox",
       "kind": "section",
       "articleSectionId": "g-perPlan-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-perPlan-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-perPlan-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -54,7 +54,7 @@
       "summary": "The plan picker — how the subscription cards are arranged, where the selection checkbox sits, the plans themselves, the selected/unselected card styling and spacing, and each plan's name / price / note / billing-period labels, badge, and checkbox styling. This guide documents every setting of the Paywall Subscriptions block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -379,7 +379,7 @@
       "summary": "Paywall Subscriptions in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -396,7 +396,7 @@
       "summary": "Open the Paywall Subscriptions section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -411,7 +411,7 @@
       "summary": "How a plan card looks before the user taps it: background color, border, and spacing. Keep this neutral and understated so the chosen plan can clearly stand out against it. The contrast between this and the Selected style is what tells users which plan they've picked, so never make the two look the same.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance",
       "guideKeys": [
         "screenedit-paywall-subscriptions-unselected-state"
       ],
@@ -434,7 +434,7 @@
       "summary": "Unselected plan style",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -450,7 +450,7 @@
       "summary": "Sets the padding inside each plan card, between its labels and the card edge, on the top, bottom, left, and right. Increase it to make cards feel roomier and easier to tap, decrease it to fit more plans on screen. The theme default is usually fine; adjust only if cards look cramped in preview.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-insets",
       "guideKeys": [
         "screenedit-paywall-subscriptions-item-padding"
       ],
@@ -473,7 +473,7 @@
       "summary": "Space inside each plan card",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -490,7 +490,7 @@
       "summary": "Fill color of an unselected plan cell.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -504,7 +504,7 @@
       "summary": "Outline color of an unselected plan cell — visible once the width is above 0.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -518,7 +518,7 @@
       "summary": "Outline thickness (px) of an unselected plan cell; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -532,7 +532,7 @@
       "summary": "How rounded an unselected plan cell corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -546,7 +546,7 @@
       "summary": "The list of plans the user can buy. Each plan must be linked to a real product in your connected Stripe account, or checkout will fail when you publish. Per plan you set its four corner labels (top-left = plan name, bottom-left = description, top-right = price, bottom-right = billing period) and an optional badge. Mark your best-value plan as selected by default, since the pre-selected plan converts most often. Use 'Add Plan' to add rows.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items",
       "guideKeys": [
         "screenedit-paywall-subscriptions-items"
       ],
@@ -572,7 +572,7 @@
       "summary": "Sets how much of each plan card's width goes to the left labels (plan name and description), leaving the rest for the right labels (price and billing period). Around 60-70% usually gives names enough room while keeping prices aligned on the right. Lower it if prices look cramped, raise it if plan names wrap awkwardly.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
       "guideKeys": [
         "screenedit-paywall-subscriptions-column-layout"
       ],
@@ -596,7 +596,7 @@
       "summary": "Plan name vs. price width",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -613,7 +613,7 @@
       "summary": "An optional ribbon on a plan card, like 'Most Popular' or 'Best Value', used to steer attention to the plan you most want sold. The styling (color, border, position, spacing) is shared across all plans, but the badge text is set per plan, so add text only to the one plan you're promoting. A single well-placed badge lifts conversion; badging every plan cancels the effect.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge",
       "guideKeys": [
         "screenedit-paywall-subscriptions-badge"
       ],
@@ -638,7 +638,7 @@
       "summary": "Plan badge",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -654,7 +654,7 @@
       "summary": "Fill of the badge chip (e.g. \"Best value\"). Sits on the plan card corner.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -669,7 +669,7 @@
       "summary": "Color of the badge outline.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -683,7 +683,7 @@
       "summary": "Corner rounding (px) of the badge chip / its outline; higher is more pill-like.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -697,7 +697,7 @@
       "summary": "Outline thickness (px) of the badge; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -711,7 +711,7 @@
       "summary": "Typeface of the badge label.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -726,7 +726,7 @@
       "summary": "Text size (px) of the badge; keep it small so it reads as a tag, not a heading.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -741,7 +741,7 @@
       "summary": "How bold the badge text is.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -756,7 +756,7 @@
       "summary": "Vertical line spacing of the badge text — rarely needs changing for a one-word badge.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -771,7 +771,7 @@
       "summary": "Where the badge sits on the plan card: top-left, top-center, or top-right.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-position",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-position",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-position",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -786,7 +786,7 @@
       "summary": "Color of the badge label; keep enough contrast with the badge background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -801,7 +801,7 @@
       "summary": "Styles the bottom-right label on every plan card, usually the billing period like 'per month': font, size, weight, color, alignment, and spacing, applied to all plans at once. The text follows the linked product; this only sets the look. Keep it small and quiet under the price; theme defaults are a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-bottom-end-label"
       ],
@@ -826,7 +826,7 @@
       "summary": "Style the billing period (bottom-right)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -842,7 +842,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -857,7 +857,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -872,7 +872,7 @@
       "summary": "The typeface of the billing period.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -886,7 +886,7 @@
       "summary": "Text size of the billing period in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -901,7 +901,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -916,7 +916,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -931,7 +931,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -947,7 +947,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -962,7 +962,7 @@
       "summary": "An optional fill drawn behind the billing period text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -977,7 +977,7 @@
       "summary": "The color of the billing period text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -992,7 +992,7 @@
       "summary": "Styles the bottom-left label on every plan card, usually the short plan description or trial note: font, size, weight, color, alignment, and spacing, applied to all plans at once. This sets only the look; you write the actual text per plan in the plan list. Keep it smaller and lighter than the plan name; theme defaults are a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-bottom-start-label"
       ],
@@ -1016,7 +1016,7 @@
       "summary": "Style the plan note (bottom-left)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1032,7 +1032,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1047,7 +1047,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1062,7 +1062,7 @@
       "summary": "The typeface of the plan note.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1076,7 +1076,7 @@
       "summary": "Text size of the plan note in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1091,7 +1091,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1106,7 +1106,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1121,7 +1121,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1137,7 +1137,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1152,7 +1152,7 @@
       "summary": "An optional fill drawn behind the plan note text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1167,7 +1167,7 @@
       "summary": "The color of the plan note text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1182,7 +1182,7 @@
       "summary": "Sets the colors of the per-plan checkbox: its unselected (empty) color and its selected (checked) color. It only appears when checkbox placement is set to Left or Right, and is hidden when placement is 'No checkbox'. Use a clear, on-brand selected color so the chosen plan is unmistakable; it defaults to your theme accent.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox",
       "guideKeys": [
         "screenedit-paywall-subscriptions-checkbox"
       ],
@@ -1205,7 +1205,7 @@
       "summary": "Style the plan checkbox",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1221,7 +1221,7 @@
       "summary": "The selection mark shape — square or circle.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1235,7 +1235,7 @@
       "summary": "Color of the checkbox when its plan is the selected one.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1249,7 +1249,7 @@
       "summary": "Color of the checkbox on the non-selected plans.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1263,7 +1263,7 @@
       "summary": "Styles the top-right label on every plan card, usually the price: font, size, weight, color, alignment, and spacing, applied to all plans at once. The price value itself comes from the linked Stripe product, not here. Make the price bold and prominent so it's easy to compare across plans; theme defaults usually work.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-top-end-label"
       ],
@@ -1288,7 +1288,7 @@
       "summary": "Style the price (top-right)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1305,7 +1305,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1321,7 +1321,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1337,7 +1337,7 @@
       "summary": "The typeface of the price.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1352,7 +1352,7 @@
       "summary": "Text size of the price in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1368,7 +1368,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1384,7 +1384,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1400,7 +1400,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1416,7 +1416,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1432,7 +1432,7 @@
       "summary": "An optional fill drawn behind the price text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1448,7 +1448,7 @@
       "summary": "The color of the price text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1464,7 +1464,7 @@
       "summary": "Styles the top-left label on every plan card, which usually holds the plan name like 'Annual': font, size, weight, color, alignment, and spacing, applied to all plans at once. This only controls how it looks; you edit each plan's actual name in the plan list. Make plan names bold and legible so they're easy to compare; theme defaults usually work.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-top-start-label"
       ],
@@ -1488,7 +1488,7 @@
       "summary": "Style the plan name (top-left)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1504,7 +1504,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1519,7 +1519,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1534,7 +1534,7 @@
       "summary": "The typeface of the plan name.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1548,7 +1548,7 @@
       "summary": "Text size of the plan name in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1563,7 +1563,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1578,7 +1578,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1593,7 +1593,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1609,7 +1609,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1624,7 +1624,7 @@
       "summary": "An optional fill drawn behind the plan name text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1639,7 +1639,7 @@
       "summary": "The color of the plan name text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1654,7 +1654,7 @@
       "summary": "Subscription plans",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1672,7 +1672,7 @@
       "summary": "Sets the space around the whole block of plans, between the list and the screen edges and the content above and below it. (Card padding spaces the inside of one plan; this spaces the entire group.) Add space if the plans feel jammed against the body copy or the purchase button; the theme default is a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-layout-insets",
       "guideKeys": [
         "screenedit-paywall-subscriptions-list-padding"
       ],
@@ -1697,7 +1697,7 @@
       "summary": "Space around the plan list",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1713,7 +1713,7 @@
       "summary": "Choose where the selection checkbox sits on each plan card: left, right, or hidden. Left or right makes selecting a plan obvious; Hidden removes the checkbox and lets the highlighted card itself signal the choice for a cleaner look, but only if your selected style is clearly distinct. Left is a safe default. This also works together with the checkbox styling field below.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-productlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-productlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-productlayout",
       "guideKeys": [
         "screenedit-paywall-subscriptions-product-layout"
       ],
@@ -1736,7 +1736,7 @@
       "summary": "Checkbox placement on plans",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-productlayout-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-productlayout-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-productlayout-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1752,7 +1752,7 @@
       "summary": "How a plan card looks once it's the chosen one: background color, border, and spacing. Make it clearly stand out from the unselected cards, for example a brand-colored border or filled background, so the user is never unsure which plan they're about to buy. Crisp selected styling removes hesitation right before checkout.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance",
       "guideKeys": [
         "screenedit-paywall-subscriptions-selected-state"
       ],
@@ -1776,7 +1776,7 @@
       "summary": "Selected plan style",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1792,7 +1792,7 @@
       "summary": "Fill color of the selected plan cell.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1806,7 +1806,7 @@
       "summary": "Outline color of the selected plan cell — visible once the width is above 0.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1820,7 +1820,7 @@
       "summary": "Outline thickness (px) of the selected plan cell; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1834,7 +1834,7 @@
       "summary": "How rounded the selected plan cell corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1848,7 +1848,7 @@
       "summary": "Choose how the plan cards are laid out. Vertical stacks them one under another, which reads best on mobile and works well for 2 to 4 plans; Horizontal lines them up side by side as compact cards, good for 2 short price options you want compared at a glance. Start with Vertical unless you specifically need a side-by-side comparison.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-viewkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-viewkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-viewkind",
       "guideKeys": [
         "screenedit-paywall-subscriptions-view-kind"
       ],
@@ -1871,7 +1871,7 @@
       "summary": "Plan card arrangement",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-viewkind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-viewkind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-viewkind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1890,7 +1890,7 @@
       "summary": "Plan card appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-cards-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-cards-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-cards-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1905,7 +1905,7 @@
       "summary": "Plans & arrangement",
       "kind": "section",
       "articleSectionId": "g-catalog-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-catalog-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-catalog-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1919,7 +1919,7 @@
       "summary": "Per-plan labels, badge & checkbox",
       "kind": "section",
       "articleSectionId": "g-perPlan-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#g-perPlan-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#g-perPlan-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1933,7 +1933,7 @@
       "summary": "The plan picker — how the subscription cards are arranged, where the selection checkbox sits, the plans themselves, the selected/unselected card styling and spacing, and each plan's name / price / note / billing-period labels, badge, and checkbox styling. This guide documents every setting of the Paywall Subscriptions block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2258,7 +2258,7 @@
       "summary": "Paywall Subscriptions in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2275,7 +2275,7 @@
       "summary": "Open the Paywall Subscriptions section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2290,7 +2290,7 @@
       "summary": "How a plan card looks before the user taps it: background color, border, and spacing. Keep this neutral and understated so the chosen plan can clearly stand out against it. The contrast between this and the Selected style is what tells users which plan they've picked, so never make the two look the same.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance",
       "guideKeys": [
         "screenedit-paywall-subscriptions-unselected-state"
       ],
@@ -2313,7 +2313,7 @@
       "summary": "Unselected plan style",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2329,7 +2329,7 @@
       "summary": "Sets the padding inside each plan card, between its labels and the card edge, on the top, bottom, left, and right. Increase it to make cards feel roomier and easier to tap, decrease it to fit more plans on screen. The theme default is usually fine; adjust only if cards look cramped in preview.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-insets",
       "guideKeys": [
         "screenedit-paywall-subscriptions-item-padding"
       ],
@@ -2352,7 +2352,7 @@
       "summary": "Space inside each plan card",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2369,7 +2369,7 @@
       "summary": "Fill color of an unselected plan cell.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2383,7 +2383,7 @@
       "summary": "Outline color of an unselected plan cell — visible once the width is above 0.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2397,7 +2397,7 @@
       "summary": "Outline thickness (px) of an unselected plan cell; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2411,7 +2411,7 @@
       "summary": "How rounded an unselected plan cell corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2425,7 +2425,7 @@
       "summary": "The list of plans the user can buy. Each plan must be linked to a real product in your connected Stripe account, or checkout will fail when you publish. Per plan you set its four corner labels (top-left = plan name, bottom-left = description, top-right = price, bottom-right = billing period) and an optional badge. Mark your best-value plan as selected by default, since the pre-selected plan converts most often. Use 'Add Plan' to add rows.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items",
       "guideKeys": [
         "screenedit-paywall-subscriptions-items"
       ],
@@ -2451,7 +2451,7 @@
       "summary": "Sets how much of each plan card's width goes to the left labels (plan name and description), leaving the rest for the right labels (price and billing period). Around 60-70% usually gives names enough room while keeping prices aligned on the right. Lower it if prices look cramped, raise it if plan names wrap awkwardly.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
       "guideKeys": [
         "screenedit-paywall-subscriptions-column-layout"
       ],
@@ -2475,7 +2475,7 @@
       "summary": "Plan name vs. price width",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2492,7 +2492,7 @@
       "summary": "An optional ribbon on a plan card, like 'Most Popular' or 'Best Value', used to steer attention to the plan you most want sold. The styling (color, border, position, spacing) is shared across all plans, but the badge text is set per plan, so add text only to the one plan you're promoting. A single well-placed badge lifts conversion; badging every plan cancels the effect.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge",
       "guideKeys": [
         "screenedit-paywall-subscriptions-badge"
       ],
@@ -2517,7 +2517,7 @@
       "summary": "Plan badge",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2533,7 +2533,7 @@
       "summary": "Fill of the badge chip (e.g. \"Best value\"). Sits on the plan card corner.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2548,7 +2548,7 @@
       "summary": "Color of the badge outline.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2562,7 +2562,7 @@
       "summary": "Corner rounding (px) of the badge chip / its outline; higher is more pill-like.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2576,7 +2576,7 @@
       "summary": "Outline thickness (px) of the badge; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2590,7 +2590,7 @@
       "summary": "Typeface of the badge label.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2605,7 +2605,7 @@
       "summary": "Text size (px) of the badge; keep it small so it reads as a tag, not a heading.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2620,7 +2620,7 @@
       "summary": "How bold the badge text is.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2635,7 +2635,7 @@
       "summary": "Vertical line spacing of the badge text — rarely needs changing for a one-word badge.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2650,7 +2650,7 @@
       "summary": "Where the badge sits on the plan card: top-left, top-center, or top-right.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-position",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-position",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-position",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2665,7 +2665,7 @@
       "summary": "Color of the badge label; keep enough contrast with the badge background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge-prop-badge-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2680,7 +2680,7 @@
       "summary": "Styles the bottom-right label on every plan card, usually the billing period like 'per month': font, size, weight, color, alignment, and spacing, applied to all plans at once. The text follows the linked product; this only sets the look. Keep it small and quiet under the price; theme defaults are a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-bottom-end-label"
       ],
@@ -2705,7 +2705,7 @@
       "summary": "Style the billing period (bottom-right)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2721,7 +2721,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2736,7 +2736,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2751,7 +2751,7 @@
       "summary": "The typeface of the billing period.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2765,7 +2765,7 @@
       "summary": "Text size of the billing period in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2780,7 +2780,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2795,7 +2795,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2810,7 +2810,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2826,7 +2826,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2841,7 +2841,7 @@
       "summary": "An optional fill drawn behind the billing period text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2856,7 +2856,7 @@
       "summary": "The color of the billing period text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2871,7 +2871,7 @@
       "summary": "Styles the bottom-left label on every plan card, usually the short plan description or trial note: font, size, weight, color, alignment, and spacing, applied to all plans at once. This sets only the look; you write the actual text per plan in the plan list. Keep it smaller and lighter than the plan name; theme defaults are a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-bottom-start-label"
       ],
@@ -2895,7 +2895,7 @@
       "summary": "Style the plan note (bottom-left)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2911,7 +2911,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2926,7 +2926,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2941,7 +2941,7 @@
       "summary": "The typeface of the plan note.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2955,7 +2955,7 @@
       "summary": "Text size of the plan note in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2970,7 +2970,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2985,7 +2985,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3000,7 +3000,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3016,7 +3016,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3031,7 +3031,7 @@
       "summary": "An optional fill drawn behind the plan note text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3046,7 +3046,7 @@
       "summary": "The color of the plan note text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3061,7 +3061,7 @@
       "summary": "Sets the colors of the per-plan checkbox: its unselected (empty) color and its selected (checked) color. It only appears when checkbox placement is set to Left or Right, and is hidden when placement is 'No checkbox'. Use a clear, on-brand selected color so the chosen plan is unmistakable; it defaults to your theme accent.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox",
       "guideKeys": [
         "screenedit-paywall-subscriptions-checkbox"
       ],
@@ -3084,7 +3084,7 @@
       "summary": "Style the plan checkbox",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3100,7 +3100,7 @@
       "summary": "The selection mark shape — square or circle.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-checkbox-shape",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3114,7 +3114,7 @@
       "summary": "Color of the checkbox when its plan is the selected one.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-checked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3128,7 +3128,7 @@
       "summary": "Color of the checkbox on the non-selected plans.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox-prop-unchecked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3142,7 +3142,7 @@
       "summary": "Styles the top-right label on every plan card, usually the price: font, size, weight, color, alignment, and spacing, applied to all plans at once. The price value itself comes from the linked Stripe product, not here. Make the price bold and prominent so it's easy to compare across plans; theme defaults usually work.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-top-end-label"
       ],
@@ -3167,7 +3167,7 @@
       "summary": "Style the price (top-right)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3184,7 +3184,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3200,7 +3200,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3216,7 +3216,7 @@
       "summary": "The typeface of the price.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3231,7 +3231,7 @@
       "summary": "Text size of the price in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3247,7 +3247,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3263,7 +3263,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3279,7 +3279,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3295,7 +3295,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3311,7 +3311,7 @@
       "summary": "An optional fill drawn behind the price text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3327,7 +3327,7 @@
       "summary": "The color of the price text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3343,7 +3343,7 @@
       "summary": "Styles the top-left label on every plan card, which usually holds the plan name like 'Annual': font, size, weight, color, alignment, and spacing, applied to all plans at once. This only controls how it looks; you edit each plan's actual name in the plan list. Make plan names bold and legible so they're easy to compare; theme defaults usually work.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel",
       "guideKeys": [
         "screenedit-paywall-subscriptions-top-start-label"
       ],
@@ -3367,7 +3367,7 @@
       "summary": "Style the plan name (top-left)",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3383,7 +3383,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3398,7 +3398,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3413,7 +3413,7 @@
       "summary": "The typeface of the plan name.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3427,7 +3427,7 @@
       "summary": "Text size of the plan name in pixels.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3442,7 +3442,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3457,7 +3457,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3472,7 +3472,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3488,7 +3488,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3503,7 +3503,7 @@
       "summary": "An optional fill drawn behind the plan name text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3518,7 +3518,7 @@
       "summary": "The color of the plan name text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3533,7 +3533,7 @@
       "summary": "Subscription plans",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-items-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3551,7 +3551,7 @@
       "summary": "Sets the space around the whole block of plans, between the list and the screen edges and the content above and below it. (Card padding spaces the inside of one plan; this spaces the entire group.) Add space if the plans feel jammed against the body copy or the purchase button; the theme default is a safe start.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-layout-insets",
       "guideKeys": [
         "screenedit-paywall-subscriptions-list-padding"
       ],
@@ -3576,7 +3576,7 @@
       "summary": "Space around the plan list",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3592,7 +3592,7 @@
       "summary": "Choose where the selection checkbox sits on each plan card: left, right, or hidden. Left or right makes selecting a plan obvious; Hidden removes the checkbox and lets the highlighted card itself signal the choice for a cleaner look, but only if your selected style is clearly distinct. Left is a safe default. This also works together with the checkbox styling field below.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-productlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-productlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-productlayout",
       "guideKeys": [
         "screenedit-paywall-subscriptions-product-layout"
       ],
@@ -3615,7 +3615,7 @@
       "summary": "Checkbox placement on plans",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-productlayout-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-productlayout-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-productlayout-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3631,7 +3631,7 @@
       "summary": "How a plan card looks once it's the chosen one: background color, border, and spacing. Make it clearly stand out from the unselected cards, for example a brand-colored border or filled background, so the user is never unsure which plan they're about to buy. Crisp selected styling removes hesitation right before checkout.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance",
       "guideKeys": [
         "screenedit-paywall-subscriptions-selected-state"
       ],
@@ -3655,7 +3655,7 @@
       "summary": "Selected plan style",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3671,7 +3671,7 @@
       "summary": "Fill color of the selected plan cell.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3685,7 +3685,7 @@
       "summary": "Outline color of the selected plan cell — visible once the width is above 0.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3699,7 +3699,7 @@
       "summary": "Outline thickness (px) of the selected plan cell; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3713,7 +3713,7 @@
       "summary": "How rounded the selected plan cell corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3727,7 +3727,7 @@
       "summary": "Choose how the plan cards are laid out. Vertical stacks them one under another, which reads best on mobile and works well for 2 to 4 plans; Horizontal lines them up side by side as compact cards, good for 2 short price options you want compared at a glance. Start with Vertical unless you specifically need a side-by-side comparison.",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-viewkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-viewkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-viewkind",
       "guideKeys": [
         "screenedit-paywall-subscriptions-view-kind"
       ],
@@ -3750,7 +3750,7 @@
       "summary": "Plan card arrangement",
       "kind": "section",
       "articleSectionId": "set-paywallsubscriptions-viewkind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-viewkind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-viewkind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3770,7 +3770,7 @@
       "group": "catalog",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-view-kind.png",
       "articleSectionId": "set-paywallsubscriptions-viewkind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-viewkind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-viewkind",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3784,7 +3784,7 @@
       "group": "catalog",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-product-layout.png",
       "articleSectionId": "set-paywallsubscriptions-productlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-productlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-productlayout",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3798,7 +3798,7 @@
       "group": "catalog",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/open-section-items.png",
       "articleSectionId": "set-paywallsubscriptions-items",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3812,7 +3812,7 @@
       "group": "cards",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-unselected-state.png",
       "articleSectionId": "set-paywallsubscriptions-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3827,7 +3827,7 @@
       "group": "cards",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-selected-state.png",
       "articleSectionId": "set-paywallsubscriptions-selectedappearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-selectedappearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-selectedappearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3842,7 +3842,7 @@
       "group": "cards",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-item-padding.png",
       "articleSectionId": "set-paywallsubscriptions-appearance-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-appearance-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-appearance-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3857,7 +3857,7 @@
       "group": "cards",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-list-padding.png",
       "articleSectionId": "set-paywallsubscriptions-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3872,7 +3872,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-column-layout.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-appearance-startcolumnwidthpercentage",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3887,7 +3887,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-start-label.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-topstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topstartlabel",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3902,7 +3902,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-start-label.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomstartlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomstartlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomstartlabel",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3917,7 +3917,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-top-end-label.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-topendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-topendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-topendlabel",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3932,7 +3932,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-bottom-end-label.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-bottomendlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-bottomendlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-bottomendlabel",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3947,7 +3947,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-badge.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-badge",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-badge",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-badge",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -3962,7 +3962,7 @@
       "group": "perPlan",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-subscriptions-section/0.2.0/configure-paywall-subscriptions-section-2026-06-24T21-02-04-886Z-962637a0/styles-checkbox.png",
       "articleSectionId": "set-paywallsubscriptions-items-0-checkbox",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html#set-paywallsubscriptions-items-0-checkbox",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions#set-paywallsubscriptions-items-0-checkbox",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and find the Subscription Plans section (view kind, checkbox placement, Add Plan).",
@@ -7727,6 +7727,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "396375c26f234484"
+    "generatedHash": "bebe598ea13045b3"
   }
 }

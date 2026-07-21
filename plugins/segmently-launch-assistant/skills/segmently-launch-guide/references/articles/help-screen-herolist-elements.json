@@ -11,7 +11,7 @@
       "summary": "Action Bar<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-actionbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button.",
       "kind": "section",
       "articleSectionId": "block-actionbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "block-actionbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -83,7 +83,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -113,7 +113,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -127,7 +127,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -143,7 +143,7 @@
       "summary": "The lead image above the text — its source, size, rounding and how it sits with the text.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-hero-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-hero-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-hero-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -158,7 +158,7 @@
       "summary": "Hero image in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-hero-image-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-hero-image-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-hero-image-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -174,7 +174,7 @@
       "summary": "The supporting line under the title.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-subtitle",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -188,7 +188,7 @@
       "summary": "Subtitle in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-subtitle-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-subtitle-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-subtitle-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -204,7 +204,7 @@
       "summary": "The headline — the biggest, first line a visitor reads.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-title",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -218,7 +218,7 @@
       "summary": "Title in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-title-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-title-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-title-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -234,7 +234,7 @@
       "summary": "Content",
       "kind": "section",
       "articleSectionId": "block-copyblock-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -248,7 +248,7 @@
       "summary": "This screen’s content is built from these reusable elements — open any one for its full settings:",
       "kind": "section",
       "articleSectionId": "block-copyblock-intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -262,7 +262,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -276,7 +276,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -290,7 +290,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -306,7 +306,7 @@
       "summary": "Options<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-options-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -320,7 +320,7 @@
       "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling.",
       "kind": "section",
       "articleSectionId": "block-options-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -334,7 +334,7 @@
       "summary": "Options in the editor",
       "kind": "section",
       "articleSectionId": "block-options-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -350,7 +350,7 @@
       "summary": "The Hero List screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -364,7 +364,7 @@
       "summary": "Related article: Action Bar",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -380,7 +380,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -396,7 +396,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -412,7 +412,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -428,7 +428,7 @@
       "summary": "Related article: Hero image",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -444,7 +444,7 @@
       "summary": "Related article: Subtitle",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -460,7 +460,7 @@
       "summary": "Related article: Title",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-title",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -476,7 +476,7 @@
       "summary": "Related article: Options",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-hero-list/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -494,7 +494,7 @@
       "summary": "Action Bar<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-actionbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -508,7 +508,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button.",
       "kind": "section",
       "articleSectionId": "block-actionbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -522,7 +522,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "block-actionbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-actionbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-actionbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -538,7 +538,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -552,7 +552,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -566,7 +566,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -582,7 +582,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -596,7 +596,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -610,7 +610,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -626,7 +626,7 @@
       "summary": "The lead image above the text — its source, size, rounding and how it sits with the text.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-hero-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-hero-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-hero-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -641,7 +641,7 @@
       "summary": "Hero image in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-hero-image-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-hero-image-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-hero-image-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -657,7 +657,7 @@
       "summary": "The supporting line under the title.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-subtitle",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -671,7 +671,7 @@
       "summary": "Subtitle in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-subtitle-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-subtitle-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-subtitle-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -687,7 +687,7 @@
       "summary": "The headline — the biggest, first line a visitor reads.",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-title",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -701,7 +701,7 @@
       "summary": "Title in the editor",
       "kind": "section",
       "articleSectionId": "block-copyblock-el-title-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-el-title-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-el-title-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -717,7 +717,7 @@
       "summary": "Content",
       "kind": "section",
       "articleSectionId": "block-copyblock-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -731,7 +731,7 @@
       "summary": "This screen’s content is built from these reusable elements — open any one for its full settings:",
       "kind": "section",
       "articleSectionId": "block-copyblock-intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-copyblock-intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-copyblock-intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -745,7 +745,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -759,7 +759,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -773,7 +773,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -789,7 +789,7 @@
       "summary": "Options<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-options-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -803,7 +803,7 @@
       "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling.",
       "kind": "section",
       "articleSectionId": "block-options-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -817,7 +817,7 @@
       "summary": "Options in the editor",
       "kind": "section",
       "articleSectionId": "block-options-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#block-options-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#block-options-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -833,7 +833,7 @@
       "summary": "The Hero List screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herolist-elements/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herolist-elements#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -847,7 +847,7 @@
       "summary": "Related article: Action Bar",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -863,7 +863,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -879,7 +879,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -895,7 +895,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -911,7 +911,7 @@
       "summary": "Related article: Hero image",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -927,7 +927,7 @@
       "summary": "Related article: Subtitle",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -943,7 +943,7 @@
       "summary": "Related article: Title",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-title",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -959,7 +959,7 @@
       "summary": "Related article: Options",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-hero-list/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1045,7 +1045,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
+              "details": "https://help.segmently.ai/help-block-header"
             },
             "labels": {
               "sep": {
@@ -1213,7 +1213,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-title/index.html"
+              "details": "https://help.segmently.ai/help-element-title"
             },
             "labels": {
               "sep": {
@@ -1313,7 +1313,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html"
+              "details": "https://help.segmently.ai/help-element-subtitle"
             },
             "labels": {
               "sep": {
@@ -1413,7 +1413,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html"
+              "details": "https://help.segmently.ai/help-element-hero-image"
             },
             "labels": {
               "sep": {
@@ -1513,7 +1513,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-hero-list/index.html"
+              "details": "https://help.segmently.ai/help-options-hero-list"
             },
             "labels": {
               "sep": {
@@ -1627,7 +1627,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html"
+              "details": "https://help.segmently.ai/help-block-action-bar"
             },
             "labels": {
               "sep": {
@@ -1741,7 +1741,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
+              "details": "https://help.segmently.ai/help-block-background"
             },
             "labels": {
               "sep": {
@@ -1855,7 +1855,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
+              "details": "https://help.segmently.ai/help-block-basic-config"
             },
             "labels": {
               "sep": {
@@ -1950,6 +1950,6 @@
       "scripts/help-articles/help-screen-herolist-elements.assembly.json",
       "scripts/help-articles/help-screen-herolist-elements.doc.json"
     ],
-    "generatedHash": "01a144001a7f310c"
+    "generatedHash": "acc0f457f22802f6"
   }
 }

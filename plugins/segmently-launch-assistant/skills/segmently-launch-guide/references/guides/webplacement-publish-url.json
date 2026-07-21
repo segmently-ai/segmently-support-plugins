@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-publish-url/index.html",
+    "fullArticleLink": "https://help.segmently.ai/webplacement-publish-url",
     "sourceRecipeKey": "publish-web-placement",
     "localArticlePath": null,
     "sections": [
@@ -70,7 +70,12 @@
       "title": "Find the Cloud URL",
       "summary": "This is the live public URL of the published funnel, using your custom domain when configured. Share it in ads, emails, and landing pages.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151507_open-web-placements-publish-url-controls/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "subarticleId": "webplacement-publish-url/cloud-url"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -78,7 +83,12 @@
       "title": "Copy the URL",
       "summary": "Copy the Cloud URL to the clipboard for campaigns and links. The button shows a checkmark to confirm the copy.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "subarticleId": "webplacement-publish-url/copy"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -86,7 +96,12 @@
       "title": "Open the funnel in a new tab",
       "summary": "Open the Cloud URL to confirm it loads before sending traffic. It runs with full analytics and Stripe checkout.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "subarticleId": "webplacement-publish-url/open-browser"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -94,7 +109,12 @@
       "title": "Test locally with the Debug Panel (dev only)",
       "summary": "On localhost, a local URL with the Debug Panel shows live variable inspection, analytics preview, and error logs. Use it for QA before release.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "subarticleId": "webplacement-publish-url/local-dev"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -102,7 +122,12 @@
       "title": "Complete a smoke test",
       "summary": "Open the Cloud URL in a clean (incognito) session, complete the flow, confirm analytics events fire, and test the paywall or checkout before sending traffic.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "subarticleId": "webplacement-publish-url/smoke-test"
+        }
+      ],
       "actionIds": []
     }
   ]

@@ -11,7 +11,7 @@
       "summary": "Card regions (grid)",
       "kind": "section",
       "articleSectionId": "g-containers-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-containers-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-containers-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -26,7 +26,7 @@
       "summary": "List or grid layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "Selection behaviour",
       "kind": "section",
       "articleSectionId": "g-selection-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-selection-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-selection-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -54,7 +54,7 @@
       "summary": "Spacing & padding",
       "kind": "section",
       "articleSectionId": "g-spacing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-spacing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-spacing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -68,7 +68,7 @@
       "summary": "Selected & unselected look",
       "kind": "section",
       "articleSectionId": "g-states-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-states-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-states-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -82,7 +82,7 @@
       "summary": "Text, image & checkbox styles",
       "kind": "section",
       "articleSectionId": "g-styles-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-styles-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-styles-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -97,7 +97,7 @@
       "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a Grid Multi Pick screen — a two-column grid. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -111,7 +111,7 @@
       "summary": "Two columns — the options are laid out as a grid of cards, two per row.",
       "kind": "section",
       "articleSectionId": "opt-columns",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-columns",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-columns",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -125,7 +125,7 @@
       "summary": "This screen offers these item layouts (set under “Item layout” below):  Title  •  Title + Subtitle  •  Small Image + Title  •  Medium Image + Title  •  Big Image + Title  •  Full Image.",
       "kind": "section",
       "articleSectionId": "opt-item-layouts",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-item-layouts",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-item-layouts",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -139,7 +139,7 @@
       "summary": "Multi select — visitors can choose several options (up to the “Max selections” limit) before tapping the button to continue.",
       "kind": "section",
       "articleSectionId": "opt-selection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-selection",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-selection",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -153,7 +153,7 @@
       "summary": "Selection mode and column layout are fixed for this screen type — they are part of what makes it this kind of screen.",
       "kind": "section",
       "articleSectionId": "opt-switch",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-switch",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-switch",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -167,7 +167,7 @@
       "summary": "How this screen works",
       "kind": "section",
       "articleSectionId": "opt-template-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-template-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-template-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -181,7 +181,7 @@
       "summary": "Options in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -197,7 +197,7 @@
       "summary": "Open the Options section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -211,7 +211,7 @@
       "summary": "Sets each grid cell's height as a percentage of its width: 100 is square, above 100 makes taller cells, below 100 makes wider, shorter cells. Pick taller cells for image-led options and square for balanced icon-and-text choices. Only appears on two-column grids — try 100 first, then adjust to fit your content.",
       "kind": "section",
       "articleSectionId": "set-options-cellheightfromcellwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-cellheightfromcellwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth",
       "guideKeys": [
         "screenedit-options-cell-dimensions"
       ],
@@ -233,7 +233,7 @@
       "summary": "Grid cell proportions",
       "kind": "section",
       "articleSectionId": "set-options-cellheightfromcellwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-cellheightfromcellwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -249,7 +249,7 @@
       "summary": "On grid cells, show or hide the selection checkbox and place it in a corner (top-left, top-right, bottom-left, or bottom-right) with an optional offset. Keep it visible on multi-select grids so visitors can see what they've picked; top-right is a common, unobtrusive spot. Only appears on grid layouts.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer",
       "guideKeys": [
         "screenedit-options-checkbox-container"
       ],
@@ -271,7 +271,7 @@
       "summary": "Checkbox placement in grid cells",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -287,7 +287,7 @@
       "summary": "Gap between the checkbox and the cell edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-margin",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-margin",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-margin",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -301,7 +301,7 @@
       "summary": "Which corner of the cell the checkbox sits in (top-start, top-end, bottom-start, bottom-end).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-position",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-position",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-position",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -315,7 +315,7 @@
       "summary": "Turn the selection checkbox/marker on or off for grid cells.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-show-checkbox",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-show-checkbox",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-show-checkbox",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -329,7 +329,7 @@
       "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles",
       "guideKeys": [
         "screenedit-options-checkbox-styles"
       ],
@@ -351,7 +351,7 @@
       "summary": "Checkbox look",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -367,7 +367,7 @@
       "summary": "Space around the selection marker.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-checkbox-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-checkbox-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-checkbox-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -381,7 +381,7 @@
       "summary": "Color of the marker when the option is selected.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-checked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-checked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-checked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -395,7 +395,7 @@
       "summary": "The selection-marker shape (square or circle).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-shape",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-shape",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-shape",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -409,7 +409,7 @@
       "summary": "Color of the marker when the option is not selected.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-unchecked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-unchecked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-unchecked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -423,7 +423,7 @@
       "summary": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer",
       "guideKeys": [
         "screenedit-options-image-container"
       ],
@@ -445,7 +445,7 @@
       "summary": "Image area in each card",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -462,7 +462,7 @@
       "summary": "Horizontal alignment of the image inside the region.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-content-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-content-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-content-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -477,7 +477,7 @@
       "summary": "How the image region is sized: a fixed pixel height, a percent of the cell, or auto.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -494,7 +494,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -509,7 +509,7 @@
       "summary": "Empty space inside the image region around the image (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-region-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-region-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-region-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -524,7 +524,7 @@
       "summary": "Where the image sits within its region — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -539,7 +539,7 @@
       "summary": "Size and look of each item's image — width, height, corner radius, padding, and how it fits its box (fit shows the whole image with possible empty space; fill crops to cover the box). Keep a consistent size and small radius so cards look uniform; choose fill for photos and fit for logos or icons you don't want cropped. Only appears when the layout includes an image.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles",
       "guideKeys": [
         "screenedit-options-image-styles"
       ],
@@ -561,7 +561,7 @@
       "summary": "Item image look",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -577,7 +577,7 @@
       "summary": "How rounded the image corners are.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -591,7 +591,7 @@
       "summary": "Height (px) of the option's image or icon.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -605,7 +605,7 @@
       "summary": "Space around the image inside the option.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -619,7 +619,7 @@
       "summary": "Width (px) of the option's image or icon.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -633,7 +633,7 @@
       "summary": "How the image fills its box (fit, fill, or stretch).",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -647,7 +647,7 @@
       "summary": "When enabled, randomizes the order items appear to users on each view. Useful for A/B testing, survey randomization, and reducing position bias in multi-select scenarios.",
       "kind": "section",
       "articleSectionId": "set-options-israndomized",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-israndomized",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized",
       "guideKeys": [
         "screenedit-options-randomize-order"
       ],
@@ -668,7 +668,7 @@
       "summary": "Shuffle item order",
       "kind": "section",
       "articleSectionId": "set-options-israndomized-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-israndomized-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -684,7 +684,7 @@
       "summary": "Pick which parts each choice displays — title only, image plus title, checkbox with title and subtitle, and so on; available combos depend on your selection mode and layout. Adding an element reveals its style controls and means you must supply that content (image or subtitle) on every item. Default to title (plus a checkbox for multi-select) and add an image only when it aids the choice.",
       "kind": "section",
       "articleSectionId": "set-options-itemlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout",
       "guideKeys": [
         "screenedit-options-item-layout"
       ],
@@ -705,7 +705,7 @@
       "summary": "What each choice shows",
       "kind": "section",
       "articleSectionId": "set-options-itemlayout-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemlayout-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -721,7 +721,7 @@
       "summary": "The space between each item's edge and its content (title, image, checkbox), set per side — top, end, bottom, start. More padding makes items feel roomy and easier to tap; too little looks cramped. Around 12–16px on all sides reads well on mobile, and the setting applies to every item.",
       "kind": "section",
       "articleSectionId": "set-options-itempaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itempaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings",
       "guideKeys": [
         "screenedit-options-item-paddings"
       ],
@@ -742,7 +742,7 @@
       "summary": "Padding inside each item",
       "kind": "section",
       "articleSectionId": "set-options-itempaddings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itempaddings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -758,7 +758,7 @@
       "summary": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
       "kind": "section",
       "articleSectionId": "set-options-itemsspacing",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemsspacing",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing",
       "guideKeys": [
         "screenedit-options-items-spacing"
       ],
@@ -779,7 +779,7 @@
       "summary": "Gap between choices",
       "kind": "section",
       "articleSectionId": "set-options-itemsspacing-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemsspacing-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -795,7 +795,7 @@
       "summary": "The outer space between the screen edges and the first and last items, set per side (top, end, bottom, start). Use it to keep the list off the screen edges and aligned with your other sections. This is the outside spacing — for the gap inside each item use Padding inside each item instead.",
       "kind": "section",
       "articleSectionId": "set-options-listpaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-listpaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings",
       "guideKeys": [
         "screenedit-options-list-paddings"
       ],
@@ -816,7 +816,7 @@
       "summary": "Margin around the whole list",
       "kind": "section",
       "articleSectionId": "set-options-listpaddings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-listpaddings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -832,7 +832,7 @@
       "summary": "Limits how many items a visitor can choose on a multi-select screen. Set a small cap (e.g. 3) to keep answers focused and the next step manageable; leave it unlimited to let them pick freely. This control only appears on multi-select screens and is ignored everywhere else.",
       "kind": "section",
       "articleSectionId": "set-options-maxselecteditemcount",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-maxselecteditemcount",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount",
       "guideKeys": [
         "screenedit-options-max-selections"
       ],
@@ -853,7 +853,7 @@
       "summary": "Cap on multi-select picks",
       "kind": "section",
       "articleSectionId": "set-options-maxselecteditemcount-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-maxselecteditemcount-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -869,7 +869,7 @@
       "summary": "How a choice looks once tapped — background, border, corner radius, and optional gradient. Make it clearly distinct from the unselected look (an accent border or filled background) so visitors get instant confirmation; weak feedback here causes hesitation and drop-off. Your theme's accent color is a reliable choice.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate",
       "guideKeys": [
         "screenedit-options-selected-item"
       ],
@@ -890,7 +890,7 @@
       "summary": "Selected item look",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -906,7 +906,7 @@
       "summary": "The highlight fill behind the option the visitor HAS picked.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -920,7 +920,7 @@
       "summary": "Outline color for the selected option — often your accent color.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -934,7 +934,7 @@
       "summary": "Outline thickness for the selected option.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -948,7 +948,7 @@
       "summary": "Corner rounding for the selected option; usually matches the unselected state.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -962,7 +962,7 @@
       "summary": "Optional gradient highlight for the selected option.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-gradient-fill",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-gradient-fill",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-gradient-fill",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -976,7 +976,7 @@
       "summary": "Typography for the item subtitle — size, weight, color, alignment, line height, optional background, and padding, applied to all items as a shared template. Keep the subtitle visually quieter than the title (smaller, muted color) so it reads as supporting text. Only appears when your item layout includes a subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles",
       "guideKeys": [
         "screenedit-options-subtitle-styles"
       ],
@@ -998,7 +998,7 @@
       "summary": "Item subtitle text style",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1015,7 +1015,7 @@
       "summary": "Fill drawn behind the subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1030,7 +1030,7 @@
       "summary": "Transparency of that subtitle background.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1045,7 +1045,7 @@
       "summary": "Corner rounding of the subtitle background.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1060,7 +1060,7 @@
       "summary": "Text size (px) of each option's subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1075,7 +1075,7 @@
       "summary": "How bold the subtitle is.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1090,7 +1090,7 @@
       "summary": "Spacing between subtitle lines.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1105,7 +1105,7 @@
       "summary": "Space around the subtitle text.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-subtitle-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-subtitle-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-subtitle-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1120,7 +1120,7 @@
       "summary": "Alignment of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1135,7 +1135,7 @@
       "summary": "Subtitle color — usually a muted shade.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1150,7 +1150,7 @@
       "summary": "On grid cards with an image, this sets the title-and-subtitle region as a block: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. It fits the content by default, but choosing one fixed height keeps the text blocks aligned across every card so the row reads as a clean, scannable set. This controls the text region's position only; the actual fonts and colors of the title and subtitle are set in their own style sections.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer",
       "guideKeys": [
         "screenedit-options-text-container"
       ],
@@ -1173,7 +1173,7 @@
       "summary": "Text area in each card",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1191,7 +1191,7 @@
       "summary": "Horizontal alignment of the text inside the region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-content-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-content-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-content-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1207,7 +1207,7 @@
       "summary": "Fixed px, percent of the cell, or auto height for the text region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1223,7 +1223,7 @@
       "summary": "The height number used by the chosen mode.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1239,7 +1239,7 @@
       "summary": "Space inside the text region around the title and subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-region-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-region-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-region-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1255,7 +1255,7 @@
       "summary": "Where the title/subtitle block sits within its region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1271,7 +1271,7 @@
       "summary": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles",
       "guideKeys": [
         "screenedit-options-title-styles"
       ],
@@ -1293,7 +1293,7 @@
       "summary": "Item title text style",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1310,7 +1310,7 @@
       "summary": "Fill drawn behind the title text.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1325,7 +1325,7 @@
       "summary": "Transparency of that title background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1340,7 +1340,7 @@
       "summary": "Corner rounding of the title background.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1355,7 +1355,7 @@
       "summary": "Text size (px) of each option's title.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1370,7 +1370,7 @@
       "summary": "How bold the title is.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1385,7 +1385,7 @@
       "summary": "Vertical spacing between title lines.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1400,7 +1400,7 @@
       "summary": "Left, center, or right alignment of the title.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1415,7 +1415,7 @@
       "summary": "Title color.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1430,7 +1430,7 @@
       "summary": "Space around the title text (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-title-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-title-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-title-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1445,7 +1445,7 @@
       "summary": "The default look of each choice before it's tapped — background, border, corner radius, and an optional gradient. Keep it neutral and calm so the selected state can stand out; the contrast between this and the selected look is what tells visitors their tap registered. Pair it with the Selected item look.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate",
       "guideKeys": [
         "screenedit-options-unselected-item"
       ],
@@ -1466,7 +1466,7 @@
       "summary": "Unselected item look",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1482,7 +1482,7 @@
       "summary": "The fill behind an option the visitor has NOT selected.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1496,7 +1496,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1510,7 +1510,7 @@
       "summary": "Thickness (px) of the outline around an unselected option; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1524,7 +1524,7 @@
       "summary": "How rounded the option corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1538,7 +1538,7 @@
       "summary": "Optional gradient that replaces the flat background color for a richer look.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-gradient-fill",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-gradient-fill",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-gradient-fill",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1552,7 +1552,7 @@
       "summary": "On a grid, choose whether all cells stretch to the same maximum height for tidy, even rows, or each cell sizes to its own content (giving rows of varying height). Turn it on for a clean, consistent grid; turn it off when items have very different content lengths. Only applies to grid layouts.",
       "kind": "section",
       "articleSectionId": "set-options-usemaxcellheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-usemaxcellheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight",
       "guideKeys": [
         "screenedit-options-max-cell-height"
       ],
@@ -1573,7 +1573,7 @@
       "summary": "Even grid cell heights",
       "kind": "section",
       "articleSectionId": "set-options-usemaxcellheight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-usemaxcellheight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1589,7 +1589,7 @@
       "summary": "Aligns each choice's content to the top, center, or bottom of its cell. It's most noticeable in grid layouts where cells are taller than their content; center usually looks balanced. In simple lists it has little visible effect, so center is a safe default.",
       "kind": "section",
       "articleSectionId": "set-options-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment",
       "guideKeys": [
         "screenedit-options-vertical-alignment"
       ],
@@ -1610,7 +1610,7 @@
       "summary": "Vertical alignment of items",
       "kind": "section",
       "articleSectionId": "set-options-verticalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-verticalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1628,7 +1628,7 @@
       "summary": "Card regions (grid)",
       "kind": "section",
       "articleSectionId": "g-containers-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-containers-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-containers-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1643,7 +1643,7 @@
       "summary": "List or grid layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1657,7 +1657,7 @@
       "summary": "Selection behaviour",
       "kind": "section",
       "articleSectionId": "g-selection-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-selection-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-selection-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1671,7 +1671,7 @@
       "summary": "Spacing & padding",
       "kind": "section",
       "articleSectionId": "g-spacing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-spacing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-spacing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1685,7 +1685,7 @@
       "summary": "Selected & unselected look",
       "kind": "section",
       "articleSectionId": "g-states-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-states-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-states-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1699,7 +1699,7 @@
       "summary": "Text, image & checkbox styles",
       "kind": "section",
       "articleSectionId": "g-styles-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#g-styles-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#g-styles-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1714,7 +1714,7 @@
       "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a Grid Multi Pick screen — a two-column grid. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1728,7 +1728,7 @@
       "summary": "Two columns — the options are laid out as a grid of cards, two per row.",
       "kind": "section",
       "articleSectionId": "opt-columns",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-columns",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-columns",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1742,7 +1742,7 @@
       "summary": "This screen offers these item layouts (set under “Item layout” below):  Title  •  Title + Subtitle  •  Small Image + Title  •  Medium Image + Title  •  Big Image + Title  •  Full Image.",
       "kind": "section",
       "articleSectionId": "opt-item-layouts",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-item-layouts",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-item-layouts",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1756,7 +1756,7 @@
       "summary": "Multi select — visitors can choose several options (up to the “Max selections” limit) before tapping the button to continue.",
       "kind": "section",
       "articleSectionId": "opt-selection",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-selection",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-selection",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1770,7 +1770,7 @@
       "summary": "Selection mode and column layout are fixed for this screen type — they are part of what makes it this kind of screen.",
       "kind": "section",
       "articleSectionId": "opt-switch",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-switch",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-switch",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1784,7 +1784,7 @@
       "summary": "How this screen works",
       "kind": "section",
       "articleSectionId": "opt-template-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#opt-template-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#opt-template-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1798,7 +1798,7 @@
       "summary": "Options in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1814,7 +1814,7 @@
       "summary": "Open the Options section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1828,7 +1828,7 @@
       "summary": "Sets each grid cell's height as a percentage of its width: 100 is square, above 100 makes taller cells, below 100 makes wider, shorter cells. Pick taller cells for image-led options and square for balanced icon-and-text choices. Only appears on two-column grids — try 100 first, then adjust to fit your content.",
       "kind": "section",
       "articleSectionId": "set-options-cellheightfromcellwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-cellheightfromcellwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth",
       "guideKeys": [
         "screenedit-options-cell-dimensions"
       ],
@@ -1850,7 +1850,7 @@
       "summary": "Grid cell proportions",
       "kind": "section",
       "articleSectionId": "set-options-cellheightfromcellwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-cellheightfromcellwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1866,7 +1866,7 @@
       "summary": "On grid cells, show or hide the selection checkbox and place it in a corner (top-left, top-right, bottom-left, or bottom-right) with an optional offset. Keep it visible on multi-select grids so visitors can see what they've picked; top-right is a common, unobtrusive spot. Only appears on grid layouts.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer",
       "guideKeys": [
         "screenedit-options-checkbox-container"
       ],
@@ -1888,7 +1888,7 @@
       "summary": "Checkbox placement in grid cells",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1904,7 +1904,7 @@
       "summary": "Gap between the checkbox and the cell edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-margin",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-margin",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-margin",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1918,7 +1918,7 @@
       "summary": "Which corner of the cell the checkbox sits in (top-start, top-end, bottom-start, bottom-end).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-position",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-position",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-position",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1932,7 +1932,7 @@
       "summary": "Turn the selection checkbox/marker on or off for grid cells.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxcontainer-prop-show-checkbox",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer-prop-show-checkbox",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer-prop-show-checkbox",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1946,7 +1946,7 @@
       "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles",
       "guideKeys": [
         "screenedit-options-checkbox-styles"
       ],
@@ -1968,7 +1968,7 @@
       "summary": "Checkbox look",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1984,7 +1984,7 @@
       "summary": "Space around the selection marker.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-checkbox-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-checkbox-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-checkbox-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1998,7 +1998,7 @@
       "summary": "Color of the marker when the option is selected.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-checked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-checked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-checked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2012,7 +2012,7 @@
       "summary": "The selection-marker shape (square or circle).",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-shape",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-shape",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-shape",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2026,7 +2026,7 @@
       "summary": "Color of the marker when the option is not selected.",
       "kind": "section",
       "articleSectionId": "set-options-checkboxstyles-prop-unchecked-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles-prop-unchecked-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles-prop-unchecked-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2040,7 +2040,7 @@
       "summary": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer",
       "guideKeys": [
         "screenedit-options-image-container"
       ],
@@ -2062,7 +2062,7 @@
       "summary": "Image area in each card",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2079,7 +2079,7 @@
       "summary": "Horizontal alignment of the image inside the region.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-content-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-content-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-content-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2094,7 +2094,7 @@
       "summary": "How the image region is sized: a fixed pixel height, a percent of the cell, or auto.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2111,7 +2111,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2126,7 +2126,7 @@
       "summary": "Empty space inside the image region around the image (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-region-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-region-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-region-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2141,7 +2141,7 @@
       "summary": "Where the image sits within its region — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-options-imagecontainer-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2156,7 +2156,7 @@
       "summary": "Size and look of each item's image — width, height, corner radius, padding, and how it fits its box (fit shows the whole image with possible empty space; fill crops to cover the box). Keep a consistent size and small radius so cards look uniform; choose fill for photos and fit for logos or icons you don't want cropped. Only appears when the layout includes an image.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles",
       "guideKeys": [
         "screenedit-options-image-styles"
       ],
@@ -2178,7 +2178,7 @@
       "summary": "Item image look",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2194,7 +2194,7 @@
       "summary": "How rounded the image corners are.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2208,7 +2208,7 @@
       "summary": "Height (px) of the option's image or icon.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2222,7 +2222,7 @@
       "summary": "Space around the image inside the option.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2236,7 +2236,7 @@
       "summary": "Width (px) of the option's image or icon.",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2250,7 +2250,7 @@
       "summary": "How the image fills its box (fit, fill, or stretch).",
       "kind": "section",
       "articleSectionId": "set-options-imagestyles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2264,7 +2264,7 @@
       "summary": "When enabled, randomizes the order items appear to users on each view. Useful for A/B testing, survey randomization, and reducing position bias in multi-select scenarios.",
       "kind": "section",
       "articleSectionId": "set-options-israndomized",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-israndomized",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized",
       "guideKeys": [
         "screenedit-options-randomize-order"
       ],
@@ -2285,7 +2285,7 @@
       "summary": "Shuffle item order",
       "kind": "section",
       "articleSectionId": "set-options-israndomized-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-israndomized-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2301,7 +2301,7 @@
       "summary": "Pick which parts each choice displays — title only, image plus title, checkbox with title and subtitle, and so on; available combos depend on your selection mode and layout. Adding an element reveals its style controls and means you must supply that content (image or subtitle) on every item. Default to title (plus a checkbox for multi-select) and add an image only when it aids the choice.",
       "kind": "section",
       "articleSectionId": "set-options-itemlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout",
       "guideKeys": [
         "screenedit-options-item-layout"
       ],
@@ -2322,7 +2322,7 @@
       "summary": "What each choice shows",
       "kind": "section",
       "articleSectionId": "set-options-itemlayout-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemlayout-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2338,7 +2338,7 @@
       "summary": "The space between each item's edge and its content (title, image, checkbox), set per side — top, end, bottom, start. More padding makes items feel roomy and easier to tap; too little looks cramped. Around 12–16px on all sides reads well on mobile, and the setting applies to every item.",
       "kind": "section",
       "articleSectionId": "set-options-itempaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itempaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings",
       "guideKeys": [
         "screenedit-options-item-paddings"
       ],
@@ -2359,7 +2359,7 @@
       "summary": "Padding inside each item",
       "kind": "section",
       "articleSectionId": "set-options-itempaddings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itempaddings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2375,7 +2375,7 @@
       "summary": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
       "kind": "section",
       "articleSectionId": "set-options-itemsspacing",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemsspacing",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing",
       "guideKeys": [
         "screenedit-options-items-spacing"
       ],
@@ -2396,7 +2396,7 @@
       "summary": "Gap between choices",
       "kind": "section",
       "articleSectionId": "set-options-itemsspacing-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemsspacing-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2412,7 +2412,7 @@
       "summary": "The outer space between the screen edges and the first and last items, set per side (top, end, bottom, start). Use it to keep the list off the screen edges and aligned with your other sections. This is the outside spacing — for the gap inside each item use Padding inside each item instead.",
       "kind": "section",
       "articleSectionId": "set-options-listpaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-listpaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings",
       "guideKeys": [
         "screenedit-options-list-paddings"
       ],
@@ -2433,7 +2433,7 @@
       "summary": "Margin around the whole list",
       "kind": "section",
       "articleSectionId": "set-options-listpaddings-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-listpaddings-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2449,7 +2449,7 @@
       "summary": "Limits how many items a visitor can choose on a multi-select screen. Set a small cap (e.g. 3) to keep answers focused and the next step manageable; leave it unlimited to let them pick freely. This control only appears on multi-select screens and is ignored everywhere else.",
       "kind": "section",
       "articleSectionId": "set-options-maxselecteditemcount",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-maxselecteditemcount",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount",
       "guideKeys": [
         "screenedit-options-max-selections"
       ],
@@ -2470,7 +2470,7 @@
       "summary": "Cap on multi-select picks",
       "kind": "section",
       "articleSectionId": "set-options-maxselecteditemcount-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-maxselecteditemcount-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2486,7 +2486,7 @@
       "summary": "How a choice looks once tapped — background, border, corner radius, and optional gradient. Make it clearly distinct from the unselected look (an accent border or filled background) so visitors get instant confirmation; weak feedback here causes hesitation and drop-off. Your theme's accent color is a reliable choice.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate",
       "guideKeys": [
         "screenedit-options-selected-item"
       ],
@@ -2507,7 +2507,7 @@
       "summary": "Selected item look",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2523,7 +2523,7 @@
       "summary": "The highlight fill behind the option the visitor HAS picked.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2537,7 +2537,7 @@
       "summary": "Outline color for the selected option — often your accent color.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2551,7 +2551,7 @@
       "summary": "Outline thickness for the selected option.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2565,7 +2565,7 @@
       "summary": "Corner rounding for the selected option; usually matches the unselected state.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2579,7 +2579,7 @@
       "summary": "Optional gradient highlight for the selected option.",
       "kind": "section",
       "articleSectionId": "set-options-selecteditemstate-prop-gradient-fill",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate-prop-gradient-fill",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate-prop-gradient-fill",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2593,7 +2593,7 @@
       "summary": "Typography for the item subtitle — size, weight, color, alignment, line height, optional background, and padding, applied to all items as a shared template. Keep the subtitle visually quieter than the title (smaller, muted color) so it reads as supporting text. Only appears when your item layout includes a subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles",
       "guideKeys": [
         "screenedit-options-subtitle-styles"
       ],
@@ -2615,7 +2615,7 @@
       "summary": "Item subtitle text style",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2632,7 +2632,7 @@
       "summary": "Fill drawn behind the subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2647,7 +2647,7 @@
       "summary": "Transparency of that subtitle background.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2662,7 +2662,7 @@
       "summary": "Corner rounding of the subtitle background.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2677,7 +2677,7 @@
       "summary": "Text size (px) of each option's subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2692,7 +2692,7 @@
       "summary": "How bold the subtitle is.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2707,7 +2707,7 @@
       "summary": "Spacing between subtitle lines.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2722,7 +2722,7 @@
       "summary": "Space around the subtitle text.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-subtitle-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-subtitle-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-subtitle-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2737,7 +2737,7 @@
       "summary": "Alignment of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2752,7 +2752,7 @@
       "summary": "Subtitle color — usually a muted shade.",
       "kind": "section",
       "articleSectionId": "set-options-subtitlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2767,7 +2767,7 @@
       "summary": "On grid cards with an image, this sets the title-and-subtitle region as a block: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. It fits the content by default, but choosing one fixed height keeps the text blocks aligned across every card so the row reads as a clean, scannable set. This controls the text region's position only; the actual fonts and colors of the title and subtitle are set in their own style sections.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer",
       "guideKeys": [
         "screenedit-options-text-container"
       ],
@@ -2790,7 +2790,7 @@
       "summary": "Text area in each card",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2808,7 +2808,7 @@
       "summary": "Horizontal alignment of the text inside the region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-content-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-content-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-content-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2824,7 +2824,7 @@
       "summary": "Fixed px, percent of the cell, or auto height for the text region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2840,7 +2840,7 @@
       "summary": "The height number used by the chosen mode.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2856,7 +2856,7 @@
       "summary": "Space inside the text region around the title and subtitle.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-region-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-region-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-region-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2872,7 +2872,7 @@
       "summary": "Where the title/subtitle block sits within its region.",
       "kind": "section",
       "articleSectionId": "set-options-textcontainer-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2888,7 +2888,7 @@
       "summary": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles",
       "guideKeys": [
         "screenedit-options-title-styles"
       ],
@@ -2910,7 +2910,7 @@
       "summary": "Item title text style",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2927,7 +2927,7 @@
       "summary": "Fill drawn behind the title text.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2942,7 +2942,7 @@
       "summary": "Transparency of that title background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2957,7 +2957,7 @@
       "summary": "Corner rounding of the title background.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2972,7 +2972,7 @@
       "summary": "Text size (px) of each option's title.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2987,7 +2987,7 @@
       "summary": "How bold the title is.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3002,7 +3002,7 @@
       "summary": "Vertical spacing between title lines.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3017,7 +3017,7 @@
       "summary": "Left, center, or right alignment of the title.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3032,7 +3032,7 @@
       "summary": "Title color.",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3047,7 +3047,7 @@
       "summary": "Space around the title text (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-options-titlestyles-prop-title-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles-prop-title-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles-prop-title-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3062,7 +3062,7 @@
       "summary": "The default look of each choice before it's tapped — background, border, corner radius, and an optional gradient. Keep it neutral and calm so the selected state can stand out; the contrast between this and the selected look is what tells visitors their tap registered. Pair it with the Selected item look.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate",
       "guideKeys": [
         "screenedit-options-unselected-item"
       ],
@@ -3083,7 +3083,7 @@
       "summary": "Unselected item look",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3099,7 +3099,7 @@
       "summary": "The fill behind an option the visitor has NOT selected.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3113,7 +3113,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3127,7 +3127,7 @@
       "summary": "Thickness (px) of the outline around an unselected option; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3141,7 +3141,7 @@
       "summary": "How rounded the option corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3155,7 +3155,7 @@
       "summary": "Optional gradient that replaces the flat background color for a richer look.",
       "kind": "section",
       "articleSectionId": "set-options-unselecteditemstate-prop-gradient-fill",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate-prop-gradient-fill",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate-prop-gradient-fill",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3169,7 +3169,7 @@
       "summary": "On a grid, choose whether all cells stretch to the same maximum height for tidy, even rows, or each cell sizes to its own content (giving rows of varying height). Turn it on for a clean, consistent grid; turn it off when items have very different content lengths. Only applies to grid layouts.",
       "kind": "section",
       "articleSectionId": "set-options-usemaxcellheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-usemaxcellheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight",
       "guideKeys": [
         "screenedit-options-max-cell-height"
       ],
@@ -3190,7 +3190,7 @@
       "summary": "Even grid cell heights",
       "kind": "section",
       "articleSectionId": "set-options-usemaxcellheight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-usemaxcellheight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3206,7 +3206,7 @@
       "summary": "Aligns each choice's content to the top, center, or bottom of its cell. It's most noticeable in grid layouts where cells are taller than their content; center usually looks balanced. In simple lists it has little visible effect, so center is a safe default.",
       "kind": "section",
       "articleSectionId": "set-options-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment",
       "guideKeys": [
         "screenedit-options-vertical-alignment"
       ],
@@ -3227,7 +3227,7 @@
       "summary": "Vertical alignment of items",
       "kind": "section",
       "articleSectionId": "set-options-verticalalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-verticalalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3246,7 +3246,7 @@
       "group": "selection",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
       "articleSectionId": "set-options-israndomized",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-israndomized",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3261,7 +3261,7 @@
       "group": "selection",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
       "articleSectionId": "set-options-maxselecteditemcount",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-maxselecteditemcount",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3276,7 +3276,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
       "articleSectionId": "set-options-itemlayout",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemlayout",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3290,7 +3290,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
       "articleSectionId": "set-options-verticalalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-verticalalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3305,7 +3305,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
       "articleSectionId": "set-options-usemaxcellheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-usemaxcellheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3320,7 +3320,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-cell-dimensions.png",
       "articleSectionId": "set-options-cellheightfromcellwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-cellheightfromcellwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3335,7 +3335,7 @@
       "group": "states",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
       "articleSectionId": "set-options-unselecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-unselecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3350,7 +3350,7 @@
       "group": "states",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
       "articleSectionId": "set-options-selecteditemstate",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-selecteditemstate",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3365,7 +3365,7 @@
       "group": "spacing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
       "articleSectionId": "set-options-itempaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itempaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3380,7 +3380,7 @@
       "group": "spacing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
       "articleSectionId": "set-options-listpaddings",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-listpaddings",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3395,7 +3395,7 @@
       "group": "spacing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
       "articleSectionId": "set-options-itemsspacing",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-itemsspacing",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3410,7 +3410,7 @@
       "group": "containers",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-image-container.png",
       "articleSectionId": "set-options-imagecontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagecontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3425,7 +3425,7 @@
       "group": "containers",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-text-container.png",
       "articleSectionId": "set-options-textcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-textcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3440,7 +3440,7 @@
       "group": "containers",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-container.png",
       "articleSectionId": "set-options-checkboxcontainer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxcontainer",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3455,7 +3455,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
       "articleSectionId": "set-options-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3470,7 +3470,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
       "articleSectionId": "set-options-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3485,7 +3485,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
       "articleSectionId": "set-options-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -3500,7 +3500,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-styles.png",
       "articleSectionId": "set-options-checkboxstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/index.html#set-options-checkboxstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles",
       "route": [
         "Open the screen in the editor.",
         "Open the Options list section and set the item layout.",
@@ -7398,6 +7398,6 @@
       "scripts/help-articles/help-screen-gridmultipick-elements.doc.json",
       "scripts/help-articles/options-grid-multi.doc.json"
     ],
-    "generatedHash": "e5b82e9972559389"
+    "generatedHash": "d5726472ef8ec8cc"
   }
 }

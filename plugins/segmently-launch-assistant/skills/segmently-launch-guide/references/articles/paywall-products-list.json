@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "paywall-products-list",
+  "articleId": "rFRUFH84Sj1CWFiEFyzB",
+  "title": "Paywall Products list",
+  "sections": [
+    {
+      "id": "paywall-products-list/modes-separate",
+      "title": "Keep test and live separate",
+      "summary": "Use test products for sandbox flows and live products for production flows. Mixing modes is the most common reason checkout setup fails.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-products-list/modes-separate",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-products-list"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "purchase"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "paywall-products-list/products-list",
+      "title": "Create products before attaching them",
+      "summary": "Paywall screens can only sell products that exist here, and every product must match the Stripe mode of the published flow. Create, edit, and delete products from this page.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-products-list/products-list",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-products-list"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "paywall-products-list/modes-separate",
+      "title": "Keep test and live separate",
+      "summary": "Use test products for sandbox flows and live products for production flows. Mixing modes is the most common reason checkout setup fails.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-products-list/modes-separate",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-products-list"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "purchase"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "paywall-products-list/products-list",
+      "title": "Create products before attaching them",
+      "summary": "Paywall screens can only sell products that exist here, and every product must match the Stripe mode of the published flow. Create, edit, and delete products from this page.",
+      "kind": "guide-section",
+      "articleSectionId": "paywall-products-list/products-list",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "paywall-products-list"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151459_open-products-products-list/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-products-list/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "ac205c8145853374"
+  }
+}

@@ -1025,7 +1025,7 @@ check('raw customer prompt resolves teach, show, missing inputs, and execution c
   const builtInReference = buttonFont.answer?.builtInArticleReferences?.find(reference => reference.articleAlias === 'help-block-action-bar');
   assert(builtInReference?.status === 'public-url-available', 'button font prompt missing published article reference status');
   assert(
-    buttonFont.answer?.publicArticleLinks?.some(url => /help-block-action-bar\/index\.html$/.test(url)),
+    hasPublicArticleLink(buttonFont.answer?.publicArticleLinks, 'help-block-action-bar'),
     'button font prompt missing published Action Bar article URL',
   );
   assert(
@@ -1098,7 +1098,7 @@ check('raw customer prompt resolves teach, show, missing inputs, and execution c
     assert(response.mode === 'teach', `${label} prompt mode drifted to ${response.mode}`);
     assert(response.guidance?.guides?.some(guide => guide.guideKey === guideKey), `${label} prompt missing expected guide ${guideKey}`);
     assert(
-      response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)),
+      hasPublicArticleLink(response.answer?.publicArticleLinks, alias),
       `${label} prompt missing published article URL for ${alias}`,
     );
     assert(response.answer?.imageUrls?.some(url => String(url).startsWith('https://')), `${label} prompt missing concrete image URL`);
@@ -1124,7 +1124,7 @@ check('raw customer prompt resolves teach, show, missing inputs, and execution c
     assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), `${label} missing video source input`);
     assert(response.action?.authPreflight?.requiredForExecute === true, `${label} missing auth preflight`);
     assert(
-      response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)),
+      hasPublicArticleLink(response.answer?.publicArticleLinks, alias),
       `${label} prompt missing published article URL for ${alias}`,
     );
     assert(
@@ -2130,6 +2130,25 @@ function copyFilter(src) {
     || part === 'screenshots'
     || part === 'qa-screenshots',
   );
+}
+
+function hasPublicArticleLink(links, alias) {
+  return (links ?? []).some(url => isPublicArticleUrl(url, alias));
+}
+
+function isPublicArticleUrl(value, alias) {
+  try {
+    const url = new URL(String(value));
+    const parts = url.pathname.split('/').filter(Boolean);
+    return parts[parts.length - 1] === alias
+      || (parts[parts.length - 2] === alias && parts[parts.length - 1] === 'index.html');
+  } catch {
+    return new RegExp(`${escapeRegExp(alias)}(?:/index\\.html)?$`).test(String(value));
+  }
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function hasUsableGuideText(guide) {

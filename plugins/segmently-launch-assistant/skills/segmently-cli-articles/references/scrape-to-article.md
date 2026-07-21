@@ -346,6 +346,7 @@ After `publish`, verify:
 
 ```bash
 curl -I <publishedUrl>
+curl -I <assetUrl>
 curl -I <configUrl>
 ```
 

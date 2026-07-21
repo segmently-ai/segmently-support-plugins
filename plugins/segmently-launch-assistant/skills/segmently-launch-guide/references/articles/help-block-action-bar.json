@@ -11,7 +11,7 @@
       "summary": "Primary (main) button in the section",
       "kind": "section",
       "articleSectionId": "g-primary-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -27,7 +27,7 @@
       "summary": "Inside the Action Bar section, this is the Primary (main) button.",
       "kind": "section",
       "articleSectionId": "g-primary-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -41,7 +41,7 @@
       "summary": "Primary (main) button",
       "kind": "section",
       "articleSectionId": "g-primary-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Secondary button in the section",
       "kind": "section",
       "articleSectionId": "g-secondary-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -71,7 +71,7 @@
       "summary": "Inside the Action Bar section, this is the Secondary button.",
       "kind": "section",
       "articleSectionId": "g-secondary-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -85,7 +85,7 @@
       "summary": "Secondary button",
       "kind": "section",
       "articleSectionId": "g-secondary-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button. This guide documents every setting of the Action Bar block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -395,7 +395,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -411,7 +411,7 @@
       "summary": "Open the Action Bar section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -425,7 +425,7 @@
       "summary": "The text on your main call-to-action button — the one that moves visitors to the next screen. Make it a short, specific verb phrase tied to the action (Continue, Get my plan, Subscribe) rather than a generic word; clear, benefit-led labels lift click-through on a paid landing page. This text can be translated per language.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary",
       "guideKeys": [
         "screenedit-action-bar-primary-label"
       ],
@@ -448,7 +448,7 @@
       "summary": "Sets the main button's look — background color, border, corner radius, height, inner padding, and a full-width toggle. For an ad landing page keep it full-width and high-contrast so it reads as the obvious next step. The Visibility toggle hides the button entirely; only hide it when the screen forces a choice first, and never hide both buttons.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container",
       "guideKeys": [
         "screenedit-action-bar-primary-container"
       ],
@@ -469,7 +469,7 @@
       "summary": "Main button shape and fill",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -485,7 +485,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -499,7 +499,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -513,7 +513,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -527,7 +527,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -541,7 +541,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -556,7 +556,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -570,7 +570,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -585,7 +585,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -599,7 +599,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -613,7 +613,7 @@
       "summary": "Optional animation for the call-to-action — pulse, glow, bounce, scale, fade-in, slide-up and more, plus an opacity control. A gentle pulse or glow can draw the eye and lift taps; save attention-grabbing effects for your key conversion screen and avoid stacking several. Leave it off for a calm, professional feel.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects",
       "guideKeys": [
         "screenedit-action-bar-primary-effects"
       ],
@@ -635,7 +635,7 @@
       "summary": "Motion on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -651,7 +651,7 @@
       "summary": "An optional looping motion to draw the eye to the action — choose from None, Pulse, Shimmer, Bounce, Shake, Glow, Ripple, Scale, Fade In, Slide Up or Wiggle.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-animation",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-animation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-animation",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -665,7 +665,7 @@
       "summary": "Off by default (gated on opacity). Turning it on sets the button to full opacity and a default Shimmer animation, then reveals the opacity slider and animation menu. (The animation choice is remembered but inactive while effects are off.)",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-enable-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-enable-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-enable-effects",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -679,7 +679,7 @@
       "summary": "How see-through the whole button is, from 0% (invisible) to 100% (solid).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -693,7 +693,7 @@
       "summary": "An optional color gradient layered over the button's solid fill — set start and end colors, the angle, extra color stops, and an optional moving shimmer. Leave it off for a clean flat look; turn it on to make the call-to-action pop against a busy background. Keep enough contrast that the label stays easy to read.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient",
       "guideKeys": [
         "screenedit-action-bar-primary-gradient"
       ],
@@ -715,7 +715,7 @@
       "summary": "Gradient on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -731,7 +731,7 @@
       "summary": "Which way the colors flow across the button. Medium offers preset directions (e.g. 90° left→right, 180° top→bottom); Advanced lets you type any angle from 0–360°.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-angle-direction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-angle-direction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-angle-direction",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -745,7 +745,7 @@
       "summary": "The full list of colors in the gradient. Add up to five stops and set each stop’s color and its position (0–100%) along the sweep, for multi-color blends beyond a simple two-color fade.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-color-stops-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-color-stops-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-color-stops-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -759,7 +759,7 @@
       "summary": "A complexity switch (not saved on its own): Simple = just a start and end color; Medium = adds a direction angle and a shimmer toggle; Advanced = multi-stop colors plus a numeric angle, size and the full shimmer controls. Pick the depth you need.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-detail-level",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-detail-level",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-detail-level",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -773,7 +773,7 @@
       "summary": "Off by default — the button uses a single flat color. Turn this on to blend colors across the fill for a richer look; turn it off for a clean solid button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-enable-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-enable-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-enable-gradient",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -787,7 +787,7 @@
       "summary": "The color the gradient fades to (the last color stop). Keep enough contrast with the start color that the label stays readable.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-end-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-end-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-end-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -802,7 +802,7 @@
       "summary": "How far the gradient is stretched, from 50% (tight, punchy transition) to 200% (soft, gradual spread).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-gradient-size-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-gradient-size-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-gradient-size-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -816,7 +816,7 @@
       "summary": "An optional animated sheen that sweeps across the button. When on you can tune the trigger (on hover, on a timer, or off), the streak color, its width and skew (slant), the duration of one sweep, and — for the timer trigger — the cycle gap between sweeps.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-shimmer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-shimmer",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-shimmer",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -830,7 +830,7 @@
       "summary": "The color the gradient begins with (the first color stop / left-most stop in Advanced).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-start-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-start-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-start-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -844,7 +844,7 @@
       "summary": "An optional icon next to the label — choose start or end placement, size, corner radius, and spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). A small leading arrow or lock icon can reinforce the action; keep it in the same color family as the label. Leave it empty for a clean text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon",
       "guideKeys": [
         "screenedit-action-bar-primary-icon"
       ],
@@ -866,7 +866,7 @@
       "summary": "Icon on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -882,7 +882,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -896,7 +896,7 @@
       "summary": "Off by default. Turn on to show an image (icon) alongside the button label; off for a text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -911,7 +911,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -925,7 +925,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown next to the label. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -940,7 +940,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the label and the button edges.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -955,7 +955,7 @@
       "summary": "Where the icon sits relative to the label: Start (before the text) or End (after it); the Fixed Start/End variants pin it to the button’s left/right edge; Top and Bottom stack it above or below the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -970,7 +970,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -984,7 +984,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -998,7 +998,7 @@
       "summary": "Main button label",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1015,7 +1015,7 @@
       "summary": "An optional drop shadow beneath the button, with control over its color, blur, and vertical drop. A soft shadow lifts the call-to-action off the page so it feels tappable; keep it subtle (low blur, small offset) so it looks intentional rather than heavy. Leave it off if your theme is flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow",
       "guideKeys": [
         "screenedit-action-bar-primary-shadow"
       ],
@@ -1036,7 +1036,7 @@
       "summary": "Shadow under the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1052,7 +1052,7 @@
       "summary": "How soft and spread-out the shadow is, from 0 (hard edge) to 50 (very diffuse).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-blur",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-blur",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-blur",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1066,7 +1066,7 @@
       "summary": "The shadow color, including its transparency (default is a semi-transparent black). A tinted, low-opacity color gives a subtle lift.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1080,7 +1080,7 @@
       "summary": "Off by default. Turn on to cast a soft drop shadow beneath the button so it lifts off the background; off keeps it flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-enable-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-enable-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-enable-shadow",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1094,7 +1094,7 @@
       "summary": "How far the shadow sits below (positive) or above (negative) the button, −50 to 50 px.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-vertical-offset",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-vertical-offset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-vertical-offset",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1108,7 +1108,7 @@
       "summary": "Typography for the main button label — font, weight, size, color, and alignment. Leave it on the theme defaults for a consistent look; bump the weight or size, or switch color, only when the label is hard to read against the button fill. Applies to the label in every language.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles",
       "guideKeys": [
         "screenedit-action-bar-primary-text-styles"
       ],
@@ -1130,7 +1130,7 @@
       "summary": "Main button text style",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1147,7 +1147,7 @@
       "summary": "Fill drawn behind the label text (a highlight pill).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1162,7 +1162,7 @@
       "summary": "Transparency of the label background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1177,7 +1177,7 @@
       "summary": "Corner rounding of the label background.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1192,7 +1192,7 @@
       "summary": "Typeface of the button label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1207,7 +1207,7 @@
       "summary": "Text size (px) of the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1222,7 +1222,7 @@
       "summary": "How bold the label is.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1237,7 +1237,7 @@
       "summary": "Vertical spacing of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1252,7 +1252,7 @@
       "summary": "Color of a line-through decoration when used (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1268,7 +1268,7 @@
       "summary": "Alignment of the label within the button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1283,7 +1283,7 @@
       "summary": "Color of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1298,7 +1298,7 @@
       "summary": "Text for the optional second button — use it for a side path like Skip, Maybe later, or Restore purchase, never your main goal. On funnel steps an easy escape route can cost conversions, so leave it empty unless you genuinely need the alternative; on a paywall a low-key secondary is fine.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary",
       "guideKeys": [
         "screenedit-action-bar-secondary-label"
       ],
@@ -1322,7 +1322,7 @@
       "summary": "Sets the secondary button's look — background, border, corner radius, height, padding, and a full-width toggle. Give it lower visual weight than the main button (an outline or transparent fill works well) so it doesn't compete with your call-to-action. The Visibility toggle hides it; never hide both the primary and secondary buttons.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container",
       "guideKeys": [
         "screenedit-action-bar-secondary-container"
       ],
@@ -1343,7 +1343,7 @@
       "summary": "Secondary button shape and fill",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1359,7 +1359,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1373,7 +1373,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1387,7 +1387,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1401,7 +1401,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1415,7 +1415,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1430,7 +1430,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1444,7 +1444,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1459,7 +1459,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1473,7 +1473,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1487,7 +1487,7 @@
       "summary": "Adds optional movement to the secondary (lower-priority) button, such as pulse, glow, or bounce, plus an opacity control to fade it. Leave this off by default. Animation draws the eye, so reserve it for your main button only; making the alternative path move competes with your primary call to action and typically lowers conversions.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects",
       "guideKeys": [
         "screenedit-action-bar-secondary-effects"
       ],
@@ -1508,7 +1508,7 @@
       "summary": "Motion on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1524,7 +1524,7 @@
       "summary": "An optional looping motion to draw the eye to the action — choose from None, Pulse, Shimmer, Bounce, Shake, Glow, Ripple, Scale, Fade In, Slide Up or Wiggle.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-animation",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-animation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-animation",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1538,7 +1538,7 @@
       "summary": "Off by default (gated on opacity). Turning it on sets the button to full opacity and a default Shimmer animation, then reveals the opacity slider and animation menu. (The animation choice is remembered but inactive while effects are off.)",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-enable-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-enable-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-enable-effects",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1552,7 +1552,7 @@
       "summary": "How see-through the whole button is, from 0% (invisible) to 100% (solid).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1566,7 +1566,7 @@
       "summary": "An optional color gradient over the secondary button's solid fill (start/end colors, angle, stops, optional shimmer). Usually leave this off — a gradient draws attention, which you want on your main call-to-action, not the side path. Turn it on only if a flat secondary clashes with your theme.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient",
       "guideKeys": [
         "screenedit-action-bar-secondary-gradient"
       ],
@@ -1587,7 +1587,7 @@
       "summary": "Gradient on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1603,7 +1603,7 @@
       "summary": "Which way the colors flow across the button. Medium offers preset directions (e.g. 90° left→right, 180° top→bottom); Advanced lets you type any angle from 0–360°.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-angle-direction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-angle-direction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-angle-direction",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1617,7 +1617,7 @@
       "summary": "The full list of colors in the gradient. Add up to five stops and set each stop’s color and its position (0–100%) along the sweep, for multi-color blends beyond a simple two-color fade.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-color-stops-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-color-stops-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-color-stops-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1631,7 +1631,7 @@
       "summary": "A complexity switch (not saved on its own): Simple = just a start and end color; Medium = adds a direction angle and a shimmer toggle; Advanced = multi-stop colors plus a numeric angle, size and the full shimmer controls. Pick the depth you need.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-detail-level",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-detail-level",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-detail-level",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1645,7 +1645,7 @@
       "summary": "Off by default — the button uses a single flat color. Turn this on to blend colors across the fill for a richer look; turn it off for a clean solid button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-enable-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-enable-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-enable-gradient",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1659,7 +1659,7 @@
       "summary": "The color the gradient fades to (the last color stop). Keep enough contrast with the start color that the label stays readable.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-end-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-end-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-end-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1674,7 +1674,7 @@
       "summary": "How far the gradient is stretched, from 50% (tight, punchy transition) to 200% (soft, gradual spread).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-gradient-size-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-gradient-size-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-gradient-size-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1688,7 +1688,7 @@
       "summary": "An optional animated sheen that sweeps across the button. When on you can tune the trigger (on hover, on a timer, or off), the streak color, its width and skew (slant), the duration of one sweep, and — for the timer trigger — the cycle gap between sweeps.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-shimmer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-shimmer",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-shimmer",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1702,7 +1702,7 @@
       "summary": "The color the gradient begins with (the first color stop / left-most stop in Advanced).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-start-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-start-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-start-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1716,7 +1716,7 @@
       "summary": "An optional icon on the secondary button — placement (start or end), size, corner radius, spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). Usually leave it empty so the secondary stays understated; add one only when it clarifies the action, like a back arrow for Go back.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon",
       "guideKeys": [
         "screenedit-action-bar-secondary-icon"
       ],
@@ -1737,7 +1737,7 @@
       "summary": "Icon on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1753,7 +1753,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1767,7 +1767,7 @@
       "summary": "Off by default. Turn on to show an image (icon) alongside the button label; off for a text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1782,7 +1782,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1796,7 +1796,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown next to the label. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1811,7 +1811,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the label and the button edges.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1826,7 +1826,7 @@
       "summary": "Where the icon sits relative to the label: Start (before the text) or End (after it); the Fixed Start/End variants pin it to the button’s left/right edge; Top and Bottom stack it above or below the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1841,7 +1841,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1855,7 +1855,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1869,7 +1869,7 @@
       "summary": "Secondary button label",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1886,7 +1886,7 @@
       "summary": "An optional drop shadow under the secondary button (color, blur, vertical drop). Keep it lighter than the main button's shadow, or off entirely, so the secondary stays visually subordinate to your call-to-action.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow",
       "guideKeys": [
         "screenedit-action-bar-secondary-shadow"
       ],
@@ -1907,7 +1907,7 @@
       "summary": "Shadow under the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1923,7 +1923,7 @@
       "summary": "How soft and spread-out the shadow is, from 0 (hard edge) to 50 (very diffuse).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-blur",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-blur",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-blur",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1937,7 +1937,7 @@
       "summary": "The shadow color, including its transparency (default is a semi-transparent black). A tinted, low-opacity color gives a subtle lift.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1951,7 +1951,7 @@
       "summary": "Off by default. Turn on to cast a soft drop shadow beneath the button so it lifts off the background; off keeps it flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-enable-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-enable-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-enable-shadow",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1965,7 +1965,7 @@
       "summary": "How far the shadow sits below (positive) or above (negative) the button, −50 to 50 px.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-vertical-offset",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-vertical-offset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-vertical-offset",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1979,7 +1979,7 @@
       "summary": "Typography for the secondary button label — font, weight, size, color, and alignment. Style it deliberately quieter than the main button (lighter weight, muted color) so your primary call-to-action stays the obvious choice. Leave it on theme defaults unless the hierarchy looks off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles",
       "guideKeys": [
         "screenedit-action-bar-secondary-text-styles"
       ],
@@ -2001,7 +2001,7 @@
       "summary": "Secondary button text style",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2018,7 +2018,7 @@
       "summary": "Fill drawn behind the label text (a highlight pill).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2033,7 +2033,7 @@
       "summary": "Transparency of the label background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2048,7 +2048,7 @@
       "summary": "Corner rounding of the label background.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2063,7 +2063,7 @@
       "summary": "Typeface of the button label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2078,7 +2078,7 @@
       "summary": "Text size (px) of the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2093,7 +2093,7 @@
       "summary": "How bold the label is.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2108,7 +2108,7 @@
       "summary": "Vertical spacing of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2123,7 +2123,7 @@
       "summary": "Color of a line-through decoration when used (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2139,7 +2139,7 @@
       "summary": "Alignment of the label within the button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2154,7 +2154,7 @@
       "summary": "Color of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2171,7 +2171,7 @@
       "summary": "Primary (main) button in the section",
       "kind": "section",
       "articleSectionId": "g-primary-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2187,7 +2187,7 @@
       "summary": "Inside the Action Bar section, this is the Primary (main) button.",
       "kind": "section",
       "articleSectionId": "g-primary-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2201,7 +2201,7 @@
       "summary": "Primary (main) button",
       "kind": "section",
       "articleSectionId": "g-primary-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-primary-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-primary-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2215,7 +2215,7 @@
       "summary": "Secondary button in the section",
       "kind": "section",
       "articleSectionId": "g-secondary-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2231,7 +2231,7 @@
       "summary": "Inside the Action Bar section, this is the Secondary button.",
       "kind": "section",
       "articleSectionId": "g-secondary-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2245,7 +2245,7 @@
       "summary": "Secondary button",
       "kind": "section",
       "articleSectionId": "g-secondary-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#g-secondary-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#g-secondary-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2259,7 +2259,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button. This guide documents every setting of the Action Bar block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2555,7 +2555,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2571,7 +2571,7 @@
       "summary": "Open the Action Bar section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2585,7 +2585,7 @@
       "summary": "The text on your main call-to-action button — the one that moves visitors to the next screen. Make it a short, specific verb phrase tied to the action (Continue, Get my plan, Subscribe) rather than a generic word; clear, benefit-led labels lift click-through on a paid landing page. This text can be translated per language.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary",
       "guideKeys": [
         "screenedit-action-bar-primary-label"
       ],
@@ -2608,7 +2608,7 @@
       "summary": "Sets the main button's look — background color, border, corner radius, height, inner padding, and a full-width toggle. For an ad landing page keep it full-width and high-contrast so it reads as the obvious next step. The Visibility toggle hides the button entirely; only hide it when the screen forces a choice first, and never hide both buttons.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container",
       "guideKeys": [
         "screenedit-action-bar-primary-container"
       ],
@@ -2629,7 +2629,7 @@
       "summary": "Main button shape and fill",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2645,7 +2645,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2659,7 +2659,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2673,7 +2673,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2687,7 +2687,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2701,7 +2701,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2716,7 +2716,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2730,7 +2730,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2745,7 +2745,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2759,7 +2759,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-container-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2773,7 +2773,7 @@
       "summary": "Optional animation for the call-to-action — pulse, glow, bounce, scale, fade-in, slide-up and more, plus an opacity control. A gentle pulse or glow can draw the eye and lift taps; save attention-grabbing effects for your key conversion screen and avoid stacking several. Leave it off for a calm, professional feel.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects",
       "guideKeys": [
         "screenedit-action-bar-primary-effects"
       ],
@@ -2795,7 +2795,7 @@
       "summary": "Motion on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2811,7 +2811,7 @@
       "summary": "An optional looping motion to draw the eye to the action — choose from None, Pulse, Shimmer, Bounce, Shake, Glow, Ripple, Scale, Fade In, Slide Up or Wiggle.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-animation",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-animation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-animation",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2825,7 +2825,7 @@
       "summary": "Off by default (gated on opacity). Turning it on sets the button to full opacity and a default Shimmer animation, then reveals the opacity slider and animation menu. (The animation choice is remembered but inactive while effects are off.)",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-enable-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-enable-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-enable-effects",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2839,7 +2839,7 @@
       "summary": "How see-through the whole button is, from 0% (invisible) to 100% (solid).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-effects-prop-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects-prop-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects-prop-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2853,7 +2853,7 @@
       "summary": "An optional color gradient layered over the button's solid fill — set start and end colors, the angle, extra color stops, and an optional moving shimmer. Leave it off for a clean flat look; turn it on to make the call-to-action pop against a busy background. Keep enough contrast that the label stays easy to read.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient",
       "guideKeys": [
         "screenedit-action-bar-primary-gradient"
       ],
@@ -2875,7 +2875,7 @@
       "summary": "Gradient on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2891,7 +2891,7 @@
       "summary": "Which way the colors flow across the button. Medium offers preset directions (e.g. 90° left→right, 180° top→bottom); Advanced lets you type any angle from 0–360°.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-angle-direction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-angle-direction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-angle-direction",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2905,7 +2905,7 @@
       "summary": "The full list of colors in the gradient. Add up to five stops and set each stop’s color and its position (0–100%) along the sweep, for multi-color blends beyond a simple two-color fade.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-color-stops-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-color-stops-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-color-stops-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2919,7 +2919,7 @@
       "summary": "A complexity switch (not saved on its own): Simple = just a start and end color; Medium = adds a direction angle and a shimmer toggle; Advanced = multi-stop colors plus a numeric angle, size and the full shimmer controls. Pick the depth you need.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-detail-level",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-detail-level",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-detail-level",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2933,7 +2933,7 @@
       "summary": "Off by default — the button uses a single flat color. Turn this on to blend colors across the fill for a richer look; turn it off for a clean solid button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-enable-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-enable-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-enable-gradient",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2947,7 +2947,7 @@
       "summary": "The color the gradient fades to (the last color stop). Keep enough contrast with the start color that the label stays readable.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-end-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-end-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-end-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2962,7 +2962,7 @@
       "summary": "How far the gradient is stretched, from 50% (tight, punchy transition) to 200% (soft, gradual spread).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-gradient-size-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-gradient-size-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-gradient-size-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2976,7 +2976,7 @@
       "summary": "An optional animated sheen that sweeps across the button. When on you can tune the trigger (on hover, on a timer, or off), the streak color, its width and skew (slant), the duration of one sweep, and — for the timer trigger — the cycle gap between sweeps.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-shimmer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-shimmer",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-shimmer",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2990,7 +2990,7 @@
       "summary": "The color the gradient begins with (the first color stop / left-most stop in Advanced).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-gradient-prop-start-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient-prop-start-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient-prop-start-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3004,7 +3004,7 @@
       "summary": "An optional icon next to the label — choose start or end placement, size, corner radius, and spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). A small leading arrow or lock icon can reinforce the action; keep it in the same color family as the label. Leave it empty for a clean text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon",
       "guideKeys": [
         "screenedit-action-bar-primary-icon"
       ],
@@ -3026,7 +3026,7 @@
       "summary": "Icon on the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3042,7 +3042,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3056,7 +3056,7 @@
       "summary": "Off by default. Turn on to show an image (icon) alongside the button label; off for a text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3071,7 +3071,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3085,7 +3085,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown next to the label. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3100,7 +3100,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the label and the button edges.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3115,7 +3115,7 @@
       "summary": "Where the icon sits relative to the label: Start (before the text) or End (after it); the Fixed Start/End variants pin it to the button’s left/right edge; Top and Bottom stack it above or below the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3130,7 +3130,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3144,7 +3144,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-icon-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3158,7 +3158,7 @@
       "summary": "Main button label",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3175,7 +3175,7 @@
       "summary": "An optional drop shadow beneath the button, with control over its color, blur, and vertical drop. A soft shadow lifts the call-to-action off the page so it feels tappable; keep it subtle (low blur, small offset) so it looks intentional rather than heavy. Leave it off if your theme is flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow",
       "guideKeys": [
         "screenedit-action-bar-primary-shadow"
       ],
@@ -3196,7 +3196,7 @@
       "summary": "Shadow under the main button",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3212,7 +3212,7 @@
       "summary": "How soft and spread-out the shadow is, from 0 (hard edge) to 50 (very diffuse).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-blur",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-blur",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-blur",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3226,7 +3226,7 @@
       "summary": "The shadow color, including its transparency (default is a semi-transparent black). A tinted, low-opacity color gives a subtle lift.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3240,7 +3240,7 @@
       "summary": "Off by default. Turn on to cast a soft drop shadow beneath the button so it lifts off the background; off keeps it flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-enable-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-enable-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-enable-shadow",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3254,7 +3254,7 @@
       "summary": "How far the shadow sits below (positive) or above (negative) the button, −50 to 50 px.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-shadow-prop-vertical-offset",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow-prop-vertical-offset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow-prop-vertical-offset",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3268,7 +3268,7 @@
       "summary": "Typography for the main button label — font, weight, size, color, and alignment. Leave it on the theme defaults for a consistent look; bump the weight or size, or switch color, only when the label is hard to read against the button fill. Applies to the label in every language.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles",
       "guideKeys": [
         "screenedit-action-bar-primary-text-styles"
       ],
@@ -3290,7 +3290,7 @@
       "summary": "Main button text style",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3307,7 +3307,7 @@
       "summary": "Fill drawn behind the label text (a highlight pill).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3322,7 +3322,7 @@
       "summary": "Transparency of the label background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3337,7 +3337,7 @@
       "summary": "Corner rounding of the label background.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3352,7 +3352,7 @@
       "summary": "Typeface of the button label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3367,7 +3367,7 @@
       "summary": "Text size (px) of the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3382,7 +3382,7 @@
       "summary": "How bold the label is.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3397,7 +3397,7 @@
       "summary": "Vertical spacing of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3412,7 +3412,7 @@
       "summary": "Color of a line-through decoration when used (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3428,7 +3428,7 @@
       "summary": "Alignment of the label within the button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3443,7 +3443,7 @@
       "summary": "Color of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-primary-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3458,7 +3458,7 @@
       "summary": "Text for the optional second button — use it for a side path like Skip, Maybe later, or Restore purchase, never your main goal. On funnel steps an easy escape route can cost conversions, so leave it empty unless you genuinely need the alternative; on a paywall a low-key secondary is fine.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary",
       "guideKeys": [
         "screenedit-action-bar-secondary-label"
       ],
@@ -3482,7 +3482,7 @@
       "summary": "Sets the secondary button's look — background, border, corner radius, height, padding, and a full-width toggle. Give it lower visual weight than the main button (an outline or transparent fill works well) so it doesn't compete with your call-to-action. The Visibility toggle hides it; never hide both the primary and secondary buttons.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container",
       "guideKeys": [
         "screenedit-action-bar-secondary-container"
       ],
@@ -3503,7 +3503,7 @@
       "summary": "Secondary button shape and fill",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3519,7 +3519,7 @@
       "summary": "The button fill color.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3533,7 +3533,7 @@
       "summary": "Color of that outline.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-border-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-border-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-border-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3547,7 +3547,7 @@
       "summary": "Thickness (px) of the button outline; 0 hides it.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-border-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-border-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-border-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3561,7 +3561,7 @@
       "summary": "Fixed height of the button in pixels. Keep it tap-friendly (≈44px or taller).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-button-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-button-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-button-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3575,7 +3575,7 @@
       "summary": "Inner spacing between the label/icon and the button edges (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-button-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-button-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-button-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3590,7 +3590,7 @@
       "summary": "How rounded the button corners are (px); higher is softer.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3604,7 +3604,7 @@
       "summary": "Stretch the button across the whole bar. Full-width reads as the obvious next step on a phone; turn it off for a button only as wide as its label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-full-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-full-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-full-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3619,7 +3619,7 @@
       "summary": "Show or hide this button entirely. Never hide both buttons, or the screen has no way forward.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-visibility",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-visibility",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-visibility",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3633,7 +3633,7 @@
       "summary": "Explicit button width — used when Full width is off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-container-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3647,7 +3647,7 @@
       "summary": "Adds optional movement to the secondary (lower-priority) button, such as pulse, glow, or bounce, plus an opacity control to fade it. Leave this off by default. Animation draws the eye, so reserve it for your main button only; making the alternative path move competes with your primary call to action and typically lowers conversions.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects",
       "guideKeys": [
         "screenedit-action-bar-secondary-effects"
       ],
@@ -3668,7 +3668,7 @@
       "summary": "Motion on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3684,7 +3684,7 @@
       "summary": "An optional looping motion to draw the eye to the action — choose from None, Pulse, Shimmer, Bounce, Shake, Glow, Ripple, Scale, Fade In, Slide Up or Wiggle.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-animation",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-animation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-animation",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3698,7 +3698,7 @@
       "summary": "Off by default (gated on opacity). Turning it on sets the button to full opacity and a default Shimmer animation, then reveals the opacity slider and animation menu. (The animation choice is remembered but inactive while effects are off.)",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-enable-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-enable-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-enable-effects",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3712,7 +3712,7 @@
       "summary": "How see-through the whole button is, from 0% (invisible) to 100% (solid).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-effects-prop-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects-prop-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects-prop-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3726,7 +3726,7 @@
       "summary": "An optional color gradient over the secondary button's solid fill (start/end colors, angle, stops, optional shimmer). Usually leave this off — a gradient draws attention, which you want on your main call-to-action, not the side path. Turn it on only if a flat secondary clashes with your theme.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient",
       "guideKeys": [
         "screenedit-action-bar-secondary-gradient"
       ],
@@ -3747,7 +3747,7 @@
       "summary": "Gradient on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3763,7 +3763,7 @@
       "summary": "Which way the colors flow across the button. Medium offers preset directions (e.g. 90° left→right, 180° top→bottom); Advanced lets you type any angle from 0–360°.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-angle-direction",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-angle-direction",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-angle-direction",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3777,7 +3777,7 @@
       "summary": "The full list of colors in the gradient. Add up to five stops and set each stop’s color and its position (0–100%) along the sweep, for multi-color blends beyond a simple two-color fade.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-color-stops-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-color-stops-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-color-stops-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3791,7 +3791,7 @@
       "summary": "A complexity switch (not saved on its own): Simple = just a start and end color; Medium = adds a direction angle and a shimmer toggle; Advanced = multi-stop colors plus a numeric angle, size and the full shimmer controls. Pick the depth you need.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-detail-level",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-detail-level",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-detail-level",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3805,7 +3805,7 @@
       "summary": "Off by default — the button uses a single flat color. Turn this on to blend colors across the fill for a richer look; turn it off for a clean solid button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-enable-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-enable-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-enable-gradient",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3819,7 +3819,7 @@
       "summary": "The color the gradient fades to (the last color stop). Keep enough contrast with the start color that the label stays readable.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-end-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-end-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-end-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3834,7 +3834,7 @@
       "summary": "How far the gradient is stretched, from 50% (tight, punchy transition) to 200% (soft, gradual spread).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-gradient-size-advanced",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-gradient-size-advanced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-gradient-size-advanced",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3848,7 +3848,7 @@
       "summary": "An optional animated sheen that sweeps across the button. When on you can tune the trigger (on hover, on a timer, or off), the streak color, its width and skew (slant), the duration of one sweep, and — for the timer trigger — the cycle gap between sweeps.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-shimmer",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-shimmer",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-shimmer",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3862,7 +3862,7 @@
       "summary": "The color the gradient begins with (the first color stop / left-most stop in Advanced).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-gradient-prop-start-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient-prop-start-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient-prop-start-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3876,7 +3876,7 @@
       "summary": "An optional icon on the secondary button — placement (start or end), size, corner radius, spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). Usually leave it empty so the secondary stays understated; add one only when it clarifies the action, like a back arrow for Go back.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon",
       "guideKeys": [
         "screenedit-action-bar-secondary-icon"
       ],
@@ -3897,7 +3897,7 @@
       "summary": "Icon on the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3913,7 +3913,7 @@
       "summary": "Rounding of the icon’s corners in pixels; raise it to clip a square image into a rounded or circular badge.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3927,7 +3927,7 @@
       "summary": "Off by default. Turn on to show an image (icon) alongside the button label; off for a text-only button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-enable-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-enable-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-enable-icon",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3942,7 +3942,7 @@
       "summary": "The icon’s height in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3956,7 +3956,7 @@
       "summary": "Upload an image file or paste an image URL — the icon shown next to the label. Leave empty to show no graphic.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-icon-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-icon-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-icon-image",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3971,7 +3971,7 @@
       "summary": "The space around the icon (top, right, bottom, left) — the gap between the icon and the label and the button edges.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-icon-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-icon-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-icon-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3986,7 +3986,7 @@
       "summary": "Where the icon sits relative to the label: Start (before the text) or End (after it); the Fixed Start/End variants pin it to the button’s left/right edge; Top and Bottom stack it above or below the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-placement",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-placement",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-placement",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4001,7 +4001,7 @@
       "summary": "How the image fits its box: Scale to Fill (stretch), Aspect Fit (show the whole icon, may letterbox), Aspect Fill (cover the box, may crop), or Center (no resize).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4015,7 +4015,7 @@
       "summary": "The icon’s width in pixels (0–200).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-icon-prop-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon-prop-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon-prop-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4029,7 +4029,7 @@
       "summary": "Secondary button label",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4046,7 +4046,7 @@
       "summary": "An optional drop shadow under the secondary button (color, blur, vertical drop). Keep it lighter than the main button's shadow, or off entirely, so the secondary stays visually subordinate to your call-to-action.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow",
       "guideKeys": [
         "screenedit-action-bar-secondary-shadow"
       ],
@@ -4067,7 +4067,7 @@
       "summary": "Shadow under the secondary button",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4083,7 +4083,7 @@
       "summary": "How soft and spread-out the shadow is, from 0 (hard edge) to 50 (very diffuse).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-blur",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-blur",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-blur",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4097,7 +4097,7 @@
       "summary": "The shadow color, including its transparency (default is a semi-transparent black). A tinted, low-opacity color gives a subtle lift.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4111,7 +4111,7 @@
       "summary": "Off by default. Turn on to cast a soft drop shadow beneath the button so it lifts off the background; off keeps it flat.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-enable-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-enable-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-enable-shadow",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4125,7 +4125,7 @@
       "summary": "How far the shadow sits below (positive) or above (negative) the button, −50 to 50 px.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-shadow-prop-vertical-offset",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow-prop-vertical-offset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow-prop-vertical-offset",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4139,7 +4139,7 @@
       "summary": "Typography for the secondary button label — font, weight, size, color, and alignment. Style it deliberately quieter than the main button (lighter weight, muted color) so your primary call-to-action stays the obvious choice. Leave it on theme defaults unless the hierarchy looks off.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles",
       "guideKeys": [
         "screenedit-action-bar-secondary-text-styles"
       ],
@@ -4161,7 +4161,7 @@
       "summary": "Secondary button text style",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4178,7 +4178,7 @@
       "summary": "Fill drawn behind the label text (a highlight pill).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4193,7 +4193,7 @@
       "summary": "Transparency of the label background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4208,7 +4208,7 @@
       "summary": "Corner rounding of the label background.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4223,7 +4223,7 @@
       "summary": "Typeface of the button label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4238,7 +4238,7 @@
       "summary": "Text size (px) of the label.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4253,7 +4253,7 @@
       "summary": "How bold the label is.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4268,7 +4268,7 @@
       "summary": "Vertical spacing of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4283,7 +4283,7 @@
       "summary": "Color of a line-through decoration when used (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4299,7 +4299,7 @@
       "summary": "Alignment of the label within the button.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4314,7 +4314,7 @@
       "summary": "Color of the label text.",
       "kind": "section",
       "articleSectionId": "set-actionbar-secondary-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -4332,7 +4332,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/open-section-primary-label.png",
       "articleSectionId": "set-actionbar-primary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4346,7 +4346,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-text-styles.png",
       "articleSectionId": "set-actionbar-primary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4361,7 +4361,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-container.png",
       "articleSectionId": "set-actionbar-primary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-container",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4376,7 +4376,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-gradient.png",
       "articleSectionId": "set-actionbar-primary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-gradient",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4391,7 +4391,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-shadow.png",
       "articleSectionId": "set-actionbar-primary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-shadow",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4406,7 +4406,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-effects.png",
       "articleSectionId": "set-actionbar-primary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-effects",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4421,7 +4421,7 @@
       "group": "primary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/primary-style-icon.png",
       "articleSectionId": "set-actionbar-primary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-primary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-primary-icon",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4436,7 +4436,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/open-section-secondary-label.png",
       "articleSectionId": "set-actionbar-secondary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4450,7 +4450,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-text-styles.png",
       "articleSectionId": "set-actionbar-secondary-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4465,7 +4465,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-container.png",
       "articleSectionId": "set-actionbar-secondary-container",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-container",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-container",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4480,7 +4480,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-gradient.png",
       "articleSectionId": "set-actionbar-secondary-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-gradient",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4495,7 +4495,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-shadow.png",
       "articleSectionId": "set-actionbar-secondary-shadow",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-shadow",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-shadow",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4510,7 +4510,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-effects.png",
       "articleSectionId": "set-actionbar-secondary-effects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-effects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-effects",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -4525,7 +4525,7 @@
       "group": "secondary",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/secondary-style-icon.png",
       "articleSectionId": "set-actionbar-secondary-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html#set-actionbar-secondary-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar#set-actionbar-secondary-icon",
       "route": [
         "Open the screen in the editor.",
         "Expand the Action Bar section.",
@@ -9329,6 +9329,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "c5d198183db47099"
+    "generatedHash": "313e1fe67153be8c"
   }
 }

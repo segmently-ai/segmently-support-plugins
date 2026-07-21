@@ -11,7 +11,7 @@
       "summary": "Value mapping in the section",
       "kind": "section",
       "articleSectionId": "g-mapping-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -27,7 +27,7 @@
       "summary": "Inside the Variable Binding section, this is the Value mapping.",
       "kind": "section",
       "articleSectionId": "g-mapping-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -41,7 +41,7 @@
       "summary": "Value mapping",
       "kind": "section",
       "articleSectionId": "g-mapping-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Answer scoring (advanced) in the section",
       "kind": "section",
       "articleSectionId": "g-scoring-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -71,7 +71,7 @@
       "summary": "Inside the Variable Binding section, this is the Answer scoring (advanced).",
       "kind": "section",
       "articleSectionId": "g-scoring-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -85,7 +85,7 @@
       "summary": "Answer scoring (advanced)",
       "kind": "section",
       "articleSectionId": "g-scoring-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Where the answer is saved in the section",
       "kind": "section",
       "articleSectionId": "g-storage-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -115,7 +115,7 @@
       "summary": "Inside the Variable Binding section, this is the Where the answer is saved.",
       "kind": "section",
       "articleSectionId": "g-storage-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -129,7 +129,7 @@
       "summary": "Where the answer is saved",
       "kind": "section",
       "articleSectionId": "g-storage-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -143,7 +143,7 @@
       "summary": "Where this screen's answer is stored — the variable, the value each choice maps to, and optional scoring. This guide documents every setting of the Variable Binding block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -385,7 +385,7 @@
       "summary": "Variable Binding in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -401,7 +401,7 @@
       "summary": "Open the Variable Binding section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -415,7 +415,7 @@
       "summary": "A shortcut that rebuilds this variable's options from the screen's current list or grid items so the stored values match what's on screen, handy after you've added or changed items and don't want to re-enter each option by hand. Warning: it replaces the existing options (a confirmation shows old versus new first), so custom options or mappings not present in the items can be lost. Avoid it when the variable is shared with other screens, and most funnels rarely need it once options are set.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-applyitemstovariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-applyitemstovariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-applyitemstovariable",
       "guideKeys": [
         "screenedit-variable-binding-apply-items-to-variable"
       ],
@@ -436,7 +436,7 @@
       "summary": "Rebuild options from the items",
       "kind": "section",
       "articleSectionId": "set-variablebinding-applyitemstovariable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-applyitemstovariable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-applyitemstovariable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -452,7 +452,7 @@
       "summary": "Pick which variable stores this screen's answer, or create a new one on the spot. Reuse an existing variable when this screen asks about the same thing as another screen (so all answers feed one value), and create a new one for a brand-new question. This is the key step: nothing downstream (branching, analytics, paywall personalization) works until a variable is chosen here.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-boundvariableid",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-boundvariableid",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-boundvariableid",
       "guideKeys": [
         "screenedit-variable-binding-variable-selector"
       ],
@@ -475,7 +475,7 @@
       "summary": "Choose where the answer is saved",
       "kind": "section",
       "articleSectionId": "set-variablebinding-boundvariableid-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-boundvariableid-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-boundvariableid-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -491,7 +491,7 @@
       "summary": "An optional internal note explaining what this variable is for. It only shows as a tooltip in the editor when you hover the variable later — visitors never see it and it has no effect on the funnel. A one-line note like \"visitor's primary fitness goal\" is worth adding so you and teammates remember the variable's purpose when reusing it across screens.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabledescription",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabledescription",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabledescription",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-description"
       ],
@@ -512,7 +512,7 @@
       "summary": "Internal note (optional)",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabledescription-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabledescription-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabledescription-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -528,7 +528,7 @@
       "summary": "A readable name for the variable you're creating, like User Goal, that must be unique across the funnel. It becomes the reference you use elsewhere — usually a lowercased, underscored form such as @user_goal in dynamic text and conditions. Pick a clear name that describes the answer (User Goal, Experience Level) rather than the screen, since later references depend on it and you won't want to rename it.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariablename",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariablename",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariablename",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-name"
       ],
@@ -550,7 +550,7 @@
       "summary": "Name the new variable",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariablename-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariablename-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariablename-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -566,7 +566,7 @@
       "summary": "For Choice and Multiple-choice variables, list the values this variable can store, such as lose_weight, build_muscle, or stay_fit; add, rename, or remove them here. These stored values are separate from the labels visitors see — you connect each one to a visible item in the Value Mapping table below. Keep one option per real answer so your routing and analytics stay clean.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariableoptions",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariableoptions",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariableoptions",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-options"
       ],
@@ -588,7 +588,7 @@
       "summary": "List the stored answers",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariableoptions-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariableoptions-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariableoptions-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -604,7 +604,7 @@
       "summary": "Sets the kind of value this variable holds, which must fit the screen. Use Choice for single-select screens, Multiple choices for multi-select lists or grids where visitors pick several, Number for numeric input like age or weight, and Text for free-form typed answers. The screen only offers compatible types, and the Choice options you can branch and report on are defined below.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabletype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabletype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabletype",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-type"
       ],
@@ -626,7 +626,7 @@
       "summary": "What kind of value it stores",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabletype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabletype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabletype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -642,7 +642,7 @@
       "summary": "Type a value for a new option on this variable and click Add; it joins the options list and the mapping table below. Use a stable, lowercase, underscore-style value such as maintain_weight so routing and analytics stay clean. After adding it, map it to the matching on-screen item below — otherwise a visitor choosing that answer won't store anything.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-newoptionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-newoptionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-newoptionlabel",
       "guideKeys": [
         "screenedit-variable-binding-add-new-option-label"
       ],
@@ -664,7 +664,7 @@
       "summary": "Add an option value",
       "kind": "section",
       "articleSectionId": "set-variablebinding-newoptionlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-newoptionlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-newoptionlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -680,7 +680,7 @@
       "summary": "Connect this option to the on-screen choice (the list or grid row) that should set it, so when a visitor picks that row the variable stores this value. Each visible choice should map to one option so answers record correctly, and several options can point to the same row if needed. If a choice has no option mapped to it, the editor flags it as unmapped, so fix that before publishing or it won't record an answer.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionitembinding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionitembinding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionitembinding",
       "guideKeys": [
         "screenedit-variable-binding-option-item-binding"
       ],
@@ -701,7 +701,7 @@
       "summary": "Link a choice to this value",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionitembinding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionitembinding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionitembinding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -717,7 +717,7 @@
       "summary": "This is the value saved to the variable and used in conditions and analytics, not the text visitors see (that lives on the list or grid item). Keep it stable and lowercase with underscores, like lose_weight. You can rename it, but that changes every place it's referenced, so avoid renaming after the funnel is published and collecting data.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionlabel",
       "guideKeys": [
         "screenedit-variable-binding-option-label"
       ],
@@ -740,7 +740,7 @@
       "summary": "The stored value for this option",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -756,7 +756,7 @@
       "summary": "The whole number this answer adds to the running total in the target score variable when a visitor selects this option. Give higher-intent answers larger values and weaker ones smaller or zero, for example 'ready to buy' = 10 and 'just browsing' = 1. Keep a consistent scale across all answers so the final total is meaningful for branching or analytics.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffectcompletionscore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffectcompletionscore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffectcompletionscore",
       "guideKeys": [
         "screenedit-variable-binding-score-effect-completion-score"
       ],
@@ -779,7 +779,7 @@
       "summary": "Points this answer adds",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffectcompletionscore-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffectcompletionscore-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffectcompletionscore-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -795,7 +795,7 @@
       "summary": "Optional and advanced: have each answer on this screen add points to a number variable, like a quiz or lead-qualification score. You can later branch on the total (high score to a premium paywall) or send it to analytics. Skip this unless you're scoring answers, since most screens don't need it.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffects",
       "guideKeys": [
         "screenedit-variable-binding-score-effects"
       ],
@@ -818,7 +818,7 @@
       "summary": "Add points based on answers",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -834,7 +834,7 @@
       "summary": "Choose the number variable this answer adds points to, such as a quiz_score or lead_score total. Only Number-type variables appear here, so if the list is empty, create a number variable first. Use one shared score variable across all the screens you want to total up, with the points set in the score value field.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffecttargetvariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffecttargetvariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffecttargetvariable",
       "guideKeys": [
         "screenedit-variable-binding-score-effect-target-variable"
       ],
@@ -855,7 +855,7 @@
       "summary": "Which score this adds to",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffecttargetvariable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffecttargetvariable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffecttargetvariable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -873,7 +873,7 @@
       "summary": "Value mapping in the section",
       "kind": "section",
       "articleSectionId": "g-mapping-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -889,7 +889,7 @@
       "summary": "Inside the Variable Binding section, this is the Value mapping.",
       "kind": "section",
       "articleSectionId": "g-mapping-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -903,7 +903,7 @@
       "summary": "Value mapping",
       "kind": "section",
       "articleSectionId": "g-mapping-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-mapping-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-mapping-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -917,7 +917,7 @@
       "summary": "Answer scoring (advanced) in the section",
       "kind": "section",
       "articleSectionId": "g-scoring-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -933,7 +933,7 @@
       "summary": "Inside the Variable Binding section, this is the Answer scoring (advanced).",
       "kind": "section",
       "articleSectionId": "g-scoring-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -947,7 +947,7 @@
       "summary": "Answer scoring (advanced)",
       "kind": "section",
       "articleSectionId": "g-scoring-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-scoring-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-scoring-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -961,7 +961,7 @@
       "summary": "Where the answer is saved in the section",
       "kind": "section",
       "articleSectionId": "g-storage-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -977,7 +977,7 @@
       "summary": "Inside the Variable Binding section, this is the Where the answer is saved.",
       "kind": "section",
       "articleSectionId": "g-storage-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -991,7 +991,7 @@
       "summary": "Where the answer is saved",
       "kind": "section",
       "articleSectionId": "g-storage-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#g-storage-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#g-storage-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1005,7 +1005,7 @@
       "summary": "Where this screen's answer is stored — the variable, the value each choice maps to, and optional scoring. This guide documents every setting of the Variable Binding block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1247,7 +1247,7 @@
       "summary": "Variable Binding in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1263,7 +1263,7 @@
       "summary": "Open the Variable Binding section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1277,7 +1277,7 @@
       "summary": "A shortcut that rebuilds this variable's options from the screen's current list or grid items so the stored values match what's on screen, handy after you've added or changed items and don't want to re-enter each option by hand. Warning: it replaces the existing options (a confirmation shows old versus new first), so custom options or mappings not present in the items can be lost. Avoid it when the variable is shared with other screens, and most funnels rarely need it once options are set.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-applyitemstovariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-applyitemstovariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-applyitemstovariable",
       "guideKeys": [
         "screenedit-variable-binding-apply-items-to-variable"
       ],
@@ -1298,7 +1298,7 @@
       "summary": "Rebuild options from the items",
       "kind": "section",
       "articleSectionId": "set-variablebinding-applyitemstovariable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-applyitemstovariable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-applyitemstovariable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1314,7 +1314,7 @@
       "summary": "Pick which variable stores this screen's answer, or create a new one on the spot. Reuse an existing variable when this screen asks about the same thing as another screen (so all answers feed one value), and create a new one for a brand-new question. This is the key step: nothing downstream (branching, analytics, paywall personalization) works until a variable is chosen here.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-boundvariableid",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-boundvariableid",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-boundvariableid",
       "guideKeys": [
         "screenedit-variable-binding-variable-selector"
       ],
@@ -1337,7 +1337,7 @@
       "summary": "Choose where the answer is saved",
       "kind": "section",
       "articleSectionId": "set-variablebinding-boundvariableid-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-boundvariableid-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-boundvariableid-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1353,7 +1353,7 @@
       "summary": "An optional internal note explaining what this variable is for. It only shows as a tooltip in the editor when you hover the variable later — visitors never see it and it has no effect on the funnel. A one-line note like \"visitor's primary fitness goal\" is worth adding so you and teammates remember the variable's purpose when reusing it across screens.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabledescription",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabledescription",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabledescription",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-description"
       ],
@@ -1374,7 +1374,7 @@
       "summary": "Internal note (optional)",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabledescription-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabledescription-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabledescription-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1390,7 +1390,7 @@
       "summary": "A readable name for the variable you're creating, like User Goal, that must be unique across the funnel. It becomes the reference you use elsewhere — usually a lowercased, underscored form such as @user_goal in dynamic text and conditions. Pick a clear name that describes the answer (User Goal, Experience Level) rather than the screen, since later references depend on it and you won't want to rename it.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariablename",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariablename",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariablename",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-name"
       ],
@@ -1412,7 +1412,7 @@
       "summary": "Name the new variable",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariablename-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariablename-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariablename-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1428,7 +1428,7 @@
       "summary": "For Choice and Multiple-choice variables, list the values this variable can store, such as lose_weight, build_muscle, or stay_fit; add, rename, or remove them here. These stored values are separate from the labels visitors see — you connect each one to a visible item in the Value Mapping table below. Keep one option per real answer so your routing and analytics stay clean.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariableoptions",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariableoptions",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariableoptions",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-options"
       ],
@@ -1450,7 +1450,7 @@
       "summary": "List the stored answers",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariableoptions-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariableoptions-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariableoptions-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1466,7 +1466,7 @@
       "summary": "Sets the kind of value this variable holds, which must fit the screen. Use Choice for single-select screens, Multiple choices for multi-select lists or grids where visitors pick several, Number for numeric input like age or weight, and Text for free-form typed answers. The screen only offers compatible types, and the Choice options you can branch and report on are defined below.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabletype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabletype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabletype",
       "guideKeys": [
         "screenedit-variable-binding-create-variable-type"
       ],
@@ -1488,7 +1488,7 @@
       "summary": "What kind of value it stores",
       "kind": "section",
       "articleSectionId": "set-variablebinding-inlinevariabletype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabletype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabletype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1504,7 +1504,7 @@
       "summary": "Type a value for a new option on this variable and click Add; it joins the options list and the mapping table below. Use a stable, lowercase, underscore-style value such as maintain_weight so routing and analytics stay clean. After adding it, map it to the matching on-screen item below — otherwise a visitor choosing that answer won't store anything.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-newoptionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-newoptionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-newoptionlabel",
       "guideKeys": [
         "screenedit-variable-binding-add-new-option-label"
       ],
@@ -1526,7 +1526,7 @@
       "summary": "Add an option value",
       "kind": "section",
       "articleSectionId": "set-variablebinding-newoptionlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-newoptionlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-newoptionlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1542,7 +1542,7 @@
       "summary": "Connect this option to the on-screen choice (the list or grid row) that should set it, so when a visitor picks that row the variable stores this value. Each visible choice should map to one option so answers record correctly, and several options can point to the same row if needed. If a choice has no option mapped to it, the editor flags it as unmapped, so fix that before publishing or it won't record an answer.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionitembinding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionitembinding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionitembinding",
       "guideKeys": [
         "screenedit-variable-binding-option-item-binding"
       ],
@@ -1563,7 +1563,7 @@
       "summary": "Link a choice to this value",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionitembinding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionitembinding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionitembinding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1579,7 +1579,7 @@
       "summary": "This is the value saved to the variable and used in conditions and analytics, not the text visitors see (that lives on the list or grid item). Keep it stable and lowercase with underscores, like lose_weight. You can rename it, but that changes every place it's referenced, so avoid renaming after the funnel is published and collecting data.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionlabel",
       "guideKeys": [
         "screenedit-variable-binding-option-label"
       ],
@@ -1602,7 +1602,7 @@
       "summary": "The stored value for this option",
       "kind": "section",
       "articleSectionId": "set-variablebinding-optionlabel-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionlabel-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionlabel-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1618,7 +1618,7 @@
       "summary": "The whole number this answer adds to the running total in the target score variable when a visitor selects this option. Give higher-intent answers larger values and weaker ones smaller or zero, for example 'ready to buy' = 10 and 'just browsing' = 1. Keep a consistent scale across all answers so the final total is meaningful for branching or analytics.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffectcompletionscore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffectcompletionscore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffectcompletionscore",
       "guideKeys": [
         "screenedit-variable-binding-score-effect-completion-score"
       ],
@@ -1641,7 +1641,7 @@
       "summary": "Points this answer adds",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffectcompletionscore-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffectcompletionscore-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffectcompletionscore-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1657,7 +1657,7 @@
       "summary": "Optional and advanced: have each answer on this screen add points to a number variable, like a quiz or lead-qualification score. You can later branch on the total (high score to a premium paywall) or send it to analytics. Skip this unless you're scoring answers, since most screens don't need it.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffects",
       "guideKeys": [
         "screenedit-variable-binding-score-effects"
       ],
@@ -1680,7 +1680,7 @@
       "summary": "Add points based on answers",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffects-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffects-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffects-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1696,7 +1696,7 @@
       "summary": "Choose the number variable this answer adds points to, such as a quiz_score or lead_score total. Only Number-type variables appear here, so if the list is empty, create a number variable first. Use one shared score variable across all the screens you want to total up, with the points set in the score value field.",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffecttargetvariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffecttargetvariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffecttargetvariable",
       "guideKeys": [
         "screenedit-variable-binding-score-effect-target-variable"
       ],
@@ -1717,7 +1717,7 @@
       "summary": "Which score this adds to",
       "kind": "section",
       "articleSectionId": "set-variablebinding-scoreeffecttargetvariable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffecttargetvariable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffecttargetvariable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1736,7 +1736,7 @@
       "group": "storage",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-bound-variable.png",
       "articleSectionId": "set-variablebinding-boundvariableid",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-boundvariableid",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-boundvariableid",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1750,7 +1750,7 @@
       "group": "storage",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-name.png",
       "articleSectionId": "set-variablebinding-inlinevariablename",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariablename",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariablename",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1765,7 +1765,7 @@
       "group": "storage",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-type.png",
       "articleSectionId": "set-variablebinding-inlinevariabletype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabletype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabletype",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1780,7 +1780,7 @@
       "group": "storage",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-description.png",
       "articleSectionId": "set-variablebinding-inlinevariabledescription",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariabledescription",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariabledescription",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1795,7 +1795,7 @@
       "group": "storage",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/creator-options.png",
       "articleSectionId": "set-variablebinding-inlinevariableoptions",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-inlinevariableoptions",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-inlinevariableoptions",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1810,7 +1810,7 @@
       "group": "mapping",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-label.png",
       "articleSectionId": "set-variablebinding-optionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionlabel",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1824,7 +1824,7 @@
       "group": "mapping",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-option-binding.png",
       "articleSectionId": "set-variablebinding-optionitembinding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-optionitembinding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-optionitembinding",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1838,7 +1838,7 @@
       "group": "mapping",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-new-option.png",
       "articleSectionId": "set-variablebinding-newoptionlabel",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-newoptionlabel",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-newoptionlabel",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1852,7 +1852,7 @@
       "group": "mapping",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-apply-items.png",
       "articleSectionId": "set-variablebinding-applyitemstovariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-applyitemstovariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-applyitemstovariable",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1866,7 +1866,7 @@
       "group": "scoring",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/open-section-score-effects.png",
       "articleSectionId": "set-variablebinding-scoreeffects",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffects",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffects",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1880,7 +1880,7 @@
       "group": "scoring",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-target.png",
       "articleSectionId": "set-variablebinding-scoreeffecttargetvariable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffecttargetvariable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffecttargetvariable",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -1895,7 +1895,7 @@
       "group": "scoring",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-variable-binding/0.2.0/configure-variable-binding-2026-06-22T20-56-59-234Z-d3adbd97/score-amount.png",
       "articleSectionId": "set-variablebinding-scoreeffectcompletionscore",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-variable-binding/index.html#set-variablebinding-scoreeffectcompletionscore",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-variable-binding#set-variablebinding-scoreeffectcompletionscore",
       "route": [
         "Open the screen in the editor.",
         "Expand the Variable Binding section (inside the open Options list).",
@@ -3259,6 +3259,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "a32e41377b0c74b8"
+    "generatedHash": "342c19a4b0b45811"
   }
 }

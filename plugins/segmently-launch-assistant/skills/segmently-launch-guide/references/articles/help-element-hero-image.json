@@ -11,7 +11,7 @@
       "summary": "Hero image",
       "kind": "section",
       "articleSectionId": "g-hero-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#g-hero-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#g-hero-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Image & text layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "The Hero image is the lead visual above the text. This guide documents every Hero image setting — the image source, how it is sized, rounded and spaced, and how the image and text are arranged.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero",
       "guideKeys": [
         "screenedit-copy-block-hero"
       ],
@@ -77,7 +77,7 @@
       "summary": "Rounds all four corners of the hero image; 0 is sharp and higher values (up to 50) make them softer and more rounded. The default is 0. A small radius around 8 to 16 gives a modern, friendly look; match it to the rounding used elsewhere in your funnel, like buttons and cards, so the page feels consistent.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-copy-block-hero-corner-radius"
       ],
@@ -98,7 +98,7 @@
       "summary": "How rounded the image is",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -114,7 +114,7 @@
       "summary": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-height",
       "guideKeys": [
         "screenedit-copy-block-hero-height"
       ],
@@ -135,7 +135,7 @@
       "summary": "Fixed image height",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -151,7 +151,7 @@
       "summary": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-copy-block-hero-height-percentage"
       ],
@@ -172,7 +172,7 @@
       "summary": "Size the image by screen",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -188,7 +188,7 @@
       "summary": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-width",
       "guideKeys": [
         "screenedit-copy-block-hero-width"
       ],
@@ -209,7 +209,7 @@
       "summary": "Fixed image width",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -225,7 +225,7 @@
       "summary": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-scalemode",
       "guideKeys": [
         "screenedit-copy-block-hero-scale-mode"
       ],
@@ -246,7 +246,7 @@
       "summary": "How the image fills its box",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -262,7 +262,7 @@
       "summary": "The featured image up top",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -278,7 +278,7 @@
       "summary": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-layout-insets",
       "guideKeys": [
         "screenedit-copy-block-hero-padding"
       ],
@@ -299,7 +299,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -315,7 +315,7 @@
       "summary": "Pick the actual hero image: upload a file from your computer or paste a direct image URL, then check the preview thumbnail. Use a high-resolution JPG or PNG so it stays crisp on large screens — uploads are optimized automatically for fast loading. To change it later, just upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-translations",
       "guideKeys": [
         "screenedit-copy-block-hero-url"
       ],
@@ -336,7 +336,7 @@
       "summary": "The hero image itself",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -352,7 +352,7 @@
       "summary": "On headline screens, this sets where the hero image sits relative to your title and subtitle — above the text, below it, or beside it. Lead with your strongest element: image-on-top when the visual is the hook, text-on-top when the headline does the selling. The preview updates instantly, so try a couple and keep whichever reads clearest.",
       "kind": "section",
       "articleSectionId": "set-copyblock-subtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-subtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-subtype",
       "guideKeys": [
         "screenedit-copy-block-image-layout"
       ],
@@ -374,7 +374,7 @@
       "summary": "Where the image sits",
       "kind": "section",
       "articleSectionId": "set-copyblock-subtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-subtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-subtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -392,7 +392,7 @@
       "summary": "Hero image",
       "kind": "section",
       "articleSectionId": "g-hero-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#g-hero-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#g-hero-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -406,7 +406,7 @@
       "summary": "Image & text layout",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -421,7 +421,7 @@
       "summary": "The Hero image is the lead visual above the text. This guide documents every Hero image setting — the image source, how it is sized, rounded and spaced, and how the image and text are arranged.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -436,7 +436,7 @@
       "summary": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero",
       "guideKeys": [
         "screenedit-copy-block-hero"
       ],
@@ -458,7 +458,7 @@
       "summary": "Rounds all four corners of the hero image; 0 is sharp and higher values (up to 50) make them softer and more rounded. The default is 0. A small radius around 8 to 16 gives a modern, friendly look; match it to the rounding used elsewhere in your funnel, like buttons and cards, so the page feels consistent.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-copy-block-hero-corner-radius"
       ],
@@ -479,7 +479,7 @@
       "summary": "How rounded the image is",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -495,7 +495,7 @@
       "summary": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-height",
       "guideKeys": [
         "screenedit-copy-block-hero-height"
       ],
@@ -516,7 +516,7 @@
       "summary": "Fixed image height",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -532,7 +532,7 @@
       "summary": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-copy-block-hero-height-percentage"
       ],
@@ -553,7 +553,7 @@
       "summary": "Size the image by screen",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -569,7 +569,7 @@
       "summary": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-width",
       "guideKeys": [
         "screenedit-copy-block-hero-width"
       ],
@@ -590,7 +590,7 @@
       "summary": "Fixed image width",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -606,7 +606,7 @@
       "summary": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-scalemode",
       "guideKeys": [
         "screenedit-copy-block-hero-scale-mode"
       ],
@@ -627,7 +627,7 @@
       "summary": "How the image fills its box",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -643,7 +643,7 @@
       "summary": "The featured image up top",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -659,7 +659,7 @@
       "summary": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-layout-insets",
       "guideKeys": [
         "screenedit-copy-block-hero-padding"
       ],
@@ -680,7 +680,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -696,7 +696,7 @@
       "summary": "Pick the actual hero image: upload a file from your computer or paste a direct image URL, then check the preview thumbnail. Use a high-resolution JPG or PNG so it stays crisp on large screens — uploads are optimized automatically for fast loading. To change it later, just upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-translations",
       "guideKeys": [
         "screenedit-copy-block-hero-url"
       ],
@@ -717,7 +717,7 @@
       "summary": "The hero image itself",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-hero-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -733,7 +733,7 @@
       "summary": "On headline screens, this sets where the hero image sits relative to your title and subtitle — above the text, below it, or beside it. Lead with your strongest element: image-on-top when the visual is the hook, text-on-top when the headline does the selling. The preview updates instantly, so try a couple and keep whichever reads clearest.",
       "kind": "section",
       "articleSectionId": "set-copyblock-subtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-subtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-subtype",
       "guideKeys": [
         "screenedit-copy-block-image-layout"
       ],
@@ -755,7 +755,7 @@
       "summary": "Where the image sits",
       "kind": "section",
       "articleSectionId": "set-copyblock-subtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-subtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-subtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -774,7 +774,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-enable.png",
       "articleSectionId": "set-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -788,7 +788,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-hero-url.png",
       "articleSectionId": "set-copyblock-content-hero-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-translations",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -802,7 +802,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-scale-mode.png",
       "articleSectionId": "set-copyblock-content-hero-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-scalemode",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -817,7 +817,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-width.png",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-width",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -832,7 +832,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height.png",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-height",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -847,7 +847,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-height-pct.png",
       "articleSectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-dimensions-heightpercentage",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -862,7 +862,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-corner-radius.png",
       "articleSectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-appearance-cornerradii-uniform",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -877,7 +877,7 @@
       "group": "hero",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-padding.png",
       "articleSectionId": "set-copyblock-content-hero-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-content-hero-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-content-hero-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -892,7 +892,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/hero-styles-image-layout.png",
       "articleSectionId": "set-copyblock-subtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-hero-image/index.html#set-copyblock-subtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-hero-image#set-copyblock-subtype",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -1728,6 +1728,6 @@
       "scripts/help-articles/help-screen-wheelpicker-elements.assembly.json",
       "scripts/help-articles/help-screen-wheelpicker-elements.doc.json"
     ],
-    "generatedHash": "98f73c743fe1a564"
+    "generatedHash": "0d228853e4498d98"
   }
 }

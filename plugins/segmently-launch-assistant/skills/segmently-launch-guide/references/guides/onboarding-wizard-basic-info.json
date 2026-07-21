@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 4,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-basic-info/index.html",
+    "fullArticleLink": "https://help.segmently.ai/onboarding-wizard-basic-info",
     "sourceRecipeKey": "create-onboarding-wizard",
     "localArticlePath": null,
     "sections": [
@@ -70,7 +70,12 @@
       "title": "Name the onboarding",
       "summary": "Use a clear internal name so the draft is easy to find in the Onboardings list. The name is not shown to visitors.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164732_open-wizard-wizard-field-name/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "subarticleId": "onboarding-wizard-basic-info/name"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -78,7 +83,12 @@
       "title": "Choose the platform",
       "summary": "The platform controls the publish surface and runtime behavior. Web flows publish through Web Placement; pick it before selecting a theme.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164733_open-wizard-wizard-field-platform/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "subarticleId": "onboarding-wizard-basic-info/platform"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -86,7 +96,12 @@
       "title": "Set the default language",
       "summary": "The default language is the fallback locale used when a visitor has no matching localized content. Choose the primary audience language.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164734_open-wizard-wizard-field-default-language/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "subarticleId": "onboarding-wizard-basic-info/default-language"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -94,7 +109,12 @@
       "title": "Add supported languages",
       "summary": "Add every locale you intend to publish so screens can carry localized copy from the start. You can extend this later, but planning it now avoids rework.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164735_open-wizard-wizard-field-locales/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "subarticleId": "onboarding-wizard-basic-info/locales"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -102,7 +122,12 @@
       "title": "Optionally assign a folder",
       "summary": "Choose a folder to organize the draft in the Onboardings list, or leave it at the root level. The folder only affects organization and can be changed later.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "subarticleId": "onboarding-wizard-basic-info/folder"
+        }
+      ],
       "actionIds": []
     }
   ]

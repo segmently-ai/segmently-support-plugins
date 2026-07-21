@@ -631,11 +631,3 @@ invent or print token values.
 - Product write workflows may include additional safety checks depending on the
   entity.
 - Do not expose detailed Product mutation payloads in customer-facing answers.
-
-## Verification
-
-After editing this skill, run:
-
-```bash
-node <skill-root>/scripts/run-evals.mjs
-```

@@ -11,7 +11,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -83,7 +83,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Paywall Body<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallbody-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -114,7 +114,7 @@
       "summary": "The paywall's words — the headline and subtitle (with full typography) and the feature-benefit bullet list, including each bullet's box style, padding, and per-bullet title / subtitle / icon styling.",
       "kind": "section",
       "articleSectionId": "block-paywallbody-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -129,7 +129,7 @@
       "summary": "Paywall Body in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallbody-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -146,7 +146,7 @@
       "summary": "Paywall Footer<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -161,7 +161,7 @@
       "summary": "The bottom of the paywall — the purchase (subscribe) button and its label and box styling, the auto-renew disclosure note, the footer background and element order, and the restore / terms-of-use / privacy-policy legal links with their URLs and styling.",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -178,7 +178,7 @@
       "summary": "Paywall Footer in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -195,7 +195,7 @@
       "summary": "Paywall Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallheader-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -210,7 +210,7 @@
       "summary": "The paywall's top bar — an optional close (X) button (its icon color, which side it sits on, and whether it appears at once or after a short delay) and an optional restore-purchases link with its own wording and typography.",
       "kind": "section",
       "articleSectionId": "block-paywallheader-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -225,7 +225,7 @@
       "summary": "Paywall Header in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallheader-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -242,7 +242,7 @@
       "summary": "Paywall Media<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -257,7 +257,7 @@
       "summary": "The paywall's featured image or video — its source, how it fills its area, height, corner rounding, spacing, where it sits relative to the header and body, and an optional dark fade overlay for text readability.",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -273,7 +273,7 @@
       "summary": "Paywall Media in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -290,7 +290,7 @@
       "summary": "Paywall Subscriptions<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -305,7 +305,7 @@
       "summary": "The plan picker — how the subscription cards are arranged, where the selection checkbox sits, the plans themselves, the selected/unselected card styling and spacing, and each plan's name / price / note / billing-period labels, badge, and checkbox styling.",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -321,7 +321,7 @@
       "summary": "Paywall Subscriptions in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -338,7 +338,7 @@
       "summary": "The Paywall screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -353,7 +353,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -369,7 +369,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -385,7 +385,7 @@
       "summary": "Related article: Paywall Body",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-body",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -402,7 +402,7 @@
       "summary": "Related article: Paywall Footer",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -419,7 +419,7 @@
       "summary": "Related article: Paywall Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -436,7 +436,7 @@
       "summary": "Related article: Paywall Media",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -453,7 +453,7 @@
       "summary": "Related article: Paywall Subscriptions",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -472,7 +472,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -486,7 +486,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -500,7 +500,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -516,7 +516,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -530,7 +530,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -544,7 +544,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -560,7 +560,7 @@
       "summary": "Paywall Body<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallbody-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -575,7 +575,7 @@
       "summary": "The paywall's words — the headline and subtitle (with full typography) and the feature-benefit bullet list, including each bullet's box style, padding, and per-bullet title / subtitle / icon styling.",
       "kind": "section",
       "articleSectionId": "block-paywallbody-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -590,7 +590,7 @@
       "summary": "Paywall Body in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallbody-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallbody-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallbody-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -607,7 +607,7 @@
       "summary": "Paywall Footer<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -622,7 +622,7 @@
       "summary": "The bottom of the paywall — the purchase (subscribe) button and its label and box styling, the auto-renew disclosure note, the footer background and element order, and the restore / terms-of-use / privacy-policy legal links with their URLs and styling.",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -639,7 +639,7 @@
       "summary": "Paywall Footer in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallfooter-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallfooter-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallfooter-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -656,7 +656,7 @@
       "summary": "Paywall Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallheader-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -671,7 +671,7 @@
       "summary": "The paywall's top bar — an optional close (X) button (its icon color, which side it sits on, and whether it appears at once or after a short delay) and an optional restore-purchases link with its own wording and typography.",
       "kind": "section",
       "articleSectionId": "block-paywallheader-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -686,7 +686,7 @@
       "summary": "Paywall Header in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallheader-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallheader-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallheader-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -703,7 +703,7 @@
       "summary": "Paywall Media<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -718,7 +718,7 @@
       "summary": "The paywall's featured image or video — its source, how it fills its area, height, corner rounding, spacing, where it sits relative to the header and body, and an optional dark fade overlay for text readability.",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -734,7 +734,7 @@
       "summary": "Paywall Media in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallmedia-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallmedia-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallmedia-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -751,7 +751,7 @@
       "summary": "Paywall Subscriptions<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -766,7 +766,7 @@
       "summary": "The plan picker — how the subscription cards are arranged, where the selection checkbox sits, the plans themselves, the selected/unselected card styling and spacing, and each plan's name / price / note / billing-period labels, badge, and checkbox styling.",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -782,7 +782,7 @@
       "summary": "Paywall Subscriptions in the editor",
       "kind": "section",
       "articleSectionId": "block-paywallsubscriptions-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#block-paywallsubscriptions-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#block-paywallsubscriptions-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -799,7 +799,7 @@
       "summary": "The Paywall screen is built from the sections below. This overview shows what each section does and links to its full guide — open any section’s guide to see every setting it offers.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-paywall/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -814,7 +814,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -830,7 +830,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -846,7 +846,7 @@
       "summary": "Related article: Paywall Body",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-body",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -863,7 +863,7 @@
       "summary": "Related article: Paywall Footer",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-footer",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -880,7 +880,7 @@
       "summary": "Related article: Paywall Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -897,7 +897,7 @@
       "summary": "Related article: Paywall Media",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -914,7 +914,7 @@
       "summary": "Related article: Paywall Subscriptions",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1000,7 +1000,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-header/index.html"
+              "details": "https://help.segmently.ai/help-block-paywall-header"
             },
             "labels": {
               "sep": {
@@ -1114,7 +1114,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html"
+              "details": "https://help.segmently.ai/help-block-paywall-media"
             },
             "labels": {
               "sep": {
@@ -1228,7 +1228,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-body/index.html"
+              "details": "https://help.segmently.ai/help-block-paywall-body"
             },
             "labels": {
               "sep": {
@@ -1342,7 +1342,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-subscriptions/index.html"
+              "details": "https://help.segmently.ai/help-block-paywall-subscriptions"
             },
             "labels": {
               "sep": {
@@ -1456,7 +1456,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-footer/index.html"
+              "details": "https://help.segmently.ai/help-block-paywall-footer"
             },
             "labels": {
               "sep": {
@@ -1570,7 +1570,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
+              "details": "https://help.segmently.ai/help-block-background"
             },
             "labels": {
               "sep": {
@@ -1684,7 +1684,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
+              "details": "https://help.segmently.ai/help-block-basic-config"
             },
             "labels": {
               "sep": {
@@ -1779,6 +1779,6 @@
       "scripts/help-articles/help-screen-paywall.assembly.json",
       "scripts/help-articles/help-screen-paywall.doc.json"
     ],
-    "generatedHash": "e74a8cb0e6e6b508"
+    "generatedHash": "fd76789b019f466e"
   }
 }

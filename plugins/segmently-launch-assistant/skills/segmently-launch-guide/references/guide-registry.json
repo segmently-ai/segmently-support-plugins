@@ -87,7 +87,12 @@
       "summary": "Add the screen type the flow needs (question/content/embed/paywall) from the template panel, then edit its sections.",
       "anchor": "canvas-add-screen/canvas-add-screen",
       "articleAlias": "canvas-add-screen",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-add-screen",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -96,10 +101,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 5,
       "contentRef": "references/guides/canvas-add-screen.json"
@@ -110,7 +113,12 @@
       "summary": "Connect screens so each action leads to the right next screen; verify default and conditional paths.",
       "anchor": "canvas-connect-screens/canvas-connect-screens",
       "articleAlias": "canvas-connect-screens",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -119,10 +127,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 7,
       "contentRef": "references/guides/canvas-connect-screens.json"
@@ -133,7 +139,12 @@
       "summary": "Read the flow on the canvas to confirm the route, the launch screen, and that paywall screens point to valid products before publish.",
       "anchor": "canvas-overview/canvas-overview",
       "articleAlias": "canvas-overview",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-overview",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -142,10 +153,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 4,
       "contentRef": "references/guides/canvas-overview.json"
@@ -156,7 +165,12 @@
       "summary": "Apply the provided DNS records exactly (DNS-only, no proxy) and wait for propagation before verifying.",
       "anchor": "custom-domain-dns-setup/custom-domain-dns-setup",
       "articleAlias": "custom-domain-dns-setup",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "custom-domain-dns-setup",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -165,10 +179,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/custom-domain-dns-setup.json"
@@ -179,7 +191,12 @@
       "summary": "Enter the exact public host (no protocol/path) and confirm the owner can edit DNS.",
       "anchor": "custom-domain-domain-input/custom-domain-domain-input",
       "articleAlias": "custom-domain-domain-input",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "custom-domain-domain-input",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -188,10 +205,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/custom-domain-domain-input.json"
@@ -202,7 +217,12 @@
       "summary": "Verify the domain (retry after DNS propagates) so the published funnel can serve from the branded URL.",
       "anchor": "custom-domain-verification/custom-domain-verification",
       "articleAlias": "custom-domain-verification",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "custom-domain-verification",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -211,10 +231,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/custom-domain-verification.json"
@@ -277,7 +295,12 @@
       "summary": "Know that Stripe must be connected before paywall products can map to Stripe prices, and where that connection lives.",
       "anchor": "integrations-stripe-connect-section/integrations-stripe-connect-section",
       "articleAlias": "integrations-stripe-connect-section",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "integrations-stripe-connect-section",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -286,10 +309,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/integrations-stripe-connect-section.json"
@@ -300,7 +321,12 @@
       "summary": "Start one V2 onboarding draft from this page; avoid duplicate drafts for the same campaign.",
       "anchor": "onboarding-list-create/onboarding-list-create",
       "articleAlias": "onboarding-list-create",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-list-create",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -309,10 +335,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/onboarding-list-create.json"
@@ -323,7 +347,12 @@
       "summary": "Set name, platform, and language first — platform controls the publish surface and runtime behavior.",
       "anchor": "onboarding-wizard-basic-info/onboarding-wizard-basic-info",
       "articleAlias": "onboarding-wizard-basic-info",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-basic-info",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -332,10 +361,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 5,
       "contentRef": "references/guides/onboarding-wizard-basic-info.json"
@@ -346,7 +373,12 @@
       "summary": "Tune high-level theme settings now; do screen-specific copy/layout later in the Screen Editor.",
       "anchor": "onboarding-wizard-theme-customize/onboarding-wizard-theme-customize",
       "articleAlias": "onboarding-wizard-theme-customize",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-customize",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -355,10 +387,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 8,
       "contentRef": "references/guides/onboarding-wizard-theme-customize.json"
@@ -369,7 +399,12 @@
       "summary": "Pick a theme that covers all planned screen types, not just the first screen.",
       "anchor": "onboarding-wizard-theme-select/onboarding-wizard-theme-select",
       "articleAlias": "onboarding-wizard-theme-select",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-select",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -378,10 +413,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/onboarding-wizard-theme-select.json"
@@ -392,7 +425,12 @@
       "summary": "Define product name, type, and checkout behavior so the offer appears and creates checkout correctly.",
       "anchor": "paywall-product-basic-fields/paywall-product-basic-fields",
       "articleAlias": "paywall-product-basic-fields",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -401,10 +439,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 5,
       "contentRef": "references/guides/paywall-product-basic-fields.json"
@@ -415,7 +451,12 @@
       "summary": "Set amount, currency, and recurrence to the exact values customers should see at checkout.",
       "anchor": "paywall-product-price-setup/paywall-product-price-setup",
       "articleAlias": "paywall-product-price-setup",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-price-setup",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -424,10 +465,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 3,
       "contentRef": "references/guides/paywall-product-price-setup.json"
@@ -438,7 +477,12 @@
       "summary": "Map the product to the right Stripe product/price (same account mode) so checkout charges the intended amount.",
       "anchor": "paywall-product-stripe-mapping/paywall-product-stripe-mapping",
       "articleAlias": "paywall-product-stripe-mapping",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-stripe-mapping",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -447,10 +491,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/paywall-product-stripe-mapping.json"
@@ -461,7 +503,12 @@
       "summary": "Configure billing interval and trial so the subscription matches the Stripe price and the paywall copy.",
       "anchor": "paywall-product-subscription-options/paywall-product-subscription-options",
       "articleAlias": "paywall-product-subscription-options",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-subscription-options",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -470,10 +517,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 4,
       "contentRef": "references/guides/paywall-product-subscription-options.json"
@@ -484,7 +529,12 @@
       "summary": "Create products here before attaching them to a paywall screen; they must match the Stripe mode the funnel publishes in.",
       "anchor": "paywall-products-list/paywall-products-list",
       "articleAlias": "paywall-products-list",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-products-list",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -493,10 +543,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/paywall-products-list.json"
@@ -507,7 +555,12 @@
       "summary": "Pick the Test/Live tab that matches the Stripe connection and the funnel you will publish, to avoid checkout mode mismatches.",
       "anchor": "paywall-products-mode-tabs/paywall-products-mode-tabs",
       "articleAlias": "paywall-products-mode-tabs",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-products-mode-tabs",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -516,10 +569,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/paywall-products-mode-tabs.json"
@@ -530,7 +581,12 @@
       "summary": "Set the action button label/behavior so the next step is clear and the canvas transition matches it; keep required inputs blocking.",
       "anchor": "screen-editor-action-button/screen-editor-action-button",
       "articleAlias": "screen-editor-action-button",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "screen-editor-action-button",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -539,10 +595,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 7,
       "contentRef": "references/guides/screen-editor-action-button.json"
@@ -553,7 +607,12 @@
       "summary": "Understand that copy, layout, media, variables, actions, and background for one screen are configured here, in shared and unique sections.",
       "anchor": "screen-editor-overview/screen-editor-overview",
       "articleAlias": "screen-editor-overview",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "screen-editor-overview",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -562,10 +621,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 4,
       "contentRef": "references/guides/screen-editor-overview.json"
@@ -10092,7 +10149,12 @@
       "summary": "Connect live mode to the production Stripe account only when real products, prices, and payouts are ready.",
       "anchor": "stripe-connect-live-mode/stripe-connect-live-mode",
       "articleAlias": "stripe-connect-live-mode",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-live-mode",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10101,10 +10163,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 3,
       "contentRef": "references/guides/stripe-connect-live-mode.json"
@@ -10115,7 +10175,12 @@
       "summary": "Authorize the correct Stripe mode so product/price lookup and checkout creation succeed for the published funnel.",
       "anchor": "stripe-connect-oauth-guidance/stripe-connect-oauth-guidance",
       "articleAlias": "stripe-connect-oauth-guidance",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-oauth-guidance",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10124,10 +10189,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 3,
       "contentRef": "references/guides/stripe-connect-oauth-guidance.json"
@@ -10138,7 +10201,12 @@
       "summary": "Connect test mode first to validate the paywall and checkout safely before charging real customers.",
       "anchor": "stripe-connect-test-mode/stripe-connect-test-mode",
       "articleAlias": "stripe-connect-test-mode",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "stripe-connect-test-mode",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10147,10 +10215,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 2,
       "contentRef": "references/guides/stripe-connect-test-mode.json"
@@ -10161,7 +10227,12 @@
       "summary": "Route visitors to the right entry screen by source value, and always keep a valid default entry path.",
       "anchor": "webplacement-entry-rules/webplacement-entry-rules",
       "articleAlias": "webplacement-entry-rules",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-entry-rules",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10170,10 +10241,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 6,
       "contentRef": "references/guides/webplacement-entry-rules.json"
@@ -10184,7 +10253,12 @@
       "summary": "Publish, copy the URL, and smoke-test the full flow (and checkout/analytics) in a clean session before sending traffic.",
       "anchor": "webplacement-publish-url/webplacement-publish-url",
       "articleAlias": "webplacement-publish-url",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-publish-url",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10193,10 +10267,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 5,
       "contentRef": "references/guides/webplacement-publish-url.json"
@@ -10207,7 +10279,12 @@
       "summary": "Carry stable funnel values (email/UTM) into Stripe checkout/webhooks via metadata mapping.",
       "anchor": "webplacement-stripe-metadata/webplacement-stripe-metadata",
       "articleAlias": "webplacement-stripe-metadata",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "relationship": "primary"
+        }
+      ],
       "show": {
         "supported": true,
         "runner": "show-runner"
@@ -10216,10 +10293,8 @@
         "supportedActionIds": []
       },
       "quality": {
-        "allCustomerClaimsBackedByArticles": false,
-        "warnings": [
-          "guide-has-customer-text-without-article-ref"
-        ]
+        "allCustomerClaimsBackedByArticles": true,
+        "warnings": []
       },
       "sectionCount": 5,
       "contentRef": "references/guides/webplacement-stripe-metadata.json"
@@ -10634,11 +10709,68 @@
       "analytics-provider-config": [
         "analytics-provider-config"
       ],
+      "canvas-add-screen": [
+        "canvas-add-screen"
+      ],
+      "canvas-connect-screens": [
+        "canvas-connect-screens"
+      ],
+      "canvas-overview": [
+        "canvas-overview"
+      ],
+      "custom-domain-dns-setup": [
+        "custom-domain-dns-setup"
+      ],
+      "custom-domain-domain-input": [
+        "custom-domain-domain-input"
+      ],
+      "custom-domain-verification": [
+        "custom-domain-verification"
+      ],
       "integrations-analytics-section": [
         "integrations-analytics-section"
       ],
       "integrations-custom-domain-section": [
         "integrations-custom-domain-section"
+      ],
+      "integrations-stripe-connect-section": [
+        "integrations-stripe-connect-section"
+      ],
+      "onboarding-list-create": [
+        "onboarding-list-create"
+      ],
+      "onboarding-wizard-basic-info": [
+        "onboarding-wizard-basic-info"
+      ],
+      "onboarding-wizard-theme-customize": [
+        "onboarding-wizard-theme-customize"
+      ],
+      "onboarding-wizard-theme-select": [
+        "onboarding-wizard-theme-select"
+      ],
+      "paywall-product-basic-fields": [
+        "paywall-product-basic-fields"
+      ],
+      "paywall-product-price-setup": [
+        "paywall-product-price-setup"
+      ],
+      "paywall-product-stripe-mapping": [
+        "paywall-product-stripe-mapping"
+      ],
+      "paywall-product-subscription-options": [
+        "paywall-product-subscription-options"
+      ],
+      "paywall-products-list": [
+        "paywall-products-list"
+      ],
+      "paywall-products-mode-tabs": [
+        "paywall-products-mode-tabs"
+      ],
+      "screen-editor-action-button": [
+        "screen-editor-action-button"
+      ],
+      "screen-editor-overview": [
+        "screen-editor-overview"
       ],
       "help-block-action-bar": [
         "screen-editor-section-action-bar",
@@ -11045,6 +11177,24 @@
         "screenedit-variable-binding-score-effect-target-variable",
         "screenedit-variable-binding-score-effects",
         "screenedit-variable-binding-variable-selector"
+      ],
+      "stripe-connect-live-mode": [
+        "stripe-connect-live-mode"
+      ],
+      "stripe-connect-oauth-guidance": [
+        "stripe-connect-oauth-guidance"
+      ],
+      "stripe-connect-test-mode": [
+        "stripe-connect-test-mode"
+      ],
+      "webplacement-entry-rules": [
+        "webplacement-entry-rules"
+      ],
+      "webplacement-publish-url": [
+        "webplacement-publish-url"
+      ],
+      "webplacement-stripe-metadata": [
+        "webplacement-stripe-metadata"
       ]
     },
     "byActionId": {},

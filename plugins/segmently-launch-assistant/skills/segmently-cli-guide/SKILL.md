@@ -37,8 +37,8 @@ account guidance.
 ## Installed CLI And Production Auth
 
 - Use the globally installed `segmently` binary for customer workflows. Check it
-  with `segmently --version`; Product insights/source and generation details in
-  these guides assume `@segmently/cli` `0.1.4` or newer.
+  with `segmently --version`. Content Plan workflows and canonical verb/flag
+  semantics in the packaged guides require `@segmently/cli` `1.0.0` or newer.
 - Production is the public default. Use `segmently --env prod auth status` to
   confirm the stored session, and `segmently --env prod auth login` when the
   CLI is not authenticated.
@@ -187,9 +187,11 @@ Build the canonical URL deterministically:
   still need live Stripe Connect. Do not summarize it as "Stripe is not
   connected" unless both mode reads are disconnected or the user asked only
   about the disconnected mode.
-- For Content Plan writes, prefer `--dry-run` first and only apply explicit
-  pillar/template manifests. Do not suggest AI/task generation commands unless a
-  task-aware manifest exists.
+- For Content Plan, route to `segmently-cli-content-plan-guide`, start an
+  uncertain full flow with `content-plan doctor`, and prefer `--dry-run` before
+  supported writes. AI launches may be flag-driven or manifest-driven; treat
+  their returned `taskState`/`followUp` or waited exit code as control flow and
+  never claim completion from a pending task.
 - For funnel screens, prefer Simplified V2 content in manifests; the backend adapter owns conversion to full StepNode schema.
 - For screen-level migrations, use `funnels screens list|get|inspect|clone|patch|rewire|delete`.
   Do not use `funnels screens apply` to replace an existing full StepNode unless
@@ -200,11 +202,3 @@ Build the canonical URL deterministically:
   and run `funnels screens delete` only as an explicit follow-up cleanup.
 - For A/B tests, preserve long-lived baseline/control metadata with tags,
   baseline variant IDs, iteration IDs, and publication history filters.
-
-## Verification
-
-After editing this skill, run:
-
-```bash
-node <skill-root>/scripts/run-evals.mjs
-```

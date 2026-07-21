@@ -11,7 +11,7 @@
       "summary": "Subtitle",
       "kind": "section",
       "articleSectionId": "g-subtitle-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#g-subtitle-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#g-subtitle-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "The Subtitle is the supporting line under the title. It is a reusable text element — the same text and styling settings apply wherever a subtitle appears. This guide documents every Subtitle setting.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle",
       "guideKeys": [
         "screenedit-copy-block-subtitle"
       ],
@@ -61,7 +61,7 @@
       "summary": "Change how the subtitle looks — font, size, weight, color, alignment, and an optional background — styled separately from the title so you can tune each one. By default it inherits your theme (usually smaller and lighter than the title), which works for most funnels. Override only when a specific screen needs different emphasis.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles",
       "guideKeys": [
         "screenedit-copy-block-subtitle-styles"
       ],
@@ -82,7 +82,7 @@
       "summary": "Subtitle look and emphasis",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -98,7 +98,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -113,7 +113,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -128,7 +128,7 @@
       "summary": "The typeface of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -142,7 +142,7 @@
       "summary": "Text size of the subtitle in pixels.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -157,7 +157,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -172,7 +172,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -187,7 +187,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -203,7 +203,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -218,7 +218,7 @@
       "summary": "An optional fill drawn behind the subtitle text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -233,7 +233,7 @@
       "summary": "The color of the subtitle text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -248,7 +248,7 @@
       "summary": "The line under your title",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -264,7 +264,7 @@
       "summary": "Adds empty space on each side of the subtitle, controlling the gap above it (to the title) and below it (to what follows). Leave it at the theme default unless the subtitle feels crowded. Increase the top value to separate it from the title, or reduce spacing to tighten the whole headline group.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-layout-insets",
       "guideKeys": [
         "screenedit-copy-block-subtitle-padding"
       ],
@@ -285,7 +285,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -301,7 +301,7 @@
       "summary": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-translations",
       "guideKeys": [
         "screenedit-copy-block-subtitle-text"
       ],
@@ -323,7 +323,7 @@
       "summary": "Write the subtitle text",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -342,7 +342,7 @@
       "summary": "Subtitle",
       "kind": "section",
       "articleSectionId": "g-subtitle-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#g-subtitle-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#g-subtitle-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -356,7 +356,7 @@
       "summary": "The Subtitle is the supporting line under the title. It is a reusable text element — the same text and styling settings apply wherever a subtitle appears. This guide documents every Subtitle setting.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -371,7 +371,7 @@
       "summary": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle",
       "guideKeys": [
         "screenedit-copy-block-subtitle"
       ],
@@ -392,7 +392,7 @@
       "summary": "Change how the subtitle looks — font, size, weight, color, alignment, and an optional background — styled separately from the title so you can tune each one. By default it inherits your theme (usually smaller and lighter than the title), which works for most funnels. Override only when a specific screen needs different emphasis.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles",
       "guideKeys": [
         "screenedit-copy-block-subtitle-styles"
       ],
@@ -413,7 +413,7 @@
       "summary": "Subtitle look and emphasis",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -429,7 +429,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -444,7 +444,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -459,7 +459,7 @@
       "summary": "The typeface of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -473,7 +473,7 @@
       "summary": "Text size of the subtitle in pixels.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -488,7 +488,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -503,7 +503,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -518,7 +518,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -534,7 +534,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -549,7 +549,7 @@
       "summary": "An optional fill drawn behind the subtitle text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -564,7 +564,7 @@
       "summary": "The color of the subtitle text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -579,7 +579,7 @@
       "summary": "The line under your title",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -595,7 +595,7 @@
       "summary": "Adds empty space on each side of the subtitle, controlling the gap above it (to the title) and below it (to what follows). Leave it at the theme default unless the subtitle feels crowded. Increase the top value to separate it from the title, or reduce spacing to tighten the whole headline group.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-layout-insets",
       "guideKeys": [
         "screenedit-copy-block-subtitle-padding"
       ],
@@ -616,7 +616,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -632,7 +632,7 @@
       "summary": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-translations",
       "guideKeys": [
         "screenedit-copy-block-subtitle-text"
       ],
@@ -654,7 +654,7 @@
       "summary": "Write the subtitle text",
       "kind": "section",
       "articleSectionId": "set-copyblock-content-copy-subtitle-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -674,7 +674,7 @@
       "group": "subtitle",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-enable.png",
       "articleSectionId": "set-copyblock-content-copy-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -688,7 +688,7 @@
       "group": "subtitle",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/open-section-subtitle-text.png",
       "articleSectionId": "set-copyblock-content-copy-subtitle-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-translations",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -702,7 +702,7 @@
       "group": "subtitle",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-styles.png",
       "articleSectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-appearance-text-styles",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -717,7 +717,7 @@
       "group": "subtitle",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/subtitle-styles-padding.png",
       "articleSectionId": "set-copyblock-content-copy-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-element-subtitle/index.html#set-copyblock-content-copy-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-element-subtitle#set-copyblock-content-copy-subtitle-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Expand the Content section.",
@@ -1536,6 +1536,6 @@
       "scripts/help-articles/help-screen-wheelpicker-elements.assembly.json",
       "scripts/help-articles/help-screen-wheelpicker-elements.doc.json"
     ],
-    "generatedHash": "bc43a445a7c69059"
+    "generatedHash": "2ea03d3933496761"
   }
 }

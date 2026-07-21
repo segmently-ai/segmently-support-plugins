@@ -2,6 +2,80 @@
 
 Use this file for end-to-end command chains.
 
+## How To Use These Workflows
+
+Treat each section as an operator recipe, not as a loose command catalog:
+
+1. run the listed preflight/read commands;
+2. save exported or generated JSON under stable local filenames;
+3. run local validation and `--dry-run` before supported writes;
+4. execute only the reviewed write;
+5. follow asynchronous tasks to a terminal result;
+6. finish with the listed readback or `content-plan doctor`.
+
+Do not concatenate every command in this file into one automation. Select the
+smallest workflow that reaches the requested outcome, then stop after its
+verification step.
+
+| Goal | Workflow | Entry command | Final verification |
+|---|---|---|---|
+| Diagnose an existing or partial setup | Doctor-First Flow Completion | `content-plan doctor` | rerun `doctor` |
+| Prepare an empty project deterministically | Empty Project Bootstrap From One Manifest | `bootstrap validate` | `bootstrap verify` + `doctor` |
+| Build creator/platform/strategy/post/calendar atomically | Atomic Social Publishing Demo Prep | `authors list|default` | `publications list` |
+| Create or update a Flexible Layout article safely | Article Draft Review And Publish | `articles list|get` | `articles get` plus served URL/config |
+| Create/review an AI strategy draft | Strategy Draft Review Loop | `strategies preflight` | `strategies get|audit` |
+| Move topic -> aspects -> research -> post | Topic To Research To Post | `topics get` | `posts list|resolve` |
+| Reanalyze a pillar from selected posts | Pillar Source Reanalysis | `pillars list` | `tasks get` + `pillars list` |
+| Repair generated visuals | Full Post QA Loop | `posts resolve` | slot get + post resolve |
+| Transfer one design profile | Design Profile Transfer Between Projects | `designs export` | `designs list` |
+| Transfer/inspect a multi-format package | Full Design-System Package Workflow | `design-systems list|export` | `design-systems list|inspect` |
+| Research/listen/publish manually on X | Official X Research, Engagement, And Manual Send | `capabilities` + `x status` | reconcile/analytics readback |
+
+## Doctor-First Flow Completion
+
+Goal: take an existing or partially configured Content Plan project to the next
+valid step without guessing which resource is missing.
+
+```bash
+segmently --version
+segmently capabilities
+
+segmently content-plan doctor \
+  --project <projectId> \
+  --author <authorId>
+```
+
+Interpret the result as an ordered state machine:
+
+```text
+author -> platforms -> pillars -> backlog -> strategy -> publications -> posts -> assets
+```
+
+Run only the first required missing step's `nextCommand`, add the explicit
+project/author/file arguments needed for the real operation, dry-run when the
+command supports it, then rerun `doctor`. `assets` is advisory; all earlier
+steps are required. `doctor` exits `1` while required steps are missing, so do
+not treat a structured not-ready report as a transport or CLI crash.
+
+Example loop:
+
+```bash
+segmently content-plan doctor --project <projectId> --author <authorId>
+
+segmently content-plan pillars apply \
+  --project <projectId> --author <authorId> \
+  --file pillars.json --dry-run
+
+segmently content-plan pillars apply \
+  --project <projectId> --author <authorId> \
+  --file pillars.json
+
+segmently content-plan doctor --project <projectId> --author <authorId>
+```
+
+Keep following the newly returned `nextCommand`; never pre-apply later steps
+just because their manifests already exist.
+
 ## Empty Project Bootstrap From One Manifest
 
 Goal: prepare an empty project with a Content Plan author, publishing platform,
@@ -49,10 +123,34 @@ segmently content-plan bootstrap verify \
   --out bootstrap.verify.json
 ```
 
+`bootstrap apply` validates the manifest and referenced platform catalog before
+the first mutation. It writes `<manifest>.bootstrap-state.json` and resumes from
+that checkpoint after interruption. Preserve the checkpoint and re-run the same
+command to skip completed operation keys:
+
+```bash
+segmently content-plan bootstrap apply \
+  --project <projectId> \
+  --file content-plan-bootstrap.json \
+  --out bootstrap.apply.json
+```
+
+Use `--state-file ./state/bootstrap.json` when the checkpoint must live in a
+controlled work directory. Use `--restart` only when all operations should be
+intentionally replayed. `--skip-validation` is an emergency escape hatch for
+the manifest schema only; the `system_platforms` preflight still runs and may
+block the apply before any write.
+
 Use the `uiUrl` values emitted by `bootstrap plan`, `bootstrap apply`, or
 `bootstrap verify` to open the prepared author, strategy Calendar, and specific
 post in the web app. A canonical post that is not linked to a publication slot
 will not be convenient for reviewers to find from Calendar.
+
+Finish the flow with a shared readiness readback:
+
+```bash
+segmently content-plan doctor --project <projectId> --author <authorId>
+```
 
 ## Atomic Social Publishing Demo Prep
 
@@ -86,7 +184,7 @@ segmently content-plan authors apply \
   --project <projectId> \
   --file author.json
 
-segmently content-plan authors set-default <authorId> \
+segmently content-plan authors set-current <authorId> \
   --project <projectId>
 
 segmently content-plan platforms apply \
@@ -134,6 +232,170 @@ Manual UI finish:
 5. Click the platform publish action.
 6. Click Check status and confirm post ID/permalink.
 
+## Article Draft Review And Publish
+
+Goal: export or create a Flexible Layout article draft, review every mutation,
+and publish only the approved draft.
+
+Start with discovery and export instead of assuming an article id or alias is
+new:
+
+```bash
+segmently content-plan articles list \
+  --project <projectId> --status draft --limit 100
+
+segmently content-plan articles list \
+  --project <projectId> --status published --limit 100
+
+segmently content-plan articles get <articleId> \
+  --project <projectId> --output article.before.json
+```
+
+Edit a copy as `article.after.json`, then preview and apply it:
+
+```bash
+segmently content-plan articles apply \
+  --project <projectId> --article-id <articleId> \
+  --file article.after.json --dry-run
+
+segmently content-plan articles apply \
+  --project <projectId> --article-id <articleId> \
+  --file article.after.json
+
+segmently content-plan articles get <articleId> \
+  --project <projectId> --output article.readback.json
+```
+
+Preview publication separately, then publish and verify the returned public and
+config URLs:
+
+```bash
+segmently content-plan articles publish <articleId> \
+  --project <projectId> --dry-run
+
+segmently content-plan articles publish <articleId> \
+  --project <projectId>
+```
+
+The same dry-run-first rule applies to `articles create`, `clone`, and
+`add-image`. For reusable `article-blocks`, delegate to the packaged
+`segmently-cli-articles` skill; this Content Plan workflow owns the surrounding
+draft/readback lifecycle.
+
+## Official X Research, Engagement, And Manual Send
+
+Goal: explicitly research X, prepare one human-reviewed reply or publication,
+and send only after dry-run and exact confirmation. Saved sources and Calendar
+dates never trigger provider traffic.
+
+Start with safe status and usage reads:
+
+```bash
+segmently capabilities
+segmently content-plan x status --project <projectId>
+segmently content-plan x usage --project <projectId> --period month
+```
+
+Continue only when capabilities advertises both the X research/listening family
+and the engagement/publication delivery family for the selected environment.
+
+If disconnected, an interactive user completes OAuth:
+
+```bash
+segmently content-plan x connect --project <projectId> --open --wait
+```
+
+Preview a bounded paid read before executing it:
+
+```bash
+segmently content-plan x posts search \
+  --project <projectId> \
+  --query "onboarding friction -is:retweet" \
+  --audience <audienceId> \
+  --limit 25 \
+  --max-cost-usd 0.50 \
+  --dry-run
+
+# Repeat without --dry-run only after reviewing query and estimate.
+```
+
+For durable listening, save a source, preview the explicit refresh, then run it:
+
+```bash
+segmently content-plan x listening queries save \
+  --project <projectId> \
+  --name "Onboarding friction" \
+  --kind search \
+  --query "onboarding friction -is:retweet" \
+  --audience <audienceId>
+
+segmently content-plan x listening queries refresh <queryId> \
+  --project <projectId> --max-pages 1 --limit 50 \
+  --max-cost-usd 0.25 --dry-run
+
+segmently content-plan x listening queries refresh <queryId> \
+  --project <projectId> --max-pages 1 --limit 50 \
+  --max-cost-usd 0.25
+```
+
+Review and approve a reply. Approval stores a hash but sends nothing:
+
+```bash
+segmently content-plan engagement list \
+  --project <projectId> --platform twitter --status pending
+
+segmently content-plan engagement approve <itemId> \
+  --project <projectId> --text "Reviewed reply text"
+
+segmently content-plan engagement reply-x <itemId> \
+  --project <projectId> --max-cost-usd 0.25 --dry-run
+
+segmently content-plan engagement reply-x <itemId> \
+  --project <projectId> \
+  --confirm '<projectId>:<itemId>:<approvedContentHash>'
+```
+
+For a Calendar publication, the workflow is the same separation of approval,
+preview, and send. scheduledAt remains editorial metadata:
+
+```bash
+segmently content-plan publications approve <publicationId> \
+  --project <projectId> --strategy <strategyId>
+
+segmently content-plan publications publish-x <publicationId> \
+  --project <projectId> --strategy <strategyId> \
+  --max-cost-usd 0.25 --dry-run
+
+segmently content-plan publications publish-x <publicationId> \
+  --project <projectId> --strategy <strategyId> \
+  --confirm '<projectId>:<publicationId>:<approvedContentHash>'
+```
+
+If output reports `needs_reconciliation`, do not repeat the create command:
+
+```bash
+segmently content-plan publications reconcile-x <publicationId> \
+  --project <projectId> --strategy <strategyId>
+
+# Or for a queue reply:
+segmently content-plan engagement reconcile-x <itemId> --project <projectId>
+```
+
+Refresh analytics manually and compare stored snapshots without provider
+traffic:
+
+```bash
+segmently content-plan x analytics sync \
+  --project <projectId> --strategy <strategyId> \
+  --publication <publicationId> --max-cost-usd 0.25 --dry-run
+
+segmently content-plan x analytics compare \
+  --project <projectId> --group-by pillar
+```
+
+Required safety outcome: no background polling, timed send, automatic reply,
+like, follow, or direct message is introduced by this workflow.
+
 ## Creator Profile Update
 
 Goal: update creator pillars and per-platform post templates.
@@ -159,6 +421,71 @@ segmently content-plan profile apply \
 
 Use focused `pillars apply` or `post-templates apply` when only one part
 changes.
+
+## Pillar Source Reanalysis
+
+Goal: ask the existing Content Plan AI flow to reconsider one pillar from newly
+selected author posts without silently overwriting the current pillar first.
+
+```bash
+segmently content-plan pillars list \
+  --project <projectId> --author <authorId>
+
+segmently content-plan pillars reanalyze-sources <pillarId> \
+  --project <projectId> --author <authorId> \
+  --file pillar-reanalysis.json --wait
+```
+
+`pillar-reanalysis.json` contains the current pillar plus the newly selected
+source posts. Treat the result as an AI task outcome: if `--wait` fails,
+cancels, or times out, the CLI exits non-zero. Without `--wait`, follow the
+returned `followUp` command. Review the returned proposal before applying any
+pillar manifest, then verify with `pillars list`.
+
+## Strategy Draft Review Loop
+
+Goal: generate an editable strategy draft, review or patch it, and approve it
+without bypassing dry-run boundaries.
+
+```bash
+segmently content-plan strategies preflight \
+  --project <projectId> --author <authorId> --user-id <uid> \
+  --file strategy-planning.json
+
+segmently content-plan strategies draft create \
+  --project <projectId> --author <authorId> --user-id <uid> \
+  --file strategy-planning.json --dry-run
+
+segmently content-plan strategies draft create \
+  --project <projectId> --author <authorId> --user-id <uid> \
+  --file strategy-planning.json --wait
+```
+
+Patch or regenerate only after reading the created strategy id:
+
+```bash
+segmently content-plan strategies draft patch <strategyId> \
+  --project <projectId> --author <authorId> \
+  --file strategy-draft-patch.json --dry-run
+
+segmently content-plan strategies draft approve <strategyId> \
+  --project <projectId> --author <authorId> --user-id <uid> \
+  --dry-run
+
+segmently content-plan strategies draft approve <strategyId> \
+  --project <projectId> --author <authorId> --user-id <uid> \
+  --wait
+```
+
+`draft regenerate` follows the same preview-then-`--wait` pattern. Finish with:
+
+```bash
+segmently content-plan strategies get <strategyId> \
+  --project <projectId> --include-posts --output strategy.json
+
+segmently content-plan strategies audit <strategyId> \
+  --project <projectId> --required-platform linkedin,x
+```
 
 ## Topic To Research To Post
 
@@ -233,7 +560,7 @@ segmently content-plan topics drafts list \
   --author <authorId> \
   --generation <generationId>
 
-segmently content-plan topics apply <generationId> \
+segmently content-plan topics accept <generationId> \
   --project <projectId> \
   --author <authorId> \
   --accepted <topicId>
@@ -279,7 +606,7 @@ segmently content-plan research execute <runId> \
   --provider perplexity \
   --depth deep
 
-segmently content-plan research analyse <runId> \
+segmently content-plan research analyze <runId> \
   --project <projectId> \
   --author <authorId> \
   --model gemini-2.5-pro
@@ -334,15 +661,17 @@ segmently content-plan posts generate \
   --wait
 
 segmently tasks get <taskId> \
-  --project <projectId> \
-  --output task.json
+  --project <projectId>
 ```
+
+With `--wait`, failed, cancelled, and timed-out tasks produce a non-zero exit;
+do not continue to readback as if they completed. Without `--wait`, use the
+returned `taskState: "pending"` and copyable `followUp` command to reach a
+terminal result first.
 
 Verify:
 
 ```bash
-cat task.json
-
 segmently content-plan research list \
   --project <projectId> \
   --author <authorId> \
@@ -366,7 +695,7 @@ Use the draft commands when the output is still in the review collection:
 ```bash
 segmently content-plan posts drafts list \
   --project <projectId> \
-  --task <taskId> \
+  --generation <generationId> \
   --include-slots
 
 segmently content-plan posts resolve <draftPostId> \
@@ -603,7 +932,7 @@ segmently content-plan posts resolve <postId> \
 For `--apply-mode draft_review`, apply accepted drafts after review:
 
 ```bash
-segmently content-plan posts apply <generationId> \
+segmently content-plan posts accept <generationId> \
   --project <projectId> \
   --author <authorId> \
   --accepted <draftPostId> \
@@ -648,6 +977,81 @@ segmently content-plan designs apply linkedin \
 Use `--references upload` when the references should be copied into target
 project storage. Use `--references keep` only when the URLs already belong to
 the target project or should intentionally remain external.
+
+## Full Design-System Package Workflow
+
+Goal: inspect, transfer, and optionally activate one multi-format design-system
+package while keeping reference policy and runtime activation explicit.
+
+Discover the current package/profile map and export the selected package:
+
+```bash
+segmently content-plan design-systems list <platformId> \
+  --project <sourceProjectId> --author <sourceAuthorId> \
+  --include-profiles
+
+segmently content-plan design-systems export <platformId> \
+  --project <sourceProjectId> --author <sourceAuthorId> \
+  --package-id <sourcePackageId> \
+  --output package.json
+```
+
+Inspect how the package resolves for concrete platform formats without running
+generation:
+
+```bash
+segmently content-plan design-systems inspect <platformId> \
+  --project <sourceProjectId> --author <sourceAuthorId> \
+  --package-id <sourcePackageId> \
+  --format-ids <formatIdA>,<formatIdB> \
+  --output package.inspect.json
+```
+
+For a target project, keep the exported package non-current by default. Preview
+reference transfer and target identity, then apply:
+
+```bash
+segmently content-plan design-systems apply <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --package-id <targetPackageId> \
+  --file package.json \
+  --references upload \
+  --dry-run
+
+segmently content-plan design-systems apply <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --package-id <targetPackageId> \
+  --file package.json \
+  --references upload
+```
+
+Use `--references keep` only when URLs intentionally remain valid in the target
+context. A non-prod source manifest imported into prod may require the exact
+`--confirm-target` value returned by dry-run.
+
+Activate later as a separate reviewed mutation:
+
+```bash
+segmently content-plan design-systems set-current <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --package-id <targetPackageId> --dry-run
+
+segmently content-plan design-systems set-current <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --package-id <targetPackageId>
+```
+
+Verify the applied package and each resolved format:
+
+```bash
+segmently content-plan design-systems list <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --include-profiles
+
+segmently content-plan design-systems inspect <platformId> \
+  --project <targetProjectId> --author <targetAuthorId> \
+  --package-id <targetPackageId>
+```
 
 ## Design References As New Variant
 
@@ -720,19 +1124,27 @@ preview updates only when the variant is current.
 
 ## Make A Design Variant Current
 
-Current CLI can switch runtime generation by reapplying the profile with
-`--set-current`:
+Switch runtime generation with the dedicated activation command; do not
+re-import an unchanged profile only to make it current:
 
 ```bash
-segmently content-plan designs apply linkedin \
+segmently content-plan designs set-current linkedin \
   --project <projectId> \
   --author <authorId> \
   --profile-key carousel_portrait \
   --profile-id <profileId> \
-  --file design.json \
-  --references keep \
-  --set-current \
   --dry-run
+
+segmently content-plan designs set-current linkedin \
+  --project <projectId> \
+  --author <authorId> \
+  --profile-key carousel_portrait \
+  --profile-id <profileId>
+
+segmently content-plan designs list linkedin \
+  --project <projectId> \
+  --author <authorId> \
+  --include-profiles
 ```
 
 Prefer a dry-run first because this changes which profile generation uses.

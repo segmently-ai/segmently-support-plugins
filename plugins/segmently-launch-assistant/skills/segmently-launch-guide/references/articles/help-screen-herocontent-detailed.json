@@ -11,7 +11,7 @@
       "summary": "Action Bar<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-actionbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button.",
       "kind": "section",
       "articleSectionId": "block-actionbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "block-actionbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -83,7 +83,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -113,7 +113,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -127,7 +127,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -143,7 +143,7 @@
       "summary": "Content",
       "kind": "section",
       "articleSectionId": "block-copyblock-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-copyblock-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-copyblock-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -157,7 +157,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -171,7 +171,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -185,7 +185,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -201,7 +201,7 @@
       "summary": "This screen also shows a hero image above the text, with its own sizing, rounding, spacing — and an Image Layout that controls how the image and text are arranged.",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-hero",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -216,7 +216,7 @@
       "summary": "What this screen shows",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-template-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-template-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-template-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -230,7 +230,7 @@
       "summary": "Every screen of this type has an optional title (headline) and subtitle. Turn each on or off and style it independently.",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-text",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-text",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-text",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -244,7 +244,7 @@
       "summary": "Hero image in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -260,7 +260,7 @@
       "summary": "Inside the Content section, this is the Hero image.",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -274,7 +274,7 @@
       "summary": "Hero image",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -288,7 +288,7 @@
       "summary": "Image & text layout",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -303,7 +303,7 @@
       "summary": "Subtitle in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -319,7 +319,7 @@
       "summary": "Inside the Content section, this is the Subtitle.",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -333,7 +333,7 @@
       "summary": "Subtitle",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -347,7 +347,7 @@
       "summary": "Title (headline) in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -363,7 +363,7 @@
       "summary": "Inside the Content section, this is the Title (headline).",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -377,7 +377,7 @@
       "summary": "Title (headline)",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -391,7 +391,7 @@
       "summary": "Content in the editor",
       "kind": "section",
       "articleSectionId": "in-copyblock-section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -407,7 +407,7 @@
       "summary": "Open the Content section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "in-copyblock-section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -421,7 +421,7 @@
       "summary": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -435,7 +435,7 @@
       "summary": "Change how the subtitle looks — font, size, weight, color, alignment, and an optional background — styled separately from the title so you can tune each one. By default it inherits your theme (usually smaller and lighter than the title), which works for most funnels. Override only when a specific screen needs different emphasis.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -449,7 +449,7 @@
       "summary": "Subtitle look and emphasis",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -465,7 +465,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -480,7 +480,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -495,7 +495,7 @@
       "summary": "The typeface of the subtitle.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -509,7 +509,7 @@
       "summary": "Text size of the subtitle in pixels.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -524,7 +524,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -539,7 +539,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -554,7 +554,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -570,7 +570,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -585,7 +585,7 @@
       "summary": "An optional fill drawn behind the subtitle text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -600,7 +600,7 @@
       "summary": "The color of the subtitle text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -615,7 +615,7 @@
       "summary": "The line under your title",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -631,7 +631,7 @@
       "summary": "Adds empty space on each side of the subtitle, controlling the gap above it (to the title) and below it (to what follows). Leave it at the theme default unless the subtitle feels crowded. Increase the top value to separate it from the title, or reduce spacing to tighten the whole headline group.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -645,7 +645,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -661,7 +661,7 @@
       "summary": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -676,7 +676,7 @@
       "summary": "Write the subtitle text",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -693,7 +693,7 @@
       "summary": "The title is the biggest, first thing a visitor reads, so it carries most of the weight on whether they keep going. Turn it on, then write one short benefit-led line, like an ad headline rather than a sentence. Type @ to drop in an earlier answer (for example @user_goal) so it feels personal, and style it under the gear icon below.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -707,7 +707,7 @@
       "summary": "Override how the headline looks — font, size, weight, color, alignment, and an optional highlight behind the text. By default it inherits your project theme, which keeps every screen consistent, so most funnels never need to touch this. Override only when one screen needs extra punch, like a bigger color headline on your hero.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -722,7 +722,7 @@
       "summary": "Title look and emphasis",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -738,7 +738,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -753,7 +753,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -768,7 +768,7 @@
       "summary": "The typeface of the title.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -782,7 +782,7 @@
       "summary": "Text size of the title in pixels.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -797,7 +797,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -812,7 +812,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -827,7 +827,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -843,7 +843,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -858,7 +858,7 @@
       "summary": "An optional fill drawn behind the title text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -873,7 +873,7 @@
       "summary": "The color of the title text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -888,7 +888,7 @@
       "summary": "Your main headline",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -904,7 +904,7 @@
       "summary": "Adds empty space on each side of the title (top, right, bottom, left) so it isn't cramped against the screen edges or the text below. Leave it at the theme default unless the title feels too tight or too far from the next element. Increase a side to give it room, or decrease to pull elements closer together.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -919,7 +919,7 @@
       "summary": "Space around the title",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -935,7 +935,7 @@
       "summary": "This is where you type the actual headline; keep it short and benefit-driven. Type @ to pull in a visitor's earlier answer (such as @user_goal) for personalization, add a link inside the text with @link, or insert a countdown with @countdown to create urgency on offer screens. If your funnel runs in more than one language, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -950,7 +950,7 @@
       "summary": "Write the headline text",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -967,7 +967,7 @@
       "summary": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -982,7 +982,7 @@
       "summary": "Rounds all four corners of the hero image; 0 is sharp and higher values (up to 50) make them softer and more rounded. The default is 0. A small radius around 8 to 16 gives a modern, friendly look; match it to the rounding used elsewhere in your funnel, like buttons and cards, so the page feels consistent.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -996,7 +996,7 @@
       "summary": "How rounded the image is",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1012,7 +1012,7 @@
       "summary": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1026,7 +1026,7 @@
       "summary": "Fixed image height",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1042,7 +1042,7 @@
       "summary": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1056,7 +1056,7 @@
       "summary": "Size the image by screen",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1072,7 +1072,7 @@
       "summary": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1086,7 +1086,7 @@
       "summary": "Fixed image width",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1102,7 +1102,7 @@
       "summary": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-scalemode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1116,7 +1116,7 @@
       "summary": "How the image fills its box",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1132,7 +1132,7 @@
       "summary": "The featured image up top",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1148,7 +1148,7 @@
       "summary": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1162,7 +1162,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1178,7 +1178,7 @@
       "summary": "Pick the actual hero image: upload a file from your computer or paste a direct image URL, then check the preview thumbnail. Use a high-resolution JPG or PNG so it stays crisp on large screens — uploads are optimized automatically for fast loading. To change it later, just upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1192,7 +1192,7 @@
       "summary": "The hero image itself",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1208,7 +1208,7 @@
       "summary": "On headline screens, this sets where the hero image sits relative to your title and subtitle — above the text, below it, or beside it. Lead with your strongest element: image-on-top when the visual is the hook, text-on-top when the headline does the selling. The preview updates instantly, so try a couple and keep whichever reads clearest.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-subtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-subtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-subtype",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1223,7 +1223,7 @@
       "summary": "Where the image sits",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-subtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-subtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-subtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1239,7 +1239,7 @@
       "summary": "The Hero Content screen is built from the sections below. The sections specific to this screen type are documented in full here; the shared sections link to their own guides.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1253,7 +1253,7 @@
       "summary": "Related article: Action Bar",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1269,7 +1269,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1285,7 +1285,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1301,7 +1301,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1317,7 +1317,7 @@
       "summary": "Related article: Content",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-content-hero",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -1335,7 +1335,7 @@
       "summary": "Action Bar<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-actionbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1349,7 +1349,7 @@
       "summary": "The bottom button bar — your primary call-to-action and an optional secondary button.",
       "kind": "section",
       "articleSectionId": "block-actionbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1363,7 +1363,7 @@
       "summary": "Action Bar in the editor",
       "kind": "section",
       "articleSectionId": "block-actionbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-actionbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-actionbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1379,7 +1379,7 @@
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-backdrop-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1393,7 +1393,7 @@
       "summary": "What fills the whole screen behind your content: a solid color, a photo, or a looping video.",
       "kind": "section",
       "articleSectionId": "block-backdrop-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1407,7 +1407,7 @@
       "summary": "Background in the editor",
       "kind": "section",
       "articleSectionId": "block-backdrop-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-backdrop-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-backdrop-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1423,7 +1423,7 @@
       "summary": "Basic Config<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-basicconfig-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1437,7 +1437,7 @@
       "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1451,7 +1451,7 @@
       "summary": "Basic Config in the editor",
       "kind": "section",
       "articleSectionId": "block-basicconfig-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-basicconfig-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1467,7 +1467,7 @@
       "summary": "Content",
       "kind": "section",
       "articleSectionId": "block-copyblock-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-copyblock-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-copyblock-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1481,7 +1481,7 @@
       "summary": "Header<sep>  —  </sep><detail>@details</detail>",
       "kind": "section",
       "articleSectionId": "block-headerbar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1495,7 +1495,7 @@
       "summary": "The top bar of the screen — the Back and Skip buttons and the progress indicator that shows how far along the visitor is.",
       "kind": "section",
       "articleSectionId": "block-headerbar-summary",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-summary",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1509,7 +1509,7 @@
       "summary": "Header in the editor",
       "kind": "section",
       "articleSectionId": "block-headerbar-thumb",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#block-headerbar-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-headerbar-thumb",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1525,7 +1525,7 @@
       "summary": "This screen also shows a hero image above the text, with its own sizing, rounding, spacing — and an Image Layout that controls how the image and text are arranged.",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-hero",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1540,7 +1540,7 @@
       "summary": "What this screen shows",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-template-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-template-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-template-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1554,7 +1554,7 @@
       "summary": "Every screen of this type has an optional title (headline) and subtitle. Turn each on or off and style it independently.",
       "kind": "section",
       "articleSectionId": "in-copyblock-content-text",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-content-text",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-content-text",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1568,7 +1568,7 @@
       "summary": "Hero image in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1584,7 +1584,7 @@
       "summary": "Inside the Content section, this is the Hero image.",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1598,7 +1598,7 @@
       "summary": "Hero image",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-hero-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-hero-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-hero-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1612,7 +1612,7 @@
       "summary": "Image & text layout",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1627,7 +1627,7 @@
       "summary": "Subtitle in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1643,7 +1643,7 @@
       "summary": "Inside the Content section, this is the Subtitle.",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1657,7 +1657,7 @@
       "summary": "Subtitle",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-subtitle-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-subtitle-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-subtitle-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1671,7 +1671,7 @@
       "summary": "Title (headline) in the section",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1687,7 +1687,7 @@
       "summary": "Inside the Content section, this is the Title (headline).",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1701,7 +1701,7 @@
       "summary": "Title (headline)",
       "kind": "section",
       "articleSectionId": "in-copyblock-g-title-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-g-title-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-g-title-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1715,7 +1715,7 @@
       "summary": "Content in the editor",
       "kind": "section",
       "articleSectionId": "in-copyblock-section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1731,7 +1731,7 @@
       "summary": "Open the Content section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "in-copyblock-section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1745,7 +1745,7 @@
       "summary": "The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1759,7 +1759,7 @@
       "summary": "Change how the subtitle looks — font, size, weight, color, alignment, and an optional background — styled separately from the title so you can tune each one. By default it inherits your theme (usually smaller and lighter than the title), which works for most funnels. Override only when a specific screen needs different emphasis.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1773,7 +1773,7 @@
       "summary": "Subtitle look and emphasis",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1789,7 +1789,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1804,7 +1804,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1819,7 +1819,7 @@
       "summary": "The typeface of the subtitle.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1833,7 +1833,7 @@
       "summary": "Text size of the subtitle in pixels.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1848,7 +1848,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1863,7 +1863,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1878,7 +1878,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1894,7 +1894,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1909,7 +1909,7 @@
       "summary": "An optional fill drawn behind the subtitle text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1924,7 +1924,7 @@
       "summary": "The color of the subtitle text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1939,7 +1939,7 @@
       "summary": "The line under your title",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1955,7 +1955,7 @@
       "summary": "Adds empty space on each side of the subtitle, controlling the gap above it (to the title) and below it (to what follows). Leave it at the theme default unless the subtitle feels crowded. Increase the top value to separate it from the title, or reduce spacing to tighten the whole headline group.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1969,7 +1969,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1985,7 +1985,7 @@
       "summary": "Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2000,7 +2000,7 @@
       "summary": "Write the subtitle text",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2017,7 +2017,7 @@
       "summary": "The title is the biggest, first thing a visitor reads, so it carries most of the weight on whether they keep going. Turn it on, then write one short benefit-led line, like an ad headline rather than a sentence. Type @ to drop in an earlier answer (for example @user_goal) so it feels personal, and style it under the gear icon below.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2031,7 +2031,7 @@
       "summary": "Override how the headline looks — font, size, weight, color, alignment, and an optional highlight behind the text. By default it inherits your project theme, which keeps every screen consistent, so most funnels never need to touch this. Override only when one screen needs extra punch, like a bigger color headline on your hero.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2046,7 +2046,7 @@
       "summary": "Title look and emphasis",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2062,7 +2062,7 @@
       "summary": "How see-through the text background fill is, from 0% (invisible) to 100% (solid). Only matters when a background color is set.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2077,7 +2077,7 @@
       "summary": "Corner rounding (px) of the text background fill; higher is softer.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2092,7 +2092,7 @@
       "summary": "The typeface of the title.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-family",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2106,7 +2106,7 @@
       "summary": "Text size of the title in pixels.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2121,7 +2121,7 @@
       "summary": "How bold the text is, from Thin through Bold to Black.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2136,7 +2136,7 @@
       "summary": "Vertical spacing between lines of text — raise it to give multi-line text more breathing room.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2151,7 +2151,7 @@
       "summary": "Color of a line-through decoration when the text is struck out (for example, an old price).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-strikethrough-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2167,7 +2167,7 @@
       "summary": "Horizontal alignment of the text: start (left), center, or end (right).",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2182,7 +2182,7 @@
       "summary": "An optional fill drawn behind the title text (a highlight pill). Off unless you set it; leave empty for plain text on the screen background.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2197,7 +2197,7 @@
       "summary": "The color of the title text. Keep enough contrast with the background that it stays readable.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-appearance-text-styles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2212,7 +2212,7 @@
       "summary": "Your main headline",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2228,7 +2228,7 @@
       "summary": "Adds empty space on each side of the title (top, right, bottom, left) so it isn't cramped against the screen edges or the text below. Leave it at the theme default unless the title feels too tight or too far from the next element. Increase a side to give it room, or decrease to pull elements closer together.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2243,7 +2243,7 @@
       "summary": "Space around the title",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2259,7 +2259,7 @@
       "summary": "This is where you type the actual headline; keep it short and benefit-driven. Type @ to pull in a visitor's earlier answer (such as @user_goal) for personalization, add a link inside the text with @link, or insert a countdown with @countdown to create urgency on offer screens. If your funnel runs in more than one language, text is saved per language, so switch language before editing each translation.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2274,7 +2274,7 @@
       "summary": "Write the headline text",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-copy-title-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-copy-title-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2291,7 +2291,7 @@
       "summary": "The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2306,7 +2306,7 @@
       "summary": "Rounds all four corners of the hero image; 0 is sharp and higher values (up to 50) make them softer and more rounded. The default is 0. A small radius around 8 to 16 gives a modern, friendly look; match it to the rounding used elsewhere in your funnel, like buttons and cards, so the page feels consistent.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2320,7 +2320,7 @@
       "summary": "How rounded the image is",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2336,7 +2336,7 @@
       "summary": "Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2350,7 +2350,7 @@
       "summary": "Fixed image height",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2366,7 +2366,7 @@
       "summary": "Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2380,7 +2380,7 @@
       "summary": "Size the image by screen",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2396,7 +2396,7 @@
       "summary": "Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2410,7 +2410,7 @@
       "summary": "Fixed image width",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2426,7 +2426,7 @@
       "summary": "Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-scalemode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2440,7 +2440,7 @@
       "summary": "How the image fills its box",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2456,7 +2456,7 @@
       "summary": "The featured image up top",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2472,7 +2472,7 @@
       "summary": "Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-layout-insets",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2486,7 +2486,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2502,7 +2502,7 @@
       "summary": "Pick the actual hero image: upload a file from your computer or paste a direct image URL, then check the preview thumbnail. Use a high-resolution JPG or PNG so it stays crisp on large screens — uploads are optimized automatically for fast loading. To change it later, just upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-translations",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-translations",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-translations",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2516,7 +2516,7 @@
       "summary": "The hero image itself",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-content-hero-translations-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-content-hero-translations-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-hero-translations-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2532,7 +2532,7 @@
       "summary": "On headline screens, this sets where the hero image sits relative to your title and subtitle — above the text, below it, or beside it. Lead with your strongest element: image-on-top when the visual is the hook, text-on-top when the headline does the selling. The preview updates instantly, so try a couple and keep whichever reads clearest.",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-subtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-subtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-subtype",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2547,7 +2547,7 @@
       "summary": "Where the image sits",
       "kind": "section",
       "articleSectionId": "in-copyblock-set-copyblock-subtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#in-copyblock-set-copyblock-subtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#in-copyblock-set-copyblock-subtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2563,7 +2563,7 @@
       "summary": "The Hero Content screen is built from the sections below. The sections specific to this screen type are documented in full here; the shared sections link to their own guides.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-herocontent-detailed/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2577,7 +2577,7 @@
       "summary": "Related article: Action Bar",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-action-bar",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -2593,7 +2593,7 @@
       "summary": "Related article: Background",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-background",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -2609,7 +2609,7 @@
       "summary": "Related article: Basic Config",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -2625,7 +2625,7 @@
       "summary": "Related article: Header",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-header",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -2641,7 +2641,7 @@
       "summary": "Related article: Content",
       "kind": "assembly-link",
       "articleSectionId": null,
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-content-hero/index.html",
+      "articleSectionUrl": "https://help.segmently.ai/help-content-hero",
       "guideKeys": [],
       "tags": [
         "assembly-link",
@@ -2724,7 +2724,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-header/index.html"
+              "details": "https://help.segmently.ai/help-block-header"
             },
             "labels": {
               "sep": {
@@ -5343,7 +5343,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-action-bar/index.html"
+              "details": "https://help.segmently.ai/help-block-action-bar"
             },
             "labels": {
               "sep": {
@@ -5457,7 +5457,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-background/index.html"
+              "details": "https://help.segmently.ai/help-block-background"
             },
             "labels": {
               "sep": {
@@ -5571,7 +5571,7 @@
           },
           "templateParams": {
             "links": {
-              "details": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/index.html"
+              "details": "https://help.segmently.ai/help-block-basic-config"
             },
             "labels": {
               "sep": {
@@ -5666,6 +5666,6 @@
       "scripts/help-articles/help-screen-herocontent-detailed.assembly.json",
       "scripts/help-articles/help-screen-herocontent-detailed.doc.json"
     ],
-    "generatedHash": "a7e22869b5a15e85"
+    "generatedHash": "8384ac26151bc292"
   }
 }

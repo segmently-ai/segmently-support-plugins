@@ -246,12 +246,6 @@ Load only when applying or publishing a Figma handoff:
 
 ## Verification
 
-Minimum local skill checks:
-
-```bash
-node <skill-root>/scripts/run-evals.mjs
-```
-
 Operational funnel checks:
 
 ```bash

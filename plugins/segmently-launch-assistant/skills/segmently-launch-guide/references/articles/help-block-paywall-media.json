@@ -11,7 +11,7 @@
       "summary": "Size, placement & spacing",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Fade overlay",
       "kind": "section",
       "articleSectionId": "g-gradient-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-gradient-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-gradient-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Image or video source",
       "kind": "section",
       "articleSectionId": "g-source-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-source-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-source-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -53,7 +53,7 @@
       "summary": "The paywall's featured image or video — its source, how it fills its area, height, corner rounding, spacing, where it sits relative to the header and body, and an optional dark fade overlay for text readability. This guide documents every setting of the Paywall Media block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -356,7 +356,7 @@
       "summary": "Paywall Media in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -373,7 +373,7 @@
       "summary": "Open the Paywall Media section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -388,7 +388,7 @@
       "summary": "Sets how rounded the corners of the image or video are. Zero gives sharp edges, which often look best for a full-width hero, while higher values give a soft, card-like look that matches rounded buttons and plan cards. Match it to the rest of your theme's rounding; the default is usually fine.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-corner-radius",
       "guideKeys": [
         "screenedit-paywall-media-corner-radius"
       ],
@@ -411,7 +411,7 @@
       "summary": "Round the media corners",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-corner-radius-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-corner-radius-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-corner-radius-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -427,7 +427,7 @@
       "summary": "Sets the color of the dark fade laid over your media (default black). Black works best behind white text; choose a dark brand color if you want the fade to feel on-theme. The overlay always fades to clear at the top, so only this base color matters. It appears only when the gradient overlay is turned on.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-color",
       "guideKeys": [
         "screenedit-paywall-media-gradient-color"
       ],
@@ -450,7 +450,7 @@
       "summary": "Gradient overlay color",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -466,7 +466,7 @@
       "summary": "Lays a dark fade over the image or video so any text and buttons placed on top stay readable. Turn it on whenever you layer the headline or content over the media, or when a busy or light image makes text hard to read; leave it off for a clean image with nothing on top. Once on, you can fine-tune its height and color below.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-enable",
       "guideKeys": [
         "screenedit-paywall-media-gradient"
       ],
@@ -489,7 +489,7 @@
       "summary": "Dark fade over media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-enable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-enable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-enable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -505,7 +505,7 @@
       "summary": "How far up the media the dark fade reaches, as a percentage. A low value shades only the bottom edge (enough for text sitting near the bottom); a high value darkens most of the image. Set it just high enough to cover where your overlaid text sits, leaving the rest of the image visible. This only appears when the gradient overlay is turned on.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-height",
       "guideKeys": [
         "screenedit-paywall-media-gradient-height"
       ],
@@ -528,7 +528,7 @@
       "summary": "Gradient coverage",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -544,7 +544,7 @@
       "summary": "How much of the screen the featured image or video takes up, as a share of screen height. Keep it moderate (around 30 to 45%) so the plan cards and purchase button stay visible without scrolling; too tall pushes your offer below the fold and costs you sales. Always check the result on a phone-sized preview.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-height-percentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-height-percentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-height-percentage",
       "guideKeys": [
         "screenedit-paywall-media-height-percentage"
       ],
@@ -567,7 +567,7 @@
       "summary": "Media height on screen",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-height-percentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-height-percentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-height-percentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -583,7 +583,7 @@
       "summary": "Upload (or clear) the hero image shown at the top of the paywall. Use a high-resolution image with its subject centered, since the edges may be cropped depending on your fit setting. If your funnel runs in multiple languages you can upload a different image per language; it appears only when media type is Image, and nothing shows until you upload one.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-image-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-image-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-image-upload",
       "guideKeys": [
         "screenedit-paywall-media-image"
       ],
@@ -605,7 +605,7 @@
       "summary": "Upload the featured image",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-image-upload-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-image-upload-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-image-upload-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -621,7 +621,7 @@
       "summary": "Sets how the media and the paywall text relate vertically. 'Above Content' keeps the media as a banner with the title, subtitle, and plans stacked below it (safest, always readable); 'Behind Intro Content' layers the title over the media for a magazine-style hero. Start with Above Content; if you choose the overlaid look, turn on the gradient overlay so the text stays legible.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-bottom",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-bottom",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-bottom",
       "guideKeys": [
         "screenedit-paywall-media-bottom"
       ],
@@ -644,7 +644,7 @@
       "summary": "How media meets the text",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-bottom-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-bottom-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-bottom-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -661,7 +661,7 @@
       "summary": "Turn this on to show a featured image or video at the top of the paywall, or off to hide media and give the plan cards more room. After enabling, choose the media type and upload your asset, otherwise nothing appears. Use media when a visual strengthens the offer; skip it for a tighter, text-only paywall.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-enable",
       "guideKeys": [
         "screenedit-paywall-media-enable"
       ],
@@ -684,7 +684,7 @@
       "summary": "Show featured media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-enable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-enable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-enable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -700,7 +700,7 @@
       "summary": "Picks whether the featured media is an image or a video. Image is simplest and loads fastest; video can show your product in motion but should be short and auto-playing. Note that switching type clears any asset you already uploaded, so choose first, then upload; picking Video also unlocks the loop option.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-kind",
       "guideKeys": [
         "screenedit-paywall-media-kind"
       ],
@@ -723,7 +723,7 @@
       "summary": "Image or video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -739,7 +739,7 @@
       "summary": "Sets where the image or video begins at the top of the screen relative to the header (back button and progress bar). 'Screen Top' starts media at the very top behind the header for a full-bleed hero look; 'Header Bottom' starts it just under the header so the controls stay clear of the image. Use Header Bottom if the header overlaps your media awkwardly, otherwise Screen Top is the most immersive.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-top",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-top",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-top",
       "guideKeys": [
         "screenedit-paywall-media-top"
       ],
@@ -761,7 +761,7 @@
       "summary": "Where media starts vertically",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-top-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-top-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-top-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -777,7 +777,7 @@
       "summary": "Sets the space between the media and its surroundings on each side: top, right, bottom, and left. Add padding to inset the image or video from the screen edges for a framed look, or set it to zero for a full-bleed, edge-to-edge hero. The theme default is a safe start; adjust only if the media looks too tight or too floaty in preview.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-padding",
       "guideKeys": [
         "screenedit-paywall-media-padding"
       ],
@@ -799,7 +799,7 @@
       "summary": "Space around the media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-padding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-padding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-padding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -815,7 +815,7 @@
       "summary": "When on, the featured video repeats continuously; when off, it plays once and stops on the last frame. Loop short, ambient clips (a few seconds) so the paywall stays lively and eye-catching; turn it off for a video with a clear ending you don't want replayed. This only appears when the media type is Video.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-repeat-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-repeat-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-repeat-video",
       "guideKeys": [
         "screenedit-paywall-media-repeat"
       ],
@@ -837,7 +837,7 @@
       "summary": "Loop the video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-repeat-video-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-repeat-video-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-repeat-video-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -853,7 +853,7 @@
       "summary": "Decides how your image or video sits in its space. 'Fit' shows the whole asset but may leave blank bars around it; 'Fill' crops the edges so the area is covered with no gaps. Fill usually looks best for a clean edge-to-edge hero, just keep anything important away from the edges; choose Fit only when the entire image must stay visible.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-scale-mode",
       "guideKeys": [
         "screenedit-paywall-media-scale-mode"
       ],
@@ -875,7 +875,7 @@
       "summary": "How the media fills its area",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-scale-mode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-scale-mode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-scale-mode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -891,7 +891,7 @@
       "summary": "Upload (or clear) the hero video shown at the top of the paywall. Keep it short and lightweight (a few seconds, compressed) so it loads fast on mobile data, and remember it auto-plays muted, so the visual must work without sound. If your funnel runs in multiple languages you can upload a different video per language; it appears only when media type is Video, and nothing shows until you upload one.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-video-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-video-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-video-upload",
       "guideKeys": [
         "screenedit-paywall-media-video"
       ],
@@ -913,7 +913,7 @@
       "summary": "Upload the featured video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-video-upload-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-video-upload-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-video-upload-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -931,7 +931,7 @@
       "summary": "Size, placement & spacing",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -945,7 +945,7 @@
       "summary": "Fade overlay",
       "kind": "section",
       "articleSectionId": "g-gradient-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-gradient-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-gradient-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -959,7 +959,7 @@
       "summary": "Image or video source",
       "kind": "section",
       "articleSectionId": "g-source-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#g-source-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#g-source-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -973,7 +973,7 @@
       "summary": "The paywall's featured image or video — its source, how it fills its area, height, corner rounding, spacing, where it sits relative to the header and body, and an optional dark fade overlay for text readability. This guide documents every setting of the Paywall Media block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1276,7 +1276,7 @@
       "summary": "Paywall Media in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1293,7 +1293,7 @@
       "summary": "Open the Paywall Media section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1308,7 +1308,7 @@
       "summary": "Sets how rounded the corners of the image or video are. Zero gives sharp edges, which often look best for a full-width hero, while higher values give a soft, card-like look that matches rounded buttons and plan cards. Match it to the rest of your theme's rounding; the default is usually fine.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-corner-radius",
       "guideKeys": [
         "screenedit-paywall-media-corner-radius"
       ],
@@ -1331,7 +1331,7 @@
       "summary": "Round the media corners",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-corner-radius-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-corner-radius-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-corner-radius-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1347,7 +1347,7 @@
       "summary": "Sets the color of the dark fade laid over your media (default black). Black works best behind white text; choose a dark brand color if you want the fade to feel on-theme. The overlay always fades to clear at the top, so only this base color matters. It appears only when the gradient overlay is turned on.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-color",
       "guideKeys": [
         "screenedit-paywall-media-gradient-color"
       ],
@@ -1370,7 +1370,7 @@
       "summary": "Gradient overlay color",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1386,7 +1386,7 @@
       "summary": "Lays a dark fade over the image or video so any text and buttons placed on top stay readable. Turn it on whenever you layer the headline or content over the media, or when a busy or light image makes text hard to read; leave it off for a clean image with nothing on top. Once on, you can fine-tune its height and color below.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-enable",
       "guideKeys": [
         "screenedit-paywall-media-gradient"
       ],
@@ -1409,7 +1409,7 @@
       "summary": "Dark fade over media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-enable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-enable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-enable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1425,7 +1425,7 @@
       "summary": "How far up the media the dark fade reaches, as a percentage. A low value shades only the bottom edge (enough for text sitting near the bottom); a high value darkens most of the image. Set it just high enough to cover where your overlaid text sits, leaving the rest of the image visible. This only appears when the gradient overlay is turned on.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-height",
       "guideKeys": [
         "screenedit-paywall-media-gradient-height"
       ],
@@ -1448,7 +1448,7 @@
       "summary": "Gradient coverage",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-gradient-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1464,7 +1464,7 @@
       "summary": "How much of the screen the featured image or video takes up, as a share of screen height. Keep it moderate (around 30 to 45%) so the plan cards and purchase button stay visible without scrolling; too tall pushes your offer below the fold and costs you sales. Always check the result on a phone-sized preview.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-height-percentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-height-percentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-height-percentage",
       "guideKeys": [
         "screenedit-paywall-media-height-percentage"
       ],
@@ -1487,7 +1487,7 @@
       "summary": "Media height on screen",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-height-percentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-height-percentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-height-percentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1503,7 +1503,7 @@
       "summary": "Upload (or clear) the hero image shown at the top of the paywall. Use a high-resolution image with its subject centered, since the edges may be cropped depending on your fit setting. If your funnel runs in multiple languages you can upload a different image per language; it appears only when media type is Image, and nothing shows until you upload one.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-image-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-image-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-image-upload",
       "guideKeys": [
         "screenedit-paywall-media-image"
       ],
@@ -1525,7 +1525,7 @@
       "summary": "Upload the featured image",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-image-upload-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-image-upload-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-image-upload-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1541,7 +1541,7 @@
       "summary": "Sets how the media and the paywall text relate vertically. 'Above Content' keeps the media as a banner with the title, subtitle, and plans stacked below it (safest, always readable); 'Behind Intro Content' layers the title over the media for a magazine-style hero. Start with Above Content; if you choose the overlaid look, turn on the gradient overlay so the text stays legible.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-bottom",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-bottom",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-bottom",
       "guideKeys": [
         "screenedit-paywall-media-bottom"
       ],
@@ -1564,7 +1564,7 @@
       "summary": "How media meets the text",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-bottom-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-bottom-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-bottom-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1581,7 +1581,7 @@
       "summary": "Turn this on to show a featured image or video at the top of the paywall, or off to hide media and give the plan cards more room. After enabling, choose the media type and upload your asset, otherwise nothing appears. Use media when a visual strengthens the offer; skip it for a tighter, text-only paywall.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-enable",
       "guideKeys": [
         "screenedit-paywall-media-enable"
       ],
@@ -1604,7 +1604,7 @@
       "summary": "Show featured media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-enable-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-enable-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-enable-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1620,7 +1620,7 @@
       "summary": "Picks whether the featured media is an image or a video. Image is simplest and loads fastest; video can show your product in motion but should be short and auto-playing. Note that switching type clears any asset you already uploaded, so choose first, then upload; picking Video also unlocks the loop option.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-kind",
       "guideKeys": [
         "screenedit-paywall-media-kind"
       ],
@@ -1643,7 +1643,7 @@
       "summary": "Image or video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1659,7 +1659,7 @@
       "summary": "Sets where the image or video begins at the top of the screen relative to the header (back button and progress bar). 'Screen Top' starts media at the very top behind the header for a full-bleed hero look; 'Header Bottom' starts it just under the header so the controls stay clear of the image. Use Header Bottom if the header overlaps your media awkwardly, otherwise Screen Top is the most immersive.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-top",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-top",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-top",
       "guideKeys": [
         "screenedit-paywall-media-top"
       ],
@@ -1681,7 +1681,7 @@
       "summary": "Where media starts vertically",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-media-top-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-top-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-top-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1697,7 +1697,7 @@
       "summary": "Sets the space between the media and its surroundings on each side: top, right, bottom, and left. Add padding to inset the image or video from the screen edges for a framed look, or set it to zero for a full-bleed, edge-to-edge hero. The theme default is a safe start; adjust only if the media looks too tight or too floaty in preview.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-padding",
       "guideKeys": [
         "screenedit-paywall-media-padding"
       ],
@@ -1719,7 +1719,7 @@
       "summary": "Space around the media",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-padding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-padding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-padding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1735,7 +1735,7 @@
       "summary": "When on, the featured video repeats continuously; when off, it plays once and stops on the last frame. Loop short, ambient clips (a few seconds) so the paywall stays lively and eye-catching; turn it off for a video with a clear ending you don't want replayed. This only appears when the media type is Video.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-repeat-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-repeat-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-repeat-video",
       "guideKeys": [
         "screenedit-paywall-media-repeat"
       ],
@@ -1757,7 +1757,7 @@
       "summary": "Loop the video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-repeat-video-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-repeat-video-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-repeat-video-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1773,7 +1773,7 @@
       "summary": "Decides how your image or video sits in its space. 'Fit' shows the whole asset but may leave blank bars around it; 'Fill' crops the edges so the area is covered with no gaps. Fill usually looks best for a clean edge-to-edge hero, just keep anything important away from the edges; choose Fit only when the entire image must stay visible.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-scale-mode",
       "guideKeys": [
         "screenedit-paywall-media-scale-mode"
       ],
@@ -1795,7 +1795,7 @@
       "summary": "How the media fills its area",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-scale-mode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-scale-mode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-scale-mode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1811,7 +1811,7 @@
       "summary": "Upload (or clear) the hero video shown at the top of the paywall. Keep it short and lightweight (a few seconds, compressed) so it loads fast on mobile data, and remember it auto-plays muted, so the visual must work without sound. If your funnel runs in multiple languages you can upload a different video per language; it appears only when media type is Video, and nothing shows until you upload one.",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-video-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-video-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-video-upload",
       "guideKeys": [
         "screenedit-paywall-media-video"
       ],
@@ -1833,7 +1833,7 @@
       "summary": "Upload the featured video",
       "kind": "section",
       "articleSectionId": "set-paywallmedia-video-upload-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-video-upload-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-video-upload-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1852,7 +1852,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/open-section-enable.png",
       "articleSectionId": "set-paywallmedia-media-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-enable",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1866,7 +1866,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/open-section-kind.png",
       "articleSectionId": "set-paywallmedia-media-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-kind",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1880,7 +1880,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/open-section-image.png",
       "articleSectionId": "set-paywallmedia-image-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-image-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-image-upload",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1894,7 +1894,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/video-video.png",
       "articleSectionId": "set-paywallmedia-video-upload",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-video-upload",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-video-upload",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1909,7 +1909,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-scale-mode.png",
       "articleSectionId": "set-paywallmedia-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-scale-mode",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1924,7 +1924,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-height.png",
       "articleSectionId": "set-paywallmedia-height-percentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-height-percentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-height-percentage",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1939,7 +1939,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-corner-radius.png",
       "articleSectionId": "set-paywallmedia-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-corner-radius",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1954,7 +1954,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/video-repeat.png",
       "articleSectionId": "set-paywallmedia-repeat-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-repeat-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-repeat-video",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1969,7 +1969,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-padding.png",
       "articleSectionId": "set-paywallmedia-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-padding",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1984,7 +1984,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-top.png",
       "articleSectionId": "set-paywallmedia-media-top",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-top",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-top",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -1999,7 +1999,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-bottom.png",
       "articleSectionId": "set-paywallmedia-media-bottom",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-media-bottom",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-media-bottom",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -2014,7 +2014,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/appearance-gradient-enable.png",
       "articleSectionId": "set-paywallmedia-gradient-enable",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-enable",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-enable",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -2029,7 +2029,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/gradient-height.png",
       "articleSectionId": "set-paywallmedia-gradient-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-height",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -2044,7 +2044,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-paywall-media-section/0.2.0/configure-paywall-media-section-2026-06-24T20-36-44-297Z-58309c6c/gradient-color.png",
       "articleSectionId": "set-paywallmedia-gradient-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-paywall-media/index.html#set-paywallmedia-gradient-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-media#set-paywallmedia-gradient-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Paywall screen and expand the Media section; tick Enable.",
@@ -3369,6 +3369,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "3d4a21aba90b2eb4"
+    "generatedHash": "223bcb089615862f"
   }
 }

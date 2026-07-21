@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": false,
     "screenshotSectionCount": 0,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-subscription-options/index.html",
+    "fullArticleLink": "https://help.segmently.ai/paywall-product-subscription-options",
     "sourceRecipeKey": null,
     "localArticlePath": null,
     "sections": [
@@ -61,7 +61,12 @@
       "title": "Set the billing interval",
       "summary": "Choose how often customers are billed (daily, weekly, monthly, yearly) and the Every-X count for multi-period billing — for example every 3 months. This has to match the recurrence on the Stripe price you mapped, or Stripe will reject the checkout.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-subscription-options",
+          "subarticleId": "paywall-product-subscription-options/billing-interval"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -69,7 +74,12 @@
       "title": "Configure the free trial",
       "summary": "Set how many free days a customer gets before the first charge; enter 0 for no trial. Billing starts the day after the trial ends. Always state the trial length clearly on the paywall — it keeps checkout compliant and cuts down on disputes and chargebacks from surprised customers.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-subscription-options",
+          "subarticleId": "paywall-product-subscription-options/free-trial-days"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -77,7 +87,12 @@
       "title": "Charge an upfront fee at sign-up (optional)",
       "summary": "Turn this on to charge a one-time fee the moment the subscription starts, on top of the recurring price — useful for an activation or onboarding fee. Leave it off for a standard free-trial or pay-as-you-go subscription. (This is what the 'paid trial' setting controls: an immediate charge, not a free period.)",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-subscription-options",
+          "subarticleId": "paywall-product-subscription-options/paid-trial"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -85,7 +100,12 @@
       "title": "Select the upfront fee price",
       "summary": "Pick or create the one-time Stripe price used for that upfront fee. It's charged immediately and billed separately from the recurring subscription, so it shows up as its own line in Stripe.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-subscription-options",
+          "subarticleId": "paywall-product-subscription-options/trial-fee-price"
+        }
+      ],
       "actionIds": []
     }
   ]

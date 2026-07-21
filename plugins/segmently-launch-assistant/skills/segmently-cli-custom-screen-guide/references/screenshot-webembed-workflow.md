@@ -167,12 +167,6 @@ not delete that screen or edge during cleanup.
 
 ## Local Validation Before CLI Apply
 
-Minimum local checks:
-
-```bash
-node <skill-root>/scripts/run-evals.mjs
-```
-
 Also run a fast artifact check:
 
 - JSON parse all `custom-screen-catalog.json`, `data-sources.json`, and

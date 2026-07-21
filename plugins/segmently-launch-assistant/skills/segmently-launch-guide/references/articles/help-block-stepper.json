@@ -11,7 +11,7 @@
       "summary": "Progress bar styles",
       "kind": "section",
       "articleSectionId": "g-bar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-bar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-bar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Media area sizing",
       "kind": "section",
       "articleSectionId": "g-container-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-container-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-container-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Progress layout & playback",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -53,7 +53,7 @@
       "summary": "Step text & image styles",
       "kind": "section",
       "articleSectionId": "g-segments-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-segments-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-segments-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -68,7 +68,7 @@
       "summary": "An auto-advancing progress bar that steps through segments — the progress layout, total playback time, the bar’s colours / thickness / padding, the media-area split, and each step’s title / subtitle / description / image styles. This guide documents every setting of the Stepper block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -385,7 +385,7 @@
       "summary": "Stepper in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -401,7 +401,7 @@
       "summary": "Open the Stepper section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -415,7 +415,7 @@
       "summary": "Percentage of the screen's vertical space (0-100, default 50%) given to the image/text area; the rest goes to the progress area. Raise it above 50% when your image or step text needs more room, or lower it to make the progress bar more prominent. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-stepper-container-height"
       ],
@@ -437,7 +437,7 @@
       "summary": "Split between media and progress",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -453,7 +453,7 @@
       "summary": "Color of the filled part of the progress bar that grows as the sequence advances, signaling completion to the user. Defaults to green (#4CAF50). Use your brand accent or a clearly positive color, and keep strong contrast against the empty track so progress reads instantly.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-fillcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-fillcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-fillcolor",
       "guideKeys": [
         "screenedit-stepper-fill-color"
       ],
@@ -474,7 +474,7 @@
       "summary": "Color of the completed portion",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-fillcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-fillcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-fillcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -490,7 +490,7 @@
       "summary": "Height of the filled bar in pixels (0-50, default 4px). 4-8px reads as a clean, modern bar; go thicker only for a bold, attention-grabbing indicator. Set it equal to or greater than the track thickness so the fill sits flush over the track instead of looking sunken.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-thickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-thickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-thickness",
       "guideKeys": [
         "screenedit-stepper-thickness"
       ],
@@ -511,7 +511,7 @@
       "summary": "How thick the progress bar is",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-thickness-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-thickness-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-thickness-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -527,7 +527,7 @@
       "summary": "Color of the unfilled part of the progress bar — the portion not yet completed. Defaults to light gray (#E0E0E0), which works for most screens. Keep it clearly lighter than the fill color so the user can read their progress at a glance, or match your page background for a subtler look.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackcolor",
       "guideKeys": [
         "screenedit-stepper-track-color"
       ],
@@ -548,7 +548,7 @@
       "summary": "Color of the empty track",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -564,7 +564,7 @@
       "summary": "Height of the background track in pixels (0-50, default 4px). Keep it equal to the fill thickness for a standard flat bar — the safe choice for most screens. Make it larger than the fill only if you want a recessed groove look, since mismatched values change how the fill sits inside the track.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackthickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackthickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackthickness",
       "guideKeys": [
         "screenedit-stepper-track-thickness"
       ],
@@ -585,7 +585,7 @@
       "summary": "How thick the empty track is",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackthickness-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackthickness-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackthickness-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -601,7 +601,7 @@
       "summary": "Text styling for segment descriptions including font size, weight, family, color, line height, and letter spacing. Description text is editable per segment with template variable support.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance",
       "guideKeys": [
         "screenedit-stepper-description-styles"
       ],
@@ -623,7 +623,7 @@
       "summary": "Configure segment description text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -640,7 +640,7 @@
       "summary": "Fill drawn behind the description text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -655,7 +655,7 @@
       "summary": "Transparency of that description background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -670,7 +670,7 @@
       "summary": "Corner rounding of the description background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -685,7 +685,7 @@
       "summary": "Text size (px) of the step description.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -700,7 +700,7 @@
       "summary": "How bold the description is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -715,7 +715,7 @@
       "summary": "Vertical spacing between description lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -730,7 +730,7 @@
       "summary": "Left, center, or right alignment of the description.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -745,7 +745,7 @@
       "summary": "Description color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -760,7 +760,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step description: top, right, bottom, left. The default is usually 0; add top padding to separate the description from the subtitle above, or side padding to keep multi-line text off the screen edges. Comfortable spacing makes longer copy easy to read, which keeps visitors absorbing your value and tapping through.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-layout-insets",
       "guideKeys": [
         "screenedit-stepper-description-padding"
       ],
@@ -782,7 +782,7 @@
       "summary": "Space around the description",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -799,7 +799,7 @@
       "summary": "Controls how each step's image looks: how it scales (fill = cover the box and crop overflow, fit = show the whole image with possible gaps, crop, or tile to repeat), corner rounding, width and height, and tile repeat. Use fit for logos or illustrations you don't want cropped, and fill for photos that should fully cover the box. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance",
       "guideKeys": [
         "screenedit-stepper-image-styles"
       ],
@@ -821,7 +821,7 @@
       "summary": "Style the step image",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -837,7 +837,7 @@
       "summary": "How rounded the image corners are (px).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -851,7 +851,7 @@
       "summary": "Height (px) of each step's image.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -865,7 +865,7 @@
       "summary": "Width (px) of each step's image.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -879,7 +879,7 @@
       "summary": "How the image fills its box: Fit shows the whole image, Fill covers the box (edges may crop), Crop trims to the box, Tile repeats it.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -893,7 +893,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step image: top, right, bottom, left. The default is usually 0; add padding so the image does not touch the title or screen edges and sits balanced in its container. A well-framed visual carries the emotional pull on an ad landing page, so adjust this when the image looks cramped or off-center. This control appears only for the Image First or Chart First layouts.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-layout-insets",
       "guideKeys": [
         "screenedit-stepper-image-padding"
       ],
@@ -915,7 +915,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -931,7 +931,7 @@
       "summary": "Text styling for segment subtitles including font size, weight, family, color, line height, and letter spacing. Subtitle text is editable per segment with template variable support.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance",
       "guideKeys": [
         "screenedit-stepper-subtitle-styles"
       ],
@@ -953,7 +953,7 @@
       "summary": "Configure segment subtitle text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -970,7 +970,7 @@
       "summary": "Fill drawn behind the subtitle text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -985,7 +985,7 @@
       "summary": "Transparency of that subtitle background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1000,7 +1000,7 @@
       "summary": "Corner rounding of the subtitle background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1015,7 +1015,7 @@
       "summary": "Text size (px) of the step subtitle.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1030,7 +1030,7 @@
       "summary": "How bold the subtitle is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1045,7 +1045,7 @@
       "summary": "Vertical spacing between subtitle lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1060,7 +1060,7 @@
       "summary": "Left, center, or right alignment of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1075,7 +1075,7 @@
       "summary": "Subtitle color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1090,7 +1090,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step subtitle: top, right, bottom, left. The default is usually 0; add top padding to set the subtitle off from the title above and bottom padding to separate it from the description below. Adjust it only when the subtitle feels cramped against neighboring text, so the supporting line stays easy to scan and reinforces your pitch.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-layout-insets",
       "guideKeys": [
         "screenedit-stepper-subtitle-padding"
       ],
@@ -1112,7 +1112,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1128,7 +1128,7 @@
       "summary": "Text styling for segment titles including font size, weight, family, color, line height, and letter spacing. Title text is editable per segment with template variable support (@variable, @link, @countdown).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance",
       "guideKeys": [
         "screenedit-stepper-title-styles"
       ],
@@ -1150,7 +1150,7 @@
       "summary": "Configure segment title text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1167,7 +1167,7 @@
       "summary": "Fill drawn behind the title text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1182,7 +1182,7 @@
       "summary": "Transparency of that title background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1197,7 +1197,7 @@
       "summary": "Corner rounding of the title background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1212,7 +1212,7 @@
       "summary": "Text size (px) of the step title.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1227,7 +1227,7 @@
       "summary": "How bold the title is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1242,7 +1242,7 @@
       "summary": "Vertical spacing between title lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1257,7 +1257,7 @@
       "summary": "Left, center, or right alignment of the title.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1272,7 +1272,7 @@
       "summary": "Title color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1287,7 +1287,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step title: top, right, bottom, left. The default is usually 0; add bottom padding to separate the title from the subtitle below, or side padding to keep long titles off the screen edges. A clear, uncrowded title is the first thing visitors read, so the small spacing tweak helps them grasp the offer fast and stay in the funnel.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-layout-insets",
       "guideKeys": [
         "screenedit-stepper-title-padding"
       ],
@@ -1309,7 +1309,7 @@
       "summary": "Space around the title",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1325,7 +1325,7 @@
       "summary": "Determines the visual layout for progress steps. Circle displays steps as an orbital arrangement (no image container); Image Container First and Chart Container First show image/text in a container with progress bar. Defines which content elements are shown in each segment (image visibility, title, subtitle, description).",
       "kind": "section",
       "articleSectionId": "set-stepper-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-kind",
       "guideKeys": [
         "screenedit-stepper-kind"
       ],
@@ -1347,7 +1347,7 @@
       "summary": "Select progress stepper layout",
       "kind": "section",
       "articleSectionId": "set-stepper-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1363,7 +1363,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the progress bar: top, right, bottom, left. The default is usually 0 for a tight bar that sits close to your content; add top and bottom padding to give it room from the title or image above and below. On an ad funnel a progress bar with a little breathing room reads as a quick, low-effort flow, which keeps people moving forward.",
       "kind": "section",
       "articleSectionId": "set-stepper-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-layout-insets",
       "guideKeys": [
         "screenedit-stepper-progress-bar-padding"
       ],
@@ -1384,7 +1384,7 @@
       "summary": "Space around the progress bar",
       "kind": "section",
       "articleSectionId": "set-stepper-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1400,7 +1400,7 @@
       "summary": "Total time, in seconds (1-120), for the progress sequence to advance through all its steps before the screen continues. Aim for about 4-8 seconds: long enough to feel like real work is happening for the user, short enough to avoid drop-off. Use the play/pause preview to test the pacing against your step text.",
       "kind": "section",
       "articleSectionId": "set-stepper-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-timer-duration",
       "guideKeys": [
         "screenedit-stepper-timer-duration"
       ],
@@ -1422,7 +1422,7 @@
       "summary": "How long the progress runs",
       "kind": "section",
       "articleSectionId": "set-stepper-timer-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-timer-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-timer-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1440,7 +1440,7 @@
       "summary": "Progress bar styles",
       "kind": "section",
       "articleSectionId": "g-bar-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-bar-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-bar-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1454,7 +1454,7 @@
       "summary": "Media area sizing",
       "kind": "section",
       "articleSectionId": "g-container-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-container-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-container-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1468,7 +1468,7 @@
       "summary": "Progress layout & playback",
       "kind": "section",
       "articleSectionId": "g-layout-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-layout-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-layout-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1482,7 +1482,7 @@
       "summary": "Step text & image styles",
       "kind": "section",
       "articleSectionId": "g-segments-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#g-segments-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#g-segments-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1497,7 +1497,7 @@
       "summary": "An auto-advancing progress bar that steps through segments — the progress layout, total playback time, the bar’s colours / thickness / padding, the media-area split, and each step’s title / subtitle / description / image styles. This guide documents every setting of the Stepper block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1814,7 +1814,7 @@
       "summary": "Stepper in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1830,7 +1830,7 @@
       "summary": "Open the Stepper section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1844,7 +1844,7 @@
       "summary": "Percentage of the screen's vertical space (0-100, default 50%) given to the image/text area; the rest goes to the progress area. Raise it above 50% when your image or step text needs more room, or lower it to make the progress bar more prominent. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-stepper-container-height"
       ],
@@ -1866,7 +1866,7 @@
       "summary": "Split between media and progress",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1882,7 +1882,7 @@
       "summary": "Color of the filled part of the progress bar that grows as the sequence advances, signaling completion to the user. Defaults to green (#4CAF50). Use your brand accent or a clearly positive color, and keep strong contrast against the empty track so progress reads instantly.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-fillcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-fillcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-fillcolor",
       "guideKeys": [
         "screenedit-stepper-fill-color"
       ],
@@ -1903,7 +1903,7 @@
       "summary": "Color of the completed portion",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-fillcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-fillcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-fillcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1919,7 +1919,7 @@
       "summary": "Height of the filled bar in pixels (0-50, default 4px). 4-8px reads as a clean, modern bar; go thicker only for a bold, attention-grabbing indicator. Set it equal to or greater than the track thickness so the fill sits flush over the track instead of looking sunken.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-thickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-thickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-thickness",
       "guideKeys": [
         "screenedit-stepper-thickness"
       ],
@@ -1940,7 +1940,7 @@
       "summary": "How thick the progress bar is",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-thickness-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-thickness-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-thickness-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1956,7 +1956,7 @@
       "summary": "Color of the unfilled part of the progress bar — the portion not yet completed. Defaults to light gray (#E0E0E0), which works for most screens. Keep it clearly lighter than the fill color so the user can read their progress at a glance, or match your page background for a subtler look.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackcolor",
       "guideKeys": [
         "screenedit-stepper-track-color"
       ],
@@ -1977,7 +1977,7 @@
       "summary": "Color of the empty track",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1993,7 +1993,7 @@
       "summary": "Height of the background track in pixels (0-50, default 4px). Keep it equal to the fill thickness for a standard flat bar — the safe choice for most screens. Make it larger than the fill only if you want a recessed groove look, since mismatched values change how the fill sits inside the track.",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackthickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackthickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackthickness",
       "guideKeys": [
         "screenedit-stepper-track-thickness"
       ],
@@ -2014,7 +2014,7 @@
       "summary": "How thick the empty track is",
       "kind": "section",
       "articleSectionId": "set-stepper-appearance-trackthickness-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackthickness-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackthickness-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2030,7 +2030,7 @@
       "summary": "Text styling for segment descriptions including font size, weight, family, color, line height, and letter spacing. Description text is editable per segment with template variable support.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance",
       "guideKeys": [
         "screenedit-stepper-description-styles"
       ],
@@ -2052,7 +2052,7 @@
       "summary": "Configure segment description text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2069,7 +2069,7 @@
       "summary": "Fill drawn behind the description text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2084,7 +2084,7 @@
       "summary": "Transparency of that description background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2099,7 +2099,7 @@
       "summary": "Corner rounding of the description background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2114,7 +2114,7 @@
       "summary": "Text size (px) of the step description.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2129,7 +2129,7 @@
       "summary": "How bold the description is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2144,7 +2144,7 @@
       "summary": "Vertical spacing between description lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2159,7 +2159,7 @@
       "summary": "Left, center, or right alignment of the description.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2174,7 +2174,7 @@
       "summary": "Description color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2189,7 +2189,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step description: top, right, bottom, left. The default is usually 0; add top padding to separate the description from the subtitle above, or side padding to keep multi-line text off the screen edges. Comfortable spacing makes longer copy easy to read, which keeps visitors absorbing your value and tapping through.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-layout-insets",
       "guideKeys": [
         "screenedit-stepper-description-padding"
       ],
@@ -2211,7 +2211,7 @@
       "summary": "Space around the description",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-description-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2228,7 +2228,7 @@
       "summary": "Controls how each step's image looks: how it scales (fill = cover the box and crop overflow, fit = show the whole image with possible gaps, crop, or tile to repeat), corner rounding, width and height, and tile repeat. Use fit for logos or illustrations you don't want cropped, and fill for photos that should fully cover the box. This appears only for the Image First or Chart First layouts and is hidden for the orbital Circle layout.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance",
       "guideKeys": [
         "screenedit-stepper-image-styles"
       ],
@@ -2250,7 +2250,7 @@
       "summary": "Style the step image",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2266,7 +2266,7 @@
       "summary": "How rounded the image corners are (px).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2280,7 +2280,7 @@
       "summary": "Height (px) of each step's image.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2294,7 +2294,7 @@
       "summary": "Width (px) of each step's image.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2308,7 +2308,7 @@
       "summary": "How the image fills its box: Fit shows the whole image, Fill covers the box (edges may crop), Crop trims to the box, Tile repeats it.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-appearance-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2322,7 +2322,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step image: top, right, bottom, left. The default is usually 0; add padding so the image does not touch the title or screen edges and sits balanced in its container. A well-framed visual carries the emotional pull on an ad landing page, so adjust this when the image looks cramped or off-center. This control appears only for the Image First or Chart First layouts.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-layout-insets",
       "guideKeys": [
         "screenedit-stepper-image-padding"
       ],
@@ -2344,7 +2344,7 @@
       "summary": "Space around the image",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-image-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2360,7 +2360,7 @@
       "summary": "Text styling for segment subtitles including font size, weight, family, color, line height, and letter spacing. Subtitle text is editable per segment with template variable support.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance",
       "guideKeys": [
         "screenedit-stepper-subtitle-styles"
       ],
@@ -2382,7 +2382,7 @@
       "summary": "Configure segment subtitle text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2399,7 +2399,7 @@
       "summary": "Fill drawn behind the subtitle text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2414,7 +2414,7 @@
       "summary": "Transparency of that subtitle background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2429,7 +2429,7 @@
       "summary": "Corner rounding of the subtitle background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2444,7 +2444,7 @@
       "summary": "Text size (px) of the step subtitle.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2459,7 +2459,7 @@
       "summary": "How bold the subtitle is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2474,7 +2474,7 @@
       "summary": "Vertical spacing between subtitle lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2489,7 +2489,7 @@
       "summary": "Left, center, or right alignment of the subtitle.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2504,7 +2504,7 @@
       "summary": "Subtitle color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2519,7 +2519,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step subtitle: top, right, bottom, left. The default is usually 0; add top padding to set the subtitle off from the title above and bottom padding to separate it from the description below. Adjust it only when the subtitle feels cramped against neighboring text, so the supporting line stays easy to scan and reinforces your pitch.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-layout-insets",
       "guideKeys": [
         "screenedit-stepper-subtitle-padding"
       ],
@@ -2541,7 +2541,7 @@
       "summary": "Space around the subtitle",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-subtitle-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2557,7 +2557,7 @@
       "summary": "Text styling for segment titles including font size, weight, family, color, line height, and letter spacing. Title text is editable per segment with template variable support (@variable, @link, @countdown).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance",
       "guideKeys": [
         "screenedit-stepper-title-styles"
       ],
@@ -2579,7 +2579,7 @@
       "summary": "Configure segment title text",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2596,7 +2596,7 @@
       "summary": "Fill drawn behind the title text.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2611,7 +2611,7 @@
       "summary": "Transparency of that title background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2626,7 +2626,7 @@
       "summary": "Corner rounding of the title background.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2641,7 +2641,7 @@
       "summary": "Text size (px) of the step title.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2656,7 +2656,7 @@
       "summary": "How bold the title is.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2671,7 +2671,7 @@
       "summary": "Vertical spacing between title lines.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2686,7 +2686,7 @@
       "summary": "Left, center, or right alignment of the title.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2701,7 +2701,7 @@
       "summary": "Title color.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-appearance-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2716,7 +2716,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the step title: top, right, bottom, left. The default is usually 0; add bottom padding to separate the title from the subtitle below, or side padding to keep long titles off the screen edges. A clear, uncrowded title is the first thing visitors read, so the small spacing tweak helps them grasp the offer fast and stay in the funnel.",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-layout-insets",
       "guideKeys": [
         "screenedit-stepper-title-padding"
       ],
@@ -2738,7 +2738,7 @@
       "summary": "Space around the title",
       "kind": "section",
       "articleSectionId": "set-stepper-items-0-content-title-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2754,7 +2754,7 @@
       "summary": "Determines the visual layout for progress steps. Circle displays steps as an orbital arrangement (no image container); Image Container First and Chart Container First show image/text in a container with progress bar. Defines which content elements are shown in each segment (image visibility, title, subtitle, description).",
       "kind": "section",
       "articleSectionId": "set-stepper-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-kind",
       "guideKeys": [
         "screenedit-stepper-kind"
       ],
@@ -2776,7 +2776,7 @@
       "summary": "Select progress stepper layout",
       "kind": "section",
       "articleSectionId": "set-stepper-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2792,7 +2792,7 @@
       "summary": "Sets the empty space, in pixels, on each side of the progress bar: top, right, bottom, left. The default is usually 0 for a tight bar that sits close to your content; add top and bottom padding to give it room from the title or image above and below. On an ad funnel a progress bar with a little breathing room reads as a quick, low-effort flow, which keeps people moving forward.",
       "kind": "section",
       "articleSectionId": "set-stepper-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-layout-insets",
       "guideKeys": [
         "screenedit-stepper-progress-bar-padding"
       ],
@@ -2813,7 +2813,7 @@
       "summary": "Space around the progress bar",
       "kind": "section",
       "articleSectionId": "set-stepper-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2829,7 +2829,7 @@
       "summary": "Total time, in seconds (1-120), for the progress sequence to advance through all its steps before the screen continues. Aim for about 4-8 seconds: long enough to feel like real work is happening for the user, short enough to avoid drop-off. Use the play/pause preview to test the pacing against your step text.",
       "kind": "section",
       "articleSectionId": "set-stepper-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-timer-duration",
       "guideKeys": [
         "screenedit-stepper-timer-duration"
       ],
@@ -2851,7 +2851,7 @@
       "summary": "How long the progress runs",
       "kind": "section",
       "articleSectionId": "set-stepper-timer-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-timer-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-timer-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2870,7 +2870,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/open-section-kind.png",
       "articleSectionId": "set-stepper-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-kind",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2884,7 +2884,7 @@
       "group": "layout",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/open-section-duration.png",
       "articleSectionId": "set-stepper-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-timer-duration",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2898,7 +2898,7 @@
       "group": "bar",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-track-color.png",
       "articleSectionId": "set-stepper-appearance-trackcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2913,7 +2913,7 @@
       "group": "bar",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-fill-color.png",
       "articleSectionId": "set-stepper-appearance-fillcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-fillcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-fillcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2928,7 +2928,7 @@
       "group": "bar",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-thickness.png",
       "articleSectionId": "set-stepper-appearance-thickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-thickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-thickness",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2943,7 +2943,7 @@
       "group": "bar",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-track-thickness.png",
       "articleSectionId": "set-stepper-appearance-trackthickness",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-trackthickness",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-trackthickness",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2958,7 +2958,7 @@
       "group": "bar",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-bar-padding.png",
       "articleSectionId": "set-stepper-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2973,7 +2973,7 @@
       "group": "container",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-container-height.png",
       "articleSectionId": "set-stepper-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-appearance-dimensions-heightpercentage",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -2988,7 +2988,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-title-styles.png",
       "articleSectionId": "set-stepper-items-0-content-title-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3003,7 +3003,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-title-padding.png",
       "articleSectionId": "set-stepper-items-0-content-title-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-title-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-title-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3018,7 +3018,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-subtitle-styles.png",
       "articleSectionId": "set-stepper-items-0-content-subtitle-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3033,7 +3033,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-subtitle-padding.png",
       "articleSectionId": "set-stepper-items-0-content-subtitle-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-subtitle-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-subtitle-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3048,7 +3048,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-description-styles.png",
       "articleSectionId": "set-stepper-items-0-content-description-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3063,7 +3063,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-description-padding.png",
       "articleSectionId": "set-stepper-items-0-content-description-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-description-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-description-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3078,7 +3078,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-image-styles.png",
       "articleSectionId": "set-stepper-items-0-content-image-appearance",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-appearance",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-appearance",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -3093,7 +3093,7 @@
       "group": "segments",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-stepper-section/0.2.0/configure-stepper-section-2026-06-24T15-51-52-390Z-88e276be/gear-image-padding.png",
       "articleSectionId": "set-stepper-items-0-content-image-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-stepper/index.html#set-stepper-items-0-content-image-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-stepper#set-stepper-items-0-content-image-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Progress Steps screen and find the Progress Steps section (set the progress screen kind at the top).",
@@ -5725,6 +5725,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "d8754a890c4224f1"
+    "generatedHash": "59907b6311bef2f1"
   }
 }

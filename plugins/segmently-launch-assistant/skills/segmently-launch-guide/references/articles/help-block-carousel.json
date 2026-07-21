@@ -11,7 +11,7 @@
       "summary": "Slide template & content",
       "kind": "section",
       "articleSectionId": "g-content-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-content-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-content-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Image & text layout regions",
       "kind": "section",
       "articleSectionId": "g-regions-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-regions-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-regions-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -40,7 +40,7 @@
       "summary": "Slide text & image styles",
       "kind": "section",
       "articleSectionId": "g-styles-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-styles-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-styles-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Timing & duration",
       "kind": "section",
       "articleSectionId": "g-timing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-timing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-timing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles. This guide documents every setting of the Carousel block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -318,7 +318,7 @@
       "summary": "Carousel in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -334,7 +334,7 @@
       "summary": "Open the Carousel section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -348,7 +348,7 @@
       "summary": "Open this to override the third line's font size, weight, color, alignment, and the padding around it; it appears only with the Image + Title + 2 Subtitles template. Style it as the smallest, quietest text so it never competes with the headline or supporting line. Leave it on theme defaults unless you truly need a change, since overrides apply to this line on every slide of the carousel.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles",
       "guideKeys": [
         "screenedit-carousel-detail-styles"
       ],
@@ -370,7 +370,7 @@
       "summary": "Extra line look",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -386,7 +386,7 @@
       "summary": "Fill drawn behind the extra line text.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -401,7 +401,7 @@
       "summary": "Transparency of that extra line background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -415,7 +415,7 @@
       "summary": "Corner rounding of the extra line background.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -429,7 +429,7 @@
       "summary": "Space around the extra line text (top, right, bottom, left). All these overrides apply to the extra line on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-extra-line-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-extra-line-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-extra-line-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -444,7 +444,7 @@
       "summary": "Text size (px) of the slide extra line.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -459,7 +459,7 @@
       "summary": "How bold the extra line is.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -473,7 +473,7 @@
       "summary": "Vertical spacing between extra line lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -487,7 +487,7 @@
       "summary": "Left, center, or right alignment of the extra line.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -502,7 +502,7 @@
       "summary": "Extra line color.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -517,7 +517,7 @@
       "summary": "Controls the box that holds each slide's image, separate from the image's own styling. Set how tall the box is (Auto fits the image, Fixed is an exact pixel height, Percent is a share of the slide), where the image sits inside it, and the padding around it. Leave it on Auto unless you want every slide's image to occupy the same vertical space so slides don't jump in size as visitors swipe.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
       "guideKeys": [
         "screenedit-carousel-image-container"
       ],
@@ -541,7 +541,7 @@
       "summary": "Image box height and position",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -557,7 +557,7 @@
       "summary": "Empty space inside the image box (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -571,7 +571,7 @@
       "summary": "How the image box is sized: Auto fits the content, Fixed is an exact pixel height, Percent is a share of the slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -587,7 +587,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -601,7 +601,7 @@
       "summary": "Where the image sits within its box — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -615,7 +615,7 @@
       "summary": "Open this to control the slide image's width, height, corner radius, and how it fills its box: Fit shows the whole image (may leave bands), Fill covers the box (edges may crop), Crop trims to the exact box, and Tile repeats it. You also set the padding around the image. Fill is the usual choice for full-bleed slides and Fit keeps the whole graphic visible; settings apply to the image on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles",
       "guideKeys": [
         "screenedit-carousel-image-styles"
       ],
@@ -637,7 +637,7 @@
       "summary": "Image size and fit",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -653,7 +653,7 @@
       "summary": "How rounded the picture corners are (px).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -667,7 +667,7 @@
       "summary": "Height (px) of the slide's picture.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -681,7 +681,7 @@
       "summary": "Space around the picture inside the slide. These overrides apply to the picture on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -695,7 +695,7 @@
       "summary": "Width (px) of the slide's picture.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -709,7 +709,7 @@
       "summary": "How the picture fills its box: Fit shows the whole image, Fill covers the box (edges may crop), Crop trims to the box, Tile repeats it.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -723,7 +723,7 @@
       "summary": "A third text line below the supporting line, available only with the Image + Title + 2 Subtitles template. Use it sparingly for one last small detail like a disclaimer or extra proof, since four text layers over an image quickly overcrowd a slide and slow reading. Supports @variable personalization, countdown timers, and styled chips, and is edited per language.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-detail-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-detail-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-detail-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-detail"
       ],
@@ -745,7 +745,7 @@
       "summary": "Slide extra line",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-detail-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-detail-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-detail-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -761,7 +761,7 @@
       "summary": "The image shown on this slide, required on every slide no matter which template you pick. Drag-and-drop or click to upload, and Segmently serves a fast-loading optimized version automatically. Use a high-quality picture that matches the slide's message; how it fills the slide is set in Image styles below, and a slide left without an image shows blank, so set one on every slide before publishing.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-image-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-image-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-image-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-image"
       ],
@@ -782,7 +782,7 @@
       "summary": "Slide picture",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-image-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-image-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-image-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -798,7 +798,7 @@
       "summary": "The line under the headline, shown only when the slide template is Image + Title + Subtitle or richer. Use it to back up the headline with a quick proof point or detail rather than repeat it. It supports @variable personalization, countdown timers, and styled chips, is edited per language, and only appears after you set a slide template that includes a subtitle.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-subtitle-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-subtitle-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-subtitle-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-subtitle"
       ],
@@ -819,7 +819,7 @@
       "summary": "Slide supporting line",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-subtitle-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-subtitle-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-subtitle-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -835,7 +835,7 @@
       "summary": "The main headline on this slide, shown only when the slide template includes a title. Keep it short and benefit-led so it lands in the few seconds the slide is on screen. You can drop in the visitor's earlier answers with @variable, plus countdown timers and styled label chips; if your funnel runs in several languages, you edit this text per language.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-title-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-title-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-title-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-title"
       ],
@@ -857,7 +857,7 @@
       "summary": "Slide headline",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-title-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-title-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-title-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -873,7 +873,7 @@
       "summary": "A two-thumb slider that sets the window, as a share of the carousel's total duration, during which this slide is on screen. Drag the thumbs apart to give this slide a longer share, which leaves less time for the others. For example, a 25% window at a 20-second total keeps this slide visible about 5 seconds; keep slides spread evenly and only widen the most persuasive one.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-progressstart-items-progressend",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-progressstart-items-progressend",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-progressstart-items-progressend",
       "guideKeys": [
         "screenedit-carousel-slide-duration-range"
       ],
@@ -894,7 +894,7 @@
       "summary": "How long this slide shows",
       "kind": "section",
       "articleSectionId": "set-carousel-items-progressstart-items-progressend-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-progressstart-items-progressend-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-progressstart-items-progressend-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -910,7 +910,7 @@
       "summary": "Sets which layers each slide shows: Image Only is just the picture, Image + Title adds one headline, Image + Title + Subtitle adds a supporting line, and Image + Title + 2 Subtitles shows all four text layers. Choosing a richer template reveals its matching text and style fields below. Default to Image + Title for clean, fast-reading slides and add subtitles only when each slide genuinely needs more copy.",
       "kind": "section",
       "articleSectionId": "set-carousel-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-kind",
       "guideKeys": [
         "screenedit-carousel-slide-type"
       ],
@@ -932,7 +932,7 @@
       "summary": "Slide content template",
       "kind": "section",
       "articleSectionId": "set-carousel-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -948,7 +948,7 @@
       "summary": "Open this to override the supporting line's font size, weight, color, alignment, and the padding around it; it shows only when the template includes a subtitle. Keep this line visually lighter than the headline (smaller or thinner) so the slide reads in the right order. Leave it on theme defaults for consistency unless this carousel needs a custom look, and remember changes apply to every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles",
       "guideKeys": [
         "screenedit-carousel-subtitle-styles"
       ],
@@ -970,7 +970,7 @@
       "summary": "Supporting line look",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -986,7 +986,7 @@
       "summary": "Fill drawn behind the supporting line text.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1001,7 +1001,7 @@
       "summary": "Transparency of that supporting line background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1015,7 +1015,7 @@
       "summary": "Corner rounding of the supporting line background.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1029,7 +1029,7 @@
       "summary": "Text size (px) of the slide supporting line.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1044,7 +1044,7 @@
       "summary": "How bold the supporting line is.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1058,7 +1058,7 @@
       "summary": "Vertical spacing between supporting line lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1072,7 +1072,7 @@
       "summary": "Space around the supporting line text (top, right, bottom, left). All these overrides apply to the supporting line on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-supporting-line-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-supporting-line-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-supporting-line-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1087,7 +1087,7 @@
       "summary": "Left, center, or right alignment of the supporting line.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1102,7 +1102,7 @@
       "summary": "Supporting line color.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1117,7 +1117,7 @@
       "summary": "Controls the box that holds all of a slide's text (title, subtitle, detail) as a group, separate from styling each line. Set how tall the box is (Auto fits the text, Fixed is exact pixels, Percent is a share of the slide), where the text block sits, and the padding around it. Leave it on Auto unless you want text anchored the same way on every slide, for example always sitting in the lower third over the image.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
       "guideKeys": [
         "screenedit-carousel-text-container"
       ],
@@ -1139,7 +1139,7 @@
       "summary": "Text box height and position",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1156,7 +1156,7 @@
       "summary": "Empty space inside the text block box (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1171,7 +1171,7 @@
       "summary": "How the text block box is sized: Auto fits the content, Fixed is an exact pixel height, Percent is a share of the slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1188,7 +1188,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1203,7 +1203,7 @@
       "summary": "Where the text block sits within its box — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1218,7 +1218,7 @@
       "summary": "The total time in seconds for the whole carousel to play through once before it stops or the visitor moves on (0.1–120s). This total is split across slides by each slide's timing slider, so changing it speeds up or slows every slide proportionally. Start around 3–5 seconds per slide (about 12–20s for four slides) — long enough to read each line, short enough to keep momentum and avoid stalling the visitor.",
       "kind": "section",
       "articleSectionId": "set-carousel-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-timer-duration",
       "guideKeys": [
         "screenedit-carousel-duration"
       ],
@@ -1239,7 +1239,7 @@
       "summary": "Total play time",
       "kind": "section",
       "articleSectionId": "set-carousel-timer-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-timer-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-timer-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1255,7 +1255,7 @@
       "summary": "Open this to override how the carousel's headline looks: font size, weight, color, alignment, and the padding around the text. It only shows when the template includes a title. Leave it untouched to inherit your theme so screens stay consistent; change it only when one carousel needs a bigger or bolder headline, and note the overrides apply to the title on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles",
       "guideKeys": [
         "screenedit-carousel-title-styles"
       ],
@@ -1277,7 +1277,7 @@
       "summary": "Title look and spacing",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1293,7 +1293,7 @@
       "summary": "Fill drawn behind the headline text.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1308,7 +1308,7 @@
       "summary": "Transparency of that headline background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1322,7 +1322,7 @@
       "summary": "Corner rounding of the headline background.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1336,7 +1336,7 @@
       "summary": "Text size (px) of the slide headline.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1351,7 +1351,7 @@
       "summary": "How bold the headline is.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1365,7 +1365,7 @@
       "summary": "Space around the headline text (top, right, bottom, left). All these overrides apply to the headline on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-headline-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-headline-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-headline-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1380,7 +1380,7 @@
       "summary": "Vertical spacing between headline lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1394,7 +1394,7 @@
       "summary": "Left, center, or right alignment of the headline.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1409,7 +1409,7 @@
       "summary": "Headline color.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1426,7 +1426,7 @@
       "summary": "Slide template & content",
       "kind": "section",
       "articleSectionId": "g-content-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-content-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-content-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1440,7 +1440,7 @@
       "summary": "Image & text layout regions",
       "kind": "section",
       "articleSectionId": "g-regions-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-regions-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-regions-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1455,7 +1455,7 @@
       "summary": "Slide text & image styles",
       "kind": "section",
       "articleSectionId": "g-styles-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-styles-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-styles-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1470,7 +1470,7 @@
       "summary": "Timing & duration",
       "kind": "section",
       "articleSectionId": "g-timing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#g-timing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#g-timing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1484,7 +1484,7 @@
       "summary": "An auto-advancing slide deck — the slide template, total play time, each slide’s text and picture and timing, and the per-slide text/image styles. This guide documents every setting of the Carousel block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1733,7 +1733,7 @@
       "summary": "Carousel in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1749,7 +1749,7 @@
       "summary": "Open the Carousel section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1763,7 +1763,7 @@
       "summary": "Open this to override the third line's font size, weight, color, alignment, and the padding around it; it appears only with the Image + Title + 2 Subtitles template. Style it as the smallest, quietest text so it never competes with the headline or supporting line. Leave it on theme defaults unless you truly need a change, since overrides apply to this line on every slide of the carousel.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles",
       "guideKeys": [
         "screenedit-carousel-detail-styles"
       ],
@@ -1785,7 +1785,7 @@
       "summary": "Extra line look",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1801,7 +1801,7 @@
       "summary": "Fill drawn behind the extra line text.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1816,7 +1816,7 @@
       "summary": "Transparency of that extra line background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1830,7 +1830,7 @@
       "summary": "Corner rounding of the extra line background.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1844,7 +1844,7 @@
       "summary": "Space around the extra line text (top, right, bottom, left). All these overrides apply to the extra line on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-extra-line-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-extra-line-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-extra-line-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1859,7 +1859,7 @@
       "summary": "Text size (px) of the slide extra line.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1874,7 +1874,7 @@
       "summary": "How bold the extra line is.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1888,7 +1888,7 @@
       "summary": "Vertical spacing between extra line lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1902,7 +1902,7 @@
       "summary": "Left, center, or right alignment of the extra line.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1917,7 +1917,7 @@
       "summary": "Extra line color.",
       "kind": "section",
       "articleSectionId": "set-carousel-detailstyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1932,7 +1932,7 @@
       "summary": "Controls the box that holds each slide's image, separate from the image's own styling. Set how tall the box is (Auto fits the image, Fixed is an exact pixel height, Percent is a share of the slide), where the image sits inside it, and the padding around it. Leave it on Auto unless you want every slide's image to occupy the same vertical space so slides don't jump in size as visitors swipe.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
       "guideKeys": [
         "screenedit-carousel-image-container"
       ],
@@ -1956,7 +1956,7 @@
       "summary": "Image box height and position",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1972,7 +1972,7 @@
       "summary": "Empty space inside the image box (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-container-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1986,7 +1986,7 @@
       "summary": "How the image box is sized: Auto fits the content, Fixed is an exact pixel height, Percent is a share of the slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2002,7 +2002,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2016,7 +2016,7 @@
       "summary": "Where the image sits within its box — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2030,7 +2030,7 @@
       "summary": "Open this to control the slide image's width, height, corner radius, and how it fills its box: Fit shows the whole image (may leave bands), Fill covers the box (edges may crop), Crop trims to the exact box, and Tile repeats it. You also set the padding around the image. Fill is the usual choice for full-bleed slides and Fit keeps the whole graphic visible; settings apply to the image on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles",
       "guideKeys": [
         "screenedit-carousel-image-styles"
       ],
@@ -2052,7 +2052,7 @@
       "summary": "Image size and fit",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2068,7 +2068,7 @@
       "summary": "How rounded the picture corners are (px).",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-corner-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-corner-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-corner-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2082,7 +2082,7 @@
       "summary": "Height (px) of the slide's picture.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2096,7 +2096,7 @@
       "summary": "Space around the picture inside the slide. These overrides apply to the picture on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2110,7 +2110,7 @@
       "summary": "Width (px) of the slide's picture.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-image-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-image-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-image-width",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2124,7 +2124,7 @@
       "summary": "How the picture fills its box: Fit shows the whole image, Fill covers the box (edges may crop), Crop trims to the box, Tile repeats it.",
       "kind": "section",
       "articleSectionId": "set-carousel-imagestyles-prop-scale-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles-prop-scale-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles-prop-scale-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2138,7 +2138,7 @@
       "summary": "A third text line below the supporting line, available only with the Image + Title + 2 Subtitles template. Use it sparingly for one last small detail like a disclaimer or extra proof, since four text layers over an image quickly overcrowd a slide and slow reading. Supports @variable personalization, countdown timers, and styled chips, and is edited per language.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-detail-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-detail-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-detail-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-detail"
       ],
@@ -2160,7 +2160,7 @@
       "summary": "Slide extra line",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-detail-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-detail-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-detail-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2176,7 +2176,7 @@
       "summary": "The image shown on this slide, required on every slide no matter which template you pick. Drag-and-drop or click to upload, and Segmently serves a fast-loading optimized version automatically. Use a high-quality picture that matches the slide's message; how it fills the slide is set in Image styles below, and a slide left without an image shows blank, so set one on every slide before publishing.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-image-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-image-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-image-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-image"
       ],
@@ -2197,7 +2197,7 @@
       "summary": "Slide picture",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-image-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-image-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-image-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2213,7 +2213,7 @@
       "summary": "The line under the headline, shown only when the slide template is Image + Title + Subtitle or richer. Use it to back up the headline with a quick proof point or detail rather than repeat it. It supports @variable personalization, countdown timers, and styled chips, is edited per language, and only appears after you set a slide template that includes a subtitle.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-subtitle-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-subtitle-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-subtitle-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-subtitle"
       ],
@@ -2234,7 +2234,7 @@
       "summary": "Slide supporting line",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-subtitle-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-subtitle-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-subtitle-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2250,7 +2250,7 @@
       "summary": "The main headline on this slide, shown only when the slide template includes a title. Keep it short and benefit-led so it lands in the few seconds the slide is on screen. You can drop in the visitor's earlier answers with @variable, plus countdown timers and styled label chips; if your funnel runs in several languages, you edit this text per language.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-title-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-title-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-title-translations-locale",
       "guideKeys": [
         "screenedit-carousel-slide-title"
       ],
@@ -2272,7 +2272,7 @@
       "summary": "Slide headline",
       "kind": "section",
       "articleSectionId": "set-carousel-items-content-title-translations-locale-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-title-translations-locale-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-title-translations-locale-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2288,7 +2288,7 @@
       "summary": "A two-thumb slider that sets the window, as a share of the carousel's total duration, during which this slide is on screen. Drag the thumbs apart to give this slide a longer share, which leaves less time for the others. For example, a 25% window at a 20-second total keeps this slide visible about 5 seconds; keep slides spread evenly and only widen the most persuasive one.",
       "kind": "section",
       "articleSectionId": "set-carousel-items-progressstart-items-progressend",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-progressstart-items-progressend",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-progressstart-items-progressend",
       "guideKeys": [
         "screenedit-carousel-slide-duration-range"
       ],
@@ -2309,7 +2309,7 @@
       "summary": "How long this slide shows",
       "kind": "section",
       "articleSectionId": "set-carousel-items-progressstart-items-progressend-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-progressstart-items-progressend-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-progressstart-items-progressend-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2325,7 +2325,7 @@
       "summary": "Sets which layers each slide shows: Image Only is just the picture, Image + Title adds one headline, Image + Title + Subtitle adds a supporting line, and Image + Title + 2 Subtitles shows all four text layers. Choosing a richer template reveals its matching text and style fields below. Default to Image + Title for clean, fast-reading slides and add subtitles only when each slide genuinely needs more copy.",
       "kind": "section",
       "articleSectionId": "set-carousel-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-kind",
       "guideKeys": [
         "screenedit-carousel-slide-type"
       ],
@@ -2347,7 +2347,7 @@
       "summary": "Slide content template",
       "kind": "section",
       "articleSectionId": "set-carousel-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2363,7 +2363,7 @@
       "summary": "Open this to override the supporting line's font size, weight, color, alignment, and the padding around it; it shows only when the template includes a subtitle. Keep this line visually lighter than the headline (smaller or thinner) so the slide reads in the right order. Leave it on theme defaults for consistency unless this carousel needs a custom look, and remember changes apply to every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles",
       "guideKeys": [
         "screenedit-carousel-subtitle-styles"
       ],
@@ -2385,7 +2385,7 @@
       "summary": "Supporting line look",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2401,7 +2401,7 @@
       "summary": "Fill drawn behind the supporting line text.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2416,7 +2416,7 @@
       "summary": "Transparency of that supporting line background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2430,7 +2430,7 @@
       "summary": "Corner rounding of the supporting line background.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2444,7 +2444,7 @@
       "summary": "Text size (px) of the slide supporting line.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2459,7 +2459,7 @@
       "summary": "How bold the supporting line is.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2473,7 +2473,7 @@
       "summary": "Vertical spacing between supporting line lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2487,7 +2487,7 @@
       "summary": "Space around the supporting line text (top, right, bottom, left). All these overrides apply to the supporting line on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-supporting-line-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-supporting-line-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-supporting-line-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2502,7 +2502,7 @@
       "summary": "Left, center, or right alignment of the supporting line.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2517,7 +2517,7 @@
       "summary": "Supporting line color.",
       "kind": "section",
       "articleSectionId": "set-carousel-subtitlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2532,7 +2532,7 @@
       "summary": "Controls the box that holds all of a slide's text (title, subtitle, detail) as a group, separate from styling each line. Set how tall the box is (Auto fits the text, Fixed is exact pixels, Percent is a share of the slide), where the text block sits, and the padding around it. Leave it on Auto unless you want text anchored the same way on every slide, for example always sitting in the lower third over the image.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
       "guideKeys": [
         "screenedit-carousel-text-container"
       ],
@@ -2554,7 +2554,7 @@
       "summary": "Text box height and position",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2571,7 +2571,7 @@
       "summary": "Empty space inside the text block box (top, right, bottom, left).",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-container-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2586,7 +2586,7 @@
       "summary": "How the text block box is sized: Auto fits the content, Fixed is an exact pixel height, Percent is a share of the slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-mode",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2603,7 +2603,7 @@
       "summary": "The height number used by the chosen mode (px or %).",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-height-value",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2618,7 +2618,7 @@
       "summary": "Where the text block sits within its box — top, center, or bottom.",
       "kind": "section",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets-prop-vertical-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2633,7 +2633,7 @@
       "summary": "The total time in seconds for the whole carousel to play through once before it stops or the visitor moves on (0.1–120s). This total is split across slides by each slide's timing slider, so changing it speeds up or slows every slide proportionally. Start around 3–5 seconds per slide (about 12–20s for four slides) — long enough to read each line, short enough to keep momentum and avoid stalling the visitor.",
       "kind": "section",
       "articleSectionId": "set-carousel-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-timer-duration",
       "guideKeys": [
         "screenedit-carousel-duration"
       ],
@@ -2654,7 +2654,7 @@
       "summary": "Total play time",
       "kind": "section",
       "articleSectionId": "set-carousel-timer-duration-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-timer-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-timer-duration-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2670,7 +2670,7 @@
       "summary": "Open this to override how the carousel's headline looks: font size, weight, color, alignment, and the padding around the text. It only shows when the template includes a title. Leave it untouched to inherit your theme so screens stay consistent; change it only when one carousel needs a bigger or bolder headline, and note the overrides apply to the title on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles",
       "guideKeys": [
         "screenedit-carousel-title-styles"
       ],
@@ -2692,7 +2692,7 @@
       "summary": "Title look and spacing",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2708,7 +2708,7 @@
       "summary": "Fill drawn behind the headline text.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2723,7 +2723,7 @@
       "summary": "Transparency of that headline background (0–100%).",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-opacity",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2737,7 +2737,7 @@
       "summary": "Corner rounding of the headline background.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-background-radius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-background-radius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-background-radius",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2751,7 +2751,7 @@
       "summary": "Text size (px) of the slide headline.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-font-size",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-font-size",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-font-size",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2766,7 +2766,7 @@
       "summary": "How bold the headline is.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-font-weight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-font-weight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-font-weight",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2780,7 +2780,7 @@
       "summary": "Space around the headline text (top, right, bottom, left). All these overrides apply to the headline on every slide.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-headline-padding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-headline-padding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-headline-padding",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2795,7 +2795,7 @@
       "summary": "Vertical spacing between headline lines.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-line-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-line-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-line-height",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2809,7 +2809,7 @@
       "summary": "Left, center, or right alignment of the headline.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-text-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-text-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-text-align",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2824,7 +2824,7 @@
       "summary": "Headline color.",
       "kind": "section",
       "articleSectionId": "set-carousel-titlestyles-prop-text-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles-prop-text-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles-prop-text-color",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2842,7 +2842,7 @@
       "group": "content",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-type.png",
       "articleSectionId": "set-carousel-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-kind",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2856,7 +2856,7 @@
       "group": "content",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-title.png",
       "articleSectionId": "set-carousel-items-content-title-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-title-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-title-translations-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2870,7 +2870,7 @@
       "group": "content",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-subtitle.png",
       "articleSectionId": "set-carousel-items-content-subtitle-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-subtitle-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-subtitle-translations-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2884,7 +2884,7 @@
       "group": "content",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-detail.png",
       "articleSectionId": "set-carousel-items-content-detail-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-detail-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-detail-translations-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2898,7 +2898,7 @@
       "group": "content",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-image.png",
       "articleSectionId": "set-carousel-items-content-image-translations-locale",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-content-image-translations-locale",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-content-image-translations-locale",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2912,7 +2912,7 @@
       "group": "timing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-duration.png",
       "articleSectionId": "set-carousel-timer-duration",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-timer-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-timer-duration",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2926,7 +2926,7 @@
       "group": "timing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/open-section-slide-timing.png",
       "articleSectionId": "set-carousel-items-progressstart-items-progressend",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-items-progressstart-items-progressend",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-items-progressstart-items-progressend",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2940,7 +2940,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-title-styles.png",
       "articleSectionId": "set-carousel-titlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-titlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-titlestyles",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2955,7 +2955,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-subtitle-styles.png",
       "articleSectionId": "set-carousel-subtitlestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-subtitlestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-subtitlestyles",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2970,7 +2970,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-detail-styles.png",
       "articleSectionId": "set-carousel-detailstyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-detailstyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-detailstyles",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -2985,7 +2985,7 @@
       "group": "styles",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-image-styles.png",
       "articleSectionId": "set-carousel-imagestyles",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagestyles",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagestyles",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -3000,7 +3000,7 @@
       "group": "regions",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-image-container.png",
       "articleSectionId": "set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-imagecontainer-verticalalignment-imagecontainer-heightkind-imagecontainer-heightvalue-imagecontainer-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -3015,7 +3015,7 @@
       "group": "regions",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/gear-text-container.png",
       "articleSectionId": "set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-carousel/index.html#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-carousel#set-carousel-textcontainer-verticalalignment-textcontainer-heightkind-textcontainer-heightvalue-textcontainer-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Carousel screen and find the Carousel section (set the slide template at the top).",
@@ -5886,6 +5886,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "661c0c37812263ba"
+    "generatedHash": "7fe3493d1c215003"
   }
 }

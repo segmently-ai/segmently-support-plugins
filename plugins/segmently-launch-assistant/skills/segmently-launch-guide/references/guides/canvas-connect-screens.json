@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-connect-screens/index.html",
+    "fullArticleLink": "https://help.segmently.ai/canvas-connect-screens",
     "sourceRecipeKey": "connect-canvas-screens",
     "localArticlePath": null,
     "sections": [
@@ -88,7 +88,12 @@
       "title": "Find the connection ports",
       "summary": "Each node has handles on its edges: input handles on the left of non-launch screens, and one output handle per action on the right. Hover a handle to see its action label.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/connection-handles"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -96,7 +101,12 @@
       "title": "Draw a default connection",
       "summary": "Drag from an output handle on the source to an input handle on the target to create an edge. This is an unconditional path: every visitor who takes that action goes to the target.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/create-default-edge"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -104,7 +114,12 @@
       "title": "Add conditions to a connection",
       "summary": "Click an edge to open Connection Details, then Edit Conditions to define AND/OR logic on flow variables. Conditional paths activate only when the conditions are true.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/edit-conditions"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -112,7 +127,12 @@
       "title": "Remove a connection",
       "summary": "Click an edge, then Delete Connection and confirm. The target becomes unreachable through that action unless another path exists.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/delete-connection"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -120,7 +140,12 @@
       "title": "Verify the flow is complete",
       "summary": "Before publishing, confirm a launch screen is set, every non-final screen has an outgoing connection, paywall screens point to valid products, and each branch ends meaningfully.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/validation"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -128,7 +153,12 @@
       "title": "FlexibleLayout sections add their own handles",
       "summary": "FlexibleLayout screens hold multiple sections (content, buttons, options, embeds, paywalls), and each can generate its own connection handles. Handles appear automatically based on the sections you add.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/flexible-layout-handles"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -136,7 +166,12 @@
       "title": "Carousel and ProgressSteps auto-advance",
       "summary": "Carousel and ProgressSteps screens advance on a timer rather than a button, so their timer handle is what you route from. These types have no Action Bar because visitors do not click Continue.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "canvas-connect-screens",
+          "subarticleId": "canvas-connect-screens/timer-auto-advance"
+        }
+      ],
       "actionIds": []
     }
   ]

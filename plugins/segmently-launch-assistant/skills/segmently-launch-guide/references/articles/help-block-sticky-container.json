@@ -11,7 +11,7 @@
       "summary": "Bar appearance",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Pin & button type",
       "kind": "section",
       "articleSectionId": "g-behavior-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-behavior-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-behavior-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Bar spacing",
       "kind": "section",
       "articleSectionId": "g-spacing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-spacing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-spacing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -53,7 +53,7 @@
       "summary": "A floating bar pinned to the bottom of a Flexible Layout screen so the main button stays visible and tappable while content scrolls — its background bar (colour, opacity, corner radius, outline), the spacing from the edges and around the button, and whether it holds a standard or purchase button. This guide documents every setting of the Sticky Container block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -302,7 +302,7 @@
       "summary": "Sticky Container in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -318,7 +318,7 @@
       "summary": "Open the Sticky Container section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -332,7 +332,7 @@
       "summary": "Sets the color of the bar behind the pinned button (appears only when the bar is shown; defaults to white). Match it to your screen or theme background so the bar feels built-in, and make sure it contrasts with the button so the CTA stays the most eye-catching thing on screen. That contrast is what keeps the call-to-action obvious to paid-traffic visitors.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-backgroundcolor",
       "guideKeys": [
         "screenedit-sticky-container-background-color"
       ],
@@ -354,7 +354,7 @@
       "summary": "Color of the bar",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -370,7 +370,7 @@
       "summary": "Sets the color of the bar's outline (defaults to black; appears only when the outline thickness is above 0 and the bar is shown). Pick a color that frames the bar without competing with the button — a subtle, theme-matched tone usually works best, keeping attention on the CTA itself.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-bordercolor",
       "guideKeys": [
         "screenedit-sticky-container-border-color"
       ],
@@ -392,7 +392,7 @@
       "summary": "Outline color",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-bordercolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-bordercolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-bordercolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -408,7 +408,7 @@
       "summary": "Sets how thick the outline around the bar is, in pixels (default 0, meaning no outline; only applies when the bar is shown). Add an outline when the bar's color is close to the screen background and you want a crisp edge that separates the CTA from content behind it. Once it is above 0, the border color setting appears so you can style the outline.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-borderwidth",
       "guideKeys": [
         "screenedit-sticky-container-border-width"
       ],
@@ -430,7 +430,7 @@
       "summary": "Outline thickness",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-borderwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-borderwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-borderwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -446,7 +446,7 @@
       "summary": "Chooses the pinned button's job: a standard button navigates to the next screen (use it on flow steps like 'Continue'), while a purchase button starts checkout and ties into your paywall products (use it on the paywall). The bar holds one button at a time, so switching type replaces it with a fresh default — your bar styling is kept, but you'll need to re-set the button's label and action.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-buttontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-buttontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-buttontype",
       "guideKeys": [
         "screenedit-sticky-container-button-type"
       ],
@@ -472,7 +472,7 @@
       "summary": "What the button does",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-buttontype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-buttontype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-buttontype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -488,7 +488,7 @@
       "summary": "Sets the inner spacing on all four sides between the bar's background and the button inside it. A little padding keeps the button from looking cramped against the edges and gives a comfortable tap target; too much wastes vertical space and shrinks the visible content. Adjust until the button sits centered with even breathing room.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-containerpadding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-containerpadding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-containerpadding",
       "guideKeys": [
         "screenedit-sticky-container-padding"
       ],
@@ -510,7 +510,7 @@
       "summary": "Space around the button",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-containerpadding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-containerpadding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-containerpadding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -526,7 +526,7 @@
       "summary": "Sets how rounded the bar's corners are, in pixels (default 12, only applies when the bar is shown). The default looks good on most screens; raise it for a softer, pill-like bar or set it to 0 for sharp corners. Match it to your buttons and cards so the bar looks like part of the design rather than an add-on.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-cornerradius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-cornerradius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-cornerradius",
       "guideKeys": [
         "screenedit-sticky-container-corner-radius"
       ],
@@ -548,7 +548,7 @@
       "summary": "Roundness of the bar corners",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-cornerradius-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-cornerradius-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-cornerradius-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -564,7 +564,7 @@
       "summary": "Turns the sticky bar on or off. When on, your main button stays pinned to the bottom and tappable while the visitor scrolls, and the rest of the bar's settings below appear. Turn it on for long or paywall screens so the action never scrolls out of reach (this protects clicks from paid traffic); leave it off on short screens where the button is always in view.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-enablesticky",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-enablesticky",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-enablesticky",
       "guideKeys": [
         "screenedit-sticky-container-enable-sticky"
       ],
@@ -587,7 +587,7 @@
       "summary": "Pin the CTA to the bottom",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-enablesticky-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-enablesticky-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-enablesticky-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -603,7 +603,7 @@
       "summary": "Sets the gap, in pixels, between the bar and the top, right, bottom and left edges of the screen. Add a little bottom and side spacing so the bar floats just above the edge instead of touching it. This keeps the CTA clear of the phone's home indicator and gesture area, so the button stays comfortably tappable on mobile, where most paid traffic lands.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-offsetfromedges",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-offsetfromedges",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-offsetfromedges",
       "guideKeys": [
         "screenedit-sticky-container-offset-from-edges"
       ],
@@ -625,7 +625,7 @@
       "summary": "Spacing from screen edges",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-offsetfromedges-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-offsetfromedges-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-offsetfromedges-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -641,7 +641,7 @@
       "summary": "Sets how transparent the bar's background is, from fully see-through to fully solid (only applies when the bar is shown). Keep it near solid to keep the CTA crisp and readable; lower it for a softer, glass-like look that lets content show through. Avoid going very transparent — if the button blends into scrolling content, visitors may miss it and you lose clicks.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-opacity",
       "guideKeys": [
         "screenedit-sticky-container-opacity"
       ],
@@ -663,7 +663,7 @@
       "summary": "How see-through the bar is",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-opacity-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-opacity-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-opacity-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -679,7 +679,7 @@
       "summary": "Adds a solid bar behind the pinned button and unlocks the background color, opacity, border and corner-radius settings. Keep it on in most cases: the bar separates the CTA from content scrolling underneath, so the button stays readable over busy backgrounds. Turn it off only for a clean floating-button look on simple screens where nothing scrolls behind it.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-showbackground",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-showbackground",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-showbackground",
       "guideKeys": [
         "screenedit-sticky-container-show-background"
       ],
@@ -701,7 +701,7 @@
       "summary": "Show a bar behind the button",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-showbackground-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-showbackground-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-showbackground-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -719,7 +719,7 @@
       "summary": "Bar appearance",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -733,7 +733,7 @@
       "summary": "Pin & button type",
       "kind": "section",
       "articleSectionId": "g-behavior-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-behavior-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-behavior-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -747,7 +747,7 @@
       "summary": "Bar spacing",
       "kind": "section",
       "articleSectionId": "g-spacing-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#g-spacing-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#g-spacing-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -761,7 +761,7 @@
       "summary": "A floating bar pinned to the bottom of a Flexible Layout screen so the main button stays visible and tappable while content scrolls — its background bar (colour, opacity, corner radius, outline), the spacing from the edges and around the button, and whether it holds a standard or purchase button. This guide documents every setting of the Sticky Container block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1010,7 +1010,7 @@
       "summary": "Sticky Container in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1026,7 +1026,7 @@
       "summary": "Open the Sticky Container section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1040,7 +1040,7 @@
       "summary": "Sets the color of the bar behind the pinned button (appears only when the bar is shown; defaults to white). Match it to your screen or theme background so the bar feels built-in, and make sure it contrasts with the button so the CTA stays the most eye-catching thing on screen. That contrast is what keeps the call-to-action obvious to paid-traffic visitors.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-backgroundcolor",
       "guideKeys": [
         "screenedit-sticky-container-background-color"
       ],
@@ -1062,7 +1062,7 @@
       "summary": "Color of the bar",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1078,7 +1078,7 @@
       "summary": "Sets the color of the bar's outline (defaults to black; appears only when the outline thickness is above 0 and the bar is shown). Pick a color that frames the bar without competing with the button — a subtle, theme-matched tone usually works best, keeping attention on the CTA itself.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-bordercolor",
       "guideKeys": [
         "screenedit-sticky-container-border-color"
       ],
@@ -1100,7 +1100,7 @@
       "summary": "Outline color",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-bordercolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-bordercolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-bordercolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1116,7 +1116,7 @@
       "summary": "Sets how thick the outline around the bar is, in pixels (default 0, meaning no outline; only applies when the bar is shown). Add an outline when the bar's color is close to the screen background and you want a crisp edge that separates the CTA from content behind it. Once it is above 0, the border color setting appears so you can style the outline.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-borderwidth",
       "guideKeys": [
         "screenedit-sticky-container-border-width"
       ],
@@ -1138,7 +1138,7 @@
       "summary": "Outline thickness",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-borderwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-borderwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-borderwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1154,7 +1154,7 @@
       "summary": "Chooses the pinned button's job: a standard button navigates to the next screen (use it on flow steps like 'Continue'), while a purchase button starts checkout and ties into your paywall products (use it on the paywall). The bar holds one button at a time, so switching type replaces it with a fresh default — your bar styling is kept, but you'll need to re-set the button's label and action.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-buttontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-buttontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-buttontype",
       "guideKeys": [
         "screenedit-sticky-container-button-type"
       ],
@@ -1180,7 +1180,7 @@
       "summary": "What the button does",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-buttontype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-buttontype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-buttontype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1196,7 +1196,7 @@
       "summary": "Sets the inner spacing on all four sides between the bar's background and the button inside it. A little padding keeps the button from looking cramped against the edges and gives a comfortable tap target; too much wastes vertical space and shrinks the visible content. Adjust until the button sits centered with even breathing room.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-containerpadding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-containerpadding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-containerpadding",
       "guideKeys": [
         "screenedit-sticky-container-padding"
       ],
@@ -1218,7 +1218,7 @@
       "summary": "Space around the button",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-containerpadding-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-containerpadding-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-containerpadding-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1234,7 +1234,7 @@
       "summary": "Sets how rounded the bar's corners are, in pixels (default 12, only applies when the bar is shown). The default looks good on most screens; raise it for a softer, pill-like bar or set it to 0 for sharp corners. Match it to your buttons and cards so the bar looks like part of the design rather than an add-on.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-cornerradius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-cornerradius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-cornerradius",
       "guideKeys": [
         "screenedit-sticky-container-corner-radius"
       ],
@@ -1256,7 +1256,7 @@
       "summary": "Roundness of the bar corners",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-cornerradius-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-cornerradius-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-cornerradius-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1272,7 +1272,7 @@
       "summary": "Turns the sticky bar on or off. When on, your main button stays pinned to the bottom and tappable while the visitor scrolls, and the rest of the bar's settings below appear. Turn it on for long or paywall screens so the action never scrolls out of reach (this protects clicks from paid traffic); leave it off on short screens where the button is always in view.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-enablesticky",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-enablesticky",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-enablesticky",
       "guideKeys": [
         "screenedit-sticky-container-enable-sticky"
       ],
@@ -1295,7 +1295,7 @@
       "summary": "Pin the CTA to the bottom",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-enablesticky-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-enablesticky-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-enablesticky-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1311,7 +1311,7 @@
       "summary": "Sets the gap, in pixels, between the bar and the top, right, bottom and left edges of the screen. Add a little bottom and side spacing so the bar floats just above the edge instead of touching it. This keeps the CTA clear of the phone's home indicator and gesture area, so the button stays comfortably tappable on mobile, where most paid traffic lands.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-offsetfromedges",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-offsetfromedges",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-offsetfromedges",
       "guideKeys": [
         "screenedit-sticky-container-offset-from-edges"
       ],
@@ -1333,7 +1333,7 @@
       "summary": "Spacing from screen edges",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-offsetfromedges-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-offsetfromedges-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-offsetfromedges-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1349,7 +1349,7 @@
       "summary": "Sets how transparent the bar's background is, from fully see-through to fully solid (only applies when the bar is shown). Keep it near solid to keep the CTA crisp and readable; lower it for a softer, glass-like look that lets content show through. Avoid going very transparent — if the button blends into scrolling content, visitors may miss it and you lose clicks.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-opacity",
       "guideKeys": [
         "screenedit-sticky-container-opacity"
       ],
@@ -1371,7 +1371,7 @@
       "summary": "How see-through the bar is",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-opacity-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-opacity-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-opacity-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1387,7 +1387,7 @@
       "summary": "Adds a solid bar behind the pinned button and unlocks the background color, opacity, border and corner-radius settings. Keep it on in most cases: the bar separates the CTA from content scrolling underneath, so the button stays readable over busy backgrounds. Turn it off only for a clean floating-button look on simple screens where nothing scrolls behind it.",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-showbackground",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-showbackground",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-showbackground",
       "guideKeys": [
         "screenedit-sticky-container-show-background"
       ],
@@ -1409,7 +1409,7 @@
       "summary": "Show a bar behind the button",
       "kind": "section",
       "articleSectionId": "set-stickycontainer-showbackground-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-showbackground-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-showbackground-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1428,7 +1428,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-enable.png",
       "articleSectionId": "set-stickycontainer-enablesticky",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-enablesticky",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-enablesticky",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1442,7 +1442,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/open-section-button-type.png",
       "articleSectionId": "set-stickycontainer-buttontype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-buttontype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-buttontype",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1456,7 +1456,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-show-background.png",
       "articleSectionId": "set-stickycontainer-showbackground",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-showbackground",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-showbackground",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1471,7 +1471,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-bg-color.png",
       "articleSectionId": "set-stickycontainer-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1486,7 +1486,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-opacity.png",
       "articleSectionId": "set-stickycontainer-opacity",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-opacity",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-opacity",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1501,7 +1501,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-corner-radius.png",
       "articleSectionId": "set-stickycontainer-cornerradius",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-cornerradius",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-cornerradius",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1516,7 +1516,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-width.png",
       "articleSectionId": "set-stickycontainer-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-borderwidth",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1531,7 +1531,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-appearance-border-color.png",
       "articleSectionId": "set-stickycontainer-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-bordercolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1546,7 +1546,7 @@
       "group": "spacing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-offset.png",
       "articleSectionId": "set-stickycontainer-offsetfromedges",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-offsetfromedges",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-offsetfromedges",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -1561,7 +1561,7 @@
       "group": "spacing",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-sticky-container-section/0.2.0/configure-sticky-container-section-2026-06-25T09-27-11-795Z-a7e51f3e/sticky-spacing-padding.png",
       "articleSectionId": "set-stickycontainer-containerpadding",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-sticky-container/index.html#set-stickycontainer-containerpadding",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-sticky-container#set-stickycontainer-containerpadding",
       "route": [
         "Open the screen in the editor.",
         "Open a Flexible Layout screen and expand the Sticky Container section.",
@@ -2566,6 +2566,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "f9f4d3af23d75b15"
+    "generatedHash": "f2e82dc573ffae5a"
   }
 }

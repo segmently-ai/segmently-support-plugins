@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": false,
     "screenshotSectionCount": 0,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/paywall-product-basic-fields/index.html",
+    "fullArticleLink": "https://help.segmently.ai/paywall-product-basic-fields",
     "sourceRecipeKey": null,
     "localArticlePath": null,
     "sections": [
@@ -70,7 +70,12 @@
       "title": "Select Stripe mode",
       "summary": "Choose whether this product uses your Test or Live Stripe credentials. Test mode lets you rehearse the whole checkout with no real charge; Live charges real customers. It has to match your connected Stripe mode and the mode you publish in — if they don't line up, checkout will fail.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "subarticleId": "paywall-product-basic-fields/stripe-mode"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -78,7 +83,12 @@
       "title": "Choose the checkout experience",
       "summary": "Pick how the payment form appears. An embedded form slides up as a bottom sheet and keeps visitors inside your funnel — recommended for most funnels since staying in-flow converts better. A full-page Stripe Checkout redirect is simpler to set up but sends the visitor away to Stripe's own hosted page.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "subarticleId": "paywall-product-basic-fields/checkout-mode"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -86,7 +96,12 @@
       "title": "Name the product",
       "summary": "Set the display name customers see on the paywall and at checkout — this field is required. Use clear, benefit-focused wording like 'Premium Annual Plan' rather than an internal code or SKU, since this is part of the buying decision.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "subarticleId": "paywall-product-basic-fields/product-name"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -94,7 +109,12 @@
       "title": "Add a description (optional)",
       "summary": "Optionally add supporting text shown on the paywall and inside the Studio to spell out what's included, the key benefits, or the terms. Leave it blank if the product name already says everything a buyer needs to know.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "subarticleId": "paywall-product-basic-fields/description"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -102,7 +122,12 @@
       "title": "Choose the product type",
       "summary": "Select subscription (recurring, billed on a schedule) or one-time payment (charged once). This decides which trial and subscription options appear below and which Stripe prices are eligible. If you change it after a live product is already wired up, retest checkout before you relaunch.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "paywall-product-basic-fields",
+          "subarticleId": "paywall-product-basic-fields/product-type"
+        }
+      ],
       "actionIds": []
     }
   ]

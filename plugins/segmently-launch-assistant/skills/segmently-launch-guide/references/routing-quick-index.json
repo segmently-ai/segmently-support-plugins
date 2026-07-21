@@ -1584,6 +1584,10 @@
       ],
       "mode": "teach",
       "articleAliases": [
+        "integrations-stripe-connect-section",
+        "stripe-connect-oauth-guidance",
+        "paywall-products-list",
+        "paywall-product-subscription-options",
         "help-block-paywall-subscriptions"
       ],
       "next": "references/article-directory.json"
@@ -1603,7 +1607,10 @@
       ],
       "mode": "teach",
       "articleAliases": [
-        "integrations-custom-domain-section"
+        "integrations-custom-domain-section",
+        "custom-domain-domain-input",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
       ],
       "next": "references/article-directory.json"
     },
@@ -1703,6 +1710,28 @@
       "articleAliases": [
         "tiktok-events-catalog",
         "tiktok-pixel-events-api-setup"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "sync-strategy-onboarding",
+        "sync strategy to funnel",
+        "sync my funnel",
+        "push strategy changes",
+        "push strategy to onboarding",
+        "keep my funnel edits",
+        "don't overwrite my funnel edits",
+        "lift funnel to strategy",
+        "pull funnel into strategy",
+        "compile strategy to funnel",
+        "resolve sync conflict",
+        "keep funnel or take strategy"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-strategy-onboarding-sync"
       ],
       "next": "references/article-directory.json"
     }

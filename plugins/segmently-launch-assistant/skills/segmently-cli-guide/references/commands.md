@@ -128,7 +128,7 @@ a full funnel manifest when the task is scoped to existing V2 StepNode screens.
 
 | Goal | Commands | Scopes |
 |---|---|---|
-| Analytics settings | `segmently analytics settings get/apply --file analytics.json --merge` | `analytics:read`, `analytics:write`; write satisfies read |
+| Analytics settings | `segmently analytics settings get`, then `segmently analytics settings apply --file analytics.json --merge` | `analytics:read`, `analytics:write`; write satisfies read |
 | Analytics readiness | `segmently analytics probe --required-platform facebook_pixel,facebook_capi --required-url-param fbclid,...` | `analytics:read` |
 | Custom domain | `segmently domains status`, `segmently domains verify --allow-pending` | `domains:read` |
 | CDN image upload | `segmently assets upload-image ./hero.png --project <projectId>` | `assets:write`; requires CLI asset upload access |
@@ -166,8 +166,9 @@ entity mutation payloads are intentionally omitted from this public guide.
 
 | Goal | Commands | Scopes |
 |---|---|---|
+| Full-flow readiness / next step | `segmently content-plan doctor --author <authorId>` | `content-plan:read`; not-ready exits non-zero with exact `nextCommand` |
 | Strategy inventory | `segmently content-plan strategies list --include-counts --author <authorId>` | `content-plan:read` |
-| Strategy export | `segmently content-plan strategies export <strategyId> --include-posts --output strategy.json` | `content-plan:read` |
+| Strategy export | `segmently content-plan strategies get <strategyId> --include-posts --output strategy.json` | `content-plan:read` |
 | Strategy readiness | `segmently content-plan strategies audit <strategyId> --required-platform linkedin,x --require-generated-posts` | `content-plan:read` |
 | Creator profile export | `segmently content-plan profile export --author <authorId> --platform linkedin,x --output profile.json` | `content-plan:read` |
 | Creator profile apply | `segmently content-plan profile apply --file profile.json --dry-run` | `content-plan:write`; write satisfies read |
@@ -176,10 +177,11 @@ entity mutation payloads are intentionally omitted from this public guide.
 | Design profile list | `segmently content-plan designs list linkedin --author <authorId> --include-profiles` | `content-plan:read` |
 | Design profile export | `segmently content-plan designs export linkedin --author <authorId> --profile-key carousel_square --output design.json` | `content-plan:read`; add `--flat` for editor-compatible `_schema: segmently-design-system/v1` JSON |
 | Design profile apply | `segmently content-plan designs apply linkedin --author <authorId> --profile-key carousel_square --file design.json --dry-run` | `content-plan:write`; accepts flat JSON, skill composite JSON, or CLI transfer manifest |
+| Full design-system package | `segmently content-plan design-systems list|export|inspect|apply|set-current` | `content-plan:read|write`; use the Content Plan guide workflow |
 
-Content Plan apply commands write explicit manifests for pillars, author platform
-post templates, and author platform design profiles. They do not invoke AI
-generation tasks.
+Content Plan `apply` commands upsert explicit manifests; `accept` promotes
+generated drafts; `set-current` activates an existing author/design resource.
+Generated draft lookup uses `--generation`, not the removed `--task` option.
 
 For detailed Content Plan workflows, manifests, design-reference variants, and
 text-budget rules, use `segmently-cli-content-plan-guide`. This general guide

@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-wizard-theme-select/index.html",
+    "fullArticleLink": "https://help.segmently.ai/onboarding-wizard-theme-select",
     "sourceRecipeKey": "choose-template-theme",
     "localArticlePath": null,
     "sections": [
@@ -43,7 +43,12 @@
       "title": "Pick the visual baseline",
       "summary": "Click a theme card to set it as the baseline for colors, fonts, spacing, and screen layouts. The selected card is highlighted and becomes the starting point for the Customize step.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151453_select-wizard-theme-wizard-theme-selection/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-select",
+          "subarticleId": "onboarding-wizard-theme-select/theme-grid"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -51,7 +56,12 @@
       "title": "Keep it reusable",
       "summary": "Prefer a theme that can cover every planned screen type rather than optimizing only for the first screen. You can fine-tune everything in the next step.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "onboarding-wizard-theme-select",
+          "subarticleId": "onboarding-wizard-theme-select/reusability"
+        }
+      ],
       "actionIds": []
     }
   ]

@@ -13,7 +13,7 @@
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-stripe-metadata/index.html",
+    "fullArticleLink": "https://help.segmently.ai/webplacement-stripe-metadata",
     "sourceRecipeKey": "configure-web-placement-stripe-metadata",
     "localArticlePath": null,
     "sections": [
@@ -70,7 +70,12 @@
       "title": "Why attach metadata, and how to add one",
       "summary": "Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys.",
       "imageUrl": "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png",
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "subarticleId": "webplacement-stripe-metadata/add-param"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -78,7 +83,12 @@
       "title": "Choose which parameter to send",
       "summary": "Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "subarticleId": "webplacement-stripe-metadata/select-source"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -86,7 +96,12 @@
       "title": "Review the metadata preview",
       "summary": "The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "subarticleId": "webplacement-stripe-metadata/preview"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -94,7 +109,12 @@
       "title": "Remove a parameter",
       "summary": "Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "subarticleId": "webplacement-stripe-metadata/remove"
+        }
+      ],
       "actionIds": []
     },
     {
@@ -102,7 +122,12 @@
       "title": "Watch the keys limit",
       "summary": "A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first.",
       "imageUrl": null,
-      "articleRefs": [],
+      "articleRefs": [
+        {
+          "articleAlias": "webplacement-stripe-metadata",
+          "subarticleId": "webplacement-stripe-metadata/counter"
+        }
+      ],
       "actionIds": []
     }
   ]

@@ -11,7 +11,7 @@
       "summary": "Input type & behaviour",
       "kind": "section",
       "articleSectionId": "g-behavior-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-behavior-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-behavior-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -25,7 +25,7 @@
       "summary": "Input box appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-box-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-box-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-box-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -39,7 +39,7 @@
       "summary": "Validation error message",
       "kind": "section",
       "articleSectionId": "g-error-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-error-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-error-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -53,7 +53,7 @@
       "summary": "Field icon",
       "kind": "section",
       "articleSectionId": "g-icon-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-icon-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-icon-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -67,7 +67,7 @@
       "summary": "Placeholder text & styles",
       "kind": "section",
       "articleSectionId": "g-placeholder-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-placeholder-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-placeholder-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -82,7 +82,7 @@
       "summary": "The free-text input field — what kind of value it accepts and how typed answers look. This guide documents every setting of the Text Field block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -651,7 +651,7 @@
       "summary": "Text Field in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -668,7 +668,7 @@
       "summary": "Open the Text Field section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -683,7 +683,7 @@
       "summary": "Sets the fill color inside the input box. Most funnels leave it clear so the screen background shows through, or use a subtle light fill to make the tappable field stand out. Just make sure it contrasts with the typed-text color so answers stay easy to read and people don't abandon the question.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-text-field-background-color"
       ],
@@ -705,7 +705,7 @@
       "summary": "Fill behind the input",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -721,7 +721,7 @@
       "summary": "Sets the color of the field's outline, which only appears when the Border Style is an underline or a full box. Use a tone from your theme — an accent or a soft neutral — so the field's edges read clearly as something to tap and type into. A visible outline helps people recognize and fill in the field.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordercolor",
       "guideKeys": [
         "screenedit-text-field-border-color"
       ],
@@ -743,7 +743,7 @@
       "summary": "Color of the field outline",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordercolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordercolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordercolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -759,7 +759,7 @@
       "summary": "Sets the gap OUTSIDE the field, separating it from the title above and anything below, on the top, right, bottom, and left. Use it to give the field room to breathe within the screen. This is the space around the field — distinct from Internal Padding, which is the space inside it.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordermargins",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordermargins",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordermargins",
       "guideKeys": [
         "screenedit-text-field-border-margins"
       ],
@@ -781,7 +781,7 @@
       "summary": "Space around the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordermargins-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordermargins-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordermargins-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -797,7 +797,7 @@
       "summary": "Chooses how the field is outlined: a bottom underline under the text, a bottom underline with room for an icon, or a full box around the whole field. A full box reads most clearly as a place to type, while underline styles feel lighter. Your pick here also decides whether the Border Color and Border Width settings actually show.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordertype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordertype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordertype",
       "guideKeys": [
         "screenedit-text-field-border-type"
       ],
@@ -819,7 +819,7 @@
       "summary": "Pick the field outline style",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordertype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordertype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordertype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -835,7 +835,7 @@
       "summary": "Controls how thick the field's outline is, from 0 to 50 pixels (default 1). Keep it at 1-2 pixels for a clean, modern look and only go thicker for a deliberately bold style. A visible but restrained outline helps people spot the field at a glance and answer faster.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-borderwidth",
       "guideKeys": [
         "screenedit-text-field-border-width"
       ],
@@ -857,7 +857,7 @@
       "summary": "Thickness of the outline",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-borderwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-borderwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-borderwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -873,7 +873,7 @@
       "summary": "Sets the color of the text a visitor types into this field; the gray placeholder hint has its own separate color. Pick a color with strong contrast against the field background (use a light color on dark themes) so answers stay legible. Easy-to-read fields are easier to fill in, which protects completion on your data-collection screens.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-enteredtextcolor",
       "guideKeys": [
         "screenedit-text-field-text-color"
       ],
@@ -895,7 +895,7 @@
       "summary": "Color of typed answers",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-enteredtextcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-enteredtextcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-enteredtextcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -911,7 +911,7 @@
       "summary": "Message displayed when user input fails validation (does not match Validation Regex or Field Type). Shown to guide correction. Can be localized per locale.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage",
       "guideKeys": [
         "screenedit-text-field-error-message"
       ],
@@ -933,7 +933,7 @@
       "summary": "Aligns the validation error message to the left, center, or right. Match it to the field's own text alignment (left is typical) so the message sits naturally under the input. Keeping them aligned makes it obvious which field was rejected, so users fix it quickly and don't stall.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-align",
       "guideKeys": [
         "screenedit-text-field-error-text-align"
       ],
@@ -955,7 +955,7 @@
       "summary": "Where the error text sits",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -972,7 +972,7 @@
       "summary": "Sets a fill color behind the validation error message that appears when an answer is rejected. Usually leave it transparent so only the red text shows; add a subtle tint only if you want the error to read like a banner. Whatever you choose, keep enough contrast with the error text so the message stays readable and users can quickly fix and continue.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-text-field-error-background"
       ],
@@ -994,7 +994,7 @@
       "summary": "Fill behind the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1011,7 +1011,7 @@
       "summary": "Sets the color of the error text shown when an answer fails validation (default red, #FF3B30). Keep it red or another high-contrast warning color so people instantly see that their input was rejected and needs fixing. A clear error keeps them from giving up before they can continue.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
       "guideKeys": [
         "screenedit-text-field-error-text-color"
       ],
@@ -1033,7 +1033,7 @@
       "summary": "Color of the error message",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1049,7 +1049,7 @@
       "summary": "Sets the typeface for the validation error message shown when an answer is rejected. Leave it on your theme/system font unless you have a specific brand font, and match it to the field's font so the error looks like part of the same form. A consistent error style keeps the screen feeling polished and helps users trust and fix the field fast.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontfamily",
       "guideKeys": [
         "screenedit-text-field-error-font-family"
       ],
@@ -1071,7 +1071,7 @@
       "summary": "Font of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1088,7 +1088,7 @@
       "summary": "Sets the point size of the validation error message. Keep it a touch smaller than the field text (about 12-13pt) so it reads as a secondary note, but not so small it's hard to read on a phone. A legible error helps users spot and fix a rejected answer instead of abandoning the screen.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontsize",
       "guideKeys": [
         "screenedit-text-field-error-font-size"
       ],
@@ -1110,7 +1110,7 @@
       "summary": "Size of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1127,7 +1127,7 @@
       "summary": "Sets how heavy the error message looks (for example 400 regular or 600 semibold). Regular (400) works in most cases; step up to 600 if you want the error to stand out more. Paired with the red color, a bit more weight helps users notice and correct a rejected answer so they keep moving through the funnel.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontweight",
       "guideKeys": [
         "screenedit-text-field-error-font-weight"
       ],
@@ -1149,7 +1149,7 @@
       "summary": "Boldness of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1166,7 +1166,7 @@
       "summary": "Set validation error message",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1182,7 +1182,7 @@
       "summary": "Tells the field what kind of value to accept — plain text, a whole number, a decimal, a date, or an email — and automatically applies basic checks plus the right phone keyboard. Use Email for email capture and plain text for open answers. Picking the correct type blocks bad data, keeping any branching, analytics, or CRM that reads this answer reliable.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-fieldtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-fieldtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-fieldtype",
       "guideKeys": [
         "screenedit-text-field-field-type"
       ],
@@ -1205,7 +1205,7 @@
       "summary": "What the field accepts",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-fieldtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-fieldtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-fieldtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1221,7 +1221,7 @@
       "summary": "Adds a small image — like a mail or person glyph — to the left of the input to hint at what the field is for. It's optional, and you can upload a different image for each language. It only appears with a Border Style that leaves room for an icon, and its size and rounding come from the icon's image style settings.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon",
       "guideKeys": [
         "screenedit-text-field-icon"
       ],
@@ -1243,7 +1243,7 @@
       "summary": "Rounds the corners of the icon image (0-50px, default 0 for square). Leave it at 0 for normal line or glyph icons; raise it only for a photo or avatar-style icon you want to soften or make circular. It has little visible effect on transparent line icons, so most fields can skip it.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-text-field-icon-corner-radius"
       ],
@@ -1265,7 +1265,7 @@
       "summary": "Rounding the icon corners",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1281,7 +1281,7 @@
       "summary": "Sets how tall the icon beside the input is (0-500px). Keep it around 20-24px so it lines up with the text, and usually match it to the icon width so the glyph stays square and undistorted. A right-sized icon reads as a helpful cue rather than visual clutter.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-height",
       "guideKeys": [
         "screenedit-text-field-icon-height"
       ],
@@ -1303,7 +1303,7 @@
       "summary": "Height of the field icon",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1319,7 +1319,7 @@
       "summary": "Sets how wide the icon beside the input is (0-500px). Keep it small, around 20-24px, so it fits neatly next to the text, and usually match it to the icon height for a clean square glyph. Oversized icons crowd the field and make the input look heavier than it needs to.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-width",
       "guideKeys": [
         "screenedit-text-field-icon-width"
       ],
@@ -1341,7 +1341,7 @@
       "summary": "Width of the field icon",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1357,7 +1357,7 @@
       "summary": "Controls how the icon sits inside its box: Fit keeps the whole image visible and may leave a little padding, Fill keeps proportions but crops the edges, and Stretch fills the box and can distort the image. Use Fit for logos and glyphs — it's the safe default — unless you specifically want a cropped or stretched look.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-scalemode",
       "guideKeys": [
         "screenedit-text-field-icon-scale-mode"
       ],
@@ -1379,7 +1379,7 @@
       "summary": "How the icon fills its space",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1395,7 +1395,7 @@
       "summary": "Optional icon in the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1411,7 +1411,7 @@
       "summary": "Sets the horizontal space between the field's icon and the text the visitor types (default 8 pixels). The default works for most fields — nudge it up a little if the icon and text feel cramped, or down for a tighter look. The goal is an icon and placeholder that sit comfortably balanced.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-layout-insets-end",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-layout-insets-end",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-layout-insets-end",
       "guideKeys": [
         "screenedit-text-field-icon-gap"
       ],
@@ -1433,7 +1433,7 @@
       "summary": "Gap between icon and text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-layout-insets-end-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-layout-insets-end-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-layout-insets-end-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1450,7 +1450,7 @@
       "summary": "Forces a specific keyboard on mobile devices (Email, Numeric, Decimal, Phone, URL, etc.). Leave as Auto (from field type) to let the system derive keyboard type from Field Type setting.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-keyboardtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-keyboardtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-keyboardtype",
       "guideKeys": [
         "screenedit-text-field-keyboard-type"
       ],
@@ -1472,7 +1472,7 @@
       "summary": "Override mobile keyboard input type",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-keyboardtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-keyboardtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-keyboardtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1488,7 +1488,7 @@
       "summary": "Sets the breathing room between the text or icon and the field's edges, on the top, right, bottom, and left. Generous spacing makes the field a bigger, easier tap target and keeps text from crowding the outline. If the field feels cramped on a phone, increase the top and bottom spacing.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-layout-insets",
       "guideKeys": [
         "screenedit-text-field-padding"
       ],
@@ -1510,7 +1510,7 @@
       "summary": "Space inside the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1526,7 +1526,7 @@
       "summary": "Hint text displayed in the field when empty, guiding users on what to enter. Can be localized per locale. Styling controlled by text appearance settings.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder",
       "guideKeys": [
         "screenedit-text-field-placeholder"
       ],
@@ -1548,7 +1548,7 @@
       "summary": "Lines up the placeholder and typed text to the left, center, or right (default center). Left is the most familiar for input fields and the easiest to scan, while center suits short, decorative prompts. Pick whichever keeps the answer clearly readable for what you're collecting.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-align",
       "guideKeys": [
         "screenedit-text-field-text-align"
       ],
@@ -1570,7 +1570,7 @@
       "summary": "How the text lines up",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1587,7 +1587,7 @@
       "summary": "Sets the color of the faint hint shown while the field is empty, separate from the color of what the visitor types (default is a light gray, #999999). Keep it dimmer than the typed-text color so people can tell the hint from a real answer, but not so faint it disappears against your background.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-color",
       "guideKeys": [
         "screenedit-text-field-placeholder-color"
       ],
@@ -1609,7 +1609,7 @@
       "summary": "Color of the hint text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1626,7 +1626,7 @@
       "summary": "Picks the font used for both the placeholder hint and what the visitor types. Leave it on the system font unless you have a brand font, and match whatever the rest of your funnel uses. Consistent type keeps the page feeling polished and trustworthy, which matters when you're paying for the traffic.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontfamily",
       "guideKeys": [
         "screenedit-text-field-font-family"
       ],
@@ -1648,7 +1648,7 @@
       "summary": "Font for the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1664,7 +1664,7 @@
       "summary": "Sets how large the text in the field appears, from 0 to 50 points (default 15). Keep it around 15-17 points so answers are comfortable to read on a phone. Text that's too small is hard to read on mobile, where most ad traffic lands, and can quietly drag down completion.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontsize",
       "guideKeys": [
         "screenedit-text-field-font-size"
       ],
@@ -1686,7 +1686,7 @@
       "summary": "Size of the field text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1703,7 +1703,7 @@
       "summary": "Sets how heavy the field text looks, from light (300) to bold (700), with regular (400) as the default. Regular is right for almost every input field. Keeping it regular makes the text read like an editable answer rather than a heading, so the field stays obvious and easy to use.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontweight",
       "guideKeys": [
         "screenedit-text-field-font-weight"
       ],
@@ -1725,7 +1725,7 @@
       "summary": "Weight of the field text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1742,7 +1742,7 @@
       "summary": "Sets the vertical gap between lines of typed text (0-50pt, default 18). It only shows when an answer wraps onto multiple lines, so for normal single-line questions leave it at the default. Adjust it only if you've allowed long, multi-line responses and they feel too cramped or too loose.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-lineheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-lineheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-lineheight",
       "guideKeys": [
         "screenedit-text-field-line-height"
       ],
@@ -1764,7 +1764,7 @@
       "summary": "Line spacing in the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-lineheight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-lineheight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-lineheight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1780,7 +1780,7 @@
       "summary": "Set placeholder hint text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1797,7 +1797,7 @@
       "summary": "When enabled, the field automatically receives focus and opens the keyboard when the screen appears. Default is true. Useful for primary input fields.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-setfocuswhenscreenappeared",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-setfocuswhenscreenappeared",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-setfocuswhenscreenappeared",
       "guideKeys": [
         "screenedit-text-field-auto-focus"
       ],
@@ -1819,7 +1819,7 @@
       "summary": "Focus field when screen loads",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-setfocuswhenscreenappeared-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-setfocuswhenscreenappeared-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-setfocuswhenscreenappeared-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1835,7 +1835,7 @@
       "summary": "An optional advanced rule that forces the typed value to match an exact pattern before the visitor can continue. Most funnels leave this empty and rely on Field Type instead — for emails the Email type already checks the format. Use it only for special shapes like postal or phone codes; if input fails, the Error Message you set is shown.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-validationregex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-validationregex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-validationregex",
       "guideKeys": [
         "screenedit-text-field-validation-regex"
       ],
@@ -1857,7 +1857,7 @@
       "summary": "Custom format rule (advanced)",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-validationregex-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-validationregex-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-validationregex-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1875,7 +1875,7 @@
       "summary": "Input type & behaviour",
       "kind": "section",
       "articleSectionId": "g-behavior-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-behavior-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-behavior-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1889,7 +1889,7 @@
       "summary": "Input box appearance & spacing",
       "kind": "section",
       "articleSectionId": "g-box-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-box-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-box-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1903,7 +1903,7 @@
       "summary": "Validation error message",
       "kind": "section",
       "articleSectionId": "g-error-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-error-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-error-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1917,7 +1917,7 @@
       "summary": "Field icon",
       "kind": "section",
       "articleSectionId": "g-icon-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-icon-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-icon-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1931,7 +1931,7 @@
       "summary": "Placeholder text & styles",
       "kind": "section",
       "articleSectionId": "g-placeholder-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#g-placeholder-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#g-placeholder-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1946,7 +1946,7 @@
       "summary": "The free-text input field — what kind of value it accepts and how typed answers look. This guide documents every setting of the Text Field block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2515,7 +2515,7 @@
       "summary": "Text Field in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2532,7 +2532,7 @@
       "summary": "Open the Text Field section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2547,7 +2547,7 @@
       "summary": "Sets the fill color inside the input box. Most funnels leave it clear so the screen background shows through, or use a subtle light fill to make the tappable field stand out. Just make sure it contrasts with the typed-text color so answers stay easy to read and people don't abandon the question.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-text-field-background-color"
       ],
@@ -2569,7 +2569,7 @@
       "summary": "Fill behind the input",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2585,7 +2585,7 @@
       "summary": "Sets the color of the field's outline, which only appears when the Border Style is an underline or a full box. Use a tone from your theme — an accent or a soft neutral — so the field's edges read clearly as something to tap and type into. A visible outline helps people recognize and fill in the field.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordercolor",
       "guideKeys": [
         "screenedit-text-field-border-color"
       ],
@@ -2607,7 +2607,7 @@
       "summary": "Color of the field outline",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordercolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordercolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordercolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2623,7 +2623,7 @@
       "summary": "Sets the gap OUTSIDE the field, separating it from the title above and anything below, on the top, right, bottom, and left. Use it to give the field room to breathe within the screen. This is the space around the field — distinct from Internal Padding, which is the space inside it.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordermargins",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordermargins",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordermargins",
       "guideKeys": [
         "screenedit-text-field-border-margins"
       ],
@@ -2645,7 +2645,7 @@
       "summary": "Space around the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordermargins-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordermargins-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordermargins-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2661,7 +2661,7 @@
       "summary": "Chooses how the field is outlined: a bottom underline under the text, a bottom underline with room for an icon, or a full box around the whole field. A full box reads most clearly as a place to type, while underline styles feel lighter. Your pick here also decides whether the Border Color and Border Width settings actually show.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordertype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordertype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordertype",
       "guideKeys": [
         "screenedit-text-field-border-type"
       ],
@@ -2683,7 +2683,7 @@
       "summary": "Pick the field outline style",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordertype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordertype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordertype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2699,7 +2699,7 @@
       "summary": "Controls how thick the field's outline is, from 0 to 50 pixels (default 1). Keep it at 1-2 pixels for a clean, modern look and only go thicker for a deliberately bold style. A visible but restrained outline helps people spot the field at a glance and answer faster.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-borderwidth",
       "guideKeys": [
         "screenedit-text-field-border-width"
       ],
@@ -2721,7 +2721,7 @@
       "summary": "Thickness of the outline",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-borderwidth-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-borderwidth-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-borderwidth-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2737,7 +2737,7 @@
       "summary": "Sets the color of the text a visitor types into this field; the gray placeholder hint has its own separate color. Pick a color with strong contrast against the field background (use a light color on dark themes) so answers stay legible. Easy-to-read fields are easier to fill in, which protects completion on your data-collection screens.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-enteredtextcolor",
       "guideKeys": [
         "screenedit-text-field-text-color"
       ],
@@ -2759,7 +2759,7 @@
       "summary": "Color of typed answers",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-appearance-enteredtextcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-enteredtextcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-enteredtextcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2775,7 +2775,7 @@
       "summary": "Message displayed when user input fails validation (does not match Validation Regex or Field Type). Shown to guide correction. Can be localized per locale.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage",
       "guideKeys": [
         "screenedit-text-field-error-message"
       ],
@@ -2797,7 +2797,7 @@
       "summary": "Aligns the validation error message to the left, center, or right. Match it to the field's own text alignment (left is typical) so the message sits naturally under the input. Keeping them aligned makes it obvious which field was rejected, so users fix it quickly and don't stall.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-align",
       "guideKeys": [
         "screenedit-text-field-error-text-align"
       ],
@@ -2819,7 +2819,7 @@
       "summary": "Where the error text sits",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2836,7 +2836,7 @@
       "summary": "Sets a fill color behind the validation error message that appears when an answer is rejected. Usually leave it transparent so only the red text shows; add a subtle tint only if you want the error to read like a banner. Whatever you choose, keep enough contrast with the error text so the message stays readable and users can quickly fix and continue.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
       "guideKeys": [
         "screenedit-text-field-error-background"
       ],
@@ -2858,7 +2858,7 @@
       "summary": "Fill behind the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-backgroundcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2875,7 +2875,7 @@
       "summary": "Sets the color of the error text shown when an answer fails validation (default red, #FF3B30). Keep it red or another high-contrast warning color so people instantly see that their input was rejected and needs fixing. A clear error keeps them from giving up before they can continue.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
       "guideKeys": [
         "screenedit-text-field-error-text-color"
       ],
@@ -2897,7 +2897,7 @@
       "summary": "Color of the error message",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2913,7 +2913,7 @@
       "summary": "Sets the typeface for the validation error message shown when an answer is rejected. Leave it on your theme/system font unless you have a specific brand font, and match it to the field's font so the error looks like part of the same form. A consistent error style keeps the screen feeling polished and helps users trust and fix the field fast.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontfamily",
       "guideKeys": [
         "screenedit-text-field-error-font-family"
       ],
@@ -2935,7 +2935,7 @@
       "summary": "Font of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontfamily-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2952,7 +2952,7 @@
       "summary": "Sets the point size of the validation error message. Keep it a touch smaller than the field text (about 12-13pt) so it reads as a secondary note, but not so small it's hard to read on a phone. A legible error helps users spot and fix a rejected answer instead of abandoning the screen.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontsize",
       "guideKeys": [
         "screenedit-text-field-error-font-size"
       ],
@@ -2974,7 +2974,7 @@
       "summary": "Size of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -2991,7 +2991,7 @@
       "summary": "Sets how heavy the error message looks (for example 400 regular or 600 semibold). Regular (400) works in most cases; step up to 600 if you want the error to stand out more. Paired with the red color, a bit more weight helps users notice and correct a rejected answer so they keep moving through the funnel.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontweight",
       "guideKeys": [
         "screenedit-text-field-error-font-weight"
       ],
@@ -3013,7 +3013,7 @@
       "summary": "Boldness of the error text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3030,7 +3030,7 @@
       "summary": "Set validation error message",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-errormessage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3046,7 +3046,7 @@
       "summary": "Tells the field what kind of value to accept — plain text, a whole number, a decimal, a date, or an email — and automatically applies basic checks plus the right phone keyboard. Use Email for email capture and plain text for open answers. Picking the correct type blocks bad data, keeping any branching, analytics, or CRM that reads this answer reliable.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-fieldtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-fieldtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-fieldtype",
       "guideKeys": [
         "screenedit-text-field-field-type"
       ],
@@ -3069,7 +3069,7 @@
       "summary": "What the field accepts",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-fieldtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-fieldtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-fieldtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3085,7 +3085,7 @@
       "summary": "Adds a small image — like a mail or person glyph — to the left of the input to hint at what the field is for. It's optional, and you can upload a different image for each language. It only appears with a Border Style that leaves room for an icon, and its size and rounding come from the icon's image style settings.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon",
       "guideKeys": [
         "screenedit-text-field-icon"
       ],
@@ -3107,7 +3107,7 @@
       "summary": "Rounds the corners of the icon image (0-50px, default 0 for square). Leave it at 0 for normal line or glyph icons; raise it only for a photo or avatar-style icon you want to soften or make circular. It has little visible effect on transparent line icons, so most fields can skip it.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-text-field-icon-corner-radius"
       ],
@@ -3129,7 +3129,7 @@
       "summary": "Rounding the icon corners",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3145,7 +3145,7 @@
       "summary": "Sets how tall the icon beside the input is (0-500px). Keep it around 20-24px so it lines up with the text, and usually match it to the icon width so the glyph stays square and undistorted. A right-sized icon reads as a helpful cue rather than visual clutter.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-height",
       "guideKeys": [
         "screenedit-text-field-icon-height"
       ],
@@ -3167,7 +3167,7 @@
       "summary": "Height of the field icon",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-height-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-height-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-height-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3183,7 +3183,7 @@
       "summary": "Sets how wide the icon beside the input is (0-500px). Keep it small, around 20-24px, so it fits neatly next to the text, and usually match it to the icon height for a clean square glyph. Oversized icons crowd the field and make the input look heavier than it needs to.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-width",
       "guideKeys": [
         "screenedit-text-field-icon-width"
       ],
@@ -3205,7 +3205,7 @@
       "summary": "Width of the field icon",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-width-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-width-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-width-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3221,7 +3221,7 @@
       "summary": "Controls how the icon sits inside its box: Fit keeps the whole image visible and may leave a little padding, Fill keeps proportions but crops the edges, and Stretch fills the box and can distort the image. Use Fit for logos and glyphs — it's the safe default — unless you specifically want a cropped or stretched look.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-scalemode",
       "guideKeys": [
         "screenedit-text-field-icon-scale-mode"
       ],
@@ -3243,7 +3243,7 @@
       "summary": "How the icon fills its space",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3259,7 +3259,7 @@
       "summary": "Optional icon in the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3275,7 +3275,7 @@
       "summary": "Sets the horizontal space between the field's icon and the text the visitor types (default 8 pixels). The default works for most fields — nudge it up a little if the icon and text feel cramped, or down for a tighter look. The goal is an icon and placeholder that sit comfortably balanced.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-layout-insets-end",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-layout-insets-end",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-layout-insets-end",
       "guideKeys": [
         "screenedit-text-field-icon-gap"
       ],
@@ -3297,7 +3297,7 @@
       "summary": "Gap between icon and text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-icon-layout-insets-end-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-layout-insets-end-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-layout-insets-end-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3314,7 +3314,7 @@
       "summary": "Forces a specific keyboard on mobile devices (Email, Numeric, Decimal, Phone, URL, etc.). Leave as Auto (from field type) to let the system derive keyboard type from Field Type setting.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-keyboardtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-keyboardtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-keyboardtype",
       "guideKeys": [
         "screenedit-text-field-keyboard-type"
       ],
@@ -3336,7 +3336,7 @@
       "summary": "Override mobile keyboard input type",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-keyboardtype-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-keyboardtype-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-keyboardtype-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3352,7 +3352,7 @@
       "summary": "Sets the breathing room between the text or icon and the field's edges, on the top, right, bottom, and left. Generous spacing makes the field a bigger, easier tap target and keeps text from crowding the outline. If the field feels cramped on a phone, increase the top and bottom spacing.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-layout-insets",
       "guideKeys": [
         "screenedit-text-field-padding"
       ],
@@ -3374,7 +3374,7 @@
       "summary": "Space inside the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3390,7 +3390,7 @@
       "summary": "Hint text displayed in the field when empty, guiding users on what to enter. Can be localized per locale. Styling controlled by text appearance settings.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder",
       "guideKeys": [
         "screenedit-text-field-placeholder"
       ],
@@ -3412,7 +3412,7 @@
       "summary": "Lines up the placeholder and typed text to the left, center, or right (default center). Left is the most familiar for input fields and the easiest to scan, while center suits short, decorative prompts. Pick whichever keeps the answer clearly readable for what you're collecting.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-align",
       "guideKeys": [
         "screenedit-text-field-text-align"
       ],
@@ -3434,7 +3434,7 @@
       "summary": "How the text lines up",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-align-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-align-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-align-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3451,7 +3451,7 @@
       "summary": "Sets the color of the faint hint shown while the field is empty, separate from the color of what the visitor types (default is a light gray, #999999). Keep it dimmer than the typed-text color so people can tell the hint from a real answer, but not so faint it disappears against your background.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-color",
       "guideKeys": [
         "screenedit-text-field-placeholder-color"
       ],
@@ -3473,7 +3473,7 @@
       "summary": "Color of the hint text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-color-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-color-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-color-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3490,7 +3490,7 @@
       "summary": "Picks the font used for both the placeholder hint and what the visitor types. Leave it on the system font unless you have a brand font, and match whatever the rest of your funnel uses. Consistent type keeps the page feeling polished and trustworthy, which matters when you're paying for the traffic.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontfamily",
       "guideKeys": [
         "screenedit-text-field-font-family"
       ],
@@ -3512,7 +3512,7 @@
       "summary": "Font for the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontfamily-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3528,7 +3528,7 @@
       "summary": "Sets how large the text in the field appears, from 0 to 50 points (default 15). Keep it around 15-17 points so answers are comfortable to read on a phone. Text that's too small is hard to read on mobile, where most ad traffic lands, and can quietly drag down completion.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontsize",
       "guideKeys": [
         "screenedit-text-field-font-size"
       ],
@@ -3550,7 +3550,7 @@
       "summary": "Size of the field text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontsize-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontsize-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontsize-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3567,7 +3567,7 @@
       "summary": "Sets how heavy the field text looks, from light (300) to bold (700), with regular (400) as the default. Regular is right for almost every input field. Keeping it regular makes the text read like an editable answer rather than a heading, so the field stays obvious and easy to use.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontweight",
       "guideKeys": [
         "screenedit-text-field-font-weight"
       ],
@@ -3589,7 +3589,7 @@
       "summary": "Weight of the field text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontweight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontweight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontweight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3606,7 +3606,7 @@
       "summary": "Sets the vertical gap between lines of typed text (0-50pt, default 18). It only shows when an answer wraps onto multiple lines, so for normal single-line questions leave it at the default. Adjust it only if you've allowed long, multi-line responses and they feel too cramped or too loose.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-lineheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-lineheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-lineheight",
       "guideKeys": [
         "screenedit-text-field-line-height"
       ],
@@ -3628,7 +3628,7 @@
       "summary": "Line spacing in the field",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-lineheight-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-lineheight-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-lineheight-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3644,7 +3644,7 @@
       "summary": "Set placeholder hint text",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-placeholder-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3661,7 +3661,7 @@
       "summary": "When enabled, the field automatically receives focus and opens the keyboard when the screen appears. Default is true. Useful for primary input fields.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-setfocuswhenscreenappeared",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-setfocuswhenscreenappeared",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-setfocuswhenscreenappeared",
       "guideKeys": [
         "screenedit-text-field-auto-focus"
       ],
@@ -3683,7 +3683,7 @@
       "summary": "Focus field when screen loads",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-setfocuswhenscreenappeared-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-setfocuswhenscreenappeared-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-setfocuswhenscreenappeared-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3699,7 +3699,7 @@
       "summary": "An optional advanced rule that forces the typed value to match an exact pattern before the visitor can continue. Most funnels leave this empty and rely on Field Type instead — for emails the Email type already checks the format. Use it only for special shapes like postal or phone codes; if input fails, the Error Message you set is shown.",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-validationregex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-validationregex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-validationregex",
       "guideKeys": [
         "screenedit-text-field-validation-regex"
       ],
@@ -3721,7 +3721,7 @@
       "summary": "Custom format rule (advanced)",
       "kind": "section",
       "articleSectionId": "set-textfield-content-textfield-validationregex-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-validationregex-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-validationregex-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -3740,7 +3740,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-field-type.png",
       "articleSectionId": "set-textfield-content-textfield-fieldtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-fieldtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-fieldtype",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3754,7 +3754,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-keyboard-type.png",
       "articleSectionId": "set-textfield-content-textfield-keyboardtype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-keyboardtype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-keyboardtype",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3769,7 +3769,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-auto-focus.png",
       "articleSectionId": "set-textfield-content-textfield-setfocuswhenscreenappeared",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-setfocuswhenscreenappeared",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-setfocuswhenscreenappeared",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3784,7 +3784,7 @@
       "group": "behavior",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-validation-regex.png",
       "articleSectionId": "set-textfield-content-textfield-validationregex",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-validationregex",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-validationregex",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3798,7 +3798,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-text-color.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-enteredtextcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3813,7 +3813,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-background-color.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3828,7 +3828,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-border-color.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordercolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordercolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordercolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3843,7 +3843,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-border-width.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-borderwidth",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-borderwidth",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-borderwidth",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3858,7 +3858,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-border-type.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordertype",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordertype",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordertype",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3873,7 +3873,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-padding.png",
       "articleSectionId": "set-textfield-content-textfield-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3888,7 +3888,7 @@
       "group": "box",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-margins.png",
       "articleSectionId": "set-textfield-content-textfield-appearance-bordermargins",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-appearance-bordermargins",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-appearance-bordermargins",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3903,7 +3903,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-font-family.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontfamily",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3918,7 +3918,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-font-size.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontsize",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3933,7 +3933,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-font-weight.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-fontweight",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3948,7 +3948,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-line-height.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-lineheight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-lineheight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-lineheight",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3963,7 +3963,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/field-styles-text-align.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-align",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3978,7 +3978,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-placeholder.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -3992,7 +3992,7 @@
       "group": "placeholder",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/placeholder-styles-color.png",
       "articleSectionId": "set-textfield-content-textfield-placeholder-appearance-color",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-placeholder-appearance-color",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-placeholder-appearance-color",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4007,7 +4007,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-error-message.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4021,7 +4021,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-background.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-backgroundcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4036,7 +4036,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-text-color.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-enteredtextcolor",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4051,7 +4051,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-font-family.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontfamily",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontfamily",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontfamily",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4066,7 +4066,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-font-size.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontsize",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontsize",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontsize",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4081,7 +4081,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-font-weight.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-fontweight",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-fontweight",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-fontweight",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4096,7 +4096,7 @@
       "group": "error",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/error-styles-text-align.png",
       "articleSectionId": "set-textfield-content-textfield-errormessage-appearance-align",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-errormessage-appearance-align",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-errormessage-appearance-align",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4111,7 +4111,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/open-section-icon.png",
       "articleSectionId": "set-textfield-content-textfield-icon",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4125,7 +4125,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/icon-styles-width.png",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-width",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-width",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-width",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4140,7 +4140,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/icon-styles-height.png",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-dimensions-height",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-dimensions-height",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-dimensions-height",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4155,7 +4155,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/icon-styles-scale-mode.png",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-scalemode",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4170,7 +4170,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/icon-styles-corner-radius.png",
       "articleSectionId": "set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-appearance-cornerradii-uniform",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -4185,7 +4185,7 @@
       "group": "icon",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-text-field-section/0.2.0/configure-text-field-section-2026-06-25T08-15-59-870Z-b6b2aadc/icon-styles-gap.png",
       "articleSectionId": "set-textfield-content-textfield-icon-layout-insets-end",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-text-field/index.html#set-textfield-content-textfield-icon-layout-insets-end",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-text-field#set-textfield-content-textfield-icon-layout-insets-end",
       "route": [
         "Open the screen in the editor.",
         "Open a Text Input screen and find the Text Field section (Field Type + Placeholder / Validation / Error / Icon rows).",
@@ -6924,6 +6924,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "7b22b3daf311264c"
+    "generatedHash": "06acccf5a423cd12"
   }
 }

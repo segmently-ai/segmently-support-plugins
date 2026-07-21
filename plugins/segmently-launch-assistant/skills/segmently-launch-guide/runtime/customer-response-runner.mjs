@@ -1029,7 +1029,8 @@ function buildAnswer(question, guideContracts, scenario, selectedArticles = []) 
   const references = builtInArticleReferences(guideContracts);
   const articleReferences = selectedArticleReferences(selectedArticles);
   const preferredReference = preferredGuideReference(references);
-  const customerVisibleGuideAssets = buildCustomerVisibleGuideAssets(guideContracts);
+  const articleMediaByAlias = selectedArticleMediaByAlias(selectedArticles);
+  const customerVisibleGuideAssets = buildCustomerVisibleGuideAssets(guideContracts, articleMediaByAlias);
   const visualCoverage = customerVisibleGuideAssets.visualCoverage;
   const overviewInstructions = productSelectionPaywallOverviewInstructions(question, guideContracts);
   const evidencePhrase = visualCoverage.hasAnyImageUrl
@@ -1113,18 +1114,21 @@ function buildAnswer(question, guideContracts, scenario, selectedArticles = []) 
         localArticlePath: guide.localArticlePath,
       })),
     ],
-    articleAvailability: guideContracts.map(guide => ({
-      guideKey: guide.guideKey,
-      articleId: guide.articleId,
-      articleAlias: guide.articleAlias,
-      referencePath: guide.referencePath,
-      hasBuiltInArticleReference: Boolean(guide.articleId || guide.articleAlias || guide.localArticlePath),
-      publicArticleUrlStatus: guide.fullArticleLink ? 'published' : 'built-in-reference',
-      hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
-      hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
-      visualCoverageStatus: guideVisualCoverageStatus(guide),
-      customerSafeMessage: articleAvailabilityMessageForGuide(guide),
-    })),
+    articleAvailability: guideContracts.map(guide => {
+      const supplementalMediaUrls = articleMediaByAlias.get(guide.articleAlias) ?? [];
+      return {
+        guideKey: guide.guideKey,
+        articleId: guide.articleId,
+        articleAlias: guide.articleAlias,
+        referencePath: guide.referencePath,
+        hasBuiltInArticleReference: Boolean(guide.articleId || guide.articleAlias || guide.localArticlePath),
+        publicArticleUrlStatus: guide.fullArticleLink ? 'published' : 'built-in-reference',
+        hasScreenshotEvidence: guideHasScreenshotEvidence(guide, supplementalMediaUrls),
+        hasConcreteImageUrl: guideHasConcreteImageUrl(guide, supplementalMediaUrls),
+        visualCoverageStatus: guideVisualCoverageStatus(guide, supplementalMediaUrls),
+        customerSafeMessage: articleAvailabilityMessageForGuide(guide, supplementalMediaUrls),
+      };
+    }),
     imageUrls: uniqueStrings([
       ...selectedArticles.flatMap(article => article.media ?? []),
       ...selectedArticles.flatMap(article => article.sections.flatMap(section => section.imageUrls ?? [])),
@@ -1176,25 +1180,31 @@ function buildStripeStatusContract(guideContracts, scenario) {
   };
 }
 
-function buildCustomerVisibleGuideAssets(guideContracts) {
+function buildCustomerVisibleGuideAssets(guideContracts, articleMediaByAlias = new Map()) {
   const publicArticleLinks = uniqueStrings(guideContracts.map(guide => guide.fullArticleLink).filter(Boolean));
-  const imageUrls = uniqueStrings(guideContracts.flatMap(guide => guide.imageUrls ?? []).filter(Boolean));
-  const visualCoverage = summarizeGuideVisualCoverage(guideContracts);
+  const imageUrls = uniqueStrings([
+    ...guideContracts.flatMap(guide => guide.imageUrls ?? []).filter(Boolean),
+    ...guideContracts.flatMap(guide => articleMediaByAlias.get(guide.articleAlias) ?? []),
+  ]);
+  const visualCoverage = summarizeGuideVisualCoverage(guideContracts, articleMediaByAlias);
   const guideReferences = guideContracts
     .filter(guide => guide.articleId || guide.articleAlias || guide.referencePath)
-    .map(guide => ({
-      name: guide.name,
-      articleAlias: guide.articleAlias ?? null,
-      articleId: guide.articleId ?? null,
-      referencePath: guide.referencePath ?? null,
-      publicArticleUrl: guide.fullArticleLink ?? null,
-      articleSectionUrl: guide.articleSectionUrl ?? null,
-      hasPublicArticleUrl: Boolean(guide.fullArticleLink),
-      imageUrls: uniqueStrings(guide.imageUrls ?? []),
-      hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
-      hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
-      visualCoverageStatus: guideVisualCoverageStatus(guide),
-    }));
+    .map(guide => {
+      const supplementalMediaUrls = articleMediaByAlias.get(guide.articleAlias) ?? [];
+      return {
+        name: guide.name,
+        articleAlias: guide.articleAlias ?? null,
+        articleId: guide.articleId ?? null,
+        referencePath: guide.referencePath ?? null,
+        publicArticleUrl: guide.fullArticleLink ?? null,
+        articleSectionUrl: guide.articleSectionUrl ?? null,
+        hasPublicArticleUrl: Boolean(guide.fullArticleLink),
+        imageUrls: uniqueStrings([...(guide.imageUrls ?? []), ...supplementalMediaUrls]),
+        hasScreenshotEvidence: guideHasScreenshotEvidence(guide, supplementalMediaUrls),
+        hasConcreteImageUrl: guideHasConcreteImageUrl(guide, supplementalMediaUrls),
+        visualCoverageStatus: guideVisualCoverageStatus(guide, supplementalMediaUrls),
+      };
+    });
   return {
     mustShowInCustomerAnswer: true,
     publicArticleLinks,
@@ -1205,14 +1215,17 @@ function buildCustomerVisibleGuideAssets(guideContracts) {
   };
 }
 
-function summarizeGuideVisualCoverage(guideContracts) {
-  const guideStatuses = guideContracts.map(guide => ({
-    guideKey: guide.guideKey,
-    articleAlias: guide.articleAlias ?? null,
-    status: guideVisualCoverageStatus(guide),
-    hasScreenshotEvidence: guideHasScreenshotEvidence(guide),
-    hasConcreteImageUrl: guideHasConcreteImageUrl(guide),
-  }));
+function summarizeGuideVisualCoverage(guideContracts, articleMediaByAlias = new Map()) {
+  const guideStatuses = guideContracts.map(guide => {
+    const supplementalMediaUrls = articleMediaByAlias.get(guide.articleAlias) ?? [];
+    return {
+      guideKey: guide.guideKey,
+      articleAlias: guide.articleAlias ?? null,
+      status: guideVisualCoverageStatus(guide, supplementalMediaUrls),
+      hasScreenshotEvidence: guideHasScreenshotEvidence(guide, supplementalMediaUrls),
+      hasConcreteImageUrl: guideHasConcreteImageUrl(guide, supplementalMediaUrls),
+    };
+  });
   const hasAnyImageUrl = guideStatuses.some(item => item.hasConcreteImageUrl);
   const hasAnyScreenshotEvidence = guideStatuses.some(item => item.hasScreenshotEvidence);
   const status = hasAnyImageUrl
@@ -1233,21 +1246,23 @@ function summarizeGuideVisualCoverage(guideContracts) {
   };
 }
 
-function guideVisualCoverageStatus(guide) {
-  if (guideHasConcreteImageUrl(guide)) return 'image-url-available';
-  if (guideHasScreenshotEvidence(guide)) return 'screenshot-evidence-missing-image-url';
+function guideVisualCoverageStatus(guide, supplementalMediaUrls = []) {
+  if (guideHasConcreteImageUrl(guide, supplementalMediaUrls)) return 'image-url-available';
+  if (guideHasScreenshotEvidence(guide, supplementalMediaUrls)) return 'screenshot-evidence-missing-image-url';
   return 'text-only-no-screenshot-evidence';
 }
 
-function guideHasConcreteImageUrl(guide) {
+function guideHasConcreteImageUrl(guide, supplementalMediaUrls = []) {
   return (guide.imageUrls ?? []).some(Boolean)
-    || (guide.textSections ?? []).some(section => Boolean(section.imageUrl));
+    || (guide.textSections ?? []).some(section => Boolean(section.imageUrl))
+    || supplementalMediaUrls.some(Boolean);
 }
 
-function guideHasScreenshotEvidence(guide) {
+function guideHasScreenshotEvidence(guide, supplementalMediaUrls = []) {
   return guide.hasScreenshotEvidence === true
     || guide.sectionScreenshotEvidence === true
-    || (guide.textSections ?? []).some(section => section.hasScreenshotEvidence === true);
+    || (guide.textSections ?? []).some(section => section.hasScreenshotEvidence === true)
+    || supplementalMediaUrls.length > 0;
 }
 
 function articleReferenceSummaryForVisualCoverage(visualCoverage) {
@@ -1260,9 +1275,9 @@ function articleReferenceSummaryForVisualCoverage(visualCoverage) {
   return 'Built-in guide/article references are available; answer from the shipped text. The matched guide is text-only in the shipped package, so cite the article URL/referencePath and do not imply images are available.';
 }
 
-function articleAvailabilityMessageForGuide(guide) {
+function articleAvailabilityMessageForGuide(guide, supplementalMediaUrls = []) {
   const hasArticle = Boolean(guide.fullArticleLink);
-  const visualStatus = guideVisualCoverageStatus(guide);
+  const visualStatus = guideVisualCoverageStatus(guide, supplementalMediaUrls);
   if (hasArticle && visualStatus === 'image-url-available') {
     return 'A public article URL is available and should be included in the customer answer together with the relevant screenshot URLs.';
   }
@@ -1279,6 +1294,18 @@ function articleAvailabilityMessageForGuide(guide) {
     return 'Built-in guide/article text is available and screenshot evidence is tracked, but no concrete image URL is shipped. Do not describe the article as missing or imply visible screenshots.';
   }
   return 'Built-in guide/article text is available, but this guide row is text-only with no shipped screenshot image URL. Do not describe the article as missing or imply screenshot evidence.';
+}
+
+function selectedArticleMediaByAlias(selectedArticles) {
+  const mediaByAlias = new Map();
+  for (const article of selectedArticles) {
+    if (!article?.articleAlias) continue;
+    mediaByAlias.set(article.articleAlias, uniqueStrings([
+      ...(article.media ?? []),
+      ...(article.sections ?? []).flatMap(section => section.imageUrls ?? []),
+    ]));
+  }
+  return mediaByAlias;
 }
 
 function customerVisibleGuideAssetsInstruction(visualCoverage) {

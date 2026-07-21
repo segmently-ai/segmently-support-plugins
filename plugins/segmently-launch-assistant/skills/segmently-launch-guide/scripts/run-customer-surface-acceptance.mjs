@@ -43,7 +43,7 @@ check('button font teach prompt resolves Action Bar article reference', () => {
   const builtInReference = response.answer?.builtInArticleReferences?.find(reference => reference.articleAlias === 'help-block-action-bar');
   assert(builtInReference?.status === 'public-url-available', 'button font prompt missing published Action Bar reference status');
   assert(builtInReference?.referencePath === 'help-block-action-bar/screenedit-action-bar-primary-text-styles', 'button font built-in reference missing stable path');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-action-bar\/index\.html$/.test(url)), 'button font prompt missing published Action Bar article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-action-bar'), 'button font prompt missing published Action Bar article URL');
   assert(response.answer?.preferredCitation?.referencePath === 'help-block-action-bar/screenedit-action-bar-primary-text-styles', 'button font preferred citation missing stable path');
   assert(/built-in Segmently guide\/article is available/i.test(response.answer?.customerAnswerStarter ?? ''), 'button font starter must positively state built-in article availability');
   assert(
@@ -66,7 +66,7 @@ check('article-first raw prompt resolves Facebook events catalog before guide ke
   assert(response.selectedArticles?.some(article => article.articleAlias === 'facebook-events-catalog'), 'Facebook events prompt must select facebook-events-catalog from article registry');
   assert(response.guidance?.guides?.length === 0, 'Facebook events catalog prompt should not fall back to generic analytics guide keys');
   assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'facebook-events-catalog'), 'Facebook events prompt missing article registry reference');
-  assert(response.answer?.publicArticleLinks?.some(url => /facebook-events-catalog\/index\.html$/.test(url)), 'Facebook events prompt missing public article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'facebook-events-catalog'), 'Facebook events prompt missing public article URL');
   assert(response.answer?.preferredCitation?.articleAlias === 'facebook-events-catalog', 'Facebook events preferred citation must use the article alias');
   assert(response.selectedArticles?.[0]?.relations?.scenarioIds?.includes('facebook-events-list'), 'Facebook events article must be typed to the facebook-events-list scenario');
   assert(response.selectedArticles?.[0]?.tags?.includes('facebook-events'), 'Facebook events article must carry facebook-events tag');
@@ -89,7 +89,7 @@ check('direct article alias returns article-fetch contract without guide keys', 
   assert(response.selectedArticles?.some(article => article.articleAlias === 'facebook-events-catalog'), 'direct article alias missing selected article contract');
   assert(response.articleFetch?.articleAlias === 'facebook-events-catalog', 'article-fetch contract must keep selected article alias');
   assert(response.articleFetch?.fetchCommand?.configUrl?.endsWith('/facebook-events-catalog/config.json'), 'article-fetch contract missing config URL');
-  assert(response.articleFetch?.fetchCommand?.publicUrl?.endsWith('/facebook-events-catalog/index.html'), 'article-fetch contract missing public article URL');
+  assert(isPublicArticleUrl(response.articleFetch?.fetchCommand?.publicUrl, 'facebook-events-catalog'), 'article-fetch contract missing public article URL');
   assert(response.articleFetch?.selectedArticle?.relations?.scenarioIds?.includes('facebook-events-list'), 'article-fetch selected article missing typed scenario relation');
   assert(response.guidance?.guides?.length === 0, 'direct article alias article-fetch must not require guide keys');
   assertSourceSafeCustomerAnswer(response);
@@ -105,7 +105,7 @@ check('list video teach prompt resolves Media article and offers SHOW/DO boundar
   assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'onboarding-list-create'), 'list video prompt incorrectly resolved onboarding creation guide');
   assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'help-block-media'), 'missing help-block-media article reference');
   assert(response.answer?.preferredCitation?.articleAlias === 'help-block-media', 'list video preferred citation must use help-block-media');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-media\/index\.html$/.test(url)), 'list video prompt missing published Media article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-media'), 'list video prompt missing published Media article URL');
   assert(response.answer?.imageUrls?.some(url => /configure-media-section/.test(url)), 'list video prompt missing concrete Media section image URL');
   assert(/SHOW/.test(response.answer?.nextStep ?? '') && /DO/.test(response.answer?.nextStep ?? ''), 'list video prompt must offer SHOW and DO boundary');
   assert(/video URL|local file|asset/i.test(response.answer?.nextStep ?? ''), 'list video DO boundary must ask for video source');
@@ -125,7 +125,7 @@ check('paywall video teach prompt resolves Paywall Media article and exposes vis
   assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'onboarding-list-create'), 'paywall video prompt incorrectly resolved onboarding creation guide');
   assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'help-block-paywall-media'), 'missing help-block-paywall-media article reference');
   assert(response.answer?.preferredCitation?.articleAlias === 'help-block-paywall-media', 'paywall video preferred citation must use help-block-paywall-media');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-media\/index\.html$/.test(url)), 'paywall video prompt missing published Paywall Media article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-paywall-media'), 'paywall video prompt missing published Paywall Media article URL');
   assert(response.answer?.imageUrls?.some(url => /configure-paywall-media-section|paywall-screen-configuration-guide/.test(url)), 'paywall video prompt missing concrete Paywall Media image URL');
   assert(response.answer?.customerVisibleGuideAssets?.mustShowInCustomerAnswer === true, 'paywall video prompt must require visible guide assets in customer answer');
   assert(response.answer?.customerVisibleGuideAssets?.imageUrls?.some(url => /configure-paywall-media-section|paywall-screen-configuration-guide/.test(url)), 'paywall video visible assets missing image URL');
@@ -155,7 +155,7 @@ check('Stripe subscription setup teach prompt resolves article and image links',
     'paywall-product-subscription-options',
     'help-block-paywall-subscriptions',
   ]) {
-    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)), `Stripe subscription setup missing published article URL for ${alias}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, alias), `Stripe subscription setup missing published article URL for ${alias}`);
   }
   assert(response.answer?.imageUrls?.some(url => /expand-stripe-stripe-section/.test(url)), 'Stripe subscription setup missing Stripe Connect screenshot URL');
   assert(response.answer?.imageUrls?.some(url => /open-products-products-list/.test(url)), 'Stripe subscription setup missing Paywall Products screenshot URL');
@@ -191,9 +191,9 @@ check('agent-selected semantic guide keys resolve Stripe subscription materials'
   assert(response.resolver?.selectionSource === 'model-over-catalog', 'agent-selected resolver must record model-over-catalog source');
   assert(response.resolver?.deterministicRole === 'evidence-and-execution-contract-only', 'runner must record deterministic validation role');
   assert(response.scenarioId === 'create-paywall-products', `expected create-paywall-products scenario, got ${response.scenarioId}`);
-  assert(response.answer?.publicArticleLinks?.some(url => /integrations-stripe-connect-section\/index\.html$/.test(url)), 'agent-selected Stripe response missing Stripe Connect article URL');
-  assert(response.answer?.publicArticleLinks?.some(url => /paywall-product-subscription-options\/index\.html$/.test(url)), 'agent-selected Stripe response missing subscription options article URL');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-subscriptions\/index\.html$/.test(url)), 'agent-selected Stripe response missing Paywall Subscriptions article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'integrations-stripe-connect-section'), 'agent-selected Stripe response missing Stripe Connect article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'paywall-product-subscription-options'), 'agent-selected Stripe response missing subscription options article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-paywall-subscriptions'), 'agent-selected Stripe response missing Paywall Subscriptions article URL');
   assert(response.answer?.imageUrls?.some(url => /expand-stripe-stripe-section/.test(url)), 'agent-selected Stripe response missing Stripe screenshot URL');
   assert(response.answer?.imageUrls?.some(url => /open-products-products-list/.test(url)), 'agent-selected Stripe response missing Products screenshot URL');
   assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide/.test(url)), 'agent-selected Stripe response missing Paywall Subscriptions screenshot URL');
@@ -216,7 +216,7 @@ check('Flexible Layout linked product labels resolve article and CLI delegation 
   assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-selected-product-purchase'), 'missing selected product purchase guide');
   assert(!response.guidance?.guides?.some(guide => guide.articleAlias === 'help-block-paywall-footer'), 'Flexible Layout linked labels incorrectly resolved Paywall Footer');
   assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === 'help-block-flexible-sections'), 'missing help-block-flexible-sections article reference');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-flexible-sections\/index\.html$/.test(url)), 'missing Flexible Sections article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-flexible-sections'), 'missing Flexible Sections article URL');
   const selectedArticle = response.selectedArticles?.find(article => article.articleAlias === 'help-block-flexible-sections');
   assert(selectedArticle, 'Flexible Layout linked labels missing selected article registry contract');
   assert(selectedArticle.tags?.includes('flexible-layout'), 'Flexible Layout article missing flexible-layout tag');
@@ -260,7 +260,7 @@ check('selected product text update prompt explains ordinary WebEmbed and Flexib
   assert(response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-flexible-sections-selected-product-purchase'), 'missing Flexible Layout selected-product purchase guide');
   for (const alias of ['help-block-paywall-subscriptions', 'help-block-custom-html', 'help-block-flexible-sections']) {
     assert(response.answer?.articleReferences?.some(reference => reference.articleAlias === alias), `missing ${alias} article reference`);
-    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${alias}/index\\.html$`).test(url)), `missing ${alias} article URL`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, alias), `missing ${alias} article URL`);
     assert(response.selectedArticles?.some(article => article.articleAlias === alias), `missing ${alias} selected article registry contract`);
   }
   const instructionText = response.answer?.instructions?.map(item => `${item.title} ${item.text}`).join('\n') ?? '';
@@ -301,7 +301,7 @@ check('direct video upload request returns conditional browser DO contract', () 
   assert(response.action?.missingInputs?.includes('screenId'), 'conditional media upload must ask for screenId');
   assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), 'conditional media upload must ask for video source');
   assert(response.action?.authPreflight?.requiredForExecute === true, 'conditional media upload must include auth preflight');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-media\/index\.html$/.test(url)), 'conditional media upload must keep the article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-paywall-media'), 'conditional media upload must keep the article URL');
   assert(response.completionClaim === 'needs-inputs-before-execution', `unexpected completion claim ${response.completionClaim}`);
   assertSourceSafeCustomerAnswer(response);
 });
@@ -321,7 +321,7 @@ check('direct shared Media video upload request returns conditional browser DO c
   assert(response.action?.missingInputs?.includes('screenId'), 'shared Media upload must ask for screenId');
   assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), 'shared Media upload must ask for video source');
   assert(response.action?.authPreflight?.requiredForExecute === true, 'shared Media upload must include auth preflight');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-media\/index\.html$/.test(url)), 'shared Media upload must keep the article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-media'), 'shared Media upload must keep the article URL');
   assert(response.answer?.imageUrls?.some(url => /configure-media-section/.test(url)), 'shared Media upload must expose concrete Media image URLs');
   assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === 'help-block-media'), 'shared Media upload visible assets missing guide alias');
   assert(response.completionClaim === 'needs-inputs-before-execution', `unexpected completion claim ${response.completionClaim}`);
@@ -347,7 +347,7 @@ check('mixed dry-run shared Media video request stays conditional browser DO', (
   assert(response.action?.missingInputs?.includes('videoUrl-or-local-file'), 'mixed shared Media upload must ask for video source');
   assert(response.action?.authPreflight?.requiredForExecute === true, 'mixed shared Media upload must include auth preflight');
   assertToolPreflight(response.action?.toolPreflight, { browser: true });
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-media\/index\.html$/.test(url)), 'mixed shared Media upload must keep the article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-media'), 'mixed shared Media upload must keep the article URL');
   assert(response.answer?.imageUrls?.some(url => /configure-media-section/.test(url)), 'mixed shared Media upload must expose concrete Media image URLs');
   assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === 'help-block-media'), 'mixed shared Media visible assets missing guide alias');
   assert(!response.answer?.articleReferences?.some(reference => reference.articleAlias === 'paywall-products-list'), 'mixed shared Media prompt must not resolve Paywall Products article');
@@ -1020,7 +1020,7 @@ check('content title copy text prompt stays article-backed and refuses blind gen
   assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-copy-block-title-styles'), 'copy text prompt incorrectly resolved style guide');
   assert(response.answer?.preferredCitation?.articleAlias === 'help-block-content', 'copy text prompt missing Content article alias');
   assert(response.answer?.preferredCitation?.referencePath === 'help-block-content/screenedit-copy-block-title-text', 'copy text prompt missing exact title-text reference path');
-  assert(response.answer?.publicArticleLinks?.some(url => /help-block-content\/index\.html$/.test(url)), 'copy text prompt missing published Content article URL');
+  assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-content'), 'copy text prompt missing published Content article URL');
   assert(response.answer?.imageUrls?.some(url => /open-section-title-text\.png$/.test(url)), 'copy text prompt missing concrete title text screenshot URL');
   assert(response.answer?.showDoOptions?.show?.available === true, 'copy text prompt must offer SHOW');
   assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', 'copy text prompt must mark DO as requiring a domain operation');
@@ -1064,7 +1064,7 @@ check('options copy text prompts stay article-backed and refuse blind generic CL
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screenedit-options-title-styles'), `options copy prompt incorrectly resolved title style guide for ${prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-options', `options copy prompt missing Options article alias for ${prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === 'help-block-options/screen-editor-section-options', `options copy prompt missing stable Options reference path for ${prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-options\/index\.html$/.test(url)), `options copy prompt missing published Options article URL for ${prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-options'), `options copy prompt missing published Options article URL for ${prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-options-section/.test(url)), `options copy prompt missing concrete Options screenshot URL for ${prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `options copy prompt must offer SHOW for ${prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `options copy prompt must mark DO as requiring a domain operation for ${prompt}`);
@@ -1118,7 +1118,7 @@ check('variable binding prompts resolve exact article-backed domain-operation bo
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `variable binding prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-variable-binding', `variable binding prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `variable binding prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-variable-binding\/index\.html$/.test(url)), `variable binding prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-variable-binding'), `variable binding prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-variable-binding/.test(url)), `variable binding prompt missing concrete image URL for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `variable binding prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `variable binding prompt must require domain operation for ${item.prompt}`);
@@ -1163,7 +1163,7 @@ check('Basic Config object toggle prompts refuse blind scalar child mutation', (
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Basic Config object-toggle prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-basic-config', `Basic Config object-toggle prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Basic Config object-toggle prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-basic-config\/index\.html$/.test(url)), `Basic Config object-toggle prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-basic-config'), `Basic Config object-toggle prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /basic-config|paywall-background-basic-config/.test(url)), `Basic Config object-toggle prompt missing concrete image URL for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Basic Config object-toggle prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Basic Config object-toggle prompt must require domain operation for ${item.prompt}`);
@@ -1242,7 +1242,7 @@ check('Options structure prompts resolve exact article-backed domain-operation b
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Options structure prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-options', `Options structure prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Options structure prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-options\/index\.html$/.test(url)), `Options structure prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-options'), `Options structure prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-options-section/.test(url)), `Options structure prompt missing concrete Options image URL for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Options structure prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Options structure prompt must require domain operation for ${item.prompt}`);
@@ -1334,7 +1334,7 @@ check('Header navigation and progress prompts resolve article-backed domain-oper
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Header prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-header', `Header prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Header prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-header\/index\.html$/.test(url)), `Header prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-header'), `Header prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-header/.test(url)), `Header prompt missing concrete Header image URL for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Header prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Header prompt must require domain operation for ${item.prompt}`);
@@ -1415,7 +1415,7 @@ check('Content spacing prompts resolve article-backed domain-operation boundary'
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Content spacing prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-content', `Content spacing prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Content spacing prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-content\/index\.html$/.test(url)), `Content spacing prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-content'), `Content spacing prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-copy-block-section/.test(url)), `Content spacing prompt missing Content section image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Content spacing prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Content spacing prompt must require domain operation for ${item.prompt}`);
@@ -1449,7 +1449,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'добавь картинку в hero image',
       expectedArticleAlias: 'help-block-content',
-      expectedArticleUrl: /help-block-content\/index\.html$/,
       expectedGuideKey: 'screenedit-copy-block-hero-url',
       expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-url',
       expectedImagePattern: /configure-copy-block-section/,
@@ -1458,7 +1457,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'сделай ширину hero image 300',
       expectedArticleAlias: 'help-block-content',
-      expectedArticleUrl: /help-block-content\/index\.html$/,
       expectedGuideKey: 'screenedit-copy-block-hero-width',
       expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-width',
       expectedImagePattern: /configure-copy-block-section/,
@@ -1467,7 +1465,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'поставь высоту hero image 50 процентов',
       expectedArticleAlias: 'help-block-content',
-      expectedArticleUrl: /help-block-content\/index\.html$/,
       expectedGuideKey: 'screenedit-copy-block-hero-height-percentage',
       expectedReferencePath: 'help-block-content/screenedit-copy-block-hero-height-percentage',
       expectedImagePattern: /configure-copy-block-section/,
@@ -1476,7 +1473,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'добавь картинку к варианту списка',
       expectedArticleAlias: 'help-block-options',
-      expectedArticleUrl: /help-block-options\/index\.html$/,
       expectedGuideKey: 'screenedit-options-image-styles',
       expectedReferencePath: 'help-block-options/screenedit-options-image-styles',
       expectedImagePattern: /configure-options-section/,
@@ -1485,7 +1481,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'поменяй картинку в карточке option',
       expectedArticleAlias: 'help-block-options',
-      expectedArticleUrl: /help-block-options\/index\.html$/,
       expectedGuideKey: 'screenedit-options-image-styles',
       expectedReferencePath: 'help-block-options/screenedit-options-image-styles',
       expectedImagePattern: /configure-options-section/,
@@ -1494,7 +1489,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'сделай фото в списке вместо видео',
       expectedArticleAlias: 'help-block-media',
-      expectedArticleUrl: /help-block-media\/index\.html$/,
       expectedGuideKey: 'screenedit-media-image-upload',
       expectedReferencePath: 'help-block-media/screenedit-media-kind',
       expectedImagePattern: /configure-media-section/,
@@ -1503,7 +1497,6 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     {
       prompt: 'добавь image в carousel slide',
       expectedArticleAlias: 'help-block-carousel',
-      expectedArticleUrl: /help-block-carousel\/index\.html$/,
       expectedGuideKey: 'screenedit-carousel-slide-image',
       expectedReferencePath: 'help-block-carousel/screenedit-carousel-slide-image',
       expectedImagePattern: /configure-carousel-section/,
@@ -1521,7 +1514,7 @@ check('Media asset and image layout prompts resolve article-backed domain-operat
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Media asset prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === item.expectedArticleAlias, `Media asset prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Media asset prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => item.expectedArticleUrl.test(url)), `Media asset prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, item.expectedArticleAlias), `Media asset prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => item.expectedImagePattern.test(url)), `Media asset prompt missing concrete image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Media asset prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Media asset prompt must require domain operation for ${item.prompt}`);
@@ -1613,7 +1606,7 @@ check('Carousel slide content and timing prompts resolve article-backed domain-o
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Carousel prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-carousel', `Carousel prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Carousel prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-carousel\/index\.html$/.test(url)), `Carousel prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-carousel'), `Carousel prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-carousel-section/.test(url)), `Carousel prompt missing concrete image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Carousel prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Carousel prompt must require domain operation for ${item.prompt}`);
@@ -1675,7 +1668,7 @@ check('Custom HTML and WebEmbed prompts resolve article-backed domain-operation 
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Custom HTML prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-custom-html', `Custom HTML prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Custom HTML prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-custom-html\/index\.html$/.test(url)), `Custom HTML prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-custom-html'), `Custom HTML prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /webembed/.test(url)), `Custom HTML prompt missing concrete WebEmbed image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Custom HTML prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Custom HTML prompt must require domain operation for ${item.prompt}`);
@@ -1728,14 +1721,13 @@ check('Integrations custom-domain and analytics prompts resolve exact article-ba
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-embed'), `custom-domain prompt drifted into Custom HTML for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === item.expectedArticleAlias, `custom-domain prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `custom-domain prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => new RegExp(`${item.expectedArticleAlias}/index\\.html$`).test(url)), `custom-domain prompt missing published article URL for ${item.prompt}`);
-    assert(Array.isArray(response.answer?.imageUrls) && response.answer.imageUrls.length === 0, `custom-domain prompt must not invent image URLs for text-only guide ${item.prompt}`);
-    assert(response.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'text-only-no-screenshot-evidence', `custom-domain prompt must expose text-only visual coverage for ${item.prompt}`);
-    assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'text-only-no-screenshot-evidence'), `custom-domain prompt missing text-only guide reference status for ${item.prompt}`);
-    assert(response.answer?.articleAvailability?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'text-only-no-screenshot-evidence'), `custom-domain prompt missing text-only article availability status for ${item.prompt}`);
-    assert(/text-only|no shipped screenshot image URL|no concrete screenshot image URL/i.test(response.answer?.articleReferenceSummary ?? ''), `custom-domain prompt must state missing visual coverage honestly for ${item.prompt}`);
-    assert(!/screenshot-backed guidance/i.test(response.answer?.customerAnswerStarter ?? ''), `custom-domain prompt must not claim screenshot-backed guidance for ${item.prompt}`);
-    assert(!/text and (?:concrete )?screenshot|screenshot-backed guidance/i.test(response.answer?.articleReferenceSummary ?? ''), `custom-domain prompt must not imply screenshot-backed evidence for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, item.expectedArticleAlias), `custom-domain prompt missing published article URL for ${item.prompt}`);
+    assert(response.answer?.imageUrls?.some(url => /custom-domain-panel/.test(url)), `custom-domain prompt missing the reviewed article screenshot URL for ${item.prompt}`);
+    assert(response.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'image-url-available', `custom-domain prompt must expose screenshot-backed visual coverage for ${item.prompt}`);
+    assert(response.answer?.customerVisibleGuideAssets?.guideReferences?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'image-url-available' && reference.imageUrls?.some(url => /custom-domain-panel/.test(url))), `custom-domain prompt missing screenshot-backed guide reference status for ${item.prompt}`);
+    assert(response.answer?.articleAvailability?.some(reference => reference.articleAlias === item.expectedArticleAlias && reference.visualCoverageStatus === 'image-url-available'), `custom-domain prompt missing screenshot-backed article availability status for ${item.prompt}`);
+    assert(/concrete screenshot|screenshot\/image evidence/i.test(response.answer?.articleReferenceSummary ?? ''), `custom-domain prompt must describe the shipped visual evidence for ${item.prompt}`);
+    assert(/concrete screenshot|screenshot\/image URLs/i.test(response.answer?.customerAnswerStarter ?? ''), `custom-domain prompt must expose screenshot-backed guidance for ${item.prompt}`);
     assert(response.completionClaim === 'guidance-only', `custom-domain prompt must not claim mutation or verification for ${item.prompt}`);
     assertSourceSafeCustomerAnswer(response);
   }
@@ -1748,9 +1740,9 @@ check('Integrations custom-domain and analytics prompts resolve exact article-ba
   assert(domainHandoff.action?.missingInputs?.includes('projectId'), 'custom-domain handoff must ask for projectId');
   assert(domainHandoff.action?.missingInputs?.includes('domain'), 'custom-domain handoff must ask for domain');
   assert(domainHandoff.answer?.preferredCitation?.articleAlias === 'integrations-custom-domain-section', 'custom-domain handoff must cite integrations custom domain guide');
-  assert(domainHandoff.answer?.publicArticleLinks?.some(url => /integrations-custom-domain-section\/index\.html$/.test(url)), 'custom-domain handoff missing integrations custom domain URL');
-  assert(domainHandoff.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'text-only-no-screenshot-evidence', 'custom-domain handoff must expose text-only visual coverage');
-  assert(!/screenshot-backed guidance/i.test(domainHandoff.answer?.customerAnswerStarter ?? ''), 'custom-domain handoff must not claim screenshot-backed guidance');
+  assert(hasPublicArticleLink(domainHandoff.answer?.publicArticleLinks, 'integrations-custom-domain-section'), 'custom-domain handoff missing integrations custom domain URL');
+  assert(domainHandoff.answer?.customerVisibleGuideAssets?.visualCoverage?.status === 'image-url-available', 'custom-domain handoff must expose the related DNS article screenshot coverage');
+  assert(domainHandoff.answer?.imageUrls?.some(url => /custom-domain-panel/.test(url)), 'custom-domain handoff must include the related DNS article screenshot URL');
   assert(!domainHandoff.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), 'custom-domain handoff drifted into Options');
   assert(domainHandoff.completionClaim === 'handoff-not-done', 'custom-domain handoff must not claim completion');
   assertSourceSafeCustomerAnswer(domainHandoff);
@@ -1771,7 +1763,7 @@ check('Integrations custom-domain and analytics prompts resolve exact article-ba
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === 'screen-editor-section-options'), `analytics prompt drifted into Options for ${prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'analytics-provider-config', `analytics prompt missing provider-config article alias for ${prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === 'analytics-provider-config/analytics-provider-config', `analytics prompt missing exact provider-config reference path for ${prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /analytics-provider-config\/index\.html$/.test(url)), `analytics prompt missing provider-config article URL for ${prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'analytics-provider-config'), `analytics prompt missing provider-config article URL for ${prompt}`);
     assert(response.answer?.imageUrls?.some(url => /open-add-dialog-add-integration-dialog|expand-analytics-analytics-section/.test(url)), `analytics prompt missing concrete analytics image evidence for ${prompt}`);
     assert(response.completionClaim === 'guidance-only', `analytics teach prompt must not claim mutation or verification for ${prompt}`);
     assertSourceSafeCustomerAnswer(response);
@@ -1787,7 +1779,7 @@ check('Integrations custom-domain and analytics prompts resolve exact article-ba
   assert(pixelDo.action?.missingInputs?.includes('pixelId'), 'facebook pixel prompt must ask for pixelId');
   assert(!pixelDo.action?.missingInputs?.includes('pixelProvider'), 'facebook pixel prompt should infer pixelProvider');
   assert(pixelDo.answer?.preferredCitation?.articleAlias === 'analytics-add-provider', 'facebook pixel prompt must cite analytics add provider guide');
-  assert(pixelDo.answer?.publicArticleLinks?.some(url => /analytics-add-provider\/index\.html$/.test(url)), 'facebook pixel prompt missing analytics add provider article URL');
+  assert(hasPublicArticleLink(pixelDo.answer?.publicArticleLinks, 'analytics-add-provider'), 'facebook pixel prompt missing analytics add provider article URL');
   assert(pixelDo.answer?.imageUrls?.some(url => /open-add-dialog-add-integration-dialog/.test(url)), 'facebook pixel prompt missing concrete analytics image evidence');
   assert(pixelDo.completionClaim === 'needs-inputs-before-execution', 'facebook pixel prompt must not claim execution before inputs and verification');
   assertSourceSafeCustomerAnswer(pixelDo);
@@ -1832,7 +1824,7 @@ check('Action Bar rich visual style prompts resolve article-backed domain-operat
     assert(response.guidance?.guides?.some(guide => guide.guideKey === item.expectedGuideKey), `Action Bar rich style prompt missing expected guide ${item.expectedGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-action-bar', `Action Bar rich style prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Action Bar rich style prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-action-bar\/index\.html$/.test(url)), `Action Bar rich style prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-action-bar'), `Action Bar rich style prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /configure-action-bar-section/.test(url)), `Action Bar rich style prompt missing concrete image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Action Bar rich style prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Action Bar rich style prompt must require domain operation for ${item.prompt}`);
@@ -1895,7 +1887,7 @@ check('Paywall Body benefits and copy prompts resolve article-backed domain-oper
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Paywall Body prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-paywall-body', `Paywall Body prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Paywall Body prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-body\/index\.html$/.test(url)), `Paywall Body prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-paywall-body'), `Paywall Body prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide|paywall-body|native-content/.test(url)), `Paywall Body prompt missing concrete image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Paywall Body prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Paywall Body prompt must require domain operation for ${item.prompt}`);
@@ -1958,7 +1950,7 @@ check('Paywall Footer legal links and copy prompts resolve article-backed domain
     assert(!response.guidance?.guides?.some(guide => guide.guideKey === item.forbiddenGuideKey), `Paywall Footer prompt resolved forbidden guide ${item.forbiddenGuideKey} for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.articleAlias === 'help-block-paywall-footer', `Paywall Footer prompt missing article alias for ${item.prompt}`);
     assert(response.answer?.preferredCitation?.referencePath === item.expectedReferencePath, `Paywall Footer prompt missing exact reference path for ${item.prompt}`);
-    assert(response.answer?.publicArticleLinks?.some(url => /help-block-paywall-footer\/index\.html$/.test(url)), `Paywall Footer prompt missing published article URL for ${item.prompt}`);
+    assert(hasPublicArticleLink(response.answer?.publicArticleLinks, 'help-block-paywall-footer'), `Paywall Footer prompt missing published article URL for ${item.prompt}`);
     assert(response.answer?.imageUrls?.some(url => /paywall-screen-configuration-guide|paywall-footer|native-footer/.test(url)), `Paywall Footer prompt missing concrete image evidence for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.show?.available === true, `Paywall Footer prompt must offer SHOW for ${item.prompt}`);
     assert(response.answer?.showDoOptions?.do?.available === 'requires-domain-operation', `Paywall Footer prompt must require domain operation for ${item.prompt}`);
@@ -2492,7 +2484,7 @@ check('CLI generic scalar Basic Config prompt returns generated setting patch co
   assert(guide, 'generic Basic Config response missing animation guide contract');
   assert(guide.articleAlias === 'help-block-basic-config', 'generic Basic Config guide must link the built-in Basic Config article');
   assert(guide.referencePath === 'help-block-basic-config/screenedit-basic-config-animation-enabled', 'generic Basic Config guide missing stable reference path');
-  assert(guide.fullArticleLink && /help-block-basic-config\/index\.html$/.test(guide.fullArticleLink), 'generic Basic Config guide missing public article URL');
+  assert(guide.fullArticleLink && isPublicArticleUrl(guide.fullArticleLink, 'help-block-basic-config'), 'generic Basic Config guide missing public article URL');
   assert(guide.imageUrls?.some(url => /^https:\/\//.test(url)), 'generic Basic Config guide missing concrete image URL');
   assert(!response.missingArticleClaimed, 'generic Basic Config response incorrectly claimed the built-in guide/article is missing');
   assertSourceSafeCustomerAnswer(response);
@@ -2933,6 +2925,25 @@ function assertToolPreflight(preflight, options = {}) {
     assert(!byId.has('playwright-browser-availability'), 'CLI-only toolPreflight should not require browser availability');
   }
   assert(/Before live SHOW\/DO execution/.test(preflight.agentInstruction ?? ''), 'toolPreflight missing live execution agent instruction');
+}
+
+function hasPublicArticleLink(links, alias) {
+  return (links ?? []).some(url => isPublicArticleUrl(url, alias));
+}
+
+function isPublicArticleUrl(value, alias) {
+  try {
+    const url = new URL(String(value));
+    const parts = url.pathname.split('/').filter(Boolean);
+    return parts[parts.length - 1] === alias
+      || (parts[parts.length - 2] === alias && parts[parts.length - 1] === 'index.html');
+  } catch {
+    return new RegExp(`${escapeRegExp(alias)}(?:/index\\.html)?$`).test(String(value));
+  }
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function assertSourceSafeCustomerAnswer(response) {

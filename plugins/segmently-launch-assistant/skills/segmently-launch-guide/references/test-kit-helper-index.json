@@ -1114,6 +1114,11 @@
       "category": "navigation"
     },
     {
+      "name": "navigateToProduct",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
       "name": "navigateToSetting",
       "sourceModule": "editor/field-setters",
       "category": "editor"
@@ -1339,8 +1344,18 @@
       "category": "selectors"
     },
     {
+      "name": "PRODUCT_VARIABLES",
+      "sourceModule": "selectors/variable-privacy",
+      "category": "selectors"
+    },
+    {
       "name": "PROJECT_THEME",
       "sourceModule": "selectors/project-theme",
+      "category": "selectors"
+    },
+    {
+      "name": "PROMPT_SECTIONS_ADMIN",
+      "sourceModule": "selectors/prompt-sections-admin",
       "category": "selectors"
     },
     {
@@ -1672,6 +1687,16 @@
       "name": "UPSELL_PAYWALL_ITEMS",
       "sourceModule": "webshell/paywall-helpers",
       "category": "webshell"
+    },
+    {
+      "name": "V2_VARIABLES",
+      "sourceModule": "selectors/variable-privacy",
+      "category": "selectors"
+    },
+    {
+      "name": "variablePrivacyDecisionTestIds",
+      "sourceModule": "selectors/variable-privacy",
+      "category": "selectors"
     },
     {
       "name": "verifyCarouselVisible",

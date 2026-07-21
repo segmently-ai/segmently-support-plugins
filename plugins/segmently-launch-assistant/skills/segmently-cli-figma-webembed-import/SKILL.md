@@ -226,7 +226,6 @@ Load only what is needed:
 ## Verification
 
 ```bash
-node <skill-root>/scripts/run-evals.mjs
 node <skill-root>/scripts/extract-figma-screens.mjs --help
 node <skill-root>/scripts/materialize-catalog.mjs --help
 node <skill-root>/scripts/enforce-project-profile.mjs --help

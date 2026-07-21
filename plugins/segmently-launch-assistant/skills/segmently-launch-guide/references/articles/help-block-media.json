@@ -11,7 +11,7 @@
       "summary": "Size, placement & rounding in the section",
       "kind": "section",
       "articleSectionId": "g-appearance-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -27,7 +27,7 @@
       "summary": "Inside the Media section, this is the Size, placement & rounding.",
       "kind": "section",
       "articleSectionId": "g-appearance-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -41,7 +41,7 @@
       "summary": "Size, placement & rounding",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -55,7 +55,7 @@
       "summary": "Fade overlay",
       "kind": "section",
       "articleSectionId": "g-gradient-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-gradient-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-gradient-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -69,7 +69,7 @@
       "summary": "Image or video source in the section",
       "kind": "section",
       "articleSectionId": "g-source-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -85,7 +85,7 @@
       "summary": "Inside the Media section, this is the Image or video source.",
       "kind": "section",
       "articleSectionId": "g-source-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -99,7 +99,7 @@
       "summary": "Image or video source",
       "kind": "section",
       "articleSectionId": "g-source-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -113,7 +113,7 @@
       "summary": "The screen's image or video block — its source, size, placement, rounding, and an optional fade overlay. This guide documents every setting of the Media block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -371,7 +371,7 @@
       "summary": "Media in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -387,7 +387,7 @@
       "summary": "Open the Media section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -401,7 +401,7 @@
       "summary": "Turns the image or video block on or off for this screen; off means no visual is shown. Turn it on to add a supporting visual, since on a paid landing page a relevant image or video builds trust and lifts conversion. When enabled, it starts with sensible styling from your design theme that you can fine-tune in the fields below.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia",
       "guideKeys": [
         "screenedit-media-enable"
       ],
@@ -423,7 +423,7 @@
       "summary": "Rounds the corners of the media block; 0 is sharp and higher values (up to 50) make them softer. A small radius around 8 to 16 gives a modern, polished look; match it to the rounding on your buttons and cards so the whole screen feels consistent. Leave it at 0 for full-bleed media that touches the screen edges.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-media-corner-radius"
       ],
@@ -444,7 +444,7 @@
       "summary": "How rounded the media is",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -460,7 +460,7 @@
       "summary": "Sets the media height as a share of the screen (0 to 100%), so it scales on every device; the default is 50%. Use a larger percentage for an immersive, image-led screen and a smaller one when you need room for the title, text, or button below; on a choice screen, keep it modest so the options stay visible without scrolling. Setting a value pins the media just below the header for a consistent layout.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-media-height-percentage"
       ],
@@ -482,7 +482,7 @@
       "summary": "How tall the media is",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -498,7 +498,7 @@
       "summary": "Lays a soft, see-through fade (usually dark) over the media so any text or button on top stays readable against a busy image. Turn it on whenever you place a title, subtitle, or button over the media; without it, light areas of the image can wash out your copy. When enabled, you get controls below to set the fade's height and color.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient",
       "guideKeys": [
         "screenedit-media-gradient-enable"
       ],
@@ -520,7 +520,7 @@
       "summary": "Picks the color of the fade over the media. Use a dark color (usually black) behind light or white text, or a light color behind dark text; the fade goes from this color to fully transparent so the image still shows through. Match it to your background or brand color for a seamless look, and choose whichever direction gives your copy the strongest contrast.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-colors-0",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-colors-0",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-colors-0",
       "guideKeys": [
         "screenedit-media-gradient-color"
       ],
@@ -542,7 +542,7 @@
       "summary": "Color of the fade",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-colors-0-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-colors-0-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-colors-0-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -558,7 +558,7 @@
       "summary": "Controls how far the fade reaches across the media (0 to 100%). Match it to where your text or button sits: if the copy is near the bottom, a 30 to 50% fade from that edge usually gives enough contrast without darkening the whole image. Increase it if text is still hard to read, decrease it to show more of the image clearly.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
       "guideKeys": [
         "screenedit-media-gradient-height"
       ],
@@ -580,7 +580,7 @@
       "summary": "How far the fade extends",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -596,7 +596,7 @@
       "summary": "Fade over the media",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -612,7 +612,7 @@
       "summary": "When on, the video replays continuously; when off, it plays once and stops on the last frame. Only applies to video media. Turn looping on for short ambient background clips that hold attention; turn it off for a demo or explainer you want watched once, so it doesn't loop distractingly while the visitor reads.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-repeat",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-repeat",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-repeat",
       "guideKeys": [
         "screenedit-media-video-repeat"
       ],
@@ -633,7 +633,7 @@
       "summary": "Replay the video on a loop",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-repeat-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-repeat-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-repeat-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -649,7 +649,7 @@
       "summary": "Controls how the media fills its box. Aspect Fit shows the whole thing without cropping (you may see empty bars), Aspect Fill covers the box completely but may crop edges, and Scale to Fill stretches it, which distorts photos, so avoid that. The positional options (Top, Bottom, Center, and so on) crop to fill while keeping that part in view. Aspect Fill is the usual pick for an edge-to-edge banner; use Aspect Fit when nothing should be cropped.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-scalemode",
       "guideKeys": [
         "screenedit-media-scale-mode"
       ],
@@ -670,7 +670,7 @@
       "summary": "How media fills its box",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -686,7 +686,7 @@
       "summary": "Sets where the media begins from the top of the screen. Screen Top runs it edge-to-edge to the very top (great for a full-bleed hero), Navigation Bar starts it just below the header, and Safe Area keeps it clear of phone notches and rounded corners. Pick Screen Top for an immersive banner, Safe Area when nothing should ever be clipped. This is locked if you set a media height percentage below, which positions it for you.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-topalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-topalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-topalignment",
       "guideKeys": [
         "screenedit-media-top-alignment"
       ],
@@ -707,7 +707,7 @@
       "summary": "Where the media starts on top",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-topalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-topalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-topalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -723,7 +723,7 @@
       "summary": "Add this screen's image by uploading a file from your computer or pasting a direct image URL, then confirm it in the preview. Use a high-quality JPG or PNG that's on-message for the screen — uploads are optimized automatically for fast loading on every device. To replace it later, upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-image",
       "guideKeys": [
         "screenedit-media-image-upload"
       ],
@@ -744,7 +744,7 @@
       "summary": "The image for this screen",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-image-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-image-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-image-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -760,7 +760,7 @@
       "summary": "Add a video by uploading a file or pasting a direct video URL. Keep it short (a few seconds, ideally under ~30s) and lightweight so the page loads fast — long or heavy videos hurt conversion on paid traffic. Uploads are converted automatically to play reliably across devices, and you can pair this with the loop option below to replay it continuously.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-video",
       "guideKeys": [
         "screenedit-media-video-upload"
       ],
@@ -782,7 +782,7 @@
       "summary": "The video for this screen",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-video-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-video-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-video-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -798,7 +798,7 @@
       "summary": "Show an image or video",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -814,7 +814,7 @@
       "summary": "Pick whether this screen shows an image or a video. Use an image for a fast, lightweight visual that loads instantly; use a video for short product demos or motion that holds attention (it can loop). Switching type clears the current media, so choose before you upload. Keep videos short and light so the page stays fast, since slow loads cost conversions on paid traffic.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-kind",
       "guideKeys": [
         "screenedit-media-kind"
       ],
@@ -836,7 +836,7 @@
       "summary": "Image or video",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -852,7 +852,7 @@
       "summary": "Adds empty space on the four sides of the media (top, right, bottom, left) so it isn't flush against the screen edges or neighboring content. Leave it at the default for a full-width visual. Increase a side to inset the media and give it a framed look with breathing room, rather than edge-to-edge.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-layout-insets",
       "guideKeys": [
         "screenedit-media-padding"
       ],
@@ -873,7 +873,7 @@
       "summary": "Space around the media",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -891,7 +891,7 @@
       "summary": "Size, placement & rounding in the section",
       "kind": "section",
       "articleSectionId": "g-appearance-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -907,7 +907,7 @@
       "summary": "Inside the Media section, this is the Size, placement & rounding.",
       "kind": "section",
       "articleSectionId": "g-appearance-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -921,7 +921,7 @@
       "summary": "Size, placement & rounding",
       "kind": "section",
       "articleSectionId": "g-appearance-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-appearance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-appearance-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -935,7 +935,7 @@
       "summary": "Fade overlay",
       "kind": "section",
       "articleSectionId": "g-gradient-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-gradient-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-gradient-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -949,7 +949,7 @@
       "summary": "Image or video source in the section",
       "kind": "section",
       "articleSectionId": "g-source-el",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-el",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -965,7 +965,7 @@
       "summary": "Inside the Media section, this is the Image or video source.",
       "kind": "section",
       "articleSectionId": "g-source-el-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-el-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -979,7 +979,7 @@
       "summary": "Image or video source",
       "kind": "section",
       "articleSectionId": "g-source-head",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#g-source-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#g-source-head",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -993,7 +993,7 @@
       "summary": "The screen's image or video block — its source, size, placement, rounding, and an optional fade overlay. This guide documents every setting of the Media block, grouped by area. Each setting matches a real control in the screen editor.",
       "kind": "section",
       "articleSectionId": "intro",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#intro",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1251,7 +1251,7 @@
       "summary": "Media in the editor",
       "kind": "section",
       "articleSectionId": "section-context",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#section-context",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1267,7 +1267,7 @@
       "summary": "Open the Media section in the screen editor to configure its settings.",
       "kind": "section",
       "articleSectionId": "section-context-cap",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#section-context-cap",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1281,7 +1281,7 @@
       "summary": "Turns the image or video block on or off for this screen; off means no visual is shown. Turn it on to add a supporting visual, since on a paid landing page a relevant image or video builds trust and lifts conversion. When enabled, it starts with sensible styling from your design theme that you can fine-tune in the fields below.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia",
       "guideKeys": [
         "screenedit-media-enable"
       ],
@@ -1303,7 +1303,7 @@
       "summary": "Rounds the corners of the media block; 0 is sharp and higher values (up to 50) make them softer. A small radius around 8 to 16 gives a modern, polished look; match it to the rounding on your buttons and cards so the whole screen feels consistent. Leave it at 0 for full-bleed media that touches the screen edges.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-cornerradii-uniform",
       "guideKeys": [
         "screenedit-media-corner-radius"
       ],
@@ -1324,7 +1324,7 @@
       "summary": "How rounded the media is",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-cornerradii-uniform-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1340,7 +1340,7 @@
       "summary": "Sets the media height as a share of the screen (0 to 100%), so it scales on every device; the default is 50%. Use a larger percentage for an immersive, image-led screen and a smaller one when you need room for the title, text, or button below; on a choice screen, keep it modest so the options stay visible without scrolling. Setting a value pins the media just below the header for a consistent layout.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
       "guideKeys": [
         "screenedit-media-height-percentage"
       ],
@@ -1362,7 +1362,7 @@
       "summary": "How tall the media is",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-dimensions-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1378,7 +1378,7 @@
       "summary": "Lays a soft, see-through fade (usually dark) over the media so any text or button on top stays readable against a busy image. Turn it on whenever you place a title, subtitle, or button over the media; without it, light areas of the image can wash out your copy. When enabled, you get controls below to set the fade's height and color.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient",
       "guideKeys": [
         "screenedit-media-gradient-enable"
       ],
@@ -1400,7 +1400,7 @@
       "summary": "Picks the color of the fade over the media. Use a dark color (usually black) behind light or white text, or a light color behind dark text; the fade goes from this color to fully transparent so the image still shows through. Match it to your background or brand color for a seamless look, and choose whichever direction gives your copy the strongest contrast.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-colors-0",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-colors-0",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-colors-0",
       "guideKeys": [
         "screenedit-media-gradient-color"
       ],
@@ -1422,7 +1422,7 @@
       "summary": "Color of the fade",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-colors-0-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-colors-0-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-colors-0-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1438,7 +1438,7 @@
       "summary": "Controls how far the fade reaches across the media (0 to 100%). Match it to where your text or button sits: if the copy is near the bottom, a 30 to 50% fade from that edge usually gives enough contrast without darkening the whole image. Increase it if text is still hard to read, decrease it to show more of the image clearly.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
       "guideKeys": [
         "screenedit-media-gradient-height"
       ],
@@ -1460,7 +1460,7 @@
       "summary": "How far the fade extends",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-heightpercentage-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1476,7 +1476,7 @@
       "summary": "Fade over the media",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1492,7 +1492,7 @@
       "summary": "When on, the video replays continuously; when off, it plays once and stops on the last frame. Only applies to video media. Turn looping on for short ambient background clips that hold attention; turn it off for a demo or explainer you want watched once, so it doesn't loop distractingly while the visitor reads.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-repeat",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-repeat",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-repeat",
       "guideKeys": [
         "screenedit-media-video-repeat"
       ],
@@ -1513,7 +1513,7 @@
       "summary": "Replay the video on a loop",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-repeat-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-repeat-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-repeat-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1529,7 +1529,7 @@
       "summary": "Controls how the media fills its box. Aspect Fit shows the whole thing without cropping (you may see empty bars), Aspect Fill covers the box completely but may crop edges, and Scale to Fill stretches it, which distorts photos, so avoid that. The positional options (Top, Bottom, Center, and so on) crop to fill while keeping that part in view. Aspect Fill is the usual pick for an edge-to-edge banner; use Aspect Fit when nothing should be cropped.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-scalemode",
       "guideKeys": [
         "screenedit-media-scale-mode"
       ],
@@ -1550,7 +1550,7 @@
       "summary": "How media fills its box",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-scalemode-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-scalemode-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-scalemode-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1566,7 +1566,7 @@
       "summary": "Sets where the media begins from the top of the screen. Screen Top runs it edge-to-edge to the very top (great for a full-bleed hero), Navigation Bar starts it just below the header, and Safe Area keeps it clear of phone notches and rounded corners. Pick Screen Top for an immersive banner, Safe Area when nothing should ever be clipped. This is locked if you set a media height percentage below, which positions it for you.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-topalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-topalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-topalignment",
       "guideKeys": [
         "screenedit-media-top-alignment"
       ],
@@ -1587,7 +1587,7 @@
       "summary": "Where the media starts on top",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-appearance-topalignment-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-topalignment-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-topalignment-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1603,7 +1603,7 @@
       "summary": "Add this screen's image by uploading a file from your computer or pasting a direct image URL, then confirm it in the preview. Use a high-quality JPG or PNG that's on-message for the screen — uploads are optimized automatically for fast loading on every device. To replace it later, upload or paste a new source here.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-image",
       "guideKeys": [
         "screenedit-media-image-upload"
       ],
@@ -1624,7 +1624,7 @@
       "summary": "The image for this screen",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-image-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-image-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-image-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1640,7 +1640,7 @@
       "summary": "Add a video by uploading a file or pasting a direct video URL. Keep it short (a few seconds, ideally under ~30s) and lightweight so the page loads fast — long or heavy videos hurt conversion on paid traffic. Uploads are converted automatically to play reliably across devices, and you can pair this with the loop option below to replay it continuously.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-video",
       "guideKeys": [
         "screenedit-media-video-upload"
       ],
@@ -1662,7 +1662,7 @@
       "summary": "The video for this screen",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-content-video-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-video-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-video-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1678,7 +1678,7 @@
       "summary": "Show an image or video",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1694,7 +1694,7 @@
       "summary": "Pick whether this screen shows an image or a video. Use an image for a fast, lightweight visual that loads instantly; use a video for short product demos or motion that holds attention (it can loop). Switching type clears the current media, so choose before you upload. Keep videos short and light so the page stays fast, since slow loads cost conversions on paid traffic.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-kind",
       "guideKeys": [
         "screenedit-media-kind"
       ],
@@ -1716,7 +1716,7 @@
       "summary": "Image or video",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-kind-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-kind-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-kind-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1732,7 +1732,7 @@
       "summary": "Adds empty space on the four sides of the media (top, right, bottom, left) so it isn't flush against the screen edges or neighboring content. Leave it at the default for a full-width visual. Increase a side to inset the media and give it a framed look with breathing room, rather than edge-to-edge.",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-layout-insets",
       "guideKeys": [
         "screenedit-media-padding"
       ],
@@ -1753,7 +1753,7 @@
       "summary": "Space around the media",
       "kind": "section",
       "articleSectionId": "set-media-content-featuredmedia-layout-insets-img",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-layout-insets-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-layout-insets-img",
       "guideKeys": [],
       "tags": [
         "article-section",
@@ -1772,7 +1772,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-enable.png",
       "articleSectionId": "set-media-content-featuredmedia",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1786,7 +1786,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-kind.png",
       "articleSectionId": "set-media-content-featuredmedia-kind",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-kind",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-kind",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1800,7 +1800,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/open-section-image.png",
       "articleSectionId": "set-media-content-featuredmedia-content-image",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-image",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-image",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1814,7 +1814,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-video.png",
       "articleSectionId": "set-media-content-featuredmedia-content-video",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-content-video",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-content-video",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1829,7 +1829,7 @@
       "group": "source",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/video-repeat.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-repeat",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-repeat",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-repeat",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1844,7 +1844,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-gradient-enable.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1859,7 +1859,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-height.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-heightpercentage",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1874,7 +1874,7 @@
       "group": "gradient",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/gradient-color.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-gradient-colors-0",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-gradient-colors-0",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-gradient-colors-0",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1889,7 +1889,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-top-alignment.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-topalignment",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-topalignment",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-topalignment",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1904,7 +1904,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-scale-mode.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-scalemode",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-scalemode",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-scalemode",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1919,7 +1919,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-height.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-dimensions-heightpercentage",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1934,7 +1934,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-corner-radius.png",
       "articleSectionId": "set-media-content-featuredmedia-appearance-cornerradii-uniform",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-appearance-cornerradii-uniform",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-appearance-cornerradii-uniform",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -1949,7 +1949,7 @@
       "group": "appearance",
       "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-media-section/0.2.0/configure-media-section-2026-06-22T19-19-56-389Z-81b8a06e/appearance-padding.png",
       "articleSectionId": "set-media-content-featuredmedia-layout-insets",
-      "articleSectionUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-media/index.html#set-media-content-featuredmedia-layout-insets",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-media#set-media-content-featuredmedia-layout-insets",
       "route": [
         "Open the screen in the editor.",
         "Expand the Media section.",
@@ -3328,6 +3328,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "bd0c7780051aedaa"
+    "generatedHash": "5085e028bc53844b"
   }
 }
