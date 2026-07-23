@@ -525,20 +525,45 @@ segmently content-plan topics aspects list <topicId> \
   --author <authorId>
 ```
 
-For manual repair, export the aspect list, edit it, then replace with dry-run:
+For manual repair, export the aspect list, edit it, then replace. `apply --file`
+accepts the exact `aspects list` output (`{ "aspects": [...] }`) as well as a
+bare array or `{ "postBreakdown": [...] }` — edit only the canonical fields
+`aspectKey` / `aspectLabel` / `aspectAngle` (shape:
+`manifests.md > Topic Aspects Manifest`). Full safe sequence:
 
 ```bash
+# 1. Export current state (this exact file can be fed back to apply)
 segmently content-plan topics aspects list <topicId> \
   --project <projectId> \
   --author <authorId> \
   > aspects.json
 
+# 2. Edit aspects.json, then dry-run and read changedFields:
+#    changedFields: [] = no-op (nothing to write, still success)
 segmently content-plan topics aspects apply <topicId> \
   --project <projectId> \
   --author <authorId> \
   --file aspects.json \
   --dry-run
+
+# 3. Real apply
+segmently content-plan topics aspects apply <topicId> \
+  --project <projectId> \
+  --author <authorId> \
+  --file aspects.json
+
+# 4. MANDATORY readback — also the ONLY correct move after auth_required or a
+#    network error on step 3: never blindly re-run the apply; list first,
+#    compare, re-apply only if the write did not land.
+segmently content-plan topics aspects list <topicId> \
+  --project <projectId> \
+  --author <authorId>
 ```
+
+Aspects are user-visible in the topic's Overview tab (PostBreakdownEditor).
+After a repair, confirm the labels/angles actually render at
+`/project/{projectId}/content-plan?cpTab=backlog` — a CLI readback echoes what
+was stored, not what the UI renders.
 
 Attach manual source material before research or post generation when the
 operator already has text, a URL, a quote, or support evidence. Post generation

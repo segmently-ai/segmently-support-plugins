@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T11:30:03.854Z",
+  "generatedAt": "2026-07-23T10:15:15.561Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
-  "channel": "stable",
+  "channel": "dev",
   "policy": {
     "stableForbiddenClassifications": [
       "dev-api",
@@ -209,7 +209,7 @@
     {
       "value": "https://example.com/source",
       "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/workflows.md",
-      "line": 554,
+      "line": 579,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -218,7 +218,7 @@
     {
       "value": "https://example.com/source",
       "file": "plugins/segmently-launch-assistant/skills/segmently-cli-content-plan-guide/references/workflows.md",
-      "line": 573,
+      "line": 598,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,

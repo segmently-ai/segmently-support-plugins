@@ -185,6 +185,46 @@ orchestrator.
 }
 ```
 
+## Topic Aspects Manifest
+
+`post-breakdown.json` for `topics aspects apply`. An aspect has EXACTLY three
+canonical fields — `aspectKey` (stable snake_case id), `aspectLabel`
+(required, non-empty; the text the UI shows), `aspectAngle` (optional hook
+override). Any other key is rejected before the network call with a
+did-you-mean hint (`aspect` → `aspectLabel`, `hookAngle` → `aspectAngle`,
+`title` → `aspectLabel`) — never derive field names from UI column headers.
+Duplicate `aspectKey` values are rejected (post generation keys master posts
+by `topicId::aspectKey`).
+
+```json
+[
+  {
+    "aspectKey": "context",
+    "aspectLabel": "Why pre-mortem matters",
+    "aspectAngle": "pain-first: the launch that died in week two"
+  },
+  {
+    "aspectKey": "method",
+    "aspectLabel": "How to run one in 30 minutes"
+  }
+]
+```
+
+Accepted top-level shapes (all validated pre-network):
+
+- bare array (above);
+- `{ "postBreakdown": [ ... ] }`;
+- the exact `aspects list` output `{ "projectId", "topicId", "aspects": [ ... ], "aspectCount" }` —
+  so `aspects list > aspects.json` round-trips into `apply --file aspects.json` as-is.
+- A file containing BOTH `aspects` and `postBreakdown` is an ambiguity error.
+
+`topics aspects add --file` takes ONE aspect object (same three fields;
+`aspectKey` optional — the server generates one). `topics aspects patch
+<topicId> <aspectKey> --file` takes a partial object with at least one
+canonical field. Mutation responses carry `changedFields`; `changedFields: []`
+means the stored state was already identical — the server wrote nothing and
+the command still succeeded.
+
 ## Strategy Draft Inputs
 
 `strategy-planning.json` for `strategies preflight`, `strategies create`, or

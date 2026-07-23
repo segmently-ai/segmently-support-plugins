@@ -144,6 +144,28 @@ tokens.
   configured flow. Do not convert its not-ready exit code into a command failure;
   read `steps[].nextCommand` and advance the first required missing step.
 - Use `--dry-run` before write commands when supported.
+- Mutating aspect commands report `changedFields`. `changedFields: []` means
+  the result is identical to the stored state — the server skips the write
+  entirely and the command still exits 0. A no-op apply is SUCCESS, not
+  failure; trust `changedFields` instead of building your own diff.
+- Topic aspects (`topics aspects apply|add|patch`) accept ONLY the canonical
+  fields `aspectKey`, `aspectLabel` (required, non-empty), and `aspectAngle`.
+  Never invent field names from UI column headers — `aspect`, `hookAngle`, and
+  `title` are rejected with did-you-mean hints. `aspects apply --file` accepts
+  a bare array, `{ "postBreakdown": [...] }`, or the exact `aspects list`
+  output `{ "aspects": [...] }`; a file containing BOTH keys is an ambiguity
+  error. See `references/manifests.md > Topic Aspects Manifest`.
+- Readback-before-retry (MANDATORY): when a REAL (non-dry-run) apply fails
+  with `auth_required`, a network error, or any ambiguous outcome, never
+  blindly re-run it. First read the state back (`topics aspects list`, the
+  matching `get`/`list` for other surfaces), compare against the intended
+  manifest, and re-apply only if the readback proves the write did not land.
+- Verify UI-visible writes in the UI, not only via CLI readback: a readback
+  echoes what was STORED, not what the product RENDERS. After applying data
+  users see (topic aspects, posts, publications), confirm the values in the
+  owning surface (e.g. `/project/{projectId}/content-plan?cpTab=backlog`) or
+  ask the operator to. A stored-vs-rendered contract mismatch is invisible to
+  readback alone.
 - `bootstrap apply` validates by default and resumes from
   `<manifest>.bootstrap-state.json`. Preserve the checkpoint after an interrupted
   run; use `--restart` only when the operator intentionally wants every operation
