@@ -1,0 +1,7 @@
+interface:
+  display_name: "Screen Block Builder"
+  short_description: "Author reusable blocks with exact runtime packets"
+  default_prompt: "Use $screen-block-builder to author, validate, preview, and publish a reusable Segmently block example with an exact runtime prompt packet and dry-run approval plus authoritative readback."
+
+policy:
+  allow_implicit_invocation: true

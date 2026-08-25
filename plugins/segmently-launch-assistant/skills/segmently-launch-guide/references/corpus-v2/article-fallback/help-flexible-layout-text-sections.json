@@ -1,0 +1,23 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-flexible-layout-text-sections",
+  "contentHash": "0b8b62a0d117f1ae8bbc447d2dd40b76bf1e8ade08d4b33ca63c6cf13e8928a0",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "heading-choose-the-type-style",
+      "title": "Choose the type style",
+      "excerpt": "Choose the type style"
+    },
+    {
+      "sectionId": "heading-link-text-to-the-selected-product",
+      "title": "Link text to the selected product",
+      "excerpt": "Link text to the selected product"
+    },
+    {
+      "sectionId": "heading-write-the-visible-text",
+      "title": "Write the visible text",
+      "excerpt": "Write the visible text"
+    }
+  ]
+}

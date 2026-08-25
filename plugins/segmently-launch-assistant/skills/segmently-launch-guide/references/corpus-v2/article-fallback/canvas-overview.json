@@ -1,0 +1,28 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "canvas-overview",
+  "contentHash": "593e1a1a52e289bd6a59677e6ab797a40cba4e541cda24428f761f3c46632c6e",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "canvas-overview-canvas-controls-text",
+      "title": "Use the toolbar controls",
+      "excerpt": "Use the toolbar controls | The top bar has undo, redo, and close; the side panel has search, a locale selector when multiple languages exist, and a funnel-insights toggle. Shortcuts: Ctrl+Z undo, Ctrl+Shift+Z redo, Ctrl+F search."
+    },
+    {
+      "sectionId": "canvas-overview-canvas-display-text",
+      "title": "Read the flow structure",
+      "excerpt": "Read the flow structure | The canvas shows every screen as a node and every transition as an edge. Drag to arrange, click to select, and double-click a node to open the Screen Editor; the flow runs left to right."
+    },
+    {
+      "sectionId": "canvas-overview-launch-screen-text",
+      "title": "Identify the launch screen",
+      "excerpt": "Identify the launch screen | The first screen carries a First screen label on its left. The launch screen is where every visitor enters; only one can be the launch screen and it cannot have incoming connections."
+    },
+    {
+      "sectionId": "canvas-overview-navigate-text",
+      "title": "Navigate the canvas",
+      "excerpt": "Navigate the canvas | Scroll to zoom, hold space and drag to pan, and use the minimap in the corner for the full layout. Click to select a screen; Ctrl+click to multi-select."
+    }
+  ]
+}

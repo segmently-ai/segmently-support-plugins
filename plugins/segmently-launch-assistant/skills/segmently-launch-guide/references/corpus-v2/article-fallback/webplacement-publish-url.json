@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "webplacement-publish-url",
+  "contentHash": "63b14e232fed39717f8adfca261a6e90e63be7f08646a6f03aeb87fa2de12ddf",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "webplacement-publish-url-cloud-url-text",
+      "title": "Find the Cloud URL",
+      "excerpt": "Find the Cloud URL | This is the live public URL of the published funnel, using your custom domain when configured. Share it in ads, emails, and landing pages."
+    },
+    {
+      "sectionId": "webplacement-publish-url-copy-text",
+      "title": "Copy the URL",
+      "excerpt": "Copy the URL | Copy the Cloud URL to the clipboard for campaigns and links. The button shows a checkmark to confirm the copy."
+    },
+    {
+      "sectionId": "webplacement-publish-url-local-dev-text",
+      "title": "Test locally with the Debug Panel (dev only)",
+      "excerpt": "Test locally with the Debug Panel (dev only) | On localhost, a local URL with the Debug Panel shows live variable inspection, analytics preview, and error logs. Use it for QA before release."
+    },
+    {
+      "sectionId": "webplacement-publish-url-open-browser-text",
+      "title": "Open the funnel in a new tab",
+      "excerpt": "Open the funnel in a new tab | Open the Cloud URL to confirm it loads before sending traffic. It runs with full analytics and Stripe checkout."
+    },
+    {
+      "sectionId": "webplacement-publish-url-smoke-test-text",
+      "title": "Complete a smoke test",
+      "excerpt": "Complete a smoke test | Open the Cloud URL in a clean (incognito) session, complete the flow, confirm analytics events fire, and test the paywall or checkout before sending traffic."
+    }
+  ]
+}

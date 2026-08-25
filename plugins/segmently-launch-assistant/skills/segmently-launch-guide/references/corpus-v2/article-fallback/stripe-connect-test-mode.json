@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "stripe-connect-test-mode",
+  "contentHash": "2db586388a8fbeed293c76bf3fb203632e6e61b4a023fc6debe92ec92b2f28a2",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "stripe-connect-test-mode-connect-test-text",
+      "title": "Connect a test Stripe account",
+      "excerpt": "Connect a test Stripe account | Use Connect Test Account to authorize Segmently for your test Stripe account. Test mode uses sandbox cards (for example 4242 4242 4242 4242) and never charges real customers, so validate products and checkout here first."
+    },
+    {
+      "sectionId": "stripe-connect-test-mode-test-account-status-text",
+      "title": "Check the test account status",
+      "excerpt": "Check the test account status | After connecting, confirm the account shows charges enabled. If onboarding is incomplete, finish it in the Stripe Dashboard; you cannot create products or test checkout until charges are enabled."
+    }
+  ]
+}

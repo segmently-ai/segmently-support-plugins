@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-flexible-layout-media-sections",
+  "contentHash": "daeba07f183366181ed0fbc30c80109553b13c66b1c7e737c0f69c87f3ff7757",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "heading-add-a-readability-gradient",
+      "title": "Add a readability gradient",
+      "excerpt": "Add a readability gradient"
+    },
+    {
+      "sectionId": "heading-choose-how-the-asset-fills-its-area",
+      "title": "Choose how the asset fills its area",
+      "excerpt": "Choose how the asset fills its area"
+    },
+    {
+      "sectionId": "heading-loop-a-video",
+      "title": "Loop a video",
+      "excerpt": "Loop a video"
+    },
+    {
+      "sectionId": "heading-set-corners-and-alignment",
+      "title": "Set corners and alignment",
+      "excerpt": "Set corners and alignment"
+    },
+    {
+      "sectionId": "heading-set-the-media-height",
+      "title": "Set the media height",
+      "excerpt": "Set the media height"
+    }
+  ]
+}

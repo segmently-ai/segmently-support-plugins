@@ -19,6 +19,7 @@ const requiredSkills = [
   "playwright-bowser",
   "segmently-test-kit",
   "playwright-bowser-core",
+  "screen-block-builder",
   "claude-design"
 ];
 const fullCompanionSkills = [
@@ -33,6 +34,7 @@ const fullCompanionSkills = [
   "playwright-bowser",
   "segmently-test-kit",
   "playwright-bowser-core",
+  "screen-block-builder",
   "claude-design"
 ];
 const wrapperCompanionSkills = [];
@@ -64,11 +66,13 @@ const fullCompanionExclusions = {
   "playwright-bowser": [],
   "segmently-test-kit": [],
   "playwright-bowser-core": [],
+  "screen-block-builder": [],
   "claude-design": [
     "imports/**",
     "evals/**",
     "references/import-registry.md",
     "references/import-screens-to-theme.md",
+    "references/roundtrip-local-canvas.md",
     "scripts/registry.mjs"
   ]
 };
@@ -106,6 +110,9 @@ const fullCompanionAllowedForbiddenTokens = {
     "--env "
   ],
   "playwright-bowser-core": [
+    "--env "
+  ],
+  "screen-block-builder": [
     "--env "
   ],
   "claude-design": [
@@ -214,6 +221,11 @@ check('codex-plugin-shipment', () => {
   }
 });
 
+check('package-size-budget', () => {
+  const bytes = listFiles(pluginRoot).reduce((sum, file) => sum + statSync(file).size, 0);
+  assert(bytes <= 12 * 1024 * 1024, `installed plugin size ${bytes} exceeds 12 MiB`);
+});
+
 check('customer-safety', () => {
   for (const skillName of wrapperCompanionSkills) {
     const root = join(pluginRoot, 'skills', skillName);
@@ -294,64 +306,69 @@ check('launch runtime', () => {
   const launchRoot = join(pluginRoot, 'skills/segmently-launch-guide');
   for (const rel of [
     'references/scenarios.matrix.json',
-    'references/teach-reference.json',
-    'references/guide-evidence.json',
-    'references/help-article-reference.json',
+    'references/corpus-v2/manifest.json',
+    'references/corpus-v2/article-directory.json',
+    'references/corpus-v2/article-section-index.jsonl',
+    'references/corpus-v2/article-search-index.json',
+    'references/corpus-v2/guide-routing-index.json',
+    'references/corpus-v2/guide-bindings.json',
     'references/semantic-routing.md',
     'runtime/do-action-reference.json',
     'runtime/editor-do-runner.mjs',
     'runtime/cli-do-runner.mjs',
     'runtime/e2e-do-runner.mjs',
     'runtime/show-runner.mjs',
+    'runtime/corpus-v2.mjs',
     'runtime/customer-response-runner.mjs',
     'runtime/session-context.mjs',
     'runtime/session-engine.mjs',
     'runtime/route-runner.mjs',
     'runtime/navigation-atoms.json',
     'runtime/tool-preflight.mjs',
-    'runtime/guide-content.mjs',
     'references/session-context.md',
     'references/session-engine.md',
-    'references/guides',
     'scripts/run-evals.mjs',
     'scripts/run-codex-forward-test.mjs',
-    'scripts/audit-guide-coverage.mjs',
     'scripts/audit-do-coverage.mjs',
-    'scripts/run-customer-surface-acceptance.mjs',
-    'evals/persona-flow-evals.json',
+    'scripts/article-registry-tool.mjs',
+    'evals/corpus-v2-cases.json',
   ]) {
     assert(existsSync(join(launchRoot, rel)), `missing launch artifact ${rel}`);
   }
-  const audit = JSON.parse(execFileSync('node', [join(launchRoot, 'scripts/audit-guide-coverage.mjs'), '--json', '--strict'], { encoding: 'utf8' }));
-  assert(audit.ok === true, 'coverage audit strict mode failed');
-  assert(audit.screenSettings?.allScreenSettingQuestionsCovered === true, 'screen setting article/text coverage is incomplete');
-  assert(audit.screenSettings?.articleAliasCorpusCount > 0, 'screen setting article alias corpus is empty');
-  assert(audit.screenSettings?.fieldQuestionProbeCount > 0, 'screen setting resolver probe count is empty');
-  assert(audit.guideEvidence?.missingConcreteImageUrlCount >= 0, 'coverage audit missing image count is invalid');
-  assert(audit.guideEvidence?.missingSectionConcreteImageUrlCount >= 0, 'coverage audit missing section image count is invalid');
-  assert(Array.isArray(audit.guideEvidence?.coverageRows), 'coverage audit guide coverage rows are missing');
-  assert(audit.guideEvidence.coverageRows.length === audit.guideEvidence.totalGuides, 'coverage audit guide coverage rows do not cover every guide');
+  const corpus = JSON.parse(readFileSync(join(launchRoot, 'references/corpus-v2/manifest.json'), 'utf8'));
+  assert(corpus.corpusSchemaVersion === 2, 'Corpus V2 manifest schema drifted');
+  assert(corpus.validation?.ok === true, 'Corpus V2 manifest validation failed');
+  assert(corpus.publicGraphIncluded === false, 'Corpus V2 must not include a public graph');
+  assert(corpus.eagerBytes <= 1500000, 'Corpus V2 eager byte gate exceeded');
   const doAudit = JSON.parse(execFileSync('node', [join(launchRoot, 'scripts/audit-do-coverage.mjs'), '--json', '--strict'], { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }));
   assert(doAudit.ok === true, 'DO coverage audit strict mode failed');
   assert(doAudit.actionRegistry?.totalActions >= 300, 'DO coverage audit action count is too low');
   assert(doAudit.settings?.totalPublishedSettings >= 400, 'DO coverage audit setting inventory is too low');
   assert(doAudit.settings?.anyDoSettingCount >= 150, 'DO coverage audit supported setting coverage regressed');
   assert(doAudit.conditionalActions?.probes?.filter((probe) => probe.ok === true).length >= 2, 'DO coverage audit conditional media probes regressed');
-  const customerSurface = execFileSync('node', [join(launchRoot, 'scripts/run-customer-surface-acceptance.mjs')], { encoding: 'utf8' });
-  assert(customerSurface.includes('customer-surface acceptance passed'), 'customer-surface acceptance runner did not pass');
+  const customerSurface = JSON.parse(execFileSync('node', [join(launchRoot, 'scripts/run-evals.mjs')], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 }));
+  assert(customerSurface.ok === true, 'Corpus V2 customer-surface acceptance failed');
 });
 
 check('customer-public-graph-boundary', () => {
   const launchRoot = join(pluginRoot, 'skills/segmently-launch-guide');
-  const graphRoot = join(launchRoot, 'references/support-knowledge-graph');
   assert(!existsSync(join(launchRoot, 'references/support-module-relations-overrides.json')), 'customer plugin must not ship support-module-relations-overrides.json');
-  const schema = JSON.parse(readFileSync(join(graphRoot, 'schema.json'), 'utf8'));
-  const graphIndex = JSON.parse(readFileSync(join(graphRoot, 'search-index.json'), 'utf8'));
-  assert(!(schema.nodeTypes ?? []).includes('Module'), 'customer plugin graph must not expose Module node type');
-  assert(!(schema.nodeTypes ?? []).includes('Submodule'), 'customer plugin graph must not expose Submodule node type');
-  assert(!(schema.edgeTypes ?? []).some(type => String(type).startsWith('MODULE_') || String(type).startsWith('SUBMODULE_')), 'customer plugin graph must not expose module relation edge types');
-  assert(!Object.prototype.hasOwnProperty.call(graphIndex, 'moduleNames'), 'customer plugin graph must not expose moduleNames index');
-  assert(!Object.prototype.hasOwnProperty.call(graphIndex, 'submoduleIds'), 'customer plugin graph must not expose submoduleIds index');
+  for (const rel of [
+    'references/support-knowledge-graph',
+    'references/article-registry.json',
+    'references/article-directory.json',
+    'references/article-search-index.json',
+    'references/article-search-synonyms.json',
+    'references/articles',
+    'references/guide-registry.json',
+    'references/guide-evidence.json',
+    'references/guides',
+    'references/teach-reference.json',
+    'runtime/guide-content.mjs',
+    'evals/evals.json',
+    'evals/persona-flow-evals.json',
+    'evals/scenario-evals.json',
+  ]) assert(!existsSync(join(launchRoot, rel)), `customer plugin must not ship legacy corpus ${rel}`);
   const leakMarkers = [
     'Module:',
     'Submodule:',
@@ -362,12 +379,7 @@ check('customer-public-graph-boundary', () => {
   ];
   for (const file of listFiles(launchRoot)) {
     const rel = relative(launchRoot, file).replaceAll('\\', '/');
-    if (!(
-      rel.startsWith('references/support-knowledge-graph/')
-      || rel === 'scripts/article-registry-tool.mjs'
-      || rel === 'scripts/run-evals.mjs'
-      || rel === 'SKILL.md'
-    )) continue;
+    if (!(rel.startsWith('references/corpus-v2/') || rel === 'scripts/article-registry-tool.mjs' || rel === 'scripts/run-evals.mjs' || rel === 'SKILL.md')) continue;
     const text = readFileSync(file, 'utf8');
     for (const marker of leakMarkers) {
       assert(!text.includes(marker), `segmently-launch-guide/${rel} leaks internal support impact marker ${JSON.stringify(marker)}`);
@@ -466,17 +478,21 @@ check('codex-dispatch-contract', () => {
   assert(showDryRun.wouldClose === null, 'SHOW dry-run must not close browser unless explicitly requested');
   assert(showDryRun.wouldScreenshot?.join(' ').includes('screenshot'), 'SHOW dry-run missing screenshot argv');
   assert(showDryRun.completionClaim === 'show-not-completed-until-visible-browser-and-screenshot', 'SHOW dry-run claimed completion before visible browser and screenshot evidence');
-  for (const args of [
-    ['--persona', 'maya-founder', '--question', 'maya-01'],
-    ['--persona', 'oleg-marketer', '--question', 'oleg-06'],
+  for (const probe of [
+    { prompt: 'How do I change the font of a Flexible Layout button?', alias: 'help-flexible-layout-button-sections', mode: 'teach' },
+    { prompt: 'Send me the full Article about Flexible Layout Media sections', alias: 'help-flexible-layout-media-sections', mode: 'article-fetch' },
   ]) {
-    const response = JSON.parse(execFileSync('node', [responseRunner, ...args], { encoding: 'utf8' }));
-    assert(response.ok === true, `${args.join(' ')} did not return ok=true`);
-    assert(response.answer?.instructions?.length > 0, `${args.join(' ')} missing instructions`);
-    assert(response.answer.instructions.some(item => item.visualEvidence === true), `${args.join(' ')} missing visual evidence`);
-    if (response.mode === 'handoff') {
-      assert(response.completionClaim === 'handoff-not-done', `${args.join(' ')} handoff claimed completion`);
-    }
+    const response = JSON.parse(execFileSync('node', [
+      responseRunner,
+      '--corpus-version', 'v2',
+      '--prompt', probe.prompt,
+      '--config-timeout-ms', '1',
+    ], { encoding: 'utf8' }));
+    assert(response.ok === true, `${probe.prompt} did not return ok=true`);
+    assert(response.corpusSchemaVersion === 2, `${probe.prompt} did not use Corpus V2`);
+    assert(response.mode === probe.mode, `${probe.prompt} mode drifted`);
+    assert(response.selectedArticles?.[0]?.articleAlias === probe.alias, `${probe.prompt} Article selection drifted`);
+    assert(!/completed|executed/i.test(response.completionClaim ?? ''), `${probe.prompt} claimed mutation completion`);
   }
 });
 

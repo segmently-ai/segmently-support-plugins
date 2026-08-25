@@ -15,6 +15,8 @@
 | Screen content discovery | `segmently screen-types list/search/show` | `funnels:read` | No project feature gate |
 | Strategy/block/screen inspect | `segmently strategies get`, `segmently strategies blocks list/get`, `segmently strategies screens list/get` | `projects:read` | Web onboarding access |
 | Strategy/block/screen update | `segmently strategies create/update`, `segmently strategies blocks update/clone`, `segmently strategies screens update/clone` | `generate:write` | Web onboarding access |
+| Project block library | `strategies blocks library list/get/validate/prompt-packet/capture/create/update/disable/delete` | Reads and `prompt-packet` use `projects:read`; writes use `generate:write` | Web onboarding access |
+| Insert/adapt library block | `strategies blocks from-library/review-library/adapt-library` | `generate:write`; add `tasks:read` for `adapt-library --wait` | Web onboarding access |
 | Strategy and screen generation | `segmently generate strategy`, `segmently generate block`, `segmently strategies contract repair` | `generate:write`; add `tasks:read` for `--wait` or polling | Web onboarding generation access (`web_onboarding.block.regenerate`) |
 | Strategy screen asset slots | `strategies blocks assets slots list/get`, `regenerate-prompt`, `generate`, `select` | Reads use `projects:read`; prompt/image mutations use `generate:write`; add `tasks:read` for `--wait` or polling | Web onboarding access |
 
@@ -59,6 +61,18 @@ segmently generate strategy --file strategy-generation.json --wait [projectId]
 segmently generate strategy --strategy-id <strategyId> --name "Acme onboarding" --strategy-type "IOS Onboarding" --source-data-file source.json --insights-analysis-id <analysisId> --insight-variable-generation-id <generationId> --variable-ids primary_goal --use-project-variables true --generate-screens --wait [projectId]
 segmently generate block --file block-generation.json --wait [projectId]
 segmently generate block --strategy-id <strategyId> --block-id <blockId> --prompt-file block-prompt.md --source-data-file source.json --current-block-file current-block.json --block-contract-file block-contract.json --variables-file variables.json --full-strategy-file full-strategy-sequence.json --wait [projectId]
+segmently strategies blocks library list [projectId]
+segmently strategies blocks library get <exampleId> [projectId]
+segmently strategies blocks library validate --file block-library-draft.json [projectId]
+segmently strategies blocks library capture <strategyId> <blockId> --id <exampleId> --out block-library-draft.json --dry-run [projectId]
+segmently strategies blocks library create <exampleId> --file block-library-draft.json --dry-run [projectId]
+segmently strategies blocks library create <exampleId> --file block-library-draft.json --apply --dry-run-checksum <reviewedChecksum> [projectId]
+segmently strategies blocks library get <exampleId> --out saved-example.json [projectId]
+segmently strategies blocks from-library <strategyId> --example <exampleId> --mode staged --position 120,80 [projectId]
+segmently strategies blocks review-library <strategyId> <stagedBlockId> --evidence-mode strategy-default [projectId]
+segmently strategies blocks adapt-library <strategyId> <stagedBlockId> --model <projectModelId> --evidence-mode strategy-default --expected-context-fingerprint <reviewedFingerprint> --wait [projectId]
+segmently strategies blocks from-library <strategyId> --example <exampleId> --mode immediate --model <projectModelId> --wait [projectId]
+segmently strategies blocks from-library <strategyId> --example <exampleId> --mode as-is [projectId]
 segmently screen-types show <screenType>
 segmently strategies blocks list <strategyId> [projectId]
 segmently strategies screens list <strategyId> <blockId> --simplified [projectId]
@@ -73,3 +87,18 @@ segmently strategies contract repair <strategyId> --source-task-id <taskId> --ta
 ```
 
 Detailed Product mutation payloads are not included in this public guide.
+Block-library authoring is dry-run-first. Full `previewScreens` are view-only;
+the simplified blueprint is the adaptation input. Use `screen-block-builder`
+for exact runtime packet evals. The exact adapter is:
+
+```bash
+segmently strategies blocks library prompt-packet --request-file <compile-input.json> --out <packet.json> [projectId]
+```
+
+Staged is the primary insertion mode. Place/connect the returned screenless
+block before `review-library`, reuse its `contextFingerprint` with
+`adapt-library`, and pass explicit bind/create/drop decisions for every reported
+variable conflict. Evidence mode is exactly `strategy-default`,
+`selected-only`, or `no-evidence`; selected-only files contain identities, not
+evidence values. Immediate is pre-placement and materializes the block only
+after successful adaptation. As-is starts no AI task.

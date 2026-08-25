@@ -1,0 +1,103 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-content",
+  "contentHash": "f8b92c67d78e591b734b0ef91210869a908f4761e15eee7ecf6791f3343b3ee0",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, and Hero List screens.",
+      "excerpt": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, and Hero List screens."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Content — every setting",
+      "excerpt": "Content — every setting | The headline, subtitle, and optional hero image — the words and lead visual that carry the screen. This guide documents every setting of the Content block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-subtitle",
+      "title": "The line under your title",
+      "excerpt": "The line under your title | The subtitle is the supporting line beneath your title; use it to expand the promise, add proof, or hint at what happens next. Turn it on and keep it to one short sentence; it shows smaller and lighter than the title by default so the headline stays dominant. Like the title, you can personalize it with @ variables. Skip it on screens where the title already says everything."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-subtitle-appearance-text-styles",
+      "title": "Subtitle look and emphasis",
+      "excerpt": "Subtitle look and emphasis | Change how the subtitle looks — font, size, weight, color, alignment, and an optional background — styled separately from the title so you can tune each one. By default it inherits your theme (usually smaller and lighter than the title), which works for most funnels. Override only when a specific screen needs different emphasis."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-subtitle-layout-insets",
+      "title": "Space around the subtitle",
+      "excerpt": "Space around the subtitle | Adds empty space on each side of the subtitle, controlling the gap above it (to the title) and below it (to what follows). Leave it at the theme default unless the subtitle feels crowded. Increase the top value to separate it from the title, or reduce spacing to tighten the whole headline group."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-subtitle-translations",
+      "title": "Write the subtitle text",
+      "excerpt": "Write the subtitle text | Type the supporting line that sits under your title here, one short sentence that reinforces the offer or tells the visitor what comes next. The same shortcuts work as in the title: type @ to insert an earlier answer, @link to add a clickable link, or @countdown for urgency. If your funnel is multilingual, text is saved per language, so switch language before editing each translation."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-title",
+      "title": "Your main headline",
+      "excerpt": "Your main headline | The title is the biggest, first thing a visitor reads, so it carries most of the weight on whether they keep going. Turn it on, then write one short benefit-led line, like an ad headline rather than a sentence. Type @ to drop in an earlier answer (for example @user_goal) so it feels personal, and style it under the gear icon below."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-title-appearance-text-styles",
+      "title": "Title look and emphasis",
+      "excerpt": "Title look and emphasis | Override how the headline looks — font, size, weight, color, alignment, and an optional highlight behind the text. By default it inherits your project theme, which keeps every screen consistent, so most funnels never need to touch this. Override only when one screen needs extra punch, like a bigger color headline on your hero."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-title-layout-insets",
+      "title": "Space around the title",
+      "excerpt": "Space around the title | Adds empty space on each side of the title (top, right, bottom, left) so it isn't cramped against the screen edges or the text below. Leave it at the theme default unless the title feels too tight or too far from the next element. Increase a side to give it room, or decrease to pull elements closer together."
+    },
+    {
+      "sectionId": "set-copyblock-content-copy-title-translations",
+      "title": "Write the headline text",
+      "excerpt": "Write the headline text | This is where you type the actual headline; keep it short and benefit-driven. Type @ to pull in a visitor's earlier answer (such as @user_goal) for personalization, add a link inside the text with @link, or insert a countdown with @countdown to create urgency on offer screens. If your funnel runs in more than one language, text is saved per language, so switch language before editing each translation."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero",
+      "title": "The featured image up top",
+      "excerpt": "The featured image up top | The hero is the large featured image at the top of a headline or wheel-picker screen, the picture that sells the screen at a glance. Turn it on, then upload a file or paste an image URL. Pick a high-quality, on-message visual (product, result, or lifestyle shot); on a paid landing page it is often the first thing a visitor sees. Sizing and position are set just below."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-appearance-cornerradii-uniform",
+      "title": "How rounded the image is",
+      "excerpt": "How rounded the image is | Rounds all four corners of the hero image; 0 is sharp and higher values (up to 50) make them softer and more rounded. The default is 0. A small radius around 8 to 16 gives a modern, friendly look; match it to the rounding used elsewhere in your funnel, like buttons and cards, so the page feels consistent."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-appearance-dimensions-height",
+      "title": "Fixed image height",
+      "excerpt": "Fixed image height | Optionally pin the hero image to a set height with the slider (0–500) or by typing a number. Leave it empty to let the image keep its natural proportions from the width — best for most screens. Use a fixed height when you want a consistent banner size; to size by screen proportion instead, use 'Image height relative to container' below, which takes priority over this value."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-appearance-dimensions-heightpercentage",
+      "title": "Size the image by screen",
+      "excerpt": "Size the image by screen | Sizes the hero image as a percentage of the screen height (0 to 100%), so it scales with the device, the more responsive way to size a hero. If set, it overrides any fixed height above. A common starting point is 30 to 50% for a prominent banner that still leaves room for your title and button below; leave it empty to size by proportions instead."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-appearance-dimensions-width",
+      "title": "Fixed image width",
+      "excerpt": "Fixed image width | Optionally pin the hero image to a set width with the slider (0–500) or by typing a number. Leave it empty in most cases — the image then sizes to the screen and stays responsive across devices, which almost always looks best on a landing page. Set a fixed width only when you need the image smaller than full-width or aligned to a specific size."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-appearance-scalemode",
+      "title": "How the image fills its box",
+      "excerpt": "How the image fills its box | Sets how your image fits its box: Aspect Fit shows the whole image with no cropping (you may see empty bars at the sides), Aspect Fill crops the edges so it fully covers the box, Scale to Fill stretches it (can look distorted, avoid for photos), and Tile repeats it as a pattern. Default is Aspect Fit, which never distorts; switch to Aspect Fill when you want it edge-to-edge and don't mind some cropping."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-layout-insets",
+      "title": "Space around the image",
+      "excerpt": "Space around the image | Adds empty space on each side of the hero image (top, right, bottom, left) so it isn't flush against the screen edges or crammed next to the title. Leave it at the theme default in most cases. Increase a side when the image feels too tight against nearby content, or reduce it for a full-bleed, edge-to-edge look."
+    },
+    {
+      "sectionId": "set-copyblock-content-hero-translations",
+      "title": "The hero image itself",
+      "excerpt": "The hero image itself | Pick the actual hero image: upload a file from your computer or paste a direct image URL, then check the preview thumbnail. Use a high-resolution JPG or PNG so it stays crisp on large screens — uploads are optimized automatically for fast loading. To change it later, just upload or paste a new source here."
+    },
+    {
+      "sectionId": "set-copyblock-subtype",
+      "title": "Where the image sits",
+      "excerpt": "Where the image sits | On headline screens, this sets where the hero image sits relative to your title and subtitle — above the text, below it, or beside it. Lead with your strongest element: image-on-top when the visual is the hook, text-on-top when the headline does the selling. The preview updates instantly, so try a couple and keep whichever reads clearest."
+    }
+  ]
+}

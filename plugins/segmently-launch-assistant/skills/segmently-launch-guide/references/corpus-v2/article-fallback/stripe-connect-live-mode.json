@@ -1,0 +1,23 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "stripe-connect-live-mode",
+  "contentHash": "60d025c76105873254f88bf69e430e04355e8412a392d8ccf84687d026a104fd",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "stripe-connect-live-mode-connect-live-text",
+      "title": "Connect your live Stripe account",
+      "excerpt": "Connect your live Stripe account | Use Connect Live Account to authorize your production account. Live mode processes real payments and maps to your production products and prices, so connect it only after test validation is complete."
+    },
+    {
+      "sectionId": "stripe-connect-live-mode-live-account-status-text",
+      "title": "Verify live account readiness",
+      "excerpt": "Verify live account readiness | Confirm that both charges and payouts are enabled before deploying a paywall to production. Finish any remaining business verification (identity, bank account) in the Stripe Dashboard if onboarding is incomplete."
+    },
+    {
+      "sectionId": "stripe-connect-live-mode-live-mode-decision-text",
+      "title": "Keep test and live separate",
+      "excerpt": "Keep test and live separate | Test and live modes are independent and cannot be mixed in one published funnel. Every product in a single publish must use the same mode, so review the product mode before publishing to production."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-flexible-layout-purchase-button-sections",
+  "contentHash": "1c0f0c3fddcecb7b2cefa81e07eefdba955906a7793b164607954b00f8b7437b",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "heading-add-and-link-the-purchase-button",
+      "title": "Add and link the Purchase Button",
+      "excerpt": "Add and link the Purchase Button"
+    },
+    {
+      "sectionId": "heading-configure-cancellation-and-downsell-behavior",
+      "title": "Configure cancellation and downsell behavior",
+      "excerpt": "Configure cancellation and downsell behavior"
+    },
+    {
+      "sectionId": "heading-style-the-purchase-button",
+      "title": "Style the Purchase Button",
+      "excerpt": "Style the Purchase Button"
+    },
+    {
+      "sectionId": "heading-use-fixed-or-product-aware-labels",
+      "title": "Use fixed or product-aware labels",
+      "excerpt": "Use fixed or product-aware labels"
+    },
+    {
+      "sectionId": "heading-verify-the-selected-product-reaches-checkout",
+      "title": "Verify the selected product reaches checkout",
+      "excerpt": "Verify the selected product reaches checkout"
+    }
+  ]
+}

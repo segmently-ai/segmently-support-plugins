@@ -168,6 +168,12 @@ Build the canonical URL deterministically:
 ## Safety Rules
 
 - JSON output is the automation contract; table output is only for humans.
+- Any `--model` value MUST come from `segmently ai models list [projectId]`
+  (`textModels[].id`) — the PROJECT's actual availability from connected keys,
+  never a memorized/global model catalogue. A generally-existing model with no
+  key in this project fails the task. `strategies blocks from-library`
+  validates `--model` against this list before sending; other generate verbs
+  do not, so check first yourself.
 - Do not expose or invent secrets. Service-token values are shown only once by
   the CLI and must be stored in the customer's secret manager.
 - Service-token scopes do not grant product access by themselves. Project-scoped

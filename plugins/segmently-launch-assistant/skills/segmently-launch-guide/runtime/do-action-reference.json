@@ -127,7 +127,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -167,7 +167,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-backdrop-solid-color",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -210,7 +210,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -252,7 +252,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -295,7 +295,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -337,7 +337,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -379,7 +379,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -421,7 +421,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-primary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -465,7 +465,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -507,7 +507,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -550,7 +550,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -592,7 +592,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -634,7 +634,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -676,7 +676,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-action-bar-secondary-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -719,7 +719,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -763,7 +763,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -806,7 +806,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -850,7 +850,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -893,7 +893,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -936,7 +936,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -979,7 +979,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1020,7 +1020,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1061,7 +1061,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1102,7 +1102,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-back-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1145,7 +1145,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1189,7 +1189,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1232,7 +1232,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1276,7 +1276,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1319,7 +1319,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1362,7 +1362,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1405,7 +1405,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1446,7 +1446,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1487,7 +1487,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1528,7 +1528,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-header-skip-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1571,7 +1571,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1614,7 +1614,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1657,7 +1657,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1700,7 +1700,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1743,7 +1743,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1786,7 +1786,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1827,7 +1827,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1868,7 +1868,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1911,7 +1911,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1954,7 +1954,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -1997,7 +1997,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2040,7 +2040,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2083,7 +2083,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2126,7 +2126,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2167,7 +2167,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2208,7 +2208,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2251,7 +2251,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-unselected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2294,7 +2294,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-unselected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2337,7 +2337,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-unselected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2380,7 +2380,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-unselected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2423,7 +2423,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-selected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2466,7 +2466,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-selected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2509,7 +2509,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-selected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2552,7 +2552,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-options-selected-item",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2595,7 +2595,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2639,7 +2639,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2682,7 +2682,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2726,7 +2726,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2769,7 +2769,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2812,7 +2812,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2855,7 +2855,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2896,7 +2896,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2937,7 +2937,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -2978,7 +2978,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3021,7 +3021,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3065,7 +3065,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3108,7 +3108,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3152,7 +3152,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3195,7 +3195,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3238,7 +3238,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3281,7 +3281,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3322,7 +3322,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3363,7 +3363,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3404,7 +3404,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-copy-block-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3447,7 +3447,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3491,7 +3491,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3534,7 +3534,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3578,7 +3578,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3621,7 +3621,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3664,7 +3664,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3707,7 +3707,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3748,7 +3748,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3789,7 +3789,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3830,7 +3830,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3873,7 +3873,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3917,7 +3917,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -3960,7 +3960,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4004,7 +4004,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4047,7 +4047,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4090,7 +4090,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4133,7 +4133,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4174,7 +4174,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4215,7 +4215,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4256,7 +4256,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-body-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4299,7 +4299,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4342,7 +4342,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4385,7 +4385,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4428,7 +4428,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4471,7 +4471,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4514,7 +4514,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4557,7 +4557,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4600,7 +4600,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4643,7 +4643,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4686,7 +4686,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4729,7 +4729,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4770,7 +4770,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4811,7 +4811,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4852,7 +4852,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-header",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4895,7 +4895,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4939,7 +4939,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -4982,7 +4982,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5026,7 +5026,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5069,7 +5069,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5112,7 +5112,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5155,7 +5155,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5196,7 +5196,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5237,7 +5237,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5278,7 +5278,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-purchase-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5321,7 +5321,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5365,7 +5365,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5408,7 +5408,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5452,7 +5452,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5495,7 +5495,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5538,7 +5538,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5581,7 +5581,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5622,7 +5622,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5663,7 +5663,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5704,7 +5704,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-autorenew-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5747,7 +5747,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5791,7 +5791,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5834,7 +5834,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5878,7 +5878,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5921,7 +5921,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -5964,7 +5964,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6007,7 +6007,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6048,7 +6048,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6089,7 +6089,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6130,7 +6130,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-restore-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6173,7 +6173,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6217,7 +6217,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6260,7 +6260,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6304,7 +6304,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6347,7 +6347,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6390,7 +6390,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6433,7 +6433,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6474,7 +6474,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6515,7 +6515,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6556,7 +6556,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-terms-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6599,7 +6599,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6643,7 +6643,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6686,7 +6686,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6730,7 +6730,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6773,7 +6773,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6816,7 +6816,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6859,7 +6859,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6900,7 +6900,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6941,7 +6941,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -6982,7 +6982,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-privacy-text-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7024,7 +7024,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-paywall-footer-background-color",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7069,7 +7069,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7113,7 +7113,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7156,7 +7156,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7199,7 +7199,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7242,7 +7242,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7287,7 +7287,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7332,7 +7332,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7376,7 +7376,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7419,7 +7419,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7462,7 +7462,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7507,7 +7507,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-text-field",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7553,7 +7553,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7599,7 +7599,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7645,7 +7645,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7691,7 +7691,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7737,7 +7737,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7782,7 +7782,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7827,7 +7827,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7872,7 +7872,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7916,7 +7916,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -7962,7 +7962,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8006,7 +8006,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-media",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8051,7 +8051,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8096,7 +8096,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8141,7 +8141,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8184,7 +8184,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8227,7 +8227,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8270,7 +8270,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8313,7 +8313,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8356,7 +8356,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8399,7 +8399,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8442,7 +8442,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8485,7 +8485,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8527,7 +8527,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8569,7 +8569,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8611,7 +8611,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8653,7 +8653,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8695,7 +8695,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8737,7 +8737,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8779,7 +8779,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8821,7 +8821,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8864,7 +8864,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8907,7 +8907,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8950,7 +8950,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -8993,7 +8993,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9036,7 +9036,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9079,7 +9079,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9122,7 +9122,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9163,7 +9163,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9204,7 +9204,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9245,7 +9245,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9288,7 +9288,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9331,7 +9331,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9374,7 +9374,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9417,7 +9417,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9460,7 +9460,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9503,7 +9503,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9546,7 +9546,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9587,7 +9587,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9628,7 +9628,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9669,7 +9669,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9712,7 +9712,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9755,7 +9755,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9798,7 +9798,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9841,7 +9841,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9884,7 +9884,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9927,7 +9927,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -9970,7 +9970,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10011,7 +10011,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10052,7 +10052,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10093,7 +10093,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10136,7 +10136,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10179,7 +10179,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10222,7 +10222,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10265,7 +10265,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10308,7 +10308,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10351,7 +10351,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10394,7 +10394,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10435,7 +10435,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10476,7 +10476,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10517,7 +10517,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10559,7 +10559,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10601,7 +10601,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-paywall-subscriptions",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10645,7 +10645,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10689,7 +10689,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10734,7 +10734,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10778,7 +10778,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10821,7 +10821,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10864,7 +10864,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10907,7 +10907,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10951,7 +10951,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-roller",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -10996,7 +10996,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11040,7 +11040,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11084,7 +11084,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11128,7 +11128,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11171,7 +11171,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11215,7 +11215,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-stepper",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11257,7 +11257,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11299,7 +11299,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11341,7 +11341,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11383,7 +11383,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11425,7 +11425,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11467,7 +11467,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11507,7 +11507,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11547,7 +11547,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11589,7 +11589,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11631,7 +11631,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11673,7 +11673,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11715,7 +11715,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11757,7 +11757,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11799,7 +11799,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11839,7 +11839,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11879,7 +11879,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11921,7 +11921,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -11963,7 +11963,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12005,7 +12005,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12047,7 +12047,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12089,7 +12089,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12131,7 +12131,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12171,7 +12171,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12211,7 +12211,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-description-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12253,7 +12253,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12295,7 +12295,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12338,7 +12338,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12380,7 +12380,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-stepper-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12423,7 +12423,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12466,7 +12466,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12509,7 +12509,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12552,7 +12552,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12595,7 +12595,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12638,7 +12638,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12679,7 +12679,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12720,7 +12720,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-title-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12763,7 +12763,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12806,7 +12806,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12849,7 +12849,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12892,7 +12892,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12935,7 +12935,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -12978,7 +12978,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13019,7 +13019,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13060,7 +13060,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-subtitle-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13103,7 +13103,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13146,7 +13146,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13189,7 +13189,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13232,7 +13232,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13275,7 +13275,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13318,7 +13318,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13359,7 +13359,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13400,7 +13400,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-detail-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13442,7 +13442,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13484,7 +13484,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13527,7 +13527,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13569,7 +13569,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-styles",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13611,7 +13611,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13653,7 +13653,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13695,7 +13695,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-image-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13737,7 +13737,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-text-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13779,7 +13779,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-text-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13821,7 +13821,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-carousel-text-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13867,7 +13867,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13913,7 +13913,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -13958,7 +13958,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14004,7 +14004,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14049,7 +14049,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14094,7 +14094,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-sticky-container",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14139,7 +14139,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14184,7 +14184,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14231,7 +14231,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14275,7 +14275,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14319,7 +14319,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14363,7 +14363,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14407,7 +14407,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14454,7 +14454,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14501,7 +14501,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14547,7 +14547,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14593,7 +14593,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14637,7 +14637,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14681,7 +14681,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-block-flexible-sections",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFlexibleSectionLayoutField",
@@ -14735,7 +14735,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-basic-config-animation-enabled",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14788,7 +14788,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-basic-config-offline-first",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14833,7 +14833,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-basic-config-permission-type",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14882,7 +14882,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-basic-config-countdown-duration-value",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -14931,7 +14931,7 @@
       },
       "teachFallback": {
         "articleAlias": "screenedit-basic-config-countdown-unit",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       },
       "cliPatch": {
         "operation": "setFieldValue",
@@ -15031,7 +15031,7 @@
       },
       "teachFallback": {
         "articleAlias": "help-options-list-single",
-        "answerFrom": "references/teach-reference.json"
+        "answerFrom": "references/corpus-v2/article-section-index.jsonl"
       }
     },
     {

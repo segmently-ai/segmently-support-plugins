@@ -1,0 +1,170 @@
+{
+  "insertionMode": "staged",
+  "source": {
+    "scope": "project",
+    "exampleId": "progress-proof",
+    "name": "Progress proof pattern",
+    "checksum": "fnv1a:1234abcd",
+    "blueprint": {
+      "strategicBlock": {
+        "id": "progress_proof",
+        "entityId": "progress_proof",
+        "name": "Progress proof",
+        "blockType": "motivation",
+        "description": "Make progress feel believable before the next ask.",
+        "firstScreenId": "proof_intro"
+      },
+      "screens": [
+        {
+          "id": "proof_intro",
+          "name": "Reflect progress",
+          "screenType": "HeroContent",
+          "content": {
+            "copy": {
+              "title": "Small steps can become a routine",
+              "subtitle": "Reflect the user's chosen goal without inventing a result."
+            }
+          },
+          "position": { "x": 0, "y": 0 },
+          "aiMeta": {
+            "dataMapping": [],
+            "variableRealizations": [],
+            "assetIntents": [
+              {
+                "slotRole": "hero",
+                "designFunction": "make gradual progress feel tangible",
+                "visualJob": "show an achievable upward rhythm without product branding",
+                "supportsContentPath": "copy.title",
+                "linkedVariableIds": [],
+                "required": true
+              }
+            ]
+          }
+        }
+      ],
+      "instructions": [
+        {
+          "level": "must",
+          "text": "Adapt the proof beat to the target strategy and resolved evidence boundary."
+        },
+        {
+          "level": "should",
+          "text": "Keep the transition calm and earned."
+        }
+      ],
+      "contract": {
+        "inputVariables": [],
+        "outputAssignment": []
+      },
+      "dataSemantics": {
+        "screens": [
+          {
+            "screenId": "proof_intro",
+            "dataMapping": [],
+            "variableRealizations": []
+          }
+        ]
+      },
+      "assetExamples": [
+        {
+          "screenId": "proof_intro",
+          "slotKey": "hero",
+          "promptTemplate": "calm editorial illustration of gradual progress",
+          "negativePrompt": "source product marks, screenshots, unsupported results",
+          "style": "warm editorial",
+          "aspectRatio": "4:5",
+          "assetType": "image"
+        }
+      ],
+      "strategyVariables": {}
+    }
+  },
+  "target": {
+    "strategy": {
+      "name": "Sustainable habit onboarding",
+      "description": "Help busy users establish a sustainable tracking habit.",
+      "toneOfVoice": "Warm, concise, autonomy-supportive",
+      "strategyType": "onboarding"
+    },
+    "blockId": "<staged-block-id>",
+    "blockName": "Your progress can fit real life",
+    "blockType": "motivation",
+    "blockContract": {
+      "inputVariables": [],
+      "outputAssignment": []
+    },
+    "strategyVariables": {},
+    "sequence": [
+      {
+        "entityId": "goal_selection",
+        "name": "Choose a goal",
+        "blockType": "user_goals",
+        "description": "The user chooses one concrete priority.",
+        "screensCount": 2,
+        "firstScreenId": "goal_intro",
+        "order": 1
+      },
+      {
+        "entityId": "<staged-block-id>",
+        "name": "Your progress can fit real life",
+        "blockType": "motivation",
+        "description": "Staged target awaiting adaptation.",
+        "screensCount": 0,
+        "order": 2
+      },
+      {
+        "entityId": "plan_offer",
+        "name": "Personal plan",
+        "blockType": "plan_paywall",
+        "description": "Present the plan after the proof beat.",
+        "screensCount": 2,
+        "firstScreenId": "plan_intro",
+        "order": 3
+      }
+    ],
+    "predecessor": {
+      "entityId": "goal_selection",
+      "name": "Choose a goal",
+      "blockType": "user_goals",
+      "description": "The user chooses one concrete priority.",
+      "screensCount": 2,
+      "exitSummary": "The user has selected a goal."
+    },
+    "successor": {
+      "entityId": "plan_offer",
+      "name": "Personal plan",
+      "blockType": "plan_paywall",
+      "description": "Present an earned personalized plan.",
+      "screensCount": 2,
+      "entrySummary": "The offer needs a credible proof hand-off."
+    },
+    "themeSummary": {
+      "name": "Warm editorial",
+      "visualDirection": "Calm, human, and uncluttered"
+    }
+  },
+  "evidence": {
+    "selection": {
+      "mode": "selected-only",
+      "refs": [
+        { "kind": "review", "id": "review-achievable-progress" }
+      ]
+    },
+    "availableItems": [
+      {
+        "kind": "review",
+        "id": "review-achievable-progress",
+        "accessible": true,
+        "value": {
+          "description": "Users value progress that feels achievable after a long workday.",
+          "sourcePath": "@review[review-achievable-progress]"
+        }
+      }
+    ]
+  },
+  "variableMappings": [],
+  "operatorInstruction": "Keep the example's progress-proof job, but rewrite its instructions, screens, data usage, data mappings, and asset intents for this target placement.",
+  "provider": "anthropic",
+  "model": "<project-model-id>",
+  "maxTokens": 64000
+}

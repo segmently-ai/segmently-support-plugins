@@ -1,0 +1,28 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "screen-editor-overview",
+  "contentHash": "1edd55e6f9d067d838c8d1bb07f9882a6cc6720d78f27df2211819dffab9ed84",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "screen-editor-overview-right-panel-nav-text",
+      "title": "Navigate the right panel",
+      "excerpt": "Navigate the right panel | The right panel is a set of collapsible sections in screen-type order. Expand each accordion to reach its controls; text, styles, translations, and behavior are grouped within their section."
+    },
+    {
+      "sectionId": "screen-editor-overview-section-ordering-text",
+      "title": "Work in the recommended order",
+      "excerpt": "Work in the recommended order | Configure top to bottom: Header, Content, Options or Media, Action Bar, Background, then Basic Config. This order follows the visitor flow from orientation to visual treatment."
+    },
+    {
+      "sectionId": "screen-editor-overview-shared-vs-unique-text",
+      "title": "Understand shared vs unique sections",
+      "excerpt": "Understand shared vs unique sections | Shared sections (Header, Action Bar, Backdrop, Basic Config) repeat across screen types; unique sections like Media, Options, or Text Field appear only where the type needs them. Know which sections your screen exposes."
+    },
+    {
+      "sectionId": "screen-editor-overview-variable-binding-text",
+      "title": "Bind variables on selection screens",
+      "excerpt": "Bind variables on selection screens | Selection screens (list, grid, text input, wheel picker) expose a Variable Binding section. Create or pick a flow variable, map items to options, and set score effects to influence later routing."
+    }
+  ]
+}

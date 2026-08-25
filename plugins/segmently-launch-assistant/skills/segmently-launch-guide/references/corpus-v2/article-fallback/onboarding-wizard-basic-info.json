@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "onboarding-wizard-basic-info",
+  "contentHash": "bd709beb10b93636b93214d8a56d39a8d0e4362a12570debe97934f3b17380a2",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "onboarding-wizard-basic-info-default-language-text",
+      "title": "Set the default language",
+      "excerpt": "Set the default language | The default language is the fallback locale used when a visitor has no matching localized content. Choose the primary audience language."
+    },
+    {
+      "sectionId": "onboarding-wizard-basic-info-folder-text",
+      "title": "Optionally assign a folder",
+      "excerpt": "Optionally assign a folder | Choose a folder to organize the draft in the Onboardings list, or leave it at the root level. The folder only affects organization and can be changed later."
+    },
+    {
+      "sectionId": "onboarding-wizard-basic-info-locales-text",
+      "title": "Add supported languages",
+      "excerpt": "Add supported languages | Add every locale you intend to publish so screens can carry localized copy from the start. You can extend this later, but planning it now avoids rework."
+    },
+    {
+      "sectionId": "onboarding-wizard-basic-info-name-text",
+      "title": "Name the onboarding",
+      "excerpt": "Name the onboarding | Use a clear internal name so the draft is easy to find in the Onboardings list. The name is not shown to visitors."
+    },
+    {
+      "sectionId": "onboarding-wizard-basic-info-platform-text",
+      "title": "Choose the platform",
+      "excerpt": "Choose the platform | The platform controls the publish surface and runtime behavior. Web flows publish through Web Placement; pick it before selecting a theme."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "custom-domain-domain-input",
+  "contentHash": "dc65035fe453f070d030ece6c844b0eaae98e4965c38b440ae2df860cd9a0ca8",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "custom-domain-domain-input-custom-domain-domain-in-text",
+      "title": "Enter the public host visitors will open",
+      "excerpt": "Enter the public host visitors will open | Type the exact address visitors will see in the link, such as funnel.example.com. A subdomain like funnel. is recommended and the easiest to verify — a bare root domain (example.com with no prefix) is harder to set up and not all providers support it. Enter only the hostname: no https://, no slashes, no path, and no query string."
+    },
+    {
+      "sectionId": "custom-domain-domain-input-custom-domain-domain-in-text-2",
+      "title": "Before you save",
+      "excerpt": "Before you save | Make sure you — or whoever controls this domain — can edit its DNS records, because the very next step asks you to add records at the domain provider. Verification can't finish until those records are live, so don't save until you know you have that access."
+    }
+  ]
+}

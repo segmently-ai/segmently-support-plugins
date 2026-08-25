@@ -1,0 +1,23 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "integrations-analytics-section",
+  "contentHash": "6d664c14e78ea93840f9b41c195d23fc277685a7b86071984eb9d5b8b1218a36",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "integrations-analytics-section-consent-management-text",
+      "title": "Enable GDPR consent management (optional)",
+      "excerpt": "Enable GDPR consent management (optional) | Toggle consent management to show a consent banner in regulated regions. You set the default consent state, banner text, and privacy policy URL, and consent decisions gate which events are collected."
+    },
+    {
+      "sectionId": "integrations-analytics-section-provider-choice-text",
+      "title": "Choose the provider, then verify",
+      "excerpt": "Choose the provider, then verify | Pick the analytics platform that matches your reporting workflow, then publish a test funnel and confirm events arrive in that provider dashboard within seconds."
+    },
+    {
+      "sectionId": "integrations-analytics-section-track-before-text",
+      "title": "Track the funnel before scaling",
+      "excerpt": "Track the funnel before scaling | Set up and verify analytics before publishing to traffic. Events are measured from the first visitor, so a destination added later cannot capture earlier sessions."
+    }
+  ]
+}

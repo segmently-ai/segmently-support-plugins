@@ -88,10 +88,9 @@ failures never break the primary read.
 1. **High confidence** — the first remaining (`failed`/`warning`, in-goal)
    milestones from a FRESH state snapshot, in launch order, mapped to their
    scenario via `references/scenarios.matrix.json`.
-2. **Medium confidence** — knowledge-graph neighbors of the most recent routed
-   intent (`references/support-knowledge-graph/adjacency.json`):
-   article→scenario/action, action→CLI capability→supported scenario,
-   step→action edges.
+2. **Medium confidence** — explicit reviewed neighbors of the most recent
+   routed intent in `references/routing-quick-index.json`. The customer plugin
+   intentionally ships no full SupportFlow graph.
 
 Output candidates carry `candidateId`, `kind`, `confidence`, `why`, and the
 resolvable ids (`scenarioId` / `articleAlias` / `actionId`).

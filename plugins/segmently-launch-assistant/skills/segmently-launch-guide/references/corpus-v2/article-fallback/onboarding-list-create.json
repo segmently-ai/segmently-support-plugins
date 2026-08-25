@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "onboarding-list-create",
+  "contentHash": "bd1af0166b5837fe95b2957f2687282cd5b47644b3a8c03151e335c55125d91c",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "onboarding-list-create-create-button-text",
+      "title": "Start from the onboarding list",
+      "excerpt": "Start from the onboarding list | Click Create Onboarding to open the setup wizard. It walks you through three things in order: naming the draft, choosing where it will be published (pick Web if you're building an ad landing page), and picking a starting theme. After that the draft opens on the canvas ready to edit."
+    },
+    {
+      "sectionId": "onboarding-list-create-naming-text",
+      "title": "Name and organize the draft",
+      "excerpt": "Name and organize the draft | Give the draft a clear internal name — this is just for you to find it in the list, and visitors never see it. Optionally drop it in a folder to keep a long list tidy. Keep one draft per ad campaign instead of making duplicates, because separate drafts split your analytics and make results harder to read."
+    }
+  ]
+}

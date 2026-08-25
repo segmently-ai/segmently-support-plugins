@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "paywall-product-basic-fields",
+  "contentHash": "affdce5475277cd27c95d92baa87d9b86d880316953d9cc5fdffe46975b73aa7",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "paywall-product-basic-fields-checkout-mode-text",
+      "title": "Choose the checkout experience",
+      "excerpt": "Choose the checkout experience | Pick how the payment form appears. An embedded form slides up as a bottom sheet and keeps visitors inside your funnel — recommended for most funnels since staying in-flow converts better. A full-page Stripe Checkout redirect is simpler to set up but sends the visitor away to Stripe's own hosted page."
+    },
+    {
+      "sectionId": "paywall-product-basic-fields-description-text",
+      "title": "Add a description (optional)",
+      "excerpt": "Add a description (optional) | Optionally add supporting text shown on the paywall and inside the Studio to spell out what's included, the key benefits, or the terms. Leave it blank if the product name already says everything a buyer needs to know."
+    },
+    {
+      "sectionId": "paywall-product-basic-fields-product-name-text",
+      "title": "Name the product",
+      "excerpt": "Name the product | Set the display name customers see on the paywall and at checkout — this field is required. Use clear, benefit-focused wording like 'Premium Annual Plan' rather than an internal code or SKU, since this is part of the buying decision."
+    },
+    {
+      "sectionId": "paywall-product-basic-fields-product-type-text",
+      "title": "Choose the product type",
+      "excerpt": "Choose the product type | Select subscription (recurring, billed on a schedule) or one-time payment (charged once). This decides which trial and subscription options appear below and which Stripe prices are eligible. If you change it after a live product is already wired up, retest checkout before you relaunch."
+    },
+    {
+      "sectionId": "paywall-product-basic-fields-stripe-mode-text",
+      "title": "Select Stripe mode",
+      "excerpt": "Select Stripe mode | Choose whether this product uses your Test or Live Stripe credentials. Test mode lets you rehearse the whole checkout with no real charge; Live charges real customers. It has to match your connected Stripe mode and the mode you publish in — if they don't line up, checkout will fail."
+    }
+  ]
+}

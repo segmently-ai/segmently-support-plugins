@@ -1,0 +1,29 @@
+{
+  "corpusSchemaVersion": 2,
+  "generated": true,
+  "contentHash": "1c282fd121a9383719169907ed0b75b1ad84b1939e2986d340da46b955b07a60",
+  "articleCount": 90,
+  "sectionCount": 464,
+  "guideBindingCount": 396,
+  "baselineGuideSectionCount": 503,
+  "eagerBytes": 1262445,
+  "publicGraphIncluded": false,
+  "files": {
+    "directory": "article-directory.json",
+    "sectionIndex": "article-section-index.jsonl",
+    "searchIndex": "article-search-index.json",
+    "guideRouting": "guide-routing-index.json",
+    "guideBindings": "guide-bindings.json",
+    "fallbackDirectory": "article-fallback/"
+  },
+  "gates": {
+    "eagerBytesMaximum": 1500000,
+    "topKMaximum": 5,
+    "guideBindingsPerGuideMaximum": 2,
+    "duplicateCanonicalPayloads": 0
+  },
+  "validation": {
+    "ok": true,
+    "failures": []
+  }
+}

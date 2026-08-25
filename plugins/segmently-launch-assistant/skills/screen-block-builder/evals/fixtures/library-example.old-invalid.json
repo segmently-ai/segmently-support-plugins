@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "name": "Legacy self-consistent example",
+  "scopeMetadata": { "blockType": "user_goals" },
+  "blueprint": {
+    "strategicBlock": {
+      "id": "focus_goals",
+      "name": "Focus goals",
+      "blockType": "user_goals",
+      "firstScreenId": "screen1"
+    },
+    "screens": [
+      {
+        "id": "screen1",
+        "name": "Choose focus",
+        "screenType": "ListSinglePick",
+        "content": {},
+        "aiMeta": { "dataMapping": [], "assetIntents": [] }
+      }
+    ],
+    "instructions": [],
+    "contract": { "outputAssignment": [] },
+    "dataSemantics": { "mode": "strategy-default" },
+    "assetExamples": [
+      { "slotKey": "hero", "pattern": "Calm hierarchy" }
+    ]
+  },
+  "previewScreens": [
+    { "id": "screen1", "name": "Choose focus", "screenType": "ListSinglePick" }
+  ],
+  "sourceRef": { "strategyId": "strategy_source", "blockId": "block_source" },
+  "sourceChecksum": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "enabled": true
+}

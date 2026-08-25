@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Reviewed retrieval, mode, loading-budget, and safety cases for the Article-first Corpus V2 runtime.",
+  "metrics": {
+    "recallAt5Minimum": 0.95,
+    "mrrMinimum": 0.85,
+    "criticalRecallAt1Minimum": 1,
+    "teachResponseBytesMaximum": 32000,
+    "eagerBytesMaximum": 1500000,
+    "topKMaximum": 5,
+    "guideBindingsMaximum": 2
+  },
+  "cases": [
+    {
+      "id": "existing-list-cell-font-ru",
+      "prompt": "В Segmently я вообще впервые. Что значит шрифт ячейки в списке и где это настроить? Объясни простыми словами.",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-block-options",
+      "critical": true,
+      "forbiddenPrimaryAliases": ["help-flexible-layout-button-sections", "help-flexible-layout-text-sections"],
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "flex-text-edit-copy-en",
+      "prompt": "How do I add text to a Flexible Layout screen and insert a value from an earlier answer?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-text-sections",
+      "critical": true,
+      "forbiddenPrimaryAliases": ["help-block-paywall-body", "help-block-content"]
+    },
+    {
+      "id": "flex-text-style-ru",
+      "prompt": "как поменять шрифт цвет и межстрочный интервал текста во flexible layout",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-text-sections",
+      "critical": true
+    },
+    {
+      "id": "flex-text-product-label-en",
+      "prompt": "Show the selected Product Catalog description in a Flexible Layout Text section",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-text-sections"
+    },
+    {
+      "id": "flex-text-full-article-ru",
+      "prompt": "пришли полную статью про Text section во Flexible Layout",
+      "expectedMode": "article-fetch",
+      "expectedArticleAlias": "help-flexible-layout-text-sections"
+    },
+    {
+      "id": "flex-media-crop-en",
+      "prompt": "My Flexible Layout image is cropped. Should I use Fill or Fit?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-media-sections",
+      "critical": true,
+      "forbiddenPrimaryAliases": ["help-block-paywall-media", "help-block-media"]
+    },
+    {
+      "id": "flex-media-overlay-ru",
+      "prompt": "как положить текст поверх картинки во flexible layout и добавить темный градиент",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-media-sections",
+      "critical": true
+    },
+    {
+      "id": "flex-media-video-loop-en",
+      "prompt": "How do I loop a video inside a Flexible Layout media section?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-media-sections"
+    },
+    {
+      "id": "flex-media-full-article-en",
+      "prompt": "Send me the full article about Flexible Layout Media sections",
+      "expectedMode": "article-fetch",
+      "expectedArticleAlias": "help-flexible-layout-media-sections"
+    },
+    {
+      "id": "flex-button-navigation-en",
+      "prompt": "How do I add a Continue button to Flexible Layout and connect it to the next screen?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "critical": true,
+      "forbiddenPrimaryAliases": ["help-block-action-bar", "help-block-sticky-container"]
+    },
+    {
+      "id": "flex-button-style-ru",
+      "prompt": "как настроить цвет скругление градиент и тень кнопки внутри Flexible Sections",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "critical": true
+    },
+    {
+      "id": "flex-button-typography-en",
+      "prompt": "How do I change the font weight and line height of a button section in Flexible Layout?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "critical": true
+    },
+    {
+      "id": "flex-button-full-article-ru",
+      "prompt": "пришли полную статью про обычную Button section во Flexible Layout",
+      "expectedMode": "article-fetch",
+      "expectedArticleAlias": "help-flexible-layout-button-sections"
+    },
+    {
+      "id": "flex-purchase-link-en",
+      "prompt": "How do I link a Flexible Layout purchase button to Product Catalog so it buys the selected plan?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-purchase-button-sections",
+      "critical": true,
+      "forbiddenPrimaryAliases": ["help-block-action-bar", "help-block-paywall-footer"]
+    },
+    {
+      "id": "flex-purchase-intent-ru",
+      "prompt": "как проверить что purchase button покупает выбранный продукт и когда ждать setup_intent",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-purchase-button-sections",
+      "critical": true
+    },
+    {
+      "id": "flex-purchase-downsale-en",
+      "prompt": "How do I send customers to a cheaper offer when they cancel checkout from a Flexible Layout purchase button?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-purchase-button-sections"
+    },
+    {
+      "id": "flex-purchase-full-article-en",
+      "prompt": "Open the full guide for Flexible Layout Purchase Button setup and selected-product checkout",
+      "expectedMode": "article-fetch",
+      "expectedArticleAlias": "help-flexible-layout-purchase-button-sections"
+    },
+    {
+      "id": "existing-action-bar-primary-style",
+      "prompt": "How do I style the main button in the shared Action Bar?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-block-action-bar"
+    },
+    {
+      "id": "existing-screen-background",
+      "prompt": "Where do I change the Screen Editor background color?",
+      "expectedMode": "show",
+      "expectedArticleAlias": "help-block-background"
+    },
+    {
+      "id": "existing-custom-domain-dns",
+      "prompt": "How do I configure DNS for a Segmently custom domain?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "custom-domain-dns-setup"
+    },
+    {
+      "id": "show-paywall-video-ru",
+      "prompt": "покажи где добавить видео в пейвол",
+      "expectedMode": "show",
+      "expectedArticleAlias": "help-block-paywall-media",
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "do-custom-domain-ru-infinitive",
+      "prompt": "подключить кастомный домен",
+      "expectedMode": "do",
+      "expectedArticleAlias": "integrations-custom-domain-section",
+      "expectedActionId": "handoff.domain.dns",
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "teach-stripe-subscriptions-ru",
+      "prompt": "как настроить stripe подписки?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "integrations-stripe-connect-section"
+    },
+    {
+      "id": "do-shared-media-video-ru",
+      "prompt": "сделай видео в списке",
+      "expectedMode": "do",
+      "expectedArticleAlias": "help-block-media",
+      "expectedResolverKind": "conditional-do",
+      "expectedActionId": "browser.media.videoUpload",
+      "expectedMissingInputs": ["videoUrl-or-local-file"],
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "do-paywall-media-video-ru",
+      "prompt": "сделай видео в пейволе",
+      "expectedMode": "do",
+      "expectedArticleAlias": "help-block-paywall-media",
+      "expectedResolverKind": "conditional-do",
+      "expectedActionId": "browser.paywallMedia.videoUpload",
+      "expectedMissingInputs": ["videoUrl-or-local-file"],
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "existing-facebook-event-catalog",
+      "prompt": "Which Facebook events can Segmently send?",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "facebook-events-catalog"
+    },
+    {
+      "id": "show-flex-button-location",
+      "prompt": "Show me where to edit the label of a Flexible Layout Button section",
+      "expectedMode": "show",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "do-flex-button-color",
+      "prompt": "Change the Flexible Layout button color to blue",
+      "expectedMode": "do",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "article-fetch-action-bar",
+      "prompt": "Send me the full article for Action Bar settings",
+      "expectedMode": "article-fetch",
+      "expectedArticleAlias": "help-block-action-bar"
+    },
+    {
+      "id": "no-match-unrelated",
+      "prompt": "Explain quantum chromodynamics renormalization in lattice simulations",
+      "expectedMode": "handoff",
+      "expectedNoMatch": true,
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "typo-noisy-flex-button-en",
+      "prompt": "flxible layot buton font color",
+      "expectedMode": "teach",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "forbiddenPrimaryAliases": ["help-block-action-bar", "help-block-options"]
+    },
+    {
+      "id": "stopword-heavy-no-match-en",
+      "prompt": "please help me with this thing and the other stuff",
+      "expectedMode": "handoff",
+      "expectedNoMatch": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "multi-intent-show-before-do-en",
+      "prompt": "Show me where to change the Flexible Layout button color",
+      "expectedMode": "show",
+      "expectedArticleAlias": "help-flexible-layout-button-sections",
+      "critical": true,
+      "forbidExecutionClaim": true
+    },
+    {
+      "id": "internal-graph-request-handoff-en",
+      "prompt": "Show me the internal support-knowledge-graph module paths and edge IDs",
+      "expectedMode": "handoff",
+      "expectedNoMatch": true,
+      "expectedFailureCode": "PUBLIC_INTERNAL_REQUEST_BLOCKED",
+      "critical": true,
+      "forbidExecutionClaim": true
+    }
+  ]
+}

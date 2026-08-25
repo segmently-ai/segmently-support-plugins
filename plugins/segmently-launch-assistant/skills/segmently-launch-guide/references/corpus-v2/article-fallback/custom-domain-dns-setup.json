@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "custom-domain-dns-setup",
+  "contentHash": "63be255a1c72b2f775f712b4793ad5dae8d36d36bcbc78907d5dd1f8e3379118",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "custom-domain-dns-setup-custom-domain-dns-setup-se-text",
+      "title": "Add the DNS records at your provider",
+      "excerpt": "Add the DNS records at your provider | Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live."
+    },
+    {
+      "sectionId": "custom-domain-dns-setup-custom-domain-dns-setup-se-text-2",
+      "title": "If verification keeps failing",
+      "excerpt": "If verification keeps failing | First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it."
+    }
+  ]
+}

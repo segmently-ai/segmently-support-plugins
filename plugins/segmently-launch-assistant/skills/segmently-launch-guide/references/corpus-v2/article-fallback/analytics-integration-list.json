@@ -1,0 +1,23 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "analytics-integration-list",
+  "contentHash": "7e959e968ee00f638640a14be274485d0f57255fb8aa9e76205ae2cf212784fa",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "analytics-integration-list-operational-check-text",
+      "title": "Disable or remove stale destinations",
+      "excerpt": "Disable or remove stale destinations | Before testing, turn off destinations that are no longer needed or use outdated tracking IDs. This keeps validation results clean and avoids polluting old analytics accounts."
+    },
+    {
+      "sectionId": "analytics-integration-list-review-active-text",
+      "title": "Review active destinations",
+      "excerpt": "Review active destinations | This list shows every configured destination and whether it is enabled. Each enabled integration injects automatically into every published web funnel."
+    },
+    {
+      "sectionId": "analytics-integration-list-segmently-first-party-text",
+      "title": "Enable Segmently Analytics (internal reporting)",
+      "excerpt": "Enable Segmently Analytics (internal reporting) | Segmently Analytics is the first-party provider behind Segmently Reports and canvas insights. Add and enable it to collect funnel events for reporting and optimization; it is disabled by default."
+    }
+  ]
+}

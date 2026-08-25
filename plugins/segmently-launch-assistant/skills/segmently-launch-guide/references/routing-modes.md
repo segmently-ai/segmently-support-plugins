@@ -94,13 +94,14 @@ is logged in; `toolPreflight` proves the required local tools are installed.
 ## SHOW — live headed walkthrough
 
 For SHOW requests ("show me", "where do I click", "покажи", "куда нажать"),
-load `references/guide-evidence.json` and produce a non-mutating headed-browser
-plan through `playwright-bowser` with `segmently-test-kit` when live navigation
-is possible. SHOW means the customer can see the browser window and where to
-click; a screenshot is only the saved evidence artifact. If the target
-project/funnel/screen is missing, answer from the built-in Segmently guide text
-and screenshot evidence first, then ask only for the missing target inputs
-before opening the browser.
+load at most two matching entries from
+`references/corpus-v2/guide-bindings.json` and produce a non-mutating
+headed-browser plan through `playwright-bowser` with `segmently-test-kit` when
+live navigation is possible. SHOW means the customer can see the browser window
+and where to click; a screenshot is only the saved evidence artifact. If the
+target project/funnel/screen is missing, answer from the canonical Article and
+available screenshot evidence first, then ask only for the missing target
+inputs before opening the browser.
 
 Do not run `runtime/editor-do-runner.mjs`, `runtime/cli-do-runner.mjs`, or
 `runtime/e2e-do-runner.mjs` unless the customer explicitly asks you to change

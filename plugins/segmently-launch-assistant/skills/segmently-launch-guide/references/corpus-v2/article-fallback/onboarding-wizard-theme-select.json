@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "onboarding-wizard-theme-select",
+  "contentHash": "a8c7538760ca0cb764be7d90ae6c0894484e1ad3ef3a6ac39ea63c60c7fd66da",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "onboarding-wizard-theme-select-reusability-text",
+      "title": "Keep it reusable",
+      "excerpt": "Keep it reusable | Prefer a theme that can cover every planned screen type rather than optimizing only for the first screen. You can fine-tune everything in the next step."
+    },
+    {
+      "sectionId": "onboarding-wizard-theme-select-theme-grid-text",
+      "title": "Pick the visual baseline",
+      "excerpt": "Pick the visual baseline | Click a theme card to set it as the baseline for colors, fonts, spacing, and screen layouts. The selected card is highlighted and becomes the starting point for the Customize step."
+    }
+  ]
+}

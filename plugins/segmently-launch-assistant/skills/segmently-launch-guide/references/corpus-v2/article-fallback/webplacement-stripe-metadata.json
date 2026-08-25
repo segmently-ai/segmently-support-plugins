@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "webplacement-stripe-metadata",
+  "contentHash": "6a123f9877774c1e3f8ef59de83eedcfc46ebc9bd59c989919a18cae24001268",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "webplacement-stripe-metadata-add-param-text",
+      "title": "Why attach metadata, and how to add one",
+      "excerpt": "Why attach metadata, and how to add one | Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys."
+    },
+    {
+      "sectionId": "webplacement-stripe-metadata-counter-text",
+      "title": "Watch the keys limit",
+      "excerpt": "Watch the keys limit | A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first."
+    },
+    {
+      "sectionId": "webplacement-stripe-metadata-preview-text",
+      "title": "Review the metadata preview",
+      "excerpt": "Review the metadata preview | The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data."
+    },
+    {
+      "sectionId": "webplacement-stripe-metadata-remove-text",
+      "title": "Remove a parameter",
+      "excerpt": "Remove a parameter | Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources."
+    },
+    {
+      "sectionId": "webplacement-stripe-metadata-select-source-text",
+      "title": "Choose which parameter to send",
+      "excerpt": "Choose which parameter to send | Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers."
+    }
+  ]
+}

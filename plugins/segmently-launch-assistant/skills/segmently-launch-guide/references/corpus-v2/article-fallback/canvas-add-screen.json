@@ -1,0 +1,33 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "canvas-add-screen",
+  "contentHash": "0df2eb45238293c256352bb0a66520449506d42930446b467ca32fc6e0b5cfda",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "canvas-add-screen-drag-text",
+      "title": "Drag a template onto the canvas",
+      "excerpt": "Drag a template onto the canvas | Click and hold a template, then drop it on the canvas to add the screen. Double-click the new node to open the Screen Editor and configure it."
+    },
+    {
+      "sectionId": "canvas-add-screen-search-text",
+      "title": "Search for a screen type",
+      "excerpt": "Search for a screen type | Type to filter templates by name or description; the list updates as you type. Clear the field to see all templates."
+    },
+    {
+      "sectionId": "canvas-add-screen-template-panel-text",
+      "title": "Open the Screen Templates panel",
+      "excerpt": "Open the Screen Templates panel | The right sidebar lists draggable screen templates with previews and is always visible. It is the primary way to add new screens to the canvas."
+    },
+    {
+      "sectionId": "canvas-add-screen-types-text",
+      "title": "Choose screen types intentionally",
+      "excerpt": "Choose screen types intentionally | Question screens collect answers into variables for routing, content screens explain value, embed screens host custom HTML, and paywall screens sell products. Pick by what each step should accomplish."
+    },
+    {
+      "sectionId": "canvas-add-screen-unique-naming-text",
+      "title": "Screen names stay unique automatically",
+      "excerpt": "Screen names stay unique automatically | When you add a screen whose type already exists, the system appends a number (for example Hero Content 2). This keeps analytics and navigation unambiguous."
+    }
+  ]
+}

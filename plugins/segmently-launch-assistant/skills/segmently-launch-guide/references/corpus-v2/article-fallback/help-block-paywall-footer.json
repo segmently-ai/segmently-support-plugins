@@ -1,0 +1,108 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-paywall-footer",
+  "contentHash": "1042f830ce1cef63b8901de1368138256d69d89629311b76404e241219e15181",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: Paywall screens.",
+      "excerpt": "Applies to: Paywall screens."
+    },
+    {
+      "sectionId": "article-first-auto-renew-spacing",
+      "title": "Auto-renew text spacing: Adjust the top, bottom, left, and right padding around the disclosure. Start with the defaults and add a little top spacing only when the disclosure…",
+      "excerpt": "Auto-renew text spacing: Adjust the top, bottom, left, and right padding around the disclosure. Start with the defaults and add a little top spacing only when the disclosure needs clearer separation from the purchase button. Start and end padding automatically follow right-to-left languages."
+    },
+    {
+      "sectionId": "article-first-legal-links-spacing",
+      "title": "Legal links row spacing: Adjust padding around the complete Restore, Terms, and Privacy row. A small amount of vertical space keeps the legal links below the auto-renew…",
+      "excerpt": "Legal links row spacing: Adjust padding around the complete Restore, Terms, and Privacy row. A small amount of vertical space keeps the legal links below the auto-renew disclosure without crowding it. Start and end padding automatically follow right-to-left languages."
+    },
+    {
+      "sectionId": "article-first-purchase-cancel-downsale",
+      "title": "Recover a cancelled checkout: Set the purchase action's cancel destination only when you have already built a connected downsale screen with a cheaper or alternative offer. If no…",
+      "excerpt": "Recover a cancelled checkout: Set the purchase action's cancel destination only when you have already built a connected downsale screen with a cheaper or alternative offer. If no cancel destination is set, cancelling checkout closes the dialog and leaves the visitor on the paywall."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Paywall Footer — every setting",
+      "excerpt": "Paywall Footer — every setting | The bottom of the paywall — the purchase (subscribe) button and its label and box styling, the auto-renew disclosure note, the footer background and element order, and the restore / terms-of-use / privacy-policy legal links with their URLs and styling. This guide documents every setting of the Paywall Footer block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-autorenewlabel",
+      "title": "Configure auto-renew disclosure text",
+      "excerpt": "Configure auto-renew disclosure text | Sets the text displayed below the purchase button to explain subscription renewal terms (default: Auto-renews monthly. Cancel anytime.). Supports template variables like duration, price, and custom links."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-autorenewlabel-appearance",
+      "title": "Auto-renew disclosure styling",
+      "excerpt": "Auto-renew disclosure styling | Sets the font, size, weight, color, and alignment of the auto-renew disclosure text. Keep it small and quiet relative to your main button — but it must stay clearly readable. App Store and ad-network rules require the renewal terms be legible, so avoid tiny sizes or low-contrast colors that effectively hide the disclosure."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-footerappearance-backgroundcolor",
+      "title": "Color the footer background",
+      "excerpt": "Color the footer background | Sets the fill color of the whole footer block, which holds the purchase button, the auto-renew note, and the legal links (default a dark tone). Pick a color that makes your button pop and keeps the renewal note and legal links readable. If you switch to a light footer, darken those text colors so everything stays legible."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-footerappearance-elementsorder",
+      "title": "Order the button and renewal note",
+      "excerpt": "Order the button and renewal note | Sets whether the purchase button sits above the auto-renew disclosure or below it. Button-first is the common, conversion-friendly default. Put the disclosure first when you want the renewal terms visible right above the button so users read them before tapping — often the safer choice for compliance."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy",
+      "title": "Configure privacy policy link",
+      "excerpt": "Configure privacy policy link | Sets the text for the privacy policy link (default: Privacy Policy). This link appears in the legal links section and navigates to your privacy document when tapped."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-content-appearance",
+      "title": "Privacy link styling",
+      "excerpt": "Privacy link styling | Sets the font, size, weight, color, and alignment of the Privacy Policy link. Match it to the Restore and Terms links so the legal row looks unified. Small and muted is fine, but it must stay readable — required legal links hidden in unreadable text can get your paywall rejected."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-privacypolicy-uri",
+      "title": "Link your Privacy Policy page",
+      "excerpt": "Link your Privacy Policy page | The full https:// web address your Privacy Policy link opens when tapped. Fill this in for any paid funnel — a live Privacy Policy is required by app stores and ad platforms once you collect payment or data. Leaving it empty disables the link and leaves the paywall non-compliant, so don't publish an ad-ready paywall with this blank."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-restore",
+      "title": "Configure restore purchases link",
+      "excerpt": "Configure restore purchases link | Sets the text for the restore purchases link (default: Restore Purchases). This link appears in the legal links section below the auto-renew label and allows users to restore prior subscriptions on iOS."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-restore-appearance",
+      "title": "Restore link styling",
+      "excerpt": "Restore link styling | Sets the font, size, weight, color, and alignment of the footer 'Restore Purchases' link. Style it to match the Terms and Privacy links beside it so the legal row reads as one consistent group — small and muted, but still legible. Don't make it look like your main button."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse",
+      "title": "Configure terms of use link",
+      "excerpt": "Configure terms of use link | Sets the text for the terms of use link (default: Terms of Use). This link appears in the legal links section and navigates to your terms document when tapped."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-content-appearance",
+      "title": "Terms link styling",
+      "excerpt": "Terms link styling | Sets the font, size, weight, color, and alignment of the Terms of Use link. Keep it consistent with the Restore and Privacy links beside it — small and muted is fine, but it must stay readable. Burying required legal links in unreadable micro-text invites store rejection and ad-network flags."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-legallinks-termsofuse-uri",
+      "title": "Link your Terms of Use page",
+      "excerpt": "Link your Terms of Use page | The full https:// web address your Terms of Use link opens when tapped. Fill this in for any paid funnel — a live Terms link is effectively required by app stores and ad networks. Leaving it empty disables the link and leaves your paywall non-compliant, so never ship an ad-ready paywall with this blank."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-purchaseaction",
+      "title": "Configure purchase button text",
+      "excerpt": "Configure purchase button text | Sets the visible label on the purchase subscribe button (default: Subscribe Now). The text supports template variables like pricing, duration, and custom countdown labels for dynamic personalization."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-purchaseaction-appearance",
+      "title": "Style the purchase button box",
+      "excerpt": "Style the purchase button box | Controls the look of the purchase button itself — fill color, border, corner radius, size, full-width toggle, padding, gradient, shadow, animation, and icon (the label text is styled separately). For ad funnels, a full-width button with a high-contrast accent fill and rounded corners is the proven setup. Make this the boldest element on the screen so the path to purchase is unmistakable."
+    },
+    {
+      "sectionId": "set-paywallfooter-content-paywall-purchaseaction-content-appearance",
+      "title": "Style the purchase button label",
+      "excerpt": "Style the purchase button label | Controls the look of the text inside the purchase button — font, size, weight, color, alignment, and spacing — not the button box itself, which you style under 'Style purchase button box and appearance'. This is your main call-to-action, so make the label large, bold, and high-contrast against the button fill. Weak or hard-to-read button text directly costs you taps and sales."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "paywall-products-list",
+  "contentHash": "02ef027d4ae5f7db5f180120ed1e2dee383a54791cd0b4035f812bfec94f6ac7",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "paywall-products-list-modes-separate-text",
+      "title": "Keep test and live separate",
+      "excerpt": "Keep test and live separate | Use test products for sandbox flows and live products for production flows. Mixing modes is the most common reason checkout setup fails."
+    },
+    {
+      "sectionId": "paywall-products-list-products-list-text",
+      "title": "Create products before attaching them",
+      "excerpt": "Create products before attaching them | Paywall screens can only sell products that exist here, and every product must match the Stripe mode of the published flow. Create, edit, and delete products from this page."
+    }
+  ]
+}

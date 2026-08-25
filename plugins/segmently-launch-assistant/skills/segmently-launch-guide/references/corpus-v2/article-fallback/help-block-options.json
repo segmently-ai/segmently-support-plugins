@@ -1,0 +1,108 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-options",
+  "contentHash": "96184dc84a66fab6d037e3b6d0545f34214971184ba9e75d70d250068f414f16",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, and Hero List screens.",
+      "excerpt": "Applies to: List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, and Hero List screens."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Options — every setting",
+      "excerpt": "Options — every setting | The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide documents every setting of the Options block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-options-cellheightfromcellwidth",
+      "title": "Grid cell proportions",
+      "excerpt": "Grid cell proportions | Sets each grid cell's height as a percentage of its width: 100 is square, above 100 makes taller cells, below 100 makes wider, shorter cells. Pick taller cells for image-led options and square for balanced icon-and-text choices. Only appears on two-column grids — try 100 first, then adjust to fit your content."
+    },
+    {
+      "sectionId": "set-options-checkboxcontainer",
+      "title": "Checkbox placement in grid cells",
+      "excerpt": "Checkbox placement in grid cells | On grid cells, show or hide the selection checkbox and place it in a corner (top-left, top-right, bottom-left, or bottom-right) with an optional offset. Keep it visible on multi-select grids so visitors can see what they've picked; top-right is a common, unobtrusive spot. Only appears on grid layouts."
+    },
+    {
+      "sectionId": "set-options-checkboxstyles",
+      "title": "Checkbox look",
+      "excerpt": "Checkbox look | Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids."
+    },
+    {
+      "sectionId": "set-options-imagecontainer",
+      "title": "Image area in each card",
+      "excerpt": "Image area in each card | On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles."
+    },
+    {
+      "sectionId": "set-options-imagestyles",
+      "title": "Item image look",
+      "excerpt": "Item image look | Size and look of each item's image — width, height, corner radius, padding, and how it fits its box (fit shows the whole image with possible empty space; fill crops to cover the box). Keep a consistent size and small radius so cards look uniform; choose fill for photos and fit for logos or icons you don't want cropped. Only appears when the layout includes an image."
+    },
+    {
+      "sectionId": "set-options-israndomized",
+      "title": "Shuffle item order",
+      "excerpt": "Shuffle item order | When enabled, randomizes the order items appear to users on each view. Useful for A/B testing, survey randomization, and reducing position bias in multi-select scenarios."
+    },
+    {
+      "sectionId": "set-options-itemlayout",
+      "title": "What each choice shows",
+      "excerpt": "What each choice shows | Pick which parts each choice displays — title only, image plus title, checkbox with title and subtitle, and so on; available combos depend on your selection mode and layout. Adding an element reveals its style controls and means you must supply that content (image or subtitle) on every item. Default to title (plus a checkbox for multi-select) and add an image only when it aids the choice."
+    },
+    {
+      "sectionId": "set-options-itempaddings",
+      "title": "Padding inside each item",
+      "excerpt": "Padding inside each item | The space between each item's edge and its content (title, image, checkbox), set per side — top, end, bottom, start. More padding makes items feel roomy and easier to tap; too little looks cramped. Around 12–16px on all sides reads well on mobile, and the setting applies to every item."
+    },
+    {
+      "sectionId": "set-options-itemsspacing",
+      "title": "Gap between choices",
+      "excerpt": "Gap between choices | The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold."
+    },
+    {
+      "sectionId": "set-options-listpaddings",
+      "title": "Margin around the whole list",
+      "excerpt": "Margin around the whole list | The outer space between the screen edges and the first and last items, set per side (top, end, bottom, start). Use it to keep the list off the screen edges and aligned with your other sections. This is the outside spacing — for the gap inside each item use Padding inside each item instead."
+    },
+    {
+      "sectionId": "set-options-maxselecteditemcount",
+      "title": "Cap on multi-select picks",
+      "excerpt": "Cap on multi-select picks | Limits how many items a visitor can choose on a multi-select screen. Set a small cap (e.g. 3) to keep answers focused and the next step manageable; leave it unlimited to let them pick freely. This control only appears on multi-select screens and is ignored everywhere else."
+    },
+    {
+      "sectionId": "set-options-selecteditemstate",
+      "title": "Selected item look",
+      "excerpt": "Selected item look | How a choice looks once tapped — background, border, corner radius, and optional gradient. Make it clearly distinct from the unselected look (an accent border or filled background) so visitors get instant confirmation; weak feedback here causes hesitation and drop-off. Your theme's accent color is a reliable choice."
+    },
+    {
+      "sectionId": "set-options-subtitlestyles",
+      "title": "Item subtitle text style",
+      "excerpt": "Item subtitle text style | Typography for the item subtitle — size, weight, color, alignment, line height, optional background, and padding, applied to all items as a shared template. Keep the subtitle visually quieter than the title (smaller, muted color) so it reads as supporting text. Only appears when your item layout includes a subtitle."
+    },
+    {
+      "sectionId": "set-options-textcontainer",
+      "title": "Text area in each card",
+      "excerpt": "Text area in each card | On grid cards with an image, this sets the title-and-subtitle region as a block: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. It fits the content by default, but choosing one fixed height keeps the text blocks aligned across every card so the row reads as a clean, scannable set. This controls the text region's position only; the actual fonts and colors of the title and subtitle are set in their own style sections."
+    },
+    {
+      "sectionId": "set-options-titlestyles",
+      "title": "Item title text style",
+      "excerpt": "Item title text style | Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background."
+    },
+    {
+      "sectionId": "set-options-unselecteditemstate",
+      "title": "Unselected item look",
+      "excerpt": "Unselected item look | The default look of each choice before it's tapped — background, border, corner radius, and an optional gradient. Keep it neutral and calm so the selected state can stand out; the contrast between this and the selected look is what tells visitors their tap registered. Pair it with the Selected item look."
+    },
+    {
+      "sectionId": "set-options-usemaxcellheight",
+      "title": "Even grid cell heights",
+      "excerpt": "Even grid cell heights | On a grid, choose whether all cells stretch to the same maximum height for tidy, even rows, or each cell sizes to its own content (giving rows of varying height). Turn it on for a clean, consistent grid; turn it off when items have very different content lengths. Only applies to grid layouts."
+    },
+    {
+      "sectionId": "set-options-verticalalignment",
+      "title": "Vertical alignment of items",
+      "excerpt": "Vertical alignment of items | Aligns each choice's content to the top, center, or bottom of its cell. It's most noticeable in grid layouts where cells are taller than their content; center usually looks balanced. In simple lists it has little visible effect, so center is a safe default."
+    }
+  ]
+}

@@ -1,0 +1,2631 @@
+{
+  "name": "submit_library_block_adaptation",
+  "description": "Submit exactly one adapted library block with regenerated instructions, contract, data usage and screens under the result key.",
+  "schema": {
+    "type": "object",
+    "required": [
+      "result"
+    ],
+    "properties": {
+      "result": {
+        "type": "object",
+        "required": [
+          "onboardingStrategySequence"
+        ],
+        "properties": {
+          "onboardingStrategySequence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "blockType",
+                "firstScreenId",
+                "screens",
+                "description",
+                "instructions",
+                "blockContract",
+                "dataUsage"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "entityId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "blockName": {
+                  "type": "string"
+                },
+                "blockType": {
+                  "type": "string",
+                  "enum": [
+                    "welcome",
+                    "user_goals",
+                    "user_data",
+                    "plan_paywall",
+                    "history",
+                    "motivation",
+                    "environment",
+                    "habits",
+                    "strategy",
+                    "custom",
+                    "maintenance_accountability_checkpoint"
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "firstScreenId": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "functionMapping": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "screens": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "screenType",
+                      "content"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "screenType": {
+                        "type": "string",
+                        "enum": [
+                          "HeroContent",
+                          "Carousel",
+                          "ListMultiPick",
+                          "ListSinglePick",
+                          "GridMultiPick",
+                          "GridSinglePick",
+                          "HeroList",
+                          "TextInput",
+                          "ProgressSteps",
+                          "WheelPicker",
+                          "Paywall",
+                          "WebEmbed",
+                          "FlexibleLayout"
+                        ]
+                      },
+                      "content": {
+                        "type": "object",
+                        "properties": {
+                          "copy": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "subtitle": {
+                                "type": "string"
+                              },
+                              "subtitle2": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "header": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "subtitle": {
+                                "type": "string"
+                              },
+                              "skip": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "back": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "close": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "actionBar": {
+                            "type": "object",
+                            "properties": {
+                              "primary": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "secondary": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "options": {
+                            "type": "object",
+                            "properties": {
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "title",
+                                    "variableValue"
+                                  ],
+                                  "properties": {
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "subtitle": {
+                                      "type": "string"
+                                    },
+                                    "action": {
+                                      "type": "object",
+                                      "required": [
+                                        "kind",
+                                        "edges"
+                                      ],
+                                      "properties": {
+                                        "kind": {
+                                          "type": "string",
+                                          "enum": [
+                                            "advance",
+                                            "retreat",
+                                            "complete",
+                                            "noop",
+                                            "purchase"
+                                          ]
+                                        },
+                                        "edges": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "required": [
+                                              "nextScreenId",
+                                              "transitionKind",
+                                              "conditions"
+                                            ],
+                                            "properties": {
+                                              "nextScreenId": {
+                                                "type": "string"
+                                              },
+                                              "transitionKind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "push",
+                                                  "overlay"
+                                                ]
+                                              },
+                                              "conditions": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "key",
+                                                    "operator",
+                                                    "value"
+                                                  ],
+                                                  "properties": {
+                                                    "key": {
+                                                      "type": "string"
+                                                    },
+                                                    "operator": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "lt",
+                                                        "gt",
+                                                        "lte",
+                                                        "gte",
+                                                        "eq",
+                                                        "neq",
+                                                        "in",
+                                                        "notIn",
+                                                        "containsAll",
+                                                        "containsAny",
+                                                        "exists",
+                                                        "notExists"
+                                                      ]
+                                                    },
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "logic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "conditionLogic": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "and",
+                                                  "or"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "variableValue": {
+                                      "type": "string"
+                                    },
+                                    "weight": {
+                                      "type": "number"
+                                    }
+                                  }
+                                }
+                              },
+                              "minSelections": {
+                                "type": "integer"
+                              },
+                              "maxSelections": {
+                                "type": "integer"
+                              }
+                            }
+                          },
+                          "carousel": {
+                            "type": "object",
+                            "required": [
+                              "items",
+                              "timer"
+                            ],
+                            "properties": {
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "title"
+                                  ],
+                                  "properties": {
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "subtitle": {
+                                      "type": "string"
+                                    },
+                                    "subtitle2": {
+                                      "type": "string"
+                                    },
+                                    "action": {
+                                      "type": "object",
+                                      "required": [
+                                        "kind",
+                                        "edges"
+                                      ],
+                                      "properties": {
+                                        "kind": {
+                                          "type": "string",
+                                          "enum": [
+                                            "advance",
+                                            "retreat",
+                                            "complete",
+                                            "noop",
+                                            "purchase"
+                                          ]
+                                        },
+                                        "edges": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "required": [
+                                              "nextScreenId",
+                                              "transitionKind",
+                                              "conditions"
+                                            ],
+                                            "properties": {
+                                              "nextScreenId": {
+                                                "type": "string"
+                                              },
+                                              "transitionKind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "push",
+                                                  "overlay"
+                                                ]
+                                              },
+                                              "conditions": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "key",
+                                                    "operator",
+                                                    "value"
+                                                  ],
+                                                  "properties": {
+                                                    "key": {
+                                                      "type": "string"
+                                                    },
+                                                    "operator": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "lt",
+                                                        "gt",
+                                                        "lte",
+                                                        "gte",
+                                                        "eq",
+                                                        "neq",
+                                                        "in",
+                                                        "notIn",
+                                                        "containsAll",
+                                                        "containsAny",
+                                                        "exists",
+                                                        "notExists"
+                                                      ]
+                                                    },
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "logic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "conditionLogic": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "and",
+                                                  "or"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "timer": {
+                                "type": "object",
+                                "properties": {
+                                  "durationMs": {
+                                    "type": "integer"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "stepper": {
+                            "type": "object",
+                            "required": [
+                              "items",
+                              "timer"
+                            ],
+                            "properties": {
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "title"
+                                  ],
+                                  "properties": {
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "subtitle": {
+                                      "type": "string"
+                                    },
+                                    "subtitle2": {
+                                      "type": "string"
+                                    },
+                                    "action": {
+                                      "type": "object",
+                                      "required": [
+                                        "kind",
+                                        "edges"
+                                      ],
+                                      "properties": {
+                                        "kind": {
+                                          "type": "string",
+                                          "enum": [
+                                            "advance",
+                                            "retreat",
+                                            "complete",
+                                            "noop",
+                                            "purchase"
+                                          ]
+                                        },
+                                        "edges": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "required": [
+                                              "nextScreenId",
+                                              "transitionKind",
+                                              "conditions"
+                                            ],
+                                            "properties": {
+                                              "nextScreenId": {
+                                                "type": "string"
+                                              },
+                                              "transitionKind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "push",
+                                                  "overlay"
+                                                ]
+                                              },
+                                              "conditions": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "key",
+                                                    "operator",
+                                                    "value"
+                                                  ],
+                                                  "properties": {
+                                                    "key": {
+                                                      "type": "string"
+                                                    },
+                                                    "operator": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "lt",
+                                                        "gt",
+                                                        "lte",
+                                                        "gte",
+                                                        "eq",
+                                                        "neq",
+                                                        "in",
+                                                        "notIn",
+                                                        "containsAll",
+                                                        "containsAny",
+                                                        "exists",
+                                                        "notExists"
+                                                      ]
+                                                    },
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "logic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "conditionLogic": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "and",
+                                                  "or"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "timer": {
+                                "type": "object",
+                                "properties": {
+                                  "durationMs": {
+                                    "type": "integer"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "textField": {
+                            "type": "object",
+                            "properties": {
+                              "placeholder": {
+                                "type": "string"
+                              },
+                              "variableValue": {
+                                "type": "string"
+                              },
+                              "keyboardType": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "roller": {
+                            "type": "object",
+                            "properties": {
+                              "wheels": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "id",
+                                    "options"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "options": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "required": [
+                                          "title",
+                                          "variableValue"
+                                        ],
+                                        "properties": {
+                                          "title": {
+                                            "type": "string"
+                                          },
+                                          "subtitle": {
+                                            "type": "string"
+                                          },
+                                          "action": {
+                                            "type": "object",
+                                            "required": [
+                                              "kind",
+                                              "edges"
+                                            ],
+                                            "properties": {
+                                              "kind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "advance",
+                                                  "retreat",
+                                                  "complete",
+                                                  "noop",
+                                                  "purchase"
+                                                ]
+                                              },
+                                              "edges": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "nextScreenId",
+                                                    "transitionKind",
+                                                    "conditions"
+                                                  ],
+                                                  "properties": {
+                                                    "nextScreenId": {
+                                                      "type": "string"
+                                                    },
+                                                    "transitionKind": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "push",
+                                                        "overlay"
+                                                      ]
+                                                    },
+                                                    "conditions": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "required": [
+                                                          "key",
+                                                          "operator",
+                                                          "value"
+                                                        ],
+                                                        "properties": {
+                                                          "key": {
+                                                            "type": "string"
+                                                          },
+                                                          "operator": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "lt",
+                                                              "gt",
+                                                              "lte",
+                                                              "gte",
+                                                              "eq",
+                                                              "neq",
+                                                              "in",
+                                                              "notIn",
+                                                              "containsAll",
+                                                              "containsAny",
+                                                              "exists",
+                                                              "notExists"
+                                                            ]
+                                                          },
+                                                          "value": {
+                                                            "type": "string"
+                                                          },
+                                                          "logic": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "and",
+                                                              "or"
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "conditionLogic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "variableValue": {
+                                            "type": "string"
+                                          },
+                                          "weight": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "embed": {
+                            "type": "object",
+                            "properties": {
+                              "html": {
+                                "type": "string"
+                              },
+                              "callback": {
+                                "type": "object",
+                                "properties": {
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "paywall": {
+                            "type": "object",
+                            "properties": {
+                              "products": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "id",
+                                    "title",
+                                    "price"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "subtitle": {
+                                      "type": "string"
+                                    },
+                                    "price": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "features": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "purchaseAction": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "closeButton": {
+                                "type": "object",
+                                "required": [
+                                  "label",
+                                  "action"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "object",
+                                    "required": [
+                                      "kind",
+                                      "edges"
+                                    ],
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "advance",
+                                          "retreat",
+                                          "complete",
+                                          "noop",
+                                          "purchase"
+                                        ]
+                                      },
+                                      "edges": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "required": [
+                                            "nextScreenId",
+                                            "transitionKind",
+                                            "conditions"
+                                          ],
+                                          "properties": {
+                                            "nextScreenId": {
+                                              "type": "string"
+                                            },
+                                            "transitionKind": {
+                                              "type": "string",
+                                              "enum": [
+                                                "push",
+                                                "overlay"
+                                              ]
+                                            },
+                                            "conditions": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "required": [
+                                                  "key",
+                                                  "operator",
+                                                  "value"
+                                                ],
+                                                "properties": {
+                                                  "key": {
+                                                    "type": "string"
+                                                  },
+                                                  "operator": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "lt",
+                                                      "gt",
+                                                      "lte",
+                                                      "gte",
+                                                      "eq",
+                                                      "neq",
+                                                      "in",
+                                                      "notIn",
+                                                      "containsAll",
+                                                      "containsAny",
+                                                      "exists",
+                                                      "notExists"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "logic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "and",
+                                                      "or"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "conditionLogic": {
+                                              "type": "string",
+                                              "enum": [
+                                                "and",
+                                                "or"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "flexibleLayout": {
+                            "type": "object",
+                            "properties": {
+                              "sections": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "required": [
+                                    "kind"
+                                  ],
+                                  "properties": {
+                                    "kind": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "subtitle": {
+                                      "type": "string"
+                                    },
+                                    "body": {
+                                      "type": "string"
+                                    },
+                                    "action": {
+                                      "type": "object",
+                                      "required": [
+                                        "kind",
+                                        "edges"
+                                      ],
+                                      "properties": {
+                                        "kind": {
+                                          "type": "string",
+                                          "enum": [
+                                            "advance",
+                                            "retreat",
+                                            "complete",
+                                            "noop",
+                                            "purchase"
+                                          ]
+                                        },
+                                        "edges": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "required": [
+                                              "nextScreenId",
+                                              "transitionKind",
+                                              "conditions"
+                                            ],
+                                            "properties": {
+                                              "nextScreenId": {
+                                                "type": "string"
+                                              },
+                                              "transitionKind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "push",
+                                                  "overlay"
+                                                ]
+                                              },
+                                              "conditions": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "key",
+                                                    "operator",
+                                                    "value"
+                                                  ],
+                                                  "properties": {
+                                                    "key": {
+                                                      "type": "string"
+                                                    },
+                                                    "operator": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "lt",
+                                                        "gt",
+                                                        "lte",
+                                                        "gte",
+                                                        "eq",
+                                                        "neq",
+                                                        "in",
+                                                        "notIn",
+                                                        "containsAll",
+                                                        "containsAny",
+                                                        "exists",
+                                                        "notExists"
+                                                      ]
+                                                    },
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "logic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "conditionLogic": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "and",
+                                                  "or"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "items": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "required": [
+                                          "title",
+                                          "variableValue"
+                                        ],
+                                        "properties": {
+                                          "title": {
+                                            "type": "string"
+                                          },
+                                          "subtitle": {
+                                            "type": "string"
+                                          },
+                                          "action": {
+                                            "type": "object",
+                                            "required": [
+                                              "kind",
+                                              "edges"
+                                            ],
+                                            "properties": {
+                                              "kind": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "advance",
+                                                  "retreat",
+                                                  "complete",
+                                                  "noop",
+                                                  "purchase"
+                                                ]
+                                              },
+                                              "edges": {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "required": [
+                                                    "nextScreenId",
+                                                    "transitionKind",
+                                                    "conditions"
+                                                  ],
+                                                  "properties": {
+                                                    "nextScreenId": {
+                                                      "type": "string"
+                                                    },
+                                                    "transitionKind": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "push",
+                                                        "overlay"
+                                                      ]
+                                                    },
+                                                    "conditions": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "required": [
+                                                          "key",
+                                                          "operator",
+                                                          "value"
+                                                        ],
+                                                        "properties": {
+                                                          "key": {
+                                                            "type": "string"
+                                                          },
+                                                          "operator": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "lt",
+                                                              "gt",
+                                                              "lte",
+                                                              "gte",
+                                                              "eq",
+                                                              "neq",
+                                                              "in",
+                                                              "notIn",
+                                                              "containsAll",
+                                                              "containsAny",
+                                                              "exists",
+                                                              "notExists"
+                                                            ]
+                                                          },
+                                                          "value": {
+                                                            "type": "string"
+                                                          },
+                                                          "logic": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "and",
+                                                              "or"
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "conditionLogic": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "and",
+                                                        "or"
+                                                      ]
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "variableValue": {
+                                            "type": "string"
+                                          },
+                                          "weight": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "position": {
+                        "type": "object",
+                        "properties": {
+                          "x": {
+                            "type": "number"
+                          },
+                          "y": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "aiMeta": {
+                        "type": "object",
+                        "required": [
+                          "blockRole",
+                          "dataMapping",
+                          "motivationSpec"
+                        ],
+                        "properties": {
+                          "blockRole": {
+                            "type": "string"
+                          },
+                          "dataMapping": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "sourcePath",
+                                "value",
+                                "justification"
+                              ],
+                              "properties": {
+                                "sourcePath": {
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "justification": {
+                                  "type": "string"
+                                },
+                                "category": {
+                                  "type": "string",
+                                  "enum": [
+                                    "persona",
+                                    "product",
+                                    "social_proof",
+                                    "synthesis",
+                                    "strategic",
+                                    "insight"
+                                  ]
+                                },
+                                "purposeId": {
+                                  "type": "string"
+                                },
+                                "sourcePriority": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          },
+                          "motivationSpec": {
+                            "type": "object",
+                            "required": [
+                              "class",
+                              "valence"
+                            ],
+                            "properties": {
+                              "class": {
+                                "type": "string",
+                                "enum": [
+                                  "cost:data",
+                                  "cost:decision",
+                                  "cost:education",
+                                  "gain:value",
+                                  "gain:proof",
+                                  "gain:progress",
+                                  "neutral"
+                                ]
+                              },
+                              "targetsNeed": {
+                                "type": "string"
+                              },
+                              "valence": {
+                                "type": "string",
+                                "enum": [
+                                  "preservation",
+                                  "growth"
+                                ]
+                              },
+                              "reflectsJtbd": {
+                                "type": "boolean"
+                              },
+                              "justified": {
+                                "type": "boolean"
+                              },
+                              "sensitive": {
+                                "type": "boolean"
+                              },
+                              "relevant": {
+                                "type": "boolean"
+                              },
+                              "probabilityLift": {
+                                "type": "number"
+                              },
+                              "goalGC": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "assetIntents": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "slotRole",
+                                "designFunction",
+                                "visualJob",
+                                "supportsContentPath"
+                              ],
+                              "properties": {
+                                "slotRole": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hero",
+                                    "featured",
+                                    "option",
+                                    "carousel_slide",
+                                    "progress_step",
+                                    "paywall_feature",
+                                    "flexible_section"
+                                  ]
+                                },
+                                "designFunction": {
+                                  "type": "string",
+                                  "enum": [
+                                    "attention",
+                                    "clarity",
+                                    "motivation",
+                                    "trust",
+                                    "recall",
+                                    "action",
+                                    "continuity",
+                                    "choice_differentiation",
+                                    "progress",
+                                    "social_proof",
+                                    "premium_value",
+                                    "brand_continuity"
+                                  ]
+                                },
+                                "visualJob": {
+                                  "type": "string"
+                                },
+                                "supportsContentPath": {
+                                  "type": "string"
+                                },
+                                "linkedSourceRefs": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "linkedVariableIds": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": {
+                                  "type": "boolean"
+                                }
+                              }
+                            }
+                          },
+                          "variableRealizations": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "variableId",
+                                "realizationKind",
+                                "contentPath"
+                              ],
+                              "properties": {
+                                "variableId": {
+                                  "type": "string"
+                                },
+                                "realizationKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "collect",
+                                    "segment_source",
+                                    "personalization_source",
+                                    "condition_source"
+                                  ]
+                                },
+                                "screenBindingRole": {
+                                  "type": "string",
+                                  "enum": [
+                                    "input",
+                                    "output",
+                                    "segment",
+                                    "condition",
+                                    "personalization"
+                                  ]
+                                },
+                                "contentPath": {
+                                  "type": "string"
+                                },
+                                "optionIds": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "sourceQuestionRef": {
+                                  "type": "string"
+                                },
+                                "segmentationSource": {
+                                  "type": "boolean"
+                                },
+                                "notes": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "iterationCount": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "minItems": 1
+                },
+                "blockContract": {
+                  "type": "object",
+                  "properties": {
+                    "inputVariables": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "name",
+                          "type"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "string",
+                              "number",
+                              "boolean",
+                              "date",
+                              "enum",
+                              "enum[]"
+                            ]
+                          },
+                          "required": {
+                            "type": "boolean"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "tags": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "taskIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "options": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "label"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "label": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "outputAssignment": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "name",
+                          "type"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "string",
+                              "number",
+                              "boolean",
+                              "date",
+                              "enum",
+                              "enum[]"
+                            ]
+                          },
+                          "required": {
+                            "type": "boolean"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "tags": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "taskIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "options": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "label"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "label": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "inputVariables",
+                    "outputAssignment"
+                  ]
+                },
+                "dataUsage": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "sourcePath",
+                          "value",
+                          "justification"
+                        ],
+                        "properties": {
+                          "sourcePath": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "justification": {
+                            "type": "string"
+                          },
+                          "category": {
+                            "type": "string",
+                            "enum": [
+                              "persona",
+                              "product",
+                              "social_proof",
+                              "synthesis",
+                              "strategic",
+                              "insight"
+                            ]
+                          },
+                          "purposeId": {
+                            "type": "string"
+                          },
+                          "sourcePriority": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "minItems": 0
+                    },
+                    "dataMappingItems": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "sourcePath",
+                          "value",
+                          "justification"
+                        ],
+                        "properties": {
+                          "sourcePath": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "justification": {
+                            "type": "string"
+                          },
+                          "category": {
+                            "type": "string",
+                            "enum": [
+                              "persona",
+                              "product",
+                              "social_proof",
+                              "synthesis",
+                              "strategic",
+                              "insight"
+                            ]
+                          },
+                          "purposeId": {
+                            "type": "string"
+                          },
+                          "sourcePriority": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    },
+                    "purposes": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "title",
+                          "summary",
+                          "itemIndices"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "summary": {
+                            "type": "string"
+                          },
+                          "itemIndices": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer"
+                            }
+                          },
+                          "appliedTo": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "category": {
+                            "type": "string",
+                            "enum": [
+                              "persona",
+                              "product",
+                              "social_proof",
+                              "synthesis",
+                              "strategic",
+                              "insight"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "items"
+                  ]
+                },
+                "additionalInfo": {
+                  "type": "string"
+                },
+                "taskId": {
+                  "type": "string"
+                },
+                "isFirstBlock": {
+                  "type": "boolean"
+                },
+                "action": {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "edges"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "advance",
+                        "retreat",
+                        "complete",
+                        "noop",
+                        "purchase"
+                      ]
+                    },
+                    "edges": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "nextScreenId",
+                          "transitionKind",
+                          "conditions"
+                        ],
+                        "properties": {
+                          "nextScreenId": {
+                            "type": "string"
+                          },
+                          "transitionKind": {
+                            "type": "string",
+                            "enum": [
+                              "push",
+                              "overlay"
+                            ]
+                          },
+                          "conditions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "key",
+                                "operator",
+                                "value"
+                              ],
+                              "properties": {
+                                "key": {
+                                  "type": "string"
+                                },
+                                "operator": {
+                                  "type": "string",
+                                  "enum": [
+                                    "lt",
+                                    "gt",
+                                    "lte",
+                                    "gte",
+                                    "eq",
+                                    "neq",
+                                    "in",
+                                    "notIn",
+                                    "containsAll",
+                                    "containsAny",
+                                    "exists",
+                                    "notExists"
+                                  ]
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "logic": {
+                                  "type": "string",
+                                  "enum": [
+                                    "and",
+                                    "or"
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "conditionLogic": {
+                            "type": "string",
+                            "enum": [
+                              "and",
+                              "or"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "instructions": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "level",
+                      "text"
+                    ],
+                    "properties": {
+                      "level": {
+                        "type": "string",
+                        "enum": [
+                          "mustHave",
+                          "should",
+                          "niceToHave",
+                          "forbidden"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-action-bar",
+  "contentHash": "9078510657df6928132a0090aaa00d994a5fa6241c11aef360eeeee2e9fd6785",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, Hero List, and Web Embed screens.",
+      "excerpt": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, Hero List, and Web Embed screens."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Action Bar — every setting",
+      "excerpt": "Action Bar — every setting | The bottom button bar — your primary call-to-action and an optional secondary button. This guide documents every setting of the Action Bar block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-actionbar-primary",
+      "title": "Main button label",
+      "excerpt": "Main button label | The text on your main call-to-action button — the one that moves visitors to the next screen. Make it a short, specific verb phrase tied to the action (Continue, Get my plan, Subscribe) rather than a generic word; clear, benefit-led labels lift click-through on a paid landing page. This text can be translated per language."
+    },
+    {
+      "sectionId": "set-actionbar-primary-container",
+      "title": "Main button shape and fill",
+      "excerpt": "Main button shape and fill | Sets the main button's look — background color, border, corner radius, height, inner padding, and a full-width toggle. For an ad landing page keep it full-width and high-contrast so it reads as the obvious next step. The Visibility toggle hides the button entirely; only hide it when the screen forces a choice first, and never hide both buttons."
+    },
+    {
+      "sectionId": "set-actionbar-primary-effects",
+      "title": "Motion on the main button",
+      "excerpt": "Motion on the main button | Optional animation for the call-to-action — pulse, glow, bounce, scale, fade-in, slide-up and more, plus an opacity control. A gentle pulse or glow can draw the eye and lift taps; save attention-grabbing effects for your key conversion screen and avoid stacking several. Leave it off for a calm, professional feel."
+    },
+    {
+      "sectionId": "set-actionbar-primary-gradient",
+      "title": "Gradient on the main button",
+      "excerpt": "Gradient on the main button | An optional color gradient layered over the button's solid fill — set start and end colors, the angle, extra color stops, and an optional moving shimmer. Leave it off for a clean flat look; turn it on to make the call-to-action pop against a busy background. Keep enough contrast that the label stays easy to read."
+    },
+    {
+      "sectionId": "set-actionbar-primary-icon",
+      "title": "Icon on the main button",
+      "excerpt": "Icon on the main button | An optional icon next to the label — choose start or end placement, size, corner radius, and spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). A small leading arrow or lock icon can reinforce the action; keep it in the same color family as the label. Leave it empty for a clean text-only button."
+    },
+    {
+      "sectionId": "set-actionbar-primary-shadow",
+      "title": "Shadow under the main button",
+      "excerpt": "Shadow under the main button | An optional drop shadow beneath the button, with control over its color, blur, and vertical drop. A soft shadow lifts the call-to-action off the page so it feels tappable; keep it subtle (low blur, small offset) so it looks intentional rather than heavy. Leave it off if your theme is flat."
+    },
+    {
+      "sectionId": "set-actionbar-primary-text-styles",
+      "title": "Main button text style",
+      "excerpt": "Main button text style | Typography for the main button label — font, weight, size, color, and alignment. Leave it on the theme defaults for a consistent look; bump the weight or size, or switch color, only when the label is hard to read against the button fill. Applies to the label in every language."
+    },
+    {
+      "sectionId": "set-actionbar-secondary",
+      "title": "Secondary button label",
+      "excerpt": "Secondary button label | Text for the optional second button — use it for a side path like Skip, Maybe later, or Restore purchase, never your main goal. On funnel steps an easy escape route can cost conversions, so leave it empty unless you genuinely need the alternative; on a paywall a low-key secondary is fine."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-container",
+      "title": "Secondary button shape and fill",
+      "excerpt": "Secondary button shape and fill | Sets the secondary button's look — background, border, corner radius, height, padding, and a full-width toggle. Give it lower visual weight than the main button (an outline or transparent fill works well) so it doesn't compete with your call-to-action. The Visibility toggle hides it; never hide both the primary and secondary buttons."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-effects",
+      "title": "Motion on the secondary button",
+      "excerpt": "Motion on the secondary button | Adds optional movement to the secondary (lower-priority) button, such as pulse, glow, or bounce, plus an opacity control to fade it. Leave this off by default. Animation draws the eye, so reserve it for your main button only; making the alternative path move competes with your primary call to action and typically lowers conversions."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-gradient",
+      "title": "Gradient on the secondary button",
+      "excerpt": "Gradient on the secondary button | An optional color gradient over the secondary button's solid fill (start/end colors, angle, stops, optional shimmer). Usually leave this off — a gradient draws attention, which you want on your main call-to-action, not the side path. Turn it on only if a flat secondary clashes with your theme."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-icon",
+      "title": "Icon on the secondary button",
+      "excerpt": "Icon on the secondary button | An optional icon on the secondary button — placement (start or end), size, corner radius, spacing, and how it fits its box (fit shows the whole icon, fill crops to cover). Usually leave it empty so the secondary stays understated; add one only when it clarifies the action, like a back arrow for Go back."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-shadow",
+      "title": "Shadow under the secondary button",
+      "excerpt": "Shadow under the secondary button | An optional drop shadow under the secondary button (color, blur, vertical drop). Keep it lighter than the main button's shadow, or off entirely, so the secondary stays visually subordinate to your call-to-action."
+    },
+    {
+      "sectionId": "set-actionbar-secondary-text-styles",
+      "title": "Secondary button text style",
+      "excerpt": "Secondary button text style | Typography for the secondary button label — font, weight, size, color, and alignment. Style it deliberately quieter than the main button (lighter weight, muted color) so your primary call-to-action stays the obvious choice. Leave it on theme defaults unless the hierarchy looks off."
+    }
+  ]
+}

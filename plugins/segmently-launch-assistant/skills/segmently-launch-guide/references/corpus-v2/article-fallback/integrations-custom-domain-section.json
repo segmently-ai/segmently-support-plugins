@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "integrations-custom-domain-section",
+  "contentHash": "7cc6317c2cc7bb100bbb80ab59314f73a810c3fc933d0f179fd64478e6f5f506",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "integrations-custom-domain-section-integrations-cu-text",
+      "title": "Why a custom domain matters",
+      "excerpt": "Why a custom domain matters | A custom domain (for example funnel.example.com) swaps the generic Segmently link for your own brand. A branded link looks more trustworthy in ads and emails, so more people click and fewer drop off before reaching your funnel. It is also a required publish prerequisite: on a normal (non-admin) account, publishing a Web Placement is blocked until a verified custom domain is active — Segmently returns 'Custom domain is required to publish. Please configure a domain first.' if you try to publish without one. So connect and verify your domain first, then publish."
+    },
+    {
+      "sectionId": "integrations-custom-domain-section-recommended-order-text",
+      "title": "Recommended order of steps",
+      "excerpt": "Recommended order of steps | Work through it in this order: (1) enter your domain, (2) add the DNS records Segmently shows you at your domain provider, (3) click Verify and wait for the 'Verified' status, then (4) select that verified domain when you publish a Web Placement. Verification has to succeed before the domain can serve your live funnel, so don't publish against it until the status is green."
+    }
+  ]
+}

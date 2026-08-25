@@ -1,0 +1,38 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "webplacement-entry-rules",
+  "contentHash": "37e0fda5946c09028f1bb09304f5d1e40e74dc2f9cf3657240bb8142c48f96f4",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "webplacement-entry-rules-add-rule-text",
+      "title": "Add an entry screen rule",
+      "excerpt": "Add an entry screen rule | Open the form to create a routing rule. Each rule matches a URL parameter value and routes the visitor to a start screen; rules are checked top to bottom and the first match wins."
+    },
+    {
+      "sectionId": "webplacement-entry-rules-delete-text",
+      "title": "Remove a rule",
+      "excerpt": "Remove a rule | Delete a rule permanently; this cannot be undone. With no matching rule, the default start screen is used."
+    },
+    {
+      "sectionId": "webplacement-entry-rules-match-value-text",
+      "title": "Specify the value to match",
+      "excerpt": "Specify the value to match | Enter the exact value the parameter must have to trigger the rule. The match is case-sensitive (for example, enter summer for utm_campaign=summer)."
+    },
+    {
+      "sectionId": "webplacement-entry-rules-select-param-text",
+      "title": "Choose the URL parameter to match",
+      "excerpt": "Choose the URL parameter to match | Select a parameter you defined in Sources. Its key is read from the incoming URL (for example utm_campaign) when the funnel loads."
+    },
+    {
+      "sectionId": "webplacement-entry-rules-target-screen-text",
+      "title": "Choose the start screen",
+      "excerpt": "Choose the start screen | Pick the V2 step where matching visitors land; it must exist in the selected onboarding version. Saved visitor progress overrides rules."
+    },
+    {
+      "sectionId": "webplacement-entry-rules-toggle-text",
+      "title": "Enable or disable the rule",
+      "excerpt": "Enable or disable the rule | Toggle a rule active or inactive. Disabled rules are kept but skipped at load, which is useful for testing or temporary pauses."
+    }
+  ]
+}

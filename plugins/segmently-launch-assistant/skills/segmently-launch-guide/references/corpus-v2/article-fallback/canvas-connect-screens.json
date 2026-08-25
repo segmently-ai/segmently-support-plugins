@@ -1,0 +1,43 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "canvas-connect-screens",
+  "contentHash": "ca931584ac93a08e5a4180b11180495466bb8f6c07b5f8072a69bfb24ca4567b",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "canvas-connect-screens-connection-handles-text",
+      "title": "Find the connection ports",
+      "excerpt": "Find the connection ports | Each node has handles on its edges: input handles on the left of non-launch screens, and one output handle per action on the right. Hover a handle to see its action label."
+    },
+    {
+      "sectionId": "canvas-connect-screens-create-default-edge-text",
+      "title": "Draw a default connection",
+      "excerpt": "Draw a default connection | Drag from an output handle on the source to an input handle on the target to create an edge. This is an unconditional path: every visitor who takes that action goes to the target."
+    },
+    {
+      "sectionId": "canvas-connect-screens-delete-connection-text",
+      "title": "Remove a connection",
+      "excerpt": "Remove a connection | Click an edge, then Delete Connection and confirm. The target becomes unreachable through that action unless another path exists."
+    },
+    {
+      "sectionId": "canvas-connect-screens-edit-conditions-text",
+      "title": "Add conditions to a connection",
+      "excerpt": "Add conditions to a connection | Click an edge to open Connection Details, then Edit Conditions to define AND/OR logic on flow variables. Conditional paths activate only when the conditions are true."
+    },
+    {
+      "sectionId": "canvas-connect-screens-flexible-layout-handles-text",
+      "title": "FlexibleLayout sections add their own handles",
+      "excerpt": "FlexibleLayout sections add their own handles | FlexibleLayout screens hold multiple sections (content, buttons, options, embeds, paywalls), and each can generate its own connection handles. Handles appear automatically based on the sections you add."
+    },
+    {
+      "sectionId": "canvas-connect-screens-timer-auto-advance-text",
+      "title": "Carousel and ProgressSteps auto-advance",
+      "excerpt": "Carousel and ProgressSteps auto-advance | Carousel and ProgressSteps screens advance on a timer rather than a button, so their timer handle is what you route from. These types have no Action Bar because visitors do not click Continue."
+    },
+    {
+      "sectionId": "canvas-connect-screens-validation-text",
+      "title": "Verify the flow is complete",
+      "excerpt": "Verify the flow is complete | Before publishing, confirm a launch screen is set, every non-final screen has an outgoing connection, paywall screens point to valid products, and each branch ends meaningfully."
+    }
+  ]
+}

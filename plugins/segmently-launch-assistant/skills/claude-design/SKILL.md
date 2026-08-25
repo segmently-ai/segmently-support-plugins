@@ -7,8 +7,11 @@ description: >-
   standalone HTML screens into Segmently, push/capture Segmently design-system
   material, log in, pull, or review a Claude Design project. Also trigger when
   Segmently Launch Assistant names claude-design as the owning companion for a
-  Claude Design import/handoff. Do NOT use for Figma sources or local HTML
-  mockups plus UX review.
+  Claude Design import/handoff. Also trigger to round-trip an EXISTING
+  Segmently WebEmbed custom screen through the local /design canvas (pull the
+  screen, hand-restyle it on the canvas, gate the change, apply it back) — that
+  path uses no claude.ai/design project and no DesignSync. Do NOT use for Figma
+  sources or local HTML mockups plus UX review.
 allowed-tools: Read, Write, Edit, Bash, Glob, Grep, Skill, DesignSync
 ---
 
@@ -68,7 +71,24 @@ artifact preparation.
 > hook described in [hooks/README.md](hooks/README.md) — it pattern-matches the hand-off signature and
 > steers here every time.
 
+## Two independent streams
+
+Claude Design reaches Segmently by two paths that share a file format (`.dc.html`) and NOTHING
+else. Pick the stream first, then the workflow inside it — and keep their logic separate: a
+change to one must not change the other.
+
+| | **Stream A — hosted** | **Stream B — local canvas** |
+|---|---|---|
+| Where the design lives | a `claude.ai/design` project | a published Artifact (the `design` skill / `/design`) |
+| Transport | `DesignSync` (`get_file` / `write_files`) | Artifact publish + WebFetch |
+| Auth | claude.ai login / `/design-login` | ownership of the artifact |
+| Readback | `DesignSync get_file` | `seed-canvas.mjs --extract` |
+| Unit of work | N screens/themes, imported or pushed | ONE existing artifact, round-tripped |
+| Workflows | 1–7 below | 8 below |
+
 ## Pick a workflow
+
+### Stream A — `claude.ai/design` (DesignSync)
 
 | The user wants to… | Direction | Load |
 |---|---|---|
@@ -81,8 +101,7 @@ artifact preparation.
 
 If the design source is **Figma**, stop and route to the figma skills (theme, native StepNode
 screens, or WebEmbed via `segmently-cli-figma-webembed-import`). If the task
-is local HTML mockups + Playwright UX review, route to the `designer` skill. Claude Design is the
-right source only when the design lives in (or is being created in) `claude.ai/design`.
+is local HTML mockups + Playwright UX review, route to the `designer` skill.
 
 ## How this fits Segmently's design stack
 
@@ -92,6 +111,12 @@ right source only when the design lives in (or is being created in) `claude.ai/d
 - **Native `/design-sync`** — Anthropic's own skill + `DesignSync` tool own the actual push/pull
   mechanics with `claude.ai/design`. Workflow 2 delegates to them; this skill only adds the
   Segmently-specific "what to package and push".
+- **`design` skill (`/design`)** — Anthropic's local canvas preview, published as an Artifact. It
+  owns seeding, publishing and `--extract`; Stream B here only adds the Segmently-specific wrap,
+  unwrap and pre-apply gate. It has no `claude.ai/design` project behind it, so nothing in Stream A
+  applies to it.
+- **`segmently-cli-custom-screen-guide`** — owns apply / healthcheck / audit / publish / verify for
+  the Claude Design import stream. This skill does not re-spell those commands.
 
 ## Shared basics (all workflows)
 
@@ -166,3 +191,8 @@ Each workflow doc ends with its own checks. Skill-level smoke checks:
 - Theme pipeline still projects: rebuild the committed theme fixture (workflow 4 doc).
 - Custom-screen apply is reachable: `funnels custom-screen healthcheck` on a draft/test funnel.
 - Claude Design auth + a writable design-system project: `DesignSync list_projects` (read-only).
+- Stream B round-trip still closes (no cloud, no auth): wrap the committed
+  `custom-screen-artifacts/nebula-screenshot/screens/nebula-welcome/updated/index.html`, unwrap it
+  unchanged, and `diff` — must be byte-identical. Then run the gate against that pilot's edited
+  output; expected `text_routed(primaryCta)`, `style_change(primaryCta)`,
+  `markup_stripped(benefit2)`, verdict PASS.

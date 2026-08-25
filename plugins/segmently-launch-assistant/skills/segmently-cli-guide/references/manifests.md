@@ -17,17 +17,27 @@ Minimal shape:
 {
   "version": "cli.paywall-product.v1",
   "mode": "test",
-  "name": "CLI Test Monthly",
-  "type": "subscription",
-  "checkoutMode": "subscription",
-  "currency": "usd",
-  "amount": 999,
-  "recurring": {
+  "product": {
+    "name": "CLI Test Monthly",
+    "type": "subscription",
+    "checkoutMode": "embedded",
+    "unitAmount": 999,
+    "currency": "usd",
     "interval": "month",
     "intervalCount": 1
   }
 }
 ```
+
+The product fields are NESTED under `product` (verified against
+`CliStripePaywallProductEnsureRequest` and builder-side validation):
+`unitAmount` is the integer amount in the smallest currency unit (not
+`amount`), `checkoutMode` is `embedded` or `redirect` (it is NOT the product
+type), `type` is `one_time` or `subscription`, and subscription cadence uses
+flat `interval`/`intervalCount`/`trialDays` (no `recurring` object). Omit
+`trialDays` for a no-trial subscription. The command is idempotent by product
+name and returns `paywallProduct.id` (`cli_pp_<slug>_<sha8>`) — that id is what
+Paywall screens reference as `productId`.
 
 ## Funnel Apply
 
@@ -85,6 +95,12 @@ segmently funnels variables apply --project <projectId> --funnel <funnelId> --ve
 segmently funnels edges apply --project <projectId> --funnel <funnelId> --version-id <versionId> --file edges.json
 segmently funnels conditions apply --project <projectId> --funnel <funnelId> --version-id <versionId> --file conditions.json
 ```
+
+`variables apply` upserts FULL definitions, but binding fields are protected
+(C9-S3): an update that OMITS `boundScreenIds`/`screenBindings`/`boundSectionId`
+carries them over from the current definition — a rewrite built from a list
+projection no longer unbinds collect screens. An explicit empty array still
+clears; pass `--replace-bindings` to let omission clear them too.
 
 Typical shapes:
 

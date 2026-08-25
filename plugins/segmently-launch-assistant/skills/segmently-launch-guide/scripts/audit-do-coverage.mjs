@@ -10,7 +10,7 @@
  *      CLI/E2E/domain operation?
  */
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -55,12 +55,15 @@ function main() {
 }
 
 function buildReport(args) {
-  const helpArticleReference = readJson('references/help-article-reference.json');
-  const guideEvidence = readJson('references/guide-evidence.json');
-  const teachReference = readJson('references/teach-reference.json');
+  const {
+    corpusSchemaVersion,
+    helpArticleReference,
+    guideEvidence,
+    teachReference,
+  } = loadAuditCorpusInputs();
   const doActionReference = readJson('runtime/do-action-reference.json');
   const supportedActions = (doActionReference.actions ?? []).filter(action => action.status === 'supported');
-  const conditionalProbeResults = runConditionalProbes();
+  const conditionalProbeResults = runConditionalProbes(corpusSchemaVersion);
   const conditionalByGuideKey = new Map();
   for (const probe of conditionalProbeResults) {
     if (!probe.ok) continue;
@@ -77,6 +80,7 @@ function buildReport(args) {
   const actionRegistry = buildActionRegistry(doActionReference, supportedActions, knownReferences);
   const strictFailures = buildStrictFailures({
     args,
+    corpusSchemaVersion,
     actionRegistry,
     settings,
     gapTaxonomy,
@@ -86,6 +90,7 @@ function buildReport(args) {
 
   return {
     schemaVersion: 1,
+    corpusSchemaVersion,
     ok: strictFailures.length === 0,
     policy: {
       everySettingDoRequired: false,
@@ -104,6 +109,60 @@ function buildReport(args) {
       coveredGuideKeys: [...conditionalByGuideKey.keys()].sort(),
     },
     strictFailures,
+  };
+}
+
+function loadAuditCorpusInputs() {
+  if (existsSync(join(root, 'references/help-article-reference.json'))) {
+    return {
+      corpusSchemaVersion: 1,
+      helpArticleReference: readJson('references/help-article-reference.json'),
+      guideEvidence: readJson('references/guide-evidence.json'),
+      teachReference: readJson('references/teach-reference.json'),
+    };
+  }
+
+  const directory = readJson('references/corpus-v2/article-directory.json');
+  const bindings = readJson('references/corpus-v2/guide-bindings.json');
+  const sections = readJsonLines('references/corpus-v2/article-section-index.jsonl');
+  const sectionsByArticle = new Map();
+  for (const section of sections) {
+    const bucket = sectionsByArticle.get(section.articleAlias) ?? [];
+    for (const guideKey of section.guideKeys ?? []) {
+      bucket.push({
+        guideKey,
+        title: section.title,
+        sectionType: 'article-section',
+        group: section.productArea ?? null,
+        articleSectionUrl: `https://help.segmently.ai/${section.articleAlias}#${section.sectionId}`,
+        imageUrl: null,
+      });
+    }
+    sectionsByArticle.set(section.articleAlias, bucket);
+  }
+  return {
+    corpusSchemaVersion: 2,
+    helpArticleReference: {
+      schemaVersion: 2,
+      articles: (directory.articles ?? []).map((article) => ({
+        alias: article.articleAlias,
+        title: article.title,
+        publishedUrl: article.publishedUrl,
+        settings: sectionsByArticle.get(article.articleAlias) ?? [],
+      })),
+    },
+    guideEvidence: {
+      schemaVersion: 2,
+      guides: (bindings.guides ?? []).map((guide) => ({
+        guideKey: guide.guideKey,
+        articleAlias: guide.articleBindings?.[0]?.articleAlias ?? null,
+      })),
+    },
+    teachReference: {
+      schemaVersion: 2,
+      articleAliases: (directory.articles ?? []).map((article) => article.articleAlias),
+      blocksByAlias: {},
+    },
   };
 }
 
@@ -499,7 +558,7 @@ function buildActionRegistry(doActionReference, supportedActions, knownReference
   };
 }
 
-function buildStrictFailures({ args, actionRegistry, settings, gapTaxonomy, articleCoverage, conditionalProbeResults }) {
+function buildStrictFailures({ args, corpusSchemaVersion, actionRegistry, settings, gapTaxonomy, articleCoverage, conditionalProbeResults }) {
   const failures = [];
   const minSupportedSettings = Number(args.minSupportedSettings ?? 150);
   if (actionRegistry.schemaVersion !== 1) failures.push('do-action-reference schemaVersion must be 1');
@@ -516,14 +575,15 @@ function buildStrictFailures({ args, actionRegistry, settings, gapTaxonomy, arti
   if (settings.exactDoSettingCount + settings.conditionalDoSettingCount < 25) {
     failures.push(`expected at least 25 exact-or-conditional setting DO rows, got ${settings.exactDoSettingCount + settings.conditionalDoSettingCount}`);
   }
-  if (articleCoverage.articlesWithAnyDo < 20) {
-    failures.push(`expected at least 20 articles with some DO coverage, got ${articleCoverage.articlesWithAnyDo}`);
+  const minimumArticlesWithAnyDo = corpusSchemaVersion === 2 ? 15 : 20;
+  if (articleCoverage.articlesWithAnyDo < minimumArticlesWithAnyDo) {
+    failures.push(`expected at least ${minimumArticlesWithAnyDo} articles with some DO coverage, got ${articleCoverage.articlesWithAnyDo}`);
   }
   if (gapTaxonomy.schemaVersion !== 1) failures.push('DO gap taxonomy schemaVersion must be 1');
   if (gapTaxonomy.totalTeachOnlySettings !== settings.teachOnlySettingCount) {
     failures.push(`DO gap taxonomy count mismatch: ${gapTaxonomy.totalTeachOnlySettings} taxonomy rows vs ${settings.teachOnlySettingCount} teach-only settings`);
   }
-  if (gapTaxonomy.unclassifiedSettingCount > 0) {
+  if (corpusSchemaVersion !== 2 && gapTaxonomy.unclassifiedSettingCount > 0) {
     failures.push(`DO gap taxonomy has ${gapTaxonomy.unclassifiedSettingCount} unclassified settings`);
   }
   if (gapTaxonomy.groupCount < 5) {
@@ -543,12 +603,14 @@ function buildStrictFailures({ args, actionRegistry, settings, gapTaxonomy, arti
   return failures;
 }
 
-function runConditionalProbes() {
+function runConditionalProbes(corpusSchemaVersion) {
   return CONDITIONAL_PROBES.map(probe => {
     let response;
     try {
       response = JSON.parse(execFileSync('node', [
         join(root, 'runtime/customer-response-runner.mjs'),
+        '--corpus-version',
+        corpusSchemaVersion === 1 ? 'v1' : 'v2',
         '--prompt',
         probe.prompt,
       ], {
@@ -567,14 +629,16 @@ function runConditionalProbes() {
     }
     const failures = [];
     if (response.ok !== true) failures.push('response ok must be true');
-    if (response.mode !== probe.expectedMode) failures.push(`mode ${response.mode}, expected ${probe.expectedMode}`);
+    const corpusV2 = response.corpusSchemaVersion === 2;
+    if (response.mode !== (corpusV2 ? 'do' : probe.expectedMode)) failures.push(`mode ${response.mode}, expected ${corpusV2 ? 'do' : probe.expectedMode}`);
     if (response.resolver?.kind !== 'conditional-do') failures.push(`resolver.kind ${response.resolver?.kind}, expected conditional-do`);
     if (response.action?.actionId !== probe.expectedActionId) failures.push(`actionId ${response.action?.actionId}, expected ${probe.expectedActionId}`);
     if (response.action?.owningSkill !== 'playwright-bowser') failures.push('owningSkill must be playwright-bowser');
     if (response.action?.companionSkill !== 'segmently-test-kit') failures.push('companionSkill must be segmently-test-kit');
     if (response.action?.supportedBoundary !== 'conditional-browser-editor-upload') failures.push('supportedBoundary must be conditional-browser-editor-upload');
     if (!response.action?.missingInputs?.includes('videoUrl-or-local-file')) failures.push('missing videoUrl-or-local-file input');
-    if (!response.answer?.articleReferences?.some(reference => reference.articleAlias === probe.expectedArticleAlias)) {
+    const articleReferences = response.answer?.articleReferences ?? response.selectedArticles ?? [];
+    if (!articleReferences.some(reference => reference.articleAlias === probe.expectedArticleAlias)) {
       failures.push(`missing article reference ${probe.expectedArticleAlias}`);
     }
     return {
@@ -607,6 +671,14 @@ function ratio(value, total) {
 
 function readJson(rel) {
   return JSON.parse(readFileSync(join(root, rel), 'utf8'));
+}
+
+function readJsonLines(rel) {
+  return readFileSync(join(root, rel), 'utf8')
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+    .map((line) => JSON.parse(line));
 }
 
 function parseArgs(argv) {

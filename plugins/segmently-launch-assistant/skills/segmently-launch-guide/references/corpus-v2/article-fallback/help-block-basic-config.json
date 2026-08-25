@@ -1,0 +1,53 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-basic-config",
+  "contentHash": "5f251fd44ab03022d763f8fab5fd61e1c9a9072a820d8410477bcbbc72e9c40e",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, Hero List, Web Embed, and Paywall screens.",
+      "excerpt": "Applies to: Hero Content, List Multi Pick, List Single Pick, Grid Multi Pick, Grid Single Pick, Text Input, Wheel Picker, Hero List, Web Embed, and Paywall screens."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Basic Config — every setting",
+      "excerpt": "Basic Config — every setting | Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance. This guide documents every setting of the Basic Config block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-basicconfig-content-animated",
+      "title": "Play Screen Animations",
+      "excerpt": "Play Screen Animations | Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away."
+    },
+    {
+      "sectionId": "set-basicconfig-content-countdown",
+      "title": "Auto-Advance After A Delay",
+      "excerpt": "Auto-Advance After A Delay | When on, the screen moves to the next step on its own after the countdown you set below, with a visible timer. Off by default. Great for splash or 'analyzing...' screens, but never use it where visitors must tap or answer, like questions or your paywall, or you'll skip them past the response or sale."
+    },
+    {
+      "sectionId": "set-basicconfig-content-countdown-duration",
+      "title": "Auto-Advance Duration",
+      "excerpt": "Auto-Advance Duration | The number of seconds or minutes (unit chosen below) before the screen moves on by itself, from 1 to 300. Only used when auto-advance is on. Keep it short, about 2 to 4 seconds for a splash or 'analyzing...' screen, so visitors aren't left waiting and bouncing."
+    },
+    {
+      "sectionId": "set-basicconfig-content-countdown-unit",
+      "title": "Seconds Or Minutes",
+      "excerpt": "Seconds Or Minutes | Sets whether the auto-advance duration above counts in seconds or minutes. Only shows when auto-advance is on. Seconds is the right choice for nearly every onboarding screen; minutes is rarely useful and risks visitors leaving before the screen ever advances."
+    },
+    {
+      "sectionId": "set-basicconfig-content-offlinefirst",
+      "title": "Reuse cached media",
+      "excerpt": "Reuse cached media | When on, the screen reuses media it has already cached instead of re-downloading it, which can speed up loading for visitors on slow or flaky connections. Leave it off by default for standard web ad funnels, since there's nothing to reuse until assets are cached. Turn it on only if you ship pre-bundled assets or expect a lot of poor-connectivity traffic."
+    },
+    {
+      "sectionId": "set-basicconfig-content-systemprompt",
+      "title": "Ask For A Device Permission",
+      "excerpt": "Ask For A Device Permission | When on, this screen pops the phone's own permission request, notifications, location, or ad tracking, chosen in the field below, as it appears. This fires in the native app SDK, not on a plain web page. Put it on a screen that first explains why you need it so far more people tap Allow."
+    },
+    {
+      "sectionId": "set-basicconfig-content-systemprompt-permissiontype",
+      "title": "Which Permission To Ask For",
+      "excerpt": "Which Permission To Ask For | Picks which device permission this screen requests: push notifications, ad tracking (needed for accurate ad attribution on iPhones), or location. Only shows when the permission request is turned on. Choose what your funnel truly needs, ad tracking if you rely on ad-network attribution, notifications for re-engaging users later."
+    }
+  ]
+}

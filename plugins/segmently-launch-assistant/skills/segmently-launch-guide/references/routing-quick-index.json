@@ -7,7 +7,7 @@
     "scenario hit: open references/scenarios.matrix.json and follow the scenario contract.",
     "action hit: open runtime/do-action-reference.json and resolve the actionId.",
     "action-family hit: open runtime/do-action-reference.json and pick the exact leaf action within the family.",
-    "articles hit: open references/article-directory.json for the listed aliases.",
+    "articles hit: open references/corpus-v2/article-directory.json for the listed aliases.",
     "No hit: follow references/semantic-routing.md (full path). The quick-index is an accelerator, never the only route."
   ],
   "entries": [
@@ -1387,7 +1387,7 @@
       "articleAliases": [
         "help-fonts-typography"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1407,7 +1407,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1427,7 +1427,7 @@
         "help-block-flexible-sections",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1445,7 +1445,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1463,7 +1463,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1482,7 +1482,7 @@
         "help-block-custom-html",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1501,7 +1501,7 @@
       "articleAliases": [
         "facebook-events-catalog"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1522,7 +1522,7 @@
         "analytics-provider-config",
         "facebook-pixel-capi-setup"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1542,7 +1542,7 @@
       "articleAliases": [
         "facebook-capi-web-destination"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1566,7 +1566,7 @@
         "analytics-provider-config",
         "integrations-analytics-section"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1590,7 +1590,7 @@
         "paywall-product-subscription-options",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1612,7 +1612,7 @@
         "custom-domain-dns-setup",
         "custom-domain-verification"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1632,7 +1632,7 @@
       "articleAliases": [
         "help-block-custom-html"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1654,7 +1654,7 @@
       "articleAliases": [
         "launch-paid-funnel-overview"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1673,7 +1673,7 @@
       "articleAliases": [
         "collect-email-before-paywall"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1692,7 +1692,7 @@
       "articleAliases": [
         "paywall-payment-methods"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1711,7 +1711,7 @@
         "tiktok-events-catalog",
         "tiktok-pixel-events-api-setup"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1733,7 +1733,7 @@
       "articleAliases": [
         "help-strategy-onboarding-sync"
       ],
-      "next": "references/article-directory.json"
+      "next": "references/corpus-v2/article-directory.json"
     }
   ]
 }

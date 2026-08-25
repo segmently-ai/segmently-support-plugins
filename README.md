@@ -2,6 +2,8 @@
 
 Public read-only marketplace for Segmently customer support plugins.
 
+This branch is a preview channel. Customer-stable installation will use `--ref stable` after the prod article/image URL gate passes.
+
 
 ## Required Tools
 
@@ -78,7 +80,7 @@ loads newly installed plugins only after a new session starts.
 ```text
 Install or update the Segmently Launch Assistant plugin for Codex for this target project folder.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins with ref stable
+Use the public marketplace repository segmently-ai/segmently-support-plugins with ref dev
 and install plugin segmently-launch-assistant@segmently-support.
 
 Target project folder:
@@ -92,27 +94,27 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
+6. Install or update the Codex plugin: codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev; codex plugin add segmently-launch-assistant@segmently-support. If the marketplace already exists, run codex plugin marketplace upgrade segmently-support, then run codex plugin add segmently-launch-assistant@segmently-support again.
 7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: AGENTS.md. Secondary file: CLAUDE.md only if it already exists or I explicitly asked to prepare Claude Code guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If AGENTS.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global AGENTS.md/CLAUDE.md files and do not remove unrelated project instructions. Write this exact section:
 
 ## Segmently Launch Assistant
 
 - These rules apply after starting a new Codex session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
-- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped quick index and returns the TEACH / SHOW / DO / article contract to follow.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped Article-first Corpus V2 directory and returns the TEACH / SHOW / DO / article contract to follow.
 - Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
 - Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
 
 **Which skill when:**
-- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (articles first, guides second; guides are evidence material, never a routing peer).
+- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (Articles are the sole answer source; Guides are navigation/evidence bindings for SHOW only, never a competing knowledge source or routing peer).
 - "Do it for me" through the CLI -> the owning skill named by the runner contract (`segmently-cli-guide`, `segmently-cli-custom-screen-guide`, `segmently-cli-image-upload`, `segmently-cli-articles`, `segmently-cli-paywall-ab-rollout`). Never re-implement CLI work inline.
 - Browser SHOW / editor E2E DO -> the packaged runners only. Navigation is assembled from registered routes (`runtime/route-runner.mjs --list` / `--route <routeId>`, or the `--routeId` prefix on the SHOW/E2E runners). The browser is for execution and fixes, not for route discovery. Never quote selector values in replies; describe destinations with the route's customerSafeLabel.
 - Design imports and screen prototyping -> `claude-design`; `segmently-test-kit` is an execution companion, never an answer source.
-- When the host supports subagents, delegate heavy side work to the shipped agent roles from the skill's `agents/` directory: corpus-search (catalog/graph lookups), tool-preflight (tool/auth checks), browser-show (headed SHOW sessions), next-step-prepper (background prefetch, only when predictive mode is on).
+- When the host supports subagents, delegate heavy side work to the shipped agent roles from the skill's `agents/` directory: corpus-search (Article/section and Guide-binding lookups), tool-preflight (tool/auth checks), browser-show (headed SHOW sessions), next-step-prepper (background prefetch, only when predictive mode is on).
 
 **Evidence and sections:**
-- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
-- The article and guide catalogs are compact directories: load heavy sections only for the selected items through their `contentRef` files (`references/articles/<alias>.json`, `references/guides/<guideKey>.json`). Never blanket-load whole catalogs into context.
-- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
+- For customer answers, select Article aliases, section ids, and action ids from the installed Corpus V2 indexes first; select Guide keys only when SHOW navigation/evidence is requested.
+- Corpus V2 is compact and lazy: start with `references/corpus-v2/article-directory.json`, `article-search-index.json`, and `article-section-index.jsonl`; load `guide-bindings.json` only for SHOW. Never blanket-load the corpus or rebuild a public knowledge graph.
+- Read selected Article sections before answering. If a bundled fallback is too thin or stale, run the read-only article-fetch path, verify the Article content hash, and use the fetched Article/config sections as answer material.
 - Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
 
 **Session state and proactivity:**
@@ -148,7 +150,7 @@ only after a new session starts.
 ```text
 Install or update the Segmently Launch Assistant plugin for Claude Code for this target project folder.
 
-Use the public marketplace repository segmently-ai/segmently-support-plugins@stable
+Use the public marketplace repository segmently-ai/segmently-support-plugins@dev
 and install plugin segmently-launch-assistant@segmently-support with --scope user.
 
 Target project folder:
@@ -162,27 +164,27 @@ Run these steps end to end and report the exact command results:
 3. Install or update the Segmently CLI and verify it: npm install -g @segmently/cli; segmently --version; segmently auth status.
 4. If Segmently auth is missing or expired, run segmently auth login, then re-run segmently auth status and segmently capabilities.
 5. Install or update Playwright CLI and browser support: npm install -g @playwright/cli@latest; playwright-cli --help; playwright-cli install-browser. If install-browser is unavailable, run npx playwright install chromium; if Chromium still cannot launch on Linux, run npx playwright install --with-deps chromium.
-6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
+6. Install or update the Claude Code plugin: claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user; claude plugin install segmently-launch-assistant@segmently-support --scope user. If the marketplace already exists, run claude plugin marketplace update segmently-support, then run claude plugin update segmently-launch-assistant@segmently-support --scope user.
 7. In the target project folder, update local project guidance files as a concrete file edit. This is not a same-session plugin verification step. Primary file: CLAUDE.md. Secondary file: AGENTS.md only if it already exists or I explicitly asked to prepare Codex guidance too. For each file you update: read the file first; if it already has a "## Segmently Launch Assistant" section, replace only that section from its heading until the next "## " heading or end of file; if it has no such section, append the exact section below at the end; if it has older Segmently Launch Assistant wording without that exact heading, append the exact section below and leave the older text unless you can remove only the stale Segmently block without touching unrelated instructions. If CLAUDE.md does not exist, create it in the target project folder only after confirming the folder path. Do not create or edit global CLAUDE.md/AGENTS.md files and do not remove unrelated project instructions. Write this exact section:
 
 ## Segmently Launch Assistant
 
 - These rules apply after starting a new Claude Code session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
-- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped quick index and returns the TEACH / SHOW / DO / article contract to follow.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped Article-first Corpus V2 directory and returns the TEACH / SHOW / DO / article contract to follow.
 - Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
 - Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
 
 **Which skill when:**
-- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (articles first, guides second; guides are evidence material, never a routing peer).
+- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (Articles are the sole answer source; Guides are navigation/evidence bindings for SHOW only, never a competing knowledge source or routing peer).
 - "Do it for me" through the CLI -> the owning skill named by the runner contract (`segmently-cli-guide`, `segmently-cli-custom-screen-guide`, `segmently-cli-image-upload`, `segmently-cli-articles`, `segmently-cli-paywall-ab-rollout`). Never re-implement CLI work inline.
 - Browser SHOW / editor E2E DO -> the packaged runners only. Navigation is assembled from registered routes (`runtime/route-runner.mjs --list` / `--route <routeId>`, or the `--routeId` prefix on the SHOW/E2E runners). The browser is for execution and fixes, not for route discovery. Never quote selector values in replies; describe destinations with the route's customerSafeLabel.
 - Design imports and screen prototyping -> `claude-design`; `segmently-test-kit` is an execution companion, never an answer source.
-- Prefer the bundled plugin subagents for heavy side work when available: `segmently-corpus-search` (catalog/graph lookups), `segmently-tool-preflight` (tool/auth checks), `segmently-browser-show` (headed SHOW sessions), `segmently-next-step-prepper` (background prefetch, only when predictive mode is on).
+- Prefer the bundled plugin subagents for heavy side work when available: `segmently-corpus-search` (Article/section and Guide-binding lookups), `segmently-tool-preflight` (tool/auth checks), `segmently-browser-show` (headed SHOW sessions), `segmently-next-step-prepper` (background prefetch, only when predictive mode is on).
 
 **Evidence and sections:**
-- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
-- The article and guide catalogs are compact directories: load heavy sections only for the selected items through their `contentRef` files (`references/articles/<alias>.json`, `references/guides/<guideKey>.json`). Never blanket-load whole catalogs into context.
-- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
+- For customer answers, select Article aliases, section ids, and action ids from the installed Corpus V2 indexes first; select Guide keys only when SHOW navigation/evidence is requested.
+- Corpus V2 is compact and lazy: start with `references/corpus-v2/article-directory.json`, `article-search-index.json`, and `article-section-index.jsonl`; load `guide-bindings.json` only for SHOW. Never blanket-load the corpus or rebuild a public knowledge graph.
+- Read selected Article sections before answering. If a bundled fallback is too thin or stale, run the read-only article-fetch path, verify the Article content hash, and use the fetched Article/config sections as answer material.
 - Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
 
 **Session state and proactivity:**
@@ -259,7 +261,7 @@ time with the `clear` command.
 ## Codex Install
 
 ```bash
-codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
+codex plugin marketplace add segmently-ai/segmently-support-plugins --ref dev
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
@@ -282,7 +284,7 @@ codex plugin add segmently-launch-assistant@segmently-support
 ## Claude Code Install
 
 ```bash
-claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
+claude plugin marketplace add segmently-ai/segmently-support-plugins@dev --scope user
 claude plugin install segmently-launch-assistant@segmently-support --scope user
 ```
 

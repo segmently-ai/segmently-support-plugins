@@ -27,7 +27,7 @@ routing decision:
 - `action-family` hit → open `runtime/do-action-reference.json` and pick the
   exact leaf action inside the family (for example
   `editor.content.title.textStyle.*`).
-- `articles` hit → open `references/article-directory.json` for the listed
+- `articles` hit → open `references/corpus-v2/article-directory.json` for the listed
   aliases and continue with the normal article answer path.
 
 A quick-index hit replaces only the *search* step; the deterministic
@@ -43,42 +43,22 @@ customer may use incomplete, mixed, misspelled, or non-product vocabulary.
 
 Choose one or more catalog items from the shipped files:
 
-- `references/article-directory.json` and `references/article-search-index.json`
-  are the first-pass article search surfaces. Search article aliases, titles,
-  descriptions, tags, subarticles, settings, and SupportFlow typed relations
-  before guide keys.
-- `references/article-search-synonyms.json` is the reviewed customer-language
-  synonym overlay for phrases that are common in support conversations but may
-  not appear verbatim in article aliases, for example selected product,
-  purchase label, Flexible Layout paywall, WebEmbed paywall, or Facebook events
-  catalog.
-- `references/article-summary-overrides.json` is the reviewed searchable summary
-  source for articles whose config/body text is too thin. A selected article
-  should have a meaningful customer-intent summary; title-only descriptions are
-  corpus defects, not acceptable routing evidence.
-- `references/article-registry.json` is the compact selected-article routing
-  contract with public URLs, subarticles, settings anchors, typed relations, and
-  `contentRef`.
-- `references/articles/<articleAlias>.json` stores heavy selected-article
-  material: sections, settings anchors, media, and FlexibleLayout nodes. Load it
-  only after selecting candidate articles.
-- `references/support-knowledge-graph/` is a generated static graph projection
-  with typed edges between articles, subarticles, settings, guides, scenarios,
-  workflows, actions, atoms, media, and synonym groups. Use it to trace evidence
-  and answer relation questions such as "which articles are connected to this
-  flow." It is not a graph/vector database or local runtime dependency.
-- `references/guide-registry.json` links guides back to articles and carries
-  screenshot/SHOW/DO evidence. Use it after article selection, not as a
-  replacement for article content. It is a compact directory: per-guide
-  `sections` load through each row's `contentRef`
-  (`references/guides/<guideKey>.json`).
+- `references/corpus-v2/article-directory.json` and
+  `references/corpus-v2/article-search-index.json` are the first-pass Article
+  surfaces. Search aliases, titles, reviewed summaries, and canonical section
+  postings before Guide keys; retrieve at most five candidates.
+- `references/corpus-v2/article-section-index.jsonl` supplies bounded canonical
+  Article section refs. It contains no Guide-derived customer explanation.
+- `references/corpus-v2/article-fallback/<articleAlias>.json` supplies bounded
+  offline excerpts only when the selected public config fetch/hash check fails.
+- `references/corpus-v2/guide-routing-index.json` maps a model-selected Guide key
+  to canonical Article sections without loading SHOW evidence.
+- `references/corpus-v2/guide-bindings.json` carries UI anchors, concrete SHOW
+  evidence, and action IDs. Load it only for SHOW or an explicit Guide evidence
+  lookup; it is not a competing knowledge corpus.
 - `references/scenarios.md` for broad launch scenarios and customer phrasing.
-- `references/guide-evidence.json` for guide keys, article aliases, article
-  URLs, screenshot coverage flags, and `contentRef` pointers; section text and
-  concrete image URLs load lazily from `references/guides/<guideKey>.json` for
-  the selected guides only (hydration helper: `runtime/guide-content.mjs`).
-- `references/help-article-reference.json` for Screen Editor article URLs,
-  section anchors, and setting-level screenshots.
+- The Article directory is authoritative for public/config URLs and content
+  hashes. Guide bindings only add UI placement and screenshot evidence.
 - `references/backends.md` and `runtime/do-action-reference.json` for whether a
   selected intent can be TEACH, SHOW, CLI DO, E2E/browser DO, or HANDOFF.
 - `references/capability-bindings.json` for the executable surface behind a
@@ -88,35 +68,25 @@ Choose one or more catalog items from the shipped files:
   `references/e2e-scenario-refs.json` for proven navigation step sequences
   when planning SHOW or browser DO work.
 
-Article registry entries can have subarticles. A subarticle is a section,
-setting, guide section, or assembly link under the parent article. If a
-subarticle is the best semantic match, keep the parent `articleAlias` as the
-identity and use the subarticle title/summary/section URL as the answer detail.
-
 Do not search guides as a peer corpus during the first customer-facing
-retrieval pass. Guides are short UI hints and evidence rows. First search
-articles, subarticles, settings, article synonyms, and article typed relations.
-Then attach related guides through the selected article, subarticle, setting,
-scenario, or action. Search guides only as a fallback when no article candidate
-exists, or when the customer explicitly asks for a UI location, SHOW walkthrough,
-or executable DO path. A guide with no linked article is `guideOnlyEvidence` and
-should create a quality gap, not an authoritative answer.
+retrieval pass. Guides are UI placement and evidence rows. Attach at most two
+bindings after Article selection for SHOW or an executable DO path. A Guide
+without a valid Article section binding is a corpus validation failure, not an
+authoritative answer.
 
 After selecting likely articles/guides, study the selected article material
 before writing the answer:
 
-- First read `selectedArticles[]` from the runner. Its sections, subarticles,
-  settings anchors, public URL, config URL, media URLs, tags, and relations are
-  loaded from selected article `contentRef` and are answer material.
-- First read the returned shipped guide sections (`answer.instructions[]`,
-  `guidance.guides[].textSections`, `articleReferences`, image URLs, and section
-  anchors). These sections are answer material, not just citations.
+- Read `selectedArticles[]` and `answer.sectionRefs` from the runner. They carry
+  the canonical Article identity and bounded answer material.
+- Use `show.evidence` only to show where a control is. Screenshot presence is
+  never proof that a requested change executed.
 - If those shipped sections do not contain enough detail for the customer's
   question, run `article-fetch` / `segmently-cli-articles` read-only for the
-  selected `articleAlias` or `articleId` and use the fetched article sections as
+  selected `articleAlias` or `articleId` and use the hash-verified Article as
   additional answer material.
 - Do not fill article gaps from general Segmently assumptions. If the shipped
-  sections plus read-only article fetch still do not cover the question, say
+  selected sections plus read-only Article fetch still do not cover the question, say
   what coverage is missing and ask for the missing context or hand off to the
   relevant Segmently skill.
 
@@ -160,7 +130,7 @@ Use `--mode show` when the customer asks to be shown where something is, and
 after the model has selected a real action from `runtime/do-action-reference.json`.
 If the semantic match is an article with no guide rows, pass only
 `--articleAliases`; the runner will still return `selectedArticles[]`,
-article URLs, config URLs, subarticles, and article-fetch metadata.
+Article URLs, config URLs, canonical section refs, and Article-fetch metadata.
 
 Do not use:
 
@@ -176,11 +146,9 @@ DO, `--actionId`.
 Treat the returned contract as authoritative for:
 
 - `selectedArticles[]`
-- `answer.publicArticleLinks`
-- `answer.imageUrls`
-- `answer.articleReferences`
-- `answer.customerVisibleGuideAssets`
-- `answer.showDoOptions`
+- `answer.sectionRefs`
+- `answer.grounding`
+- `guideBindings`
 - `action`
 - `show`
 - `articleFetch`

@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "analytics-add-provider",
+  "contentHash": "a141ca98d4734d5ee18aae6278215537ec4ded76c3eacda6021f893fbd58112c",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "analytics-add-provider-add-destination-text",
+      "title": "Add a destination",
+      "excerpt": "Add a destination | Use Add to open the provider picker, then choose from 15+ client and server platforms (Amplitude, GA4, GTM, Mixpanel, PostHog, Facebook Pixel, TikTok Pixel, custom scripts, and server-side variants)."
+    },
+    {
+      "sectionId": "analytics-add-provider-verify-text",
+      "title": "Publish and verify",
+      "excerpt": "Publish and verify | After saving, publish a test Web Placement and watch the provider dashboard for incoming events (page views, screen changes, actions, checkout steps). If nothing arrives within 30 seconds, recheck the ID or token."
+    }
+  ]
+}

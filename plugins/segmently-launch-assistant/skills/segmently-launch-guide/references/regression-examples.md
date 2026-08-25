@@ -15,9 +15,9 @@ only when the customer explicitly asks for one. If the customer asks "is there
 an article with pictures/screenshots?", answer yes when the built-in reference
 has text plus screenshot evidence; do not volunteer that a public URL is absent.
 
-For Screen Editor screen/block articles, prefer the URL from
-`help-article-reference.json` over `guide-evidence.fullArticleLink` because the
-feature-guide row and the published Content Plan article are separate records.
+For Screen Editor screen/block articles, use the canonical URL from the matching
+row in `references/corpus-v2/article-directory.json`. Guide routing and SHOW
+evidence are separate concerns and must not override the published Article URL.
 
 Known hard failure pattern: after answering from the correct guide, do not add a
 closing note that says or implies the article, guide, or ready reference is

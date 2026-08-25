@@ -1,0 +1,23 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-flexible-layout-button-sections",
+  "contentHash": "660ce504d54f595628e368d1e77a903bdff2a671c0d1597b29701add471d20a0",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "heading-style-the-button-container",
+      "title": "Style the button container",
+      "excerpt": "Style the button container"
+    },
+    {
+      "sectionId": "heading-style-the-label",
+      "title": "Style the label",
+      "excerpt": "Style the label"
+    },
+    {
+      "sectionId": "heading-write-the-label",
+      "title": "Write the label",
+      "excerpt": "Write the label"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "help-block-paywall-body",
+  "contentHash": "5f42d9bdddaf139f4e541a30cb28af0e9e4b6ff8585f51da65d5b5a8dad669aa",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "article-first-applies-to",
+      "title": "Applies to: Paywall screens.",
+      "excerpt": "Applies to: Paywall screens."
+    },
+    {
+      "sectionId": "intro",
+      "title": "Paywall Body — every setting",
+      "excerpt": "Paywall Body — every setting | The paywall's words — the headline and subtitle (with full typography) and the feature-benefit bullet list, including each bullet's box style, padding, and per-bullet title / subtitle / icon styling. This guide documents every setting of the Paywall Body block, grouped by area. Each setting matches a real control in the screen editor."
+    },
+    {
+      "sectionId": "set-paywallbody-content-copy-subtitle",
+      "title": "Supporting subtitle",
+      "excerpt": "Supporting subtitle | The supporting line just under the headline. Use it to back up the promise with a reason to believe or a specific outcome (e.g. 'Cancel anytime, no questions asked'). You can drop in @variables to reference the user's earlier answers for a personal touch. Turn it off to hide the subtitle."
+    },
+    {
+      "sectionId": "set-paywallbody-content-copy-subtitle-appearance",
+      "title": "Style the paywall subtitle",
+      "excerpt": "Style the paywall subtitle | Styles the subtitle line: font, size, weight, color, alignment, and the spacing around it. Keep it smaller and lighter than the headline so the main benefit stays dominant. Leave the theme defaults unless the subtitle is hard to read against your background."
+    },
+    {
+      "sectionId": "set-paywallbody-content-copy-title",
+      "title": "Paywall headline",
+      "excerpt": "Paywall headline | The big headline at the top of the paywall, your one shot to state your strongest benefit in a few words (e.g. 'Reach your goal in 4 weeks'). You can insert @variables like @{user.name} to echo answers the user gave earlier, which makes the offer feel personal and lifts conversion. Turn it off to hide the headline entirely."
+    },
+    {
+      "sectionId": "set-paywallbody-content-copy-title-appearance",
+      "title": "Style the paywall headline",
+      "excerpt": "Style the paywall headline | Styles the headline: font, size, weight, color, alignment, and the spacing around it. Keep it large and high-contrast so the main benefit is the first thing the eye lands on. Most users can leave the theme defaults; change them only if the title is hard to read against your background."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-appearance",
+      "title": "Style the feature bullets",
+      "excerpt": "Style the feature bullets | Sets the background color, border, and corner rounding applied to every bullet in the list at once. Use a subtle card background or border only if you want the bullets to read as a grouped card; otherwise the theme defaults look cleanest. Styling once keeps all bullets consistent."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-appearance-insets",
+      "title": "Space inside each bullet",
+      "excerpt": "Space inside each bullet | Sets the breathing room inside each bullet, between its text or icon and the bullet's edge, adjustable on the top, bottom, left, and right. Increase it if bullets feel cramped, decrease it to fit more on screen. The theme default is usually fine, so tweak only if the spacing looks off in preview."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-items",
+      "title": "Benefit checklist",
+      "excerpt": "Benefit checklist | The list of benefits below the subtitle, your main proof the offer is worth paying for. Add one bullet per concrete benefit (what's included, guarantees, results), each with a title, optional subtitle, and icon, and drag to reorder. Aim for 3 to 5 punchy bullets, since too many dilute the message. Use 'Add Bullet' to create one, or clone an existing bullet to keep the styling consistent."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-items-0-image-appearance",
+      "title": "Style the bullet icons",
+      "excerpt": "Style the bullet icons | Styles the small icon or image on each bullet: how it sits in its box (fit shows the whole image, fill crops it to cover), how rounded the corners are, and the spacing around it, applied to all bullets at once. Keep icon size and shape consistent so the checklist looks tidy. The theme defaults are a safe start."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-items-0-subtitle-appearance",
+      "title": "Style the bullet subtitles",
+      "excerpt": "Style the bullet subtitles | Styles the secondary line under each bullet title: font, size, weight, color, alignment, and spacing, applied to all bullets at once. Keep it smaller and lighter than the bullet title so the benefit itself stays the focus. Leave the theme defaults unless the text is hard to read."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-items-0-title-appearance",
+      "title": "Style the bullet titles",
+      "excerpt": "Style the bullet titles | Styles the main line of every feature bullet: font, size, weight, color, alignment, and spacing, applied to all bullets at once. Keep bullet titles bold and easy to read so each benefit lands at a glance. The theme defaults usually work, so change them only if a benefit is hard to read."
+    },
+    {
+      "sectionId": "set-paywallbody-content-options-layout-insets",
+      "title": "Space around the bullet list",
+      "excerpt": "Space around the bullet list | Sets the space around the whole list of bullets, separating it from the subtitle above and the plans below. (Bullet padding spaces the inside of one bullet; this spaces the entire group.) Add space if the list feels jammed against the title or the plan cards; the theme default is a safe start."
+    }
+  ]
+}

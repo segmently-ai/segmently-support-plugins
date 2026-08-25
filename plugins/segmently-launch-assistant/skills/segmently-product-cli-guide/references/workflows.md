@@ -44,6 +44,38 @@ workflows.
 
 ## Public Strategy, Blocks, And Screens Flow
 
+For reusable block-library examples, delegate to `screen-block-builder` before
+strategy insertion. Capture or create a project example with a dry-run receipt,
+review blueprint and full preview separately, ask approval, apply with the
+reviewed checksum, then get/readback. The exact local agent path must consume a
+CLI-exported `prompt-packet`; it must not assemble prompts from files.
+
+```bash
+segmently strategies blocks library capture <strategyId> <blockId> --id <exampleId> --out block-library-draft.json --dry-run [projectId]
+segmently strategies blocks library validate --file block-library-draft.json [projectId]
+segmently strategies blocks library prompt-packet --request-file <compile-input.json> --out <packet.json> [projectId]
+segmently strategies blocks library create <exampleId> --file block-library-draft.json --dry-run [projectId]
+segmently strategies blocks library create <exampleId> --file block-library-draft.json --apply --dry-run-checksum <reviewedChecksum> [projectId]
+segmently strategies blocks library get <exampleId> --out saved-example.json [projectId]
+```
+
+Use staged placement as the primary insertion policy: create the screenless
+draft, place/connect it, review the server-resolved compact neighbour/evidence/
+variable context, then adapt with the reviewed fingerprint.
+
+```bash
+segmently strategies blocks from-library <strategyId> --example <exampleId> --mode staged --position 120,80 [projectId]
+segmently strategies blocks review-library <strategyId> <stagedBlockId> --evidence-mode strategy-default [projectId]
+segmently strategies blocks adapt-library <strategyId> <stagedBlockId> --model <projectModelId> --evidence-mode strategy-default --expected-context-fingerprint <reviewedFingerprint> --wait [projectId]
+```
+
+Use `selected-only` with an identity-only `--evidence-file`, or `no-evidence`
+when the block must not use strategy evidence. If review returns variable
+conflicts, repeat review and adapt with the same explicit
+`--variable-resolutions-file`; adapt must not start while any conflict is
+unresolved. Immediate mode is secondary, runs before insertion, and has no
+placed-neighbour context. Insert-as-is is explicit and non-AI.
+
 1. Start from a completed insights analysis. Generate and review
    insight-derived variables when the strategy should use accepted variables
    from that analysis.

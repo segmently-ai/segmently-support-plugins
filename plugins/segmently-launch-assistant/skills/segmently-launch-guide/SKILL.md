@@ -22,52 +22,38 @@ chosen — progressive disclosure keeps the first read small.
 
 ## Built-in article and guide identity
 
-The packaged article corpus is the first source for customer answers:
+Published Segmently Articles are the only source of customer product knowledge.
+The installed plugin ships a compact V2 discovery projection and bounded
+offline fallback, never the maintainer SupportFlow graph or a competing Guide
+knowledge corpus:
 
 - `references/routing-quick-index.json` — small intent fast path; check it
   FIRST (see the loop below).
-- `references/article-directory.json` + `references/article-search-index.json`
-  — the first-pass article search surfaces (aliases, titles, summaries, tags,
-  keywords, subarticles, typed relations, inverted index).
-- `references/article-search-synonyms.json` — reviewed customer-language
-  synonym overlay for candidate selection.
-- `references/article-summary-overrides.json` — reviewed searchable summary
-  source; title-only summaries are invalid for customer-facing routing.
-- `references/article-registry.json` — compact selected-article routing
-  contract: public URL, config URL, subarticles, settings anchors, typed
-  SupportFlow relations, and `contentRef`.
-- `references/articles/<articleAlias>.json` — heavy article material (sections,
-  subarticle content, settings anchors, media, FlexibleLayout nodes). Load only
-  for selected articles via `contentRef`.
-- `references/support-knowledge-graph/` — generated static graph projection
-  with typed edges for evidence tracing and relation questions. Not a database
-  or local runtime dependency; the customer installs nothing for it.
-- `references/guide-registry.json`, `references/teach-reference.json`,
-  `references/guide-evidence.json`, `references/help-article-reference.json` —
-  guide identity, screen/block teach corpus, screenshot evidence, and published
-  Screen Editor article URLs. The two guide catalogs are compact directories:
-  heavy per-guide `sections` load only for selected guides via `contentRef`
-  from `references/guides/<guideKey>.json` (same pattern as article content).
-  Guides are evidence/answer material — they are never a navigation source and
-  never a routing peer of articles.
+- `references/corpus-v2/article-directory.json` — alias, title, reviewed short
+  summary, public URL, config URL, canonical hash, locale, and product area.
+- `references/corpus-v2/article-section-index.jsonl` and
+  `article-search-index.json` — canonical Article sections and reviewed compact
+  postings. Candidate selection is bounded to five results.
+- `references/corpus-v2/article-fallback/<articleAlias>.json` — bounded offline
+  excerpts loaded only if the selected public Article config is unavailable or
+  does not match its canonical hash.
+- `references/corpus-v2/guide-routing-index.json` — thin Guide-to-Article
+  routing used when the model selects a Guide key.
+- `references/corpus-v2/guide-bindings.json` — UI anchor, screenshot/SHOW
+  evidence, action IDs, and canonical Article section pointers. Load it only
+  for SHOW; it contains no competing procedural explanation.
 
-Search order: articles first (directory, search index, synonyms, subarticles,
-settings, typed relations), guides second. Do not search guides as a peer corpus
-in the first retrieval pass; a guide with no linked article is
-`guideOnlyEvidence` — a corpus gap, not an authoritative answer. If a
-subarticle is the best match, keep the parent article identity and answer from
-the subarticle detail.
+Search Articles first. Guides are placement/evidence bindings, not a second
+knowledge source. If no reviewed Article candidate exists, ask one focused
+clarification or hand off; never answer from general Segmently assumptions.
 
-Selected article content is answer material, not just a citation:
-study the returned selected article/guide content (`selectedArticles[]`
-sections) before answering; if it is too thin, use the read-only
-`article-fetch` path through
-`segmently-cli-articles`. Do not fill gaps from general Segmently assumptions;
-say what verified coverage is missing instead.
+Selected Article content is answer material, not just a citation. Study the
+returned `selectedArticles[]` and section refs; the runner hash-verifies the
+primary public config and uses the shipped fallback honestly when it cannot.
+Use the read-only `article-fetch` path for the complete Article.
 
-Article identity rule: a row with `articleId`, `articleAlias`,
-`referencePath`, or `localArticlePath` is an existing built-in article/guide
-even when its public URL field is empty. Never describe it as missing — see
+Article identity rule: a row with `articleId` and `articleAlias` in the V2
+directory is an existing built-in Article. Never describe it as missing — see
 `references/regression-examples.md` for the binding positive-framing wording
 (RU + EN) and the known failure patterns.
 
@@ -95,11 +81,9 @@ even when its public URL field is empty. Never describe it as missing — see
    node runtime/customer-response-runner.mjs --prompt "<customer request>" --articleAliases "<articleAlias1>,<articleAlias2>"
    ```
 
-   Treat the returned contract as the source of truth for `guidance.guides`,
-   `selectedArticles`, `answer.publicArticleLinks`, `answer.imageUrls`,
-   `answer.articleReferences`, `answer.builtInArticleReferences`,
-   `answer.customerVisibleGuideAssets`, `show`, `action`, and
-   `completionClaim`. Raw `--prompt`-only runs are a
+   Treat the returned V2 contract as the source of truth for
+   `selectedArticles`, `answer.sectionRefs`, `guideBindings`, `show`, `action`,
+   `articleFetch`, and `completionClaim`. Raw `--prompt`-only runs are a
    debug-only compatibility fallback/regression surface for known phrasing,
    never the live customer routing path. Do not use a raw prompt runner
    result as the final semantic decision.
@@ -115,11 +99,9 @@ even when its public URL field is empty. Never describe it as missing — see
    customer the new state. After publish, return the canonical public URL via
    the two-read workflow in `references/backends.md`; do not guess the host.
 
-When `answer.customerVisibleGuideAssets.mustShowInCustomerAnswer=true`, include
-the compact visible materials block (article URLs, concrete image URLs, guide
-alias/reference path) — the RU shape is in
-`references/regression-examples.md`. Show the links; do not replace them with
-"there is a guide" prose.
+For SHOW, include the selected public Article link and concrete evidence URLs
+from `show.evidence`. Evidence shows where the control is; it never proves that
+a requested change executed.
 
 Completion wording: use "done"/"готово" phrasing only after a DO runner
 executed with a passing verification read, or after a SHOW runner opened a
@@ -201,8 +183,8 @@ When the host exposes subagents (Claude Code plugin agents; Codex
 `multi_agent`), delegate heavy side work instead of loading it into the main
 conversation:
 
-- `segmently-corpus-search` — resolve a customer intent against the large
-  shipped indexes/knowledge graph; it returns only selected ids + evidence.
+- `segmently-corpus-search` — resolve a customer intent against the compact
+  Article-first Corpus V2 indexes; it returns only selected ids + evidence.
 - `segmently-tool-preflight` — run tool/auth/launch-progress preflights and
   return structured pass/fail results (no token values).
 - `segmently-browser-show` — own the non-mutating headed SHOW session end to
@@ -268,6 +250,7 @@ customer skill and let it own the command shape:
 | Help / content-plan articles | `segmently-cli-articles` (+ `segmently-cli-content-plan-guide`) |
 | Image uploads to the CDN | `segmently-cli-image-upload` |
 | Product page / insights | `segmently-product-cli-guide` |
+| Reusable strategy block examples, block-library authoring, local exact-packet eval | `screen-block-builder` |
 
 In customer prose, call this the authorized Segmently CLI or browser helper;
 name a companion skill id only when debugging, explaining a missing capability,
@@ -309,6 +292,7 @@ customer-facing companion skills so DO/TEACH can work without project source:
 - `segmently-cli-figma-webembed-import`
 - `segmently-cli-image-upload`
 - `segmently-product-cli-guide`
+- `screen-block-builder`
 - `playwright-bowser`
 - `segmently-test-kit`
 - `claude-design` when the installed plugin includes Claude Code delivery or
@@ -319,6 +303,14 @@ the modes still supported by the installed skills. Do not replace a missing
 customer skill with internal/admin tooling. Claude Design requests route to
 `claude-design` first — the two-stage owner split is in
 `references/routing-modes.md`.
+
+For block-library work, route to `screen-block-builder` before insertion. It
+keeps full previews view-only, consumes the exact CLI-exported runtime packet,
+and owns dry-run → explicit approval → apply → readback. Staged placement is
+the primary policy when the installed CLI advertises it; immediate adaptation
+is secondary and must not be described as having placed-neighbour context. If
+the public `prompt-packet` adapter is absent, report that capability gap instead
+of assembling an approximate prompt.
 
 ## Doing it in the editor (e2e) — DO, SHOW, TEACH
 
@@ -355,18 +347,17 @@ to the customer with the route's `customerSafeLabel` only.
 
 For field-level TEACH, use the same model-selected catalog flow:
 
-1. Read `references/semantic-routing.md`, then select likely guide keys from
-   `references/guide-evidence.json`, `references/help-article-reference.json`,
-   and, for screen/block fields, `references/teach-reference.json`. The model
-   owns this meaning step.
+1. Read `references/semantic-routing.md`, search the V2 Article directory/index,
+   and select likely Article aliases. If the host has already selected a Guide
+   key, resolve it through `references/corpus-v2/guide-routing-index.json`. The
+   model owns this meaning step.
 2. Run `node runtime/customer-response-runner.mjs --prompt "<customer request>"
-   --guideKeys "<selected-guide-keys>"` and treat its `answer.articleReferences`,
-   `answer.builtInArticleReferences`, `answer.customerVisibleGuideAssets`,
-   `answer.imageUrls`, `show`, and `action` objects as the article identity and
-   execution contract source of truth.
-3. Answer from the matched guide/section/field meaning in customer language,
-   include the materials block, and offer the next executable step (SHOW
-   without changes, or DO after the customer provides the target + value). The
+   --guideKeys "<selected-guide-keys>"` and treat its `selectedArticles`,
+   `answer.sectionRefs`, `show`, and `action` objects as the
+   knowledge/evidence/execution contract source of truth.
+3. Answer from the matched Article section in customer language, include the
+   public Article link, and offer the next executable step (SHOW without
+   changes, or DO after the customer provides the target + value). The
    proven per-case defaults — button fonts, Stripe subscriptions,
    selected-product paywalls, list/paywall media, RU wording — are in
    `references/regression-examples.md`; consult it before composing the answer.
@@ -389,8 +380,9 @@ ids, or expose internal file paths.
 - Scenario index: `references/scenarios.md`; per-leg backend + verify:
   `references/backends.md`; milestones: `references/project-status.md`.
 - First-run TEACH tutorial: `references/teach.md`; field-level corpus:
-  `references/teach-reference.json`; guide evidence:
-  `references/guide-evidence.json`.
+  `references/corpus-v2/article-section-index.jsonl`; Guide routing/evidence:
+  `references/corpus-v2/guide-routing-index.json` and
+  `references/corpus-v2/guide-bindings.json`.
 - DO action registry + runners: `runtime/do-action-reference.json`,
   `runtime/editor-do-runner.mjs`, `runtime/cli-do-runner.mjs`,
   `runtime/e2e-do-runner.mjs`, `runtime/show-runner.mjs`.
@@ -453,9 +445,9 @@ files and delegates to the customer `segmently` CLI and the `segmently-cli-*`
 skills. It never imports internal source, so it runs as an installed plugin in
 any project.
 
-`references/scenarios.matrix.json`, `references/teach-reference.json`, and
-`references/routing-quick-index.json` are **GENERATED** — do not hand-edit
-them. Maintainers edit the SupportFlow catalogs and re-bake:
+`references/scenarios.matrix.json`, `references/routing-quick-index.json`, and
+`references/corpus-v2/` are **GENERATED** — do not hand-edit them. Maintainers
+edit the SupportFlow catalogs/Article overlays and re-bake:
 
 This target is generated by the source packager before publishing a skill or plugin version. Do not hand-edit generated references in this target; update the SupportFlow source catalogs and re-run the source packager instead.
 

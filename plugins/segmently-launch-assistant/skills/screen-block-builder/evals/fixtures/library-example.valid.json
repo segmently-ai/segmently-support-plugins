@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "name": "Progress proof",
+  "description": "A reusable proof beat that makes gradual progress feel believable.",
+  "tags": ["motivation", "progress-proof"],
+  "scopeMetadata": { "blockType": "motivation" },
+  "screensCount": 1,
+  "contractSummary": { "inputs": 0, "outputs": 0 },
+  "blueprint": {
+    "strategicBlock": {
+      "id": "progress_proof",
+      "entityId": "progress_proof",
+      "name": "Progress proof",
+      "blockType": "motivation",
+      "description": "Make progress feel believable before the next ask.",
+      "firstScreenId": "proof_intro"
+    },
+    "screens": [
+      {
+        "id": "proof_intro",
+        "name": "Reflect progress",
+        "screenType": "HeroContent",
+        "content": {
+          "copy": {
+            "title": "Small steps can become a routine",
+            "subtitle": "A calm proof beat before the next decision."
+          }
+        },
+        "position": { "x": 0, "y": 0 },
+        "aiMeta": {
+          "dataMapping": [],
+          "variableRealizations": [],
+          "assetIntents": [
+            {
+              "slotRole": "hero",
+              "designFunction": "make gradual progress feel tangible",
+              "visualJob": "show an achievable upward rhythm",
+              "supportsContentPath": "copy.title",
+              "linkedVariableIds": [],
+              "required": true
+            }
+          ]
+        }
+      }
+    ],
+    "instructions": [
+      { "level": "must", "text": "Adapt the proof beat to the target strategy." }
+    ],
+    "contract": {
+      "inputVariables": [],
+      "outputAssignment": []
+    },
+    "dataSemantics": {
+      "screens": [
+        {
+          "screenId": "proof_intro",
+          "dataMapping": [],
+          "variableRealizations": []
+        }
+      ]
+    },
+    "assetExamples": [
+      {
+        "screenId": "proof_intro",
+        "slotKey": "hero",
+        "promptTemplate": "calm editorial illustration of gradual progress",
+        "negativePrompt": "brand marks or unsupported results",
+        "style": "warm editorial",
+        "aspectRatio": "4:5",
+        "assetType": "image"
+      }
+    ],
+    "strategyVariables": {}
+  },
+  "previewScreens": [
+    {
+      "id": "proof_intro",
+      "name": "Reflect progress",
+      "tags": [],
+      "screenType": "HeroContent",
+      "content": {
+        "copy": {
+          "title": "Small steps can become a routine",
+          "subtitle": "A calm proof beat before the next decision."
+        }
+      },
+      "position": { "x": 120, "y": 80 },
+      "data": {
+        "appearance": { "backgroundColor": "#F6F1E8" }
+      }
+    }
+  ],
+  "sourceRef": {
+    "strategyId": "strategy_source",
+    "blockId": "block_source",
+    "blockEntityId": "progress_proof"
+  },
+  "sourceChecksum": "fnv1a:68d6dc08",
+  "enabled": true
+}

@@ -1,0 +1,51 @@
+{
+  "skill_name": "screen-block-builder",
+  "evals": [
+    {
+      "id": "exact-runtime-packet",
+      "prompt": "Prepare a packet-only local adaptation run for a reusable block example.",
+      "assertions": [
+        "runtime packet hash validates",
+        "hash covers exact provider messages and optional output schema",
+        "Google effective suffix is hashed while outputSchema is omitted",
+        "provider request excludes renderInput and branch",
+        "provider-neutral userMessage is held back as debug evidence",
+        "held-back evaluator context is separate",
+        "previewScreens and aiAssets are rejected"
+      ]
+    },
+    {
+      "id": "library-dual-representation",
+      "prompt": "Validate and render a block-library example before a write.",
+      "assertions": [
+        "blueprint and full preview ordered ids match",
+        "fixture satisfies the shared v2 fields and fnv1a checksum",
+        "the prior self-consistent but product-incompatible shape fails",
+        "preview is labelled render-only",
+        "blueprint generated asset leakage is rejected"
+      ]
+    },
+    {
+      "id": "agent-output-domain-contract",
+      "prompt": "Evaluate a fresh agent response without giving the agent expected output.",
+      "assertions": [
+        "schema-valid output passes",
+        "missing dataUsage fails",
+        "source generated assets fail",
+        "evidence is advisory and does not replace runtime task debug"
+      ]
+    },
+    {
+      "id": "customer-safe-authoring-loop",
+      "prompt": "Create a project library example safely through the CLI.",
+      "assertions": [
+        "skill requires dry-run approval apply authoritative readback",
+        "delete completion uses apply readback.exists=false and treats later get as expected not_found",
+        "complete UpdateBlockFromLibraryCompileInput example validates",
+        "skill names no source prompt paths",
+        "skill contains no privileged catalogue syntax, repository path, test selector, or secret",
+        "packaged skill parity is deterministic and drift is detected"
+      ]
+    }
+  ]
+}

@@ -24,6 +24,16 @@
       "category": "selectors"
     },
     {
+      "name": "AD_CREATIVE_BATCH",
+      "sourceModule": "selectors/ad-creative",
+      "category": "selectors"
+    },
+    {
+      "name": "AD_CREATIVE_INSIGHT",
+      "sourceModule": "selectors/ad-creative",
+      "category": "selectors"
+    },
+    {
       "name": "addBlockToCanvas",
       "sourceModule": "strategy/strategy-canvas-helpers",
       "category": "strategy"
@@ -429,6 +439,11 @@
       "category": "canvas"
     },
     {
+      "name": "CREATIVE_DECISIONS",
+      "sourceModule": "selectors/creative-decisions",
+      "category": "selectors"
+    },
+    {
       "name": "DEFAULT_PAYWALL_ITEMS",
       "sourceModule": "webshell/paywall-helpers",
       "category": "webshell"
@@ -497,6 +512,11 @@
       "name": "disableSaveUserProgress",
       "sourceModule": "webplacement/wp-dialog-helpers",
       "category": "webplacement"
+    },
+    {
+      "name": "doneCanvasThemeEditorV2",
+      "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
     },
     {
       "name": "duplicateFromSelector",
@@ -1042,6 +1062,11 @@
       "name": "loginViaCliToken",
       "sourceModule": "auth/login-via-cli-token",
       "category": "auth"
+    },
+    {
+      "name": "MEDIA_LIGHTBOX",
+      "sourceModule": "selectors/media-lightbox",
+      "category": "selectors"
     },
     {
       "name": "moveABTestToFolder",

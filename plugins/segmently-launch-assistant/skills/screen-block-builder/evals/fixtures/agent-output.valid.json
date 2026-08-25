@@ -1,0 +1,111 @@
+{
+  "result": {
+    "onboardingStrategySequence": [
+      {
+        "id": "<staged-block-id>",
+        "name": "Your progress can fit real life",
+        "blockType": "motivation",
+        "description": "Rebuild the source proof pattern as one concise, review-grounded bridge between goal selection and the personalized plan. The screen uses only the selected review, keeps the tone warm and autonomy-supportive, and completes the block without collecting another variable.",
+        "instructions": [
+          {
+            "level": "mustHave",
+            "text": "Ground the credibility message only in the selected review about achievable progress after a long workday."
+          },
+          {
+            "level": "should",
+            "text": "Use a concise, autonomy-supportive handoff from the selected goal into the personal plan."
+          }
+        ],
+        "firstScreenId": "screen1",
+        "blockContract": {
+          "inputVariables": [],
+          "outputAssignment": []
+        },
+        "dataUsage": {
+          "items": [
+            {
+              "sourcePath": "@review[review-achievable-progress]",
+              "value": "Users value progress that feels achievable after a long workday.",
+              "justification": "Supports the single credibility claim used in the bridge screen.",
+              "category": "social_proof",
+              "purposeId": "progress-proof",
+              "sourcePriority": 1
+            }
+          ],
+          "purposes": [
+            {
+              "id": "progress-proof",
+              "title": "Credible progress bridge",
+              "summary": "Make the next plan step feel achievable without promising an outcome.",
+              "itemIndices": [
+                0
+              ],
+              "appliedTo": [
+                "screen1"
+              ],
+              "category": "social_proof"
+            }
+          ]
+        },
+        "screens": [
+          {
+            "id": "screen1",
+            "name": "Achievable progress bridge",
+            "screenType": "HeroContent",
+            "content": {
+              "copy": {
+                "title": "Small steps can fit real life",
+                "subtitle": "Users value progress that still feels achievable after a long workday."
+              },
+              "actionBar": {
+                "primary": {
+                  "label": "See my plan",
+                  "action": {
+                    "kind": "complete",
+                    "edges": []
+                  }
+                }
+              }
+            },
+            "aiMeta": {
+              "blockRole": "Provide one grounded credibility gain before the personal-plan handoff.",
+              "dataMapping": [
+                {
+                  "sourcePath": "@review[review-achievable-progress]",
+                  "value": "Users value progress that feels achievable after a long workday.",
+                  "justification": "Shapes the subtitle without adding a guaranteed outcome.",
+                  "category": "social_proof",
+                  "purposeId": "progress-proof",
+                  "sourcePriority": 1
+                }
+              ],
+              "motivationSpec": {
+                "class": "gain:proof",
+                "targetsNeed": "vital-economy-of-effort",
+                "valence": "growth",
+                "reflectsJtbd": false,
+                "justified": true,
+                "sensitive": false,
+                "relevant": true
+              },
+              "variableRealizations": [],
+              "assetIntents": [
+                {
+                  "slotRole": "hero",
+                  "designFunction": "trust",
+                  "visualJob": "Make an achievable post-work rhythm feel calm and credible.",
+                  "supportsContentPath": "content.copy.title",
+                  "linkedSourceRefs": [
+                    "@review[review-achievable-progress]"
+                  ],
+                  "linkedVariableIds": [],
+                  "required": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

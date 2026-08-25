@@ -1,0 +1,18 @@
+{
+  "corpusSchemaVersion": 2,
+  "articleAlias": "custom-domain-verification",
+  "contentHash": "131a736d8a32fe2e17518762d356972a7403bf5ac1b7b4f01be5c66b9ed050a1",
+  "locale": "en",
+  "sections": [
+    {
+      "sectionId": "custom-domain-verification-custom-domain-verificat-text",
+      "title": "Verify before you publish",
+      "excerpt": "Verify before you publish | Click 'Verify Now' and Segmently checks the DNS records you added at your domain provider. The domain has to reach a 'Verified' status before it can reliably serve your live funnel. If it shows 'Failed' or 'Pending DNS', don't re-enter the records — DNS changes take time to spread across the internet (usually minutes, sometimes up to 48 hours). Just wait and click 'Verify Now' again."
+    },
+    {
+      "sectionId": "custom-domain-verification-custom-domain-verificat-text-2",
+      "title": "What a verified domain unlocks",
+      "excerpt": "What a verified domain unlocks | Once the status turns to 'Verified', the domain becomes selectable as the destination when you publish a Web Placement. Your live funnel link then carries your own brand (for example funnel.example.com) instead of the default Segmently address — which looks more trustworthy in ads and emails and tends to lift click-through."
+    }
+  ]
+}
