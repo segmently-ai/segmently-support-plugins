@@ -363,3 +363,210 @@ Reading it, every figure quoted from the run:
   and an empty `label=` in the recommended links. A real answer sets both in the base file
   before it runs `ue rank`, and prints the privacy sentence before those links when the budget
   or any other figure in them is the reader's.
+
+## UC-11 — hypothesis card: a synthetic meditation app, sprint horizon 21 days
+
+Every input below is invented (the labels say SYNTHETIC): a process dry run of the card, not a
+view of any product. Every sentence below describes THIS run at $900 a day — at another budget
+which rows are learnable, where a lift lands and every figure change: re-read them from your
+own runs, never from this card. The base is a web paywall — Monthly with a 7-day free trial $19.99 (24 % of
+buy-taps, completion 95 %, trial → paid 45 %, 2.9 charges) and Annual $99.99 (12 %, 97 %,
+1 charge) — at $900 a day, cost per start $1.10, chain 38 % → 55 % → 32 %, card fee 2.90 % +
+$0.30, refunds 3 %, disputes 0.4 % at $15, 88 % open the app. In a session it is the project
+file's scenario; here, get it with:
+
+```bash
+npx -y @segmently/cli ue parse "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill"
+```
+
+and save its `scenario` field as `base.json`.
+
+**Turn 1 — the horizon.** The reader answers 21 days. Nothing else is asked before the table.
+The reader gave no lifts yet, so every lever takes the CLI's default +10 % relative ("assumed
+lift"). ONE run, in JSON; every cell below is that run's own row (rule 9), rounded as the CLI's
+table view rounds it:
+
+```bash
+npx -y @segmently/cli ue rank base.json --horizon 21
+```
+
+| lever | lift | gain / month | ROAS after | population / day | n per arm | days | spend routed | MDE @ 21 d | realistic | note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| p1 | 0.1 | 2666.04 | 1.07 | 818.18 | 2606 | 6.37 | 5733.2 | 0.0549 | true | n/a |
+| p2 | 0.1 | 2666.04 | 1.07 | 310.91 | 1266 | 8.14 | 7329.47 | 0.0625 | true | n/a |
+| close | 0.0453 | 1010.96 | 1.01 | 19.7 | 177 | 17.97 | 16173.25 | 0.0429 | true | n/a |
+| p3 | 0.1 | 2666.04 | 1.07 | 171 | 3420 | 40 | 36000 | 0.1386 | false | not at this traffic: within 21 days you can only see a ≥ 13.9% change — test a bigger change, or raise volume |
+| bought | 0.1 | 2666.04 | 1.07 | 54.72 | 3055 | 111.66 | 100493.42 | 0.2332 | false | not at this traffic: within 21 days you can only see a ≥ 23.3% change — test a bigger change, or raise volume |
+| mix | 0.1 | 1377.72 | 1.02 | 54.72 | 12004 | 438.74 | 394868.42 | 0.4906 | false | shifts picks toward Annual, the product whose share move gains the most; not at this traffic: within 21 days you can only see a ≥ 49.1% change — test a bigger change, or raise volume |
+| trialConv | 0.1 | 858.88 | 1.01 | 12.48 | 1931 | 319.55 | 287595.34 | 0.5221 | false | trial clock: 10 days (the longest trial on the paywall, 7 days, + 3 for the first charge); not at this traffic: within 21 days you can only see a ≥ 52.2% change — test a bigger change, or raise volume |
+| renewals | 0.1 | 832.37 | 1 | 11.98 | n/a | n/a | n/a | n/a | false | calendar: one billing period per read |
+
+The run's warnings, one line each: `close` — typed +10 %, landed +4.53 % (`clamped`: completion is
+already 95 % / 97 %); `p1` — `link_round_trip_failed`, so `recommendation.links.first` is n/a
+(the card mints its own link anyway). `base`: `profitPerStart` -0.03,
+`roas` 0.97, `startsPerDay` 818.18. `recommendation.first` `p1`,
+`recommendation.runnerUp` `p2`. Ranked by gain per day of testing: `p1`, `p2` and `close` are learnable inside
+21 days. The population a test can use shrinks at every step — 818.18 funnel starts, 310.91 people past
+step 1, 171 paywall viewers and 54.72 buy-taps a day (`populationPerDay`). Within 21 days you can only
+see a ≥ 13.9 % change on `p3`, a ≥ 23.3 % change on `bought`, a ≥ 49.1 % change on `mix` and a ≥ 52.2 %
+change on `trialConv`. Price is not ranked here — a price test needs the variance of revenue per user
+from your own data.
+
+> These figures are this scenario's arithmetic on the inputs above. The base's chain, prices,
+> product fields, deductions and $900 a day and the 21-day horizon — measured: your project file
+> and your answer. The +10 % on every lever — assumed: `ue rank`'s default ("assumed lift").
+> `p3` (40 days), `bought` (111.66), `mix` (438.74) and `trialConv` (319.55) — not testable soon:
+> past 21 days at this budget; `renewals` — a calendar read.
+
+**Turn 2 — lever and change.** The reader takes `recommendation.first`, `p1` (landing → step 1),
+stage label acquisition, and names the change: the landing's first screen asks one goal
+question (sleep / stress / focus) and routes to the matching step 1.
+
+**Turn 3 — believed lift +12 %.** Land it before any other run:
+
+```bash
+# .ue/synthetic-meditation/card-p1.json: base.json with chain.p1 0.4256 (0.38 × 1.12 = 0.4256, your numbers, prepared),
+# label "SYNTHETIC p1 42.5% (believed)", measuredOn "SYNTHETIC: believed lift, not observed, 2026-09-23"
+npx -y @segmently/cli ue evaluate .ue/synthetic-meditation/card-p1.json --explain
+```
+
+It warns `snapped`: chain.p1 0.4256 → 0.425. p1 typed 42.56 % → landed 42.5 %, so the card's lift
+is the landed one: 0.425 ÷ 0.38 − 1 = 0.118421 (your numbers, prepared). That is above the
+row's `mde` at 21 days (0.0549), so the case goes on:
+
+```bash
+npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.118421
+npx -y @segmently/cli ue stat size --p 0.38 --lift 0.118421
+```
+
+The `p1` row of that override run, field by field:
+
+| field | value |
+|---|---|
+| `lever` | p1 |
+| `lift` | 0.118421 — believed, landed |
+| `gainPerMonth` | 3157.16 |
+| `roasAfter` | 1.09 |
+| `populationPerDay` | 818.18 |
+| `nPerArm` | 1864 |
+| `days` | 4.56 |
+| `spendRouted` | 4100.8 |
+| `mde` @ 21 d | 0.0549 |
+| `realistic` | true |
+| `note` | n/a |
+
+The override run's one warning, in one line although its row is not printed: `close` — typed
++10 %, landed +4.53 % (`clamped`). Its `roasAfter` 1.0898 is the variant's own `kpis.roas`
+1.0898: the row and the variant are one scenario. `ue stat size` prints `nPerArm` 1864 — the same (0.38 is the scenario's own rate).
+
+**The card**, every figure from the runs above:
+
+1. **Horizon and traffic** — 21 days (the reader's); 818.18 funnel starts a day
+   (`base.startsPerDay`); $900 a day.
+2. **Base** — value per buy-tap $16.03 net ($17.59 gross) against a
+   required $16.45; CAC per payer $75.10; profit per start −$0.03; ROAS
+   0.97; "Payback: not covered within 12 months assumes the book's first renewal (monthly 60%) and one steady renewal after it that matches your charges count"; "paywall mix decidable after 6 days · trial verdict after 33 days · annual renewals due at month 12, observable from month 13". The card fee is 2.90 % + $0.30 on the
+   `charged` amount (`feeScheme.base`), kept through a refund. Provenance:
+
+   | input | value | source (`provenance`) |
+   |---|---|---|
+   | `chain.cps` | 1.1 | reader |
+   | `chain.p1` | 0.38 | reader |
+   | `chain.p2` | 0.55 | reader |
+   | `chain.p3` | 0.32 | reader |
+   | Monthly with trial — take, charges, completion, trial conversion | 0.24, 2.9, 0.95, 0.45 | your project file (not the book's values) |
+   | Annual — take, charges, completion, trial conversion | 0.12, 1, 0.97, n/a | your project file (not the book's values) |
+
+   This link carries your numbers in plain text — browser history, referrers and analytics can see it. I can give you the JSON file instead.
+
+   ```bash
+   npx -y @segmently/cli ue link base.json
+   ```
+   `https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill`
+
+   It returns `roundTrip` `ok` and `warnings` `[]`.
+3. **Metric** — key: profit per start, −$0.03. Nearest: `p1` on 818.18 funnel starts a day,
+   today 38 %, `mde` 0.0549 at 21 days. Stage: acquisition.
+4. **Guardrails** — `p2`, the step after `p1`: 8.14 days, `mde` 0.0625; `close`
+   17.97 days, `mde` 0.0429 (landed +4.53 %); past the horizon at their own `days` and `mde`: `p3` 40
+   (0.1386), `bought` 111.66 (0.2332), `mix` 438.74 (0.4906), `trialConv` 319.55 (0.5221); `renewals` a calendar read; CAC per payer $75.10 and payback from the base.
+5. **Hypothesis** — If the landing's first screen asks one goal question and routes to the
+   matching step 1, then `p1` 38 % → 42.5 %, +11.84 % (believed; typed +12 %, landed on the grid);
+   if the lift holds, profit per start −$0.03 → $0.10, ROAS 0.97 → 1.09,
+   +$3,157.16 a month at $900 a day.
+
+   This link carries your numbers in plain text — browser history, referrers and analytics can see it. I can give you the JSON file instead.
+
+   ```bash
+   npx -y @segmently/cli ue link .ue/synthetic-meditation/card-p1.json
+   ```
+   `https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20p1%2042.5%25%20(believed)&cps=1.1&p1=42.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20believed%20lift%2C%20not%20observed%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill`
+
+   It returns `roundTrip` `ok` and one warning, `snapped` — chain.p1 0.4256 → 0.425, the landed value above.
+6. **Change** — [the reader's mockup]. It must move `p1` only; `p2` must not fall — +11.84 % here is
+   cancelled by −10.6 % there (1 ÷ 1.118421 = 0.894, your numbers, prepared).
+7. **Test plan** — 1864 per arm, 4.56 days, $4,100.80 routed through the test, `mde` 0.0549 at
+   21 days; one read at the planned end, no daily peeking.
+8. **Gain if the lift holds** — $3,157.16 a month (`gainPerMonth`); the prices, takes, completion,
+   trial conversion and charges per payer are the base's above — charges are the retention unit.
+9. **Cost** — [the team's hours × rate]. Beside it: $4,100.80 routed over 4.56 days.
+
+   > These figures are this scenario's arithmetic on the inputs above. The base's chain, prices,
+   > product fields, deductions and $900 a day and the 21-day horizon — measured: your project file
+   > and your answers. `p1` +12 % typed, +11.84 % landed — assumed: your belief. The +10 % on every
+   > other lever ("assumed lift"), the book's first renewal behind payback (monthly 60 %) and the
+   > 50/50 split — assumed: `ue rank`'s default, the book and the test design. Whether the change moves `p1` — not testable soon:
+   > 4.56 days at this budget, one read at the end; and, in THIS run, every guardrail row past 21
+   > days at its own `days` — `p3` 40, `bought` 111.66, `mix` 438.74, `trialConv` 319.55 —
+   > with `renewals` a calendar read.
+10. **Read and close** — two synthetic endings at the planned n:
+
+    ```bash
+    npx -y @segmently/cli ue stat read --a 1815/690 --b 1815/752
+    npx -y @segmently/cli ue stat read --a 1815/690 --b 1815/717
+    ```
+
+    | ending | `pA` → `pB` | `lift` | `diff` | `ci95` | `pValue` | `verdict` | `needPerArm` |
+    |---|---|---|---|---|---|---|---|
+    | A | 38.02 % → 41.43 % | 0.0899 | 0.0342 | 0.0023 … 0.066 | 0.0355 | significant | 3220 |
+    | B | 38.02 % → 39.50 % | 0.0391 | 0.0149 | -0.0168 … 0.0466 | 0.3577 | underpowered | 16837 |
+
+    Ending B is `underpowered` — recorded, never "did not work": its observed difference would need
+    16837 per arm; the reader's next move is a bigger change or more traffic.
+
+    Ending A is `significant`. Before the re-base, the realized gain — `read.pB` 0.4143 typed →
+    landed 0.415, so the observed lift is 0.415 ÷ 0.38 − 1 = 0.092105 (your numbers, prepared):
+
+    ```bash
+    npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.092105
+    # re-base: the old base into variants[], the decision into decisions[], an observed-inputs
+    # document with 1815/690 and 1815/752; the scenario with chain.p1 = read.pB, label
+    # "SYNTHETIC re-based on test A", measuredOn "SYNTHETIC: p1 observed in test A (1815/752), 2026-10-01"
+    npx -y @segmently/cli ue evaluate .ue/synthetic-meditation.json --explain
+    ```
+
+    The run's one warning: `close` — typed +10 %, landed +4.53 % (`clamped`). Realized gain
+    $2,455.56 a month (`gainPerMonth`; its `roasAfter` 1.06 is the re-based ROAS). The re-based evaluate beside the base: profit per start −$0.03 → $0.07, ROAS
+    0.97 → 1.06, CAC per payer $75.10 → $68.77, payback not covered → "Payback: covered by charge 1, in month 5 assumes the book's first renewal (monthly 60%) and one steady renewal after it that matches your charges count". Drift: `p1` scenario 38 % → observed 41.43 % (+3.43 points); the re-based scenario carries the
+    landed 41.5 % (`snapped`).
+
+    This link carries your numbers in plain text — browser history, referrers and analytics can see it. I can give you the JSON file instead.
+
+    ```bash
+    npx -y @segmently/cli ue link .ue/synthetic-meditation.json
+    ```
+    `https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20re-based%20on%20test%20A&cps=1.1&p1=41.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20p1%20observed%20in%20test%20A%20(1815%2F752)%2C%202026-10-01&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill`
+
+    It returns `roundTrip` `ok` and one warning, `snapped` — chain.p1 0.4143 → 0.415.
+
+> These figures are this scenario's arithmetic on the inputs above, every one of them invented
+> for the dry run. Cost per start $1.10, the chain 38 % → 55 % → 32 %, Monthly with trial $19.99
+> and Annual $99.99 with their takes (24 % / 12 %), charges (2.9 / 1), completion (95 % / 97 %)
+> and trial conversion (45 %), the $900 a day, the fee, refunds, disputes and the 88 % who open
+> the app, the 21-day horizon and the test counts — measured: your project file and your answers
+> (every list below is THIS run's at $900 a day — rebuild each from your own table).
+> The believed lift on `p1` — +12 % typed, +11.84 % landed — the default +10 % on every other
+> lever ("assumed lift"), the book's first renewal behind payback (monthly 60 %) and the 50/50
+> split — assumed: your belief, `ue rank`'s default, the book and the test design. `p3` (40 days), `bought` (111.66 days), `mix` (438.74 days) and
+> `trialConv` (319.55 days) — not testable soon: past 21 days at this budget; `renewals` — a
+> calendar read, one billing period per read.

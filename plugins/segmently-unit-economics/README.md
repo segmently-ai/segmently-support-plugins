@@ -77,6 +77,9 @@ Ask in plain words; the skill asks three questions at most, then shows numbers.
   visible inside a month.
 - "How long until we know?" — the sample size and the calendar days a test needs at your
   budget, or a plain "not testable at this volume" with the smallest change you could see.
+- "What should we test next, and what does the card say?" — the hypothesis card: the metric
+  first (ranked at the horizon you name), then your change and the lift you believe in, the
+  test plan, and after the test the read and the re-based numbers. Your hours stay yours.
 - Paste any https://www.segmently.ai/unit-economics link back and it reads the scenario out of the link.
 
 Only `ue init` and the skill's variant files write anything: plain JSON under `.ue/` in your
