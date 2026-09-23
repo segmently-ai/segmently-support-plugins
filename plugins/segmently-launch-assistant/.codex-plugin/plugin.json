@@ -1,7 +1,7 @@
 {
   "name": "segmently-launch-assistant",
   "version": "0.1.0+codex.1ba4c889f0eb",
-  "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, and verification.",
+  "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, verification, and offline paywall unit economics.",
   "author": {
     "name": "Segmently"
   },
@@ -13,13 +13,14 @@
     "launch",
     "cli",
     "support",
-    "playwright"
+    "playwright",
+    "unit-economics"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Segmently Launch Assistant",
     "shortDescription": "Launch funnels with CLI and browser guidance.",
-    "longDescription": "Guides customer-facing agents through Segmently funnel launch workflows, delegating CLI actions, browser walkthroughs, and verification to bundled skills.",
+    "longDescription": "Guides customer-facing agents through Segmently funnel launch workflows, delegating CLI actions, browser walkthroughs, and verification to bundled skills, and answers paywall unit-economics questions (price, trial, store vs web fees, which experiment first) offline with the bundled segmently-unit-economics skill.",
     "developerName": "Segmently",
     "category": "Productivity",
     "capabilities": [
@@ -27,9 +28,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Use Segmently Launch Assistant to launch and verify my funnel.",
       "Show me what is left before my Segmently funnel can go live.",
-      "Change a Segmently screen setting and verify it."
+      "Change a Segmently screen setting and verify it.",
+      "Is a $19.99 monthly worth launching on the web?"
     ]
   }
 }
