@@ -1,7 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "segmently-support",
-  "description": "Segmently Support",
   "owner": {
     "name": "Segmently"
   },
@@ -9,6 +8,7 @@
     "description": "Segmently Support",
     "version": "0.1.0+codex.b8730b3ed165"
   },
+  "description": "Segmently Support",
   "plugins": [
     {
       "name": "segmently-launch-assistant",
@@ -20,6 +20,23 @@
       "source": "./plugins/segmently-launch-assistant",
       "category": "productivity",
       "homepage": "https://segmently.ai"
+    },
+    {
+      "name": "segmently-unit-economics",
+      "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first — no account, nothing leaves the machine.",
+      "version": "0.1.0+codex.bf66263284e7",
+      "author": {
+        "name": "Segmently"
+      },
+      "source": "./plugins/segmently-unit-economics",
+      "category": "productivity",
+      "tags": [
+        "segmently",
+        "unit-economics",
+        "paywall",
+        "cli"
+      ],
+      "homepage": "https://www.segmently.ai/unit-economics"
     }
   ]
 }

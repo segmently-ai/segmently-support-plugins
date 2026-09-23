@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "segmently-unit-economics",
+  "version": "0.1.0+codex.bf66263284e7",
+  "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first — no account, nothing leaves the machine.",
+  "author": {
+    "name": "Segmently"
+  },
+  "homepage": "https://www.segmently.ai/unit-economics",
+  "repository": "https://github.com/segmently-ai/segmently-support-plugins",
+  "skills": [
+    "./skills/"
+  ]
+}

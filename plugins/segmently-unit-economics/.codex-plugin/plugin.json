@@ -1,0 +1,33 @@
+{
+  "name": "segmently-unit-economics",
+  "version": "0.1.0+codex.bf66263284e7",
+  "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first — no account, nothing leaves the machine.",
+  "author": {
+    "name": "Segmently"
+  },
+  "homepage": "https://www.segmently.ai/unit-economics",
+  "repository": "https://github.com/segmently-ai/segmently-support-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "segmently",
+    "unit-economics",
+    "paywall",
+    "cli"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Segmently Unit Economics",
+    "shortDescription": "Paywall unit economics, computed offline.",
+    "longDescription": "Answers whether a price, paywall, trial, store-vs-web choice or ad budget can work, with numbers computed on your machine by segmently ue and one public-page link per scenario. No account, no network, no browser automation. Prerequisites: Node.js 22+ with npx.",
+    "developerName": "Segmently",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Is a $19.99 monthly worth launching on the web?",
+      "Compare a 7-day free trial with no trial for my weekly plan.",
+      "Which paywall experiment should I run first?"
+    ]
+  }
+}
