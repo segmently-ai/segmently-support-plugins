@@ -355,7 +355,7 @@
       "mode": "cli",
       "scenarioId": "launch-progress",
       "articleAliases": [
-        "launch-paid-funnel-overview"
+        "launch-scenario-sell"
       ],
       "next": "references/scenarios.matrix.json"
     },

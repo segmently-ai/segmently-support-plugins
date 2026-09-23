@@ -74443,19 +74443,12 @@
         "stripe-payments",
         "analytics-events",
         "flow:capability",
-        "production-readiness-preflight",
         "first-contact-orientation",
-        "launch-progress",
-        "First",
-        "what",
-        "is",
-        "left",
-        "capability",
-        "The"
+        "The",
+        "capability"
       ],
       "negativeKeywords": [],
       "tags": [
-        "flow:capability.production-readiness-preflight",
         "flow:capability.first-contact-orientation",
         "launch-overview",
         "paywall",
@@ -74466,11 +74459,9 @@
       "contentRef": "references/articles/launch-paid-funnel-overview.json",
       "relations": {
         "supportFlowFlows": [
-          "capability.production-readiness-preflight",
           "capability.first-contact-orientation"
         ],
         "scenarioIds": [
-          "launch-progress",
           "launch-paid-funnel-overview"
         ],
         "guideKeys": [],
@@ -74479,7 +74470,7 @@
       },
       "provenance": {
         "sourceFiles": [],
-        "generatedHash": "89542d4b686a59ee",
+        "generatedHash": "6b16dce438425c2a",
         "reachability": "release-gate-required",
         "contentCompleteness": "partial"
       },
@@ -74500,9 +74491,9 @@
       "oneLineSummary": "Optional product analytics for the launch: add GA4, Mixpanel, Amplitude or PostHog with the key from the vendor project settings and confirm events arrive; this advisory step never blocks publishing.",
       "description": "Optional product analytics for the launch: add GA4, Mixpanel, Amplitude or PostHog with the key from the vendor project settings and confirm events arrive; this advisory step never blocks publishing.",
       "summary": "Optional product analytics for the launch: add GA4, Mixpanel, Amplitude or PostHog with the key from the vendor project settings and confirm events arrive; this advisory step never blocks publishing.",
-      "publishedUrl": null,
-      "configUrl": null,
-      "status": "release-pending",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-product-analytics",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-product-analytics/config.json",
+      "status": "published",
       "supportedSurfaces": [
         "analytics"
       ],
@@ -74629,9 +74620,9 @@
       "oneLineSummary": "How to make the funnel ready for paid traffic: Facebook pixel with the Conversions API token, TikTok pixel with the Events API token, each fetched from the vendor console, and attribution toggles on the web placement so click ids reach the pixels.",
       "description": "How to make the funnel ready for paid traffic: Facebook pixel with the Conversions API token, TikTok pixel with the Events API token, each fetched from the vendor console, and attribution toggles on the web placement so click ids reach the pixels.",
       "summary": "How to make the funnel ready for paid traffic: Facebook pixel with the Conversions API token, TikTok pixel with the Events API token, each fetched from the vendor console, and attribution toggles on the web placement so click ids reach the pixels.",
-      "publishedUrl": null,
-      "configUrl": null,
-      "status": "release-pending",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-run-ads",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-run-ads/config.json",
+      "status": "published",
       "supportedSurfaces": [
         "analytics",
         "custom-domain"
@@ -74952,9 +74943,9 @@
       "oneLineSummary": "Everything needed to charge real customers, in order: the validate-idea steps plus activating and connecting the live Stripe account, creating live paywall products, and attaching them to the paywall screen before republishing.",
       "description": "Everything needed to charge real customers, in order: the validate-idea steps plus activating and connecting the live Stripe account, creating live paywall products, and attaching them to the paywall screen before republishing.",
       "summary": "Everything needed to charge real customers, in order: the validate-idea steps plus activating and connecting the live Stripe account, creating live paywall products, and attaching them to the paywall screen before republishing.",
-      "publishedUrl": null,
-      "configUrl": null,
-      "status": "release-pending",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-sell",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-sell/config.json",
+      "status": "published",
       "supportedSurfaces": [
         "ordinary-paywall",
         "analytics",
@@ -75148,6 +75139,8 @@
         "stripe-payments",
         "publish",
         "product-catalog",
+        "flow:capability",
+        "production-readiness-preflight",
         "scenario-step",
         "funnelCreated",
         "domainVerified",
@@ -75159,10 +75152,18 @@
         "stripeConnected",
         "paywallProductsCreated",
         "paywallAttached",
+        "launch-progress",
+        "First",
+        "paid",
+        "funnel",
+        "launch",
+        "what",
+        "is",
+        "left",
+        "capability",
         "step-01",
         "Create",
         "first",
-        "funnel",
         "Open",
         "Onboardings",
         "create",
@@ -75232,6 +75233,7 @@
         "paywall",
         "product-catalog",
         "stripe-payments",
+        "flow:capability.production-readiness-preflight",
         "scenario-step",
         "funnelCreated",
         "domainVerified",
@@ -75248,15 +75250,19 @@
       ],
       "contentRef": "references/articles/launch-scenario-sell.json",
       "relations": {
-        "supportFlowFlows": [],
-        "scenarioIds": [],
+        "supportFlowFlows": [
+          "capability.production-readiness-preflight"
+        ],
+        "scenarioIds": [
+          "launch-progress"
+        ],
         "guideKeys": [],
         "actionIds": [],
         "atoms": []
       },
       "provenance": {
         "sourceFiles": [],
-        "generatedHash": "7fa4bd21f72fb5f3",
+        "generatedHash": "c626f203372e8e3e",
         "reachability": "release-gate-required",
         "contentCompleteness": "full"
       },
@@ -75266,10 +75272,8 @@
         "tagStatus": "generated",
         "relationStatus": "generated",
         "subarticleStatus": "generated",
-        "score": 0.85,
-        "warnings": [
-          "no-typed-relations"
-        ]
+        "score": 1,
+        "warnings": []
       }
     },
     {
@@ -75279,9 +75283,9 @@
       "oneLineSummary": "Step-by-step order to take a brand-new funnel to live traffic for idea validation: create the funnel, connect a custom domain and its DNS records, publish from the canvas with Deploy Web, and switch on first-party analytics so reports fill up.",
       "description": "Step-by-step order to take a brand-new funnel to live traffic for idea validation: create the funnel, connect a custom domain and its DNS records, publish from the canvas with Deploy Web, and switch on first-party analytics so reports fill up.",
       "summary": "Step-by-step order to take a brand-new funnel to live traffic for idea validation: create the funnel, connect a custom domain and its DNS records, publish from the canvas with Deploy Web, and switch on first-party analytics so reports fill up.",
-      "publishedUrl": null,
-      "configUrl": null,
-      "status": "release-pending",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-validate-idea",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-validate-idea/config.json",
+      "status": "published",
       "supportedSurfaces": [
         "analytics",
         "custom-domain"
@@ -82061,9 +82065,6 @@
         "stripe-connect-live-mode",
         "stripe-connect-oauth-guidance"
       ],
-      "flow:capability.production-readiness-preflight": [
-        "launch-paid-funnel-overview"
-      ],
       "flow:capability.first-contact-orientation": [
         "launch-paid-funnel-overview"
       ],
@@ -82115,6 +82116,9 @@
       ],
       "tiktokPixel": [
         "launch-scenario-run-ads"
+      ],
+      "flow:capability.production-readiness-preflight": [
+        "launch-scenario-sell"
       ],
       "stripeConnected": [
         "launch-scenario-sell"
@@ -82247,11 +82251,11 @@
       "capability.custom-domain-readiness": [
         "integrations-custom-domain-section"
       ],
-      "capability.production-readiness-preflight": [
-        "launch-paid-funnel-overview"
-      ],
       "capability.first-contact-orientation": [
         "launch-paid-funnel-overview"
+      ],
+      "capability.production-readiness-preflight": [
+        "launch-scenario-sell"
       ]
     },
     "byScenarioId": {
@@ -82282,11 +82286,11 @@
       "add-custom-domain": [
         "integrations-custom-domain-section"
       ],
-      "launch-progress": [
-        "launch-paid-funnel-overview"
-      ],
       "launch-paid-funnel-overview": [
         "launch-paid-funnel-overview"
+      ],
+      "launch-progress": [
+        "launch-scenario-sell"
       ],
       "paywall-payment-methods": [
         "paywall-payment-methods"

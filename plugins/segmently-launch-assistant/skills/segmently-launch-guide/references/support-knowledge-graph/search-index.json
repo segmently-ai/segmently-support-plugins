@@ -6014,7 +6014,8 @@
       "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions",
       "WorkflowStep:capability.attach-products-to-paywall/paywall-payment-methods/paywall-payment-methods",
       "WorkflowStep:capability.configure-attribution-metadata/collect-email-before-paywall/collect-email-before-paywall",
-      "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall"
+      "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "attachproduct": [
       "Action:editor.paywall.attachProduct"
@@ -6509,7 +6510,8 @@
       "Subarticle:help-block-action-bar#set-actionbar-secondary-gradient-prop-start-color",
       "Subarticle:onboarding-list-create#onboarding-list-create/create-button",
       "Subarticle:webplacement-entry-rules#webplacement-entry-rules/target-screen",
-      "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions"
+      "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "top": [
       "Action:editor.paywallSubscriptions.itemPadding.top",
@@ -7556,7 +7558,8 @@
       "Subarticle:stripe-connect-test-mode#stripe-connect-test-mode/connect-test",
       "SynonymGroup:facebook-capi-web-destination",
       "SynonymGroup:payment-methods",
-      "SynonymGroup:stripe-subscriptions"
+      "SynonymGroup:stripe-subscriptions",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "connect": [
       "Action:handoff.stripe.connect",
@@ -8019,7 +8022,7 @@
       "Subarticle:canvas-overview#canvas-overview/launch-screen",
       "SynonymGroup:launch-publish-funnel",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "funnel": [
       "Action:launch.funnel.create",
@@ -8058,7 +8061,7 @@
       "SynonymGroup:sync-strategy-onboarding",
       "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "create": [
       "Action:launch.funnel.create",
@@ -11846,8 +11849,7 @@
       "WorkflowStep:capability.configure-attribution-metadata/collect-email-before-paywall/collect-email-before-paywall",
       "WorkflowStep:capability.connect-analytics/add-fb-pixel/facebook-pixel-capi-setup",
       "WorkflowStep:capability.connect-analytics/add-tiktok-pixel/tiktok-pixel-events-api-setup",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "customer": [
       "Article:collect-email-before-paywall",
@@ -11961,6 +11963,7 @@
       "Article:help-screen-paywall",
       "Article:integrations-custom-domain-section",
       "Article:launch-paid-funnel-overview",
+      "Article:launch-scenario-sell",
       "Article:paywall-payment-methods",
       "Article:tiktok-events-catalog",
       "Article:tiktok-pixel-events-api-setup"
@@ -22510,8 +22513,7 @@
       "Scenario:launch-paid-funnel-overview",
       "Subarticle:help-screen-progresssteps#intro",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "help screen progresssteps": [
       "Article:help-screen-progresssteps",
@@ -22709,37 +22711,32 @@
       "Scenario:launch-progress",
       "SynonymGroup:launch-publish-funnel",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "you": [
       "Article:launch-paid-funnel-overview",
       "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2",
       "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "can": [
       "Article:launch-paid-funnel-overview",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "run": [
       "Article:launch-paid-funnel-overview",
       "Article:launch-scenario-run-ads",
       "Scenario:test-purchase",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "ads": [
       "Article:launch-paid-funnel-overview",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "against:": [
       "Article:launch-paid-funnel-overview",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "complete": [
       "Article:launch-paid-funnel-overview",
@@ -22747,8 +22744,7 @@
       "Scenario:launch-paid-funnel-overview",
       "Subarticle:canvas-connect-screens#canvas-connect-screens/validation",
       "Subarticle:webplacement-publish-url#webplacement-publish-url/smoke-test",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "order": [
       "Article:launch-paid-funnel-overview",
@@ -22776,23 +22772,14 @@
       "Subarticle:help-options-list-single#set-options-israndomized-img",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
       "Subarticle:screen-editor-overview#screen-editor-overview/section-ordering",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "launch paid funnel overview": [
       "Article:launch-paid-funnel-overview",
       "Scenario:launch-paid-funnel-overview",
       "SourceConfig:references/articles/launch-paid-funnel-overview.json",
       "Workflow:capability.first-contact-orientation",
-      "Workflow:capability.production-readiness-preflight",
-      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
-    ],
-    "production readiness preflight": [
-      "Article:launch-paid-funnel-overview",
-      "Scenario:launch-progress",
-      "Workflow:capability.production-readiness-preflight",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
     "first contact orientation": [
       "Article:launch-paid-funnel-overview",
@@ -22938,7 +22925,8 @@
       "Article:launch-scenario-sell"
     ],
     "selling:": [
-      "Article:launch-scenario-sell"
+      "Article:launch-scenario-sell",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "live": [
       "Article:launch-scenario-sell",
@@ -22957,7 +22945,8 @@
       "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/vendor-activate-live-account",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-why-two",
       "SynonymGroup:launch-publish-funnel",
-      "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section"
+      "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "products": [
       "Article:launch-scenario-sell",
@@ -22976,7 +22965,8 @@
       "Subarticle:paywall-products-list#paywall-products-list/products-list",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-troubleshooting",
       "SynonymGroup:stripe-subscriptions",
-      "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions"
+      "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "launch scenario sell": [
       "Article:launch-scenario-sell",
@@ -22987,7 +22977,15 @@
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-04",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-05",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-06",
-      "Subarticle:launch-scenario-sell#launch-scenario-sell/step-07"
+      "Subarticle:launch-scenario-sell#launch-scenario-sell/step-07",
+      "Workflow:capability.production-readiness-preflight",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
+    ],
+    "production readiness preflight": [
+      "Article:launch-scenario-sell",
+      "Scenario:launch-progress",
+      "Workflow:capability.production-readiness-preflight",
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "stripeconnected": [
       "Article:launch-scenario-sell",
@@ -23012,7 +23010,7 @@
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-01",
       "Subarticle:launch-scenario-validate-idea#launch-scenario-validate-idea/step-01",
       "SynonymGroup:launch-publish-funnel",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "validate": [
       "Article:launch-scenario-validate-idea",
@@ -26128,7 +26126,7 @@
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-content-template-head",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
       "SynonymGroup:launch-publish-funnel",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "fills": [
       "Guide:screenedit-backdrop-type",
@@ -39939,13 +39937,13 @@
       "Scenario:launch-paid-funnel-overview"
     ],
     "scenario:launch progress": [
-      "Article:launch-paid-funnel-overview",
+      "Article:launch-scenario-sell",
       "Scenario:launch-progress"
     ],
     "launch progress": [
       "Scenario:launch-progress",
       "Workflow:capability.production-readiness-preflight",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "scenario:paywall payment methods": [
       "Article:paywall-payment-methods",
@@ -55378,7 +55376,7 @@
       "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall",
       "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview",
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "screen:": [
       "WorkflowStep:capability.attach-products-to-paywall/attach-products/help-block-paywall-subscriptions"
@@ -55406,7 +55404,7 @@
       "WorkflowStep:capability.create-paywall-products/create-paywall-products/help-screen-paywall"
     ],
     "left:": [
-      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+      "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
     ],
     "action backed by cli capability": [
       "Action:editor.actionBar.primaryButton.backgroundColor",
@@ -56045,6 +56043,7 @@
       "Article:help-screen-paywall",
       "Article:integrations-custom-domain-section",
       "Article:launch-paid-funnel-overview",
+      "Article:launch-scenario-sell",
       "Article:paywall-payment-methods",
       "Article:tiktok-events-catalog",
       "Article:tiktok-pixel-events-api-setup"
@@ -66738,9 +66737,6 @@
       "Article:stripe-connect-live-mode",
       "Article:stripe-connect-oauth-guidance"
     ],
-    "flow:capability.production-readiness-preflight": [
-      "Article:launch-paid-funnel-overview"
-    ],
     "flow:capability.first-contact-orientation": [
       "Article:launch-paid-funnel-overview"
     ],
@@ -66827,6 +66823,9 @@
     "tiktokPixel": [
       "Article:launch-scenario-run-ads",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-06"
+    ],
+    "flow:capability.production-readiness-preflight": [
+      "Article:launch-scenario-sell"
     ],
     "stripeConnected": [
       "Article:launch-scenario-sell",

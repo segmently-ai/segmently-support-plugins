@@ -2591,7 +2591,7 @@ check('launch progress prompt routes to the launch-progress scenario contract', 
   assert(scenario.backend === 'cli', `launch-progress backend must be cli, got ${scenario.backend}`);
   assert(scenario.verify === 'launch preflight', `launch-progress verify must be launch preflight, got ${scenario.verify}`);
   assert(scenario.sampleQueries.ru.includes('что осталось до запуска'), 'launch-progress missing RU status phrasing');
-  assert(scenario.article === 'launch-paid-funnel-overview', 'launch-progress must cite a published article (rebind to launch-scenario-sell after publication)');
+  assert(scenario.article === 'launch-scenario-sell', 'launch-progress must cite the sell scenario article');
 });
 
 check('launch progress runner returns honest read-only contract without target inputs', () => {

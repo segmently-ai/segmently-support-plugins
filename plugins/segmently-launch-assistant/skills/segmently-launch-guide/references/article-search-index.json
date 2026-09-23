@@ -2190,6 +2190,7 @@
       "integrations-analytics-section",
       "launch-paid-funnel-overview",
       "launch-scenario-product-analytics",
+      "launch-scenario-sell",
       "launch-scenario-validate-idea",
       "paywall-products-mode-tabs"
     ],
@@ -7402,7 +7403,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
-      "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -7942,7 +7943,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
-      "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "onboarding-wizard-theme-customize"
     ],
     "non launch": [
@@ -8815,7 +8816,6 @@
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
       "integrations-stripe-connect-section",
-      "launch-paid-funnel-overview",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
       "launch-scenario-validate-idea",
@@ -9032,6 +9032,7 @@
       "help-screen-herocontent-detailed",
       "launch-paid-funnel-overview",
       "launch-scenario-run-ads",
+      "launch-scenario-sell",
       "paywall-product-subscription-options"
     ],
     "must": [
@@ -9178,6 +9179,7 @@
       "help-screen-paywall",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "paywall-payment-methods",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -9196,6 +9198,7 @@
       "help-screen-paywall",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "paywall-payment-methods",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -30215,9 +30218,6 @@
     "prerequisites": [
       "launch-paid-funnel-overview"
     ],
-    "production readiness preflight": [
-      "launch-paid-funnel-overview"
-    ],
     "first contact orientation": [
       "launch-paid-funnel-overview"
     ],
@@ -30227,9 +30227,6 @@
       "launch-scenario-run-ads",
       "launch-scenario-sell",
       "launch-scenario-validate-idea"
-    ],
-    "launch progress": [
-      "launch-paid-funnel-overview"
     ],
     "launch scenario product analytics": [
       "launch-scenario-product-analytics"
@@ -30366,6 +30363,9 @@
     "republishing": [
       "launch-scenario-sell"
     ],
+    "production readiness preflight": [
+      "launch-scenario-sell"
+    ],
     "stripeconnected": [
       "launch-scenario-sell"
     ],
@@ -30376,6 +30376,9 @@
       "launch-scenario-sell"
     ],
     "monetize": [
+      "launch-scenario-sell"
+    ],
+    "launch progress": [
       "launch-scenario-sell"
     ],
     "draft": [
@@ -32716,9 +32719,6 @@
       "stripe-connect-live-mode",
       "stripe-connect-oauth-guidance"
     ],
-    "flow:capability.production-readiness-preflight": [
-      "launch-paid-funnel-overview"
-    ],
     "flow:capability.first-contact-orientation": [
       "launch-paid-funnel-overview"
     ],
@@ -32770,6 +32770,9 @@
     ],
     "tiktokPixel": [
       "launch-scenario-run-ads"
+    ],
+    "flow:capability.production-readiness-preflight": [
+      "launch-scenario-sell"
     ],
     "stripeConnected": [
       "launch-scenario-sell"
@@ -34678,6 +34681,7 @@
       "integrations-analytics-section",
       "launch-paid-funnel-overview",
       "launch-scenario-product-analytics",
+      "launch-scenario-sell",
       "launch-scenario-validate-idea",
       "paywall-products-mode-tabs"
     ],
@@ -35303,7 +35307,7 @@
       "help-screen-wheelpicker-elements",
       "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
-      "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "launch-scenario-validate-idea",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
@@ -37612,7 +37616,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
-      "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
       "paywall-product-stripe-mapping",
@@ -37953,7 +37957,7 @@
       "help-block-basic-config",
       "help-block-flexible-sections",
       "help-block-paywall-header",
-      "launch-paid-funnel-overview"
+      "launch-scenario-sell"
     ],
     "of": [
       "canvas-connect-screens",
@@ -38756,7 +38760,6 @@
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
       "integrations-stripe-connect-section",
-      "launch-paid-funnel-overview",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
       "launch-scenario-validate-idea",
@@ -38956,6 +38959,7 @@
       "help-element-hero-image",
       "launch-paid-funnel-overview",
       "launch-scenario-run-ads",
+      "launch-scenario-sell",
       "paywall-product-subscription-options"
     ],
     "subscription": [
@@ -39110,6 +39114,7 @@
       "help-screen-paywall",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "paywall-payment-methods",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -39128,6 +39133,7 @@
       "help-screen-paywall",
       "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
+      "launch-scenario-sell",
       "paywall-payment-methods",
       "tiktok-events-catalog",
       "tiktok-pixel-events-api-setup"
@@ -47638,13 +47644,7 @@
       "launch-scenario-sell",
       "launch-scenario-validate-idea"
     ],
-    "production readiness preflight": [
-      "launch-paid-funnel-overview"
-    ],
     "first contact orientation": [
-      "launch-paid-funnel-overview"
-    ],
-    "launch progress": [
       "launch-paid-funnel-overview"
     ],
     "launch scenario product analytics": [
@@ -47796,6 +47796,9 @@
     "monetize": [
       "launch-scenario-sell"
     ],
+    "production readiness preflight": [
+      "launch-scenario-sell"
+    ],
     "stripeconnected": [
       "launch-scenario-sell"
     ],
@@ -47803,6 +47806,9 @@
       "launch-scenario-sell"
     ],
     "paywallattached": [
+      "launch-scenario-sell"
+    ],
+    "launch progress": [
       "launch-scenario-sell"
     ],
     "opens": [
@@ -83293,11 +83299,11 @@
     "capability.custom-domain-readiness": [
       "integrations-custom-domain-section"
     ],
-    "capability.production-readiness-preflight": [
-      "launch-paid-funnel-overview"
-    ],
     "capability.first-contact-orientation": [
       "launch-paid-funnel-overview"
+    ],
+    "capability.production-readiness-preflight": [
+      "launch-scenario-sell"
     ]
   },
   "scenarioIds": {
@@ -83328,11 +83334,11 @@
     "add-custom-domain": [
       "integrations-custom-domain-section"
     ],
-    "launch-progress": [
-      "launch-paid-funnel-overview"
-    ],
     "launch-paid-funnel-overview": [
       "launch-paid-funnel-overview"
+    ],
+    "launch-progress": [
+      "launch-scenario-sell"
     ],
     "paywall-payment-methods": [
       "paywall-payment-methods"

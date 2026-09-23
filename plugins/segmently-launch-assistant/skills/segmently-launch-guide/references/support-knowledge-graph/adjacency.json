@@ -6448,6 +6448,9 @@
         "Subarticle:launch-scenario-sell#launch-scenario-sell/step-06",
         "Subarticle:launch-scenario-sell#launch-scenario-sell/step-07"
       ],
+      "ARTICLE_RELATES_TO_SCENARIO": [
+        "Scenario:launch-progress"
+      ],
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/launch-scenario-sell.json"
       ]
@@ -6752,8 +6755,7 @@
     },
     "Article:launch-paid-funnel-overview": {
       "ARTICLE_RELATES_TO_SCENARIO": [
-        "Scenario:launch-paid-funnel-overview",
-        "Scenario:launch-progress"
+        "Scenario:launch-paid-funnel-overview"
       ],
       "NODE_GROUNDED_IN_SOURCE": [
         "SourceConfig:references/articles/launch-paid-funnel-overview.json"
@@ -12246,7 +12248,7 @@
     },
     "Workflow:capability.production-readiness-preflight": {
       "WORKFLOW_HAS_STEP": [
-        "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview"
+        "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
       ]
     }
   },
@@ -29590,7 +29592,7 @@
     },
     "Scenario:launch-progress": {
       "ARTICLE_RELATES_TO_SCENARIO": [
-        "Article:launch-paid-funnel-overview"
+        "Article:launch-scenario-sell"
       ]
     },
     "Scenario:paywall-payment-methods": {
@@ -34341,7 +34343,7 @@
         "Workflow:capability.first-contact-orientation"
       ]
     },
-    "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-paid-funnel-overview": {
+    "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell": {
       "WORKFLOW_HAS_STEP": [
         "Workflow:capability.production-readiness-preflight"
       ]

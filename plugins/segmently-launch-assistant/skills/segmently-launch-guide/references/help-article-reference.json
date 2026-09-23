@@ -7450,6 +7450,46 @@
       "assemblyLinks": []
     },
     {
+      "alias": "launch-scenario-product-analytics",
+      "title": "Add product analytics: GA4, Mixpanel, Amplitude or PostHog",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-product-analytics",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-product-analytics/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "launch-scenario-run-ads",
+      "title": "Run ads: pixels, server-side events, attribution",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-run-ads",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-run-ads/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "launch-scenario-sell",
+      "title": "Start selling: live Stripe, live products, paywall",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-sell",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-sell/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "launch-scenario-validate-idea",
+      "title": "Launch your first funnel to validate an idea",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/launch-scenario-validate-idea",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/launch-scenario-validate-idea/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
       "alias": "paywall-payment-methods",
       "title": "Payment methods on your paywall: embedded vs redirect, cards & wallets",
       "projectId": "arswew63RwQr6V4Ekb1Z",

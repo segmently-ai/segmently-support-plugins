@@ -594,7 +594,7 @@
       "milestone": null,
       "backend": "cli",
       "verify": "launch preflight",
-      "article": "launch-paid-funnel-overview",
+      "article": "launch-scenario-sell",
       "sampleQueries": {
         "ru": [
           "что осталось до запуска",
