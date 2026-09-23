@@ -3,6 +3,81 @@
 Public read-only marketplace for Segmently customer support plugins.
 
 
+<!-- plugin-section:segmently-unit-economics:start -->
+## Segmently Unit Economics (standalone plugin)
+
+Only the paywall unit-economics skill, without the launch assistant: the launch card, trial
+and fee-stack comparisons, which experiment first, how long a test needs. It computes on your
+machine with `segmently ue` — no Segmently account, no login, no browser automation, and
+nothing leaves the machine. Prerequisites: Node.js 22+ with npx. That is all — the Segmently CLI
+login and Playwright under "Required Tools" below are for the launch assistant only.
+
+### One Prompt Install For Claude Code — Unit Economics Only
+
+Paste this whole block into a fresh Claude Code thread. It sets the machine up and stops
+before using the skill: a newly installed plugin is visible only in a NEW session.
+
+```text
+Set up the segmently-unit-economics plugin for Claude Code on this machine, then stop and tell me to restart.
+
+Marketplace: segmently-ai/segmently-support-plugins@stable. Plugin: segmently-unit-economics@segmently-support.
+
+Run the steps in order and show me the exact output of every command:
+1. node --version — it must print v22 or newer. If it is older or missing, tell me how to get Node.js 22 on this operating system and stop there.
+2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash". If it prints a bare version number, or "unknown command 'ue'", run npx -y @segmently/cli@latest ue --version instead. If that still does not print the JSON, stop and tell me the command-line tool on this machine has no ue verb yet.
+3. claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
+   claude plugin install segmently-unit-economics@segmently-support --scope user
+   If the marketplace is already there, run claude plugin marketplace update segmently-support and then claude plugin update segmently-unit-economics@segmently-support --scope user.
+4. claude plugin list — the output must name segmently-unit-economics. If it does not, say so plainly and do not continue.
+5. Do not try the skill in this session and do not answer any unit-economics question yourself. Tell me the setup is done, then ask me to open a NEW Claude Code session in the folder where my scenario files should live, and to paste the question below there.
+
+The question for the new session:
+"Use the segmently-unit-economics skill. I sell <what> for <price> per <month or year> on <the web, the App Store or Google Play>, my trial is <length, or none>, I pay about <amount> per install or click, and about <number> in 100 people who see the paywall buy. Is that worth launching, and what should I change first?"
+```
+
+### One Prompt Install For Codex — Unit Economics Only
+
+Paste this whole block into a fresh Codex thread; it stops the same way.
+
+```text
+Set up the segmently-unit-economics plugin for Codex on this machine, then stop and tell me to restart.
+
+Marketplace: segmently-ai/segmently-support-plugins on ref stable. Plugin: segmently-unit-economics@segmently-support.
+
+Run the steps in order and show me the exact output of every command:
+1. node --version — it must print v22 or newer. If it is older or missing, tell me how to get Node.js 22 on this operating system and stop there.
+2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash". If it prints a bare version number, or "unknown command 'ue'", run npx -y @segmently/cli@latest ue --version instead. If that still does not print the JSON, stop and tell me the command-line tool on this machine has no ue verb yet.
+3. codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
+   codex plugin add segmently-unit-economics@segmently-support
+   If the marketplace is already there, run codex plugin marketplace upgrade segmently-support and then codex plugin add segmently-unit-economics@segmently-support again.
+4. List the installed plugins and show me that segmently-unit-economics is among them. If it is not, say so plainly and do not continue.
+5. Do not try the skill in this session and do not answer any unit-economics question yourself. Tell me the setup is done, then ask me to open a NEW Codex session in the folder where my scenario files should live, and to paste the question below there.
+
+The question for the new session:
+"Use the segmently-unit-economics skill. I sell <what> for <price> per <month or year> on <the web, the App Store or Google Play>, my trial is <length, or none>, I pay about <amount> per install or click, and about <number> in 100 people who see the paywall buy. Is that worth launching, and what should I change first?"
+```
+
+### Unit Economics Install By Hand
+
+```bash
+claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
+claude plugin install segmently-unit-economics@segmently-support --scope user
+```
+
+```bash
+codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
+codex plugin add segmently-unit-economics@segmently-support
+```
+
+Update in Claude Code: `claude plugin marketplace update segmently-support`, then
+`claude plugin update segmently-unit-economics@segmently-support --scope user`. In Codex:
+`codex plugin marketplace upgrade segmently-support`, then
+`codex plugin add segmently-unit-economics@segmently-support`. Start a new session after either.
+
+What it answers, and the MCP server for hosts without plugins:
+[plugins/segmently-unit-economics/README.md](plugins/segmently-unit-economics/README.md).
+<!-- plugin-section:segmently-unit-economics:end -->
+
 ## Required Tools
 
 The plugin installs Segmently assistant skills and scripts only. It does not
