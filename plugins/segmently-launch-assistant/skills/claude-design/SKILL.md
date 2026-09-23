@@ -54,6 +54,11 @@ asks for implementation detail or a validation failure requires troubleshooting.
 > ([import-section-embed.md](references/import-section-embed.md)) and land it as a `CustomEmbed`
 > section, not a whole standalone screen.
 
+Also fire for **Stream B** — a Segmently WebEmbed custom screen being taken out to the local
+`/design` canvas and brought back ("поправить экран руками в дизайне", "round-trip this screen",
+"restyle screen <id> on the canvas"). That is [references/roundtrip-local-canvas.md](references/roundtrip-local-canvas.md),
+NOT an import: do not ask for a `claude.ai/design` project and do not call `DesignSync`.
+
 Also fire on: "claude design" / "claude.ai/design", a bare `claude.ai/design/p/<id>` link, the
 `/design` `/design-sync` `/design-login` commands, or "handoff to Claude Code".
 
@@ -99,6 +104,21 @@ change to one must not change the other.
 | Turn Claude Design output into a Segmently **native Theme V2** | Claude Design → Segmently | [references/import-native-theme.md](references/import-native-theme.md) |
 | **Round-trip a Theme V2** — snapshot it into editable Claude Design cards, edit there, read the changes back and apply them to the theme (the deterministic `--tv-*` token contract; also covers filling a theme from a reference screenshot) | Segmently ↔ Claude Design | [references/capture-design-system.md](references/capture-design-system.md) |
 
+### Stream B — local `/design` canvas (published Artifact)
+
+| The user wants to… | Direction | Load |
+|---|---|---|
+| **Round-trip an EXISTING WebEmbed custom screen** — pull it from a funnel, hand-restyle it on the local canvas, gate the change and apply it back (behavior quarantined, copy edits routed into data sources) | Segmently ↔ local canvas | [references/roundtrip-local-canvas.md](references/roundtrip-local-canvas.md) |
+
+Stream B never calls `DesignSync` and never touches the import registry. Its scripts live in
+`scripts/webembed-to-dc.mjs`, `scripts/dc-to-webembed.mjs` and
+`scripts/webembed-roundtrip-gate.mjs`.
+
+**Choosing between them:** design is NEW and being authored in `claude.ai/design` → Stream A. The
+screen ALREADY EXISTS in a funnel and someone wants to nudge its look by hand → Stream B. A bare
+`/design` request to create a design from scratch is neither — that is the `design` skill on its
+own, with no Segmently import.
+
 If the design source is **Figma**, stop and route to the figma skills (theme, native StepNode
 screens, or WebEmbed via `segmently-cli-figma-webembed-import`). If the task
 is local HTML mockups + Playwright UX review, route to the `designer` skill.
@@ -116,12 +136,12 @@ is local HTML mockups + Playwright UX review, route to the `designer` skill.
   unwrap and pre-apply gate. It has no `claude.ai/design` project behind it, so nothing in Stream A
   applies to it.
 - **`segmently-cli-custom-screen-guide`** — owns apply / healthcheck / audit / publish / verify for
-  the Claude Design import stream. This skill does not re-spell those commands.
+  both streams. Neither stream re-spells those commands.
 
 ## Shared basics (all workflows)
 
 ### Segmently CLI invocation & auth
-Use the globally installed `segmently` binary; production is the default (omit `--env`). For auth and account setup, see `segmently-cli-guide`. If a command returns `auth_required`, **ask the user to authorize** — never silently fall back. **Never print tokens or credentials.**
+Use the globally installed `segmently` binary. **Always pass `--env <env>` — omitting it resolves to PRODUCTION** (W9, 2026-09-08: this line used to say "production is the default (omit `--env`)", and the snippets below inherited that, including write-capable ones like `design apply`). Say the environment out loud on every call. For auth and account setup, see `segmently-cli-guide`. If a command returns `auth_required`, **ask the user to authorize** — never silently fall back. **Never print tokens or credentials.**
 
 ### Claude Design access
 Reads/writes against `claude.ai/design` go through the **`DesignSync` tool**, which uses the user's

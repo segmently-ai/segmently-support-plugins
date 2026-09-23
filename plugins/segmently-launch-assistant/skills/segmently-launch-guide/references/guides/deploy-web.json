@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "deploy-web",
+  "evidence": {
+    "guideKey": "deploy-web",
+    "articleId": "6doUu620EDczbMBdiG0x",
+    "articleAlias": "deploy-web",
+    "referencePath": "deploy-web/deploy-web",
+    "name": "Canvas: Deploy Web",
+    "journeyStep": "Publish & verify",
+    "userNeed": "Publish from the canvas: Deploy Web creates or reuses the web placement for the version you are looking at, then shows the live URL to verify.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/deploy-web",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "deploy-web/what-it-does",
+        "sectionKey": "what-it-does",
+        "referencePath": "deploy-web/deploy-web#deploy-web/what-it-does",
+        "title": "Publish the version you are looking at",
+        "description": "Deploy Web opens the web placement flow for the funnel version currently on the canvas. Pick an existing placement to republish, or create a new one with its own alias — the placement is created and published in one step.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "deploy-web/what-happens-next",
+        "sectionKey": "what-happens-next",
+        "referencePath": "deploy-web/deploy-web#deploy-web/what-happens-next",
+        "title": "Verify the live URL",
+        "description": "When publishing finishes the dialog shows the cloud URL (your custom domain when one is active). Open it once to confirm the first screen loads before sending traffic.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "what-it-does",
+      "title": "Publish the version you are looking at",
+      "summary": "Deploy Web opens the web placement flow for the funnel version currently on the canvas. Pick an existing placement to republish, or create a new one with its own alias — the placement is created and published in one step.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "what-happens-next",
+      "title": "Verify the live URL",
+      "summary": "When publishing finishes the dialog shows the cloud URL (your custom domain when one is active). Open it once to confirm the first screen loads before sending traffic.",
+      "imageUrl": null,
+      "articleRefs": [],
+      "actionIds": []
+    }
+  ]
+}

@@ -71,11 +71,11 @@ This is the public, customer path. Targets: `project` | `onboarding`.
 
 ```bash
 # Project theme (set active):
-segmently themes create-from-figma \
+segmently --env <env> themes create-from-figma \
   --input <run-dir>/claude-design-theme-artifact.json --target project --project <projectId> --set-active
 
 # Native ONBOARDING theme (writes themeSettingsV2/settings):
-segmently themes create-from-figma \
+segmently --env <env> themes create-from-figma \
   --input <run-dir>/claude-design-theme-artifact.json --target onboarding \
   --project <projectId> --onboarding <onboardingId>
 ```

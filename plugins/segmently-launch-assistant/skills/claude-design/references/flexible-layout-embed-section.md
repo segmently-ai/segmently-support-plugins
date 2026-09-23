@@ -17,13 +17,13 @@ Segmently `FlexibleLayout` screen, not a standalone WebEmbed screen.
 Read the host section before changing it:
 
 ```bash
-segmently funnels custom-screen section get <funnelId> <versionId> <screenId> <projectId>
+segmently funnels custom-screen section get <funnelId> <versionId> <screenId> <projectId> --env <env>
 ```
 
 Apply one section at a time:
 
 ```bash
-segmently funnels custom-screen section apply <funnelId> <versionId> <projectId> \
+segmently --env <env> funnels custom-screen section apply <funnelId> <versionId> <projectId> \
   --screen <hostScreenId> \
   --section <embedSectionId> \
   --html-file screens/<slug>/updated/index.html \
@@ -50,8 +50,8 @@ Use `--create-section` with `--label` and `--order` only when the target
 After every apply:
 
 ```bash
-segmently funnels custom-screen healthcheck <funnelId> <versionId> <projectId>
-segmently funnels export <funnelId> <versionId> <projectId>
+segmently funnels custom-screen healthcheck <funnelId> <versionId> <projectId> --env <env>
+segmently funnels export <funnelId> <versionId> <projectId> --env <env>
 ```
 
 For paywall sections, verify the published config contains the expected product

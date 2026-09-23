@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "webplacement-stripe-metadata",
+  "articleId": "eO7MOLYeMLxSLuygeL3u",
+  "title": "Web Placement Stripe metadata",
+  "sections": [
+    {
+      "id": "webplacement-stripe-metadata/add-param",
+      "title": "Why attach metadata, and how to add one",
+      "summary": "Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/add-param",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
+      ]
+    },
+    {
+      "id": "webplacement-stripe-metadata/counter",
+      "title": "Watch the keys limit",
+      "summary": "A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/counter",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/preview",
+      "title": "Review the metadata preview",
+      "summary": "The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/preview",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/remove",
+      "title": "Remove a parameter",
+      "summary": "Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/remove",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/select-source",
+      "title": "Choose which parameter to send",
+      "summary": "Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/select-source",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "webplacement-stripe-metadata/add-param",
+      "title": "Why attach metadata, and how to add one",
+      "summary": "Attaching metadata stamps extra info onto each Stripe payment so you can see, right in your Stripe Dashboard and payout reports, which ad campaign, traffic source, or quiz answer produced the sale. Click Add and pick one of your defined parameters (a URL, Server, Variable, or Custom value you set up in Sources). Its key becomes a field on every PaymentIntent. Stripe allows up to 50 such keys.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/add-param",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
+      ]
+    },
+    {
+      "id": "webplacement-stripe-metadata/counter",
+      "title": "Watch the keys limit",
+      "summary": "A counter shows how many of Stripe's 50 metadata keys you've used. The Add button turns off once you hit the limit, so if you need room for a new field, remove a mapping you no longer need first.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/counter",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/preview",
+      "title": "Review the metadata preview",
+      "summary": "The JSON preview shows exactly how your chosen parameters will appear on the payment in Stripe. Check the field names and values here before saving, so your revenue reporting and reconciliation line up with the right campaign or source data.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/preview",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/remove",
+      "title": "Remove a parameter",
+      "summary": "Delete a mapping to stop sending that field to Stripe on future payments. This only removes the mapping on this screen — it does not delete or change the parameter definition itself over in Sources.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/remove",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "webplacement-stripe-metadata/select-source",
+      "title": "Choose which parameter to send",
+      "summary": "Select from the parameters you've already defined in Sources. The parameter's internal key becomes the field name shown in Stripe, and every value is sent to Stripe as plain text (a string), even numbers.",
+      "kind": "guide-section",
+      "articleSectionId": "webplacement-stripe-metadata/select-source",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "webplacement-stripe-metadata"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151506_open-stripe-metadata-stripe-metadata/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/webplacement-stripe-metadata/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "ac4bca8a593ec33d"
+  }
+}

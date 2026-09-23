@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "launch-scenario-product-analytics",
+  "articleId": null,
+  "title": "Add product analytics: GA4, Mixpanel, Amplitude or PostHog",
+  "sections": [
+    {
+      "id": "launch-scenario-product-analytics/step-01",
+      "title": "Add your product analytics provider",
+      "summary": "Add the provider integration and paste the key from its project settings; this never blocks the launch.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-provider-config",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "productAnalytics",
+        "product-catalog",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "productAnalytics",
+      "actionArticleAlias": "analytics-provider-config",
+      "vendorStepIds": [
+        "analytics-provider-config/vendor-ga4-measurement-id",
+        "analytics-provider-config/vendor-ga4-api-secret",
+        "analytics-provider-config/vendor-mixpanel-project-token",
+        "analytics-provider-config/vendor-amplitude-api-key",
+        "analytics-provider-config/vendor-posthog-project-api-key"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "launch-scenario-product-analytics/step-01",
+      "title": "Add your product analytics provider",
+      "summary": "Add the provider integration and paste the key from its project settings; this never blocks the launch.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-provider-config",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "productAnalytics",
+        "product-catalog",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "productAnalytics",
+      "actionArticleAlias": "analytics-provider-config",
+      "vendorStepIds": [
+        "analytics-provider-config/vendor-ga4-measurement-id",
+        "analytics-provider-config/vendor-ga4-api-secret",
+        "analytics-provider-config/vendor-mixpanel-project-token",
+        "analytics-provider-config/vendor-amplitude-api-key",
+        "analytics-provider-config/vendor-posthog-project-api-key"
+      ]
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": null,
+    "sourceFiles": [],
+    "generatedHash": "17271dafb0434591"
+  }
+}

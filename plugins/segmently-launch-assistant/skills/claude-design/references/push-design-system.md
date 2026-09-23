@@ -37,10 +37,10 @@ ready-to-push flat bundle (real SSR screen HTML + token cards, each file startin
 `@dsCard` marker) straight from a saved theme or live funnel screens:
 
 ```bash
-segmently design snapshot [projectId] --out <dir>                                  # active project theme
-segmently design snapshot [projectId] --project-theme-id <id> --out <dir>          # specific project theme
-segmently design snapshot [projectId] --funnel <funnelId> --out <dir>              # onboarding theme snapshot
-segmently design snapshot [projectId] --funnel <fid> --version-id <vid> --all-screens --out <dir>  # live screens
+segmently design snapshot [projectId] --out <dir> --env <env>  # active project theme
+segmently design snapshot [projectId] --project-theme-id <id> --out <dir> --env <env>  # specific project theme
+segmently design snapshot [projectId] --funnel <funnelId> --out <dir> --env <env>  # onboarding theme snapshot
+segmently design snapshot [projectId] --funnel <fid> --version-id <vid> --all-screens --out <dir> --env <env>  # live screens
 ```
 
 The bundle contains `screen-<kind>[__<subtype>].html` (group `Screens`, full standalone

@@ -14,7 +14,7 @@
  * override. Every command no-ops cleanly when the engine is off.
  *
  * Predictions are pure graph/data traversal over generated references
- * (scenarios.matrix.json, routing-quick-index.json) — no model
+ * (scenarios.matrix.json, support-knowledge-graph/adjacency.json) — no model
  * calls, no heuristics beyond documented ordering, so regenerating the
  * package updates predictions automatically.
  */
@@ -274,18 +274,16 @@ export function predictNextSteps({ session, topK = 3 }) {
     });
   }
 
-  // 2. Explicit quick-index neighbors of the most recent routed intent
-  //    (medium confidence). The customer plugin intentionally ships no full
-  //    SupportFlow graph; only reviewed compact route relations participate.
+  // 2. Graph neighbors of the most recent routed intent (medium confidence).
   const lastIntent = session.recentIntents[0] ?? null;
   if (lastIntent) {
-    const quickIndex = loadJson('references/routing-quick-index.json');
-    for (const neighbor of quickIndexNeighbors(quickIndex, lastIntent)) {
+    const adjacency = loadJson('references/support-knowledge-graph/adjacency.json');
+    for (const neighbor of graphNeighbors(adjacency, lastIntent)) {
       push({
         candidateId: neighbor.candidateId,
         kind: neighbor.kind,
         confidence: 'medium',
-        why: `Reviewed quick-index neighbor of the last routed intent ${lastIntent.kind}:${lastIntent.id}.`,
+        why: `Knowledge-graph neighbor of the last routed intent ${lastIntent.kind}:${lastIntent.id} via ${neighbor.edge}.`,
         scenarioId: neighbor.scenarioId ?? null,
         articleAlias: neighbor.articleAlias ?? null,
         actionId: neighbor.actionId ?? null,
@@ -294,20 +292,6 @@ export function predictNextSteps({ session, topK = 3 }) {
   }
 
   return candidates.slice(0, Math.max(1, Number(topK) || 3));
-}
-
-function quickIndexNeighbors(index, intent) {
-  const results = [];
-  for (const entry of index.entries ?? []) {
-    const articleMatch = intent.kind === 'article' && (entry.articleAliases ?? []).includes(intent.id);
-    const actionMatch = intent.kind === 'action' && (entry.actionId === intent.id || entry.actionFamily === intent.id);
-    const scenarioMatch = intent.kind === 'scenario' && entry.scenarioId === intent.id;
-    if (!articleMatch && !actionMatch && !scenarioMatch) continue;
-    if (entry.scenarioId) results.push({ candidateId: `scenario:${entry.scenarioId}`, kind: 'scenario', scenarioId: entry.scenarioId });
-    for (const alias of entry.articleAliases ?? []) results.push({ candidateId: `article:${alias}`, kind: 'article', articleAlias: alias });
-    if (entry.actionId) results.push({ candidateId: `action:${entry.actionId}`, kind: 'action', actionId: entry.actionId });
-  }
-  return results;
 }
 
 function graphNeighbors(adjacency, intent) {

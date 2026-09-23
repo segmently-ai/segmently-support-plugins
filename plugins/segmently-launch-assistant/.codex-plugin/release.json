@@ -5,12 +5,12 @@
   "publicMarketplaceName": "segmently-support",
   "publicRepository": "segmently-ai/segmently-support-plugins",
   "baseVersion": "0.1.0",
-  "version": "0.1.0+codex.b8730b3ed165",
-  "contentHash": "b8730b3ed165c20e583df35a10a8cd7144a2c6ef835779f09d73c6c393c70efd",
-  "cachebuster": "b8730b3ed165",
+  "version": "0.1.0+codex.1ba4c889f0eb",
+  "contentHash": "1ba4c889f0ebc8b20aaf79e234cebc3680736c97529b420d0b3b55071cd62944",
+  "cachebuster": "1ba4c889f0eb",
   "cachebusterStrategy": "content-hash",
-  "generatedAt": "2026-08-25T17:47:48.285Z",
-  "sourceGitRevision": "befbb08b36ab4682c75a4506c76b0d1cd3430c54",
+  "generatedAt": "2026-09-23T08:26:03.517Z",
+  "sourceGitRevision": "6cc320e60f41bfbf2a5eea8b4879b7a0d44450a1",
   "includedSkills": [
     "segmently-launch-guide",
     "segmently-cli-guide",
@@ -25,6 +25,7 @@
     "segmently-test-kit",
     "playwright-bowser-core",
     "screen-block-builder",
-    "claude-design"
+    "claude-design",
+    "segmently-unit-economics"
   ]
 }

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "tiktok-pixel-events-api-setup",
+  "articleId": null,
+  "title": "Set up the TikTok Pixel and Events API",
+  "sections": [
+    {
+      "id": "tiktok-pixel-events-api-setup/vendor-access-token",
+      "title": "Events API access token",
+      "summary": "In the same pixel open Settings and click Generate Access Token; copy it and paste it into the TikTok Events API integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup#vendor-access-token",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "tiktok-events",
+        "events-api",
+        "labels-copy",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "TikTok Events Manager",
+        "Web events",
+        "your pixel",
+        "Settings",
+        "Generate Access Token"
+      ],
+      "segmentlyField": "tiktok_events_api.accessToken",
+      "verifyHint": "A server event carrying ttclid appears in Events Manager → Test events."
+    },
+    {
+      "id": "tiktok-pixel-events-api-setup/vendor-pixel-code",
+      "title": "Pixel code from TikTok Events Manager",
+      "summary": "Open TikTok Events Manager, choose Web events and select your pixel: the pixel code (starts with C) is shown in the header. Paste it into the TikTok Pixel integration; the Events API integration uses the same code. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup#vendor-pixel-code",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "tiktok-events",
+        "tiktok-pixel",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "TikTok Events Manager",
+        "Web events",
+        "your pixel",
+        "Pixel code"
+      ],
+      "segmentlyField": "tiktok_pixel.pixelId",
+      "verifyHint": "Events Manager → Test events shows a page view from the published funnel URL."
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "tiktok-pixel-events-api-setup/vendor-access-token",
+      "title": "Events API access token",
+      "summary": "In the same pixel open Settings and click Generate Access Token; copy it and paste it into the TikTok Events API integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup#vendor-access-token",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "tiktok-events",
+        "events-api",
+        "labels-copy",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "TikTok Events Manager",
+        "Web events",
+        "your pixel",
+        "Settings",
+        "Generate Access Token"
+      ],
+      "segmentlyField": "tiktok_events_api.accessToken",
+      "verifyHint": "A server event carrying ttclid appears in Events Manager → Test events."
+    },
+    {
+      "id": "tiktok-pixel-events-api-setup/vendor-pixel-code",
+      "title": "Pixel code from TikTok Events Manager",
+      "summary": "Open TikTok Events Manager, choose Web events and select your pixel: the pixel code (starts with C) is shown in the header. Paste it into the TikTok Pixel integration; the Events API integration uses the same code. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup#vendor-pixel-code",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "tiktok-events",
+        "tiktok-pixel",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "TikTok Events Manager",
+        "Web events",
+        "your pixel",
+        "Pixel code"
+      ],
+      "segmentlyField": "tiktok_pixel.pixelId",
+      "verifyHint": "Events Manager → Test events shows a page view from the published funnel URL."
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/tiktok-pixel-events-api-setup/config.json",
+    "sourceFiles": [],
+    "generatedHash": "d0246b689c57043a"
+  }
+}

@@ -36,7 +36,7 @@ Text sections should be treated as title-only. If a screen has `title`,
 `subtitle`, `cta`, and `footnote`, create four Text sections with stable labels
 instead of relying on non-editor subtitle fields.
 
-Media sections should own runtime asset URLs. HTML may keep a visual fallback
+Media sections should own runtime asset URLs. Frozen structural or decorative brand SVG may remain static; replaceable or localized content icons belong to Media. Classify by the asset role, not its file extension. HTML may keep a visual fallback
 for local preview, but the applied screen must read images, videos, icons,
 thumbnails, and content backgrounds from `Media` data sources. Do not leave
 final asset URLs, generated SVG data URLs, or base64 image blobs hardcoded in

@@ -1,5 +1,7 @@
 # Minimal Segmently SDK Snippets
 
+Use the method meanings and operation/render-mode boundaries in [the shared authoring contract](sdk-contract.generated.md). These snippets illustrate that contract; they do not grant capabilities outside the current screen packet.
+
 Use only the SDK calls needed for the current screen. Keep fallback text in the
 DOM so local preview remains understandable.
 

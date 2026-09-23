@@ -189,6 +189,7 @@ apply to every task.
 
 ### Always read (baseline — any task)
 
+- `references/sdk-contract.generated.md` — selected SDK meanings and authoring rules shared with the backend specialist; `references/sdk-contract.json` is the packaged machine-readable contract. Do not copy the entire catalog into a model prompt.
 - `references/commands.md` — exact CLI commands, flags, and expected files.
 - `references/artifact-contract.md` — catalog schema, run-dir layout, status, render-mode
   fields (`isIframe` / `renderMode`), and the interaction-map contract.

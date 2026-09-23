@@ -114,6 +114,11 @@
       "category": "webshell"
     },
     {
+      "name": "assertPaddleProjectPublishReady",
+      "sourceModule": "paddle/seed-paddle-paywall-fixture",
+      "category": "paddle"
+    },
+    {
       "name": "assertSectionFlex",
       "sourceModule": "webshell/css-verification",
       "category": "webshell"
@@ -134,9 +139,19 @@
       "category": "payments"
     },
     {
+      "name": "bindPaddleProductToScreen",
+      "sourceModule": "paddle/seed-paddle-paywall-fixture",
+      "category": "paddle"
+    },
+    {
       "name": "bindVariableToSection",
       "sourceModule": "canvas/flexible-variables",
       "category": "canvas"
+    },
+    {
+      "name": "buildPaddleTransactionCompletedEnvelope",
+      "sourceModule": "paddle/sign-paddle-webhook",
+      "category": "paddle"
     },
     {
       "name": "BULK_DIALOG",
@@ -177,6 +192,11 @@
       "name": "changeDestParamSource",
       "sourceModule": "webplacement/wp-dialog-helpers",
       "category": "webplacement"
+    },
+    {
+      "name": "checkedWizardRowIds",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
     },
     {
       "name": "clearOnboardingFolderMemory",
@@ -444,6 +464,11 @@
       "category": "selectors"
     },
     {
+      "name": "CUSTOM_DOMAIN",
+      "sourceModule": "selectors/custom-domain",
+      "category": "selectors"
+    },
+    {
       "name": "DEFAULT_PAYWALL_ITEMS",
       "sourceModule": "webshell/paywall-helpers",
       "category": "webshell"
@@ -577,6 +602,16 @@
       "name": "ensureOnboardingFolder",
       "sourceModule": "onboarding-list/list-operations",
       "category": "onboarding-list"
+    },
+    {
+      "name": "ensurePaddlePaywallProduct",
+      "sourceModule": "paddle/create-paddle-paywall-product",
+      "category": "paddle"
+    },
+    {
+      "name": "ensurePaddleSandboxConnected",
+      "sourceModule": "paddle/connect-paddle",
+      "category": "paddle"
     },
     {
       "name": "ensurePaywallProduct",
@@ -959,6 +994,16 @@
       "category": "webplacement-list"
     },
     {
+      "name": "goToWizardStep",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "guidePopoverTestId",
+      "sourceModule": "guides/guide-anchors",
+      "category": "guides"
+    },
+    {
       "name": "highlightMention",
       "sourceModule": "canvas/content-editable-helpers",
       "category": "canvas"
@@ -994,6 +1039,11 @@
       "category": "selectors"
     },
     {
+      "name": "interceptInternalAnalytics",
+      "sourceModule": "webshell/internal-analytics",
+      "category": "webshell"
+    },
+    {
       "name": "interceptPaymentIntentMetadata",
       "sourceModule": "webshell/stripe-payment",
       "category": "webshell"
@@ -1001,6 +1051,11 @@
     {
       "name": "interceptPaymentIntents",
       "sourceModule": "webshell/stripe-payment",
+      "category": "webshell"
+    },
+    {
+      "name": "INTERNAL_ANALYTICS_PATH",
+      "sourceModule": "webshell/internal-analytics",
       "category": "webshell"
     },
     {
@@ -1032,6 +1087,11 @@
       "name": "isUpdateUiFromThemeDisabled",
       "sourceModule": "themes/theme-apply",
       "category": "themes"
+    },
+    {
+      "name": "LAUNCH_ACTIVATION",
+      "sourceModule": "selectors/launch-activation",
+      "category": "selectors"
     },
     {
       "name": "loadAuthorPlatforms",
@@ -1172,6 +1232,11 @@
       "name": "navigateToWebPlacements",
       "sourceModule": "navigation/sidebar",
       "category": "navigation"
+    },
+    {
+      "name": "observeStripeProviderIsolation",
+      "sourceModule": "webshell/provider-isolation",
+      "category": "webshell"
     },
     {
       "name": "ONBOARDING_LIST",
@@ -1399,9 +1464,24 @@
       "category": "auth"
     },
     {
+      "name": "readPaddleFixtureEnv",
+      "sourceModule": "paddle/seed-paddle-paywall-fixture",
+      "category": "paddle"
+    },
+    {
       "name": "readPostsForTopic",
       "sourceModule": "content-plan/topic-fixtures",
       "category": "content-plan"
+    },
+    {
+      "name": "readWizardTableRows",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "readWizardTableSummary",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
     },
     {
       "name": "redoCanvasAction",
@@ -1482,6 +1562,11 @@
       "name": "seedFirebaseAuthState",
       "sourceModule": "auth/login-via-cli-token",
       "category": "auth"
+    },
+    {
+      "name": "seedPaddlePaywallProduct",
+      "sourceModule": "paddle/seed-paddle-paywall-fixture",
+      "category": "paddle"
     },
     {
       "name": "seedPost",
@@ -1624,9 +1709,19 @@
       "category": "themes"
     },
     {
+      "name": "setWizardRowChecked",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
+    },
+    {
       "name": "SIDEBAR",
       "sourceModule": "selectors/sidebar",
       "category": "selectors"
+    },
+    {
+      "name": "signPaddleWebhook",
+      "sourceModule": "paddle/sign-paddle-webhook",
+      "category": "paddle"
     },
     {
       "name": "SOCIAL_PROOFS",
@@ -1647,6 +1742,16 @@
       "name": "STRATEGY_THEME",
       "sourceModule": "selectors/strategy-theme",
       "category": "selectors"
+    },
+    {
+      "name": "STRIPE_CONNECT",
+      "sourceModule": "selectors/stripe-connect",
+      "category": "selectors"
+    },
+    {
+      "name": "submitPaddlePaywallProductDialog",
+      "sourceModule": "paddle/create-paddle-paywall-product",
+      "category": "paddle"
     },
     {
       "name": "submitPerCellDialog",
@@ -1739,6 +1844,11 @@
       "category": "webshell"
     },
     {
+      "name": "verifyPaddlePaywallProduct",
+      "sourceModule": "paddle/create-paddle-paywall-product",
+      "category": "paddle"
+    },
+    {
       "name": "verifyPaywallResolvedLabels",
       "sourceModule": "webshell/paywall-helpers",
       "category": "webshell"
@@ -1794,6 +1904,11 @@
       "category": "webshell"
     },
     {
+      "name": "WEBHOOK_INGEST_PATHS",
+      "sourceModule": "payments/webhook-observability",
+      "category": "payments"
+    },
+    {
       "name": "WEBSHELL",
       "sourceModule": "selectors/webshell",
       "category": "selectors"
@@ -1802,6 +1917,16 @@
       "name": "WIZARD_V2",
       "sourceModule": "selectors/wizard",
       "category": "selectors"
+    },
+    {
+      "name": "wizardRow",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
+    },
+    {
+      "name": "wizardRowCheckbox",
+      "sourceModule": "strategy/strategy-wizard-helpers",
+      "category": "strategy"
     },
     {
       "name": "WP",

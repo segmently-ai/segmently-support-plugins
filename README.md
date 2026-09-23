@@ -2,6 +2,10 @@
 
 Public read-only marketplace for Segmently customer support plugins.
 
+## Plugins In This Marketplace
+
+- `segmently-launch-assistant`
+- `segmently-unit-economics`
 
 <!-- plugin-section:segmently-unit-economics:start -->
 ## Segmently Unit Economics (standalone plugin)
@@ -173,21 +177,21 @@ Run these steps end to end and report the exact command results:
 ## Segmently Launch Assistant
 
 - These rules apply after starting a new Codex session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
-- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped Article-first Corpus V2 directory and returns the TEACH / SHOW / DO / article contract to follow.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped quick index and returns the TEACH / SHOW / DO / article contract to follow.
 - Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
 - Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
 
 **Which skill when:**
-- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (Articles are the sole answer source; Guides are navigation/evidence bindings for SHOW only, never a competing knowledge source or routing peer).
+- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (articles first, guides second; guides are evidence material, never a routing peer).
 - "Do it for me" through the CLI -> the owning skill named by the runner contract (`segmently-cli-guide`, `segmently-cli-custom-screen-guide`, `segmently-cli-image-upload`, `segmently-cli-articles`, `segmently-cli-paywall-ab-rollout`). Never re-implement CLI work inline.
 - Browser SHOW / editor E2E DO -> the packaged runners only. Navigation is assembled from registered routes (`runtime/route-runner.mjs --list` / `--route <routeId>`, or the `--routeId` prefix on the SHOW/E2E runners). The browser is for execution and fixes, not for route discovery. Never quote selector values in replies; describe destinations with the route's customerSafeLabel.
 - Design imports and screen prototyping -> `claude-design`; `segmently-test-kit` is an execution companion, never an answer source.
-- When the host supports subagents, delegate heavy side work to the shipped agent roles from the skill's `agents/` directory: corpus-search (Article/section and Guide-binding lookups), tool-preflight (tool/auth checks), browser-show (headed SHOW sessions), next-step-prepper (background prefetch, only when predictive mode is on).
+- When the host supports subagents, delegate heavy side work to the shipped agent roles from the skill's `agents/` directory: corpus-search (catalog/graph lookups), tool-preflight (tool/auth checks), browser-show (headed SHOW sessions), next-step-prepper (background prefetch, only when predictive mode is on).
 
 **Evidence and sections:**
-- For customer answers, select Article aliases, section ids, and action ids from the installed Corpus V2 indexes first; select Guide keys only when SHOW navigation/evidence is requested.
-- Corpus V2 is compact and lazy: start with `references/corpus-v2/article-directory.json`, `article-search-index.json`, and `article-section-index.jsonl`; load `guide-bindings.json` only for SHOW. Never blanket-load the corpus or rebuild a public knowledge graph.
-- Read selected Article sections before answering. If a bundled fallback is too thin or stale, run the read-only article-fetch path, verify the Article content hash, and use the fetched Article/config sections as answer material.
+- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
+- The article and guide catalogs are compact directories: load heavy sections only for the selected items through their `contentRef` files (`references/articles/<alias>.json`, `references/guides/<guideKey>.json`). Never blanket-load whole catalogs into context.
+- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
 - Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
 
 **Session state and proactivity:**
@@ -243,21 +247,21 @@ Run these steps end to end and report the exact command results:
 ## Segmently Launch Assistant
 
 - These rules apply after starting a new Claude Code session in this project folder, once the installed Segmently Launch Assistant plugin skills are visible.
-- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped Article-first Corpus V2 directory and returns the TEACH / SHOW / DO / article contract to follow.
+- Use the installed Segmently Launch Assistant plugin for Segmently launch/support tasks. `segmently-launch-guide` is the single entry point: it routes every Segmently intent through its shipped quick index and returns the TEACH / SHOW / DO / article contract to follow.
 - Do not answer Segmently product, CLI, API, editor, paywall, support-flow, or launch questions from general model knowledge.
 - Do not invent Segmently commands, APIs, fields, routes, product behavior, docs, or troubleshooting steps.
 
 **Which skill when:**
-- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (Articles are the sole answer source; Guides are navigation/evidence bindings for SHOW only, never a competing knowledge source or routing peer).
+- Product, how-to, "what is left to launch", settings, integrations, paywall, analytics questions -> `segmently-launch-guide` (articles first, guides second; guides are evidence material, never a routing peer).
 - "Do it for me" through the CLI -> the owning skill named by the runner contract (`segmently-cli-guide`, `segmently-cli-custom-screen-guide`, `segmently-cli-image-upload`, `segmently-cli-articles`, `segmently-cli-paywall-ab-rollout`). Never re-implement CLI work inline.
 - Browser SHOW / editor E2E DO -> the packaged runners only. Navigation is assembled from registered routes (`runtime/route-runner.mjs --list` / `--route <routeId>`, or the `--routeId` prefix on the SHOW/E2E runners). The browser is for execution and fixes, not for route discovery. Never quote selector values in replies; describe destinations with the route's customerSafeLabel.
 - Design imports and screen prototyping -> `claude-design`; `segmently-test-kit` is an execution companion, never an answer source.
-- Prefer the bundled plugin subagents for heavy side work when available: `segmently-corpus-search` (Article/section and Guide-binding lookups), `segmently-tool-preflight` (tool/auth checks), `segmently-browser-show` (headed SHOW sessions), `segmently-next-step-prepper` (background prefetch, only when predictive mode is on).
+- Prefer the bundled plugin subagents for heavy side work when available: `segmently-corpus-search` (catalog/graph lookups), `segmently-tool-preflight` (tool/auth checks), `segmently-browser-show` (headed SHOW sessions), `segmently-next-step-prepper` (background prefetch, only when predictive mode is on).
 
 **Evidence and sections:**
-- For customer answers, select Article aliases, section ids, and action ids from the installed Corpus V2 indexes first; select Guide keys only when SHOW navigation/evidence is requested.
-- Corpus V2 is compact and lazy: start with `references/corpus-v2/article-directory.json`, `article-search-index.json`, and `article-section-index.jsonl`; load `guide-bindings.json` only for SHOW. Never blanket-load the corpus or rebuild a public knowledge graph.
-- Read selected Article sections before answering. If a bundled fallback is too thin or stale, run the read-only article-fetch path, verify the Article content hash, and use the fetched Article/config sections as answer material.
+- For customer answers, select article aliases, guide keys, and action ids from the installed shipped catalogs first; use runtime runners only to validate evidence and execution boundaries.
+- The article and guide catalogs are compact directories: load heavy sections only for the selected items through their `contentRef` files (`references/articles/<alias>.json`, `references/guides/<guideKey>.json`). Never blanket-load whole catalogs into context.
+- Read selected article/guide sections before answering. If selected snippets are too thin, run the read-only article-fetch path and use the fetched article/config sections as answer material.
 - Answer only through installed Segmently skills/references/runners, selected article content, public Segmently CLI output, and verified Segmently or Playwright output.
 
 **Session state and proactivity:**

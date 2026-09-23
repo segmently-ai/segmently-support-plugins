@@ -130,6 +130,7 @@ a full funnel manifest when the task is scoped to existing V2 StepNode screens.
 |---|---|---|
 | Analytics settings | `segmently analytics settings get`, then `segmently analytics settings apply --file analytics.json --merge` | `analytics:read`, `analytics:write`; write satisfies read |
 | Analytics readiness | `segmently analytics probe --required-platform facebook_pixel,facebook_capi --required-url-param fbclid,...` | `analytics:read` |
+| Traffic into a funnel version (campaigns + creatives, people ladder, spend/CAC) | `segmently analytics funnel-sources <projectId> --onboarding <id> --version-id <id> [--alias <alias>] --from <ISO> --to <ISO> [--unit people\|visits] [--attribution-model <id>] --format json` | Reports/insights access (`funnel_insights.access` on the project). Same numbers as the «Traffic into this funnel» Reports page and the research-report section — the CLI renders the served payload, nothing is recomputed client-side. Omit `--version-id` for the whole onboarding (spend share = 1). `--to` is end-exclusive. |
 | Custom domain | `segmently domains status`, `segmently domains verify --allow-pending` | `domains:read` |
 | CDN image upload | `segmently assets upload-image ./hero.png --project <projectId>` | `assets:write`; requires CLI asset upload access |
 | CDN image upload as V2 asset reference | `segmently assets upload-image ./hero.png --project <projectId> --folder content-plan/references --asset` | `assets:write`; returns `{ original, small }` only |

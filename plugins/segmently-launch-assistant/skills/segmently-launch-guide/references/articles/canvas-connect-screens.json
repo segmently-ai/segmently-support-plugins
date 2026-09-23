@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "canvas-connect-screens",
+  "articleId": "N2PggqL5XbRqV06yduSk",
+  "title": "V2 canvas: connect screens",
+  "sections": [
+    {
+      "id": "canvas-connect-screens/connection-handles",
+      "title": "Find the connection ports",
+      "summary": "Each node has handles on its edges: input handles on the left of non-launch screens, and one output handle per action on the right. Hover a handle to see its action label.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/connection-handles",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png"
+      ]
+    },
+    {
+      "id": "canvas-connect-screens/create-default-edge",
+      "title": "Draw a default connection",
+      "summary": "Drag from an output handle on the source to an input handle on the target to create an edge. This is an unconditional path: every visitor who takes that action goes to the target.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/create-default-edge",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/delete-connection",
+      "title": "Remove a connection",
+      "summary": "Click an edge, then Delete Connection and confirm. The target becomes unreachable through that action unless another path exists.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/delete-connection",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/edit-conditions",
+      "title": "Add conditions to a connection",
+      "summary": "Click an edge to open Connection Details, then Edit Conditions to define AND/OR logic on flow variables. Conditional paths activate only when the conditions are true.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/edit-conditions",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/flexible-layout-handles",
+      "title": "FlexibleLayout sections add their own handles",
+      "summary": "FlexibleLayout screens hold multiple sections (content, buttons, options, embeds, paywalls), and each can generate its own connection handles. Handles appear automatically based on the sections you add.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/flexible-layout-handles",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "flexible-layout"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/timer-auto-advance",
+      "title": "Carousel and ProgressSteps auto-advance",
+      "summary": "Carousel and ProgressSteps screens advance on a timer rather than a button, so their timer handle is what you route from. These types have no Action Bar because visitors do not click Continue.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/timer-auto-advance",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/validation",
+      "title": "Verify the flow is complete",
+      "summary": "Before publishing, confirm a launch screen is set, every non-final screen has an outgoing connection, paywall screens point to valid products, and each branch ends meaningfully.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/validation",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "canvas-connect-screens/connection-handles",
+      "title": "Find the connection ports",
+      "summary": "Each node has handles on its edges: input handles on the left of non-launch screens, and one output handle per action on the right. Hover a handle to see its action label.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/connection-handles",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png"
+      ]
+    },
+    {
+      "id": "canvas-connect-screens/create-default-edge",
+      "title": "Draw a default connection",
+      "summary": "Drag from an output handle on the source to an input handle on the target to create an edge. This is an unconditional path: every visitor who takes that action goes to the target.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/create-default-edge",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/delete-connection",
+      "title": "Remove a connection",
+      "summary": "Click an edge, then Delete Connection and confirm. The target becomes unreachable through that action unless another path exists.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/delete-connection",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/edit-conditions",
+      "title": "Add conditions to a connection",
+      "summary": "Click an edge to open Connection Details, then Edit Conditions to define AND/OR logic on flow variables. Conditional paths activate only when the conditions are true.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/edit-conditions",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/flexible-layout-handles",
+      "title": "FlexibleLayout sections add their own handles",
+      "summary": "FlexibleLayout screens hold multiple sections (content, buttons, options, embeds, paywalls), and each can generate its own connection handles. Handles appear automatically based on the sections you add.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/flexible-layout-handles",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "flexible-layout"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/timer-auto-advance",
+      "title": "Carousel and ProgressSteps auto-advance",
+      "summary": "Carousel and ProgressSteps screens advance on a timer rather than a button, so their timer handle is what you route from. These types have no Action Bar because visitors do not click Continue.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/timer-auto-advance",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "canvas-connect-screens/validation",
+      "title": "Verify the flow is complete",
+      "summary": "Before publishing, confirm a launch screen is set, every non-final screen has an outgoing connection, paywall screens point to valid products, and each branch ends meaningfully.",
+      "kind": "guide-section",
+      "articleSectionId": "canvas-connect-screens/validation",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "canvas-connect-screens"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151502_show-connection-overview-connection-overview/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/canvas-connect-screens/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "9bcdd973d65ff0b4"
+  }
+}

@@ -35,8 +35,8 @@ the (wider) width, but the box height is frozen → the child overflows the box.
 
 ## Responsive adaptation rules (apply during import; preserve visual parity)
 
-- **Root screen container:** `min-height:100vh; display:flex; flex-direction:column`
-  so content fills any height. Keep the chosen footer-CTA behavior (sticky / fixed /
+- **Whole-screen iframe root:** `min-height:100vh; display:flex; flex-direction:column`
+  can fill the iframe viewport. This is not a shadow-DOM rule: preserve the host scroll owner there and do not add viewport pinning (`min-height:100vh` / `overflow:hidden`). Keep the chosen footer-CTA behavior (sticky / fixed /
   scroll) stable across screens with different content amounts.
 - **Width-filling media** (charts, illustrations, hero images, backgrounds): use an
   `aspect-ratio` box, never a fixed height.

@@ -28,7 +28,7 @@ A design that is a **section** — or whose project/file is named like one (e.g.
 3. **Resolve the host screen.** The target must be a `FlexibleLayout` screen with a `CustomEmbed`
    section. For a paywall, that screen should already carry a `ProductCatalog` (as the embed's
    child or a sibling) and a native Purchase button. Read it first:
-   `segmently funnels custom-screen section get <funnelId> <versionId> <screenId> <projectId>`.
+   `segmently funnels custom-screen section get <funnelId> <versionId> <screenId> <projectId> --env <env>`.
    If the host is a native `Paywall` StepKind (no `flexibleLayout.sections`), it must first be
    converted to FlexibleLayout **in the editor** — note this to the user; do **not** auto-convert.
 4. **Pick the buy-button scheme** (the rule):
@@ -55,7 +55,7 @@ A design that is a **section** — or whose project/file is named like one (e.g.
    Scheme B/C) a `data-sources.json` ProductCatalog. Apply with the NEW command (does not touch
    sibling sections):
    ```bash
-   segmently funnels custom-screen section apply <funnelId> <versionId> <projectId> \
+   segmently --env <env> funnels custom-screen section apply <funnelId> <versionId> <projectId> \
      --screen <hostScreenId> --section <embedSectionId> \
      --html-file screens/<slug>/updated/index.html \
      --data-sources-file screens/<slug>/updated/data-sources.json

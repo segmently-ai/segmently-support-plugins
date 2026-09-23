@@ -100,6 +100,10 @@ function main() {
       executeWith: {
         skill: action.owningSkill,
         commandFamily: action.commandFamily,
+        // Missing/undefined means true: every pre-existing action still requires
+        // Segmently CLI/browser auth. Only an explicit authRequired: false (e.g.
+        // an offline local CLI companion) flips this.
+        authRequired: action.authRequired !== false,
         contract:
           'Delegate to the owning CLI skill. Do not invent command syntax in segmently-launch-guide.',
       },
@@ -119,6 +123,7 @@ function main() {
         skill: action.owningSkill,
         companionSkill: 'segmently-test-kit',
         runner: action.runner,
+        authRequired: action.authRequired !== false,
         contract:
           'Use playwright-bowser to drive the customer browser with the returned execution object.',
       },
@@ -241,6 +246,14 @@ function cliExecutionFor(action, args) {
         },
       },
       expectedWrite: `Create or ensure the sandbox paywall product ${args.productName}.`,
+    };
+  }
+  if (action.id === 'launch.unitEconomics.evaluate') {
+    return {
+      ...base,
+      argvTemplate: ['ue', 'evaluate', '<scenarioFile>', '--explain'],
+      argv: ['ue', 'evaluate', args.scenarioFile ?? '.ue/<slug>.json', '--explain'],
+      expectedWrite: 'No project mutation. Prints a deterministic offline unit-economics evaluation for the given scenario file; nothing is sent to Segmently.',
     };
   }
   if (action.cliPatch) return cliPatchExecutionFor(action, args, base);

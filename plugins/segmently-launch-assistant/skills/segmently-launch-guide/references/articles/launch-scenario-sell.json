@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "launch-scenario-sell",
+  "articleId": null,
+  "title": "Start selling: live Stripe, live products, paywall",
+  "sections": [
+    {
+      "id": "launch-scenario-sell/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel; the canvas opens with a draft version.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-02",
+      "title": "Connect your domain",
+      "summary": "Enter the domain, add the DNS records at your registrar, verify.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-sell/step-03",
+      "title": "Publish the funnel",
+      "summary": "Deploy Web from the canvas creates and publishes the placement.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration so purchase reports fill up.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "purchase",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-05",
+      "title": "Connect live Stripe",
+      "summary": "Activate the Stripe account first, then Connect Live Account; test-mode stays for sandbox checks.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/stripe-connect-live-mode",
+      "guideKeys": [
+        "stripe-connect-live-mode"
+      ],
+      "tags": [
+        "scenario-step",
+        "stripeConnected",
+        "stripe-payments"
+      ],
+      "imageUrls": [],
+      "stepOrder": 5,
+      "itemId": "stripeConnected",
+      "actionArticleAlias": "stripe-connect-live-mode",
+      "vendorStepIds": [
+        "stripe-connect-live-mode/vendor-activate-live-account"
+      ]
+    },
+    {
+      "id": "launch-scenario-sell/step-06",
+      "title": "Create live products",
+      "summary": "On Paywall Products switch to the Live tab and create the products with their prices.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall",
+      "guideKeys": [
+        "paywall-products-mode-tabs"
+      ],
+      "tags": [
+        "scenario-step",
+        "paywallProductsCreated",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": [],
+      "stepOrder": 6,
+      "itemId": "paywallProductsCreated",
+      "actionArticleAlias": "help-screen-paywall",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-07",
+      "title": "Attach the products to the paywall screen",
+      "summary": "Open the paywall screen's Subscriptions section and pick the live products, then republish.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions",
+      "guideKeys": [
+        "screen-editor-section-paywall-subscriptions"
+      ],
+      "tags": [
+        "scenario-step",
+        "paywallAttached",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": [],
+      "stepOrder": 7,
+      "itemId": "paywallAttached",
+      "actionArticleAlias": "help-block-paywall-subscriptions",
+      "vendorStepIds": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "launch-scenario-sell/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel; the canvas opens with a draft version.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-02",
+      "title": "Connect your domain",
+      "summary": "Enter the domain, add the DNS records at your registrar, verify.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-sell/step-03",
+      "title": "Publish the funnel",
+      "summary": "Deploy Web from the canvas creates and publishes the placement.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration so purchase reports fill up.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "purchase",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-05",
+      "title": "Connect live Stripe",
+      "summary": "Activate the Stripe account first, then Connect Live Account; test-mode stays for sandbox checks.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/stripe-connect-live-mode",
+      "guideKeys": [
+        "stripe-connect-live-mode"
+      ],
+      "tags": [
+        "scenario-step",
+        "stripeConnected",
+        "stripe-payments"
+      ],
+      "imageUrls": [],
+      "stepOrder": 5,
+      "itemId": "stripeConnected",
+      "actionArticleAlias": "stripe-connect-live-mode",
+      "vendorStepIds": [
+        "stripe-connect-live-mode/vendor-activate-live-account"
+      ]
+    },
+    {
+      "id": "launch-scenario-sell/step-06",
+      "title": "Create live products",
+      "summary": "On Paywall Products switch to the Live tab and create the products with their prices.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-paywall",
+      "guideKeys": [
+        "paywall-products-mode-tabs"
+      ],
+      "tags": [
+        "scenario-step",
+        "paywallProductsCreated",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": [],
+      "stepOrder": 6,
+      "itemId": "paywallProductsCreated",
+      "actionArticleAlias": "help-screen-paywall",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-sell/step-07",
+      "title": "Attach the products to the paywall screen",
+      "summary": "Open the paywall screen's Subscriptions section and pick the live products, then republish.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-paywall-subscriptions",
+      "guideKeys": [
+        "screen-editor-section-paywall-subscriptions"
+      ],
+      "tags": [
+        "scenario-step",
+        "paywallAttached",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": [],
+      "stepOrder": 7,
+      "itemId": "paywallAttached",
+      "actionArticleAlias": "help-block-paywall-subscriptions",
+      "vendorStepIds": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": null,
+    "sourceFiles": [],
+    "generatedHash": "7fa4bd21f72fb5f3"
+  }
+}

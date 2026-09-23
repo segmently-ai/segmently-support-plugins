@@ -1,0 +1,626 @@
+[
+  {
+    "query": "create a funnel",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "en"
+  },
+  {
+    "query": "start a new onboarding",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "en"
+  },
+  {
+    "query": "make my first funnel",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "en"
+  },
+  {
+    "query": "создай воронку",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "ru"
+  },
+  {
+    "query": "новая воронка",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "ru"
+  },
+  {
+    "query": "сделай онбординг",
+    "should_trigger": true,
+    "scenario": "create-funnel",
+    "lang": "ru"
+  },
+  {
+    "query": "apply a theme",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "en"
+  },
+  {
+    "query": "set a theme",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "en"
+  },
+  {
+    "query": "choose a template",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "en"
+  },
+  {
+    "query": "поставь тему",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "ru"
+  },
+  {
+    "query": "примени тему",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "ru"
+  },
+  {
+    "query": "выбери оформление",
+    "should_trigger": true,
+    "scenario": "set-theme",
+    "lang": "ru"
+  },
+  {
+    "query": "add screens",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "en"
+  },
+  {
+    "query": "add a screen to the canvas",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "en"
+  },
+  {
+    "query": "build the screen sequence",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "en"
+  },
+  {
+    "query": "добавь экраны",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "ru"
+  },
+  {
+    "query": "добавь экран на канвас",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "ru"
+  },
+  {
+    "query": "построй последовательность экранов",
+    "should_trigger": true,
+    "scenario": "add-screens",
+    "lang": "ru"
+  },
+  {
+    "query": "configure the continue button",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "en"
+  },
+  {
+    "query": "change the button text",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "en"
+  },
+  {
+    "query": "set the screen action",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "en"
+  },
+  {
+    "query": "настрой кнопку продолжить",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "ru"
+  },
+  {
+    "query": "поменяй текст кнопки",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой действие экрана",
+    "should_trigger": true,
+    "scenario": "configure-actions",
+    "lang": "ru"
+  },
+  {
+    "query": "set up analytics",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "en"
+  },
+  {
+    "query": "connect analytics",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "en"
+  },
+  {
+    "query": "add google analytics",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "en"
+  },
+  {
+    "query": "подключи аналитику",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой трекинг",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "ru"
+  },
+  {
+    "query": "добавь google analytics",
+    "should_trigger": true,
+    "scenario": "connect-analytics",
+    "lang": "ru"
+  },
+  {
+    "query": "add a Facebook pixel",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "en"
+  },
+  {
+    "query": "connect Meta pixel",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "en"
+  },
+  {
+    "query": "set up FB tracking",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "en"
+  },
+  {
+    "query": "добавь FB пиксель",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "ru"
+  },
+  {
+    "query": "подключи фейсбук пиксель",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "ru"
+  },
+  {
+    "query": "meta pixel",
+    "should_trigger": true,
+    "scenario": "add-fb-pixel",
+    "lang": "ru"
+  },
+  {
+    "query": "add a TikTok pixel",
+    "should_trigger": true,
+    "scenario": "add-tiktok-pixel",
+    "lang": "en"
+  },
+  {
+    "query": "connect TikTok tracking",
+    "should_trigger": true,
+    "scenario": "add-tiktok-pixel",
+    "lang": "en"
+  },
+  {
+    "query": "добавь TikTok пиксель",
+    "should_trigger": true,
+    "scenario": "add-tiktok-pixel",
+    "lang": "ru"
+  },
+  {
+    "query": "подключи тикток пиксель",
+    "should_trigger": true,
+    "scenario": "add-tiktok-pixel",
+    "lang": "ru"
+  },
+  {
+    "query": "connect Stripe",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "en"
+  },
+  {
+    "query": "connect payments",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "en"
+  },
+  {
+    "query": "set up Stripe",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "en"
+  },
+  {
+    "query": "подключи Stripe",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "ru"
+  },
+  {
+    "query": "подключи платежи",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой страйп",
+    "should_trigger": true,
+    "scenario": "connect-stripe",
+    "lang": "ru"
+  },
+  {
+    "query": "create paywall plans",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "en"
+  },
+  {
+    "query": "create paywall products",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "en"
+  },
+  {
+    "query": "make a subscription product",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "en"
+  },
+  {
+    "query": "создай тарифы пейволла",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "ru"
+  },
+  {
+    "query": "создай продукты для пейвола",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "ru"
+  },
+  {
+    "query": "сделай подписку",
+    "should_trigger": true,
+    "scenario": "create-paywall-products",
+    "lang": "ru"
+  },
+  {
+    "query": "add products to the paywall screen",
+    "should_trigger": true,
+    "scenario": "attach-products",
+    "lang": "en"
+  },
+  {
+    "query": "attach plans to the paywall",
+    "should_trigger": true,
+    "scenario": "attach-products",
+    "lang": "en"
+  },
+  {
+    "query": "добавь продукты на пейвол",
+    "should_trigger": true,
+    "scenario": "attach-products",
+    "lang": "ru"
+  },
+  {
+    "query": "привяжи тарифы к экрану пейвола",
+    "should_trigger": true,
+    "scenario": "attach-products",
+    "lang": "ru"
+  },
+  {
+    "query": "test a sandbox purchase",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "en"
+  },
+  {
+    "query": "run a test payment",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "en"
+  },
+  {
+    "query": "verify checkout works",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "en"
+  },
+  {
+    "query": "проверь покупку",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "ru"
+  },
+  {
+    "query": "сделай тестовую покупку",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "ru"
+  },
+  {
+    "query": "проверь оплату в песочнице",
+    "should_trigger": true,
+    "scenario": "test-purchase",
+    "lang": "ru"
+  },
+  {
+    "query": "set up a web placement",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "en"
+  },
+  {
+    "query": "configure the placement",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "en"
+  },
+  {
+    "query": "set the entry rules",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "en"
+  },
+  {
+    "query": "настрой веб-плейсмент",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой размещение",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой вход в воронку",
+    "should_trigger": true,
+    "scenario": "configure-web-placement",
+    "lang": "ru"
+  },
+  {
+    "query": "set up UTM mapping",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "en"
+  },
+  {
+    "query": "pass values to Stripe metadata",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "en"
+  },
+  {
+    "query": "keep attribution data",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "en"
+  },
+  {
+    "query": "настрой utm метки",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "ru"
+  },
+  {
+    "query": "передавай данные в stripe metadata",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "ru"
+  },
+  {
+    "query": "сохрани атрибуцию",
+    "should_trigger": true,
+    "scenario": "configure-attribution",
+    "lang": "ru"
+  },
+  {
+    "query": "go live on my domain",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "en"
+  },
+  {
+    "query": "connect a custom domain",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "en"
+  },
+  {
+    "query": "set up my own domain",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "en"
+  },
+  {
+    "query": "подключи домен",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "ru"
+  },
+  {
+    "query": "запусти на своём домене",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "ru"
+  },
+  {
+    "query": "настрой кастомный домен",
+    "should_trigger": true,
+    "scenario": "add-custom-domain",
+    "lang": "ru"
+  },
+  {
+    "query": "publish",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "en"
+  },
+  {
+    "query": "go live",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "en"
+  },
+  {
+    "query": "launch the funnel",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "en"
+  },
+  {
+    "query": "опубликуй",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "ru"
+  },
+  {
+    "query": "запусти воронку",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "ru"
+  },
+  {
+    "query": "выложи в прод",
+    "should_trigger": true,
+    "scenario": "publish",
+    "lang": "ru"
+  },
+  {
+    "query": "change the title colour",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "en"
+  },
+  {
+    "query": "change the spacing",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "en"
+  },
+  {
+    "query": "change a screen setting",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "en"
+  },
+  {
+    "query": "поменяй цвет заголовка",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "ru"
+  },
+  {
+    "query": "измени отступы",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "ru"
+  },
+  {
+    "query": "поменяй настройку экрана",
+    "should_trigger": true,
+    "scenario": "change-setting",
+    "lang": "ru"
+  },
+  {
+    "query": "show me how to start",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "en"
+  },
+  {
+    "query": "teach me the basics",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "en"
+  },
+  {
+    "query": "how do I add a screen and connect",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "en"
+  },
+  {
+    "query": "how do I add a condition",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "en"
+  },
+  {
+    "query": "покажи как сделать воронку",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "ru"
+  },
+  {
+    "query": "научи пользоваться",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "ru"
+  },
+  {
+    "query": "как добавить экран и соединить",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "ru"
+  },
+  {
+    "query": "как сделать условие",
+    "should_trigger": true,
+    "scenario": "teach-first-run",
+    "lang": "ru"
+  },
+  {
+    "query": "what’s the weather in London today",
+    "should_trigger": false,
+    "scenario": "(negative-control)",
+    "lang": "n/a"
+  },
+  {
+    "query": "write me a short poem about the sea",
+    "should_trigger": false,
+    "scenario": "(negative-control)",
+    "lang": "n/a"
+  },
+  {
+    "query": "refactor this python function to run faster",
+    "should_trigger": false,
+    "scenario": "(negative-control)",
+    "lang": "n/a"
+  },
+  {
+    "query": "что приготовить на ужин сегодня",
+    "should_trigger": false,
+    "scenario": "(negative-control)",
+    "lang": "n/a"
+  }
+]

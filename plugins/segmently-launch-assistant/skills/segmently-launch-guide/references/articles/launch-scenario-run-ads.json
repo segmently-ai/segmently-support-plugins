@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "launch-scenario-run-ads",
+  "articleId": null,
+  "title": "Run ads: pixels, server-side events, attribution",
+  "sections": [
+    {
+      "id": "launch-scenario-run-ads/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-02",
+      "title": "Connect your domain",
+      "summary": "Ad platforms trust a branded domain; add the DNS records and verify.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-03",
+      "title": "Publish the funnel",
+      "summary": "Deploy Web from the canvas.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-05",
+      "title": "Connect the Facebook pixel and Conversions API",
+      "summary": "Add the Facebook Pixel integration with the Pixel ID, then the Conversions API integration with the generated token.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "facebookPixel",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 5,
+      "itemId": "facebookPixel",
+      "actionArticleAlias": "facebook-pixel-capi-setup",
+      "vendorStepIds": [
+        "facebook-pixel-capi-setup/vendor-pixel-id",
+        "facebook-pixel-capi-setup/vendor-capi-token"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-06",
+      "title": "Connect the TikTok pixel and Events API",
+      "summary": "Add the TikTok Pixel integration with the pixel code, then the Events API integration with the access token.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "tiktokPixel",
+        "facebook-events",
+        "tiktok-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 6,
+      "itemId": "tiktokPixel",
+      "actionArticleAlias": "tiktok-pixel-events-api-setup",
+      "vendorStepIds": [
+        "tiktok-pixel-events-api-setup/vendor-pixel-code",
+        "tiktok-pixel-events-api-setup/vendor-access-token"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-07",
+      "title": "Turn on attribution on the placement",
+      "summary": "In the placement's Sources step switch on Facebook, TikTok and UTM attribution so click ids reach the pixels and Stripe.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-entry-rules",
+      "guideKeys": [
+        "webplacement-entry-rules"
+      ],
+      "tags": [
+        "scenario-step",
+        "attribution",
+        "facebook-events",
+        "tiktok-events",
+        "stripe-payments"
+      ],
+      "imageUrls": [],
+      "stepOrder": 7,
+      "itemId": "attribution",
+      "actionArticleAlias": "webplacement-entry-rules",
+      "vendorStepIds": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "launch-scenario-run-ads/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-02",
+      "title": "Connect your domain",
+      "summary": "Ad platforms trust a branded domain; add the DNS records and verify.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-03",
+      "title": "Publish the funnel",
+      "summary": "Deploy Web from the canvas.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-run-ads/step-05",
+      "title": "Connect the Facebook pixel and Conversions API",
+      "summary": "Add the Facebook Pixel integration with the Pixel ID, then the Conversions API integration with the generated token.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "facebookPixel",
+        "facebook-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 5,
+      "itemId": "facebookPixel",
+      "actionArticleAlias": "facebook-pixel-capi-setup",
+      "vendorStepIds": [
+        "facebook-pixel-capi-setup/vendor-pixel-id",
+        "facebook-pixel-capi-setup/vendor-capi-token"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-06",
+      "title": "Connect the TikTok pixel and Events API",
+      "summary": "Add the TikTok Pixel integration with the pixel code, then the Events API integration with the access token.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/tiktok-pixel-events-api-setup",
+      "guideKeys": [
+        "analytics-add-provider",
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "scenario-step",
+        "tiktokPixel",
+        "facebook-events",
+        "tiktok-events",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 6,
+      "itemId": "tiktokPixel",
+      "actionArticleAlias": "tiktok-pixel-events-api-setup",
+      "vendorStepIds": [
+        "tiktok-pixel-events-api-setup/vendor-pixel-code",
+        "tiktok-pixel-events-api-setup/vendor-access-token"
+      ]
+    },
+    {
+      "id": "launch-scenario-run-ads/step-07",
+      "title": "Turn on attribution on the placement",
+      "summary": "In the placement's Sources step switch on Facebook, TikTok and UTM attribution so click ids reach the pixels and Stripe.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-entry-rules",
+      "guideKeys": [
+        "webplacement-entry-rules"
+      ],
+      "tags": [
+        "scenario-step",
+        "attribution",
+        "facebook-events",
+        "tiktok-events",
+        "stripe-payments"
+      ],
+      "imageUrls": [],
+      "stepOrder": 7,
+      "itemId": "attribution",
+      "actionArticleAlias": "webplacement-entry-rules",
+      "vendorStepIds": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": null,
+    "sourceFiles": [],
+    "generatedHash": "8ffae5930e177927"
+  }
+}

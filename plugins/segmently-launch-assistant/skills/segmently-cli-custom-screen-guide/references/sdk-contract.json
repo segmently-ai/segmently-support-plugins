@@ -1,0 +1,245 @@
+{
+  "version": "custom-screen-authoring.v3",
+  "authority": "custom-screen sdk-bridge/v2-runtime/shadow-dom runtime; skill source segmently-cli-custom-screen-guide",
+  "methods": {
+    "ready": {
+      "ruleId": "sdk.ready",
+      "instruction": "window.segmentlySDK.ready() resolves to sdk but has no built-in rejection or timeout for a missing host initialization. Use a 10-second client deadline per initialization attempt. While waiting or failed, disable dependent inputs and actions; after failure show an accessible explanation and an enabled Retry control that starts a fresh attempt. Ignore late results from timed-out or superseded attempts, clear timers on completion/page exit, and prevent concurrent retries. Keep entered answers unchanged across retries; restore saved SDK answers once on the first successful initialization. Do not navigate or write answers before readiness.",
+      "capability": "initialize"
+    },
+    "getVariable": {
+      "ruleId": "sdk.getVariable",
+      "instruction": "sdk.getVariable(id) reads only an approved read binding. Preserve zero, false and decimal text.",
+      "capability": "read-variables"
+    },
+    "setVariable": {
+      "ruleId": "sdk.setVariable",
+      "instruction": "sdk.setVariable(id, value) synchronously queues a validated value for an approved write binding; it returns no Promise. The web host stores scalar answers as text, including numeric variables. For user-entered numeric answers, pass the original validated decimal string unchanged (including trailing zeroes); do not convert through Number, parseFloat, toFixed or rounding before writing. Perform every required write before sdk.navigateNext(); pending writes travel with its callback.",
+      "capability": "write-variables"
+    },
+    "navigateNext": {
+      "ruleId": "sdk.navigateNext",
+      "instruction": "sdk.navigateNext() invokes the host-owned embed.callback; the SDK carries pending writes with that callback. Never guess a destination.",
+      "capability": "continue"
+    },
+    "navigateBack": {
+      "ruleId": "sdk.navigateBack",
+      "instruction": "sdk.navigateBack() requests the previous screen from host history. Never guess a previous id, complete the current step or write fabricated answers. On a direct entry with no history, the host may leave this screen visible; retain retry controls.",
+      "capability": "back"
+    },
+    "getChildSection": {
+      "ruleId": "sdk.getChildSection",
+      "instruction": "sdk.getChildSection(idOrLabel) returns an editor-owned child section with its id, label, kind and serialized data, or null. Use the supplied stable section id or unique label; verify the expected kind before using data.",
+      "capability": "read-data-sources"
+    },
+    "getChildSectionText": {
+      "ruleId": "sdk.getChildSectionText",
+      "instruction": "sdk.getChildSectionText(idOrLabel) returns a Text section projection or null. Author Text as title-only unless the exported schema and editor support richer fields. Bind runtime copy to the supplied title; a preview fallback must not hide a missing required runtime source.",
+      "capability": "read-text"
+    },
+    "getChildSectionMedia": {
+      "ruleId": "sdk.getChildSectionMedia",
+      "instruction": "sdk.getChildSectionMedia(idOrLabel) returns a Media projection with url and type, or null. Read replaceable content media from this source. Use only approved completed assets with the supplied alternative text; preserve the intended aspect ratio.",
+      "capability": "read-media"
+    },
+    "getVariableDefinition": {
+      "ruleId": "sdk.getVariableDefinition",
+      "instruction": "sdk.getVariableDefinition(id) reads an approved canonical definition. Preserve complete option ids, labels and order; option labels are not stored values. Prefer each serialized selection item.optionId to positional mapping across different arrays.",
+      "capability": "read-definitions"
+    },
+    "getChildSections": {
+      "ruleId": "sdk.getChildSections",
+      "instruction": "sdk.getChildSections() returns editor-owned child data sources. Restrict use to the approved sections in the packet; do not discover unrelated user or product data.",
+      "capability": "read-data-sources"
+    },
+    "triggerButtonAction": {
+      "ruleId": "sdk.triggerButtonAction",
+      "instruction": "sdk.triggerButtonAction(idOrLabel) routes an approved Button child section through section.{childSectionId}.button. The host graph owns the destination. Complete required validated writes before triggering this action; it does not use the parent embed.callback.",
+      "capability": "button-actions"
+    },
+    "triggerOptionAction": {
+      "ruleId": "sdk.triggerOptionAction",
+      "instruction": "sdk.triggerOptionAction(idOrLabel, optionIdOrIndex) routes an approved SingleSelectionList or existing OptionsList through section.{childSectionId}.item.{index}. Prefer the canonical optionId. The host resolves its bound selection write before routing. MultipleSelectionList is unsupported: explicitly write its validated array and use the allowed whole-screen continuation.",
+      "capability": "single-choice-actions"
+    },
+    "getProducts": {
+      "ruleId": "sdk.getProducts",
+      "instruction": "sdk.getProducts() reads products from the owning ProductCatalog after readiness. Use canonical product ids and catalog text; never invent products or prices.",
+      "capability": "product-catalog"
+    },
+    "getProductPrice": {
+      "ruleId": "sdk.getProductPrice",
+      "instruction": "sdk.getProductPrice(productId) reads the resolved ProductCatalog price for an approved product. Preserve currency, interval and terms from the real catalog; do not infer missing prices.",
+      "capability": "product-catalog"
+    },
+    "selectProduct": {
+      "ruleId": "sdk.selectProduct",
+      "instruction": "sdk.selectProduct(productId) selects an approved product in the owning ProductCatalog. Selection is not purchase success and must not complete the checkout flow.",
+      "capability": "product-catalog"
+    },
+    "purchaseProduct": {
+      "ruleId": "sdk.purchaseProduct",
+      "instruction": "sdk.purchaseProduct(productId) starts the host-owned purchase action for the approved owning ProductCatalog product. Preserve the user gesture and supported paywall render profile. Only authoritative checkout confirmation establishes success; never fabricate payment state.",
+      "capability": "product-catalog"
+    }
+  },
+  "profiles": {
+    "variable-callback-v1": {
+      "specialistSupported": true,
+      "renderModes": [
+        "iframe"
+      ],
+      "methods": [
+        "ready",
+        "getVariable",
+        "setVariable",
+        "navigateNext",
+        "navigateBack"
+      ]
+    },
+    "editor-data-sources-v1": {
+      "specialistSupported": true,
+      "renderModes": [
+        "iframe"
+      ],
+      "methods": [
+        "ready",
+        "getVariable",
+        "setVariable",
+        "navigateNext",
+        "navigateBack",
+        "getChildSection",
+        "getChildSectionText",
+        "getChildSectionMedia",
+        "getVariableDefinition",
+        "getChildSections",
+        "triggerButtonAction",
+        "triggerOptionAction"
+      ],
+      "limitation": "Staged iframe editor-source generation; compatible examples and server-approved data/actions are required. Shadow DOM, ProductCatalog and unsupported interaction families require separate qualification."
+    },
+    "product-catalog-paywall-v1": {
+      "specialistSupported": false,
+      "renderModes": [
+        "shadow-dom"
+      ],
+      "methods": [
+        "ready",
+        "getVariable",
+        "setVariable",
+        "navigateNext",
+        "navigateBack",
+        "getChildSection",
+        "getChildSectionText",
+        "getChildSectionMedia",
+        "getVariableDefinition",
+        "getChildSections",
+        "triggerButtonAction",
+        "triggerOptionAction",
+        "getProducts",
+        "getProductPrice",
+        "selectProduct",
+        "purchaseProduct"
+      ],
+      "limitation": "The CLI/runtime paywall workflow exists; specialist generation requires its own qualified ProductCatalog, render/gesture, save and real test checkout contract."
+    }
+  },
+  "rules": [
+    {
+      "id": "content.editor-owned",
+      "instruction": "User-facing copy, option labels, validation messages and replaceable media belong to typed editor-owned data sources. Keep stable canonical ids. Structural styling and frozen decorative brand marks may remain static; localized or replaceable content may not.",
+      "appliesTo": [
+        "create",
+        "data-source-update"
+      ]
+    },
+    {
+      "id": "update.preserve-scope",
+      "instruction": "For a saved artifact preserve identity, data sources, variables, graph, assets, structure and styling outside explicit allowed changes. HTML-only updates cannot introduce sections or rewire actions.",
+      "appliesTo": [
+        "html-update",
+        "text-update"
+      ]
+    },
+    {
+      "id": "design.frozen-kit",
+      "instruction": "Use the resolved strategy theme, template primitives and versioned component kit. Compatible examples supply mechanics and composition; never copy sample product facts, labels, answers or an unrelated palette.",
+      "appliesTo": [
+        "create"
+      ]
+    },
+    {
+      "id": "design.responsive-media",
+      "instruction": "Use a width-derived aspect-ratio box for width-scaling media; never a fixed-height container that clips or overlaps labels. Preserve supplied typography, spacing and visual proportions. Check narrow and wide runtime widths.",
+      "appliesTo": [
+        "create",
+        "data-source-update",
+        "html-update"
+      ]
+    },
+    {
+      "id": "render.iframe-scroll",
+      "instruction": "For a whole-screen iframe, honor the resolved page height and footer/scroll contract. Do not hardcode the source design frame width.",
+      "appliesTo": [
+        "iframe-screen"
+      ]
+    },
+    {
+      "id": "render.shadow-scroll",
+      "instruction": "For shadow DOM, honor the host scroll owner and approved head-loaded fonts. Do not introduce iframe viewport-pinning rules such as min-height:100vh or overflow:hidden.",
+      "appliesTo": [
+        "shadow-dom"
+      ]
+    },
+    {
+      "id": "selection.backing",
+      "instruction": "Choice collection needs the canonical selection child section, matching boundSectionId/boundScreenIds/screenBindings and stable option ids. Keep option field visibility consistent with itemLayout. Do not create a floating selection variable.",
+      "appliesTo": [
+        "choice-collection"
+      ]
+    },
+    {
+      "id": "verification.interaction-map",
+      "instruction": "Record every required interactive control with a stable unique registry-compatible selector, role and allowed action. Independently verify the DOM and actual SDK behavior; a self-reported interaction map is not acceptance proof.",
+      "appliesTo": [
+        "create",
+        "data-source-update"
+      ]
+    },
+    {
+      "id": "verification.published",
+      "instruction": "Validate data-source references and graph edges, read back saved artifacts, then verify the returned published runtime URL and visual parity. Healthcheck alone does not prove design fidelity or full-flow behavior.",
+      "appliesTo": [
+        "coordinator"
+      ]
+    },
+    {
+      "id": "behavior.refusal-truthful",
+      "instruction": "Declining confirmation does not make valid answers incomplete or invalid. Keep the current answers and editing controls; do not write, confirm or advance. Use neutral review/edit guidance for valid data. Preserve any unresolved validation, missing-source, initialization or write-failure explanation and its recovery action. Valid answers do not mean an SDK operation failure has recovered. Never manufacture an answer or clear it to implement refusal.",
+      "appliesTo": [
+        "stay-and-retry"
+      ]
+    },
+    {
+      "id": "content.editor-example-roles",
+      "instruction": "The disclosure example uses exactly one Text source for each semantic label: screen.heading, system.unavailable, system.retry, system.action-failed and system.open-first. Their text is approved localized content, including recovery messages. Other Text, Media and list sources provide the explanation; Button and single-choice sources own their supplied graph actions. Preserve the actual ids and labels; these source roles do not grant new content or navigation.",
+      "appliesTo": [
+        "editor-data-sources"
+      ]
+    },
+    {
+      "id": "content.missing-source-recovery",
+      "instruction": "Before SDK readiness or when a required source is unavailable, use the packet snapshot of the approved system.unavailable and system.retry Text values to show the error and label Retry. This is a bounded recovery fallback, not replacement product content: keep dependent actions disabled, never use a snapshot to conceal missing required content, and read current operational Text values from the SDK when available. Preserve unresolved errors through retries and ignore late readiness results.",
+      "appliesTo": [
+        "editor-data-sources"
+      ]
+    }
+  ],
+  "editorSourceRoles": {
+    "heading": "screen.heading",
+    "unavailable": "system.unavailable",
+    "retry": "system.retry",
+    "actionFailed": "system.action-failed",
+    "openFirst": "system.open-first"
+  }
+}

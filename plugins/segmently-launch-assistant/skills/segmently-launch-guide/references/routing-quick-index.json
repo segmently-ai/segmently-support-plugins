@@ -7,7 +7,7 @@
     "scenario hit: open references/scenarios.matrix.json and follow the scenario contract.",
     "action hit: open runtime/do-action-reference.json and resolve the actionId.",
     "action-family hit: open runtime/do-action-reference.json and pick the exact leaf action within the family.",
-    "articles hit: open references/corpus-v2/article-directory.json for the listed aliases.",
+    "articles hit: open references/article-directory.json for the listed aliases.",
     "No hit: follow references/semantic-routing.md (full path). The quick-index is an accelerator, never the only route."
   ],
   "entries": [
@@ -440,6 +440,23 @@
       "mode": "cli",
       "actionId": "launch.publish",
       "owningSkill": "segmently-cli-guide",
+      "next": "runtime/do-action-reference.json"
+    },
+    {
+      "kind": "action",
+      "intentPhrases": [
+        "unit economics",
+        "paywall economics",
+        "CAC",
+        "ROAS",
+        "is this price worth it",
+        "trial vs no trial",
+        "store vs web",
+        "юнит-экономика"
+      ],
+      "mode": "cli",
+      "actionId": "launch.unitEconomics.evaluate",
+      "owningSkill": "segmently-unit-economics",
       "next": "runtime/do-action-reference.json"
     },
     {
@@ -1239,6 +1256,8 @@
     {
       "kind": "action-family",
       "intentPhrases": [
+        "change step description font family",
+        "set step description font family",
         "change step description font size",
         "set step description font size",
         "change step description font weight",
@@ -1246,13 +1265,11 @@
         "change step description text color",
         "set step description text color",
         "change step description text align",
-        "set step description text align",
-        "change step description line height",
-        "set step description line height"
+        "set step description text align"
       ],
       "mode": "cli",
       "actionFamily": "editor.stepper.description.textStyle",
-      "memberActionCount": 8,
+      "memberActionCount": 9,
       "next": "runtime/do-action-reference.json"
     },
     {
@@ -1294,6 +1311,8 @@
     {
       "kind": "action-family",
       "intentPhrases": [
+        "change step subtitle font family",
+        "set step subtitle font family",
         "change step subtitle font size",
         "set step subtitle font size",
         "change step subtitle font weight",
@@ -1301,18 +1320,18 @@
         "change step subtitle text color",
         "set step subtitle text color",
         "change step subtitle text align",
-        "set step subtitle text align",
-        "change step subtitle line height",
-        "set step subtitle line height"
+        "set step subtitle text align"
       ],
       "mode": "cli",
       "actionFamily": "editor.stepper.subtitle.textStyle",
-      "memberActionCount": 8,
+      "memberActionCount": 9,
       "next": "runtime/do-action-reference.json"
     },
     {
       "kind": "action-family",
       "intentPhrases": [
+        "change step title font family",
+        "set step title font family",
         "change step title font size",
         "set step title font size",
         "change step title font weight",
@@ -1320,13 +1339,11 @@
         "change step title text color",
         "set step title text color",
         "change step title text align",
-        "set step title text align",
-        "change step title line height",
-        "set step title line height"
+        "set step title text align"
       ],
       "mode": "cli",
       "actionFamily": "editor.stepper.title.textStyle",
-      "memberActionCount": 8,
+      "memberActionCount": 9,
       "next": "runtime/do-action-reference.json"
     },
     {
@@ -1387,7 +1404,7 @@
       "articleAliases": [
         "help-fonts-typography"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1407,7 +1424,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1427,7 +1444,7 @@
         "help-block-flexible-sections",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1445,7 +1462,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1463,7 +1480,7 @@
       "articleAliases": [
         "help-block-flexible-sections"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1482,7 +1499,7 @@
         "help-block-custom-html",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1501,7 +1518,7 @@
       "articleAliases": [
         "facebook-events-catalog"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1522,7 +1539,7 @@
         "analytics-provider-config",
         "facebook-pixel-capi-setup"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1542,7 +1559,7 @@
       "articleAliases": [
         "facebook-capi-web-destination"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1566,7 +1583,7 @@
         "analytics-provider-config",
         "integrations-analytics-section"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1590,7 +1607,7 @@
         "paywall-product-subscription-options",
         "help-block-paywall-subscriptions"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1612,7 +1629,7 @@
         "custom-domain-dns-setup",
         "custom-domain-verification"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1632,7 +1649,7 @@
       "articleAliases": [
         "help-block-custom-html"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1654,7 +1671,7 @@
       "articleAliases": [
         "launch-paid-funnel-overview"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1673,7 +1690,7 @@
       "articleAliases": [
         "collect-email-before-paywall"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1692,7 +1709,7 @@
       "articleAliases": [
         "paywall-payment-methods"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1711,7 +1728,7 @@
         "tiktok-events-catalog",
         "tiktok-pixel-events-api-setup"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     },
     {
       "kind": "articles",
@@ -1733,7 +1750,7 @@
       "articleAliases": [
         "help-strategy-onboarding-sync"
       ],
-      "next": "references/corpus-v2/article-directory.json"
+      "next": "references/article-directory.json"
     }
   ]
 }

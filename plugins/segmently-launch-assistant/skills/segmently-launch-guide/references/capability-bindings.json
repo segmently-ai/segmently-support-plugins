@@ -115,7 +115,7 @@
       "title": "Validate a graph manifest (dry-run)",
       "supportFlowAtomIds": [
         "v2.canvas",
-        "v2.conditionEditor"
+        "v2.canvas.connections"
       ],
       "scenarioIds": [],
       "cliCommands": [
@@ -223,7 +223,7 @@
       "capabilityAtomId": "funnel.v2.condition.set",
       "title": "Attach route-guard conditions to transitions",
       "supportFlowAtomIds": [
-        "v2.conditionEditor"
+        "v2.canvas.connections"
       ],
       "scenarioIds": [],
       "cliCommands": [
@@ -416,7 +416,7 @@
       "supportFlowAtomIds": [
         "integrations.stripeConnect",
         "paywallProducts.list",
-        "paywall.screen"
+        "screenEditor.paywallSubscriptions"
       ],
       "scenarioIds": [
         "create-paywall-products",
@@ -448,7 +448,7 @@
       "title": "Sandbox paywall A/B rollout scenario",
       "supportFlowAtomIds": [
         "product.projectTheme",
-        "paywall.screen",
+        "screenEditor.paywallSubscriptions",
         "webPlacement.dialog",
         "webPlacements.list"
       ],

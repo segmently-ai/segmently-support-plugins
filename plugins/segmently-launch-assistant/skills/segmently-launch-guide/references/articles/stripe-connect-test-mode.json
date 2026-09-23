@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "stripe-connect-test-mode",
+  "articleId": "7hzLtCVj5vULHgDls3yY",
+  "title": "Stripe Connect: test mode",
+  "sections": [
+    {
+      "id": "stripe-connect-test-mode/connect-test",
+      "title": "Connect a test Stripe account",
+      "summary": "Use Connect Test Account to authorize Segmently for your test Stripe account. Test mode uses sandbox cards (for example 4242 4242 4242 4242) and never charges real customers, so validate products and checkout here first.",
+      "kind": "guide-section",
+      "articleSectionId": "stripe-connect-test-mode/connect-test",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "stripe-connect-test-mode"
+      ],
+      "tags": [
+        "guide-section",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ]
+    },
+    {
+      "id": "stripe-connect-test-mode/test-account-status",
+      "title": "Check the test account status",
+      "summary": "After connecting, confirm the account shows charges enabled. If onboarding is incomplete, finish it in the Stripe Dashboard; you cannot create products or test checkout until charges are enabled.",
+      "kind": "guide-section",
+      "articleSectionId": "stripe-connect-test-mode/test-account-status",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "stripe-connect-test-mode"
+      ],
+      "tags": [
+        "guide-section",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "stripe-connect-test-mode/connect-test",
+      "title": "Connect a test Stripe account",
+      "summary": "Use Connect Test Account to authorize Segmently for your test Stripe account. Test mode uses sandbox cards (for example 4242 4242 4242 4242) and never charges real customers, so validate products and checkout here first.",
+      "kind": "guide-section",
+      "articleSectionId": "stripe-connect-test-mode/connect-test",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "stripe-connect-test-mode"
+      ],
+      "tags": [
+        "guide-section",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+      ]
+    },
+    {
+      "id": "stripe-connect-test-mode/test-account-status",
+      "title": "Check the test account status",
+      "summary": "After connecting, confirm the account shows charges enabled. If onboarding is incomplete, finish it in the Stripe Dashboard; you cannot create products or test checkout until charges are enabled.",
+      "kind": "guide-section",
+      "articleSectionId": "stripe-connect-test-mode/test-account-status",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "stripe-connect-test-mode"
+      ],
+      "tags": [
+        "guide-section",
+        "product-catalog",
+        "purchase",
+        "stripe-payments"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601151455_expand-stripe-stripe-section/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/stripe-connect-test-mode/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "5932bd722f7c61c9"
+  }
+}

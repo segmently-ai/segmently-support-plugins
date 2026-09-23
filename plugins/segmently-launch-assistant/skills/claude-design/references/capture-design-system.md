@@ -36,18 +36,18 @@ Pick the source and render a self-describing bundle. All forms take an optional 
 
 ```bash
 # a) the theme of one onboarding (its themeSettingsV2/settings)
-segmently design snapshot <projectId> --funnel <funnelId> --out .design/push/<name>
+segmently design snapshot <projectId> --funnel <funnelId> --out .design/push/<name> --env <env>
 
 # b) a project theme — active by default, or an explicit id
-segmently design snapshot <projectId> --out .design/push/<name>
-segmently design snapshot <projectId> --project-theme-id <themeId> --out .design/push/<name>
+segmently design snapshot <projectId> --out .design/push/<name> --env <env>
+segmently design snapshot <projectId> --project-theme-id <themeId> --out .design/push/<name> --env <env>
 
 # c) a global theme
-segmently design snapshot <projectId> --global-theme-id <themeId> --out .design/push/<name>
+segmently design snapshot <projectId> --global-theme-id <themeId> --out .design/push/<name> --env <env>
 
 # d) LIVE screens of a funnel version (any screen or all)
-segmently design snapshot <projectId> --funnel <fid> --version-id <vid> --all-screens --out .design/push/<name>
-segmently design snapshot <projectId> --funnel <fid> --version-id <vid> --screens s1,s2 --out .design/push/<name>
+segmently design snapshot <projectId> --funnel <fid> --version-id <vid> --all-screens --out .design/push/<name> --env <env>
+segmently design snapshot <projectId> --funnel <fid> --version-id <vid> --screens s1,s2 --out .design/push/<name> --env <env>
 ```
 
 > ⚠️ `--version-id`, not `--version` (the latter collides with the CLI's global `--version` flag).
@@ -107,7 +107,7 @@ local dir, then diff against the **original bundle** — extraction is a mechani
 re-measurement:
 
 ```bash
-segmently design extract --input <modified-dir-or-file> \
+segmently --env <env> design extract --input <modified-dir-or-file> \
   --baseline <original-bundle-dir> --out extraction.json
 ```
 
@@ -131,11 +131,11 @@ the render plane actually changes. Always dry-run first and show the before/afte
 
 ```bash
 # dry-run: per-var before/after, no write
-segmently design apply <projectId> --extraction extraction.json \
+segmently --env <env> design apply <projectId> --extraction extraction.json \
   --project-theme-id <themeId> --dry-run
 # apply (same target flag as the snapshot source):
 #   --funnel <id> | --project-theme-id <id> | --global-theme-id <id>
-segmently design apply <projectId> --extraction extraction.json --project-theme-id <themeId>
+segmently design apply <projectId> --extraction extraction.json --project-theme-id <themeId> --env <env>
 ```
 
 `apply` returns `{ appliedCount, skippedCount, changes[], warnings[] }`. Each `change` has
@@ -147,7 +147,7 @@ token field already matches, so a prior token-only run converges the render plan
 **Confirm the round-trip closed:** re-snapshot and check the value came back, or screenshot a card:
 
 ```bash
-segmently design snapshot <projectId> --project-theme-id <themeId> --out .design/verify/<name>
+segmently design snapshot <projectId> --project-theme-id <themeId> --out .design/verify/<name> --env <env>
 grep -o 'tv-theme-colors-buttonsBackground: [^;]*' .design/verify/<name>/screen-herocontent.html
 ```
 

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "launch-scenario-validate-idea",
+  "articleId": null,
+  "title": "Launch your first funnel to validate an idea",
+  "sections": [
+    {
+      "id": "launch-scenario-validate-idea/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel from a template or from scratch; the canvas opens with a draft version.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-02",
+      "title": "Connect your domain",
+      "summary": "Enter the domain, add the printed DNS records at your registrar, then verify — DNS is the slowest step, so start it first.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-domain-input",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-03",
+      "title": "Publish the funnel",
+      "summary": "Open the funnel on the canvas and press Deploy Web — the placement is created and published for you.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration so Reports fill up; no vendor key is needed.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "launch-scenario-validate-idea/step-01",
+      "title": "Create the first funnel",
+      "summary": "Open Onboardings and create a funnel from a template or from scratch; the canvas opens with a draft version.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/canvas-overview",
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "scenario-step",
+        "funnelCreated"
+      ],
+      "imageUrls": [],
+      "stepOrder": 1,
+      "itemId": "funnelCreated",
+      "actionArticleAlias": "canvas-overview",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-02",
+      "title": "Connect your domain",
+      "summary": "Enter the domain, add the printed DNS records at your registrar, then verify — DNS is the slowest step, so start it first.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/integrations-custom-domain-section",
+      "guideKeys": [
+        "integrations-custom-domain-section",
+        "custom-domain-domain-input",
+        "custom-domain-dns-setup",
+        "custom-domain-verification"
+      ],
+      "tags": [
+        "scenario-step",
+        "domainVerified",
+        "custom-domain"
+      ],
+      "imageUrls": [],
+      "stepOrder": 2,
+      "itemId": "domainVerified",
+      "actionArticleAlias": "integrations-custom-domain-section",
+      "vendorStepIds": [
+        "integrations-custom-domain-section/vendor-registrar-dns-records"
+      ]
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-03",
+      "title": "Publish the funnel",
+      "summary": "Open the funnel on the canvas and press Deploy Web — the placement is created and published for you.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/webplacement-publish-url",
+      "guideKeys": [
+        "webplacement-publish-url"
+      ],
+      "tags": [
+        "scenario-step",
+        "published"
+      ],
+      "imageUrls": [],
+      "stepOrder": 3,
+      "itemId": "published",
+      "actionArticleAlias": "webplacement-publish-url",
+      "vendorStepIds": []
+    },
+    {
+      "id": "launch-scenario-validate-idea/step-04",
+      "title": "Turn on first-party analytics",
+      "summary": "Enable the Segmently integration so Reports fill up; no vendor key is needed.",
+      "kind": "scenario-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/analytics-integration-list",
+      "guideKeys": [
+        "analytics-integration-list"
+      ],
+      "tags": [
+        "scenario-step",
+        "analyticsConnected",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "stepOrder": 4,
+      "itemId": "analyticsConnected",
+      "actionArticleAlias": "analytics-integration-list",
+      "vendorStepIds": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": null,
+    "sourceFiles": [],
+    "generatedHash": "9a8d235c020c9097"
+  }
+}

@@ -43,7 +43,7 @@ Collect or discover:
 - full `previewScreens` for exact visual review;
 - simplified blueprint screens plus `aiMeta.dataMapping` and semantic
   `aiMeta.assetIntents`;
-- model id from `segmently ai models list <projectId>` when an agent run is
+- model id from `segmently ai models list <projectId> --env <env>` when an agent run is
   requested.
 
 Use `examples/library-authoring-request.json` as the complete
@@ -56,16 +56,16 @@ values read from the project. Do not put credentials in authoring files.
 ### 1. Read current state
 
 ```bash
-segmently strategies blocks library list <projectId> --format json
-segmently strategies blocks library get <exampleId> <projectId> --format json
-segmently strategies blocks list <strategyId> <projectId> --format json
-segmently strategies screens list <strategyId> <blockId> --simplified <projectId> --format json
+segmently strategies blocks library list <projectId> --format json --env <env>
+segmently strategies blocks library get <exampleId> <projectId> --format json --env <env>
+segmently strategies blocks list <strategyId> <projectId> --format json --env <env>
+segmently strategies screens list <strategyId> <blockId> --simplified <projectId> --format json --env <env>
 ```
 
 For a new captured example, export before authoring:
 
 ```bash
-segmently strategies blocks library capture <strategyId> <blockId> <projectId> \
+segmently --env <env> strategies blocks library capture <strategyId> <blockId> <projectId> \
   --id <exampleId> --out block-library-draft.json --dry-run --format json
 ```
 
@@ -85,7 +85,7 @@ node <skill-root>/scripts/validate-library-example.mjs \
 node <skill-root>/scripts/render-library-preview.mjs \
   --input block-library-draft.json --out block-library-preview.html
 
-segmently strategies blocks library validate \
+segmently --env <env> strategies blocks library validate \
   --file block-library-draft.json <projectId> --format json
 ```
 
@@ -110,7 +110,7 @@ node <skill-root>/scripts/validate-compile-input.mjs \
 ```
 
 ```bash
-segmently strategies blocks library prompt-packet \
+segmently --env <env> strategies blocks library prompt-packet \
   --request-file examples/library-authoring-request.json \
   --out runtime-packet.json <projectId> --format json
 
@@ -193,7 +193,7 @@ outputs, evaluator reports, and `completion.json` receipts for each cycle.
 For create or update, first ask the CLI for a deterministic receipt:
 
 ```bash
-segmently strategies blocks library create \
+segmently --env <env> strategies blocks library create \
   <exampleId> --file block-library-draft.json --dry-run <projectId> --format json
 ```
 
@@ -203,12 +203,12 @@ the user explicitly approves that exact revision.
 After approval:
 
 ```bash
-segmently strategies blocks library create \
+segmently --env <env> strategies blocks library create \
   <exampleId> --file block-library-draft.json --apply \
   --dry-run-checksum <reviewedChecksum> \
   <projectId> --format json
 
-segmently strategies blocks library get <exampleId> <projectId> --format json
+segmently strategies blocks library get <exampleId> <projectId> --format json --env <env>
 ```
 
 Use the matching `update` or `disable` verb for an existing example, with the

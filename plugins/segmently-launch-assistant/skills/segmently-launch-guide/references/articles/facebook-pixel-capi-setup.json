@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "facebook-pixel-capi-setup",
+  "articleId": null,
+  "title": "Set up the Facebook (Meta) Pixel and Conversion API",
+  "sections": [
+    {
+      "id": "facebook-pixel-capi-setup/vendor-capi-token",
+      "title": "Conversions API access token",
+      "summary": "In the same pixel's Settings scroll to Conversions API and click Generate access token; copy it once — Meta does not show it again. Paste it into the Facebook Conversions API integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup#vendor-capi-token",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "facebook-events",
+        "conversions-api",
+        "labels-copy",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "Meta Events Manager",
+        "Data sources",
+        "your pixel",
+        "Settings",
+        "Conversions API",
+        "Generate access token"
+      ],
+      "segmentlyField": "facebook_capi.accessToken",
+      "verifyHint": "A server event carrying fbc/fbp appears in Events Manager → Test events."
+    },
+    {
+      "id": "facebook-pixel-capi-setup/vendor-pixel-id",
+      "title": "Pixel ID from Meta Events Manager",
+      "summary": "Open Meta Events Manager, choose Data sources, select your pixel and open Settings: the Pixel ID is shown at the top. Paste it into the Facebook Pixel integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup#vendor-pixel-id",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "facebook-events",
+        "meta-pixel",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "Meta Events Manager",
+        "Data sources",
+        "your pixel",
+        "Settings",
+        "Pixel ID"
+      ],
+      "segmentlyField": "facebook_pixel.pixelId",
+      "verifyHint": "Events Manager → Test events shows PageView from the published funnel URL."
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "facebook-pixel-capi-setup/vendor-capi-token",
+      "title": "Conversions API access token",
+      "summary": "In the same pixel's Settings scroll to Conversions API and click Generate access token; copy it once — Meta does not show it again. Paste it into the Facebook Conversions API integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup#vendor-capi-token",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "facebook-events",
+        "conversions-api",
+        "labels-copy",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "Meta Events Manager",
+        "Data sources",
+        "your pixel",
+        "Settings",
+        "Conversions API",
+        "Generate access token"
+      ],
+      "segmentlyField": "facebook_capi.accessToken",
+      "verifyHint": "A server event carrying fbc/fbp appears in Events Manager → Test events."
+    },
+    {
+      "id": "facebook-pixel-capi-setup/vendor-pixel-id",
+      "title": "Pixel ID from Meta Events Manager",
+      "summary": "Open Meta Events Manager, choose Data sources, select your pixel and open Settings: the Pixel ID is shown at the top. Paste it into the Facebook Pixel integration. Verify against the live vendor UI before publishing.",
+      "kind": "vendor-step",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/facebook-pixel-capi-setup#vendor-pixel-id",
+      "guideKeys": [
+        "analytics-provider-config"
+      ],
+      "tags": [
+        "vendor-step",
+        "facebook-events",
+        "meta-pixel",
+        "analytics-events"
+      ],
+      "imageUrls": [],
+      "vendorPath": [
+        "Meta Events Manager",
+        "Data sources",
+        "your pixel",
+        "Settings",
+        "Pixel ID"
+      ],
+      "segmentlyField": "facebook_pixel.pixelId",
+      "verifyHint": "Events Manager → Test events shows PageView from the published funnel URL."
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/facebook-pixel-capi-setup/config.json",
+    "sourceFiles": [],
+    "generatedHash": "418a49ac6b4d5ec5"
+  }
+}

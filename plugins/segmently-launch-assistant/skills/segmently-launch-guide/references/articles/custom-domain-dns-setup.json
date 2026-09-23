@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "custom-domain-dns-setup",
+  "articleId": "PjS3KFNmuDztegAiwsdT",
+  "title": "Custom Domain: DNS setup",
+  "sections": [
+    {
+      "id": "custom-domain-dns-setup/section-1",
+      "title": "Add the DNS records at your provider",
+      "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+      "kind": "guide-section",
+      "articleSectionId": "custom-domain-dns-setup/section-1",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "custom-domain-dns-setup/section-2",
+      "title": "If verification keeps failing",
+      "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+      "kind": "guide-section",
+      "articleSectionId": "custom-domain-dns-setup/section-2",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "custom-domain-dns-setup/section-1",
+      "title": "Add the DNS records at your provider",
+      "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+      "kind": "guide-section",
+      "articleSectionId": "custom-domain-dns-setup/section-1",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "custom-domain-dns-setup/section-2",
+      "title": "If verification keeps failing",
+      "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+      "kind": "guide-section",
+      "articleSectionId": "custom-domain-dns-setup/section-2",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "custom-domain-dns-setup"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/images/20260630172511_custom-domain-panel/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/custom-domain-dns-setup/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "7246bfefd45d7007"
+  }
+}

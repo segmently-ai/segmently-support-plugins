@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "onboarding-list-create",
+  "articleId": "AiTgHMaMhm6VcP1XZEcx",
+  "title": "Create an onboarding",
+  "sections": [
+    {
+      "id": "onboarding-list-create/create-button",
+      "title": "Start from the onboarding list",
+      "summary": "Click Create Onboarding to open the setup wizard. It walks you through three things in order: naming the draft, choosing where it will be published (pick Web if you're building an ad landing page), and picking a starting theme. After that the draft opens on the canvas ready to edit.",
+      "kind": "guide-section",
+      "articleSectionId": "onboarding-list-create/create-button",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png"
+      ]
+    },
+    {
+      "id": "onboarding-list-create/naming",
+      "title": "Name and organize the draft",
+      "summary": "Give the draft a clear internal name — this is just for you to find it in the list, and visitors never see it. Optionally drop it in a folder to keep a long list tidy. Keep one draft per ad campaign instead of making duplicates, because separate drafts split your analytics and make results harder to read.",
+      "kind": "guide-section",
+      "articleSectionId": "onboarding-list-create/naming",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "onboarding-list-create/create-button",
+      "title": "Start from the onboarding list",
+      "summary": "Click Create Onboarding to open the setup wizard. It walks you through three things in order: naming the draft, choosing where it will be published (pick Web if you're building an ad landing page), and picking a starting theme. After that the draft opens on the canvas ready to edit.",
+      "kind": "guide-section",
+      "articleSectionId": "onboarding-list-create/create-button",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png"
+      ]
+    },
+    {
+      "id": "onboarding-list-create/naming",
+      "title": "Name and organize the draft",
+      "summary": "Give the draft a clear internal name — this is just for you to find it in the list, and visitors never see it. Optionally drop it in a folder to keep a long list tidy. Keep one draft per ad campaign instead of making duplicates, because separate drafts split your analytics and make results harder to read.",
+      "kind": "guide-section",
+      "articleSectionId": "onboarding-list-create/naming",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "onboarding-list-create"
+      ],
+      "tags": [
+        "guide-section",
+        "analytics-events"
+      ],
+      "imageUrls": []
+    }
+  ],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/eEZgfU4hvE9WtLkU30Dg/cli-assets/guide-images/20260601164730_open-onboardings-onboarding-list/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/onboarding-list-create/config.json",
+    "sourceFiles": [
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "d7751b0457418c78"
+  }
+}

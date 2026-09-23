@@ -298,7 +298,7 @@
       "entity": "Paywall / Stripe",
       "title": "Paywall products list",
       "customerSafeLabel": "the Products page",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/paywall-products",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/stripe/products",
       "requires": {
         "auth": true,
         "projectId": true
@@ -541,10 +541,10 @@
       "entity": "Themes V2",
       "title": "Admin Themes V2 library",
       "customerSafeLabel": "the Themes library",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/themes-v2",
+      "routeTemplate": "{{baseUrl}}/themes-v2",
       "requires": {
         "auth": true,
-        "projectId": true
+        "projectId": false
       },
       "provesWith": "choose-template-theme",
       "steps": [
@@ -577,10 +577,10 @@
       "entity": "Admin Settings",
       "title": "Admin settings page",
       "customerSafeLabel": "the project settings page",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/settings",
+      "routeTemplate": "{{baseUrl}}/settings",
       "requires": {
         "auth": true,
-        "projectId": true
+        "projectId": false
       },
       "steps": [
         {
@@ -635,7 +635,7 @@
       "entity": "Articles",
       "title": "Content plan articles",
       "customerSafeLabel": "the Articles page",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/content-plan-articles",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/articles",
       "requires": {
         "auth": true,
         "projectId": true
@@ -666,7 +666,7 @@
       "entity": "Team",
       "title": "Users & permissions",
       "customerSafeLabel": "the Users & Permissions page",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/users-permissions",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/permissions",
       "requires": {
         "auth": true,
         "projectId": true
@@ -697,7 +697,7 @@
       "entity": "Team",
       "title": "Project billing",
       "customerSafeLabel": "the project billing page",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/project-billing",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/billing",
       "requires": {
         "auth": true,
         "projectId": true
