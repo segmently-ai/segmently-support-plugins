@@ -51,8 +51,8 @@ Read it; never set it by hand. If the reader disagrees, record their reading in
 |---|---|---|---|
 | **idea** | no scenario, or a price only (`--anchor`) | UC-0 launch card | UC-5 ladder from the anchor; UC-2 platform choice |
 | **pre_launch** | scenario present; chain knobs untouched (book); no observed inputs | UC-0 learning budget + instrument list | UC-2 fee stacks; UC-8 test plan |
-| **live_no_data** | chain knobs touched by the reader; no monetization observations | UC-3 fill from the ad export | UC-10 (one `ue rank` run over all eight levers — the chain is theirs, the rest the book's); UC-6 explain what does not clear |
-| **live_measured** | at least one observed-inputs document | UC-10 with the drift check above it | UC-1 trial; UC-5 sweeps; UC-7 mechanics; UC-4 refresh |
+| **live_no_data** | chain knobs touched by the reader; no monetization observations | UC-3 fill from the ad export | UC-10 (one `ue rank` run over all eight levers — the chain is theirs; every other input labelled by where it came from, never called the book's without checking); UC-11 hypothesis card; UC-6 explain what does not clear |
+| **live_measured** | at least one observed-inputs document | UC-10 with the drift check above it | UC-11 hypothesis card (metric first, then the change, its test plan and the read); UC-1 trial; UC-5 sweeps; UC-7 mechanics; UC-4 refresh |
 | **scaling** | measured; net ROAS ≥ 1; payback inside the horizon | UC-9 ad-account view; volume sweep at 2× spend | UC-2 re-check at scale |
 
 The CLI does not derive `scaling` in this version; offer it when an evaluation of a measured
