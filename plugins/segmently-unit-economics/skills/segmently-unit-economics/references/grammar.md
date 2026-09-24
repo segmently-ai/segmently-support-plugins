@@ -40,6 +40,28 @@ One scenario = one link = one JSON document (`"v": 2`). `ue parse`, `ue evaluate
 - **Percent formatting** is the CLI's (`30.0`, `2.90~0.30~card_processor`, takes with two
   decimals) — never hand-format a link.
 
+## `touched` — chain provenance
+
+`touched` (optional; default `[]`) lists which of the four CHAIN KNOBS — `cps`, `p1`, `p2`,
+`p3`, nothing else — the reader stated themselves, even when the number happens to equal the
+book. It is a PROVENANCE flag, not a "changed from default" one: a knob not listed reads as the
+book's only while it carries the book's value; a listed knob reads as the reader's even at the
+book's value.
+Any other key is refused by its own index, naming the four allowed knobs:
+`touched[1] must be one of cps, p1, p2, p3`.
+
+## JSON document units
+
+The document and the link do not share a unit for the same field. Every rate or share in the
+JSON — `chain.p1` / `p2` / `p3`, `products[i].takeOfTaps` / `completionRate` / `trialConv`,
+`deductions.*.rate` / `.share` / `.pct` (`tax.rate`, `refunds.share`, `disputes.share`,
+`activation.share`, `custom[i].pct`) — is a FRACTION, `0…1`; the link writes the SAME field as
+a PERCENT, `0…100` (`p1=30.0` in the link is `chain.p1: 0.30` in the JSON). Money
+(`chain.cps`, `products[i].price`, every `.fixed` and `.fee`) is dollars in both. A document
+written with the link's own number pasted in unconverted — `deductions.fee.pct: 2.9` instead
+of `0.029` — is refused, and the refusal names the unit: `deductions.fee.pct must be between 0
+and 1 — a fraction in the JSON document (0.029 = 2.9 %); the link writes percent.`
+
 ## `ue init` product specs
 
 `--product "<name>~<price>~<cadence>~<trial>"`, repeatable. Cadences:
