@@ -44,6 +44,7 @@ Commands:
 | `add-image <articleId> [projectId] --url ...` | Add a Media section from an existing public/CDN URL. |
 | `add-image <articleId> [projectId] --file ...` | Upload a local image, then add a Media section. |
 | `publish <articleId> [projectId]` | Publish the draft to article storage and return the custom-domain public URL plus asset verification URLs. |
+| `folders list [projectId]` | List the project's article folders (id, name, parent). Read-only. |
 
 Reusable local manifest block commands:
 
