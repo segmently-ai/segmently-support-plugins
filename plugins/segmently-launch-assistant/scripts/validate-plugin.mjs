@@ -78,7 +78,8 @@ const fullCompanionExclusions = {
   ],
   "segmently-unit-economics": [
     "references/internal-admin-seams.md",
-    "evals/**"
+    "evals/**",
+    "transport/**"
   ]
 };
 const fullCompanionAllowedForbiddenTokens = {

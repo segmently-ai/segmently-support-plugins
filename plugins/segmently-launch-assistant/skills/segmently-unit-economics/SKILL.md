@@ -12,14 +12,20 @@ explains the difference in words.
 
 ## Prerequisites (that is the whole list)
 - Node.js 22 or newer. Check: `node --version`.
-- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }`. No login, no key, no browser.
-- If that prints a bare version number, or `unknown command 'ue'`, the CLI on this machine is
-  older than the `ue` family. Run it once as `npx -y @segmently/cli@latest ue --version`.
-  Until it prints that JSON, answer nothing with numbers — say which check failed and stop.
+- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }` with `cli` 1.2.0 or
+  newer. No login, no key, no browser.
+- Older — a bare version number, `unknown command 'ue'`, or a `cli` below 1.2.0: run it once as
+  `npx -y @segmently/cli@latest ue --version`. Still older: say "this CLI is older than 1.2.0",
+  answer nothing with numbers, and stop. Name the likely cause — an older global `@segmently/cli`
+  install shadows npx — and the remedy: `npm i -g @segmently/cli@latest`.
+- The spelling that passed the check — `npx -y @segmently/cli`, `npx -y @segmently/cli@latest`, or
+  `segmently` when a global install is current — is the prefix of EVERY later command of the
+  session.
 
-Every command below is written `npx -y @segmently/cli ue …`. When the reader has the CLI
-installed globally, `segmently ue evaluate …` is the same command. Verbs and flags are exactly
-what `npx -y @segmently/cli ue <verb> --help` prints; when in doubt, run `--help`, never guess.
+Every command below is written `npx -y @segmently/cli ue …`: run it with the prefix that passed
+(with a current global install, `segmently ue evaluate …` is the same command).
+Verbs and flags are exactly what `npx -y @segmently/cli ue <verb> --help` prints; when in doubt,
+run `--help`, never guess.
 
 ## Contract (print it in the first message of a session, verbatim)
 I never: forecast your numbers, invent a benchmark, write to RevenueCat or Segmently,
@@ -29,15 +35,25 @@ The skill prints **scenarios**: every figure is "what follows if these inputs ar
 and never a claim about what happens next.
 
 ## Session start
-1. Print the contract. Run the two prerequisite checks once.
+1. Print the contract. Run the two prerequisite checks once. Report them in words (Node 22+, CLI
+   <version>) — never echo the `--version` JSON — and give its `mathHash` its one line.
 2. Look for `.ue/*.json` in the reader's working directory.
    - Found → `npx -y @segmently/cli ue evaluate .ue/<slug>.json --explain`, then print the
-     onboarding screen (references/stages.md) for the `stage` it returns.
+     onboarding screen (references/stages.md) for the `stage` it returns. When the opening message
+     already names a case, continue into it in the same message, after the onboarding screen, with
+     at most one question closing the turn.
+   - Not found, but the opening message already carries the reader's numbers (a chain, a
+     price, a take) → UC-3 at once: `init` the plan they named (web unless they named a store),
+     edit their numbers in, evaluate, and give the UC-3 answer in this message; what they did not
+     give stays the book's, labelled book, and at most one question closes the turn.
    - Not found → the three-question interview (UC-0 "Inputs"), then `ue init`, then the
      onboarding screen, then run the stage's first case at once. No fourth question before
      the reader has seen a number.
    - The reader pasted a link → `npx -y @segmently/cli ue parse "<link>"` and go to UC-6 (or
      the case their question names).
+3. The onboarding screen quotes only fields the base evaluate printed: ROAS on the `valueBasis`
+   it states. A gross figure of a scenario with deductions is a second run (UC-9's gross
+   variant) — never a number no run printed.
 
 ## The one loop
 1. `ue init` once per project → `.ue/<slug>.json`; read `stage` and `offers`; show the onboarding screen (references/stages.md).
@@ -46,8 +62,10 @@ and never a claim about what happens next.
    every cell of that variant's row is read from ITS OWN output — never from the base's
    (rule 9), with that run's own `clamped` / `snapped` notices reported on that row.
 4. `ue link` for every variant, with `--label` and a `measuredOn` set. Hand over ONLY links
-   printed by `ue link` — or, in UC-10, `ue rank`'s `recommendation.links`, which are
-   round-trip checked the same way. **Print the exact `ue link` call on the line above every
+   printed by `ue link` — or `ue rank`'s `recommendation.links`, which are round-trip checked the
+   same way: in UC-10 both; in UC-11 none with the table and, when the reader asks for one, the
+   table run's `recommendation.links.first`, named as the <N>-day run's (an `--override` run's
+   links belong to the card). **Print the exact `ue link` call on the line above every
    link it minted, the onboarding screen's base link included** (for `recommendation.links`,
    name the `ue rank` run they came from instead). Never the `link`
    field of `ue evaluate` / `ue init` / `ue rank` (those skip the round-trip check and the
@@ -75,8 +93,15 @@ and never a claim about what happens next.
 
    Exempt, and only these: values that are the book's alone (benchmark chain, the CLI's own
    `init` split and defaults, a preset fee picked from the book's list) and the price of a
-   product the reader is still choosing (idea / pre_launch, nothing sold yet). When unsure,
-   print the sentence.
+   product the reader said in this session is still being chosen (nothing sold yet). A price read
+   from the project file is the reader's figure: print the privacy sentence before every link that
+   carries it — the onboarding screen's base link included — unless the reader said in this
+   session that the price is still being chosen; never call such a link "the book's numbers".
+   The stage never decides it; what
+   the link carries does: the prices of a paywall the reader already sells are due at every
+   stage, `idea` and `pre_launch` included — a reader who says their paywall sells, or who has
+   RevenueCat or live traffic, is selling, whatever stage the CLI derived. When unsure, print
+   the sentence.
 
 **The boundary sentence — one sanctioned shape, copied, never invented.** Every verdict
 closes with a boundary (rule 5), and it is written from THIS template, filling each clause
@@ -91,25 +116,72 @@ Three evidence classes, in that order. A class with nothing in it is dropped sil
 written out as "none". Every input the scenario reads belongs to exactly one class, and each
 case below says which of its own inputs land where.
 
-Before printing, walk the scenario's inputs in this order and place each one:
-`chain.cps/p1/p2/p3`; per product, its price, take, charges, completion and `trialConv`;
-`volume`; every deduction; every lift or swept value. `volume` is placed like every other
-input: a budget the reader stated is measured; the book's $45,000 a month is assumed, and is
-named in the assumed clause even when the not-testable clause repeats it as "at the book's
-volume". A price the reader did not state in
-this session came from the project file: "measured: your project file". An input you
-inferred rather than heard ("no trial, because none was mentioned") is assumed, not
-measured. A variant's own inputs (the CLI's split, a ladder price) are named in the class of
-the variant that carries them.
+Before printing, walk the scenario's inputs in this order and place each one — ONE walk,
+the same list for every boundary of every case (UC-11's three included); it may be printed
+one input per line, each with its class and why:
+1. `chain.cps`, `p1`, `p2`, `p3` — by the evaluate's `provenance.chain`: `reader` is
+   measured — "your project file", followed by the source and window the scenario's `measuredOn`
+   carries when it has one ("measured: your project file — <measuredOn>"); `benchmark` is assumed
+   (the book). All four are named in every boundary — the tested lever's rate too, even where its
+   lift is walked under item 6; in a read's boundary, name its rate before the test and, after a
+   re-base, the re-based `read.pB` (measured: prepared from your counts).
+2. Per product: its price, cadence and trial (kind and days) — the reader's answer or
+   "measured: your project file" (a price the reader did not state in this session came from
+   the project file), at every stage, `pre_launch` included; only a price the reader is weighing
+   in this session (UC-0's ladder, an `anchor`) is assumed.
+3. Per product: its take, charges, completion and `trialConv` — assumed at the book's value
+   (completion 100 %, trial conversion 50 %, charges 2.86 monthly, 5.36 weekly and 1 annual —
+   the annual's is its cadence cap) or at the CLI's init split (below); measured ("your project
+   file") only at any other value.
+4. `volume` is placed like every other input: a budget the reader stated is measured; the
+   book's $45,000 a month is assumed, and is named in the assumed clause even when the
+   not-testable clause repeats it as "at the book's volume". A stated budget reads "your stated
+   budget".
+5. Every deduction the scenario carries, each with its value — the fee on its `feeScheme`
+   base, tax, refunds, disputes, activation: measured when the reader stated it, read it off a
+   statement, or the project file carries it without a preset; a book `preset` (`card_processor`,
+   `app_store`…) the reader did not state is assumed: the book's preset.
+6. Every lift and swept value — assumed: the reader's belief at its LANDED value (after a snap
+   the typed value is never quoted alone), the "assumed lift", a labelled sweep; and the book's
+   first renewal behind payback when the base's `words.payback` names one, at its value (monthly
+   60 %) — in every boundary, even one whose table prints no payback.
+   At a read, the belief it tested stays, at its landed value — "assumed: your belief, now
+   read"; the realized-gain run's own lift (`read.pB ÷ today − 1`, typed → landed) is
+   "measured: prepared from your counts"; that run's default +10 % on every other lever stays
+   "assumed lift".
+7. A test's own inputs, in every boundary of a case that plans or reads one: its horizon —
+   measured, the reader's answer ("default horizon" when none: assumed); its 50/50 split —
+   assumed: the test design; the counts it read — measured, the reader's answer.
+8. Whatever the base carries from an export or RevenueCat — measured, with its source and
+   window.
+
+An input you inferred rather than heard ("no trial, because none was mentioned") is assumed,
+not measured. A variant's own inputs (the CLI's split, a ladder price) are named in the class
+of the variant that carries them.
+
+**The CLI's init split.** No output marks a take as the split `ue init` proposed, so check it
+before placing a take: run once
+`npx -y @segmently/cli ue init <slug>-split --product "<name>~<price>~<cadence>~<trial>" --dir .ue/<slug>/scratch`
+with one `--product` per paywall product of the scenario (cadence `1month`, `1year`…; trial
+`none`, `<days>d` for a free one, `<price>-<days>d` for a paid one) and compare the
+`takeOfTaps` it writes to `.ue/<slug>/scratch/.ue/<slug>-split.json`: a take equal to it is
+"assumed: the CLI's init split", never "your project file"; only a different take is measured.
+Its own `label_missing` / `measured_missing` warnings concern a link that is never handed over;
+say in one line that the scratch run warned about its own unused link, and do not re-mint it.
 
 Worked example (UC-0, a pre-launch web funnel, nothing measured yet):
 
 > These figures are this scenario's arithmetic on the inputs above. Your price $19.99 and
 > your monthly cadence — measured: your own answer. Cost per start $1.50, landing → step 1
-> 30 %, step 1 → paywall 50 %, paywall → buy-tap 35 %, charges per payer 2.86, completion
-> 100 % and the book's $45,000 a month — assumed: the benchmark book, nothing of yours yet.
-> Whether those chain rates hold for your traffic — not testable soon: it takes 6 days at the
-> book's volume before the mix is decidable.
+> 30 %, step 1 → paywall 50 %, paywall → buy-tap 35 %, no trial (none was mentioned), the
+> book's first renewal behind payback (monthly 60 %), charges per payer 2.86, completion
+> 100 % and the book's $45,000 a month — assumed: the benchmark book, nothing of yours yet. The
+> plan's take, 30 % of buy-taps — assumed: the CLI's init split. Whether those chain rates
+> hold for your traffic — not testable soon: it takes 6 days at the book's volume before the
+> mix is decidable.
+
+A scenario with more products or a trial names each product's take, trial (kind and days)
+and trial conversion the same way.
 
 Write what the numbers ARE. A boundary written as a denial is a rule 8 violation even when
 it is true, and it tells the reader nothing about which of their inputs is evidence: none of
@@ -145,7 +217,8 @@ that scenario document written to `.ue/<slug>/<variant>.json` with ONE change, i
 characters: the source and window of the reader's numbers, or
 `"benchmark book, nothing measured"`; `ue link` refuses a longer one with `scenario_refused`,
 field `measuredOn`, "measuredOn must be a string of at most 80 characters" — shorten the
-note, keeping its source). After the answer, append
+note, keeping its source). After every case's answer — UC-10's included, whose two
+`recommendation.links` are its variants, each named by the lever it lifts — append
 `{ name, case, question, scenario, link, verdict, createdAt }` to `variants[]` and the
 verdict to `decisions[]` of the project file. Never overwrite the base case: re-basing moves
 the old base into `variants[]` first. Filling an input the reader just stated into the base
@@ -208,7 +281,7 @@ Every verb returns `warnings[]` (and evaluate/parse `clampNotices[]`). Handle ea
 | `measured_missing` | Set `measuredOn` in the variant file (source + window) and re-mint. |
 | `takes_normalized` | The paywall takes added up past 100 % and were scaled: name each product's before → after, ask the reader for their split of buy-taps. |
 | `clamped` (and every `clampNotices` line) | The value was outside the control's window and moved: report typed value and landed value on THAT row; ask whether the typed one is measured. In a sweep, the clamped row is labelled with the LANDED value and every later sentence about it quotes the landed one (trial conversion runs 2 – 95 %: a row typed 100 % lands on 95 %, a row typed 1 % lands on 2 %), and any "never breaks even" **or** "clears at every point I tried" is stated at the landed endpoint ("not even at 95 %, the highest the calculator takes"; "down to 2 %, the lowest it takes"). The windows are in rule 9. |
-| `snapped` | Loading the scenario put a value on the calculator's own grid — its slider step (cps 1.23456 → 1.25; the chain rates, `trialConv` and `completionRate` to half a point, 0.4256 → 0.425) or its precision (`paymentsCounted` 4.765 → 4.76, the takes to four decimals); every figure, and the minted link, uses the landed value. Name each key typed → landed; label the row with the landed value and quote it from then on. |
+| `snapped` | Loading the scenario put a value on the calculator's own grid — its slider step (cps 1.23456 → 1.25; the chain rates, `trialConv` and `completionRate` to half a point, 0.4256 → 0.425) or its precision (`paymentsCounted` 4.765 → 4.76, the takes to four decimals); every figure, and the minted link, uses the landed value. Name each key typed → landed; label the row with the landed value and quote it from then on. That covers the scenario's input only: an observation (`read.pB`, an observed rate) is quoted exactly as its run printed it, never at a landed value. |
 | `link_rounded` | The link cannot carry a value or name exactly, so the page opens it rounded or rewritten. Say which key and that the page shows the link's value; the CLI figures use the unrounded one. |
 | `unknown_key` | Name the ignored keys; if one looks like a typo of a grammar key (references/grammar.md), ask. |
 
@@ -228,27 +301,40 @@ what to print. Worked numbers from real CLI runs: references/cases.md.
 - **Init:** `npx -y @segmently/cli ue init <slug> --product "<name>~<price>~<cadence>~<trial>" --platform web --have none`
   (repeat `--product`; `--anchor <monthly price>` instead when undecided; `--platform store|both`).
 - **Launch card:** one evaluate run per card row and per corridor corner; every cell of a row
-  (payback and readiness included) is read from that row's own run (rule 9). Evaluate the
-  base; then the platform's fee as a variant:
+  (payback and readiness included) is read from that row's own run (rule 9). The card's
+  columns, on every row (the base, the fee variant, the mix variant, each corridor corner):
+  value per tap gross and net, ROAS on its `valueBasis`, CAC per payer, profit per start,
+  payback and `readiness.line`. Evaluate the base; then the platform's fee as a variant:
   web `deductions.fee = { "pct": 0.029, "fixed": 0.30, "preset": "card_processor" }`;
   store `deductions.fee = { "pct": 0.15, "fixed": 0, "preset": "app_store_small" }` or `0.30` /
   `"app_store"` (ask which program). On that row, name the base its own `feeScheme` printed:
   `charged` for the card preset (taken on the amount charged, kept through a refund), `exTax`
   for a store preset (taken on the price net of tax, given back on a refund). With no tax
-  stated, the two bases give the same fee, and you still name the base: S9 is checked on
-  every row that states a fee. Refunds, tax, disputes only when the reader gives numbers.
+  stated, the two bases give the same fee, and you still name the base on every row that
+  states a fee. Refunds, tax, disputes only when the reader gives numbers.
 - **What would have to be true:** one line per knob from `breakEvens.chain` ("cost per start ≤
-  $X, or p3 ≥ Y %"), ranked by distance from the book's value. For charges per payer, sweep
-  `products[i].paymentsCounted` with evaluate (bisection, ≤ 8 runs) until `profitPerStart` ≥ 0.
-  Quote the first point whose OWN run prints `profitPerStart` ≥ 0, at its landed value
-  (`paymentsCounted` snaps to 0.01), and label its link with that value. A point whose
+  $X, or p3 ≥ Y %"), each beside the book's value it starts from, in the order cps, p1, p2, p3,
+  then charges per payer — never ranked, and never described by a percentage change or a ratio
+  you computed; a knob in `breakEvens.unreachable` reads "no conversion rate at that step clears
+  this scenario on its own". For charges per payer, bisect
+  `products[i].paymentsCounted` on its 0.01 grid (≤ 8 evaluate runs) until two ADJACENT grid
+  points bracket zero: X prints `profitPerStart` < 0 and X + 0.01 prints ≥ 0. Quote the first
+  point whose OWN run prints `profitPerStart` ≥ 0, at its landed value — X + 0.01, the
+  break-even — print the last point that did not clear and the first that did, side by side,
+  and label its link with that value. A clearing point with an unrun grid point below it (5.00
+  when 4.99 was never run) is "clears at", never "the break-even" and never "≥". A point whose
   `profitPerStart` is below 0 is not the break-even, however small the loss: never "≈", never
-  "effectively break-even". If the runs end below 0, print the last point that did not clear
-  and the first that did, side by side.
-- **Paywall mix:** if one plan does not clear, get the CLI's proposed split for a pair:
-  `npx -y @segmently/cli ue init <slug>-mix --product "<monthly>" --product "Annual~<price>~1year~none" --dir .ue/<slug>/scratch`
-  (it writes `.ue/<slug>/scratch/.ue/<slug>-mix.json`) and evaluate that scenario as the
-  variant (the split is the CLI's, never yours).
+  "effectively break-even". If 8 runs end without two adjacent points, print the last failing
+  and the lowest clearing point side by side and call neither the break-even.
+- **Paywall mix:** if one plan does not clear, show the pair beside it in the same message —
+  never defer this variant to a question. When the reader named no annual price, the CLI
+  proposes it: `npx -y @segmently/cli ue init <slug>-mix --anchor <monthly price> --dir .ue/<slug>/scratch`
+  (the anchor ladder: the monthly plus the book's annual, at the CLI's split); with an annual
+  price the reader named,
+  `npx -y @segmently/cli ue init <slug>-mix --product "<monthly>" --product "Annual~<price>~1year~none" --dir .ue/<slug>/scratch`.
+  Evaluate `.ue/<slug>/scratch/.ue/<slug>-mix.json` as the variant. The split is the CLI's,
+  never yours; the Annual's price and the split are assumed: the book and the CLI's proposal
+  (a price the reader named stays measured).
 - **Corridor:** the chain at the book's P10/P90 corners — pessimistic `chain = { cps 2.5, p1 0.20,
   p2 0.35, p3 0.25 }`, optimistic `{ cps 1.0, p1 0.40, p2 0.65, p3 0.45 }`. Sentence: "the book
   cannot decide this — your first starts will".
@@ -256,8 +342,8 @@ what to print. Worked numbers from real CLI runs: references/cases.md.
   is a variant file under `.ue/<slug>/`; mint each with
   `npx -y @segmently/cli ue link .ue/<slug>/<variant>.json --label '<name>'` and print that
   call on the line directly above the link it produced. A list of links without their
-  `ue link` calls is unfinished (P0's Expected checks it). The onboarding screen's base link is
-  minted and shown the same way.
+  `ue link` calls is unfinished. The onboarding screen's base link is minted and shown the
+  same way.
 - **Learning budget:** set `volume = { "amount": <daily budget>, "unit": "budget_day" }`, read
   `readiness.line`; print both factors and the product, labelled — e.g. "6 days × $500 a day
   = $3,000 (your numbers, prepared)". If the reader has given no daily budget, print the
@@ -271,19 +357,28 @@ what to print. Worked numbers from real CLI runs: references/cases.md.
   reader judge whether that loss per start is acceptable for the test. If the central
   scenario does not clear, change the paywall first (annual beside the monthly, a paid trial,
   a higher anchor) and show that variant beside the first.
-- **Boundary:** write it from the template. Measured here: only what the reader stated —
-  the price, the cadence, the trial, the platform. Assumed: `chain.cps/p1/p2/p3`,
-  `paymentsCounted`, `completionRate`, the `init` take split and `volume` — editorial book
-  values, with no category and no geo prior. Not testable soon: whether those chain rates
-  hold for this traffic — `readiness.line` days at the reader's own budget.
+- **Boundary:** write it from the template. Measured here: only what the reader stated — the
+  price and cadence they named, the platform, and a trial only when they named one. A trial
+  they never mentioned (the `none` passed to `ue init`) is assumed: "no trial (none was
+  mentioned)". Assumed: `chain.cps/p1/p2/p3`, `paymentsCounted`, `completionRate`, the `init`
+  take split, a book fee preset with its `feeScheme` base, the mix variant's split and its
+  Annual price (measured when the reader named it), the corridor corners' chains (the book's
+  P10/P90), the charges sweep points (a labelled sweep), the book's first renewal behind every
+  payback the card prints (from `words.payback`), and `volume` — editorial book values, with no
+  category and no geo prior. Not testable soon: whether those chain rates hold for this traffic —
+  the `readiness.line` days at the volume the run used ("6 days at the book's volume" until the
+  reader gives a daily budget).
 
 ### UC-1 — Should part of the users see the same plan with a trial?
-- **Inputs, one per turn:** the trial (free or paid, length); the share of buy-taps the reader
-  expects for the trial product AND for the plan without the trial once both are shown — ask
-  for each; if they do not know the plan's, keep its take exactly as the CLI prints it and ask
-  only for the trial's; trial → paid `q` (the reader's, or the book's 0.5, or the RevenueCat
-  2026 medians by trial length — ≤ 4 d 25.5 %, 5–9 d 37.4 %, 17–32 d 42.5 %, book entry BB-32 —
-  labelled benchmark, a vendor's app-store peer set).
+- **Inputs, one per turn, in this order:** (1) the trial (free or paid, length), skipped when
+  the reader named it; (2) the trial product's share of buy-taps once both are shown — ONE
+  question that states the plan's default in the same sentence: "What share of buy-taps do you
+  expect <plan> with trial to take once both are shown? I keep <plan> at <its take as the CLI
+  printed it> unless you give its own." Never a second question mark for the plan's take.
+  (3) trial → paid `q` is not a question: run the reader's `q` if they gave one, else the
+  book's 0.5 or the RevenueCat 2026 median for the trial's length (≤ 4 d 25.5 %, 5–9 d 37.4 %,
+  17–32 d 42.5 %, book entry BB-32), labelled "benchmark: RevenueCat 2026 median, a vendor's
+  app-store peer set", and say the reader can replace it with their own.
 - **No trial take, no invented one.** If the reader has no take for the trial product, do not
   supply one and never move points from one product's take to another (that is a take split,
   model arithmetic). Keep the plan's take as the CLI prints it, and either ask again (one
@@ -322,8 +417,7 @@ what to print. Worked numbers from real CLI runs: references/cases.md.
   the trial verdict itself needs the `readiness.line` days.
 
 ### UC-2 — Web checkout vs store: the same paywall under two fee stacks
-- **Steps, in this order** (do not skip step 2 — two eval runs picked `nonOpenerChecks`
-  themselves):
+- **Steps, in this order** (do not skip step 2 — never pick `nonOpenerChecks` yourself):
   1. Ask which store program the reader is on: 15 % or 30 %.
   2. **Activation: ASK for the share AND for `nonOpenerChecks` in the same turn.** Both
      numbers, or neither. If the reader gives only the share, or neither, the activation row
@@ -391,7 +485,8 @@ what to print. Worked numbers from real CLI runs: references/cases.md.
   "95 % of buy-taps completing payment is above anything in the book — measured or assumed?"
 - **JSON edits:** `chain.*`, `volume`, `products[i].price / takeOfTaps / completionRate /
   paymentsCounted / trialConv`, only the deductions the reader has numbers for, `label`,
-  `measuredOn = "<source>, <window>"`, `touched`.
+  `measuredOn = "<source>, <window>"` as the reader named them — when they named neither,
+  `"reader-stated, source not given"`, never a date or a source they did not type — `touched`.
 - **Calls:** `ue evaluate <file> --explain`, then `ue link <file>`.
 - **Print:** KPIs, then an input table whose provenance column names EVERY input, one row
   each: chain knobs from `provenance.chain` (`reader` / `benchmark`); `products[].checks`,
@@ -413,9 +508,11 @@ See "RevenueCat (UC-4)" below.
   annual-first takes; 4-week at $9.99 vs monthly at $19.99; a ladder from an anchor via
   `ue init <slug>-ladder --anchor <price> --dir .ue/<slug>/scratch`; `basis: "first"` vs `"ltv12"`).
 - Evaluate each; table with the base value, the variant value and their absolute difference
-  beside both; link per row (loop step 5); the closest `breakEvens.chain` entry. Every cell of
-  a row comes from that row's own run, with its own `clamped` notices, and a sweep point
-  outside a window is labelled with its LANDED value (rule 9).
+  beside both; link per row (loop step 5); the `breakEvens.chain` entries as UC-0 lists them
+  (cps, p1, p2, p3, each in its own unit beside today's value) — never one called "closest"
+  across units (UC-6). Every cell of a row comes from that row's own run, with its own
+  `clamped` notices, and a sweep point outside a window is labelled with its LANDED value
+  (rule 9).
 - Cadence guard: a 4-week or 12-week plan has no book charge count — ask the reader for
   `paymentsCounted` instead of comparing 2.86 monthly charges with 1.
 - **Boundary:** write it from the template. The swept axis is the reader's own question, not
@@ -429,13 +526,23 @@ See "RevenueCat (UC-4)" below.
   paywall), by deduction (the waterfall rows), by mechanic (evaluate with and without it).
 - **Rank fixes by distance to break-even**, and print the rank as a table with exactly these
   columns: `lever | today | break-even | distance | measurable / belief`. A row fed by a sweep
-  (`paymentsCounted`, `completionRate`) is that sweep's own runs, and a swept endpoint that
-  clamped is reported typed → landed on its row (rule 9).
+  (`paymentsCounted`, `completionRate`) is that sweep's own runs, each a variant: bisect the
+  knob on its grid (`paymentsCounted` 0.01, `completionRate` half a point; ≤ 8 evaluate runs)
+  until two ADJACENT grid points bracket zero — X prints `profitPerStart` < 0 and the next grid
+  point prints ≥ 0 — and name both runs on the row; the `break-even` cell is the first clearing
+  point at its landed value, as UC-0's charges sweep. A clearing point with an unrun grid point
+  below it is "clears at", never "≥" and never "the break-even"; a value worked out by hand is
+  only where the bisection starts, never a cell. A swept endpoint that clamped is reported
+  typed → landed on its row (rule 9).
   - `today` and `break-even` are the two CLI values, side by side, in their own units.
   - `distance` is the ABSOLUTE difference between them, in the lever's own unit — "cps $1.50
     → ≤ $0.90, $0.60 lower"; "p3 35.0 % → ≥ 58.3 %, 23.3 points higher". A "% relative",
-    "Δ %" or "×" column is a ratio you computed: never print one, and never rank by one. The
-    order of the table IS the order of those absolute distances.
+    "Δ %" or "×" column is a ratio you computed: never print one, and never rank by one. Group
+    the rows by unit — $ (cps) first, then points (p1, p2, p3 together), then each swept knob in
+    its own unit (charges, then completion points) — and inside each group order by absolute
+    distance, smallest first, whatever order `breakEvens.chain` prints them in; never call one
+    lever "closest" or "the easiest" across units — each distance stands in its own unit and the
+    reader compares them.
   - `measurable / belief` is a required column, one word per row — a lever the reader can
     instrument and measure today (`cps`, `paymentsCounted`, `completionRate`, the chain rates
     their analytics already counts) vs one that is a belief until tested (a take, a chain
@@ -453,6 +560,11 @@ See "RevenueCat (UC-4)" below.
   `mechanics.downsell = true`; upsell the same under `upsell` / `mechanics.upsell`. Targets
   are referenced by NAME, names must be unique; a target usually sits off the paywall
   (`onPaywall: false`). Link: `ds=<owner>~<target>~<conv %>`, `us=…`.
+- A target the reader names by price only ("a Lite plan at $4.99") is the book's Lite: monthly
+  (`1month`), no trial, completion 100 %, charges 2.86 — the seed's `Lite monthly`,
+  `onPaywall: false`. Build it at once at the reader's price; never ask for its cadence, trial,
+  charges or completion, and name them in the boundary's assumed class as "the book's Lite".
+  Ask only for a cadence the book has no charge count for (4-week, 12-week — UC-5's guard).
 - A plan upgrade (monthly → annual REPLACES the plan) is `upsell = { product, conv, kind:
   "upgrade" }`, link `upgrade=`; an add-on keeps `us=`. Ask which one it is — counting an
   upgrade as an add-on overstates it. The public page reads `upgrade=` and opens it as an
@@ -481,13 +593,16 @@ See "RevenueCat (UC-4)" below.
   trial → paid.
 - **Calls:** `npx -y @segmently/cli ue rank <file> --override <lever>=<lift>`, once, in JSON
   (the horizons default to 30 and 90 days; add `--horizon` with the reader's own when they
-  name one), then read THAT lever's row — every figure below is a field of it, never derived
-  by hand. Report every warning of the rank run in one line each, including those on rows
-  you do not print ("`bought`: typed +10 % → landed +9.98 %, the take control's grid").
-  - `populationPerDay` — the people per day a test of this lever can use at its own funnel
-    position (starts for `p1`, paywall viewers for `p3`, buy-taps for `bought`) — say
-    "funnel starts", never "visits" or "clicks". Say in words that every step of the funnel
-    shrinks it.
+  name one), then print THAT lever's row as a field table, one row per field, in this order:
+  `lever`, `lift`, `gainPerMonth`, `roasAfter`, `populationPerDay`, `nPerArm`, `days`,
+  `spendRouted`, `mde` at each horizon, `realistic`, and last `note`, whole — every figure below
+  is a field of it, never derived by hand. Report every warning of the rank run, each warning on a line of its own — never two
+  joined in one sentence — including those on rows you do not print ("`bought`: typed +10 % →
+  landed +9.98 %, the take control's grid").
+  - `populationPerDay` — the people per day a test of this lever can use at its own step,
+    named as UC-10 names it (funnel starts for `p1`, funnel starts reaching the paywall for
+    `p3`, buy-taps for `bought`), never "visits", "clicks" or "sessions". Say in words that every
+    step of the funnel before the lever shrinks it.
   - `nPerArm` — sample size per arm, from that row. A rate the reader measured is first
     written into the scenario (input construction: `chain.p3`, a `completionRate`, a
     `trialConv`), and the row of a rank run on that scenario is quoted — never an n from one
@@ -495,10 +610,13 @@ See "RevenueCat (UC-4)" below.
     is only a cross-check for a chain step exactly as the scenario carries it (the two verbs
     agree only when p is the scenario's own rate and nothing was clamped or snapped), or it
     gives n alone for a rate no rank lever models — its days are then no CLI field: ask the
-    reader for them, or print them n/a per the arithmetic rule.
+    reader for them, or print them n/a per the arithmetic rule. `nPerArm` is set by the lever's
+    current rate and the lift alone — never explain it by the population; the population that
+    every step before the lever shrinks is why `days` (and `spendRouted`) is long, not why
+    `nPerArm` is large.
   - `days` — calendar days at this budget (the trial clock included for `trialConv`), and
     `spendRouted` — the ad spend that runs through the test over those days. Quote both to
-    two decimals, as the CLI's table view prints them (198.53, never "about 199").
+    two decimals (198.53, never "about 199"), every figure rounded as UC-10's table rounds it.
   - `realistic: false` with a non-null `days` → print, word for word, "Not testable at this
     volume in under N days." (N = the shortest horizon) in place of a plan. Then print the
     row's `days` (198.53), then its `note` whole, in quotation marks. Then, only when that
@@ -534,12 +652,19 @@ See "RevenueCat (UC-4)" below.
   gives σ (the standard deviation of revenue per user, from their own data) and the
   difference they want to detect. Without σ, say the size needs the variance of revenue per
   user from their data — never a σ you picked.
-- **Boundary:** write it from the template. Measured: the reader's budget (and any counts
-  they gave `ue stat read`). Assumed: the chain the plan is computed on, and the lift (theirs
-  or the "assumed lift"). Not testable soon: the change itself — the row's `days` at this
-  budget, the `readiness.line` days beside them, and a smaller change takes longer.
+- **Boundary:** write it from the template, placing EVERY input the scenario reads (the
+  walk), not only the ones the reader stated. Measured: the reader's budget ("your stated
+  budget"), each product's price, cadence and trial ("measured: your project file" when not
+  stated this session), and any counts they gave `ue stat read`. Assumed: the chain
+  (`provenance.chain` benchmark), each product's take (the CLI's init split when it equals it),
+  charges per payer, completion and trial conversion at the book's values, and the lift at its
+  landed value (theirs or the "assumed lift"). Not testable soon: the change itself — the row's
+  `days` at this budget, the `readiness.line` days beside them, and a smaller change takes
+  longer. Worked boundary: references/cases.md UC-8.
 
 ### UC-9 — What your ad account reports
+- The reader's own words are never echoed where rule 8 bans them: their "Meta will show" is
+  answered in the present tense — "the ad account reports", "the CLI prints".
 - Translate: the ad platform reports cost per purchase event (per buyer, per trial start)
   and ROAS on list price; the scenario's CAC is per paying customer and its ROAS is net
   once deductions are counted. Give the CLI's numbers side by side from one evaluation.
@@ -586,16 +711,21 @@ See "RevenueCat (UC-4)" below.
   figure from another run, never one you derived): lever | lift | gain / month
   (`gainPerMonth`) | ROAS after (`roasAfter`) | population / day (`populationPerDay`) | n per
   arm (`nPerArm`) | days | spend routed (`spendRouted`) | minimum detectable change at each
-  horizon (`mde`) | realistic | note — each figure rounded for reading only, as the CLI's
-  table view rounds it (`roasAfter` and `populationPerDay`, which that view omits, to two
-  decimals). `lift` and `mde` are relative fractions (0.116 is an 11.6 % change);
-  a `null` cell prints "n/a", as the CLI's table view prints it, and the row's `note` says
-  why.
+  horizon (`mde`) | realistic | note — each figure rounded for reading only: money, days,
+  `roasAfter` and `populationPerDay` to two decimals, `nPerArm` whole, `lift` and `mde` to four
+  decimals of the fraction (0.1152 is an 11.52 % change) — never coarser (the one-decimal
+  percent belongs only to the realism sentence and the row's `note`); a `null` cell prints
+  "n/a", and the row's `note` says why. Above the table, state the base's traffic from the run, by
+  name — "<N> funnel starts a day (`base.startsPerDay`) at <budget>" — never as budget ÷ cps; the
+  population sentence then shrinks it lever by lever.
 - **The four learning figures — print ALL FOUR, every time, even when the reader asked for
   none of them:** gain per month, sample size per arm, days to detect, and minimum detectable
   change — `gainPerMonth`, `nPerArm`, `days` and `mde` of each row. The population at a
-  lever's funnel position shrinks at every step (`populationPerDay`: starts for `p1`,
-  paywall viewers for `p3`, buy-taps for `bought`) — say it in words.
+  lever's funnel position shrinks at every step (`populationPerDay`, named per lever: funnel
+  starts for `p1`, funnel starts past step 1 for `p2`, funnel starts reaching the paywall for
+  `p3`, buy-taps for `bought`
+  and `mix`, the buy-taps that pick a paid product for `close`, trial starters for `trialConv`,
+  payers for `renewals`) — say it in words with these names, each at its row's two-decimal value.
 - **Landed lift.** Each row's `lift` is the LANDED relative lift. When `warnings` carries a
   `snapped` or `clamped` entry whose `keys` name a lever, report it typed → landed on that
   row (the seed's `bought`: typed +10 % → landed +10.15 %, the take control's 0.1-point
@@ -626,149 +756,89 @@ See "RevenueCat (UC-4)" below.
   carries from an export or RevenueCat. Assumed: every lift — the
   reader's belief, or the "assumed lift" — and every book input the base still holds; the
   gain column is this scenario's arithmetic for the lift the reader assumed, and that lift
-  stays an assumption until a test measures it. Not testable soon: which lever moves first —
-  each row's `days` at this budget (a row past the horizon: "not testable at this volume in
-  under N days"), and a price test needs the variance of revenue per user from the reader's
-  data.
+  stays an assumption until a test measures it; walk item 7 applies to every UC-10 table: the
+  horizons ("default horizon", the CLI's 30 and 90, unless the reader named one) and the 50/50
+  split behind every `nPerArm`, `days` and `mde`. Not testable soon: which lever moves first —
+  name EVERY row that has `days`, with its `days` at this budget, the learnable ones included
+  ("`p1` is decidable in <days> days"); say each row past the horizon as "not testable at this
+  volume in under N days"; then the price clause: a price test needs the variance of revenue
+  per user from the reader's data.
 
 ### UC-11 — Hypothesis card: which metric, then which change
-- **When:** "what should we test next", "prepare a hypothesis", "hypothesis card", or a reader
-  who has just read a UC-10 table and names a lever. The card is metric first, idea second:
-  `ue rank` picks the lever before anyone names a change. The worked card in
-  references/cases.md is ANOTHER scenario at another budget: copy its shape, never a sentence
-  or a figure of it — which rows are learnable, which lever lands where, every number is read
-  from the reader's own runs.
-- **Precondition:** a project file `.ue/<slug>.json`. None → `init` first (UC-0 / UC-3). Label
-  every input by where it came from, never by the stage alone: a chain knob by the base
-  evaluate's `provenance` (`reader` or the book); a product field at any value other than the
-  book's (completion 100 %, trial conversion 50 %, charges per payer 2.86 monthly and 1 annual,
-  the CLI's init split of the takes) came from the reader — "measured: your project file"; an
-  annual plan's 1 charge is its cadence cap, not a book value, and goes with the product;
-  a budget the reader stated is measured ("your stated budget").
-- **Inputs, one per turn, in this order:**
-  1. **Horizon** — "In how many days do you want to read the result?" No answer → 30,
-     labelled "default horizon". Nothing else is asked before the table is shown.
-  2. **Lever and change** — after the table: the reader names the change for
-     `recommendation.first`, or takes `recommendation.runnerUp` when they have no idea for
-     the first. A lever the table marks `realistic: false` may be chosen only as a named big
-     bet; step 3 decides whether it is readable. Before the reader gives a lift, say nothing
-     about whether their change is readable: the row's `mde` is printed, the verdict waits.
-  3. **Believed lift** — the reader's relative lift for that change, never one you picked.
-     Land it first (the variant below); a landed lift below the row's `mde` at the horizon →
-     print the realism sentence "within N days you can only see a ≥ X % change" (X the row's
-     `mde` at the CLI's precision, one decimal) and stop there: a bigger change or more
-     traffic is the reader's next move.
-  4. **After the test — the counts:** per arm, people who saw it / people who converted.
-- **Calls:**
-  - `npx -y @segmently/cli ue rank .ue/<slug>.json --horizon <N>` — ONE run, in JSON, and no
-    `--format table` (the table view is a second run). Its table follows EVERY rule of
-    UC-10's table: each cell from this run's own row, all four learning figures, landed lifts
-    typed → landed, the population that shrinks at every step said in words, "ranked by gain
-    per day of testing", every default +10 % row labelled "assumed lift", the realism sentence
-    for each unrealistic row printed UNDER the table as a sentence of its own (the row's `note`
-    carrying the same words does not count), the price sentence under the table — with one
-    `mde` column for the one horizon. Which rows are learnable is read from THIS run's
-    `realistic` column, never from another run or the worked card.
-  - **Land the believed lift before any other run.** Write the variant
-    `.ue/<slug>/card-<lever>.json`: the project file's scenario with that ONE knob lifted —
-    `chain.p1`, `chain.p2` or `chain.p3` times (1 + lift), a product's `completionRate`, a
-    `takeOfTaps`, a `trialConv`; the lifted value is input preparation, printed with both
-    operands and labelled "your numbers, prepared" (0.38 × 1.12 = 0.4256) — with `label` ≤ 40 characters and `measuredOn` "believed
-    lift, not observed, <date>" (≤ 80). Run `npx -y @segmently/cli ue evaluate .ue/<slug>/card-<lever>.json --explain`.
-    A `snapped` or `clamped` warning on that knob means the calculator's grid moved it: the
-    LANDED value is the card's value (rule 9 — typed → landed, "p1 typed 42.56 % → landed
-    42.5 %"), and the card's lift is the landed one: landed ÷ today − 1, written with six
-    decimals (0.118421). Building that lifted input is input construction, as in UC-10.
-  - `npx -y @segmently/cli ue rank .ue/<slug>.json --horizon <N> --override <lever>=<landed lift>`
-    — the card's own row. Report every warning of THIS run too, one line each, even for rows
-    the card does not print (a `clamped` `close` again) — every rank run of the card, the
-    realized-gain run included. Its `roasAfter` equals the variant's `kpis.roas`: both describe
-    the same scenario. When they differ, the override did not land where the variant did — rebuild
-    the lift from the landed value; never print figures of the two side by side (rule 9).
-  - `npx -y @segmently/cli ue link .ue/<slug>/card-<lever>.json` — the card's link, printed
-    under that call, the privacy sentence first. Never hand over a link from the `link` field
-    of `ue rank` or `ue evaluate`, and never one that warns `link_round_trip_failed`.
-  - `npx -y @segmently/cli ue stat size --p <rate> --lift <landed lift>` — a cross-check of
-    the row's `nPerArm`, only when the rate is the scenario's own.
-  - After the test: `npx -y @segmently/cli ue stat read --a <n>/<x> --b <n>/<x>`.
-  - On `significant` only, BEFORE the re-base: the realized gain —
-    `npx -y @segmently/cli ue rank .ue/<slug>.json --horizon <N> --override <lever>=<observed lift>`,
-    the observed lift being the landed `read.pB` ÷ today − 1 with six decimals (`read.pB`
-    lands on the grid like any rate — report typed → landed). Its `gainPerMonth` is the
-    realized gain per month and its `roasAfter` equals the re-based evaluate's ROAS.
-  - Then the re-base per references/stages.md — the old base into `variants[]`, the decision
-    into `decisions[]`, an observed-inputs document carrying the counts, the lever set to
-    `read.pB` exactly as printed (the evaluate lands it; report typed → landed); then `npx -y @segmently/cli ue evaluate .ue/<slug>.json --explain` and
-    `ue link` on it.
-- **Print — the card, ten fields, in this order, every figure with its unit:**
-  1. **Horizon and traffic** — the horizon, `base.startsPerDay`, the daily or monthly budget.
-  2. **Base** — the KPIs of the project file's own evaluate (value per buy-tap net, required,
-     CAC per payer, profit per start, ROAS, payback, `readiness.line`); the provenance table
-     from its `provenance` (each chain knob with its source, each product's take, charges,
-     completion and trial conversion); a fee with the base its `feeScheme` reports ("charged"
-     for a card processor, S9); and the base link (privacy sentence first — a project base
-     carries the reader's numbers).
-  3. **Metric** — key: profit per start; nearest: the chosen lever on its own population
-     (`populationPerDay`, named — "funnel starts", "paywall viewers", "buy-taps"), today's
-     rate, the row's `mde` at the horizon. Beside the lever, its stage label from this fixed
-     map, never asked: `cps`, `p1` → acquisition; `p2` → activation; `p3`, `close`, `bought`,
-     `mix`, `trialConv` → revenue; `renewals` → retention (calendar).
-  4. **Guardrails** — every other row of the same first rank run with its `days` AND its `mde`
-     (or its `note` when `mde` is null); the step right after the lever named explicitly (`p1` → `p2`, `p2` →
-     `p3`, `p3` → `bought`; for `close`, `bought`, `mix` and `trialConv`, CAC per payer and
-     payback); CAC per payer and payback from the base.
-  5. **Hypothesis** — "If <the change>, then <lever> <today> → <landed>, +<landed lift> %
-     (believed); if the lift holds, profit per start <base> → <variant>, ROAS <base> →
-     <variant>, +$<gainPerMonth> a month at <volume>." Profit per start and ROAS from the
-     variant's own evaluate, `gainPerMonth` from the override row, then the variant link.
-  6. **Change** — a placeholder for the reader's mockup, with the contract sentence: "must
-     move <lever> only; <the step after it> must not fall — +<lift> % here is cancelled by
-     −<drop> % there", the drop prepared with its operands shown (1 ÷ 1.118421 = 0.894, a
-     10.6 % fall).
-  7. **Test plan** — the override row's `nPerArm`, `days`, `spendRouted` and `mde` at the
-     horizon; one read at the planned end, no daily peeking; `readiness.line` beside it when
-     the lever is `mix` or `trialConv`.
-  8. **Gain if the lift holds** — `gainPerMonth`, and the prices, takes, completion, trial
-     conversion and charges counted the scenario carries. Charges per payer are the retention
-     unit; the card never converts them to a churn percentage.
-  9. **Cost** — a placeholder for the team's hours and rate, with `spendRouted` and `days`
-     beside it. No ratio of gain to cost, no "covered in N months".
-  10. **Read and close** — after the counts: `read.pA`, `read.pB`, `lift`, `diff`, `ci95`,
-      `pValue` and `verdict` as the CLI prints them; `underpowered` carries
-      `read.needPerArm` and is never "did not work". `significant` → the re-based evaluate
-      beside the base, the drift line ("<lever> scenario X → observed Y (+Z points)"), the
-      re-based link; `not yet` → keep to the planned n if still inside the horizon, else
-      record it; `underpowered` → record it and name the reader's next move. A next card after
-      the re-base starts from a new `ue rank` on the re-based file — never a row of the pre-test
-      run. The realized
-      gain per month is the realized-lift override row's `gainPerMonth`, quoted — never a
-      difference of profit per start multiplied by starts by hand (a gain per month is never
-      derived); the base's and the re-based profit per start stand side by side.
-- **Stops — each is a printed verdict, not an error:** no `realistic` row at the horizon →
-  "bigger change or more traffic"; a landed lift below the horizon's `mde`; lever `renewals`
-  → a calendar read, no sample size; a price change → `ue stat means` needs σ from the
-  reader's data (UC-8); a trial lever → the trial verdict days of `readiness.line` come first.
-- **Rules this card tempts:** rule 8 — the gain is "if the lift holds", and none of rule 8's
-  strings appear; rule 9 — every table row is its own run, the variant's KPIs come from the
-  variant's evaluate, never from the base's; no ratio or multiple of two results, operands
-  side by side instead; rule 4 — the privacy sentence before every link; fields 6 and 9 stay
-  the reader's — no invented hours, rates or lifts. Worked card: references/cases.md UC-11.
-- **Boundary — with every verdict, not only at the end:** the ranked table, the card and the
-  read each close their turn with a boundary from the template, walking every input in its
-  order. Payback is quoted with the renewal it assumes, from `words.payback` ("assumes the
-  book's first renewal (monthly 60%)"), and that renewal goes in the assumed class. Measured: the
-  horizon, the reader's budget ("your stated budget"), the counts, every price and product field
-  the project file carries from the reader (see Precondition), and whatever the base carries
-  from an export or RevenueCat. Assumed: the believed lift at its LANDED value ("+12 % typed,
-  +11.84 % landed" — after a snap the typed value is never quoted alone), the default +10 % of
-  every other lever ("assumed lift"), every book input the base still holds, the book's first
-  renewal behind payback, the fixed 50/50 split. Not testable soon: every guardrail row whose `days`
-  is past the horizon, each at its own `days` — past it even when its `mde` is null;
-  `renewals` (null `days`) is a calendar read, named as one. Build that list in EVERY boundary
-  — the table's, the card's and the read's — row by row off the reader's own table (a row
-  with `days` > N is in it, whatever its `mde`); a list taken from memory or from the worked
-  card is a different run's list. The card's boundary carries the default lifts and those
-  guardrail rows as well, not only the card's own lever.
+- **When:** "what to test next", "hypothesis card". The worked card is ANOTHER scenario: copy its shape,
+  never a sentence or a figure of it — every number and every list comes from the reader's own runs.
+- **Precondition:** `.ue/<slug>.json` (none → `init`). Place each input by the walk, never by the
+  stage alone; run the init-split check first — an equal take is "assumed: the CLI's init split".
+- **Turn 1 — horizon:** "In how many days do you want to read the result?" No horizon named → ONE
+  `ue rank .ue/<slug>.json --horizon 14,21,30` run for its `mde` columns; still no pick → 30,
+  labelled "default horizon". Nothing else is asked before the table is shown. That run judges
+  `realistic` at its shortest horizon, so the card's table is a fresh `--horizon <N>` run.
+- **The table:** `ue rank .ue/<slug>.json --horizon <N>` — ONE run, in JSON, no `--format table` (the
+  table view is a second run). It follows EVERY rule of UC-10's table: all four learning figures, the
+  population that shrinks at every step said in words, "ranked by gain per day of testing", every default
+  +10 % row labelled "assumed lift", each realism sentence printed UNDER the table as a sentence of its
+  own (a `note` cell does not count), and "Price is not ranked here — a price test needs the variance of
+  revenue per user from your own data." Which rows are learnable is read from THIS run's `realistic`
+  column, never from the worked card. No link goes with the table; asked for one, loop step 4 says which.
+- **Turn 2 — lever and change:** the change for `recommendation.first` (`runnerUp` with no idea for it);
+  a `realistic: false` lever only as a named big bet. Say nothing about whether their change is readable
+  before they give a lift. **Turn 3 — believed lift:** `ue rank .ue/<slug>.json --horizon <N> --override
+  <lever>=<lift>` — the CLI lands it; its `snapped` warning gives typed → landed, and the card quotes the
+  landed lift. Report every warning the run prints, each on a line of its own, the other levers' default
+  landings included; so for every rank run. **Stops:** no `realistic` row → "bigger change or more
+  traffic"; a landed lift below the row's `mde` → "within N days you can only see a ≥ X % change"; a
+  price → `ue stat means` with the reader's σ; a trial lever → `readiness.line`'s trial days first.
+- **The variant** `.ue/<slug>/card-<lever>.json` moves what the row moved, × (1 + the typed lift), both
+  operands shown, labelled "your numbers, prepared" — `p1`–`p3`: that `chain.pN`; `close`: each paywall
+  `completionRate` (at most 1); `trialConv`: each trial `trialConv`; `renewals`: each renewing
+  `paymentsCounted`; `bought`: each paywall `takeOfTaps`; `mix`: never by hand (a take split) — `ue
+  parse` the run's `recommendation.links` entry, none → no variant. Its `label` and `variants[]` name
+  carry the LANDED lift, never the typed one; `measuredOn` "believed lift, not observed, <date>". The
+  card's KPIs are the variant's own `ue evaluate … --explain`, never the base's (rule 9). For `chain.pN`
+  its ROAS equals the override row's `roasAfter` — say so, and never quote the two apart; if they
+  differ, set the knob to today × (1 + the row's `lift`) and re-evaluate. For `bought` and `mix` the
+  card's lifted ROAS and gain are the rank run's `roasAfter` and `gainPerMonth`. Mint it with `ue link`,
+  never one that warns `link_round_trip_failed`, the privacy sentence first (rule 4).
+- **The card, ten fields in order, each figure with its unit:** (1) Horizon and traffic — N,
+  `base.startsPerDay`, the budget. (2) Base — its evaluate: value per buy-tap net, required, CAC per
+  payer, profit per start, ROAS on its `valueBasis`, payback as `words.payback` prints it, whole,
+  `readiness.line`; the provenance table from its `provenance`, a take equal to the init split reading
+  "assumed: the CLI's init split" there too; every deduction the base carries, each with its value — the
+  fee on its `feeScheme` base, then refunds, tax, disputes, activation when present; the base link. (3)
+  Metric — key: profit per start; nearest: the lever on its population (`populationPerDay`), today's
+  rate, the row's `mde`, its stage label from this fixed map, never asked: `p1` → acquisition; `p2` →
+  activation; `renewals` → retention; the rest → revenue. (4) Guardrails — every other table row with its
+  `days` AND its `mde` (its `note` when `mde` is null); the next step by name (`p1` → `p2` → `p3` →
+  `bought`), and always CAC per payer and payback from the base. (5) Hypothesis — "If <the change>, then
+  <lever> <today> → <landed>, +<landed lift> % (believed); if the lift holds, profit per start and ROAS
+  <base> → <variant>, +$<gainPerMonth> a month at <volume>.", then its link. (6) Change — "[your mockup —
+  <their change in their words>]", even when described, then "must move <lever> only; <the next step>
+  must not fall — +<lift> % here is cancelled by −<drop> % there", the drop prepared with its operands.
+  (7) Test plan — the override row's `nPerArm`, `days`, `spendRouted`, `mde`; one read at the end;
+  `readiness.line` too for `mix`, `trialConv`. (8) Gain if the lift holds — `gainPerMonth`; charges per
+  payer as the retention unit, never a churn %. (9) Cost — "[hours × rate]", by `spendRouted`, `days`. No
+  ratio of gain to cost, no "covered in N months"; fields 6 and 9 stay the reader's — no invented hours,
+  rates or lifts. (10) Read and close — `ue stat read --a <n>/<x> --b <n>/<x>` with its placeholders, IN
+  the card before any counts; at the read, every `read` field as printed — `pA`, `pB`, `lift`, `diff`,
+  `ci95`, `z`, `pValue`, `needPerArm`, `verdict`. `underpowered` carries `read.needPerArm` and is never
+  "did not work"; `not yet` → keep to the planned n or record it.
+- **On `significant` only, BEFORE the re-base:** the realized gain is the `gainPerMonth` of `ue rank
+  .ue/<slug>.json --horizon <N> --override <lever>=<read.pB ÷ today − 1>` (six decimals; its `roasAfter`
+  = the re-based ROAS; all its warnings reported) — never a difference of profit per start multiplied by
+  starts by hand. Then re-base: the old base into `variants[]`, the counts as observed inputs, the lever
+  at `read.pB` as printed. Print the re-based evaluate's profit per start, ROAS, CAC per payer, payback
+  and `stage` (the project's evaluate, counts in `observed[]`: `live_measured`), each base → re-based;
+  the drift line "`<lever>` scenario <today> % → observed <`read.pB`, two decimals> % (<difference>
+  points higher or lower)" — the observation as `ue stat read` printed it, never the landed value, never
+  `read.diff`; then "the re-based scenario carries the landed <X> % (`snapped`)"; its link. Every figure
+  about the re-based scenario (its KPIs, a next card's table) comes from a run on it.
+- **Boundary — with every verdict** (the table, the card, the read), the SAME walk (items 1–8) in all
+  three — the horizon, the 50/50 split and the counts included. The read's opens with the card's walk
+  lines, word for word (the lever's pre-test rate too), then re-based `read.pB`, counts, realized lift.
+  Not testable soon: every row whose `days` is past N, at its own `days` — past it even when its `mde` is
+  null — and `renewals`, a calendar read. That list is rebuilt in EVERY boundary from the reader's own
+  table — the read's from the card's `--horizon <N>` run, named as that run's ("in the card's <N>-day
+  table run: `<lever>` <days> days") — never "this run"; one from the worked card is another run's.
 
 ## RevenueCat (UC-4)
 Uses the READER's own RevenueCat MCP connection (`claude mcp add --transport http revenuecat https://mcp.revenuecat.ai/mcp`). Read tools only. Never cost per start or chain rates from RevenueCat. Never a key through this skill.
@@ -846,8 +916,11 @@ When this skill is loaded, run `segmently ue` exactly as the cases above write i
 never through the MCP tools below.
 
 The CLI behind this skill also runs as an MCP server, the same six handlers
-(`evaluate`, `link`, `parse`, `init`, `rank`, `stat`) as tools, for a host with no room
-for this skill's context:
+(`evaluate`, `link`, `parse`, `init`, `rank`, `stat`) plus a seventh, `ue_guide`, as
+seven tools — for a host with no room for this skill's context. An MCP-only host
+gets this method from the server itself: its `instructions` (the contract and the
+session rules) and `ue_guide` (this method, topic by topic, rendered from this
+skill at build time). Four prompts open on the right topic. Install:
 
 ```bash
 claude mcp add ue -- npx -y @segmently/cli ue mcp

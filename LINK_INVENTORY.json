@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T12:14:53.735Z",
+  "generatedAt": "2026-09-24T07:11:58.137Z",
   "root": "/Users/leonidyuriev/Documents/Development/web/segmently-support-plugins",
   "channel": "stable",
   "policy": {
@@ -110,7 +110,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 450,
+      "line": 451,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -119,7 +119,7 @@
     {
       "value": "https://app.segmently.ai",
       "file": "plugins/segmently-launch-assistant/scripts/validate-plugin.mjs",
-      "line": 471,
+      "line": 472,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195950,7 +195950,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=Monthly%20%2419.99%20web&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 65,
+      "line": 68,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195959,7 +195959,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=monthly%20%2B%20card%20fee&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&fee=2.90~0.30~card_processor&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 70,
+      "line": 73,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195968,7 +195968,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=pessimistic%20corner&cps=2.5&p1=20.0&p2=35.0&p3=25.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 75,
+      "line": 78,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195977,7 +195977,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=trial%20a%20q55&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&p=Monthly%20subscription~19.99~1month~none~15.30~100.0~2.86~&p=Monthly%20with%20trial~19.99~1month~7d-free~13.20~100.0~2.86~55.0&p=Annual%20subscription~119.99~1year~none~14.90~100.0~1.00~&off=Lite%20monthly~4.99~1month~none~~100.0~2.86~&off=One-time%20add-on~29~once~none~~100.0~1.00~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 154,
+      "line": 161,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195986,7 +195986,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=paywall%20test%20%24300%2Fd&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=300:budget_day&measured=reader-stated%20daily%20ad%20spend%2C%202026-09-23&p=Monthly~19.99~1month~7d-free~30.10~100.0~2.86~50.0&p=Annual~119.99~1year~none~14.00~100.0~1.00~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 299,
+      "line": 308,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -195995,7 +195995,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 379,
+      "line": 391,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196004,25 +196004,25 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 485,
+      "line": 552,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
       "runtimeAllowed": false
     },
     {
-      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20p1%2042.5%25%20(believed",
+      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20p1%20%2B11.84%25%20(believed",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 503,
+      "line": 564,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
       "runtimeAllowed": false
     },
     {
-      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20re-based%20on%20test%20A&cps=1.1&p1=41.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20p1%20observed%20in%20test%20A%20(1815%2F752",
+      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20re-based%20on%20test%20A&cps=1.1&p1=41.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20p1%20observed%20in%20test%20A%20(1864%2F772",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/references/cases.md",
-      "line": 558,
+      "line": 644,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196040,7 +196040,7 @@
     {
       "value": "https://mcp.revenuecat.ai/mcp`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/SKILL.md",
-      "line": 774,
+      "line": 844,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196049,7 +196049,7 @@
     {
       "value": "https://mcp.revenuecat.ai/mcp`",
       "file": "plugins/segmently-launch-assistant/skills/segmently-unit-economics/SKILL.md",
-      "line": 776,
+      "line": 846,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196130,7 +196130,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=Monthly%20%2419.99%20web&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 65,
+      "line": 68,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196139,7 +196139,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=monthly%20%2B%20card%20fee&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&fee=2.90~0.30~card_processor&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 70,
+      "line": 73,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196148,7 +196148,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=pessimistic%20corner&cps=2.5&p1=20.0&p2=35.0&p3=25.0&vol=45000:budget_month&measured=benchmark%20book%2C%20nothing%20measured&p=Monthly~19.99~1month~none~30.00~100.0~2.86~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 75,
+      "line": 78,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196157,7 +196157,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=trial%20a%20q55&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=45000:budget_month&p=Monthly%20subscription~19.99~1month~none~15.30~100.0~2.86~&p=Monthly%20with%20trial~19.99~1month~7d-free~13.20~100.0~2.86~55.0&p=Annual%20subscription~119.99~1year~none~14.90~100.0~1.00~&off=Lite%20monthly~4.99~1month~none~~100.0~2.86~&off=One-time%20add-on~29~once~none~~100.0~1.00~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 154,
+      "line": 161,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196166,7 +196166,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=paywall%20test%20%24300%2Fd&cps=1.5&p1=30.0&p2=50.0&p3=35.0&vol=300:budget_day&measured=reader-stated%20daily%20ad%20spend%2C%202026-09-23&p=Monthly~19.99~1month~7d-free~30.10~100.0~2.86~50.0&p=Annual~119.99~1year~none~14.00~100.0~1.00~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 299,
+      "line": 308,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196175,7 +196175,7 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 379,
+      "line": 391,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196184,25 +196184,25 @@
     {
       "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20meditation%20app%2C%20web%2C%20US&cps=1.1&p1=38.0&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20invented%20for%20a%20process%20dry%20run%2C%202026-09-23&fee=2.90~0.30~card_processor&refunds=3.00&disputes=0.40~15.00&activation=88.0~1&p=Monthly%20with%20trial~19.99~1month~7d-free~24.00~95.0~2.90~45.0&p=Annual~99.99~1year~none~12.00~97.0~1.00~&ref=skill`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 485,
+      "line": 552,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
       "runtimeAllowed": false
     },
     {
-      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20p1%2042.5%25%20(believed",
+      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20p1%20%2B11.84%25%20(believed",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 503,
+      "line": 564,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
       "runtimeAllowed": false
     },
     {
-      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20re-based%20on%20test%20A&cps=1.1&p1=41.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20p1%20observed%20in%20test%20A%20(1815%2F752",
+      "value": "https://www.segmently.ai/unit-economics?v=2&label=SYNTHETIC%20re-based%20on%20test%20A&cps=1.1&p1=41.5&p2=55.0&p3=32.0&vol=900:budget_day&measured=SYNTHETIC%3A%20p1%20observed%20in%20test%20A%20(1864%2F772",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/references/cases.md",
-      "line": 558,
+      "line": 644,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196220,7 +196220,7 @@
     {
       "value": "https://mcp.revenuecat.ai/mcp`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/SKILL.md",
-      "line": 774,
+      "line": 844,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
@@ -196229,7 +196229,7 @@
     {
       "value": "https://mcp.revenuecat.ai/mcp`",
       "file": "plugins/segmently-unit-economics/skills/segmently-unit-economics/SKILL.md",
-      "line": 776,
+      "line": 846,
       "classification": "external-https",
       "stableStatus": "ok",
       "replacement": null,
