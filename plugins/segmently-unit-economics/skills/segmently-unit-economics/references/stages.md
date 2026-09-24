@@ -64,7 +64,8 @@ old", not a demotion.
 
 The first message opens with one screen, and the contract is its first line, verbatim
 (SKILL.md, "Contract"). When the reader's opening message already names a case, continue into
-that case in the same message, asking at most one question. The three offers are the `offers` array `ue init`
+that case in the same message, after the onboarding screen, with at most one question closing the
+turn. The three offers are the `offers` array `ue init`
 returned (or the stage table's row), each naming its case so the reader can answer "2".
 
 The base-case `<link>` is never the `link` field `ue init` returned: set `measuredOn` in the
@@ -72,24 +73,44 @@ scenario (`"benchmark book, nothing measured"` for a fresh project) and re-mint 
 `npx -y @segmently/cli ue link .ue/<slug>.json --label '<name>'` — single quotes, so the shell
 leaves a `$` price alone — then quote that link and handle its warnings.
 
-The base-case link goes on the screen only for `idea` and `pre_launch` (book numbers). For
-`live_no_data`, `live_measured` and `scaling` the scenario carries the reader's own numbers:
-replace `<link>` with the privacy sentence — "This link carries your numbers in plain text —
-browser history, referrers and analytics can see it. I can give you the JSON file instead." —
-and hand the link over only after it (SKILL.md, the one loop, step 5).
+The base-case link goes on the screen at every stage, on the line under the `ue link` call that
+minted it. The stage does not decide privacy; what the link carries does (SKILL.md, the one loop,
+step 5). Whenever the link carries a figure the reader stated about their business — the prices
+of a paywall they already sell included, at `idea` and `pre_launch` too — print the privacy
+sentence on its own line above it: "This link carries your numbers in plain text — browser
+history, referrers and analytics can see it. I can give you the JSON file instead." A price read
+from the project file is the reader's figure: print the privacy sentence before every link that
+carries it — the onboarding screen's base link included — unless the reader said in this session
+that the price is still being chosen; never call such a link "the book's numbers". Only a link of
+book values alone, plus the price of a product the reader said in this session is still being
+chosen, goes on the screen without it. When unsure, print it.
+
+The screen below is a real run's — `ue init my-app --product "Monthly~19.99~1month~7d-free"
+--product "Annual~119.99~1year~none" --platform web --have none`, then `ue evaluate
+.ue/my-app.json --explain` — on a found project file: its prices are the reader's figures, so
+the privacy sentence stands on its own line above the `ue link` call and the link under it.
 
 ```
 I never: forecast your numbers, invent a benchmark, write to RevenueCat or Segmently,
 or put a figure you did not give me into a link.
 
-Project: my-app · stage: pre_launch (scenario present, book chain, nothing observed yet)
-Base case: Monthly $19.99 · web · ROAS 0.60 gross · <link>
+Project: my-app · stage: pre_launch (scenario present, chain knobs untouched (book), no observed inputs)
+Base case: Monthly $19.99 (7-day free trial) · Annual $119.99 · ROAS 0.89 gross
+
+This link carries your numbers in plain text — browser history, referrers and analytics can see it. I can give you the JSON file instead.
+npx -y @segmently/cli ue link .ue/my-app.json --label '<name>'
+<link>
 
 I can, from here:
   1. Learning budget and what to instrument before the first $1,000 of ads   (UC-0)
   2. Web checkout vs store on this paywall — fees, tax, refunds, disputes    (UC-2)
   3. How long a paywall test needs at your daily budget                      (UC-8)
 ```
+
+The screen quotes only what the base evaluate printed: every plan on the paywall with its price,
+ROAS on the `valueBasis` it states, the stage. The platform is no evaluate field — name it only
+when the reader named it, or when `ue init`'s answer in this session or the found project file's
+`platform` field carries it; say which ("web, from your project file").
 
 ## Drift check (live_measured and later)
 

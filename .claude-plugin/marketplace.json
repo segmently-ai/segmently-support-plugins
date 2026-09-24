@@ -24,7 +24,7 @@
     {
       "name": "segmently-unit-economics",
       "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first — no account, nothing leaves the machine.",
-      "version": "0.1.0+codex.bf3b0529ed8f",
+      "version": "0.1.0+codex.651517ca49a8",
       "author": {
         "name": "Segmently"
       },

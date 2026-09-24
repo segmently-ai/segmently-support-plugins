@@ -105,7 +105,7 @@ check('SKILL.md with frontmatter', () => {
 });
 
 check('monorepo-only files absent', () => {
-  const offenders = files.map(rel).filter(path => /(^|\/)internal-admin-seams\.md$/.test(path) || /(^|\/)evals(\/|$)/.test(path));
+  const offenders = files.map(rel).filter(path => /(^|\/)internal-admin-seams\.md$/.test(path) || /(^|\/)(evals|transport)(\/|$)/.test(path));
   if (offenders.length) fail(`must not ship: ${offenders.join(', ')}`);
 });
 
