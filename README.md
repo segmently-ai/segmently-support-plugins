@@ -84,7 +84,13 @@ What it answers, and the MCP server for hosts without plugins:
 [plugins/segmently-unit-economics/README.md](plugins/segmently-unit-economics/README.md).
 <!-- plugin-section:segmently-unit-economics:end -->
 
-## Required Tools
+## Segmently Launch Assistant
+
+The full assistant: launch and support answers from Segmently articles, browser
+walkthroughs (SHOW), CLI and editor actions (DO), and the same unit-economics skill with
+the growth cycle. Everything below this heading is for the launch assistant.
+
+### Required Tools
 
 The plugin installs Segmently assistant skills and scripts only. It does not
 install the host runtime, Git, the agent host CLI, Segmently CLI, Playwright CLI,
@@ -148,7 +154,7 @@ When `node`, `npm`, `npx`, `segmently`, `playwright-cli`, or the browser
 binary is missing, the assistant should run the setup/preflight flow first
 instead of pretending SHOW or DO succeeded.
 
-## One Prompt Install For Codex
+### One Prompt Install For Codex — Launch Assistant
 
 Copy this whole prompt into a fresh Codex thread. It is intentionally written as
 a single task so Codex can prepare the host tools, install the marketplace
@@ -219,7 +225,7 @@ Post-restart verification prompt:
 10. Do not claim runtime verification is complete in the install session. The correct install-session completion state is: host prerequisites checked or installed, Segmently CLI auth/capabilities checked, Playwright CLI/browser support checked, Codex plugin installed or updated, and local target-project AGENTS.md/CLAUDE.md guidance updated. If a step needs my approval or browser login, ask for that single approval and then continue.
 ```
 
-## One Prompt Install For Claude Code
+### One Prompt Install For Claude Code — Launch Assistant
 
 Copy this whole prompt into a fresh Claude Code thread. It performs the same
 host-tool, Segmently CLI, Playwright, marketplace, plugin, and local project
@@ -290,7 +296,7 @@ Post-restart verification prompt:
 10. Do not claim runtime verification is complete in the install session. The correct install-session completion state is: host prerequisites checked or installed, Segmently CLI auth/capabilities checked, Playwright CLI/browser support checked, Claude Code plugin installed or updated, and local target-project CLAUDE.md/AGENTS.md guidance updated. If a step needs my approval or browser login, ask for that single approval and then continue.
 ```
 
-## Current Project Context
+### Current Project Context
 
 The assistant can remember one current Segmently project in a non-secret local
 state file so follow-up questions do not need the project id every time. The
@@ -309,7 +315,7 @@ SEGMENTLY_LAUNCH_CONTEXT_FILE=/absolute/path/context.json node plugins/segmently
 The context file must never contain tokens, passwords, screenshots, customer
 content, or service credentials.
 
-## Session Engine And Proactive Mode
+### Session Engine And Proactive Mode
 
 On top of the current-project context, the assistant keeps a small TTL-gated
 per-project session cache (launch-state snapshots ~6h, predicted next steps
@@ -339,14 +345,14 @@ The session cache stores only non-secret whitelisted fields (project id, goal,
 milestone statuses, routed intent ids, prepared read-only plans). Clear it any
 time with the `clear` command.
 
-## Codex Install
+### Codex Install
 
 ```bash
 codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
-## Codex Update
+### Codex Update
 
 ```bash
 codex plugin marketplace upgrade segmently-support
@@ -355,21 +361,21 @@ codex plugin add segmently-launch-assistant@segmently-support
 
 Start a new Codex thread after reinstalling so updated plugin skills are loaded.
 
-## Codex Pin A Release
+### Codex Pin A Release
 
 ```bash
 codex plugin marketplace add segmently-ai/segmently-support-plugins --ref v0.1.0-codex.<hash>
 codex plugin add segmently-launch-assistant@segmently-support
 ```
 
-## Claude Code Install
+### Claude Code Install
 
 ```bash
 claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
 claude plugin install segmently-launch-assistant@segmently-support --scope user
 ```
 
-## Claude Code Update
+### Claude Code Update
 
 ```bash
 claude plugin marketplace update segmently-support
@@ -378,7 +384,7 @@ claude plugin update segmently-launch-assistant@segmently-support --scope user
 
 Start a new Claude Code thread after updating so refreshed plugin skills are loaded.
 
-## Claude Code Pin A Release
+### Claude Code Pin A Release
 
 ```bash
 claude plugin marketplace add segmently-ai/segmently-support-plugins@v0.1.0-codex.<hash> --scope user

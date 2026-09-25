@@ -269,7 +269,7 @@ customer skill and let it own the command shape:
 | Image uploads to the CDN | `segmently-cli-image-upload` |
 | Product page / insights | `segmently-product-cli-guide` |
 | Reusable strategy block examples, block-library authoring, local exact-packet eval | `screen-block-builder` |
-| Unit economics, paywall economics, CAC, ROAS, "is this price worth it", trial vs no trial, store vs web | `segmently-unit-economics` (offline `segmently ue` calculation; no auth required) |
+| Unit economics, paywall economics, CAC, ROAS, "is this price worth it", trial vs no trial, store vs web, the growth cycle ("where can we grow", "what to test next", "is this test real") | `segmently-unit-economics` (offline `segmently ue` calculation; no auth required) |
 
 In customer prose, call this the authorized Segmently CLI or browser helper;
 name a companion skill id only when debugging, explaining a missing capability,
