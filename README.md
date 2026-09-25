@@ -11,7 +11,9 @@ Public read-only marketplace for Segmently customer support plugins.
 ## Segmently Unit Economics (standalone plugin)
 
 Only the paywall unit-economics skill, without the launch assistant: the launch card, trial
-and fee-stack comparisons, which experiment first, how long a test needs. It computes on your
+and fee-stack comparisons, which experiment first, how long a test needs, and the growth
+cycle — research before an experiment, the hypothesis card, the read and the re-based numbers.
+It computes on your
 machine with `segmently ue` — no Segmently account, no login, no browser automation, and
 nothing leaves the machine. Prerequisites: Node.js 22+ with npx. That is all — the Segmently CLI
 login and Playwright under "Required Tools" below are for the launch assistant only.

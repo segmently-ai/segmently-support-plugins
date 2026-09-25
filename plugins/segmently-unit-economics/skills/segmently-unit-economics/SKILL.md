@@ -1,6 +1,6 @@
 ---
 name: segmently-unit-economics
-description: Paywall unit economics for subscription and web-to-app builders — launch card, trial and fee-stack comparisons, "which experiment first" — computed offline by `segmently ue` (no account, nothing leaves the machine) with one public-page link per scenario. Use when a user asks whether a price, paywall, trial, store-vs-web choice or ad budget can work, or pastes a segmently.ai/unit-economics link.
+description: Paywall unit economics for subscription and web-to-app builders — launch card, trial and fee-stack comparisons, "which experiment first", the growth cycle from research to a measured test — computed offline by `segmently ue` (no account, nothing leaves the machine) with one public-page link per scenario. Use when a user asks whether a price, paywall, trial, store-vs-web choice or ad budget can work, where the product can grow, what to test next, whether a test result is real, or pastes a segmently.ai/unit-economics link.
 ---
 
 # Segmently unit economics

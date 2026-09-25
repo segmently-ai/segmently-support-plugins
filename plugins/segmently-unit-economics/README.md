@@ -82,12 +82,50 @@ Ask in plain words; the skill asks three questions at most, then shows numbers.
   test plan, and after the test the read and the re-based numbers. Your hours stay yours.
 - Paste any https://www.segmently.ai/unit-economics link back and it reads the scenario out of the link.
 
-Only `ue init`, `ue rank --card` and the skill write anything, all under `.ue/` in your
+Only `ue init`, `ue rank --card`, `ue stat read --rebase` and the skill write anything, all under `.ue/` in your
 working folder: the project file `.ue/<slug>.json`, variant and hypothesis-card scenarios as
 JSON under `.ue/<slug>/`, and `.ue/<slug>/answer.md` — each answer's draft, checked by
 `ue check` before it is sent. So a scenario survives the session; every other run only reads.
 Every answer carries the link that opens the same numbers in the browser calculator, and says
 out loud what it had to round, clamp or leave out.
+
+## The growth cycle: research before an experiment, then the experiment
+
+Ask "Where can we grow?" or "Run the growth cycle on my app". The skill walks the whole loop
+on your project file, one step per answer. Each step prints its own numbers and closes with
+one question:
+
+- **Step 1 — check the economics (analytics, segmently.ai, RevenueCat, the Facebook Ads MCP, or by hand).**
+  Your real numbers go into the project as measured, with their source and window, and the
+  launch card is recomputed on them.
+- **Step 2 — growth points reachable in 7, 14 and 30 days.** Every lever ranked at three
+  horizons: the money per month if the change works, and the smallest change each horizon can
+  see at your traffic.
+- **Step 3 — the metric with the most profit that can be verified in time.** At the horizon
+  you pick, the lever that earns the most among the ones you can actually learn.
+- **Step 4 — the hypothesis "if I change X, the chosen metric moves by Y %".** You name the
+  change and the lift you believe in. The skill never proposes either.
+- **Step 6 — the hypothesis in numbers (profit if it holds, time and traffic, cost to build, odds it holds).**
+  The hypothesis card shows the gain per month if it holds and the days and visitors the test
+  needs. From your own cost and odds, it adds the expected gain and the months to earn the
+  build back.
+- **Step 7 — the metrics to watch (the steps that must not drop; for the nearest step the drop that cancels the whole gain and whether it is visible within the test).**
+  The skill names these before the test starts.
+
+Then you launch the test in your own A/B tool and run it to the planned sample per arm that
+the card names.
+
+- **Step 8 — judge only on the planned sample (real / not / not enough people and how many more).**
+  Bring the counts when the test reaches its planned size. The answer is one of three: real,
+  not real, or not enough people yet. For the last one it says how many more people per arm
+  you need and how many more days that takes.
+- **Step 9 — update the economics with what was measured (new base, the old one beside it, KPIs recalculated).**
+  A real result re-bases the project and keeps the old base as a variant. The KPIs are
+  recalculated, and the cycle starts again at step 2.
+
+You can start at any step. "Is this test real? 437/267 vs 437/300" goes straight to step 8.
+Every figure comes from `segmently ue` on your machine. The cost to build and the odds are
+yours; the skill never assumes them.
 
 ## MCP
 

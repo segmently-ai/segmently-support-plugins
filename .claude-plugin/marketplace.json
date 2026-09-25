@@ -23,8 +23,8 @@
     },
     {
       "name": "segmently-unit-economics",
-      "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first — no account, nothing leaves the machine.",
-      "version": "0.1.0+codex.8a368efa13ff",
+      "description": "Paywall unit economics, offline: launch card, trial and fee-stack comparisons, which experiment first, and the growth cycle from research to a measured test — no account, nothing leaves the machine.",
+      "version": "0.1.0+codex.5655a426c92f",
       "author": {
         "name": "Segmently"
       },
