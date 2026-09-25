@@ -66,11 +66,12 @@ and 1 — a fraction in the JSON document (0.029 = 2.9 %); the link writes perce
 
 `--product "<name>~<price>~<cadence>~<trial>"`, repeatable. Cadences:
 `once | 1w | 1week | 1m | 1month | 1y | 1year | Nd | Nw | Nm | Ny`. Trials:
-`none | 7d | 7d-free | 0.99-3d | 0.99-3day`. `--platform web|store|both` (default web),
-`--have none|ads|analytics|revenuecat|segmently`, `--anchor <monthly price>` instead of
-products, `--dir <path>` for where `.ue/` goes, `--force` to overwrite. Every other verb
-reads a `.ue/<slug>.json` project file the same way it reads a plain scenario JSON, a page
-link, or `-` for stdin.
+`none | 7d | 7d-free | 0.99-3d | 0.99-3day`; the three-part form `<name>~<price>~<cadence>` — the
+reader did not state a trial: recorded in `unstatedTrials`, walked as assumed.
+`--platform web|store|both` (default web), `--have none|ads|analytics|revenuecat|segmently`,
+`--anchor <monthly price>` instead of products, `--dir <path>` for where `.ue/` goes, `--force` to
+overwrite. Every other verb reads a `.ue/<slug>.json` project file the same way it reads a plain
+scenario JSON, a page link, or `-` for stdin.
 
 ## Fee presets (the book)
 
@@ -84,6 +85,7 @@ link, or `-` for stdin.
 
 A preset name survives only while the numbers are the preset's; edit a number and the CLI
 keeps the numbers and drops the name.
+A fee the reader states goes in as `deductions.fee = { "pct": <pct>, "fixed": <fixed> }` with NO `preset` key, even when its numbers equal a preset's — a `preset` walks their own fee "assumed: the book's `<preset>` preset".
 
 Each preset carries its own SCHEME, and the CLI reports the one it used: `ue evaluate`
 prints `feeScheme` beside `deducted.fee` (`--explain` too), `null` when no fee is stated.

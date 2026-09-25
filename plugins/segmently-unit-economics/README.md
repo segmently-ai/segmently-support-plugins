@@ -31,7 +31,7 @@ Marketplace: segmently-ai/segmently-support-plugins@stable. Plugin: segmently-un
 
 Run the steps in order and show me the exact output of every command:
 1. node --version — it must print v22 or newer. If it is older or missing, tell me how to get Node.js 22 on this operating system and stop there.
-2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash", with "cli" 1.3.0 or newer. If it prints a bare version number, "unknown command 'ue'", or a "cli" below 1.3.0, run npx -y @segmently/cli@latest ue --version instead. If that still does not print a "cli" of 1.3.0 or newer, stop and tell me the command-line tool on this machine is older than 1.3.0.
+2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash", with "cli" 1.4.0 or newer. If it prints a bare version number, "unknown command 'ue'", or a "cli" below 1.4.0, run npx -y @segmently/cli@latest ue --version instead. If that still does not print a "cli" of 1.4.0 or newer, stop and tell me the command-line tool on this machine is older than 1.4.0.
 3. claude plugin marketplace add segmently-ai/segmently-support-plugins@stable --scope user
    claude plugin install segmently-unit-economics@segmently-support --scope user
    If the marketplace is already there, run claude plugin marketplace update segmently-support and then claude plugin update segmently-unit-economics@segmently-support --scope user.
@@ -51,7 +51,7 @@ Marketplace: segmently-ai/segmently-support-plugins on ref stable. Plugin: segme
 
 Run the steps in order and show me the exact output of every command:
 1. node --version — it must print v22 or newer. If it is older or missing, tell me how to get Node.js 22 on this operating system and stop there.
-2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash", with "cli" 1.3.0 or newer. If it prints a bare version number, "unknown command 'ue'", or a "cli" below 1.3.0, run npx -y @segmently/cli@latest ue --version instead. If that still does not print a "cli" of 1.3.0 or newer, stop and tell me the command-line tool on this machine is older than 1.3.0.
+2. npx -y @segmently/cli ue --version — it must print JSON holding "cli" and "mathHash", with "cli" 1.4.0 or newer. If it prints a bare version number, "unknown command 'ue'", or a "cli" below 1.4.0, run npx -y @segmently/cli@latest ue --version instead. If that still does not print a "cli" of 1.4.0 or newer, stop and tell me the command-line tool on this machine is older than 1.4.0.
 3. codex plugin marketplace add segmently-ai/segmently-support-plugins --ref stable
    codex plugin add segmently-unit-economics@segmently-support
    If the marketplace is already there, run codex plugin marketplace upgrade segmently-support and then codex plugin add segmently-unit-economics@segmently-support again.
