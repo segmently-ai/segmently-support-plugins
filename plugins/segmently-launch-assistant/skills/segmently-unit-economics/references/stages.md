@@ -11,6 +11,7 @@ calculator already reads: `scenario` is the scenario JSON (`"v": 2`) that `ue ev
 {
   "kind": "ue_project", "v": 1, "slug": "my-app",
   "createdAt": "2026-09-22T10:00:00Z", "updatedAt": "…",
+  "unstatedTrials": ["Monthly"],
   "stage": { "value": "pre_launch",
              "derivedFrom": ["scenario present", "chain knobs untouched (book)", "no observed inputs"],
              "overriddenBy": null },
@@ -28,6 +29,8 @@ calculator already reads: `scenario` is the scenario JSON (`"v": 2`) that `ue ev
 - The RevenueCat connection is the reader's MCP's, never a key in this file.
 - A link with the reader's real numbers goes into this file only after the privacy sentence.
 - `updatedAt` changes on every write; `createdAt` never does.
+- `unstatedTrials` — the products whose trial the reader did not state at `ue init`; remove a name
+  when the reader states its trial, and bump `updatedAt`.
 
 ## `ue init` — three questions, then the first case runs
 
@@ -65,8 +68,9 @@ old", not a demotion.
 The first message opens with one screen, and the contract is its first line, verbatim
 (SKILL.md, "Contract"). When the reader's opening message already names a case, continue into
 that case in the same message, after the onboarding screen, with at most one question closing the
-turn. The three offers are the `offers` array `ue init`
-returned (or the stage table's row), each naming its case so the reader can answer "2".
+turn. The three offers are the `offers` array `ue init` returned — for a found project, the
+`offers` its `ue evaluate .ue/<slug>.json` printed — quoted as printed, each naming its case so the
+reader can answer "2".
 
 The base-case `<link>` is never the `link` field `ue init` returned: set `measuredOn` in the
 scenario (`"benchmark book, nothing measured"` while nothing of the reader's but a price is in it;
@@ -74,6 +78,9 @@ once their budget or another figure of theirs is in, a note that names it —
 SKILL.md, the one loop) and re-mint it with
 `npx -y @segmently/cli ue link .ue/<slug>.json --label '<name>'` — single quotes, so the shell
 leaves a `$` price alone — then quote that link and handle its warnings.
+
+When one answer mints the base link a second time — the onboarding screen's, then again after a figure
+the reader just stated went into the base — say in one line under the second that it replaces the first.
 
 The base-case link goes on the screen at every stage, on the line under the `ue link` call that
 minted it. The stage does not decide privacy; what the link carries does (SKILL.md, the one loop,
