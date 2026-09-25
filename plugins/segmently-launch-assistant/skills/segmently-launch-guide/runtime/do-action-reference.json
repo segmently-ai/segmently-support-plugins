@@ -15185,7 +15185,7 @@
       "id": "launch.unitEconomics.evaluate",
       "status": "supported",
       "mode": "cli",
-      "label": "Evaluate paywall unit economics (CAC, ROAS, trial vs no trial, store vs web)",
+      "label": "Evaluate paywall unit economics (CAC, ROAS, trial vs no trial, store vs web, growth cycle)",
       "customerIntent": [
         "unit economics",
         "paywall economics",
@@ -15194,7 +15194,12 @@
         "is this price worth it",
         "trial vs no trial",
         "store vs web",
-        "юнит-экономика"
+        "growth cycle",
+        "where can we grow",
+        "what to test next",
+        "is this test real",
+        "юнит-экономика",
+        "цикл роста"
       ],
       "owningSkill": "segmently-unit-economics",
       "commandFamily": "ue evaluate",

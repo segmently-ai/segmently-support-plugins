@@ -8165,6 +8165,12 @@
       "SynonymGroup:webembed-paywall",
       "WorkflowStep:capability.connect-analytics/forward-fb-events-web-funnel/facebook-capi-web-destination"
     ],
+    "growth": [
+      "Action:launch.unitEconomics.evaluate"
+    ],
+    "cycle": [
+      "Action:launch.unitEconomics.evaluate"
+    ],
     "article:analytics add provider": [
       "Article:analytics-add-provider",
       "Guide:analytics-add-provider",

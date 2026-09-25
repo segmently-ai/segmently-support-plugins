@@ -452,7 +452,7 @@
         "is this price worth it",
         "trial vs no trial",
         "store vs web",
-        "юнит-экономика"
+        "growth cycle"
       ],
       "mode": "cli",
       "actionId": "launch.unitEconomics.evaluate",
