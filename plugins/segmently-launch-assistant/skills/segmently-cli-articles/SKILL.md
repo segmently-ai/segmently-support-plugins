@@ -36,15 +36,19 @@ Commands:
 
 | Command | Purpose |
 |---|---|
-| `list [projectId] --status draft|published --limit N` | List article drafts. |
+| `list [projectId] --status draft|published|retired --limit N` | List article drafts. |
 | `get <articleId> [projectId] --output article.json` | Export the full article including `flowDocument`. |
 | `create [projectId] --title --alias --locale` | Create a default FlexibleLayout article draft. |
 | `apply <file|-> [projectId] --article-id --title --alias --locale --profile` | Create/update a draft from full JSON. |
 | `clone <articleId> [projectId] --title --alias` | Copy an article and all FlexibleLayout settings into a new draft. |
 | `add-image <articleId> [projectId] --url ...` | Add a Media section from an existing public/CDN URL. |
 | `add-image <articleId> [projectId] --file ...` | Upload a local image, then add a Media section. |
-| `publish <articleId> [projectId]` | Publish the draft to article storage and return the custom-domain public URL plus asset verification URLs. |
+| `publish <articleId> [projectId] [--refresh-related]` | publishes and carries the published related list forward; a new article's list stays empty until `related refresh`; `--refresh-related` sends that refresh (every article) right after the publish (owner-gated like any refresh) |
 | `folders list [projectId]` | List the project's article folders (id, name, parent). Read-only. |
+| `related refresh [projectId] [--alias <alias>] [--dry-run]` | Rewrite "Readers also read" of published articles from the article graph (topics + pins); dry-run prints old/new lists. Ask the owner before running it on any environment. |
+| `retire <articleId> [projectId] [--redirect-to <alias>] [--dry-run]` | Retire a published article: 301 to a live alias (410 without), removed from sitemap/llms.txt/feed/graph; the draft stays `retired`. Always dry-run first; owner-gated. |
+| `site-settings get [projectId] [--output settings.json]` | Read the project's article template settings (presentation, author, topics) and their validation issues. |
+| `site-settings apply [projectId] --file settings.json [--dry-run]` | Write the whole article template settings document from the file (owner-gated on Segmently projects). |
 
 Reusable local manifest block commands:
 
@@ -60,8 +64,8 @@ Reusable local manifest block commands:
 - Automation auth: use a scoped Segmently service token stored in the
   customer's secret manager, never pasted into chat or committed to files.
 - Required CLI scopes:
-  - `content-plan:read` for `list` and `get`.
-  - `content-plan:write` for `create`, `apply`, `clone`, `add-image`, and `publish`.
+  - `content-plan:read` for `list`, `get`, and `site-settings get`.
+  - `content-plan:write` for `create`, `apply`, `clone`, `add-image`, `publish`, `related refresh`, `retire`, and `site-settings apply`.
   - `assets:write` is also required when `add-image --file` uploads a local image.
 - Required project entitlement: `content_plan.access`.
 - For `add-image --file`, the customer account also needs the CLI asset upload
@@ -208,7 +212,7 @@ The command adds a `Media` section with `mediaContent.kind = "Image"`.
 An article is a project document with:
 
 - `id`, `projectId`, `title`, `alias`
-- `status`: `draft` or `published`
+- `status`: `draft`, `published` or `retired` (`retiredAt` marks a retire)
 - `defaultLanguage`
 - `representationProfile`: `standard`, `phone`, `tablet`, or `laptop`
 - `flowDocument`: full V2 `FlowDocument`

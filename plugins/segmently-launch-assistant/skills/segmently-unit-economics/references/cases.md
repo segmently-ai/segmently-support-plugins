@@ -1,6 +1,6 @@
 # Worked cases — numbers from real CLI runs
 
-Every figure below was produced by `segmently ue` (CLI 1.4.0, `mathHash`
+Every figure below was produced by `segmently ue` (CLI 1.4.1, `mathHash`
 `dfeb1a96e8a535fdcda64123b05f730801365eeb911a0084306650945a12b939`). The command is written
 above each table; a variant is the base JSON with the edit named in its row, evaluated with
 `npx -y @segmently/cli ue evaluate <variant>.json --explain`. If `--version` prints a
