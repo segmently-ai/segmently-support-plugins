@@ -74,19 +74,22 @@ reader can answer "2".
 
 The base-case `<link>` is never the `link` field `ue init` returned: set `measuredOn` in the
 scenario (`"benchmark book, nothing measured"` while nothing of the reader's but a price is in it;
-once their budget or another figure of theirs is in, a note that names it —
-SKILL.md, the one loop) and re-mint it with
+once their budget or another figure of theirs is in, the case's `measuredOn` (UC-3:
+"<source>, <window>", or "reader-stated, source not given" when they named neither) —
+SKILL.md, files) and re-mint it with
 `npx -y @segmently/cli ue link .ue/<slug>.json --label '<name>'` — single quotes, so the shell
-leaves a `$` price alone — then quote that link and handle its warnings.
+leaves a `$` price alone — then quote that link and handle its warnings: the cured `measured_missing` of
+`ue init`'s link (for a found project, `ue evaluate`'s), when it printed one, is reported once, in one
+line — the screen's line under `<link>`.
 
 When one answer mints the base link a second time — the onboarding screen's, then again after a figure
 the reader just stated went into the base — say in one line under the second that it replaces the first.
 
 The base-case link goes on the screen at every stage, on the line under the `ue link` call that
-minted it. The stage does not decide privacy; what the link carries does (SKILL.md, the one loop,
+minted it. The stage does not decide privacy; what the link carries does (SKILL.md, the loop,
 step 5): when that `ue link` result's `privacy.due` is true, print the privacy sentence on its own
 line above the call: "This link carries your numbers in plain text — browser history, referrers and
-analytics can see it. I can give you the JSON file instead." `ue check` (SKILL.md, the one loop,
+analytics can see it. I can give you the JSON file instead." `ue check` (SKILL.md, the loop,
 step 6) asks for the sentence above every link that carries anything off the book — a
 `privacy.pricesOnly` link whose price the reader called still open included — because it cannot
 hear the session. The sentence is always allowed above a link: print it there too.
@@ -100,6 +103,8 @@ still open), so the privacy sentence stands on its own line above the call and t
 ```
 I never: forecast your numbers, invent a benchmark, write to RevenueCat or Segmently,
 or put a figure you did not give me into a link.
+Node 22 or newer · CLI <version> (the two prerequisite checks, in words)
+mathHash: <the mathHash the version check printed>
 
 Project: my-app · stage: pre_launch (scenario present, chain knobs untouched (book), no observed inputs)
 Base case: Monthly $19.99 (7-day free trial) · Annual $119.99 · ROAS 0.89 gross
@@ -107,6 +112,7 @@ Base case: Monthly $19.99 (7-day free trial) · Annual $119.99 · ROAS 0.89 gros
 This link carries your numbers in plain text — browser history, referrers and analytics can see it. I can give you the JSON file instead.
 npx -y @segmently/cli ue link .ue/my-app.json --label '<name>'
 <link>
+`measured_missing` on the <evaluate's | init's> link → re-minted with measured=<note>
 
 I can, from here:
   1. Learning budget and what to instrument before the first $1,000 of ads   (UC-0)
