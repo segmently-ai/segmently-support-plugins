@@ -8,6 +8,7 @@ Contents:
 - references/fields.md § How the mechanics work — a downsell's and an upsell's pools, and when a live mechanic is decidable.
 - references/fields.md § The structural row — the fields of a structural `ue rank` row (CLI 1.5.0).
 - references/fields.md § The ledger — the `experiments[]` fields and their lifecycle.
+- references/fields.md § The guardrail and the watch — an `--override` row's checkpoint, and `ue stat watch`'s fields.
 - references/fields.md § Warnings and refusals — what you do with each warning code and a refusal.
 - The ad account's figures (below) — the rows UC-9 sets beside the ad platform's.
 
@@ -69,7 +70,35 @@ cells in points ("1.23 pts"), never a relative lift.
 `experiments[]`: `{ id, lever, kind, axis, status, card, plan, createdAt, startedAt, reads, closedAt, reason }`. Planned
 (a card), running (`ue exp start`, or the first read), read (a decided verdict), re-based (`--rebase`), closed
 (`ue exp close`). `ue rank` never recommends a planned, running or read lever; a re-based or closed one may come back.
-A test with no `ue exp start` counts its days from its first read.
+A test with no `ue exp start` counts its days from its first read. `--card` writes (or overwrites)
+that lever's ledger entry on every run, a re-run to another filename included — point it only at the
+card file you keep; a scratch `--card` path moves the entry's `card` pointer off the real file.
+
+## The guardrail and the watch
+An `--override` row's `guardrail` on a CLI run judges the nearest step at the test's own length:
+
+| Field | Say it as |
+|---|---|
+| `testDays` | the test's length — the row's own `days` (the shortest horizon when the row has none) |
+| `mde` | the smallest change of that step readable within `testDays` |
+| `checkpointNPerArm` | the n per arm at which the drop that cancels the gain is readable on that step |
+| `checkpointDay` | the day that n is reached at the step's own population a day (`null`: never at this volume) |
+| `visible` | `checkpointDay` ≤ `testDays`; `false` → `sentence` says extend the test to that day or keep it as a kill switch; `null` with no cancelling drop or on a calendar step (`renewals`) |
+
+`ue stat watch` (a running test's daily check; read-only — it writes no file, `ue exp close` records a stop):
+
+| Field | Say it as |
+|---|---|
+| `status` | `stop` (a step says stop — close the test), `warning` or `continue` |
+| `day`, `plannedDays` | today's day of the test, of its planned days (the planned daily looks) |
+| `correctedAlpha` | 0.05 ÷ the planned days — Bonferroni over the daily looks, a stand-in for a sequential boundary; on a plan of many days the kill switch is in practice the crash rule: the base's (the card's, on a step the change moves) rate × the day's own arrivals in the variant, never the plan's population — 0 converted stops at ≥ 20 expected, warns from 5, and below 5 is an ordinary day noted on the line |
+| `guardrails[].status` | `stop`, `warning`, `noise` (no significant fall today — never "fine" or "safe") or `unwatchable` (a calendar read, or a step the change moves by design: its crash check runs on `--today`, its drop is the primary's) |
+| `guardrails[].reason` | why a step stops, warns or cannot be watched; a stop's is the `--reason` `closeCommand` records |
+| `guardrails[].threshold` | the rise readable today on that step; `checkpointNPerArm` against `nSoFar`, the n its cancelling drop needs for its read at the planned end — on the control's observed rate (rank's `checkpointNPerArm` is on the base's) |
+| `guardrails[].net` | a smaller significant drop, priced: the variant's and the base's profit per start, each from its own run |
+| `primary` | only `nA`, `nB` against `nPerArm` and `readOn`; at n, `readCommand` — the one read to run. Never a rate |
+| `closeCommand` | on `stop`, the `ue exp close` call |
+| `lines`, `boundary` | the block the answer prints: `watch.lines`, then `watch.boundary` |
 
 ## Warnings and refusals
 Every verb returns `warnings[]` (and evaluate/parse `clampNotices[]`). Handle each, never drop one:

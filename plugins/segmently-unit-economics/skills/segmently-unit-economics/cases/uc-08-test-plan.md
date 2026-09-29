@@ -1,5 +1,5 @@
 # UC-8 — Test plan for a change
-Route: ONE change: "how long must the test run", "sample size"; counts, no card (SKILL.md § Router) · Eval: P8 · MCP: uc-8, cases-uc-8
+Route: ONE change: "how long must the test run", "sample size"; counts, no card; a running test: "check it today", "safe to continue?" (SKILL.md § Router) · Eval: P8 P17 · MCP: uc-8, cases-uc-8
 Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked example
 
 ## Turns
@@ -13,25 +13,24 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
    run: "At $<budget> a day, a change of ≥ <the row's `mde` at the shortest horizon> on <lever> is
    readable within <that horizon> days, and the default lift needs <the row's `days`> days — what lift do
    you expect from <the change>?" Their answer → the run with `--override <lever>=<lift>`; "I don't
-   know" → the default run stands, its lift labelled "assumed lift"; a landed lift below the row's
-   `mde` → say what is readable within the horizon instead of a plan (skeleton row 3).
+   know" → the default run stands, its lift labelled "assumed lift".
 - What the message already carries is not asked (a lift stated up front skips the default run and the
   question); a lift, a horizon or a σ is never proposed.
 
 ## Calls
-- `npx -y @segmently/cli ue rank <file>` — the default run, JSON; horizons 30 and 90 days,
-  `--horizon <N>` with the reader's own.
-- `npx -y @segmently/cli ue rank <file> --override <lever>=<lift>` — the run at the reader's lift.
+- `ue rank <file>` — the default run, JSON (horizons 30 and 90 days; `--horizon <N>` with the reader's
+  own); `ue rank <file> --override <lever>=<lift>` — the run at the reader's lift.
 - `npx -y @segmently/cli ue evaluate <file> --explain` at the same volume — its `readiness.line`.
 - `npx -y @segmently/cli ue link <file> --label '<name>'` — the base at the reader's budget; never the
   `link` field of `ue rank` or `ue evaluate`.
-- `npx -y @segmently/cli ue stat size --p <rate> --lift <lift>` is only a cross-check for a chain step
-  exactly as the scenario carries it, or n alone for a rate no lever models (days: ask, or n/a — SKILL.md
-  § Arithmetic and units); a measured rate goes first into the scenario (`chain.p3`, `completionRate`,
-  `trialConv`), read off a rank run — never an n from one run beside days from another (rule 9).
-- `npx -y @segmently/cli ue stat read --a <n>/<x> --b <n>/<x>` — a finished test (per arm: saw it /
-  converted, the reader's counts); with a project:
-  `ue stat read --a <n>/<x> --b <n>/<x> --project-file <file> --lever <lever> --horizon <N>`
+- `ue stat size --p <rate> --lift <lift>` is only a cross-check for a chain step exactly as the scenario
+  carries it, or n alone for a rate no lever models (days: ask, or n/a); a measured rate goes first into
+  the scenario, read off a rank run — never an n from one run beside days from another (rule 9).
+- `ue stat read --a <n>/<x> --b <n>/<x>` — a finished test (per arm: saw it / converted, the reader's
+  counts); with a project, `--project-file <file> --lever <lever> --horizon <N>` too.
+- `ue stat watch --project-file <file> --lever <lever> --a <n>/<x> --b <n>/<x> --guardrail
+  <step>=<n>/<x>,<n>/<x> --today <step>=<n>/<x>,<n>/<x>` — a running test, once a day: each arm's
+  cumulative counts (control first) and the last full day's; a structural card adds its own `--belief`.
 - `ue stat means --sigma <σ> --delta <difference>` — a price or revenue-per-user test: only with the
   reader's σ (revenue per user, from their data) and the difference to detect; never a σ you picked.
 
@@ -43,38 +42,39 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
    field table's LAST row is `note`, holding the row's `note` whole — print it there AND again, in
    quotation marks, after `days`. A field table that stops at `realistic` is unfinished. `nPerArm` comes
    from the rate and the lift alone; the population every earlier step shrinks is why `days` is long.
-2. Report every warning: print each `sentences.warnings` line, one per line — never two joined in one
-   sentence — those on rows you do not print included.
-3. `realistic: false` with a non-null `days` → "Not testable at this volume in under N days." (N = the
+   An `--override` run's row adds its `guardrail.sentence`, whole, under the field table.
+2. `realistic: false` with a non-null `days` → "Not testable at this volume in under N days." (N = the
    shortest horizon) in place of a plan, then the row's `days`, its `note` in quotation marks, then —
    only when that horizon's `mde` is non-null — the lever's `sentences.realism` line. Never write "about
    26 %", "a 26 % swing" or "±": the `mde` is the smallest change that can be read.
-4. `readiness.line` of the evaluate at the same volume, whole, beside the plan — the calendar days (the
-   mix, the trial, annual renewals) the rank run's `boundary` does not carry.
+3. Report every warning: print each `sentences.warnings` line, one per line — never two joined in one
+   sentence — those on rows you do not print included.
+4. `readiness.line` of the evaluate at the same volume, whole — the calendar days `boundary` lacks.
 5. **Link — the triple holds here too:** the privacy sentence on its own line (`privacy.sentence`; the
    budget is the reader's: `privacy.due`), the `ue link` call, then the link — "a feasibility read,
    nothing to share" is no exemption. Every cured `measured_missing` is reported once, in one line: a
    `ue link` call's own → "`measured_missing` → re-minted with measured=<note>"; the one `ue init` /
    `ue evaluate` print about their own `link` field (cured by setting `measuredOn`, references/stages.md,
    Onboarding) → "`measured_missing` on the <evaluate's | init's> link → re-minted with measured=<note>".
-6. `boundary` of the rank run you print, whole — nothing appended to it.
-7. The one question: Turn 3's, after the default run only.
+6. `boundary` of the rank run you print, whole — nothing appended; then only Turn 3's question.
 
 **Reading a finished test:** `read.lines` whole — its fields carry the verdict as the CLI prints it
 (`significant`, `not yet` or `underpowered`: an underpowered test is said to be underpowered, with the
-size its `read.needPerArm` names), `read.ci95` among them; with a project its drift line and the
-verdict's sentence are lines of it, printed once. One read at the planned end: reading daily raises false
-positives. Then `context.boundary` whole, last.
+size its `read.needPerArm` names), `read.ci95` among them. One read at the planned end: reading daily
+raises false positives. Then `context.boundary` whole, last.
+
+**Watching a running test:** one `ue stat watch` a day (Calls; `ue exp start` first, `--date` the day it
+went live): `watch.lines` whole, then `watch.boundary`, never "fine" or "safe". No read before the
+planned n (at n it prints the read to run); on `stop`, its `ue exp close`, once the reader stopped it.
 
 ## Boundary
 Rendered: `boundary` of the rank run you print, whole, nothing appended. A read: `context.boundary` when
 `--project-file` and `--lever` were given, else `read.lines` stands alone (no project → no boundary
-lines; say which project a later read should name).
+lines; say which project a later read should name). A watch: `watch.boundary`, whole.
 
 ## Stops
 - A row with null `days` is `realistic: false` too, and gets neither sentence: a lever that cannot move
-  (`lift` 0, `gainPerMonth` 0, null `nPerArm`, `days`, `spendRouted` and `mde`) or `renewals`, a calendar
-  read with no sample size (`ue stat read` refuses it as `--lever`). Quote its `note`; attempt nothing.
+  (`lift` 0) or `renewals`, a calendar read. Quote its `note`; attempt nothing.
 - A price test without σ: say the size needs the variance of revenue per user from their data — no run.
 
 ## Worked example
@@ -179,4 +179,6 @@ know" leaves this answer standing, its lift "assumed lift"; a lift → the same 
 
 A finished test's counts are **Reading a finished test**: `ue stat read` with the counts, its
 `read.lines` printed whole — `read.ci95` and `read.needPerArm` among its fields, the drift line with a
-project — then its `context.boundary`. This reader has no counts yet.
+project — then its `context.boundary`. A running test's counters are **Watching a running test**: one
+`ue stat watch` a day, its `watch.lines` then its `watch.boundary`, each whole (a worked watch:
+`cases/uc-12-growth-cycle.md#Worked example`). This reader has no counts yet.

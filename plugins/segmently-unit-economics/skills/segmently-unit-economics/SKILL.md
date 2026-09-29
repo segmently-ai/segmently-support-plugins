@@ -7,7 +7,6 @@ description: Offline paywall unit economics on the segmently.ai calculator's mat
 
 Every number in an answer comes from one CLI run of `segmently ue`, the same arithmetic the
 public calculator at https://www.segmently.ai/unit-economics runs — never a formula of yours.
-You elicit the inputs, build the variants, run the CLI, and explain the difference in words.
 
 ## Contract
 I never: forecast your numbers, invent a benchmark, write to RevenueCat or Segmently,
@@ -19,18 +18,18 @@ and never a claim about what happens next.
 
 ## Prerequisites
 - Node.js 22 or newer. Check: `node --version`.
-- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }` with `cli` 1.5.0 or
+- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }` with `cli` 1.6.0 or
   newer. No login, no key, no browser.
-- Older — a bare version number, `unknown command 'ue'`, or a `cli` below 1.5.0: run it once as
-  `npx -y @segmently/cli@latest ue --version`. Still older: say "this CLI is older than 1.5.0",
+- Older — a bare version number, `unknown command 'ue'`, or a `cli` below 1.6.0: run it once as
+  `npx -y @segmently/cli@latest ue --version`. Still older: say "this CLI is older than 1.6.0",
   answer nothing with numbers, and stop. Name the likely cause — an older global `@segmently/cli`
   install shadows npx — and the remedy: `npm i -g @segmently/cli@latest`.
 - The spelling that passed the check — `npx -y @segmently/cli`, `npx -y @segmently/cli@latest`, or
   `segmently` when a global install is current — is the prefix of EVERY later command of the
   session.
 
-That is the whole list. Every command below is written `npx -y @segmently/cli ue …`: run it with
-the prefix that passed (with a current global install, `segmently ue evaluate …` is the same command).
+Every command below is written `npx -y @segmently/cli ue …`: run it with the prefix that passed (a
+current global install: `segmently ue evaluate …`).
 
 ## Session start
 1. Print the contract. Run the two prerequisite checks once. Report them in words (Node 22+, CLI
@@ -73,7 +72,7 @@ the prefix that passed (with a current global install, `segmently ue evaluate �
 | "compare", "what if <an input> is X" (a price, a cost per start), a sweep | UC-5 | `cases/uc-05-compare-or-sweep.md` |
 | pastes a segmently.ai/unit-economics link; "why doesn't it clear", "we lose money — where is the gap?" | UC-6 | `cases/uc-06-why-not-clearing.md` |
 | downsell, upsell, plan upgrade — what one does to value per tap | UC-7 | `cases/uc-07-downsell-upsell.md` |
-| names ONE change: "how long must the test run", "sample size" | UC-8 | `cases/uc-08-test-plan.md` |
+| names ONE change: "how long must the test run", "sample size"; a running test: "check it today", "safe to continue?" | UC-8 | `cases/uc-08-test-plan.md` |
 | "what Ads Manager shows", a ROAS mismatch | UC-9 | `cases/uc-09-ad-account.md` |
 | "which experiment first", "which metric to move first", "what to optimise" — a ranking of every lever, no change named or two to choose between ("a trial, or the paywall change first?") | UC-10 | `cases/uc-10-which-experiment-first.md` |
 | "what to test next", "hypothesis card" — a metric AND the change that tests it ("which metric/experiment first" with no card asked is UC-10) | UC-11 | `cases/uc-11-hypothesis-card.md` |
@@ -112,6 +111,8 @@ Each verb prints JSON; the blocks it renders are printed as § Blocks the CLI re
   read adds `--belief <the card's typed lift>`; a horizon nobody named, `--horizon-default`) → `read`,
   and with the project flags `context`. A structural `--lever <spec>` reads its threshold (`read.threshold`;
   `--arm <spec>=<n>/<x>` for more arms; a downsell, upsell or upgrade takes `--b` alone).
+- `ue stat watch --project-file <file> --lever <lever> --a <n>/<x> --b <n>/<x> --guardrail
+  <step>=<n>/<x>,<n>/<x> [--today …]` → `watch.*`, a running test's daily check.
 - `ue exp list <project>`, `ue exp start <project> <id> [--date YYYY-MM-DD]`,
   `ue exp close <project> <id> --reason "<text>"` → the project's experiment ledger (`experiments`,
   `sentences.ledger`).
@@ -138,8 +139,7 @@ in one line.
    link it minted, the onboarding screen's base link included** (for `recommendation.links`,
    name the `ue rank` run they came from instead). Never the `link` field of `ue evaluate` /
    `ue init` / `ue rank` (no round-trip check). Print the
-   `--version` JSON's `mathHash` once at session start, in one line, so the reader can match it
-   against cases/README.md.
+   `--version` JSON's `mathHash` once at session start.
 5. Answer with the same triple every time: a table (variants × KPIs), a verdict sentence with
    its boundary (§ The boundary), one link per variant. Every row of that table is its OWN
    evaluate run (rule 9) — no cell, `payback` and `readiness.line` included, is carried across rows.
@@ -186,6 +186,7 @@ re-lists the block's lines.
 | `ue rank … --card <file>` | field 5 of the card | every `card.prepared` line → every `card.snapped` line → the `card.evaluateCommand` run and its KPIs → `card.walkLines` → `card.roasTie` → the privacy sentence → the `card.linkCommand` run and its link; an inline card (MCP) carries this block as `card.lines` |
 | `ue stat read` | the read | `read.lines`, each on its own line — the nine fields, then `context.drift`, then `context.more.sentence` (not `significant`) or `context.realized.sentence` and its warnings (`significant`) are all lines of it: never print those three a second time — the re-base block's own drift line excepted; on a project with a planned test, `context.progress.sentence` is its last line |
 | | its boundary | `context.boundary`: its opener, then each of its lines as a bullet, in order |
+| `ue stat watch` | the watch | `watch.lines` (its `lines`), one per line, then `watch.boundary` (opener, lines as bullets) |
 | `ue stat read … --rebase` | the re-base | every `context.rebase.prepared` line, `context.rebase.snapped`, every `context.rebase.lines` entry, this run's own drift line, the privacy sentence, the `context.rebase.linkCommand` run and its link |
 
 ## The boundary
@@ -310,7 +311,7 @@ the answer carries, whole, what it owes of those runs: the walk, the break-evens
 the re-base lines, the privacy sentence above the run's own link, a structural run's own structural
 block (once the answer shows a line of it), its diff line for a row whose variant link the answer
 hands over, the together plan's lines (with `--together`), the ledger's open-entry lines (with an
-open entry), and the read's progress sentence. No other block is checked —
+open entry), the read's progress sentence, and the watch's lines. No other block is checked —
 print it whole all the same. An answer that prints no run runs loop step 6 without `--runs` (the CLI
 refuses an empty folder).
 
@@ -366,9 +367,8 @@ records nothing: that screen is not a figure-carrying block.
 - references/grammar.md — the link grammar and the JSON fields behind each key.
 - references/stages.md — the project file, stages, onboarding screen, drift check.
 
-The CLI also runs as an MCP server, `segmently ue mcp`, for a host with no room for this skill (the
-CLI README); with this skill loaded, run `segmently ue` exactly as the cases write it — never
-through those tools.
+With this skill loaded, run `segmently ue` as the cases write it — never through its MCP server,
+`segmently ue mcp`.
 
 If `references/internal-admin-seams.md` exists beside this file you are inside the Segmently
 source repository — read it for the admin calculator's served seams and the `pid` link key.

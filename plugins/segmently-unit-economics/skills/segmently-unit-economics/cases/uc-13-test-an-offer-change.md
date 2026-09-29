@@ -10,9 +10,8 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
    target named: the CLI proposes one (`edit.proposed`, walked "assumed: the CLI's proposal") — say
    so; the reader may correct the target, its price or its trial in the spec. A variant file the
    reader built → `--variant <file>`.
-3. **Run the lever with no belief** — the row's `sentences.structural`: the break-even, the pool a
-   day, what the horizon can read; with the base link, the variant link and the variant's
-   `sentences.diff`.
+3. **Run the lever with no belief** — the row's `sentences.structural`: the break-even, the pool a day,
+   what the horizon can read; with the base link, the variant link and the variant's `sentences.diff`.
 4. **Ask once for the reaction** the lever needs, in the reader's words: a trial beside a plan —
    "where will trial starters come from — new buyers, or from <plan> (how many of 10)?"; a price,
    or a trial removed or made paid — "<plan> takes <its take in the walk line> of buy-taps today;
@@ -26,8 +25,12 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
    (`cases/uc-10-which-experiment-first.md`'s rule); several changes → `--together` (2 or 3 arms):
    `sentences.together`, and `recommendation.single` when they do not all read within the horizon.
 7. **After the test** → `ue stat read … --lever <spec>` → `holds` / `fails` / `not_enough`;
-   `--rebase` on `holds` only. A downsell, upsell or upgrade reads `--b` alone (the control shows no
-   such offer).
+   `--rebase` on `holds` only. While it runs → once a day, `ue stat watch --project-file
+   .ue/<slug>.json --lever <spec> --a <n>/<x> --b <n>/<x> --guardrail <step>=… --today
+   <step>=<n>/<x>,<n>/<x> --belief <name>:<value>[,…]` (`cases/uc-08-test-plan.md`), the card's own
+   beliefs as its `--belief` took them; a step the change moves prints "crash check only" — pass its
+   last full day in `--today` (never its cumulative counts for a read). A downsell, upsell or upgrade
+   reads `--b` alone in both (the control shows no such offer).
 - The ledger: a card writes a planned experiment (`card.experiment.id`); when the test goes live,
   `ue exp start <project> <id>`; every read is recorded and printed against the plan
   (`context.progress.sentence`); a test stopped without a re-base → `ue exp close <project> <id>
@@ -40,8 +43,7 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
 - `npx -y @segmently/cli ue stat read [--a <n>/<x>] --b <n>/<x> --project-file .ue/<slug>.json
   --lever <spec> [--arm <spec>=<n>/<x>[,<control n>/<x>]] [--horizon <N>] [--rebase]` — the control
   part only when the arm's decisive metric differs from `--lever`'s; its n equals `--a`'s.
-- `npx -y @segmently/cli ue exp list|start|close .ue/<slug>.json …` — the ledger (SKILL.md § The
-  verbs).
+- `npx -y @segmently/cli ue exp list|start|close .ue/<slug>.json …` — the ledger (SKILL.md § The verbs).
 - Links: each structural row's `links.base` and `links.variant`, minted by the rank run like `ue
   link` (label, measured, round trip, privacy) — no `ue link` call for them.
 
@@ -57,8 +59,8 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
 6. `boundary`, whole (SKILL.md § The boundary, rendered).
 7. The one question of the turn — Turn 4's reaction, or none.
 
-A read (Turn 7) prints `read.lines` whole, then `context.boundary`; a re-base adds its
-`context.rebase` block as SKILL.md § Blocks the CLI renders gives it.
+A watch (Turn 7) prints `watch.lines` whole, then `watch.boundary`; a read, `read.lines` whole, then
+`context.boundary`; a re-base adds its `context.rebase` block (SKILL.md § Blocks the CLI renders).
 
 ## Boundary
 Rendered: the rank run's `boundary` whole — its structural lines name each reaction, proposal and
@@ -204,6 +206,6 @@ These figures are this scenario's arithmetic on the inputs above.
 - not testable soon, in this 30-day run: `p3` 40.24 days, `bought` 88.05 days and `mix` 360.21 days — past 30 days at this budget, each at its own `days`; `renewals` — a calendar read.
 
 This excerpt covers Turns 3–5 only: no `--card` run (so no `sentences.ledger`), one arm only (no
-`sentences.together`), and no counts have arrived yet, so Turn 7's `read.lines`, `context.boundary`
-and `context.rebase` never render here. Each link above prints its privacy sentence because its own
-`privacy.due` is true.
+`sentences.together`), and no counts have arrived yet, so Turn 7's `watch.lines`, `watch.boundary`,
+`read.lines`, `context.boundary` and `context.rebase` never render here. Each link above prints its
+privacy sentence because its own `privacy.due` is true.

@@ -4,12 +4,12 @@
   "publicMarketplaceName": "segmently-support",
   "publicRepository": "segmently-ai/segmently-support-plugins",
   "baseVersion": "0.1.0",
-  "version": "0.1.0+codex.760fc2f2aa76",
-  "contentHash": "760fc2f2aa763b94a1f04e322fd6296672068464ff095e00fd2f038c4b1c586a",
-  "cachebuster": "760fc2f2aa76",
+  "version": "0.1.0+codex.184ee05ef0d1",
+  "contentHash": "184ee05ef0d1226991f0068829f9ccdccdaecfae7f61ce2577e9b75a141e45d4",
+  "cachebuster": "184ee05ef0d1",
   "cachebusterStrategy": "content-hash",
-  "generatedAt": "2026-09-29T09:35:35.288Z",
-  "sourceGitRevision": "ec0e402f3e7032aa5b77d4443a7a6e7faf99f1aa",
+  "generatedAt": "2026-09-29T18:55:48.182Z",
+  "sourceGitRevision": "df24f8a3d8499fdf1182b32139d8a9e397f0b9d4",
   "includedSkills": [
     "segmently-unit-economics"
   ]
