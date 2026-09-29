@@ -3,9 +3,10 @@ Route: ONE change: "how long must the test run", "sample size"; counts, no card 
 Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked example
 
 ## Turns
-1. The change and the lever it moves, named as `ue rank` names it: `p1` landing → step 1, `p2` step 1 →
-   paywall, `p3` paywall → buy-tap, `close` payment completion, `bought` the paid share of buy-taps,
-   `mix` the take of the product whose share move gains the most, `trialConv` trial → paid.
+1. The lever it moves, as `ue rank` names it: `p1` landing → step 1, `p2` step 1 → paywall, `p3` paywall
+   → buy-tap, `close` completion, `bought` buy-taps' paid share, `mix` the take of the product whose
+   share move gains the most, `trialConv` trial → paid; a change to the offer (a price, a trial, the
+   paywall mix, a downsell, an upsell) → `cases/uc-13-test-an-offer-change.md`.
 2. The daily budget, filled into the base's `volume` in place (SKILL.md § Files: filling a stated input
    is not re-basing), with its `label` and a `measuredOn` that names the budget as theirs.
 3. The believed lift, asked once, after ONE `ue rank` run at the default lift — the question quotes that
@@ -25,10 +26,9 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
 - `npx -y @segmently/cli ue link <file> --label '<name>'` — the base at the reader's budget; never the
   `link` field of `ue rank` or `ue evaluate`.
 - `npx -y @segmently/cli ue stat size --p <rate> --lift <lift>` is only a cross-check for a chain step
-  exactly as the scenario carries it, or n alone for a rate no rank lever models (its days: ask, or n/a
-  per SKILL.md § Arithmetic and units). A measured rate goes into the scenario first (`chain.p3`, a
-  `completionRate`, a `trialConv`) and a rank run on it is quoted — never an n from one run beside days
-  from another (rule 9).
+  exactly as the scenario carries it, or n alone for a rate no lever models (days: ask, or n/a — SKILL.md
+  § Arithmetic and units); a measured rate goes first into the scenario (`chain.p3`, `completionRate`,
+  `trialConv`), read off a rank run — never an n from one run beside days from another (rule 9).
 - `npx -y @segmently/cli ue stat read --a <n>/<x> --b <n>/<x>` — a finished test (per arm: saw it /
   converted, the reader's counts); with a project:
   `ue stat read --a <n>/<x> --b <n>/<x> --project-file <file> --lever <lever> --horizon <N>`
@@ -167,6 +167,7 @@ the book".
 > - $300 a day — measured: your stated budget
 > - the book's first renewal behind payback (monthly 60 %, from `words.payback`) — assumed: the book
 > - the +10 % on `p1`, `p2`, `p3`, `bought`, `trialConv`, `mix` and `renewals` — assumed: `ue rank`'s default ("assumed lift"), at each lever's landed `lift` in the table.
+> - the 13 structural rows of this table — their targets, prices and trials: assumed: the CLI's proposals (price ± the run's lift, a 7-day free trial, a $29 add-on, the annual downsells)
 > - the default horizons, 30 and 90 days (`ue rank`'s own) — assumed
 > - the 50/50 split of the test this table plans — assumed: the test design
 > - not testable soon, in this 30-day run: `p1` 37.63 days, `p2` 52.17 days, `p3` 198.53 days, `bought` 383.81 days, `trialConv` 1000.35 days and `mix` 1912.76 days — past 30 days at this budget, each at its own `days`; `renewals` — a calendar read.

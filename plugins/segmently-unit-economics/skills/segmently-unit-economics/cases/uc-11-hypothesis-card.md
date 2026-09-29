@@ -18,12 +18,13 @@ input by `walk.lines`, never by the stage alone.
 
 ## Calls
 - The choice run `ue rank .ue/<slug>.json --horizon 14,21,30` judges `realistic` at its shortest horizon,
-  so it only helps choose; the card's table is a fresh `ue rank .ue/<slug>.json --horizon <N>` — ONE run,
-  JSON, no link with it (asked for one: SKILL.md § The loop, step 4).
+  so it only helps choose; the card's table is a fresh `ue rank .ue/<slug>.json --horizon <N>
+  --metrics-only` (the metric levers; UC-13: an offer change) — ONE run, JSON, no link with it (asked for
+  one: SKILL.md § The loop, step 4).
 - The card: the CLI lands the lift (its `snapped` warning gives typed → landed; the card quotes the
   landed lift) and writes the variant at it, `label` and `measuredOn` set — never build or edit it by
-  hand; name it in `variants[]` by its `label`:
-  `ue rank .ue/<slug>.json --horizon <N> --override <lever>=<lift> --card .ue/<slug>/card-<lever>.json`
+  hand; name it in `variants[]` by its `label`: `ue rank .ue/<slug>.json --horizon <N> --metrics-only
+  --override <lever>=<lift> --card .ue/<slug>/card-<lever>.json`
 - The read (field 10), on the project before any re-base; `--lever` is the card's lever — any rank lever
   but `renewals`: `ue stat read --a <n>/<x> --b <n>/<x> --project-file .ue/<slug>.json --lever <lever>
   --horizon <N> --belief <the card's typed lift>`
@@ -37,7 +38,7 @@ input by `walk.lines`, never by the stage alone.
    CLI renders, the rank table), then its `boundary` whole — learnable rows are THIS run's `realistic`
    column. The choice run: the same, no `sentences.pick`.
 2. The one question of Turn 2, naming only its lever — never the pick or a row again (rule 5).
-3. The card, ten fields in order, each figure with its unit:
+3. The card, ten fields, each with its unit (field 10 too: `cases/uc-13-test-an-offer-change.md` Turn 7):
 
 | Field | Prints |
 |---|---|
@@ -73,8 +74,7 @@ a 30 nobody named, `--horizon-default`).
   days you can only see a ≥ X % change" — no card.
 - A price → `ue stat means` with the reader's σ (`cases/uc-08-test-plan.md`); a trial lever →
   `readiness.line`'s trial days first; `renewals` → a calendar read (its refusal says what to read).
-- The re-base only after a `significant` read of THIS card's lever; a `mix` read or a drop has no
-  realized run (its `context.rebase.lines` are the effect).
+- Re-base needs THIS card's `significant` read; a `mix` read or drop leaves only `context.rebase.lines`.
 - A card turn's `ue check` adds `--expect uc-11:card` (SKILL.md § The loop, step 6).
 
 ## Worked example
@@ -104,7 +104,7 @@ and save its `scenario` field as `base.json` — and, as the project file, `.ue/
 ONE run with three horizons, in JSON, to see the `mde` columns:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 14,21,30
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 14,21,30
 ```
 
 `sentences.traffic`, every `sentences.table` line and every `sentences.belowTable` line — printed whole
@@ -172,7 +172,7 @@ Nothing else is asked before the table.
 CLI's default +10 % relative ("assumed lift"). ONE run, in JSON:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21
 ```
 
 `sentences.traffic`, every `sentences.table` line, every `sentences.belowTable` line and `sentences.pick`
@@ -232,7 +232,7 @@ calculator's grid and writes `.ue/synthetic-meditation/card-p1.json` — its own
 labelled "card p1 +11.84 % (believed)", `measuredOn` "believed lift, not observed, 2026-09-23":
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json
 ```
 
 The card's lift is the landed one — the row's `lift` 0.118421, above the row's `mde` at 21 days (0.0549),

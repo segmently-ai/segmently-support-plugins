@@ -43,6 +43,12 @@ named the step; the exception is step 2's horizon question, which closes step 2'
 opens with step 3. A reader who names a step directly — "is this test real?" — starts at that step;
 the steps before it are not re-run. Owner's numbering: there is no step 5.
 
+A default run at steps 2 and 3 carries the structural rows too; a structural pick (a change to the
+offer) runs `cases/uc-13-test-an-offer-change.md`'s Turns 3–7 in place of step 6, then returns to step 8
+with its read. Step 6's card is `cases/uc-11-hypothesis-card.md`'s for a metric lever,
+`cases/uc-13-test-an-offer-change.md`'s own card (`--card`) for a change to the offer. Step 8's read of a
+structural card names its lever `--lever <spec>`, the structural spec, in place of `<lever>`.
+
 | Step | Prints (whole) |
 |---|---|
 | **Step 1 — check the economics (analytics, segmently.ai, RevenueCat, the Facebook Ads MCP, or by hand).** | The answer of `cases/uc-03-your-numbers.md` (or `cases/uc-04-revenuecat.md` / `cases/uc-09-ad-account.md`) — its plausibility line, KPIs, `walk.lines`, the link, its boundary — then step 2 in the same answer. |
@@ -71,6 +77,9 @@ base's.
   are the effect).
 
 ## Worked example
+
+The example follows one metric lever through the cycle, so its rank runs carry `--metrics-only`; a
+default run adds the structural rows.
 
 The story of `cases/uc-11-hypothesis-card.md#Worked example`, every input invented for the dry run — copy
 the shape, never a sentence or a figure of it. A walk-through, not an answer: each step's answer still
@@ -119,7 +128,7 @@ Then only step 6's question: "What would it cost to build (dollars), and what ar
 The reader's cost and odds, invented for the dry run: $2,400.00 and 0.5. ONE run:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json --cost p1=2400 --odds p1=0.5
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json --cost p1=2400 --odds p1=0.5
 ```
 
 The ten-field card of `cases/uc-11-hypothesis-card.md#Worked example`, fields (1) to (10) in order —

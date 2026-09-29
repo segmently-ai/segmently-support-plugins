@@ -1,5 +1,5 @@
 # UC-4 — RevenueCat: observed inputs → scenario
-Route: has RevenueCat (SKILL.md § Router) · Eval: P4 · MCP: uc-4, revenuecat
+Route: has or asks about RevenueCat (SKILL.md § Router) · Eval: P4 · MCP: uc-4, revenuecat
 The procedure is below: Turns, Calls, Answer skeleton, Boundary, Stops.
 
 ## Turns

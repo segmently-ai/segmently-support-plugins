@@ -5,6 +5,9 @@ Read a row when a figure or a warning is in hand; the interface says when. The u
 
 Contents:
 - references/fields.md § Reading the output — what each field of `ue evaluate --explain` means.
+- references/fields.md § How the mechanics work — a downsell's and an upsell's pools, and when a live mechanic is decidable.
+- references/fields.md § The structural row — the fields of a structural `ue rank` row (CLI 1.5.0).
+- references/fields.md § The ledger — the `experiments[]` fields and their lifecycle.
 - references/fields.md § Warnings and refusals — what you do with each warning code and a refusal.
 - The ad account's figures (below) — the rows UC-9 sets beside the ad platform's.
 
@@ -45,6 +48,28 @@ book's, add the knob name (`"cps"`, `"p1"`…) to `touched` so it reads as their
 
 `ue evaluate --format table` (documented in the CLI README) prints the page's words as a
 table for a quick look; use JSON for anything you compute a table from.
+
+## How the mechanics work
+- A downsell is offered to the owner's decliners: its failed checkouts plus its share of the people who pick
+  nothing (`pools[].perTap.downsell` of `ue evaluate`). `conv` is a share of that pool.
+- An upsell is offered to the owner's payers (`pools[].perTap.upsell`); an add-on is one payment and never makes a
+  payer; an upgrade replaces the plan, is charged now without a trial, credits the base's first charge, and can be
+  worth less than the plan (a negative upsell value).
+- `readiness.line` names when a live mechanic's acceptance is decidable: 300 in its pool (BB-40).
+
+## The structural row
+`kind: 'structural'`, `axis` (the admin's name), `edit` (`proposed`: the parts that are the CLI's proposal),
+`response` (the reaction, its break-even on its own grid and its side, `never` / `everyPoint`, what it holds fixed,
+the pool a day, the trial clock), `guardrail2` (a second reaction's allowed move; charges counted are a calendar read),
+`thresholdTest` (the decisive metric, n per arm, days, `mde` in points), `variantAt` (belief, benchmark, break-even,
+or the best / worst end tried), `links` (base and variant), `delta` (both runs' own figures). The table prints its MDE
+cells in points ("1.23 pts"), never a relative lift.
+
+## The ledger
+`experiments[]`: `{ id, lever, kind, axis, status, card, plan, createdAt, startedAt, reads, closedAt, reason }`. Planned
+(a card), running (`ue exp start`, or the first read), read (a decided verdict), re-based (`--rebase`), closed
+(`ue exp close`). `ue rank` never recommends a planned, running or read lever; a re-based or closed one may come back.
+A test with no `ue exp start` counts its days from its first read.
 
 ## Warnings and refusals
 Every verb returns `warnings[]` (and evaluate/parse `clampNotices[]`). Handle each, never drop one:

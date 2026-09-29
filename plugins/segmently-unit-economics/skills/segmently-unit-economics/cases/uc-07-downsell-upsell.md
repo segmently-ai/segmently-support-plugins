@@ -63,3 +63,4 @@ Assembled (SKILL.md § The boundary) from the rendered walk: `walk.opener`, the 
 ## Stops
 - A `conv` typed below 1 % lands on 1 %, above its cap on the cap: typed → landed, on its own row.
 - A target cadence with no book charge count and no `paymentsCounted` from the reader: no row for it yet.
+- To test this change: `cases/uc-13-test-an-offer-change.md`, with the variant file as `--variant`.

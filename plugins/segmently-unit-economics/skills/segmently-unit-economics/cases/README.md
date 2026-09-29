@@ -1,7 +1,7 @@
 # Worked cases — numbers from real CLI runs
 
-Every figure of the worked cases was produced by `segmently ue` (CLI 1.4.2, `mathHash`
-`dfeb1a96e8a535fdcda64123b05f730801365eeb911a0084306650945a12b939`). The command is written
+Every figure of the worked cases was produced by `segmently ue` (CLI 1.5.0, `mathHash`
+`2348961abb1d54fd916e788bef12158afc63ab8584e51c345725797eaf28a20b`). The command is written
 above each table; a variant is the base JSON with the edit named in its row, evaluated with
 `npx -y @segmently/cli ue evaluate <variant>.json --explain`. If `--version` prints a
 different CLI version or `mathHash`, re-run the commands instead of quoting these numbers.
@@ -25,16 +25,17 @@ and save its `scenario` field as `seed.json`.
 | UC | Title | File | Procedure lines | File lines |
 |---|---|---|---|---|
 | UC-0 | Is this worth launching, and at what numbers? (idea, pre_launch) | `cases/uc-00-launch-card.md` | 80 | 217 |
-| UC-1 | Should part of the users see the same plan with a trial? | `cases/uc-01-trial-or-not.md` | 76 | 162 |
+| UC-1 | Should part of the users see the same plan with a trial? | `cases/uc-01-trial-or-not.md` | 77 | 163 |
 | UC-2 | Web checkout vs store: the same paywall under two fee stacks | `cases/uc-02-web-vs-store.md` | 77 | 166 |
 | UC-3 | Fill the reader's numbers and open the link | `cases/uc-03-your-numbers.md` | 65 | 146 |
 | UC-4 | RevenueCat: observed inputs → scenario | `cases/uc-04-revenuecat.md` | 50 | 50 |
-| UC-5 | Compare N variants / sweep one knob | `cases/uc-05-compare-or-sweep.md` | 41 | 41 |
+| UC-5 | Compare N variants / sweep one knob | `cases/uc-05-compare-or-sweep.md` | 42 | 42 |
 | UC-6 | Explain a scenario that does not clear | `cases/uc-06-why-not-clearing.md` | 66 | 66 |
-| UC-7 | Downsell / upsell wiring | `cases/uc-07-downsell-upsell.md` | 66 | 66 |
-| UC-8 | Test plan for a change | `cases/uc-08-test-plan.md` | 80 | 182 |
+| UC-7 | Downsell / upsell wiring | `cases/uc-07-downsell-upsell.md` | 67 | 67 |
+| UC-8 | Test plan for a change | `cases/uc-08-test-plan.md` | 80 | 183 |
 | UC-9 | What your ad account reports | `cases/uc-09-ad-account.md` | 40 | 40 |
-| UC-10 | Which experiment first: gain and cost to learn | `cases/uc-10-which-experiment-first.md` | 47 | 127 |
+| UC-10 | Which experiment first: gain and cost to learn | `cases/uc-10-which-experiment-first.md` | 51 | 151 |
 | UC-11 | Hypothesis card: which metric, then which change | `cases/uc-11-hypothesis-card.md` | 80 | 468 |
-| UC-12 | Growth cycle: from the economics to a measured change, and back | `cases/uc-12-growth-cycle.md` | 73 | 244 |
+| UC-12 | Growth cycle: from the economics to a measured change, and back | `cases/uc-12-growth-cycle.md` | 79 | 253 |
+| UC-13 | Test a change to the offer | `cases/uc-13-test-an-offer-change.md` | 77 | 210 |
 <!-- sizes:end -->

@@ -26,6 +26,8 @@ calculator already reads: `scenario` is the scenario JSON (`"v": 2`) that `ue ev
 ```
 
 - `variants[]` entries need `name`, `case`, `scenario`, `link`, `createdAt`.
+- `experiments[]` — the experiment ledger (CLI 1.5.0): written only by the CLI (`ue exp`, a card,
+  every read); absent until the first write.
 - The RevenueCat connection is the reader's MCP's, never a key in this file.
 - A link with the reader's real numbers goes into this file only after the privacy sentence.
 - `updatedAt` changes on every write; `createdAt` never does.

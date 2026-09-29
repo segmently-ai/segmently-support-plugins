@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "segmently-unit-economics",
-  "version": "0.1.0+codex.e763014bf5ca",
+  "version": "0.1.0+codex.760fc2f2aa76",
   "description": "Offline paywall unit economics on the segmently.ai calculator's math. Use when a subscription or web-to-app builder asks whether a price, paywall, trial, store-vs-web fee stack, downsell or upsell, or ad budget can pay back (ROAS, CAC, payback, break-even), which experiment or metric to test first, how long an A/B test must run or whether its result is real (sample size, MDE), wants a hypothesis card or a growth cycle, brings RevenueCat or ad-account numbers, or pastes a segmently.ai/unit-economics link.",
   "author": {
     "name": "Segmently"
