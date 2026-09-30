@@ -24,7 +24,7 @@
         "title": "Shuffle item order",
         "description": "When enabled, randomizes the order items appear to users on each view. Useful for A/B testing, survey randomization, and reducing position bias in multi-select scenarios.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Shuffle item order",
       "summary": "When enabled, randomizes the order items appear to users on each view. Useful for A/B testing, survey randomization, and reducing position bias in multi-select scenarios.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

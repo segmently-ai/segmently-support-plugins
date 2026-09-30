@@ -5,24 +5,24 @@
   "evidence": {
     "guideKey": "screenedit-basic-config-animation-enabled",
     "articleId": "screenedit-basic-config-animation-enabled",
-    "articleAlias": "help-block-basic-config",
-    "referencePath": "help-block-basic-config/screenedit-basic-config-animation-enabled",
-    "name": "Screen field: Play Screen Animations",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-basic-config-animation-enabled",
+    "name": "Screen field: Legacy fade-in",
     "journeyStep": "Edit screens",
-    "userNeed": "Know what \"Play Screen Animations\" controls and when to adjust it while editing a screen.",
+    "userNeed": "Know what \"Legacy fade-in\" controls and when to adjust it while editing a screen.",
     "hasAuthoredText": true,
     "hasScreenshotEvidence": true,
     "screenshotSectionCount": 1,
-    "fullArticleLink": "https://help.segmently.ai/help-block-basic-config",
-    "sourceRecipeKey": "configure-basic-config-section",
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": "configure-animation-section",
     "localArticlePath": null,
     "sections": [
       {
         "id": "screenedit-basic-config-animation-enabled/field",
         "sectionKey": "field",
-        "referencePath": "help-block-basic-config/screenedit-basic-config-animation-enabled#screenedit-basic-config-animation-enabled/field",
-        "title": "Play Screen Animations",
-        "description": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
+        "referencePath": "help-block-animation/screenedit-basic-config-animation-enabled#screenedit-basic-config-animation-enabled/field",
+        "title": "Legacy fade-in",
+        "description": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
         "hasScreenshotEvidence": true,
         "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
       }
@@ -31,12 +31,12 @@
   "registrySections": [
     {
       "sectionKey": "field",
-      "title": "Play Screen Animations",
-      "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
+      "title": "Legacy fade-in",
+      "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
       "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
       "articleRefs": [
         {
-          "articleAlias": "help-block-basic-config",
+          "articleAlias": "help-block-animation",
           "subarticleId": "screenedit-basic-config-animation-enabled/field"
         }
       ],

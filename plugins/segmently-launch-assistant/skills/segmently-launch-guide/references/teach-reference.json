@@ -13,6 +13,7 @@
     "facebook-events-catalog",
     "facebook-pixel-capi-setup",
     "help-block-action-bar",
+    "help-block-animation",
     "help-block-background",
     "help-block-basic-config",
     "help-block-carousel",
@@ -53,9 +54,11 @@
     "help-screen-paywall",
     "help-screen-progresssteps",
     "help-screen-textinput",
+    "help-screen-transitions",
     "help-screen-webembed",
     "help-screen-wheelpicker",
     "help-strategy-onboarding-sync",
+    "help-theme-animations",
     "integrations-custom-domain-section",
     "launch-paid-funnel-overview",
     "launch-scenario-product-analytics",
@@ -955,15 +958,42 @@
         }
       ]
     },
-    "help-block-basic-config": {
-      "title": "Basic Config",
-      "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
-      "articleAlias": "help-block-basic-config",
+    "help-block-animation": {
+      "title": "Animation",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+      "articleAlias": "help-block-animation",
       "fields": [
         {
-          "label": "Play Screen Animations",
-          "description": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away."
+          "label": "Give this screen its own entrance",
+          "description": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none."
         },
+        {
+          "label": "Entrance style",
+          "description": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment."
+        },
+        {
+          "label": "Entrance duration",
+          "description": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away."
+        },
+        {
+          "label": "Delay between elements",
+          "description": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar."
+        },
+        {
+          "label": "Entrance easing",
+          "description": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default."
+        },
+        {
+          "label": "Legacy fade-in",
+          "description": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none."
+        }
+      ]
+    },
+    "help-block-basic-config": {
+      "title": "Basic Config",
+      "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
+      "articleAlias": "help-block-basic-config",
+      "fields": [
         {
           "label": "Reuse cached media",
           "description": "When on, the screen reuses media it has already cached instead of re-downloading it, which can speed up loading for visitors on slow or flaky connections. Leave it off by default for standard web ad funnels, since there's nothing to reuse until assets are cached. Turn it on only if you ship pre-bundled assets or expect a lot of poor-connectivity traffic."
@@ -4411,6 +4441,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4432,6 +4466,10 @@
         {
           "title": "Background",
           "articleAlias": "help-block-background"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         }
       ]
     },
@@ -4467,6 +4505,10 @@
         {
           "title": "Background",
           "articleAlias": "help-block-background"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         },
         {
           "title": "Basic Config",
@@ -4508,6 +4550,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4545,6 +4591,10 @@
         {
           "title": "Background",
           "articleAlias": "help-block-background"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         },
         {
           "title": "Basic Config",
@@ -4586,6 +4636,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4603,6 +4657,10 @@
         {
           "title": "Stepper",
           "articleAlias": "help-block-stepper"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         }
       ]
     },
@@ -4634,6 +4692,10 @@
         {
           "title": "Background",
           "articleAlias": "help-block-background"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         },
         {
           "title": "Basic Config",
@@ -4675,6 +4737,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4706,6 +4772,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4731,6 +4801,10 @@
         {
           "title": "Background",
           "articleAlias": "help-block-background"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         },
         {
           "title": "Basic Config",
@@ -4768,6 +4842,10 @@
           "articleAlias": "help-block-background"
         },
         {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
+        },
+        {
           "title": "Basic Config",
           "articleAlias": "help-block-basic-config"
         }
@@ -4789,6 +4867,10 @@
         {
           "title": "Sticky Container",
           "articleAlias": "help-block-sticky-container"
+        },
+        {
+          "title": "Animation",
+          "articleAlias": "help-block-animation"
         }
       ]
     }

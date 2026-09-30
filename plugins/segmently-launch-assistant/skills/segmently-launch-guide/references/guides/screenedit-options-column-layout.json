@@ -24,7 +24,7 @@
         "title": "List or grid layout",
         "description": "Choose whether choices stack in a single-column list or sit in a two-column grid. Use a list for text-heavy answers that need a full line each; use a grid when items have images or icons and you want a compact, visual picker. Switching to a grid unlocks the image, text, and checkbox layout controls. Default to a single-column list for plain answer choices.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "List or grid layout",
       "summary": "Choose whether choices stack in a single-column list or sit in a two-column grid. Use a list for text-heavy answers that need a full line each; use a grid when items have images or icons and you want a compact, visual picker. Switching to a grid unlocks the image, text, and checkbox layout controls. Default to a single-column list for plain answer choices.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

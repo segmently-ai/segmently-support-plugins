@@ -24,7 +24,7 @@
         "title": "Options section",
         "description": "The Options section defines the answer choices, product cards, or tappable rows a visitor picks from on a selection screen. This is the core interaction that captures what the visitor wants, so pair it with Variable Binding to save each choice and use it to personalize copy and send the visitor toward the right paywall. If a screen has no Options section, it isn't a selection screen; add a list or grid screen from the canvas.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
       },
       {
         "id": "screen-editor-section-options/where-it-appears",
@@ -42,7 +42,7 @@
       "sectionKey": "section",
       "title": "Options section",
       "summary": "The Options section defines the answer choices, product cards, or tappable rows a visitor picks from on a selection screen. This is the core interaction that captures what the visitor wants, so pair it with Variable Binding to save each choice and use it to personalize copy and send the visitor toward the right paywall. If a screen has no Options section, it isn't a selection screen; add a list or grid screen from the canvas.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

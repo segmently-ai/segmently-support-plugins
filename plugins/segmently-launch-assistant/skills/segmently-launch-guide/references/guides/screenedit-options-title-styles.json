@@ -24,7 +24,7 @@
         "title": "Item title text style",
         "description": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Item title text style",
       "summary": "Typography for every item's title — size, weight, color, alignment, line height, plus an optional background chip (color, opacity, radius) and padding. It's a shared template, so an edit restyles all items at once. Leave it on theme defaults for consistency, adjusting size or color only to improve readability against the item background.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

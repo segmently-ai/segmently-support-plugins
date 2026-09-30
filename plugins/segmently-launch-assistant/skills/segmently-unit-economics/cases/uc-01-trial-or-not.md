@@ -1,5 +1,5 @@
 # UC-1 — Should part of the users see the same plan with a trial?
-Route: "trial or not", "add a free trial" — what the trial does to the economics (a trial OR another change first → UC-10) (SKILL.md § Router) · Eval: P1 · MCP: uc-1, cases-uc-1
+Route: "trial or not", "add a free trial" — what the trial does to the economics (a trial OR another change first → UC-10; remove/lose/test → UC-13) (SKILL.md § Router) · Eval: P1 · MCP: uc-1, cases-uc-1
 Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked example
 
 ## Turns
@@ -72,6 +72,7 @@ then the variant's own inputs, each a line of its own:
 - No trial take from the reader: no invented one — ask again, or the labelled sweep (Turns).
 - The takes pass 100 %: the CLI warns `takes_normalized` — ask again, do not rescale.
 - A clamped end is quoted at its landed value from then on, in every later sentence about it.
+- To test this change: `cases/uc-13-test-an-offer-change.md`, with the variant file as `--variant`.
 
 ## Worked example
 

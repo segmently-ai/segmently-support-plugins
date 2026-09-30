@@ -6,6 +6,52 @@
   "title": "Carousel screen",
   "sections": [
     {
+      "id": "block-animation-head",
+      "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-summary",
+      "title": "Animation summary",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+      "kind": "section",
+      "articleSectionId": "block-animation-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-thumb",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "block-animation-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "block-backdrop-head",
       "title": "Background<sep>  —  </sep><detail>@details</detail>",
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -151,6 +197,22 @@
         "Text"
       ],
       "imageUrls": []
+    },
+    {
+      "id": "link-help-block-animation",
+      "title": "Animation",
+      "summary": "Related article: Animation",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "animation"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
     },
     {
       "id": "link-help-block-background",
@@ -203,6 +265,52 @@
   ],
   "subarticles": [
     {
+      "id": "block-animation-head",
+      "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-summary",
+      "title": "Animation summary",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+      "kind": "section",
+      "articleSectionId": "block-animation-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-thumb",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "block-animation-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-carousel#block-animation-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "block-backdrop-head",
       "title": "Background<sep>  —  </sep><detail>@details</detail>",
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -350,6 +458,22 @@
       "imageUrls": []
     },
     {
+      "id": "link-help-block-animation",
+      "title": "Animation",
+      "summary": "Related article: Animation",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "animation"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "link-help-block-background",
       "title": "Background",
       "summary": "Related article: Background",
@@ -400,6 +524,7 @@
   ],
   "settingsAnchors": [],
   "media": [
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-carousel-section/0.2.0/configure-carousel-section-2026-06-24T14-53-12-315Z-9b398ecd/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png"
@@ -783,6 +908,120 @@
           }
         }
       }
+    },
+    {
+      "id": "block-animation-head",
+      "order": 10,
+      "kind": "Text",
+      "label": "Section: Animation",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Animation<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 22,
+            "fontWeight": 750,
+            "lineHeight": 28,
+            "color": "#101828"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://help.segmently.ai/help-block-animation"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "block-animation-summary",
+      "order": 11,
+      "kind": "Text",
+      "label": "Animation summary",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 4
+        }
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-animation-thumb",
+      "order": 12,
+      "kind": "Media",
+      "label": "Animation in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png",
+                "name": "The Animation section in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
     }
   ],
   "provenance": {
@@ -791,6 +1030,6 @@
       "scripts/help-articles/help-screen-carousel.assembly.json",
       "scripts/help-articles/help-screen-carousel.doc.json"
     ],
-    "generatedHash": "f9009a541e210bfc"
+    "generatedHash": "a6dc55a913dadfed"
   }
 }

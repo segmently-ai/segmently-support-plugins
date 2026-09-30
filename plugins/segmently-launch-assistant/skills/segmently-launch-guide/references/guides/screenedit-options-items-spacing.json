@@ -24,7 +24,7 @@
         "title": "Gap between choices",
         "description": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Gap between choices",
       "summary": "The spacing between adjacent choices — a vertical gap in lists, the gap between cells in grids. Around 8–12px keeps items clearly separate and easy to tap without wasting space. Increase it for a more airy feel, or decrease it to fit more options above the fold.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

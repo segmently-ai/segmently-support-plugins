@@ -24,7 +24,7 @@
         "title": "Selected item look",
         "description": "How a choice looks once tapped — background, border, corner radius, and optional gradient. Make it clearly distinct from the unselected look (an accent border or filled background) so visitors get instant confirmation; weak feedback here causes hesitation and drop-off. Your theme's accent color is a reliable choice.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Selected item look",
       "summary": "How a choice looks once tapped — background, border, corner radius, and optional gradient. Make it clearly distinct from the unselected look (an accent border or filled background) so visitors get instant confirmation; weak feedback here causes hesitation and drop-off. Your theme's accent color is a reliable choice.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

@@ -24,7 +24,7 @@
         "title": "How visitors choose",
         "description": "Sets how people interact: browse only (no selection, like an intro list), pick one, or pick several. This also decides what's saved to the bound variable — pick-one stores a single value you can branch on, pick-several stores a set. Default to pick-one for most onboarding questions.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "How visitors choose",
       "summary": "Sets how people interact: browse only (no selection, like an intro list), pick one, or pick several. This also decides what's saved to the bound variable — pick-one stores a single value you can branch on, pick-several stores a set. Default to pick-one for most onboarding questions.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

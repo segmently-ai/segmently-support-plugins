@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-animation-screen-entrance-duration",
+  "evidence": {
+    "guideKey": "screenedit-animation-screen-entrance-duration",
+    "articleId": "screenedit-animation-screen-entrance-duration",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-animation-screen-entrance-duration",
+    "name": "Screen field: Entrance duration",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Entrance duration\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-animation-screen-entrance-duration/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-animation/screenedit-animation-screen-entrance-duration#screenedit-animation-screen-entrance-duration/field",
+        "title": "Entrance duration",
+        "description": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Entrance duration",
+      "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screenedit-animation-screen-entrance-duration/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

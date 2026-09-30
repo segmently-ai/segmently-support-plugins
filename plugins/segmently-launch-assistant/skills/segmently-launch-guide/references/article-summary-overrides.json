@@ -4,8 +4,8 @@
   "articles": [
     {
       "articleAlias": "help-fonts-typography",
-      "summary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
-      "keywords": ["change funnel font", "upload custom font", "brand font", "web font", "font mappings", "typeface", "custom typography", "same font on every device"],
+      "summary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "keywords": ["change funnel font", "upload custom font", "brand font", "web font", "font mappings", "typeface", "custom typography", "same font on every device", "font flash on load", "font from first paint"],
       "tags": ["fonts", "typography", "web-fonts", "custom-font", "branding", "integrations"]
     },
     {
@@ -46,8 +46,8 @@
     },
     {
       "articleAlias": "help-block-basic-config",
-      "summary": "Documents screen-level Basic Config controls that change runtime behavior rather than visible content. It covers entrance animation, offline or cached media, device permission prompts, auto-advance countdown timing, and the screen types where these settings are available.",
-      "keywords": ["basic config", "screen animation", "offline media", "device permission", "auto advance countdown"],
+      "summary": "Documents screen-level Basic Config controls that change runtime behavior rather than visible content. It covers offline or cached media, device permission prompts, auto-advance countdown timing, and the screen types where these settings are available. Entrance animation is not part of Basic Config: it has its own Animation section, documented in the Animation article.",
+      "keywords": ["basic config", "offline media", "device permission", "auto advance countdown", "looking for animations"],
       "tags": ["basic-config", "runtime-behavior", "countdown", "permissions"]
     },
     {
@@ -88,9 +88,9 @@
     },
     {
       "articleAlias": "help-block-options",
-      "summary": "Documents the Options section for list, grid, and hero-list choice screens. It covers answer items, labels, stored values, selection mode, max selections, random order, list or grid layout, checkbox style, item spacing, padding, images, selected state, and option text/container appearance.",
-      "keywords": ["options", "answer choices", "selection mode", "checkbox", "option item", "stored value"],
-      "tags": ["options", "choices", "selection", "variable-binding", "labels-copy"]
+      "summary": "Documents the Options section for list, grid, and hero-list choice screens. It covers answer items, labels, stored values, selection mode, max selections, random order, list or grid layout, checkbox style, item spacing, padding, images, selected state, option text/container appearance, and the style-settings Animations group: item animation with stagger, and selection and deselection animations.",
+      "keywords": ["options", "answer choices", "selection mode", "checkbox", "option item", "stored value", "item animation", "selection animation", "option stagger"],
+      "tags": ["options", "choices", "selection", "variable-binding", "labels-copy", "animations"]
     },
     {
       "articleAlias": "help-block-paywall-body",
@@ -190,33 +190,33 @@
     },
     {
       "articleAlias": "help-options-grid-multi",
-      "summary": "Explains the Options section for Grid Multi Pick screens, where visitors can select more than one choice from a grid. It covers grid item labels, images, selected state, multi-select behavior, stored values, checkbox or selection affordances, and grid layout.",
-      "keywords": ["grid multi pick", "multi select grid", "grid options", "selected options", "checkbox grid"],
-      "tags": ["options", "grid", "multi-select", "choices"]
+      "summary": "Explains the Options section for Grid Multi Pick screens, where visitors can select more than one choice from a grid. It covers grid item labels, images, selected state, multi-select behavior, stored values, checkbox or selection affordances, grid layout, and the Animations group for item animation, stagger, and selection and deselection emphasis.",
+      "keywords": ["grid multi pick", "multi select grid", "grid options", "selected options", "checkbox grid", "item animation", "selection animation"],
+      "tags": ["options", "grid", "multi-select", "choices", "animations"]
     },
     {
       "articleAlias": "help-options-grid-single",
-      "summary": "Explains the Options section for Grid Single Pick screens, where visitors choose one item from a grid. It covers item labels, images, selected state, stored values, grid spacing, and single-selection behavior used for product, preference, or segmentation choices.",
-      "keywords": ["grid single pick", "single select grid", "grid options", "selected item", "choice grid"],
-      "tags": ["options", "grid", "single-select", "choices"]
+      "summary": "Explains the Options section for Grid Single Pick screens, where visitors choose one item from a grid. It covers item labels, images, selected state, stored values, grid spacing, single-selection behavior used for product, preference, or segmentation choices, the selection mode and column layout selects, and the Animations group for item animation, stagger, and selection and deselection emphasis.",
+      "keywords": ["grid single pick", "single select grid", "grid options", "selected item", "choice grid", "item animation", "selection animation"],
+      "tags": ["options", "grid", "single-select", "choices", "animations"]
     },
     {
       "articleAlias": "help-options-hero-list",
-      "summary": "Explains the Options section for Hero List screens, combining prominent list choices with hero-style presentation. It covers item labels, descriptions or images where available, selected state, stored values, and layout choices for a visually rich selection screen.",
-      "keywords": ["hero list options", "hero list choices", "option labels", "selected item", "stored values"],
-      "tags": ["options", "hero-list", "choices", "labels-copy"]
+      "summary": "Explains the Options section for Hero List screens, a scrollable info list with a hero image where visitors browse the items instead of picking one. It covers item labels, descriptions and images, the image-and-title item layouts, spacing and styling, and the Animations group for item animation and stagger; selection and deselection animations have no effect because the list is read-only.",
+      "keywords": ["hero list options", "hero list items", "info list", "option labels", "item layout", "item animation", "stagger"],
+      "tags": ["options", "hero-list", "choices", "labels-copy", "animations"]
     },
     {
       "articleAlias": "help-options-list-multi",
-      "summary": "Explains the Options section for List Multi Pick screens, where visitors can select multiple answers from a vertical list. It covers list item labels, selected state, checkbox behavior, maximum selections, random order, stored values, and list spacing.",
-      "keywords": ["list multi pick", "multi select list", "checkbox list", "max selections", "list options"],
-      "tags": ["options", "list", "multi-select", "choices"]
+      "summary": "Explains the Options section for List Multi Pick screens, where visitors can select multiple answers from a vertical list. It covers list item labels, selected state, checkbox behavior, maximum selections, random order, stored values, list spacing, and the Animations group for list item animation, stagger, and selection and deselection emphasis.",
+      "keywords": ["list multi pick", "multi select list", "checkbox list", "max selections", "list options", "list item animation", "selection animation"],
+      "tags": ["options", "list", "multi-select", "choices", "animations"]
     },
     {
       "articleAlias": "help-options-list-single",
-      "summary": "Explains the Options section for List Single Pick screens, where visitors choose one answer from a vertical list. It covers item labels, selected state, stored values, list item layout, spacing, and single-selection behavior for segmentation or preference questions.",
-      "keywords": ["list single pick", "single select list", "list options", "selected answer", "stored value"],
-      "tags": ["options", "list", "single-select", "choices"]
+      "summary": "Explains the Options section for List Single Pick screens, where visitors choose one answer from a vertical list. It covers item labels, selected state, stored values, list item layout, spacing, single-selection behavior for segmentation or preference questions, and the Animations group for list item animation, stagger, and selection and deselection emphasis.",
+      "keywords": ["list single pick", "single select list", "list options", "selected answer", "stored value", "list item animation", "selection animation"],
+      "tags": ["options", "list", "single-select", "choices", "animations"]
     },
     {
       "articleAlias": "help-screen-carousel",
@@ -542,6 +542,36 @@
     { "articleAlias": "launch-scenario-validate-idea", "summary": "Step-by-step order to take a brand-new funnel to live traffic for idea validation: create the funnel, connect a custom domain and its DNS records, publish from the canvas with Deploy Web, and switch on first-party analytics so reports fill up.", "keywords": ["validate idea", "first launch", "first funnel", "domain", "publish", "first-party analytics"], "tags": ["launch-overview", "custom-domain", "publish", "analytics-events"] },
     { "articleAlias": "launch-scenario-sell", "summary": "Everything needed to charge real customers, in order: the validate-idea steps plus activating and connecting the live Stripe account, creating live paywall products, and attaching them to the paywall screen before republishing.", "keywords": ["start selling", "live stripe", "live products", "paywall", "monetize"], "tags": ["launch-overview", "stripe-payments", "paywall", "publish"] },
     { "articleAlias": "launch-scenario-run-ads", "summary": "How to make the funnel ready for paid traffic: Facebook pixel with the Conversions API token, TikTok pixel with the Events API token, each fetched from the vendor console, and attribution toggles on the web placement so click ids reach the pixels.", "keywords": ["run ads", "facebook pixel", "tiktok pixel", "conversions api", "attribution", "utm"], "tags": ["launch-overview", "facebook-events", "tiktok-events", "analytics-events"] },
-    { "articleAlias": "launch-scenario-product-analytics", "summary": "Optional product analytics for the launch: add GA4, Mixpanel, Amplitude or PostHog with the key from the vendor project settings and confirm events arrive; this advisory step never blocks publishing.", "keywords": ["product analytics", "ga4", "mixpanel", "amplitude", "posthog"], "tags": ["launch-overview", "analytics-events", "provider-setup"] }
+    { "articleAlias": "launch-scenario-product-analytics", "summary": "Optional product analytics for the launch: add GA4, Mixpanel, Amplitude or PostHog with the key from the vendor project settings and confirm events arrive; this advisory step never blocks publishing.", "keywords": ["product analytics", "ga4", "mixpanel", "amplitude", "posthog"], "tags": ["launch-overview", "analytics-events", "provider-setup"] },
+    {
+      "articleAlias": "help-theme-animations",
+      "summary": "Explains how to choose a motion scheme for a whole funnel theme: open the theme settings from the Screen Templates panel, pick Smooth, Subtle, Dynamic, Playful or None in the Animations section, keep the Paywall calm with Calm Paywall, fine-tune the exact values under Advanced, preview the transition, press Play animations to watch every screen's entrance, and apply the scheme to screens already on the canvas with Apply to canvas. Use this when customers ask how to animate their screens, make screens move or transition consistently, change the funnel's animation style, or update existing screens after changing the theme motion.",
+      "keywords": ["motion scheme", "theme animations", "animate my funnel", "animation style", "screen entrance", "calm paywall", "play animations", "apply animations to canvas", "smooth subtle dynamic playful none"],
+      "tags": ["animations", "theme", "motion-scheme", "screen-entrance", "transitions", "paywall", "apply-to-canvas"],
+      "mediaUrls": [
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230444_theme-anim-02-schemes/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230450_theme-anim-05-transition-demo/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230452_theme-anim-06-play-animations/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230454_theme-anim-07a-apply-groups/origin.png"
+      ]
+    },
+    {
+      "articleAlias": "help-screen-transitions",
+      "summary": "Explains screen transitions, the movement that plays when a visitor goes from one screen to the next: how the funnel default comes from the theme's motion scheme, and how to give a single connection between two screens its own transition. Covers opening Connection Details from the button on the canvas line, the Transition group with Type, Duration (ms) and Easing, the Inherit (funnel default) choice, the nine transition types, the dot that marks connections with their own transition, and returning a connection to the default. Use this when customers ask how to change the transition between screens, set a slide, fade or push between two screens, or remove a custom transition.",
+      "keywords": ["screen transition", "transition between screens", "connection transition", "slide fade push", "transition duration", "transition easing", "inherit funnel default", "override transition", "connection details"],
+      "tags": ["transitions", "transition", "canvas", "connections", "animations", "motion-scheme", "connection-details"],
+      "mediaUrls": [
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233605_screen-trans-01-canvas-connection/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233611_screen-trans-03-type-menu/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233613_screen-trans-04-override/origin.png",
+        "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233615_screen-trans-05-marker/origin.png"
+      ]
+    },
+    {
+      "articleAlias": "help-block-animation",
+      "summary": "Documents every setting of the Animation section in the screen editor: the per-screen Screen Entrance toggle, Entrance style, duration and delay between elements, the Advanced easing and per-element overrides, the Legacy fade-in, the Play animations preview button, and the Products entrance override on Paywall screens. Also explains what visitors see on the published page: the first screen plays its entrance right away, later screens play it as they arrive, and visitors who prefer reduced motion see no entrance. Use this when customers ask how to animate the elements of one screen, change the entrance style or speed, add a stagger, or preview a screen's animation.",
+      "keywords": ["screen animation", "entrance animation", "entrance style", "animation duration", "stagger delay", "play animations", "per-element animation", "legacy fade-in", "reduced motion", "animate one screen"],
+      "tags": ["animations", "screen-entrance", "screen-editor", "animation-section", "paywall", "reduced-motion"]
+    }
   ]
 }

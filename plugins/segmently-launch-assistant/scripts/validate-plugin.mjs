@@ -74,7 +74,14 @@ const fullCompanionExclusions = {
     "evals/**",
     "references/import-registry.md",
     "references/import-screens-to-theme.md",
-    "scripts/registry.mjs"
+    "scripts/registry.mjs",
+    "scripts/golden-cards/**",
+    "scripts/golden-eval/**",
+    "scripts/golden-factory-checks/**",
+    "scripts/golden-factory-checks.mjs",
+    "scripts/golden-live/**",
+    "scripts/golden-repro/**",
+    "scripts/golden-shared/**"
   ],
   "segmently-unit-economics": [
     "references/internal-admin-seams.md",

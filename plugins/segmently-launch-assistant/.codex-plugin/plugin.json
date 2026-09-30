@@ -1,6 +1,6 @@
 {
   "name": "segmently-launch-assistant",
-  "version": "0.1.0+codex.3d0462fd48bc",
+  "version": "0.1.0+codex.fa992c424398",
   "description": "Customer-facing Segmently launch assistant for CLI, browser walkthroughs, verification, and offline paywall unit economics with the growth cycle.",
   "author": {
     "name": "Segmently"

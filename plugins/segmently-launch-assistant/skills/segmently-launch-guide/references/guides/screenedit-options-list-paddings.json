@@ -24,7 +24,7 @@
         "title": "Margin around the whole list",
         "description": "The outer space between the screen edges and the first and last items, set per side (top, end, bottom, start). Use it to keep the list off the screen edges and aligned with your other sections. This is the outside spacing — for the gap inside each item use Padding inside each item instead.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Margin around the whole list",
       "summary": "The outer space between the screen edges and the first and last items, set per side (top, end, bottom, start). Use it to keep the list off the screen edges and aligned with your other sections. This is the outside spacing — for the gap inside each item use Padding inside each item instead.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

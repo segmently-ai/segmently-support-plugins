@@ -1,0 +1,2600 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-block-animation",
+  "articleId": null,
+  "title": "Animation — all settings",
+  "sections": [
+    {
+      "id": "an-paywall-head",
+      "title": "Paywall",
+      "summary": "Paywall",
+      "kind": "section",
+      "articleSectionId": "an-paywall-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-paywall-products",
+      "title": "Products entrance override",
+      "summary": "On a Paywall screen, the Advanced per-element overrides list adds a “Products” row for the plan cards — set its own entrance style, or None to keep the products in place while the rest of the screen animates in. This row only appears on a Paywall screen; other screen types never show it.",
+      "kind": "section",
+      "articleSectionId": "an-paywall-products",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-products",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-paywall-products-img",
+      "title": "Products entrance override",
+      "summary": "Products entrance override",
+      "kind": "section",
+      "articleSectionId": "an-paywall-products-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-products-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "product-catalog"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/paywall-products.png"
+      ]
+    },
+    {
+      "id": "an-preview",
+      "title": "Play animations",
+      "summary": "Replays this screen’s entrance in the live preview — its Screen Entrance (or the theme’s default, or the Legacy fade-in) plus every per-element override — so you can check the style, speed and stagger without leaving the editor. Re-clickable while it plays: it restarts.",
+      "kind": "section",
+      "articleSectionId": "an-preview",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-preview-head",
+      "title": "Preview",
+      "summary": "Preview",
+      "kind": "section",
+      "articleSectionId": "an-preview-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-preview-img",
+      "title": "Play animations button",
+      "summary": "Play animations button",
+      "kind": "section",
+      "articleSectionId": "an-preview-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-preview.png"
+      ]
+    },
+    {
+      "id": "an-related-head",
+      "title": "Related guides",
+      "summary": "Related guides",
+      "kind": "section",
+      "articleSectionId": "an-related-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-related-theme",
+      "title": "Theme animations: motion schemes<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Pick a motion scheme for a whole theme — the default entrance every screen inherits unless you set its own here.",
+      "kind": "section",
+      "articleSectionId": "an-related-theme",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-theme",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-related-transitions",
+      "title": "Screen transitions between screens<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Choose how one screen changes into the next — the movement between screens, separate from each screen’s entrance.",
+      "kind": "section",
+      "articleSectionId": "an-related-transitions",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-transitions",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-first",
+      "title": "The first screen plays its entrance as the page appears",
+      "summary": "When a visitor opens your published funnel, the first screen plays its entrance right away, once. It uses the Screen Entrance you set here; on an older screen that still has Legacy fade-in on (and no Screen Entrance), a simple fade-in; otherwise your theme’s entrance. With none of these, the screen appears without an entrance. If the visitor taps or presses a key before the entrance finishes, it ends at once and the screen shows in its final state.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-first",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-first",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-head",
+      "title": "What visitors see on your published page",
+      "summary": "What visitors see on your published page",
+      "kind": "section",
+      "articleSectionId": "an-visitors-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-later",
+      "title": "Later screens play their entrance as they arrive",
+      "summary": "Every following screen plays its entrance when it comes into view, after the change between the two screens has settled.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-later",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-later",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-reduced",
+      "title": "Visitors who prefer reduced motion see no entrance",
+      "summary": "If a visitor’s device is set to reduce motion, nothing animates in: every element simply shows in its final state, exactly as you designed it.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-reduced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-reduced",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-advanced-el",
+      "title": "Advanced in the section",
+      "summary": "Advanced in the section",
+      "kind": "section",
+      "articleSectionId": "g-advanced-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-el",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-advanced.png"
+      ]
+    },
+    {
+      "id": "g-advanced-el-cap",
+      "title": "Element caption",
+      "summary": "Inside the Animation section, this is the “Advanced” group.",
+      "kind": "section",
+      "articleSectionId": "g-advanced-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-el-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-advanced-head",
+      "title": "Advanced",
+      "summary": "Advanced",
+      "kind": "section",
+      "articleSectionId": "g-advanced-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-entrance-el",
+      "title": "Screen entrance in the section",
+      "summary": "Screen entrance in the section",
+      "kind": "section",
+      "articleSectionId": "g-entrance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-el",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png"
+      ]
+    },
+    {
+      "id": "g-entrance-el-cap",
+      "title": "Element caption",
+      "summary": "Inside the Animation section, this is the “Screen entrance” group.",
+      "kind": "section",
+      "articleSectionId": "g-entrance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-el-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-entrance-head",
+      "title": "Screen entrance",
+      "summary": "Screen entrance",
+      "kind": "section",
+      "articleSectionId": "g-entrance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Animation — every setting",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion. This guide documents every setting of the Animation block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-animation/section",
+      "title": "Animation section",
+      "summary": "Screen Entrance sets this screen's entrance style, speed, and stagger. The standard elements then animate in one after another, in a fixed order: header, image or video, title and subtitle, answer choices or feature bullets, paywall products, and action bar, where present. Slides, progress steps, input fields, custom sections, and embedded HTML aren't included. With Screen Entrance off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance, if any (shown as 'Inherited from theme'). Advanced adds easing and per-element overrides. Visitors whose device is set to reduce motion see no animation.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-animation/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-animation"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-animation/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, ProgressSteps, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-animation/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-animation"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "webembed",
+        "flexible-layout"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-easing/field",
+      "title": "Entrance easing",
+      "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-easing/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-easing"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-duration/field",
+      "title": "Entrance duration",
+      "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-duration/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-duration"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-preset/field",
+      "title": "Entrance style",
+      "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-preset/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-preset"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-stagger/field",
+      "title": "Delay between elements",
+      "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-stagger/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-stagger"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance/field",
+      "title": "Give this screen its own entrance",
+      "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-basic-config-animation-enabled/field",
+      "title": "Legacy fade-in",
+      "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-basic-config-animation-enabled/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-basic-config-animation-enabled"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Animation section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-animation-content-animated",
+      "title": "Legacy fade-in",
+      "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-animated",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-animated",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-animation-content-screenanimation",
+      "title": "Give this screen its own entrance",
+      "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset",
+      "title": "Entrance style",
+      "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-preset"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset-img",
+      "title": "Entrance style",
+      "summary": "Entrance style",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "title": "Entrance duration",
+      "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-duration"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "title": "Entrance duration",
+      "summary": "Entrance duration",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "title": "Entrance easing",
+      "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing",
+      "guideKeys": [
+        "screenedit-animation-easing"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "advanced"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "title": "Entrance easing",
+      "summary": "Entrance easing",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem",
+      "title": "Delay between elements",
+      "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-stagger"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem-img",
+      "title": "Delay between elements",
+      "summary": "Delay between elements",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png"
+      ]
+    }
+  ],
+  "subarticles": [
+    {
+      "id": "an-paywall-head",
+      "title": "Paywall",
+      "summary": "Paywall",
+      "kind": "section",
+      "articleSectionId": "an-paywall-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-paywall-products",
+      "title": "Products entrance override",
+      "summary": "On a Paywall screen, the Advanced per-element overrides list adds a “Products” row for the plan cards — set its own entrance style, or None to keep the products in place while the rest of the screen animates in. This row only appears on a Paywall screen; other screen types never show it.",
+      "kind": "section",
+      "articleSectionId": "an-paywall-products",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-products",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-paywall-products-img",
+      "title": "Products entrance override",
+      "summary": "Products entrance override",
+      "kind": "section",
+      "articleSectionId": "an-paywall-products-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-paywall-products-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media",
+        "product-catalog"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/paywall-products.png"
+      ]
+    },
+    {
+      "id": "an-preview",
+      "title": "Play animations",
+      "summary": "Replays this screen’s entrance in the live preview — its Screen Entrance (or the theme’s default, or the Legacy fade-in) plus every per-element override — so you can check the style, speed and stagger without leaving the editor. Re-clickable while it plays: it restarts.",
+      "kind": "section",
+      "articleSectionId": "an-preview",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-preview-head",
+      "title": "Preview",
+      "summary": "Preview",
+      "kind": "section",
+      "articleSectionId": "an-preview-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-preview-img",
+      "title": "Play animations button",
+      "summary": "Play animations button",
+      "kind": "section",
+      "articleSectionId": "an-preview-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-preview-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-preview.png"
+      ]
+    },
+    {
+      "id": "an-related-head",
+      "title": "Related guides",
+      "summary": "Related guides",
+      "kind": "section",
+      "articleSectionId": "an-related-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-related-theme",
+      "title": "Theme animations: motion schemes<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Pick a motion scheme for a whole theme — the default entrance every screen inherits unless you set its own here.",
+      "kind": "section",
+      "articleSectionId": "an-related-theme",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-theme",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-related-transitions",
+      "title": "Screen transitions between screens<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Choose how one screen changes into the next — the movement between screens, separate from each screen’s entrance.",
+      "kind": "section",
+      "articleSectionId": "an-related-transitions",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-related-transitions",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-first",
+      "title": "The first screen plays its entrance as the page appears",
+      "summary": "When a visitor opens your published funnel, the first screen plays its entrance right away, once. It uses the Screen Entrance you set here; on an older screen that still has Legacy fade-in on (and no Screen Entrance), a simple fade-in; otherwise your theme’s entrance. With none of these, the screen appears without an entrance. If the visitor taps or presses a key before the entrance finishes, it ends at once and the screen shows in its final state.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-first",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-first",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-head",
+      "title": "What visitors see on your published page",
+      "summary": "What visitors see on your published page",
+      "kind": "section",
+      "articleSectionId": "an-visitors-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-later",
+      "title": "Later screens play their entrance as they arrive",
+      "summary": "Every following screen plays its entrance when it comes into view, after the change between the two screens has settled.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-later",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-later",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "an-visitors-reduced",
+      "title": "Visitors who prefer reduced motion see no entrance",
+      "summary": "If a visitor’s device is set to reduce motion, nothing animates in: every element simply shows in its final state, exactly as you designed it.",
+      "kind": "section",
+      "articleSectionId": "an-visitors-reduced",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#an-visitors-reduced",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-advanced-el",
+      "title": "Advanced in the section",
+      "summary": "Advanced in the section",
+      "kind": "section",
+      "articleSectionId": "g-advanced-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-el",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-advanced.png"
+      ]
+    },
+    {
+      "id": "g-advanced-el-cap",
+      "title": "Element caption",
+      "summary": "Inside the Animation section, this is the “Advanced” group.",
+      "kind": "section",
+      "articleSectionId": "g-advanced-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-el-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-advanced-head",
+      "title": "Advanced",
+      "summary": "Advanced",
+      "kind": "section",
+      "articleSectionId": "g-advanced-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-advanced-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-entrance-el",
+      "title": "Screen entrance in the section",
+      "summary": "Screen entrance in the section",
+      "kind": "section",
+      "articleSectionId": "g-entrance-el",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-el",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png"
+      ]
+    },
+    {
+      "id": "g-entrance-el-cap",
+      "title": "Element caption",
+      "summary": "Inside the Animation section, this is the “Screen entrance” group.",
+      "kind": "section",
+      "articleSectionId": "g-entrance-el-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-el-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "g-entrance-head",
+      "title": "Screen entrance",
+      "summary": "Screen entrance",
+      "kind": "section",
+      "articleSectionId": "g-entrance-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#g-entrance-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "intro",
+      "title": "Animation — every setting",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion. This guide documents every setting of the Animation block, grouped by area. Each setting matches a real control in the screen editor.",
+      "kind": "section",
+      "articleSectionId": "intro",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#intro",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-animation/section",
+      "title": "Animation section",
+      "summary": "Screen Entrance sets this screen's entrance style, speed, and stagger. The standard elements then animate in one after another, in a fixed order: header, image or video, title and subtitle, answer choices or feature bullets, paywall products, and action bar, where present. Slides, progress steps, input fields, custom sections, and embedded HTML aren't included. With Screen Entrance off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance, if any (shown as 'Inherited from theme'). Advanced adds easing and per-element overrides. Visitors whose device is set to reduce motion see no animation.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-animation/section",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-animation"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screen-editor-section-animation/where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, ProgressSteps, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+      "kind": "guide-section",
+      "articleSectionId": "screen-editor-section-animation/where-it-appears",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screen-editor-section-animation"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall",
+        "webembed",
+        "flexible-layout"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-easing/field",
+      "title": "Entrance easing",
+      "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-easing/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-easing"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-duration/field",
+      "title": "Entrance duration",
+      "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-duration/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-duration"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-preset/field",
+      "title": "Entrance style",
+      "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-preset/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-preset"
+      ],
+      "tags": [
+        "guide-section",
+        "paywall"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance-stagger/field",
+      "title": "Delay between elements",
+      "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance-stagger/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-stagger"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-animation-screen-entrance/field",
+      "title": "Give this screen its own entrance",
+      "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-animation-screen-entrance/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-animation-screen-entrance"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "screenedit-basic-config-animation-enabled/field",
+      "title": "Legacy fade-in",
+      "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+      "kind": "guide-section",
+      "articleSectionId": "screenedit-basic-config-animation-enabled/field",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "screenedit-basic-config-animation-enabled"
+      ],
+      "tags": [
+        "guide-section"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+      ]
+    },
+    {
+      "id": "section-context",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "section-context",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#section-context",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/context-section.png"
+      ]
+    },
+    {
+      "id": "section-context-cap",
+      "title": "Context caption",
+      "summary": "Open the Animation section in the screen editor to configure its settings.",
+      "kind": "section",
+      "articleSectionId": "section-context-cap",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#section-context-cap",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-animation-content-animated",
+      "title": "Legacy fade-in",
+      "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-animated",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-animated",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "set-animation-content-screenanimation",
+      "title": "Give this screen its own entrance",
+      "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset",
+      "title": "Entrance style",
+      "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-preset"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset-img",
+      "title": "Entrance style",
+      "summary": "Entrance style",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "title": "Entrance duration",
+      "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-duration"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "title": "Entrance duration",
+      "summary": "Entrance duration",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "title": "Entrance easing",
+      "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing",
+      "guideKeys": [
+        "screenedit-animation-easing"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "advanced"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "title": "Entrance easing",
+      "summary": "Entrance easing",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem",
+      "title": "Delay between elements",
+      "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem",
+      "guideKeys": [
+        "screenedit-animation-screen-entrance-stagger"
+      ],
+      "tags": [
+        "article-section",
+        "Text",
+        "setting",
+        "animation",
+        "entrance"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png"
+      ]
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem-img",
+      "title": "Delay between elements",
+      "summary": "Delay between elements",
+      "kind": "section",
+      "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem-img",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem-img",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png"
+      ]
+    }
+  ],
+  "settingsAnchors": [
+    {
+      "guideKey": "screenedit-animation-screen-entrance",
+      "title": "Give this screen its own entrance",
+      "sectionType": "animation",
+      "group": "entrance",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png",
+      "articleSectionId": "set-animation-content-screenanimation",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation",
+      "route": [
+        "Open the screen in the editor.",
+        "Expand the Animation section.",
+        "Find “Give this screen its own entrance”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-animation-screen-entrance-preset",
+      "title": "Entrance style",
+      "sectionType": "animation",
+      "group": "entrance",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset",
+      "route": [
+        "Open the screen in the editor.",
+        "Expand the Animation section.",
+        "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+        "Find “Entrance style”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-animation-screen-entrance-duration",
+      "title": "Entrance duration",
+      "sectionType": "animation",
+      "group": "entrance",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration",
+      "route": [
+        "Open the screen in the editor.",
+        "Expand the Animation section.",
+        "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+        "Find “Entrance duration”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-animation-screen-entrance-stagger",
+      "title": "Delay between elements",
+      "sectionType": "animation",
+      "group": "entrance",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png",
+      "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem",
+      "route": [
+        "Open the screen in the editor.",
+        "Expand the Animation section.",
+        "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+        "Find “Delay between elements”."
+      ]
+    },
+    {
+      "guideKey": "screenedit-animation-easing",
+      "title": "Entrance easing",
+      "sectionType": "animation",
+      "group": "advanced",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png",
+      "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing",
+      "route": [
+        "Open the screen in the editor.",
+        "Expand the Animation section.",
+        "Open the Advanced panel (easing and the per-element overrides list).",
+        "Find “Entrance easing”."
+      ]
+    }
+  ],
+  "media": [
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png",
+    "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
+  ],
+  "nodes": [
+    {
+      "id": "intro",
+      "order": 0,
+      "kind": "Text",
+      "label": "Intro",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Animation — every setting"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 28,
+            "fontWeight": 800,
+            "lineHeight": 34,
+            "color": "#101828"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion. This guide documents every setting of the Animation block, grouped by area. Each setting matches a real control in the screen editor."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 400,
+            "lineHeight": 26,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context",
+      "order": 1,
+      "kind": "Media",
+      "label": "Animation in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/context-section.png",
+                "name": "The screen editor with the Animation section highlighted."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "section-context-cap",
+      "order": 2,
+      "kind": "Text",
+      "label": "Context caption",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "Open the Animation section in the screen editor to configure its settings."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "g-entrance-head",
+      "order": 3,
+      "kind": "Text",
+      "label": "Group: Screen entrance",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Screen entrance"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "g-entrance-el",
+      "order": 4,
+      "kind": "Media",
+      "label": "Screen entrance in the section",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 264,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png",
+                "name": "Where the Screen entrance sits inside the open Animation section."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "g-entrance-el-cap",
+      "order": 5,
+      "kind": "Text",
+      "label": "Element caption",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "Inside the Animation section, this is the “Screen entrance” group."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation",
+      "order": 6,
+      "kind": "Text",
+      "label": "Screen entrance · Give this screen its own entrance",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Give this screen its own entrance"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset",
+      "order": 7,
+      "kind": "Text",
+      "label": "Screen entrance · Entrance style",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Entrance style"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-preset-img",
+      "order": 8,
+      "kind": "Media",
+      "label": "Entrance style",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 120,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png",
+                "name": "Where to find “Entrance style” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration",
+      "order": 9,
+      "kind": "Text",
+      "label": "Screen entrance · Entrance duration",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Entrance duration"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+      "order": 10,
+      "kind": "Media",
+      "label": "Entrance duration",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 109,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png",
+                "name": "Where to find “Entrance duration” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem",
+      "order": 11,
+      "kind": "Text",
+      "label": "Screen entrance · Delay between elements",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Delay between elements"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-stagger-delayperitem-img",
+      "order": 12,
+      "kind": "Media",
+      "label": "Delay between elements",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 113,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png",
+                "name": "Where to find “Delay between elements” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "g-advanced-head",
+      "order": 13,
+      "kind": "Text",
+      "label": "Group: Advanced",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Advanced"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "g-advanced-el",
+      "order": 14,
+      "kind": "Media",
+      "label": "Advanced in the section",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 264,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-advanced.png",
+                "name": "Where the Advanced sits inside the open Animation section."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "g-advanced-el-cap",
+      "order": 15,
+      "kind": "Text",
+      "label": "Element caption",
+      "layout": {
+        "heightKind": "auto"
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "Inside the Animation section, this is the “Advanced” group."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing",
+      "order": 16,
+      "kind": "Text",
+      "label": "Advanced · Entrance easing",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Entrance easing"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+      "order": 17,
+      "kind": "Media",
+      "label": "Entrance easing",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 160,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png",
+                "name": "Where to find “Entrance easing” in the editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "set-animation-content-animated",
+      "order": 18,
+      "kind": "Text",
+      "label": "Advanced · Legacy fade-in",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Legacy fade-in"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-preview-head",
+      "order": 19,
+      "kind": "Text",
+      "label": "Preview",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Preview"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-preview",
+      "order": 20,
+      "kind": "Text",
+      "label": "Play animations",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Play animations"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Replays this screen’s entrance in the live preview — its Screen Entrance (or the theme’s default, or the Legacy fade-in) plus every per-element override — so you can check the style, speed and stagger without leaving the editor. Re-clickable while it plays: it restarts."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-preview-img",
+      "order": 21,
+      "kind": "Media",
+      "label": "Play animations button",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 140,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-preview.png",
+                "name": "The “Play animations” button in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "an-paywall-head",
+      "order": 22,
+      "kind": "Text",
+      "label": "Paywall",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Paywall"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-paywall-products",
+      "order": 23,
+      "kind": "Text",
+      "label": "Products entrance override",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Products entrance override"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "On a Paywall screen, the Advanced per-element overrides list adds a “Products” row for the plan cards — set its own entrance style, or None to keep the products in place while the rest of the screen animates in. This row only appears on a Paywall screen; other screen types never show it."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-paywall-products-img",
+      "order": 24,
+      "kind": "Media",
+      "label": "Products entrance override",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 525,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/paywall-products.png",
+                "name": "The Products row in the Animation section’s Advanced overrides, on a Paywall screen."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "an-visitors-head",
+      "order": 25,
+      "kind": "Text",
+      "label": "What visitors see",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "What visitors see on your published page"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-visitors-first",
+      "order": 26,
+      "kind": "Text",
+      "label": "First screen",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "The first screen plays its entrance as the page appears"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "When a visitor opens your published funnel, the first screen plays its entrance right away, once. It uses the Screen Entrance you set here; on an older screen that still has Legacy fade-in on (and no Screen Entrance), a simple fade-in; otherwise your theme’s entrance. With none of these, the screen appears without an entrance. If the visitor taps or presses a key before the entrance finishes, it ends at once and the screen shows in its final state."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-visitors-later",
+      "order": 27,
+      "kind": "Text",
+      "label": "Later screens",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Later screens play their entrance as they arrive"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Every following screen plays its entrance when it comes into view, after the change between the two screens has settled."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-visitors-reduced",
+      "order": 28,
+      "kind": "Text",
+      "label": "Reduced motion",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Visitors who prefer reduced motion see no entrance"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "If a visitor’s device is set to reduce motion, nothing animates in: every element simply shows in its final state, exactly as you designed it."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-related-head",
+      "order": 29,
+      "kind": "Text",
+      "label": "Related guides",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Related guides"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 19,
+            "fontWeight": 750,
+            "lineHeight": 26,
+            "color": "#101828"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-related-theme",
+      "order": 30,
+      "kind": "Text",
+      "label": "Theme animations: motion schemes",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 22
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Theme animations: motion schemes<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://help.segmently.ai/help-theme-animations"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Pick a motion scheme for a whole theme — the default entrance every screen inherits unless you set its own here."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    },
+    {
+      "id": "an-related-transitions",
+      "order": 31,
+      "kind": "Text",
+      "label": "Screen transitions between screens",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 22
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Screen transitions between screens<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 17,
+            "fontWeight": 650,
+            "lineHeight": 24,
+            "color": "#172033"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://help.segmently.ai/help-screen-transitions"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        },
+        "subtitle": {
+          "translations": {
+            "en": "Choose how one screen changes into the next — the movement between screens, separate from each screen’s entrance."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 13,
+            "fontWeight": 500,
+            "lineHeight": 19,
+            "color": "#667085"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-animation/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/animation-block.doc.json",
+      "scripts/help-articles/basic-config-block.doc.json",
+      "scripts/help-articles/help-options-grid-multi.doc.json",
+      "scripts/help-articles/help-options-grid-single.doc.json",
+      "scripts/help-articles/help-options-hero-list.doc.json",
+      "scripts/help-articles/help-options-list-multi.doc.json",
+      "scripts/help-articles/help-options-list-single.doc.json",
+      "scripts/help-articles/help-screen-carousel.assembly.json",
+      "scripts/help-articles/help-screen-carousel.doc.json",
+      "scripts/help-articles/help-screen-flexiblelayout.assembly.json",
+      "scripts/help-articles/help-screen-flexiblelayout.doc.json",
+      "scripts/help-articles/help-screen-gridmultipick-elements.assembly.json",
+      "scripts/help-articles/help-screen-gridmultipick-elements.doc.json",
+      "scripts/help-articles/help-screen-gridsinglepick-elements.assembly.json",
+      "scripts/help-articles/help-screen-gridsinglepick-elements.doc.json",
+      "scripts/help-articles/help-screen-herocontent-detailed.assembly.json",
+      "scripts/help-articles/help-screen-herocontent-detailed.doc.json",
+      "scripts/help-articles/help-screen-herocontent-elements.assembly.json",
+      "scripts/help-articles/help-screen-herocontent-elements.doc.json",
+      "scripts/help-articles/help-screen-herocontent.assembly.json",
+      "scripts/help-articles/help-screen-herocontent.doc.json",
+      "scripts/help-articles/help-screen-herolist-elements.assembly.json",
+      "scripts/help-articles/help-screen-herolist-elements.doc.json",
+      "scripts/help-articles/help-screen-listmultipick-elements.assembly.json",
+      "scripts/help-articles/help-screen-listmultipick-elements.doc.json",
+      "scripts/help-articles/help-screen-listsinglepick-elements.assembly.json",
+      "scripts/help-articles/help-screen-listsinglepick-elements.doc.json",
+      "scripts/help-articles/help-screen-paywall.assembly.json",
+      "scripts/help-articles/help-screen-paywall.doc.json",
+      "scripts/help-articles/help-screen-progresssteps.assembly.json",
+      "scripts/help-articles/help-screen-progresssteps.doc.json",
+      "scripts/help-articles/help-screen-textinput-elements.assembly.json",
+      "scripts/help-articles/help-screen-textinput-elements.doc.json",
+      "scripts/help-articles/help-screen-webembed.assembly.json",
+      "scripts/help-articles/help-screen-webembed.doc.json",
+      "scripts/help-articles/help-screen-wheelpicker-elements.assembly.json",
+      "scripts/help-articles/help-screen-wheelpicker-elements.doc.json",
+      "scripts/help-articles/options-block.doc.json",
+      "references/guide-evidence.json",
+      "references/guide-registry.json",
+      "published-guide-articles.json"
+    ],
+    "generatedHash": "aa63336e4f9e4e71"
+  }
+}

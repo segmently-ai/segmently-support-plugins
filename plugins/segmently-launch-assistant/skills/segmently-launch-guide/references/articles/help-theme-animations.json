@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-theme-animations",
+  "articleId": null,
+  "title": "Theme animations: motion schemes",
+  "sections": [],
+  "subarticles": [],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230444_theme-anim-02-schemes/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230450_theme-anim-05-transition-demo/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230452_theme-anim-06-play-animations/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/W8ULHl3P9dnn7ekHsvJO/20260929230454_theme-anim-07a-apply-groups/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-theme-animations/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/animation-block.doc.json"
+    ],
+    "generatedHash": "6d62dc78a95f39f6"
+  }
+}

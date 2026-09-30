@@ -24,7 +24,7 @@
         "title": "Vertical alignment of items",
         "description": "Aligns each choice's content to the top, center, or bottom of its cell. It's most noticeable in grid layouts where cells are taller than their content; center usually looks balanced. In simple lists it has little visible effect, so center is a safe default.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Vertical alignment of items",
       "summary": "Aligns each choice's content to the top, center, or bottom of its cell. It's most noticeable in grid layouts where cells are taller than their content; center usually looks balanced. In simple lists it has little visible effect, so center is a safe default.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

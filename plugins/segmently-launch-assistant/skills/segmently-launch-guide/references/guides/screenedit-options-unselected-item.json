@@ -24,7 +24,7 @@
         "title": "Unselected item look",
         "description": "The default look of each choice before it's tapped — background, border, corner radius, and an optional gradient. Keep it neutral and calm so the selected state can stand out; the contrast between this and the selected look is what tells visitors their tap registered. Pair it with the Selected item look.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Unselected item look",
       "summary": "The default look of each choice before it's tapped — background, border, corner radius, and an optional gradient. Keep it neutral and calm so the selected state can stand out; the contrast between this and the selected look is what tells visitors their tap registered. Pair it with the Selected item look.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

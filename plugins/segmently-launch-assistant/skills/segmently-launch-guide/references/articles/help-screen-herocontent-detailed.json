@@ -50,6 +50,52 @@
       ]
     },
     {
+      "id": "block-animation-head",
+      "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-summary",
+      "title": "Animation summary",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+      "kind": "section",
+      "articleSectionId": "block-animation-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-thumb",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "block-animation-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "block-backdrop-head",
       "title": "Background<sep>  —  </sep><detail>@details</detail>",
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -110,7 +156,7 @@
     {
       "id": "block-basicconfig-summary",
       "title": "Basic Config summary",
-      "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+      "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
       "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-summary",
@@ -134,7 +180,7 @@
         "Media"
       ],
       "imageUrls": [
-        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
       ]
     },
     {
@@ -1264,6 +1310,22 @@
       ]
     },
     {
+      "id": "link-help-block-animation",
+      "title": "Animation",
+      "summary": "Related article: Animation",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "animation"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "link-help-block-background",
       "title": "Background",
       "summary": "Related article: Background",
@@ -1292,7 +1354,7 @@
         "basicConfig"
       ],
       "imageUrls": [
-        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
       ]
     },
     {
@@ -1374,6 +1436,52 @@
       ]
     },
     {
+      "id": "block-animation-head",
+      "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+      "kind": "section",
+      "articleSectionId": "block-animation-head",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-head",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-summary",
+      "title": "Animation summary",
+      "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+      "kind": "section",
+      "articleSectionId": "block-animation-summary",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-summary",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "block-animation-thumb",
+      "title": "Animation in the editor",
+      "summary": "Animation in the editor",
+      "kind": "section",
+      "articleSectionId": "block-animation-thumb",
+      "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-animation-thumb",
+      "guideKeys": [],
+      "tags": [
+        "article-section",
+        "Media"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "block-backdrop-head",
       "title": "Background<sep>  —  </sep><detail>@details</detail>",
       "summary": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -1434,7 +1542,7 @@
     {
       "id": "block-basicconfig-summary",
       "title": "Basic Config summary",
-      "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+      "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
       "kind": "section",
       "articleSectionId": "block-basicconfig-summary",
       "articleSectionUrl": "https://help.segmently.ai/help-screen-herocontent-detailed#block-basicconfig-summary",
@@ -1458,7 +1566,7 @@
         "Media"
       ],
       "imageUrls": [
-        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
       ]
     },
     {
@@ -2588,6 +2696,22 @@
       ]
     },
     {
+      "id": "link-help-block-animation",
+      "title": "Animation",
+      "summary": "Related article: Animation",
+      "kind": "assembly-link",
+      "articleSectionId": null,
+      "articleSectionUrl": "https://help.segmently.ai/help-block-animation",
+      "guideKeys": [],
+      "tags": [
+        "assembly-link",
+        "animation"
+      ],
+      "imageUrls": [
+        "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+      ]
+    },
+    {
       "id": "link-help-block-background",
       "title": "Background",
       "summary": "Related article: Background",
@@ -2616,7 +2740,7 @@
         "basicConfig"
       ],
       "imageUrls": [
-        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+        "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
       ]
     },
     {
@@ -2655,8 +2779,9 @@
   "settingsAnchors": [],
   "media": [
     "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-backdrop-section/0.2.0/configure-backdrop-section-2026-06-22T18-40-09-187Z-2fd3bd10/context-section.png",
-    "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+    "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-header-bar-section/0.3.0/configure-header-bar-section-2026-06-24T11-52-13-983Z-7978d53e/context-section.png",
     "https://api.segmently.ai/assets/support-flow/local/configure-copy-block-section/0.2.0/configure-copy-block-section-2026-06-22T19-55-58-190Z-c09e17a2/context-section.png"
   ],
@@ -2845,7 +2970,10 @@
       "kind": "Text",
       "label": "What this screen shows",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
       },
       "textContent": {
         "title": {
@@ -2869,7 +2997,10 @@
       "kind": "Text",
       "label": "Title & subtitle",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -2906,7 +3037,10 @@
       "kind": "Text",
       "label": "Hero image",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -2944,7 +3078,7 @@
       "label": "Content in the editor",
       "layout": {
         "heightKind": "fixed",
-        "heightValue": 900,
+        "heightValue": 360,
         "padding": {
           "top": 8,
           "end": 0,
@@ -3006,7 +3140,10 @@
       "kind": "Text",
       "label": "Group: Title (headline)",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
       },
       "textContent": {
         "title": {
@@ -3093,7 +3230,10 @@
       "kind": "Text",
       "label": "Title (headline) · Your main headline",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -3169,7 +3309,10 @@
       "kind": "Text",
       "label": "Title (headline) · Write the headline text",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -3245,7 +3388,10 @@
       "kind": "Text",
       "label": "Title (headline) · Title look and emphasis",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -3321,7 +3467,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Text background color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3358,7 +3507,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Font family",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3395,7 +3547,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Line height",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3432,7 +3587,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Font size",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3469,7 +3627,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Font weight",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3506,7 +3667,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Text color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3543,7 +3707,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Text align",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3580,7 +3747,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Strikethrough color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3617,7 +3787,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Background opacity",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3654,7 +3827,10 @@
       "kind": "Text",
       "label": "Title look and emphasis · Background radius",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -3691,7 +3867,10 @@
       "kind": "Text",
       "label": "Title (headline) · Space around the title",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -3767,7 +3946,10 @@
       "kind": "Text",
       "label": "Group: Subtitle",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
       },
       "textContent": {
         "title": {
@@ -3854,7 +4036,10 @@
       "kind": "Text",
       "label": "Subtitle · The line under your title",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -3930,7 +4115,10 @@
       "kind": "Text",
       "label": "Subtitle · Write the subtitle text",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4006,7 +4194,10 @@
       "kind": "Text",
       "label": "Subtitle · Subtitle look and emphasis",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4082,7 +4273,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Text background color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4119,7 +4313,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Font family",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4156,7 +4353,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Line height",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4193,7 +4393,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Font size",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4230,7 +4433,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Font weight",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4267,7 +4473,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Text color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4304,7 +4513,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Text align",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4341,7 +4553,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Strikethrough color",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4378,7 +4593,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Background opacity",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4415,7 +4633,10 @@
       "kind": "Text",
       "label": "Subtitle look and emphasis · Background radius",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 10
+        }
       },
       "textContent": {
         "title": {
@@ -4452,7 +4673,10 @@
       "kind": "Text",
       "label": "Subtitle · Space around the subtitle",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4528,7 +4752,10 @@
       "kind": "Text",
       "label": "Group: Hero image",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
       },
       "textContent": {
         "title": {
@@ -4615,7 +4842,10 @@
       "kind": "Text",
       "label": "Hero image · The featured image up top",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4691,7 +4921,10 @@
       "kind": "Text",
       "label": "Hero image · The hero image itself",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4767,7 +5000,10 @@
       "kind": "Text",
       "label": "Hero image · How the image fills its box",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4843,7 +5079,10 @@
       "kind": "Text",
       "label": "Hero image · Fixed image width",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4919,7 +5158,10 @@
       "kind": "Text",
       "label": "Hero image · Fixed image height",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -4995,7 +5237,10 @@
       "kind": "Text",
       "label": "Hero image · Size the image by screen",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -5071,7 +5316,10 @@
       "kind": "Text",
       "label": "Hero image · How rounded the image is",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -5147,7 +5395,10 @@
       "kind": "Text",
       "label": "Hero image · Space around the image",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -5223,7 +5474,10 @@
       "kind": "Text",
       "label": "Group: Image & text layout",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
       },
       "textContent": {
         "title": {
@@ -5247,7 +5501,10 @@
       "kind": "Text",
       "label": "Image & text layout · Where the image sits",
       "layout": {
-        "heightKind": "auto"
+        "heightKind": "auto",
+        "margin": {
+          "top": 28
+        }
       },
       "textContent": {
         "title": {
@@ -5546,8 +5803,122 @@
       }
     },
     {
-      "id": "block-basicconfig-head",
+      "id": "block-animation-head",
       "order": 80,
+      "kind": "Text",
+      "label": "Section: Animation",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 40
+        }
+      },
+      "textContent": {
+        "title": {
+          "translations": {
+            "en": "Animation<sep>  —  </sep><detail>@details</detail>"
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 22,
+            "fontWeight": 750,
+            "lineHeight": 28,
+            "color": "#101828"
+          },
+          "templateParams": {
+            "links": {
+              "details": "https://help.segmently.ai/help-block-animation"
+            },
+            "labels": {
+              "sep": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 20,
+                "color": "#98A2B3"
+              },
+              "detail": {
+                "align": "start",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 20,
+                "color": "#2563EB"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "block-animation-summary",
+      "order": 81,
+      "kind": "Text",
+      "label": "Animation summary",
+      "layout": {
+        "heightKind": "auto",
+        "margin": {
+          "top": 4
+        }
+      },
+      "textContent": {
+        "subtitle": {
+          "translations": {
+            "en": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion."
+          },
+          "kind": "static",
+          "appearance": {
+            "align": "start",
+            "fontSize": 15,
+            "fontWeight": 400,
+            "lineHeight": 23,
+            "color": "#475467"
+          }
+        }
+      }
+    },
+    {
+      "id": "block-animation-thumb",
+      "order": 82,
+      "kind": "Media",
+      "label": "Animation in the editor",
+      "layout": {
+        "heightKind": "fixed",
+        "heightValue": 360,
+        "padding": {
+          "top": 8,
+          "end": 0,
+          "bottom": 8,
+          "start": 0
+        },
+        "cornerRadius": {
+          "uniform": 12
+        }
+      },
+      "mediaContent": {
+        "kind": "Image",
+        "content": {
+          "image": {
+            "translations": {
+              "en": {
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png",
+                "name": "The Animation section in the screen editor."
+              }
+            },
+            "appearance": {}
+          }
+        },
+        "appearance": {
+          "scaleMode": "scaleAspectFit",
+          "cornerRadii": {
+            "uniform": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "block-basicconfig-head",
+      "order": 83,
       "kind": "Text",
       "label": "Section: Basic Config",
       "layout": {
@@ -5595,7 +5966,7 @@
     },
     {
       "id": "block-basicconfig-summary",
-      "order": 81,
+      "order": 84,
       "kind": "Text",
       "label": "Basic Config summary",
       "layout": {
@@ -5607,7 +5978,7 @@
       "textContent": {
         "subtitle": {
           "translations": {
-            "en": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance."
+            "en": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance."
           },
           "kind": "static",
           "appearance": {
@@ -5622,7 +5993,7 @@
     },
     {
       "id": "block-basicconfig-thumb",
-      "order": 82,
+      "order": 85,
       "kind": "Media",
       "label": "Basic Config in the editor",
       "layout": {
@@ -5644,7 +6015,7 @@
           "image": {
             "translations": {
               "en": {
-                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png",
+                "original": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png",
                 "name": "The Basic Config section in the screen editor."
               }
             },
@@ -5666,6 +6037,6 @@
       "scripts/help-articles/help-screen-herocontent-detailed.assembly.json",
       "scripts/help-articles/help-screen-herocontent-detailed.doc.json"
     ],
-    "generatedHash": "8384ac26151bc292"
+    "generatedHash": "d13dfd78c8645926"
   }
 }

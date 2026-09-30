@@ -24,7 +24,7 @@
         "title": "Padding inside each item",
         "description": "The space between each item's edge and its content (title, image, checkbox), set per side — top, end, bottom, start. More padding makes items feel roomy and easier to tap; too little looks cramped. Around 12–16px on all sides reads well on mobile, and the setting applies to every item.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Padding inside each item",
       "summary": "The space between each item's edge and its content (title, image, checkbox), set per side — top, end, bottom, start. More padding makes items feel roomy and easier to tap; too little looks cramped. Around 12–16px on all sides reads well on mobile, and the setting applies to every item.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-animation-easing",
+  "evidence": {
+    "guideKey": "screenedit-animation-easing",
+    "articleId": "screenedit-animation-easing",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-animation-easing",
+    "name": "Screen field: Entrance easing",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Entrance easing\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-animation-easing/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-animation/screenedit-animation-easing#screenedit-animation-easing/field",
+        "title": "Entrance easing",
+        "description": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Entrance easing",
+      "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screenedit-animation-easing/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

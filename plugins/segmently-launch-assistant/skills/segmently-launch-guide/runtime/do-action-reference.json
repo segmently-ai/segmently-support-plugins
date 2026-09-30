@@ -14814,59 +14814,6 @@
       }
     },
     {
-      "id": "editor.setting.screenedit-basic-config-animation-enabled",
-      "status": "supported",
-      "mode": "cli",
-      "label": "Change Play Screen Animations",
-      "customerIntent": [
-        "change play screen animations",
-        "set play screen animations",
-        "update play screen animations",
-        "change Basic Config play screen animations",
-        "set Basic Config play screen animations",
-        "поменяй базовых настроек экрана",
-        "измени базовых настроек экрана",
-        "настрой базовых настроек экрана",
-        "screenedit-basic-config-animation-enabled",
-        "turn on play screen animations",
-        "turn off play screen animations",
-        "enable play screen animations",
-        "disable play screen animations",
-        "turn on screen animations",
-        "turn off screen animations",
-        "включи анимации экрана",
-        "выключи анимации экрана"
-      ],
-      "owningSkill": "segmently-cli-guide",
-      "runner": "runtime/editor-do-runner.mjs",
-      "commandFamily": "funnels screens patch",
-      "requiredInputs": [
-        "projectId",
-        "funnelId",
-        "versionId",
-        "screenId",
-        "value"
-      ],
-      "optionalInputs": [],
-      "verify": {
-        "kind": "cli-read",
-        "command": "funnels export",
-        "evidence": "The exported funnel contains the updated play screen animations after the screen patch."
-      },
-      "teachFallback": {
-        "articleAlias": "screenedit-basic-config-animation-enabled",
-        "answerFrom": "references/teach-reference.json"
-      },
-      "cliPatch": {
-        "operation": "setFieldValue",
-        "path": "content.animated",
-        "valueType": "boolean",
-        "valueInput": "value",
-        "suggestedPath": "setting-screenedit-basic-config-animation-enabled.patch.json",
-        "expectedWrite": "Set Play Screen Animations to <value> on screen <screenId>."
-      }
-    },
-    {
       "id": "editor.setting.screenedit-basic-config-offline-first",
       "status": "supported",
       "mode": "cli",
@@ -15060,6 +15007,59 @@
         "valueInput": "value",
         "suggestedPath": "setting-screenedit-basic-config-countdown-unit.patch.json",
         "expectedWrite": "Set Seconds Or Minutes to <value> on screen <screenId>."
+      }
+    },
+    {
+      "id": "editor.setting.screenedit-basic-config-animation-enabled",
+      "status": "supported",
+      "mode": "cli",
+      "label": "Change Legacy fade-in",
+      "customerIntent": [
+        "change legacy fade-in",
+        "set legacy fade-in",
+        "update legacy fade-in",
+        "change Animation legacy fade-in",
+        "set Animation legacy fade-in",
+        "поменяй анимации экрана",
+        "измени анимации экрана",
+        "настрой анимации экрана",
+        "screenedit-basic-config-animation-enabled",
+        "turn on legacy fade-in",
+        "turn off legacy fade-in",
+        "enable legacy fade-in",
+        "disable legacy fade-in",
+        "turn on screen animations",
+        "turn off screen animations",
+        "включи анимации экрана",
+        "выключи анимации экрана"
+      ],
+      "owningSkill": "segmently-cli-guide",
+      "runner": "runtime/editor-do-runner.mjs",
+      "commandFamily": "funnels screens patch",
+      "requiredInputs": [
+        "projectId",
+        "funnelId",
+        "versionId",
+        "screenId",
+        "value"
+      ],
+      "optionalInputs": [],
+      "verify": {
+        "kind": "cli-read",
+        "command": "funnels export",
+        "evidence": "The exported funnel contains the updated legacy fade-in after the screen patch."
+      },
+      "teachFallback": {
+        "articleAlias": "screenedit-basic-config-animation-enabled",
+        "answerFrom": "references/teach-reference.json"
+      },
+      "cliPatch": {
+        "operation": "setFieldValue",
+        "path": "content.animated",
+        "valueType": "boolean",
+        "valueInput": "value",
+        "suggestedPath": "setting-screenedit-basic-config-animation-enabled.patch.json",
+        "expectedWrite": "Set Legacy fade-in to <value> on screen <screenId>."
       }
     },
     {

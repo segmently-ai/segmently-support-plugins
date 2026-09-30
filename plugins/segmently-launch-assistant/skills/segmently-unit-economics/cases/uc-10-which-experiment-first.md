@@ -23,15 +23,17 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
   `measuredOn` — set both in the base before the run). No `ue link` call here.
 
 ## Answer skeleton
-1. `sentences.traffic`
-2. every `sentences.table` line, a blank line, every `sentences.belowTable` line as its own `- ` bullet,
+1. `sentences.ledger`, when the run printed one — above the table
+2. `sentences.traffic`
+3. every `sentences.table` line, a blank line, every `sentences.belowTable` line as its own `- ` bullet,
    a blank line, `sentences.pick` (SKILL.md § Blocks the CLI renders, the rank table row) — the
    belowTable lines are `sentences.ranking`, `sentences.population`, each `sentences.realism`,
    `sentences.ceiling`, `sentences.blocked`, `sentences.price`, then every `sentences.warnings` line
-3. the privacy sentence (`privacy.sentence` — due for `recommendation.links` whatever
-   `recommendation.privacy` says), then `recommendation.links`, each with the lever it lifts
-4. `boundary` — whole (SKILL.md § The boundary, rendered)
-5. the one question
+4. the privacy sentence (`privacy.sentence` — due for `recommendation.links` whatever
+   `recommendation.privacy` says), then `recommendation.links`, each with the lever it lifts; under a
+   structural pick's link, its row's `sentences.diff` line(s), whole
+5. `boundary` — whole (SKILL.md § The boundary, rendered)
+6. the one question
 
 ## Boundary
 Rendered: print `boundary` whole, after the pick and the links. Nothing about a row or the pick after it.
@@ -41,8 +43,10 @@ Rendered: print `boundary` whole, after the pick and the links. Nothing about a 
   budget; no link.
 - A lever with `lift` 0 (`sentences.ceiling` / `sentences.blocked`) is never attempted with a variant of
   your own; `renewals` is a calendar read with no sample size.
-- `price` is not ranked: a price test is `cases/uc-08-test-plan.md`'s means test (σ from the reader's
-  data).
+- `price` is ranked as a threshold on each plan's take (the `price:` rows); a revenue-per-user price
+  test is `cases/uc-08-test-plan.md`'s means test (σ from the reader's data).
+- A structural row the reader wants to pursue → `cases/uc-13-test-an-offer-change.md` (its break-even,
+  the reaction question, the test).
 
 ## Worked example
 
@@ -56,6 +60,9 @@ days. ONE run, in JSON:
 npx -y @segmently/cli ue rank seed.json
 ```
 
+This run's `sentences.ledger` is absent — no card has opened an entry yet, so nothing prints above
+the table.
+
 `sentences.traffic`, every `sentences.table` line, every `sentences.belowTable` line
 (`sentences.ranking`, `sentences.population`, each `sentences.realism`, `sentences.ceiling`,
 `sentences.blocked`, `sentences.price`, then every `sentences.warnings` line) and `sentences.pick` —
@@ -67,12 +74,24 @@ printed whole, in this order:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | p1 | 0.1 (assumed lift) | 5112.01 | 1.25 | 986.84 | 3763 | 7.63 | 11289 | 0.0501 | 0.0288 | true | n/a |
 | p2 | 0.1 (assumed lift) | 5112.01 | 1.25 | 296.05 | 1565 | 10.57 | 15650 | 0.0594 | 0.0343 | true | n/a |
+| price:Annual subscription=131.99 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 3.55 pts | 2.02 pts | false | pays while Annual subscription's take stays ≥ 13.6 % |
+| price:Annual subscription=107.99 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 3.83 pts | 2.19 pts | false | pays while Annual subscription's take stays ≥ 16.6 % |
+| price:Monthly subscription=21.99 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 4.32 pts | 2.48 pts | false | pays while Monthly subscription's take stays ≥ 23.2 % |
+| price:Monthly subscription=17.99 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 4.59 pts | 2.64 pts | false | pays while Monthly subscription's take stays ≥ 28.4 % |
+| trial-add:Monthly subscription=free~7 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 6.07 pts | 3.03 pts | false | pays while the share of trial starters taken from Monthly subscription stays ≤ 37 % |
+| trial-add:Annual subscription=free~7 | at the break-even | n/a | 1.14 | 51.81 | n/a | n/a | n/a | 6.07 pts | 3.03 pts | false | pays while the share of trial starters taken from Annual subscription stays ≤ 37 % |
 | p3 | 0.1 (assumed lift) | 5112.01 | 1.25 | 148.03 | 2978 | 40.24 | 59560 | 0.116 | 0.0666 | false | not at this traffic: within 30 days you can only see a ≥ 11.6% change — test a bigger change, or raise volume |
 | bought | 0.1015 (assumed lift; typed +10.00 % → landed +10.15 %, snapped) | 5175.93 | 1.25 | 51.81 | 2281 | 88.05 | 130342.86 | 0.1745 | 0.1004 | false | not at this traffic: within 30 days you can only see a ≥ 17.4% change — test a bigger change, or raise volume |
 | mix | 0.1 (assumed lift) | 1474.2 | 1.17 | 51.81 | 9331 | 360.21 | 533200 | 0.363 | 0.204 | false | shifts picks toward Annual subscription, the product whose share move gains the most; not at this traffic: within 30 days you can only see a ≥ 36.3% change — test a bigger change, or raise volume |
 | close | 0 | 0 | 1.14 | 20.93 | n/a | n/a | n/a | n/a | n/a | false | at its ceiling: payment completion is already 100.0% and the calculator's own control stops there |
 | trialConv | 0 | 0 | 1.14 | 0 | n/a | n/a | n/a | n/a | n/a | false | no product on the paywall has a trial |
 | renewals | 0.1014 (assumed lift; typed +10.00 % → landed +10.14 %, snapped) | 2328.26 | 1.19 | 20.93 | n/a | n/a | n/a | n/a | n/a | false | calendar: one billing period per read |
+| upsell:Monthly subscription~One-time add-on | at the benchmark | 1164.71 | 1.16 | 13.21 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of upsell acceptance the calculator tried (from 1 %) |
+| downsell:Monthly subscription~Annual subscription 30% off | at the benchmark | 7464.56 | 1.3 | 19.49 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of downsell acceptance the calculator tried (from 1 %) |
+| downsell:Monthly subscription~Annual subscription 7d trial | at the benchmark | 3999.02 | 1.22 | 19.49 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of downsell acceptance the calculator tried (from 1 %) |
+| upsell:Annual subscription~One-time add-on | at the benchmark | 680.56 | 1.15 | 7.72 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of upsell acceptance the calculator tried (from 1 %) |
+| downsell:Annual subscription~Annual subscription 30% off | at the benchmark | 4361.65 | 1.23 | 11.39 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of downsell acceptance the calculator tried (from 1 %) |
+| downsell:Annual subscription~Annual subscription 7d trial | at the benchmark | 2336.68 | 1.19 | 11.39 | n/a | n/a | n/a | n/a | n/a | false | clears at every point of downsell acceptance the calculator tried (from 1 %) |
 
 - Ranked by gain per day of testing: `p1` and `p2` are learnable inside 30 days in this run's `realistic` column.
 - The population a test can use depends on the lever's place in the funnel — 986.84 funnel starts a day for `p1`, 296.05 funnel starts past step 1 a day for `p2`, 148.03 funnel starts reaching the paywall a day for `p3`, 51.81 buy-taps a day for `bought`, 51.81 buy-taps a day for `mix`, 20.93 buy-taps that pick a paid product a day for `close`, 0 trial starters a day for `trialConv` and 20.93 payers a day for `renewals`.
@@ -81,11 +100,15 @@ printed whole, in this order:
 - Within 30 days you can only see a ≥ 36.3% change on `mix`.
 - `close`: at ceiling — no lift to test (at its ceiling: payment completion is already 100.0% and the calculator's own control stops there).
 - `trialConv`: no product on the paywall has a trial.
-- Price is not ranked here — a price test needs the variance of revenue per user from your own data.
+- Price is ranked below as a threshold on each plan's take (the `price:` rows); a revenue-per-user price test still needs the variance of revenue per user from your own data.
 - rank bought: +10.00% was asked; the calculator's own control puts it on its grid and the lifted scenario carries +10.15% — every figure of this row uses the landed lift
 - rank renewals: +10.00% was asked; the calculator's own control puts it on its grid and the lifted scenario carries +10.14% — every figure of this row uses the landed lift
 
 `p1` is the pick (`recommendation.first`), `p2` the runner-up (`recommendation.runnerUp`).
+
+None of the 12 structural rows is `realistic`, so none can out-rank `p1` or `p2` here — a structural
+row only reaches a plan of its own with a stated belief, `cases/uc-13-test-an-offer-change.md`; this
+run prints no `sentences.diff`.
 
 `base`: `profitPerStart` 0.20, `roas` 1.14; `recommendation.links` — the two lifted variants,
 round-trip checked.
@@ -120,6 +143,7 @@ This link carries your numbers in plain text — browser history, referrers and 
 > - $45,000 a month — assumed: the book's volume
 > - the book's first renewal behind payback (monthly 60 %, from `words.payback`) — assumed: the book
 > - the +10 % on `p1`, `p2`, `p3`, `bought`, `mix` and `renewals` — assumed: `ue rank`'s default ("assumed lift"), at each lever's landed `lift` in the table.
+> - the 12 structural rows of this table — their targets, prices and trials: assumed: the CLI's proposals (price ± the run's lift, a 7-day free trial, a $29 add-on, the annual downsells)
 > - the default horizons, 30 and 90 days (`ue rank`'s own) — assumed
 > - the 50/50 split of the test this table plans — assumed: the test design
 > - `p1` is decidable in 7.63 days and `p2` in 10.57 days at this budget.

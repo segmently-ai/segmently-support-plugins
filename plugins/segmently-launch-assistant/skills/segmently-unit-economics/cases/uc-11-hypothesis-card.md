@@ -18,12 +18,13 @@ input by `walk.lines`, never by the stage alone.
 
 ## Calls
 - The choice run `ue rank .ue/<slug>.json --horizon 14,21,30` judges `realistic` at its shortest horizon,
-  so it only helps choose; the card's table is a fresh `ue rank .ue/<slug>.json --horizon <N>` — ONE run,
-  JSON, no link with it (asked for one: SKILL.md § The loop, step 4).
+  so it only helps choose; the card's table is a fresh `ue rank .ue/<slug>.json --horizon <N>
+  --metrics-only` (the metric levers; UC-13: an offer change) — ONE run, JSON, no link with it (asked for
+  one: SKILL.md § The loop, step 4).
 - The card: the CLI lands the lift (its `snapped` warning gives typed → landed; the card quotes the
   landed lift) and writes the variant at it, `label` and `measuredOn` set — never build or edit it by
-  hand; name it in `variants[]` by its `label`:
-  `ue rank .ue/<slug>.json --horizon <N> --override <lever>=<lift> --card .ue/<slug>/card-<lever>.json`
+  hand; name it in `variants[]` by its `label`: `ue rank .ue/<slug>.json --horizon <N> --metrics-only
+  --override <lever>=<lift> --card .ue/<slug>/card-<lever>.json`
 - The read (field 10), on the project before any re-base; `--lever` is the card's lever — any rank lever
   but `renewals`: `ue stat read --a <n>/<x> --b <n>/<x> --project-file .ue/<slug>.json --lever <lever>
   --horizon <N> --belief <the card's typed lift>`
@@ -37,17 +38,17 @@ input by `walk.lines`, never by the stage alone.
    CLI renders, the rank table), then its `boundary` whole — learnable rows are THIS run's `realistic`
    column. The choice run: the same, no `sentences.pick`.
 2. The one question of Turn 2, naming only its lever — never the pick or a row again (rule 5).
-3. The card, ten fields in order, each figure with its unit:
+3. The card, ten fields, each with its unit (field 10 too: `cases/uc-13-test-an-offer-change.md` Turn 7):
 
 | Field | Prints |
 |---|---|
 | (1) Horizon and traffic | N, `base.startsPerDay`, the budget. |
 | (2) Base | Its evaluate: value per buy-tap net, required, CAC per payer, profit per start, ROAS on its `valueBasis`, payback as `words.payback` prints it, whole, `readiness.line`; its `walk.lines` as the provenance, word for word (every deduction with its value among them); the base link, `privacy.sentence` above its call when its `privacy.due`. |
 | (3) Metric | Key: profit per start, its base value as field (2) prints it; nearest: the lever on its population (`populationPerDay`), today's rate, the row's `mde`, its stage label from this fixed map, never asked: `p1` → acquisition; `p2` → activation; `renewals` → retention; the rest → revenue. |
-| (4) Guardrails | Every other table row with its `days` AND its `mde` (its `note` when `mde` is null); the override row's `guardrail.watch`, verbatim, and always CAC per payer and payback from the base. |
+| (4) Guardrails | Every other table row with its `days` AND its `mde` (its `note` when `mde` is null); the override row's `guardrail.watch`, verbatim, and its checkpoint — the nearest step's `checkpointNPerArm` per arm, from day `checkpointDay`, in a test of `testDays` days (fields of `guardrail`); and always CAC per payer and payback from the base. |
 | (5) Hypothesis | "If <the change>, then <lever> <today> → <landed>, +<landed lift> % (believed); if the lift holds, profit per start $<base> → $<variant> and ROAS <base> → <variant>, +$<gainPerMonth> a month at <volume>.", then the card block whole (SKILL.md § Blocks the CLI renders) — `card.lines` when the card comes inline; from the `--card` run every `card.prepared` line → every `card.snapped` line → the `card.evaluateCommand` run and its KPIs (the card's, never the base's — rule 9) → `card.walkLines` as its provenance (never that evaluate's `walk.lines`) → `card.roasTie` → the privacy sentence → the `card.linkCommand` run and its link. |
 | (6) Change | "[your mockup — <their change in their words>]", even when described, then "must move <lever> only;" and the override row's `guardrail.sentence`, verbatim — never a drop or a quotient of your own. |
-| (7) Test plan | The override row's `nPerArm`, `days`, `spendRouted`, `mde`, then every `sentences.warnings` line of its run, one per line; one read at the end; `readiness.line` too for `mix`, `trialConv`. |
+| (7) Test plan | The override row's `nPerArm`, `days`, `spendRouted`, `mde`, then every `sentences.warnings` line of its run, one per line; one read at the end; `readiness.line` too for `mix`, `trialConv`. While it runs: `ue exp start` the day it goes live, then `ue stat watch` once a day with the day's counters (`cases/uc-08-test-plan.md`, Watching a running test) — the primary is read once, at n = `nPerArm` per arm; on `stop`, the printed `ue exp close` call. |
 | (8) Gain if the lift holds | "$<gainPerMonth> a month (`gainPerMonth`); charges per payer are the retention unit.", that sentence whole, never a churn %. |
 | (9) Cost | The override row's `bet.sentence`, verbatim, then "Beside it: $<spendRouted> routed over <days> days."; `--cost` / `--odds` only with numbers the reader gave (the growth cycle, `cases/uc-12-growth-cycle.md`, asks for them) — no invented hours, rates, lifts or odds, and no other ratio of gain to cost. |
 | (10) Read and close | Field 10's read (Calls) with its placeholders, IN the card before any counts. |
@@ -73,8 +74,7 @@ a 30 nobody named, `--horizon-default`).
   days you can only see a ≥ X % change" — no card.
 - A price → `ue stat means` with the reader's σ (`cases/uc-08-test-plan.md`); a trial lever →
   `readiness.line`'s trial days first; `renewals` → a calendar read (its refusal says what to read).
-- The re-base only after a `significant` read of THIS card's lever; a `mix` read or a drop has no
-  realized run (its `context.rebase.lines` are the effect).
+- Re-base needs THIS card's `significant` read; a `mix` read or drop leaves only `context.rebase.lines`.
 - A card turn's `ue check` adds `--expect uc-11:card` (SKILL.md § The loop, step 6).
 
 ## Worked example
@@ -104,7 +104,7 @@ and save its `scenario` field as `base.json` — and, as the project file, `.ue/
 ONE run with three horizons, in JSON, to see the `mde` columns:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 14,21,30
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 14,21,30
 ```
 
 `sentences.traffic`, every `sentences.table` line and every `sentences.belowTable` line — printed whole
@@ -172,7 +172,7 @@ Nothing else is asked before the table.
 CLI's default +10 % relative ("assumed lift"). ONE run, in JSON:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21
 ```
 
 `sentences.traffic`, every `sentences.table` line, every `sentences.belowTable` line and `sentences.pick`
@@ -232,7 +232,7 @@ calculator's grid and writes `.ue/synthetic-meditation/card-p1.json` — its own
 labelled "card p1 +11.84 % (believed)", `measuredOn` "believed lift, not observed, 2026-09-23":
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json
 ```
 
 The card's lift is the landed one — the row's `lift` 0.118421, above the row's `mde` at 21 days (0.0549),
@@ -289,8 +289,10 @@ in `variants[]` after the answer is its label, "card p1 +11.84 % (believed)".
    0.0429; `p3` 45.44 days, `mde` 0.1386; `bought` 111.66 days, `mde` 0.2332; `mix` 438.74 days, `mde`
    0.4906; `trialConv` 319.55 days, `mde` 0.5221; `renewals` a calendar read (calendar: one billing
    period per read). The override row's `guardrail.watch`, verbatim: Watch the steps after `p1` — `p2`,
-   `p3`, `bought`, `close`, `trialConv` and `renewals` must not drop while it is tested. CAC per payer
-   $75.10 and payback from the base.
+   `p3`, `bought`, `close`, `trialConv` and `renewals` must not drop while it is tested. Its checkpoint:
+   the drop that cancels the gain on `p2` is readable at 1155 per arm (`checkpointNPerArm`), from day
+   7.43 (`checkpointDay`), in a test of 4.56 days (`testDays`). CAC per payer $75.10 and payback from the
+   base.
 5. **Hypothesis** — If the landing's first screen asks one goal question and routes to the matching step
    1, then `p1` 38 % → 42.5 %, +11.84 % (believed; typed +12.00 %, landed +11.84 %); if the lift holds,
    profit per start −$0.03 → $0.10 and ROAS 0.97 → 1.09, +$3,157.16 a month at $900 a day.
@@ -338,15 +340,26 @@ in `variants[]` after the answer is its label, "card p1 +11.84 % (believed)".
    It returns `roundTrip` `ok` and `warnings` `[]` — the file is already on the grid.
 6. **Change** — [your mockup — the landing's first screen asks one goal question (sleep / stress / focus)
    and routes to the matching step 1]. It must move `p1` only; `p2` must not fall: −10.59 % there cancels
-   the +11.84 % on `p1` ($3,157.16 a month, `gainPerMonth`); within 21 days you can only see a ≥ 6.2%
-   change on `p2`, so a drop that cancels the gain is visible in this test.
+   the +11.84 % on `p1` ($3,157.16 a month, `gainPerMonth`); guardrail «p2» is not readable within the
+   test's 4.56 days (readable from day 7.43); extend the test to 7.43 days or keep it as a kill switch
+   only.
 7. **Test plan** — 1864 per arm, 4.56 days, $4,100.80 routed through the test, `mde` 0.0549 at 21 days;
-   one read at the planned end, no daily peeking. The override run's `sentences.warnings` — printed
-   whole, one per line, the other levers' default landings included:
+   one read of `p1` at the planned end, never a daily peek at it. The override run's `sentences.warnings`
+   — printed whole, one per line, the other levers' default landings included:
 
    - rank p1: +12.00% was asked; the calculator's own control puts it on its grid and the lifted scenario carries +11.84% — every figure of this row uses the landed lift
    - rank p3: +10.00% was asked; the calculator's own control puts it on its grid and the lifted scenario carries +9.38% — every figure of this row uses the landed lift
    - rank close: +10.00% was asked; the calculator's own control stops at its range and the lifted scenario carries +4.53% — every figure of this row uses the landed lift
+
+   While it runs: `ue exp start` the day it goes live, then once a day `ue stat watch` with the reader's
+   counters — `p1` and `p2` so far, and `p2` on the last full day; `p2` is field 6's kill switch:
+
+   ```bash
+   npx -y @segmently/cli ue stat watch --project-file .ue/synthetic-meditation.json --lever p1 --a <n>/<x> --b <n>/<x> --guardrail p2=<n>/<x>,<n>/<x> --today p2=<n>/<x>,<n>/<x>
+   ```
+
+   It never prints `p1`'s rates; at 1864 per arm it prints field 10's read to run, and on `stop` the
+   `ue exp close` call that closes the entry.
 
 8. **Gain if the lift holds** — $3,157.16 a month (`gainPerMonth`); charges per payer are the retention
    unit.

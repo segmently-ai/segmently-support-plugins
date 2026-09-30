@@ -309,7 +309,17 @@ function resolvePromptQuestion(prompt, args, context) {
   const mediaAssetLayoutGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys ? null : mediaAssetLayoutGuideKeysFromPrompt(prompt);
   const copyTextValueGuideKeys = integrationGuideKeys || productSelectionPaywallGuideKeys || variableBindingGuideKeys || basicConfigObjectToggleGuideKeys || optionsStructureGuideKeys || headerNavigationGuideKeys || flexibleLinkedProductGuideKeys || paywallBodyBenefitsGuideKeys || paywallFooterLinksGuideKeys || layoutSpacingGuideKeys || actionBarRichStyleGuideKeys || carouselSlidesTimingGuideKeys || customHtmlWebEmbedGuideKeys || mediaAssetLayoutGuideKeys ? null : copyTextValueGuideKeysFromPrompt(prompt);
   const domainOperationGuideKeys = variableBindingGuideKeys ?? basicConfigObjectToggleGuideKeys ?? optionsStructureGuideKeys ?? headerNavigationGuideKeys ?? flexibleLinkedProductGuideKeys ?? productSelectionPaywallGuideKeys ?? paywallBodyBenefitsGuideKeys ?? paywallFooterLinksGuideKeys ?? layoutSpacingGuideKeys ?? actionBarRichStyleGuideKeys ?? carouselSlidesTimingGuideKeys ?? customHtmlWebEmbedGuideKeys ?? mediaAssetLayoutGuideKeys ?? copyTextValueGuideKeys;
-  let action = domainOperationGuideKeys ? null : resolveActionFromPrompt(prompt, context.actions.actions ?? []);
+  const topicMatches = reviewedTopicMatchesFromPrompt(prompt, context);
+  const topicAliases = uniqueStrings(topicMatches.flatMap(match => match.aliases));
+  const topicSpecificity = Math.max(0, ...topicMatches.map(match => match.words));
+  // Explicit action rules stay authoritative; only the fuzzy intent-phrase scoring must agree with a
+  // reviewed topic (otherwise "change the transition between screens" scores a text-alignment action),
+  // unless the action's intent covers more prompt words than the topic phrase does ("change the font
+  // family of the text field" is about the text field, not the funnel font).
+  let action = domainOperationGuideKeys ? null : resolveActionFromPrompt(prompt, context.actions.actions ?? [], {
+    acceptFuzzy: (candidate, score) => score > topicSpecificity
+      || selectionAgreesWithTopic(guideKeysForResolvedAction(candidate), topicAliases, context),
+  });
   const explicitActionIntent = hasExplicitActionIntent(prompt);
   const articleFetchIntent = hasArticleFetchIntent(prompt) && !explicitActionIntent;
   const showIntent = hasShowIntent(prompt) && !explicitActionIntent && !articleFetchIntent;
@@ -322,7 +332,10 @@ function resolvePromptQuestion(prompt, args, context) {
   const fallbackGuideKeys = resolveGuideKeysFromPrompt(prompt, context.guideEvidence, context.teachReference, {
     allowGenericFallback: !articleSearchFound || showIntent || explicitActionIntent,
   });
-  let guideKeys = domainOperationGuideKeys ?? actionGuideKeys ?? (directArticleOnly ? [] : integrationGuideKeys ?? fallbackGuideKeys ?? []);
+  const topicCheckedFallbackGuideKeys = domainOperationGuideKeys || integrationGuideKeys || selectionAgreesWithTopic(fallbackGuideKeys, topicAliases, context)
+    ? fallbackGuideKeys
+    : null;
+  let guideKeys = domainOperationGuideKeys ?? actionGuideKeys ?? (directArticleOnly ? [] : integrationGuideKeys ?? topicCheckedFallbackGuideKeys ?? []);
   if (!action && explicitActionIntent) {
     action = resolveActionForGuideKeys(guideKeys, context.actions.actions ?? []);
     if (action) guideKeys = guideKeysForResolvedAction(action);
@@ -681,17 +694,75 @@ function readArticleContentRef(contentRef) {
   }
 }
 
+/**
+ * Reviewed topic phrases: multi-word customer phrases from the reviewed synonym groups
+ * (`references/article-search-synonyms.json`, projected into the search index) that occur
+ * verbatim in the prompt. They name the article(s) a customer topic belongs to, so they are
+ * stronger evidence than the broad keyword rules below (for example the word "transition"
+ * alone reads as "connect screens" there). Single-word synonyms are ignored: too generic.
+ */
+function reviewedTopicAliasesFromPrompt(prompt, context) {
+  return uniqueStrings(reviewedTopicMatchesFromPrompt(prompt, context).flatMap(match => match.aliases));
+}
+
+/** Matched reviewed phrases (whole words only) with their article aliases and word count. */
+function reviewedTopicMatchesFromPrompt(prompt, context) {
+  const synonyms = context.articleSearchIndex?.synonyms;
+  if (!synonyms) return [];
+  const text = normalize(prompt);
+  const known = new Set([
+    ...(context.articleDirectory?.articles ?? []).map(article => article.articleAlias),
+    ...(context.articleRegistry?.articles ?? []).map(article => article.articleAlias),
+  ]);
+  const matches = [];
+  for (const [phrase, phraseAliases] of Object.entries(synonyms)) {
+    const normalized = normalize(phrase).trim();
+    if (!/\s/.test(normalized) || !containsWholePhrase(text, normalized)) continue;
+    const aliases = (phraseAliases ?? []).filter(alias => known.has(alias));
+    if (aliases.length === 0) continue;
+    matches.push({ phrase: normalized, aliases, words: significantWordCount(normalized) });
+  }
+  return matches;
+}
+
+/** Word-boundary phrase match that also works for Cyrillic ("change font" must not match "change fonts"). */
+function containsWholePhrase(text, phrase) {
+  const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(^|[^a-zа-я0-9])${escaped}($|[^a-zа-я0-9])`).test(text);
+}
+
+/** Words counted the same way as phraseScore (3+ characters). */
+function significantWordCount(phrase) {
+  return phrase.split(/[^a-zа-я0-9#]+/i).filter(token => token.length >= 3).length;
+}
+
+/** True when the guide keys / action point at an article the reviewed topic names. */
+function selectionAgreesWithTopic(guideKeys, topicAliases, context) {
+  if (topicAliases.length === 0 || !guideKeys || guideKeys.length === 0) return true;
+  const topic = new Set(topicAliases);
+  const articles = [...(articleAliasesForGuideKeys(guideKeys, context) ?? []), ...guideKeys];
+  return articles.some(alias => topic.has(alias));
+}
+
 function articleAliasesFromPrompt(prompt, context) {
+  const { aliases, namedArticle } = articleAliasesFromPromptBase(prompt, context);
+  const topic = reviewedTopicAliasesFromPrompt(prompt, context);
+  // A prompt that names an article by its alias or title keeps that article first.
+  if (topic.length === 0 || aliases.length === 0 || namedArticle) return aliases;
+  return uniqueStrings([...topic, ...aliases]).slice(0, 4);
+}
+
+function articleAliasesFromPromptBase(prompt, context) {
   const directoryArticles = context.articleDirectory?.articles ?? [];
   const registryArticles = context.articleRegistry?.articles ?? [];
   const articles = directoryArticles.length > 0 ? directoryArticles : registryArticles;
-  if (!Array.isArray(articles) || articles.length === 0) return [];
+  if (!Array.isArray(articles) || articles.length === 0) return { aliases: [], namedArticle: false };
   const text = normalize(prompt);
   if (hasWebFunnelFacebookCapiIntent(prompt) && articles.some(a => a.articleAlias === 'facebook-capi-web-destination')) {
-    return ['facebook-capi-web-destination'];
+    return { aliases: ['facebook-capi-web-destination'], namedArticle: true };
   }
   const direct = directArticleAliasesFromPromptText(text, articles);
-  if (direct.length > 0) return direct;
+  if (direct.length > 0) return { aliases: direct, namedArticle: true };
   const candidateAliases = candidateAliasesFromSearchIndex(text, context.articleSearchIndex);
   const candidateSet = candidateAliases.length > 0 ? new Set(candidateAliases) : null;
   const scored = articles
@@ -707,12 +778,16 @@ function articleAliasesFromPrompt(prompt, context) {
       if (candidateSet?.has(alias)) score += 20;
       score += Math.min(30, tags.filter(tag => tag && text.includes(tag.replace(/-/g, ' '))).length * 10);
       score += Math.min(40, articleRegistryTokenScore(text, article));
-      return { article, score };
+      return { article, score, named: Boolean(exactAlias || compactAlias || exactTitle) };
     })
     .filter(item => item.score >= 18)
     .sort((a, b) => b.score - a.score);
   const best = scored[0]?.score ?? 0;
-  return uniqueStrings(scored.filter(item => item.score >= Math.max(18, best - 18)).slice(0, 4).map(item => item.article.articleAlias));
+  return {
+    aliases: uniqueStrings(scored.filter(item => item.score >= Math.max(18, best - 18)).slice(0, 4).map(item => item.article.articleAlias)),
+    // The prompt contains the alias or title of the best-scoring article.
+    namedArticle: scored[0]?.named === true,
+  };
 }
 
 function candidateAliasesFromSearchIndex(text, searchIndex) {
@@ -2129,7 +2204,7 @@ function fail(message) {
 
 main();
 
-function resolveActionFromPrompt(prompt, actions) {
+function resolveActionFromPrompt(prompt, actions, { acceptFuzzy = () => true } = {}) {
   const text = normalize(prompt);
   const rules = [
     { id: 'editor.flexibleSections.screen.screenScrollable', re: /(?=.*(flexible|гибк|секц|section))(?=.*(screen|экран))(?=.*(скролл|scroll|прокрут))/ },
@@ -2282,7 +2357,9 @@ function resolveActionFromPrompt(prompt, actions) {
   for (const action of actions) {
     if (!actionAllowedByPrompt(action.id, text)) continue;
     const score = Math.max(0, ...(action.customerIntent ?? []).map(intent => phraseScore(text, normalize(intent))));
-    if (score > (best?.score ?? 0)) best = { action, score };
+    if (score <= (best?.score ?? 0)) continue;
+    if (!acceptFuzzy(action, score)) continue;
+    best = { action, score };
   }
   return best?.score >= 2 ? best.action : null;
 }
@@ -2296,7 +2373,17 @@ function resolveActionForGuideKeys(guideKeys, actions) {
   return candidates[0] ?? null;
 }
 
+// Animation, transition and motion questions have their own articles and (almost) no DO action:
+// a fuzzy word overlap must never turn them into an unrelated setting patch. The only animation DO
+// (legacy fade-in, content.animated) needs an explicit on/off or legacy request.
+// (Function declarations, not consts: main() runs at module load, before later consts initialise.)
 function actionAllowedByPrompt(actionId, text) {
+  if (/animat/i.test(actionId)) {
+    return /legacy|animation[- ]enabled|(?:^|[^a-zа-я])(?:turn (?:on|off)|enable|disable|включи|выключи|отключи)(?:[^a-zа-я].{0,24})?(?:screen animations?|анимаци[а-я]* экрана)/.test(text);
+  }
+  // "кнопка перехода" is the next button, not a screen transition — its edits keep their DOs.
+  const vocabularyText = text.replace(/кнопк[а-я]*\s+перехода/g, ' ');
+  if (/animat|анимац|transition|переход|motion|entrance|stagger/.test(vocabularyText)) return false;
   if (actionId === 'launch.paywallProducts.create') {
     return /(?=.*(paywall|пейвол|оплат|подпис|тариф|plan|product|товар|price|цена))(?=.*(созд|create|сдел|make|add|добав))/.test(text);
   }

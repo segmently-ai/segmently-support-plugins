@@ -3212,6 +3212,509 @@
       "qualityScore": 1
     },
     {
+      "articleAlias": "help-block-animation",
+      "articleId": null,
+      "title": "Animation — all settings",
+      "oneLineSummary": "Documents every setting of the Animation section in the screen editor: the per-screen Screen Entrance toggle, Entrance style, duration and delay between elements, the Advanced easing and per-element overrides, the Legacy fade-in, the Play animations preview button, and the Products entrance override on Paywall screens. Also explains what visitors see on the published page: the first screen plays its entrance right away, later screens play it as they arrive, and visitors who prefer reduced motion see no entrance. Use this when customers ask how to animate the elements of one screen, change the entrance style or speed, add a stagger, or preview a screen's animation.",
+      "tags": [
+        "article-section",
+        "Text",
+        "paywall",
+        "product-catalog",
+        "Media",
+        "guide-section",
+        "webembed",
+        "flexible-layout",
+        "setting",
+        "animation",
+        "entrance",
+        "advanced",
+        "animations",
+        "screen-entrance",
+        "screen-editor",
+        "animation-section",
+        "reduced-motion"
+      ],
+      "keywords": [
+        "help-block-animation",
+        "Animation",
+        "all",
+        "settings",
+        "Documents",
+        "every",
+        "setting",
+        "of",
+        "the",
+        "section",
+        "in",
+        "screen",
+        "editor:",
+        "per-screen",
+        "Screen",
+        "Entrance",
+        "toggle",
+        "style",
+        "duration",
+        "and",
+        "delay",
+        "between",
+        "elements",
+        "Advanced",
+        "easing",
+        "per-element",
+        "overrides",
+        "Legacy",
+        "fade-in",
+        "Play",
+        "animations",
+        "preview",
+        "button",
+        "Products",
+        "entrance",
+        "override",
+        "on",
+        "Paywall",
+        "screens",
+        "Also",
+        "explains",
+        "what",
+        "visitors",
+        "see",
+        "published",
+        "page:",
+        "first",
+        "plays",
+        "its",
+        "right",
+        "away",
+        "later",
+        "play",
+        "it",
+        "as",
+        "they",
+        "arrive",
+        "who",
+        "prefer",
+        "reduced",
+        "motion",
+        "no",
+        "Use",
+        "this",
+        "when",
+        "customers",
+        "ask",
+        "how",
+        "to",
+        "animate",
+        "one",
+        "change",
+        "or",
+        "speed",
+        "add",
+        "stagger",
+        "animation",
+        "legacy",
+        "screen-entrance",
+        "screen-editor"
+      ],
+      "subarticles": [
+        {
+          "id": "an-paywall-head",
+          "title": "Paywall",
+          "summary": "Paywall",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall"
+          ]
+        },
+        {
+          "id": "an-paywall-products",
+          "title": "Products entrance override",
+          "summary": "On a Paywall screen, the Advanced per-element overrides list adds a “Products” row for the plan cards — set its own entrance style, or None to keep the products in place while the rest of the screen animates in. This row only appears on a Paywall screen; other screen types never show it.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "an-paywall-products-img",
+          "title": "Products entrance override",
+          "summary": "Products entrance override",
+          "tags": [
+            "article-section",
+            "Media",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "an-preview",
+          "title": "Play animations",
+          "summary": "Replays this screen’s entrance in the live preview — its Screen Entrance (or the theme’s default, or the Legacy fade-in) plus every per-element override — so you can check the style, speed and stagger without leaving the editor. Re-clickable while it plays: it restarts.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-preview-head",
+          "title": "Preview",
+          "summary": "Preview",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-preview-img",
+          "title": "Play animations button",
+          "summary": "Play animations button",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "an-related-head",
+          "title": "Related guides",
+          "summary": "Related guides",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-related-theme",
+          "title": "Theme animations: motion schemes<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Pick a motion scheme for a whole theme — the default entrance every screen inherits unless you set its own here.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-related-transitions",
+          "title": "Screen transitions between screens<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Choose how one screen changes into the next — the movement between screens, separate from each screen’s entrance.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-visitors-first",
+          "title": "The first screen plays its entrance as the page appears",
+          "summary": "When a visitor opens your published funnel, the first screen plays its entrance right away, once. It uses the Screen Entrance you set here; on an older screen that still has Legacy fade-in on (and no Screen Entrance), a simple fade-in; otherwise your theme’s entrance. With none of these, the screen appears without an entrance. If the visitor taps or presses a key before the entrance finishes, it ends at once and the screen shows in its final state.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-visitors-head",
+          "title": "What visitors see on your published page",
+          "summary": "What visitors see on your published page",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-visitors-later",
+          "title": "Later screens play their entrance as they arrive",
+          "summary": "Every following screen plays its entrance when it comes into view, after the change between the two screens has settled.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "an-visitors-reduced",
+          "title": "Visitors who prefer reduced motion see no entrance",
+          "summary": "If a visitor’s device is set to reduce motion, nothing animates in: every element simply shows in its final state, exactly as you designed it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "g-advanced-el",
+          "title": "Advanced in the section",
+          "summary": "Advanced in the section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "g-advanced-el-cap",
+          "title": "Element caption",
+          "summary": "Inside the Animation section, this is the “Advanced” group.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "g-advanced-head",
+          "title": "Advanced",
+          "summary": "Advanced",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "g-entrance-el",
+          "title": "Screen entrance in the section",
+          "summary": "Screen entrance in the section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "g-entrance-el-cap",
+          "title": "Element caption",
+          "summary": "Inside the Animation section, this is the “Screen entrance” group.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "g-entrance-head",
+          "title": "Screen entrance",
+          "summary": "Screen entrance",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "intro",
+          "title": "Animation — every setting",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion. This guide documents every setting of the Animation block, grouped by area. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "screen-editor-section-animation/section",
+          "title": "Animation section",
+          "summary": "Screen Entrance sets this screen's entrance style, speed, and stagger. The standard elements then animate in one after another, in a fixed order: header, image or video, title and subtitle, answer choices or feature bullets, paywall products, and action bar, where present. Slides, progress steps, input fields, custom sections, and embedded HTML aren't included. With Screen Entrance off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance, if any (shown as 'Inherited from theme'). Advanced adds easing and per-element overrides. Visitors whose device is set to reduce motion see no animation.",
+          "tags": [
+            "guide-section",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "screen-editor-section-animation/where-it-appears",
+          "title": "Where it appears",
+          "summary": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, ProgressSteps, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+          "tags": [
+            "guide-section",
+            "paywall",
+            "webembed",
+            "flexible-layout"
+          ]
+        },
+        {
+          "id": "screenedit-animation-easing/field",
+          "title": "Entrance easing",
+          "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+          "tags": [
+            "guide-section"
+          ]
+        },
+        {
+          "id": "screenedit-animation-screen-entrance-duration/field",
+          "title": "Entrance duration",
+          "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+          "tags": [
+            "guide-section"
+          ]
+        },
+        {
+          "id": "screenedit-animation-screen-entrance-preset/field",
+          "title": "Entrance style",
+          "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+          "tags": [
+            "guide-section",
+            "paywall"
+          ]
+        },
+        {
+          "id": "screenedit-animation-screen-entrance-stagger/field",
+          "title": "Delay between elements",
+          "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+          "tags": [
+            "guide-section"
+          ]
+        },
+        {
+          "id": "screenedit-animation-screen-entrance/field",
+          "title": "Give this screen its own entrance",
+          "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+          "tags": [
+            "guide-section"
+          ]
+        },
+        {
+          "id": "screenedit-basic-config-animation-enabled/field",
+          "title": "Legacy fade-in",
+          "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+          "tags": [
+            "guide-section"
+          ]
+        },
+        {
+          "id": "section-context",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "section-context-cap",
+          "title": "Context caption",
+          "summary": "Open the Animation section in the screen editor to configure its settings.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "set-animation-content-animated",
+          "title": "Legacy fade-in",
+          "summary": "Shows under Legacy on screens that had it switched on when you opened the editor and have no Screen Entrance set. That includes older screens, and screens whose entrance came from a theme's motion scheme once you switch Screen Entrance off. While on, the screen plays a simple fade-in as it appears; turn on Screen Entrance above to replace it with the style, speed, and stagger you choose. Switched off, the screen follows your theme's entrance, or appears without one if the theme has none.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation",
+          "title": "Give this screen its own entrance",
+          "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+          "tags": [
+            "article-section",
+            "Text",
+            "setting",
+            "animation",
+            "entrance"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-preset",
+          "title": "Entrance style",
+          "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "setting",
+            "animation",
+            "entrance"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-preset-img",
+          "title": "Entrance style",
+          "summary": "Entrance style",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-timing-duration",
+          "title": "Entrance duration",
+          "summary": "How long each animated element's entrance lasts, in milliseconds, from 50 to 10,000; Screen Entrance starts at 450. Around 300 to 600 ms feels quick and polished, while long entrances make visitors wait before they can read and tap. The preview replays after every change, so you can judge the speed right away.",
+          "tags": [
+            "article-section",
+            "Text",
+            "setting",
+            "animation",
+            "entrance"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-timing-duration-img",
+          "title": "Entrance duration",
+          "summary": "Entrance duration",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-timing-easing",
+          "title": "Entrance easing",
+          "summary": "Shapes how the entrance speeds up and slows down. The default, Ease Out, starts quickly and settles gently; Ease Out Back adds a slight overshoot, and Linear moves at a constant speed. It sits under Advanced and only appears while Screen Entrance is on, and most screens can keep the default.",
+          "tags": [
+            "article-section",
+            "Text",
+            "setting",
+            "animation",
+            "advanced"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-enteranimation-timing-easing-img",
+          "title": "Entrance easing",
+          "summary": "Entrance easing",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-stagger-delayperitem",
+          "title": "Delay between elements",
+          "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+          "tags": [
+            "article-section",
+            "Text",
+            "setting",
+            "animation",
+            "entrance"
+          ]
+        },
+        {
+          "id": "set-animation-content-screenanimation-stagger-delayperitem-img",
+          "title": "Delay between elements",
+          "summary": "Delay between elements",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        }
+      ],
+      "relations": {
+        "supportFlowFlows": [],
+        "guideKeys": [
+          "screen-editor-section-animation",
+          "screenedit-animation-screen-entrance",
+          "screenedit-animation-screen-entrance-preset",
+          "screenedit-animation-screen-entrance-duration",
+          "screenedit-animation-screen-entrance-stagger",
+          "screenedit-animation-easing",
+          "screenedit-basic-config-animation-enabled"
+        ],
+        "actionIds": []
+      },
+      "qualityScore": 1
+    },
+    {
       "articleAlias": "help-block-background",
       "articleId": null,
       "title": "Background",
@@ -3389,18 +3892,17 @@
       "articleAlias": "help-block-basic-config",
       "articleId": null,
       "title": "Basic Config — all settings",
-      "oneLineSummary": "Documents screen-level Basic Config controls that change runtime behavior rather than visible content. It covers entrance animation, offline or cached media, device permission prompts, auto-advance countdown timing, and the screen types where these settings are available.",
+      "oneLineSummary": "Documents screen-level Basic Config controls that change runtime behavior rather than visible content. It covers offline or cached media, device permission prompts, auto-advance countdown timing, and the screen types where these settings are available. Entrance animation is not part of Basic Config: it has its own Animation section, documented in the Animation article.",
       "tags": [
         "article-section",
-        "Media",
         "Text",
+        "Media",
         "guide-section",
         "labels-copy",
         "paywall",
         "webembed",
         "setting",
         "basicConfig",
-        "animation",
         "countdown",
         "offline",
         "permission",
@@ -3427,8 +3929,6 @@
         "content",
         "It",
         "covers",
-        "entrance",
-        "animation",
         "offline",
         "or",
         "cached",
@@ -3447,16 +3947,35 @@
         "these",
         "are",
         "available",
+        "Entrance",
+        "animation",
+        "is",
+        "not",
+        "part",
+        "of",
+        "Config:",
+        "it",
+        "has",
+        "its",
+        "own",
+        "Animation",
+        "section",
+        "documented",
+        "in",
+        "article",
         "basic",
         "config",
         "auto",
         "advance",
+        "looking",
+        "for",
+        "animations",
         "basic-config",
         "runtime-behavior",
         "permissions",
         "article-section",
-        "Media",
         "Text",
+        "Media",
         "guide-section",
         "labels-copy",
         "paywall",
@@ -3468,51 +3987,25 @@
         "Editor:",
         "Know",
         "what",
-        "section",
         "when",
         "to",
         "adjust",
-        "it",
-        "while",
-        "editing",
-        "screenedit-basic-config-animation-enabled",
-        "field:",
-        "Play",
-        "Animations",
-        "screenedit-basic-config-offline-first",
-        "Reuse",
-        "screenedit-basic-config-system-permission-enabled",
-        "Ask",
-        "For",
-        "Device",
-        "Permission",
-        "screenedit-basic-config-permission-type",
-        "Which",
-        "To"
+        "while"
       ],
       "subarticles": [
         {
-          "id": "g-animation-el",
-          "title": "Animation in the section",
-          "summary": "Animation in the section",
-          "tags": [
-            "article-section",
-            "Media"
-          ]
-        },
-        {
-          "id": "g-animation-el-cap",
-          "title": "Element caption",
-          "summary": "Inside the Basic Config section, this is the Animation.",
+          "id": "bc-anim-head",
+          "title": "Looking for animations?",
+          "summary": "Looking for animations?",
           "tags": [
             "article-section",
             "Text"
           ]
         },
         {
-          "id": "g-animation-head",
-          "title": "Animation",
-          "summary": "Animation",
+          "id": "bc-anim-pointer",
+          "title": "Animation — all settings<sep>  —  </sep><detail>@details</detail>",
+          "summary": "The entrance animation and its per-element overrides are not part of Basic Config. They have their own Animation section, right above Basic Config in the screen editor.",
           "tags": [
             "article-section",
             "Text"
@@ -3602,7 +4095,7 @@
         {
           "id": "intro",
           "title": "Basic Config — every setting",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance. This guide documents every setting of the Basic Config block, grouped by area. Each setting matches a real control in the screen editor.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance. This guide documents every setting of the Basic Config block, grouped by area. Each setting matches a real control in the screen editor.",
           "tags": [
             "article-section",
             "Text"
@@ -3611,7 +4104,7 @@
         {
           "id": "screen-editor-section-basic-config/section",
           "title": "Basic Config section",
-          "summary": "Behavior settings for this screen that do not change its visible copy: the entry animation, preferring cached assets, requesting a system permission, and an optional auto-advance countdown. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
+          "summary": "Behavior settings for this screen that do not change its visible copy: preferring cached assets, requesting a system permission, and an optional auto-advance countdown; entrance animations are set in the Animation section. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
           "tags": [
             "guide-section",
             "labels-copy"
@@ -3625,14 +4118,6 @@
             "guide-section",
             "paywall",
             "webembed"
-          ]
-        },
-        {
-          "id": "screenedit-basic-config-animation-enabled/field",
-          "title": "Play Screen Animations",
-          "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
-          "tags": [
-            "guide-section"
           ]
         },
         {
@@ -3700,18 +4185,6 @@
           "tags": [
             "article-section",
             "Text"
-          ]
-        },
-        {
-          "id": "set-basicconfig-content-animated",
-          "title": "Play Screen Animations",
-          "summary": "Turns on the entrance, exit, and element animations you set up in the screen's animation settings; when off, the screen simply appears instantly. Use it on intro and hero screens where motion feels polished and guides the eye. Leave it off on dense question screens where visitors want the controls ready to tap right away.",
-          "tags": [
-            "article-section",
-            "Text",
-            "setting",
-            "basicConfig",
-            "animation"
           ]
         },
         {
@@ -3819,7 +4292,6 @@
         "supportFlowFlows": [],
         "guideKeys": [
           "screen-editor-section-basic-config",
-          "screenedit-basic-config-animation-enabled",
           "screenedit-basic-config-offline-first",
           "screenedit-basic-config-system-permission-enabled",
           "screenedit-basic-config-permission-type",
@@ -9356,16 +9828,16 @@
       "articleAlias": "help-block-options",
       "articleId": null,
       "title": "Options — all settings",
-      "oneLineSummary": "Documents the Options section for list, grid, and hero-list choice screens. It covers answer items, labels, stored values, selection mode, max selections, random order, list or grid layout, checkbox style, item spacing, padding, images, selected state, and option text/container appearance.",
+      "oneLineSummary": "Documents the Options section for list, grid, and hero-list choice screens. It covers answer items, labels, stored values, selection mode, max selections, random order, list or grid layout, checkbox style, item spacing, padding, images, selected state, option text/container appearance, and the style-settings Animations group: item animation with stagger, and selection and deselection animations.",
       "tags": [
         "stripe-payments",
         "labels-copy",
         "article-section",
         "Text",
+        "Media",
         "guide-section",
         "paywall",
         "product-catalog",
-        "Media",
         "setting",
         "options",
         "layout",
@@ -9377,7 +9849,8 @@
         "spacing",
         "states",
         "choices",
-        "variable-binding"
+        "variable-binding",
+        "animations"
       ],
       "keywords": [
         "help-block-options",
@@ -9421,6 +9894,14 @@
         "text",
         "container",
         "appearance",
+        "style-settings",
+        "Animations",
+        "group:",
+        "animation",
+        "with",
+        "stagger",
+        "deselection",
+        "animations",
         "options",
         "choices",
         "value",
@@ -9429,10 +9910,10 @@
         "stripe-payments",
         "article-section",
         "Text",
+        "Media",
         "guide-section",
         "paywall",
         "product-catalog",
-        "Media",
         "setting",
         "containers",
         "styles",
@@ -9451,15 +9932,7 @@
         "it",
         "while",
         "editing",
-        "screen",
-        "screenedit-options-selection-mode",
-        "field:",
-        "How",
-        "visitors",
-        "choose",
-        "screenedit-options-column-layout",
-        "List",
-        "screenedit-options-item-layout"
+        "screen"
       ],
       "subarticles": [
         {
@@ -9522,6 +9995,78 @@
           "id": "intro",
           "title": "Options — every setting",
           "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide documents every setting of the Options block, grouped by area. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-deselection",
+          "title": "Deselection animation",
+          "summary": "The same kind of emphasis, played when a visitor un-selects an option (Shake X is the starting choice).",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-selection",
+          "title": "Selection animation",
+          "summary": "A short emphasis that plays on an option at the moment a visitor selects it (Pulse is the starting choice). It plays when the selection changes, not when the screen first appears.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
           "tags": [
             "article-section",
             "Text"
@@ -9805,7 +10350,7 @@
         {
           "id": "set-options-checkboxstyles",
           "title": "Checkbox look",
-          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
+          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the item layout includes a checkbox.",
           "tags": [
             "article-section",
             "Text",
@@ -10248,6 +10793,16 @@
           ]
         },
         {
+          "id": "set-options-subtitlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's subtitle.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-subtitlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's subtitle.",
@@ -10434,6 +10989,16 @@
           "id": "set-options-titlestyles-prop-background-radius",
           "title": "• Background radius",
           "summary": "Corner rounding of the title background.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
           "tags": [
             "article-section",
             "Text",
@@ -23130,7 +23695,7 @@
       "articleAlias": "help-fonts-typography",
       "articleId": null,
       "title": "Fonts — set your funnel typography",
-      "oneLineSummary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "oneLineSummary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
       "tags": [
         "fonts",
         "typography",
@@ -23214,12 +23779,12 @@
         "affected",
         "mappings",
         "defaults",
-        "Use",
-        "this",
-        "when",
-        "customers",
-        "ask",
-        "change"
+        "It",
+        "also",
+        "explains",
+        "that",
+        "published",
+        "shows"
       ],
       "subarticles": [],
       "relations": {
@@ -23233,7 +23798,7 @@
       "articleAlias": "help-options-grid-multi",
       "articleId": null,
       "title": "Options — Grid Multi Pick",
-      "oneLineSummary": "Explains the Options section for Grid Multi Pick screens, where visitors can select more than one choice from a grid. It covers grid item labels, images, selected state, multi-select behavior, stored values, checkbox or selection affordances, and grid layout.",
+      "oneLineSummary": "Explains the Options section for Grid Multi Pick screens, where visitors can select more than one choice from a grid. It covers grid item labels, images, selected state, multi-select behavior, stored values, checkbox or selection affordances, grid layout, and the Animations group for item animation, stagger, and selection and deselection emphasis.",
       "tags": [
         "article-section",
         "Text",
@@ -23244,15 +23809,16 @@
         "options",
         "layout",
         "containers",
-        "styles",
         "facebook-events",
         "analytics-events",
+        "styles",
         "selection",
         "spacing",
         "states",
         "grid",
         "multi-select",
-        "choices"
+        "choices",
+        "animations"
       ],
       "keywords": [
         "help-options-grid-multi",
@@ -23290,12 +23856,19 @@
         "or",
         "selection",
         "affordances",
-        "and",
         "layout",
+        "and",
+        "Animations",
+        "group",
+        "animation",
+        "stagger",
+        "deselection",
+        "emphasis",
         "multi",
         "pick",
         "options",
         "choices",
+        "animations",
         "article-section",
         "Text",
         "stripe-payments",
@@ -23303,9 +23876,9 @@
         "Media",
         "setting",
         "containers",
-        "styles",
         "facebook-events",
         "analytics-events",
+        "styles",
         "spacing",
         "states",
         "g-containers-head",
@@ -23327,14 +23900,7 @@
         "image",
         "intro",
         "The",
-        "answer",
-        "mode",
-        "list-or-grid",
-        "styling",
-        "This",
-        "guide",
-        "every",
-        "that"
+        "answer"
       ],
       "subarticles": [
         {
@@ -23397,6 +23963,78 @@
           "id": "intro",
           "title": "Options — Grid Multi Pick",
           "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a Grid Multi Pick screen — a two-column grid. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-deselection",
+          "title": "Deselection animation",
+          "summary": "The same kind of emphasis, played when a visitor un-selects an option (Shake X is the starting choice).",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-selection",
+          "title": "Selection animation",
+          "summary": "A short emphasis that plays on an option at the moment a visitor selects it (Pulse is the starting choice). It plays when the selection changes, not when the screen first appears.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
           "tags": [
             "article-section",
             "Text"
@@ -23537,64 +24175,6 @@
           ]
         },
         {
-          "id": "set-options-checkboxstyles",
-          "title": "Checkbox look",
-          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
-          "tags": [
-            "article-section",
-            "Text",
-            "labels-copy",
-            "setting",
-            "options",
-            "styles"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-img",
-          "title": "Checkbox look",
-          "summary": "Checkbox look",
-          "tags": [
-            "article-section",
-            "Media"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-checkbox-padding",
-          "title": "• Checkbox padding",
-          "summary": "Space around the selection marker.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-checked-color",
-          "title": "• Checked color",
-          "summary": "Color of the marker when the option is selected.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-shape",
-          "title": "• Shape",
-          "summary": "The selection-marker shape (square or circle).",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-unchecked-color",
-          "title": "• Unchecked color",
-          "summary": "Color of the marker when the option is not selected.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
           "id": "set-options-imagecontainer",
           "title": "Image area in each card",
           "summary": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
@@ -23982,6 +24562,16 @@
           ]
         },
         {
+          "id": "set-options-subtitlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's subtitle.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-subtitlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's subtitle.",
@@ -24168,6 +24758,16 @@
           "id": "set-options-titlestyles-prop-background-radius",
           "title": "• Background radius",
           "summary": "Corner rounding of the title background.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
           "tags": [
             "article-section",
             "Text",
@@ -24362,8 +24962,7 @@
           "screenedit-options-checkbox-container",
           "screenedit-options-title-styles",
           "screenedit-options-subtitle-styles",
-          "screenedit-options-image-styles",
-          "screenedit-options-checkbox-styles"
+          "screenedit-options-image-styles"
         ],
         "actionIds": []
       },
@@ -24373,7 +24972,7 @@
       "articleAlias": "help-options-grid-single",
       "articleId": null,
       "title": "Options — Grid Single Pick",
-      "oneLineSummary": "Explains the Options section for Grid Single Pick screens, where visitors choose one item from a grid. It covers item labels, images, selected state, stored values, grid spacing, and single-selection behavior used for product, preference, or segmentation choices.",
+      "oneLineSummary": "Explains the Options section for Grid Single Pick screens, where visitors choose one item from a grid. It covers item labels, images, selected state, stored values, grid spacing, single-selection behavior used for product, preference, or segmentation choices, the selection mode and column layout selects, and the Animations group for item animation, stagger, and selection and deselection emphasis.",
       "tags": [
         "article-section",
         "Text",
@@ -24384,15 +24983,16 @@
         "options",
         "layout",
         "containers",
-        "styles",
         "facebook-events",
         "analytics-events",
+        "styles",
         "selection",
         "spacing",
         "states",
         "grid",
         "single-select",
-        "choices"
+        "choices",
+        "animations"
       ],
       "keywords": [
         "help-options-grid-single",
@@ -24421,7 +25021,6 @@
         "stored",
         "values",
         "spacing",
-        "and",
         "single-selection",
         "behavior",
         "used",
@@ -24430,24 +25029,35 @@
         "or",
         "segmentation",
         "choices",
+        "selection",
+        "mode",
+        "and",
+        "column",
+        "layout",
+        "selects",
+        "Animations",
+        "group",
+        "animation",
+        "stagger",
+        "deselection",
+        "emphasis",
         "single",
         "pick",
         "select",
         "options",
         "choice",
         "single-select",
+        "animations",
         "article-section",
         "Text",
         "stripe-payments",
         "labels-copy",
         "Media",
         "setting",
-        "layout",
         "containers",
-        "styles",
         "facebook-events",
         "analytics-events",
-        "selection",
+        "styles",
         "states",
         "g-containers-head",
         "Card",
@@ -24464,17 +25074,7 @@
         "Selected",
         "unselected",
         "look",
-        "g-styles-head",
-        "image",
-        "checkbox",
-        "intro",
-        "The",
-        "answer",
-        "mode",
-        "list-or-grid",
-        "styling",
-        "This",
-        "guide"
+        "g-styles-head"
       ],
       "subarticles": [
         {
@@ -24537,6 +25137,78 @@
           "id": "intro",
           "title": "Options — Grid Single Pick",
           "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a Grid Single Pick screen — a two-column grid. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-deselection",
+          "title": "Deselection animation",
+          "summary": "The same kind of emphasis, played when a visitor un-selects an option (Shake X is the starting choice).",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-selection",
+          "title": "Selection animation",
+          "summary": "A short emphasis that plays on an option at the moment a visitor selects it (Pulse is the starting choice). It plays when the selection changes, not when the screen first appears.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
           "tags": [
             "article-section",
             "Text"
@@ -24677,64 +25349,6 @@
           ]
         },
         {
-          "id": "set-options-checkboxstyles",
-          "title": "Checkbox look",
-          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
-          "tags": [
-            "article-section",
-            "Text",
-            "labels-copy",
-            "setting",
-            "options",
-            "styles"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-img",
-          "title": "Checkbox look",
-          "summary": "Checkbox look",
-          "tags": [
-            "article-section",
-            "Media"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-checkbox-padding",
-          "title": "• Checkbox padding",
-          "summary": "Space around the selection marker.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-checked-color",
-          "title": "• Checked color",
-          "summary": "Color of the marker when the option is selected.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-shape",
-          "title": "• Shape",
-          "summary": "The selection-marker shape (square or circle).",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
-          "id": "set-options-checkboxstyles-prop-unchecked-color",
-          "title": "• Unchecked color",
-          "summary": "Color of the marker when the option is not selected.",
-          "tags": [
-            "article-section",
-            "Text"
-          ]
-        },
-        {
           "id": "set-options-imagecontainer",
           "title": "Image area in each card",
           "summary": "On grid cards that show an image, this sets the image region as a whole: where it sits in the card, how tall it is (a fixed height or sized to fit its content), and the spacing around it. By default it fits the content, but setting one fixed height keeps every card's image lined up at the same level, which looks more polished and trustworthy on an ad landing page. This shapes the image's container only; the image's own size and corners are set separately in the item image styles.",
@@ -25122,6 +25736,16 @@
           ]
         },
         {
+          "id": "set-options-subtitlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's subtitle.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-subtitlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's subtitle.",
@@ -25308,6 +25932,16 @@
           "id": "set-options-titlestyles-prop-background-radius",
           "title": "• Background radius",
           "summary": "Corner rounding of the title background.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
           "tags": [
             "article-section",
             "Text",
@@ -25502,8 +26136,7 @@
           "screenedit-options-checkbox-container",
           "screenedit-options-title-styles",
           "screenedit-options-subtitle-styles",
-          "screenedit-options-image-styles",
-          "screenedit-options-checkbox-styles"
+          "screenedit-options-image-styles"
         ],
         "actionIds": []
       },
@@ -25513,7 +26146,7 @@
       "articleAlias": "help-options-hero-list",
       "articleId": null,
       "title": "Options — Hero List",
-      "oneLineSummary": "Explains the Options section for Hero List screens, combining prominent list choices with hero-style presentation. It covers item labels, descriptions or images where available, selected state, stored values, and layout choices for a visually rich selection screen.",
+      "oneLineSummary": "Explains the Options section for Hero List screens, a scrollable info list with a hero image where visitors browse the items instead of picking one. It covers item labels, descriptions and images, the image-and-title item layouts, spacing and styling, and the Animations group for item animation and stagger; selection and deselection animations have no effect because the list is read-only.",
       "tags": [
         "article-section",
         "Text",
@@ -25527,7 +26160,8 @@
         "spacing",
         "states",
         "hero-list",
-        "choices"
+        "choices",
+        "animations"
       ],
       "keywords": [
         "help-options-hero-list",
@@ -25539,45 +26173,58 @@
         "section",
         "for",
         "screens",
-        "combining",
-        "prominent",
+        "scrollable",
+        "info",
         "list",
-        "choices",
         "with",
-        "hero-style",
-        "presentation",
+        "hero",
+        "image",
+        "where",
+        "visitors",
+        "browse",
+        "items",
+        "instead",
+        "of",
+        "picking",
+        "one",
         "It",
         "covers",
         "item",
         "labels",
         "descriptions",
-        "or",
-        "images",
-        "where",
-        "available",
-        "selected",
-        "state",
-        "stored",
-        "values",
         "and",
-        "layout",
-        "visually",
-        "rich",
+        "images",
+        "image-and-title",
+        "layouts",
+        "spacing",
+        "styling",
+        "Animations",
+        "group",
+        "animation",
+        "stagger",
         "selection",
-        "screen",
-        "hero",
+        "deselection",
+        "animations",
+        "have",
+        "no",
+        "effect",
+        "because",
+        "is",
+        "read-only",
         "options",
         "option",
+        "layout",
         "hero-list",
+        "choices",
         "labels-copy",
         "article-section",
         "Text",
         "Media",
         "setting",
         "styles",
-        "spacing",
         "states",
         "g-layout-head",
+        "or",
         "grid",
         "g-selection-head",
         "Selection",
@@ -25590,26 +26237,13 @@
         "unselected",
         "look",
         "g-styles-head",
-        "image",
         "checkbox",
         "intro",
         "The",
         "answer",
-        "visitors",
         "pick",
         "from",
-        "mode",
-        "list-or-grid",
-        "styling",
-        "This",
-        "guide",
-        "every",
-        "that",
-        "applies",
-        "to",
-        "one-column",
-        "Each",
-        "matches"
+        "mode"
       ],
       "subarticles": [
         {
@@ -25662,6 +26296,69 @@
           "id": "intro",
           "title": "Options — Hero List",
           "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a Hero List screen — a one-column list. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-browse",
+          "title": "Selection animations",
+          "summary": "The section also lists Selection animation and Deselection animation. On this screen type visitors cannot select an option — the list is read-only — so those two have no effect here.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
           "tags": [
             "article-section",
             "Text"
@@ -26022,6 +26719,16 @@
           ]
         },
         {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-titlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's title.",
@@ -26213,7 +26920,7 @@
       "articleAlias": "help-options-list-multi",
       "articleId": null,
       "title": "Options — List Multi Pick",
-      "oneLineSummary": "Explains the Options section for List Multi Pick screens, where visitors can select multiple answers from a vertical list. It covers list item labels, selected state, checkbox behavior, maximum selections, random order, stored values, and list spacing.",
+      "oneLineSummary": "Explains the Options section for List Multi Pick screens, where visitors can select multiple answers from a vertical list. It covers list item labels, selected state, checkbox behavior, maximum selections, random order, stored values, list spacing, and the Animations group for list item animation, stagger, and selection and deselection emphasis.",
       "tags": [
         "article-section",
         "Text",
@@ -26228,7 +26935,8 @@
         "states",
         "list",
         "multi-select",
-        "choices"
+        "choices",
+        "animations"
       ],
       "keywords": [
         "help-options-list-multi",
@@ -26264,21 +26972,28 @@
         "order",
         "stored",
         "values",
-        "and",
         "spacing",
+        "and",
+        "Animations",
+        "group",
+        "animation",
+        "stagger",
+        "selection",
+        "deselection",
+        "emphasis",
         "multi",
         "pick",
         "max",
         "options",
         "multi-select",
         "choices",
+        "animations",
         "article-section",
         "Text",
         "labels-copy",
         "Media",
         "setting",
         "styles",
-        "selection",
         "layout",
         "states",
         "g-layout-head",
@@ -26303,14 +27018,7 @@
         "list-or-grid",
         "styling",
         "This",
-        "guide",
-        "every",
-        "that",
-        "applies",
-        "to",
-        "screen",
-        "one-column",
-        "Each"
+        "guide"
       ],
       "subarticles": [
         {
@@ -26363,6 +27071,78 @@
           "id": "intro",
           "title": "Options — List Multi Pick",
           "summary": "The answer choices visitors pick from — selection mode, list-or-grid layout, item states, spacing, and styling. This guide covers every Options setting that applies to a List Multi Pick screen — a one-column list. Each setting matches a real control in the screen editor.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-deselection",
+          "title": "Deselection animation",
+          "summary": "The same kind of emphasis, played when a visitor un-selects an option (Shake X is the starting choice).",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-selection",
+          "title": "Selection animation",
+          "summary": "A short emphasis that plays on an option at the moment a visitor selects it (Pulse is the starting choice). It plays when the selection changes, not when the screen first appears.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
           "tags": [
             "article-section",
             "Text"
@@ -26434,7 +27214,7 @@
         {
           "id": "set-options-checkboxstyles",
           "title": "Checkbox look",
-          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the layout includes a checkbox or on grids.",
+          "summary": "Appearance of the selection checkbox — shape (square or circle), checked color, unchecked color, and padding. Use your theme's accent for the checked color so a tap reads clearly as selected, matching the selected-item look. Circle suits pick-one (radio style), square suits multi-select. Only appears when the item layout includes a checkbox.",
           "tags": [
             "article-section",
             "Text",
@@ -26802,6 +27582,16 @@
           ]
         },
         {
+          "id": "set-options-subtitlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's subtitle.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-subtitlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's subtitle.",
@@ -26908,6 +27698,16 @@
           "id": "set-options-titlestyles-prop-background-radius",
           "title": "• Background radius",
           "summary": "Corner rounding of the title background.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
           "tags": [
             "article-section",
             "Text",
@@ -27109,7 +27909,7 @@
       "articleAlias": "help-options-list-single",
       "articleId": null,
       "title": "Options — List Single Pick",
-      "oneLineSummary": "Explains the Options section for List Single Pick screens, where visitors choose one answer from a vertical list. It covers item labels, selected state, stored values, list item layout, spacing, and single-selection behavior for segmentation or preference questions.",
+      "oneLineSummary": "Explains the Options section for List Single Pick screens, where visitors choose one answer from a vertical list. It covers item labels, selected state, stored values, list item layout, spacing, single-selection behavior for segmentation or preference questions, and the Animations group for list item animation, stagger, and selection and deselection emphasis.",
       "tags": [
         "article-section",
         "Text",
@@ -27124,7 +27924,8 @@
         "states",
         "list",
         "single-select",
-        "choices"
+        "choices",
+        "animations"
       ],
       "keywords": [
         "help-options-list-single",
@@ -27155,13 +27956,20 @@
         "values",
         "layout",
         "spacing",
-        "and",
         "single-selection",
         "behavior",
         "segmentation",
         "or",
         "preference",
         "questions",
+        "and",
+        "Animations",
+        "group",
+        "animation",
+        "stagger",
+        "selection",
+        "deselection",
+        "emphasis",
         "single",
         "pick",
         "select",
@@ -27169,13 +27977,13 @@
         "value",
         "single-select",
         "choices",
+        "animations",
         "article-section",
         "Text",
         "labels-copy",
         "Media",
         "setting",
         "styles",
-        "selection",
         "states",
         "g-layout-head",
         "grid",
@@ -27199,14 +28007,7 @@
         "styling",
         "This",
         "guide",
-        "every",
-        "that",
-        "applies",
-        "to",
-        "screen",
-        "one-column",
-        "Each",
-        "matches"
+        "every"
       ],
       "subarticles": [
         {
@@ -27265,6 +28066,78 @@
           ]
         },
         {
+          "id": "opt-anim-deselection",
+          "title": "Deselection animation",
+          "summary": "The same kind of emphasis, played when a visitor un-selects an option (Shake X is the starting choice).",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-head",
+          "title": "Animations",
+          "summary": "Animations",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-img",
+          "title": "Animations style section",
+          "summary": "Animations style section",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "opt-anim-intro",
+          "title": "Where to find it",
+          "summary": "Open the style settings (the gear on the Options section) and scroll to the last section, “Animations”. Each of its four settings has its own checkbox — tick it to turn that animation on, untick it to remove it.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-item",
+          "title": "Item animation",
+          "summary": "Gives every option its own entrance and lets you pick the style from the list (Fade In Up is the starting choice). While it is on, the options animate in one by one instead of moving in together with the rest of the screen.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-related",
+          "title": "Screen-wide entrance<sep>  —  </sep><detail>@details</detail>",
+          "summary": "How the whole screen — including the list — animates in is set in the screen’s Animation section. See “Animation — all settings”.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-selection",
+          "title": "Selection animation",
+          "summary": "A short emphasis that plays on an option at the moment a visitor selects it (Pulse is the starting choice). It plays when the selection changes, not when the screen first appears.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "opt-anim-stagger",
+          "title": "Stagger",
+          "summary": "The pause, in milliseconds, between one option starting and the next, so they appear one after another (0 to 1000; when you tick it, it starts at 50). It stays greyed out until Item animation is on.",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
           "id": "opt-columns",
           "title": "List or grid",
           "summary": "One column — the options stack in a single full-width vertical list.",
@@ -27294,7 +28167,7 @@
         {
           "id": "opt-switch",
           "title": "Switchable",
-          "summary": "You can change the selection mode and column layout from the selects at the top of the Options section.",
+          "summary": "You can change the selection mode from the select at the top of the Options section.",
           "tags": [
             "article-section",
             "Text"
@@ -27640,6 +28513,16 @@
           ]
         },
         {
+          "id": "set-options-subtitlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's subtitle.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
           "id": "set-options-subtitlestyles-prop-font-size",
           "title": "• Font size",
           "summary": "Text size (px) of each option's subtitle.",
@@ -27746,6 +28629,16 @@
           "id": "set-options-titlestyles-prop-background-radius",
           "title": "• Background radius",
           "summary": "Corner rounding of the title background.",
+          "tags": [
+            "article-section",
+            "Text",
+            "labels-copy"
+          ]
+        },
+        {
+          "id": "set-options-titlestyles-prop-font-family",
+          "title": "• Font family",
+          "summary": "Typeface of each option's title.",
           "tags": [
             "article-section",
             "Text",
@@ -27952,9 +28845,12 @@
       "tags": [
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "backdrop",
         "carousel",
         "headerBar",
@@ -28001,49 +28897,78 @@
         "screen-overview",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "backdrop",
         "headerBar",
-        "block-backdrop-head",
+        "block-animation-head",
+        "Animation",
         "sep",
         "detail",
         "details",
-        "block-backdrop-summary",
+        "block-animation-summary",
         "summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "your",
-        "content:",
-        "solid",
-        "color",
-        "photo",
-        "looping",
-        "video",
-        "block-backdrop-thumb",
-        "in",
-        "block-carousel-head",
-        "block-carousel-summary",
-        "An",
-        "auto-advancing",
-        "template",
-        "total",
-        "play",
-        "time",
-        "each",
-        "text",
-        "picture",
-        "per-slide",
+        "How",
+        "standard",
+        "elements",
+        "header",
         "image",
-        "styles",
-        "block-carousel-thumb",
-        "block-headerbar-head",
-        "block-headerbar-summary"
+        "video",
+        "title",
+        "subtitle",
+        "choices",
+        "bullets",
+        "products",
+        "action",
+        "bar",
+        "animate",
+        "in",
+        "when",
+        "opens",
+        "style",
+        "speed",
+        "stagger",
+        "easing",
+        "per-element",
+        "overrides",
+        "take",
+        "priority",
+        "over"
       ],
       "subarticles": [
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
         {
           "id": "block-backdrop-head",
           "title": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -28136,6 +29061,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -28179,16 +29113,17 @@
         "flexible-layout",
         "article-section",
         "Text",
-        "Media",
+        "paywall",
         "product-catalog",
+        "Media",
         "purchase",
         "labels-copy",
         "assembly-link",
+        "animation",
         "backdrop",
         "flexibleSections",
         "stickyContainer",
         "screen-overview",
-        "paywall",
         "webembed"
       ],
       "keywords": [
@@ -28244,36 +29179,65 @@
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "backdrop",
         "flexibleSections",
         "stickyContainer",
-        "block-backdrop-head",
-        "Background",
+        "block-animation-head",
+        "Animation",
         "sep",
         "detail",
         "details",
-        "block-backdrop-summary",
+        "block-animation-summary",
         "summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "your",
-        "content:",
-        "solid",
-        "color",
-        "photo",
-        "looping",
+        "How",
+        "standard",
+        "elements",
+        "header",
+        "image",
         "video",
-        "block-backdrop-thumb",
+        "title",
+        "subtitle",
+        "choices",
+        "bullets",
+        "products",
+        "action",
+        "bar",
+        "animate",
         "in",
-        "editor",
-        "block-flexiblesections-head",
-        "Sections",
-        "block-flexiblesections-summary",
-        "The"
+        "when",
+        "opens"
       ],
       "subarticles": [
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
         {
           "id": "block-backdrop-head",
           "title": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -28374,6 +29338,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -28418,8 +29391,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -28478,8 +29454,11 @@
         "options",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -28506,13 +29485,10 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How"
       ],
       "subarticles": [
         {
@@ -28537,6 +29513,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -28581,7 +29586,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -28777,6 +29782,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -28865,8 +29879,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -28926,8 +29943,11 @@
         "options",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -28954,12 +29974,9 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary"
       ],
       "subarticles": [
         {
@@ -28984,6 +30001,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -29028,7 +30074,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -29224,6 +30270,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -29312,8 +30367,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -29369,8 +30427,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -29394,16 +30455,13 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:",
-        "solid",
-        "color",
-        "photo"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How",
+        "standard",
+        "elements",
+        "header"
       ],
       "subarticles": [
         {
@@ -29428,6 +30486,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -29472,7 +30559,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -29560,6 +30647,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -29612,11 +30708,12 @@
         "article-section",
         "Text",
         "Media",
-        "labels-copy",
         "paywall",
         "product-catalog",
+        "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -29672,11 +30769,12 @@
         "article-section",
         "Text",
         "Media",
-        "labels-copy",
         "paywall",
         "product-catalog",
+        "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -29702,11 +30800,10 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "Background",
-        "block-backdrop-summary",
-        "What",
-        "fills"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How"
       ],
       "subarticles": [
         {
@@ -29731,6 +30828,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -29775,7 +30901,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -30496,6 +31622,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -30548,9 +31683,12 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -30604,8 +31742,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -30631,17 +31772,14 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "Background",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:",
-        "solid",
-        "color",
-        "photo"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How",
+        "standard",
+        "or",
+        "video",
+        "choices"
       ],
       "subarticles": [
         {
@@ -30666,6 +31804,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -30710,7 +31877,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -30844,6 +32011,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -30914,9 +32090,12 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -30971,9 +32150,12 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -30999,16 +32181,13 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:",
-        "solid",
-        "color",
-        "photo"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How",
+        "standard",
+        "elements",
+        "header"
       ],
       "subarticles": [
         {
@@ -31033,6 +32212,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -31077,7 +32285,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -31238,6 +32446,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -31317,8 +32534,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -31378,8 +32598,11 @@
         "options",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -31406,12 +32629,9 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary"
       ],
       "subarticles": [
         {
@@ -31436,6 +32656,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -31480,7 +32729,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -31676,6 +32925,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -31764,8 +33022,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -31825,8 +33086,11 @@
         "options",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -31853,12 +33117,9 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary"
       ],
       "subarticles": [
         {
@@ -31883,6 +33144,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -31927,7 +33217,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -32123,6 +33413,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -32218,6 +33517,7 @@
         "labels-copy",
         "stripe-payments",
         "assembly-link",
+        "animation",
         "backdrop",
         "basicConfig",
         "paywallBody",
@@ -32282,6 +33582,7 @@
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "backdrop",
         "basicConfig",
         "paywallBody",
@@ -32291,26 +33592,54 @@
         "paywallSubscriptions",
         "Create",
         "capability",
-        "block-backdrop-head",
-        "Background",
+        "block-animation-head",
+        "Animation",
         "sep",
         "detail",
         "details",
-        "block-backdrop-summary",
+        "block-animation-summary",
         "summary",
-        "What",
-        "fills",
+        "How",
         "the",
-        "whole",
-        "behind",
-        "your",
-        "content:",
-        "solid",
-        "color",
-        "photo",
-        "or"
+        "standard",
+        "elements",
+        "image",
+        "or",
+        "video",
+        "title",
+        "subtitle",
+        "bullets"
       ],
       "subarticles": [
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
         {
           "id": "block-backdrop-head",
           "title": "Background<sep>  —  </sep><detail>@details</detail>",
@@ -32350,7 +33679,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -32530,6 +33859,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -32615,9 +33953,12 @@
       "tags": [
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "headerBar",
         "stepper",
         "screen-overview",
@@ -32667,46 +34008,75 @@
         "timing",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "Media",
         "labels-copy",
         "assembly-link",
+        "animation",
         "headerBar",
-        "block-headerbar-head",
+        "block-animation-head",
+        "Animation",
         "sep",
         "detail",
         "details",
-        "block-headerbar-summary",
+        "block-animation-summary",
         "summary",
-        "The",
-        "top",
-        "of",
-        "Back",
-        "Skip",
-        "buttons",
-        "indicator",
-        "that",
-        "shows",
-        "how",
-        "far",
-        "along",
-        "visitor",
-        "is",
-        "block-headerbar-thumb",
+        "How",
+        "standard",
+        "elements",
+        "header",
+        "image",
+        "or",
+        "video",
+        "title",
+        "subtitle",
+        "choices",
+        "bullets",
+        "products",
+        "action",
+        "animate",
         "in",
-        "editor",
-        "block-stepper-head",
-        "block-stepper-summary",
-        "An",
-        "through",
-        "segments",
-        "layout",
-        "total",
-        "playback",
-        "time",
-        "colours",
-        "thickness"
+        "when",
+        "opens",
+        "style",
+        "speed",
+        "stagger",
+        "easing",
+        "per-element",
+        "overrides",
+        "which"
       ],
       "subarticles": [
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
         {
           "id": "block-headerbar-head",
           "title": "Header<sep>  —  </sep><detail>@details</detail>",
@@ -32772,6 +34142,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-header",
           "title": "Header",
           "summary": "Related article: Header",
@@ -32807,8 +34186,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -32864,8 +34246,11 @@
         "labels-copy",
         "article-section",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -32892,16 +34277,13 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:",
-        "solid",
-        "color",
-        "photo"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How",
+        "standard",
+        "elements",
+        "header"
       ],
       "subarticles": [
         {
@@ -32926,6 +34308,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -32970,7 +34381,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -33143,6 +34554,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -33215,6 +34635,107 @@
       "qualityScore": 0.85
     },
     {
+      "articleAlias": "help-screen-transitions",
+      "articleId": null,
+      "title": "Screen transitions between screens",
+      "oneLineSummary": "Explains screen transitions, the movement that plays when a visitor goes from one screen to the next: how the funnel default comes from the theme's motion scheme, and how to give a single connection between two screens its own transition. Covers opening Connection Details from the button on the canvas line, the Transition group with Type, Duration (ms) and Easing, the Inherit (funnel default) choice, the nine transition types, the dot that marks connections with their own transition, and returning a connection to the default. Use this when customers ask how to change the transition between screens, set a slide, fade or push between two screens, or remove a custom transition.",
+      "tags": [
+        "transitions",
+        "transition",
+        "canvas",
+        "connections",
+        "animations",
+        "motion-scheme",
+        "connection-details"
+      ],
+      "keywords": [
+        "help-screen-transitions",
+        "Screen",
+        "transitions",
+        "between",
+        "screens",
+        "Explains",
+        "screen",
+        "the",
+        "movement",
+        "that",
+        "plays",
+        "when",
+        "visitor",
+        "goes",
+        "from",
+        "one",
+        "to",
+        "next:",
+        "how",
+        "funnel",
+        "default",
+        "comes",
+        "theme",
+        "motion",
+        "scheme",
+        "and",
+        "give",
+        "single",
+        "connection",
+        "two",
+        "its",
+        "own",
+        "transition",
+        "Covers",
+        "opening",
+        "Connection",
+        "Details",
+        "button",
+        "on",
+        "canvas",
+        "line",
+        "Transition",
+        "group",
+        "with",
+        "Type",
+        "Duration",
+        "ms",
+        "Easing",
+        "Inherit",
+        "choice",
+        "nine",
+        "types",
+        "dot",
+        "marks",
+        "connections",
+        "their",
+        "returning",
+        "Use",
+        "this",
+        "customers",
+        "ask",
+        "change",
+        "set",
+        "slide",
+        "fade",
+        "or",
+        "push",
+        "remove",
+        "custom",
+        "duration",
+        "easing",
+        "inherit",
+        "override",
+        "details",
+        "animations",
+        "motion-scheme",
+        "connection-details"
+      ],
+      "subarticles": [],
+      "relations": {
+        "supportFlowFlows": [],
+        "guideKeys": [],
+        "actionIds": []
+      },
+      "qualityScore": 0.55
+    },
+    {
       "articleAlias": "help-screen-webembed",
       "articleId": null,
       "title": "Web Embed screen",
@@ -33224,8 +34745,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "embed",
@@ -33285,8 +34809,11 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -33309,12 +34836,9 @@
         "in",
         "the",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary"
       ],
       "subarticles": [
         {
@@ -33339,6 +34863,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -33383,7 +34936,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -33472,6 +35025,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -33524,9 +35086,12 @@
         "article-section",
         "Text",
         "Media",
+        "paywall",
+        "product-catalog",
         "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -33581,9 +35146,12 @@
         "wheel-picker",
         "article-section",
         "Text",
+        "paywall",
+        "product-catalog",
         "labels-copy",
         "assembly-link",
         "actionBar",
+        "animation",
         "backdrop",
         "basicConfig",
         "headerBar",
@@ -33611,16 +35179,13 @@
         "block-actionbar-thumb",
         "in",
         "editor",
-        "block-backdrop-head",
-        "block-backdrop-summary",
-        "What",
-        "fills",
-        "whole",
-        "behind",
-        "content:",
-        "solid",
-        "color",
-        "photo"
+        "block-animation-head",
+        "Animation",
+        "block-animation-summary",
+        "How",
+        "standard",
+        "elements",
+        "header"
       ],
       "subarticles": [
         {
@@ -33645,6 +35210,35 @@
           "id": "block-actionbar-thumb",
           "title": "Action Bar in the editor",
           "summary": "Action Bar in the editor",
+          "tags": [
+            "article-section",
+            "Media"
+          ]
+        },
+        {
+          "id": "block-animation-head",
+          "title": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "summary": "Animation<sep>  —  </sep><detail>@details</detail>",
+          "tags": [
+            "article-section",
+            "Text"
+          ]
+        },
+        {
+          "id": "block-animation-summary",
+          "title": "Animation summary",
+          "summary": "How the screen's standard elements (header, image or video, title and subtitle, choices or bullets, paywall products, action bar) animate in when it opens — style, speed, stagger, easing, and per-element overrides, which take priority over the theme's default motion.",
+          "tags": [
+            "article-section",
+            "Text",
+            "paywall",
+            "product-catalog"
+          ]
+        },
+        {
+          "id": "block-animation-thumb",
+          "title": "Animation in the editor",
+          "summary": "Animation in the editor",
           "tags": [
             "article-section",
             "Media"
@@ -33689,7 +35283,7 @@
         {
           "id": "block-basicconfig-summary",
           "title": "Basic Config summary",
-          "summary": "Screen-level behaviour: entrance animations, cached media, a device-permission prompt, and auto-advance.",
+          "summary": "Screen-level behaviour: cached media, a device-permission prompt, and auto-advance.",
           "tags": [
             "article-section",
             "Text"
@@ -33905,6 +35499,15 @@
           ]
         },
         {
+          "id": "link-help-block-animation",
+          "title": "Animation",
+          "summary": "Related article: Animation",
+          "tags": [
+            "assembly-link",
+            "animation"
+          ]
+        },
+        {
           "id": "link-help-block-background",
           "title": "Background",
           "summary": "Related article: Background",
@@ -34059,6 +35662,110 @@
         "resolve",
         "conflict",
         "conflict-resolution"
+      ],
+      "subarticles": [],
+      "relations": {
+        "supportFlowFlows": [],
+        "guideKeys": [],
+        "actionIds": []
+      },
+      "qualityScore": 0.55
+    },
+    {
+      "articleAlias": "help-theme-animations",
+      "articleId": null,
+      "title": "Theme animations: motion schemes",
+      "oneLineSummary": "Explains how to choose a motion scheme for a whole funnel theme: open the theme settings from the Screen Templates panel, pick Smooth, Subtle, Dynamic, Playful or None in the Animations section, keep the Paywall calm with Calm Paywall, fine-tune the exact values under Advanced, preview the transition, press Play animations to watch every screen's entrance, and apply the scheme to screens already on the canvas with Apply to canvas. Use this when customers ask how to animate their screens, make screens move or transition consistently, change the funnel's animation style, or update existing screens after changing the theme motion.",
+      "tags": [
+        "animations",
+        "theme",
+        "motion-scheme",
+        "screen-entrance",
+        "transitions",
+        "paywall",
+        "apply-to-canvas"
+      ],
+      "keywords": [
+        "help-theme-animations",
+        "Theme",
+        "animations:",
+        "motion",
+        "schemes",
+        "Explains",
+        "how",
+        "to",
+        "choose",
+        "scheme",
+        "for",
+        "whole",
+        "funnel",
+        "theme:",
+        "open",
+        "the",
+        "theme",
+        "settings",
+        "from",
+        "Screen",
+        "Templates",
+        "panel",
+        "pick",
+        "Smooth",
+        "Subtle",
+        "Dynamic",
+        "Playful",
+        "or",
+        "None",
+        "in",
+        "Animations",
+        "section",
+        "keep",
+        "Paywall",
+        "calm",
+        "with",
+        "Calm",
+        "fine-tune",
+        "exact",
+        "values",
+        "under",
+        "Advanced",
+        "preview",
+        "transition",
+        "press",
+        "Play",
+        "animations",
+        "watch",
+        "every",
+        "screen",
+        "entrance",
+        "and",
+        "apply",
+        "screens",
+        "already",
+        "on",
+        "canvas",
+        "Apply",
+        "Use",
+        "this",
+        "when",
+        "customers",
+        "ask",
+        "animate",
+        "their",
+        "make",
+        "move",
+        "consistently",
+        "change",
+        "animation",
+        "style",
+        "update",
+        "existing",
+        "after",
+        "changing",
+        "my",
+        "paywall",
+        "play",
+        "smooth",
+        "subtle"
       ],
       "subarticles": [],
       "relations": {

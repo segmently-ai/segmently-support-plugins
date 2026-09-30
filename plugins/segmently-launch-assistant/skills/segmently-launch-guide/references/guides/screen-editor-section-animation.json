@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screen-editor-section-animation",
+  "evidence": {
+    "guideKey": "screen-editor-section-animation",
+    "articleId": "screen-editor-section-animation",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screen-editor-section-animation",
+    "name": "Screen Editor: Animation",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what the Animation section controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screen-editor-section-animation/section",
+        "sectionKey": "section",
+        "referencePath": "help-block-animation/screen-editor-section-animation#screen-editor-section-animation/section",
+        "title": "Animation section",
+        "description": "Screen Entrance sets this screen's entrance style, speed, and stagger. The standard elements then animate in one after another, in a fixed order: header, image or video, title and subtitle, answer choices or feature bullets, paywall products, and action bar, where present. Slides, progress steps, input fields, custom sections, and embedded HTML aren't included. With Screen Entrance off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance, if any (shown as 'Inherited from theme'). Advanced adds easing and per-element overrides. Visitors whose device is set to reduce motion see no animation.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      },
+      {
+        "id": "screen-editor-section-animation/where-it-appears",
+        "sectionKey": "where-it-appears",
+        "referencePath": "help-block-animation/screen-editor-section-animation#screen-editor-section-animation/where-it-appears",
+        "title": "Where it appears",
+        "description": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, ProgressSteps, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "section",
+      "title": "Animation section",
+      "summary": "Screen Entrance sets this screen's entrance style, speed, and stagger. The standard elements then animate in one after another, in a fixed order: header, image or video, title and subtitle, answer choices or feature bullets, paywall products, and action bar, where present. Slides, progress steps, input fields, custom sections, and embedded HTML aren't included. With Screen Entrance off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance, if any (shown as 'Inherited from theme'). Advanced adds easing and per-element overrides. Visitors whose device is set to reduce motion see no animation.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screen-editor-section-animation/section"
+        }
+      ],
+      "actionIds": []
+    },
+    {
+      "sectionKey": "where-it-appears",
+      "title": "Where it appears",
+      "summary": "Covered screen types: HeroContent, Carousel, ListMultiPick, ListSinglePick, GridMultiPick, GridSinglePick, ProgressSteps, TextInput, WheelPicker, HeroList, WebEmbed, Paywall, FlexibleLayout.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screen-editor-section-animation/where-it-appears"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

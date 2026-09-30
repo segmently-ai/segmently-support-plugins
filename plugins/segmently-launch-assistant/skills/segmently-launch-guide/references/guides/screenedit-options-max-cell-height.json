@@ -24,7 +24,7 @@
         "title": "Even grid cell heights",
         "description": "On a grid, choose whether all cells stretch to the same maximum height for tidy, even rows, or each cell sizes to its own content (giving rows of varying height). Turn it on for a clean, consistent grid; turn it off when items have very different content lengths. Only applies to grid layouts.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "Even grid cell heights",
       "summary": "On a grid, choose whether all cells stretch to the same maximum height for tidy, even rows, or each cell sizes to its own content (giving rows of varying height). Turn it on for a clean, consistent grid; turn it off when items have very different content lengths. Only applies to grid layouts.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

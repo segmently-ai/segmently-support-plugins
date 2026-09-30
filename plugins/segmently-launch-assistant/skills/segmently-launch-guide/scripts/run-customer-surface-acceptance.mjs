@@ -2457,6 +2457,71 @@ check('CLI flexible section background prompt returns generated section patch co
   assert(dryRunOperation?.value === '#fef3c7', 'packaged flexible section CLI patch value drifted');
 });
 
+// Animation help articles (2026-09-29 plan): free-form runner path must surface the new articles first,
+// never a keyword-matched canvas guide or an unrelated DO action, while "connect screens" stays reachable.
+check('free-form animation and transition prompts select the animation help articles first', () => {
+  for (const item of [
+    { prompt: 'screen transition', expectAny: ['help-screen-transitions'] },
+    { prompt: 'переход между экранами', expectAny: ['help-screen-transitions'] },
+    { prompt: 'how do I animate my screens', expectAny: ['help-block-animation', 'help-theme-animations'] },
+    { prompt: 'how do I change the transition between screens', expectAny: ['help-screen-transitions'], noAction: true },
+    { prompt: 'анимация экрана', expectAny: ['help-block-animation', 'help-theme-animations'] },
+    { prompt: 'motion scheme', expectAny: ['help-theme-animations'] },
+    { prompt: 'how do I connect two screens', expectAny: ['canvas-connect-screens'] },
+  ]) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `prompt "${item.prompt}" did not return ok=true`);
+    const selected = (response.selectedArticles ?? []).map(article => article.articleAlias);
+    assert(item.expectAny.includes(selected[0]), `prompt "${item.prompt}" expected first article in ${item.expectAny.join('|')}, got ${selected.slice(0, 4).join(', ') || 'none'}`);
+    if (item.noAction) {
+      assert(response.mode === 'teach', `prompt "${item.prompt}" must stay a teach answer, got mode ${response.mode}`);
+      assert(!response.action, `prompt "${item.prompt}" must not propose a DO action, got ${response.action?.actionId}`);
+    }
+  }
+});
+
+// Final fix wave (F2): animation vocabulary never lands on an unrelated fuzzy DO, the legacy fade-in DO
+// needs an explicit on/off (or "legacy fade-in") request, and element-specific font DOs survive the
+// broad "change the font" topic phrase.
+const OPTIONS_ARTICLES = ['help-block-options', 'help-options-list-single', 'help-options-list-multi', 'help-options-grid-single', 'help-options-grid-multi', 'help-options-hero-list'];
+check('animation vocabulary teaches the animation article instead of an unrelated DO', () => {
+  for (const item of [
+    { prompt: 'change the item animation of the list to fade in', expectAny: OPTIONS_ARTICLES },
+    { prompt: 'change the transition', expectAny: ['help-screen-transitions'] },
+    { prompt: 'make the options animate in one by one', expectAny: [...OPTIONS_ARTICLES, 'help-block-animation'] },
+    { prompt: 'turn off the animation on the paywall', expectAny: ['help-block-animation'] },
+    { prompt: 'change the animation of the screen', expectAny: ['help-block-animation'] },
+    { prompt: 'how do I change the entrance animation of this screen', expectAny: ['help-block-animation'] },
+    { prompt: 'how do I change fonts', expectAny: ['help-fonts-typography'] },
+    { prompt: 'transition', expectAny: ['help-screen-transitions'] },
+    { prompt: 'motion', expectAny: ['help-theme-animations'] },
+  ]) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `prompt "${item.prompt}" did not return ok=true`);
+    const selected = (response.selectedArticles ?? []).map(article => article.articleAlias);
+    assert(item.expectAny.includes(selected[0]), `prompt "${item.prompt}" expected first article in ${item.expectAny.join('|')}, got ${selected.slice(0, 4).join(', ') || 'none'}`);
+    assert(response.mode === 'teach', `prompt "${item.prompt}" must stay a teach answer, got mode ${response.mode}`);
+    assert(!response.action, `prompt "${item.prompt}" must not propose a DO action, got ${response.action?.actionId}`);
+  }
+  const screenSettings = runResponse(['--prompt', 'измени настройки экрана']);
+  assert(screenSettings.ok === true, '"измени настройки экрана" did not return ok=true');
+  assert(screenSettings.action?.actionId !== 'editor.setting.screenedit-basic-config-animation-enabled', '"измени настройки экрана" must not propose the legacy fade-in (content.animated) DO');
+});
+
+check('element-specific font prompts and explicit legacy toggles keep their DO action', () => {
+  for (const item of [
+    { prompt: 'change the font family of the text field to Inter', expectActionId: /^editor\.textField\.style\.fontFamily$/ },
+    { prompt: 'change the font size of the title to 24', expectActionId: /^editor\.(options\.itemTitle|content\.title)\.textStyle\.fontSize$/ },
+    { prompt: 'turn off screen animations', expectActionId: /^editor\.setting\.screenedit-basic-config-animation-enabled$/ },
+    { prompt: 'turn on legacy fade-in', expectActionId: /^editor\.setting\.screenedit-basic-config-animation-enabled$/ },
+  ]) {
+    const response = runResponse(['--prompt', item.prompt]);
+    assert(response.ok === true, `prompt "${item.prompt}" did not return ok=true`);
+    assert(response.mode === 'do-cli', `prompt "${item.prompt}" must stay a CLI DO, got mode ${response.mode}`);
+    assert(item.expectActionId.test(response.action?.actionId ?? ''), `prompt "${item.prompt}" resolved ${response.action?.actionId ?? 'no action'}, expected ${item.expectActionId}`);
+  }
+});
+
 check('CLI generic scalar Basic Config prompt returns generated setting patch contract', () => {
   const response = runResponse([
     '--prompt',
@@ -2482,9 +2547,9 @@ check('CLI generic scalar Basic Config prompt returns generated setting patch co
   assert(response.completionClaim === 'not-completed-until-verification', 'generic Basic Config action claimed completion before verification');
   const guide = response.guidance?.guides?.find(item => item.guideKey === 'screenedit-basic-config-animation-enabled');
   assert(guide, 'generic Basic Config response missing animation guide contract');
-  assert(guide.articleAlias === 'help-block-basic-config', 'generic Basic Config guide must link the built-in Basic Config article');
-  assert(guide.referencePath === 'help-block-basic-config/screenedit-basic-config-animation-enabled', 'generic Basic Config guide missing stable reference path');
-  assert(guide.fullArticleLink && isPublicArticleUrl(guide.fullArticleLink, 'help-block-basic-config'), 'generic Basic Config guide missing public article URL');
+  assert(guide.articleAlias === 'help-block-animation', 'generic Basic Config guide must link the built-in Animation article (animation moved out of Basic Config)');
+  assert(guide.referencePath === 'help-block-animation/screenedit-basic-config-animation-enabled', 'generic Basic Config guide missing stable reference path under the Animation article');
+  assert(guide.fullArticleLink && isPublicArticleUrl(guide.fullArticleLink, 'help-block-animation'), 'generic Basic Config guide missing public Animation article URL');
   assert(guide.imageUrls?.some(url => /^https:\/\//.test(url)), 'generic Basic Config guide missing concrete image URL');
   assert(!response.missingArticleClaimed, 'generic Basic Config response incorrectly claimed the built-in guide/article is missing');
   assertSourceSafeCustomerAnswer(response);

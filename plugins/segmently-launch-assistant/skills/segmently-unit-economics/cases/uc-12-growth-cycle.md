@@ -43,14 +43,20 @@ named the step; the exception is step 2's horizon question, which closes step 2'
 opens with step 3. A reader who names a step directly — "is this test real?" — starts at that step;
 the steps before it are not re-run. Owner's numbering: there is no step 5.
 
+A default run at steps 2 and 3 carries the structural rows too; a structural pick (a change to the
+offer) runs `cases/uc-13-test-an-offer-change.md`'s Turns 3–7 in place of step 6, then returns to step 8
+with its read. Step 6's card is `cases/uc-11-hypothesis-card.md`'s for a metric lever,
+`cases/uc-13-test-an-offer-change.md`'s own card (`--card`) for a change to the offer. Step 8's read of a
+structural card names its lever `--lever <spec>`, the structural spec, in place of `<lever>`.
+
 | Step | Prints (whole) |
 |---|---|
 | **Step 1 — check the economics (analytics, segmently.ai, RevenueCat, the Facebook Ads MCP, or by hand).** | The answer of `cases/uc-03-your-numbers.md` (or `cases/uc-04-revenuecat.md` / `cases/uc-09-ad-account.md`) — its plausibility line, KPIs, `walk.lines`, the link, its boundary — then step 2 in the same answer. |
 | **Step 2 — growth points reachable in 7, 14 and 30 days.** | The rank block — `sentences.traffic`, every `sentences.table` line, every `sentences.belowTable` line as a `- ` bullet, no `sentences.pick` (a choice run only helps choose) — its `boundary`, then step 2's question. |
 | **Step 3 — the metric with the most profit that can be verified in time.** | The rank block with `sentences.pick`, then `sentences.mostProfit` (`recommendation.mostProfit`: the learnable row with the largest `gainPerMonth`, never re-ranked), its `boundary`, then step 4's question. |
 | **Step 4 — the hypothesis "if I change X, the chosen metric moves by Y %".** | Their X and Y restated with the lever's stage label (`cases/uc-11-hypothesis-card.md`, field 3): "If <X>, then <lever> (<stage>) moves by +<Y> % — your belief."; then step 6's question. |
-| **Step 6 — the hypothesis in numbers (profit if it holds, time and traffic, cost to build, odds it holds).** | The card of `cases/uc-11-hypothesis-card.md`, fields (1) to (10) in order, field 5 the card block whole (`card.lines` when inline), every `sentences.warnings` line, field 9 `bet.sentence` then "Beside it: $<spendRouted> routed over <days> days."; then step 7's part, the card run's `boundary`, the counts question. |
-| **Step 7 — the metrics to watch (the steps that must not drop; for the nearest step the drop that cancels the whole gain and whether it is visible within the test).** | Right after the card's field 10: the override row's `guardrail.watch` and `guardrail.sentence` again, verbatim (fields 4 and 6 keep them too). |
+| **Step 6 — the hypothesis in numbers (profit if it holds, time and traffic, cost to build, odds it holds).** | The card of `cases/uc-11-hypothesis-card.md`, fields (1) to (10) in order, field 5 the card block whole (`card.lines` when inline), field 7 its plan, every `sentences.warnings` line and its while-it-runs line (UC-11 field 7), field 9 `bet.sentence` then "Beside it: $<spendRouted> routed over <days> days."; then step 7's part, the card run's `boundary`, the counts question. |
+| **Step 7 — the metrics to watch (the steps that must not drop; for the nearest step the drop that cancels the whole gain and whether it is visible within the test).** | Right after the card's field 10: the override row's `guardrail.watch` and `guardrail.sentence` again, verbatim (fields 4 and 6 keep them too), then the handoff as its own line: "While it runs: `ue exp start` the day it goes live, then `ue stat watch` once a day with the day's counters; the one read, at <nPerArm> per arm, is step 8." Each daily check before step 8 (`cases/uc-08-test-plan.md`, Watching a running test): `watch.lines` whole, then `watch.boundary`. |
 | **Step 8 — judge only on the planned sample (real / not / not enough people and how many more).** | `read.lines` whole (its drift line and the verdict's sentence are lines of it), then the step's word — `significant` → real; `not yet` → not; `underpowered` → not enough people — and the read's `context.boundary`, with step 6's estimate line (the card run's cost-and-odds boundary line) inserted right after its belief line (§ Boundary); `underpowered` → the counts question at `read.needPerArm`. |
 | **Step 9 — update the economics with what was measured (new base, the old one beside it, KPIs recalculated).** | On `significant`: the re-base block (SKILL.md § Blocks the CLI renders) from the same read re-run with the re-base (Calls) — the lever at `read.pB` as printed; its `context.rebase.lines` are the KPIs recalculated — and its link, the read's `context.boundary` closing steps 8 and 9, with step 6's estimate line inserted right after its belief line (§ Boundary), then back to step 2 on the re-based file, in the same answer. |
 
@@ -64,13 +70,17 @@ base's.
 ## Stops
 - No learnable row at step 3 → "bigger change or more traffic", and the cycle stops here.
 - Fewer counts than the planned sample (the card row's `nPerArm` per arm) → "keep the test running to
-  <nPerArm> per arm", no read; `underpowered` → the counts question at `read.needPerArm`, no read of a
-  smaller sample; `not yet` → `read.lines` (its `context.more.sentence` last) is the whole answer — never
-  a planned sample already reached, or one that is n/a.
+  <nPerArm> per arm", no read — its daily check is `ue stat watch`; `underpowered` → the counts
+  question at `read.needPerArm`, no read of a smaller sample; `not yet` → `read.lines` (its
+  `context.more.sentence` last) is the whole answer — never a planned sample already reached, or one that
+  is n/a.
 - Step 9 only on `significant`; a `mix` read or a drop has no realized run (its `context.rebase.lines`
   are the effect).
 
 ## Worked example
+
+The example follows one metric lever through the cycle, so its rank runs carry `--metrics-only`; a
+default run adds the structural rows.
 
 The story of `cases/uc-11-hypothesis-card.md#Worked example`, every input invented for the dry run — copy
 the shape, never a sentence or a figure of it. A walk-through, not an answer: each step's answer still
@@ -119,13 +129,13 @@ Then only step 6's question: "What would it cost to build (dollars), and what ar
 The reader's cost and odds, invented for the dry run: $2,400.00 and 0.5. ONE run:
 
 ```bash
-npx -y @segmently/cli ue rank base.json --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json --cost p1=2400 --odds p1=0.5
+npx -y @segmently/cli ue rank base.json --metrics-only --horizon 21 --override p1=0.12 --card .ue/synthetic-meditation/card-p1.json --cost p1=2400 --odds p1=0.5
 ```
 
 The ten-field card of `cases/uc-11-hypothesis-card.md#Worked example`, fields (1) to (10) in order —
-field 5 its card block (`card.lines` when the card comes inline), field 7 every `sentences.warnings` line
-— is printed whole; this run's card, table and warnings are that worked card's override run's — only
-field 9 differs.
+field 5 its card block (`card.lines` when the card comes inline), field 7 its plan, every
+`sentences.warnings` line and its while-it-runs line (UC-11 field 7) — is printed whole; this run's card,
+table and warnings are that worked card's override run's — only field 9 differs.
 
 Field 9 — the `p1` row's `bet.sentence`, then "Beside it: $<spendRouted> routed over <days> days." —
 printed whole:
@@ -137,11 +147,14 @@ printed whole:
 
 **Step 7 — the metrics to watch (the steps that must not drop; for the nearest step the drop that cancels the whole gain and whether it is visible within the test).**
 `guardrail.watch` and `guardrail.sentence` — printed whole, right after the card's field 10, in the same
-answer (fields 4 and 6 keep them too):
+answer (fields 4 and 6 keep them too), then the handoff on its own line:
 
 Watch the steps after `p1` — `p2`, `p3`, `bought`, `close`, `trialConv` and `renewals` must not drop while it is tested.
 
-`p2` must not fall: −10.59 % there cancels the +11.84 % on `p1` ($3,157.16 a month, `gainPerMonth`); within 21 days you can only see a ≥ 6.2% change on `p2`, so a drop that cancels the gain is visible in this test.
+`p2` must not fall: −10.59 % there cancels the +11.84 % on `p1` ($3,157.16 a month, `gainPerMonth`); guardrail «p2» is not readable within the test's 4.56 days (readable from day 7.43); extend the test to 7.43 days or keep it as a kill switch only.
+
+While it runs: `ue exp start` the day it goes live, then `ue stat watch` once a day with the day's
+counters; the one read, at 1864 per arm, is step 8.
 
 The base's `walk.lines` are the first 16 lines of the boundary below. The card run's `boundary` closes
 steps 6 and 7 — printed whole (the estimate line right after the belief), on the project file:
@@ -175,6 +188,43 @@ steps 6 and 7 — printed whole (the estimate line right after the belief), on t
 Then only the question: "What are the counts once each arm has reached 1864 — per arm, how many saw it
 and how many converted?"
 
+**While the test runs — before step 8.** The reader launches the test in their own A/B tool (the owner's
+list has no step 5). In a session step 6's card run is on the project file and writes the planned
+experiment `e1` (`card.experiment.id`); the day the test goes live `ue exp start` sets it running, and
+each day after, one `ue stat watch` takes the reader's counters — `p1` and `p2` so far, and `p2` on the
+last full day, invented for the dry run (`--date` pins the dry run's days; a session's check is today's):
+
+```bash
+npx -y @segmently/cli ue exp start .ue/synthetic-meditation.json e1 --date 2026-09-24
+npx -y @segmently/cli ue stat watch --project-file .ue/synthetic-meditation.json --lever p1 --a 1227/466 --b 1225/521 --guardrail p2=466/256,521/280 --today p2=156/86,174/95 --date 2026-09-27
+```
+
+`watch.lines` — printed whole:
+
+Day 3 of 5 — `p1` (e1), running since 2026-09-24.
+
+`p2`: noise — −2.17 % (`pValue` 0.7072, not below 0.01); a rise of ≥ 16.4% is readable today (day 3); the drop that cancels the gain (−10.59 %) needs 1,157 per arm for its read at the planned end — 466 so far.
+
+Primary: 1,225 of 1,864 per arm — read on 2026-09-29.
+
+Daily looks: 0.05 ÷ 5 = 0.01 per look — Bonferroni over the planned days, a stand-in for a sequential boundary.
+
+A `{{…}}` line stands for lines already shown above; an answer prints the lines, never the marker
+(`ue check` flags one).
+
+`watch.boundary` — printed whole:
+
+> These figures are this scenario's arithmetic on the inputs above.
+>
+> {{walk: base — the 16 lines above}}
+> - the variant: e1's card "card p1 +11.84 % (believed)" (.ue/synthetic-meditation/card-p1.json) holds `p1` +11.84 % — assumed: the card's beliefs, as the card carries them
+> - the 21-day horizon — measured: your answer
+> - the 50/50 split — assumed: the test design
+> - the counters of day 3 — measured: your counts
+
+Day 3 of 5, status `continue`: the test keeps running, one watch a day; it never prints `p1`'s rates, and
+at 1864 per arm it prints the one read to run — step 8.
+
 **Step 8 — judge only on the planned sample (real / not / not enough people and how many more).**
 Ending B of `cases/uc-11-hypothesis-card.md#Worked example`, at the planned 1864 per arm — field 10's
 read with the reader's counts:
@@ -190,9 +240,6 @@ npx -y @segmently/cli ue stat read --a 1864/708 --b 1864/736 --project-file .ue/
 `p1` scenario 38 % → observed 39.48 % (1.48 points higher)
 
 Not enough people yet: the observed difference needs 16,509 per arm (`read.needPerArm`) and the smaller arm has 1,864 — 14,645 more per arm, 35.8 more days at 818.18 funnel starts a day, split 50/50.
-
-A `{{…}}` line stands for lines already shown above; an answer prints the lines, never the marker
-(`ue check` flags one).
 
 Not enough people — `underpowered`: the test keeps running to the new planned sample. The read's
 `context.boundary` — printed whole (the read sent with `--belief 0.12`), step 6's estimate line added

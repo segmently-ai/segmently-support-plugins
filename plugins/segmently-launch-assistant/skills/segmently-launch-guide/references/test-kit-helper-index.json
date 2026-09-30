@@ -339,6 +339,11 @@
       "category": "themes"
     },
     {
+      "name": "closeEdgeConnectionDetails",
+      "sourceModule": "canvas/edge-transition",
+      "category": "canvas"
+    },
+    {
       "name": "closeMoveToFolderDialog",
       "sourceModule": "webplacement-list/ab-test-operations",
       "category": "webplacement-list"
@@ -399,6 +404,11 @@
       "category": "canvas"
     },
     {
+      "name": "CONSOLE_ANALYTICS_GROUP_PREFIX",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
+    },
+    {
       "name": "CONTENT_PLAN",
       "sourceModule": "selectors/content-plan",
       "category": "selectors"
@@ -422,6 +432,11 @@
       "name": "copyWebPlacementUrl",
       "sourceModule": "webplacement-list/list-operations",
       "category": "webplacement-list"
+    },
+    {
+      "name": "countCarouselEntranceAnimations",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
     },
     {
       "name": "createABTestFolder",
@@ -520,6 +535,11 @@
     },
     {
       "name": "deleteWebPlacement",
+      "sourceModule": "webplacement-list/list-operations",
+      "category": "webplacement-list"
+    },
+    {
+      "name": "deleteWebPlacementByName",
       "sourceModule": "webplacement-list/list-operations",
       "category": "webplacement-list"
     },
@@ -627,6 +647,11 @@
       "name": "expandAccordionByTestId",
       "sourceModule": "guides/guide-anchors",
       "category": "guides"
+    },
+    {
+      "name": "expandAnimationsSection",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
     },
     {
       "name": "expandChildSection",
@@ -974,6 +999,11 @@
       "category": "themes"
     },
     {
+      "name": "getTransitionDemoPhase",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "getUnviewedBadgeCount",
       "sourceModule": "tasks/task-helpers",
       "category": "tasks"
@@ -1002,6 +1032,11 @@
       "name": "guidePopoverTestId",
       "sourceModule": "guides/guide-anchors",
       "category": "guides"
+    },
+    {
+      "name": "hasCustomMotionChip",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
     },
     {
       "name": "highlightMention",
@@ -1069,6 +1104,16 @@
       "category": "canvas"
     },
     {
+      "name": "isMotionSchemeSelected",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
+      "name": "isPaywallOverrideChecked",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "isScreenPickerSearchFocused",
       "sourceModule": "canvas/screen-picker",
       "category": "canvas"
@@ -1127,6 +1172,11 @@
       "name": "MEDIA_LIGHTBOX",
       "sourceModule": "selectors/media-lightbox",
       "category": "selectors"
+    },
+    {
+      "name": "mergeWriteEnvFile",
+      "sourceModule": "fixtures/env-file",
+      "category": "fixtures"
     },
     {
       "name": "moveABTestToFolder",
@@ -1254,6 +1304,11 @@
       "category": "themes"
     },
     {
+      "name": "openAnimationsAdvanced",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "openBlockInNewTab",
       "sourceModule": "strategy/strategy-canvas-helpers",
       "category": "strategy"
@@ -1297,6 +1352,11 @@
       "name": "openEdgeConditionEditor",
       "sourceModule": "conditions/condition-editor",
       "category": "conditions"
+    },
+    {
+      "name": "openEdgeConnectionDetails",
+      "sourceModule": "canvas/edge-transition",
+      "category": "canvas"
     },
     {
       "name": "openEditAndApplyTheme",
@@ -1429,6 +1489,11 @@
       "category": "webshell"
     },
     {
+      "name": "playTransitionDemo",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "PRODUCT_INSIGHTS",
       "sourceModule": "selectors/product-insights",
       "category": "selectors"
@@ -1449,6 +1514,11 @@
       "category": "selectors"
     },
     {
+      "name": "PROVIDER_CREDENTIALS",
+      "sourceModule": "selectors/provider-credentials",
+      "category": "selectors"
+    },
+    {
       "name": "publishABTest",
       "sourceModule": "webplacement-list/ab-test-operations",
       "category": "webplacement-list"
@@ -1459,9 +1529,24 @@
       "category": "webplacement-list"
     },
     {
+      "name": "publishWebPlacementByAlias",
+      "sourceModule": "webplacement/publish-by-alias",
+      "category": "webplacement"
+    },
+    {
+      "name": "readAnimationAdvancedValues",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "readCliCredentialFromEnv",
       "sourceModule": "auth/login-via-cli-token",
       "category": "auth"
+    },
+    {
+      "name": "readEnvFile",
+      "sourceModule": "fixtures/env-file",
+      "category": "fixtures"
     },
     {
       "name": "readPaddleFixtureEnv",
@@ -1474,6 +1559,11 @@
       "category": "content-plan"
     },
     {
+      "name": "readPublishedFunnel",
+      "sourceModule": "webplacement/published-funnel",
+      "category": "webplacement"
+    },
+    {
       "name": "readWizardTableRows",
       "sourceModule": "strategy/strategy-wizard-helpers",
       "category": "strategy"
@@ -1482,6 +1572,11 @@
       "name": "readWizardTableSummary",
       "sourceModule": "strategy/strategy-wizard-helpers",
       "category": "strategy"
+    },
+    {
+      "name": "recordConsoleAnalytics",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
     },
     {
       "name": "redoCanvasAction",
@@ -1514,6 +1609,11 @@
       "category": "canvas"
     },
     {
+      "name": "revealAdminThemeV2Card",
+      "sourceModule": "themes/admin-themes-v2",
+      "category": "themes"
+    },
+    {
       "name": "saveABTestDialog",
       "sourceModule": "webplacement-list/ab-test-dialog-helpers",
       "category": "webplacement-list"
@@ -1539,9 +1639,24 @@
       "category": "webplacement"
     },
     {
+      "name": "SCREEN_EVENT_DEDUP_WINDOW_MS",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
+    },
+    {
+      "name": "SCREEN_NAVIGATION_EVENTS",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
+    },
+    {
       "name": "SCREEN_PICKER",
       "sourceModule": "selectors/screen-picker",
       "category": "selectors"
+    },
+    {
+      "name": "screenNavigationSteps",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
     },
     {
       "name": "searchOnboarding",
@@ -1594,6 +1709,11 @@
       "category": "webshell"
     },
     {
+      "name": "selectMotionScheme",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "selectPlacementForVariant",
       "sourceModule": "webplacement-list/ab-test-dialog-helpers",
       "category": "webplacement-list"
@@ -1606,6 +1726,11 @@
     {
       "name": "selectThemeV2Screen",
       "sourceModule": "themes/theme-v2-editor",
+      "category": "themes"
+    },
+    {
+      "name": "setAnimationNumericInput",
+      "sourceModule": "themes/theme-animations",
       "category": "themes"
     },
     {
@@ -1642,6 +1767,11 @@
       "name": "setEdgeCondition",
       "sourceModule": "conditions/condition-editor",
       "category": "conditions"
+    },
+    {
+      "name": "setEdgeTransitionOverride",
+      "sourceModule": "canvas/edge-transition",
+      "category": "canvas"
     },
     {
       "name": "setField",
@@ -1784,6 +1914,11 @@
       "category": "selectors"
     },
     {
+      "name": "toggleCarouselAnimationPreview",
+      "sourceModule": "themes/theme-animations",
+      "category": "themes"
+    },
+    {
       "name": "toggleConditionLogic",
       "sourceModule": "conditions/condition-editor",
       "category": "conditions"
@@ -1807,6 +1942,11 @@
       "name": "TOOLBAR",
       "sourceModule": "selectors/toolbar",
       "category": "selectors"
+    },
+    {
+      "name": "toScreenNavigationTrail",
+      "sourceModule": "webshell/console-analytics",
+      "category": "webshell"
     },
     {
       "name": "undoCanvasAction",
@@ -1872,6 +2012,11 @@
       "name": "waitForBulkDialogComplete",
       "sourceModule": "bulk-dialog/bulk-dialog-helpers",
       "category": "bulk-dialog"
+    },
+    {
+      "name": "waitForPublishedFunnel",
+      "sourceModule": "webplacement/published-funnel",
+      "category": "webplacement"
     },
     {
       "name": "waitForTaskCompletion",

@@ -22,7 +22,7 @@
         "sectionKey": "section",
         "referencePath": "help-block-basic-config/screen-editor-section-basic-config#screen-editor-section-basic-config/section",
         "title": "Basic Config section",
-        "description": "Behavior settings for this screen that do not change its visible copy: the entry animation, preferring cached assets, requesting a system permission, and an optional auto-advance countdown. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
+        "description": "Behavior settings for this screen that do not change its visible copy: preferring cached assets, requesting a system permission, and an optional auto-advance countdown; entrance animations are set in the Animation section. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
         "hasScreenshotEvidence": true,
         "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png"
       },
@@ -41,7 +41,7 @@
     {
       "sectionKey": "section",
       "title": "Basic Config section",
-      "summary": "Behavior settings for this screen that do not change its visible copy: the entry animation, preferring cached assets, requesting a system permission, and an optional auto-advance countdown. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
+      "summary": "Behavior settings for this screen that do not change its visible copy: preferring cached assets, requesting a system permission, and an optional auto-advance countdown; entrance animations are set in the Animation section. Most screens can be left at their defaults — reach for these only for timed intros or permission prompts.",
       "imageUrl": "https://api.segmently.ai/assets/projects/JfQI6dIKYOTUcg1RiCE0/cli-assets/paywall-screen-configuration-guide/20260608150301_native-paywall-background-basic-config-location/origin.png",
       "articleRefs": [
         {

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-animation-screen-entrance",
+  "evidence": {
+    "guideKey": "screenedit-animation-screen-entrance",
+    "articleId": "screenedit-animation-screen-entrance",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-animation-screen-entrance",
+    "name": "Screen field: Give this screen its own entrance",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Give this screen its own entrance\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-animation-screen-entrance/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-animation/screenedit-animation-screen-entrance#screenedit-animation-screen-entrance/field",
+        "title": "Give this screen its own entrance",
+        "description": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Give this screen its own entrance",
+      "summary": "Turns on this screen's own entrance: its standard elements, such as the header, images, title, and action bar, animate in one after another in a fixed order when a visitor arrives. Switching it on starts with Fade In Up, 450 ms, and an 80 ms stagger (adjust them below) and overrides your theme's entrance for this screen. Switched off, the screen plays the Legacy fade-in if that toggle is on, otherwise your theme's entrance (shown as 'Inherited from theme'), or no entrance if the theme has none.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screenedit-animation-screen-entrance/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

@@ -1237,8 +1237,6 @@
     {
       "kind": "action-family",
       "intentPhrases": [
-        "change play screen animations",
-        "set play screen animations",
         "change reuse cached media",
         "set reuse cached media",
         "change which permission to ask for",
@@ -1246,7 +1244,9 @@
         "change auto-advance duration",
         "set auto-advance duration",
         "change seconds or minutes",
-        "set seconds or minutes"
+        "set seconds or minutes",
+        "change legacy fade-in",
+        "set legacy fade-in"
       ],
       "mode": "cli",
       "actionFamily": "editor.setting",
@@ -1749,6 +1749,120 @@
       "mode": "teach",
       "articleAliases": [
         "help-strategy-onboarding-sync"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "animate-screens",
+        "animate my screens",
+        "animate screens",
+        "animate a screen",
+        "screen animation",
+        "screen animations",
+        "entrance animation",
+        "screen entrance",
+        "how do I animate",
+        "анимация экрана",
+        "анимация экранов",
+        "анимировать экран"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-animation",
+        "help-theme-animations"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "motion-scheme",
+        "motion scheme",
+        "motion schemes",
+        "theme animations",
+        "theme motion",
+        "animation scheme",
+        "animation style",
+        "calm paywall",
+        "apply animations to canvas",
+        "схема анимации",
+        "анимации темы",
+        "стиль анимации"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-theme-animations"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "screen-transitions",
+        "screen transition",
+        "screen transitions",
+        "transition between screens",
+        "connection transition",
+        "slide transition",
+        "fade transition",
+        "переход между экранами",
+        "переходы между экранами",
+        "анимация перехода",
+        "переход экрана",
+        "change the transition"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-screen-transitions",
+        "help-theme-animations"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "list-item-animation",
+        "list item animation",
+        "item animation",
+        "selection animation",
+        "deselection animation",
+        "option animation",
+        "answer animation",
+        "анимация вариантов",
+        "анимация элементов списка",
+        "анимация выбора ответа",
+        "options animate",
+        "animate the options"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-options",
+        "help-options-list-single",
+        "help-options-list-multi",
+        "help-options-grid-single",
+        "help-options-grid-multi",
+        "help-options-hero-list"
+      ],
+      "next": "references/article-directory.json"
+    },
+    {
+      "kind": "articles",
+      "intentPhrases": [
+        "play-animations",
+        "play animations",
+        "preview animation",
+        "preview animations",
+        "replay animation",
+        "replay the animation",
+        "проиграть анимацию",
+        "предпросмотр анимации"
+      ],
+      "mode": "teach",
+      "articleAliases": [
+        "help-block-animation",
+        "help-theme-animations"
       ],
       "next": "references/article-directory.json"
     }

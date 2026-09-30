@@ -208,6 +208,17 @@ const GAP_FAMILY_RULES = Object.freeze([
     rationale: 'The current generic scalar pass excludes nullable object creation/removal by design.',
   },
   {
+    family: 'screen-entrance-animation',
+    label: 'Screen entrance animation (style, timing, stagger, easing)',
+    match: /screenedit-animation|screen entrance|entrance (style|duration|easing)|delay between elements/i,
+    recommendedExecution: 'cli-domain-operation',
+    requiredBackendPolicy: 'Animation domain operation that creates or removes the nullable screenAnimation object, then sets style, duration, stagger and easing within their allowed ranges.',
+    requiredRunner: 'cli-do-runner with backend dry-run preflight and funnels export readback; optional browser preview to check the motion.',
+    requiredLiveCases: ['do-cli-screen-entrance-animation-live'],
+    releaseGateStatus: 'planned-domain-operation',
+    rationale: 'Screen Entrance is a nullable object with nested timing and stagger values, so a blind scalar patch could create an invalid animation config.',
+  },
+  {
     family: 'spacing-and-insets',
     label: 'Padding, margin, spacing, insets, and dimensions',
     match: /padding|paddings|margin|spacing|insets|space around|space inside|height|width|dimensions|rounded|corner/i,

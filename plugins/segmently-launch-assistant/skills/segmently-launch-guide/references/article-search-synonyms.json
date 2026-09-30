@@ -18,7 +18,10 @@
         "изменить шрифт",
         "загрузить свой шрифт",
         "шрифт воронки",
-        "кастомный шрифт"
+        "кастомный шрифт",
+        "change fonts",
+        "change the fonts",
+        "how do I change fonts"
       ],
       "tags": [
         "fonts",
@@ -406,6 +409,143 @@
       ],
       "articleAliases": [
         "help-strategy-onboarding-sync"
+      ]
+    },
+    {
+      "id": "animate-screens",
+      "phrases": [
+        "animate my screens",
+        "animate screens",
+        "animate a screen",
+        "screen animation",
+        "screen animations",
+        "entrance animation",
+        "screen entrance",
+        "how do I animate",
+        "анимация экрана",
+        "анимация экранов",
+        "анимировать экран",
+        "как сделать анимацию экрана",
+        "анимация элементов экрана",
+        "animation of the screen",
+        "animation of this screen",
+        "change the animation",
+        "turn off the animation",
+        "turn off animations",
+        "disable animations",
+        "animation on the paywall"
+      ],
+      "tags": [
+        "animations",
+        "screen-entrance",
+        "screen-editor"
+      ],
+      "articleAliases": [
+        "help-block-animation",
+        "help-theme-animations"
+      ]
+    },
+    {
+      "id": "motion-scheme",
+      "phrases": [
+        "motion scheme",
+        "motion schemes",
+        "theme animations",
+        "theme motion",
+        "animation scheme",
+        "animation style",
+        "calm paywall",
+        "apply animations to canvas",
+        "схема анимации",
+        "анимации темы",
+        "стиль анимации"
+      ],
+      "tags": [
+        "animations",
+        "theme",
+        "motion-scheme"
+      ],
+      "articleAliases": [
+        "help-theme-animations"
+      ]
+    },
+    {
+      "id": "screen-transitions",
+      "phrases": [
+        "screen transition",
+        "screen transitions",
+        "transition between screens",
+        "connection transition",
+        "slide transition",
+        "fade transition",
+        "переход между экранами",
+        "переходы между экранами",
+        "анимация перехода",
+        "переход экрана",
+        "change the transition"
+      ],
+      "tags": [
+        "transitions",
+        "canvas",
+        "connections"
+      ],
+      "articleAliases": [
+        "help-screen-transitions",
+        "help-theme-animations"
+      ]
+    },
+    {
+      "id": "list-item-animation",
+      "phrases": [
+        "list item animation",
+        "item animation",
+        "selection animation",
+        "deselection animation",
+        "option animation",
+        "answer animation",
+        "анимация вариантов",
+        "анимация элементов списка",
+        "анимация выбора ответа",
+        "options animate",
+        "animate the options",
+        "options animation",
+        "animate in one by one",
+        "stagger of the options",
+        "options stagger",
+        "option stagger"
+      ],
+      "tags": [
+        "animations",
+        "options",
+        "choices"
+      ],
+      "articleAliases": [
+        "help-block-options",
+        "help-options-list-single",
+        "help-options-list-multi",
+        "help-options-grid-single",
+        "help-options-grid-multi",
+        "help-options-hero-list"
+      ]
+    },
+    {
+      "id": "play-animations",
+      "phrases": [
+        "play animations",
+        "preview animation",
+        "preview animations",
+        "replay animation",
+        "replay the animation",
+        "проиграть анимацию",
+        "предпросмотр анимации"
+      ],
+      "tags": [
+        "animations",
+        "preview"
+      ],
+      "articleAliases": [
+        "help-block-animation",
+        "help-theme-animations"
       ]
     }
   ]

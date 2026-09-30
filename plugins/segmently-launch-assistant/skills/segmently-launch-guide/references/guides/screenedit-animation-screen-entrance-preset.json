@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-animation-screen-entrance-preset",
+  "evidence": {
+    "guideKey": "screenedit-animation-screen-entrance-preset",
+    "articleId": "screenedit-animation-screen-entrance-preset",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-animation-screen-entrance-preset",
+    "name": "Screen field: Entrance style",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Entrance style\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-animation-screen-entrance-preset/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-animation/screenedit-animation-screen-entrance-preset#screenedit-animation-screen-entrance-preset/field",
+        "title": "Entrance style",
+        "description": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Entrance style",
+      "summary": "Chooses how each animated element appears when the screen opens: fades, slides, scales, zooms, bounces, flips, and more, many with a choice of direction. Fade In Up is the default and suits almost any screen. Keep calm fades and slides on question and paywall screens, and save bouncy or flipping styles for a playful brand or a single highlight moment.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screenedit-animation-screen-entrance-preset/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

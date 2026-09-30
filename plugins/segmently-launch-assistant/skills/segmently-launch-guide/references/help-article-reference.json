@@ -277,6 +277,91 @@
       "assemblyLinks": []
     },
     {
+      "alias": "help-block-animation",
+      "title": "Animation — all settings",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/help-block-animation",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-animation/config.json",
+      "settingCount": 5,
+      "settings": [
+        {
+          "guideKey": "screenedit-animation-screen-entrance",
+          "title": "Give this screen its own entrance",
+          "sectionType": "animation",
+          "group": "entrance",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/open-section-entrance.png",
+          "articleSectionId": "set-animation-content-screenanimation",
+          "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation",
+          "route": [
+            "Open the screen in the editor.",
+            "Expand the Animation section.",
+            "Find “Give this screen its own entrance”."
+          ]
+        },
+        {
+          "guideKey": "screenedit-animation-screen-entrance-preset",
+          "title": "Entrance style",
+          "sectionType": "animation",
+          "group": "entrance",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-preset.png",
+          "articleSectionId": "set-animation-content-screenanimation-enteranimation-preset",
+          "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-preset",
+          "route": [
+            "Open the screen in the editor.",
+            "Expand the Animation section.",
+            "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+            "Find “Entrance style”."
+          ]
+        },
+        {
+          "guideKey": "screenedit-animation-screen-entrance-duration",
+          "title": "Entrance duration",
+          "sectionType": "animation",
+          "group": "entrance",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-duration.png",
+          "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-duration",
+          "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-duration",
+          "route": [
+            "Open the screen in the editor.",
+            "Expand the Animation section.",
+            "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+            "Find “Entrance duration”."
+          ]
+        },
+        {
+          "guideKey": "screenedit-animation-screen-entrance-stagger",
+          "title": "Delay between elements",
+          "sectionType": "animation",
+          "group": "entrance",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/entrance-enabled-stagger.png",
+          "articleSectionId": "set-animation-content-screenanimation-stagger-delayperitem",
+          "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-stagger-delayperitem",
+          "route": [
+            "Open the screen in the editor.",
+            "Expand the Animation section.",
+            "Tick the Screen Entrance checkbox to reveal its preset, duration and stagger fields.",
+            "Find “Delay between elements”."
+          ]
+        },
+        {
+          "guideKey": "screenedit-animation-easing",
+          "title": "Entrance easing",
+          "sectionType": "animation",
+          "group": "advanced",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-30T02-01-24-876Z-bc17b5f1/advanced-easing.png",
+          "articleSectionId": "set-animation-content-screenanimation-enteranimation-timing-easing",
+          "articleSectionUrl": "https://help.segmently.ai/help-block-animation#set-animation-content-screenanimation-enteranimation-timing-easing",
+          "route": [
+            "Open the screen in the editor.",
+            "Expand the Animation section.",
+            "Open the Advanced panel (easing and the per-element overrides list).",
+            "Find “Entrance easing”."
+          ]
+        }
+      ],
+      "assemblyLinks": []
+    },
+    {
       "alias": "help-block-background",
       "title": "Background",
       "projectId": "arswew63RwQr6V4Ekb1Z",
@@ -292,28 +377,14 @@
       "projectId": "arswew63RwQr6V4Ekb1Z",
       "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-block-basic-config/config.json",
-      "settingCount": 7,
+      "settingCount": 6,
       "settings": [
-        {
-          "guideKey": "screenedit-basic-config-animation-enabled",
-          "title": "Play Screen Animations",
-          "sectionType": "basicConfig",
-          "group": "animation",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-animation.png",
-          "articleSectionId": "set-basicconfig-content-animated",
-          "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-animated",
-          "route": [
-            "Open the screen in the editor.",
-            "Expand the Basic Config section.",
-            "Find “Play Screen Animations”."
-          ]
-        },
         {
           "guideKey": "screenedit-basic-config-offline-first",
           "title": "Reuse cached media",
           "sectionType": "basicConfig",
           "group": "offline",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-offline.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/open-section-offline.png",
           "articleSectionId": "set-basicconfig-content-offlinefirst",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-offlinefirst",
           "route": [
@@ -327,7 +398,7 @@
           "title": "Ask For A Device Permission",
           "sectionType": "basicConfig",
           "group": "permission",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-permission.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/open-section-permission.png",
           "articleSectionId": "set-basicconfig-content-systemprompt",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt",
           "route": [
@@ -341,7 +412,7 @@
           "title": "Which Permission To Ask For",
           "sectionType": "basicConfig",
           "group": "permission",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-permission-type.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/enabled-permission-type.png",
           "articleSectionId": "set-basicconfig-content-systemprompt-permissiontype",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-systemprompt-permissiontype",
           "route": [
@@ -356,7 +427,7 @@
           "title": "Auto-Advance After A Delay",
           "sectionType": "basicConfig",
           "group": "countdown",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/open-section-countdown.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/open-section-countdown.png",
           "articleSectionId": "set-basicconfig-content-countdown",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown",
           "route": [
@@ -370,7 +441,7 @@
           "title": "Auto-Advance Duration",
           "sectionType": "basicConfig",
           "group": "countdown",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-duration.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/enabled-countdown-duration.png",
           "articleSectionId": "set-basicconfig-content-countdown-duration",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-duration",
           "route": [
@@ -385,7 +456,7 @@
           "title": "Seconds Or Minutes",
           "sectionType": "basicConfig",
           "group": "countdown",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/enabled-countdown-unit.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/enabled-countdown-unit.png",
           "articleSectionId": "set-basicconfig-content-countdown-unit",
           "articleSectionUrl": "https://help.segmently.ai/help-block-basic-config#set-basicconfig-content-countdown-unit",
           "route": [
@@ -1786,7 +1857,7 @@
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-israndomized",
           "route": [
@@ -1801,7 +1872,7 @@
           "title": "Cap on multi-select picks",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-selections.png",
           "articleSectionId": "set-options-maxselecteditemcount",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-maxselecteditemcount",
           "route": [
@@ -1816,7 +1887,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-itemlayout",
           "route": [
@@ -1830,7 +1901,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-verticalalignment",
           "route": [
@@ -1845,7 +1916,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-usemaxcellheight",
           "route": [
@@ -1860,13 +1931,13 @@
           "title": "Grid cell proportions",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-cell-dimensions.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-cell-dimensions.png",
           "articleSectionId": "set-options-cellheightfromcellwidth",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-cellheightfromcellwidth",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Grid cell proportions”."
           ]
         },
@@ -1875,7 +1946,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-unselecteditemstate",
           "route": [
@@ -1890,7 +1961,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-selecteditemstate",
           "route": [
@@ -1905,7 +1976,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-itempaddings",
           "route": [
@@ -1920,7 +1991,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-listpaddings",
           "route": [
@@ -1935,7 +2006,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-itemsspacing",
           "route": [
@@ -1950,13 +2021,13 @@
           "title": "Image area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-image-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-image-container.png",
           "articleSectionId": "set-options-imagecontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-imagecontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Image area in each card”."
           ]
         },
@@ -1965,13 +2036,13 @@
           "title": "Text area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-text-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-text-container.png",
           "articleSectionId": "set-options-textcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-textcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Text area in each card”."
           ]
         },
@@ -1980,13 +2051,13 @@
           "title": "Checkbox placement in grid cells",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-checkbox-container.png",
           "articleSectionId": "set-options-checkboxcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-checkboxcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Checkbox placement in grid cells”."
           ]
         },
@@ -1995,7 +2066,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-titlestyles",
           "route": [
@@ -2010,7 +2081,7 @@
           "title": "Item subtitle text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-subtitle-styles.png",
           "articleSectionId": "set-options-subtitlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-subtitlestyles",
           "route": [
@@ -2025,7 +2096,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-imagestyles",
           "route": [
@@ -2040,13 +2111,13 @@
           "title": "Checkbox look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/checkbox-styles.png",
           "articleSectionId": "set-options-checkboxstyles",
           "articleSectionUrl": "https://help.segmently.ai/help-block-options#set-options-checkboxstyles",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a List Multi Pick screen, open the style settings and pick a checkbox item layout.",
             "Find “Checkbox look”."
           ]
         }
@@ -5407,14 +5478,14 @@
       "projectId": "arswew63RwQr6V4Ekb1Z",
       "publishedUrl": "https://help.segmently.ai/help-options-grid-multi",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-multi/config.json",
-      "settingCount": 18,
+      "settingCount": 17,
       "settings": [
         {
           "guideKey": "screenedit-options-randomize-order",
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-israndomized",
           "route": [
@@ -5429,7 +5500,7 @@
           "title": "Cap on multi-select picks",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-selections.png",
           "articleSectionId": "set-options-maxselecteditemcount",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-maxselecteditemcount",
           "route": [
@@ -5444,7 +5515,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemlayout",
           "route": [
@@ -5458,7 +5529,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-verticalalignment",
           "route": [
@@ -5473,7 +5544,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-usemaxcellheight",
           "route": [
@@ -5488,13 +5559,13 @@
           "title": "Grid cell proportions",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-cell-dimensions.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-cell-dimensions.png",
           "articleSectionId": "set-options-cellheightfromcellwidth",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-cellheightfromcellwidth",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Grid cell proportions”."
           ]
         },
@@ -5503,7 +5574,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-unselecteditemstate",
           "route": [
@@ -5518,7 +5589,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-selecteditemstate",
           "route": [
@@ -5533,7 +5604,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itempaddings",
           "route": [
@@ -5548,7 +5619,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-listpaddings",
           "route": [
@@ -5563,7 +5634,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-itemsspacing",
           "route": [
@@ -5578,13 +5649,13 @@
           "title": "Image area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-image-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-image-container.png",
           "articleSectionId": "set-options-imagecontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagecontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Image area in each card”."
           ]
         },
@@ -5593,13 +5664,13 @@
           "title": "Text area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-text-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-text-container.png",
           "articleSectionId": "set-options-textcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-textcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Text area in each card”."
           ]
         },
@@ -5608,13 +5679,13 @@
           "title": "Checkbox placement in grid cells",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-checkbox-container.png",
           "articleSectionId": "set-options-checkboxcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Checkbox placement in grid cells”."
           ]
         },
@@ -5623,7 +5694,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-titlestyles",
           "route": [
@@ -5638,7 +5709,7 @@
           "title": "Item subtitle text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-subtitle-styles.png",
           "articleSectionId": "set-options-subtitlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-subtitlestyles",
           "route": [
@@ -5653,7 +5724,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-imagestyles",
           "route": [
@@ -5661,21 +5732,6 @@
             "Open the Options list section and set the item layout.",
             "Open the style settings (the gear on the Options section).",
             "Find “Item image look”."
-          ]
-        },
-        {
-          "guideKey": "screenedit-options-checkbox-styles",
-          "title": "Checkbox look",
-          "sectionType": "options",
-          "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-styles.png",
-          "articleSectionId": "set-options-checkboxstyles",
-          "articleSectionUrl": "https://help.segmently.ai/help-options-grid-multi#set-options-checkboxstyles",
-          "route": [
-            "Open the screen in the editor.",
-            "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
-            "Find “Checkbox look”."
           ]
         }
       ],
@@ -5687,14 +5743,14 @@
       "projectId": "arswew63RwQr6V4Ekb1Z",
       "publishedUrl": "https://help.segmently.ai/help-options-grid-single",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-options-grid-single/config.json",
-      "settingCount": 18,
+      "settingCount": 17,
       "settings": [
         {
           "guideKey": "screenedit-options-randomize-order",
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-israndomized",
           "route": [
@@ -5709,7 +5765,7 @@
           "title": "Cap on multi-select picks",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-selections.png",
           "articleSectionId": "set-options-maxselecteditemcount",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-maxselecteditemcount",
           "route": [
@@ -5724,7 +5780,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-itemlayout",
           "route": [
@@ -5738,7 +5794,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-verticalalignment",
           "route": [
@@ -5753,7 +5809,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-usemaxcellheight",
           "route": [
@@ -5768,13 +5824,13 @@
           "title": "Grid cell proportions",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-cell-dimensions.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-cell-dimensions.png",
           "articleSectionId": "set-options-cellheightfromcellwidth",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-cellheightfromcellwidth",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Grid cell proportions”."
           ]
         },
@@ -5783,7 +5839,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-unselecteditemstate",
           "route": [
@@ -5798,7 +5854,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-selecteditemstate",
           "route": [
@@ -5813,7 +5869,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-itempaddings",
           "route": [
@@ -5828,7 +5884,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-listpaddings",
           "route": [
@@ -5843,7 +5899,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-itemsspacing",
           "route": [
@@ -5858,13 +5914,13 @@
           "title": "Image area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-image-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-image-container.png",
           "articleSectionId": "set-options-imagecontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-imagecontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Image area in each card”."
           ]
         },
@@ -5873,13 +5929,13 @@
           "title": "Text area in each card",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-text-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-text-container.png",
           "articleSectionId": "set-options-textcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-textcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Text area in each card”."
           ]
         },
@@ -5888,13 +5944,13 @@
           "title": "Checkbox placement in grid cells",
           "sectionType": "options",
           "group": "containers",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-container.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/grid-checkbox-container.png",
           "articleSectionId": "set-options-checkboxcontainer",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-checkboxcontainer",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a Grid Single Pick screen, open the style settings and pick a grid item layout.",
             "Find “Checkbox placement in grid cells”."
           ]
         },
@@ -5903,7 +5959,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-titlestyles",
           "route": [
@@ -5918,7 +5974,7 @@
           "title": "Item subtitle text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-subtitle-styles.png",
           "articleSectionId": "set-options-subtitlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-subtitlestyles",
           "route": [
@@ -5933,7 +5989,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-imagestyles",
           "route": [
@@ -5941,21 +5997,6 @@
             "Open the Options list section and set the item layout.",
             "Open the style settings (the gear on the Options section).",
             "Find “Item image look”."
-          ]
-        },
-        {
-          "guideKey": "screenedit-options-checkbox-styles",
-          "title": "Checkbox look",
-          "sectionType": "options",
-          "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-styles.png",
-          "articleSectionId": "set-options-checkboxstyles",
-          "articleSectionUrl": "https://help.segmently.ai/help-options-grid-single#set-options-checkboxstyles",
-          "route": [
-            "Open the screen in the editor.",
-            "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
-            "Find “Checkbox look”."
           ]
         }
       ],
@@ -5974,7 +6015,7 @@
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-israndomized",
           "route": [
@@ -5989,7 +6030,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-itemlayout",
           "route": [
@@ -6003,7 +6044,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-verticalalignment",
           "route": [
@@ -6018,7 +6059,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-usemaxcellheight",
           "route": [
@@ -6033,7 +6074,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-unselecteditemstate",
           "route": [
@@ -6048,7 +6089,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-selecteditemstate",
           "route": [
@@ -6063,7 +6104,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-itempaddings",
           "route": [
@@ -6078,7 +6119,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-listpaddings",
           "route": [
@@ -6093,7 +6134,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-itemsspacing",
           "route": [
@@ -6108,7 +6149,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-titlestyles",
           "route": [
@@ -6123,7 +6164,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-hero-list#set-options-imagestyles",
           "route": [
@@ -6149,7 +6190,7 @@
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-israndomized",
           "route": [
@@ -6164,7 +6205,7 @@
           "title": "Cap on multi-select picks",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-selections.png",
           "articleSectionId": "set-options-maxselecteditemcount",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-maxselecteditemcount",
           "route": [
@@ -6179,7 +6220,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-itemlayout",
           "route": [
@@ -6193,7 +6234,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-verticalalignment",
           "route": [
@@ -6208,7 +6249,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-usemaxcellheight",
           "route": [
@@ -6223,7 +6264,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-unselecteditemstate",
           "route": [
@@ -6238,7 +6279,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-selecteditemstate",
           "route": [
@@ -6253,7 +6294,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-itempaddings",
           "route": [
@@ -6268,7 +6309,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-listpaddings",
           "route": [
@@ -6283,7 +6324,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-itemsspacing",
           "route": [
@@ -6298,7 +6339,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-titlestyles",
           "route": [
@@ -6313,7 +6354,7 @@
           "title": "Item subtitle text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-subtitle-styles.png",
           "articleSectionId": "set-options-subtitlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-subtitlestyles",
           "route": [
@@ -6328,7 +6369,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-imagestyles",
           "route": [
@@ -6343,13 +6384,13 @@
           "title": "Checkbox look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/grid-checkbox-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/checkbox-styles.png",
           "articleSectionId": "set-options-checkboxstyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-multi#set-options-checkboxstyles",
           "route": [
             "Open the screen in the editor.",
             "Open the Options list section and set the item layout.",
-            "Set Column Layout to Two Columns and pick a grid item layout.",
+            "Open a List Multi Pick screen, open the style settings and pick a checkbox item layout.",
             "Find “Checkbox look”."
           ]
         }
@@ -6369,7 +6410,7 @@
           "title": "Shuffle item order",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-randomize.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-randomize.png",
           "articleSectionId": "set-options-israndomized",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-israndomized",
           "route": [
@@ -6384,7 +6425,7 @@
           "title": "Cap on multi-select picks",
           "sectionType": "options",
           "group": "selection",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-selections.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-selections.png",
           "articleSectionId": "set-options-maxselecteditemcount",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-maxselecteditemcount",
           "route": [
@@ -6399,7 +6440,7 @@
           "title": "What each choice shows",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
           "articleSectionId": "set-options-itemlayout",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-itemlayout",
           "route": [
@@ -6413,7 +6454,7 @@
           "title": "Vertical alignment of items",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-vertical-align.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-vertical-align.png",
           "articleSectionId": "set-options-verticalalignment",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-verticalalignment",
           "route": [
@@ -6428,7 +6469,7 @@
           "title": "Even grid cell heights",
           "sectionType": "options",
           "group": "layout",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-max-cell-height.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-max-cell-height.png",
           "articleSectionId": "set-options-usemaxcellheight",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-usemaxcellheight",
           "route": [
@@ -6443,7 +6484,7 @@
           "title": "Unselected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-unselected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-unselected-state.png",
           "articleSectionId": "set-options-unselecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-unselecteditemstate",
           "route": [
@@ -6458,7 +6499,7 @@
           "title": "Selected item look",
           "sectionType": "options",
           "group": "states",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-selected-state.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-selected-state.png",
           "articleSectionId": "set-options-selecteditemstate",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-selecteditemstate",
           "route": [
@@ -6473,7 +6514,7 @@
           "title": "Padding inside each item",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-item-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-item-paddings.png",
           "articleSectionId": "set-options-itempaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-itempaddings",
           "route": [
@@ -6488,7 +6529,7 @@
           "title": "Margin around the whole list",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-list-paddings.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-list-paddings.png",
           "articleSectionId": "set-options-listpaddings",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-listpaddings",
           "route": [
@@ -6503,7 +6544,7 @@
           "title": "Gap between choices",
           "sectionType": "options",
           "group": "spacing",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-items-spacing.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-items-spacing.png",
           "articleSectionId": "set-options-itemsspacing",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-itemsspacing",
           "route": [
@@ -6518,7 +6559,7 @@
           "title": "Item title text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-title-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-title-styles.png",
           "articleSectionId": "set-options-titlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-titlestyles",
           "route": [
@@ -6533,7 +6574,7 @@
           "title": "Item subtitle text style",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-subtitle-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-subtitle-styles.png",
           "articleSectionId": "set-options-subtitlestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-subtitlestyles",
           "route": [
@@ -6548,7 +6589,7 @@
           "title": "Item image look",
           "sectionType": "options",
           "group": "styles",
-          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/gear-image-styles.png",
+          "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/gear-image-styles.png",
           "articleSectionId": "set-options-imagestyles",
           "articleSectionUrl": "https://help.segmently.ai/help-options-list-single#set-options-imagestyles",
           "route": [
@@ -6570,6 +6611,13 @@
       "settingCount": 0,
       "settings": [],
       "assemblyLinks": [
+        {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
         {
           "title": "Background",
           "alias": "help-block-background",
@@ -6602,6 +6650,13 @@
       "settingCount": 0,
       "settings": [],
       "assemblyLinks": [
+        {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
         {
           "title": "Background",
           "alias": "help-block-background",
@@ -6642,6 +6697,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6653,7 +6715,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6695,7 +6757,7 @@
           "alias": "help-options-grid-multi",
           "sectionType": "options",
           "publishedUrl": "https://help.segmently.ai/help-options-grid-multi",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
         }
       ]
     },
@@ -6716,6 +6778,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6727,7 +6796,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6769,7 +6838,7 @@
           "alias": "help-options-grid-single",
           "sectionType": "options",
           "publishedUrl": "https://help.segmently.ai/help-options-grid-single",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
         }
       ]
     },
@@ -6790,6 +6859,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6801,7 +6877,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6836,6 +6912,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6847,7 +6930,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6882,6 +6965,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6893,7 +6983,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6942,6 +7032,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -6953,7 +7050,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -6988,7 +7085,7 @@
           "alias": "help-options-hero-list",
           "sectionType": "options",
           "publishedUrl": "https://help.segmently.ai/help-options-hero-list",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
         }
       ]
     },
@@ -7009,6 +7106,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7020,7 +7124,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -7062,7 +7166,7 @@
           "alias": "help-options-list-multi",
           "sectionType": "options",
           "publishedUrl": "https://help.segmently.ai/help-options-list-multi",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
         }
       ]
     },
@@ -7083,6 +7187,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7094,7 +7205,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -7136,7 +7247,7 @@
           "alias": "help-options-list-single",
           "sectionType": "options",
           "publishedUrl": "https://help.segmently.ai/help-options-list-single",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/context-section.png"
         }
       ]
     },
@@ -7150,6 +7261,13 @@
       "settings": [],
       "assemblyLinks": [
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7161,7 +7279,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Paywall Body",
@@ -7210,6 +7328,13 @@
       "settings": [],
       "assemblyLinks": [
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Header",
           "alias": "help-block-header",
           "sectionType": "headerBar",
@@ -7242,6 +7367,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7253,7 +7385,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -7293,6 +7425,16 @@
       ]
     },
     {
+      "alias": "help-screen-transitions",
+      "title": "Screen transitions between screens",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/help-screen-transitions",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-transitions/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
       "alias": "help-screen-webembed",
       "title": "Web Embed screen",
       "projectId": "arswew63RwQr6V4Ekb1Z",
@@ -7309,6 +7451,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7320,7 +7469,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Custom HTML",
@@ -7355,6 +7504,13 @@
           "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-action-bar-section/0.2.0/configure-action-bar-section-2026-06-23T15-32-31-945Z-d72f9cc8/context-section.png"
         },
         {
+          "title": "Animation",
+          "alias": "help-block-animation",
+          "sectionType": "animation",
+          "publishedUrl": "https://help.segmently.ai/help-block-animation",
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-animation-section/0.1.0/configure-animation-section-2026-09-29T22-11-34-795Z-8a4f394c/context-section.png"
+        },
+        {
           "title": "Background",
           "alias": "help-block-background",
           "sectionType": "backdrop",
@@ -7366,7 +7522,7 @@
           "alias": "help-block-basic-config",
           "sectionType": "basicConfig",
           "publishedUrl": "https://help.segmently.ai/help-block-basic-config",
-          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-06-25T13-41-25-913Z-ea0a759a/context-section.png"
+          "thumbnailUrl": "https://api.segmently.ai/assets/support-flow/local/configure-basic-config-section/0.2.0/configure-basic-config-section-2026-09-29T22-39-36-866Z-17fa330a/context-section.png"
         },
         {
           "title": "Header",
@@ -7425,6 +7581,16 @@
       "projectId": "arswew63RwQr6V4Ekb1Z",
       "publishedUrl": "https://help.segmently.ai/help-strategy-onboarding-sync",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-strategy-onboarding-sync/config.json",
+      "settingCount": 0,
+      "settings": [],
+      "assemblyLinks": []
+    },
+    {
+      "alias": "help-theme-animations",
+      "title": "Theme animations: motion schemes",
+      "projectId": "arswew63RwQr6V4Ekb1Z",
+      "publishedUrl": "https://help.segmently.ai/help-theme-animations",
+      "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-theme-animations/config.json",
       "settingCount": 0,
       "settings": [],
       "assemblyLinks": []

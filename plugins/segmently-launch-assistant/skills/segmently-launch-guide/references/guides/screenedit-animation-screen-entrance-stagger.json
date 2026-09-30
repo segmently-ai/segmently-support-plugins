@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "guideKey": "screenedit-animation-screen-entrance-stagger",
+  "evidence": {
+    "guideKey": "screenedit-animation-screen-entrance-stagger",
+    "articleId": "screenedit-animation-screen-entrance-stagger",
+    "articleAlias": "help-block-animation",
+    "referencePath": "help-block-animation/screenedit-animation-screen-entrance-stagger",
+    "name": "Screen field: Delay between elements",
+    "journeyStep": "Edit screens",
+    "userNeed": "Know what \"Delay between elements\" controls and when to adjust it while editing a screen.",
+    "hasAuthoredText": true,
+    "hasScreenshotEvidence": false,
+    "screenshotSectionCount": 0,
+    "fullArticleLink": "https://help.segmently.ai/help-block-animation",
+    "sourceRecipeKey": null,
+    "localArticlePath": null,
+    "sections": [
+      {
+        "id": "screenedit-animation-screen-entrance-stagger/field",
+        "sectionKey": "field",
+        "referencePath": "help-block-animation/screenedit-animation-screen-entrance-stagger#screenedit-animation-screen-entrance-stagger/field",
+        "title": "Delay between elements",
+        "description": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+        "hasScreenshotEvidence": false,
+        "imageUrl": null
+      }
+    ]
+  },
+  "registrySections": [
+    {
+      "sectionKey": "field",
+      "title": "Delay between elements",
+      "summary": "The pause, in milliseconds, before each next element starts its entrance, so the screen builds up in order instead of appearing all at once. Set it from 0 to 1,000: Screen Entrance starts at 80, and 0 makes all elements enter together. Elements you give their own entrance under Advanced, and answer choices with an Item Animation, start right away instead of waiting their turn. Keep it small, since the pauses add up for elements later in the order, such as the action bar.",
+      "imageUrl": null,
+      "articleRefs": [
+        {
+          "articleAlias": "help-block-animation",
+          "subarticleId": "screenedit-animation-screen-entrance-stagger/field"
+        }
+      ],
+      "actionIds": []
+    }
+  ]
+}

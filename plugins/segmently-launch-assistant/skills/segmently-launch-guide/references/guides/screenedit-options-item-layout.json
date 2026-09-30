@@ -24,7 +24,7 @@
         "title": "What each choice shows",
         "description": "Pick which parts each choice displays — title only, image plus title, checkbox with title and subtitle, and so on; available combos depend on your selection mode and layout. Adding an element reveals its style controls and means you must supply that content (image or subtitle) on every item. Default to title (plus a checkbox for multi-select) and add an image only when it aids the choice.",
         "hasScreenshotEvidence": true,
-        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png"
+        "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
       "sectionKey": "field",
       "title": "What each choice shows",
       "summary": "Pick which parts each choice displays — title only, image plus title, checkbox with title and subtitle, and so on; available combos depend on your selection mode and layout. Adding an element reveals its style controls and means you must supply that content (image or subtitle) on every item. Default to title (plus a checkbox for multi-select) and add an image only when it aids the choice.",
-      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-06-23T09-30-00-161Z-5ddaf2dc/open-section-item-layout.png",
+      "imageUrl": "https://api.segmently.ai/assets/support-flow/local/configure-options-section/0.2.0/configure-options-section-2026-09-29T22-40-42-511Z-7d52f71a/open-section-item-layout.png",
       "articleRefs": [
         {
           "articleAlias": "help-block-options",

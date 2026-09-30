@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "generated": true,
+  "articleAlias": "help-screen-transitions",
+  "articleId": null,
+  "title": "Screen transitions between screens",
+  "sections": [],
+  "subarticles": [],
+  "settingsAnchors": [],
+  "media": [
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233605_screen-trans-01-canvas-connection/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233611_screen-trans-03-type-menu/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233613_screen-trans-04-override/origin.png",
+    "https://api.segmently.ai/assets/projects/arswew63RwQr6V4Ekb1Z/cli-assets/content-plan-articles/CRjDaVqBd59eHmN7u2XO/20260929233615_screen-trans-05-marker/origin.png"
+  ],
+  "nodes": [],
+  "provenance": {
+    "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-screen-transitions/config.json",
+    "sourceFiles": [
+      "scripts/help-articles/animation-block.doc.json"
+    ],
+    "generatedHash": "48444ceb1857250f"
+  }
+}
