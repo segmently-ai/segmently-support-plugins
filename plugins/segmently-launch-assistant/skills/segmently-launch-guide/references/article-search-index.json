@@ -584,6 +584,7 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-stripe-mapping",
       "stripe-connect-oauth-guidance",
@@ -629,7 +630,8 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "custom-domain-verification",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "integrations-custom-domain-section"
     ],
     "from": [
       "analytics-add-provider",
@@ -692,6 +694,7 @@
       "help-strategy-onboarding-sync",
       "help-theme-animations",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "launch-scenario-product-analytics",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -805,7 +808,6 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "analytics-provider-config",
-      "help-fonts-typography",
       "integrations-analytics-section",
       "integrations-stripe-connect-section"
     ],
@@ -932,6 +934,7 @@
       "help-content-text",
       "help-element-title",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
       "paywall-product-subscription-options",
       "webplacement-stripe-metadata"
@@ -2052,6 +2055,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-strategy-onboarding-sync",
+      "integrations-custom-domain-section",
       "screen-editor-overview"
     ],
     "actions": [
@@ -2337,6 +2341,7 @@
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -2378,6 +2383,7 @@
       "help-screen-herocontent-detailed",
       "help-screen-paywall",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -2523,6 +2529,7 @@
       "help-block-text-field",
       "help-fonts-typography",
       "help-strategy-onboarding-sync",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "tiktok-pixel-events-api-setup",
       "webplacement-stripe-metadata"
@@ -2654,6 +2661,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-transitions",
+      "integrations-custom-domain-section",
       "webplacement-entry-rules",
       "webplacement-stripe-metadata"
     ],
@@ -2887,6 +2895,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "paywall-product-subscription-options"
     ],
@@ -3170,6 +3179,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-run-ads",
       "onboarding-wizard-theme-customize",
@@ -3577,6 +3587,7 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -3978,6 +3989,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -3987,6 +3999,7 @@
       "help-screen-herocontent-detailed",
       "help-screen-webembed",
       "help-theme-animations",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-product-analytics",
       "onboarding-wizard-theme-customize",
@@ -4157,7 +4170,8 @@
       "help-options-grid-single",
       "help-options-hero-list",
       "help-options-list-multi",
-      "help-options-list-single"
+      "help-options-list-single",
+      "integrations-custom-domain-section"
     ],
     "never": [
       "analytics-provider-config",
@@ -4565,6 +4579,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-products-list",
@@ -4642,6 +4657,7 @@
       "help-screen-listsinglepick-elements",
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "paywall-product-price-setup",
       "webplacement-entry-rules",
       "webplacement-stripe-metadata"
@@ -4660,6 +4676,7 @@
       "help-block-roller",
       "help-block-stepper",
       "help-block-sticky-container",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "screen-editor-overview"
     ],
@@ -4924,6 +4941,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-element-hero-image",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-list-multi",
       "help-screen-flexiblelayout",
@@ -5055,6 +5073,7 @@
       "help-element-subtitle",
       "help-element-title",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "screen-editor-overview"
     ],
@@ -5163,7 +5182,8 @@
       "custom-domain-domain-input",
       "help-block-action-bar",
       "help-block-animation",
-      "help-block-options"
+      "help-block-options",
+      "integrations-custom-domain-section"
     ],
     "typo": [
       "analytics-provider-config"
@@ -5232,6 +5252,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "launch-scenario-sell",
       "onboarding-wizard-theme-customize",
       "paywall-products-list",
@@ -5307,6 +5328,7 @@
       "help-block-variable-binding",
       "help-screen-herocontent-elements",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
       "paywall-product-basic-fields",
@@ -5392,6 +5414,7 @@
       "help-screen-textinput-elements",
       "help-screen-transitions",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-theme-customize",
       "paywall-product-price-setup",
@@ -5500,6 +5523,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-products-list",
       "paywall-products-mode-tabs",
@@ -5550,6 +5574,7 @@
       "help-screen-herolist-elements",
       "help-screen-listmultipick-elements",
       "help-screen-listsinglepick-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
@@ -5595,6 +5620,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -5819,6 +5845,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-select",
       "paywall-product-price-setup",
@@ -5861,7 +5888,8 @@
       "canvas-add-screen",
       "custom-domain-dns-setup",
       "custom-domain-domain-input",
-      "help-screen-webembed"
+      "help-screen-webembed",
+      "integrations-custom-domain-section"
     ],
     "url": [
       "analytics-provider-config",
@@ -6062,6 +6090,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select",
       "paywall-product-basic-fields",
@@ -6093,6 +6122,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-stripe-mapping",
       "paywall-products-mode-tabs",
@@ -6262,7 +6292,8 @@
     "reliably": [
       "analytics-provider-config",
       "custom-domain-verification",
-      "help-block-media"
+      "help-block-media",
+      "integrations-custom-domain-section"
     ],
     "attributes": [
       "analytics-provider-config"
@@ -6325,6 +6356,7 @@
       "help-element-subtitle",
       "help-element-title",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-price-setup",
@@ -6456,6 +6488,7 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-title",
+      "help-fonts-typography",
       "help-screen-herocontent",
       "help-screen-herocontent-detailed",
       "help-screen-paywall",
@@ -6671,6 +6704,7 @@
       "facebook-pixel-capi-setup",
       "help-block-flexible-sections",
       "help-block-paywall-media",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "stripe-connect-oauth-guidance",
       "tiktok-pixel-events-api-setup"
@@ -6736,6 +6770,7 @@
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
       "help-strategy-onboarding-sync",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-product-analytics",
       "launch-scenario-validate-idea",
@@ -6941,6 +6976,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-content-text",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -7042,6 +7078,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-progresssteps",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-product-analytics",
       "launch-scenario-run-ads",
@@ -7062,6 +7099,7 @@
       "help-block-header",
       "help-block-options",
       "help-block-stepper",
+      "help-fonts-typography",
       "help-strategy-onboarding-sync",
       "launch-paid-funnel-overview",
       "onboarding-list-create",
@@ -7187,6 +7225,7 @@
       "help-screen-herocontent-detailed",
       "help-screen-transitions",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -7406,6 +7445,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select",
       "paywall-products-mode-tabs",
@@ -7736,6 +7776,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "launch-scenario-sell",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -7984,12 +8025,14 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "screen-editor-action-button"
     ],
@@ -8183,6 +8226,7 @@
       "custom-domain-domain-input",
       "help-block-action-bar",
       "help-block-paywall-footer",
+      "integrations-custom-domain-section",
       "screen-editor-action-button",
       "webplacement-entry-rules"
     ],
@@ -8455,6 +8499,7 @@
       "help-block-paywall-header",
       "help-block-variable-binding",
       "help-fonts-typography",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "webplacement-stripe-metadata"
     ],
@@ -8831,6 +8876,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "webplacement-entry-rules"
     ],
     "bar": [
@@ -8872,6 +8918,7 @@
       "help-block-paywall-footer",
       "help-block-sticky-container",
       "help-options-hero-list",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-list-create",
       "stripe-connect-oauth-guidance"
@@ -9068,6 +9115,7 @@
       "help-screen-paywall",
       "help-screen-progresssteps",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "screen-editor-overview"
@@ -9196,6 +9244,7 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -9219,7 +9268,8 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-title",
-      "help-screen-herocontent-detailed"
+      "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section"
     ],
     "enters": [
       "canvas-overview"
@@ -9499,7 +9549,8 @@
       "help-block-flexible-sections",
       "help-block-paywall-header",
       "help-block-stepper",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "questions": [
       "collect-email-before-paywall",
@@ -9616,6 +9667,7 @@
       "help-block-flexible-sections",
       "help-block-text-field",
       "help-theme-animations",
+      "integrations-custom-domain-section",
       "paywall-product-price-setup",
       "paywall-product-stripe-mapping",
       "webplacement-entry-rules"
@@ -9777,6 +9829,7 @@
       "custom-domain-dns-setup",
       "help-block-animation",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "section 1": [
@@ -9807,6 +9860,7 @@
       "help-block-stepper",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -9817,12 +9871,14 @@
     ],
     "table": [
       "custom-domain-dns-setup",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "displayed": [
       "custom-domain-dns-setup",
       "help-block-paywall-footer",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "paywall-product-price-setup"
     ],
     "match": [
@@ -9848,6 +9904,7 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "paywall-product-basic-fields",
       "paywall-product-subscription-options",
@@ -9856,7 +9913,8 @@
       "webplacement-entry-rules"
     ],
     "verifying:": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "take": [
       "custom-domain-dns-setup",
@@ -9878,6 +9936,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "launch-scenario-validate-idea"
     ],
     "few": [
@@ -9887,23 +9946,27 @@
       "help-block-header",
       "help-block-media",
       "help-block-paywall-body",
-      "help-block-paywall-media"
+      "help-block-paywall-media",
+      "integrations-custom-domain-section"
     ],
     "minutes": [
       "custom-domain-dns-setup",
       "custom-domain-verification",
-      "help-block-basic-config"
+      "help-block-basic-config",
+      "integrations-custom-domain-section"
     ],
     "hours": [
       "custom-domain-dns-setup",
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "spread": [
       "custom-domain-dns-setup",
       "custom-domain-verification",
       "help-block-action-bar",
       "help-block-carousel",
-      "help-block-flexible-sections"
+      "help-block-flexible-sections",
+      "integrations-custom-domain-section"
     ],
     "across": [
       "custom-domain-dns-setup",
@@ -9926,15 +9989,18 @@
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "screen-editor-overview"
     ],
     "internet": [
       "custom-domain-dns-setup",
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "passes": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "once": [
       "custom-domain-dns-setup",
@@ -9958,6 +10024,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -9970,7 +10037,8 @@
       "integrations-custom-domain-section"
     ],
     "failing": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "any": [
       "custom-domain-dns-setup",
@@ -10005,13 +10073,15 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "stripe-connect-live-mode"
     ],
     "older": [
       "custom-domain-dns-setup",
-      "help-block-animation"
+      "help-block-animation",
+      "integrations-custom-domain-section"
     ],
     "cname": [
       "custom-domain-dns-setup",
@@ -10019,20 +10089,23 @@
     ],
     "conflicts": [
       "custom-domain-dns-setup",
-      "help-strategy-onboarding-sync"
+      "help-strategy-onboarding-sync",
+      "integrations-custom-domain-section"
     ],
     "second": [
       "custom-domain-dns-setup",
       "help-block-action-bar",
       "help-block-flexible-sections",
-      "help-block-paywall-header"
+      "help-block-paywall-header",
+      "integrations-custom-domain-section"
     ],
     "cloudflare": [
       "custom-domain-dns-setup",
       "integrations-custom-domain-section"
     ],
     "orange": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "icon": [
       "custom-domain-dns-setup",
@@ -10057,6 +10130,7 @@
       "help-options-list-single",
       "help-screen-herocontent-detailed",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "screen-editor-action-button"
     ],
     "turns": [
@@ -10067,6 +10141,7 @@
       "help-block-roller",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "grey": [
@@ -10074,10 +10149,12 @@
       "integrations-custom-domain-section"
     ],
     "hiding": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "proxying": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "real": [
       "custom-domain-dns-setup",
@@ -10109,6 +10186,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-sell",
       "onboarding-wizard-theme-customize",
@@ -10125,17 +10203,20 @@
       "help-block-custom-html",
       "help-block-flexible-sections",
       "help-block-media",
-      "help-block-paywall-media"
+      "help-block-paywall-media",
+      "integrations-custom-domain-section"
     ],
     "confirming": [
       "custom-domain-dns-setup",
-      "help-fonts-typography"
+      "help-fonts-typography",
+      "integrations-custom-domain-section"
     ],
     "custom domain domain input": [
       "custom-domain-domain-input"
     ],
     "public": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "webplacement-publish-url"
     ],
     "port": [
@@ -10158,6 +10239,7 @@
       "custom-domain-domain-input",
       "help-block-flexible-sections",
       "help-block-paywall-subscriptions",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
@@ -10172,7 +10254,8 @@
       "custom-domain-domain-input",
       "custom-domain-verification",
       "help-block-background",
-      "help-block-paywall-footer"
+      "help-block-paywall-footer",
+      "integrations-custom-domain-section"
     ],
     "link": [
       "custom-domain-domain-input",
@@ -10197,7 +10280,8 @@
       "webplacement-publish-url"
     ],
     "subdomain": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "recommended": [
       "custom-domain-domain-input",
@@ -10210,41 +10294,52 @@
     ],
     "easiest": [
       "custom-domain-domain-input",
-      "help-block-text-field"
+      "help-block-text-field",
+      "integrations-custom-domain-section"
     ],
     "bare": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "root": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info"
     ],
     "prefix": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "harder": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-list-create"
     ],
     "providers": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "hostname:": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "https:": [
       "custom-domain-domain-input",
-      "help-block-paywall-footer"
+      "help-block-paywall-footer",
+      "integrations-custom-domain-section"
     ],
     "slashes": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "query": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "string": [
       "custom-domain-domain-input",
       "help-block-roller",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "make": [
@@ -10275,6 +10370,7 @@
       "help-screen-carousel",
       "help-screen-herocontent-detailed",
       "help-theme-animations",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "onboarding-list-create",
       "screen-editor-action-button"
@@ -10286,10 +10382,12 @@
       "help-block-flexible-sections",
       "help-block-header",
       "help-block-sticky-container",
-      "help-block-text-field"
+      "help-block-text-field",
+      "integrations-custom-domain-section"
     ],
     "whoever": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "very": [
       "custom-domain-domain-input",
@@ -10305,16 +10403,19 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "asks": [
       "custom-domain-domain-input",
       "facebook-capi-web-destination",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "finish": [
       "custom-domain-domain-input",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "stripe-connect-live-mode",
       "stripe-connect-test-mode"
@@ -10343,7 +10444,8 @@
       "help-block-flexible-sections",
       "help-block-header",
       "help-block-paywall-footer",
-      "help-options-hero-list"
+      "help-options-hero-list",
+      "integrations-custom-domain-section"
     ],
     "don": [
       "custom-domain-domain-input",
@@ -10393,7 +10495,8 @@
       "help-block-flexible-sections",
       "help-block-paywall-header",
       "help-block-variable-binding",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "integrations-custom-domain-section"
     ],
     "still": [
       "custom-domain-verification",
@@ -10412,10 +10515,12 @@
       "paywall-products-mode-tabs"
     ],
     "pending": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "failed": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "state": [
       "custom-domain-verification",
@@ -10441,6 +10546,7 @@
     "checks": [
       "custom-domain-verification",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "launch-scenario-sell"
     ],
     "verified": [
@@ -10456,7 +10562,8 @@
     ],
     "re enter": [
       "custom-domain-verification",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "time": [
       "custom-domain-verification",
@@ -10466,6 +10573,7 @@
       "help-block-sticky-container",
       "help-screen-carousel",
       "help-screen-progresssteps",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "usually": [
@@ -10495,10 +10603,12 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "sometimes": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "just": [
       "custom-domain-verification",
@@ -10518,23 +10628,27 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select"
     ],
     "again": [
       "custom-domain-verification",
-      "facebook-pixel-capi-setup"
+      "facebook-pixel-capi-setup",
+      "integrations-custom-domain-section"
     ],
     "unlocks": [
       "custom-domain-verification",
       "help-block-options",
       "help-block-paywall-media",
       "help-block-roller",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "selectable": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "brand": [
       "custom-domain-verification",
@@ -10572,6 +10686,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create"
     ],
     "trustworthy": [
@@ -10590,7 +10705,8 @@
       "webplacement-publish-url"
     ],
     "tends": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "lift": [
       "custom-domain-verification",
@@ -10598,12 +10714,14 @@
       "help-block-flexible-sections",
       "help-block-media",
       "help-block-sticky-container",
-      "help-strategy-onboarding-sync"
+      "help-strategy-onboarding-sync",
+      "integrations-custom-domain-section"
     ],
     "click through": [
       "custom-domain-verification",
       "help-block-action-bar",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "facebook capi web destination": [
       "facebook-capi-web-destination"
@@ -21140,6 +21258,7 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -30236,8 +30355,12 @@
     "help fonts typography": [
       "help-fonts-typography"
     ],
-    "panel:": [
-      "help-fonts-typography"
+    "onboardings": [
+      "help-fonts-typography",
+      "launch-scenario-run-ads",
+      "launch-scenario-sell",
+      "launch-scenario-validate-idea",
+      "onboarding-wizard-basic-info"
     ],
     "platform": [
       "help-fonts-typography",
@@ -30298,6 +30421,9 @@
       "help-fonts-typography"
     ],
     "custom font": [
+      "help-fonts-typography"
+    ],
+    "onboarding settings": [
       "help-fonts-typography"
     ],
     "help options grid multi": [
@@ -31595,6 +31721,24 @@
       "integrations-custom-domain-section",
       "stripe-connect-oauth-guidance"
     ],
+    "section 3": [
+      "integrations-custom-domain-section"
+    ],
+    "section 4": [
+      "integrations-custom-domain-section"
+    ],
+    "section 5": [
+      "integrations-custom-domain-section"
+    ],
+    "section 6": [
+      "integrations-custom-domain-section"
+    ],
+    "section 7": [
+      "integrations-custom-domain-section"
+    ],
+    "section 8": [
+      "integrations-custom-domain-section"
+    ],
     "vendor registrar dns records": [
       "integrations-custom-domain-section"
     ],
@@ -31784,12 +31928,6 @@
     "utm": [
       "launch-scenario-run-ads",
       "webplacement-stripe-metadata"
-    ],
-    "onboardings": [
-      "launch-scenario-run-ads",
-      "launch-scenario-sell",
-      "launch-scenario-validate-idea",
-      "onboarding-wizard-basic-info"
     ],
     "step 02": [
       "launch-scenario-run-ads",
@@ -33036,7 +33174,6 @@
     ],
     "integrations": [
       "analytics-integration-list",
-      "help-fonts-typography",
       "integrations-stripe-connect-section"
     ],
     "labels-copy": [
@@ -33087,6 +33224,7 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -34120,6 +34258,9 @@
     "branding": [
       "help-fonts-typography"
     ],
+    "onboarding-settings": [
+      "help-fonts-typography"
+    ],
     "grid": [
       "help-options-grid-multi",
       "help-options-grid-single",
@@ -34936,7 +35077,6 @@
     "integrations": [
       "analytics-add-provider",
       "analytics-integration-list",
-      "help-fonts-typography",
       "integrations-analytics-section",
       "integrations-stripe-connect-section"
     ],
@@ -35122,6 +35262,7 @@
     "such": [
       "analytics-add-provider",
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
       "paywall-product-subscription-options",
       "webplacement-stripe-metadata"
@@ -35136,6 +35277,7 @@
       "help-block-animation",
       "help-block-variable-binding",
       "help-element-title",
+      "integrations-custom-domain-section",
       "launch-paid-funnel-overview",
       "onboarding-wizard-theme-select",
       "paywall-product-basic-fields",
@@ -36616,6 +36758,7 @@
       "help-block-animation",
       "help-content-text",
       "help-options-hero-list",
+      "integrations-custom-domain-section",
       "launch-scenario-validate-idea",
       "onboarding-wizard-basic-info",
       "paywall-product-subscription-options",
@@ -36730,7 +36873,6 @@
       "analytics-integration-list",
       "analytics-provider-config",
       "help-block-text-field",
-      "integrations-custom-domain-section",
       "screen-editor-action-button",
       "stripe-connect-live-mode"
     ],
@@ -37327,6 +37469,7 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -37639,6 +37782,7 @@
       "help-content-text",
       "help-element-subtitle",
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -38004,7 +38148,6 @@
       "analytics-provider-config",
       "help-options-hero-list",
       "help-screen-transitions",
-      "integrations-custom-domain-section",
       "paywall-products-mode-tabs"
     ],
     "points:": [
@@ -38505,6 +38648,7 @@
       "help-content-hero",
       "help-content-hero-basic",
       "help-content-text",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -38652,6 +38796,7 @@
       "help-block-background",
       "help-block-header",
       "help-block-stepper",
+      "help-fonts-typography",
       "help-strategy-onboarding-sync",
       "launch-paid-funnel-overview",
       "onboarding-list-create",
@@ -38691,6 +38836,7 @@
       "help-options-hero-list",
       "help-screen-flexiblelayout",
       "help-screen-transitions",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -39014,6 +39160,7 @@
       "help-options-list-single",
       "help-screen-carousel",
       "help-screen-progresssteps",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -39050,6 +39197,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select",
       "paywall-products-mode-tabs",
@@ -39261,7 +39409,8 @@
       "canvas-add-screen",
       "custom-domain-dns-setup",
       "custom-domain-domain-input",
-      "help-screen-webembed"
+      "help-screen-webembed",
+      "integrations-custom-domain-section"
     ],
     "html": [
       "canvas-add-screen",
@@ -39511,6 +39660,7 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-subtitle",
+      "help-fonts-typography",
       "onboarding-wizard-theme-select",
       "screen-editor-action-button"
     ],
@@ -39557,6 +39707,7 @@
       "facebook-pixel-capi-setup",
       "help-block-basic-config",
       "help-fonts-typography",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-select",
       "paywall-product-price-setup",
@@ -39593,6 +39744,7 @@
       "help-screen-gridsinglepick-elements",
       "help-screen-listmultipick-elements",
       "help-screen-listsinglepick-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
       "paywall-product-basic-fields",
@@ -39611,6 +39763,7 @@
     "path": [
       "canvas-connect-screens",
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "screen-editor-action-button",
       "webplacement-entry-rules"
     ],
@@ -39849,6 +40002,7 @@
     ],
     "create": [
       "canvas-connect-screens",
+      "help-fonts-typography",
       "help-screen-herocontent",
       "help-screen-paywall",
       "launch-scenario-run-ads",
@@ -40178,6 +40332,7 @@
       "help-block-paywall-footer",
       "help-block-paywall-header",
       "help-block-sticky-container",
+      "help-fonts-typography",
       "help-screen-flexiblelayout",
       "help-screen-gridmultipick-elements",
       "help-screen-gridsinglepick-elements",
@@ -40776,7 +40931,8 @@
     "support": [
       "collect-email-before-paywall",
       "custom-domain-domain-input",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "questions": [
       "collect-email-before-paywall",
@@ -40903,6 +41059,7 @@
       "custom-domain-dns-setup",
       "custom-domain-domain-input",
       "help-theme-animations",
+      "integrations-custom-domain-section",
       "paywall-product-price-setup",
       "paywall-product-stripe-mapping",
       "webplacement-entry-rules"
@@ -40949,7 +41106,6 @@
       "help-element-title",
       "help-strategy-onboarding-sync",
       "help-theme-animations",
-      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select",
@@ -40963,8 +41119,7 @@
       "custom-domain-dns-setup"
     ],
     "proxy": [
-      "custom-domain-dns-setup",
-      "integrations-custom-domain-section"
+      "custom-domain-dns-setup"
     ],
     "wait": [
       "custom-domain-dns-setup",
@@ -41082,7 +41237,6 @@
     ],
     "record": [
       "custom-domain-dns-setup",
-      "integrations-custom-domain-section",
       "paywall-product-price-setup"
     ],
     "shown": [
@@ -41117,7 +41271,8 @@
     ],
     "save": [
       "custom-domain-dns-setup",
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "them": [
       "custom-domain-dns-setup",
@@ -41177,6 +41332,7 @@
       "help-options-list-single",
       "help-screen-carousel",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "launch-scenario-sell",
       "launch-scenario-validate-idea",
       "paywall-product-basic-fields",
@@ -41316,8 +41472,7 @@
       "custom-domain-dns-setup"
     ],
     "cloudflare": [
-      "custom-domain-dns-setup",
-      "integrations-custom-domain-section"
+      "custom-domain-dns-setup"
     ],
     "set": [
       "custom-domain-dns-setup",
@@ -41360,7 +41515,6 @@
     ],
     "cloud": [
       "custom-domain-dns-setup",
-      "integrations-custom-domain-section",
       "webplacement-publish-url"
     ],
     "icon": [
@@ -41380,8 +41534,7 @@
       "webplacement-stripe-metadata"
     ],
     "grey": [
-      "custom-domain-dns-setup",
-      "integrations-custom-domain-section"
+      "custom-domain-dns-setup"
     ],
     "hiding": [
       "custom-domain-dns-setup"
@@ -41434,6 +41587,7 @@
     ],
     "public": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "webplacement-publish-url"
     ],
     "protocol": [
@@ -41457,6 +41611,7 @@
     ],
     "will": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-list-create",
       "paywall-product-price-setup",
@@ -41469,7 +41624,8 @@
     "address": [
       "custom-domain-domain-input",
       "custom-domain-verification",
-      "help-block-background"
+      "help-block-background",
+      "integrations-custom-domain-section"
     ],
     "link": [
       "custom-domain-domain-input",
@@ -41489,7 +41645,8 @@
       "integrations-custom-domain-section"
     ],
     "subdomain": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "like": [
       "custom-domain-domain-input",
@@ -41503,6 +41660,7 @@
       "help-element-hero-image",
       "help-element-subtitle",
       "help-element-title",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "screen-editor-overview"
     ],
@@ -41515,39 +41673,50 @@
       "stripe-connect-oauth-guidance"
     ],
     "easiest": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "bare": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "root": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info"
     ],
     "prefix": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "harder": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-list-create"
     ],
     "providers": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "hostname:": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "https:": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "slashes": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "query": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "string": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "make": [
       "custom-domain-domain-input",
@@ -41556,13 +41725,15 @@
       "help-fonts-typography",
       "help-screen-carousel",
       "help-theme-animations",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "onboarding-list-create",
       "screen-editor-action-button"
     ],
     "sure": [
       "custom-domain-domain-input",
-      "help-block-action-bar"
+      "help-block-action-bar",
+      "integrations-custom-domain-section"
     ],
     "whoever": [
       "custom-domain-domain-input"
@@ -42183,7 +42354,6 @@
     ],
     "vendor": [
       "facebook-pixel-capi-setup",
-      "integrations-custom-domain-section",
       "launch-scenario-product-analytics",
       "launch-scenario-run-ads",
       "launch-scenario-validate-idea",
@@ -42192,7 +42362,6 @@
     ],
     "ui": [
       "facebook-pixel-capi-setup",
-      "integrations-custom-domain-section",
       "stripe-connect-live-mode",
       "tiktok-pixel-events-api-setup"
     ],
@@ -48242,6 +48411,7 @@
     ],
     "gear": [
       "help-element-title",
+      "help-fonts-typography",
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-hero-list",
@@ -48284,8 +48454,12 @@
       "stripe-connect-test-mode",
       "webplacement-stripe-metadata"
     ],
-    "panel:": [
-      "help-fonts-typography"
+    "onboardings": [
+      "help-fonts-typography",
+      "launch-scenario-run-ads",
+      "launch-scenario-sell",
+      "launch-scenario-validate-idea",
+      "onboarding-wizard-basic-info"
     ],
     "platform": [
       "help-fonts-typography",
@@ -48381,6 +48555,9 @@
       "help-fonts-typography"
     ],
     "branding": [
+      "help-fonts-typography"
+    ],
+    "onboarding settings": [
       "help-fonts-typography"
     ],
     "help options grid multi": [
@@ -49500,24 +49677,10 @@
     "green": [
       "integrations-custom-domain-section"
     ],
-    "vendor registrar dns records": [
+    "section 3": [
       "integrations-custom-domain-section"
     ],
-    "registrar": [
-      "integrations-custom-domain-section",
-      "launch-scenario-sell",
-      "launch-scenario-validate-idea"
-    ],
-    "godaddy": [
-      "integrations-custom-domain-section"
-    ],
-    "namecheap": [
-      "integrations-custom-domain-section"
-    ],
-    "printed:": [
-      "integrations-custom-domain-section"
-    ],
-    "certificate": [
+    "section 4": [
       "integrations-custom-domain-section"
     ],
     "integrations stripe connect section": [
@@ -49737,12 +49900,6 @@
     "tiktokpixel": [
       "launch-scenario-run-ads"
     ],
-    "onboardings": [
-      "launch-scenario-run-ads",
-      "launch-scenario-sell",
-      "launch-scenario-validate-idea",
-      "onboarding-wizard-basic-info"
-    ],
     "step 02": [
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -49836,6 +49993,10 @@
       "launch-scenario-sell",
       "launch-scenario-validate-idea",
       "webplacement-entry-rules"
+    ],
+    "registrar": [
+      "launch-scenario-sell",
+      "launch-scenario-validate-idea"
     ],
     "creates": [
       "launch-scenario-sell",
@@ -53449,7 +53610,8 @@
       "analytics-add-provider",
       "analytics-integration-list",
       "custom-domain-verification",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "integrations-custom-domain-section"
     ],
     "use": [
       "analytics-add-provider",
@@ -53785,6 +53947,7 @@
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "launch-scenario-product-analytics",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -54030,6 +54193,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
       "paywall-product-subscription-options",
@@ -54297,7 +54461,8 @@
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-options-list-multi",
-      "help-options-list-single"
+      "help-options-list-single",
+      "integrations-custom-domain-section"
     ],
     "actions": [
       "analytics-add-provider"
@@ -54401,6 +54566,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "webplacement-entry-rules",
       "webplacement-stripe-metadata"
     ],
@@ -54633,6 +54799,7 @@
       "help-screen-herocontent-detailed",
       "help-screen-paywall",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -54771,6 +54938,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "paywall-product-subscription-options"
     ],
@@ -55103,6 +55271,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-products-mode-tabs",
@@ -55155,6 +55324,7 @@
       "help-block-roller",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "tiktok-pixel-events-api-setup"
     ],
@@ -55559,6 +55729,7 @@
       "help-options-list-single",
       "help-screen-herocontent-detailed",
       "help-screen-webembed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-product-analytics",
       "onboarding-wizard-theme-customize",
@@ -55727,7 +55898,8 @@
       "help-options-grid-single",
       "help-options-hero-list",
       "help-options-list-multi",
-      "help-options-list-single"
+      "help-options-list-single",
+      "integrations-custom-domain-section"
     ],
     "never": [
       "analytics-provider-config",
@@ -56132,6 +56304,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-products-list",
@@ -56204,6 +56377,7 @@
       "help-screen-listsinglepick-elements",
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "paywall-product-price-setup",
       "webplacement-entry-rules",
       "webplacement-stripe-metadata"
@@ -56225,6 +56399,7 @@
       "help-block-roller",
       "help-block-stepper",
       "help-block-sticky-container",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "screen-editor-overview"
     ],
@@ -56267,6 +56442,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-select",
@@ -56597,6 +56773,7 @@
       "help-element-subtitle",
       "help-element-title",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "screen-editor-overview"
     ],
@@ -56692,7 +56869,8 @@
       "custom-domain-domain-input",
       "help-block-action-bar",
       "help-block-animation",
-      "help-block-options"
+      "help-block-options",
+      "integrations-custom-domain-section"
     ],
     "typo": [
       "analytics-provider-config"
@@ -56786,6 +56964,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-products-list",
       "screen-editor-overview"
@@ -56829,6 +57008,7 @@
       "help-screen-flexiblelayout",
       "help-screen-herocontent-detailed",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "onboarding-wizard-theme-select",
@@ -56854,6 +57034,7 @@
       "help-block-text-field",
       "help-block-variable-binding",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
       "paywall-product-basic-fields",
@@ -56936,6 +57117,7 @@
       "help-screen-listsinglepick-elements",
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-theme-customize",
       "paywall-product-price-setup",
@@ -57015,6 +57197,7 @@
       "help-content-text",
       "help-element-title",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "production": [
@@ -57074,6 +57257,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-products-list",
       "paywall-products-mode-tabs"
@@ -57122,6 +57306,7 @@
       "help-screen-herolist-elements",
       "help-screen-listmultipick-elements",
       "help-screen-listsinglepick-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
@@ -57166,6 +57351,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -57232,6 +57418,7 @@
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -57437,6 +57624,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "paywall-product-price-setup",
       "paywall-product-subscription-options",
@@ -57477,7 +57665,8 @@
       "analytics-provider-config",
       "canvas-add-screen",
       "custom-domain-dns-setup",
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "url": [
       "analytics-provider-config",
@@ -57501,6 +57690,7 @@
       "analytics-provider-config",
       "custom-domain-domain-input",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "paywall-product-basic-fields",
       "screen-editor-action-button",
       "screen-editor-overview",
@@ -57667,6 +57857,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields"
     ],
@@ -57694,6 +57885,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-stripe-mapping",
       "paywall-products-mode-tabs",
       "screen-editor-action-button",
@@ -57899,7 +58091,8 @@
     "reliably": [
       "analytics-provider-config",
       "custom-domain-verification",
-      "help-block-media"
+      "help-block-media",
+      "integrations-custom-domain-section"
     ],
     "attributes": [
       "analytics-provider-config"
@@ -57949,6 +58142,7 @@
       "help-block-stepper",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "tiktok-pixel-events-api-setup",
       "webplacement-publish-url"
@@ -58159,6 +58353,7 @@
       "help-screen-herolist-elements",
       "help-screen-paywall",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -58284,6 +58479,7 @@
       "custom-domain-domain-input",
       "facebook-pixel-capi-setup",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "launch-scenario-run-ads",
       "stripe-connect-oauth-guidance",
       "tiktok-pixel-events-api-setup"
@@ -58345,6 +58541,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-product-analytics",
       "onboarding-wizard-theme-customize",
@@ -58453,6 +58650,7 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "paywall-product-stripe-mapping",
       "stripe-connect-oauth-guidance",
       "webplacement-publish-url",
@@ -58577,6 +58775,7 @@
       "help-screen-flexiblelayout",
       "help-screen-herocontent-detailed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -58642,6 +58841,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-products-mode-tabs",
       "stripe-connect-oauth-guidance"
@@ -59030,6 +59230,7 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-stripe-mapping",
@@ -59054,6 +59255,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-progresssteps",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-run-ads",
       "launch-scenario-validate-idea",
@@ -59483,6 +59685,7 @@
       "custom-domain-verification",
       "help-block-paywall-header",
       "help-block-variable-binding",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "webplacement-stripe-metadata"
     ],
@@ -59558,6 +59761,7 @@
       "custom-domain-domain-input",
       "help-block-action-bar",
       "help-block-paywall-footer",
+      "integrations-custom-domain-section",
       "screen-editor-action-button"
     ],
     "canvas-connect-screens/edit-conditions": [
@@ -59948,6 +60152,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "webplacement-entry-rules"
     ],
     "bar": [
@@ -59988,6 +60193,7 @@
       "help-block-flexible-sections",
       "help-block-paywall-footer",
       "help-block-sticky-container",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-list-create",
       "stripe-connect-oauth-guidance"
@@ -60086,6 +60292,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "screen-editor-overview"
@@ -60259,6 +60466,7 @@
       "help-screen-textinput-elements",
       "help-screen-wheelpicker-elements",
       "integrations-analytics-section",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "launch-scenario-run-ads",
       "launch-scenario-sell",
@@ -60280,7 +60488,8 @@
       "help-content-hero-basic",
       "help-content-text",
       "help-element-title",
-      "help-screen-herocontent-detailed"
+      "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section"
     ],
     "enters": [
       "canvas-overview"
@@ -60471,6 +60680,7 @@
       "help-block-stepper",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -60480,7 +60690,8 @@
     ],
     "table": [
       "custom-domain-dns-setup",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "domain": [
       "custom-domain-dns-setup",
@@ -60496,12 +60707,14 @@
       "custom-domain-dns-setup",
       "help-block-animation",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "displayed": [
       "custom-domain-dns-setup",
       "help-block-paywall-footer",
-      "help-block-text-field"
+      "help-block-text-field",
+      "integrations-custom-domain-section"
     ],
     "match": [
       "custom-domain-dns-setup",
@@ -60525,6 +60738,7 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "paywall-product-basic-fields",
       "paywall-product-subscription-options",
@@ -60538,7 +60752,8 @@
       "integrations-custom-domain-section"
     ],
     "verifying:": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "take": [
       "custom-domain-dns-setup",
@@ -60559,7 +60774,8 @@
       "help-screen-progresssteps",
       "help-screen-textinput-elements",
       "help-screen-webembed",
-      "help-screen-wheelpicker-elements"
+      "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section"
     ],
     "few": [
       "custom-domain-dns-setup",
@@ -60568,23 +60784,27 @@
       "help-block-header",
       "help-block-media",
       "help-block-paywall-body",
-      "help-block-paywall-media"
+      "help-block-paywall-media",
+      "integrations-custom-domain-section"
     ],
     "minutes": [
       "custom-domain-dns-setup",
       "custom-domain-verification",
-      "help-block-basic-config"
+      "help-block-basic-config",
+      "integrations-custom-domain-section"
     ],
     "hours": [
       "custom-domain-dns-setup",
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "spread": [
       "custom-domain-dns-setup",
       "custom-domain-verification",
       "help-block-action-bar",
       "help-block-carousel",
-      "help-block-flexible-sections"
+      "help-block-flexible-sections",
+      "integrations-custom-domain-section"
     ],
     "across": [
       "custom-domain-dns-setup",
@@ -60606,12 +60826,14 @@
       "help-options-grid-multi",
       "help-options-grid-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "screen-editor-overview"
     ],
     "internet": [
       "custom-domain-dns-setup",
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "verification": [
       "custom-domain-dns-setup",
@@ -60620,7 +60842,8 @@
       "stripe-connect-live-mode"
     ],
     "passes": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "once": [
       "custom-domain-dns-setup",
@@ -60644,6 +60867,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
       "paywall-product-price-setup",
@@ -60653,7 +60877,8 @@
       "custom-domain-dns-setup"
     ],
     "failing": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "any": [
       "custom-domain-dns-setup",
@@ -60687,33 +60912,38 @@
       "help-screen-textinput-elements",
       "help-screen-webembed",
       "help-screen-wheelpicker-elements",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "stripe-connect-live-mode"
     ],
     "older": [
       "custom-domain-dns-setup",
-      "help-block-animation"
+      "help-block-animation",
+      "integrations-custom-domain-section"
     ],
     "cname": [
       "custom-domain-dns-setup",
       "integrations-custom-domain-section"
     ],
     "conflicts": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "second": [
       "custom-domain-dns-setup",
       "help-block-action-bar",
       "help-block-flexible-sections",
-      "help-block-paywall-header"
+      "help-block-paywall-header",
+      "integrations-custom-domain-section"
     ],
     "cloudflare": [
       "custom-domain-dns-setup",
       "integrations-custom-domain-section"
     ],
     "orange": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "icon": [
       "custom-domain-dns-setup",
@@ -60738,6 +60968,7 @@
       "help-options-list-single",
       "help-screen-herocontent-detailed",
       "help-screen-paywall",
+      "integrations-custom-domain-section",
       "screen-editor-action-button"
     ],
     "turns": [
@@ -60748,6 +60979,7 @@
       "help-block-roller",
       "help-block-sticky-container",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "grey": [
@@ -60755,10 +60987,12 @@
       "integrations-custom-domain-section"
     ],
     "hiding": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "proxying": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "real": [
       "custom-domain-dns-setup",
@@ -60790,6 +61024,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-wizard-theme-customize",
       "paywall-product-basic-fields",
@@ -60805,22 +61040,26 @@
       "help-block-custom-html",
       "help-block-flexible-sections",
       "help-block-media",
-      "help-block-paywall-media"
+      "help-block-paywall-media",
+      "integrations-custom-domain-section"
     ],
     "confirming": [
-      "custom-domain-dns-setup"
+      "custom-domain-dns-setup",
+      "integrations-custom-domain-section"
     ],
     "custom-domain-domain-input/section-1": [
       "custom-domain-domain-input"
     ],
     "public": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "webplacement-publish-url"
     ],
     "will": [
       "custom-domain-domain-input",
       "help-block-flexible-sections",
       "help-block-paywall-subscriptions",
+      "integrations-custom-domain-section",
       "integrations-stripe-connect-section",
       "onboarding-list-create",
       "paywall-product-basic-fields",
@@ -60833,6 +61072,7 @@
       "help-block-carousel",
       "help-block-flexible-sections",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "paywall-product-stripe-mapping",
       "webplacement-entry-rules"
     ],
@@ -60840,7 +61080,8 @@
       "custom-domain-domain-input",
       "custom-domain-verification",
       "help-block-background",
-      "help-block-paywall-footer"
+      "help-block-paywall-footer",
+      "integrations-custom-domain-section"
     ],
     "link": [
       "custom-domain-domain-input",
@@ -60864,7 +61105,8 @@
       "paywall-product-stripe-mapping"
     ],
     "subdomain": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "recommended": [
       "custom-domain-domain-input",
@@ -60876,47 +61118,59 @@
     ],
     "easiest": [
       "custom-domain-domain-input",
-      "help-block-text-field"
+      "help-block-text-field",
+      "integrations-custom-domain-section"
     ],
     "bare": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "root": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-wizard-basic-info"
     ],
     "prefix": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "harder": [
       "custom-domain-domain-input",
+      "integrations-custom-domain-section",
       "onboarding-list-create"
     ],
     "providers": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "support": [
       "custom-domain-domain-input",
       "help-block-flexible-sections",
       "help-block-paywall-header",
-      "help-block-stepper"
+      "help-block-stepper",
+      "integrations-custom-domain-section"
     ],
     "hostname:": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "https:": [
       "custom-domain-domain-input",
-      "help-block-paywall-footer"
+      "help-block-paywall-footer",
+      "integrations-custom-domain-section"
     ],
     "slashes": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "query": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "string": [
       "custom-domain-domain-input",
       "help-block-roller",
+      "integrations-custom-domain-section",
       "webplacement-stripe-metadata"
     ],
     "custom-domain-domain-input/section-2": [
@@ -60947,6 +61201,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "screen-editor-action-button"
     ],
@@ -60957,10 +61212,12 @@
       "help-block-flexible-sections",
       "help-block-header",
       "help-block-sticky-container",
-      "help-block-text-field"
+      "help-block-text-field",
+      "integrations-custom-domain-section"
     ],
     "whoever": [
-      "custom-domain-domain-input"
+      "custom-domain-domain-input",
+      "integrations-custom-domain-section"
     ],
     "very": [
       "custom-domain-domain-input",
@@ -60975,6 +61232,7 @@
       "help-options-hero-list",
       "help-options-list-multi",
       "help-options-list-single",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "next": [
@@ -61002,16 +61260,19 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-select",
       "screen-editor-action-button"
     ],
     "asks": [
       "custom-domain-domain-input",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "finish": [
       "custom-domain-domain-input",
       "help-block-flexible-sections",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize",
       "stripe-connect-live-mode",
       "stripe-connect-test-mode"
@@ -61039,7 +61300,8 @@
       "help-block-flexible-sections",
       "help-block-header",
       "help-block-paywall-footer",
-      "help-options-hero-list"
+      "help-options-hero-list",
+      "integrations-custom-domain-section"
     ],
     "don": [
       "custom-domain-domain-input",
@@ -61071,6 +61333,7 @@
     "checks": [
       "custom-domain-verification",
       "help-block-text-field",
+      "integrations-custom-domain-section",
       "launch-scenario-sell"
     ],
     "added": [
@@ -61079,7 +61342,8 @@
       "help-block-flexible-sections",
       "help-block-paywall-header",
       "help-block-variable-binding",
-      "integrations-analytics-section"
+      "integrations-analytics-section",
+      "integrations-custom-domain-section"
     ],
     "verified": [
       "custom-domain-verification",
@@ -61097,14 +61361,17 @@
       "integrations-custom-domain-section"
     ],
     "failed": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "pending": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "re enter": [
       "custom-domain-verification",
-      "help-block-variable-binding"
+      "help-block-variable-binding",
+      "integrations-custom-domain-section"
     ],
     "time": [
       "custom-domain-verification",
@@ -61114,6 +61381,7 @@
       "help-block-sticky-container",
       "help-screen-carousel",
       "help-screen-progresssteps",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "usually": [
@@ -61143,10 +61411,12 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-wizard-theme-customize"
     ],
     "sometimes": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "just": [
       "custom-domain-verification",
@@ -61166,12 +61436,14 @@
       "help-content-hero-basic",
       "help-element-hero-image",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create",
       "onboarding-wizard-theme-customize"
     ],
     "again": [
       "custom-domain-verification",
-      "facebook-pixel-capi-setup"
+      "facebook-pixel-capi-setup",
+      "integrations-custom-domain-section"
     ],
     "custom-domain-verification/section-2": [
       "custom-domain-verification"
@@ -61181,10 +61453,12 @@
       "help-block-options",
       "help-block-paywall-media",
       "help-block-roller",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "selectable": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "brand": [
       "custom-domain-verification",
@@ -61221,6 +61495,7 @@
       "help-options-list-multi",
       "help-options-list-single",
       "help-screen-herocontent-detailed",
+      "integrations-custom-domain-section",
       "onboarding-list-create"
     ],
     "trustworthy": [
@@ -61239,19 +61514,22 @@
       "webplacement-publish-url"
     ],
     "tends": [
-      "custom-domain-verification"
+      "custom-domain-verification",
+      "integrations-custom-domain-section"
     ],
     "lift": [
       "custom-domain-verification",
       "help-block-action-bar",
       "help-block-flexible-sections",
       "help-block-media",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "click through": [
       "custom-domain-verification",
       "help-block-action-bar",
-      "help-block-sticky-container"
+      "help-block-sticky-container",
+      "integrations-custom-domain-section"
     ],
     "facebook-pixel-capi-setup/vendor-capi-token": [
       "facebook-pixel-capi-setup"
@@ -81234,6 +81512,24 @@
       "integrations-custom-domain-section"
     ],
     "succeed": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-3": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-4": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-5": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-6": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-7": [
+      "integrations-custom-domain-section"
+    ],
+    "integrations-custom-domain-section/section-8": [
       "integrations-custom-domain-section"
     ],
     "integrations-custom-domain-section/vendor-registrar-dns-records": [

@@ -6554,6 +6554,12 @@
       "ARTICLE_HAS_SUBARTICLE": [
         "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
         "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+        "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
         "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records"
       ],
       "ARTICLE_RELATES_TO_SCENARIO": [
@@ -29249,6 +29255,36 @@
       ]
     },
     "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7": {
+      "ARTICLE_HAS_SUBARTICLE": [
+        "Article:integrations-custom-domain-section"
+      ]
+    },
+    "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8": {
       "ARTICLE_HAS_SUBARTICLE": [
         "Article:integrations-custom-domain-section"
       ]

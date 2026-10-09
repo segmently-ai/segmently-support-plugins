@@ -5,31 +5,28 @@ description: "Offline paywall unit economics on the segmently.ai calculator's ma
 
 # Segmently unit economics
 
-Every number in an answer comes from one CLI run of `segmently ue`, the same arithmetic the
-public calculator at https://www.segmently.ai/unit-economics runs — never a formula of yours.
+Every number in an answer comes from one `segmently ue` run — the arithmetic of the public
+calculator at https://www.segmently.ai/unit-economics, never a formula of yours.
 
 ## Contract
 I never: forecast your numbers, invent a benchmark, write to RevenueCat or Segmently,
 or put a figure you did not give me into a link.
 
-Print it in the first message of a session, verbatim, on a line of its own, no prefix. The skill
+Print it first in a session, verbatim, on a line of its own, no prefix. The skill
 prints **scenarios**: every figure is "what follows if these inputs are true",
 and never a claim about what happens next.
 
 ## Prerequisites
 - Node.js 22 or newer. Check: `node --version`.
-- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }` with `cli` 1.6.0 or
+- `npx -y @segmently/cli ue --version` prints `{ "cli": …, "mathHash": … }` with `cli` 1.7.0 or
   newer. No login, no key, no browser.
-- Older — a bare version number, `unknown command 'ue'`, or a `cli` below 1.6.0: run it once as
-  `npx -y @segmently/cli@latest ue --version`. Still older: say "this CLI is older than 1.6.0",
+- Older — a bare version number, `unknown command 'ue'`, or a `cli` below 1.7.0: run it once as
+  `npx -y @segmently/cli@latest ue --version`. Still older: say "this CLI is older than 1.7.0",
   answer nothing with numbers, and stop. Name the likely cause — an older global `@segmently/cli`
   install shadows npx — and the remedy: `npm i -g @segmently/cli@latest`.
 - The spelling that passed the check — `npx -y @segmently/cli`, `npx -y @segmently/cli@latest`, or
   `segmently` when a global install is current — is the prefix of EVERY later command of the
-  session.
-
-Every command below is written `npx -y @segmently/cli ue …`: run it with the prefix that passed (a
-current global install: `segmently ue evaluate …`).
+  session (a global install: `segmently ue evaluate …`).
 
 ## Session start
 1. Print the contract. Run the two prerequisite checks once. Report them in words (Node 22+, CLI
@@ -73,17 +70,20 @@ current global install: `segmently ue evaluate …`).
 | pastes a segmently.ai/unit-economics link; "why doesn't it clear", "we lose money — where is the gap?" | UC-6 | `cases/uc-06-why-not-clearing.md` |
 | downsell, upsell, plan upgrade — what one does to value per tap | UC-7 | `cases/uc-07-downsell-upsell.md` |
 | names ONE change: "how long must the test run", "sample size"; a running test: "check it today", "safe to continue?" | UC-8 | `cases/uc-08-test-plan.md` |
-| "what Ads Manager shows", a ROAS mismatch | UC-9 | `cases/uc-09-ad-account.md` |
+| "what Ads Manager shows", a ROAS mismatch, Meta's cost per purchase vs our CAC | UC-9 | `cases/uc-09-ad-account.md` |
 | "which experiment first", "which metric to move first", "what to optimise" — a ranking of every lever, no change named or two to choose between ("a trial, or the paywall change first?") | UC-10 | `cases/uc-10-which-experiment-first.md` |
 | "what to test next", "hypothesis card" — a metric AND the change that tests it ("which metric/experiment first" with no card asked is UC-10) | UC-11 | `cases/uc-11-hypothesis-card.md` |
 | "growth cycle", "where can we grow", "what next after this test", "is this test real?" (→ step 8) | UC-12 | `cases/uc-12-growth-cycle.md` |
 | wants to TEST a change to the offer — a price, a trial added/removed/paid, the paywall mix, a downsell or an upsell: "is it worth testing", "how much can conversion drop", "worth an experiment", "at once" | UC-13 | `cases/uc-13-test-an-offer-change.md` |
+| names a goal: "an investor wants ROAS 1.5× — what has to change?", a payback month, a CAC — each lever alone | UC-14 | `cases/uc-14-reach-a-goal.md` |
+| the months ahead: ad spend growing N % a month, "when is cash back", "when do we hit $100k MRR" | UC-15 | `cases/uc-15-month-by-month.md` |
 | asks what a field or a warning means, or how the calculator counts one — no scenario, no numbers of theirs | — | `references/fields.md` (no run, no figure) |
 
 Read what the row names before the first answer; a bullet whose predicate holds decides first:
 - A test to plan, no card asked: ONE change named → UC-8
   (a change to the offer → UC-13); none, or two to choose between → UC-10.
-- What a trial, a downsell or an upsell does to the economics → UC-1 / UC-7; removing/losing/testing it → UC-13.
+- What a trial, a downsell or an upsell does to the economics ("part of the users see the same plan with a
+  trial" too) → UC-1 / UC-7; removing/losing/testing it → UC-13.
 - Counts of a finished test and a card (`.ue/<slug>/card-*.json`, or `ue rank`'s `card`) → UC-11
   field 10; inside a cycle → UC-12 step 8.
 - Counts of a finished test and no card → UC-8 § Reading a finished test.
@@ -91,7 +91,7 @@ Read what the row names before the first answer; a bullet whose predicate holds 
 - No project, no numbers and no row's question → UC-0's interview.
 
 ## The verbs
-Each verb prints JSON; the blocks it renders are printed as § Blocks the CLI renders says.
+Each verb prints JSON.
 - `ue init <slug> --product "<name>~<price>~<cadence>~<trial>"` (or `--anchor <monthly price>`;
   `--platform web|store|both`, `--have none|ads|analytics|revenuecat|segmently`, `--dir <path>`) →
   `.ue/<slug>.json`, its `stage` and `offers`.
@@ -116,6 +116,8 @@ Each verb prints JSON; the blocks it renders are printed as § Blocks the CLI re
 - `ue exp list <project>`, `ue exp start <project> <id> [--date YYYY-MM-DD]`,
   `ue exp close <project> <id> --reason "<text>"` → the project's experiment ledger (`experiments`,
   `sentences.ledger`).
+- `ue target <file|link> --goal <kind>=<value>`, `ue plan <file|link> --growth <pct> --months <n>`
+  (CLI 1.7.0) → `lines`, `link`, `privacy`; flags: cases/uc-14-reach-a-goal.md, cases/uc-15-month-by-month.md.
 - `ue check <answer file> --project-file <file> --runs <dir>` → `pass`, `findings`.
 
 Flags are what `--help` prints; a refusal's `error.fix` shows how the call is spelled — rerun it with
@@ -126,8 +128,8 @@ in one line.
 ## The loop
 1. `ue init` once per project → `.ue/<slug>.json`; read `stage` and `offers`; show the onboarding
    screen (Session start, point 3).
-2. Build variants by EDITING the scenario JSON (same chain, same products, one thing changed) —
-   never by re-implementing a formula.
+2. Build variants by EDITING the scenario JSON, one thing changed — never by re-implementing a
+   formula.
 3. `ue evaluate <file|link> --explain` for every variant. One evaluation per variant, and
    every cell of that variant's row is read from ITS OWN output — never from the base's
    (rule 9), with that run's own `clamped` / `snapped` notices reported on that row.
@@ -139,7 +141,8 @@ in one line.
    link it minted, the onboarding screen's base link included** (for `recommendation.links`,
    name the `ue rank` run they came from instead). Never the `link` field of `ue evaluate` /
    `ue init` / `ue rank` (no round-trip check). Print the
-   `--version` JSON's `mathHash` once at session start.
+   `--version` JSON's `mathHash` once at session start. A `ue target` / `ue plan` run's `link` is
+   minted like `ue link`'s: hand it over under that run's call.
 5. Answer with the same triple every time: a table (variants × KPIs), a verdict sentence with
    its boundary (§ The boundary), one link per variant. Every row of that table is its OWN
    evaluate run (rule 9) — no cell, `payback` and `readiness.line` included, is carried across rows.
@@ -187,6 +190,8 @@ re-lists the block's lines.
 | `ue stat read` | the read | `read.lines`, each on its own line — the nine fields, then `context.drift`, then `context.more.sentence` (not `significant`) or `context.realized.sentence` and its warnings (`significant`) are all lines of it: never print those three a second time — the re-base block's own drift line excepted; on a project with a planned test, `context.progress.sentence` is its last line |
 | | its boundary | `context.boundary`: its opener, then each of its lines as a bullet, in order |
 | `ue stat watch` | the watch | `watch.lines` (its `lines`), one per line, then `watch.boundary` (opener, lines as bullets) |
+| `ue target` | the goal | `target.lines` (its `lines`), one per line, whole, in order |
+| `ue plan` | the months | `plan.lines` (its `lines`), one per line, whole, in order |
 | `ue stat read … --rebase` | the re-base | every `context.rebase.prepared` line, `context.rebase.snapped`, every `context.rebase.lines` entry, this run's own drift line, the privacy sentence, the `context.rebase.linkCommand` run and its link |
 
 ## The boundary
@@ -204,9 +209,9 @@ with a boundary (rule 5). Its shape:
 renders) — one exception: in a growth cycle the read's `context.boundary` takes step 6's estimate
 line right after its belief line (cases/uc-12-growth-cycle.md). An evaluate-only case assembles it:
 `walk.opener`, then the base's `walk.lines` word for word — from `ue evaluate --explain` on the base
-the verdict is about (the project file, or the reader's link, with any input they stated filled in)
-— then its case file's § Boundary placements, then not testable soon. A class with nothing in it is
-dropped silently — never written out as "none". Every input the scenario reads belongs to exactly
+the verdict is about (every input they stated filled in) — then its case file's § Boundary
+placements, then not testable soon. A class with nothing in it is dropped silently — never written
+out as "none". Every input the scenario reads belongs to exactly
 one class — ONE walk, the same list for every boundary of every case (UC-11's three included):
 1. `chain.cps`, `p1`, `p2`, `p3` — `walk.lines`: all four rates, the tested lever's too.
 2. Per product: its price, cadence and trial — `walk.lines`.
@@ -225,10 +230,10 @@ one class — ONE walk, the same list for every boundary of every case (UC-11's 
 
 A variant's own edit — a belief, a sweep point, a price the reader is weighing (UC-0's ladder, an
 `anchor`) — is a line of its own in the class its case names. An input you inferred rather than
-heard ("a trial, because the reader said 'like everyone else'") is assumed, not measured: a line
-of its own after the walk lines. Write what the numbers ARE. A boundary written as a denial is a
-rule 8 violation even when it is true: none of "this is not a forecast", "not a prediction", "not a
-claim about the future" may appear. Worked example: cases/uc-00-launch-card.md#Worked example.
+heard is assumed, not measured: a line of its own after the walk lines. A boundary written as a
+denial is a rule 8 violation even when it is true: none of "this is not a forecast",
+"not a prediction", "not a claim about the future" may appear. Worked example:
+cases/uc-00-launch-card.md#Worked example.
 
 ## The bracket
 The break-even of a knob no CLI field solves — UC-0's charges per payer, UC-1's `trialConv`, UC-6's
@@ -277,27 +282,24 @@ point), ≤ 8 evaluate runs:
 `per_tap` (every `deducted.*` figure is per tap on Buy), `units.waterfall` is `per_payer`,
 `units.kpis.<field>` names each KPI's; read the unit off `units`, never off a field's name; the
 field table and the warning table are references/fields.md. Units are not arithmetic either.
-Converting between them (a per-tap deduction ÷ the payer rate) is a model formula — quote the
-field that already carries the unit you need.
 
 ## Files
 **Variant files.** The base case is `scenario` inside `.ue/<slug>.json`. A variant is a copy of
-that scenario document at `.ue/<slug>/<variant>.json` with ONE change, its own `label` (≤ 40
-characters) and its own `measuredOn` (≤ 80 characters: the source and window of the reader's
-numbers, in words the reader typed or the case prescribes — never a date they did not type — or
+that scenario document at `.ue/<slug>/<variant>.json` with ONE change, its own `label` (≤ 40 characters)
+and its own `measuredOn` (≤ 80 characters: the source and window of the reader's numbers, in words
+the reader typed or the case prescribes — never a date they did not type — or
 `"benchmark book, nothing measured"` while nothing of theirs but a price is in a scenario you built;
 a link the reader pasted gets `"reader-stated, source not given"` (cases/uc-06-why-not-clearing.md);
-`ue link` refuses a longer one with `scenario_refused`, field `measuredOn`, "measuredOn must be a
-string of at most 80 characters" — shorten it, keeping its source). Shares are fractions (`0.30` =
-30 %), money is in the scenario's currency, and a value the reader stated equal to the book's adds its
-knob to `touched` (references/grammar.md). Corridor corners and sweep points are variants too, never
-the project root. Never overwrite the base case: re-basing — replacing values the reader did not
-state now, e.g. the book chain by observed data — moves the old base into `variants[]` first; filling
-an input the reader just stated (their budget into `volume`, a `label`, a `measuredOn`) is not
-re-basing: edit the base in place. Every hand edit of `.ue/<slug>.json` sets `updatedAt` to the
-current time (ISO 8601, UTC) and never `createdAt`; `ue stat read --rebase` does both itself.
-`experiments[]` in the project file is the CLI's record of planned, running, read, re-based and
-closed tests (`ue exp`, a card, every read) — never edited by hand.
+`ue link` refuses a longer one with `scenario_refused`, field `measuredOn`,
+"measuredOn must be a string of at most 80 characters" — shorten it, keeping its source). A value
+the reader stated equal to the book's adds its knob to `touched` (references/grammar.md). Corridor
+corners and sweep points are variants too, never the project root. Never overwrite the base case:
+re-basing — replacing values the reader did not state now, e.g. the book chain by observed data —
+moves the old base into `variants[]` first; filling an input the reader just stated (their budget
+into `volume`, a `label`, a `measuredOn`) is not re-basing: edit the base in place. Every hand edit
+of `.ue/<slug>.json` sets `updatedAt` to the current time (ISO 8601, UTC) and never `createdAt`;
+`ue stat read --rebase` does both itself. `experiments[]` is the CLI's ledger (`ue exp`, a card,
+every read) — never edited by hand.
 
 **Run files.** Save each run's JSON the answer prints under `.ue/<slug>/runs/` —
 `ue rank … > .ue/<slug>/runs/rank-<n>.json` — and create or clear the folder before a new answer (no
@@ -313,7 +315,8 @@ block (once the answer shows a line of it), its diff line for a row whose varian
 hands over, the together plan's lines (with `--together`), the ledger's open-entry lines (with an
 open entry), the read's progress sentence, and the watch's lines. No other block is checked —
 print it whole all the same. An answer that prints no run runs loop step 6 without `--runs` (the CLI
-refuses an empty folder).
+refuses an empty folder). A `ue target` / `ue plan` run's `lines` are its table block, owed whole
+like the watch's lines.
 
 **The record — every answer's last step.** Append to the project file one `decisions[]` entry
 `{ date, case, verdict, boundary }` and, per variant you handed a link for — a variant file you
@@ -331,9 +334,8 @@ records nothing: that screen is not a figure-carrying block.
    or n/a. An input with no book value that the reader declines to give gets the break-even sweep —
    its points labelled "sweep points, not an estimate" — never one assumed value in the headline.
 3. Every link carries label= and measured= (the CLI warns otherwise).
-4. Real customer numbers are private: a link is plain text — offer JSON for anything that should
-   not sit in a URL. The privacy sentence first whenever `privacy.due` or `ue check` asks for it
-   (loop step 5), then the link (or the JSON instead, if the reader prefers).
+4. Real customer numbers are private: the privacy sentence first whenever `privacy.due` or
+   `ue check` asks for it (loop step 5), then the link — or the JSON file instead.
 5. The boundary (§ The boundary) comes after the answer's last verdict — any line saying
    significant, underpowered, not yet, realistic, learnable, decidable, clears, profitable, fastest,
    runner-up, `recommendation.first` / `runnerUp` or "Recommendation:", a table's `realistic` column
@@ -344,8 +346,8 @@ records nothing: that screen is not a figure-carrying block.
    `refunds`, `disputes`, `activation`, `fees`), print, word for word, beside the link it concerns:
    "the page opens this scenario gross; the net figures are from the CLI". Any other key: the
    warnings table (references/fields.md § Warnings and refusals). No warning, no sentence: the
-   deployed page reads every key this CLI writes.
-7. Read-only towards every external system. The only files written are `.ue/` in the reader's project.
+   deployed page reads every key that link carries.
+7. Read-only towards every external system; files go only under `.ue/` in the reader's project.
 8. **Never describe a scenario as a `forecast` or a `prediction` — including in the negative.**
    `ue check` enforces the string list, in any casing, outside the contract line: `forecast`,
    `forecasts`, `forecasting`, `forecasted`, `predict`, `predicts`, `predicted`, `predicting`,
@@ -363,12 +365,11 @@ records nothing: that screen is not a figure-carrying block.
 
 ## References
 - cases/README.md — the catalog, the seed scenario and the stamp; one file per case under cases/.
-- references/fields.md — what each field of `ue evaluate` means, and each warning and refusal.
-- references/grammar.md — the link grammar and the JSON fields behind each key.
-- references/stages.md — the project file, stages, onboarding screen, drift check.
+- references/fields.md (fields, warnings, refusals), references/grammar.md (link keys, JSON fields),
+  references/stages.md (project file, stages, onboarding, drift).
 
 With this skill loaded, run `segmently ue` as the cases write it — never through its MCP server,
 `segmently ue mcp`.
 
-If `references/internal-admin-seams.md` exists beside this file you are inside the Segmently
-source repository — read it for the admin calculator's served seams and the `pid` link key.
+If `references/internal-admin-seams.md` exists beside this file, read it: the admin calculator's
+seams and the `pid` link key.

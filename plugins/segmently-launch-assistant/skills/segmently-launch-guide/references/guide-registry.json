@@ -309,7 +309,7 @@
         "allCustomerClaimsBackedByArticles": true,
         "warnings": []
       },
-      "sectionCount": 2,
+      "sectionCount": 8,
       "contentRef": "references/guides/integrations-custom-domain-section.json"
     },
     {

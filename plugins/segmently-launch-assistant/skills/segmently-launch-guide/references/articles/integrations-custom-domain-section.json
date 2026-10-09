@@ -38,6 +38,103 @@
       "imageUrls": []
     },
     {
+      "id": "integrations-custom-domain-section/section-3",
+      "title": "Enter the public host visitors will open",
+      "summary": "Type the exact address visitors will see in the link, such as funnel.example.com. A subdomain like funnel. is recommended and the easiest to verify — a bare root domain (example.com with no prefix) is harder to set up and not all providers support it. Enter only the hostname: no https://, no slashes, no path, and no query string.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-3",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-4",
+      "title": "Before you save",
+      "summary": "Make sure you — or whoever controls this domain — can edit its DNS records, because the very next step asks you to add records at the domain provider. Verification can't finish until those records are live, so don't save until you know you have that access.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-4",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-5",
+      "title": "Add the DNS records at your provider",
+      "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-5",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-6",
+      "title": "If verification keeps failing",
+      "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-6",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-7",
+      "title": "Verify before you publish",
+      "summary": "Click Verify and Segmently checks the DNS records you added at your domain provider. The domain has to reach a 'Verified' status before it can reliably serve your live funnel. If it shows 'Failed' or 'Pending', don't re-enter the records — DNS changes take time to spread across the internet (usually minutes, sometimes a few hours). Just wait and click Verify again.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-7",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-8",
+      "title": "What a verified domain unlocks",
+      "summary": "Once the status turns to 'Verified', the domain becomes selectable as the destination when you publish a Web Placement. Your live funnel link then carries your own brand (for example funnel.example.com) instead of the default Segmently address — which looks more trustworthy in ads and emails and tends to lift click-through.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-8",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
       "id": "integrations-custom-domain-section/vendor-registrar-dns-records",
       "title": "Add the A and CNAME records at your registrar",
       "summary": "Open your DNS provider (GoDaddy, Namecheap or Cloudflare) and add the two records Segmently printed: the A record for the domain and the CNAME for certificate validation; on Cloudflare keep the proxy OFF (grey cloud) for the validation CNAME. Verify against the live vendor UI before publishing.",
@@ -97,6 +194,103 @@
       "imageUrls": []
     },
     {
+      "id": "integrations-custom-domain-section/section-3",
+      "title": "Enter the public host visitors will open",
+      "summary": "Type the exact address visitors will see in the link, such as funnel.example.com. A subdomain like funnel. is recommended and the easiest to verify — a bare root domain (example.com with no prefix) is harder to set up and not all providers support it. Enter only the hostname: no https://, no slashes, no path, and no query string.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-3",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-4",
+      "title": "Before you save",
+      "summary": "Make sure you — or whoever controls this domain — can edit its DNS records, because the very next step asks you to add records at the domain provider. Verification can't finish until those records are live, so don't save until you know you have that access.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-4",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-5",
+      "title": "Add the DNS records at your provider",
+      "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-5",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "labels-copy",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-6",
+      "title": "If verification keeps failing",
+      "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-6",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-7",
+      "title": "Verify before you publish",
+      "summary": "Click Verify and Segmently checks the DNS records you added at your domain provider. The domain has to reach a 'Verified' status before it can reliably serve your live funnel. If it shows 'Failed' or 'Pending', don't re-enter the records — DNS changes take time to spread across the internet (usually minutes, sometimes a few hours). Just wait and click Verify again.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-7",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
+      "id": "integrations-custom-domain-section/section-8",
+      "title": "What a verified domain unlocks",
+      "summary": "Once the status turns to 'Verified', the domain becomes selectable as the destination when you publish a Web Placement. Your live funnel link then carries your own brand (for example funnel.example.com) instead of the default Segmently address — which looks more trustworthy in ads and emails and tends to lift click-through.",
+      "kind": "guide-section",
+      "articleSectionId": "integrations-custom-domain-section/section-8",
+      "articleSectionUrl": null,
+      "guideKeys": [
+        "integrations-custom-domain-section"
+      ],
+      "tags": [
+        "guide-section",
+        "custom-domain"
+      ],
+      "imageUrls": []
+    },
+    {
       "id": "integrations-custom-domain-section/vendor-registrar-dns-records",
       "title": "Add the A and CNAME records at your registrar",
       "summary": "Open your DNS provider (GoDaddy, Namecheap or Cloudflare) and add the two records Segmently printed: the A record for the domain and the CNAME for certificate validation; on Cloudflare keep the proxy OFF (grey cloud) for the validation CNAME. Verify against the live vendor UI before publishing.",
@@ -132,6 +326,6 @@
       "references/guide-registry.json",
       "published-guide-articles.json"
     ],
-    "generatedHash": "85b42ab916b2c96d"
+    "generatedHash": "aaedfce1d9524150"
   }
 }

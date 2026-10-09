@@ -94,6 +94,11 @@
       "category": "webplacement"
     },
     {
+      "name": "ALL_SECTION_IDS as ALL_INTEGRATION_SECTION_IDS",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
+    },
+    {
       "name": "applyThemeForSingleType",
       "sourceModule": "themes/theme-apply",
       "category": "themes"
@@ -484,6 +489,26 @@
       "category": "selectors"
     },
     {
+      "name": "DATA_TABLE",
+      "sourceModule": "selectors/data-table",
+      "category": "selectors"
+    },
+    {
+      "name": "DEFAULT_E2E_ARTICLE_HOST",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
+    },
+    {
+      "name": "DEFAULT_E2E_OTHER_ARTICLE_HOST",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
+    },
+    {
+      "name": "DEFAULT_PATH_MODE_PROJECT_ID",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
+    },
+    {
       "name": "DEFAULT_PAYWALL_ITEMS",
       "sourceModule": "webshell/paywall-helpers",
       "category": "webshell"
@@ -639,6 +664,11 @@
       "category": "stripe"
     },
     {
+      "name": "ensureSidebarRailExpanded",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
       "name": "enterProjectShell",
       "sourceModule": "navigation/sidebar",
       "category": "navigation"
@@ -682,6 +712,11 @@
       "name": "expandSizeAndFlexAccordion",
       "sourceModule": "canvas/flexible-layout-settings",
       "category": "canvas"
+    },
+    {
+      "name": "expectedIntegrationSectionIds",
+      "sourceModule": "integrations/integrations-page",
+      "category": "integrations"
     },
     {
       "name": "expectGuideAnchorVisible",
@@ -737,6 +772,16 @@
       "name": "filterByStatus",
       "sourceModule": "webplacement-list/list-operations",
       "category": "webplacement-list"
+    },
+    {
+      "name": "firebaseIdToken",
+      "sourceModule": "auth/firebase-id-token",
+      "category": "auth"
+    },
+    {
+      "name": "firebaseWebApiKey",
+      "sourceModule": "auth/firebase-id-token",
+      "category": "auth"
     },
     {
       "name": "FONT_CONFIG",
@@ -1144,6 +1189,11 @@
       "category": "content-plan"
     },
     {
+      "name": "LOCALE_CONFIG",
+      "sourceModule": "selectors/locale-config",
+      "category": "selectors"
+    },
+    {
       "name": "login",
       "sourceModule": "auth/login",
       "category": "auth"
@@ -1224,6 +1274,11 @@
       "category": "onboarding-list"
     },
     {
+      "name": "navigateToExperiments",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
       "name": "navigateToIntegrations",
       "sourceModule": "navigation/sidebar",
       "category": "navigation"
@@ -1254,6 +1309,11 @@
       "category": "navigation"
     },
     {
+      "name": "navigateToReports",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
       "name": "navigateToSetting",
       "sourceModule": "editor/field-setters",
       "category": "editor"
@@ -1274,6 +1334,11 @@
       "category": "themes"
     },
     {
+      "name": "navigateToUsersPermissions",
+      "sourceModule": "navigation/sidebar",
+      "category": "navigation"
+    },
+    {
       "name": "navigateToWebABTests",
       "sourceModule": "navigation/sidebar",
       "category": "navigation"
@@ -1291,6 +1356,16 @@
     {
       "name": "ONBOARDING_LIST",
       "sourceModule": "selectors/onboarding-list",
+      "category": "selectors"
+    },
+    {
+      "name": "ONBOARDING_SETTINGS",
+      "sourceModule": "selectors/onboarding-settings",
+      "category": "selectors"
+    },
+    {
+      "name": "ONBOARDING_THEME",
+      "sourceModule": "selectors/onboarding-theme",
       "category": "selectors"
     },
     {
@@ -1469,6 +1544,11 @@
       "category": "canvas"
     },
     {
+      "name": "pathModeStackProblem",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
+    },
+    {
       "name": "PAYWALL_PRODUCTS",
       "sourceModule": "selectors/paywall-products",
       "category": "selectors"
@@ -1604,6 +1684,11 @@
       "category": "content-plan"
     },
     {
+      "name": "resolvePathModeEnv",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
+    },
+    {
       "name": "restoreScreenStateFromCanvas",
       "sourceModule": "canvas/screen-placement-v2",
       "category": "canvas"
@@ -1612,6 +1697,11 @@
       "name": "revealAdminThemeV2Card",
       "sourceModule": "themes/admin-themes-v2",
       "category": "themes"
+    },
+    {
+      "name": "routeFrontendApiTo",
+      "sourceModule": "network/frontend-api-reroute",
+      "category": "network"
     },
     {
       "name": "saveABTestDialog",
@@ -1852,6 +1942,11 @@
       "name": "signPaddleWebhook",
       "sourceModule": "paddle/sign-paddle-webhook",
       "category": "paddle"
+    },
+    {
+      "name": "skipUnlessPathModeStack",
+      "sourceModule": "articles/path-mode-env",
+      "category": "articles"
     },
     {
       "name": "SOCIAL_PROOFS",

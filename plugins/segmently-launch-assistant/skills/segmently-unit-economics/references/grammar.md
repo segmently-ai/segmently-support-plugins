@@ -27,6 +27,8 @@ One scenario = one link = one JSON document (`"v": 2`). `ue parse`, `ue evaluate
 | `fees` (repeatable) | `<name>~<pct %>~<fixed $>` | `deductions.custom[i] = { id, name, pct, fixed }` |
 | `basis` | `first` (only when first) | `basis: "first"` (default `"ltv12"`, 12 months of charges) |
 | `measured` | text, ≤ 80 characters | `measuredOn` |
+| `goal` | `<roas\|payback\|cac\|profit>~<value>` — ROAS two decimals, payback a whole month 1–12, CAC and profit in dollars (CLI 1.7.0) | `goal = { kind, value }` |
+| `dyn` | `<growth %>~<months>~<mrr>[~<by month>][~cps<% per doubling>]` — months 12, 18 or 24; an empty MRR is an empty segment (`dyn=5.0~24~`) (CLI 1.7.0) | `dynamics = { growth, months, mrr, byMonth, costRises }` (growth and costRises as fractions) |
 
 - **Cadence in a link:** `once` or `<n><day|week|month|year>` — `1month`, `3month`, `1year`,
   `1week`, `4week`. In JSON: `type: "one_time", billing: null` or
@@ -101,18 +103,27 @@ prints `feeScheme` beside `deducted.fee` (`--explain` too), `null` when no fee i
 So a store row's commission is NOT computed the way a card fee is — name the base that row's
 own `feeScheme` reports. Never say the store fee is treated like a card fee.
 
-## What the deployed page reads (DEP-1 live)
+## What the deployed page reads (DEP-1 live; `goal=` and `dyn=` not yet)
 
-The public page reads every key the CLI writes: `fee=` (all four fields, the provider scheme
-included), `tax=`, `refunds=`, `disputes=`, `activation=`, `fees=`, `basis=`, `measured=` and
-`upgrade=`, beside the chain, the volume, the products and `ds=`/`us=`. Checked on the deployed
+The public page reads every key the CLI writes but `goal=` and `dyn=`: `fee=` (all four fields, the
+provider scheme included), `tax=`, `refunds=`, `disputes=`, `activation=`, `fees=`, `basis=`,
+`measured=` and `upgrade=`, beside the chain, the volume, the products and `ds=`/`us=`. Checked on the deployed
 page 2026-09-23, one key at a time: each link opened on the figures `ue evaluate` prints for
 it. A card fee on the seed opens at $31.25 per tap (gross $32.46); a 30 % store fee on a
 scenario with 20 % VAT inside the price opens at the ex-tax figure, $18.93, and the same link
 with a `charged` base at its own $17.31; `basis=first` opens on the first-charge figures;
 `measured=` fills the page's "Measured on" field; `upgrade=` opens as an upgrade, not an add-on.
 
-So a link this CLI mints raises no `page_shows_gross`, and needs no sentence about the page.
+The two it does not read yet are `goal=` and `dyn=` (CLI 1.7.0): the page's section that reads them
+is not live. Every `ue target` link carries `goal=`; a `ue plan` link carries `dyn=` once an input
+differs from its default (growth 0, 12 months, no MRR); so does `ue link` on a document with `goal`
+or `dynamics`. Such a link raises ONE `page_shows_gross`, its `keys` `goal` or `dyn`,
+in the CLI's non-gross wording ("The public page does not read goal= yet: it opens this scenario
+without that key."). Say that the page opens the scenario without the goal (or the months), so those
+lines are the CLI's alone — nothing about gross.
+
+So a link this CLI mints without `goal=` or `dyn=` raises no `page_shows_gross`, and needs no
+sentence about the page.
 The code stays for a key the CLI writes before the page reads it. When it fires, say the one
 consequence its `keys` name:
 

@@ -40,8 +40,13 @@
           "route": null,
           "steps": [
             {
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the project sidebar.",
+              "expectedResult": "The Onboardings item is visible inside the section."
+            },
+            {
               "id": "open-onboardings",
-              "instruction": "Click Onboardings in the project sidebar.",
+              "instruction": "Click Onboardings inside the Onboardings section.",
               "expectedResult": "The Onboardings list opens."
             },
             {
@@ -120,8 +125,13 @@
           "route": null,
           "steps": [
             {
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the project sidebar.",
+              "expectedResult": "The Onboardings item is visible inside the section."
+            },
+            {
               "id": "open-onboardings",
-              "instruction": "Open Onboardings from the sidebar.",
+              "instruction": "Click Onboardings inside the Onboardings section.",
               "expectedResult": "The Onboardings list opens."
             },
             {
@@ -229,13 +239,8 @@
           "route": null,
           "steps": [
             {
-              "id": "expand-web-section",
-              "instruction": "Expand the Web section in the sidebar.",
-              "expectedResult": "Web menu items are visible."
-            },
-            {
               "id": "open-integrations",
-              "instruction": "Click Integrations.",
+              "instruction": "Click Integrations in the sidebar.",
               "expectedResult": "The Integrations page opens."
             },
             {
@@ -254,7 +259,7 @@
       "title": "Create a paywall product",
       "scenario": "paywall-products",
       "goal": "Reach the Paywall Products dialog and explain how Stripe Product and Stripe Price are linked.",
-      "destination": "Project workspace -> Web -> Paywall Products -> Add Product",
+      "destination": "Project workspace -> Onboardings section -> Paywall Products -> Add Product",
       "entryPoints": [
         {
           "id": "direct-products-url",
@@ -284,9 +289,9 @@
           "route": null,
           "steps": [
             {
-              "id": "expand-web-section",
-              "instruction": "Expand the Web section in the sidebar.",
-              "expectedResult": "Web menu items are visible."
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the sidebar.",
+              "expectedResult": "Onboardings, Placements, A/B Tests and Paywall Products are visible."
             },
             {
               "id": "open-products",
@@ -347,8 +352,13 @@
           "route": null,
           "steps": [
             {
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the project sidebar.",
+              "expectedResult": "The Onboardings item is visible inside the section."
+            },
+            {
               "id": "open-onboardings",
-              "instruction": "Click Onboardings in the project sidebar.",
+              "instruction": "Click Onboardings inside the Onboardings section.",
               "expectedResult": "The Onboardings list opens."
             },
             {
@@ -407,13 +417,13 @@
           "route": null,
           "steps": [
             {
-              "id": "expand-web-section",
-              "instruction": "Expand the Web section in the sidebar.",
-              "expectedResult": "Web menu items are visible."
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the sidebar.",
+              "expectedResult": "Onboardings, Placements, A/B Tests and Paywall Products are visible."
             },
             {
               "id": "open-web-placements",
-              "instruction": "Click Web Placements.",
+              "instruction": "Click Placements.",
               "expectedResult": "The Web Placements list opens."
             }
           ]
@@ -466,13 +476,13 @@
           "route": null,
           "steps": [
             {
-              "id": "expand-web-section",
-              "instruction": "Expand the Web section in the sidebar.",
-              "expectedResult": "Web menu items are visible."
+              "id": "expand-onboardings-section",
+              "instruction": "Expand the Onboardings section in the sidebar.",
+              "expectedResult": "Onboardings, Placements, A/B Tests and Paywall Products are visible."
             },
             {
               "id": "open-web-placements",
-              "instruction": "Click Web Placements.",
+              "instruction": "Click Placements.",
               "expectedResult": "The Web Placements list opens."
             }
           ]
@@ -579,7 +589,7 @@
             },
             {
               "id": "click-add",
-              "instruction": "Click Add in the Analytics section.",
+              "instruction": "Click the add-integration button in the Analytics section.",
               "expectedResult": "The Add Analytics Integration dialog opens."
             }
           ]
@@ -590,11 +600,6 @@
           "route": null,
           "steps": [
             {
-              "id": "expand-web-section",
-              "instruction": "Expand the Web section in the sidebar.",
-              "expectedResult": "Web menu items are visible."
-            },
-            {
               "id": "open-integrations",
               "instruction": "Click Integrations in the sidebar.",
               "expectedResult": "The Integrations page opens."
@@ -602,11 +607,11 @@
             {
               "id": "expand-analytics",
               "instruction": "Expand Analytics.",
-              "expectedResult": "Analytics integrations and the Add action are visible."
+              "expectedResult": "Analytics integrations and the add-integration button are visible."
             },
             {
               "id": "click-add",
-              "instruction": "Click Add and choose the provider to connect.",
+              "instruction": "Click the add-integration button and choose the provider to connect.",
               "expectedResult": "The provider-selection dialog opens."
             }
           ]

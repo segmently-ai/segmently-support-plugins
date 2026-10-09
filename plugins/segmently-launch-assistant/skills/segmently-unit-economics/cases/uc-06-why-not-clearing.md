@@ -62,4 +62,6 @@ then:
 
 ## Stops
 - A rate in `breakEvens.unreachable` is not ranked; its break-even above 100 % is never a target.
+- A goal past clearing (an investor's ROAS, a payback month, a CAC) → `cases/uc-14-reach-a-goal.md`
+  on this base: the break-evens here are that run's reading for a ROAS of 1.00×.
 - A swept endpoint that comes back `clamped` is reported typed → landed on its row (rule 9).

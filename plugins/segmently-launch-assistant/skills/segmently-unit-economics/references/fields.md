@@ -9,6 +9,7 @@ Contents:
 - references/fields.md § The structural row — the fields of a structural `ue rank` row (CLI 1.5.0).
 - references/fields.md § The ledger — the `experiments[]` fields and their lifecycle.
 - references/fields.md § The guardrail and the watch — an `--override` row's checkpoint, and `ue stat watch`'s fields.
+- references/fields.md § Goal and months — the fields behind `ue target`'s and `ue plan`'s lines (CLI 1.7.0).
 - references/fields.md § Warnings and refusals — what you do with each warning code and a refusal.
 - The ad account's figures (below) — the rows UC-9 sets beside the ad platform's.
 
@@ -100,16 +101,41 @@ An `--override` row's `guardrail` on a CLI run judges the nearest step at the te
 | `closeCommand` | on `stop`, the `ue exp close` call |
 | `lines`, `boundary` | the block the answer prints: `watch.lines`, then `watch.boundary` |
 
+## Goal and months
+`ue target` (cases/uc-14-reach-a-goal.md) and `ue plan` (cases/uc-15-month-by-month.md) answer in their
+`lines`, printed whole; the fields behind the lines say why a line reads as it does — never a figure to
+print beside it.
+
+| Field of `ue target` | Say it as |
+|---|---|
+| `goal` | the goal as typed — `kind`, `value` — and the `basis` it reads: ROAS and profit follow the scenario's own basis (gross or net, twelve months of charges or the first), payback reads twelve months of charges, CAC no basis |
+| `current`, `met` | where the scenario stands on that goal now, and whether it already meets it (`current` `null`: nobody pays) |
+| `reachCount` / `leverCount` | how many levers reach the goal on their own, of how many — the goal line says it |
+| `rows[].state` | `reach` (the line names the value that reaches the goal) · `holds` (already meets it) · `holds_any` (any value does) · `unreachable` (no value can: a rate above 100 %, a cost per start at or below $0, more charges than the cadence holds in 12 months — the line has no figure, and you give none) · `no_effect` (the lever does not move this goal) · `no_trial` (no free trial on this paywall) · `no_reading` (nobody pays) |
+| `rows[].required` | the unrounded solve behind the line — never quoted; the line's figure is the one you print |
+
+A requirement past a calculator control is still `reach`: its line carries the control's end ("below
+the calculator's $0.10 floor"), and a rate between 95 % and 100 % is a rate a funnel can have.
+
+| Field of `ue plan` | Say it as |
+|---|---|
+| `dynamics` | the inputs the run read: `growth` (a fraction a month), `months`, `mrr`, `byMonth`, `costRises` |
+| `months[]` | one row per month — budget, cost per start, new payers, active subscribers, MRR, cash in, the month's flow, cumulative cash; `assumed` past month 12. Not printed cell by cell: a month the lines do not name is a run of its own |
+| `milestones` | the first month cash flow is positive, the low of cumulative cash and its month, never below zero, the month cash is back above zero, the month the MRR is reached — each a typed `null` when it does not happen within `months` |
+| `totals` | the ad spend and the cumulative cash over `months` |
+| `goal` | with `--mrr` and `--by`: the MRR at that month, whether it is met, and three levers — growth, paywall → tapped Buy, the month-1 budget — each alone with its cash line |
+| `cac`, `basis` | month 1's CAC (the evaluate's own), and the basis the cash is counted on |
+
 ## Warnings and refusals
 Every verb returns `warnings[]` (and evaluate/parse `clampNotices[]`). Handle each, never drop one:
 
 | Code | What you do |
 |---|---|
-| `page_shows_gross` | The page does not read a key this link carries. The deployed page reads every key `ue link` writes — `fee=` with its scheme, `tax=`, `refunds=`, `disputes=`, `activation=`, `fees=`, `basis=`, `measured=` and `upgrade=` (checked on the deployed page 2026-09-23) — so a link this CLI mints raises it only for a key the page does not read yet. No `page_shows_gross`, no sentence: never add a gross or ignored-key sentence to a link that did not raise it. When it fires, read `keys`. A deduction key among them (`fee`, `tax`, `refunds`, `disputes`, `activation`, `fees`) — the CLI's message then says "GROSS": print rule 6's sentence. Any other key: say, in the present tense, that the page ignores that key and opens the rest of the scenario, name the key, and say that a figure it changes is the CLI's alone — nothing about gross (the CLI's own message for this case does not say GROSS either). Never "the page will show …": `will show` is on rule 8's string list, and the ban covers sentences about the page, the CLI or a test exactly as it covers sentences about a figure. |
+| `page_shows_gross` | The page does not read a key this link carries. The deployed page reads every key `ue link` writes — `fee=` with its scheme, `tax=`, `refunds=`, `disputes=`, `activation=`, `fees=`, `basis=`, `measured=` and `upgrade=` (checked on the deployed page 2026-09-23) — except `goal=` and `dyn=` (CLI 1.7.0), so a link this CLI mints raises it only for a key the page does not read yet: `goal` (a `ue target` link) and `dyn` (a `ue plan` link) — the page opens the scenario without the goal or the months. No `page_shows_gross`, no sentence: never add a gross or ignored-key sentence to a link that did not raise it. When it fires, read `keys`. A deduction key among them (`fee`, `tax`, `refunds`, `disputes`, `activation`, `fees`) — the CLI's message then says "GROSS": print rule 6's sentence. Any other key: say, in the present tense, that the page ignores that key and opens the rest of the scenario, name the key, and say that a figure it changes is the CLI's alone — nothing about gross (the CLI's own message for this case does not say GROSS either). Never "the page will show …": `will show` is on rule 8's string list, and the ban covers sentences about the page, the CLI or a test exactly as it covers sentences about a figure. |
 | `label_missing` | Re-mint with `npx -y @segmently/cli ue link <file> --label '<name>'` (or set `label`). Single quotes: in double quotes the shell expands `$19.99` to `9.99`. |
 | `measured_missing` | Set `measuredOn` (source + window) in the variant file — for a found project's onboarding base link, in its `scenario` — and re-mint. Then report it once, in one line: a `ue link` call's own → "`measured_missing` → re-minted with measured=<note>"; `ue init` / `ue evaluate`'s own link → "`measured_missing` on the <evaluate's | init's> link → re-minted with measured=<note>". |
 | `takes_normalized` | The paywall takes added up past 100 % and were scaled: name each product's before → after, ask the reader for their split of buy-taps. |
-| `clamped` (and every `clampNotices` line) | The value was outside the control's window and moved: report typed value and landed value on THAT row; ask whether the typed one is measured. In a sweep, the clamped row is labelled with the LANDED value and every later sentence about it quotes the landed one (trial conversion runs 2 – 95 %: a row typed 100 % lands on 95 %, a row typed 1 % lands on 2 %), and any "never clears" **or** "clears at every point I tried" is stated at the landed endpoint ("not even at 95 %, the highest the calculator takes"; "down to 2 %, the lowest it takes"). The windows (the CLI's own controls): `trialConv` 2 – 95 %; a downsell `conv` 1 – 60 % and an upsell `conv` 1 – 50 %; `completionRate` 30 – 100 %; `chain.p1/p2/p3` 2 – 95 %; `chain.cps` $0.10 – $8.00; `paymentsCounted` 1 up to the product's own cadence cap (52 at most); a fee 0 – 30 % and $0 – $5 fixed; tax 0 – 30 %; refunds 0 – 30 %; disputes 0 – 5 % with a $0 – $50 fee. Give the reader the window when a sweep approaches one. |
+| `clamped` (and every `clampNotices` line) | The value was outside the control's window and moved: report typed value and landed value on THAT row; ask whether the typed one is measured. In a sweep, the clamped row is labelled with the LANDED value and every later sentence about it quotes the landed one (trial conversion runs 2 – 95 %: a row typed 100 % lands on 95 %, a row typed 1 % lands on 2 %), and any "never clears" **or** "clears at every point I tried" is stated at the landed endpoint ("not even at 95 %, the highest the calculator takes"; "down to 2 %, the lowest it takes"). The windows (the CLI's own controls): `trialConv` 2 – 95 %; a downsell `conv` 1 – 60 % and an upsell `conv` 1 – 50 %; `completionRate` 30 – 100 %; `chain.p1/p2/p3` 2 – 100 % (a skipped step is 100 %; above 100 % is refused, never clamped); `chain.cps` $0.10 – $8.00; `paymentsCounted` 1 up to the product's own cadence cap (52 at most); a fee 0 – 30 % and $0 – $5 fixed; tax 0 – 30 %; refunds 0 – 30 %; disputes 0 – 5 % with a $0 – $50 fee. Give the reader the window when a sweep approaches one. |
 | `snapped` | Loading the scenario put a value on the calculator's own grid — its slider step (cps 1.23456 → 1.25; the chain rates, `trialConv` and `completionRate` to half a point, 0.4256 → 0.425) or its precision (`paymentsCounted` 4.765 → 4.76, the takes to four decimals); every figure, and the minted link, uses the landed value. Name each key typed → landed; label the row with the landed value and quote it from then on. That covers the scenario's input only: an observation (`read.pB`, an observed rate) is quoted exactly as its run printed it, never at a landed value. |
 | `link_rounded` | The link cannot carry a value or name exactly, so the page opens it rounded or rewritten. Say which key and that the page shows the link's value; the CLI figures use the unrounded one. |
 | `unknown_key` | Name the ignored keys; if one looks like a typo of a grammar key (references/grammar.md), ask. |

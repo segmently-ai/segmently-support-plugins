@@ -23695,14 +23695,14 @@
       "articleAlias": "help-fonts-typography",
       "articleId": null,
       "title": "Fonts — set your funnel typography",
-      "oneLineSummary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "oneLineSummary": "Explains how to set a web funnel's typography from the Font Mappings section of Onboarding settings (the gear button next to Create Onboarding on the Onboardings page): pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
       "tags": [
         "fonts",
         "typography",
         "web-fonts",
         "custom-font",
         "branding",
-        "integrations"
+        "onboarding-settings"
       ],
       "keywords": [
         "help-fonts-typography",
@@ -23717,13 +23717,21 @@
         "web",
         "from",
         "the",
-        "Integrations",
         "Font",
         "Mappings",
-        "panel:",
+        "section",
+        "of",
+        "Onboarding",
+        "settings",
+        "gear",
+        "button",
+        "next",
+        "Create",
+        "on",
+        "Onboardings",
+        "page",
         "pick",
         "one",
-        "of",
         "Segmently",
         "built-in",
         "fonts",
@@ -23740,7 +23748,6 @@
         "so",
         "renders",
         "identically",
-        "on",
         "every",
         "device",
         "and",
@@ -23777,14 +23784,7 @@
         "which",
         "reverts",
         "affected",
-        "mappings",
-        "defaults",
-        "It",
-        "also",
-        "explains",
-        "that",
-        "published",
-        "shows"
+        "mappings"
       ],
       "subarticles": [],
       "relations": {
@@ -35919,6 +35919,7 @@
         "custom-domain",
         "flow:capability.custom-domain-readiness",
         "guide-section",
+        "labels-copy",
         "vendor-step",
         "dns",
         "domain-verification",
@@ -35970,6 +35971,7 @@
         "flow:capability",
         "custom-domain-readiness",
         "guide-section",
+        "labels-copy",
         "vendor-step",
         "Decide",
         "whether",
@@ -36003,8 +36005,7 @@
         "emails",
         "so",
         "people",
-        "click",
-        "fewer"
+        "click"
       ],
       "subarticles": [
         {
@@ -36020,6 +36021,61 @@
           "id": "integrations-custom-domain-section/section-2",
           "title": "Recommended order of steps",
           "summary": "Work through it in this order: (1) enter your domain, (2) add the DNS records Segmently shows you at your domain provider, (3) click Verify and wait for the 'Verified' status, then (4) select that verified domain when you publish a Web Placement. Verification has to succeed before the domain can serve your live funnel, so don't publish against it until the status is green.",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-3",
+          "title": "Enter the public host visitors will open",
+          "summary": "Type the exact address visitors will see in the link, such as funnel.example.com. A subdomain like funnel. is recommended and the easiest to verify — a bare root domain (example.com with no prefix) is harder to set up and not all providers support it. Enter only the hostname: no https://, no slashes, no path, and no query string.",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-4",
+          "title": "Before you save",
+          "summary": "Make sure you — or whoever controls this domain — can edit its DNS records, because the very next step asks you to add records at the domain provider. Verification can't finish until those records are live, so don't save until you know you have that access.",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-5",
+          "title": "Add the DNS records at your provider",
+          "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+          "tags": [
+            "guide-section",
+            "labels-copy",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-6",
+          "title": "If verification keeps failing",
+          "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-7",
+          "title": "Verify before you publish",
+          "summary": "Click Verify and Segmently checks the DNS records you added at your domain provider. The domain has to reach a 'Verified' status before it can reliably serve your live funnel. If it shows 'Failed' or 'Pending', don't re-enter the records — DNS changes take time to spread across the internet (usually minutes, sometimes a few hours). Just wait and click Verify again.",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ]
+        },
+        {
+          "id": "integrations-custom-domain-section/section-8",
+          "title": "What a verified domain unlocks",
+          "summary": "Once the status turns to 'Verified', the domain becomes selectable as the destination when you publish a Web Placement. Your live funnel link then carries your own brand (for example funnel.example.com) instead of the default Segmently address — which looks more trustworthy in ads and emails and tends to lift click-through.",
           "tags": [
             "guide-section",
             "custom-domain"

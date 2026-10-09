@@ -10,6 +10,9 @@ Contents: Turns · Calls · Answer skeleton · Boundary · Stops · Worked examp
   reader did not give — charges per payer (`paymentsCounted`), buy-tap → paid (`completionRate`),
   volume (daily or monthly budget) — or say plainly that each stays the book's value (monthly 2.86
   charges, completion 100 %, $45,000 a month) and label it book.
+- **A step the reader's funnel does not have** (no second screen, no separate Buy tap) is entered at
+  100 % — `chain.p2: 1` or `chain.p3: 1`, a skipped step — never left at the book's rate; say so in
+  one line.
 - **Sources, in order of trust:** the reader's answers; an ad export (`chain.cps` = spend ÷ funnel
   starts, input preparation: print "$<spend> ÷ <starts> starts = $<cps> (your numbers, prepared)" —
   ask for starts or landing views, never clicks); product analytics (`chain.p1/p2/p3`, takes);
@@ -61,6 +64,8 @@ days at the volume the run used.
 - A take is never read as a fee, and the reader is never asked which field it is.
 - Clicks are never funnel starts: ask for starts or landing views.
 - No funnel numbers, only a price → `cases/uc-00-launch-card.md`.
+- A goal named with the numbers (a ROAS, a payback month, a CAC) → `cases/uc-14-reach-a-goal.md` on
+  this base; the months ahead (cash, MRR, a growing budget) → `cases/uc-15-month-by-month.md`.
 
 ## Worked example
 

@@ -351,10 +351,6 @@
           "testIdPrefix": "sidebar-item-"
         },
         {
-          "kind": "expand-section",
-          "testId": "sidebar-section-web-section"
-        },
-        {
           "kind": "click-testid",
           "testId": "sidebar-item-integrations"
         },
@@ -384,10 +380,6 @@
           "kind": "wait-selector",
           "note": "Any sidebar item = project shell ready.",
           "testIdPrefix": "sidebar-item-"
-        },
-        {
-          "kind": "expand-section",
-          "testId": "sidebar-section-web-section"
         },
         {
           "kind": "click-testid",
@@ -429,10 +421,6 @@
           "testIdPrefix": "sidebar-item-"
         },
         {
-          "kind": "expand-section",
-          "testId": "sidebar-section-web-section"
-        },
-        {
           "kind": "click-testid",
           "testId": "sidebar-item-integrations"
         },
@@ -451,11 +439,11 @@
       ]
     },
     {
-      "routeId": "integrations-fonts",
-      "entity": "Integrations",
-      "title": "Integrations — fonts section",
-      "customerSafeLabel": "the fonts section",
-      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/integrations",
+      "routeId": "onboarding-settings-fonts",
+      "entity": "Onboarding Settings",
+      "title": "Onboarding settings — Font Mappings",
+      "customerSafeLabel": "the Font Mappings section in Onboarding settings",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboardings-v2?settings=fonts",
       "requires": {
         "auth": true,
         "projectId": true
@@ -472,16 +460,12 @@
           "testIdPrefix": "sidebar-item-"
         },
         {
-          "kind": "expand-section",
-          "testId": "sidebar-section-web-section"
-        },
-        {
           "kind": "click-testid",
-          "testId": "sidebar-item-integrations"
+          "testId": "onb-settings-btn"
         },
         {
           "kind": "wait-testid",
-          "testId": "integrations-page"
+          "testId": "onb-settings-drawer"
         },
         {
           "kind": "click-testid",
@@ -490,6 +474,45 @@
         {
           "kind": "wait-testid",
           "testId": "integrations-content-fonts"
+        }
+      ]
+    },
+    {
+      "routeId": "onboarding-settings-locales",
+      "entity": "Onboarding Settings",
+      "title": "Onboarding settings — Locale Configuration",
+      "customerSafeLabel": "the Locale Configuration section in Onboarding settings",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/onboardings-v2?settings=locales",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "onb-settings-btn"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "onb-settings-drawer"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "integrations-section-locales"
+        },
+        {
+          "kind": "wait-testid",
+          "testId": "integrations-content-locales"
         }
       ]
     },
@@ -513,10 +536,6 @@
           "kind": "wait-selector",
           "note": "Any sidebar item = project shell ready.",
           "testIdPrefix": "sidebar-item-"
-        },
-        {
-          "kind": "expand-section",
-          "testId": "sidebar-section-web-section"
         },
         {
           "kind": "click-testid",
@@ -606,8 +625,8 @@
     {
       "routeId": "reports",
       "entity": "Reports",
-      "title": "Funnel reports",
-      "customerSafeLabel": "the Reports page",
+      "title": "Funnel reports (Analytics in the sidebar)",
+      "customerSafeLabel": "the Reports page (Analytics in the sidebar)",
       "routeTemplate": "{{baseUrl}}/project/{{projectId}}/reports",
       "requires": {
         "auth": true,
@@ -625,8 +644,43 @@
           "testIdPrefix": "sidebar-item-"
         },
         {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
           "kind": "click-testid",
           "testId": "sidebar-item-reports"
+        }
+      ]
+    },
+    {
+      "routeId": "experiments",
+      "entity": "Experiments",
+      "title": "Experiments hub",
+      "customerSafeLabel": "the Experiments page",
+      "routeTemplate": "{{baseUrl}}/project/{{projectId}}/experiments",
+      "requires": {
+        "auth": true,
+        "projectId": true
+      },
+      "steps": [
+        {
+          "kind": "goto",
+          "note": "Runner recovers from the /all-projects redirect via the project card, like enterProjectShell.",
+          "pathTemplate": "/project/{{projectId}}/onboardings-v2"
+        },
+        {
+          "kind": "wait-selector",
+          "note": "Any sidebar item = project shell ready.",
+          "testIdPrefix": "sidebar-item-"
+        },
+        {
+          "kind": "expand-section",
+          "testId": "sidebar-section-web-section"
+        },
+        {
+          "kind": "click-testid",
+          "testId": "sidebar-item-experiments"
         }
       ]
     },
@@ -653,7 +707,7 @@
         },
         {
           "kind": "expand-section",
-          "testId": "sidebar-section-content-plan-section"
+          "testId": "sidebar-section-articles-section"
         },
         {
           "kind": "click-testid",
@@ -663,7 +717,7 @@
     },
     {
       "routeId": "users-permissions",
-      "entity": "Team",
+      "entity": "Users & Permissions",
       "title": "Users & permissions",
       "customerSafeLabel": "the Users & Permissions page",
       "routeTemplate": "{{baseUrl}}/project/{{projectId}}/permissions",
@@ -683,10 +737,6 @@
           "testIdPrefix": "sidebar-item-"
         },
         {
-          "kind": "expand-section",
-          "testId": "sidebar-section-team-section"
-        },
-        {
           "kind": "click-testid",
           "testId": "sidebar-item-users-permissions"
         }
@@ -694,7 +744,7 @@
     },
     {
       "routeId": "project-billing",
-      "entity": "Team",
+      "entity": "Billing",
       "title": "Project billing",
       "customerSafeLabel": "the project billing page",
       "routeTemplate": "{{baseUrl}}/project/{{projectId}}/billing",
@@ -712,10 +762,6 @@
           "kind": "wait-selector",
           "note": "Any sidebar item = project shell ready.",
           "testIdPrefix": "sidebar-item-"
-        },
-        {
-          "kind": "expand-section",
-          "testId": "sidebar-section-team-section"
         },
         {
           "kind": "click-testid",

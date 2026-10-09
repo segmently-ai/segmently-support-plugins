@@ -53202,9 +53202,9 @@
       "articleAlias": "help-fonts-typography",
       "articleId": null,
       "title": "Fonts — set your funnel typography",
-      "oneLineSummary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
-      "description": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
-      "summary": "Explains how to set a web funnel's typography from the Integrations → Font Mappings panel: pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "oneLineSummary": "Explains how to set a web funnel's typography from the Font Mappings section of Onboarding settings (the gear button next to Create Onboarding on the Onboardings page): pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "description": "Explains how to set a web funnel's typography from the Font Mappings section of Onboarding settings (the gear button next to Create Onboarding on the Onboardings page): pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
+      "summary": "Explains how to set a web funnel's typography from the Font Mappings section of Onboarding settings (the gear button next to Create Onboarding on the Onboardings page): pick one of Segmently's built-in web fonts per platform, or use the All platforms column to apply one font everywhere so the funnel renders identically on every device, and upload your own brand font (TTF, OTF, WOFF or WOFF2 up to 5 MB) after confirming a web-embedding license. Covers the eight font slots, the web-font group with the web badge, Regular and Bold grouping into one family, the Custom font group, the live preview, and deleting a custom font (which reverts the affected mappings to defaults). It also explains that a published funnel shows visitors the font mapped for their platform from the very first paint, so text does not switch typeface when the page becomes interactive. Use this when customers ask how to change the funnel font, use a custom or brand font, upload a font, or make text look the same across devices.",
       "publishedUrl": "https://help.segmently.ai/help-fonts-typography",
       "configUrl": "https://api.segmently.ai/assets/articles/arswew63RwQr6V4Ekb1Z/help-fonts-typography/config.json",
       "status": "published",
@@ -53224,13 +53224,21 @@
         "web",
         "from",
         "the",
-        "Integrations",
         "Font",
         "Mappings",
-        "panel:",
+        "section",
+        "of",
+        "Onboarding",
+        "settings",
+        "gear",
+        "button",
+        "next",
+        "Create",
+        "on",
+        "Onboardings",
+        "page",
         "pick",
         "one",
-        "of",
         "Segmently",
         "built-in",
         "fonts",
@@ -53247,7 +53255,6 @@
         "so",
         "renders",
         "identically",
-        "on",
         "every",
         "device",
         "and",
@@ -53305,7 +53312,6 @@
         "switch",
         "typeface",
         "when",
-        "page",
         "becomes",
         "interactive",
         "Use",
@@ -53318,12 +53324,13 @@
         "same",
         "across",
         "devices",
+        "onboarding",
         "flash",
         "load",
         "web-fonts",
         "custom-font",
         "branding",
-        "integrations"
+        "onboarding-settings"
       ],
       "negativeKeywords": [],
       "tags": [
@@ -53332,7 +53339,7 @@
         "web-fonts",
         "custom-font",
         "branding",
-        "integrations"
+        "onboarding-settings"
       ],
       "contentRef": "references/articles/help-fonts-typography.json",
       "relations": {
@@ -53344,7 +53351,7 @@
       },
       "provenance": {
         "sourceFiles": [],
-        "generatedHash": "f3995f384e749168",
+        "generatedHash": "f5a94a3956e605a6",
         "reachability": "release-gate-required",
         "contentCompleteness": "partial"
       },
@@ -77849,6 +77856,109 @@
           "settingRefs": []
         },
         {
+          "id": "integrations-custom-domain-section/section-3",
+          "title": "Enter the public host visitors will open",
+          "summary": "Type the exact address visitors will see in the link, such as funnel.example.com. A subdomain like funnel. is recommended and the easiest to verify — a bare root domain (example.com with no prefix) is harder to set up and not all providers support it. Enter only the hostname: no https://, no slashes, no path, and no query string.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-3"
+          ],
+          "settingRefs": []
+        },
+        {
+          "id": "integrations-custom-domain-section/section-4",
+          "title": "Before you save",
+          "summary": "Make sure you — or whoever controls this domain — can edit its DNS records, because the very next step asks you to add records at the domain provider. Verification can't finish until those records are live, so don't save until you know you have that access.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-4"
+          ],
+          "settingRefs": []
+        },
+        {
+          "id": "integrations-custom-domain-section/section-5",
+          "title": "Add the DNS records at your provider",
+          "summary": "Copy each DNS record shown in the table here into your domain provider's DNS settings exactly as displayed — the record type, the name/host, and the value all have to match. After you save them at the provider, wait before verifying: DNS changes take from a few minutes up to a few hours to spread across the internet, and verification only passes once they're live.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "labels-copy",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-5"
+          ],
+          "settingRefs": []
+        },
+        {
+          "id": "integrations-custom-domain-section/section-6",
+          "title": "If verification keeps failing",
+          "summary": "First, remove any older CNAME or A record on the same host that conflicts with the new one. Second, if your domain is on Cloudflare, set the record to 'DNS only' — click the orange cloud icon so it turns grey. The orange cloud means Cloudflare is hiding (proxying) your real record, which stops Segmently from confirming it.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-6"
+          ],
+          "settingRefs": []
+        },
+        {
+          "id": "integrations-custom-domain-section/section-7",
+          "title": "Verify before you publish",
+          "summary": "Click Verify and Segmently checks the DNS records you added at your domain provider. The domain has to reach a 'Verified' status before it can reliably serve your live funnel. If it shows 'Failed' or 'Pending', don't re-enter the records — DNS changes take time to spread across the internet (usually minutes, sometimes a few hours). Just wait and click Verify again.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-7"
+          ],
+          "settingRefs": []
+        },
+        {
+          "id": "integrations-custom-domain-section/section-8",
+          "title": "What a verified domain unlocks",
+          "summary": "Once the status turns to 'Verified', the domain becomes selectable as the destination when you publish a Web Placement. Your live funnel link then carries your own brand (for example funnel.example.com) instead of the default Segmently address — which looks more trustworthy in ads and emails and tends to lift click-through.",
+          "kind": "guide-section",
+          "tags": [
+            "guide-section",
+            "custom-domain"
+          ],
+          "guideKeys": [
+            "integrations-custom-domain-section"
+          ],
+          "sectionRefs": [
+            "integrations-custom-domain-section/section-8"
+          ],
+          "settingRefs": []
+        },
+        {
           "id": "integrations-custom-domain-section/vendor-registrar-dns-records",
           "title": "Add the A and CNAME records at your registrar",
           "summary": "Open your DNS provider (GoDaddy, Namecheap or Cloudflare) and add the two records Segmently printed: the A record for the domain and the CNAME for certificate validation; on Cloudflare keep the proxy OFF (grey cloud) for the validation CNAME. Verify against the live vendor UI before publishing.",
@@ -77920,6 +78030,7 @@
         "flow:capability",
         "custom-domain-readiness",
         "guide-section",
+        "labels-copy",
         "vendor-step",
         "Decide",
         "whether",
@@ -77995,25 +78106,158 @@
         "against",
         "until",
         "green",
-        "vendor-registrar-dns-records",
+        "section-3",
+        "Enter",
+        "public",
+        "host",
+        "visitors",
+        "will",
+        "open",
+        "Type",
+        "exact",
+        "address",
+        "see",
+        "such",
+        "as",
+        "subdomain",
+        "like",
+        "recommended",
+        "easiest",
+        "bare",
+        "root",
+        "no",
+        "prefix",
+        "harder",
+        "up",
+        "not",
+        "all",
+        "providers",
+        "support",
+        "hostname:",
+        "https:",
+        "slashes",
+        "path",
+        "query",
+        "string",
+        "section-4",
+        "Before",
+        "save",
+        "Make",
+        "sure",
+        "or",
+        "whoever",
+        "controls",
+        "edit",
+        "its",
+        "because",
+        "very",
+        "next",
+        "step",
+        "asks",
+        "finish",
+        "those",
+        "are",
+        "have",
+        "access",
+        "section-5",
         "Add",
+        "Copy",
+        "each",
+        "record",
+        "shown",
+        "table",
+        "here",
+        "into",
+        "settings",
+        "exactly",
+        "displayed",
+        "type",
+        "name",
+        "value",
+        "match",
+        "After",
+        "them",
+        "verifying:",
+        "changes",
+        "take",
+        "from",
+        "few",
+        "minutes",
+        "hours",
+        "spread",
+        "across",
+        "internet",
+        "passes",
+        "once",
+        "they",
+        "re",
+        "section-6",
+        "If",
+        "keeps",
+        "failing",
+        "First",
+        "remove",
+        "any",
+        "older",
         "CNAME",
+        "same",
+        "conflicts",
+        "new",
+        "one",
+        "Second",
+        "Cloudflare",
+        "orange",
+        "cloud",
+        "icon",
+        "turns",
+        "grey",
+        "The",
+        "means",
+        "hiding",
+        "proxying",
+        "real",
+        "which",
+        "stops",
+        "confirming",
+        "section-7",
+        "Click",
+        "checks",
+        "added",
+        "reach",
+        "reliably",
+        "Failed",
+        "Pending",
+        "re-enter",
+        "time",
+        "usually",
+        "sometimes",
+        "Just",
+        "again",
+        "section-8",
+        "What",
+        "unlocks",
+        "Once",
+        "becomes",
+        "selectable",
+        "destination",
+        "Your",
+        "carries",
+        "instead",
+        "tends",
+        "lift",
+        "click-through",
+        "vendor-registrar-dns-records",
         "registrar",
         "Open",
         "GoDaddy",
         "Namecheap",
-        "or",
-        "Cloudflare",
         "two",
         "printed:",
-        "record",
         "certificate",
         "validation",
         "keep",
         "proxy",
         "OFF",
-        "grey",
-        "cloud",
         "vendor",
         "UI"
       ],
@@ -78022,6 +78266,7 @@
         "custom-domain",
         "flow:capability.custom-domain-readiness",
         "guide-section",
+        "labels-copy",
         "vendor-step",
         "dns",
         "domain-verification",
@@ -78047,7 +78292,7 @@
           "references/guide-registry.json",
           "published-guide-articles.json"
         ],
-        "generatedHash": "85b42ab916b2c96d",
+        "generatedHash": "aaedfce1d9524150",
         "reachability": "release-gate-required",
         "contentCompleteness": "full"
       },
@@ -84826,7 +85071,6 @@
       ],
       "integrations": [
         "analytics-integration-list",
-        "help-fonts-typography",
         "integrations-stripe-connect-section"
       ],
       "labels-copy": [
@@ -84877,6 +85121,7 @@
         "help-screen-textinput-elements",
         "help-screen-wheelpicker-elements",
         "integrations-analytics-section",
+        "integrations-custom-domain-section",
         "onboarding-wizard-basic-info",
         "onboarding-wizard-theme-customize",
         "paywall-product-basic-fields",
@@ -85908,6 +86153,9 @@
         "help-fonts-typography"
       ],
       "branding": [
+        "help-fonts-typography"
+      ],
+      "onboarding-settings": [
         "help-fonts-typography"
       ],
       "grid": [

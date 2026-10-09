@@ -7636,6 +7636,7 @@
       "Scenario:add-custom-domain",
       "Subarticle:custom-domain-verification#custom-domain-verification/section-2",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-02",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-02",
       "Subarticle:launch-scenario-validate-idea#launch-scenario-validate-idea/step-02",
@@ -7650,6 +7651,7 @@
       "Article:integrations-custom-domain-section",
       "Guide:custom-domain-dns-setup",
       "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "SynonymGroup:custom-domain",
       "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section"
@@ -8243,6 +8245,7 @@
       "Scenario:publish",
       "Subarticle:analytics-add-provider#analytics-add-provider/verify",
       "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-03",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-03",
       "Subarticle:launch-scenario-validate-idea#launch-scenario-validate-idea/step-03",
@@ -8354,6 +8357,7 @@
       "Subarticle:help-block-variable-binding#set-variablebinding-newoptionlabel-img",
       "Subarticle:help-block-variable-binding#set-variablebinding-scoreeffects",
       "Subarticle:help-block-variable-binding#set-variablebinding-scoreeffects-img",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Subarticle:launch-scenario-product-analytics#launch-scenario-product-analytics/step-01",
       "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/locales",
@@ -8376,6 +8380,7 @@
       "Guide:analytics-provider-config",
       "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-1",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/provider-choice",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:launch-scenario-product-analytics#launch-scenario-product-analytics/step-01",
       "SynonymGroup:analytics-provider-setup"
     ],
@@ -8966,6 +8971,12 @@
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/oauth-prerequisites",
       "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/overview",
       "Subarticle:onboarding-list-create#onboarding-list-create/create-button",
@@ -9336,7 +9347,6 @@
     ],
     "integrations": [
       "Article:analytics-integration-list",
-      "Article:help-fonts-typography",
       "Article:integrations-stripe-connect-section"
     ],
     "article:analytics provider config": [
@@ -9420,6 +9430,7 @@
       "Article:help-screen-textinput-elements",
       "Article:help-screen-wheelpicker-elements",
       "Article:integrations-analytics-section",
+      "Article:integrations-custom-domain-section",
       "Article:onboarding-wizard-basic-info",
       "Article:onboarding-wizard-theme-customize",
       "Article:paywall-product-basic-fields",
@@ -10356,6 +10367,7 @@
       "Subarticle:help-screen-wheelpicker-elements#block-copyblock-el-hero-image",
       "Subarticle:help-screen-wheelpicker-elements#block-roller-summary",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/consent-management",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/locales",
       "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/action-bar",
       "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/backdrop",
@@ -12015,6 +12027,8 @@
       "Subarticle:help-screen-wheelpicker-elements#block-variablebinding-thumb",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/provider-choice",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-01",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-03",
@@ -12095,6 +12109,8 @@
       "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2",
       "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
       "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/overview",
       "Subarticle:paywall-products-list#paywall-products-list/products-list",
       "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/vendor-activate-live-account",
@@ -12308,6 +12324,12 @@
       "Subarticle:custom-domain-verification#custom-domain-verification/section-2",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-02",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-02",
@@ -12365,7 +12387,8 @@
     "verification": [
       "Article:custom-domain-verification",
       "Guide:custom-domain-verification",
-      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2"
+      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6"
     ],
     "custom domain verification": [
       "Article:custom-domain-verification",
@@ -12512,6 +12535,7 @@
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-subtitle-img",
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title",
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-set-copyblock-content-copy-title-img",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Subarticle:launch-scenario-product-analytics#launch-scenario-product-analytics/step-01",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-02",
@@ -22653,6 +22677,9 @@
     "branding": [
       "Article:help-fonts-typography"
     ],
+    "onboarding settings": [
+      "Article:help-fonts-typography"
+    ],
     "article:help options grid multi": [
       "Article:help-options-grid-multi",
       "Keyword:negative:tiktok events catalog",
@@ -23542,6 +23569,12 @@
       "SourceConfig:references/articles/integrations-custom-domain-section.json",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Workflow:capability.custom-domain-readiness",
       "WorkflowStep:capability.custom-domain-readiness/add-custom-domain/integrations-custom-domain-section"
@@ -23601,6 +23634,8 @@
       "Article:launch-paid-funnel-overview",
       "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2",
       "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
       "WorkflowStep:capability.first-contact-orientation/launch-paid-funnel-overview/launch-paid-funnel-overview"
     ],
@@ -24875,7 +24910,8 @@
       "CliCapability:webABTest.rollout.apply",
       "CliCapability:webPlacement.configure",
       "CliCapability:webPlacement.publish",
-      "Subarticle:custom-domain-verification#custom-domain-verification/section-2"
+      "Subarticle:custom-domain-verification#custom-domain-verification/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8"
     ],
     "draft write": [
       "CliCapability:analytics.settings.apply",
@@ -25033,6 +25069,7 @@
       "Subarticle:custom-domain-verification#custom-domain-verification/section-1",
       "Subarticle:help-block-flexible-sections#screenedit-flexible-sections-selected-product-purchase/payment-intent",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/provider-choice",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
       "Subarticle:stripe-connect-live-mode#stripe-connect-live-mode/live-account-status"
     ],
     "domains": [
@@ -25805,7 +25842,8 @@
       "Subarticle:help-options-grid-single#opt-selection",
       "Subarticle:help-options-hero-list#opt-selection",
       "Subarticle:help-options-list-multi#opt-selection",
-      "Subarticle:help-options-list-single#opt-selection"
+      "Subarticle:help-options-list-single#opt-selection",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
     ],
     "right": [
       "E2eScenario:configure-web-placement-entry-rules",
@@ -25888,6 +25926,7 @@
       "Subarticle:help-block-flexible-sections#set-flexiblesections-management-opensectionsettings-img",
       "Subarticle:help-block-flexible-sections#set-flexiblesections-management-screensettings",
       "Subarticle:help-block-flexible-sections#set-flexiblesections-management-screensettings-img",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
       "Subarticle:webplacement-publish-url#webplacement-publish-url/open-browser"
     ],
     "open v2 canvas": [
@@ -27223,6 +27262,7 @@
       "Subarticle:help-options-list-single#set-options-itemlayout",
       "Subarticle:help-options-list-single#set-options-itemlayout-img",
       "Subarticle:help-screen-herocontent-detailed#in-copyblock-content-template-head",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:stripe-connect-oauth-guidance#stripe-connect-oauth-guidance/oauth-permissions",
       "SynonymGroup:launch-publish-funnel",
       "WorkflowStep:capability.production-readiness-preflight/launch-progress/launch-scenario-sell"
@@ -44381,7 +44421,8 @@
     ],
     "host": [
       "Subarticle:analytics-provider-config#analytics-provider-config/vendor-posthog-project-api-key",
-      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1"
+      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
     ],
     "subarticle:canvas add screen": [
       "Article:canvas-add-screen",
@@ -44566,6 +44607,7 @@
     ],
     "records": [
       "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records"
     ],
     "section 2": [
@@ -44579,10 +44621,12 @@
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2"
     ],
     "keeps": [
-      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2"
+      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6"
     ],
     "failing": [
-      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2"
+      "Subarticle:custom-domain-dns-setup#custom-domain-dns-setup/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6"
     ],
     "subarticle:custom domain domain input": [
       "Article:custom-domain-domain-input",
@@ -44590,16 +44634,20 @@
       "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2"
     ],
     "enter": [
-      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1"
+      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
     ],
     "public": [
-      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1"
+      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
     ],
     "will": [
-      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1"
+      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-1",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
     ],
     "save": [
-      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2"
+      "Subarticle:custom-domain-domain-input#custom-domain-domain-input/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4"
     ],
     "subarticle:custom domain verification": [
       "Article:custom-domain-verification",
@@ -44607,7 +44655,8 @@
       "Subarticle:custom-domain-verification#custom-domain-verification/section-2"
     ],
     "unlocks": [
-      "Subarticle:custom-domain-verification#custom-domain-verification/section-2"
+      "Subarticle:custom-domain-verification#custom-domain-verification/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8"
     ],
     "subarticle:facebook pixel capi setup": [
       "Article:facebook-pixel-capi-setup",
@@ -55860,6 +55909,12 @@
       "Article:integrations-custom-domain-section",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records"
     ],
     "why": [
@@ -55873,6 +55928,30 @@
     "recommended": [
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
       "Subarticle:screen-editor-overview#screen-editor-overview/section-ordering"
+    ],
+    "section 3": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3"
+    ],
+    "section 4": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4"
+    ],
+    "section 5": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5"
+    ],
+    "section 6": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6"
+    ],
+    "section 7": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7"
+    ],
+    "section 8": [
+      "Article:integrations-custom-domain-section",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8"
     ],
     "vendor registrar dns records": [
       "Article:integrations-custom-domain-section",
@@ -59908,6 +59987,12 @@
       "Subarticle:integrations-analytics-section#integrations-analytics-section/track-before",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/oauth-prerequisites",
       "Subarticle:integrations-stripe-connect-section#integrations-stripe-connect-section/overview",
       "Subarticle:onboarding-list-create#onboarding-list-create/create-button",
@@ -60236,7 +60321,6 @@
     ],
     "integrations": [
       "Article:analytics-integration-list",
-      "Article:help-fonts-typography",
       "Article:integrations-stripe-connect-section"
     ],
     "labels-copy": [
@@ -60287,6 +60371,7 @@
       "Article:help-screen-textinput-elements",
       "Article:help-screen-wheelpicker-elements",
       "Article:integrations-analytics-section",
+      "Article:integrations-custom-domain-section",
       "Article:onboarding-wizard-basic-info",
       "Article:onboarding-wizard-theme-customize",
       "Article:paywall-product-basic-fields",
@@ -61223,6 +61308,7 @@
       "Subarticle:help-screen-wheelpicker-elements#block-copyblock-el-hero-image",
       "Subarticle:help-screen-wheelpicker-elements#block-roller-summary",
       "Subarticle:integrations-analytics-section#integrations-analytics-section/consent-management",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
       "Subarticle:onboarding-wizard-basic-info#onboarding-wizard-basic-info/locales",
       "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/action-bar",
       "Subarticle:onboarding-wizard-theme-customize#onboarding-wizard-theme-customize/backdrop",
@@ -62126,6 +62212,12 @@
       "Subarticle:custom-domain-verification#custom-domain-verification/section-2",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-1",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-2",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-3",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-4",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-5",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-6",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-7",
+      "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/section-8",
       "Subarticle:integrations-custom-domain-section#integrations-custom-domain-section/vendor-registrar-dns-records",
       "Subarticle:launch-scenario-run-ads#launch-scenario-run-ads/step-02",
       "Subarticle:launch-scenario-sell#launch-scenario-sell/step-02",
@@ -68835,6 +68927,9 @@
       "SynonymGroup:change-funnel-font"
     ],
     "branding": [
+      "Article:help-fonts-typography"
+    ],
+    "onboarding-settings": [
       "Article:help-fonts-typography"
     ],
     "grid": [

@@ -90,12 +90,14 @@ export function buildRouteNavigationFunction(route, params, primitives = {}) {
   const notes = [];
   const first = (testId) => page.getByTestId(testId).first();
   const fill = (template) => String(template).replace(/{{(\\w+)}}/g, (match, key) => nav.params[key] ?? match);
+  // No URL constructor here: the playwright-cli run-code sandbox does not expose the URL global.
+  const pathnameOf = (href) => String(href).replace(/^[a-z][a-z0-9+.-]*:\\/\\/[^/]*/i, '').split(/[?#]/)[0] || '/';
   for (const step of nav.steps) {
     if (step.kind === 'goto') {
       const url = nav.params.baseUrl.replace(/\\/+$/, '') + fill(step.pathTemplate);
       await page.goto(url, { waitUntil: 'domcontentloaded' });
       await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {});
-      if (nav.params.projectId && new URL(page.url()).pathname === '/all-projects') {
+      if (nav.params.projectId && pathnameOf(page.url()) === '/all-projects') {
         const card = page.getByTestId(nav.projectCardPrefix + nav.params.projectId).first();
         await card.waitFor({ state: 'visible', timeout: 20000 });
         await card.click();
