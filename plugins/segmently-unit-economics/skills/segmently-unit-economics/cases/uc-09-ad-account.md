@@ -1,5 +1,5 @@
 # UC-9 — What your ad account reports
-Route: "what Ads Manager shows", a ROAS mismatch (SKILL.md § Router) · Eval: P9 · MCP: uc-9
+Route: "what Ads Manager shows", a ROAS mismatch, Meta's cost per purchase vs our CAC (SKILL.md § Router) · Eval: P9 · MCP: uc-9
 
 ## Turns
 - Which figures the reader reads off the ad account, and its window — what the message carries is not

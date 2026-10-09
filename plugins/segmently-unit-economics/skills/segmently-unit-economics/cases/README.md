@@ -1,7 +1,7 @@
 # Worked cases — numbers from real CLI runs
 
-Every figure of the worked cases was produced by `segmently ue` (CLI 1.6.0, `mathHash`
-`2348961abb1d54fd916e788bef12158afc63ab8584e51c345725797eaf28a20b`). The command is written
+Every figure of the worked cases was produced by `segmently ue` (CLI 1.7.0, `mathHash`
+`7590ec5c04d10a3a31bfb363eaa13353b63dd7673376e679541f8cad5690935c`). The command is written
 above each table; a variant is the base JSON with the edit named in its row, evaluated with
 `npx -y @segmently/cli ue evaluate <variant>.json --explain`. If `--version` prints a
 different CLI version or `mathHash`, re-run the commands instead of quoting these numbers.
@@ -9,7 +9,7 @@ different CLI version or `mathHash`, re-run the commands instead of quoting thes
 These are scenarios on the book's chain (cost per start $1.50, 30 % → 50 % → 35 %), not a
 view of any real product.
 
-**The seed scenario** used by UC-1, UC-2 and UC-10 is the calculator's default paywall (Monthly
+**The seed scenario** used by UC-1, UC-2, UC-10, UC-14 and UC-15 is the calculator's default paywall (Monthly
 $19.99 and Annual $119.99 on the paywall, Lite monthly and a one-time add-on aside, $45,000
 a month). Get its JSON with:
 
@@ -27,10 +27,10 @@ and save its `scenario` field as `seed.json`.
 | UC-0 | Is this worth launching, and at what numbers? (idea, pre_launch) | `cases/uc-00-launch-card.md` | 80 | 217 |
 | UC-1 | Should part of the users see the same plan with a trial? | `cases/uc-01-trial-or-not.md` | 77 | 163 |
 | UC-2 | Web checkout vs store: the same paywall under two fee stacks | `cases/uc-02-web-vs-store.md` | 77 | 166 |
-| UC-3 | Fill the reader's numbers and open the link | `cases/uc-03-your-numbers.md` | 65 | 146 |
+| UC-3 | Fill the reader's numbers and open the link | `cases/uc-03-your-numbers.md` | 70 | 151 |
 | UC-4 | RevenueCat: observed inputs → scenario | `cases/uc-04-revenuecat.md` | 50 | 50 |
 | UC-5 | Compare N variants / sweep one knob | `cases/uc-05-compare-or-sweep.md` | 42 | 42 |
-| UC-6 | Explain a scenario that does not clear | `cases/uc-06-why-not-clearing.md` | 66 | 66 |
+| UC-6 | Explain a scenario that does not clear | `cases/uc-06-why-not-clearing.md` | 68 | 68 |
 | UC-7 | Downsell / upsell wiring | `cases/uc-07-downsell-upsell.md` | 67 | 67 |
 | UC-8 | Test plan for a change | `cases/uc-08-test-plan.md` | 80 | 185 |
 | UC-9 | What your ad account reports | `cases/uc-09-ad-account.md` | 40 | 40 |
@@ -38,4 +38,6 @@ and save its `scenario` field as `seed.json`.
 | UC-11 | Hypothesis card: which metric, then which change | `cases/uc-11-hypothesis-card.md` | 80 | 481 |
 | UC-12 | Growth cycle: from the economics to a measured change, and back | `cases/uc-12-growth-cycle.md` | 80 | 291 |
 | UC-13 | Test a change to the offer | `cases/uc-13-test-an-offer-change.md` | 79 | 212 |
+| UC-14 | What it takes to reach a goal | `cases/uc-14-reach-a-goal.md` | 61 | 220 |
+| UC-15 | Month by month: payers, MRR, cash and the months they turn | `cases/uc-15-month-by-month.md` | 67 | 220 |
 <!-- sizes:end -->
